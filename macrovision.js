@@ -16,7 +16,9 @@ function updateSizes() {
     Object.entries(entities).forEach(([key, entity]) => {
         const element = document.querySelector("#entity-" + key);
         const canvasHeight = document.querySelector("#display").clientHeight;
-        const pixels = math.divide(entity.height, config.height).value * canvasHeight;
+        const pixels = math.divide(entity.height, config.height) * canvasHeight;
+
+        console.log(pixels);
         element.style.setProperty("--height", pixels + "px");
     });
 }
@@ -50,7 +52,6 @@ function drawScale() {
         ctx.stroke();
 
         ctx.strokeStyle = oldStyle;
-        console.log(ctx.strokeStyle);
     }
     const canvas = document.querySelector("#display");
 
@@ -62,7 +63,6 @@ function drawScale() {
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.scale(1,1);
-    console.log(canvas.clientWidth);
     ctx.canvas.width  = canvas.clientWidth;
     ctx.canvas.height = canvas.clientHeight;
 
