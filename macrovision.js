@@ -22,6 +22,7 @@ function updateSizes() {
         element.style.setProperty("--height", pixels + "px");
     });
 }
+
 function drawScale() {
     function drawTicks(/** @type {CanvasRenderingContext2D} */ ctx, pixelsPer) {
         for (let y = ctx.canvas.clientHeight - 50; y >= 50; y -= pixelsPer) {
@@ -35,12 +36,12 @@ function drawScale() {
 
         ctx.beginPath();
         ctx.moveTo(x, y);
-        ctx.lineTo(x+20, y);
+        ctx.lineTo(x + 20, y);
         ctx.strokeStyle = "#000000";
         ctx.stroke();
 
         ctx.beginPath();
-        ctx.moveTo(x+20, y);
+        ctx.moveTo(x + 20, y);
         ctx.lineTo(ctx.canvas.clientWidth - 70, y);
         ctx.strokeStyle = "#aaaaaa";
         ctx.stroke();
@@ -62,8 +63,8 @@ function drawScale() {
     const pixelsPer = (ctx.canvas.clientHeight - 100) / config.height.value;
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.scale(1,1);
-    ctx.canvas.width  = canvas.clientWidth;
+    ctx.scale(1, 1);
+    ctx.canvas.width = canvas.clientWidth;
     ctx.canvas.height = canvas.clientHeight;
 
     ctx.beginPath();
@@ -89,7 +90,7 @@ function makeEntity() {
         },
         height: math.unit(Math.random() * 2 + 1, "meters")
     }
-    
+
     return entityTemplate;
 }
 
@@ -110,7 +111,7 @@ function select(target) {
 function entityInfo(entity) {
     document.querySelector("#entity-name").innerText = "Name: " + entity.name;
     document.querySelector("#entity-author").innerText = "Author: " + entity.author;
-    document.querySelector("#entity-height").innerText = "Height: " + entity.height.format({precision: 3});
+    document.querySelector("#entity-height").innerText = "Height: " + entity.height.format({ precision: 3 });
 }
 
 function displayEntity(entity) {
@@ -130,7 +131,7 @@ function displayEntity(entity) {
 
     entities[entityIndex] = entity;
 
-    entityIndex += 1;  
+    entityIndex += 1;
 
     const world = document.querySelector("#entities");
     world.appendChild(img);
