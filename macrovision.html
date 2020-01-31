@@ -6,6 +6,7 @@
   <title>Macrovision</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="macrovision.css">
+  <script src="math.min.js"></script>
   <script src="macrovision.js"></script>
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="How big are they anyway?" />
@@ -17,11 +18,13 @@
 
 <body>
   <div id="menubar">
-    <div class="menu-item">This will be a menu at some point</div>
+    <div class="menu-item" id="entity-name"></div>
+    <div class="menu-item" id="entity-author"></div>
+    <div class="menu-item" id="entity-height"></div>
   </div>
   <div id="world">
     <div id="entities">
-      
+
     </div>
     <canvas id="display">
     </canvas>
