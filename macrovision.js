@@ -1,25 +1,30 @@
 let selected = null;
 
-function select(entity) {
+function select(target) {
     if (selected) {
         selected.classList.remove("selected");
     }
 
-    selected = entity;
+    selected = target;
     selected.classList.add("selected");
 }
 
-function createEntity() {
-    const entity = document.createElement("div");
-    entity.classList.add("entity");
+function createEntity(entity) {
+    const div = document.createElement("div");
+    div.classList.add("entity");
 
-    entity.addEventListener("click", e => select(e.target));
+    div.style.left = entity.x;
+    div.style.top = entity.y;
+
+    div.addEventListener("click", e => select(e.target));
 
 
     const world = document.querySelector("#entities");
-    world.appendChild(entity);
+    world.appendChild(div);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    createEntity();
+    createEntity({x: "300px", y: "300px"});
+    createEntity({x: "400px", y: "300px"});
+    createEntity({x: "500px", y: "300px"});
 });

@@ -17,8 +17,6 @@ body {
 
 .entity {
     position: absolute;
-    left: 50%;
-    top: 50%;
     --height: 100px;
     width: 50px;
     background-color: red;
