@@ -183,8 +183,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#options-height-unit").addEventListener("input", e => {
         updateWorldHeight();
     })
-
-    const entities = document.querySelector("#entities");
     
     world.addEventListener("mousedown", e => deselect());
     document.addEventListener("mouseup", e => clickUp());
