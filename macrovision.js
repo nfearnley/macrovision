@@ -17,6 +17,10 @@ const entities = {
 
 }
 
+function adjustAbs(coords, oldHeight, newHeight) {
+    return {x: coords.x, y: coords.y * math.divide(oldHeight, newHeight)};
+}
+
 function rel2abs(coords) {
     const canvasWidth = document.querySelector("#display").clientWidth;
     const canvasHeight = document.querySelector("#display").clientHeight;
@@ -227,8 +231,16 @@ document.addEventListener("mousemove", (e) => {
 function updateWorldHeight() {
     const value = document.querySelector("#options-height-value").value;
     const unit = document.querySelector("#options-height-unit").value;
+    const oldHeight = config.height;
 
     config.height = math.unit(value + " " + unit)
+    
+    Object.entries(entities).forEach(([key, entity]) => {
+        const element = document.querySelector("#entity-" + key);
+        const newPosition = adjustAbs({x: element.dataset.x, y: element.dataset.y}, oldHeight, config.height);
+        element.dataset.x = newPosition.x;
+        element.dataset.y = newPosition.y;
+    });
 
     updateSizes();
 }
