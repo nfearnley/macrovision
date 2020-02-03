@@ -114,15 +114,15 @@ function entityInfo(entity) {
     document.querySelector("#entity-height").innerText = "Height: " + entity.height.format({ precision: 3 });
 }
 
-function displayEntity(entity) {
+function displayEntity(entity, x, y) {
     const location = entity.location;
 
     const img = document.createElement("img");
     img.src = "./pepper.png"
     img.classList.add("entity");
 
-    img.style.left = location.x + "px";
-    img.style.top = location.y + "px";
+    img.style.left = x + "px";
+    img.style.top = y + "px";
 
     img.addEventListener("click", e => select(e.target));
 
@@ -142,9 +142,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const entity = makeEntity();
         entity.name = "Green is my pepper";
         entity.author = "Fen"
-        entity.location.x = 300 + Math.random() * 600;
-        entity.location.y = 300 + Math.random() * 400;
-        displayEntity(entity);
+        const x = 300 + Math.random() * 600;
+        const y = 300 + Math.random() * 400;
+        displayEntity(entity, x, y);
     }
 
     updateSizes();
