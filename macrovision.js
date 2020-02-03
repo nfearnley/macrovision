@@ -9,6 +9,8 @@ let clickTimeout = null;
 let dragOffsetX = null;
 let dragOffsetY = null;
 
+let altHeld = false;
+
 const config = {
     height: math.unit(10, "meters")
 }
@@ -17,20 +19,33 @@ const entities = {
 
 }
 
+function constrainRel(coords) {
+    return {
+        x: Math.min(Math.max(coords.x, 0), 1),
+        y: Math.min(Math.max(coords.y, 0), 1)
+    }
+}
+function snapRel(coords) {
+    return constrainRel({
+        x: coords.x,
+        y: altHeld ? coords.y : (Math.abs(coords.y - 1) < 0.05 ? 1 : coords.y)
+    });
+}
+
 function adjustAbs(coords, oldHeight, newHeight) {
     return {x: coords.x, y: coords.y * math.divide(oldHeight, newHeight)};
 }
 
 function rel2abs(coords) {
-    const canvasWidth = document.querySelector("#display").clientWidth;
-    const canvasHeight = document.querySelector("#display").clientHeight;
+    const canvasWidth = document.querySelector("#display").clientWidth - 50;
+    const canvasHeight = document.querySelector("#display").clientHeight - 50;
 
     return {x: coords.x * canvasWidth, y: coords.y * canvasHeight};
 }
 
 function abs2rel(coords) {
-    const canvasWidth = document.querySelector("#display").clientWidth;
-    const canvasHeight = document.querySelector("#display").clientHeight;
+    const canvasWidth = document.querySelector("#display").clientWidth - 50;
+    const canvasHeight = document.querySelector("#display").clientHeight - 50;
 
     return {x: coords.x / canvasWidth, y: coords.y / canvasHeight};
 }
@@ -125,8 +140,8 @@ function clickDown(e) {
     const rect = e.target.getBoundingClientRect();
     let entX = document.querySelector("#entities").getBoundingClientRect().x;
     let entY = document.querySelector("#entities").getBoundingClientRect().y;
-    dragOffsetX = e.clientX - rect.left + entX;
-    dragOffsetY = e.clientY - rect.top + entY;
+    dragOffsetX = e.clientX - rect.left + entX - rect.width / 2;
+    dragOffsetY = e.clientY - rect.top + entY - rect.height;
     clickTimeout = setTimeout(() => {dragging = true}, 100)
 }
 
@@ -221,7 +236,7 @@ window.addEventListener("resize", () => {
 
 document.addEventListener("mousemove", (e) => {
     if (clicked) {
-        const position = abs2rel({x: e.clientX - dragOffsetX, y: e.clientY - dragOffsetY});
+        const position = snapRel(abs2rel({x: e.clientX - dragOffsetX, y: e.clientY - dragOffsetY}));
         clicked.dataset.x = position.x;
         clicked.dataset.y = position.y;
         updateEntityElement(entities[clicked.dataset.key], clicked);
