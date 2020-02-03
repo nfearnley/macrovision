@@ -118,11 +118,15 @@ function clickUp() {
     
 }
 
-function select(target) {
+function deselect() {
     if (selected) {
         selected.classList.remove("selected");
     }
+    selected = null;
+}
 
+function select(target) {
+    deselect();
     selected = target;
     selectedEntity = entities[target.dataset.key];
 
@@ -148,7 +152,6 @@ function displayEntity(entity, x, y) {
     img.style.top = y + "px";
 
     img.addEventListener("mousedown", e => clickDown(e));
-    document.addEventListener("mouseup", e => clickUp());
 
     img.id = "entity-" + entityIndex;
     img.dataset.key = entityIndex;
@@ -180,6 +183,11 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#options-height-unit").addEventListener("input", e => {
         updateWorldHeight();
     })
+
+    const entities = document.querySelector("#entities");
+    
+    world.addEventListener("mousedown", e => deselect());
+    document.addEventListener("mouseup", e => clickUp());
 });
 
 window.addEventListener("resize", () => {
