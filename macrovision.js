@@ -6,6 +6,8 @@ let entityIndex = 0;
 let clicked = null;
 let dragging = false;
 let clickTimeout = null;
+let dragOffsetX = null;
+let dragOffsetY = null;
 
 const config = {
     height: math.unit(10, "meters")
@@ -22,7 +24,6 @@ function updateSizes() {
         const canvasHeight = document.querySelector("#display").clientHeight;
         const pixels = math.divide(entity.height, config.height) * canvasHeight;
 
-        console.log(pixels);
         element.style.setProperty("--height", pixels + "px");
     });
 }
@@ -36,7 +37,6 @@ function drawScale() {
 
     function drawTick(/** @type {CanvasRenderingContext2D} */ ctx, x, y) {
         const oldStyle = ctx.strokeStyle;
-        console.log(ctx.strokeStyle);
 
         ctx.beginPath();
         ctx.moveTo(x, y);
@@ -95,13 +95,14 @@ function makeEntity() {
 }
 
 function clickDown(e) {
-    console.log("DOWN")
     clicked = e.target;
+    const rect = e.target.getBoundingClientRect();
+    dragOffsetX = e.clientX - rect.left;
+    dragOffsetY = e.clientY - rect.top;
     clickTimeout = setTimeout(() => {dragging = true}, 100)
 }
 
 function clickUp() {
-    console.log("UP");
     clearTimeout(clickTimeout);
 
     if (clicked) {
@@ -123,7 +124,6 @@ function select(target) {
     selected = target;
     selectedEntity = entities[target.dataset.key];
 
-    console.log(selectedEntity)
     selected.classList.add("selected");
 
     entityInfo(selectedEntity);
@@ -178,8 +178,7 @@ window.addEventListener("resize", () => {
 
 document.addEventListener("mousemove", (e) => {
     if (clicked) {
-        clicked.style.left = e.clientX + "px";
-        clicked.style.top = e.clientY + "px";
-
+        clicked.style.left = (e.clientX - dragOffsetX) + "px";
+        clicked.style.top = (e.clientY - dragOffsetY) + "px";
     }
 });
