@@ -27,7 +27,7 @@ body {
 }
 
 .selected {
-    filter: drop-shadow(0px 0px 10px gold);
+    filter: drop-shadow(0px 0px 15px gold);
 }
 
 #main-area {
@@ -49,7 +49,8 @@ body {
 
 #world {
     flex: 9 0 85vw;
-    min-height: 80vh;
+    min-height: 90vh;
+    max-height: 90vh;
     overflow: hidden;
 }
 
