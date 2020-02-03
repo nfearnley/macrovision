@@ -17,14 +17,36 @@ const entities = {
 
 }
 
+function rel2abs(coords) {
+    const canvasWidth = document.querySelector("#display").clientWidth;
+    const canvasHeight = document.querySelector("#display").clientHeight;
+
+    return {x: coords.x * canvasWidth, y: coords.y * canvasHeight};
+}
+
+function abs2rel(coords) {
+    const canvasWidth = document.querySelector("#display").clientWidth;
+    const canvasHeight = document.querySelector("#display").clientHeight;
+
+    return {x: coords.x / canvasWidth, y: coords.y / canvasHeight};
+}
+
+function updateEntityElement(entity, element) {
+    const position = rel2abs({x: element.dataset.x, y: element.dataset.y});
+
+    element.style.left = position.x + "px";
+    element.style.top = position.y + "px";
+    const canvasHeight = document.querySelector("#display").clientHeight;
+    const pixels = math.divide(entity.height, config.height) * canvasHeight;
+    element.style.setProperty("--height", pixels + "px");
+
+}
+
 function updateSizes() {
     drawScale();
     Object.entries(entities).forEach(([key, entity]) => {
         const element = document.querySelector("#entity-" + key);
-        const canvasHeight = document.querySelector("#display").clientHeight;
-        const pixels = math.divide(entity.height, config.height) * canvasHeight;
-
-        element.style.setProperty("--height", pixels + "px");
+        updateEntityElement(entity, element);
     });
 }
 
@@ -148,10 +170,10 @@ function displayEntity(entity, x, y) {
     img.src = "./pepper.png"
     img.classList.add("entity");
 
-    img.style.left = x + "px";
-    img.style.top = y + "px";
+    img.dataset.x = x;
+    img.dataset.y = y;
 
-    img.addEventListener("mousedown", e => clickDown(e));
+    img.addEventListener("mousedown", e => {clickDown(e); e.stopPropagation()});
 
     img.id = "entity-" + entityIndex;
     img.dataset.key = entityIndex;
@@ -162,6 +184,7 @@ function displayEntity(entity, x, y) {
 
     const world = document.querySelector("#entities");
     world.appendChild(img);
+    updateEntityElement(entity, img);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -169,8 +192,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const entity = makeEntity();
         entity.name = "Green is my pepper";
         entity.author = "Fen"
-        const x = 300 + Math.random() * 600;
-        const y = 300 + Math.random() * 400;
+        const x = 0.25 + Math.random() * 0.5;
+        const y = 0.25 + Math.random() * 0.5;
         displayEntity(entity, x, y);
     }
 
@@ -194,8 +217,10 @@ window.addEventListener("resize", () => {
 
 document.addEventListener("mousemove", (e) => {
     if (clicked) {
-        clicked.style.left = (e.clientX - dragOffsetX) + "px";
-        clicked.style.top = (e.clientY - dragOffsetY) + "px";
+        const position = abs2rel({x: e.clientX - dragOffsetX, y: e.clientY - dragOffsetY});
+        clicked.dataset.x = position.x;
+        clicked.dataset.y = position.y;
+        updateEntityElement(entities[clicked.dataset.key], clicked);
     }
 });
 
