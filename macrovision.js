@@ -3,6 +3,10 @@ let selectedEntity = null;
 
 let entityIndex = 0;
 
+let clicked = null;
+let dragging = false;
+let clickTimeout = null;
+
 const config = {
     height: math.unit(10, "meters")
 }
@@ -84,14 +88,31 @@ function makeEntity() {
     const entityTemplate = {
         name: "",
         author: "",
-        location: {
-            x: 0,
-            y: 0
-        },
         height: math.unit(Math.random() * 2 + 1, "meters")
     }
 
     return entityTemplate;
+}
+
+function clickDown(e) {
+    console.log("DOWN")
+    clicked = e.target;
+    clickTimeout = setTimeout(() => {dragging = true}, 100)
+}
+
+function clickUp() {
+    console.log("UP");
+    clearTimeout(clickTimeout);
+
+    if (clicked) {
+        if (dragging) {
+            dragging = false;
+        } else {
+            select(clicked);
+        }
+        clicked = null;
+    }
+    
 }
 
 function select(target) {
@@ -124,7 +145,8 @@ function displayEntity(entity, x, y) {
     img.style.left = x + "px";
     img.style.top = y + "px";
 
-    img.addEventListener("click", e => select(e.target));
+    img.addEventListener("mousedown", e => clickDown(e));
+    document.addEventListener("mouseup", e => clickUp());
 
     img.id = "entity-" + entityIndex;
     img.dataset.key = entityIndex;
@@ -153,3 +175,11 @@ document.addEventListener("DOMContentLoaded", () => {
 window.addEventListener("resize", () => {
     updateSizes();
 })
+
+document.addEventListener("mousemove", (e) => {
+    if (clicked) {
+        clicked.style.left = e.clientX + "px";
+        clicked.style.top = e.clientY + "px";
+
+    }
+});
