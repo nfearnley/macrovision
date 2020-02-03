@@ -42,6 +42,10 @@ body {
     background: red;
 }
 
+#entities {
+    position: relative;
+}
+
 #world {
     flex: 9 0 85vw;
     min-height: 80vh;

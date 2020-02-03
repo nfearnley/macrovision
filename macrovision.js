@@ -97,8 +97,10 @@ function makeEntity() {
 function clickDown(e) {
     clicked = e.target;
     const rect = e.target.getBoundingClientRect();
-    dragOffsetX = e.clientX - rect.left;
-    dragOffsetY = e.clientY - rect.top;
+    let entX = document.querySelector("#entities").getBoundingClientRect().x;
+    let entY = document.querySelector("#entities").getBoundingClientRect().y;
+    dragOffsetX = e.clientX - rect.left + entX;
+    dragOffsetY = e.clientY - rect.top + entY;
     clickTimeout = setTimeout(() => {dragging = true}, 100)
 }
 
