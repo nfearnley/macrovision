@@ -170,6 +170,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     updateSizes();
+
+    document.querySelector("#options-height-value").addEventListener("input", e => {
+        updateWorldHeight();
+    })
+
+    document.querySelector("#options-height-unit").addEventListener("input", e => {
+        updateWorldHeight();
+    })
 });
 
 window.addEventListener("resize", () => {
@@ -182,3 +190,12 @@ document.addEventListener("mousemove", (e) => {
         clicked.style.top = (e.clientY - dragOffsetY) + "px";
     }
 });
+
+function updateWorldHeight() {
+    const value = document.querySelector("#options-height-value").value;
+    const unit = document.querySelector("#options-height-unit").value;
+
+    config.height = math.unit(value + " " + unit)
+
+    updateSizes();
+}
