@@ -279,8 +279,10 @@ function clearViewOptions(entity, view) {
 // stack overflow
 // https://stackoverflow.com/questions/38487569/click-through-png-image-only-if-clicked-coordinate-is-transparent
 
-const testCtx = document.createElement("canvas").getContext("2d");
+const testCanvas = document.createElement("canvas");
+testCanvas.id = "test-canvas";
 
+const testCtx = testCanvas.getContext("2d");
 function testClick(event) {
 
     const target = event.target;

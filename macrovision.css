@@ -149,3 +149,8 @@ body {
     flex: 1;
     font-size: 150%;
 }
+
+body #test-canvas {
+    position: fixed;
+    top: 100vh;
+}
