@@ -12,7 +12,9 @@ let dragOffsetY = null;
 let altHeld = false;
 
 const config = {
-    height: math.unit(10, "meters")
+    height: math.unit(10, "meters"),
+    minLineSize: 50,
+    maxLineSize: 250
 }
 
 const entities = {
@@ -33,7 +35,7 @@ function snapRel(coords) {
 }
 
 function adjustAbs(coords, oldHeight, newHeight) {
-    return {x: coords.x, y: coords.y * math.divide(oldHeight, newHeight)};
+    return {x: coords.x, y: 1 + (coords.y - 1) * math.divide(oldHeight, newHeight)};
 }
 
 function rel2abs(coords) {
@@ -70,13 +72,16 @@ function updateSizes() {
 }
 
 function drawScale() {
-    function drawTicks(/** @type {CanvasRenderingContext2D} */ ctx, pixelsPer) {
+    function drawTicks(/** @type {CanvasRenderingContext2D} */ ctx, pixelsPer, heightPer) {
+        let total = heightPer.clone();
+        total.value = 0;
         for (let y = ctx.canvas.clientHeight - 50; y >= 50; y -= pixelsPer) {
-            drawTick(ctx, 50, y);
+            drawTick(ctx, 50, y, total);
+            total = math.add(total, heightPer);
         }
     }
 
-    function drawTick(/** @type {CanvasRenderingContext2D} */ ctx, x, y) {
+    function drawTick(/** @type {CanvasRenderingContext2D} */ ctx, x, y, value) {
         const oldStyle = ctx.strokeStyle;
 
         ctx.beginPath();
@@ -97,6 +102,9 @@ function drawScale() {
         ctx.strokeStyle = "#000000";
         ctx.stroke();
 
+        ctx.beginPath();
+        ctx.fillText(value.format({precision: 3}), x+20, y+20);
+
         ctx.strokeStyle = oldStyle;
     }
     const canvas = document.querySelector("#display");
@@ -105,7 +113,19 @@ function drawScale() {
 
     const ctx = canvas.getContext("2d");
 
-    const pixelsPer = (ctx.canvas.clientHeight - 100) / config.height.value;
+    let pixelsPer = (ctx.canvas.clientHeight - 100) / config.height.value;
+    let heightPer = config.height.clone();
+    heightPer.value = 1;
+
+    if (pixelsPer < config.minLineSize) {
+        heightPer.value /= pixelsPer / config.minLineSize;
+        pixelsPer = config.minLineSize;
+    }
+
+    if (pixelsPer > config.maxLineSize) {
+        heightPer.value /= pixelsPer / config.maxLineSize;
+        pixelsPer = config.maxLineSize;
+    }
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.scale(1, 1);
@@ -122,7 +142,7 @@ function drawScale() {
     ctx.lineTo(ctx.canvas.clientWidth - 50, ctx.canvas.clientHeight - 50);
     ctx.stroke();
 
-    drawTicks(ctx, pixelsPer);
+    drawTicks(ctx, pixelsPer, heightPer);
 }
 
 function makeEntity() {
