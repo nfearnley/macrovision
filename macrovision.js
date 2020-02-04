@@ -188,7 +188,7 @@ function clickDown(e) {
     let entY = document.querySelector("#entities").getBoundingClientRect().y;
     dragOffsetX = e.clientX - rect.left + entX - rect.width / 2;
     dragOffsetY = e.clientY - rect.top + entY - rect.height;
-    clickTimeout = setTimeout(() => { dragging = true }, 100)
+    clickTimeout = setTimeout(() => { dragging = true }, 200)
 }
 
 function clickUp() {
