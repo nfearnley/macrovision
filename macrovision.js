@@ -159,19 +159,34 @@ function makeEntity() {
         scale: 1,
         views: {
             body: {
-                baseHeight: math.unit(Math.random() * 1 + 1, "meter"),
-                get height() {
-                    return math.multiply(this.parent.scale, this.baseHeight);
-                },
-                set height(value) {
-                    this.parent.scale = math.divide(value, this.baseHeight);
+                attributes: {
+                    height: {
+                        name: "Height",
+                        power: 1,
+                        base: math.unit(Math.random() * 1 + 1, "meter")
+                    }
                 }
             }
         },
         init: function () {
-            console.log(this);
-            Object.entries(this.views).forEach(([key, val]) => {
-                val.parent = this;
+            Object.values(this.views).forEach(view => {
+                view.parent = this;
+
+                Object.entries(view.attributes).forEach(([key, val]) => {
+                    Object.defineProperty(
+                        view,
+                        key,
+                        {
+                            get: function() {
+                                return math.multiply(Math.pow(this.parent.scale, this.attributes[key].power), this.attributes[key].base);
+                            },
+                            set: function(value) {
+                                const newScale = Math.pow(math.divide(value, this.attributes[key].base), this.attributes[key]/power);
+                                this.parent.scale = newScale;
+                            }
+                        }
+                    )
+                });
             });
             delete this.init;
             return this;
