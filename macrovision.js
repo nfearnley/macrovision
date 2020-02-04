@@ -54,11 +54,12 @@ function abs2rel(coords) {
 
 function updateEntityElement(entity, element) {
     const position = rel2abs({x: element.dataset.x, y: element.dataset.y});
+    const view = element.dataset.view;
 
     element.style.left = position.x + "px";
     element.style.top = position.y + "px";
     const canvasHeight = document.querySelector("#display").clientHeight;
-    const pixels = math.divide(entity.height, config.height) * canvasHeight;
+    const pixels = math.divide(entity.views[view].height, config.height) * canvasHeight;
     element.style.setProperty("--height", pixels + "px");
 
 }
@@ -149,8 +150,27 @@ function makeEntity() {
     const entityTemplate = {
         name: "",
         author: "",
-        height: math.unit(Math.random() * 2 + 1, "meters")
-    }
+        scale: 1,
+        views: {
+            body: {
+                baseHeight: math.unit(Math.random() * 1 + 1, "meter"),
+                get height() {
+                    return math.multiply(this.parent.scale, this.baseHeight);
+                },
+                set height(value) {
+                    this.parent.scale = math.divide(value, this.baseHeight);
+                }
+            }
+        },
+        init: function() {
+            console.log(this);
+            Object.entries(this.views).forEach(([key, val]) => {
+                val.parent = this;
+            });
+            delete this.init;
+            return this;
+        }
+    }.init();
 
     return entityTemplate;
 }
@@ -193,16 +213,16 @@ function select(target) {
 
     selected.classList.add("selected");
 
-    entityInfo(selectedEntity);
+    entityInfo(selectedEntity, target.dataset.view);
 }
 
-function entityInfo(entity) {
+function entityInfo(entity, view) {
     document.querySelector("#entity-name").innerText = "Name: " + entity.name;
     document.querySelector("#entity-author").innerText = "Author: " + entity.author;
-    document.querySelector("#entity-height").innerText = "Height: " + entity.height.format({ precision: 3 });
+    document.querySelector("#entity-height").innerText = "Height: " + entity.views[view].height.format({ precision: 3 });
 }
 
-function displayEntity(entity, x, y) {
+function displayEntity(entity, view, x, y) {
     const location = entity.location;
 
     const img = document.createElement("img");
@@ -216,6 +236,7 @@ function displayEntity(entity, x, y) {
 
     img.id = "entity-" + entityIndex;
     img.dataset.key = entityIndex;
+    img.dataset.view = view;
 
     entities[entityIndex] = entity;
 
@@ -233,7 +254,7 @@ document.addEventListener("DOMContentLoaded", () => {
         entity.author = "Fen"
         const x = 0.25 + Math.random() * 0.5;
         const y = 0.25 + Math.random() * 0.5;
-        displayEntity(entity, x, y);
+        displayEntity(entity, "body", x, y);
     }
 
     updateSizes();
