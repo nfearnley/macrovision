@@ -40,8 +40,24 @@ body {
 
 #options {
     flex: 1 0 15vw;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
     background: #444;
 }
+
+.options-row {
+    display: flex;
+    text-align: center;
+}
+
+.options-header {
+    text-align: center;
+    font-size: 24pt;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 
 #entities {
     position: relative;
@@ -77,7 +93,20 @@ body {
     background: #333;
 }
 
-#options input {
+#options .options-label {
+    flex: 0 1;
+    width: 100%;
+    font-size: 150%;
+}
+
+.options-row input {
+    flex: 1;
+    width: 50%;
+    font-size: 150%;
+}
+
+.options-row select {
+    flex: 1;
     width: 50%;
     font-size: 150%;
 }
