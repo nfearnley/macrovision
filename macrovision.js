@@ -15,6 +15,9 @@ const unitChoices = {
     length: [
         "meters",
         "kilometers"
+    ],
+    mass: [
+        "kilograms"
     ]
 }
 const config = {
@@ -173,6 +176,12 @@ function makeEntity() {
                         power: 1,
                         type: "length",
                         base: math.unit(1, "meter")
+                    },
+                    weight: {
+                        name: "Weight",
+                        power: 3,
+                        type: "mass",
+                        base: math.unit(80, "kg")
                     }
                 }
             }
@@ -190,7 +199,7 @@ function makeEntity() {
                                 return math.multiply(Math.pow(this.parent.scale, this.attributes[key].power), this.attributes[key].base);
                             },
                             set: function(value) {
-                                const newScale = Math.pow(math.divide(value, this.attributes[key].base), this.attributes[key].power);
+                                const newScale = Math.pow(math.divide(value, this.attributes[key].base), 1 / this.attributes[key].power);
                                 this.parent.scale = newScale;
                             }
                         }
