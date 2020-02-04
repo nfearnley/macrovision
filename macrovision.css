@@ -54,6 +54,20 @@ body {
     text-align: center;
 }
 
+@media (max-aspect-ratio: 1/1) {
+    .options-row {
+        flex-direction: column;
+    }
+
+    .options-row > .options-field-numeric {
+        width: 100%;
+    }
+
+    .options-row > .options-field-unit {
+        width: 100%;
+    }
+}
+
 .options-header {
     text-align: center;
     font-size: 24pt;
@@ -102,14 +116,16 @@ body {
     font-size: 150%;
 }
 
+.options-label {
+    text-align: center;
+}
+
 .options-row .options-field-numeric {
     flex: 2;
-    width: 50%;
     font-size: 150%;
 }
 
 .options-row .options-field-unit {
     flex: 1;
-    width: 50%;
     font-size: 150%;
 }
