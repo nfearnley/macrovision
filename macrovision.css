@@ -99,13 +99,13 @@ body {
     font-size: 150%;
 }
 
-.options-row input {
-    flex: 1;
+.options-row .options-field-numeric {
+    flex: 2;
     width: 50%;
     font-size: 150%;
 }
 
-.options-row select {
+.options-row .options-field-unit {
     flex: 1;
     width: 50%;
     font-size: 150%;
