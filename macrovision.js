@@ -210,6 +210,8 @@ function deselect() {
         selected.classList.remove("selected");
     }
     selected = null;
+    clearEntityOptions();
+    clearViewOptions();
 }
 
 function select(target) {
@@ -220,12 +222,57 @@ function select(target) {
     selected.classList.add("selected");
 
     entityInfo(selectedEntity, target.dataset.view);
+    configEntityOptions(selectedEntity);
+    configViewOptions(selectedEntity, target.dataset.view);
 }
 
 function entityInfo(entity, view) {
     document.querySelector("#entity-name").innerText = "Name: " + entity.name;
     document.querySelector("#entity-author").innerText = "Author: " + entity.author;
     document.querySelector("#entity-height").innerText = "Height: " + entity.views[view].height.format({ precision: 3 });
+}
+
+function configEntityOptions(entity) {
+    const holder = document.querySelector("#options-entity");
+
+    holder.innerHTML = "";
+
+    const scaleLabel = document.createElement("div");
+    scaleLabel.classList.add("options-label");
+    scaleLabel.innerText = "Scale";
+
+    const scaleRow = document.createElement("div");
+    scaleRow.classList.add("options-row");
+
+    const scaleInput = document.createElement("input");
+    scaleInput.classList.add("options-field-numeric");
+
+    scaleInput.addEventListener("input", e => {
+        entity.scale = e.target.value;
+        updateSizes();
+    });
+    
+    scaleInput.setAttribute("min", 1);
+    scaleInput.setAttribute("type", "number");
+    scaleInput.value = entity.scale;
+
+    scaleRow.appendChild(scaleInput);
+    holder.appendChild(scaleLabel);
+    holder.appendChild(scaleRow);
+}
+
+function clearEntityOptions() {
+    const holder = document.querySelector("#options-entity");
+
+    holder.innerHTML = "";
+}
+
+function configViewOptions(entity, view) {
+
+}
+
+function clearViewOptions(entity, view) {
+
 }
 
 function displayEntity(entity, view, x, y) {
