@@ -264,7 +264,7 @@ document.addEventListener("mousemove", (e) => {
 });
 
 function updateWorldHeight() {
-    const value = document.querySelector("#options-height-value").value;
+    const value = Math.max(1, document.querySelector("#options-height-value").value);
     const unit = document.querySelector("#options-height-unit").value;
     const oldHeight = config.height;
 
