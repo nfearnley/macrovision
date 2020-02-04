@@ -11,6 +11,12 @@ let dragOffsetY = null;
 
 let altHeld = false;
 
+const unitChoices = {
+    length: [
+        "meters",
+        "kilometers"
+    ]
+}
 const config = {
     height: math.unit(10, "meters"),
     minLineSize: 50,
@@ -59,8 +65,10 @@ function updateEntityElement(entity, element) {
     element.style.left = position.x + "px";
     element.style.top = position.y + "px";
     const canvasHeight = document.querySelector("#display").clientHeight;
-    const pixels = math.divide(entity.views[view].height, config.height) * canvasHeight;
+    const pixels = math.divide(entity.views[view].height, config.height) * (canvasHeight - 100);
     element.style.setProperty("--height", pixels + "px");
+
+    element.querySelector(".entity-name").innerText = entity.name;
 
 }
 
@@ -163,7 +171,8 @@ function makeEntity() {
                     height: {
                         name: "Height",
                         power: 1,
-                        base: math.unit(Math.random() * 1 + 1, "meter")
+                        type: "length",
+                        base: math.unit(1, "meter")
                     }
                 }
             }
@@ -181,7 +190,7 @@ function makeEntity() {
                                 return math.multiply(Math.pow(this.parent.scale, this.attributes[key].power), this.attributes[key].base);
                             },
                             set: function(value) {
-                                const newScale = Math.pow(math.divide(value, this.attributes[key].base), this.attributes[key]/power);
+                                const newScale = Math.pow(math.divide(value, this.attributes[key].base), this.attributes[key].power);
                                 this.parent.scale = newScale;
                             }
                         }
@@ -274,6 +283,30 @@ function configEntityOptions(entity) {
     scaleRow.appendChild(scaleInput);
     holder.appendChild(scaleLabel);
     holder.appendChild(scaleRow);
+
+    const nameLabel = document.createElement("div");
+    nameLabel.classList.add("options-label");
+    nameLabel.innerText = "Name";
+
+    const nameRow = document.createElement("div");
+    nameRow.classList.add("options-row");
+    
+    const nameInput = document.createElement("input");
+    nameInput.classList.add("options-field-text");
+    nameInput.value = entity.name;
+
+    nameInput.addEventListener("input", e => {
+        entity.name = e.target.value;
+        updateSizes();
+    })
+
+    nameRow.appendChild(nameInput);
+
+    holder.appendChild(nameLabel);
+    holder.appendChild(nameRow);
+
+
+
 }
 
 function clearEntityOptions() {
@@ -283,11 +316,56 @@ function clearEntityOptions() {
 }
 
 function configViewOptions(entity, view) {
+    const holder = document.querySelector("#options-view");
 
+    holder.innerHTML = "";
+
+    Object.entries(entity.views[view].attributes).forEach(([key, val]) => {
+        const label = document.createElement("div");
+        label.classList.add("options-label");
+        label.innerText = val.name;
+
+        holder.appendChild(label);
+
+        const row = document.createElement("div");
+        row.classList.add("options-row");
+
+        holder.appendChild(row);
+
+        const input = document.createElement("input");
+        input.classList.add("options-field-numeric");
+
+        input.value = entity.views[view][key].value;
+
+        const unit = document.createElement("select");
+
+        unitChoices[val.type].forEach(name => {
+            const option = document.createElement("option");
+            option.innerText = name;
+            unit.appendChild(option);
+        });
+        
+
+        input.addEventListener("input", e => {
+            entity.views[view][key] = math.unit(input.value, unit.value);
+            updateSizes();
+        });
+
+        unit.addEventListener("input", e => {
+            entity.views[view][key] = math.unit(input.value, unit.value);
+            updateSizes();
+        });
+
+        row.appendChild(input);
+        row.appendChild(unit);
+    });
+    
 }
 
 function clearViewOptions(entity, view) {
+    const holder = document.querySelector("#options-view");
 
+    holder.innerHTML = "";
 }
 
 // this is a crime against humanity, and also stolen from
@@ -308,14 +386,11 @@ function testClick(event) {
         h = testCtx.canvas.height = target.height,
         alpha;
 
-    console.log(x, y);
     // Draw image to canvas
     // and read Alpha channel value
     testCtx.drawImage(target, 0, 0, w, h);
     alpha = testCtx.getImageData(x, y, 1, 1).data[3]; // [0]R [1]G [2]B [3]A
 
-
-    console.log(alpha)
     // If pixel is transparent,
     // retrieve the element underneath and trigger it's click event
     if (alpha === 0) {

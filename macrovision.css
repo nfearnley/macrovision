@@ -145,6 +145,11 @@ body {
     font-size: 150%;
 }
 
+.options-row .options-field-text {
+    flex: 1;
+    font-size: 150%;
+}
+
 .options-row .options-field-unit {
     flex: 1;
     font-size: 150%;
