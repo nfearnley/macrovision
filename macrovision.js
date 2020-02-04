@@ -35,25 +35,25 @@ function snapRel(coords) {
 }
 
 function adjustAbs(coords, oldHeight, newHeight) {
-    return {x: coords.x, y: 1 + (coords.y - 1) * math.divide(oldHeight, newHeight)};
+    return { x: coords.x, y: 1 + (coords.y - 1) * math.divide(oldHeight, newHeight) };
 }
 
 function rel2abs(coords) {
     const canvasWidth = document.querySelector("#display").clientWidth - 50;
     const canvasHeight = document.querySelector("#display").clientHeight - 50;
 
-    return {x: coords.x * canvasWidth, y: coords.y * canvasHeight};
+    return { x: coords.x * canvasWidth, y: coords.y * canvasHeight };
 }
 
 function abs2rel(coords) {
     const canvasWidth = document.querySelector("#display").clientWidth - 50;
     const canvasHeight = document.querySelector("#display").clientHeight - 50;
 
-    return {x: coords.x / canvasWidth, y: coords.y / canvasHeight};
+    return { x: coords.x / canvasWidth, y: coords.y / canvasHeight };
 }
 
 function updateEntityElement(entity, element) {
-    const position = rel2abs({x: element.dataset.x, y: element.dataset.y});
+    const position = rel2abs({ x: element.dataset.x, y: element.dataset.y });
     const view = element.dataset.view;
 
     element.style.left = position.x + "px";
@@ -109,12 +109,12 @@ function drawScale() {
         ctx.fillStyle = "#dddddd";
 
         ctx.beginPath();
-        ctx.fillText(value.format({precision: 3}), x+20, y+35);
-    
+        ctx.fillText(value.format({ precision: 3 }), x + 20, y + 35);
+
         ctx.font = oldFont;
         ctx.strokeStyle = oldStroke;
         ctx.fillStyle = oldFill;
-    }   
+    }
     const canvas = document.querySelector("#display");
 
     /** @type {CanvasRenderingContext2D} */
@@ -168,7 +168,7 @@ function makeEntity() {
                 }
             }
         },
-        init: function() {
+        init: function () {
             console.log(this);
             Object.entries(this.views).forEach(([key, val]) => {
                 val.parent = this;
@@ -188,7 +188,7 @@ function clickDown(e) {
     let entY = document.querySelector("#entities").getBoundingClientRect().y;
     dragOffsetX = e.clientX - rect.left + entX - rect.width / 2;
     dragOffsetY = e.clientY - rect.top + entY - rect.height;
-    clickTimeout = setTimeout(() => {dragging = true}, 100)
+    clickTimeout = setTimeout(() => { dragging = true }, 100)
 }
 
 function clickUp() {
@@ -202,7 +202,7 @@ function clickUp() {
         }
         clicked = null;
     }
-    
+
 }
 
 function deselect() {
@@ -251,7 +251,7 @@ function configEntityOptions(entity) {
         entity.scale = e.target.value;
         updateSizes();
     });
-    
+
     scaleInput.setAttribute("min", 1);
     scaleInput.setAttribute("type", "number");
     scaleInput.value = entity.scale;
@@ -275,17 +275,57 @@ function clearViewOptions(entity, view) {
 
 }
 
+// this is a crime against humanity, and also stolen from
+// stack overflow
+// https://stackoverflow.com/questions/38487569/click-through-png-image-only-if-clicked-coordinate-is-transparent
+
+const testCtx = document.createElement("canvas").getContext("2d");
+
+function testClick(event) {
+
+    const target = event.target;
+    // Get click coordinates
+    var x = event.clientX - target.getBoundingClientRect().x,
+        y = event.clientY - target.getBoundingClientRect().y,
+        w = testCtx.canvas.width = target.width,
+        h = testCtx.canvas.height = target.height,
+        alpha;
+
+    console.log(x, y);
+    // Draw image to canvas
+    // and read Alpha channel value
+    testCtx.drawImage(target, 0, 0, w, h);
+    alpha = testCtx.getImageData(x, y, 1, 1).data[3]; // [0]R [1]G [2]B [3]A
+
+
+    console.log(alpha)
+    // If pixel is transparent,
+    // retrieve the element underneath and trigger it's click event
+    if (alpha === 0) {
+        const oldDisplay = target.style.display;
+        target.style.display = "none";
+        const newTarget = document.elementFromPoint(event.clientX, event.clientY);
+        newTarget.dispatchEvent(new MouseEvent("mousedown", {
+            "clientX": event.clientX,
+            "clientY": event.clientY
+        }));
+        target.style.display = oldDisplay;
+    } else {
+        clickDown(event);
+    }
+}
+
 function displayEntity(entity, view, x, y) {
     const location = entity.location;
 
     const img = document.createElement("img");
-    img.src = "./pepper.png"
+    img.src = "./man.svg"
     img.classList.add("entity");
 
     img.dataset.x = x;
     img.dataset.y = y;
 
-    img.addEventListener("mousedown", e => {clickDown(e); e.stopPropagation()});
+    img.addEventListener("mousedown", e => { testClick(e); e.stopPropagation() });
 
     img.id = "entity-" + entityIndex;
     img.dataset.key = entityIndex;
@@ -303,12 +343,13 @@ function displayEntity(entity, view, x, y) {
 document.addEventListener("DOMContentLoaded", () => {
     for (let x = 0; x < 5; x++) {
         const entity = makeEntity();
-        entity.name = "Green is my pepper";
+        entity.name = "Dude";
         entity.author = "Fen"
         const x = 0.25 + Math.random() * 0.5;
         const y = 0.25 + Math.random() * 0.5;
         displayEntity(entity, "body", x, y);
     }
+    document.querySelector("body").appendChild(testCtx.canvas);
 
     updateSizes();
 
@@ -319,7 +360,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#options-height-unit").addEventListener("input", e => {
         updateWorldHeight();
     })
-    
+
     world.addEventListener("mousedown", e => deselect());
     document.addEventListener("mouseup", e => clickUp());
 });
@@ -330,7 +371,7 @@ window.addEventListener("resize", () => {
 
 document.addEventListener("mousemove", (e) => {
     if (clicked) {
-        const position = snapRel(abs2rel({x: e.clientX - dragOffsetX, y: e.clientY - dragOffsetY}));
+        const position = snapRel(abs2rel({ x: e.clientX - dragOffsetX, y: e.clientY - dragOffsetY }));
         clicked.dataset.x = position.x;
         clicked.dataset.y = position.y;
         updateEntityElement(entities[clicked.dataset.key], clicked);
@@ -343,10 +384,10 @@ function updateWorldHeight() {
     const oldHeight = config.height;
 
     config.height = math.unit(value + " " + unit)
-    
+
     Object.entries(entities).forEach(([key, entity]) => {
         const element = document.querySelector("#entity-" + key);
-        const newPosition = adjustAbs({x: element.dataset.x, y: element.dataset.y}, oldHeight, config.height);
+        const newPosition = adjustAbs({ x: element.dataset.x, y: element.dataset.y }, oldHeight, config.height);
         element.dataset.x = newPosition.x;
         element.dataset.y = newPosition.y;
     });

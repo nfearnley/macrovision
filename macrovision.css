@@ -28,6 +28,7 @@ body {
     -moz-user-drag: none;
     -o-user-drag: none;
     transform: translate(-50%, -100%);
+    pointer-events: fill;
 }
 
 .selected {
