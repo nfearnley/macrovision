@@ -181,13 +181,13 @@ function makeEntity() {
     return entityTemplate;
 }
 
-function clickDown(e) {
-    clicked = e.target;
-    const rect = e.target.getBoundingClientRect();
+function clickDown(target, x, y) {
+    clicked = target;
+    const rect = target.getBoundingClientRect();
     let entX = document.querySelector("#entities").getBoundingClientRect().x;
     let entY = document.querySelector("#entities").getBoundingClientRect().y;
-    dragOffsetX = e.clientX - rect.left + entX - rect.width / 2;
-    dragOffsetY = e.clientY - rect.top + entY - rect.height;
+    dragOffsetX = x - rect.left + entX - rect.width / 2;
+    dragOffsetY = y - rect.top + entY - rect.height;
     clickTimeout = setTimeout(() => { dragging = true }, 200)
 }
 
@@ -311,33 +311,40 @@ function testClick(event) {
         }));
         target.style.display = oldDisplay;
     } else {
-        clickDown(event);
+        clickDown(target.parentElement, event.clientX, event.clientY);
     }
 }
 
 function displayEntity(entity, view, x, y) {
-    const location = entity.location;
+    const box = document.createElement("div");
+    box.classList.add("entity-box");
 
     const img = document.createElement("img");
-    img.src = "./man.svg"
-    img.classList.add("entity");
+    img.classList.add("entity-image");
+    const nameTag = document.createElement("div");
+    nameTag.classList.add("entity-name");
+    nameTag.innerText = entity.name;
+    box.appendChild(img);
+    box.appendChild(nameTag);
 
-    img.dataset.x = x;
-    img.dataset.y = y;
+    img.src = "./man.svg"
+
+    box.dataset.x = x;
+    box.dataset.y = y;
 
     img.addEventListener("mousedown", e => { testClick(e); e.stopPropagation() });
 
-    img.id = "entity-" + entityIndex;
-    img.dataset.key = entityIndex;
-    img.dataset.view = view;
+    box.id = "entity-" + entityIndex;
+    box.dataset.key = entityIndex;
+    box.dataset.view = view;
 
     entities[entityIndex] = entity;
 
     entityIndex += 1;
 
     const world = document.querySelector("#entities");
-    world.appendChild(img);
-    updateEntityElement(entity, img);
+    world.appendChild(box);
+    updateEntityElement(entity, box);
 }
 
 document.addEventListener("DOMContentLoaded", () => {

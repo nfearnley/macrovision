@@ -18,9 +18,10 @@ body {
     font-family: 'Coda', cursive;
 }
 
-.entity {
+.entity-box {
     position: absolute;
     --height: 100px;
+    max-height: var(--height);
     height: var(--height);
     text-align: center;
     -webkit-user-drag: none;
@@ -28,7 +29,25 @@ body {
     -moz-user-drag: none;
     -o-user-drag: none;
     transform: translate(-50%, -100%);
-    pointer-events: fill;
+    pointer-events: none;
+}
+
+.entity-image {
+    position: absolute;
+    height: 100%;
+    pointer-events: auto;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+.entity-name {
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    font-size: 24px;
+    pointer-events: none
 }
 
 .selected {
