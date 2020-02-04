@@ -83,7 +83,8 @@ function drawScale() {
     }
 
     function drawTick(/** @type {CanvasRenderingContext2D} */ ctx, x, y, value) {
-        const oldStyle = ctx.strokeStyle;
+        const oldStroke = ctx.strokeStyle;
+        const oldFill = ctx.fillStyle;
 
         ctx.beginPath();
         ctx.moveTo(x, y);
@@ -103,11 +104,17 @@ function drawScale() {
         ctx.strokeStyle = "#000000";
         ctx.stroke();
 
-        ctx.beginPath();
-        ctx.fillText(value.format({precision: 3}), x+20, y+20);
+        const oldFont = ctx.font;
+        ctx.font = 'normal 24pt coda';
+        ctx.fillStyle = "#dddddd";
 
-        ctx.strokeStyle = oldStyle;
-    }
+        ctx.beginPath();
+        ctx.fillText(value.format({precision: 3}), x+20, y+35);
+    
+        ctx.font = oldFont;
+        ctx.strokeStyle = oldStroke;
+        ctx.fillStyle = oldFill;
+    }   
     const canvas = document.querySelector("#display");
 
     /** @type {CanvasRenderingContext2D} */
@@ -137,7 +144,6 @@ function drawScale() {
     ctx.moveTo(50, 50);
     ctx.lineTo(50, ctx.canvas.clientHeight - 50);
     ctx.stroke();
-
     ctx.beginPath();
     ctx.moveTo(ctx.canvas.clientWidth - 50, 50);
     ctx.lineTo(ctx.canvas.clientWidth - 50, ctx.canvas.clientHeight - 50);
