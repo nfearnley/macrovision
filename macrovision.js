@@ -183,7 +183,27 @@ function makeEntity() {
                         type: "mass",
                         base: math.unit(80, "kg")
                     }
-                }
+                },
+                image: "./man.svg",
+                name: "Body"
+            },
+            pepper: {
+                attributes: {
+                    height: {
+                        name: "Height",
+                        power: 1,
+                        type: "length",
+                        base: math.unit(50, "centimeter")
+                    },
+                    weight: {
+                        name: "Weight",
+                        power: 3,
+                        type: "mass",
+                        base: math.unit(1, "kg")
+                    }
+                },
+                image: "./pepper.png",
+                name: "Pepper"
             }
         },
         init: function () {
@@ -243,6 +263,7 @@ function deselect() {
         selected.classList.remove("selected");
     }
     selected = null;
+    clearViewList();
     clearEntityOptions();
     clearViewOptions();
 }
@@ -255,6 +276,7 @@ function select(target) {
     selected.classList.add("selected");
 
     entityInfo(selectedEntity, target.dataset.view);
+    configViewList(selectedEntity, target.dataset.view);
     configEntityOptions(selectedEntity);
     configViewOptions(selectedEntity, target.dataset.view);
 }
@@ -263,6 +285,33 @@ function entityInfo(entity, view) {
     document.querySelector("#entity-name").innerText = "Name: " + entity.name;
     document.querySelector("#entity-author").innerText = "Author: " + entity.author;
     document.querySelector("#entity-height").innerText = "Height: " + entity.views[view].height.format({ precision: 3 });
+}
+
+function configViewList(entity, selectedView) {
+    const list = document.querySelector("#entity-view");
+    
+    list.innerHTML = "";
+
+    list.style.display = "block";
+
+    console.log
+    Object.keys(entity.views).forEach(view => {
+        const option = document.createElement("option");
+        option.innerText = entity.views[view].name;
+        option.value = view;
+
+        if (view === selectedView) {
+            option.selected = true;
+        }
+        list.appendChild(option);
+    });
+}
+
+function clearViewList() {
+    const list = document.querySelector("#entity-view");
+    
+    list.innerHTML = "";
+    list.style.display = "none";
 }
 
 function configEntityOptions(entity) {
@@ -428,7 +477,7 @@ function displayEntity(entity, view, x, y) {
     box.appendChild(img);
     box.appendChild(nameTag);
 
-    img.src = "./man.svg"
+    img.src = entity.views[view].image
 
     box.dataset.x = x;
     box.dataset.y = y;
@@ -471,6 +520,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     world.addEventListener("mousedown", e => deselect());
     document.addEventListener("mouseup", e => clickUp());
+
+    document.querySelector("#entity-view").addEventListener("input", e => {
+        console.log(e.target.value)
+        selected.dataset.view = e.target.value
+        selected.querySelector(".entity-image").src = entities[selected.dataset.key].views[e.target.value].image;
+        updateSizes();
+    });
+
+    clearViewList();
 });
 
 window.addEventListener("resize", () => {
