@@ -422,14 +422,14 @@ function configViewOptions(entity, view) {
             entity.views[view][key] = math.unit(input.value, select.value);
             updateSizes();
             updateEntityOptions(entity, view);
-            updateViewOptions(entity, view);
+            updateViewOptions(entity, view, key);
         });
 
         select.addEventListener("input", e => {
             entity.views[view][key] = math.unit(input.value, select.value);
             updateSizes();
             updateEntityOptions(entity, view);
-            updateViewOptions(entity, view);
+            updateViewOptions(entity, view, key);
         });
 
         row.appendChild(input);
@@ -438,14 +438,17 @@ function configViewOptions(entity, view) {
     
 }
 
-function updateViewOptions(entity, view) {
+function updateViewOptions(entity, view, changed) {
     Object.entries(entity.views[view].attributes).forEach(([key, val]) => {
-        const input = document.querySelector("#options-view-" + key + "-input");
-        const select = document.querySelector("#options-view-" + key + "-select");
-        const currentUnit = select.value;
-        const convertedAmount = entity.views[view][key].to(currentUnit);
-        console.log(convertedAmount);
-        input.value = convertedAmount.value;
+        if (key != changed) {
+            const input = document.querySelector("#options-view-" + key + "-input");
+            const select = document.querySelector("#options-view-" + key + "-select");
+            const currentUnit = select.value;
+            const convertedAmount = entity.views[view][key].to(currentUnit);
+            console.log(convertedAmount);
+            input.value = math.round(convertedAmount.value, 5);
+        }
+        
     });
 }
 
