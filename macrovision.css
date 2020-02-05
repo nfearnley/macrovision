@@ -28,7 +28,6 @@ body {
     -khtml-user-drag: none;
     -moz-user-drag: none;
     -o-user-drag: none;
-    transform: translate(-50%, -100%);
     pointer-events: none;
 }
 
@@ -40,12 +39,14 @@ body {
     -khtml-user-drag: none;
     -moz-user-drag: none;
     -o-user-drag: none;
+    transform: translate(-50%, -100%);
 }
 
 .entity-name {
     position: absolute;
-    top: -25%;
-    left: 50%;
+    top: -100%;
+    left: 0%;
+    transform: translate(-50%, -36px);
     font-size: 24px;
     pointer-events: none
 }

@@ -239,8 +239,8 @@ function clickDown(target, x, y) {
     const rect = target.getBoundingClientRect();
     let entX = document.querySelector("#entities").getBoundingClientRect().x;
     let entY = document.querySelector("#entities").getBoundingClientRect().y;
-    dragOffsetX = x - rect.left + entX - rect.width / 2;
-    dragOffsetY = y - rect.top + entY - rect.height;
+    dragOffsetX = x - rect.left + entX;
+    dragOffsetY = y - rect.top + entY;
     clickTimeout = setTimeout(() => { dragging = true }, 200)
 }
 
