@@ -530,6 +530,8 @@ function displayEntity(entity, view, x, y) {
     bottomName.id = "bottom-name-" + entityIndex;
     bottomName.innerText = entity.name;
 
+    bottomName.addEventListener("click", () => select(box));
+
     world.appendChild(bottomName);
     entityIndex += 1;
 
