@@ -75,7 +75,8 @@ function updateEntityElement(entity, element) {
 
     const bottomName = document.querySelector("#bottom-name-" + element.dataset.key);
 
-    bottomName.style.left = position.x + "px";
+    let entX = document.querySelector("#entities").getBoundingClientRect().x;
+    bottomName.style.left = position.x + entX + "px";
     bottomName.style.top = "95vh";
     bottomName.innerText = entity.name;
 }
