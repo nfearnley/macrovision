@@ -18,6 +18,10 @@ const unitChoices = {
         "feet",
         "miles",
     ],
+    area: [
+        "cm^2",
+        "meters^2"
+    ],
     mass: [
         "kilograms"
     ]
@@ -179,35 +183,41 @@ function makeFen() {
                     name: "Height",
                     power: 1,
                     type: "length",
-                    base: math.unit(1, "meter")
+                    base: math.unit(2.2428, "meter")
                 },
                 weight: {
                     name: "Weight",
                     power: 3,
                     type: "mass",
-                    base: math.unit(80, "kg")
+                    base: math.unit(124.738, "kg")
                 }
             },
-            image: "./silhouette.png",
+            image: "./media/characters/fen/back.png",
             name: "Body"
         },
-        pepper: {
+        paw: {
             attributes: {
                 height: {
-                    name: "Height",
+                    name: "Length",
                     power: 1,
                     type: "length",
-                    base: math.unit(50, "centimeter")
+                    base: math.unit(20, "centimeter")
                 },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(1, "kg")
+                width: {
+                    name: "Length",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(20, "centimeter")
+                },
+                area: {
+                    name: "Area",
+                    power: 2,
+                    type: "area",
+                    base: math.unit(0.04, "meter^2")
                 }
             },
-            image: "./pepper.png",
-            name: "Pepper"
+            image: "./media/characters/generic/paw.svg",
+            name: "Paw"
         }
     };
 
@@ -552,12 +562,15 @@ function displayEntity(entity, view, x, y) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    for (let x = 0; x < 5; x++) {
+    for (let x = 0; x < 1; x++) {
         const entity = makeFen();
         const x = 0.25 + Math.random() * 0.5;
-        const y = 0.25 + Math.random() * 0.5;
+        const y = 1;
         displayEntity(entity, "body", x, y);
+        displayEntity(makeBuilding(), "building", 1 - x, 1);
     }
+
+
     document.querySelector("body").appendChild(testCtx.canvas);
 
     updateSizes();
