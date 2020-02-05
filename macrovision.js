@@ -14,7 +14,9 @@ let altHeld = false;
 const unitChoices = {
     length: [
         "meters",
-        "kilometers"
+        "kilometers",
+        "feet",
+        "miles",
     ],
     mass: [
         "kilograms"
@@ -169,49 +171,54 @@ function drawScale() {
     drawTicks(ctx, pixelsPer, heightPer);
 }
 
-function makeEntity() {
-    const entityTemplate = {
-        name: "",
-        author: "",
-        scale: 1,
-        views: {
-            body: {
-                attributes: {
-                    height: {
-                        name: "Height",
-                        power: 1,
-                        type: "length",
-                        base: math.unit(1, "meter")
-                    },
-                    weight: {
-                        name: "Weight",
-                        power: 3,
-                        type: "mass",
-                        base: math.unit(80, "kg")
-                    }
+function makeFen() {
+    const views = {
+        body: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(1, "meter")
                 },
-                image: "./silhouette.png",
-                name: "Body"
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(80, "kg")
+                }
             },
-            pepper: {
-                attributes: {
-                    height: {
-                        name: "Height",
-                        power: 1,
-                        type: "length",
-                        base: math.unit(50, "centimeter")
-                    },
-                    weight: {
-                        name: "Weight",
-                        power: 3,
-                        type: "mass",
-                        base: math.unit(1, "kg")
-                    }
-                },
-                image: "./pepper.png",
-                name: "Pepper"
-            }
+            image: "./silhouette.png",
+            name: "Body"
         },
+        pepper: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(50, "centimeter")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(1, "kg")
+                }
+            },
+            image: "./pepper.png",
+            name: "Pepper"
+        }
+    };
+
+    return makeEntity("Fen", "Fen", views);
+}
+function makeEntity(name, author, views) {
+    const entityTemplate = {
+        name: name,
+        author: author,
+        scale: 1,
+        views: views,
         init: function () {
             Object.values(this.views).forEach(view => {
                 view.parent = this;
@@ -546,9 +553,7 @@ function displayEntity(entity, view, x, y) {
 
 document.addEventListener("DOMContentLoaded", () => {
     for (let x = 0; x < 5; x++) {
-        const entity = makeEntity();
-        entity.name = "Dude";
-        entity.author = "Fen"
+        const entity = makeFen();
         const x = 0.25 + Math.random() * 0.5;
         const y = 0.25 + Math.random() * 0.5;
         displayEntity(entity, "body", x, y);
