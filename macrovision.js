@@ -403,6 +403,8 @@ function configViewOptions(entity, view) {
         const input = document.createElement("input");
         input.classList.add("options-field-numeric");
         input.id = "options-view-" + key + "-input";
+        input.setAttribute("type", "number");
+        input.setAttribute("min", 1);
 
         input.value = entity.views[view][key].value;
 
