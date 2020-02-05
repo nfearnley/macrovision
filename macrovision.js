@@ -184,7 +184,7 @@ function makeEntity() {
                         base: math.unit(80, "kg")
                     }
                 },
-                image: "./man.svg",
+                image: "./silhouette.png",
                 name: "Body"
             },
             pepper: {
@@ -277,7 +277,7 @@ function select(target) {
 
     entityInfo(selectedEntity, target.dataset.view);
     configViewList(selectedEntity, target.dataset.view);
-    configEntityOptions(selectedEntity);
+    configEntityOptions(selectedEntity, target.dataset.view);
     configViewOptions(selectedEntity, target.dataset.view);
 }
 
@@ -313,7 +313,7 @@ function clearViewList() {
     list.style.display = "none";
 }
 
-function configEntityOptions(entity) {
+function configEntityOptions(entity, view) {
     const holder = document.querySelector("#options-entity");
 
     holder.innerHTML = "";
@@ -327,10 +327,13 @@ function configEntityOptions(entity) {
 
     const scaleInput = document.createElement("input");
     scaleInput.classList.add("options-field-numeric");
+    scaleInput.id = "options-entity-scale";
 
     scaleInput.addEventListener("input", e => {
         entity.scale = e.target.value;
         updateSizes();
+        updateEntityOptions(entity, view);
+        updateViewOptions(entity, view);
     });
 
     scaleInput.setAttribute("min", 1);
@@ -361,9 +364,11 @@ function configEntityOptions(entity) {
 
     holder.appendChild(nameLabel);
     holder.appendChild(nameRow);
+}
 
-
-
+function updateEntityOptions(entity, view) {
+    const scaleInput = document.querySelector("#options-entity-scale");
+    scaleInput.value = entity.scale;
 }
 
 function clearEntityOptions() {
@@ -391,35 +396,52 @@ function configViewOptions(entity, view) {
 
         const input = document.createElement("input");
         input.classList.add("options-field-numeric");
+        input.id = "options-view-" + key + "-input";
 
         input.value = entity.views[view][key].value;
 
-        const unit = document.createElement("select");
+        const select = document.createElement("select");
+        select.id = "options-view-" + key + "-select"
 
         unitChoices[val.type].forEach(name => {
             const option = document.createElement("option");
             option.innerText = name;
-            unit.appendChild(option);
+            select.appendChild(option);
         });
         
 
         input.addEventListener("input", e => {
-            entity.views[view][key] = math.unit(input.value, unit.value);
+            entity.views[view][key] = math.unit(input.value, select.value);
             updateSizes();
+            updateEntityOptions(entity, view);
+            updateViewOptions(entity, view);
         });
 
-        unit.addEventListener("input", e => {
-            entity.views[view][key] = math.unit(input.value, unit.value);
+        select.addEventListener("input", e => {
+            entity.views[view][key] = math.unit(input.value, select.value);
             updateSizes();
+            updateEntityOptions(entity, view);
+            updateViewOptions(entity, view);
         });
 
         row.appendChild(input);
-        row.appendChild(unit);
+        row.appendChild(select);
     });
     
 }
 
-function clearViewOptions(entity, view) {
+function updateViewOptions(entity, view) {
+    Object.entries(entity.views[view].attributes).forEach(([key, val]) => {
+        const input = document.querySelector("#options-view-" + key + "-input");
+        const select = document.querySelector("#options-view-" + key + "-select");
+        const currentUnit = select.value;
+        const convertedAmount = entity.views[view][key].to(currentUnit);
+        console.log(convertedAmount);
+        input.value = convertedAmount.value;
+    });
+}
+
+function clearViewOptions() {
     const holder = document.querySelector("#options-view");
 
     holder.innerHTML = "";
