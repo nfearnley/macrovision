@@ -336,6 +336,14 @@ function clearViewList() {
     list.style.display = "none";
 }
 
+function updateWorldOptions(entity, view) {
+    const heightInput = document.querySelector("#options-height-value");
+    const heightSelect = document.querySelector("#options-height-unit");
+
+    const converted = config.height.to(heightSelect.value);
+    
+    heightInput.value = math.round(converted.value, 3);
+}
 function configEntityOptions(entity, view) {
     const holder = document.querySelector("#options-entity");
 
@@ -570,7 +578,15 @@ document.addEventListener("DOMContentLoaded", () => {
         displayEntity(makeBuilding(), "building", 1 - x, 1);
     }
 
+    window.addEventListener("wheel", e => {
+        console.log(e);
 
+        const dir = e.deltaY < 0 ? 0.9 : 1.1;
+
+        config.height = math.multiply(config.height, dir);
+        updateSizes();
+        updateWorldOptions();
+    })
     document.querySelector("body").appendChild(testCtx.canvas);
 
     updateSizes();
