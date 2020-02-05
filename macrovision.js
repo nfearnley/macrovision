@@ -435,6 +435,7 @@ testCanvas.id = "test-canvas";
 
 const testCtx = testCanvas.getContext("2d");
 function testClick(event) {
+    console.log(event)
 
     const target = event.target;
     // Get click coordinates
@@ -455,7 +456,7 @@ function testClick(event) {
         const oldDisplay = target.style.display;
         target.style.display = "none";
         const newTarget = document.elementFromPoint(event.clientX, event.clientY);
-        newTarget.dispatchEvent(new MouseEvent("mousedown", {
+        newTarget.dispatchEvent(new MouseEvent(event.type, {
             "clientX": event.clientX,
             "clientY": event.clientY
         }));
@@ -483,6 +484,13 @@ function displayEntity(entity, view, x, y) {
     box.dataset.y = y;
 
     img.addEventListener("mousedown", e => { testClick(e); e.stopPropagation() });
+    img.addEventListener("touchstart", e => { 
+        const fakeEvent = {
+            target: e.target,
+            clientX: e.touches[0].clientX,
+            clientY: e.touches[0].clientY
+        };
+        testClick(fakeEvent);});
 
     box.id = "entity-" + entityIndex;
     box.dataset.key = entityIndex;
@@ -520,6 +528,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     world.addEventListener("mousedown", e => deselect());
     document.addEventListener("mouseup", e => clickUp());
+    document.addEventListener("touchend", e => clickUp());
 
     document.querySelector("#entity-view").addEventListener("input", e => {
         console.log(e.target.value)
@@ -538,6 +547,19 @@ window.addEventListener("resize", () => {
 document.addEventListener("mousemove", (e) => {
     if (clicked) {
         const position = snapRel(abs2rel({ x: e.clientX - dragOffsetX, y: e.clientY - dragOffsetY }));
+        clicked.dataset.x = position.x;
+        clicked.dataset.y = position.y;
+        updateEntityElement(entities[clicked.dataset.key], clicked);
+    }
+});
+
+document.addEventListener("touchmove", (e) => {
+    if (clicked) {
+        e.preventDefault();
+        let x = e.touches[0].clientX;
+        let y = e.touches[0].clientY;
+
+        const position = snapRel(abs2rel({ x: x - dragOffsetX, y: y - dragOffsetY }));
         clicked.dataset.x = position.x;
         clicked.dataset.y = position.y;
         updateEntityElement(entities[clicked.dataset.key], clicked);
