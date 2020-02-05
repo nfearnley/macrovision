@@ -73,6 +73,11 @@ function updateEntityElement(entity, element) {
 
     element.querySelector(".entity-name").innerText = entity.name;
 
+    const bottomName = document.querySelector("#bottom-name-" + element.dataset.key);
+
+    bottomName.style.left = position.x + "px";
+    bottomName.style.top = "95vh";
+    bottomName.innerText = entity.name;
 }
 
 function updateSizes() {
@@ -517,10 +522,17 @@ function displayEntity(entity, view, x, y) {
 
     entities[entityIndex] = entity;
 
-    entityIndex += 1;
-
     const world = document.querySelector("#entities");
     world.appendChild(box);
+
+    const bottomName = document.createElement("div");
+    bottomName.classList.add("bottom-name");
+    bottomName.id = "bottom-name-" + entityIndex;
+    bottomName.innerText = entity.name;
+
+    world.appendChild(bottomName);
+    entityIndex += 1;
+
     updateEntityElement(entity, box);
 }
 

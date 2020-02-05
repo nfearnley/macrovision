@@ -109,8 +109,8 @@ body {
 
 #world {
     flex: 9 0 85vw;
-    min-height: 90vh;
-    max-height: 90vh;
+    min-height: 85vh;
+    max-height: 85vh;
     overflow: hidden;
 }
 
@@ -164,4 +164,12 @@ body {
 body #test-canvas {
     position: fixed;
     top: 100vh;
+}
+
+.bottom-name {
+    text-align: center;
+    position: fixed;
+    width: 75px;
+    height: 50px;
+    transform: translate(125%, 0%);
 }
