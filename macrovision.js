@@ -553,6 +553,8 @@ document.addEventListener("DOMContentLoaded", () => {
         selected.dataset.view = e.target.value
         selected.querySelector(".entity-image").src = entities[selected.dataset.key].views[e.target.value].image;
         updateSizes();
+        updateEntityOptions(entities[selected.dataset.key], e.target.value);
+        updateViewOptions(entities[selected.dataset.key], e.target.value);
     });
 
     clearViewList();
