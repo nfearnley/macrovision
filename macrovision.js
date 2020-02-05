@@ -294,7 +294,6 @@ function configViewList(entity, selectedView) {
 
     list.style.display = "block";
 
-    console.log
     Object.keys(entity.views).forEach(view => {
         const option = document.createElement("option");
         option.innerText = entity.views[view].name;
@@ -435,8 +434,6 @@ testCanvas.id = "test-canvas";
 
 const testCtx = testCanvas.getContext("2d");
 function testClick(event) {
-    console.log(event)
-
     const target = event.target;
     // Get click coordinates
     var x = event.clientX - target.getBoundingClientRect().x,
@@ -531,7 +528,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("touchend", e => clickUp());
 
     document.querySelector("#entity-view").addEventListener("input", e => {
-        console.log(e.target.value)
         selected.dataset.view = e.target.value
         selected.querySelector(".entity-image").src = entities[selected.dataset.key].views[e.target.value].image;
         updateSizes();
@@ -564,7 +560,7 @@ document.addEventListener("touchmove", (e) => {
         clicked.dataset.y = position.y;
         updateEntityElement(entities[clicked.dataset.key], clicked);
     }
-});
+}, {passive: false});
 
 function updateWorldHeight() {
     const value = Math.max(1, document.querySelector("#options-height-value").value);
