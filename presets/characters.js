@@ -56,6 +56,7 @@ function makeFen() {
     entity.views.body.height = math.unit(1, "km");
     return entity;
 }
+
 function makeMan() {
     const views = {
         body: {
@@ -81,4 +82,11 @@ function makeMan() {
     };
 
     return makeEntity("Man", "Fen", views);
+}
+
+function makeCharacters() {
+    const results = [];
+    results.push(makeFen());
+    results.push(makeMan());
+    return results;
 }

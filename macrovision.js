@@ -32,6 +32,10 @@ const config = {
     maxLineSize: 250
 }
 
+const availableEntities = {
+
+}
+
 const entities = {
 
 }
@@ -481,6 +485,8 @@ function testClick(event) {
 
 function removeEntity(element) {
     delete entities[element.dataset.key];
+    const bottomName = document.querySelector("#bottom-name-" + element.dataset.key);
+    bottomName.parentElement.removeChild(bottomName);
     element.parentElement.removeChild(element);
 }
 function displayEntity(entity, view, x, y) {
@@ -581,7 +587,37 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     clearViewList();
+
+    prepareEntities();
 });
+
+function prepareEntities() {
+    availableEntities["buildings"] = makeBuildings();
+    availableEntities["characters"] = makeCharacters();
+
+    const holder = document.querySelector("#menubar");
+    Object.entries(availableEntities).forEach(([category, entityList]) => {
+        const select = document.createElement("select");
+        select.id = "create-entity-" + category;
+        for (let i = 0; i < entityList.length; i++) {
+            const entity = entityList[i];
+            const option = document.createElement("option");
+            option.value = i;
+            option.innerText = entity.name;
+            select.appendChild(option);
+        };
+
+        const button = document.createElement("button");
+
+        button.innerText = "Create " + category;
+        button.addEventListener("click", e => {
+            displayEntity(entityList[select.value], entityList[select.value].defaultView, 0.5, 0.5);
+        });
+
+        holder.appendChild(select);
+        holder.appendChild(button);
+    });
+}
 
 window.addEventListener("resize", () => {
     updateSizes();
