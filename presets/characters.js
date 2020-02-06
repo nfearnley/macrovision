@@ -52,7 +52,9 @@ function makeFen() {
         }
     };
 
-    return makeEntity("Fen", "Fen", views);
+    const entity = makeEntity("Fen", "Fen", views);
+    entity.views.body.height = math.unit(1, "km");
+    return entity;
 }
 function makeMan() {
     const views = {

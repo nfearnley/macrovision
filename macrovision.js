@@ -27,7 +27,7 @@ const unitChoices = {
     ]
 }
 const config = {
-    height: math.unit(10, "meters"),
+    height: math.unit(1500, "meters"),
     minLineSize: 50,
     maxLineSize: 250
 }
@@ -418,7 +418,6 @@ function updateViewOptions(entity, view, changed) {
             const select = document.querySelector("#options-view-" + key + "-select");
             const currentUnit = select.value;
             const convertedAmount = entity.views[view][key].to(currentUnit);
-            console.log(convertedAmount);
             input.value = math.round(convertedAmount.value, 5);
         }
         
@@ -528,7 +527,6 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     window.addEventListener("wheel", e => {
-        console.log(e);
 
         const dir = e.deltaY < 0 ? 0.9 : 1.1;
 
