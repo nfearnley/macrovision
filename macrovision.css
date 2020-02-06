@@ -43,12 +43,17 @@ body {
 }
 
 .entity-name {
+    display: none;
     position: absolute;
     top: -100%;
     left: 0%;
     transform: translate(-50%, -36px);
     font-size: 24px;
     pointer-events: none
+}
+
+body.toggle-entity-name .entity-name {
+    display: inline;
 }
 
 .entity-box.selected > img {
@@ -170,9 +175,14 @@ body #test-canvas {
 }
 
 .bottom-name {
+    display: none;
     text-align: center;
     position: fixed;
     width: 75px;
     height: 50px;
     transform: translate(-50%, 0%);
+}
+
+body.toggle-bottom-name .bottom-name {
+    display: inline;
 }

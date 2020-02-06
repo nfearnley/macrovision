@@ -175,54 +175,6 @@ function drawScale() {
     drawTicks(ctx, pixelsPer, heightPer);
 }
 
-function makeFen() {
-    const views = {
-        body: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(2.2428, "meter")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(124.738, "kg")
-                }
-            },
-            image: "./media/characters/fen/back.png",
-            name: "Body"
-        },
-        paw: {
-            attributes: {
-                height: {
-                    name: "Length",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(20, "centimeter")
-                },
-                width: {
-                    name: "Length",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(20, "centimeter")
-                },
-                area: {
-                    name: "Area",
-                    power: 2,
-                    type: "area",
-                    base: math.unit(0.04, "meter^2")
-                }
-            },
-            image: "./media/characters/generic/paw.svg",
-            name: "Paw"
-        }
-    };
-
-    return makeEntity("Fen", "Fen", views);
-}
 function makeEntity(name, author, views) {
     const entityTemplate = {
         name: name,
@@ -230,8 +182,11 @@ function makeEntity(name, author, views) {
         scale: 1,
         views: views,
         init: function () {
-            Object.values(this.views).forEach(view => {
+            Object.entries(this.views).forEach(([viewKey, view]) => {
                 view.parent = this;
+                if (this.defaultView === undefined) {
+                    this.defaultView = viewKey;
+                }
 
                 Object.entries(view.attributes).forEach(([key, val]) => {
                     Object.defineProperty(
@@ -298,16 +253,9 @@ function select(target) {
 
     selected.classList.add("selected");
 
-    entityInfo(selectedEntity, target.dataset.view);
     configViewList(selectedEntity, target.dataset.view);
     configEntityOptions(selectedEntity, target.dataset.view);
     configViewOptions(selectedEntity, target.dataset.view);
-}
-
-function entityInfo(entity, view) {
-    document.querySelector("#entity-name").innerText = "Name: " + entity.name;
-    document.querySelector("#entity-author").innerText = "Author: " + entity.author;
-    document.querySelector("#entity-height").innerText = "Height: " + entity.views[view].height.format({ precision: 3 });
 }
 
 function configViewList(entity, selectedView) {
@@ -533,7 +481,7 @@ function displayEntity(entity, view, x, y) {
     box.appendChild(img);
     box.appendChild(nameTag);
 
-    img.src = entity.views[view].image
+    img.src = entity.views[view].image.source;
 
     box.dataset.x = x;
     box.dataset.y = y;
@@ -570,13 +518,14 @@ function displayEntity(entity, view, x, y) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    for (let x = 0; x < 1; x++) {
-        const entity = makeFen();
-        const x = 0.25 + Math.random() * 0.5;
-        const y = 1;
-        displayEntity(entity, "body", x, y);
-        displayEntity(makeBuilding(), "building", 1 - x, 1);
-    }
+    const stuff = [makeFen()].concat(makeBuildings())
+
+    let x = 0.2;
+
+    stuff.forEach(entity => {
+        displayEntity(entity, entity.defaultView, x, 1);
+        x += 0.7 / stuff.length;
+    })
 
     window.addEventListener("wheel", e => {
         console.log(e);
@@ -605,7 +554,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector("#entity-view").addEventListener("input", e => {
         selected.dataset.view = e.target.value
-        selected.querySelector(".entity-image").src = entities[selected.dataset.key].views[e.target.value].image;
+        selected.querySelector(".entity-image").src = entities[selected.dataset.key].views[e.target.value].image.source;
         updateSizes();
         updateEntityOptions(entities[selected.dataset.key], e.target.value);
         updateViewOptions(entities[selected.dataset.key], e.target.value);
