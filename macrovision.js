@@ -222,12 +222,23 @@ function clickDown(target, x, y) {
     clickTimeout = setTimeout(() => { dragging = true }, 200)
 }
 
-function clickUp() {
+// could we make this actually detect the menu area?
+
+function hoveringInDeleteArea(e) {
+    return e.clientY < document.body.clientHeight / 10;
+}
+
+function clickUp(e) {
     clearTimeout(clickTimeout);
 
     if (clicked) {
         if (dragging) {
             dragging = false;
+
+            if (hoveringInDeleteArea(e)) {
+                removeEntity(clicked);
+                document.querySelector("#menubar").classList.remove("hover-delete");
+            }
         } else {
             select(clicked);
         }
@@ -468,6 +479,10 @@ function testClick(event) {
     }
 }
 
+function removeEntity(element) {
+    delete entities[element.dataset.key];
+    element.parentElement.removeChild(element);
+}
 function displayEntity(entity, view, x, y) {
     const box = document.createElement("div");
     box.classList.add("entity-box");
@@ -499,6 +514,7 @@ function displayEntity(entity, view, x, y) {
     box.dataset.view = view;
 
     entities[entityIndex] = entity;
+    entity.index = entityIndex;
 
     const world = document.querySelector("#entities");
     world.appendChild(box);
@@ -547,8 +563,14 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     world.addEventListener("mousedown", e => deselect());
-    document.addEventListener("mouseup", e => clickUp());
-    document.addEventListener("touchend", e => clickUp());
+    document.addEventListener("mouseup", e => clickUp(e));
+    document.addEventListener("touchend", e => { 
+        const fakeEvent = {
+            target: e.target,
+            clientX: e.touches[0].clientX,
+            clientY: e.touches[0].clientY
+        };
+        clickUp(fakeEvent);});
 
     document.querySelector("#entity-view").addEventListener("input", e => {
         selected.dataset.view = e.target.value
@@ -571,6 +593,12 @@ document.addEventListener("mousemove", (e) => {
         clicked.dataset.x = position.x;
         clicked.dataset.y = position.y;
         updateEntityElement(entities[clicked.dataset.key], clicked);
+
+        if (hoveringInDeleteArea(e)) {
+            document.querySelector("#menubar").classList.add("hover-delete");
+        } else {
+            document.querySelector("#menubar").classList.remove("hover-delete");
+        }
     }
 });
 
