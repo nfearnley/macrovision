@@ -501,6 +501,7 @@ function displayEntity(entity, view, x, y) {
     box.appendChild(img);
     box.appendChild(nameTag);
 
+    console.log(entity)
     img.src = entity.views[view].image.source;
 
     box.dataset.x = x;
@@ -539,12 +540,13 @@ function displayEntity(entity, view, x, y) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    const stuff = [makeFen()].concat(makeBuildings())
+    const stuff = [makeFen].concat( makeBuildings().map(x => x.constructor))
 
+    console.log(stuff)
     let x = 0.2;
 
     stuff.forEach(entity => {
-        displayEntity(entity, entity.defaultView, x, 1);
+        displayEntity(entity(), entity().defaultView, x, 1);
         x += 0.7 / stuff.length;
     })
 
@@ -611,7 +613,8 @@ function prepareEntities() {
 
         button.innerText = "Create " + category;
         button.addEventListener("click", e => {
-            displayEntity(entityList[select.value], entityList[select.value].defaultView, 0.5, 0.5);
+            const newEntity = entityList[select.value].constructor()
+            displayEntity(newEntity, newEntity.defaultView, 0.5, 0.5);
         });
 
         holder.appendChild(select);

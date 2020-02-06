@@ -86,7 +86,13 @@ function makeMan() {
 
 function makeCharacters() {
     const results = [];
-    results.push(makeFen());
-    results.push(makeMan());
+    results.push({
+        name: "Fen",
+        constructor: makeFen
+    });
+    results.push({
+        name: "Normal man",
+        constructor: makeMan
+    });
     return results;
 }
