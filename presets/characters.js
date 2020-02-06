@@ -57,6 +57,56 @@ function makeFen() {
     return entity;
 }
 
+function makeSofia() {
+    const views = {
+        front: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(183, "cm")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(80, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/sofia/front.svg"
+            },
+            name: "Front"
+        },
+        back: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(183, "cm")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(80, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/sofia/back.svg"
+            },
+            name: "Back"
+        }
+
+    };
+
+    const entity = makeEntity("Sofia", "ZakuraTech", views);
+    entity.views.front.height = math.unit(96, "feet");
+    return entity;
+}
+
 function makeMan() {
     const views = {
         body: {
@@ -89,6 +139,10 @@ function makeCharacters() {
     results.push({
         name: "Fen",
         constructor: makeFen
+    });
+    results.push({
+        name: "Sofia",
+        constructor: makeSofia
     });
     results.push({
         name: "Normal man",

@@ -23,3 +23,12 @@ https://commons.wikimedia.org/wiki/File:TallestBuildings.svg
 https://www.furaffinity.net/view/13680521/
 
 * back.svg
+
+## Sofia
+
+https://www.furaffinity.net/user/fauxlacine
+
+https://www.furaffinity.net/view/16704878/
+
+* front.svg
+* back.svg

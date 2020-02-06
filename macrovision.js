@@ -483,6 +483,11 @@ function testClick(event) {
     }
 }
 
+function removeAllEntities() {
+    Object.keys(entities).forEach(key => {
+        removeEntity(document.querySelector("#entity-" + key));
+    });
+}
 function removeEntity(element) {
     delete entities[element.dataset.key];
     const bottomName = document.querySelector("#bottom-name-" + element.dataset.key);
@@ -590,6 +595,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     clearViewList();
 
+    document.querySelector("#menu-clear").addEventListener("click", e => {
+        removeAllEntities();
+    });
     prepareEntities();
 });
 
