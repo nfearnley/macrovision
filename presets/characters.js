@@ -107,6 +107,35 @@ function makeSofia() {
     return entity;
 }
 
+function makeMarch() {
+    const views = {
+        front: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(7, "feet")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(100, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/march/front.svg"
+            },
+            name: "Front"
+        }
+    };
+
+    const entity = makeEntity("March", "March-Dragon", views);
+    entity.views.front.height = math.unit(2.98, "km");
+    return entity;
+}
+
 function makeMan() {
     const views = {
         body: {
@@ -143,6 +172,10 @@ function makeCharacters() {
     results.push({
         name: "Sofia",
         constructor: makeSofia
+    });
+    results.push({
+        name: "March",
+        constructor: makeMarch
     });
     results.push({
         name: "Normal man",
