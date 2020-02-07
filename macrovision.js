@@ -572,16 +572,17 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     document.querySelector("#options-height-unit").addEventListener("input", e => {
-        updateWorldHeight();
+        updateWorldHeight(); 
     })
 
     world.addEventListener("mousedown", e => deselect());
     document.addEventListener("mouseup", e => clickUp(e));
     document.addEventListener("touchend", e => { 
+        console.log(e)
         const fakeEvent = {
             target: e.target,
-            clientX: e.touches[0].clientX,
-            clientY: e.touches[0].clientY
+            clientX: e.changedTouches[0].clientX,
+            clientY: e.changedTouches[0].clientY
         };
         clickUp(fakeEvent);});
 
@@ -655,10 +656,20 @@ document.addEventListener("touchmove", (e) => {
         let x = e.touches[0].clientX;
         let y = e.touches[0].clientY;
 
+        console.log(y)
+
         const position = snapRel(abs2rel({ x: x - dragOffsetX, y: y - dragOffsetY }));
         clicked.dataset.x = position.x;
         clicked.dataset.y = position.y;
         updateEntityElement(entities[clicked.dataset.key], clicked);
+
+        // what a hack
+        // I should centralize this 'fake event' creation...
+        if (hoveringInDeleteArea({clientY: y})) {
+            document.querySelector("#menubar").classList.add("hover-delete");
+        } else {
+            document.querySelector("#menubar").classList.remove("hover-delete");
+        }
     }
 }, {passive: false});
 
