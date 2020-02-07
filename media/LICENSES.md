@@ -40,3 +40,12 @@ https://www.deviantart.com/natsuakai
 https://www.deviantart.com/natsuakai/art/Comm-Big-Guy-558510348
 
 * front.svg
+
+## Okuri
+
+https://twitter.com/Citrinelle
+
+https://www.furaffinity.net/view/34619004/
+
+* front.svg
+* back.svg

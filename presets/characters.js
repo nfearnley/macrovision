@@ -136,6 +136,55 @@ function makeMarch() {
     return entity;
 }
 
+function makeOkuri() {
+    const views = {
+        front: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(7, "feet")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(100, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/okuri/front.svg"
+            },
+            name: "Front"
+        },
+        back: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(7, "feet")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(100, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/okuri/back.svg"
+            },
+            name: "Back"
+        }
+    };
+
+    const entity = makeEntity("Okuri", "OrionMechadragon", views);
+    entity.views.front.height = math.unit(100, "miles");
+    return entity;
+}
+
 function makeMan() {
     const views = {
         body: {
@@ -176,6 +225,10 @@ function makeCharacters() {
     results.push({
         name: "March",
         constructor: makeMarch
+    });
+    results.push({
+        name: "Okuri",
+        constructor: makeOkuri
     });
     results.push({
         name: "Normal man",
