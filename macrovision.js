@@ -456,17 +456,35 @@ const testCtx = testCanvas.getContext("2d");
 function testClick(event) {
     const target = event.target;
     // Get click coordinates
+
+    let w = target.width;
+    let h = target.height;
+    let ratioW = 1, ratioH = 1;
+
+    // Limit the size of the canvas so that very large images don't cause problems)
+    if (w > 4000) {
+        ratioW = w / 4000;
+        w /= ratioW;
+        h /= ratioW;
+    }
+    if (h > 4000) {
+        ratioH = h / 4000;
+        w /= ratioH;
+        h /= ratioH;
+    }
+
+    const ratio = ratioW * ratioH;
+
     var x = event.clientX - target.getBoundingClientRect().x,
         y = event.clientY - target.getBoundingClientRect().y,
-        w = testCtx.canvas.width = target.width,
-        h = testCtx.canvas.height = target.height,
         alpha;
+        testCtx.canvas.width = w;
+        testCtx.canvas.height = h;
 
     // Draw image to canvas
     // and read Alpha channel value
     testCtx.drawImage(target, 0, 0, w, h);
-    alpha = testCtx.getImageData(x, y, 1, 1).data[3]; // [0]R [1]G [2]B [3]A
-
+    alpha = testCtx.getImageData(Math.floor(x / ratio), Math.floor(y / ratio), 1, 1).data[3]; // [0]R [1]G [2]B [3]A
     // If pixel is transparent,
     // retrieve the element underneath and trigger it's click event
     if (alpha === 0) {
