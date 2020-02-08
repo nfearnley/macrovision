@@ -57,3 +57,12 @@ https://www.furaffinity.net/view/34619004/
 
 * front.svg
 * back.svg
+
+## Manny
+
+https://www.furaffinity.net/user/sixsydes
+
+https://www.furaffinity.net/view/16786820/
+
+* front.svg
+* back.svg
