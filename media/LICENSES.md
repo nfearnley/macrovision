@@ -66,3 +66,14 @@ https://www.furaffinity.net/view/16786820/
 
 * front.svg
 * back.svg
+
+## Adake
+
+https://www.furaffinity.net/user/oselotti
+
+https://www.furaffinity.net/view/26253324/
+
+* front-1.svg
+* front-2.svg
+* back.svg
+* kneel.svg

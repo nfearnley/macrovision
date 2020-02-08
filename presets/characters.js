@@ -263,6 +263,95 @@ function makeManny() {
     return entity;
 }
 
+function makeAdake() {
+    const views = {
+        front: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(7, "feet")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(100, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/adake/front-1.svg"
+            },
+            name: "Front"
+        },
+        frontAlt: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(7, "feet")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(100, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/adake/front-2.svg"
+            },
+            name: "Front (Alt)"
+        },
+        back: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(7, "feet")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(100, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/adake/back.svg"
+            },
+            name: "Back"
+        },
+        kneel: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(60, "feet")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(100, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/adake/kneel.svg"
+            },
+            name: "Kneeling"
+        },
+    };
+
+    const entity = makeEntity("Adake", "Dialuca01", views);
+    entity.views.front.height = math.unit(78, "feet");
+    return entity;
+}
+
 function makeMan() {
     const views = {
         body: {
@@ -315,6 +404,10 @@ function makeCharacters() {
     results.push({
         name: "Manny",
         constructor: makeManny
+    });
+    results.push({
+        name: "Adake",
+        constructor: makeAdake
     });
     results.push({
         name: "Normal man",
