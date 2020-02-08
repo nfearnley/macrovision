@@ -122,7 +122,7 @@ body.toggle-entity-name .entity-name {
 #menubar {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     min-height: 10vh;
     min-width: 100vw;
@@ -132,6 +132,18 @@ body.toggle-entity-name .entity-name {
 
 #menubar.hover-delete {
     background: #922;
+}
+
+.menubar-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menubar-group button,
+.menubar-group select {
+    height: 5vh;
 }
 
 .menu-item {
@@ -169,6 +181,12 @@ body.toggle-entity-name .entity-name {
 }
 
 .options-row .options-field-unit {
+    flex: 1;
+    width: 100%;
+    font-size: 150%;
+}
+
+.options-row .options-button {
     flex: 1;
     width: 100%;
     font-size: 150%;

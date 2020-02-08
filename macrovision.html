@@ -20,8 +20,15 @@
 
 <body class="toggle-bottom-name toggle-entity-name">
   <div id="menubar">
-    <button id="menu-clear">Clear</button>
-    <button id="menu-order">Order by height</button>
+    <span class="menubar-group">
+      <button id="menu-clear">Clear</button>
+    </span>
+    <span class="menubar-group">
+      <button id="menu-order-height">Order by height</button>
+    </span>
+    <span class="menubar-group" id="spawners">
+
+    </span>
   </div>
   <div id="main-area">
     <div id="options">
@@ -38,6 +45,9 @@
             <option>feet</option>
             <option>miles</option>
           </select>
+        </div>
+        <div class="options-row">
+          <button class="options-button" id="options-world-fit">Fit to entities</button>
         </div>
       </span>
       <div class="options-header">Entity options</div>

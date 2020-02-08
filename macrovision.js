@@ -518,7 +518,6 @@ function displayEntity(entity, view, x, y) {
     box.appendChild(img);
     box.appendChild(nameTag);
 
-    console.log(entity)
     img.src = entity.views[view].image.source;
 
     box.dataset.x = x;
@@ -560,7 +559,6 @@ function displayEntity(entity, view, x, y) {
 document.addEventListener("DOMContentLoaded", () => {
     const stuff = [makeFen].concat(makeBuildings().map(x => x.constructor))
 
-    console.log(stuff)
     let x = 0.2;
 
     stuff.forEach(entity => {
@@ -591,7 +589,6 @@ document.addEventListener("DOMContentLoaded", () => {
     world.addEventListener("mousedown", e => deselect());
     document.addEventListener("mouseup", e => clickUp(e));
     document.addEventListener("touchend", e => {
-        console.log(e)
         const fakeEvent = {
             target: e.target,
             clientX: e.changedTouches[0].clientX,
@@ -614,7 +611,7 @@ document.addEventListener("DOMContentLoaded", () => {
         removeAllEntities();
     });
 
-    document.querySelector("#menu-order").addEventListener("click", e => {
+    document.querySelector("#menu-order-height").addEventListener("click", e => {
         const order = Object.keys(entities).sort((a, b) => {
             const entA = entities[a];
             const entB = entities[b];
@@ -628,6 +625,8 @@ document.addEventListener("DOMContentLoaded", () => {
         arrangeEntities(order);
     });
 
+    document.querySelector("#options-world-fit").addEventListener("click", fitWorld);
+
     prepareEntities();
 });
 
@@ -635,7 +634,7 @@ function prepareEntities() {
     availableEntities["buildings"] = makeBuildings();
     availableEntities["characters"] = makeCharacters();
 
-    const holder = document.querySelector("#menubar");
+    const holder = document.querySelector("#spawners");
     Object.entries(availableEntities).forEach(([category, entityList]) => {
         const select = document.createElement("select");
         select.id = "create-entity-" + category;
@@ -685,8 +684,6 @@ document.addEventListener("touchmove", (e) => {
         let x = e.touches[0].clientX;
         let y = e.touches[0].clientY;
 
-        console.log(y)
-
         const position = snapRel(abs2rel({ x: x - dragOffsetX, y: y - dragOffsetY }));
         clicked.dataset.x = position.x;
         clicked.dataset.y = position.y;
@@ -702,12 +699,28 @@ document.addEventListener("touchmove", (e) => {
     }
 }, { passive: false });
 
+function fitWorld() {
+    let max = math.unit(0, "meter");
+
+    Object.entries(entities).forEach(([key, entity]) => {
+        const view = document.querySelector("#entity-" + key).dataset.view;
+
+        max = math.max(max, entity.views[view].height);
+    });
+
+    setWorldHeight(config.height, math.multiply(max, 1.1));
+}
+
 function updateWorldHeight() {
     const value = Math.max(1, document.querySelector("#options-height-value").value);
     const unit = document.querySelector("#options-height-unit").value;
     const oldHeight = config.height;
 
-    config.height = math.unit(value + " " + unit)
+    setWorldHeight(oldHeight, math.unit(value, unit));
+}
+
+function setWorldHeight(oldHeight, newHeight) {
+    config.height = newHeight;
 
     Object.entries(entities).forEach(([key, entity]) => {
         const element = document.querySelector("#entity-" + key);
