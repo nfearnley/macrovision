@@ -491,6 +491,7 @@ function testClick(event) {
         const oldDisplay = target.style.display;
         target.style.display = "none";
         const newTarget = document.elementFromPoint(event.clientX, event.clientY);
+        console.log(newTarget);
         newTarget.dispatchEvent(new MouseEvent(event.type, {
             "clientX": event.clientX,
             "clientY": event.clientY
@@ -594,6 +595,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     world.addEventListener("mousedown", e => deselect());
+    document.querySelector("#display").addEventListener("mousedown", deselect);
     document.addEventListener("mouseup", e => clickUp(e));
     document.addEventListener("touchend", e => { 
         console.log(e)
