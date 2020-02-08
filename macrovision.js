@@ -58,17 +58,17 @@ function adjustAbs(coords, oldHeight, newHeight) {
 }
 
 function rel2abs(coords) {
-    const canvasWidth = document.querySelector("#display").clientWidth - 50;
+    const canvasWidth = document.querySelector("#display").clientWidth - 100;
     const canvasHeight = document.querySelector("#display").clientHeight - 50;
 
-    return { x: coords.x * canvasWidth, y: coords.y * canvasHeight };
+    return { x: coords.x * canvasWidth + 50, y: coords.y * canvasHeight };
 }
 
 function abs2rel(coords) {
-    const canvasWidth = document.querySelector("#display").clientWidth - 50;
+    const canvasWidth = document.querySelector("#display").clientWidth - 100;
     const canvasHeight = document.querySelector("#display").clientHeight - 50;
 
-    return { x: coords.x / canvasWidth, y: coords.y / canvasHeight };
+    return { x: (coords.x - 50) / canvasWidth, y: coords.y / canvasHeight };
 }
 
 function updateEntityElement(entity, element) {
@@ -197,10 +197,10 @@ function makeEntity(name, author, views) {
                         view,
                         key,
                         {
-                            get: function() {
+                            get: function () {
                                 return math.multiply(Math.pow(this.parent.scale, this.attributes[key].power), this.attributes[key].base);
                             },
-                            set: function(value) {
+                            set: function (value) {
                                 const newScale = Math.pow(math.divide(value, this.attributes[key].base), 1 / this.attributes[key].power);
                                 this.parent.scale = newScale;
                             }
@@ -275,7 +275,7 @@ function select(target) {
 
 function configViewList(entity, selectedView) {
     const list = document.querySelector("#entity-view");
-    
+
     list.innerHTML = "";
 
     list.style.display = "block";
@@ -294,7 +294,7 @@ function configViewList(entity, selectedView) {
 
 function clearViewList() {
     const list = document.querySelector("#entity-view");
-    
+
     list.innerHTML = "";
     list.style.display = "none";
 }
@@ -304,7 +304,7 @@ function updateWorldOptions(entity, view) {
     const heightSelect = document.querySelector("#options-height-unit");
 
     const converted = config.height.to(heightSelect.value);
-    
+
     heightInput.value = math.round(converted.value, 3);
 }
 function configEntityOptions(entity, view) {
@@ -344,7 +344,7 @@ function configEntityOptions(entity, view) {
 
     const nameRow = document.createElement("div");
     nameRow.classList.add("options-row");
-    
+
     const nameInput = document.createElement("input");
     nameInput.classList.add("options-field-text");
     nameInput.value = entity.name;
@@ -404,7 +404,7 @@ function configViewOptions(entity, view) {
             option.innerText = name;
             select.appendChild(option);
         });
-        
+
 
         input.addEventListener("input", e => {
             entity.views[view][key] = math.unit(input.value, select.value);
@@ -423,7 +423,7 @@ function configViewOptions(entity, view) {
         row.appendChild(input);
         row.appendChild(select);
     });
-    
+
 }
 
 function updateViewOptions(entity, view, changed) {
@@ -435,7 +435,7 @@ function updateViewOptions(entity, view, changed) {
             const convertedAmount = entity.views[view][key].to(currentUnit);
             input.value = math.round(convertedAmount.value, 5);
         }
-        
+
     });
 }
 
@@ -499,6 +499,7 @@ function removeAllEntities() {
         removeEntity(document.querySelector("#entity-" + key));
     });
 }
+
 function removeEntity(element) {
     delete entities[element.dataset.key];
     const bottomName = document.querySelector("#bottom-name-" + element.dataset.key);
@@ -524,13 +525,14 @@ function displayEntity(entity, view, x, y) {
     box.dataset.y = y;
 
     img.addEventListener("mousedown", e => { testClick(e); e.stopPropagation() });
-    img.addEventListener("touchstart", e => { 
+    img.addEventListener("touchstart", e => {
         const fakeEvent = {
             target: e.target,
             clientX: e.touches[0].clientX,
             clientY: e.touches[0].clientY
         };
-        testClick(fakeEvent);});
+        testClick(fakeEvent);
+    });
 
     box.id = "entity-" + entityIndex;
     box.dataset.key = entityIndex;
@@ -556,7 +558,7 @@ function displayEntity(entity, view, x, y) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    const stuff = [makeFen].concat( makeBuildings().map(x => x.constructor))
+    const stuff = [makeFen].concat(makeBuildings().map(x => x.constructor))
 
     console.log(stuff)
     let x = 0.2;
@@ -583,19 +585,20 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     document.querySelector("#options-height-unit").addEventListener("input", e => {
-        updateWorldHeight(); 
+        updateWorldHeight();
     })
 
     world.addEventListener("mousedown", e => deselect());
     document.addEventListener("mouseup", e => clickUp(e));
-    document.addEventListener("touchend", e => { 
+    document.addEventListener("touchend", e => {
         console.log(e)
         const fakeEvent = {
             target: e.target,
             clientX: e.changedTouches[0].clientX,
             clientY: e.changedTouches[0].clientY
         };
-        clickUp(fakeEvent);});
+        clickUp(fakeEvent);
+    });
 
     document.querySelector("#entity-view").addEventListener("input", e => {
         selected.dataset.view = e.target.value
@@ -612,7 +615,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.querySelector("#menu-order").addEventListener("click", e => {
-        const order = Object.keys(entities).sort((a,b) => {
+        const order = Object.keys(entities).sort((a, b) => {
             const entA = entities[a];
             const entB = entities[b];
             const viewA = document.querySelector("#entity-" + a).dataset.view;
@@ -691,13 +694,13 @@ document.addEventListener("touchmove", (e) => {
 
         // what a hack
         // I should centralize this 'fake event' creation...
-        if (hoveringInDeleteArea({clientY: y})) {
+        if (hoveringInDeleteArea({ clientY: y })) {
             document.querySelector("#menubar").classList.add("hover-delete");
         } else {
             document.querySelector("#menubar").classList.remove("hover-delete");
         }
     }
-}, {passive: false});
+}, { passive: false });
 
 function updateWorldHeight() {
     const value = Math.max(1, document.querySelector("#options-height-value").value);
