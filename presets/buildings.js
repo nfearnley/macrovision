@@ -83,5 +83,32 @@ function makeBuildings() {
         )
     });
 
+    results.push({
+        name: "Two-Story Home",
+        constructor: () => makeBuilding(
+            "House",
+            math.unit(25, "feet"),
+            { source: "./media/buildings/house.svg" }
+        )
+    });
+
+    results.push({
+        name: "Mobile Home",
+        constructor: () => makeBuilding(
+            "Mobile Home",
+            math.unit(10, "feet"),
+            { source: "./media/buildings/mobile-home.svg" }
+        )
+    });
+
+    results.push({
+        name: "Mailbox",
+        constructor: () => makeBuilding(
+            "Mailbox",
+            math.unit(5.1, "feet"),
+            { source: "./media/buildings/mailbox.svg" }
+        )
+    });
+
     return results;
 }

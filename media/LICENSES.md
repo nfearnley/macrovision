@@ -14,6 +14,12 @@ https://commons.wikimedia.org/wiki/File:TallestBuildings.svg
 * eiffel-tower.svg
 * chrysler-building.svg
 
+**Self-created**
+
+* house.svg
+* mobile-home.svg
+* mailbox.svg
+
 # Characters
 
 ## Fen
@@ -26,7 +32,7 @@ https://www.furaffinity.net/view/13680521/
 
 ## Sofia
 
-https://www.furaffinity.net/user/fauxlacine
+**https://www.furaffinity.net/user/fauxlacine**
 
 https://www.furaffinity.net/view/16704878/
 
@@ -35,7 +41,7 @@ https://www.furaffinity.net/view/16704878/
 
 ## March
 
-https://www.deviantart.com/natsuakai
+**https://www.deviantart.com/natsuakai**
 
 https://www.deviantart.com/natsuakai/art/Comm-Big-Guy-558510348
 
@@ -43,7 +49,7 @@ https://www.deviantart.com/natsuakai/art/Comm-Big-Guy-558510348
 
 ## Noir
 
-https://www.furaffinity.net/user/kclt
+**https://www.furaffinity.net/user/kclt**
 
 https://www.furaffinity.net/view/28167943/
 
@@ -51,7 +57,7 @@ https://www.furaffinity.net/view/28167943/
 
 ## Okuri
 
-https://twitter.com/Citrinelle
+**https://twitter.com/Citrinelle**
 
 https://www.furaffinity.net/view/34619004/
 
@@ -60,7 +66,7 @@ https://www.furaffinity.net/view/34619004/
 
 ## Manny
 
-https://www.furaffinity.net/user/sixsydes
+**https://www.furaffinity.net/user/sixsydes**
 
 https://www.furaffinity.net/view/16786820/
 
@@ -69,7 +75,7 @@ https://www.furaffinity.net/view/16786820/
 
 ## Adake
 
-https://www.furaffinity.net/user/oselotti
+**https://www.furaffinity.net/user/oselotti**
 
 https://www.furaffinity.net/view/26253324/
 
