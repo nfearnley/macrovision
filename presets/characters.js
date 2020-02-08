@@ -331,7 +331,7 @@ function makeAdake() {
                     name: "Height",
                     power: 1,
                     type: "length",
-                    base: math.unit(60, "feet")
+                    base: math.unit(5.385, "feet")
                 },
                 weight: {
                     name: "Weight",
