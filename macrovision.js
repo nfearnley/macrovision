@@ -29,7 +29,8 @@ const unitChoices = {
 const config = {
     height: math.unit(1500, "meters"),
     minLineSize: 50,
-    maxLineSize: 250
+    maxLineSize: 250,
+    autoFit: false
 }
 
 const availableEntities = {
@@ -325,6 +326,10 @@ function configEntityOptions(entity, view) {
 
     scaleInput.addEventListener("input", e => {
         entity.scale = e.target.value;
+
+        if (config.autoFit) {
+            fitWorld();
+        }
         updateSizes();
         updateEntityOptions(entity, view);
         updateViewOptions(entity, view);
@@ -408,6 +413,10 @@ function configViewOptions(entity, view) {
 
         input.addEventListener("input", e => {
             entity.views[view][key] = math.unit(input.value, select.value);
+
+            if (config.autoFit) {
+                fitWorld();
+            }
             updateSizes();
             updateEntityOptions(entity, view);
             updateViewOptions(entity, view, key);
@@ -415,6 +424,10 @@ function configViewOptions(entity, view) {
 
         select.addEventListener("input", e => {
             entity.views[view][key] = math.unit(input.value, select.value);
+
+            if (config.autoFit) {
+                fitWorld();
+            }
             updateSizes();
             updateEntityOptions(entity, view);
             updateViewOptions(entity, view, key);
@@ -554,6 +567,10 @@ function displayEntity(entity, view, x, y) {
     entityIndex += 1;
 
     updateEntityElement(entity, box);
+
+    if (config.autoFit) {
+        fitWorld();
+    }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -627,6 +644,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector("#options-world-fit").addEventListener("click", fitWorld);
 
+    document.querySelector("#options-world-autofit").addEventListener("input", e => {
+        config.autoFit = e.target.value;
+        
+
+        if (config.autoFit) {
+            fitWorld();
+        }
+    });
+
     prepareEntities();
 });
 
@@ -651,7 +677,7 @@ function prepareEntities() {
         button.innerText = "Create " + category;
         button.addEventListener("click", e => {
             const newEntity = entityList[select.value].constructor()
-            displayEntity(newEntity, newEntity.defaultView, 0.5, 0.5);
+            displayEntity(newEntity, newEntity.defaultView, 0.5, 1);
         });
 
         holder.appendChild(select);
