@@ -483,6 +483,17 @@ function testClick(event) {
     }
 }
 
+function arrangeEntities(order) {
+    let x = 0.1;
+
+    order.forEach(key => {
+        document.querySelector("#entity-" + key).dataset.x = x;
+        x += 0.8 / order.length
+    });
+
+    updateSizes();
+}
+
 function removeAllEntities() {
     Object.keys(entities).forEach(key => {
         removeEntity(document.querySelector("#entity-" + key));
@@ -599,6 +610,21 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#menu-clear").addEventListener("click", e => {
         removeAllEntities();
     });
+
+    document.querySelector("#menu-order").addEventListener("click", e => {
+        const order = Object.keys(entities).sort((a,b) => {
+            const entA = entities[a];
+            const entB = entities[b];
+            const viewA = document.querySelector("#entity-" + a).dataset.view;
+            const viewB = document.querySelector("#entity-" + b).dataset.view;
+            const heightA = entA.views[viewA].height.to("meter").value;
+            const heightB = entB.views[viewB].height.to("meter").value;
+            return heightA - heightB;
+        });
+
+        arrangeEntities(order);
+    });
+
     prepareEntities();
 });
 
