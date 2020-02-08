@@ -531,7 +531,14 @@ function displayEntity(entity, view, x, y) {
     box.appendChild(img);
     box.appendChild(nameTag);
 
-    img.src = entity.views[view].image.source;
+    const image = entity.views[view].image;
+    img.src = image.source;
+
+    if (image.bottom) {
+        img.style.setProperty("--offset", ((-1 + image.bottom) * 100) + "%")
+    }
+
+    
 
     box.dataset.x = x;
     box.dataset.y = y;
@@ -616,7 +623,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector("#entity-view").addEventListener("input", e => {
         selected.dataset.view = e.target.value
-        selected.querySelector(".entity-image").src = entities[selected.dataset.key].views[e.target.value].image.source;
+        const image = entities[selected.dataset.key].views[e.target.value].image
+        selected.querySelector(".entity-image").src = image.source;
+        
+
+        if (image.bottom) {
+            selected.querySelector(".entity-image").style.setProperty("--offset", ((-1 + image.bottom) * 100) + "%")
+        }
         updateSizes();
         updateEntityOptions(entities[selected.dataset.key], e.target.value);
         updateViewOptions(entities[selected.dataset.key], e.target.value);

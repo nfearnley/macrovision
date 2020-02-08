@@ -39,7 +39,8 @@ body {
     -khtml-user-drag: none;
     -moz-user-drag: none;
     -o-user-drag: none;
-    transform: translate(-50%, -100%);
+    --offset: -100%;
+    transform: translate(-50%, var(--offset));
 }
 
 .entity-name {

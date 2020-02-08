@@ -19,8 +19,6 @@ function makeFen() {
             },
             image: {
                 source: "./media/characters/fen/back.svg",
-                bottom: 0.01,
-                top: 0.93
             },
             name: "Body"
         },
@@ -154,7 +152,8 @@ function makeNoir() {
                 }
             },
             image: {
-                source: "./media/characters/noir/front.svg"
+                source: "./media/characters/noir/front.svg",
+                bottom: 0.01
             },
             name: "Front"
         }
@@ -301,7 +300,8 @@ function makeAdake() {
                 }
             },
             image: {
-                source: "./media/characters/adake/front-2.svg"
+                source: "./media/characters/adake/front-2.svg",
+                bottom: 0.005
             },
             name: "Front (Alt)"
         },
@@ -321,7 +321,7 @@ function makeAdake() {
                 }
             },
             image: {
-                source: "./media/characters/adake/back.svg"
+                source: "./media/characters/adake/back.svg",
             },
             name: "Back"
         },
@@ -341,7 +341,8 @@ function makeAdake() {
                 }
             },
             image: {
-                source: "./media/characters/adake/kneel.svg"
+                source: "./media/characters/adake/kneel.svg",
+                bottom: 0.05
             },
             name: "Kneeling"
         },
