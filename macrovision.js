@@ -467,7 +467,14 @@ testCanvas.id = "test-canvas";
 
 const testCtx = testCanvas.getContext("2d");
 function testClick(event) {
+
+    // oh my god I can't believe I'm doing this
+
     const target = event.target;
+    if (navigator.userAgent.indexOf("Firefox") != -1) {
+        clickDown(target.parentElement, event.clientX, event.clientY);
+    }
+    
     // Get click coordinates
 
     let w = target.width;
@@ -504,7 +511,6 @@ function testClick(event) {
         const oldDisplay = target.style.display;
         target.style.display = "none";
         const newTarget = document.elementFromPoint(event.clientX, event.clientY);
-        console.log(newTarget);
         newTarget.dispatchEvent(new MouseEvent(event.type, {
             "clientX": event.clientX,
             "clientY": event.clientY
@@ -544,6 +550,9 @@ function displayEntity(entity, view, x, y) {
 
     const img = document.createElement("img");
     img.classList.add("entity-image");
+    img.addEventListener("dragstart", e => {
+        e.preventDefault();
+    });
     const nameTag = document.createElement("div");
     nameTag.classList.add("entity-name");
     nameTag.innerText = entity.name;
