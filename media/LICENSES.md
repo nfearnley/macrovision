@@ -83,3 +83,11 @@ https://www.furaffinity.net/view/26253324/
 * front-2.svg
 * back.svg
 * kneel.svg
+
+## Elijah
+
+**https://www.furaffinity.net/user/slimytongues**
+
+(no link)
+
+* side.svg

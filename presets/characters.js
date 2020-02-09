@@ -353,6 +353,36 @@ function makeAdake() {
     return entity;
 }
 
+function makeElijah() {
+    const views = {
+        side: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(7, "feet")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(50, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/elijah/side.svg",
+                bottom: 0.01
+            },
+            name: "Side"
+        }
+    };
+
+    const entity = makeEntity("Elijah", "Elijah", views);
+    entity.views.side.height = math.unit(175, "feet");
+    return entity;
+}
+
 function makeMan() {
     const views = {
         body: {
@@ -409,6 +439,10 @@ function makeCharacters() {
     results.push({
         name: "Adake",
         constructor: makeAdake
+    });
+    results.push({
+        name: "Elijah",
+        constructor: makeElijah
     });
     results.push({
         name: "Normal man",
