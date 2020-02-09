@@ -91,3 +91,9 @@ https://www.furaffinity.net/view/26253324/
 (no link)
 
 * side.svg
+
+**https://www.furaffinity.net/user/luzian**
+
+https://www.furaffinity.net/view/34269979/
+
+* foot.svg

@@ -375,6 +375,20 @@ function makeElijah() {
                 bottom: 0.01
             },
             name: "Side"
+        },
+        foot: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(2, "feet")
+                }
+            },
+            image: {
+                source: "./media/characters/elijah/foot.svg",
+            },
+            name: "Foot"
         }
     };
 
