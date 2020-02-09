@@ -567,8 +567,6 @@ function displayEntity(entity, view, x, y) {
         img.style.setProperty("--offset", ((-1 + image.bottom) * 100) + "%")
     }
 
-    
-
     box.dataset.x = x;
     box.dataset.y = y;
 
@@ -711,6 +709,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function prepareEntities() {
     availableEntities["buildings"] = makeBuildings();
     availableEntities["characters"] = makeCharacters();
+    availableEntities["vehicles"] = makeVehicles();
 
     const holder = document.querySelector("#spawners");
     Object.entries(availableEntities).forEach(([category, entityList]) => {

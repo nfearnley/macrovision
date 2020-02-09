@@ -97,3 +97,10 @@ https://www.furaffinity.net/view/26253324/
 https://www.furaffinity.net/view/34269979/
 
 * foot.svg
+
+# Vehicles
+
+**Self-created**
+
+* bus.svg
+* vertical-bus.svg
