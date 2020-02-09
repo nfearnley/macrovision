@@ -473,6 +473,7 @@ function testClick(event) {
     const target = event.target;
     if (navigator.userAgent.indexOf("Firefox") != -1) {
         clickDown(target.parentElement, event.clientX, event.clientY);
+        return;
     }
     
     // Get click coordinates
