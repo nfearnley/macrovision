@@ -397,6 +397,125 @@ function makeElijah() {
     return entity;
 }
 
+function makeRai() {
+    const views = {
+        front: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(7, "feet")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(80, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/rai/front.svg"
+            },
+            name: "Front"
+        },
+        side: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(7, "feet")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(80, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/rai/side.svg"
+            },
+            name: "Side"
+        },
+        back: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(7, "feet")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(80, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/rai/back.svg"
+            },
+            name: "Back"
+        }
+    };
+
+    const entity = makeEntity("Rai", "shadowblade945", views);
+    entity.views.front.height = math.unit(302, "feet");
+    return entity;
+}
+
+function makeJazzy() {
+    const views = {
+        front: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(7, "feet")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(80, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/jazzy/front.svg",
+                bottom: 0.01
+            },
+            name: "Front"
+        },
+        back: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(7, "feet")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(80, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/jazzy/back.svg"
+            },
+            name: "Back"
+        }
+    };
+
+    const entity = makeEntity("Jazzy", "Jazzywolf", views);
+    entity.views.front.height = math.unit(216, "feet");
+    return entity;
+}
+
 function makeMan() {
     const views = {
         body: {
@@ -457,6 +576,14 @@ function makeCharacters() {
     results.push({
         name: "Elijah",
         constructor: makeElijah
+    });
+    results.push({
+        name: "Rai",
+        constructor: makeRai
+    });
+    results.push({
+        name: "Jazzy",
+        constructor: makeJazzy
     });
     results.push({
         name: "Normal man",

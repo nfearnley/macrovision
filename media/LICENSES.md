@@ -98,6 +98,26 @@ https://www.furaffinity.net/view/34269979/
 
 * foot.svg
 
+## Rai
+
+**https://www.furaffinity.net/user/styxandstoned**
+**https://www.furaffinity.net/user/shadowblade945**
+
+https://www.furaffinity.net/view/19705050/
+
+* front.svg
+* side.svg
+* back.svg
+
+## Jazzy
+
+**http://www.furaffinity.net/user/meowzi**
+
+(no link)
+
+* front.svg
+* back.svg
+
 # Vehicles
 
 **Self-created**
