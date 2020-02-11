@@ -1,6 +1,6 @@
 const characterMakers = [];
 
-function makeCharacter(name, author, viewInfo, defaultSizes) {
+function makeCharacter(name, author, viewInfo, defaultSizes, defaultSize) {
     views = {};
     console.log(viewInfo)
 
@@ -33,6 +33,10 @@ function makeCharacter(name, author, viewInfo, defaultSizes) {
 
     if (defaultSizes) {
         entity.defaults = defaultSizes;
+    }
+
+    if (defaultSize) {
+        entity.views[entity.defaultView].height = defaultSize;
     }
 
     return entity;
@@ -69,7 +73,8 @@ characterMakers["Fen"] = () => {
                 name: "Macro+",
                 height: math.unit(100, "meter")
             }
-        ]
+        ],
+        math.unit(100, "meter")
     )
 };
 
