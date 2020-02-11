@@ -610,7 +610,23 @@ function makeZephiro() {
     };
 
     const entity = makeEntity("Zephiro", "Zephiro", views);
-    entity.views.front.height = math.unit(118, "feet");
+    entity.views.front.height = math.unit(118, "feet");    
+
+    entity.defaults.push({
+        name: "Micro",
+        height: math.unit(3, "inches")
+    });
+
+    entity.defaults.push({
+        name: "Normal",
+        height: math.unit(5 + 3/12, "feet")
+    });
+
+    entity.defaults.push({
+        name: "Macro",
+        height: math.unit(108, "feet")
+    });
+    
     return entity;
 }
 
