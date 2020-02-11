@@ -748,6 +748,11 @@ function prepareEntities() {
         return x.name < y.name ? -1 : 1
     });
     const holder = document.querySelector("#spawners");
+
+    const categorySelect = document.createElement("select");
+    categorySelect.id = "category-picker";
+
+    holder.appendChild(categorySelect);
     Object.entries(availableEntities).forEach(([category, entityList]) => {
         const select = document.createElement("select");
         select.id = "create-entity-" + category;
@@ -760,6 +765,7 @@ function prepareEntities() {
         };
 
         const button = document.createElement("button");
+        button.id = "create-entity-" + category + "-button";
 
         button.innerText = "Create";
         button.addEventListener("click", e => {
@@ -767,8 +773,31 @@ function prepareEntities() {
             displayEntity(newEntity, newEntity.defaultView, 0.5, 1);
         });
 
+        const categoryOption = document.createElement("option");
+        categoryOption.value = category
+        categoryOption.innerText = category;
+
+        if (category == "characters") {
+            categoryOption.selected = true;
+            select.classList.add("category-visible");
+            button.classList.add("category-visible");
+        }
+
+        categorySelect.appendChild(categoryOption);
         holder.appendChild(button);
         holder.appendChild(select);
+    });
+
+    categorySelect.addEventListener("input", e => {
+        const oldSelect = document.querySelector("select.category-visible");
+        oldSelect.classList.remove("category-visible");
+        const oldButton = document.querySelector("button.category-visible");
+        oldButton.classList.remove("category-visible");
+
+        const newSelect = document.querySelector("#create-entity-" + e.target.value);
+        newSelect.classList.add("category-visible");
+        const newButton = document.querySelector("#create-entity-" + e.target.value + "-button");
+        newButton.classList.add("category-visible");
     });
 }
 

@@ -132,6 +132,7 @@ body.toggle-entity-name .entity-name {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
     min-height: 10vh;
     min-width: 100vw;
     background: #222;
@@ -239,9 +240,24 @@ body.toggle-bottom-name .bottom-name {
 }
 
 #spawners > button {
+    display: none;
     font-size: 200%;
 }
 #spawners > select {
+    display: none;
     font-size: 200%;
     margin-right: 50px;
+}
+
+#spawners > select#category-picker {
+    display: inline;
+}
+
+#spawners > button.category-visible,
+#spawners > select.category-visible {
+    display: inline;
+}
+
+#menubar button {
+    font-size: 300%;
 }
