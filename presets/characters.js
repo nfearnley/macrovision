@@ -890,6 +890,138 @@ function makeNatasha() {
     return entity;
 }
 
+function makeMalik() {
+    const views = {
+        front: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(6, "feet")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(75, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/malik/front.svg"
+            },
+            name: "Front"
+        },
+        side: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(6, "feet")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(75, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/malik/side.svg"
+            },
+            name: "Side"
+        },
+        back: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(6, "feet")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(75, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/malik/back.svg"
+            },
+            name: "Back"
+        },
+    };
+
+    const entity = makeEntity("Malik", "Fuzzypaws", views);    
+
+    entity.defaults.push({
+        name: "Macro",
+        height: math.unit(156, "feet")
+    });
+
+    entity.defaults.push({
+        name: "Macro+",
+        height: math.unit(1188, "feet")
+    });
+
+    entity.views[entity.defaultView].height = math.unit(156, "feet");
+    
+    return entity;
+}
+
+function makeSefer() {
+    const views = {
+        front: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(6, "feet")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(75, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/sefer/front.svg"
+            },
+            name: "Front"
+        },
+        back: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(6, "feet")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(75, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/sefer/back.svg"
+            },
+            name: "Back"
+        },
+    };
+
+    const entity = makeEntity("Sefer", "Fuzzypaws", views);
+
+    entity.views[entity.defaultView].height = math.unit(6, "feet");
+    
+    return entity;
+}
+
 function makeMan() {
     const views = {
         body: {
@@ -986,6 +1118,14 @@ function makeCharacters() {
     results.push({
         name: "Natasha",
         constructor: makeNatasha
+    });
+    results.push({
+        name: "Malik",
+        constructor: makeMalik
+    });
+    results.push({
+        name: "Sefer",
+        constructor: makeSefer
     });
     results.push({
         name: "Normal man",

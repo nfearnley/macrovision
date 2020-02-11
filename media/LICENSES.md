@@ -186,6 +186,23 @@ https://www.furaffinity.net/view/12006265/
 
 * front.svg
 
+## Malik
+
+**https://www.furaffinity.net/user/keihound**
+
+https://www.furaffinity.net/view/5714799/
+
+* front.svg
+* side.svg
+* back.svg
+
+## Sefer
+
+**https://www.furaffinity.net/user/rabidchild42**
+
+* front.svg
+* back.svg
+
 # Objects
 
 **Self-created**
