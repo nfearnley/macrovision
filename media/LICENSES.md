@@ -161,11 +161,21 @@ https://www.furaffinity.net/view/22413650/
 
 * peek.svg
 
+## Shingo
+
+**https://www.furaffinity.net/user/feve**
+
+https://www.furaffinity.net/view/32499316/
+
+* front.svg
+
 # Objects
 
 **Self-created**
 
 * soda-can.svg
+* sewing-pin.svg
+* pin-head.svg
 
 # Vehicles
 

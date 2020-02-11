@@ -189,6 +189,7 @@ function makeEntity(name, author, views) {
         author: author,
         scale: 1,
         views: views,
+        defaults: [],
         init: function () {
             Object.entries(this.views).forEach(([viewKey, view]) => {
                 view.parent = this;
@@ -311,6 +312,7 @@ function updateWorldOptions(entity, view) {
 
     heightInput.value = math.round(converted, 3);
 }
+
 function configEntityOptions(entity, view) {
     const holder = document.querySelector("#options-entity");
 
@@ -366,6 +368,24 @@ function configEntityOptions(entity, view) {
 
     holder.appendChild(nameLabel);
     holder.appendChild(nameRow);
+
+    const defaultHolder = document.querySelector("#options-entity-defaults");
+
+    defaultHolder.innerHTML = "";
+
+    entity.defaults.forEach(defaultInfo => {
+        const button = document.createElement("button");
+        button.classList.add("options-button");
+       
+        button.innerText = defaultInfo.name;
+
+        button.addEventListener("click", e => {
+            entity.views[entity.defaultView].height = defaultInfo.height;
+            updateSizes();
+        });
+
+        defaultHolder.appendChild(button);
+    });
 }
 
 function updateEntityOptions(entity, view) {

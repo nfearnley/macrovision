@@ -735,6 +735,49 @@ function makeKurrikage() {
     return entity;
 }
 
+function makeShingo() {
+    const views = {
+        front: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(6, "feet")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(75, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/shingo/front.svg"
+            },
+            name: "Front"
+        }
+    };
+
+    const entity = makeEntity("Shingo", "Threes", views);
+
+    entity.defaults.push({
+        name: "Micro",
+        height: math.unit(4, "inches")
+    });
+
+    entity.defaults.push({
+        name: "Normal",
+        height: math.unit(6, "feet")
+    });
+
+    entity.defaults.push({
+        name: "Macro",
+        height: math.unit(108, "feet")
+    });
+    return entity;
+}
+
 function makeMan() {
     const views = {
         body: {
@@ -819,6 +862,10 @@ function makeCharacters() {
     results.push({
         name: "Kurrikage",
         constructor: makeKurrikage
+    });
+    results.push({
+        name: "Shingo",
+        constructor: makeShingo
     });
     results.push({
         name: "Normal man",
