@@ -169,6 +169,23 @@ https://www.furaffinity.net/view/32499316/
 
 * front.svg
 
+## Aigey
+
+**https://www.furaffinity.net/user/just-a-little-mixed-up**
+
+https://www.furaffinity.net/view/12006265/
+
+* side.svg
+
+## Natasha
+
+**https://www.furaffinity.net/user/fsmaverick**
+**https://www.furaffinity.net/user/yutmutt**
+
+(no link)
+
+* front.svg
+
 # Objects
 
 **Self-created**

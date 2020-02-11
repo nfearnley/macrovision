@@ -794,6 +794,102 @@ function makeShingo() {
     return entity;
 }
 
+function makeAigey() {
+    const views = {
+        side: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(6, "feet")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(75, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/aigey/side.svg"
+            },
+            name: "Side"
+        }
+    };
+
+    const entity = makeEntity("Aigey", "Aigey", views);
+
+    entity.defaults.push({
+        name: "Macro",
+        height: math.unit(200, "feet")
+    });
+
+    entity.defaults.push({
+        name: "Megamacro",
+        height: math.unit(100, "miles")
+    });
+    
+    entity.views[entity.defaultView].height = math.unit(200, "feet");
+    
+    return entity;
+}
+
+function makeNatasha() {
+    const views = {
+        side: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(6, "feet")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(75, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/natasha/front.svg"
+            },
+            name: "Side"
+        }
+    };
+
+    const entity = makeEntity("Natasha", "Natasha", views);
+
+    entity.defaults.push({
+        name: "Normal",
+        height: math.unit(5 + 5/12, "feet")
+    });
+
+    entity.defaults.push({
+        name: "Large",
+        height: math.unit(12, "feet")
+    });
+    entity.defaults.push({
+        name: "Macro",
+        height: math.unit(100, "feet")
+    });
+
+    entity.defaults.push({
+        name: "Macro+",
+        height: math.unit(260, "feet")
+    });
+
+    entity.defaults.push({
+        name: "Macro++",
+        height: math.unit(1000, "feet")
+    });
+    
+    entity.views[entity.defaultView].height = math.unit(100, "feet");
+    
+    return entity;
+}
+
 function makeMan() {
     const views = {
         body: {
@@ -882,6 +978,14 @@ function makeCharacters() {
     results.push({
         name: "Shingo",
         constructor: makeShingo
+    });
+    results.push({
+        name: "Aigey",
+        constructor: makeAigey
+    });
+    results.push({
+        name: "Natasha",
+        constructor: makeNatasha
     });
     results.push({
         name: "Normal man",
