@@ -882,7 +882,7 @@ function makeNatasha() {
 
     entity.defaults.push({
         name: "Macro++",
-        height: math.unit(1000, "feet")
+        height: math.unit(1, "mile")
     });
     
     entity.views[entity.defaultView].height = math.unit(100, "feet");
