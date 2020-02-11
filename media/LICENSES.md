@@ -200,8 +200,18 @@ https://www.furaffinity.net/view/5714799/
 
 **https://www.furaffinity.net/user/rabidchild42**
 
+(no link)
+
 * front.svg
 * back.svg
+
+## North
+
+**https://twitter.com/bunnox1**
+
+https://twitter.com/Bunnox1/status/1215858071731408896
+
+* front.svg
 
 # Objects
 

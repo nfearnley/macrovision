@@ -1076,6 +1076,39 @@ function makeMan() {
     return makeEntity("Man", "Fen", views);
 }
 
+characterMakers["North"] = () => {
+    return makeCharacter(
+        "North",
+        "chemicalcrux",
+        {
+            body: {
+                height: math.unit(2.2428, "meter"),
+                weight: math.unit(124.738, "kg"),
+                name: "Body",
+                image: {
+                    extra: 1225/1050,
+                    source: "./media/characters/north/front.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(4, "inches")
+            },
+            {
+                name: "Macro",
+                height: math.unit(63, "meters")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(101, "miles")
+            }
+        ],
+        math.unit(101, "miles")
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
