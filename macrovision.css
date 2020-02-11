@@ -237,3 +237,11 @@ body #test-canvas {
 body.toggle-bottom-name .bottom-name {
     display: inline;
 }
+
+#spawners > button {
+    font-size: 200%;
+}
+#spawners > select {
+    font-size: 200%;
+    margin-right: 50px;
+}

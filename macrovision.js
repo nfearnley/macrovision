@@ -744,6 +744,9 @@ function prepareEntities() {
     availableEntities["objects"] = makeObjects();
     availableEntities["vehicles"] = makeVehicles();
 
+    availableEntities["characters"].sort((x,y) => {
+        return x.name < y.name ? -1 : 1
+    });
     const holder = document.querySelector("#spawners");
     Object.entries(availableEntities).forEach(([category, entityList]) => {
         const select = document.createElement("select");
@@ -758,14 +761,14 @@ function prepareEntities() {
 
         const button = document.createElement("button");
 
-        button.innerText = "Create " + category;
+        button.innerText = "Create";
         button.addEventListener("click", e => {
             const newEntity = entityList[select.value].constructor()
             displayEntity(newEntity, newEntity.defaultView, 0.5, 1);
         });
 
-        holder.appendChild(select);
         holder.appendChild(button);
+        holder.appendChild(select);
     });
 }
 
