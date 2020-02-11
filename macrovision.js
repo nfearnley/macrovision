@@ -705,7 +705,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.addEventListener("keydown", e => {
         console.log(e)
-        if (e.key == "Delete" || e.key == "Backspace") {
+        if (e.key == "Delete") {
             if (selected) {
                 removeEntity(selected);
                 selected = null;
