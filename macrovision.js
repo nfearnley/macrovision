@@ -898,6 +898,8 @@ function updateWorldHeight() {
 function setWorldHeight(oldHeight, newHeight) {
     config.height = newHeight;
 
+    const unit = document.querySelector("#options-height-unit").value;
+    document.querySelector("#options-height-value").value = config.height.toNumber(unit);
     Object.entries(entities).forEach(([key, entity]) => {
         const element = document.querySelector("#entity-" + key);
         const newPosition = adjustAbs({ x: element.dataset.x, y: element.dataset.y }, oldHeight, config.height);
