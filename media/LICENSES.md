@@ -118,6 +118,32 @@ https://www.furaffinity.net/view/19705050/
 * front.svg
 * back.svg
 
+## Flamm
+
+**https://twitter.com/Ashfall_Fox**
+
+(no link)
+
+* front.svg
+
+## Zephiro
+
+**https://www.furaffinity.net/user/feve**
+
+https://www.furaffinity.net/view/20930792/
+
+* front.svg
+* side.svg
+* back.svg
+
+## Fory
+
+**https://www.furaffinity.net/user/victni/**
+
+(no link)
+
+* front.svg
+
 # Vehicles
 
 **Self-created**

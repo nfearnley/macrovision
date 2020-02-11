@@ -516,6 +516,133 @@ function makeJazzy() {
     return entity;
 }
 
+function makeFlamm() {
+    const views = {
+        front: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(7, "feet")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(80, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/flamm/front.svg"
+            },
+            name: "Front"
+        }
+    };
+
+    const entity = makeEntity("Flamm", "Flamm", views);
+    entity.views.front.height = math.unit(200, "feet");
+    return entity;
+}
+
+function makeZephiro() {
+    const views = {
+        front: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(7, "feet")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(80, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/zephiro/front.svg"
+            },
+            name: "Front"
+        },
+        side: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(7, "feet")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(80, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/zephiro/side.svg"
+            },
+            name: "Side"
+        },
+        back: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(7, "feet")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(80, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/zephiro/back.svg"
+            },
+            name: "Back"
+        }
+    };
+
+    const entity = makeEntity("Zephiro", "Zephiro", views);
+    entity.views.front.height = math.unit(118, "feet");
+    return entity;
+}
+
+function makeFory() {
+    const views = {
+        front: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(7, "feet")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(90, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/fory/front.svg"
+            },
+            name: "Front"
+        }
+    };
+
+    const entity = makeEntity("Fory", "Manny", views);
+    entity.views.front.height = math.unit(50, "feet");
+    return entity;
+}
+
 function makeMan() {
     const views = {
         body: {
@@ -584,6 +711,18 @@ function makeCharacters() {
     results.push({
         name: "Jazzy",
         constructor: makeJazzy
+    });
+    results.push({
+        name: "Flamm",
+        constructor: makeFlamm
+    });
+    results.push({
+        name: "Zephiro",
+        constructor: makeZephiro
+    });
+    results.push({
+        name: "Fory",
+        constructor: makeFory
     });
     results.push({
         name: "Normal man",
