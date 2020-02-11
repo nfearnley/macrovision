@@ -75,7 +75,7 @@ function abs2rel(coords) {
     return { x: (coords.x - 50) / canvasWidth, y: coords.y / canvasHeight };
 }
 
-function updateEntityElement(entity, element) {
+function updateEntityElement(entity, element, zIndex) {
     const position = rel2abs({ x: element.dataset.x, y: element.dataset.y });
     const view = element.dataset.view;
 
@@ -93,14 +93,30 @@ function updateEntityElement(entity, element) {
     bottomName.style.left = position.x + entX + "px";
     bottomName.style.top = "95vh";
     bottomName.innerText = entity.name;
+
+    if (zIndex) {
+        element.style.zIndex = zIndex;
+    }
 }
 
 function updateSizes() {
     drawScale();
-    Object.entries(entities).forEach(([key, entity]) => {
-        const element = document.querySelector("#entity-" + key);
-        updateEntityElement(entity, element);
+
+    let ordered = Object.entries(entities);
+    
+    ordered.sort((e1, e2) => {
+        return e1[1].views[e1[1].view].height.toNumber("meters") - e2[1].views[e2[1].view].height.toNumber("meters")
     });
+
+    let zIndex = ordered.length;
+
+    ordered.forEach(entity => {
+        const element = document.querySelector("#entity-" + entity[0]);
+        updateEntityElement(entity[1], element, zIndex);
+        zIndex -= 1;
+    });
+
+    
 }
 
 function drawScale() {
@@ -615,6 +631,7 @@ function displayEntity(entity, view, x, y) {
     box.id = "entity-" + entityIndex;
     box.dataset.key = entityIndex;
     box.dataset.view = view;
+    entity.view = view;
 
     entities[entityIndex] = entity;
     entity.index = entityIndex;
@@ -700,7 +717,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.querySelector("#entity-view").addEventListener("input", e => {
-        selected.dataset.view = e.target.value
+        selected.dataset.view = e.target.value;
+        entities[selected.dataset.view].view = e.target.value;
         const image = entities[selected.dataset.key].views[e.target.value].image
         selected.querySelector(".entity-image").src = image.source;
         
@@ -745,7 +763,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.addEventListener("keydown", e => {
-        console.log(e)
         if (e.key == "Delete") {
             if (selected) {
                 removeEntity(selected);
