@@ -1,58 +1,74 @@
+function makeCharacter(name, author, viewInfo, defaultSizes) {
+    views = {};
+    console.log(viewInfo)
 
-
-function makeFen() {
-    const views = {
-        body: {
+    Object.entries(viewInfo).forEach(([key, value]) => {
+        console.log(key)
+        views[key] = {
             attributes: {
                 height: {
                     name: "Height",
                     power: 1,
                     type: "length",
-                    base: math.unit(2.2428, "meter")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(124.738, "kg")
+                    base: value.height
                 }
             },
-            image: {
-                source: "./media/characters/fen/back.svg",
-            },
-            name: "Body"
-        },
-        paw: {
-            attributes: {
-                height: {
-                    name: "Length",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(20, "centimeter")
-                },
-                width: {
-                    name: "Length",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(20, "centimeter")
-                },
-                area: {
-                    name: "Area",
-                    power: 2,
-                    type: "area",
-                    base: math.unit(0.04, "meter^2")
-                }
-            },
-            image: {
-                source: "./media/characters/generic/paw.svg"
-            },
-            name: "Paw"
+            image: value.image,
+            name: value.name
         }
-    };
 
-    const entity = makeEntity("Fen", "Fen", views);
-    entity.views.body.height = math.unit(1, "km");
+        if (value.mass) {
+            views[key].attributes[key] = {
+                name: "Mass",
+                power: 3,
+                type: "mass",
+                base: value.mass
+            };
+        }
+    });
+
+    const entity = makeEntity(name, "author", views);
+
+    if (defaultSizes) {
+        entity.defaults = defaultSizes;
+    }
+
     return entity;
+}
+
+function makeFen() {
+    return makeCharacter(
+        "Fen",
+        "chemicalcrux",
+        {
+            body: {
+                height: math.unit(2.2428, "meter"),
+                weight: math.unit(124.738, "kg"),
+                name: "Body",
+                image: {
+                    source: "./media/characters/fen/back.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(2.2428, "meter")
+            },
+            {
+                name: "Big",
+                height: math.unit(12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(30, "meter")
+            },
+            {
+                name: "Macro+",
+                height: math.unit(100, "meter")
+            }
+        ]
+    )
 }
 
 function makeSofia() {
