@@ -14,7 +14,10 @@ let altHeld = false;
 const unitChoices = {
     length: [
         "meters",
+        "millimeters",
+        "centimeters",
         "kilometers",
+        "inches",
         "feet",
         "miles",
     ],
