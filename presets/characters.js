@@ -955,6 +955,7 @@ function makeMalik() {
                 }
             },
             image: {
+                extra: 1.1539,
                 source: "./media/characters/malik/side.svg"
             },
             name: "Side"
