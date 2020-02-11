@@ -709,6 +709,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function prepareEntities() {
     availableEntities["buildings"] = makeBuildings();
     availableEntities["characters"] = makeCharacters();
+    availableEntities["objects"] = makeObjects();
     availableEntities["vehicles"] = makeVehicles();
 
     const holder = document.querySelector("#spawners");

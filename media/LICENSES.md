@@ -161,6 +161,11 @@ https://www.furaffinity.net/view/22413650/
 
 * peek.svg
 
+# Objects
+
+**Self-created**
+
+* soda-can.svg
 
 # Vehicles
 
