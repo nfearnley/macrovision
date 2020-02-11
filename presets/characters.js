@@ -643,6 +643,98 @@ function makeFory() {
     return entity;
 }
 
+function makeKurrikage() {
+    const views = {
+        front: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(7, "feet")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(90, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/kurrikage/front.svg"
+            },
+            name: "Front"
+        },
+        back: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(7, "feet")
+                },
+                weight: {
+                    name: "Weight",
+                    power: 3,
+                    type: "mass",
+                    base: math.unit(90, "kg")
+                }
+            },
+            image: {
+                source: "./media/characters/kurrikage/back.svg"
+            },
+            name: "Back"
+        },
+        paw: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(1.5, "feet")
+                }
+            },
+            image: {
+                source: "./media/characters/kurrikage/paw.svg"
+            },
+            name: "Paw"
+        },
+        staff: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(6.7, "feet")
+                }
+            },
+            image: {
+                source: "./media/characters/kurrikage/staff.svg"
+            },
+            name: "Staff"
+        },
+        peek: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(1.05, "feet")
+                }
+            },
+            image: {
+                source: "./media/characters/kurrikage/peek.svg",
+                bottom: 0.08
+            },
+            name: "Peeking"
+        }
+    };
+
+    const entity = makeEntity("Kurrikage", "Kurrikage", views);
+    entity.views.front.height = math.unit(12, "feet");
+    return entity;
+}
+
 function makeMan() {
     const views = {
         body: {
@@ -723,6 +815,10 @@ function makeCharacters() {
     results.push({
         name: "Fory",
         constructor: makeFory
+    });
+    results.push({
+        name: "Kurrikage",
+        constructor: makeKurrikage
     });
     results.push({
         name: "Normal man",

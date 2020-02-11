@@ -144,6 +144,24 @@ https://www.furaffinity.net/view/20930792/
 
 * front.svg
 
+## Kurrikage
+
+**https://www.furaffinity.net/user/pig**
+
+https://www.furaffinity.net/view/22413650/
+
+* front.svg
+* back.svg
+* paw.svg
+* staff.svg
+
+**https://www.furaffinity.net/user/evillabrat**
+
+(no link)
+
+* peek.svg
+
+
 # Vehicles
 
 **Self-created**
