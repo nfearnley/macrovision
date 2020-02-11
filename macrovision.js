@@ -640,8 +640,12 @@ function displayEntity(entity, view, x, y) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    const stuff = [makeFen].concat(makeBuildings().map(x => x.constructor))
+    prepareEntities();
 
+    const stuff = availableEntities.characters.map(x => x.constructor).filter(x => {
+        const result = x();
+        return result.views[result.defaultView].height.toNumber("meters") < 1000;
+    })
     let x = 0.2;
 
     stuff.forEach(entity => {
@@ -649,6 +653,20 @@ document.addEventListener("DOMContentLoaded", () => {
         x += 0.7 / stuff.length;
     })
 
+    
+
+    const order = Object.keys(entities).sort((a, b) => {
+        const entA = entities[a];
+        const entB = entities[b];
+        const viewA = document.querySelector("#entity-" + a).dataset.view;
+        const viewB = document.querySelector("#entity-" + b).dataset.view;
+        const heightA = entA.views[viewA].height.to("meter").value;
+        const heightB = entB.views[viewB].height.to("meter").value;
+        return heightA - heightB;
+    });
+
+    arrangeEntities(order);
+    fitWorld();
     window.addEventListener("wheel", e => {
 
         const dir = e.deltaY < 0 ? 0.9 : 1.1;
@@ -735,7 +753,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     })
-    prepareEntities();
 });
 
 function prepareEntities() {

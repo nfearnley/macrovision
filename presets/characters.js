@@ -1,3 +1,5 @@
+const characterMakers = [];
+
 function makeCharacter(name, author, viewInfo, defaultSizes) {
     views = {};
     console.log(viewInfo)
@@ -36,7 +38,7 @@ function makeCharacter(name, author, viewInfo, defaultSizes) {
     return entity;
 }
 
-function makeFen() {
+characterMakers["Fen"] = () => {
     return makeCharacter(
         "Fen",
         "chemicalcrux",
@@ -69,7 +71,7 @@ function makeFen() {
             }
         ]
     )
-}
+};
 
 function makeSofia() {
     const views = {
@@ -1068,10 +1070,6 @@ function makeMan() {
 function makeCharacters() {
     const results = [];
     results.push({
-        name: "Fen",
-        constructor: makeFen
-    });
-    results.push({
         name: "Sofia",
         constructor: makeSofia
     });
@@ -1146,6 +1144,13 @@ function makeCharacters() {
     results.push({
         name: "Normal man",
         constructor: makeMan
+    });
+
+    Object.entries(characterMakers).forEach(([key, value]) => {
+        results.push({
+            name: key,
+            constructor: value
+        });
     });
     return results;
 }
