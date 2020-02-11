@@ -14,7 +14,7 @@ function makeObject(name, viewInfo) {
                 }
             },
             image: value.image,
-            name: "Object"
+            name: value.name
         }
 
         if (value.mass) {
@@ -42,7 +42,8 @@ function makeObjects() {
                 front: {
                     height: math.unit(4.83, "inches"),
                     mass: math.unit(15, "grams"),
-                    image: { source: "./media/objects/soda-can.svg" }
+                    image: { source: "./media/objects/soda-can.svg" },
+                    name: "Side"
                 }
             }
         )
@@ -55,11 +56,13 @@ function makeObjects() {
             {
                 side: {
                     height: math.unit(1.5, "inches"),
-                    image: { source: "./media/objects/sewing-pin.svg" }
+                    image: { source: "./media/objects/sewing-pin.svg" },
+                    name: "Side"
                 },
                 top: {
                     height: math.unit(2, "millimeters"),
-                    image: { source: "./media/objects/pin-head.svg" }
+                    image: { source: "./media/objects/pin-head.svg" },
+                    name: "Head"
                 }
             }
         )
