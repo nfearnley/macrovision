@@ -624,9 +624,9 @@ function makeZephiro() {
 
     entity.defaults.push({
         name: "Macro",
-        height: math.unit(108, "feet")
+        height: math.unit(118, "feet")
     });
-    
+
     return entity;
 }
 
