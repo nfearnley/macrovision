@@ -67,11 +67,15 @@ characterMakers["Fen"] = () => {
             },
             {
                 name: "Macro",
-                height: math.unit(30, "meter")
+                height: math.unit(100, "meter")
             },
             {
                 name: "Macro+",
-                height: math.unit(100, "meter")
+                height: math.unit(1000, "meter")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(10, "miles")
             }
         ],
         math.unit(100, "meter")
