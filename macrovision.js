@@ -304,9 +304,9 @@ function updateWorldOptions(entity, view) {
     const heightInput = document.querySelector("#options-height-value");
     const heightSelect = document.querySelector("#options-height-unit");
 
-    const converted = config.height.to(heightSelect.value);
+    const converted = config.height.toNumber(heightSelect.value);
 
-    heightInput.value = math.round(converted.value, 3);
+    heightInput.value = math.round(converted, 3);
 }
 function configEntityOptions(entity, view) {
     const holder = document.querySelector("#options-entity");
