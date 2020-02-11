@@ -245,11 +245,11 @@ body.toggle-bottom-name .bottom-name {
 
 #spawners > button {
     display: none;
-    font-size: 200%;
+    font-size: 24pt;
 }
 #spawners > select {
     display: none;
-    font-size: 200%;
+    font-size: 24pt;
     margin-right: 50px;
 }
 
@@ -263,5 +263,5 @@ body.toggle-bottom-name .bottom-name {
 }
 
 #menubar button {
-    font-size: 300%;
+    font-size: 24pt;
 }
