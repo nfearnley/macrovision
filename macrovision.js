@@ -325,7 +325,7 @@ function configEntityOptions(entity, view) {
     scaleInput.id = "options-entity-scale";
 
     scaleInput.addEventListener("input", e => {
-        entity.scale = e.target.value;
+        entity.scale = e.target.value == 0 ? 1 : e.target.value;
 
         if (config.autoFit) {
             fitWorld();
@@ -412,7 +412,8 @@ function configViewOptions(entity, view) {
 
 
         input.addEventListener("input", e => {
-            entity.views[view][key] = math.unit(input.value, select.value);
+            const value = input.value == 0 ? 1 : input.value;
+            entity.views[view][key] = math.unit(value, select.value);
 
             if (config.autoFit) {
                 fitWorld();
@@ -422,12 +423,20 @@ function configViewOptions(entity, view) {
             updateViewOptions(entity, view, key);
         });
 
+        select.setAttribute("oldUnit", select.value);
+        
         select.addEventListener("input", e => {
-            entity.views[view][key] = math.unit(input.value, select.value);
+            const value = input.value == 0 ? 1 : input.value;
+            const oldUnit = select.getAttribute("oldUnit");
+            entity.views[view][key] = math.unit(value, oldUnit).to(select.value);
+            input.value = entity.views[view][key].toNumber(select.value);   
+
+            select.setAttribute("oldUnit", select.value);
 
             if (config.autoFit) {
                 fitWorld();
             }
+
             updateSizes();
             updateEntityOptions(entity, view);
             updateViewOptions(entity, view, key);
