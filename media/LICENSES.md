@@ -227,6 +227,34 @@ https://twitter.com/Bunnox1/status/1215858071731408896
 
 * front.svg
 
+## Gael'Rathus
+
+**https://www.furaffinity.net/user/hornedfreak**
+
+http://www.furaffinity.net/view/20362158/
+
+* front.svg
+
+**https://www.furaffinity.net/user/furikake**
+
+http://www.furaffinity.net/view/23410665/
+
+* front-alt.svg
+
+**https://www.furaffinity.net/user/muzz**
+
+https://www.furaffinity.net/view/18991404/
+
+* front-alt-2.svg
+
+## Sosha
+
+**https://www.furaffinity.net/user/eveara/**
+
+https://www.furaffinity.net/view/22781088/
+
+* side.svg
+
 # Objects
 
 **Self-created**

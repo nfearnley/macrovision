@@ -1157,6 +1157,82 @@ characterMakers["Talan"] = () => {
     )
 };
 
+characterMakers["Gael'Rathus"] = () => {
+    return makeCharacter(
+        "Gael'Rathus",
+        "Kurrikage",
+        {
+            front: {
+                height: math.unit(2, "meter"),
+                weight: math.unit(90, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/gael'rathus/front.svg"
+                }
+            },
+            frontAlt: {
+                height: math.unit(2, "meter"),
+                weight: math.unit(90, "kg"),
+                name: "Front (alt)",
+                image: {
+                    source: "./media/characters/gael'rathus/front-alt.svg"
+                }
+            },
+            frontAlt2: {
+                height: math.unit(2, "meter"),
+                weight: math.unit(90, "kg"),
+                name: "Front (alt 2)",
+                image: {
+                    source: "./media/characters/gael'rathus/front-alt-2.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(9, "feet")
+            },
+            {
+                name: "Large",
+                height: math.unit(25, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(0.25, "miles")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(10, "miles")
+            }
+        ],
+        math.unit(9, "feet")
+    )
+};
+
+characterMakers["Sosha"] = () => {
+    return makeCharacter(
+        "Sosha",
+        "Sdocat",
+        {
+            side: {
+                height: math.unit(2, "meter"),
+                weight: math.unit(140, "kg"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/sosha/side.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(12, "feet")
+            }
+        ],
+        math.unit(12, "feet")
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
