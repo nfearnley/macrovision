@@ -77,5 +77,12 @@ function makeNaturals() {
     results.push(makeState("New York", math.unit(494.92, "km"), math.unit(536.63, "km"), math.unit(141297, "km^2")));
     results.push(makeState("Texas", math.unit(1183.33, "km"), math.unit(1226.69, "km"), math.unit(695662, "km^2")));
 
+
+    results.sort((b1, b2) => {
+        e1 = b1.constructor();
+        e2 = b2.constructor();
+        return -math.subtract(e1.views[e1.defaultView].height, e2.views[e2.defaultView].height).value;
+    });
+
     return results;
 }
