@@ -1339,6 +1339,53 @@ characterMakers["Elbial"] = () => {
     )
 };
 
+characterMakers["Noah"] = () => {
+    return makeCharacter(
+        "Noah",
+        "Neopuc",
+        {
+            front: {
+                height: math.unit(2, "meter"),
+                weight: math.unit(60, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/noah/front.svg"
+                }
+            },
+            talons: {
+                height: math.unit(0.315, "meter"),
+                name: "Talons",
+                image: {
+                    source: "./media/characters/noah/talons.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Large",
+                height: math.unit(50, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(750, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(50, "miles")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(100000, "miles")
+            },
+            {
+                name: "Full-Size",
+                height: math.unit(3000000000, "miles")
+            }
+        ],
+        math.unit(750, "feet")
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

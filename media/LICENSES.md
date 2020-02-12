@@ -279,6 +279,14 @@ https://www.furaffinity.net/view/15459294/
 * side.svg
 * back.svg
 
+## Noah
+
+**https://www.furaffinity.net/user/ashascadence/**
+
+https://www.furaffinity.net/view/15460332/
+
+* front.svg
+* talons.svg
 # Objects
 
 **Self-created**
