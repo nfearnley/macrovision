@@ -1495,6 +1495,39 @@ characterMakers["Erestrebah"] = () => {
     )
 };
 
+characterMakers["Jennifer"] = () => {
+    return makeCharacter(
+        "Jennifer",
+        "Neopuc",
+        {
+            front: {
+                height: math.unit(2, "meter"),
+                weight: math.unit(80, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/jennifer/front.svg",
+                    bottom: 0.11
+                }
+            }
+        },
+        [
+            {
+                name: "Canon Height",
+                height: math.unit(120, "feet")
+            },
+            {
+                name: "Macro+",
+                height: math.unit(300, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(20000, "feet")
+            }
+        ],
+        math.unit(120, "feet")
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

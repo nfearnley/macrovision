@@ -312,6 +312,14 @@ http://www.furaffinity.net/view/18577161/
 
 * back.svg
 
+## Jennifer
+
+**https://www.furaffinity.net/user/fsmaverick**
+
+https://www.furaffinity.net/view/16949759/
+
+* front.svg
+
 # Naturals
 
 **Self-created**
