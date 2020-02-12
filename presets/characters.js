@@ -23,12 +23,12 @@ function makeCharacter(name, author, viewInfo, defaultSizes, defaultSize) {
             name: value.name
         }
 
-        if (value.mass) {
-            views[key].attributes[key] = {
+        if (value.weight) {
+            views[key].attributes.weight = {
                 name: "Mass",
                 power: 3,
                 type: "mass",
-                base: value.mass
+                base: value.weight
             };
         }
     });
