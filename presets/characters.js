@@ -1452,7 +1452,8 @@ characterMakers["Erestrebah"] = () => {
                 weight: math.unit(50, "kg"),
                 name: "Back",
                 image: {
-                    source: "./media/characters/erestrebah/back.svg"
+                    source: "./media/characters/erestrebah/back.svg",
+                    extra: 1.2139
                 }
             }
         },
