@@ -19,6 +19,7 @@ https://commons.wikimedia.org/wiki/File:TallestBuildings.svg
 * house.svg
 * mobile-home.svg
 * mailbox.svg
+* gateway-arch.svg
 
 # Characters
 
@@ -310,6 +311,26 @@ http://www.furaffinity.net/view/26085781/
 http://www.furaffinity.net/view/18577161/
 
 * back.svg
+
+# Naturals
+
+**Self-created**
+
+* planet-generic.svg
+* saturn.svg
+
+**Theshibboleth [CC BY-SA (http://creativecommons.org/licenses/by-sa/3.0/)]**
+
+https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg
+
+* alaska.svg
+* california.svg
+* colorado.svg
+* florida.svg
+* maine.svg
+* montana.svg
+* new-york.svg
+* texas.svg
 
 # Objects
 

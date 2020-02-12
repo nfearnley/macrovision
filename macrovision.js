@@ -24,7 +24,10 @@ const unitChoices = {
     ],
     area: [
         "cm^2",
-        "meters^2"
+        "meters^2",
+        "kilometers^2",
+        "acres",
+        "miles^2"
     ],
     mass: [
         "kilograms"
@@ -778,6 +781,7 @@ function prepareEntities() {
     availableEntities["buildings"] = makeBuildings();
     availableEntities["characters"] = makeCharacters();
     availableEntities["objects"] = makeObjects();
+    availableEntities["naturals"] = makeNaturals();
     availableEntities["vehicles"] = makeVehicles();
 
     availableEntities["characters"].sort((x,y) => {

@@ -110,5 +110,14 @@ function makeBuildings() {
         )
     });
 
+    results.push({
+        name: "Gateway Arch",
+        constructor: () => makeBuilding(
+            "Gateway Arch",
+            math.unit(630, "feet"),
+            { source: "./media/buildings/gateway-arch.svg" }
+        )
+    });
+
     return results;
 }
