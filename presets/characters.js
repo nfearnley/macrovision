@@ -1110,6 +1110,39 @@ characterMakers["North"] = () => {
     )
 };
 
+characterMakers["Talan"] = () => {
+    return makeCharacter(
+        "Talan",
+        "talanstrider",
+        {
+            body: {
+                height: math.unit(2, "meter"),
+                weight: math.unit(70, "kg"),
+                name: "Body",
+                image: {
+                    bottom: 0.02,
+                    source: "./media/characters/talan/front.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(4, "meters")
+            },
+            {
+                name: "Macro",
+                height: math.unit(100, "meters")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(2, "miles")
+            }
+        ],
+        math.unit(2, "miles")
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

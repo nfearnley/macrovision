@@ -213,6 +213,14 @@ https://twitter.com/Bunnox1/status/1215858071731408896
 
 * front.svg
 
+## Talan
+
+**https://www.furaffinity.net/gallery/talanstrider/**
+
+(no link)
+
+* front.svg
+
 # Objects
 
 **Self-created**
