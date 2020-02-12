@@ -1,5 +1,9 @@
 const characterMakers = [];
 
+math.createUnit("parsecs", {
+    definition: "3.086e16 meters",
+    prefixes: "long"
+})
 function makeCharacter(name, author, viewInfo, defaultSizes, defaultSize) {
     views = {};
     console.log(viewInfo)
@@ -1276,6 +1280,62 @@ characterMakers["Kurribird"] = () => {
             }
         ],
         math.unit(12, "feet")
+    )
+};
+
+characterMakers["Elbial"] = () => {
+    return makeCharacter(
+        "Elbial",
+        "Neopuc",
+        {
+            front: {
+                height: math.unit(2, "meter"),
+                weight: math.unit(80, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/elbial/front.svg"
+                }
+            },
+            side: {
+                height: math.unit(2, "meter"),
+                weight: math.unit(80, "kg"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/elbial/side.svg"
+                }
+            },
+            back: {
+                height: math.unit(2, "meter"),
+                weight: math.unit(80, "kg"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/elbial/back.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Large",
+                height: math.unit(100, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(500, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(10, "miles")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(25000, "miles")
+            },
+            {
+                name: "Full-Size",
+                height: math.unit(8000000, "gigaparsecs")
+            }
+        ],
+        math.unit(500, "feet")
     )
 };
 

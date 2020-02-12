@@ -269,6 +269,16 @@ https://www.furaffinity.net/view/18392470/
 
 * front-alt.svg
 
+## Elbial
+
+**https://www.furaffinity.net/user/homogenousrule**
+
+https://www.furaffinity.net/view/15459294/
+
+* front.svg
+* side.svg
+* back.svg
+
 # Objects
 
 **Self-created**
