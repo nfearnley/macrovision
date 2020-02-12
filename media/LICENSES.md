@@ -320,6 +320,12 @@ https://www.furaffinity.net/view/16949759/
 
 * front.svg
 
+**https://www.furaffinity.net/user/wfa**
+
+https://www.furaffinity.net/view/19334493/
+
+* front-alt.svg
+
 # Naturals
 
 **Self-created**

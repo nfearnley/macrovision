@@ -1506,7 +1506,16 @@ characterMakers["Jennifer"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/jennifer/front.svg",
-                    bottom: 0.11
+                    bottom: 0.11,
+                    extra: 1.16
+                }
+            },
+            frontAlt: {
+                height: math.unit(2, "meter"),
+                weight: math.unit(80, "kg"),
+                name: "Front (Alt)",
+                image: {
+                    source: "./media/characters/jennifer/front-alt.svg"
                 }
             }
         },
