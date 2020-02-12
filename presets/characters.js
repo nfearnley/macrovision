@@ -700,6 +700,18 @@ function makeFory() {
     };
 
     const entity = makeEntity("Fory", "Manny", views);
+    
+
+    entity.defaults.push({
+        name: "Normal",
+        height: math.unit(5, "feet")
+    });
+
+    entity.defaults.push({
+        name: "Macro",
+        height: math.unit(50, "feet")
+    });
+
     entity.views.front.height = math.unit(50, "feet");
     return entity;
 }
