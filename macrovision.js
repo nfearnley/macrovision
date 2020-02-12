@@ -23,8 +23,8 @@ const unitChoices = {
         "parsecs",
     ],
     area: [
-        "cm^2",
         "meters^2",
+        "cm^2",
         "kilometers^2",
         "acres",
         "miles^2"
@@ -500,8 +500,8 @@ function updateViewOptions(entity, view, changed) {
             const input = document.querySelector("#options-view-" + key + "-input");
             const select = document.querySelector("#options-view-" + key + "-select");
             const currentUnit = select.value;
-            const convertedAmount = entity.views[view][key].to(currentUnit);
-            input.value = math.round(convertedAmount.value, 5);
+            const convertedAmount = entity.views[view][key].toNumber(currentUnit);
+            input.value = math.round(convertedAmount, 5);
         }
 
     });
