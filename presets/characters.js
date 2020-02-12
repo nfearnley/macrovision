@@ -1233,6 +1233,52 @@ characterMakers["Sosha"] = () => {
     )
 };
 
+characterMakers["Kurribird"] = () => {
+    return makeCharacter(
+        "Kurribird",
+        "Kurrikage",
+        {
+            front: {
+                height: math.unit(2, "meter"),
+                weight: math.unit(50, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/kurribird/front.svg",
+                    bottom: 0.015
+                }
+            },
+            frontAlt: {
+                height: math.unit(1.5, "meter"),
+                weight: math.unit(50, "kg"),
+                name: "Front (Alt)",
+                image: {
+                    source: "./media/characters/kurribird/front-alt.svg",
+                    extra: 1.45
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(7, "feet")
+            },
+            {
+                name: "Big",
+                height: math.unit(15, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(1500, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(2, "miles")
+            }
+        ],
+        math.unit(12, "feet")
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

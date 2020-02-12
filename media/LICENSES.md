@@ -255,6 +255,20 @@ https://www.furaffinity.net/view/22781088/
 
 * side.svg
 
+## Kurribird
+
+**https://www.furaffinity.net/user/akuva**
+
+http://www.furaffinity.net/view/23539094/
+
+* front.svg
+
+**https://www.furaffinity.net/user/hornedfreak**
+
+https://www.furaffinity.net/view/18392470/
+
+* front-alt.svg
+
 # Objects
 
 **Self-created**
