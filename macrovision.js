@@ -402,6 +402,8 @@ function configEntityOptions(entity, view) {
 
         button.addEventListener("click", e => {
             entity.views[entity.defaultView].height = defaultInfo.height;
+            updateEntityOptions(entity, view);
+            updateViewOptions(entity, view);
             updateSizes();
         });
 
