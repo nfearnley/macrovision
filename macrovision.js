@@ -20,6 +20,7 @@ const unitChoices = {
         "inches",
         "feet",
         "miles",
+        "parsecs",
     ],
     area: [
         "cm^2",

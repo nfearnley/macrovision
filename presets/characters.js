@@ -1155,6 +1155,14 @@ characterMakers["Talan"] = () => {
             {
                 name: "Megamacro",
                 height: math.unit(2, "miles")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(5000, "miles")
+            },
+            {
+                name: "Teramacro",
+                height: math.unit(100, "parsecs")
             }
         ],
         math.unit(2, "miles")
