@@ -153,6 +153,20 @@ function makeMarch() {
                 source: "./media/characters/march/front.svg"
             },
             name: "Front"
+        },
+        foot: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(0.9, "feet")
+                }
+            },
+            image: {
+                source: "./media/characters/march/foot.svg"
+            },
+            name: "Foot"
         }
     };
 

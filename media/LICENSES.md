@@ -47,6 +47,12 @@ https://www.deviantart.com/natsuakai/art/Comm-Big-Guy-558510348
 
 * front.svg
 
+**https://twitter.com/watchout4dragon**
+
+(no link)
+
+* foot.svg
+
 ## Noir
 
 **https://www.furaffinity.net/user/kclt**
