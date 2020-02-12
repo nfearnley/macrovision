@@ -287,6 +287,16 @@ https://www.furaffinity.net/view/15460332/
 
 * front.svg
 * talons.svg
+
+## Natalya
+
+**https://www.furaffinity.net/user/fsmaverick/**
+
+https://www.furaffinity.net/view/28619653/
+
+* front.svg
+* back.svg
+
 # Objects
 
 **Self-created**
