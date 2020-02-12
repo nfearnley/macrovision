@@ -297,6 +297,20 @@ https://www.furaffinity.net/view/28619653/
 * front.svg
 * back.svg
 
+## Erestrebah
+
+**https://www.furaffinity.net/user/missyazriel**
+
+http://www.furaffinity.net/view/26085781/
+
+* front.svg
+
+**https://www.furaffinity.net/user/wintuk**
+
+http://www.furaffinity.net/view/18577161/
+
+* back.svg
+
 # Objects
 
 **Self-created**
