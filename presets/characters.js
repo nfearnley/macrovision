@@ -652,6 +652,17 @@ function makeFlamm() {
     };
 
     const entity = makeEntity("Flamm", "Flamm", views);
+
+    entity.defaults.push({
+        name: "Normal",
+        height: math.unit(9.5, "feet")
+    });
+
+    entity.defaults.push({
+        name: "Macro",
+        height: math.unit(200, "feet")
+    });
+
     entity.views.front.height = math.unit(200, "feet");
     return entity;
 }
