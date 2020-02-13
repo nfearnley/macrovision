@@ -1967,7 +1967,15 @@ characterMakers["Ona"] = () => {
             {
                 name: "Megamacro",
                 height: math.unit(70, "km")
-            }
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(681818, "miles")
+            },
+            {
+                name: "Examacro",
+                height: math.unit(3800000, "lightyears")
+            },
         ],
         math.unit(70, "km")
     )
