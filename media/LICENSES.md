@@ -326,6 +326,15 @@ https://www.furaffinity.net/view/19334493/
 
 * front-alt.svg
 
+## Kalista
+
+**https://www.furaffinity.net/user/darkvulpine2**
+
+https://www.furaffinity.net/view/19154251/
+
+* front.svg
+* back.svg
+
 # Naturals
 
 **Self-created**

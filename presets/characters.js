@@ -1599,6 +1599,54 @@ characterMakers["Jennifer"] = () => {
     )
 };
 
+characterMakers["Kalista"] = () => {
+    return makeCharacter(
+        "Kalista",
+        "Kalista",
+        {
+            front: {
+                height: math.unit(2, "meter"),
+                weight: math.unit(50, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/kalista/front.svg"
+                }
+            },
+            back: {
+                height: math.unit(2, "meter"),
+                weight: math.unit(50, "kg"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/kalista/back.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Uncomfortably Small",
+                height: math.unit(10, "feet")
+            },
+            {
+                name: "Small",
+                height: math.unit(30, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(100, "feet")
+            },
+            {
+                name: "Macro+",
+                height: math.unit(2000, "feet")
+            },
+            {
+                name: "True Form",
+                height: math.unit(8924, "miles")
+            }
+        ],
+        math.unit(100, "feet")
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
