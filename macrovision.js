@@ -422,6 +422,8 @@ function clearEntityOptions() {
     const holder = document.querySelector("#options-entity");
 
     holder.innerHTML = "";
+
+    document.querySelector("#options-entity-defaults").innerHTML = "";
 }
 
 function configViewOptions(entity, view) {

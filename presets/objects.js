@@ -1,9 +1,7 @@
 function makeObject(name, viewInfo) {
     views = {};
-    console.log(viewInfo)
 
     Object.entries(viewInfo).forEach(([key, value]) => {
-        console.log(key)
         views[key] = {
             attributes: {
                 height: {
@@ -27,7 +25,6 @@ function makeObject(name, viewInfo) {
         }
     });
 
-    console.log(views)
     return makeEntity(name, "Object", views);
 }
 

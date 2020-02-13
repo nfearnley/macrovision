@@ -10,10 +10,8 @@ math.createUnit("lightyears", {
 })
 function makeCharacter(name, author, viewInfo, defaultSizes, defaultSize) {
     views = {};
-    console.log(viewInfo)
 
     Object.entries(viewInfo).forEach(([key, value]) => {
-        console.log(key)
         views[key] = {
             attributes: {
                 height: {
