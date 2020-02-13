@@ -193,7 +193,7 @@ function makeMarch() {
 
     entity.defaults.push({
         name: "Gigamacro",
-        height: math.unit(15963, "meters")
+        height: math.unit(15963, "km")
     });
 
     entity.defaults.push({
@@ -254,7 +254,7 @@ function makeNoir() {
 
     entity.defaults.push({
         name: "Gigamacro",
-        height: math.unit(22500, "meters")
+        height: math.unit(22500, "km")
     });
 
     entity.defaults.push({
