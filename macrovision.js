@@ -781,7 +781,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#options-world-fit").addEventListener("click", fitWorld);
 
     document.querySelector("#options-world-autofit").addEventListener("input", e => {
-        config.autoFit = e.target.value;
+        config.autoFit = e.target.checked;
         
 
         if (config.autoFit) {
