@@ -1683,6 +1683,38 @@ characterMakers["GiantGrowingVixen"] = () => {
     )
 };
 
+characterMakers["Napalm"] = () => {
+    return makeCharacter(
+        "Napalm",
+        "RathDaKrogan",
+        {
+            front: {
+                height: math.unit(2, "meter"),
+                weight: math.unit(75, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/napalm/front.svg"
+                }
+            },
+            back: {
+                height: math.unit(2, "meter"),
+                weight: math.unit(75, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/napalm/back.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Standard",
+                height: math.unit(55, "feet")
+            }
+        ],
+        math.unit(55, "feet")
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

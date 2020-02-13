@@ -30,7 +30,9 @@ const unitChoices = {
         "miles^2"
     ],
     mass: [
-        "kilograms"
+        "kilograms",
+        "lbs",
+        "tons"
     ]
 }
 const config = {

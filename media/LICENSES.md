@@ -344,6 +344,15 @@ https://www.furaffinity.net/view/15086529/
 * front.svg
 * side.svg
 
+## Napalm
+
+**https://www.furaffinity.net/user/ahastar/**
+
+https://www.furaffinity.net/view/32602080/
+
+* front.svg
+* back.svg
+
 # Naturals
 
 **Self-created**
