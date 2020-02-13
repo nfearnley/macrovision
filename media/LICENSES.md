@@ -353,6 +353,15 @@ https://www.furaffinity.net/view/32602080/
 * front.svg
 * back.svg
 
+## Asana
+
+**https://www.furaffinity.net/gallery/silverwingink/**
+
+(no link)
+
+* front.svg
+* back.svg
+
 # Naturals
 
 **Self-created**

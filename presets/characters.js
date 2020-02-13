@@ -4,6 +4,10 @@ math.createUnit("parsecs", {
     definition: "3.086e16 meters",
     prefixes: "long"
 })
+math.createUnit("lightyears", {
+    definition: "9.461e15 meters",
+    prefixes: "long"
+})
 function makeCharacter(name, author, viewInfo, defaultSizes, defaultSize) {
     views = {};
     console.log(viewInfo)
@@ -1671,12 +1675,16 @@ characterMakers["GiantGrowingVixen"] = () => {
         },
         [
             {
-                name: "Overcompressed",
+                name: "Extremely Puny",
                 height: math.unit(9 + 5/12, "feet")
             },
             {
-                name: "Uncompressed",
+                name: "Horribly Small",
                 height: math.unit(47.7, "miles")
+            },
+            {
+                name: "Reasonably Sized",
+                height: math.unit(25000, "parsecs")
             }
         ],
         math.unit(47.7, "miles")
@@ -1714,6 +1722,57 @@ characterMakers["Napalm"] = () => {
         math.unit(55, "feet")
     )
 };
+
+characterMakers["Asana"] = () => {
+    return makeCharacter(
+        "Asana",
+        "Lazerwolf",
+        {
+            front: {
+                height: math.unit(7 + 5/6, "feet"),
+                weight: math.unit(325, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/asana/front.svg",
+                    extra: 1128/1068
+                }
+            },
+            back: {
+                height: math.unit(7 + 5/6, "feet"),
+                weight: math.unit(325, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/asana/back.svg",
+                    extra: 1128/1068
+                }
+            },
+        },
+        [
+            {
+                name: "Standard",
+                height: math.unit(7 + 5/6, "feet")
+            },
+            {
+                name: "Large",
+                height: math.unit(10, "meters")
+            },
+            {
+                name: "Macro",
+                height: math.unit(2500, "meters")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(5e6, "meters")
+            },
+            {
+                name: "Examacro",
+                height: math.unit(5e12, "lightyears")
+            }
+        ],
+        math.unit(7 + 5/6, "feet")
+    )
+};
+
 
 function makeCharacters() {
     const results = [];
