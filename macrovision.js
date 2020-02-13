@@ -715,6 +715,7 @@ document.addEventListener("DOMContentLoaded", () => {
             config.height = math.multiply(config.height, dir);
             updateWorldOptions();
         }
+        checkFitWorld();
         updateSizes();
     })
     document.querySelector("body").appendChild(testCtx.canvas);
@@ -918,6 +919,11 @@ document.addEventListener("touchmove", (e) => {
     }
 }, { passive: false });
 
+function checkFitWorld() {
+    if (config.autoFit) {
+        fitWorld();
+    }
+}
 function fitWorld() {
     let max = math.unit(0, "meter");
 
