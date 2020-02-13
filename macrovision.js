@@ -9,6 +9,7 @@ let clickTimeout = null;
 let dragOffsetX = null;
 let dragOffsetY = null;
 
+let shiftHeld = false;
 let altHeld = false;
 
 const unitChoices = {
@@ -699,11 +700,20 @@ document.addEventListener("DOMContentLoaded", () => {
     fitWorld();
     window.addEventListener("wheel", e => {
 
-        const dir = e.deltaY < 0 ? 0.9 : 1.1;
 
-        config.height = math.multiply(config.height, dir);
+        if (shiftHeld) {
+            const dir = e.deltaY > 0 ? 0.9 : 1.1;
+            if (selected) {
+                const entity = entities[selected.dataset.key];
+                entity.views[entity.view].height = math.multiply(entity.views[entity.view].height, dir);
+            }
+
+        } else {
+            const dir = e.deltaY < 0 ? 0.9 : 1.1;
+            config.height = math.multiply(config.height, dir);
+            updateWorldOptions();
+        }
         updateSizes();
-        updateWorldOptions();
     })
     document.querySelector("body").appendChild(testCtx.canvas);
 
@@ -784,6 +794,22 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     })
+
+    document.addEventListener("keydown", e => {
+        if (e.key == "Shift") {
+            shiftHeld = true;
+        } else if (e.key == "Alt") {
+            altHeld = true;
+        }
+    });
+
+    document.addEventListener("keyup", e => {
+        if (e.key == "Shift") {
+            shiftHeld = false;
+        } else if (e.key == "Alt") {
+            altHeld = false;
+        }
+    });
 });
 
 function prepareEntities() {
