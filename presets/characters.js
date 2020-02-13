@@ -2042,7 +2042,7 @@ characterMakers["Gregory"] = () => {
             },
             {
                 name: "Macro",
-                height: math.unit(300, "feet")
+                height: math.unit(20, "meter")
             }
         ],
         math.unit(1.3, "meter")
@@ -2070,7 +2070,7 @@ characterMakers["Elory"] = () => {
             },
             {
                 name: "Macro",
-                height: math.unit(300, "feet")
+                height: math.unit(38, "meter")
             }
         ],
         math.unit(2.8, "meter")
@@ -2095,6 +2095,14 @@ characterMakers["Angelpatamon"] = () => {
             {
                 name: "Normal",
                 height: math.unit(470, "feet")
+            },
+            {
+                name: "Deity Size I",
+                height: math.unit(28651.2, "km")
+            },
+            {
+                name: "Deity Size II",
+                height: math.unit(171907.2, "km")
             }
         ],
         math.unit(470, "feet")
