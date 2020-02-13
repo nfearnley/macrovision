@@ -175,6 +175,37 @@ function makeMarch() {
     };
 
     const entity = makeEntity("March", "March-Dragon", views);
+
+    entity.defaults.push({
+        name: "Normal",
+        height: math.unit(7.9, "feet")
+    });
+
+    entity.defaults.push({
+        name: "Macro",
+        height: math.unit(220, "meters")
+    });
+
+    entity.defaults.push({
+        name: "Megamacro",
+        height: math.unit(2.98, "km")
+    });
+
+    entity.defaults.push({
+        name: "Gigamacro",
+        height: math.unit(15963, "meters")
+    });
+
+    entity.defaults.push({
+        name: "Teramacro",
+        height: math.unit(2980000000, "kilometers")
+    });
+
+    entity.defaults.push({
+        name: "Examacro",
+        height: math.unit(250, "parsecs")
+    });
+
     entity.views.front.height = math.unit(2.98, "km");
     return entity;
 }
@@ -205,6 +236,37 @@ function makeNoir() {
     };
 
     const entity = makeEntity("Noir", "March-Dragon", views);
+
+    entity.defaults.push({
+        name: "Normal",
+        height: math.unit(6.6, "feet")
+    });
+
+    entity.defaults.push({
+        name: "Macro",
+        height: math.unit(500, "feet")
+    });
+
+    entity.defaults.push({
+        name: "Megamacro",
+        height: math.unit(2.5, "km")
+    });
+
+    entity.defaults.push({
+        name: "Gigamacro",
+        height: math.unit(22500, "meters")
+    });
+
+    entity.defaults.push({
+        name: "Teramacro",
+        height: math.unit(2500000000, "kilometers")
+    });
+
+    entity.defaults.push({
+        name: "Examacro",
+        height: math.unit(200, "parsecs")
+    });
+
     entity.views.front.height = math.unit(2.5, "km");
     return entity;
 }
