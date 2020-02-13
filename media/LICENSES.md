@@ -335,6 +335,15 @@ https://www.furaffinity.net/view/19154251/
 * front.svg
 * back.svg
 
+## ggv
+
+**https://www.furaffinity.net/user/nazuu-m0nster**
+
+https://www.furaffinity.net/view/15086529/
+
+* front.svg
+* side.svg
+
 # Naturals
 
 **Self-created**

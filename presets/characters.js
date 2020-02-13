@@ -1647,6 +1647,42 @@ characterMakers["Kalista"] = () => {
     )
 };
 
+characterMakers["GiantGrowingVixen"] = () => {
+    return makeCharacter(
+        "GiantGrowingVixen",
+        "GiantGrowingVixen",
+        {
+            front: {
+                height: math.unit(2, "meter"),
+                weight: math.unit(120, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/ggv/front.svg"
+                }
+            },
+            side: {
+                height: math.unit(2, "meter"),
+                weight: math.unit(120, "kg"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/ggv/side.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Overcompressed",
+                height: math.unit(9 + 5/12, "feet")
+            },
+            {
+                name: "Uncompressed",
+                height: math.unit(47.7, "miles")
+            }
+        ],
+        math.unit(47.7, "miles")
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
