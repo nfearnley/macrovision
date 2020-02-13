@@ -362,7 +362,26 @@ https://www.furaffinity.net/view/32602080/
 * front.svg
 * back.svg
 
+## Ebony
+
+**https://twitter.com/KnifeLynx**
+
+(no link)
+
+* front.svg
+* side.svg
+* back.svg
+
+## Mountain
+
+**https://www.furaffinity.net/user/libra-11**
+
+(no link)
+
 # Naturals
+
+* front.svg
+* back.svg
 
 **Self-created**
 

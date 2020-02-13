@@ -1726,7 +1726,7 @@ characterMakers["Napalm"] = () => {
 characterMakers["Asana"] = () => {
     return makeCharacter(
         "Asana",
-        "Lazerwolf",
+        "Asana",
         {
             front: {
                 height: math.unit(7 + 5/6, "feet"),
@@ -1770,6 +1770,96 @@ characterMakers["Asana"] = () => {
             }
         ],
         math.unit(7 + 5/6, "feet")
+    )
+};
+
+characterMakers["Ebony"] = () => {
+    return makeCharacter(
+        "Ebony",
+        "Lazerwolf",
+        {
+            front: {
+                height: math.unit(2, "meter"),
+                weight: math.unit(60, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/ebony/front.svg",
+                    bottom: 0.03,
+                    extra: 1045/810 + 0.03
+                }
+            },
+            side: {
+                height: math.unit(2, "meter"),
+                weight: math.unit(60, "kg"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/ebony/side.svg",
+                    bottom: 0.03,
+                    extra: 1045/810 + 0.03
+                }
+            },
+            back: {
+                height: math.unit(2, "meter"),
+                weight: math.unit(60, "kg"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/ebony/back.svg",
+                    bottom: 0.01,
+                    extra: 1045/810 + 0.01
+                }
+            },
+        },
+        [
+            {
+                name: "Standard",
+                height: math.unit(9/8 * (7 + 5/12), "feet")
+            }
+        ],
+        math.unit(7 + 5/12, "feet")
+    )
+};
+
+characterMakers["Mountain"] = () => {
+    return makeCharacter(
+        "Mountain",
+        "Asana",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(175, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/mountain/front.svg"
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(175, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/mountain/back.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Large",
+                height: math.unit(20, "meters")
+            },
+            {
+                name: "Macro",
+                height: math.unit(300, "meters")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(10000, "km")
+            },
+            {
+                name: "Examacro",
+                height: math.unit(10e9, "lightyears")
+            }
+        ],
+        math.unit(10000, "km")
     )
 };
 
