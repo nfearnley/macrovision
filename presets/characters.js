@@ -2128,6 +2128,64 @@ characterMakers["Cryae"] = () => {
     )
 };
 
+characterMakers["Xera"] = () => {
+    return makeCharacter(
+        "Xera",
+        "Asana",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(175, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/xera/front.svg",
+                    extra: 2300/2061
+                }
+            },
+            side: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(175, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/xera/side.svg",
+                    extra: 2300/2061
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(175, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/xera/back.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Small",
+                height: math.unit(10, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(500, "meters")
+            },
+            {
+                name: "Macro+",
+                height: math.unit(10, "km")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(25000, "km")
+            },
+            {
+                name: "Teramacro",
+                height: math.unit(3e6, "km")
+            }
+        ],
+        math.unit(500, "meters")
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

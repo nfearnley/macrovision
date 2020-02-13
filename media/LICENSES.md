@@ -443,6 +443,16 @@ https://www.furaffinity.net/view/34372310/
 
 * side.svg
 
+## Ashtrek
+
+**https://www.furaffinity.net/gallery/ashtrek/**
+
+(no link)
+
+* front.svg
+* side.svg
+* back.svg
+
 # Naturals
 
 * front.svg
