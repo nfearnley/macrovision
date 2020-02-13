@@ -2023,6 +2023,111 @@ characterMakers["Mech"] = () => {
     )
 };
 
+characterMakers["Gregory"] = () => {
+    return makeCharacter(
+        "Gregory",
+        "GregoryKlippenspringer",
+        {
+            front: {
+                height: math.unit(1.3, "meter"),
+                weight: math.unit(30, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/gregory/front.svg",
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(1.3, "meter")
+            },
+            {
+                name: "Macro",
+                height: math.unit(300, "feet")
+            }
+        ],
+        math.unit(1.3, "meter")
+    )
+};
+
+characterMakers["Elory"] = () => {
+    return makeCharacter(
+        "Elory",
+        "GregoryKlippenspringer",
+        {
+            front: {
+                height: math.unit(2.8, "meter"),
+                weight: math.unit(200, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/elory/front.svg",
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(2.8, "meter")
+            },
+            {
+                name: "Macro",
+                height: math.unit(300, "feet")
+            }
+        ],
+        math.unit(2.8, "meter")
+    )
+};
+
+characterMakers["Angelpatamon"] = () => {
+    return makeCharacter(
+        "Angelpatamon",
+        "GregoryKlippenspringer",
+        {
+            front: {
+                height: math.unit(470, "feet"),
+                weight: math.unit(924, "tons"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/angelpatamon/front.svg",
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(470, "feet")
+            }
+        ],
+        math.unit(470, "feet")
+    )
+};
+
+characterMakers["Cryae"] = () => {
+    return makeCharacter(
+        "Cryae",
+        "GregoryKlippenspringer",
+        {
+            side: {
+                height: math.unit(7.2, "meter"),
+                weight: math.unit(8.2, "tons"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/cryae/side.svg",
+                    extra: 3500/1500
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(7.2, "meter")
+            }
+        ],
+        math.unit(7.2, "meter")
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

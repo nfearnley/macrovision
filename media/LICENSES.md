@@ -411,6 +411,38 @@ https://www.furaffinity.net/view/25688886/
 * front.svg
 * back.svg
 
+## Gregory
+
+**https://www.furaffinity.net/user/royal-pain-in-the-ass**
+
+(no link)
+
+* front.svg
+
+## Elory
+
+**https://www.furaffinity.net/user/canictricity**
+
+https://www.furaffinity.net/view/21837855/
+
+* front.svg
+
+## Angelpatamon
+
+**https://www.furaffinity.net/user/mallowchu**
+
+http://www.furaffinity.net/view/26475369/
+
+* front.svg
+
+## Cryae 
+
+**https://www.furaffinity.net/user/anutabelko**
+
+https://www.furaffinity.net/view/34372310/
+
+* side.svg
+
 # Naturals
 
 * front.svg
