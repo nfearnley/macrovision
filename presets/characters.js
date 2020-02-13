@@ -1874,6 +1874,34 @@ characterMakers["Mountain"] = () => {
     )
 };
 
+characterMakers["Rick"] = () => {
+    return makeCharacter(
+        "Rick",
+        "Victni",
+        {
+            front: {
+                height: math.unit(8, "feet"),
+                weight: math.unit(500, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/rick/front.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(8, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(5, "km")
+            }
+        ],
+        math.unit(8, "feet")
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

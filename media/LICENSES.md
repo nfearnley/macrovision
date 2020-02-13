@@ -378,6 +378,14 @@ https://www.furaffinity.net/view/32602080/
 
 (no link)
 
+## Rick
+
+**https://www.furaffinity.net/user/victni/**
+
+https://www.furaffinity.net/view/30822024/
+
+* front.svg
+
 # Naturals
 
 * front.svg
