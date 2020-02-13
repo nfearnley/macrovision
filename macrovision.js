@@ -727,6 +727,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     document.querySelector("#options-height-unit").addEventListener("input", e => {
+        checkFitWorld();
         updateWorldHeight();
     })
 
@@ -925,7 +926,7 @@ function checkFitWorld() {
     }
 }
 function fitWorld() {
-    let max = math.unit(0, "meter");
+    let max = math.unit(0, "meters");
 
     Object.entries(entities).forEach(([key, entity]) => {
         const view = document.querySelector("#entity-" + key).dataset.view;
@@ -937,15 +938,15 @@ function fitWorld() {
 }
 
 function updateWorldHeight() {
-    const value = Math.max(1, document.querySelector("#options-height-value").value);
     const unit = document.querySelector("#options-height-unit").value;
+    const value = Math.max(0.000000001, document.querySelector("#options-height-value").value);
     const oldHeight = config.height;
 
     setWorldHeight(oldHeight, math.unit(value, unit));
 }
 
 function setWorldHeight(oldHeight, newHeight) {
-    config.height = newHeight;
+    config.height = newHeight.to(document.querySelector("#options-height-unit").value)
 
     const unit = document.querySelector("#options-height-unit").value;
     document.querySelector("#options-height-value").value = config.height.toNumber(unit);
