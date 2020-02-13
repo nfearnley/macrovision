@@ -250,7 +250,6 @@ body.toggle-bottom-name .bottom-name {
 #spawners > select {
     display: none;
     font-size: 24pt;
-    margin-right: 50px;
 }
 
 #spawners > select#category-picker {

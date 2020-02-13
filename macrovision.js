@@ -833,8 +833,8 @@ function prepareEntities() {
         }
 
         categorySelect.appendChild(categoryOption);
-        holder.appendChild(button);
         holder.appendChild(select);
+        holder.appendChild(button);
     });
 
     categorySelect.addEventListener("input", e => {
