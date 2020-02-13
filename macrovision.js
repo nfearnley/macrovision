@@ -668,6 +668,8 @@ function displayEntity(entity, view, x, y) {
     if (config.autoFit) {
         fitWorld();
     }
+
+    select(box);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
