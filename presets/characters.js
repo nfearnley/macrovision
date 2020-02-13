@@ -504,7 +504,23 @@ function makeElijah() {
     };
 
     const entity = makeEntity("Elijah", "Elijah", views);
-    entity.views.side.height = math.unit(175, "feet");
+
+    entity.defaults.push({
+        name: "Normal",
+        height: math.unit(1.65, "meters")
+    });
+
+    entity.defaults.push({
+        name: "Macro",
+        height: math.unit(55, "meters")
+    });
+
+    entity.defaults.push({
+        name: "Macro+",
+        height: math.unit(105, "meters")
+    });
+
+    entity.views.side.height = math.unit(55, "meters");
     return entity;
 }
 
@@ -1824,6 +1840,14 @@ characterMakers["Ebony"] = () => {
             {
                 name: "Standard",
                 height: math.unit(9/8 * (7 + 5/12), "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(200, "feet")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(13000, "km")
             }
         ],
         math.unit(7 + 5/12, "feet")
