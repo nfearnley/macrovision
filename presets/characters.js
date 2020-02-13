@@ -1981,6 +1981,48 @@ characterMakers["Ona"] = () => {
     )
 };
 
+characterMakers["Mech"] = () => {
+    return makeCharacter(
+        "Mech",
+        "mechEdragon",
+        {
+            front: {
+                height: math.unit(12, "feet"),
+                weight: math.unit(3000, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/mech/front.svg",
+                    bottom: 0.025,
+                }
+            },
+            back: {
+                height: math.unit(12, "feet"),
+                weight: math.unit(3000, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/mech/back.svg",
+                    bottom: 0.03,
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(300, "feet")
+            },
+            {
+                name: "Macro+",
+                height: math.unit(1500, "feet")
+            },
+        ],
+        math.unit(300, "feet")
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

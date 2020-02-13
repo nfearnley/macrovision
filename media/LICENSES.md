@@ -402,6 +402,15 @@ https://www.furaffinity.net/view/23287543/
 
 * front-alt.svg
 
+## Mech
+
+**http://www.furaffinity.net/user/tanraak**
+
+https://www.furaffinity.net/view/25688886/
+
+* front.svg
+* back.svg
+
 # Naturals
 
 * front.svg
