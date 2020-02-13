@@ -1926,6 +1926,53 @@ characterMakers["Rick"] = () => {
     )
 };
 
+characterMakers["Ona"] = () => {
+    return makeCharacter(
+        "Ona",
+        "Arrogance127",
+        {
+            front: {
+                height: math.unit(8, "feet"),
+                weight: math.unit(120, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/ona/front.svg"
+                }
+            },
+            frontAlt: {
+                height: math.unit(8, "feet"),
+                weight: math.unit(120, "lb"),
+                name: "Front (Alt)",
+                image: {
+                    source: "./media/characters/ona/front-alt.svg"
+                }
+            },
+            back: {
+                height: math.unit(8, "feet"),
+                weight: math.unit(120, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/ona/back.svg"
+                }
+            },
+            foot: {
+                height: math.unit(1.1, "feet"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/ona/foot.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Megamacro",
+                height: math.unit(70, "km")
+            }
+        ],
+        math.unit(70, "km")
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

@@ -386,6 +386,22 @@ https://www.furaffinity.net/view/30822024/
 
 * front.svg
 
+## Ona
+
+**http://www.furaffinity.net/user/kerneldecoy**
+
+https://www.furaffinity.net/view/23287543/
+
+* front.svg
+* back.svg
+* foot.svg
+
+**https://www.furaffinity.net/user/eddy-boy**
+
+(no link)
+
+* front-alt.svg
+
 # Naturals
 
 * front.svg
