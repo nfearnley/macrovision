@@ -210,6 +210,7 @@ function drawScale() {
 function makeEntity(name, author, views) {
     const entityTemplate = {
         name: name,
+        identifier: name,
         author: author,
         scale: 1,
         views: views,
@@ -814,6 +815,29 @@ document.addEventListener("DOMContentLoaded", () => {
             altHeld = false;
         }
     });
+    
+    document.addEventListener("paste", e => {
+        try {
+            const data = JSON.parse(e.clipboardData.getData("text"));
+            console.log(data)
+            if (data.entities === undefined) {
+                return;
+            }
+            if (data.world === undefined) {
+                return;
+            }
+
+            importScene(data);
+        } catch(err) {
+            console.error(err);
+            
+            // probably wasn't valid data 
+        }
+    });
+
+    document.querySelector("#menu-export").addEventListener("click", e => {
+        exportScene();
+    });
 });
 
 function prepareEntities() {
@@ -956,6 +980,68 @@ function setWorldHeight(oldHeight, newHeight) {
         element.dataset.x = newPosition.x;
         element.dataset.y = newPosition.y;
     });
+
+    updateSizes();
+}
+
+function exportScene() {
+    const results = {};
+
+    results.entities = [];
+
+    Object.entries(entities).forEach(([key, entity]) => {
+        const element = document.querySelector("#entity-" + key);
+        results.entities.push({
+            name: entity.identifier,
+            scale: entity.scale,
+            view: entity.view,
+            x: element.dataset.x,
+            y: element.dataset.y
+        });
+    });
+
+    const unit = document.querySelector("#options-height-unit").value;
+    results.world = {
+        height: config.height.toNumber(unit),
+        unit: unit
+    }
+
+    navigator.clipboard.writeText(JSON.stringify(results))
+
+    alert("Scene copied to clipboard. Paste text into the page to load the scene.");
+}
+
+// TODO - don't just search through every single entity 
+// probably just have a way to do lookups directly
+
+function findEntity(name) {
+    const groups = Object.values(availableEntities);
+    for (let i = 0; i < groups.length; i++) {
+        const entityGroup = groups[i];
+        for (let j = 0; j < entityGroup.length; j++) {
+            const candidate = entityGroup[j];
+            if (candidate.name === name) {
+                return candidate;
+            }
+        }
+    }
+    
+
+    return null;
+}
+
+function importScene(data) {
+    removeAllEntities();
+
+    data.entities.forEach(entityInfo => {
+        console.log(findEntity(entityInfo.name))
+        const entity = findEntity(entityInfo.name).constructor();
+        entity.scale = entityInfo.scale
+        displayEntity(entity, entityInfo.view, entityInfo.x, entityInfo.y);
+    });
+
+    config.height = math.unit(data.world.height, data.world.unit);
+    document.querySelector("#options-height-unit").value = data.world.unit;
 
     updateSizes();
 }

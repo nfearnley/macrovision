@@ -1195,7 +1195,7 @@ function makeMan() {
         }
     };
 
-    return makeEntity("Man", "Fen", views);
+    return makeEntity("Normal Man", "Fen", views);
 }
 
 characterMakers["North"] = () => {
@@ -2446,10 +2446,6 @@ function makeCharacters() {
     results.push({
         name: "Sefer",
         constructor: makeSefer
-    });
-    results.push({
-        name: "Normal man",
-        constructor: makeMan
     });
 
     Object.entries(characterMakers).forEach(([key, value]) => {
