@@ -49,6 +49,10 @@ const availableEntities = {
 
 }
 
+const availableEntitiesByName = {
+
+}
+
 const entities = {
 
 }
@@ -886,6 +890,8 @@ function prepareEntities() {
             option.value = i;
             option.innerText = entity.name;
             select.appendChild(option);
+
+            availableEntitiesByName[entity.name] = entity;
         };
 
         const button = document.createElement("button");
@@ -1089,26 +1095,13 @@ function copyScene() {
 // probably just have a way to do lookups directly
 
 function findEntity(name) {
-    const groups = Object.values(availableEntities);
-    for (let i = 0; i < groups.length; i++) {
-        const entityGroup = groups[i];
-        for (let j = 0; j < entityGroup.length; j++) {
-            const candidate = entityGroup[j];
-            if (candidate.name === name) {
-                return candidate;
-            }
-        }
-    }
-    
-
-    return null;
+    return availableEntitiesByName[name];
 }
 
 function importScene(data) {
     removeAllEntities();
 
     data.entities.forEach(entityInfo => {
-        console.log(findEntity(entityInfo.name))
         const entity = findEntity(entityInfo.name).constructor();
         entity.scale = entityInfo.scale
         displayEntity(entity, entityInfo.view, entityInfo.x, entityInfo.y);
