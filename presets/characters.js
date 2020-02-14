@@ -367,6 +367,28 @@ function makeManny() {
     };
 
     const entity = makeEntity("Manny", "Dialuca01", views);
+
+    entity.defaults.push({
+        name: "Normal",
+        height: math.unit(7, "feet")
+    });
+    entity.defaults.push({
+        name: "Macro",
+        height: math.unit(78, "feet")
+    });
+    entity.defaults.push({
+        name: "Macro+",
+        height: math.unit(300, "meters")
+    });
+    entity.defaults.push({
+        name: "Megamacro",
+        height: math.unit(5167, "meters")
+    });
+    entity.defaults.push({
+        name: "Gigamacro",
+        height: math.unit(41769, "miles")
+    });
+    
     entity.views.front.height = math.unit(78, "feet");
     return entity;
 }
@@ -458,6 +480,27 @@ function makeAdake() {
     };
 
     const entity = makeEntity("Adake", "Dialuca01", views);
+    
+    entity.defaults.push({
+        name: "Normal",
+        height: math.unit(7, "feet")
+    });
+    entity.defaults.push({
+        name: "Macro",
+        height: math.unit(78, "feet")
+    });
+    entity.defaults.push({
+        name: "Macro+",
+        height: math.unit(300, "meters")
+    });
+    entity.defaults.push({
+        name: "Megamacro",
+        height: math.unit(5167, "meters")
+    });
+    entity.defaults.push({
+        name: "Gigamacro",
+        height: math.unit(41769, "miles")
+    });
     entity.views.front.height = math.unit(78, "feet");
     return entity;
 }
