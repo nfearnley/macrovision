@@ -1,12 +1,16 @@
-function makeVehicle(name, horizHeight, horizImage, vertHeight, vertImage, mass) {
+function makeVehicle(name, sides, mass) {
     views = {
-        horizontal: {
+        
+    }
+
+    Object.entries(sides).forEach(([key, val]) => {
+        views[key] = {
             attributes: {
                 height: {
                     name: "Height",
                     power: 1,
                     type: "length",
-                    base: horizHeight
+                    base: val.height
                 },
                 mass: {
                     name: "Mass",
@@ -15,28 +19,10 @@ function makeVehicle(name, horizHeight, horizImage, vertHeight, vertImage, mass)
                     base: mass
                 }
             },
-            image: horizImage,
-            name: "Horizontal"
-        },
-        vertical: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: vertHeight
-                },
-                mass: {
-                    name: "Mass",
-                    power: 3,
-                    type: "mass",
-                    base: mass
-                }
-            },
-            image: vertImage,
-            name: "Vertical"
+            image: val.image,
+            name: val.name
         }
-    };
+    });
 
     return makeEntity(name, "Vehicle", views);
 }
@@ -48,10 +34,19 @@ function makeVehicles() {
         name: "Bus",
         constructor: () => makeVehicle(
             "Bus",
-            math.unit(10.5, "feet"),
-            { source: "./media/vehicles/bus.svg" },
-            math.unit(38.556, "feet"),
-            { source: "./media/vehicles/vertical-bus.svg" },
+            {
+                side: {
+                    name: "Side",
+                    height: math.unit(10.5, "feet"),
+                    image: { source: "./media/vehicles/bus.svg" }
+                },
+                vertical: {
+                    name: "Side (Vertical)",
+                    height: math.unit(38.5, "feet"),
+                    image: { source: "./media/vehicles/vertical-bus.svg" }
+                },
+                
+            },
             math.unit(30000, "lb"),
         )
     });
@@ -60,11 +55,49 @@ function makeVehicles() {
         name: "Leopard 2 Rev. 1",
         constructor: () => makeVehicle(
             "Leopard 2 Rev. 1",
-            math.unit(3, "meters"),
-            { source: "./media/vehicles/leopard-2-revolution-1.svg" },
-            math.unit(10, "meters"),
-            { source: "./media/vehicles/vertical-leopard-2-revolution-1.svg" },
-            math.unit(60, "tonnes"),
+            {
+                side: {
+                    name: "Side",
+                    height: math.unit(3, "meters"),
+                    image: { source: "./media/vehicles/leopard-2-revolution-1.svg" },
+                },
+                vertical: {
+                    name: "Side (Vertical)",
+                    height: math.unit(10, "meters"),
+                    image: { source: "./media/vehicles/vertical-leopard-2-revolution-1.svg" },
+                }
+            },
+            math.unit(60, "tonnes")
+        )
+    });
+
+    results.push({
+        name: "737",
+        constructor: () => makeVehicle(
+            "737",
+            {
+                side: {
+                    name: "Side",
+                    height: math.unit(12.55, "meters"),
+                    image: { source: "./media/vehicles/737-side.svg" },
+                },
+                sideVertical: {
+                    name: "Side (Vertical)",
+                    height: math.unit(39.47, "meters"),
+                    image: { source: "./media/vehicles/737-side-vertical.svg" },
+                },
+                top: {
+                    name: "Top",
+                    height: math.unit(39.47, "meters"),
+                    image: { source: "./media/vehicles/737-top.svg" },
+                },
+                front: {
+                    name: "Front",
+                    height: math.unit(12.55, "meters"),
+                    image: { source: "./media/vehicles/737-front.svg" },
+                }
+            },
+            math.unit(90710, "lbs")
         )
     });
 
