@@ -2425,6 +2425,54 @@ characterMakers["Ashtrek"] = () => {
     )
 };
 
+characterMakers["Gale"] = () => {
+    return makeCharacter(
+        "Gale",
+        "GaleFierre",
+        {
+            front: {
+                height: math.unit(2, "meters"),
+                weight: math.unit(76, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/gale/front.svg"
+                }
+            },
+            frontAlt1: {
+                height: math.unit(2, "meters"),
+                weight: math.unit(76, "kg"),
+                name: "Front (Alt 1)",
+                image: {
+                    source: "./media/characters/gale/front-alt-1.svg"
+                }
+            },
+            frontAlt2: {
+                height: math.unit(2, "meters"),
+                weight: math.unit(76, "kg"),
+                name: "Front (Alt 2)",
+                image: {
+                    source: "./media/characters/gale/front-alt-2.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(7, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(150, "feet")
+            },
+            {
+                name: "Macro+",
+                height: math.unit(300, "feet")
+            },
+        ],
+        math.unit(150, "feet")
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

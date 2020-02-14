@@ -503,6 +503,32 @@ https://www.furaffinity.net/view/32624904/
 * front.svg
 * front-armor.svg
 
+## Gale
+
+**https://www.furaffinity.net/user/evillabrat**
+
+https://www.furaffinity.net/view/16536484/
+
+* front.svg
+
+**https://twitter.com/msricket**
+
+(no link)
+
+* front-alt-1.svg
+
+**https://www.furaffinity.net/user/devvy**
+
+https://www.furaffinity.net/view/16522020/
+
+* front-alt-2.svg
+
+**https://www.furaffinity.net/user/devvy**
+
+https://www.furaffinity.net/view/16607998/
+
+* front-alt-3.svg
+
 # Naturals
 
 * front.svg
