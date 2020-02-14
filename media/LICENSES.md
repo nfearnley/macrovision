@@ -560,6 +560,24 @@ https://www.furaffinity.net/view/16607998/
 * front.svg
 * side.svg
 
+## Kaylum
+
+https://www.furaffinity.net/user/shadowinkwarrior
+
+https://www.furaffinity.net/view/32179617/
+
+* front.svg
+* front-wingless.svg
+
+## Geta
+
+**https://www.deviantart.com/pythosblaze**
+
+https://www.furaffinity.net/view/6315780/
+
+* front.svg
+
+
 # Naturals
 
 * front.svg

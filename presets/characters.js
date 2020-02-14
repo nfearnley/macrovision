@@ -2584,6 +2584,92 @@ characterMakers["Chez"] = () => {
     )
 };
 
+characterMakers["Kaylum"] = () => {
+    return makeCharacter(
+        "Kaylum",
+        "DJDarkJaro",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(275, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/kaylum/front.svg",
+                    bottom: 0.01,
+                    extra: 1166/1031
+                }
+            },
+            frontWingless: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(275, "lbs"),
+                name: "Front (Wingless)",
+                image: {
+                    source: "./media/characters/kaylum/front-wingless.svg",
+                    bottom: 0.01,
+                    extra: 1117/1031
+                }
+            }
+
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(3.05, "meters")
+            },
+            {
+                name: "Master",
+                height: math.unit(5.5, "meters")
+            },
+            {
+                name: "Rampage",
+                height: math.unit(19, "meters")
+            },
+            {
+                name: "Macro Lite",
+                height: math.unit(37, "meters")
+            },
+            {
+                name: "Hyper Predator",
+                height: math.unit(61, "meters")
+            },
+            {
+                name: "Macro",
+                height: math.unit(138, "meters")
+            }
+        ],
+        math.unit(138, "meters")
+    )
+};
+
+characterMakers["Geta"] = () => {
+    return makeCharacter(
+        "Geta",
+        "Aeznon",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/geta/front.svg"
+                }
+            }
+
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(3, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(5 + 5/12, "feet")
+            }
+        ],
+        math.unit(3, "inches")
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
