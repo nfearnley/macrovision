@@ -570,7 +570,14 @@ https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg
 
 # Vehicles
 
+**http://leopardclub.ca/reviews/Tiger_Model/Revolution/**
+
+http://leopardclub.ca/reviews/Tiger_Model/Revolution/images/boxtop1.jpg
+
+* leopard-2-revolution-1.svg
+
 **Self-created**
 
 * bus.svg
 * vertical-bus.svg
+

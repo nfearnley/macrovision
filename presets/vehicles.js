@@ -56,5 +56,17 @@ function makeVehicles() {
         )
     });
 
+    results.push({
+        name: "Leopard 2 Rev. 1",
+        constructor: () => makeVehicle(
+            "Leopard 2 Rev. 1",
+            math.unit(3, "meters"),
+            { source: "./media/vehicles/leopard-2-revolution-1.svg" },
+            math.unit(10, "meters"),
+            { source: "./media/vehicles/vertical-leopard-2-revolution-1.svg" },
+            math.unit(60, "tonnes"),
+        )
+    });
+
     return results;
 }
