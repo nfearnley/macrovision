@@ -58,7 +58,7 @@ characterMakers["Fen"] = () => {
                 weight: math.unit(124.738, "kg"),
                 name: "Body",
                 image: {
-                    source: "./media/characters/fen/back.svg"
+                    source: "./media/characters/236.svg"
                 }
             }
         },
@@ -2537,6 +2537,42 @@ characterMakers["Draylen"] = () => {
             }
         ],
         math.unit(150, "feet")
+    )
+};
+
+characterMakers["Chez"] = () => {
+    return makeCharacter(
+        "Chez",
+        "Ashtrek",
+        {
+            front: {
+                height: math.unit(7 + 9/12, "feet"),
+                weight: math.unit(379, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/chez/front.svg"
+                }
+            },
+            side: {
+                height: math.unit(7 + 9/12, "feet"),
+                weight: math.unit(379, "lbs"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/chez/side.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(7 + 9/12, "feet")
+            },
+            {
+                name: "God King",
+                height: math.unit(9750000, "meters")
+            }
+        ],
+        math.unit(7 + 9/12, "feet")
     )
 };
 

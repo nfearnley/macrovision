@@ -55,6 +55,32 @@ function makePlanet(name, diameter, mass, image) {
     };
 }
 
+function makeMountains() {
+    const views = {};
+
+    [
+        ["Everest", 29029],
+        ["K2", 28251],
+        ["Kilimanjaro", 19341],
+        ["Rainier", 14409],
+        ["Pikes Peak", 14114],
+        ["Fuji", 12388],
+        ["Olympus", 9573],
+    ].forEach(mountain => {
+        views[mountain[0]] = {
+            height: math.unit(mountain[1], "feet"),
+            image: "./media/naturals/mountain.svg",
+            name: mountain[0]
+        }
+    });
+    return {
+        name: "Mountains",
+        constructor: () => makeObject(
+            "Mountains",
+            views
+        )
+    };
+}
 function makeNaturals() {
     const results = [];
     results.push(makePlanet("Mercury", math.unit(4879, "km"), math.unit(0.330e24, "kg")));
@@ -79,6 +105,9 @@ function makeNaturals() {
     results.push(makeState("Montana", math.unit(497.99, "km"), math.unit(983.98, "km"), math.unit(380831, "km^2")));
     results.push(makeState("New York", math.unit(494.92, "km"), math.unit(536.63, "km"), math.unit(141297, "km^2")));
     results.push(makeState("Texas", math.unit(1183.33, "km"), math.unit(1226.69, "km"), math.unit(695662, "km^2")));
+
+    results.push(makeMountains());
+
 
 
     results.sort((b1, b2) => {

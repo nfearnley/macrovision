@@ -545,6 +545,15 @@ https://www.furaffinity.net/view/16607998/
 
 * front.svg
 
+## Chez
+
+**https://www.furaffinity.net/gallery/ashtrek/**
+
+(no link)
+
+* front.svg
+* side.svg
+
 # Naturals
 
 * front.svg
