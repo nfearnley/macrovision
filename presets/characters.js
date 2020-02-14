@@ -53,12 +53,20 @@ characterMakers["Fen"] = () => {
         "Fen",
         "chemicalcrux",
         {
-            body: {
+            back: {
                 height: math.unit(2.2428, "meter"),
                 weight: math.unit(124.738, "kg"),
-                name: "Body",
+                name: "Back",
                 image: {
-                    source: "./media/characters/236.svg"
+                    source: "./media/characters/fen/back.svg"
+                }
+            },
+            full: {
+                height: math.unit(1.34, "meter"),
+                weight: math.unit(225, "kg"),
+                name: "Full",
+                image: {
+                    source: "./media/characters/fen/full.svg"
                 }
             }
         },
