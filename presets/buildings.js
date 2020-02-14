@@ -1,3 +1,13 @@
+
+math.createUnit("story", {
+    definition: "12 feet",
+    prefixes: "long"
+});
+math.createUnit("stories", {
+    definition: "12 feet",
+    prefixes: "long"
+});
+
 function makeBuilding(name, height, image) {
     views = {
         building: {
@@ -17,71 +27,48 @@ function makeBuilding(name, height, image) {
     return makeEntity(name, "Building", views);
 }
 
+
+function makeSkyscraper(name, image, startingSize) {
+    views = {
+        building: {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: math.unit(1, "meter")
+                }
+            },
+            image: image,
+            name: "building"
+        },
+    };
+
+    const entity = makeEntity(name, "Skyscraper", views);
+
+    entity.defaults.push({
+        name: "Short",
+        height: math.unit(15, "stories")
+    });
+    entity.defaults.push({
+        name: "Medium",
+        height: math.unit(40, "stories")
+    });
+    entity.defaults.push({
+        name: "Supertall",
+        height: math.unit(350, "meters")
+    });
+    entity.defaults.push({
+        name: "Megatall",
+        height: math.unit(650, "meters")
+    });
+
+    entity.views[entity.defaultView].height = startingSize;
+    return entity;
+}
+
 function makeBuildings() {
     const results = [];
-
-    results.push({
-        name: "Burj Khalifa",
-        constructor: () => makeBuilding(
-            "Burj Khalifa",
-            math.unit(829.8, "meter"),
-            { source: "./media/buildings/burj-khalifa.svg" }
-        )
-    });
-
-    results.push({
-        name: "Canton Tower",
-        constructor: () => makeBuilding(
-            "Canton Tower",
-            math.unit(604, "meter"),
-            { source: "./media/buildings/canton-tower.svg" }
-        )
-    });
-
-    results.push({
-        name: "CN Tower",
-        constructor: () => makeBuilding(
-            "CN Tower",
-            math.unit(553.3, "meter"),
-            { source: "./media/buildings/cn-tower.svg" }
-        )
-    });
-
-    results.push({
-        name: "Taipei 101",
-        constructor: () => makeBuilding(
-            "Taipei 101",
-            math.unit(509.2, "meter"),
-            { source: "./media/buildings/taipei-101.svg" }
-        )
-    });
-
-    results.push({
-        name: "Empire State Building",
-        constructor: () => makeBuilding(
-            "Empire State Building",
-            math.unit(443.2, "meter"),
-            { source: "./media/buildings/empire-state-building.svg" }
-        )
-    });
-
-    results.push({
-        name: "Eiffel Tower",
-        constructor: () => makeBuilding(
-            "Eiffel Tower",
-            math.unit(324, "meter"),
-            { source: "./media/buildings/eiffel-tower.svg" }
-        )
-    });
-
-    results.push({
-        name: "Chrysler Building",
-        constructor: () => makeBuilding(
-            "Chrysler Building",
-            math.unit(318.9, "meter"),
-            { source: "./media/buildings/chrysler-building.svg" }
-        )
-    });
 
     results.push({
         name: "Two-Story Home",
@@ -110,14 +97,49 @@ function makeBuildings() {
         )
     });
 
-    results.push({
-        name: "Gateway Arch",
-        constructor: () => makeBuilding(
-            "Gateway Arch",
-            math.unit(630, "feet"),
-            { source: "./media/buildings/gateway-arch.svg" }
-        )
-    });
+    results.push(
+        {
+            name: "Wide Skyscraper",
+            constructor: () => makeSkyscraper(
+                "Wide Skyscraper",
+                { source: "./media/buildings/skyscrapers/wide.svg" },
+                math.unit(40, "stories")
+            )
+        }
+    );
+
+    results.push(
+        {
+            name: "Skyscraper",
+            constructor: () => makeSkyscraper(
+                "Skyscraper",
+                { source: "./media/buildings/skyscrapers/medium.svg" },
+                math.unit(40, "stories")
+            )
+        }
+    );
+
+    results.push(
+        {
+            name: "Slender Skyscraper",
+            constructor: () => makeSkyscraper(
+                "Slender Skyscraper",
+                { source: "./media/buildings/skyscrapers/slender.svg" },
+                math.unit(40, "stories")
+            )
+        }
+    );
+
+    results.push(
+        {
+            name: "Narrow Skyscraper",
+            constructor: () => makeSkyscraper(
+                "Narrow Skyscraper",
+                { source: "./media/buildings/skyscrapers/narrow.svg" },
+                math.unit(40, "stories")
+            )
+        }
+    );
 
     results.sort((b1, b2) => {
         e1 = b1.constructor();

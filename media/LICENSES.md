@@ -1,6 +1,23 @@
 These silhouettes come from a variety of sources. This file documents their origins and licenses.
 
-# Buildings
+# Buildings 
+
+**Self-created**
+
+* house.svg
+* mobile-home.svg
+* mailbox.svg
+
+## Skyscrapers
+
+**Self-created
+
+* wide.svg
+* medium.svg
+* slender.svg
+* narrow.svg
+
+# Landmarks
 
 **Kryostat, Донор [CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0)]**
 
@@ -16,9 +33,6 @@ https://commons.wikimedia.org/wiki/File:TallestBuildings.svg
 
 **Self-created**
 
-* house.svg
-* mobile-home.svg
-* mailbox.svg
 * gateway-arch.svg
 
 # Characters

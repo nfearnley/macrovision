@@ -20,6 +20,7 @@ const unitChoices = {
         "kilometers",
         "inches",
         "feet",
+        "stories",
         "miles",
         "parsecs",
     ],
@@ -852,6 +853,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function prepareEntities() {
     availableEntities["buildings"] = makeBuildings();
+    availableEntities["landmarks"] = makeLandmarks();
     availableEntities["characters"] = makeCharacters();
     availableEntities["objects"] = makeObjects();
     availableEntities["naturals"] = makeNaturals();
