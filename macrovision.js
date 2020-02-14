@@ -709,6 +709,8 @@ document.addEventListener("DOMContentLoaded", () => {
             if (selected) {
                 const entity = entities[selected.dataset.key];
                 entity.views[entity.view].height = math.multiply(entity.views[entity.view].height, dir);
+                updateEntityOptions(entity, entity.view);
+                updateViewOptions(entity, entity.view);
             }
 
         } else {
