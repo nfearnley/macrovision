@@ -486,6 +486,14 @@ https://www.furaffinity.net/view/32624904/
 
 * front.svg
 
+## Asana-Mech
+
+**https://www.furaffinity.net/gallery/ashtrek/**
+
+(no link)
+
+* side.svg
+
 # Naturals
 
 * front.svg

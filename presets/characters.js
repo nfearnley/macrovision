@@ -2337,6 +2337,42 @@ characterMakers["Mirova"] = () => {
     )
 };
 
+characterMakers["Asana (Mech)"] = () => {
+    return makeCharacter(
+        "Asana (Mech)",
+        "Asana",
+        {
+            side: {
+                height: math.unit(28.35, "feet"),
+                weight: math.unit(99.75, "tons"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/asana-mech/side.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(28.35, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(2500, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(25, "miles")
+            },
+            {
+                name: "Examacro",
+                height: math.unit(6e8, "lightyears")
+            },
+        ],
+        math.unit(28.35, "feet")
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
