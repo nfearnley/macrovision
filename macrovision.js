@@ -836,7 +836,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.querySelector("#menu-export").addEventListener("click", e => {
-        exportScene();
+        copyScene();
+    });
+
+    document.querySelector("#menu-save").addEventListener("click", e => {
+        saveScene();
+    });
+
+    document.querySelector("#menu-load").addEventListener("click", e => {
+        loadScene();
     });
 });
 
@@ -984,6 +992,26 @@ function setWorldHeight(oldHeight, newHeight) {
     updateSizes();
 }
 
+function loadScene() {
+    try {
+        const data = JSON.parse(localStorage.getItem("macrovision-save"));
+        importScene(data);
+    } catch (err) {
+        alert("Something went wrong while loading (maybe you didn't have anything saved. Check the F12 console for the error.")
+        console.error(err);
+    }
+}
+
+function saveScene() {
+    try {
+        const string = JSON.stringify(exportScene());
+        localStorage.setItem("macrovision-save", string);
+    } catch (err) {
+        alert("Something went wrong while saving (maybe I don't have localStorage permissions, or exporting failed). Check the F12 console for the error.")
+        console.error(err);
+    }
+}
+
 function exportScene() {
     const results = {};
 
@@ -1005,6 +1033,12 @@ function exportScene() {
         height: config.height.toNumber(unit),
         unit: unit
     }
+
+    return results;
+}
+
+function copyScene() {
+    const results = exportScene();
 
     navigator.clipboard.writeText(JSON.stringify(results))
 
