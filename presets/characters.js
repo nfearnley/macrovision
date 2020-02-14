@@ -2192,6 +2192,150 @@ characterMakers["Xera"] = () => {
     )
 };
 
+characterMakers["Nebula"] = () => {
+    return makeCharacter(
+        "Nebula",
+        "Cilenomon",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(175, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/nebula/front.svg",
+                    extra: 2600/2450
+                }
+            }
+        },
+        [
+            {
+                name: "Small",
+                height: math.unit(4.5, "meters")
+            },
+            {
+                name: "Macro",
+                height: math.unit(1500, "meters")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(150, "km")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(27000, "km")
+            }
+        ],
+        math.unit(1500, "meters")
+    )
+};
+
+characterMakers["Abysgar"] = () => {
+    return makeCharacter(
+        "Abysgar",
+        "Cilenomon",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(225, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/abysgar/front.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Small",
+                height: math.unit(4.5, "meters")
+            },
+            {
+                name: "Macro",
+                height: math.unit(1250, "meters")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(125, "km")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(26000, "km")
+            }
+        ],
+        math.unit(1250, "meters")
+    )
+};
+
+characterMakers["Yakuz"] = () => {
+    return makeCharacter(
+        "Yakuz",
+        "Cilenomon",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(180, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/yakuz/front.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Small",
+                height: math.unit(5, "meters")
+            },
+            {
+                name: "Macro",
+                height: math.unit(2500, "meters")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(200, "km")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(100000, "km")
+            }
+        ],
+        math.unit(1500, "meters")
+    )
+};
+
+characterMakers["Mirova"] = () => {
+    return makeCharacter(
+        "Mirova",
+        "Cilenomon",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(175, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/mirova/front.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Small",
+                height: math.unit(5, "meters")
+            },
+            {
+                name: "Macro",
+                height: math.unit(900, "meters")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(135, "km")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(20000, "km")
+            }
+        ],
+        math.unit(900, "meters")
+    )
+};
 
 function makeCharacters() {
     const results = [];

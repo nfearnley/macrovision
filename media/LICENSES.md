@@ -443,7 +443,7 @@ https://www.furaffinity.net/view/34372310/
 
 * side.svg
 
-## Ashtrek
+## Xera
 
 **https://www.furaffinity.net/gallery/ashtrek/**
 
@@ -452,6 +452,39 @@ https://www.furaffinity.net/view/34372310/
 * front.svg
 * side.svg
 * back.svg
+
+## Nebula
+
+**https://www.furaffinity.net/user/gurenadopts**
+
+https://www.furaffinity.net/view/32285718/
+
+* front.svg
+
+## Abysgar
+
+**https://www.furaffinity.net/user/clown-grin**
+**https://www.furaffinity.net/user/labratkuma**
+
+https://www.furaffinity.net/view/32424108/
+
+* front.svg
+
+## Yakuz
+
+**https://www.furaffinity.net/user/racerdragon**
+
+https://www.furaffinity.net/view/32804495/
+
+* front.svg
+
+## Mirova
+
+**https://www.furaffinity.net/user/ghostlywafflez**
+
+https://www.furaffinity.net/view/32624904/
+
+* front.svg
 
 # Naturals
 
