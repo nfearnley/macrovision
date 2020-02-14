@@ -41,7 +41,8 @@ const config = {
     height: math.unit(1500, "meters"),
     minLineSize: 50,
     maxLineSize: 250,
-    autoFit: false
+    autoFit: false,
+    autoFitMode: "max"
 }
 
 const availableEntities = {
@@ -545,13 +546,13 @@ function testClick(event) {
     let ratioW = 1, ratioH = 1;
 
     // Limit the size of the canvas so that very large images don't cause problems)
-    if (w > 4000) {
-        ratioW = w / 4000;
+    if (w > 1000) {
+        ratioW = w / 1000;
         w /= ratioW;
         h /= ratioW;
     }
-    if (h > 4000) {
-        ratioH = h / 4000;
+    if (h > 1000) {
+        ratioH = h / 1000;
         w /= ratioH;
         h /= ratioH;
     }
@@ -794,6 +795,14 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    document.querySelector("#options-world-autofit-mode").addEventListener("input", e => {
+        config.autoFitMode = e.target.value;
+        
+        if (config.autoFit) {
+            fitWorld();
+        }
+    })
+
     document.addEventListener("keydown", e => {
         if (e.key == "Delete") {
             if (selected) {
@@ -961,14 +970,41 @@ function checkFitWorld() {
         fitWorld();
     }
 }
+
+const fitModes = {
+    "max": {
+        start: 0,
+        binop: math.max,
+        final: (total, count) => total
+    },
+    "arithmetic mean": {
+        start: 0,
+        binop: math.add,
+        final: (total, count) => total / count
+    },
+    "geometric mean": {
+        start: 1,
+        binop: math.multiply,
+        final: (total, count) => math.pow(total, 1 / count)
+    }
+}
+
 function fitWorld() {
-    let max = math.unit(0, "meters");
+    const fitMode = fitModes[config.autoFitMode]
+    let max = fitMode.start
+
+    let count = 0;
 
     Object.entries(entities).forEach(([key, entity]) => {
         const view = document.querySelector("#entity-" + key).dataset.view;
 
-        max = math.max(max, entity.views[view].height);
+        max = fitMode.binop(max, entity.views[view].height.toNumber("meter"));
+        count += 1;
     });
+
+    max = fitMode.final(max, count)
+
+    max = math.unit(max, "meter")
 
     setWorldHeight(config.height, math.multiply(max, 1.1));
 }
