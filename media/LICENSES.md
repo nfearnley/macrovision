@@ -537,6 +537,14 @@ https://www.furaffinity.net/view/16607998/
 
 * front-alt-2.svg
 
+## Draylen
+
+**https://www.furaffinity.net/user/cougr**
+
+(no link)
+
+* front.svg
+
 # Naturals
 
 * front.svg

@@ -2516,6 +2516,30 @@ characterMakers["Gale"] = () => {
     )
 };
 
+characterMakers["Draylen"] = () => {
+    return makeCharacter(
+        "Draylen",
+        "Longshot Coyote",
+        {
+            front: {
+                height: math.unit(2, "meters"),
+                weight: math.unit(76, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/draylen/front.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(150, "feet")
+            }
+        ],
+        math.unit(150, "feet")
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
