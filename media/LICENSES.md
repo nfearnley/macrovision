@@ -494,6 +494,15 @@ https://www.furaffinity.net/view/32624904/
 
 * side.svg
 
+## Ashtrek
+
+**https://www.furaffinity.net/user/silverwingink/**
+
+(no link)
+
+* front.svg
+* front-armor.svg
+
 # Naturals
 
 * front.svg

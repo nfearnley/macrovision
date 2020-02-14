@@ -2373,6 +2373,58 @@ characterMakers["Asana (Mech)"] = () => {
     )
 };
 
+characterMakers["Ashtrek"] = () => {
+    return makeCharacter(
+        "Ashtrek",
+        "Ashtrek",
+        {
+            front: {
+                height: math.unit(2, "meters"),
+                weight: math.unit(70, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/ashtrek/front.svg"
+                }
+            },
+            frontArmor: {
+                height: math.unit(2, "meters"),
+                weight: math.unit(76, "kg"),
+                name: "Front (Armor)",
+                image: {
+                    source: "./media/characters/ashtrek/front-armor.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "DEFCON 5",
+                height: math.unit(5, "meters")
+            },
+            {
+                name: "DEFCON 4",
+                height: math.unit(500, "meters")
+            },
+            {
+                name: "DEFCON 3",
+                height: math.unit(5, "km")
+            },
+            {
+                name: "DEFCON 2",
+                height: math.unit(500, "km")
+            },
+            {
+                name: "DEFCON 1",
+                height: math.unit(500000, "km")
+            },
+            {
+                name: "DEFCON 0",
+                height: math.unit(3, "gigaparsecs")
+            },
+        ],
+        math.unit(500, "meters")
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
