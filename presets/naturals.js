@@ -68,6 +68,9 @@ function makeNaturals() {
     results.push(makePlanet("Neptune", math.unit(49528, "km"), math.unit(102e24, "kg")));
     results.push(makePlanet("Pluto", math.unit(2370, "km"), math.unit(0.0146e24, "kg")));
 
+    results.push(makePlanet("Sol", math.unit(865370, "mi"), math.unit(1.989e30, "kg")));
+    results.push(makePlanet("Betelgeuse", math.unit(1234.2e6, "mi"), math.unit(2.188e31, "kg")));
+
     results.push(makeState("Alaska", math.unit(2071.44, "km"), math.unit(2483.83, "km"), math.unit(1723337, "km^2")));
     results.push(makeState("California", math.unit(1048.82, "km"), math.unit(852.02, "km"), math.unit(423967, "km^2")));
     results.push(makeState("Colorado", math.unit(442.44, "km"), math.unit(604.47, "km"), math.unit(269601, "km^2")));
