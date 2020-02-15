@@ -577,6 +577,13 @@ https://www.furaffinity.net/view/6315780/
 
 * front.svg
 
+## Tyrnn
+
+**https://www.furaffinity.net/user/tyrnn/**
+
+https://www.furaffinity.net/view/34600469/
+
+* front.svg
 
 # Naturals
 

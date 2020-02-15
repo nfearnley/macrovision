@@ -2670,6 +2670,35 @@ characterMakers["Geta"] = () => {
     )
 };
 
+characterMakers["Tyrnn"] = () => {
+    return makeCharacter(
+        "Tyrnn",
+        "Tyrnn",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(300, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/tyrnn/front.svg"
+                }
+            }
+
+        },
+        [
+            {
+                name: "Main Height",
+                height: math.unit(355, "feet")
+            },
+            {
+                name: "Fave. Height",
+                height: math.unit(2400, "feet")
+            }
+        ],
+        math.unit(355, "feet")
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
