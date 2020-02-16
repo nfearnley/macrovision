@@ -15,6 +15,7 @@ let altHeld = false;
 const unitChoices = {
     length: [
         "meters",
+        "angstroms",
         "millimeters",
         "centimeters",
         "kilometers",
@@ -682,6 +683,22 @@ function displayEntity(entity, view, x, y) {
 document.addEventListener("DOMContentLoaded", () => {
     prepareEntities();
 
+    const unitSelector = document.querySelector("#options-height-unit");
+
+    unitChoices.length.forEach(lengthOption => {
+        const option = document.createElement("option");
+
+        option.innerText = lengthOption;
+        option.value = lengthOption;
+        
+        if (lengthOption === "meters") {
+            option.selected = true;
+        }
+
+        unitSelector.appendChild(option);
+        console.log(option)
+    });
+
     const stuff = availableEntities.characters.map(x => x.constructor).filter(x => {
         const result = x();
         return result.views[result.defaultView].height.toNumber("meters") < 1000;
@@ -734,8 +751,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#options-height-value").addEventListener("input", e => {
         updateWorldHeight();
     })
-
-    document.querySelector("#options-height-unit").addEventListener("input", e => {
+    unitSelector.addEventListener("input", e => {
         checkFitWorld();
         updateWorldHeight();
     })
