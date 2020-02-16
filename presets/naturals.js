@@ -69,7 +69,7 @@ function makeMountains() {
     ].forEach(mountain => {
         views[mountain[0]] = {
             height: math.unit(mountain[1], "feet"),
-            image: "./media/naturals/mountain.svg",
+            image: { source: "./media/naturals/mountain.svg" },
             name: mountain[0]
         }
     });

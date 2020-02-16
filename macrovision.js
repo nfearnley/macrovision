@@ -771,7 +771,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#entity-view").addEventListener("input", e => {
         selected.dataset.view = e.target.value;
         entities[selected.dataset.key].view = e.target.value;
-        const image = entities[selected.dataset.key].views[e.target.value].image
+        const image = entities[selected.dataset.key].views[e.target.value].image;
         selected.querySelector(".entity-image").src = image.source;
         
         if (image.bottom !== undefined) {
