@@ -91,7 +91,7 @@ function abs2rel(coords) {
 
 function updateEntityElement(entity, element, zIndex) {
     const position = rel2abs({ x: element.dataset.x, y: element.dataset.y });
-    const view = element.dataset.view;
+    const view = entity.view;
 
     element.style.left = position.x + "px";
     element.style.top = position.y + "px";
@@ -305,9 +305,9 @@ function select(target) {
 
     selected.classList.add("selected");
 
-    configViewList(selectedEntity, target.dataset.view);
-    configEntityOptions(selectedEntity, target.dataset.view);
-    configViewOptions(selectedEntity, target.dataset.view);
+    configViewList(selectedEntity, selectedEntity.view);
+    configEntityOptions(selectedEntity, selectedEntity.view);
+    configViewOptions(selectedEntity, selectedEntity.view);
 }
 
 function configViewList(entity, selectedView) {
@@ -652,7 +652,6 @@ function displayEntity(entity, view, x, y) {
 
     box.id = "entity-" + entityIndex;
     box.dataset.key = entityIndex;
-    box.dataset.view = view;
     entity.view = view;
 
     entities[entityIndex] = entity;
@@ -715,8 +714,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const order = Object.keys(entities).sort((a, b) => {
         const entA = entities[a];
         const entB = entities[b];
-        const viewA = document.querySelector("#entity-" + a).dataset.view;
-        const viewB = document.querySelector("#entity-" + b).dataset.view;
+        const viewA = entA.view;
+        const viewB = entB.view;
         const heightA = entA.views[viewA].height.to("meter").value;
         const heightB = entB.views[viewB].height.to("meter").value;
         return heightA - heightB;
@@ -769,7 +768,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.querySelector("#entity-view").addEventListener("input", e => {
-        selected.dataset.view = e.target.value;
         entities[selected.dataset.key].view = e.target.value;
         const image = entities[selected.dataset.key].views[e.target.value].image;
         selected.querySelector(".entity-image").src = image.source;
@@ -794,8 +792,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const order = Object.keys(entities).sort((a, b) => {
             const entA = entities[a];
             const entB = entities[b];
-            const viewA = document.querySelector("#entity-" + a).dataset.view;
-            const viewB = document.querySelector("#entity-" + b).dataset.view;
+            const viewA = entA.view;
+            const viewB = entB.view;
             const heightA = entA.views[viewA].height.to("meter").value;
             const heightB = entB.views[viewB].height.to("meter").value;
             return heightA - heightB;
@@ -1018,7 +1016,7 @@ function fitWorld() {
     let count = 0;
 
     Object.entries(entities).forEach(([key, entity]) => {
-        const view = document.querySelector("#entity-" + key).dataset.view;
+        const view = entity.view;
 
         max = fitMode.binop(max, entity.views[view].height.toNumber("meter"));
         count += 1;
