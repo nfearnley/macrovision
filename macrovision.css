@@ -80,6 +80,43 @@ body.toggle-entity-name .entity-name {
     flex-direction: column;
     background: #444;
     overflow-y: scroll;
+    scrollbar-color: #e1e1e1 #888;
+    scrollbar-width: thin;
+}
+
+
+#options::-webkit-scrollbar {
+    width: 3px;
+    height: 2px;
+  }
+#options::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+#options::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+#options::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+#options::-webkit-scrollbar-thumb:active {
+    background: #000000;
+}
+#options::-webkit-scrollbar-track {
+    background: #00000000;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+#options::-webkit-scrollbar-track:hover {
+    background: #666666;
+}
+#options::-webkit-scrollbar-track:active {
+    background: #333333;
+}
+#options::-webkit-scrollbar-corner {
+    background: transparent;
 }
 
 .options-row {
