@@ -608,10 +608,15 @@ function removeAllEntities() {
 }
 
 function removeEntity(element) {
+    if (selected == element) {
+        deselect();
+    }
     delete entities[element.dataset.key];
     const bottomName = document.querySelector("#bottom-name-" + element.dataset.key);
     bottomName.parentElement.removeChild(bottomName);
     element.parentElement.removeChild(element);
+
+
 }
 function displayEntity(entity, view, x, y) {
     const box = document.createElement("div");
