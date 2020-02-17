@@ -723,7 +723,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     arrangeEntities(order);
     fitWorld();
-    window.addEventListener("wheel", e => {
+    document.querySelector("#world").addEventListener("wheel", e => {
 
 
         if (shiftHeld) {

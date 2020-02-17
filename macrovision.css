@@ -73,27 +73,30 @@ body.toggle-entity-name .entity-name {
 }
 
 #options {
+    min-width: 120pt;
     flex: 1 0 15vw;
     display: flex;
     justify-content: start;
     flex-direction: column;
     background: #444;
+    overflow-y: scroll;
 }
 
 .options-row {
     display: flex;
     text-align: center;
-    max-width: 15vw;
+    width: 100%;
 }
 
 .options-block {
     display: flex;
     text-align: center;
-    max-width: 15vw;
+    min-width: 100%;
     flex-direction: column;
 }
 
 @media (max-aspect-ratio: 1/1) {
+
     .options-row {
         flex-direction: column;
     }
