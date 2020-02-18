@@ -614,14 +614,7 @@ https://www.furaffinity.net/view/26091968/
 * front.svg
 * side.svg
 * back.svg
-
-## Rain Fallen (Feral)
-
-**https://www.furaffinity.net/user/rainfallen/**
-
-https://www.furaffinity.net/view/26091968/
-
-* front.svg
+* feral.svg
 
 ## Zaakira
 

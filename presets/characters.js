@@ -2825,55 +2825,15 @@ characterMakers["Rain Fallen"] = () => {
                     source: "./media/characters/rain/back.svg"
                 }
             },
-
-        },
-        [
-            {
-                name: "Normal",
-                height: math.unit(5, "meter")
-            },
-            {
-                name: "Macro",
-                height: math.unit(150, "meter")
-            },
-            {
-                name: "Megamacro",
-                height: math.unit(278e6, "meter")
-            },
-            {
-                name: "Gigamacro",
-                height: math.unit(2e9, "meter")
-            },
-            {
-                name: "Teramacro",
-                height: math.unit(8e12, "meter")
-            },
-            {
-                name: "Devourer",
-                height: math.unit(14, "zettameters")
-            },
-            {
-                name: "Scarlet King",
-                height: math.unit(18, "yottameters")
-            },
-        ],
-        math.unit(150, "meter")
-    )
-};
-
-characterMakers["Rain Fallen (Feral)"] = () => {
-    return makeCharacter(
-        "Rain Fallen",
-        "Rain Fallen",
-        {
-            front: {
-                height: math.unit(6, "feet"),
-                weight: math.unit(210, "lbs"),
-                name: "Front",
+            feral: {
+                height: math.unit(9, "feet"),
+                weight: math.unit(700, "lbs"),
+                name: "Feral",
                 image: {
-                    source: "./media/characters/rain-feral/front.svg"
+                    source: "./media/characters/rain/feral.svg"
                 }
-            }
+            },
+
         },
         [
             {
