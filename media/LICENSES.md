@@ -689,3 +689,42 @@ http://leopardclub.ca/reviews/Tiger_Model/Revolution/images/boxtop1.jpg
 * 737-top.svg
 * 737-front.svg
 * 737-side-vertical.svg
+
+# Cities
+
+**freedesignfile [CC BY-SA (http://creativecommons.org/licenses/by-sa/3.0/)]**
+
+https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html
+
+* city_atlanta.svg
+* city_boston.svg
+* city_calgary.svg
+* city_chicago.svg
+* city_columbus.svg
+* city_dallas.svg
+* city_detroit.svg
+* city_edmonton.svg
+* city_guadalajara.svg
+* city_houston.svg
+* city_indianapolis.svg
+* city_jacksonville.svg
+* city_kansas-city.svg
+* city_los-angeles.svg
+* city_mexico-city.svg
+* city_mississauga.svg
+* city_montreal.svg
+* city_new-york-city.svg
+* city_ottawa.svg
+* city_philadelphia.svg
+* city_phoenix.svg
+* city_puebla.svg
+* city_san-antonio.svg
+* city_san-diego.svg
+* city_san-francisco.svg
+* city_seattle.svg
+* city_st-louis.svg
+* city_tijuana.svg
+* city_toronto.svg
+* city_vancouver.svg
+* city_washington.svg
+* city_winnipeg.svg
