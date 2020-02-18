@@ -2935,14 +2935,14 @@ characterMakers["Zaakira"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(8, "feet")
+                height: math.unit(12, "feet")
             },
             {
                 name: "Macro",
-                height: math.unit(216, "feet")
+                height: math.unit(279, "feet")
             }
         ],
-        math.unit(216, "feet")
+        math.unit(279, "feet")
     )
 };
 
