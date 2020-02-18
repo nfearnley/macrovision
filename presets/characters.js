@@ -2857,7 +2857,7 @@ characterMakers["Rain Fallen"] = () => {
                 height: math.unit(18, "yottameters")
             },
         ],
-        math.unit(7500, "feet")
+        math.unit(150, "meter")
     )
 };
 
