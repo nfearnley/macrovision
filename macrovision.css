@@ -154,6 +154,11 @@ body.toggle-entity-name .entity-name {
     margin-bottom: 10px;
 }
 
+.options-selector {
+    font-size: 150%;
+    width: 100%;
+}
+
 
 #entities {
     position: relative;
