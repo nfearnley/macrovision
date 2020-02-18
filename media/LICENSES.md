@@ -615,6 +615,14 @@ https://www.furaffinity.net/view/26091968/
 * side.svg
 * back.svg
 
+## Rain Fallen (Feral)
+
+**https://www.furaffinity.net/user/rainfallen/**
+
+https://www.furaffinity.net/view/26091968/
+
+* front.svg
+
 ## Zaakira
 
 **https://www.furaffinity.net/user/citrinelle**
@@ -628,6 +636,15 @@ https://www.furaffinity.net/view/20127378/
 https://www.furaffinity.net/view/23174731/
 
 * laying.svg
+
+## Sigvald
+
+**https://www.furaffinity.net/user/meowzi**
+
+(no link)
+
+* front.svg
+* back.svg
 
 # Naturals
 

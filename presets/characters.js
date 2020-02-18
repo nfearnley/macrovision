@@ -2861,6 +2861,54 @@ characterMakers["Rain Fallen"] = () => {
     )
 };
 
+characterMakers["Rain Fallen (Feral)"] = () => {
+    return makeCharacter(
+        "Rain Fallen",
+        "Rain Fallen",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(210, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/rain-feral/front.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5, "meter")
+            },
+            {
+                name: "Macro",
+                height: math.unit(150, "meter")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(278e6, "meter")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(2e9, "meter")
+            },
+            {
+                name: "Teramacro",
+                height: math.unit(8e12, "meter")
+            },
+            {
+                name: "Devourer",
+                height: math.unit(14, "zettameters")
+            },
+            {
+                name: "Scarlet King",
+                height: math.unit(18, "yottameters")
+            },
+        ],
+        math.unit(150, "meter")
+    )
+};
+
 characterMakers["Zaakira"] = () => {
     return makeCharacter(
         "Zaakira",
@@ -2895,6 +2943,55 @@ characterMakers["Zaakira"] = () => {
             }
         ],
         math.unit(216, "feet")
+    )
+};
+
+characterMakers["Sigvald"] = () => {
+    return makeCharacter(
+        "Sigvald",
+        "Sigvald",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(250, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/sigvald/front.svg"
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(250, "lbs"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/sigvald/back.svg"
+                }
+            },
+
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(8, "feet")
+            },
+            {
+                name: "Large",
+                height: math.unit(12, "feet")
+            },
+            {
+                name: "Larger",
+                height: math.unit(20, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(150, "feet")
+            },
+            {
+                name: "Macro+",
+                height: math.unit(200, "feet")
+            },
+        ],
+        math.unit(200, "feet")
     )
 };
 
