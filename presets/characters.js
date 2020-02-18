@@ -2861,6 +2861,43 @@ characterMakers["Rain Fallen"] = () => {
     )
 };
 
+characterMakers["Zaakira"] = () => {
+    return makeCharacter(
+        "Zaakira",
+        "Jazzywolf",
+        {
+            standing: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(180, "lbs"),
+                name: "Standing",
+                image: {
+                    source: "./media/characters/zaakira/standing.svg"
+                }
+            },
+            laying: {
+                height: math.unit(3, "feet"),
+                weight: math.unit(180, "lbs"),
+                name: "Laying",
+                image: {
+                    source: "./media/characters/zaakira/laying.svg"
+                }
+            },
+
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(8, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(216, "feet")
+            }
+        ],
+        math.unit(216, "feet")
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

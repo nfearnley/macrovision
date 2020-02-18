@@ -615,6 +615,20 @@ https://www.furaffinity.net/view/26091968/
 * side.svg
 * back.svg
 
+## Zaakira
+
+**https://www.furaffinity.net/user/citrinelle**
+
+https://www.furaffinity.net/view/20127378/
+
+* standing.svg
+
+**https://www.furaffinity.net/user/sentinelwinder**
+
+https://www.furaffinity.net/view/23174731/
+
+* laying.svg
+
 # Naturals
 
 * front.svg
