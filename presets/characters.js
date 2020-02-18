@@ -2956,7 +2956,8 @@ characterMakers["Sigvald"] = () => {
                 weight: math.unit(250, "lbs"),
                 name: "Front",
                 image: {
-                    source: "./media/characters/sigvald/front.svg"
+                    source: "./media/characters/sigvald/front.svg",
+                    extra: 1000/850
                 }
             },
             back: {
