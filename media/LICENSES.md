@@ -585,6 +585,14 @@ https://www.furaffinity.net/view/34600469/
 
 * front.svg
 
+## Appledectomy
+
+**https://www.furaffinity.net/user/stonerabbit**
+
+https://www.furaffinity.net/view/33002197/
+
+* front.svg
+
 # Naturals
 
 * front.svg

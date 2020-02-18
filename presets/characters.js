@@ -2699,6 +2699,43 @@ characterMakers["Tyrnn"] = () => {
     )
 };
 
+characterMakers["Apple"] = () => {
+    return makeCharacter(
+        "Apple",
+        "Appledectomy",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(300, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/appledectomy/front.svg"
+                }
+            }
+
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(2500, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(50, "miles")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(5000, "miles")
+            },
+            {
+                name: "Teramacro",
+                height: math.unit(250000, "miles")
+            },
+        ],
+        math.unit(50, "miles")
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
