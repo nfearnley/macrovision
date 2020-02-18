@@ -605,6 +605,16 @@ https://www.furaffinity.net/view/27057320/
 * back.svg
 * feet.svg
 
+## Rain Fallen
+
+**https://www.furaffinity.net/user/rainfallen/**
+
+https://www.furaffinity.net/view/26091968/
+
+* front.svg
+* side.svg
+* back.svg
+
 # Naturals
 
 * front.svg

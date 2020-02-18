@@ -2796,6 +2796,71 @@ characterMakers["Vulpes"] = () => {
     )
 };
 
+characterMakers["Rain Fallen"] = () => {
+    return makeCharacter(
+        "Rain Fallen",
+        "Rain Fallen",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(210, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/rain/front.svg"
+                }
+            },
+            side: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(210, "lbs"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/rain/side.svg"
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(210, "lbs"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/rain/back.svg"
+                }
+            },
+
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5, "meter")
+            },
+            {
+                name: "Macro",
+                height: math.unit(150, "meter")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(278e6, "meter")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(2e9, "meter")
+            },
+            {
+                name: "Teramacro",
+                height: math.unit(8e12, "meter")
+            },
+            {
+                name: "Devourer",
+                height: math.unit(14, "zettameters")
+            },
+            {
+                name: "Scarlet King",
+                height: math.unit(18, "yottameters")
+            },
+        ],
+        math.unit(7500, "feet")
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
