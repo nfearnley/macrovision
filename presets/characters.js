@@ -2736,6 +2736,66 @@ characterMakers["Apple"] = () => {
     )
 };
 
+characterMakers["Vulpes"] = () => {
+    return makeCharacter(
+        "Vulpes",
+        "VulpesPawpad",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(200, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/vulpes/front.svg"
+                }
+            },
+            side: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(200, "lbs"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/vulpes/side.svg"
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(200, "lbs"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/vulpes/back.svg"
+                }
+            },
+            feet: {
+                height: math.unit(1.276, "feet"),
+                name: "Feet",
+                image: {
+                    source: "./media/characters/vulpes/feet.svg"
+                }
+            },
+
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(3, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(6.3, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(7500, "feet")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(570000, "miles")
+            }
+        ],
+        math.unit(7500, "feet")
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

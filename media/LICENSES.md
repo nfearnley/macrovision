@@ -593,6 +593,18 @@ https://www.furaffinity.net/view/33002197/
 
 * front.svg
 
+## Vulpes
+
+**https://www.furaffinity.net/user/voondahbayosh**
+**https://www.furaffinity.net/user/proximiter**
+
+https://www.furaffinity.net/view/27057320/
+
+* front.svg
+* side.svg
+* back.svg
+* feet.svg
+
 # Naturals
 
 * front.svg
