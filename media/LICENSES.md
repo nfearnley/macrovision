@@ -675,7 +675,7 @@ https://www.furaffinity.net/view/22243143/
 
 * side.svg
 
-## Sasha
+## Sanya
 
 **https://www.furaffinity.net/user/aimee-lesley-sim/**
 

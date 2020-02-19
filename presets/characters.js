@@ -3033,17 +3033,17 @@ characterMakers["Kieran"] = () => {
     )
 };
 
-characterMakers["Sasha"] = () => {
+characterMakers["Sanya"] = () => {
     return makeCharacter(
-        "Sasha",
-        "Sasha",
+        "Sanya",
+        "BanterGhost",
         {
             side: {
                 height: math.unit(2, "meters"),
                 weight: math.unit(70, "kg"),
                 name: "Side",
                 image: {
-                    source: "./media/characters/sasha/side.svg",
+                    source: "./media/characters/sanya/side.svg",
                     bottom: 0.02,
                     extra: 1.02
                 }
