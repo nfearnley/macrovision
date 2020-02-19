@@ -843,8 +843,6 @@ document.addEventListener("DOMContentLoaded", () => {
             altHeld = true;
             e.preventDefault();
         }
-
-        e.preventDefault();
     });
 
     document.addEventListener("keyup", e => {
