@@ -683,6 +683,46 @@ https://www.furaffinity.net/view/33047036/
 
 * side.svg
 
+## Miranda
+
+**https://www.furaffinity.net/user/deervvitch**
+
+https://www.furaffinity.net/view/26193861/
+
+* front.svg
+
+## James
+
+**https://www.furaffinity.net/user/dbd**
+
+https://www.furaffinity.net/view/29953279/
+
+* front.svg
+
+## Heather
+
+**https://www.furaffinity.net/user/aggrobadger**
+
+https://www.furaffinity.net/view/26252276/
+
+* side.svg
+
+## Lukas
+
+**https://www.furaffinity.net/user/dbd**
+
+https://www.furaffinity.net/view/27930832/
+
+* side.svg
+
+## Louise
+
+**https://www.furaffinity.net/user/yaroul**
+
+https://www.furaffinity.net/view/35088521/
+
+* side.svg
+
 # Naturals
 
 * front.svg

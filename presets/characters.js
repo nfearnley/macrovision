@@ -3067,6 +3067,129 @@ characterMakers["Sanya"] = () => {
     )
 };
 
+characterMakers["Miranda"] = () => {
+    return makeCharacter(
+        "Miranda",
+        "MirandaAqrayla",
+        {
+            side: {
+                height: math.unit(2, "meters"),
+                weight: math.unit(120, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/miranda/front.svg",
+                    extra: 10.6/10
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(10, "feet")
+            }
+        ],
+        math.unit(10, "feet")
+    )
+};
+
+characterMakers["James"] = () => {
+    return makeCharacter(
+        "James",
+        "MirandaAqrayla",
+        {
+            side: {
+                height: math.unit(2, "meters"),
+                weight: math.unit(100, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/james/front.svg",
+                    extra: 10/8.5
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(8.5, "feet")
+            }
+        ],
+        math.unit(8.5, "feet")
+    )
+};
+
+characterMakers["Heather"] = () => {
+    return makeCharacter(
+        "Heather",
+        "MirandaAqrayla",
+        {
+            side: {
+                height: math.unit(9.5, "feet"),
+                weight: math.unit(2500, "lbs"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/heather/side.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(9.5, "feet")
+            }
+        ],
+        math.unit(9.5, "feet")
+    )
+};
+
+characterMakers["Lukas"] = () => {
+    return makeCharacter(
+        "Lukas",
+        "MirandaAqrayla",
+        {
+            side: {
+                height: math.unit(6.5, "feet"),
+                weight: math.unit(400, "lbs"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/lukas/side.svg",
+                    extra: 7.25/6.5
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6.5, "feet")
+            }
+        ],
+        math.unit(6.5, "feet")
+    )
+};
+
+characterMakers["Louise"] = () => {
+    return makeCharacter(
+        "Louise",
+        "MirandaAqrayla",
+        {
+            side: {
+                height: math.unit(5, "feet"),
+                weight: math.unit(3000, "lbs"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/louise/side.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5, "feet")
+            }
+        ],
+        math.unit(5, "feet")
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
