@@ -639,6 +639,28 @@ https://www.furaffinity.net/view/23174731/
 * front.svg
 * back.svg
 
+## Scott
+
+**https://www.furaffinity.net/user/scottred/**
+
+https://www.furaffinity.net/view/34772713/
+
+* side.svg
+
+**https://www.furaffinity.net/user/scottred/**
+
+https://www.furaffinity.net/view/34023485/
+
+* upright.svg
+
+## Tobias
+
+**https://www.furaffinity.net/user/luciellia/**
+
+https://www.furaffinity.net/view/28272209/
+
+* side.svg
+
 # Naturals
 
 * front.svg
