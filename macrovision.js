@@ -687,6 +687,15 @@ function displayEntity(entity, view, x, y) {
 document.addEventListener("DOMContentLoaded", () => {
     prepareEntities();
 
+    document.querySelector("#open-help").addEventListener("click", e => {
+        document.querySelector("#help").classList.add("visible");
+    });
+
+
+    document.querySelector("#close-help").addEventListener("click", e => {
+        document.querySelector("#help").classList.remove("visible");
+    });
+
     const unitSelector = document.querySelector("#options-height-unit");
 
     unitChoices.length.forEach(lengthOption => {

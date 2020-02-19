@@ -309,3 +309,47 @@ body.toggle-bottom-name .bottom-name {
 #menubar button {
     font-size: 24pt;
 }
+
+#help {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    width: 60vw;
+    height: 60vh;
+    margin: 0pt;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    transition: 1s;
+    text-align: center;
+    background: #333;
+    opacity: 0;
+    z-index: 9999999;
+}
+
+#help.visible {
+    display: flex;
+    opacity: 0.9;
+    transition: 1s;
+}
+
+#help h1 {
+    font-size: 150%;
+}
+
+#help p {
+    font-size: 125%;
+}
+
+#help button {
+    width: 20vw;
+    height: 10vh;
+    font-size: 9vh;
+}
+
+a { 
+    color: #999;
+}
