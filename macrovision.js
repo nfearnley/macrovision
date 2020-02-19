@@ -742,7 +742,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         } else {
             const dir = e.deltaY < 0 ? 0.9 : 1.1;
-            config.height = math.multiply(config.height, dir);
+            setWorldHeight(config.height, math.multiply(config.height, dir));
             updateWorldOptions();
         }
         checkFitWorld();
@@ -841,6 +841,8 @@ document.addEventListener("DOMContentLoaded", () => {
         } else if (e.key == "Alt") {
             altHeld = true;
         }
+
+        e.preventDefault();
     });
 
     document.addEventListener("keyup", e => {
@@ -849,6 +851,8 @@ document.addEventListener("DOMContentLoaded", () => {
         } else if (e.key == "Alt") {
             altHeld = false;
         }
+
+        e.preventDefault();
     });
     
     document.addEventListener("paste", e => {
@@ -1050,7 +1054,17 @@ function setWorldHeight(oldHeight, newHeight) {
     document.querySelector("#options-height-value").value = config.height.toNumber(unit);
     Object.entries(entities).forEach(([key, entity]) => {
         const element = document.querySelector("#entity-" + key);
-        const newPosition = adjustAbs({ x: element.dataset.x, y: element.dataset.y }, oldHeight, config.height);
+        let newPosition;
+
+        console.log("###");
+        console.log({ x: element.dataset.x, y: element.dataset.y });
+        if (altHeld) {
+            newPosition = adjustAbs({ x: element.dataset.x, y: element.dataset.y }, oldHeight, config.height);
+        } else {
+            newPosition = { x: element.dataset.x, y: element.dataset.y };
+        }
+
+        console.log(newPosition);
         element.dataset.x = newPosition.x;
         element.dataset.y = newPosition.y;
     });
