@@ -1058,7 +1058,7 @@ function setWorldHeight(oldHeight, newHeight) {
 
         console.log("###");
         console.log({ x: element.dataset.x, y: element.dataset.y });
-        if (altHeld) {
+        if (!altHeld) {
             newPosition = adjustAbs({ x: element.dataset.x, y: element.dataset.y }, oldHeight, config.height);
         } else {
             newPosition = { x: element.dataset.x, y: element.dataset.y };
