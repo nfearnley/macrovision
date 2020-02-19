@@ -838,8 +838,10 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("keydown", e => {
         if (e.key == "Shift") {
             shiftHeld = true;
+            e.preventDefault();
         } else if (e.key == "Alt") {
             altHeld = true;
+            e.preventDefault();
         }
 
         e.preventDefault();
@@ -848,11 +850,12 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("keyup", e => {
         if (e.key == "Shift") {
             shiftHeld = false;
+            e.preventDefault();
         } else if (e.key == "Alt") {
             altHeld = false;
+            e.preventDefault();
         }
 
-        e.preventDefault();
     });
     
     document.addEventListener("paste", e => {
