@@ -661,6 +661,20 @@ https://www.furaffinity.net/view/28272209/
 
 * side.svg
 
+## Kieran
+
+**https://www.furaffinity.net/user/clovishusky/**
+
+https://www.furaffinity.net/view/22902180/
+
+* front.svg
+
+**https://www.furaffinity.net/user/phietto**
+
+https://www.furaffinity.net/view/22243143/
+
+* side.svg
+
 # Naturals
 
 * front.svg

@@ -3004,6 +3004,35 @@ characterMakers["Tobias"] = () => {
     )
 };
 
+characterMakers["Kieran"] = () => {
+    return makeCharacter(
+        "Kieran",
+        "Kieran",
+        {
+            front: {
+                height: math.unit(5.5, "feet"),
+                weight: math.unit(400, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/kieran/front.svg",
+                    extra: 1.05
+                }
+            },
+            side: {
+                height: math.unit(5.5, "feet"),
+                weight: math.unit(400, "lbs"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/kieran/side.svg",
+                    extra: 950/850
+                }
+            },
+        },
+        [],
+        math.unit(5.5, "feet")
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
