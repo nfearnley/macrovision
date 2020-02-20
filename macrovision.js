@@ -803,6 +803,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 entity.views[entity.view].height = math.multiply(entity.views[entity.view].height, dir);
                 updateEntityOptions(entity, entity.view);
                 updateViewOptions(entity, entity.view);
+                updateSizes();
             }
 
         } else {
