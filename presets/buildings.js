@@ -24,7 +24,7 @@ function makeBuilding(name, height, image) {
         },
     };
 
-    return makeEntity({name: name}, views);
+    return makeEntity({ name: name }, views);
 }
 
 
@@ -63,7 +63,7 @@ function makeSkyscraper(name, image, startingSize) {
         height: math.unit(650, "meters")
     });
 
-    const entity = makeEntity({name: name}, views, sizes);
+    const entity = makeEntity({ name: name }, views, sizes);
 
     entity.views[entity.defaultView].height = startingSize;
     return entity;

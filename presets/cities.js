@@ -19,7 +19,7 @@ function makeCity(name, height) {
 
     console.log(views)
 
-    return makeEntity({name: name}, views);
+    return makeEntity({ name: name }, views);
 }
 
 function addCity(name, height) {
@@ -56,7 +56,7 @@ function makeCities() {
     results.push(addCity("Columbus", math.unit(629, "feet")));
 
     // Canada
-    
+
     results.push(addCity("Toronto", math.unit(1814, "feet")));
     results.push(addCity("Montreal", math.unit(743, "feet")));
     results.push(addCity("Vancouver", math.unit(659, "feet")));

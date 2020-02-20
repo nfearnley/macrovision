@@ -14,7 +14,7 @@ function makeLandmark(name, height, image) {
         },
     };
 
-    return makeEntity({name: name}, views);
+    return makeEntity({ name: name }, views);
 }
 
 function makeLandmarks() {

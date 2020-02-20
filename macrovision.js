@@ -118,7 +118,7 @@ function updateSizes() {
     drawScale();
 
     let ordered = Object.entries(entities);
-    
+
     ordered.sort((e1, e2) => {
         return e1[1].views[e1[1].view].height.toNumber("meters") - e2[1].views[e2[1].view].height.toNumber("meters")
     });
@@ -131,7 +131,7 @@ function updateSizes() {
         zIndex -= 1;
     });
 
-    
+
 }
 
 function drawScale() {
@@ -408,7 +408,7 @@ function configEntityOptions(entity, view) {
     entity.sizes.forEach(defaultInfo => {
         const button = document.createElement("button");
         button.classList.add("options-button");
-       
+
         button.innerText = defaultInfo.name;
 
         button.addEventListener("click", e => {
@@ -483,12 +483,12 @@ function configViewOptions(entity, view) {
         });
 
         select.setAttribute("oldUnit", select.value);
-        
+
         select.addEventListener("input", e => {
             const value = input.value == 0 ? 1 : input.value;
             const oldUnit = select.getAttribute("oldUnit");
             entity.views[view][key] = math.unit(value, oldUnit).to(select.value);
-            input.value = entity.views[view][key].toNumber(select.value);   
+            input.value = entity.views[view][key].toNumber(select.value);
 
             select.setAttribute("oldUnit", select.value);
 
@@ -543,7 +543,7 @@ function testClick(event) {
         clickDown(target.parentElement, event.clientX, event.clientY);
         return;
     }
-    
+
     // Get click coordinates
 
     let w = target.width;
@@ -567,8 +567,8 @@ function testClick(event) {
     var x = event.clientX - target.getBoundingClientRect().x,
         y = event.clientY - target.getBoundingClientRect().y,
         alpha;
-        testCtx.canvas.width = w;
-        testCtx.canvas.height = h;
+    testCtx.canvas.width = w;
+    testCtx.canvas.height = h;
 
     // Draw image to canvas
     // and read Alpha channel value
@@ -703,7 +703,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         option.innerText = lengthOption;
         option.value = lengthOption;
-        
+
         if (lengthOption === "meters") {
             option.selected = true;
         }
@@ -722,7 +722,7 @@ document.addEventListener("DOMContentLoaded", () => {
         x += 0.7 / stuff.length;
     })
 
-    
+
 
     const order = Object.keys(entities).sort((a, b) => {
         const entA = entities[a];
@@ -784,7 +784,7 @@ document.addEventListener("DOMContentLoaded", () => {
         entities[selected.dataset.key].view = e.target.value;
         const image = entities[selected.dataset.key].views[e.target.value].image;
         selected.querySelector(".entity-image").src = image.source;
-        
+
         if (image.bottom !== undefined) {
             selected.querySelector(".entity-image").style.setProperty("--offset", ((-1 + image.bottom) * 100) + "%")
         } else {
@@ -819,7 +819,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector("#options-world-autofit").addEventListener("input", e => {
         config.autoFit = e.target.checked;
-        
+
 
         if (config.autoFit) {
             fitWorld();
@@ -828,7 +828,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector("#options-world-autofit-mode").addEventListener("input", e => {
         config.autoFitMode = e.target.value;
-        
+
         if (config.autoFit) {
             fitWorld();
         }
@@ -863,7 +863,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
     });
-    
+
     document.addEventListener("paste", e => {
         try {
             const data = JSON.parse(e.clipboardData.getData("text"));
@@ -875,9 +875,9 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             importScene(data);
-        } catch(err) {
+        } catch (err) {
             console.error(err);
-            
+
             // probably wasn't valid data 
         }
     });
@@ -904,7 +904,7 @@ function prepareEntities() {
     availableEntities["vehicles"] = makeVehicles();
     availableEntities["cities"] = makeCities();
 
-    availableEntities["characters"].sort((x,y) => {
+    availableEntities["characters"].sort((x, y) => {
         return x.name < y.name ? -1 : 1
     });
     const holder = document.querySelector("#spawners");

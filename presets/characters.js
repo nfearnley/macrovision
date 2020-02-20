@@ -35,7 +35,7 @@ function makeCharacter(name, author, viewInfo, defaultSizes, defaultSize) {
         }
     });
 
-    const entity = makeEntity({name: name}, views, defaultSizes);
+    const entity = makeEntity({ name: name }, views, defaultSizes);
 
     if (defaultSize) {
         entity.views[entity.defaultView].height = defaultSize;
@@ -180,7 +180,7 @@ function makeMarch() {
         }
     };
 
-    const entity = makeEntity({name: "March", author: "March-Dragon"}, views, []);
+    const entity = makeEntity({ name: "March", author: "March-Dragon" }, views, []);
 
     entity.sizes.push({
         name: "Normal",
@@ -241,7 +241,7 @@ function makeNoir() {
         }
     };
 
-    const entity = makeEntity({name: "Noir", author: "March-Dragon"}, views, []);
+    const entity = makeEntity({ name: "Noir", author: "March-Dragon" }, views, []);
 
     entity.sizes.push({
         name: "Normal",
@@ -321,7 +321,7 @@ function makeOkuri() {
         }
     };
 
-    const entity = makeEntity({name: "Okuri", author: "OrionMechadragon"}, views, []);
+    const entity = makeEntity({ name: "Okuri", author: "OrionMechadragon" }, views, []);
     entity.views.front.height = math.unit(100, "miles");
     return entity;
 }
@@ -370,7 +370,7 @@ function makeManny() {
         }
     };
 
-    const entity = makeEntity({name: "Manny", author: "Dialuca01"}, views, []);
+    const entity = makeEntity({ name: "Manny", author: "Dialuca01" }, views, []);
 
     entity.sizes.push({
         name: "Normal",
@@ -392,7 +392,7 @@ function makeManny() {
         name: "Gigamacro",
         height: math.unit(41769, "miles")
     });
-    
+
     entity.views.front.height = math.unit(78, "feet");
     return entity;
 }
@@ -483,8 +483,8 @@ function makeAdake() {
         },
     };
 
-    const entity = makeEntity({name: "Adake", author: "Dialuca01"}, views, []);
-    
+    const entity = makeEntity({ name: "Adake", author: "Dialuca01" }, views, []);
+
     entity.sizes.push({
         name: "Normal",
         height: math.unit(7, "feet")
@@ -548,7 +548,7 @@ function makeElijah() {
         }
     };
 
-    const entity = makeEntity({name: "Elijah", author: "Elijah"}, views, []);
+    const entity = makeEntity({ name: "Elijah", author: "Elijah" }, views, []);
 
     entity.sizes.push({
         name: "Normal",
@@ -633,7 +633,7 @@ function makeRai() {
         }
     };
 
-    const entity = makeEntity({name: "Rai", author: "shadowblade945"}, views, []);
+    const entity = makeEntity({ name: "Rai", author: "shadowblade945" }, views, []);
     entity.views.front.height = math.unit(302, "feet");
     return entity;
 }
@@ -683,7 +683,7 @@ function makeJazzy() {
         }
     };
 
-    const entity = makeEntity({name: "Jazzy", author: "Jazzywolf"}, views, []);
+    const entity = makeEntity({ name: "Jazzy", author: "Jazzywolf" }, views, []);
     entity.views.front.height = math.unit(216, "feet");
     return entity;
 }
@@ -712,7 +712,7 @@ function makeFlamm() {
         }
     };
 
-    const entity = makeEntity({name: "Flamm", author: "Flamm"}, views, []);
+    const entity = makeEntity({ name: "Flamm", author: "Flamm" }, views, []);
 
     entity.sizes.push({
         name: "Normal",
@@ -792,8 +792,8 @@ function makeZephiro() {
         }
     };
 
-    const entity = makeEntity({name: "Zephiro", author: "Zephiro"}, views, []);
-    entity.views.front.height = math.unit(118, "feet");    
+    const entity = makeEntity({ name: "Zephiro", author: "Zephiro" }, views, []);
+    entity.views.front.height = math.unit(118, "feet");
 
     entity.sizes.push({
         name: "Micro",
@@ -802,7 +802,7 @@ function makeZephiro() {
 
     entity.sizes.push({
         name: "Normal",
-        height: math.unit(5 + 3/12, "feet")
+        height: math.unit(5 + 3 / 12, "feet")
     });
 
     entity.sizes.push({
@@ -837,8 +837,8 @@ function makeFory() {
         }
     };
 
-    const entity = makeEntity({name: "Fory", author: "Manny"}, views, []);
-    
+    const entity = makeEntity({ name: "Fory", author: "Manny" }, views, []);
+
 
     entity.sizes.push({
         name: "Normal",
@@ -941,7 +941,7 @@ function makeKurrikage() {
         }
     };
 
-    const entity = makeEntity({name: "Kurrikage", author: "Kurrikage"}, views, []);
+    const entity = makeEntity({ name: "Kurrikage", author: "Kurrikage" }, views, []);
     entity.views.front.height = math.unit(12, "feet");
     return entity;
 }
@@ -970,7 +970,7 @@ function makeShingo() {
         }
     };
 
-    const entity = makeEntity({name: "Shingo", author: "Threes"}, views, []);
+    const entity = makeEntity({ name: "Shingo", author: "Threes" }, views, []);
 
     entity.sizes.push({
         name: "Micro",
@@ -1013,7 +1013,7 @@ function makeAigey() {
         }
     };
 
-    const entity = makeEntity({name: "Aigey", author: "Aigey"}, views, []);
+    const entity = makeEntity({ name: "Aigey", author: "Aigey" }, views, []);
 
     entity.sizes.push({
         name: "Macro",
@@ -1024,9 +1024,9 @@ function makeAigey() {
         name: "Megamacro",
         height: math.unit(100, "miles")
     });
-    
+
     entity.views[entity.defaultView].height = math.unit(200, "feet");
-    
+
     return entity;
 }
 
@@ -1054,11 +1054,11 @@ function makeNatasha() {
         }
     };
 
-    const entity = makeEntity({name: "Natasha", author: "Natasha"}, views, []);
+    const entity = makeEntity({ name: "Natasha", author: "Natasha" }, views, []);
 
     entity.sizes.push({
         name: "Normal",
-        height: math.unit(5 + 5/12, "feet")
+        height: math.unit(5 + 5 / 12, "feet")
     });
 
     entity.sizes.push({
@@ -1079,9 +1079,9 @@ function makeNatasha() {
         name: "Macro++",
         height: math.unit(1, "mile")
     });
-    
+
     entity.views[entity.defaultView].height = math.unit(100, "feet");
-    
+
     return entity;
 }
 
@@ -1150,7 +1150,7 @@ function makeMalik() {
         },
     };
 
-    const entity = makeEntity({name: "Malik", author: "Fuzzypaws"}, views, []);    
+    const entity = makeEntity({ name: "Malik", author: "Fuzzypaws" }, views, []);
 
     entity.sizes.push({
         name: "Macro",
@@ -1163,7 +1163,7 @@ function makeMalik() {
     });
 
     entity.views[entity.defaultView].height = math.unit(156, "feet");
-    
+
     return entity;
 }
 
@@ -1211,10 +1211,10 @@ function makeSefer() {
         },
     };
 
-    const entity = makeEntity({name: "Sefer", author: "Fuzzypaws"}, views, []);
+    const entity = makeEntity({ name: "Sefer", author: "Fuzzypaws" }, views, []);
 
     entity.views[entity.defaultView].height = math.unit(6, "feet");
-    
+
     return entity;
 }
 
@@ -1228,7 +1228,7 @@ characterMakers["North"] = () => {
                 weight: math.unit(124.738, "kg"),
                 name: "Body",
                 image: {
-                    extra: 1225/1050,
+                    extra: 1225 / 1050,
                     source: "./media/characters/north/front.svg"
                 }
             }
@@ -1721,7 +1721,7 @@ characterMakers["GiantGrowingVixen"] = () => {
         [
             {
                 name: "Extremely Puny",
-                height: math.unit(9 + 5/12, "feet")
+                height: math.unit(9 + 5 / 12, "feet")
             },
             {
                 name: "Horribly Small",
@@ -1774,28 +1774,28 @@ characterMakers["Asana"] = () => {
         "Asana",
         {
             front: {
-                height: math.unit(7 + 5/6, "feet"),
+                height: math.unit(7 + 5 / 6, "feet"),
                 weight: math.unit(325, "lb"),
                 name: "Front",
                 image: {
                     source: "./media/characters/asana/front.svg",
-                    extra: 1128/1068
+                    extra: 1128 / 1068
                 }
             },
             back: {
-                height: math.unit(7 + 5/6, "feet"),
+                height: math.unit(7 + 5 / 6, "feet"),
                 weight: math.unit(325, "lb"),
                 name: "Back",
                 image: {
                     source: "./media/characters/asana/back.svg",
-                    extra: 1128/1068
+                    extra: 1128 / 1068
                 }
             },
         },
         [
             {
                 name: "Standard",
-                height: math.unit(7 + 5/6, "feet")
+                height: math.unit(7 + 5 / 6, "feet")
             },
             {
                 name: "Large",
@@ -1814,7 +1814,7 @@ characterMakers["Asana"] = () => {
                 height: math.unit(5e12, "lightyears")
             }
         ],
-        math.unit(7 + 5/6, "feet")
+        math.unit(7 + 5 / 6, "feet")
     )
 };
 
@@ -1830,7 +1830,7 @@ characterMakers["Ebony"] = () => {
                 image: {
                     source: "./media/characters/ebony/front.svg",
                     bottom: 0.03,
-                    extra: 1045/810 + 0.03
+                    extra: 1045 / 810 + 0.03
                 }
             },
             side: {
@@ -1840,7 +1840,7 @@ characterMakers["Ebony"] = () => {
                 image: {
                     source: "./media/characters/ebony/side.svg",
                     bottom: 0.03,
-                    extra: 1045/810 + 0.03
+                    extra: 1045 / 810 + 0.03
                 }
             },
             back: {
@@ -1850,14 +1850,14 @@ characterMakers["Ebony"] = () => {
                 image: {
                     source: "./media/characters/ebony/back.svg",
                     bottom: 0.01,
-                    extra: 1045/810 + 0.01
+                    extra: 1045 / 810 + 0.01
                 }
             },
         },
         [
             {
                 name: "Standard",
-                height: math.unit(9/8 * (7 + 5/12), "feet")
+                height: math.unit(9 / 8 * (7 + 5 / 12), "feet")
             },
             {
                 name: "Macro",
@@ -1868,7 +1868,7 @@ characterMakers["Ebony"] = () => {
                 height: math.unit(13000, "km")
             }
         ],
-        math.unit(7 + 5/12, "feet")
+        math.unit(7 + 5 / 12, "feet")
     )
 };
 
@@ -2140,7 +2140,7 @@ characterMakers["Cryae"] = () => {
                 name: "Side",
                 image: {
                     source: "./media/characters/cryae/side.svg",
-                    extra: 3500/1500
+                    extra: 3500 / 1500
                 }
             }
         },
@@ -2165,7 +2165,7 @@ characterMakers["Xera"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/xera/front.svg",
-                    extra: 2300/2061
+                    extra: 2300 / 2061
                 }
             },
             side: {
@@ -2174,7 +2174,7 @@ characterMakers["Xera"] = () => {
                 name: "Side",
                 image: {
                     source: "./media/characters/xera/side.svg",
-                    extra: 2300/2061
+                    extra: 2300 / 2061
                 }
             },
             back: {
@@ -2223,7 +2223,7 @@ characterMakers["Nebula"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/nebula/front.svg",
-                    extra: 2600/2450
+                    extra: 2600 / 2450
                 }
             }
         },
@@ -2523,7 +2523,7 @@ characterMakers["Chez"] = () => {
         "Ashtrek",
         {
             front: {
-                height: math.unit(7 + 9/12, "feet"),
+                height: math.unit(7 + 9 / 12, "feet"),
                 weight: math.unit(379, "lbs"),
                 name: "Front",
                 image: {
@@ -2531,7 +2531,7 @@ characterMakers["Chez"] = () => {
                 }
             },
             side: {
-                height: math.unit(7 + 9/12, "feet"),
+                height: math.unit(7 + 9 / 12, "feet"),
                 weight: math.unit(379, "lbs"),
                 name: "Side",
                 image: {
@@ -2542,14 +2542,14 @@ characterMakers["Chez"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(7 + 9/12, "feet")
+                height: math.unit(7 + 9 / 12, "feet")
             },
             {
                 name: "God King",
                 height: math.unit(9750000, "meters")
             }
         ],
-        math.unit(7 + 9/12, "feet")
+        math.unit(7 + 9 / 12, "feet")
     )
 };
 
@@ -2565,7 +2565,7 @@ characterMakers["Kaylum"] = () => {
                 image: {
                     source: "./media/characters/kaylum/front.svg",
                     bottom: 0.01,
-                    extra: 1166/1031
+                    extra: 1166 / 1031
                 }
             },
             frontWingless: {
@@ -2575,7 +2575,7 @@ characterMakers["Kaylum"] = () => {
                 image: {
                     source: "./media/characters/kaylum/front-wingless.svg",
                     bottom: 0.01,
-                    extra: 1117/1031
+                    extra: 1117 / 1031
                 }
             }
 
@@ -2632,7 +2632,7 @@ characterMakers["Geta"] = () => {
             },
             {
                 name: "Normal",
-                height: math.unit(5 + 5/12, "feet")
+                height: math.unit(5 + 5 / 12, "feet")
             }
         ],
         math.unit(3, "inches")
@@ -2886,7 +2886,7 @@ characterMakers["Sigvald"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/sigvald/front.svg",
-                    extra: 1000/850
+                    extra: 1000 / 850
                 }
             },
             back: {
@@ -2964,7 +2964,7 @@ characterMakers["Tobias"] = () => {
                 name: "Side",
                 image: {
                     source: "./media/characters/tobias/side.svg",
-                    extra: 5/4
+                    extra: 5 / 4
                 }
             },
         },
@@ -2993,7 +2993,7 @@ characterMakers["Kieran"] = () => {
                 name: "Side",
                 image: {
                     source: "./media/characters/kieran/side.svg",
-                    extra: 950/850
+                    extra: 950 / 850
                 }
             },
         },
@@ -3047,7 +3047,7 @@ characterMakers["Miranda"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/miranda/front.svg",
-                    extra: 10.6/10
+                    extra: 10.6 / 10
                 }
             },
         },
@@ -3072,7 +3072,7 @@ characterMakers["James"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/james/front.svg",
-                    extra: 10/8.5
+                    extra: 10 / 8.5
                 }
             },
         },
@@ -3121,7 +3121,7 @@ characterMakers["Lukas"] = () => {
                 name: "Side",
                 image: {
                     source: "./media/characters/lukas/side.svg",
-                    extra: 7.25/6.5
+                    extra: 7.25 / 6.5
                 }
             },
         },
@@ -3202,7 +3202,7 @@ characterMakers["Deerpuff"] = () => {
                 name: "Standing",
                 image: {
                     source: "./media/characters/deerpuff/standing.svg",
-                    extra: 682/624
+                    extra: 682 / 624
                 }
             },
             sitting: {
@@ -3211,8 +3211,8 @@ characterMakers["Deerpuff"] = () => {
                 name: "Sitting",
                 image: {
                     source: "./media/characters/deerpuff/sitting.svg",
-                    bottom: 44/400,
-                    extra: 1 / (1 - 44/400)
+                    bottom: 44 / 400,
+                    extra: 1 / (1 - 44 / 400)
                 }
             },
             taurLaying: {
@@ -3268,13 +3268,13 @@ characterMakers["Vivian"] = () => {
                 }
             },
             sitting: {
-                height: math.unit(6/1.75, "feet"),
+                height: math.unit(6 / 1.75, "feet"),
                 weight: math.unit(170, "lbs"),
                 name: "Sitting",
                 image: {
                     source: "./media/characters/vivian/sitting.svg",
-                    bottom: 1/6.4,
-                    extra: (1 / (1 - 1/6.4)) * (1 + 164/1600)
+                    bottom: 1 / 6.4,
+                    extra: (1 / (1 - 1 / 6.4)) * (1 + 164 / 1600)
                 }
             },
         },

@@ -2,7 +2,7 @@ function makeState(name, height, width, area) {
     return {
         name: name,
         constructor: () => makeEntity(
-            {name: name},
+            { name: name },
             {
                 state: {
                     attributes: {

@@ -25,7 +25,7 @@ function makeObject(name, viewInfo) {
         }
     });
 
-    return makeEntity({name: name}, views);
+    return makeEntity({ name: name }, views);
 }
 
 function makeObjects() {

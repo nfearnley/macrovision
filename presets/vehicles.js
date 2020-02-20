@@ -1,6 +1,6 @@
 function makeVehicle(name, sides, mass) {
     views = {
-        
+
     }
 
     Object.entries(sides).forEach(([key, val]) => {
@@ -24,7 +24,7 @@ function makeVehicle(name, sides, mass) {
         }
     });
 
-    return makeEntity({name: name}, views);
+    return makeEntity({ name: name }, views);
 }
 
 function makeVehicles() {
@@ -45,7 +45,7 @@ function makeVehicles() {
                     height: math.unit(38.5, "feet"),
                     image: { source: "./media/vehicles/vertical-bus.svg" }
                 },
-                
+
             },
             math.unit(30000, "lb"),
         )
