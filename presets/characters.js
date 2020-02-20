@@ -137,6 +137,10 @@ characterMakers["Sofia"] = () => {
                 name: "Macro",
                 height: math.unit(96, "feet")
             },
+            {
+                name: "Megamerger",
+                height: math.unit(650, "feet")
+            },
         ],
         math.unit(96, "feet")
     )
