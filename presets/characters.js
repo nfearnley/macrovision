@@ -8,7 +8,10 @@ math.createUnit("lightyears", {
     definition: "9.461e15 meters",
     prefixes: "long"
 })
-function makeCharacter(name, author, viewInfo, defaultSizes, defaultSize) {
+function makeCharacter(name, author, viewInfo, defaultSizes, defaultSize, extraInfo) {
+    if (extraInfo === undefined) {
+        extraInfo = {}
+    }
     views = {};
 
     Object.entries(viewInfo).forEach(([key, value]) => {
@@ -22,7 +25,8 @@ function makeCharacter(name, author, viewInfo, defaultSizes, defaultSize) {
                 }
             },
             image: value.image,
-            name: value.name
+            name: value.name,
+            info: value.info
         }
 
         if (value.weight) {
@@ -35,7 +39,7 @@ function makeCharacter(name, author, viewInfo, defaultSizes, defaultSize) {
         }
     });
 
-    const entity = makeEntity({ name: name }, views, defaultSizes);
+    const entity = makeEntity(Object.assign(extraInfo, { name: name, author: author }), views, defaultSizes);
 
     if (defaultSize) {
         entity.views[entity.defaultView].height = defaultSize;
@@ -55,6 +59,12 @@ characterMakers["Fen"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/fen/back.svg"
+                },
+                info: {
+                    description: {
+                        mode: "append",
+                        text: "\n\nHe is not currently looking at you."
+                    }
                 }
             },
             full: {
@@ -63,6 +73,12 @@ characterMakers["Fen"] = () => {
                 name: "Full",
                 image: {
                     source: "./media/characters/fen/full.svg"
+                },
+                info: {
+                    description: {
+                        mode: "append",
+                        text: "\n\nMunch."
+                    }
                 }
             }
         },
@@ -77,7 +93,14 @@ characterMakers["Fen"] = () => {
             },
             {
                 name: "Macro",
-                height: math.unit(100, "meter")
+                height: math.unit(100, "meter"),
+                default: true,
+                info: {
+                    description: {
+                        mode: "append",
+                        text: "\n\nTOO DAMN BIG"
+                    }
+                }
             },
             {
                 name: "Macro+",
@@ -88,7 +111,13 @@ characterMakers["Fen"] = () => {
                 height: math.unit(10, "miles")
             }
         ],
-        math.unit(100, "meter")
+        math.unit(100, "meter"),
+        {
+            description: {
+                title: "Bio",
+                text: "Very furry. Sheds on everything."
+            }
+        }
     )
 };
 

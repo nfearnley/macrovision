@@ -223,10 +223,12 @@ function makeEntity(info, views, sizes) {
         views: views,
         sizes: sizes === undefined ? [] : sizes,
         init: function () {
+            const entity = this;
             Object.entries(this.views).forEach(([viewKey, view]) => {
                 view.parent = this;
                 if (this.defaultView === undefined) {
                     this.defaultView = viewKey;
+                    this.view = viewKey;
                 }
 
                 Object.entries(view.attributes).forEach(([key, val]) => {
@@ -245,12 +247,66 @@ function makeEntity(info, views, sizes) {
                     )
                 });
             });
+
+            this.sizes.forEach(size => {
+                if (size.default === true) {
+                    this.views[this.defaultView].height = size.height;
+                    this.size = size;
+                }
+            });
+
+            if (this.size === undefined && this.sizes.length > 0) {
+                this.views[this.defaultView].height = this.sizes[0].height;
+                this.size = this.sizes[0];
+            }
+
+            this.desc = {};
+
+            Object.entries(this.info).forEach(([key, value]) => {
+                Object.defineProperty(
+                    this.desc,
+                    key,
+                    {
+                        get: function() {
+                            let text = value.text;
+
+                            if (entity.views[entity.view].info) {
+                                if (entity.views[entity.view].info[key]) {
+                                    text = combineInfo(text, entity.views[entity.view].info[key]);
+                                }
+                            }
+
+                            if (entity.size.info) {
+                                if (entity.size.info[key]) {
+                                    text = combineInfo(text, entity.size.info[key]);
+                                }
+                            }
+
+                            return {title: value.title, text: text};
+                        }
+                    }
+                )
+            });
+
             delete this.init;
             return this;
         }
     }.init();
 
     return entityTemplate;
+}
+
+function combineInfo(existing, next) {
+    switch(next.mode) {
+        case "replace":
+            return next.text;
+        case "prepend":
+            return next.text + existing;
+        case "append":
+            return existing + next.text;
+    }
+
+    return existing;
 }
 
 function clickDown(target, x, y) {
