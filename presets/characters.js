@@ -3248,15 +3248,15 @@ characterMakers["Deerpuff"] = () => {
         },
         [
             {
-                name: "Normal",
+                name: "Normalpuff",
                 height: math.unit(5.75/1.79, "feet")
             },
             {
-                name: "Macro",
+                name: "Macropuff",
                 height: math.unit(1500/1.79, "feet")
             },
             {
-                name: "Megamacro",
+                name: "Megapuff",
                 height: math.unit(500/1.79, "miles")
             },
         ],
