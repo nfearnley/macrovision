@@ -739,6 +739,12 @@ https://www.furaffinity.net/view/26183197/
 
 ## Deerpuff
 
+**https://www.furaffinity.net/user/deerpuff**
+
+(no link)
+
+* standing.svg
+
 **https://www.furaffinity.net/user/faeseiren**
 
 https://t.me/addstickers/ZTSoS
