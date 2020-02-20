@@ -573,6 +573,18 @@ function updateViewOptions(entity, view, changed) {
     });
 }
 
+function getSortedEntities() {
+    return Object.keys(entities).sort((a, b) => {
+        const entA = entities[a];
+        const entB = entities[b];
+        const viewA = entA.view;
+        const viewB = entB.view;
+        const heightA = entA.views[viewA].height.to("meter").value;
+        const heightB = entB.views[viewB].height.to("meter").value;
+        return heightA - heightB;
+    });
+}
+
 function clearViewOptions() {
     const holder = document.querySelector("#options-view");
 
@@ -648,7 +660,7 @@ function arrangeEntities(order) {
 
     order.forEach(key => {
         document.querySelector("#entity-" + key).dataset.x = x;
-        x += 0.8 / order.length
+        x += 0.8 / (order.length - 1);
     });
 
     updateSizes();
@@ -740,6 +752,20 @@ function displayEntity(entity, view, x, y) {
 document.addEventListener("DOMContentLoaded", () => {
     prepareEntities();
 
+    const sceneChoices = document.querySelector("#scene-choices");
+
+    Object.entries(scenes).forEach(([id, scene]) => {
+        const option = document.createElement("option");
+        option.innerText = id;
+        option.value = id;
+        sceneChoices.appendChild(option);
+    });
+
+    document.querySelector("#load-scene").addEventListener("click", e => {
+        const chosen = sceneChoices.value;
+        removeAllEntities();
+        scenes[chosen]();
+    });
     entityX = document.querySelector("#entities").getBoundingClientRect().x;
     canvasWidth = document.querySelector("#display").clientWidth - 100;
     canvasHeight = document.querySelector("#display").clientHeight - 50;
@@ -768,30 +794,7 @@ document.addEventListener("DOMContentLoaded", () => {
         unitSelector.appendChild(option);
     });
 
-    const stuff = availableEntities.characters.map(x => x.constructor).filter(x => {
-        const result = x();
-        return result.views[result.defaultView].height.toNumber("meters") < 1000;
-    })
-    let x = 0.2;
-
-    stuff.forEach(entity => {
-        displayEntity(entity(), entity().defaultView, x, 1);
-        x += 0.7 / stuff.length;
-    })
-
-
-
-    const order = Object.keys(entities).sort((a, b) => {
-        const entA = entities[a];
-        const entB = entities[b];
-        const viewA = entA.view;
-        const viewB = entB.view;
-        const heightA = entA.views[viewA].height.to("meter").value;
-        const heightB = entB.views[viewB].height.to("meter").value;
-        return heightA - heightB;
-    });
-
-    arrangeEntities(order);
+    scenes["Demo"]();
     fitWorld();
     document.querySelector("#world").addEventListener("wheel", e => {
 
