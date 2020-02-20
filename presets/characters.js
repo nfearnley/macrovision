@@ -3248,6 +3248,10 @@ characterMakers["Deerpuff"] = () => {
         },
         [
             {
+                name: "Puffball",
+                height: math.unit(6/1.79, "inches")
+            },
+            {
                 name: "Normalpuff",
                 height: math.unit(5.75/1.79, "feet")
             },
@@ -3258,6 +3262,14 @@ characterMakers["Deerpuff"] = () => {
             {
                 name: "Megapuff",
                 height: math.unit(500/1.79, "miles")
+            },
+            {
+                name: "Gigapuff",
+                height: math.unit(250000/1.79, "miles")
+            },
+            {
+                name: "Omegapuff",
+                height: math.unit(1000/1.79, "lightyears")
             },
         ],
         math.unit(1500/1.79, "feet")
