@@ -34,6 +34,9 @@ scenes["Military"] = () => {
     entity = availableEntitiesByName["Napalm"].constructor();
     displayEntity(entity, entity.defaultView, 0, 1);
 
+    entity = availableEntitiesByName["Chez"].constructor();
+    displayEntity(entity, entity.defaultView, 0, 1);
+
     entity = availableEntitiesByName["Leopard 2 Rev. 1"].constructor();
     displayEntity(entity, entity.defaultView, 0, 1);
 
