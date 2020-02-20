@@ -264,7 +264,7 @@ function makeEntity(info, views, sizes) {
                     this.desc,
                     key,
                     {
-                        get: function() {
+                        get: function () {
                             let text = value.text;
 
                             if (entity.views[entity.view].info) {
@@ -279,7 +279,7 @@ function makeEntity(info, views, sizes) {
                                 }
                             }
 
-                            return {title: value.title, text: text};
+                            return { title: value.title, text: text };
                         }
                     }
                 )
@@ -294,7 +294,7 @@ function makeEntity(info, views, sizes) {
 }
 
 function combineInfo(existing, next) {
-    switch(next.mode) {
+    switch (next.mode) {
         case "replace":
             return next.text;
         case "prepend":
@@ -747,6 +747,16 @@ function displayEntity(entity, view, x, y) {
     }
 
     select(box);
+}
+
+
+window.onblur = function () {
+    altHeld = false;
+    shiftHeld = false;
+}
+
+window.onfocus = function () {
+    window.dispatchEvent(new Event("keydown"));
 }
 
 document.addEventListener("DOMContentLoaded", () => {
