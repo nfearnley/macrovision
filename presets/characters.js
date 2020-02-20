@@ -3190,6 +3190,130 @@ characterMakers["Louise"] = () => {
     )
 };
 
+characterMakers["Ramona"] = () => {
+    return makeCharacter(
+        "Ramona",
+        "ZakuraTech",
+        {
+            side: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lbs"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/ramona/side.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5.3, "meters")
+            },
+            {
+                name: "Macro",
+                height: math.unit(20, "stories")
+            },
+            {
+                name: "Macro+",
+                height: math.unit(50, "stories")
+            },
+        ],
+        math.unit(5.3, "meters")
+    )
+};
+
+characterMakers["Deerpuff"] = () => {
+    return makeCharacter(
+        "Deerpuff",
+        "Deerpuff",
+        {
+            sitting: {
+                height: math.unit(5.75 / 1.79, "feet"),
+                weight: math.unit(160, "lbs"),
+                name: "Sitting",
+                image: {
+                    source: "./media/characters/deerpuff/sitting.svg",
+                    bottom: 44/400,
+                    extra: 1 / (1 - 44/400)
+                }
+            },
+            taurLaying: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(400, "lbs"),
+                name: "Taur (Laying)",
+                image: {
+                    source: "./media/characters/deerpuff/taur-laying.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5.75/1.79, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(1500/1.79, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(500/1.79, "miles")
+            },
+        ],
+        math.unit(1500/1.79, "feet")
+    )
+};
+
+characterMakers["Vivian"] = () => {
+    return makeCharacter(
+        "Vivian",
+        "Fauxlacine",
+        {
+            stomping: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(170, "lbs"),
+                name: "Stomping",
+                image: {
+                    source: "./media/characters/vivian/stomping.svg"
+                }
+            },
+            sitting: {
+                height: math.unit(6/1.75, "feet"),
+                weight: math.unit(170, "lbs"),
+                name: "Sitting",
+                image: {
+                    source: "./media/characters/vivian/sitting.svg",
+                    bottom: 1/6.4,
+                    extra: (1 / (1 - 1/6.4)) * (1 + 164/1600)
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(7, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(10, "stories")
+            },
+            {
+                name: "Macro+",
+                height: math.unit(30, "stories")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(10, "miles")
+            },
+            {
+                name: "Megamacro+",
+                height: math.unit(2750000, "meters")
+            },
+        ],
+        math.unit(7, "feet")
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

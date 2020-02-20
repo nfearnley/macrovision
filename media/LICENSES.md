@@ -723,6 +723,42 @@ https://www.furaffinity.net/view/35088521/
 
 * side.svg
 
+## Ramona
+
+**https://www.furaffinity.net/user/rouncible/**
+
+https://www.furaffinity.net/view/26183197/
+
+* side.svg
+
+## Deerpuff
+
+**https://www.furaffinity.net/user/faeseiren**
+
+https://t.me/addstickers/ZTSoS
+
+* sitting.svg
+
+**https://www.furaffinity.net/user/greenbrains/**
+
+https://www.furaffinity.net/view/29325973/
+
+* taur-laying.svg
+
+## Vivian
+
+**https://www.furaffinity.net/user/fauxlacine/**
+
+https://www.furaffinity.net/view/21702945/
+
+* stomping.svg
+
+**https://www.furaffinity.net/user/fauxlacine/**
+
+https://www.furaffinity.net/view/21787301/
+
+* sitting.svg
+
 # Naturals
 
 * front.svg
