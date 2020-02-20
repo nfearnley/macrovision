@@ -3333,6 +3333,42 @@ characterMakers["Vivian"] = () => {
     )
 };
 
+characterMakers["Viktor"] = () => {
+    return makeCharacter(
+        "Viktor",
+        "Kurrikage",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(180, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/viktor/front.svg",
+                    bottom: 0.02,
+                    extra: 1 / (1 - 0.02)
+                }
+            },
+            frontAlt: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(180, "lbs"),
+                name: "Front (Alt)",
+                image: {
+                    source: "./media/characters/viktor/front-alt.svg",
+                    bottom: 0.03,
+                    extra: 1 / (1 - 0.03)
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(9.5, "feet")
+            }
+        ],
+        math.unit(9.5, "feet")
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

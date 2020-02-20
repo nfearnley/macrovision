@@ -771,6 +771,20 @@ https://www.furaffinity.net/view/21787301/
 
 * sitting.svg
 
+## Viktor
+
+**talikira**
+
+(link to be added)
+
+* front.svg
+
+**hornedfreak**
+
+(link to be added)
+
+* front-alt.svg
+
 # Naturals
 
 * front.svg
