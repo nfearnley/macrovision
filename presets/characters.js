@@ -35,11 +35,7 @@ function makeCharacter(name, author, viewInfo, defaultSizes, defaultSize) {
         }
     });
 
-    const entity = makeEntity(name, "author", views);
-
-    if (defaultSizes) {
-        entity.defaults = defaultSizes;
-    }
+    const entity = makeEntity({name: name}, views, defaultSizes);
 
     if (defaultSize) {
         entity.views[entity.defaultView].height = defaultSize;
@@ -184,34 +180,34 @@ function makeMarch() {
         }
     };
 
-    const entity = makeEntity("March", "March-Dragon", views);
+    const entity = makeEntity({name: "March", author: "March-Dragon"}, views, []);
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Normal",
         height: math.unit(7.9, "feet")
     });
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Macro",
         height: math.unit(220, "meters")
     });
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Megamacro",
         height: math.unit(2.98, "km")
     });
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Gigamacro",
         height: math.unit(15963, "km")
     });
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Teramacro",
         height: math.unit(2980000000, "kilometers")
     });
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Examacro",
         height: math.unit(250, "parsecs")
     });
@@ -245,34 +241,34 @@ function makeNoir() {
         }
     };
 
-    const entity = makeEntity("Noir", "March-Dragon", views);
+    const entity = makeEntity({name: "Noir", author: "March-Dragon"}, views, []);
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Normal",
         height: math.unit(6.6, "feet")
     });
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Macro",
         height: math.unit(500, "feet")
     });
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Megamacro",
         height: math.unit(2.5, "km")
     });
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Gigamacro",
         height: math.unit(22500, "km")
     });
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Teramacro",
         height: math.unit(2500000000, "kilometers")
     });
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Examacro",
         height: math.unit(200, "parsecs")
     });
@@ -325,7 +321,7 @@ function makeOkuri() {
         }
     };
 
-    const entity = makeEntity("Okuri", "OrionMechadragon", views);
+    const entity = makeEntity({name: "Okuri", author: "OrionMechadragon"}, views, []);
     entity.views.front.height = math.unit(100, "miles");
     return entity;
 }
@@ -374,25 +370,25 @@ function makeManny() {
         }
     };
 
-    const entity = makeEntity("Manny", "Dialuca01", views);
+    const entity = makeEntity({name: "Manny", author: "Dialuca01"}, views, []);
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Normal",
         height: math.unit(7, "feet")
     });
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Macro",
         height: math.unit(78, "feet")
     });
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Macro+",
         height: math.unit(300, "meters")
     });
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Megamacro",
         height: math.unit(5167, "meters")
     });
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Gigamacro",
         height: math.unit(41769, "miles")
     });
@@ -487,25 +483,25 @@ function makeAdake() {
         },
     };
 
-    const entity = makeEntity("Adake", "Dialuca01", views);
+    const entity = makeEntity({name: "Adake", author: "Dialuca01"}, views, []);
     
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Normal",
         height: math.unit(7, "feet")
     });
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Macro",
         height: math.unit(78, "feet")
     });
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Macro+",
         height: math.unit(300, "meters")
     });
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Megamacro",
         height: math.unit(5167, "meters")
     });
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Gigamacro",
         height: math.unit(41769, "miles")
     });
@@ -552,19 +548,19 @@ function makeElijah() {
         }
     };
 
-    const entity = makeEntity("Elijah", "Elijah", views);
+    const entity = makeEntity({name: "Elijah", author: "Elijah"}, views, []);
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Normal",
         height: math.unit(1.65, "meters")
     });
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Macro",
         height: math.unit(55, "meters")
     });
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Macro+",
         height: math.unit(105, "meters")
     });
@@ -637,7 +633,7 @@ function makeRai() {
         }
     };
 
-    const entity = makeEntity("Rai", "shadowblade945", views);
+    const entity = makeEntity({name: "Rai", author: "shadowblade945"}, views, []);
     entity.views.front.height = math.unit(302, "feet");
     return entity;
 }
@@ -687,7 +683,7 @@ function makeJazzy() {
         }
     };
 
-    const entity = makeEntity("Jazzy", "Jazzywolf", views);
+    const entity = makeEntity({name: "Jazzy", author: "Jazzywolf"}, views, []);
     entity.views.front.height = math.unit(216, "feet");
     return entity;
 }
@@ -716,14 +712,14 @@ function makeFlamm() {
         }
     };
 
-    const entity = makeEntity("Flamm", "Flamm", views);
+    const entity = makeEntity({name: "Flamm", author: "Flamm"}, views, []);
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Normal",
         height: math.unit(9.5, "feet")
     });
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Macro",
         height: math.unit(200, "feet")
     });
@@ -796,20 +792,20 @@ function makeZephiro() {
         }
     };
 
-    const entity = makeEntity("Zephiro", "Zephiro", views);
+    const entity = makeEntity({name: "Zephiro", author: "Zephiro"}, views, []);
     entity.views.front.height = math.unit(118, "feet");    
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Micro",
         height: math.unit(3, "inches")
     });
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Normal",
         height: math.unit(5 + 3/12, "feet")
     });
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Macro",
         height: math.unit(118, "feet")
     });
@@ -841,15 +837,15 @@ function makeFory() {
         }
     };
 
-    const entity = makeEntity("Fory", "Manny", views);
+    const entity = makeEntity({name: "Fory", author: "Manny"}, views, []);
     
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Normal",
         height: math.unit(5, "feet")
     });
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Macro",
         height: math.unit(50, "feet")
     });
@@ -945,7 +941,7 @@ function makeKurrikage() {
         }
     };
 
-    const entity = makeEntity("Kurrikage", "Kurrikage", views);
+    const entity = makeEntity({name: "Kurrikage", author: "Kurrikage"}, views, []);
     entity.views.front.height = math.unit(12, "feet");
     return entity;
 }
@@ -974,19 +970,19 @@ function makeShingo() {
         }
     };
 
-    const entity = makeEntity("Shingo", "Threes", views);
+    const entity = makeEntity({name: "Shingo", author: "Threes"}, views, []);
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Micro",
         height: math.unit(4, "inches")
     });
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Normal",
         height: math.unit(6, "feet")
     });
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Macro",
         height: math.unit(108, "feet")
     });
@@ -1017,14 +1013,14 @@ function makeAigey() {
         }
     };
 
-    const entity = makeEntity("Aigey", "Aigey", views);
+    const entity = makeEntity({name: "Aigey", author: "Aigey"}, views, []);
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Macro",
         height: math.unit(200, "feet")
     });
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Megamacro",
         height: math.unit(100, "miles")
     });
@@ -1058,28 +1054,28 @@ function makeNatasha() {
         }
     };
 
-    const entity = makeEntity("Natasha", "Natasha", views);
+    const entity = makeEntity({name: "Natasha", author: "Natasha"}, views, []);
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Normal",
         height: math.unit(5 + 5/12, "feet")
     });
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Large",
         height: math.unit(12, "feet")
     });
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Macro",
         height: math.unit(100, "feet")
     });
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Macro+",
         height: math.unit(260, "feet")
     });
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Macro++",
         height: math.unit(1, "mile")
     });
@@ -1154,14 +1150,14 @@ function makeMalik() {
         },
     };
 
-    const entity = makeEntity("Malik", "Fuzzypaws", views);    
+    const entity = makeEntity({name: "Malik", author: "Fuzzypaws"}, views, []);    
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Macro",
         height: math.unit(156, "feet")
     });
 
-    entity.defaults.push({
+    entity.sizes.push({
         name: "Macro+",
         height: math.unit(1188, "feet")
     });
@@ -1215,38 +1211,11 @@ function makeSefer() {
         },
     };
 
-    const entity = makeEntity("Sefer", "Fuzzypaws", views);
+    const entity = makeEntity({name: "Sefer", author: "Fuzzypaws"}, views, []);
 
     entity.views[entity.defaultView].height = math.unit(6, "feet");
     
     return entity;
-}
-
-function makeMan() {
-    const views = {
-        body: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(2, "meter")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(80, "kg")
-                }
-            },
-            image: {
-                source: "./man.svg"
-            },            
-            name: "Body"
-        }
-    };
-
-    return makeEntity("Normal Man", "Fen", views);
 }
 
 characterMakers["North"] = () => {

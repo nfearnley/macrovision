@@ -214,14 +214,14 @@ function drawScale() {
     drawTicks(ctx, pixelsPer, heightPer);
 }
 
-function makeEntity(name, author, views) {
+function makeEntity(info, views, sizes) {
     const entityTemplate = {
-        name: name,
-        identifier: name,
-        author: author,
+        name: info.name,
+        identifier: info.name,
         scale: 1,
+        info: info,
         views: views,
-        defaults: [],
+        sizes: sizes === undefined ? [] : sizes,
         init: function () {
             Object.entries(this.views).forEach(([viewKey, view]) => {
                 view.parent = this;
@@ -405,7 +405,7 @@ function configEntityOptions(entity, view) {
 
     defaultHolder.innerHTML = "";
 
-    entity.defaults.forEach(defaultInfo => {
+    entity.sizes.forEach(defaultInfo => {
         const button = document.createElement("button");
         button.classList.add("options-button");
        
@@ -709,7 +709,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         unitSelector.appendChild(option);
-        console.log(option)
     });
 
     const stuff = availableEntities.characters.map(x => x.constructor).filter(x => {
@@ -868,7 +867,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("paste", e => {
         try {
             const data = JSON.parse(e.clipboardData.getData("text"));
-            console.log(data)
             if (data.entities === undefined) {
                 return;
             }
@@ -1066,15 +1064,12 @@ function setWorldHeight(oldHeight, newHeight) {
         const element = document.querySelector("#entity-" + key);
         let newPosition;
 
-        console.log("###");
-        console.log({ x: element.dataset.x, y: element.dataset.y });
         if (!altHeld) {
             newPosition = adjustAbs({ x: element.dataset.x, y: element.dataset.y }, oldHeight, config.height);
         } else {
             newPosition = { x: element.dataset.x, y: element.dataset.y };
         }
 
-        console.log(newPosition);
         element.dataset.x = newPosition.x;
         element.dataset.y = newPosition.y;
     });

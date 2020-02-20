@@ -19,7 +19,7 @@ function makeCity(name, height) {
 
     console.log(views)
 
-    return makeEntity(name, "City", views);
+    return makeEntity({name: name}, views);
 }
 
 function addCity(name, height) {

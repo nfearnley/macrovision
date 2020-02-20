@@ -24,7 +24,7 @@ function makeBuilding(name, height, image) {
         },
     };
 
-    return makeEntity(name, "Building", views);
+    return makeEntity({name: name}, views);
 }
 
 
@@ -44,24 +44,26 @@ function makeSkyscraper(name, image, startingSize) {
         },
     };
 
-    const entity = makeEntity(name, "Skyscraper", views);
+    const sizes = [];
 
-    entity.defaults.push({
+    sizes.push({
         name: "Short",
         height: math.unit(15, "stories")
     });
-    entity.defaults.push({
+    sizes.push({
         name: "Medium",
         height: math.unit(40, "stories")
     });
-    entity.defaults.push({
+    sizes.push({
         name: "Supertall",
         height: math.unit(350, "meters")
     });
-    entity.defaults.push({
+    sizes.push({
         name: "Megatall",
         height: math.unit(650, "meters")
     });
+
+    const entity = makeEntity({name: name}, views, sizes);
 
     entity.views[entity.defaultView].height = startingSize;
     return entity;

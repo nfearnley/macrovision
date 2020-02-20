@@ -24,7 +24,7 @@ function makeVehicle(name, sides, mass) {
         }
     });
 
-    return makeEntity(name, "Vehicle", views);
+    return makeEntity({name: name}, views);
 }
 
 function makeVehicles() {
