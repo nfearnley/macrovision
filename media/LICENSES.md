@@ -57,8 +57,14 @@ https://www.furaffinity.net/view/34622252/
 
 https://www.furaffinity.net/view/16704878/
 
-* front.svg
+* front-alt.svg
 * back.svg
+
+**https://www.furaffinity.net/user/suicidalmuffins/**
+
+https://www.furaffinity.net/view/11711111/
+
+* front.svg
 
 ## March
 

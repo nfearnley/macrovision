@@ -96,55 +96,51 @@ characterMakers["Fen"] = () => {
     )
 };
 
-function makeSofia() {
-    const views = {
-        front: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(183, "cm")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(80, "kg")
+characterMakers["Sofia"] = () => {
+    return makeCharacter(
+        "Sofia",
+        "ZakuraTech",
+        {
+            front: {
+                height: math.unit(183, "cm"),
+                weight: math.unit(80, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/sofia/front.svg",
+                    bottom: 0.01,
+                    extra: 1 / (1 - 0.01)
                 }
             },
-            image: {
-                source: "./media/characters/sofia/front.svg"
+            frontAlt: {
+                height: math.unit(183, "cm"),
+                weight: math.unit(80, "kg"),
+                name: "Front (alt)",
+                image: {
+                    source: "./media/characters/sofia/front-alt.svg"
+                }
             },
-            name: "Front"
+            back: {
+                height: math.unit(183, "cm"),
+                weight: math.unit(80, "kg"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/sofia/back.svg"
+                }
+            },
         },
-        back: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(183, "cm")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(80, "kg")
-                }
+        [
+            {
+                name: "Normal",
+                height: math.unit(1.83, "meter")
             },
-            image: {
-                source: "./media/characters/sofia/back.svg"
+            {
+                name: "Macro",
+                height: math.unit(96, "feet")
             },
-            name: "Back"
-        }
-
-    };
-
-    const entity = makeEntity("Sofia", "ZakuraTech", views);
-    entity.views.front.height = math.unit(96, "feet");
-    return entity;
-}
+        ],
+        math.unit(96, "feet")
+    )
+};
 
 function makeMarch() {
     const views = {
@@ -3328,10 +3324,6 @@ characterMakers["Vivian"] = () => {
 
 function makeCharacters() {
     const results = [];
-    results.push({
-        name: "Sofia",
-        constructor: makeSofia
-    });
     results.push({
         name: "March",
         constructor: makeMarch
