@@ -12,6 +12,10 @@ let dragOffsetY = null;
 let shiftHeld = false;
 let altHeld = false;
 
+let entityX;
+let canvasWidth;
+let canvasHeight;
+
 const unitChoices = {
     length: [
         "meters",
@@ -76,16 +80,10 @@ function adjustAbs(coords, oldHeight, newHeight) {
 }
 
 function rel2abs(coords) {
-    const canvasWidth = document.querySelector("#display").clientWidth - 100;
-    const canvasHeight = document.querySelector("#display").clientHeight - 50;
-
     return { x: coords.x * canvasWidth + 50, y: coords.y * canvasHeight };
 }
 
 function abs2rel(coords) {
-    const canvasWidth = document.querySelector("#display").clientWidth - 100;
-    const canvasHeight = document.querySelector("#display").clientHeight - 50;
-
     return { x: (coords.x - 50) / canvasWidth, y: coords.y / canvasHeight };
 }
 
@@ -104,8 +102,7 @@ function updateEntityElement(entity, element, zIndex) {
 
     const bottomName = document.querySelector("#bottom-name-" + element.dataset.key);
 
-    let entX = document.querySelector("#entities").getBoundingClientRect().x;
-    bottomName.style.left = position.x + entX + "px";
+    bottomName.style.left = position.x + entityX + "px";
     bottomName.style.top = "95vh";
     bottomName.innerText = entity.name;
 
@@ -743,6 +740,10 @@ function displayEntity(entity, view, x, y) {
 document.addEventListener("DOMContentLoaded", () => {
     prepareEntities();
 
+    entityX = document.querySelector("#entities").getBoundingClientRect().x;
+    canvasWidth = document.querySelector("#display").clientWidth - 100;
+    canvasHeight = document.querySelector("#display").clientHeight - 50;
+
     document.querySelector("#open-help").addEventListener("click", e => {
         document.querySelector("#help").classList.add("visible");
     });
@@ -810,7 +811,6 @@ document.addEventListener("DOMContentLoaded", () => {
             updateWorldOptions();
         }
         checkFitWorld();
-        updateSizes();
     })
     document.querySelector("body").appendChild(testCtx.canvas);
 
@@ -1020,6 +1020,9 @@ function prepareEntities() {
 }
 
 window.addEventListener("resize", () => {
+    entityX = document.querySelector("#entities").getBoundingClientRect().x;
+    canvasWidth = document.querySelector("#display").clientWidth - 100;
+    canvasHeight = document.querySelector("#display").clientHeight - 50;
     updateSizes();
 })
 
