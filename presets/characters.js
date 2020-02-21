@@ -3694,15 +3694,15 @@ characterMakers["Andy"] = () => {
             },
             {
                 name: "Macro",
-                height: math.unit(100, "feet")
-            },
-            {
-                name: "Macro+",
                 height: math.unit(1000, "feet")
             },
             {
                 name: "Megamacro",
                 height: math.unit(5, "miles")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(5000, "miles")
             },
         ]
     )
