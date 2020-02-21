@@ -972,6 +972,25 @@ function makeKurrikage() {
 
     const entity = makeEntity({ name: "Kurrikage", author: "Kurrikage" }, views, []);
     entity.views.front.height = math.unit(12, "feet");
+
+    entity.sizes.push({
+        name: "Normal",
+        height: math.unit(12, "feet"),
+        default: true
+    });
+    entity.sizes.push({
+        name: "Big",
+        height: math.unit(20, "feet")
+    });
+    entity.sizes.push({
+        name: "Macro",
+        height: math.unit(500, "feet")
+    });
+    entity.sizes.push({
+        name: "Megamacro",
+        height: math.unit(20, "miles")
+    });
+
     return entity;
 }
 
