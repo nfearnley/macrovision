@@ -3604,6 +3604,75 @@ characterMakers["Huoyan"] = () => {
     )
 };
 
+characterMakers["Tails"] = () => {
+    return makeCharacter(
+        "Tails",
+        "Rainier",
+        {
+            front: {
+                height: math.unit(5 + 3/4, "feet"),
+                weight: math.unit(120, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/tails/front.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 3/4, "feet")
+            }
+        ]
+    )
+};
+
+characterMakers["Rainy"] = () => {
+    return makeCharacter(
+        "Rainy",
+        "Rainier",
+        {
+            front: {
+                height: math.unit(4, "feet"),
+                weight: math.unit(50, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/rainy/front.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(800, "feet")
+            }
+        ]
+    )
+};
+
+characterMakers["Rainier"] = () => {
+    return makeCharacter(
+        "Rainier",
+        "Rainier",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/rainier/front.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(2, "mm")
+            }
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

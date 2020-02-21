@@ -787,6 +787,30 @@ https://www.furaffinity.net/view/21787301/
 
 **(other characters also to be added; FA is down right now!)**
 
+## Tails
+
+**t.me/ShingekiSkunk**
+
+(no link)
+
+* front.svg
+
+## Rainy
+
+**t.me/Rileykit**
+
+(no link)
+
+* front.svg
+
+## Rainier
+
+**https://www.furaffinity.net/user/ovens**
+
+(no link)
+
+* front.svg
+
 # Naturals
 
 * front.svg
