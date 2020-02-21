@@ -65,5 +65,20 @@ function makeObjects() {
         )
     });
 
+    results.push({
+        name: "Lamp",
+        constructor: () => makeObject(
+            "Lamp",
+            {
+                lamp: {
+                    height: math.unit(30, "inches"),
+                    mass: math.unit(10, "lbs"),
+                    image: { source: "./media/objects/lamp.svg" },
+                    name: "Lamp"
+                }
+            }
+        )
+    });
+
     return results;
 }

@@ -74,3 +74,18 @@ scenes["100m < x < 1km"] = makeSlice(math.unit(100, "meters"), math.unit(1000, "
 scenes["1km < x < 10km"] = makeSlice(math.unit(1000, "meters"), math.unit(10000, "meters"));
 scenes["10km < x < 100km"] = makeSlice(math.unit(10000, "meters"), math.unit(100000, "meters"));
 scenes["100km < x < 1000km"] = makeSlice(math.unit(100000, "meters"), math.unit(1000000, "meters"));
+
+scenes["Kurri"] = () => {
+    availableEntities["characters"].filter(x => {
+        const entity = x.constructor();
+        return entity.info.author == "Kurrikage";
+    }).forEach(maker => {
+        const entity = maker.constructor();
+        displayEntity(entity, entity.view, 0, 1);
+    });
+    
+    arrangeEntities(getSortedEntities());
+    fitWorld();
+
+
+}

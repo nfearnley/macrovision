@@ -785,6 +785,8 @@ https://www.furaffinity.net/view/21787301/
 
 * front-alt.svg
 
+**(other characters also to be added; FA is down right now!)**
+
 # Naturals
 
 * front.svg
@@ -815,6 +817,7 @@ https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg
 * soda-can.svg
 * sewing-pin.svg
 * pin-head.svg
+* lamp.svg
 
 # Vehicles
 

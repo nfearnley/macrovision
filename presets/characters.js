@@ -3333,9 +3333,85 @@ characterMakers["Vivian"] = () => {
     )
 };
 
-characterMakers["Viktor"] = () => {
+characterMakers["Prince"] = () => {
     return makeCharacter(
-        "Viktor",
+        "Prince",
+        "Kurrikage",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(160, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/prince/front.svg",
+                    extra: 3400/3000
+                }
+            },
+            jumping: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(160, "lbs"),
+                name: "Jumping",
+                image: {
+                    source: "./media/characters/prince/jump.svg",
+                    extra: 2555/2134
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(7.75, "feet"),
+                default: true
+            }
+        ]
+    )
+};
+
+characterMakers["Psymon"] = () => {
+    return makeCharacter(
+        "Psymon",
+        "Kurrikage",
+        {
+            standing: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(300, "lbs"),
+                name: "Standing",
+                image: {
+                    source: "./media/characters/psymon/standing.svg",
+                    extra: 1888/1810
+                }
+            },
+            slithering: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(300, "lbs"),
+                name: "Slithering",
+                image: {
+                    source: "./media/characters/psymon/slithering.svg",
+                    extra: 1330/1224
+                }
+            },
+            slitheringAlt: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(300, "lbs"),
+                name: "Slithering (Alt)",
+                image: {
+                    source: "./media/characters/psymon/slithering-alt.svg",
+                    extra: 1330/1224
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(11.25, "feet")
+            }
+        ]
+    )
+};
+
+characterMakers["Daimos"] = () => {
+    return makeCharacter(
+        "Daimos",
         "Kurrikage",
         {
             front: {
@@ -3343,29 +3419,169 @@ characterMakers["Viktor"] = () => {
                 weight: math.unit(180, "lbs"),
                 name: "Front",
                 image: {
-                    source: "./media/characters/viktor/front.svg",
-                    bottom: 0.02,
-                    extra: 1 / (1 - 0.02)
+                    source: "./media/characters/daimos/front.svg",
+                    extra: 4160/3897
                 }
-            },
-            frontAlt: {
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(8, "feet")
+            }
+        ]
+    )
+};
+
+characterMakers["Blake"] = () => {
+    return makeCharacter(
+        "Blake",
+        "Kurrikage",
+        {
+            side: {
                 height: math.unit(6, "feet"),
                 weight: math.unit(180, "lbs"),
-                name: "Front (Alt)",
+                name: "Side",
                 image: {
-                    source: "./media/characters/viktor/front-alt.svg",
-                    bottom: 0.03,
-                    extra: 1 / (1 - 0.03)
+                    source: "./media/characters/blake/side.svg",
+                    extra: 1212/1120
+                }
+            },
+            crouched: {
+                height: math.unit(6*0.57, "feet"),
+                weight: math.unit(180, "lbs"),
+                name: "Crouched",
+                image: {
+                    source: "./media/characters/blake/crouched.svg",
+                    extra: 840/587
+                }
+            },
+            bent: {
+                height: math.unit(6*0.75, "feet"),
+                weight: math.unit(180, "lbs"),
+                name: "Bent",
+                image: {
+                    source: "./media/characters/blake/bent.svg",
+                    extra: 592/544
                 }
             },
         },
         [
             {
                 name: "Normal",
-                height: math.unit(9.5, "feet")
+                height: math.unit(8 + 1/6, "feet")
             }
-        ],
-        math.unit(9.5, "feet")
+        ]
+    )
+};
+
+characterMakers["Guisetto"] = () => {
+    return makeCharacter(
+        "Guisetto",
+        "Kurrikage",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(180, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/guisetto/front.svg",
+                    extra: 856/817
+                }
+            },
+            airborne: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(180, "lbs"),
+                name: "Airborne",
+                image: {
+                    source: "./media/characters/guisetto/airborne.svg",
+                    extra: 584/525
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(10 + 11/12, "feet")
+            }
+        ]
+    )
+};
+
+characterMakers["Luxor"] = () => {
+    return makeCharacter(
+        "Luxor",
+        "Kurrikage",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(180, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/luxor/front.svg",
+                    extra: 2940/2152
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(180, "lbs"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/luxor/back.svg",
+                    extra: 1083/960
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 5/6, "feet"),
+                default: true
+            },
+            {
+                name: "Lamp",
+                height: math.unit(50, "feet")
+            },
+            {
+                name: "Lämp",
+                height: math.unit(300, "feet")
+            },
+            {
+                name: "The sun is a lamp",
+                height: math.unit(250000, "miles")
+            },
+        ]
+    )
+};
+
+characterMakers["Huoyan"] = () => {
+    return makeCharacter(
+        "Huoyan",
+        "Kurrikage",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(50, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/huoyan/front.svg"
+                }
+            },
+            side: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(180, "lbs"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/huoyan/side.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(65, "feet")
+            }
+        ]
     )
 };
 
