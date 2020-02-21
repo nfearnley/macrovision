@@ -811,6 +811,14 @@ https://www.furaffinity.net/view/21787301/
 
 * front.svg
 
+## Andy
+
+**https://twitter.com/cardboardhead**
+
+(no link)
+
+* front.svg
+
 # Naturals
 
 * front.svg
