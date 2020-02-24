@@ -26,24 +26,24 @@ const attributionData = {
         {
             prefix: "./media/characters/abysgar/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/32424108/"}
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32424108/" }
             ],
             authors: [
                 "clown-grin",
                 "labratkuma"
             ],
             owners: [
-                
+
             ]
         },
         {
             prefix: "./media/characters/adake/",
             files: [
-                { name: "front-1.svg", source: "https://www.furaffinity.net/view/26253324/"},
-                { name: "front-2.svg", source: "https://www.furaffinity.net/view/26253324/"},
-                { name: "back.svg", source: "https://www.furaffinity.net/view/26253324/"},
-                { name: "kneel.svg", source: "https://www.furaffinity.net/view/26253324/"},
-                
+                { name: "front-1.svg", source: "https://www.furaffinity.net/view/26253324/" },
+                { name: "front-2.svg", source: "https://www.furaffinity.net/view/26253324/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/26253324/" },
+                { name: "kneel.svg", source: "https://www.furaffinity.net/view/26253324/" },
+
             ],
             authors: [
                 "oselotti"
@@ -55,52 +55,129 @@ const attributionData = {
         {
             prefix: "./media/characters/aigey/",
             files: [
-                { name: "side.svg", source: "https://www.furaffinity.net/view/12006265/"}
+                { name: "side.svg", source: "https://www.furaffinity.net/view/12006265/" }
             ],
             authors: [
                 "just-a-little-mixed-up"
             ],
             owners: [
-                
+
             ]
         },
         {
             prefix: "./media/characters/akari/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/21329356/"}
+                { name: "front.svg", source: "https://www.furaffinity.net/view/21329356/" }
             ],
             authors: [
                 "spyropurple"
             ],
             owners: [
-                
+
             ]
         },
         {
             prefix: "./media/characters/andy/",
             files: [
-                { name: "front.svg", source: null}
+                { name: "front.svg", source: null }
             ],
             authors: [
                 "cardboardhead"
             ],
             owners: [
-                
+
             ]
         },
         {
             prefix: "./media/characters/angelpatamon/",
             files: [
-                { name: "front.svg", source: "http://www.furaffinity.net/view/26475369/"}
+                { name: "front.svg", source: "http://www.furaffinity.net/view/26475369/" }
             ],
             authors: [
                 "mallowchu"
             ]
         },
         {
+            prefix: "./media/characters/appledectomy/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33002197/" }
+            ],
+            authors: [
+                "stonerabbit"
+            ],
+            owners: [
+                "appledectomy"
+            ]
+        },
+        {
+            prefix: "./media/characters/asana/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35087729/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/35087729/" },
+            ],
+            authors: [
+                "silverwingink"
+            ],
+            owners: [
+                "aviraptia"
+            ]
+        },
+        {
+            prefix: "./media/characters/asana/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35087729/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/35087729/" },
+            ],
+            authors: [
+                "silverwingink"
+            ],
+            owners: [
+                "aviraptia"
+            ]
+        },
+        {
+            prefix: "./media/characters/asana-mech/",
+            files: [
+                { name: "side.svg", source: null }
+            ],
+            authors: [
+                "ashtrek"
+            ],
+            owners: [
+                "aviraptia"
+            ]
+        },
+        {
+            prefix: "./media/characters/ashtrek/",
+            files: [
+                { name: "front.svg", source: null },
+                { name: "front-armor.svg", source: null },
+            ],
+            authors: [
+                "silverwingink"
+            ],
+            owners: [
+                "ashtrek"
+            ]
+        },
+        {
+            prefix: "./media/characters/blake/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/30676178/" },
+                { name: "crouched.svg", source: "https://www.furaffinity.net/view/30676178/" },
+                { name: "bent.svg", source: "https://www.furaffinity.net/view/30676178/" },
+            ],
+            authors: [
+                "zyraxus"
+            ],
+            owners: [
+                "kurrikage"
+            ]
+        },
+        {
             prefix: "./media/characters/cibus/",
             files: [
-                { name: "side.svg", source: "https://www.furaffinity.net/view/15534343/"}
+                { name: "side.svg", source: "https://www.furaffinity.net/view/15534343/" }
             ],
             authors: [
                 "jaydom"
@@ -112,8 +189,8 @@ const attributionData = {
         {
             prefix: "./media/characters/malfressa/",
             files: [
-                { name: "side.svg", source: "https://www.furaffinity.net/view/25377262/"},
-                { name: "feral.svg", source: "https://www.furaffinity.net/view/25377262/"}
+                { name: "side.svg", source: "https://www.furaffinity.net/view/25377262/" },
+                { name: "feral.svg", source: "https://www.furaffinity.net/view/25377262/" }
             ],
             authors: [
                 "d-eath-tail"
@@ -125,7 +202,7 @@ const attributionData = {
         {
             prefix: "./media/characters/malfressa/",
             files: [
-                { name: "walking.svg", source: "https://www.furaffinity.net/view/23877052/"}
+                { name: "walking.svg", source: "https://www.furaffinity.net/view/23877052/" }
             ],
             authors: [
                 "kerneldecoy"
@@ -137,8 +214,8 @@ const attributionData = {
         {
             prefix: "./media/characters/nibbles/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/22964778/"},
-                { name: "side.svg", source: "https://www.furaffinity.net/view/22964778/"},
+                { name: "front.svg", source: "https://www.furaffinity.net/view/22964778/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/22964778/" },
             ],
             authors: [
                 "dragga"
@@ -150,7 +227,7 @@ const attributionData = {
         {
             prefix: "./media/characters/rikky/",
             files: [
-                { name: "side.svg", source: null}
+                { name: "side.svg", source: null }
             ],
             authors: [
                 "ethan64"
@@ -162,9 +239,9 @@ const attributionData = {
         {
             prefix: "./media/characters/surgo/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/33348481/"},
-                { name: "back.svg", source: "https://www.furaffinity.net/view/33348481/"},
-                { name: "laying.svg", source: "https://www.furaffinity.net/view/33348481/"},
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33348481/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/33348481/" },
+                { name: "laying.svg", source: "https://www.furaffinity.net/view/33348481/" },
             ],
             authors: [
                 "gaiawolfess",
@@ -177,8 +254,8 @@ const attributionData = {
         {
             prefix: "./media/characters/tiberius/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/34977812/"},
-                { name: "back.svg", source: "https://www.furaffinity.net/view/34977812/"}
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34977812/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/34977812/" }
             ],
             authors: [
                 "Rebonica"
@@ -190,14 +267,26 @@ const attributionData = {
         {
             prefix: "./media/characters/",
             files: [
-                { name: "", source: ""}
+                { name: "", source: "" }
             ],
             authors: [
-                
+
             ]
         }
     ],
     people: {
+        "appledectomy": {
+            name: "Appledectomy",
+            url: "https://www.furaffinity.net/user/appledectomy"
+        },
+        "ashtrek": {
+            name: "Ashtrek",
+            url: "https://www.furaffinity.net/user/ashtrek/"
+        },
+        "aviraptia": {
+            name: "Aviraptia",
+            url: "https://www.furaffinity.net/user/aviraptia/"
+        },
         "cardboardhead": {
             name: "cardboardhead",
             url: "https://twitter.com/cardboardhead"
@@ -242,6 +331,10 @@ const attributionData = {
             name: "Kernel Decoy",
             url: "https://www.furaffinity.net/user/kerneldecoy/"
         },
+        "kurrikage": {
+            name: "Kurrikage",
+            url: "https://www.furaffinity.net/user/kurrikage/"
+        },
         "labratkuma": {
             name: "labratkuma",
             url: "https://www.furaffinity.net/user/labratkuma"
@@ -274,9 +367,21 @@ const attributionData = {
             name: "Scareye",
             url: "https://www.furaffinity.net/user/scareye/"
         },
+        "silverwingink": {
+            name: "silverwingink",
+            url: "https://www.furaffinity.net/gallery/silverwingink/"
+        },
         "spyropurple": {
             name: "spyropurple",
             url: "https://www.furaffinity.net/user/spyropurple/"
+        },
+        "stonerabbit": {
+            name: "stonerabbit",
+            url: "https://www.furaffinity.net/user/stonerabbit/"
+        },
+        "zyraxus": {
+            name: "Zyraxus",
+            url: "https://www.furaffinity.net/user/zyraxus"
         }
     }
 }
@@ -308,7 +413,7 @@ function authorsOfFull(file) {
     if (attribution.files[file]) {
         const result = [];
         attribution.files[file].authors.forEach(author => {
-           result.push(attributionData.people[author]);
+            result.push(attributionData.people[author]);
         });
 
         return result;
@@ -329,14 +434,14 @@ function ownersOfFull(file) {
         if (attribution.files[file].owners !== undefined) {
             const result = [];
             attribution.files[file].owners.forEach(owner => {
-               result.push(attributionData.people[owner]);
+                result.push(attributionData.people[owner]);
             });
-    
+
             return result;
         } else {
             return [];
         }
-        
+
     }
     else
         return undefined;
