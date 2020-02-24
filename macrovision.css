@@ -79,6 +79,7 @@ body.toggle-entity-name .entity-name {
     justify-content: start;
     flex-direction: column;
     background: #444;
+    overflow-x: hidden;
     overflow-y: scroll;
     height: 100%;
     scrollbar-color: #e1e1e1 #888;
