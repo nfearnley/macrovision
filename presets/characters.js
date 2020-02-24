@@ -3933,6 +3933,37 @@ characterMakers["Guy"] = () => {
     )
 };
 
+characterMakers["Tiberius"] = () => {
+    return makeCharacter(
+        "Tiberius",
+        "movler",
+        {
+            front: {
+                height: math.unit(9, "feet"),
+                weight: math.unit(800, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/tiberius/front.svg"
+                }
+            },
+            back: {
+                height: math.unit(9, "feet"),
+                weight: math.unit(800, "lbs"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/tiberius/back.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(8, "feet")
+            }
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

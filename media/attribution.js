@@ -89,12 +89,16 @@ const attributionData = {
             ]
         },
         {
-            prefix: "./media/characters/",
+            prefix: "./media/characters/tiberius/",
             files: [
-                { name: "", source: ""}
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34977812/"},
+                { name: "back.svg", source: "https://www.furaffinity.net/view/34977812/"}
             ],
             authors: [
-                
+                "Rebonica"
+            ],
+            owners: [
+                "movler"
             ]
         },
         {
@@ -132,7 +136,7 @@ const attributionData = {
         "Dialuca01": {
             name: "Dialuca",
             url: "https://www.furaffinity.net/user/dialuca01"
-        }
+        },
         "just-a-little-mixed-up": {
             name: "just-a-little-mixed-up",
             url: "https://www.furaffinity.net/user/just-a-little-mixed-up"
@@ -141,9 +145,17 @@ const attributionData = {
             name: "labratkuma",
             url: "https://www.furaffinity.net/user/labratkuma"
         },
+        "movler": {
+            name: "Movler",
+            url: "https://www.furaffinity.net/user/movler/"
+        },
         "oselotti": {
             name: "Oselotti",
             url: "https://www.furaffinity.net/user/oselotti"
+        },
+        "Rebonica": {
+            name: "Rebonica",
+            url: "https://www.furaffinity.net/user/rebonica"
         },
         "spyropurple": {
             name: "spyropurple",
