@@ -89,6 +89,15 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/angelpatamon/",
+            files: [
+                { name: "front.svg", source: "http://www.furaffinity.net/view/26475369/"}
+            ],
+            authors: [
+                "mallowchu"
+            ]
+        },
+        {
             prefix: "./media/characters/cibus/",
             files: [
                 { name: "side.svg", source: "https://www.furaffinity.net/view/15534343/"}
@@ -111,6 +120,18 @@ const attributionData = {
             ],
             owners: [
                 "movler"
+            ]
+        },
+        {
+            prefix: "./media/characters/rikky/",
+            files: [
+                { name: "side.svg", source: null}
+            ],
+            authors: [
+                "ethan64"
+            ],
+            owners: [
+                "quake-yote"
             ]
         },
         {
@@ -172,6 +193,10 @@ const attributionData = {
             name: "Dragga",
             url: "https://www.furaffinity.net/user/dragga"
         },
+        "ethan64": {
+            name: "Ethan64",
+            url: "https://www.furaffinity.net/user/ethan64/"
+        },
         "gaiawolfess": {
             name: "Gaiawolfess",
             url: "https://www.furaffinity.net/user/gaiawolfess"
@@ -192,6 +217,10 @@ const attributionData = {
             name: "Malakhael",
             url: "https://www.furaffinity.net/user/malakhael"
         },
+        "mallowchu": {
+            name: "Mallowchu",
+            url: "https://www.furaffinity.net/user/mallowchu"
+        },
         "movler": {
             name: "Movler",
             url: "https://www.furaffinity.net/user/movler/"
@@ -199,6 +228,10 @@ const attributionData = {
         "oselotti": {
             name: "Oselotti",
             url: "https://www.furaffinity.net/user/oselotti"
+        },
+        "quake-yote": {
+            name: "Quake Yote",
+            url: "https://www.furaffinity.net/user/rokossovskiy"
         },
         "Rebonica": {
             name: "Rebonica",

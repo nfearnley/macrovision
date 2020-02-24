@@ -4066,6 +4066,38 @@ characterMakers["Nibbles"] = () => {
     )
 };
 
+characterMakers["Rikky"] = () => {
+    return makeCharacter(
+        "Rikky",
+        "Quake Yote",
+        {
+            side: {
+                height: math.unit(5 + 1/6, "feet"),
+                weight: math.unit(130, "lbs"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/rikky/side.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 1/6, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(152, "feet"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(7, "miles")
+            }
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
