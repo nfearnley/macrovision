@@ -2881,6 +2881,10 @@ characterMakers["Rain Fallen"] = () => {
                 name: "Scarlet King",
                 height: math.unit(18, "yottameters")
             },
+            {
+                name: "Void",
+                height: math.unit(6.66e66, "yottameters")
+            }
         ],
         math.unit(150, "meter")
     )
