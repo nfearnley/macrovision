@@ -3786,6 +3786,56 @@ characterMakers["Akari Kaen"] = () => {
     )
 };
 
+characterMakers["Cynosura"] = () => {
+    return makeCharacter(
+        "Cynosura",
+        "Cynosura",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(140, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/cynosura/front.svg",
+                    extra: 896/847
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(140, "lbs"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/cynosura/back.svg",
+                    extra: 1365/1250
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(4, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(5.75, "feet"),
+                default: true
+            },
+            {
+                name: "Tall",
+                height: math.unit(10, "feet")
+            },
+            {
+                name: "Big",
+                height: math.unit(20, "feet")
+            },
+            {
+                name: "Micro",
+                height: math.unit(50, "feet")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

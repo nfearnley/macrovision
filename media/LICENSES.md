@@ -839,6 +839,20 @@ https://twitter.com/SergalAkari/status/1198348141382295552?s=20
 
 * front.svg
 
+## Cynosura
+
+**https://www.furaffinity.net/user/hhazard**
+
+https://www.furaffinity.net/view/31144728/
+
+* front.svg
+
+**https://twitter.com/softdragons**
+
+https://www.furaffinity.net/view/34184301/
+
+* back.svg
+
 # Naturals
 
 * front.svg
