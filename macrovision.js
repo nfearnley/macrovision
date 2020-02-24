@@ -684,9 +684,11 @@ function clearAttribution() {
 function displayAttribution(file) {
     document.querySelector("#options-attribution").style.display = "inline";
     const authors = authorsOfFull(file);
+    const owners = ownersOfFull(file);
     const source = sourceOf(file);
 
     const authorHolder = document.querySelector("#options-attribution-authors");
+    const ownerHolder = document.querySelector("#options-attribution-owners");
     const sourceHolder = document.querySelector("#options-attribution-source");
 
     if (authors === []) {
@@ -705,6 +707,26 @@ function displayAttribution(file) {
             link.innerText = author.name;
             authorEntry.appendChild(link);
             list.appendChild(authorEntry);
+        });
+
+    }
+
+    if (owners === []) {
+        ownerHolder.innerText = "Unknown";
+    } else if (owners === undefined) {
+        ownerHolder.innerText = "Not yet entered";
+    } else {
+        ownerHolder.innerHTML = "";
+
+        const list = document.createElement("ul");
+        ownerHolder.appendChild(list);
+        owners.forEach(owner => {
+            const ownerEntry = document.createElement("li");
+            const link = document.createElement("a");
+            link.href = owner.url;
+            link.innerText = owner.name;
+            ownerEntry.appendChild(link);
+            list.appendChild(ownerEntry);
         });
 
     }

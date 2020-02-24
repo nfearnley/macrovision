@@ -120,7 +120,7 @@ const attributionData = {
             ]
         }
     ],
-    authors: {
+    people: {
         "cardboardhead": {
             name: "cardboardhead",
             url: "https://twitter.com/cardboardhead"
@@ -173,6 +173,7 @@ function prepareAttribution() {
         citation.files.forEach(file => {
             attribution.files[citation.prefix + file.name] = {
                 authors: citation.authors,
+                owners: citation.owners,
                 source: file.source
             }
         })
@@ -190,10 +191,35 @@ function authorsOfFull(file) {
     if (attribution.files[file]) {
         const result = [];
         attribution.files[file].authors.forEach(author => {
-           result.push(attributionData.authors[author]);
+           result.push(attributionData.people[author]);
         });
 
         return result;
+    }
+    else
+        return undefined;
+}
+
+function ownersOf(file) {
+    if (attribution.files[file])
+        return attribution.files[file].owners;
+    else
+        return undefined;
+}
+
+function ownersOfFull(file) {
+    if (attribution.files[file]) {
+        if (attribution.files[file].owners !== undefined) {
+            const result = [];
+            attribution.files[file].owners.forEach(owner => {
+               result.push(attributionData.people[owner]);
+            });
+    
+            return result;
+        } else {
+            return [];
+        }
+        
     }
     else
         return undefined;
