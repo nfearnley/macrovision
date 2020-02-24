@@ -4328,7 +4328,7 @@ characterMakers["Alicia"] = () => {
             },
             {
                 name: "Megamacro",
-                height: math.unit(3.334, "kilometers")
+                height: math.unit(10000, "kilometers")
             },
         ]
     )
