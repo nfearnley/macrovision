@@ -250,6 +250,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/rogue/",
+            files: [
+                { name: "front.svg", source: "http://rogue.macrophile.com/ken" }
+            ],
+            authors: [
+                "cougr"
+            ],
+            owners: [
+                "rogue"
+            ]
+        },
+        {
             prefix: "./media/characters/surgo/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/33348481/" },
@@ -345,6 +357,10 @@ const attributionData = {
             name: "clown-grin",
             url: "https://www.furaffinity.net/user/clown-grin"
         },
+        "cougr": {
+            name: "Cougr",
+            url: "https://www.furaffinity.net/user/cougr"
+        },
         "d-eath-tail": {
             name: "Deathy",
             url: "https://www.furaffinity.net/user/d-eath-tail"
@@ -420,6 +436,10 @@ const attributionData = {
         "Rebonica": {
             name: "Rebonica",
             url: "https://www.furaffinity.net/user/rebonica"
+        },
+        "rogue": {
+            name: "Rogue Megawolf",
+            url: "https://twitter.com/roguemegawolf"
         },
         "scareye": {
             name: "Scareye",

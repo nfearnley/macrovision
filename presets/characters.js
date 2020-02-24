@@ -4188,6 +4188,30 @@ characterMakers["Jaro"] = () => {
     )
 };
 
+characterMakers["Rogue"] = () => {
+    return makeCharacter(
+        "Rogue",
+        "Rogue",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(195, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/rogue/front.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(90, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
