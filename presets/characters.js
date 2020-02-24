@@ -4249,6 +4249,51 @@ characterMakers["Piper"] = () => {
     )
 };
 
+characterMakers["Gemini"] = () => {
+    return makeCharacter(
+        "Gemini",
+        "lajay",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(220, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/gemini/front.svg"
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(220, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/gemini/back.svg"
+                }
+            },
+            kneeling: {
+                height: math.unit(6/1.5, "feet"),
+                weight: math.unit(220, "lb"),
+                name: "Kneeling",
+                image: {
+                    source: "./media/characters/gemini/kneeling.svg",
+                    bottom: 0.02
+                }
+            },
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(300, "meters"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(6900, "meters")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

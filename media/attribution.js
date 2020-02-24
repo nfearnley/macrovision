@@ -187,6 +187,31 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/gemini/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/31363584/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/31363584/" },
+            ],
+            authors: [
+                "rebonica"
+            ],
+            owners: [
+                "geminimacro"
+            ]
+        },
+        {
+            prefix: "./media/characters/gemini/",
+            files: [
+                { name: "kneeling.svg", source: "https://www.furaffinity.net/view/31295122/" },
+            ],
+            authors: [
+                "furrypur"
+            ],
+            owners: [
+                "geminimacro"
+            ]
+        },
+        {
             prefix: "./media/characters/jaro/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/26084387/" },
@@ -295,7 +320,7 @@ const attributionData = {
                 { name: "back.svg", source: "https://www.furaffinity.net/view/34977812/" }
             ],
             authors: [
-                "Rebonica"
+                "rebonica"
             ],
             owners: [
                 "movler"
@@ -397,9 +422,17 @@ const attributionData = {
             name: "Flyhar",
             url: "https://www.furaffinity.net/user/flyfeline/"
         },
+        "furrypur": {
+            name: "FurryPur",
+            url: "https://www.furaffinity.net/user/furrypur/"
+        },
         "gaiawolfess": {
             name: "Gaiawolfess",
             url: "https://www.furaffinity.net/user/gaiawolfess"
+        },
+        "geminimacro": {
+            name: "geminimacro",
+            url: "https://www.furaffinity.net/user/lajay"
         },
         "jaro-the-dragon": {
             name: "Jaro",
@@ -453,7 +486,7 @@ const attributionData = {
             name: "Quake Yote",
             url: "https://www.furaffinity.net/user/rokossovskiy"
         },
-        "Rebonica": {
+        "rebonica": {
             name: "Rebonica",
             url: "https://www.furaffinity.net/user/rebonica"
         },
