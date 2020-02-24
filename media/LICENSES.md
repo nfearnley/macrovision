@@ -830,6 +830,15 @@ https://www.furaffinity.net/view/20308475/
 * front-nude.svg
 * back-nude.svg
 
+## Akari
+
+**https://www.furaffinity.net/user/spyropurple/**
+
+https://www.furaffinity.net/view/21329356/
+https://twitter.com/SergalAkari/status/1198348141382295552?s=20
+
+* front.svg
+
 # Naturals
 
 * front.svg

@@ -3760,6 +3760,32 @@ characterMakers["Cimmaron"] = () => {
     )
 };
 
+characterMakers["Akari Kaen"] = () => {
+    return makeCharacter(
+        "Akari Kaen",
+        "Akari",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(200, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/akari/front.svg",
+                    bottom: 0.04,
+                    extra: (1 / (1 - 0.04)) * (962/901)
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(10, "inches"),
+                default: true
+            }
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
