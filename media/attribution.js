@@ -285,7 +285,26 @@ const attributionData = {
             authors: [
 
             ]
-        }
+        },
+        {
+            prefix: "./media/objects/humans/",
+            files: [
+                { name: "woman-1.svg", source: "https://commons.wikimedia.org/wiki/File:1Silhouette_Female.svg" }
+            ],
+            authors: [
+                "phil-bronnery",
+                "beao"
+            ]
+        },
+        {
+            prefix: "./media/objects/humans/",
+            files: [
+                { name: "man-1.svg", source: "https://commons.wikimedia.org/wiki/File:Silhouette.svg" }
+            ],
+            authors: [
+
+            ]
+        },
     ],
     people: {
         "appledectomy": {
@@ -299,6 +318,10 @@ const attributionData = {
         "aviraptia": {
             name: "Aviraptia",
             url: "https://www.furaffinity.net/user/aviraptia/"
+        },
+        "beao": {
+            name: "Beao",
+            url: "https://commons.wikimedia.org/wiki/User:Beao"
         },
         "cardboardhead": {
             name: "cardboardhead",
@@ -375,6 +398,10 @@ const attributionData = {
         "oselotti": {
             name: "Oselotti",
             url: "https://www.furaffinity.net/user/oselotti"
+        },
+        "phil-bronnery": {
+            name: "Phil Bronnery",
+            url: "https://www.flickr.com/people/27919241@N02"
         },
         "quake-yote": {
             name: "Quake Yote",

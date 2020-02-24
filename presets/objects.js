@@ -80,5 +80,26 @@ function makeObjects() {
         )
     });
 
+    results.push({
+        name: "Human",
+        constructor: () => makeObject(
+            "Human",
+            {
+                woman1: {
+                    height: math.unit(5 + 4/12, "feet"),
+                    mass: math.unit(140, "lbs"),
+                    image: { source: "./media/objects/humans/woman-1.svg" },
+                    name: "Woman 1"
+                },
+                man1: {
+                    height: math.unit(5 + 6/12, "feet"),
+                    mass: math.unit(150, "lbs"),
+                    image: { source: "./media/objects/humans/man-1.svg" },
+                    name: "Man 1"
+                },
+            }
+        )
+    });
+
     return results;
 }
