@@ -89,6 +89,21 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/surgo/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33348481/"},
+                { name: "back.svg", source: "https://www.furaffinity.net/view/33348481/"},
+                { name: "laying.svg", source: "https://www.furaffinity.net/view/33348481/"},
+            ],
+            authors: [
+                "gaiawolfess",
+                "malakhael"
+            ],
+            owners: [
+                "movler"
+            ]
+        },
+        {
             prefix: "./media/characters/tiberius/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/34977812/"},
@@ -99,15 +114,6 @@ const attributionData = {
             ],
             owners: [
                 "movler"
-            ]
-        },
-        {
-            prefix: "./media/characters/",
-            files: [
-                { name: "", source: ""}
-            ],
-            authors: [
-                
             ]
         },
         {
@@ -137,6 +143,10 @@ const attributionData = {
             name: "Dialuca",
             url: "https://www.furaffinity.net/user/dialuca01"
         },
+        "gaiawolfess": {
+            name: "Gaiawolfess",
+            url: "https://www.furaffinity.net/user/gaiawolfess"
+        },
         "just-a-little-mixed-up": {
             name: "just-a-little-mixed-up",
             url: "https://www.furaffinity.net/user/just-a-little-mixed-up"
@@ -144,6 +154,10 @@ const attributionData = {
         "labratkuma": {
             name: "labratkuma",
             url: "https://www.furaffinity.net/user/labratkuma"
+        },
+        "malakhael": {
+            name: "Malakhael",
+            url: "https://www.furaffinity.net/user/malakhael"
         },
         "movler": {
             name: "Movler",

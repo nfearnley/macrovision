@@ -3967,6 +3967,48 @@ characterMakers["Tiberius"] = () => {
     )
 };
 
+characterMakers["Surgo"] = () => {
+    return makeCharacter(
+        "Surgo",
+        "movler",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(600, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/surgo/front.svg",
+                    extra: 3591/2227
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(600, "lbs"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/surgo/back.svg",
+                    extra: 3557/2228
+                }
+            },
+            laying: {
+                height: math.unit(6 * 0.85, "feet"),
+                weight: math.unit(600, "lbs"),
+                name: "Laying",
+                image: {
+                    source: "./media/characters/surgo/laying.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6, "feet"),
+                default: true
+            }
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
