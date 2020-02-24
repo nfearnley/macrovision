@@ -31,10 +31,96 @@ const attributionData = {
             authors: [
                 "clown-grin",
                 "labratkuma"
+            ],
+            owners: [
+                
+            ]
+        },
+        {
+            prefix: "./media/characters/adake/",
+            files: [
+                { name: "front-1.svg", source: "https://www.furaffinity.net/view/26253324/"},
+                { name: "front-2.svg", source: "https://www.furaffinity.net/view/26253324/"},
+                { name: "back.svg", source: "https://www.furaffinity.net/view/26253324/"},
+                { name: "kneel.svg", source: "https://www.furaffinity.net/view/26253324/"},
+                
+            ],
+            authors: [
+                "oselotti"
+            ],
+            owners: [
+                "Dialuca01"
+            ]
+        },
+        {
+            prefix: "./media/characters/aigey/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/12006265/"}
+            ],
+            authors: [
+                "just-a-little-mixed-up"
+            ],
+            owners: [
+                
+            ]
+        },
+        {
+            prefix: "./media/characters/akari/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/21329356/"}
+            ],
+            authors: [
+                "spyropurple"
+            ],
+            owners: [
+                
+            ]
+        },
+        {
+            prefix: "./media/characters/andy/",
+            files: [
+                { name: "front.svg", source: null}
+            ],
+            authors: [
+                "cardboardhead"
+            ],
+            owners: [
+                
+            ]
+        },
+        {
+            prefix: "./media/characters/",
+            files: [
+                { name: "", source: ""}
+            ],
+            authors: [
+                
+            ]
+        },
+        {
+            prefix: "./media/characters/",
+            files: [
+                { name: "", source: ""}
+            ],
+            authors: [
+                
+            ]
+        },
+        {
+            prefix: "./media/characters/",
+            files: [
+                { name: "", source: ""}
+            ],
+            authors: [
+                
             ]
         }
     ],
     authors: {
+        "cardboardhead": {
+            name: "cardboardhead",
+            url: "https://twitter.com/cardboardhead"
+        },
         "chemicalcrux": {
             name: "chemicalcrux",
             url: "https://www.furaffinity.net/user/chemicalcrux"
@@ -43,9 +129,25 @@ const attributionData = {
             name: "clown-grin",
             url: "https://www.furaffinity.net/user/clown-grin"
         },
+        "Dialuca01": {
+            name: "Dialuca",
+            url: "https://www.furaffinity.net/user/dialuca01"
+        }
+        "just-a-little-mixed-up": {
+            name: "just-a-little-mixed-up",
+            url: "https://www.furaffinity.net/user/just-a-little-mixed-up"
+        },
         "labratkuma": {
             name: "labratkuma",
             url: "https://www.furaffinity.net/user/labratkuma"
+        },
+        "oselotti": {
+            name: "Oselotti",
+            url: "https://www.furaffinity.net/user/oselotti"
+        },
+        "spyropurple": {
+            name: "spyropurple",
+            url: "https://www.furaffinity.net/user/spyropurple/"
         }
     }
 }
