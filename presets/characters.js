@@ -3708,6 +3708,58 @@ characterMakers["Andy"] = () => {
     )
 };
 
+characterMakers["Cimmaron"] = () => {
+    return makeCharacter(
+        "Cimmaron",
+        "Cimmaron",
+        {
+            frontClothed: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(210, "lbs"),
+                name: "Front (Clothed)",
+                image: {
+                    source: "./media/characters/cimmaron/front-clothed.svg",
+                    extra: 701/676
+                }
+            },
+            backClothed: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(210, "lbs"),
+                name: "Back (Clothed)",
+                image: {
+                    source: "./media/characters/cimmaron/back-clothed.svg",
+                    extra: 701/676
+                }
+            },
+            frontNude: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(210, "lbs"),
+                name: "Front (Nude)",
+                image: {
+                    source: "./media/characters/cimmaron/front-nude.svg",
+                    extra: 701/676
+                }
+            },
+            backNude: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(210, "lbs"),
+                name: "Back (Nude)",
+                image: {
+                    source: "./media/characters/cimmaron/back-nude.svg",
+                    extra: 701/676
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6, "feet"),
+                default: true
+            }
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
