@@ -77,6 +77,34 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/alicia/",
+            files: [
+                { name: "anthro.svg", source: "https://www.furaffinity.net/view/31363235/" }
+
+            ],
+            authors: [
+                "helisa-adopts",
+                "chesta"
+            ],
+            owners: [
+                "little-big-x110"
+            ]
+        },
+        {
+            prefix: "./media/characters/alicia/",
+            files: [
+                { name: "feral.svg", source: "https://www.furaffinity.net/view/34138885/" }
+            ],
+            authors: [
+                "little-big-x110",
+                "helisa-adopts",
+                "chesta"
+            ],
+            owners: [
+                "little-big-x110"
+            ]
+        },
+        {
             prefix: "./media/characters/andy/",
             files: [
                 { name: "front.svg", source: null }
@@ -394,6 +422,10 @@ const attributionData = {
             name: "chemicalcrux",
             url: "https://www.furaffinity.net/user/chemicalcrux"
         },
+        "chesta": {
+            name: "Chesta",
+            url: "https://www.furaffinity.net/user/chesta"
+        },
         "clown-grin": {
             name: "clown-grin",
             url: "https://www.furaffinity.net/user/clown-grin"
@@ -434,6 +466,10 @@ const attributionData = {
             name: "geminimacro",
             url: "https://www.furaffinity.net/user/lajay"
         },
+        "helisa-adopts": {
+            name: "Helisa",
+            url: "https://www.furaffinity.net/user/HelisaAdopts"
+        },
         "jaro-the-dragon": {
             name: "Jaro",
             url: "https://www.furaffinity.net/user/jarothedragon/"
@@ -457,6 +493,10 @@ const attributionData = {
         "labratkuma": {
             name: "labratkuma",
             url: "https://www.furaffinity.net/user/labratkuma"
+        },
+        "little-big-x110": {
+            name: "LittleBig",
+            url: "https://www.furaffinity.net/user/LittlebigX110"
         },
         "malakhael": {
             name: "Malakhael",

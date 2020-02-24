@@ -4294,6 +4294,46 @@ characterMakers["Gemini"] = () => {
     )
 };
 
+characterMakers["Alicia"] = () => {
+    return makeCharacter(
+        "Alicia",
+        "lajay",
+        {
+            anthro: {
+                height: math.unit(2.35, "meters"),
+                weight: math.unit(73, "kg"),
+                name: "Anthro",
+                image: {
+                    source: "./media/characters/alicia/anthro.svg"
+                }
+            },
+            feral: {
+                height: math.unit(1.69, "meters"),
+                weight: math.unit(73, "kg"),
+                name: "Feral",
+                image: {
+                    source: "./media/characters/alicia/feral.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(2.35, "meters")
+            },
+            {
+                name: "Macro",
+                height: math.unit(60, "meters"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(3.334, "kilometers")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
