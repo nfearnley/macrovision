@@ -862,6 +862,12 @@ https://www.furaffinity.net/view/34278152/
 * front.svg
 * foot.svg
 
+**https://www.furaffinity.net/user/k437**
+
+https://www.furaffinity.net/view/34794072/
+
+* sole.svg
+
 ## Guy
 
 **https://www.furaffinity.net/user/bluecatangry**

@@ -3855,10 +3855,16 @@ characterMakers["Gin"] = () => {
             },
             foot: {
                 height: math.unit(6/4.25, "feet"),
-                weight: math.unit(170, "lbs"),
                 name: "Foot",
                 image: {
                     source: "./media/characters/gin/foot.svg"
+                }
+            },
+            sole: {
+                height: math.unit(6/4.40, "feet"),
+                name: "Sole",
+                image: {
+                    source: "./media/characters/gin/sole.svg"
                 }
             },
         },
@@ -3875,6 +3881,14 @@ characterMakers["Gin"] = () => {
                 name: "Megamacro",
                 height: math.unit(200, "miles"),
                 default: true
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(500, "megameters")
+            },
+            {
+                name: "Teramacro",
+                height: math.unit(15, "lightyears")
             }
         ]
     )
