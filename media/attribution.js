@@ -138,6 +138,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/archy/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/17286706/" }
+            ],
+            authors: [
+                "twitch-the-dragon"
+            ],
+            owners: [
+                "archy-d"
+            ]
+        },
+        {
             prefix: "./media/characters/asana/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/35087729/" },
@@ -398,6 +410,10 @@ const attributionData = {
             name: "Appledectomy",
             url: "https://www.furaffinity.net/user/appledectomy"
         },
+        "archy-d": {
+            name: "ArchyD",
+            url: "https://www.furaffinity.net/user/ArchyD"
+        },
         "ashtrek": {
             name: "Ashtrek",
             url: "https://www.furaffinity.net/user/ashtrek/"
@@ -549,6 +565,10 @@ const attributionData = {
         "stonerabbit": {
             name: "stonerabbit",
             url: "https://www.furaffinity.net/user/stonerabbit/"
+        },
+        "twitch-the-dragon": {
+            name: "Twitch",
+            url: "https://www.furaffinity.net/user/twitchthedragon/"
         },
         "zyraxus": {
             name: "Zyraxus",

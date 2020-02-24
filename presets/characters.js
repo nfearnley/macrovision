@@ -4297,7 +4297,7 @@ characterMakers["Gemini"] = () => {
 characterMakers["Alicia"] = () => {
     return makeCharacter(
         "Alicia",
-        "lajay",
+        "LittleBig",
         {
             anthro: {
                 height: math.unit(2.35, "meters"),
@@ -4329,6 +4329,46 @@ characterMakers["Alicia"] = () => {
             {
                 name: "Megamacro",
                 height: math.unit(3.334, "kilometers")
+            },
+        ]
+    )
+};
+
+characterMakers["Archy"] = () => {
+    return makeCharacter(
+        "Archy",
+        "ArchyD",
+        {
+            front: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(250, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/archy/front.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(1, "inch")
+            },
+            {
+                name: "Shorty",
+                height: math.unit(5, "feet")
+            },
+            {
+                name: "Normal",
+                height: math.unit(7, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(600, "meters"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(1, "mile")
             },
         ]
     )
