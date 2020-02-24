@@ -878,7 +878,28 @@ document.addEventListener("DOMContentLoaded", () => {
         unitSelector.appendChild(option);
     });
 
-    scenes["Demo"]();
+    param = new URL(window.location.href).searchParams.get("scene");
+
+    if (param === null)
+        scenes["Demo"]();
+    else {
+        try {
+            const data = JSON.parse(atob(param));
+            if (data.entities === undefined) {
+                return;
+            }
+            if (data.world === undefined) {
+                return;
+            }
+
+            importScene(data);
+        } catch (err) {
+            console.error(err);
+            scenes["Demo"]();
+
+            // probably wasn't valid data 
+        }
+    }
     fitWorld();
     document.querySelector("#world").addEventListener("wheel", e => {
 
