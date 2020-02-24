@@ -4374,6 +4374,42 @@ characterMakers["Archy"] = () => {
     )
 };
 
+characterMakers["Berri"] = () => {
+    return makeCharacter(
+        "Berri",
+        "LittleBig",
+        {
+            front: {
+                height: math.unit(1.65, "meters"),
+                weight: math.unit(74, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/berri/front.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(1.65, "meters")
+            },
+            {
+                name: "Macro",
+                height: math.unit(60, "m"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(9.213, "km")
+            },
+            {
+                name: "Planet Eater",
+                height: math.unit(489, "megameters")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

@@ -201,6 +201,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/berri/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34510917/" }
+            ],
+            authors: [
+                "lynxsprout",
+                "sugarbeans"
+            ],
+            owners: [
+                "little-big-x110"
+            ]
+        },
+        {
             prefix: "./media/characters/blake/",
             files: [
                 { name: "side.svg", source: "https://www.furaffinity.net/view/30676178/" },
@@ -514,6 +527,10 @@ const attributionData = {
             name: "LittleBig",
             url: "https://www.furaffinity.net/user/LittlebigX110"
         },
+        "lynxsprout": {
+            name: "Lynxsprout",
+            url: "https://lynxsprout.carrd.co/"
+        },
         "malakhael": {
             name: "Malakhael",
             url: "https://www.furaffinity.net/user/malakhael"
@@ -565,6 +582,10 @@ const attributionData = {
         "stonerabbit": {
             name: "stonerabbit",
             url: "https://www.furaffinity.net/user/stonerabbit/"
+        },
+        "sugarbeans": {
+            name: "sugarbeans",
+            url: "https://www.furaffinity.net/user/sugarbeans/"
         },
         "twitch-the-dragon": {
             name: "Twitch",
