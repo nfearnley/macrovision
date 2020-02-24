@@ -315,6 +315,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/martin/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/30066999" }
+            ],
+            authors: [
+                "little-big-x110"
+            ],
+            owners: [
+                "little-big-x110"
+            ]
+        },
+        {
             prefix: "./media/characters/nibbles/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/22964778/" },
