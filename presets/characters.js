@@ -3829,7 +3829,7 @@ characterMakers["Cynosura"] = () => {
                 height: math.unit(20, "feet")
             },
             {
-                name: "Micro",
+                name: "Macro",
                 height: math.unit(50, "feet")
             },
         ]
