@@ -3836,6 +3836,46 @@ characterMakers["Cynosura"] = () => {
     )
 };
 
+characterMakers["Gin"] = () => {
+    return makeCharacter(
+        "Gin",
+        "Ozzie_gt",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(170, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/gin/front.svg"
+                }
+            },
+            foot: {
+                height: math.unit(6/4.25, "feet"),
+                weight: math.unit(170, "lbs"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/gin/foot.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(9 + 4/12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(1500, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(200, "miles"),
+                default: true
+            }
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

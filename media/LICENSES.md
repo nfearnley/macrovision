@@ -853,6 +853,15 @@ https://www.furaffinity.net/view/34184301/
 
 * back.svg
 
+## Gin
+
+**https://www.furaffinity.net/user/mug**
+
+https://www.furaffinity.net/view/34278152/
+
+* front.svg
+* foot.svg
+
 # Naturals
 
 * front.svg
