@@ -110,6 +110,31 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/malfressa/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/25377262/"},
+                { name: "feral.svg", source: "https://www.furaffinity.net/view/25377262/"}
+            ],
+            authors: [
+                "d-eath-tail"
+            ],
+            owners: [
+                "scareye"
+            ]
+        },
+        {
+            prefix: "./media/characters/malfressa/",
+            files: [
+                { name: "walking.svg", source: "https://www.furaffinity.net/view/23877052/"}
+            ],
+            authors: [
+                "kerneldecoy"
+            ],
+            owners: [
+                "scareye"
+            ]
+        },
+        {
             prefix: "./media/characters/nibbles/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/22964778/"},
@@ -185,6 +210,10 @@ const attributionData = {
             name: "clown-grin",
             url: "https://www.furaffinity.net/user/clown-grin"
         },
+        "d-eath-tail": {
+            name: "Deathy",
+            url: "https://www.furaffinity.net/user/d-eath-tail"
+        },
         "Dialuca01": {
             name: "Dialuca",
             url: "https://www.furaffinity.net/user/dialuca01"
@@ -208,6 +237,10 @@ const attributionData = {
         "just-a-little-mixed-up": {
             name: "just-a-little-mixed-up",
             url: "https://www.furaffinity.net/user/just-a-little-mixed-up"
+        },
+        "kerneldecoy": {
+            name: "Kernel Decoy",
+            url: "https://www.furaffinity.net/user/kerneldecoy/"
         },
         "labratkuma": {
             name: "labratkuma",
@@ -236,6 +269,10 @@ const attributionData = {
         "Rebonica": {
             name: "Rebonica",
             url: "https://www.furaffinity.net/user/rebonica"
+        },
+        "scareye": {
+            name: "Scareye",
+            url: "https://www.furaffinity.net/user/scareye/"
         },
         "spyropurple": {
             name: "spyropurple",

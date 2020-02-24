@@ -4098,6 +4098,52 @@ characterMakers["Rikky"] = () => {
     )
 };
 
+characterMakers["Malfressa"] = () => {
+    return makeCharacter(
+        "Malfressa",
+        "Scareye",
+        {
+            side: {
+                height: math.unit(370, "cm"),
+                weight: math.unit(350, "lbs"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/malfressa/side.svg"
+                }
+            },
+            walking: {
+                height: math.unit(370, "cm"),
+                weight: math.unit(350, "lbs"),
+                name: "Walking",
+                image: {
+                    source: "./media/characters/malfressa/walking.svg"
+                }
+            },
+            feral: {
+                height: math.unit(2500, "cm"),
+                weight: math.unit(100000, "lbs"),
+                name: "Feral",
+                image: {
+                    source: "./media/characters/malfressa/feral.svg",
+                    extra: 2108/837 * (1 / (1 - 0.02)),
+                    bottom: 0.02
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(370, "cm")
+            },
+            {
+                name: "Macro",
+                height: math.unit(300, "meters"),
+                default: true
+            }
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
