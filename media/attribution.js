@@ -22,12 +22,30 @@ const attributionData = {
             authors: [
                 "chemicalcrux"
             ]
+        },
+        {
+            prefix: "./media/characters/abysgar/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32424108/"}
+            ],
+            authors: [
+                "clown-grin",
+                "labratkuma"
+            ]
         }
     ],
     authors: {
         "chemicalcrux": {
             name: "chemicalcrux",
             url: "https://www.furaffinity.net/user/chemicalcrux"
+        },
+        "clown-grin": {
+            name: "clown-grin",
+            url: "https://www.furaffinity.net/user/clown-grin"
+        },
+        "labratkuma": {
+            name: "labratkuma",
+            url: "https://www.furaffinity.net/user/labratkuma"
         }
     }
 }

@@ -714,7 +714,11 @@ function displayAttribution(file) {
     } else if (source === undefined) {
         sourceHolder.innerText = "Not yet entered";
     } else {
-        sourceHolder.innerText = source;
+        sourceHolder.innerHTML = "";
+        const link = document.createElement("a");
+        link.href = source;
+        link.innerText = new URL(source).host;
+        sourceHolder.appendChild(link);
     }
 }
 
