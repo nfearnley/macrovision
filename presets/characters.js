@@ -3943,7 +3943,8 @@ characterMakers["Tiberius"] = () => {
                 weight: math.unit(800, "lbs"),
                 name: "Front",
                 image: {
-                    source: "./media/characters/tiberius/front.svg"
+                    source: "./media/characters/tiberius/front.svg",
+                    extra: 2295/2071
                 }
             },
             back: {
@@ -3951,14 +3952,16 @@ characterMakers["Tiberius"] = () => {
                 weight: math.unit(800, "lbs"),
                 name: "Back",
                 image: {
-                    source: "./media/characters/tiberius/back.svg"
+                    source: "./media/characters/tiberius/back.svg",
+                    extra: 2373/2160
                 }
             },
         },
         [
             {
                 name: "Normal",
-                height: math.unit(8, "feet")
+                height: math.unit(9, "feet"),
+                default: true
             }
         ]
     )
