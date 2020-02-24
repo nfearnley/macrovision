@@ -187,6 +187,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/jaro/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/26084387/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/26084387/" }
+            ],
+            authors: [
+                "mizumisensei"
+            ],
+            owners: [
+                "jaro-the-dragon"
+            ]
+        },
+        {
             prefix: "./media/characters/malfressa/",
             files: [
                 { name: "side.svg", source: "https://www.furaffinity.net/view/25377262/" },
@@ -319,6 +332,10 @@ const attributionData = {
             name: "Gaiawolfess",
             url: "https://www.furaffinity.net/user/gaiawolfess"
         },
+        "jaro-the-dragon": {
+            name: "Jaro",
+            url: "https://www.furaffinity.net/user/jarothedragon/"
+        },
         "jaydom": {
             name: "Jaydom",
             url: "https://www.furaffinity.net/user/jaydom"
@@ -346,6 +363,10 @@ const attributionData = {
         "mallowchu": {
             name: "Mallowchu",
             url: "https://www.furaffinity.net/user/mallowchu"
+        },
+        "mizumisensei": {
+            name: "Mizumisensei",
+            url: "https://twitter.com/mizumisensei"
         },
         "movler": {
             name: "Movler",

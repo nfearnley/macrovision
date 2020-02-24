@@ -4144,6 +4144,50 @@ characterMakers["Malfressa"] = () => {
     )
 };
 
+characterMakers["Jaro"] = () => {
+    return makeCharacter(
+        "Jaro",
+        "Jaro",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(60, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/jaro/front.svg"
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(60, "kg"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/jaro/back.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(7, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(5.5, "feet"),
+                default: true
+            },
+            {
+                name: "Minimacro",
+                height: math.unit(20, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(200, "meters")
+            }
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
