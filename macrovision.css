@@ -68,7 +68,7 @@ body.toggle-entity-name .entity-name {
 #main-area {
     display: flex;
     min-width: 100vw;
-    height: 100%;
+    height: 90vh;
     flex-direction: row;
 }
 
@@ -80,11 +80,14 @@ body.toggle-entity-name .entity-name {
     flex-direction: column;
     background: #444;
     overflow-y: scroll;
+    height: 100%;
     scrollbar-color: #e1e1e1 #888;
     scrollbar-width: thin;
 }
 
-
+#options-attribution {
+    display: none;
+}
 #options::-webkit-scrollbar {
     width: 3px;
     height: 2px;

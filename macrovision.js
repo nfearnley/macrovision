@@ -345,6 +345,9 @@ function deselect() {
     if (selected) {
         selected.classList.remove("selected");
     }
+
+    clearAttribution();
+
     selected = null;
     clearViewList();
     clearEntityOptions();
@@ -357,6 +360,8 @@ function select(target) {
     selectedEntity = entities[target.dataset.key];
 
     selected.classList.add("selected");
+    
+    displayAttribution(selectedEntity.views[selectedEntity.view].image.source);
 
     configViewList(selectedEntity, selectedEntity.view);
     configEntityOptions(selectedEntity, selectedEntity.view);
@@ -672,6 +677,47 @@ function removeAllEntities() {
     });
 }
 
+function clearAttribution() {
+    document.querySelector("#options-attribution").style.display = "none";
+}
+
+function displayAttribution(file) {
+    document.querySelector("#options-attribution").style.display = "inline";
+    const authors = authorsOfFull(file);
+    const source = sourceOf(file);
+
+    const authorHolder = document.querySelector("#options-attribution-authors");
+    const sourceHolder = document.querySelector("#options-attribution-source");
+
+    if (authors === []) {
+        authorHolder.innerText = "Unknown";
+    } else if (authors === undefined) {
+        authorHolder.innerText = "Not yet entered";
+    } else {
+        authorHolder.innerHTML = "";
+
+        const list = document.createElement("ul");
+        authorHolder.appendChild(list);
+        authors.forEach(author => {
+            const authorEntry = document.createElement("li");
+            const link = document.createElement("a");
+            link.href = author.url;
+            link.innerText = author.name;
+            authorEntry.appendChild(link);
+            list.appendChild(authorEntry);
+        });
+
+    }
+
+    if (source === null) {
+        sourceHolder.innerText = "No Link"
+    } else if (source === undefined) {
+        sourceHolder.innerText = "Not yet entered";
+    } else {
+        sourceHolder.innerText = source;
+    }
+}
+
 function removeEntity(element) {
     if (selected == element) {
         deselect();
@@ -700,6 +746,8 @@ function displayEntity(entity, view, x, y) {
 
     const image = entity.views[view].image;
     img.src = image.source;
+
+    displayAttribution(image.source);
 
     if (image.bottom !== undefined) {
         img.style.setProperty("--offset", ((-1 + image.bottom) * 100) + "%")
@@ -854,6 +902,8 @@ document.addEventListener("DOMContentLoaded", () => {
         entities[selected.dataset.key].view = e.target.value;
         const image = entities[selected.dataset.key].views[e.target.value].image;
         selected.querySelector(".entity-image").src = image.source;
+
+        displayAttribution(image.source);
 
         if (image.bottom !== undefined) {
             selected.querySelector(".entity-image").style.setProperty("--offset", ((-1 + image.bottom) * 100) + "%")
