@@ -95,6 +95,7 @@ function makeNaturals() {
 
     results.push(makePlanet("Sol", math.unit(865370, "mi"), math.unit(1.989e30, "kg")));
     results.push(makePlanet("Betelgeuse", math.unit(1234.2e6, "mi"), math.unit(2.188e31, "kg")));
+    results.push(makePlanet("Observable Universe", math.unit(93.016e9, "lightyears"), math.unit(10e53, "kg")));
 
     results.push(makeState("Alaska", math.unit(2071.44, "km"), math.unit(2483.83, "km"), math.unit(1723337, "km^2")));
     results.push(makeState("California", math.unit(1048.82, "km"), math.unit(852.02, "km"), math.unit(423967, "km^2")));

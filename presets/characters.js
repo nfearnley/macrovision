@@ -4406,6 +4406,14 @@ characterMakers["Berri"] = () => {
                 name: "Planet Eater",
                 height: math.unit(489, "megameters")
             },
+            {
+                name: "Teramacro",
+                height: math.unit(2471635000000, "meters")
+            },
+            {
+                name: "Examacro",
+                height: math.unit(8.0624e+26, "meters")
+            }
         ]
     )
 };
