@@ -4009,6 +4009,31 @@ characterMakers["Surgo"] = () => {
     )
 };
 
+characterMakers["Cibus"] = () => {
+    return makeCharacter(
+        "Cibus",
+        "movler",
+        {
+            side: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lbs"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/cibus/side.svg",
+                    extra: 800/400
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6, "feet"),
+                default: true
+            }
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

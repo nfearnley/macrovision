@@ -89,6 +89,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/cibus/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/15534343/"}
+            ],
+            authors: [
+                "jaydom"
+            ],
+            owners: [
+                "movler"
+            ]
+        },
+        {
             prefix: "./media/characters/surgo/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/33348481/"},
@@ -146,6 +158,10 @@ const attributionData = {
         "gaiawolfess": {
             name: "Gaiawolfess",
             url: "https://www.furaffinity.net/user/gaiawolfess"
+        },
+        "jaydom": {
+            name: "Jaydom",
+            url: "https://www.furaffinity.net/user/jaydom"
         },
         "just-a-little-mixed-up": {
             name: "just-a-little-mixed-up",
