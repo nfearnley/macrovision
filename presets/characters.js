@@ -4212,6 +4212,43 @@ characterMakers["Rogue"] = () => {
     )
 };
 
+characterMakers["Piper"] = () => {
+    return makeCharacter(
+        "Piper",
+        "Flyhar",
+        {
+            front: {
+                height: math.unit(5 + 8/12, "feet"),
+                weight: math.unit(140, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/piper/front.svg",
+                    extra: 3928/3681
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(2, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(5 + 8/12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(250, "feet"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(7, "miles")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

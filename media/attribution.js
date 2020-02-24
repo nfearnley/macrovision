@@ -238,6 +238,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/piper/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/22964778/" }
+            ],
+            authors: [
+                "brit-bork"
+            ],
+            owners: [
+                "flyhar"
+            ]
+        },
+        {
             prefix: "./media/characters/rikky/",
             files: [
                 { name: "side.svg", source: null }
@@ -345,6 +357,10 @@ const attributionData = {
             name: "Beao",
             url: "https://commons.wikimedia.org/wiki/User:Beao"
         },
+        "brit-bork": {
+            name: "Koijot",
+            url: "https://twitter.com/Brit_Bork",
+        },
         "cardboardhead": {
             name: "cardboardhead",
             url: "https://twitter.com/cardboardhead"
@@ -376,6 +392,10 @@ const attributionData = {
         "ethan64": {
             name: "Ethan64",
             url: "https://www.furaffinity.net/user/ethan64/"
+        },
+        "flyhar": {
+            name: "Flyhar",
+            url: "https://www.furaffinity.net/user/flyfeline/"
         },
         "gaiawolfess": {
             name: "Gaiawolfess",
