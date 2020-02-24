@@ -4410,6 +4410,38 @@ characterMakers["Berri"] = () => {
     )
 };
 
+characterMakers["Lexi"] = () => {
+    return makeCharacter(
+        "Lexi",
+        "LittleBig",
+        {
+            front: {
+                height: math.unit(1.72, "meters"),
+                weight: math.unit(68, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/lexi/front.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Very Smol",
+                height: math.unit(10, "mm")
+            },
+            {
+                name: "Micro",
+                height: math.unit(6.8, "cm"),
+                default: true
+            },
+            {
+                name: "Normal",
+                height: math.unit(1.72, "m")
+            }
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

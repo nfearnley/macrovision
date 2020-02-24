@@ -278,6 +278,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/lexi/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32187352/" }
+            ],
+            authors: [
+
+            ],
+            owners: [
+                "little-big-x110"
+            ]
+        },
+        {
             prefix: "./media/characters/malfressa/",
             files: [
                 { name: "side.svg", source: "https://www.furaffinity.net/view/25377262/" },
