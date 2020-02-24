@@ -4034,6 +4034,38 @@ characterMakers["Cibus"] = () => {
     )
 };
 
+characterMakers["Nibbles"] = () => {
+    return makeCharacter(
+        "Nibbles",
+        "movler",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(240, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/nibbles/front.svg"
+                }
+            },
+            side: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(240, "lbs"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/nibbles/side.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(9, "feet"),
+                default: true
+            }
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

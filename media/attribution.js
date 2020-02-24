@@ -101,6 +101,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/nibbles/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/22964778/"},
+                { name: "side.svg", source: "https://www.furaffinity.net/view/22964778/"},
+            ],
+            authors: [
+                "dragga"
+            ],
+            owners: [
+                "movler"
+            ]
+        },
+        {
             prefix: "./media/characters/surgo/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/33348481/"},
@@ -154,6 +167,10 @@ const attributionData = {
         "Dialuca01": {
             name: "Dialuca",
             url: "https://www.furaffinity.net/user/dialuca01"
+        },
+        "dragga": {
+            name: "Dragga",
+            url: "https://www.furaffinity.net/user/dragga"
         },
         "gaiawolfess": {
             name: "Gaiawolfess",
