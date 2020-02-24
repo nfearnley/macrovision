@@ -101,5 +101,25 @@ function makeVehicles() {
         )
     });
 
+    results.push({
+        name: "Titanic",
+        constructor: () => makeVehicle(
+            "Titanic",
+            {
+                side: {
+                    name: "Side",
+                    height: math.unit(883*1114/4250, "feet"),
+                    image: { source: "./media/vehicles/titanic.svg" },
+                },
+                sideVertical: {
+                    name: "Side (Vertical)",
+                    height: math.unit(883, "feet"),
+                    image: { source: "./media/vehicles/vertical-titanic.svg" },
+                },
+            },
+            math.unit(52310, "tons")
+        )
+    });
+
     return results;
 }

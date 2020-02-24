@@ -302,7 +302,17 @@ const attributionData = {
                 { name: "man-1.svg", source: "https://commons.wikimedia.org/wiki/File:Silhouette.svg" }
             ],
             authors: [
-
+                
+            ]
+        },
+        {
+            prefix: "./media/vehicles/",
+            files: [
+                { name: "titanic.svg", source: "https://creazilla.com/nodes/873-titanic-silhouette" },
+                { name: "vertical-titanic.svg", source: "https://creazilla.com/nodes/873-titanic-silhouette" }
+            ],
+            authors: [
+                
             ]
         },
     ],
