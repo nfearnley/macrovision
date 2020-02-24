@@ -388,6 +388,20 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/samantha/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/31077914/" },
+                { name: "front-clothed.svg", source: "https://www.furaffinity.net/view/31077914/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/31077914/" },
+            ],
+            authors: [
+                "wonderball"
+            ],
+            owners: [
+                "little-big-x110"
+            ]
+        },
+        {
             prefix: "./media/characters/surgo/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/33348481/" },
@@ -630,6 +644,10 @@ const attributionData = {
         "twitch-the-dragon": {
             name: "Twitch",
             url: "https://www.furaffinity.net/user/twitchthedragon/"
+        },
+        "wonderball": {
+            name: "Wonderball",
+            url: "https://www.furaffinity.net/user/wonderball"
         },
         "zyraxus": {
             name: "Zyraxus",
