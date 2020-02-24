@@ -862,6 +862,14 @@ https://www.furaffinity.net/view/34278152/
 * front.svg
 * foot.svg
 
+## Guy
+
+**https://www.furaffinity.net/user/bluecatangry**
+
+https://www.furaffinity.net/view/34962837
+
+* front.svg
+
 # Naturals
 
 * front.svg
