@@ -278,6 +278,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/juno/",
+            files: [
+                { name: "front.svg", source: "https://toyhou.se/2991942.juno#16906063" },
+            ],
+            authors: [
+                "gaily"
+            ],
+            owners: [
+                "little-big-x110"
+            ]
+        },
+        {
             prefix: "./media/characters/lexi/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/32187352/" }
@@ -514,6 +526,10 @@ const attributionData = {
         "gaiawolfess": {
             name: "Gaiawolfess",
             url: "https://www.furaffinity.net/user/gaiawolfess"
+        },
+        "gaily": {
+            name: "Gaily",
+            url: "https://www.furaffinity.net/user/gaily/"
         },
         "geminimacro": {
             name: "geminimacro",
