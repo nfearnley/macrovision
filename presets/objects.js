@@ -257,6 +257,33 @@ function makeObjects() {
             }
         )
     });
+
+    results.push({
+        name: "Pebbles",
+        constructor: () => makeObject(
+            "Pebbles",
+            {
+                gravelGrain: {
+                    height: math.unit(20, "mm"),
+                    image: { source: "./media/objects/pebble.svg" },
+                    name: "Grain of gravel",
+                    rename: true
+                },
+                sandGrain: {
+                    height: math.unit(0.5, "mm"),
+                    image: { source: "./media/objects/pebble.svg" },
+                    name: "Grain of sand",
+                    rename: true
+                },
+                siltGrain: {
+                    height: math.unit(0.03, "mm"),
+                    image: { source: "./media/objects/pebble.svg" },
+                    name: "Grain of silt",
+                    rename: true
+                },
+            }
+        )
+    });
     
     results.sort((b1, b2) => {
         e1 = b1.constructor();
