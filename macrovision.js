@@ -1055,6 +1055,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    document.querySelector("#menu-permalink").addEventListener("click", e => {
+        linkScene();
+    });
+
     document.querySelector("#menu-export").addEventListener("click", e => {
         copyScene();
     });
@@ -1298,6 +1302,12 @@ function exportScene() {
     return results;
 }
 
+function linkScene() {
+    loc = new URL(window.location);
+
+
+    window.location = loc.protocol + "//" + loc.host + loc.pathname + "?scene=" + btoa(JSON.stringify(exportScene()));
+}
 function copyScene() {
     const results = exportScene();
 
