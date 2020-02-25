@@ -190,6 +190,21 @@ function makeObjects() {
             }
         )
     });
+
+    results.push({
+        name: "Pencil",
+        constructor: () => makeObject(
+            "Pencil",
+            {
+                pencil: {
+                    height: math.unit(7.5, "inches"),
+                    mass: math.unit(7, "g"),
+                    image: { source: "./media/objects/pencil.svg" },
+                    name: "Pencil"
+                }
+            }
+        )
+    });
     
     results.sort((b1, b2) => {
         e1 = b1.constructor();
