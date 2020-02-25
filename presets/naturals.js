@@ -93,6 +93,7 @@ function makeNaturals() {
     results.push(makePlanet("Neptune", math.unit(49528, "km"), math.unit(102e24, "kg")));
     results.push(makePlanet("Pluto", math.unit(2370, "km"), math.unit(0.0146e24, "kg")));
 
+    results.push(makePlanet("White Dwarf", math.unit(14000, "km"), math.unit(1e30, "kg")));
     results.push(makePlanet("Sol", math.unit(865370, "mi"), math.unit(1.989e30, "kg")));
     results.push(makePlanet("Betelgeuse", math.unit(1234.2e6, "mi"), math.unit(2.188e31, "kg")));
     results.push(makePlanet("Milky Way", math.unit(105700, "lightyears"), math.unit(3e+39, "kg"), { source: "./media/naturals/milky-way.svg" }));
