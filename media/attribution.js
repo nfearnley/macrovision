@@ -518,6 +518,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/vector-wuff/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/16031607" }
+            ],
+            authors: [
+                "solaxee"
+            ],
+            owners: [
+                "vector-wuff"
+            ]
+        },
+        {
             prefix: "./media/characters/vemus/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/31833589/" }
@@ -842,6 +854,10 @@ const attributionData = {
             name: "sixsydes",
             url: "https://www.furaffinity.net/user/sixsydes/"
         },
+        "solaxee": {
+            name: "Sol",
+            url: "https://twitter.com/Solaxee"
+        },
         "spyropurple": {
             name: "spyropurple",
             url: "https://www.furaffinity.net/user/spyropurple/"
@@ -861,6 +877,10 @@ const attributionData = {
         "twitch-the-dragon": {
             name: "Twitch",
             url: "https://www.furaffinity.net/user/twitchthedragon/"
+        },
+        "vector-wuff": {
+            name: "Vector",
+            url: "https://www.furaffinity.net/user/Megawolf91"
         },
         "vemus": {
             name: "vemus",

@@ -4885,6 +4885,38 @@ characterMakers["Opal"] = () => {
     )
 };
 
+characterMakers["Vector Wuff"] = () => {
+    return makeCharacter(
+        "Vector Wuff",
+        "Vector",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(200, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/vector-wuff/front.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(2.8, "meters")
+            },
+            {
+                name: "Macro",
+                height: math.unit(450, "meters"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(15, "kilometers")
+            }
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];
