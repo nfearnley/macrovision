@@ -201,6 +201,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/beherit/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "muzz",
+            ],
+            owners: [
+                "beherit"
+            ]
+        },
+        {
             prefix: "./media/characters/berri/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/34510917/" }
@@ -250,6 +262,18 @@ const attributionData = {
             ],
             owners: [
                 "little-big-x110"
+            ]
+        },
+        {
+            prefix: "./media/characters/everett/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "beherit",
+            ],
+            owners: [
+                "beherit"
             ]
         },
         {
@@ -536,6 +560,10 @@ const attributionData = {
             name: "Beao",
             url: "https://commons.wikimedia.org/wiki/User:Beao"
         },
+        "beherit": {
+            name: "Beherit",
+            url: "https://www.furaffinity.net/user/beherit/"
+        },
         "brit-bork": {
             name: "Koijot",
             url: "https://twitter.com/Brit_Bork",
@@ -659,6 +687,10 @@ const attributionData = {
         "movler": {
             name: "Movler",
             url: "https://www.furaffinity.net/user/movler/"
+        },
+        "muzz": {
+            name: "Muzz",
+            url: "https://www.furaffinity.net/user/muzz/"
         },
         "oselotti": {
             name: "Oselotti",

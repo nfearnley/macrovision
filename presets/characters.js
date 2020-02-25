@@ -4679,6 +4679,80 @@ characterMakers["Vemus"] = () => {
     )
 };
 
+characterMakers["Beherit"] = () => {
+    return makeCharacter(
+        "Beherit",
+        "Beherit",
+        {
+            front: {
+                height: math.unit(2, "meters"),
+                weight: math.unit(70, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/beherit/front.svg",
+                    extra: 1408/1242
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6, "feet")
+            },
+            {
+                name: "Lorg",
+                height: math.unit(25, "feet"),
+                default: true
+            },
+            {
+                name: "Lorger",
+                height: math.unit(75, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(200, "meters")
+            },
+        ]
+    )
+};
+characterMakers["Everett"] = () => {
+    return makeCharacter(
+        "Everett",
+        "Beherit",
+        {
+            front: {
+                height: math.unit(2, "meters"),
+                weight: math.unit(150, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/everett/front.svg",
+                    extra: 2038/1737
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(15, "feet"),
+                default: true
+            },
+            {
+                name: "Lorg",
+                height: math.unit(70, "feet"),
+                default: true
+            },
+            {
+                name: "Lorger",
+                height: math.unit(250, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(500, "meters")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
