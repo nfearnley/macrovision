@@ -4623,6 +4623,29 @@ characterMakers["Dr. Clay"] = () => {
     )
 };
 
+characterMakers["Wyvern Ripsnarl"] = () => {
+    return makeCharacter(
+        "Wyvern Ripsnarl",
+        "LoboRaptorLo",
+        {
+            front: {
+                height: math.unit(2, "meters"),
+                weight: math.unit(80, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/wyvern-ripsnarl/front.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Teramacro",
+                height: math.unit(500000, "lightyears")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

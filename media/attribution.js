@@ -443,6 +443,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/wyvern-ripsnarl/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/15418876/" }
+            ],
+            authors: [
+                "teaselbone"
+            ],
+            owners: [
+                "lobo-raptor-lo"
+            ]
+        },
+        {
             prefix: "./media/characters/",
             files: [
                 { name: "", source: "" }
@@ -594,6 +606,10 @@ const attributionData = {
             name: "LittleBig",
             url: "https://www.furaffinity.net/user/LittlebigX110"
         },
+        "lobo-raptor-lo": {
+            name: "LoboRaptorLo",
+            url: "https://www.furaffinity.net/user/loboraptorlo/"
+        },
         "lynxsprout": {
             name: "Lynxsprout",
             url: "https://lynxsprout.carrd.co/"
@@ -653,6 +669,10 @@ const attributionData = {
         "sugarbeans": {
             name: "sugarbeans",
             url: "https://www.furaffinity.net/user/sugarbeans/"
+        },
+        "teaselbone": {
+            name: "Teaselbone",
+            url: "https://www.furaffinity.net/user/teaselbone/"
         },
         "twitch-the-dragon": {
             name: "Twitch",
