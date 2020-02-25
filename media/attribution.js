@@ -586,7 +586,7 @@ const attributionData = {
         {
             prefix: "./media/objects/",
             files: [
-                { name: "paperclip.svg", source: null }
+                { name: "paperclip.svg", source: "https://commons.wikimedia.org/wiki/File:Ei-paperclip.svg" }
             ],
             authors: [
                 "alexander-madyankin",
