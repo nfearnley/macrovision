@@ -551,6 +551,17 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/landmarks/",
+            files: [
+                { name: "gateway-arch.svg", source: null },
+                { name: "washington-monument.svg", source: null },
+                { name: "pyramid.svg", source: null },
+            ],
+            authors: [
+                "chemicalcrux"
+            ]
+        },
+        {
             prefix: "./media/naturals/",
             files: [
                 { name: "milky-way.svg", source: null }

@@ -92,6 +92,24 @@ function makeLandmarks() {
         )
     });
 
+    results.push({
+        name: "Washington Monument",
+        constructor: () => makeLandmark(
+            "Washington Monument",
+            math.unit(555 + 5/12, "feet"),
+            { source: "./media/landmarks/washington-monument.svg" }
+        )
+    });
+
+    results.push({
+        name: "Great Pyramid of Giza",
+        constructor: () => makeLandmark(
+            "Great Pyramid of Giza",
+            math.unit(146, "meters"),
+            { source: "./media/landmarks/pyramid.svg" }
+        )
+    });
+
     results.sort((b1, b2) => {
         e1 = b1.constructor();
         e2 = b2.constructor();
