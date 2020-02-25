@@ -240,6 +240,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/dr-clay/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/15534343/" },
+                { name: "front-clothed.svg", source: "https://www.furaffinity.net/view/15534343/" }
+            ],
+            authors: [
+                "wonderball"
+            ],
+            owners: [
+                "little-big-x110"
+            ]
+        },
+        {
             prefix: "./media/characters/gemini/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/31363584/" },

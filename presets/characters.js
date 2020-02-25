@@ -414,6 +414,10 @@ function makeManny() {
         height: math.unit(300, "meters")
     });
     entity.sizes.push({
+        name: "Macro++",
+        height: math.unit(2400, "feet")
+    });
+    entity.sizes.push({
         name: "Megamacro",
         height: math.unit(5167, "meters")
     });
@@ -525,6 +529,10 @@ function makeAdake() {
     entity.sizes.push({
         name: "Macro+",
         height: math.unit(300, "meters")
+    });
+    entity.sizes.push({
+        name: "Macro++",
+        height: math.unit(2400, "feet")
     });
     entity.sizes.push({
         name: "Megamacro",
@@ -4562,6 +4570,54 @@ characterMakers["Samantha"] = () => {
             {
                 name: "Megamacro+",
                 height: math.unit(12000, "kilometers")
+            },
+        ]
+    )
+};
+
+characterMakers["Dr. Clay"] = () => {
+    return makeCharacter(
+        "Dr. Clay",
+        "LittleBig",
+        {
+            front: {
+                height: math.unit(1.92, "meters"),
+                weight: math.unit(80, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/dr-clay/front.svg"
+                }
+            },
+            frontClothed: {
+                height: math.unit(1.92, "meters"),
+                weight: math.unit(80, "kg"),
+                name: "Front (Clothed)",
+                image: {
+                    source: "./media/characters/dr-clay/front-clothed.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(1.92, "m")
+            },
+            {
+                name: "Macro",
+                height: math.unit(214, "meters"),
+                default: true
+            },
+            {
+                name: "Macro+",
+                height: math.unit(12.237, "meters"),
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(557, "megameters"),
+            },
+            {
+                name: "Unimaginable",
+                height: math.unit(120e9, "lightyears")
             },
         ]
     )
