@@ -1,3 +1,12 @@
+math.createUnit("dalton", {
+    definition: "1.66e-27 kg",
+    prefixes: "long"
+});
+math.createUnit("daltons", {
+    definition: "1.66e-27 kg",
+    prefixes: "long"
+});
+
 function makeObject(name, viewInfo) {
     views = {};
 
@@ -299,6 +308,29 @@ function makeObjects() {
                     height: math.unit(85.60, "mm"),
                     image: { source: "./media/objects/credit-card-vertical.svg" },
                     name: "Credit card (vertical)",
+                },
+            }
+        )
+    });
+
+    results.push({
+        name: "Molecular",
+        constructor: () => makeObject(
+            "Molecular",
+            {
+                hydrogen: {
+                    height: math.unit(1.06e-10, "mm"),
+                    mass: math.unit(1, "dalton"),
+                    image: { source: "./media/objects/circle.svg" },
+                    name: "Hydrogen atom",
+                    rename: true
+                },
+                proton: {
+                    height: math.unit(1e-15, "mm"),
+                    mass: math.unit(1, "dalton"),
+                    image: { source: "./media/objects/circle.svg" },
+                    name: "Proton",
+                    rename: true
                 },
             }
         )
