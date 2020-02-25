@@ -443,6 +443,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/vemus/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/31833589/" }
+            ],
+            authors: [
+                "eda"
+            ],
+            owners: [
+                "vemus"
+            ]
+        },
+        {
             prefix: "./media/characters/wyvern-ripsnarl/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/15418876/" }
@@ -559,6 +571,10 @@ const attributionData = {
         "dragga": {
             name: "Dragga",
             url: "https://www.furaffinity.net/user/dragga"
+        },
+        "eda": {
+            name: "Eda",
+            url: "https://www.furaffinity.net/user/eda/"
         },
         "ethan64": {
             name: "Ethan64",
@@ -691,6 +707,10 @@ const attributionData = {
         "twitch-the-dragon": {
             name: "Twitch",
             url: "https://www.furaffinity.net/user/twitchthedragon/"
+        },
+        "vemus": {
+            name: "vemus",
+            url: "https://www.furaffinity.net/user/vemus"
         },
         "wonderball": {
             name: "Wonderball",

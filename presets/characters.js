@@ -4646,6 +4646,39 @@ characterMakers["Wyvern Ripsnarl"] = () => {
     )
 };
 
+characterMakers["Vemus"] = () => {
+    return makeCharacter(
+        "Vemus",
+        "Vemus",
+        {
+            front: {
+                height: math.unit(2, "meters"),
+                weight: math.unit(150, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/vemus/front.svg",
+                    extra: 2384/2084
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(3, "meters"),
+                default: true
+            },
+            {
+                name: "Lorg",
+                height: math.unit(7, "meters")
+            },
+            {
+                name: "More Lorg",
+                height: math.unit(250, "meters")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
