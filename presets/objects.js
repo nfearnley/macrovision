@@ -284,6 +284,25 @@ function makeObjects() {
             }
         )
     });
+
+    results.push({
+        name: "Credit Card",
+        constructor: () => makeObject(
+            "Credit Card",
+            {
+                creditCard: {
+                    height: math.unit(53.98, "mm"),
+                    image: { source: "./media/objects/credit-card.svg" },
+                    name: "Credit card",
+                },
+                creditCardVertical: {
+                    height: math.unit(85.60, "mm"),
+                    image: { source: "./media/objects/credit-card-vertical.svg" },
+                    name: "Credit card (vertical)",
+                },
+            }
+        )
+    });
     
     results.sort((b1, b2) => {
         e1 = b1.constructor();
