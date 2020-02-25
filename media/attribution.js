@@ -267,7 +267,8 @@ const attributionData = {
         {
             prefix: "./media/characters/everett/",
             files: [
-                { name: "front.svg", source: null }
+                { name: "front.svg", source: null },
+                { name: "paw.svg", source: null }
             ],
             authors: [
                 "beherit",

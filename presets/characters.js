@@ -4728,7 +4728,14 @@ characterMakers["Everett"] = () => {
                     source: "./media/characters/everett/front.svg",
                     extra: 2038/1737
                 }
-            }
+            },
+            paw: {
+                height: math.unit(2/3.6, "meters"),
+                name: "Paw",
+                image: {
+                    source: "./media/characters/everett/paw.svg"
+                }
+            },
         },
         [
             {
