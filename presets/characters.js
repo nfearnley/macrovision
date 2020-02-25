@@ -4715,6 +4715,7 @@ characterMakers["Beherit"] = () => {
         ]
     )
 };
+
 characterMakers["Everett"] = () => {
     return makeCharacter(
         "Everett",
@@ -4759,6 +4760,83 @@ characterMakers["Everett"] = () => {
         ]
     )
 };
+
+characterMakers["Rose Lion"] = () => {
+    return makeCharacter(
+        "Rose Lion",
+        "Enormouse",
+        {
+            front: {
+                height: math.unit(2, "meters"),
+                weight: math.unit(86, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/rose-lion/front.svg"
+                }
+            },
+            bent: {
+                height: math.unit(2/1.4288, "meters"),
+                weight: math.unit(86, "kg"),
+                name: "Bent",
+                image: {
+                    source: "./media/characters/rose-lion/bent.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Mini-Micro",
+                height: math.unit(1, "cm")
+            },
+            {
+                name: "Micro",
+                height: math.unit(3.5, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(6 + 1/6, "feet"),
+                default: true
+            },
+            {
+                name: "Mini-Macro",
+                height: math.unit(9 + 10/12, "feet")
+            },
+        ]
+    )
+};
+
+characterMakers["Regal"] = () => {
+    return makeCharacter(
+        "Regal",
+        "Regal Drennen",
+        {
+            front: {
+                height: math.unit(2, "meters"),
+                weight: math.unit(350, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/regal/front.svg"
+                }
+            },
+            back: {
+                height: math.unit(2, "meters"),
+                weight: math.unit(350, "lbs"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/regal/back.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(350, "feet"),
+                default: true
+            }
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

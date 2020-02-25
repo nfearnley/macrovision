@@ -402,6 +402,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/regal/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32825133/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/32825133/" }
+            ],
+            authors: [
+                "sixsydes"
+            ],
+            owners: [
+                "cygil"
+            ]
+        },
+        {
             prefix: "./media/characters/rikky/",
             files: [
                 { name: "side.svg", source: null }
@@ -423,6 +436,30 @@ const attributionData = {
             ],
             owners: [
                 "rogue"
+            ]
+        },
+        {
+            prefix: "./media/characters/rose-lion/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/MewMus" }
+            ],
+            authors: [
+                "enormouse"
+            ],
+            owners: [
+                "enormouse"
+            ]
+        },
+        {
+            prefix: "./media/characters/rose-lion/",
+            files: [
+                { name: "bent.svg", source: "https://www.furaffinity.net/view/34392494/" }
+            ],
+            authors: [
+                "princessrei"
+            ],
+            owners: [
+                "enormouse"
             ]
         },
         {
@@ -589,6 +626,10 @@ const attributionData = {
             name: "Cougr",
             url: "https://www.furaffinity.net/user/cougr"
         },
+        "cygil": {
+            name: "Cygil",
+            url: "https://www.furaffinity.net/user/cygil"
+        },
         "d-eath-tail": {
             name: "Deathy",
             url: "https://www.furaffinity.net/user/d-eath-tail"
@@ -604,6 +645,10 @@ const attributionData = {
         "eda": {
             name: "Eda",
             url: "https://www.furaffinity.net/user/eda/"
+        },
+        "enormouse": {
+            name: "Enormouse",
+            url: "https://twitter.com/MewMus"  
         },
         "ethan64": {
             name: "Ethan64",
@@ -701,6 +746,10 @@ const attributionData = {
             name: "Phil Bronnery",
             url: "https://www.flickr.com/people/27919241@N02"
         },
+        "princessrei": {
+            name: "Princess Rei",
+            url: "https://twitter.com/princessrei"
+        },
         "quake-yote": {
             name: "Quake Yote",
             url: "https://www.furaffinity.net/user/rokossovskiy"
@@ -719,7 +768,11 @@ const attributionData = {
         },
         "silverwingink": {
             name: "silverwingink",
-            url: "https://www.furaffinity.net/gallery/silverwingink/"
+            url: "https://www.furaffinity.net/user/silverwingink/"
+        },
+        "sixsydes": {
+            name: "sixsydes",
+            url: "https://www.furaffinity.net/user/sixsydes/"
         },
         "spyropurple": {
             name: "spyropurple",
