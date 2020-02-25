@@ -492,6 +492,16 @@ const attributionData = {
                 
             ]
         },
+        {
+            prefix: "./media/vehicles/",
+            files: [
+                { name: "18-wheeler.svg", source: "https://commons.wikimedia.org/wiki/File:Conventional_18-wheeler_truck_diagram.svg" },
+                { name: "18-wheeler-vertical.svg", source: "https://commons.wikimedia.org/wiki/File:Conventional_18-wheeler_truck_diagram.svg" }
+            ],
+            authors: [
+                "h-padleckas"
+            ]
+        },
     ],
     people: {
         "appledectomy": {
@@ -573,6 +583,10 @@ const attributionData = {
         "geminimacro": {
             name: "geminimacro",
             url: "https://www.furaffinity.net/user/lajay"
+        },
+        "h-padleckas": {
+            name: "H. Padleckas",
+            url: "https://commons.wikimedia.org/wiki/User:H_Padleckas"
         },
         "helisa-adopts": {
             name: "Helisa",

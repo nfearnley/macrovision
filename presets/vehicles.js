@@ -121,5 +121,25 @@ function makeVehicles() {
         )
     });
 
+    results.push({
+        name: "18-Wheeler",
+        constructor: () => makeVehicle(
+            "18-Wheeler",
+            {
+                side: {
+                    name: "Side",
+                    height: math.unit(13.6, "feet"),
+                    image: { source: "./media/vehicles/18-wheeler.svg" },
+                },
+                sideVertical: {
+                    name: "Side (Vertical)",
+                    height: math.unit(54, "feet"),
+                    image: { source: "./media/vehicles/18-wheeler-vertical.svg" },
+                },
+            },
+            math.unit(52310, "tons")
+        )
+    });
+
     return results;
 }
