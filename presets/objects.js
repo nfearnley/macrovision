@@ -115,6 +115,21 @@ function makeObjects() {
             }
         )
     });
+
+    results.push({
+        name: "Shot Glass",
+        constructor: () => makeObject(
+            "Shot Glass",
+            {
+                bottle: {
+                    height: math.unit(2 + 3/8, "inches"),
+                    mass: math.unit(75, "g"),
+                    image: { source: "./media/objects/shot-glass.svg" },
+                    name: "Bottle"
+                }
+            }
+        )
+    });
     
     results.sort((b1, b2) => {
         e1 = b1.constructor();

@@ -540,7 +540,8 @@ const attributionData = {
         {
             prefix: "./media/objects/",
             files: [
-                { name: "nail-polish.svg", source: null }
+                { name: "nail-polish.svg", source: null },
+                { name: "shot-glass.svg", source: null },
             ],
             authors: [
                 "chemicalcrux"
