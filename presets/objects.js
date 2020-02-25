@@ -12,11 +12,12 @@ function makeObject(name, viewInfo) {
                 }
             },
             image: value.image,
-            name: value.name
+            name: value.name,
+            rename: value.rename
         }
 
         if (value.mass) {
-            views[key].attributes[key] = {
+            views[key].attributes.mass = {
                 name: "Mass",
                 power: 3,
                 type: "mass",
@@ -142,6 +143,50 @@ function makeObjects() {
                     image: { source: "./media/objects/beer-bottle.svg" },
                     name: "Longneck Bottle"
                 }
+            }
+        )
+    });
+
+    results.push({
+        name: "Coin",
+        constructor: () => makeObject(
+            "Coin",
+            {
+                penny: {
+                    height: math.unit(0.75, "inches"),
+                    mass: math.unit(2.5, "g"),
+                    image: { source: "./media/objects/circle.svg" },
+                    name: "Penny",
+                    rename: true
+                },
+                nickel: {
+                    height: math.unit(0.835, "inches"),
+                    mass: math.unit(5, "g"),
+                    image: { source: "./media/objects/circle.svg" },
+                    name: "Nickel",
+                    rename: true
+                },
+                dime: {
+                    height: math.unit(0.705, "inches"),
+                    mass: math.unit(2.268, "g"),
+                    image: { source: "./media/objects/circle.svg" },
+                    name: "Dime",
+                    rename: true
+                },
+                quarter: {
+                    height: math.unit(0.955, "inches"),
+                    mass: math.unit(5.67, "g"),
+                    image: { source: "./media/objects/circle.svg" },
+                    name: "Quarter",
+                    rename: true
+                },
+                dollar: {
+                    height: math.unit(1.043, "inches"),
+                    mass: math.unit(8.1, "g"),
+                    image: { source: "./media/objects/circle.svg" },
+                    name: "Dollar Coin",
+                    rename: true
+                },
             }
         )
     });

@@ -98,6 +98,9 @@ function updateEntityElement(entity, element, zIndex) {
     const bonus = (entity.views[view].image.extra ? entity.views[view].image.extra : 1);
     element.style.setProperty("--height", pixels * bonus + "px");
 
+    if (entity.views[view].rename)
+        element.querySelector(".entity-name").innerText = entity.name == "" ? "" : entity.views[view].name;
+    else
     element.querySelector(".entity-name").innerText = entity.name;
 
     const bottomName = document.querySelector("#bottom-name-" + element.dataset.key);
@@ -570,6 +573,7 @@ function updateViewOptions(entity, view, changed) {
         if (key != changed) {
             const input = document.querySelector("#options-view-" + key + "-input");
             const select = document.querySelector("#options-view-" + key + "-select");
+            
             const currentUnit = select.value;
             const convertedAmount = entity.views[view][key].toNumber(currentUnit);
             input.value = math.round(convertedAmount, 5);
@@ -946,7 +950,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.querySelector("#entity-view").addEventListener("input", e => {
-        entities[selected.dataset.key].view = e.target.value;
+        const entity = entities[selected.dataset.key];
+        entity.view = e.target.value;
+        
         const image = entities[selected.dataset.key].views[e.target.value].image;
         selected.querySelector(".entity-image").src = image.source;
 
