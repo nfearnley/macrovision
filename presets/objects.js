@@ -101,5 +101,20 @@ function makeObjects() {
         )
     });
 
+    results.push({
+        name: "Nail Polish",
+        constructor: () => makeObject(
+            "Nail Polish",
+            {
+                bottle: {
+                    height: math.unit(3.25, "inches"),
+                    mass: math.unit(66, "g"),
+                    image: { source: "./media/objects/nail-polish.svg" },
+                    name: "Bottle"
+                }
+            }
+        )
+    });
+
     return results;
 }

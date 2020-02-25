@@ -538,6 +538,15 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/objects/",
+            files: [
+                { name: "nail-polish.svg", source: null }
+            ],
+            authors: [
+                "chemicalcrux"
+            ]
+        },
+        {
             prefix: "./media/objects/humans/",
             files: [
                 { name: "woman-1.svg", source: "https://commons.wikimedia.org/wiki/File:1Silhouette_Female.svg" }
