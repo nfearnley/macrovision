@@ -205,6 +205,43 @@ function makeObjects() {
             }
         )
     });
+
+    results.push({
+        name: "Balls",
+        constructor: () => makeObject(
+            "Balls",
+            {
+                golf: {
+                    height: math.unit(1.62, "inches"),
+                    mass: math.unit(45, "g"),
+                    image: { source: "./media/objects/circle.svg" },
+                    name: "Golfball",
+                    rename: true
+                },
+                tennis: {
+                    height: math.unit(2.6, "inches"),
+                    mass: math.unit(57, "g"),
+                    image: { source: "./media/objects/circle.svg" },
+                    name: "Tennisball",
+                    rename: true
+                },
+                baseball: {
+                    height: math.unit(2.9, "inches"),
+                    mass: math.unit(145, "g"),
+                    image: { source: "./media/objects/circle.svg" },
+                    name: "Baseball",
+                    rename: true
+                },
+                volleyball: {
+                    height: math.unit(8, "inches"),
+                    mass: math.unit(270, "g"),
+                    image: { source: "./media/objects/circle.svg" },
+                    name: "Volleyball",
+                    rename: true
+                }
+            }
+        )
+    });
     
     results.sort((b1, b2) => {
         e1 = b1.constructor();
