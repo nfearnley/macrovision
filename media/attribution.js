@@ -584,6 +584,17 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/objects/",
+            files: [
+                { name: "paperclip.svg", source: null }
+            ],
+            authors: [
+                "alexander-madyankin",
+                "roman-shamin",
+                "chemicalcrux",
+            ]
+        },
+        {
             prefix: "./media/objects/humans/",
             files: [
                 { name: "woman-1.svg", source: "https://commons.wikimedia.org/wiki/File:1Silhouette_Female.svg" }
@@ -624,6 +635,10 @@ const attributionData = {
         },
     ],
     people: {
+        "alexander-madyankin": {
+            name: "Alexander Madyankin",
+            url: "https://madyankin.name/"
+        },
         "appledectomy": {
             name: "Appledectomy",
             url: "https://www.furaffinity.net/user/appledectomy"
@@ -807,6 +822,10 @@ const attributionData = {
         "rogue": {
             name: "Rogue Megawolf",
             url: "https://twitter.com/roguemegawolf"
+        },
+        "roman-shamin": {
+            name: "Roman Shamin",
+            url: "https://twitter.com/romanshamin"
         },
         "scareye": {
             name: "Scareye",

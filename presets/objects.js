@@ -242,6 +242,21 @@ function makeObjects() {
             }
         )
     });
+
+    results.push({
+        name: "Paperclip",
+        constructor: () => makeObject(
+            "Paperclip",
+            {
+                paperclip: {
+                    height: math.unit(1.834, "inches"),
+                    mass: math.unit(1, "g"),
+                    image: { source: "./media/objects/paperclip.svg" },
+                    name: "Paperclip"
+                }
+            }
+        )
+    });
     
     results.sort((b1, b2) => {
         e1 = b1.constructor();
