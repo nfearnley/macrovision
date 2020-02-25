@@ -4837,6 +4837,54 @@ characterMakers["Regal"] = () => {
     )
 };
 
+characterMakers["Opal"] = () => {
+    return makeCharacter(
+        "Opal",
+        "Enormouse",
+        {
+            front: {
+                height: math.unit(4 + 11/12, "feet"),
+                weight: math.unit(100, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/opal/front.svg"
+                }
+            },
+            frontAlt: {
+                height: math.unit(4 + 11/12, "feet"),
+                weight: math.unit(100, "lbs"),
+                name: "Front (Alt)",
+                image: {
+                    source: "./media/characters/opal/front-alt.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Small",
+                height: math.unit(4 + 11/12, "feet")
+            },
+            {
+                name: "Normal",
+                height: math.unit(20, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(120, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(80, "miles")
+            },
+            {
+                name: "True Size",
+                height: math.unit(100000, "lightyears")
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

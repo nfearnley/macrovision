@@ -390,6 +390,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/opal/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33375219/" },
+                { name: "front-alt.svg", source: "https://www.furaffinity.net/view/32959775/" },
+            ],
+            authors: [
+                "enormouse"
+            ],
+            owners: [
+                "enormouse"
+            ]
+        },
+        {
             prefix: "./media/characters/piper/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/22964778/" }
