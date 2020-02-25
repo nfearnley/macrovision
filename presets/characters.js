@@ -4558,7 +4558,11 @@ characterMakers["Samantha"] = () => {
             {
                 name: "Megamacro",
                 height: math.unit(8381, "meters"),
-            }
+            },
+            {
+                name: "Megamacro+",
+                height: math.unit(12000, "kilometers")
+            },
         ]
     )
 };
