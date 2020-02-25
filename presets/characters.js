@@ -4917,6 +4917,113 @@ characterMakers["Vector Wuff"] = () => {
     )
 };
 
+characterMakers["Dannik"] = () => {
+    return makeCharacter(
+        "Dannik",
+        "LuchaLibreLibro",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(256, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/dannik/front.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(69.57, "meters"),
+                default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Azura Saharah"] = () => {
+    return makeCharacter(
+        "Azura Saharah",
+        "AzuraSaharah",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(120, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/azura-saharah/front.svg"
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(120, "lbs"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/azura-saharah/back.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(100, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Kennedy"] = () => {
+    return makeCharacter(
+        "Kennedy",
+        "BossVoss",
+        {
+            side: {
+                height: math.unit(5 + 4/12, "feet"),
+                weight: math.unit(163, "lbs"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/kennedy/side.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Standard Doggo",
+                height: math.unit(5 + 4/12, "feet")
+            },
+            {
+                name: "Big Doggo",
+                height: math.unit(25 + 3/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Odi Lunar"] = () => {
+    return makeCharacter(
+        "Odi Lunar",
+        "OdiLunar",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(90, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/odi-lunar/front.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(3, "inches")
+            }
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

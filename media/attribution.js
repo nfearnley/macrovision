@@ -163,19 +163,6 @@ const attributionData = {
             ]
         },
         {
-            prefix: "./media/characters/asana/",
-            files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/35087729/" },
-                { name: "back.svg", source: "https://www.furaffinity.net/view/35087729/" },
-            ],
-            authors: [
-                "silverwingink"
-            ],
-            owners: [
-                "aviraptia"
-            ]
-        },
-        {
             prefix: "./media/characters/asana-mech/",
             files: [
                 { name: "side.svg", source: null }
@@ -198,6 +185,19 @@ const attributionData = {
             ],
             owners: [
                 "ashtrek"
+            ]
+        },
+        {
+            prefix: "./media/characters/azura-saharah/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/29494552/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/29494552/" },
+            ],
+            authors: [
+                "hihikori"
+            ],
+            owners: [
+                "azura-saharah"
             ]
         },
         {
@@ -249,6 +249,18 @@ const attributionData = {
             ],
             owners: [
                 "movler"
+            ]
+        },
+        {
+            prefix: "./media/characters/dannik/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/21578353/" }
+            ],
+            authors: [
+                "lucha-libre-libro"
+            ],
+            owners: [
+                "lucha-libre-libro"
             ]
         },
         {
@@ -328,6 +340,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/kennedy/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/26538996/" },
+            ],
+            authors: [
+                "pornkitsi"
+            ],
+            owners: [
+                "bossvoss"
+            ]
+        },
+        {
             prefix: "./media/characters/lexi/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/32187352/" }
@@ -387,6 +411,18 @@ const attributionData = {
             ],
             owners: [
                 "movler"
+            ]
+        },
+        {
+            prefix: "./media/characters/odi-lunar/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/odi_lunar/status/1230878530612817921?s=21" }
+            ],
+            authors: [
+                "odi-lunar"
+            ],
+            owners: [
+                "odi-lunar"
             ]
         },
         {
@@ -670,6 +706,10 @@ const attributionData = {
             name: "Aviraptia",
             url: "https://www.furaffinity.net/user/aviraptia/"
         },
+        "azura-saharah": {
+            name: "Azura Saharah",
+            url: "https://www.furaffinity.net/user/azurasaharah/"
+        },
         "beao": {
             name: "Beao",
             url: "https://commons.wikimedia.org/wiki/User:Beao"
@@ -677,6 +717,10 @@ const attributionData = {
         "beherit": {
             name: "Beherit",
             url: "https://www.furaffinity.net/user/beherit/"
+        },
+        "bossvoss": {
+            name: "bossvoss",
+            url: "https://www.furaffinity.net/user/bossvoss/"
         },
         "brit-bork": {
             name: "Koijot",
@@ -758,6 +802,10 @@ const attributionData = {
             name: "Helisa",
             url: "https://www.furaffinity.net/user/HelisaAdopts"
         },
+        "hihikori": {
+            name: "HIHIKORI",
+            url: "https://www.furaffinity.net/user/hihikori"
+        },
         "jaro-the-dragon": {
             name: "Jaro",
             url: "https://www.furaffinity.net/user/jarothedragon/"
@@ -790,6 +838,10 @@ const attributionData = {
             name: "LoboRaptorLo",
             url: "https://www.furaffinity.net/user/loboraptorlo/"
         },
+        "lucha-libre-libro": {
+            name: "LuchaLibreLibro",
+            url: "https://www.furaffinity.net/user/luchalibrelibro/"
+        },
         "lynxsprout": {
             name: "Lynxsprout",
             url: "https://lynxsprout.carrd.co/"
@@ -814,6 +866,10 @@ const attributionData = {
             name: "Muzz",
             url: "https://www.furaffinity.net/user/muzz/"
         },
+        "odi-lunar": {
+            name: "Odi Lunar",
+            url: "https://twitter.com/odi_lunar/"
+        },
         "oselotti": {
             name: "Oselotti",
             url: "https://www.furaffinity.net/user/oselotti"
@@ -821,6 +877,10 @@ const attributionData = {
         "phil-bronnery": {
             name: "Phil Bronnery",
             url: "https://www.flickr.com/people/27919241@N02"
+        },
+        "pornkitsi": {
+            name: "Pornkitsi",
+            url: "https://www.furaffinity.net/user/pornkitsi/"
         },
         "princessrei": {
             name: "Princess Rei",
