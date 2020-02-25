@@ -551,6 +551,15 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/naturals/",
+            files: [
+                { name: "milky-way.svg", source: null }
+            ],
+            authors: [
+                "chemicalcrux"
+            ]
+        },
+        {
             prefix: "./media/objects/",
             files: [
                 { name: "nail-polish.svg", source: null },
