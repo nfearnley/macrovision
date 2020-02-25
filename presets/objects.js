@@ -121,11 +121,26 @@ function makeObjects() {
         constructor: () => makeObject(
             "Shot Glass",
             {
-                bottle: {
+                glass: {
                     height: math.unit(2 + 3/8, "inches"),
                     mass: math.unit(75, "g"),
                     image: { source: "./media/objects/shot-glass.svg" },
                     name: "Bottle"
+                }
+            }
+        )
+    });
+
+    results.push({
+        name: "Beer Bottle",
+        constructor: () => makeObject(
+            "Beer Bottle",
+            {
+                longneck: {
+                    height: math.unit(9, "inches"),
+                    mass: math.unit(200, "g"),
+                    image: { source: "./media/objects/beer-bottle.svg" },
+                    name: "Longneck Bottle"
                 }
             }
         )
