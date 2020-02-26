@@ -105,6 +105,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/amanda/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33462160/" }
+            ],
+            authors: [
+                "spunky"
+            ],
+            owners: [
+                "matty-the-mouse"
+            ]
+        },
+        {
             prefix: "./media/characters/andy/",
             files: [
                 { name: "front.svg", source: null }
@@ -941,6 +953,10 @@ const attributionData = {
             name: "Mallowchu",
             url: "https://www.furaffinity.net/user/mallowchu"
         },
+        "matty-the-mouse": {
+            name: "Matty the Mouse",
+            url: "https://www.furaffinity.net/user/mattythemouse/"
+        },
         "miateshcha": {
             name: "Miateshcha",
             url: "https://www.furaffinity.net/user/miateshcha/"
@@ -1020,6 +1036,10 @@ const attributionData = {
         "spaceweasel-2306": {
             name: "spaceweasel2306",
             url: "https://www.furaffinity.net/user/spaceweasel2306/"
+        },
+        "spunky": {
+            name: "Spunky",
+            url: "https://www.furaffinity.net/user/spunky"
         },
         "spyropurple": {
             name: "spyropurple",

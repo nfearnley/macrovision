@@ -5260,6 +5260,30 @@ characterMakers["Cobalt"] = () => {
     )
 };
 
+characterMakers["Amanda"] = () => {
+    return makeCharacter(
+        "Amanda",
+        "Amanda",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(140, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/amanda/front.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(5, "inches"),
+                default: true
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];
