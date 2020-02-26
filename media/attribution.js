@@ -289,6 +289,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/chiros/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33799727/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/33799727/" },
+            ],
+            authors: [
+                "kiguren"
+            ],
+            owners: [
+                "chiropica"
+            ]
+        },
+        {
             prefix: "./media/characters/cibus/",
             files: [
                 { name: "side.svg", source: "https://www.furaffinity.net/view/15534343/" }
@@ -1118,6 +1131,10 @@ const attributionData = {
             name: "Chesta",
             url: "https://www.furaffinity.net/user/chesta"
         },
+        "chiropica": {
+            name: "Chiropica",
+            url: "https://www.furaffinity.net/user/chiropica/"
+        },
         "citrinelle": {
             name: "Citrinelle",
             url: "https://twitter.com/Citrinelle"
@@ -1241,6 +1258,10 @@ const attributionData = {
         "kclt": {
             name: "KCLT",
             url: "https://www.furaffinity.net/user/kclt"
+        },
+        "kiguren": {
+            name: "Kiguren",
+            url: "https://www.furaffinity.net/user/kiguren"
         },
         "kononiko": {
             name: "Kononiko",

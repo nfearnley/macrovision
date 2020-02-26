@@ -5674,6 +5674,40 @@ characterMakers["Daniel"] = () => {
     )
 };
 
+characterMakers["Chiros"] = () => {
+    return makeCharacter(
+        "Chiros",
+        "Chiropica",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(88, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/chiros/front.svg",
+                    extra: 306/226
+                }
+            },
+            side: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(88, "lbs"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/chiros/side.svg",
+                    extra: 306/226
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6, "cm"),
+                default: true
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];
