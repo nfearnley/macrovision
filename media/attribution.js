@@ -737,6 +737,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/rook/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/29795775/" }
+            ],
+            authors: [
+                "kclt"
+            ],
+            owners: [
+                "rook"
+            ]
+        },
+        {
             prefix: "./media/characters/rose-lion/",
             files: [
                 { name: "front.svg", source: "https://twitter.com/MewMus" }
@@ -1329,6 +1341,10 @@ const attributionData = {
         "rogue": {
             name: "Rogue Megawolf",
             url: "https://twitter.com/roguemegawolf"
+        },
+        "rook": {
+            name: "Rook",
+            url: "https://twitter.com/rooktowers"
         },
         "roman-shamin": {
             name: "Roman Shamin",

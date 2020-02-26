@@ -5578,6 +5578,38 @@ characterMakers["Akane Sato"] = () => {
     )
 };
 
+characterMakers["Rook"] = () => {
+    return makeCharacter(
+        "Rook",
+        "Rook",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(65, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/rook/front.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(8.8, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(88, "feet"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(8, "miles")
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];
