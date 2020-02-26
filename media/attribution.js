@@ -315,6 +315,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/gene-zeta/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32624036/" },
+            ],
+            authors: [
+                "that-mutt-marie"
+            ],
+            owners: [
+                "xeebes"
+            ]
+        },
+        {
             prefix: "./media/characters/jaro/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/26084387/" },
@@ -984,6 +996,10 @@ const attributionData = {
             name: "Teaselbone",
             url: "https://www.furaffinity.net/user/teaselbone/"
         },
+        "that-mutt-marie": {
+            name: "Marie",
+            url: "https://www.furaffinity.net/user/thatmuttmarie"
+        },
         "twitch-the-dragon": {
             name: "Twitch",
             url: "https://www.furaffinity.net/user/twitchthedragon/"
@@ -999,6 +1015,10 @@ const attributionData = {
         "wonderball": {
             name: "Wonderball",
             url: "https://www.furaffinity.net/user/wonderball"
+        },
+        "xeebes": {
+            name: "Xeebes",
+            url: "https://www.furaffinity.net/user/xeebes/"
         },
         "yozey": {
             name: "Yozey",

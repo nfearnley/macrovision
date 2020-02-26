@@ -5152,6 +5152,32 @@ characterMakers["Valeska Voss"] = () => {
     )
 };
 
+characterMakers["Gene Zeta"] = () => {
+    return makeCharacter(
+        "Gene Zeta",
+        "Xeebes",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(160, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/gene-zeta/front.svg",
+                    bottom: 0.03,
+                    extra: 1 / (1 - 0.03)
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6.25, "foot"),
+                default: true
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];
