@@ -5067,6 +5067,50 @@ characterMakers["Mandake"] = () => {
     )
 };
 
+characterMakers["Yozey"] = () => {
+    return makeCharacter(
+        "Yozey",
+        "Yozey",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(120, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/yozey/front.svg"
+                }
+            },
+            frontAlt: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(120, "lbs"),
+                name: "Front (Alt)",
+                image: {
+                    source: "./media/characters/yozey/front-alt.svg"
+                }
+            },
+            side: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(120, "lbs"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/yozey/side.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(3, "inches"),
+                default: true
+            },
+            {
+                name: "Normal",
+                height: math.unit(6, "feet")
+            }
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

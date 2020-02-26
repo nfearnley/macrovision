@@ -602,6 +602,20 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/yozey/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/31547387/" },
+                { name: "front-alt.svg", source: "https://www.furaffinity.net/view/31547387/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/31547387/" },
+            ],
+            authors: [
+                "pocket-opossum"
+            ],
+            owners: [
+                "yozey"
+            ]
+        },
+        {
             prefix: "./media/characters/",
             files: [
                 { name: "", source: "" }
@@ -894,6 +908,10 @@ const attributionData = {
             name: "Phil Bronnery",
             url: "https://www.flickr.com/people/27919241@N02"
         },
+        "pocket-opossum": {
+            name: "Pocket Opossum",
+            url: "https://www.furaffinity.net/user/pocketopossum/"
+        },
         "pornkitsi": {
             name: "Pornkitsi",
             url: "https://www.furaffinity.net/user/pornkitsi/"
@@ -965,6 +983,10 @@ const attributionData = {
         "wonderball": {
             name: "Wonderball",
             url: "https://www.furaffinity.net/user/wonderball"
+        },
+        "yozey": {
+            name: "Yozey",
+            url: "https://www.furaffinity.net/user/yozey/"
         },
         "zyraxus": {
             name: "Zyraxus",
