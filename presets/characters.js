@@ -5024,6 +5024,49 @@ characterMakers["Odi Lunar"] = () => {
     )
 };
 
+characterMakers["Mandake"] = () => {
+    return makeCharacter(
+        "Mandake",
+        "Dialuca01",
+        {
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(220, "lbs"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/mandake/back.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(7, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(78, "feet")
+            },
+            {
+                name: "Macro+",
+                height: math.unit(300, "meters")
+            },
+            {
+                name: "Macro++",
+                height: math.unit(2400, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(5167, "meters")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(41769, "miles")
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

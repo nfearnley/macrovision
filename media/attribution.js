@@ -49,7 +49,7 @@ const attributionData = {
                 "oselotti"
             ],
             owners: [
-                "Dialuca01"
+                "dialuca"
             ]
         },
         {
@@ -389,6 +389,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/mandake/",
+            files: [
+                { name: "back.svg", source: " https://www.furaffinity.net/view/24771284/ " }
+            ],
+            authors: [
+                "blur-the-fur"
+            ],
+            owners: [
+                "dialuca"
+            ]
+        },
+        {
             prefix: "./media/characters/martin/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/30066999" }
@@ -718,6 +730,10 @@ const attributionData = {
             name: "Beherit",
             url: "https://www.furaffinity.net/user/beherit/"
         },
+        "blur-the-fur": {
+            name: "blur-the-fur",
+            url: "https://www.furaffinity.net/user/blurthefur/"
+        },
         "bossvoss": {
             name: "bossvoss",
             url: "https://www.furaffinity.net/user/bossvoss/"
@@ -754,7 +770,7 @@ const attributionData = {
             name: "Deathy",
             url: "https://www.furaffinity.net/user/d-eath-tail"
         },
-        "Dialuca01": {
+        "dialuca": {
             name: "Dialuca",
             url: "https://www.furaffinity.net/user/dialuca01"
         },
