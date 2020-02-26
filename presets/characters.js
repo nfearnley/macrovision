@@ -5610,6 +5610,38 @@ characterMakers["Rook"] = () => {
     )
 };
 
+characterMakers["Prodigy"] = () => {
+    return makeCharacter(
+        "Prodigy",
+        "Rook",
+        {
+            front: {
+                height: math.unit(12 + 2/12, "feet"),
+                weight: math.unit(808, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/prodigy/front.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(12 + 2/12, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(143, "feet")
+            },
+            {
+                name: "Macro+",
+                height: math.unit(400, "feet")
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

@@ -635,6 +635,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/prodigy/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/31192438/" }
+            ],
+            authors: [
+                "ty-rufus"
+            ],
+            owners: [
+                "vonadi"
+            ]
+        },
+        {
             prefix: "./media/characters/ranek/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/13716690/" },
@@ -1413,6 +1425,10 @@ const attributionData = {
         "twitch-the-dragon": {
             name: "Twitch",
             url: "https://www.furaffinity.net/user/twitchthedragon/"
+        },
+        "ty-rufus": {
+            name: "ty-rufus",
+            url: "https://www.furaffinity.net/user/ty-rufus"
         },
         "vector-wuff": {
             name: "Vector",
