@@ -602,6 +602,30 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/teal/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "i-am-an-eaglet"
+            ],
+            owners: [
+                "pilli10"
+            ]
+        },
+        {
+            prefix: "./media/characters/teal/",
+            files: [
+                { name: "front-alt.svg", source: null }
+            ],
+            authors: [
+                "ram-the-dragon"
+            ],
+            owners: [
+                "pilli10"
+            ]
+        },
+        {
             prefix: "./media/characters/tiberius/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/34977812/" },
@@ -901,6 +925,10 @@ const attributionData = {
             name: "HIHIKORI",
             url: "https://www.furaffinity.net/user/hihikori"
         },
+        "i-am-an-eaglet": {
+            name: "IAMANEAGLEt",
+            url: "https://www.furaffinity.net/user/iamaneaglet/"
+        },
         "jaro-the-dragon": {
             name: "Jaro",
             url: "https://www.furaffinity.net/user/jarothedragon/"
@@ -981,6 +1009,10 @@ const attributionData = {
             name: "Oselotti",
             url: "https://www.furaffinity.net/user/oselotti"
         },
+        "pilli10": {
+            name: "Teal",
+            url: "https://www.furaffinity.net/user/pilli10"
+        },
         "phil-bronnery": {
             name: "Phil Bronnery",
             url: "https://www.flickr.com/people/27919241@N02"
@@ -1000,6 +1032,10 @@ const attributionData = {
         "quake-yote": {
             name: "Quake Yote",
             url: "https://www.furaffinity.net/user/rokossovskiy"
+        },
+        "ram-the-dragon": {
+            name: "Ram the Dragon",
+            url: "https://www.furaffinity.net/user/ramthedragon"
         },
         "razinox": {
             name: "Razinox",

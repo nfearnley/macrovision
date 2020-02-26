@@ -5284,6 +5284,44 @@ characterMakers["Amanda"] = () => {
     )
 };
 
+characterMakers["Teal"] = () => {
+    return makeCharacter(
+        "Teal",
+        "Teal",
+        {
+            front: {
+                height: math.unit(5.59, "feet"),
+                weight: math.unit(250, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/teal/front.svg"
+                }
+            },
+            frontAlt: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(250, "lbs"),
+                name: "Front (Alt)",
+                image: {
+                    source: "./media/characters/teal/front-alt.svg",
+                    bottom: 0.04,
+                    extra: 1 / (1 - 0.04)
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(12, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(300, "feet")
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];
