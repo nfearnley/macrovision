@@ -524,6 +524,43 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/ranek/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/13716690/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/13716690/" }
+            ],
+            authors: [
+                "deets"
+            ],
+            owners: [
+                "ranek"
+            ]
+        },
+        {
+            prefix: "./media/characters/ranek/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/23396128/" }
+            ],
+            authors: [
+                "shuryashish"
+            ],
+            owners: [
+                "ranek"
+            ]
+        },
+        {
+            prefix: "./media/characters/ranek/",
+            files: [
+                { name: "feral.svg", source: "https://www.furaffinity.net/view/12974202/" }
+            ],
+            authors: [
+                "meershroom"
+            ],
+            owners: [
+                "ranek"
+            ]
+        },
+        {
             prefix: "./media/characters/ravin-amulet/",
             files: [
                 { name: "front-cat.svg", source: null },
@@ -913,6 +950,10 @@ const attributionData = {
             name: "Deathy",
             url: "https://www.furaffinity.net/user/d-eath-tail"
         },
+        "deets": {
+            name: "Deets",
+            url: "https://www.furaffinity.net/user/deets"
+        },
         "dialuca": {
             name: "Dialuca",
             url: "https://www.furaffinity.net/user/dialuca01"
@@ -1033,6 +1074,10 @@ const attributionData = {
             name: "Matty the Mouse",
             url: "https://www.furaffinity.net/user/mattythemouse/"
         },
+        "meershroom": {
+            name: "Meershroom",
+            url: "https://www.furaffinity.net/user/meershroom"
+        },
         "miateshcha": {
             name: "Miateshcha",
             url: "https://www.furaffinity.net/user/miateshcha/"
@@ -1085,6 +1130,10 @@ const attributionData = {
             name: "Ram the Dragon",
             url: "https://www.furaffinity.net/user/ramthedragon"
         },
+        "ranek": {
+            name: "Ranek",
+            url: "https://www.furaffinity.net/user/ranek"
+        },
         "ravin-amulet": {
             name: "Ravin Amulet",
             url: "https://www.furaffinity.net/user/ravinamulet/"
@@ -1108,6 +1157,10 @@ const attributionData = {
         "scareye": {
             name: "Scareye",
             url: "https://www.furaffinity.net/user/scareye/"
+        },
+        "shuryashish": {
+            name: "Shuryashish",
+            url: "https://www.furaffinity.net/user/shuryashish"
         },
         "silverwingink": {
             name: "silverwingink",

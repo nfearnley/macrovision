@@ -5450,6 +5450,58 @@ characterMakers["Aurora"] = () => {
     )
 };
 
+characterMakers["Ranek"] = () => {
+    return makeCharacter(
+        "Ranek",
+        "Ranek",
+        {
+            front: {
+                height: math.unit(194, "cm"),
+                weight: math.unit(90, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/ranek/front.svg"
+                }
+            },
+            side: {
+                height: math.unit(194, "cm"),
+                weight: math.unit(90, "kg"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/ranek/side.svg"
+                }
+            },
+            back: {
+                height: math.unit(194, "cm"),
+                weight: math.unit(90, "kg"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/ranek/back.svg"
+                }
+            },
+            feral: {
+                height: math.unit(30, "cm"),
+                weight: math.unit(1.6, "lbs"),
+                name: "Feral",
+                image: {
+                    source: "./media/characters/ranek/feral.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(194, "cm"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(100, "meters")
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];
