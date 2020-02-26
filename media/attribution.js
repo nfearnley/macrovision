@@ -252,6 +252,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/cobalt/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34983155/" }
+            ],
+            authors: [
+                "spaceweasel-2306"
+            ],
+            owners: [
+                "miateshcha"
+            ]
+        },
+        {
             prefix: "./media/characters/dannik/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/21578353/" }
@@ -929,6 +941,10 @@ const attributionData = {
             name: "Mallowchu",
             url: "https://www.furaffinity.net/user/mallowchu"
         },
+        "miateshcha": {
+            name: "Miateshcha",
+            url: "https://www.furaffinity.net/user/miateshcha/"
+        },
         "mizumisensei": {
             name: "Mizumisensei",
             url: "https://twitter.com/mizumisensei"
@@ -1000,6 +1016,10 @@ const attributionData = {
         "solaxee": {
             name: "Sol",
             url: "https://twitter.com/Solaxee"
+        },
+        "spaceweasel-2306": {
+            name: "spaceweasel2306",
+            url: "https://www.furaffinity.net/user/spaceweasel2306/"
         },
         "spyropurple": {
             name: "spyropurple",

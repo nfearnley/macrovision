@@ -5228,6 +5228,38 @@ characterMakers["Razinox"] = () => {
     )
 };
 
+characterMakers["Cobalt"] = () => {
+    return makeCharacter(
+        "Cobalt",
+        "Miateshcha",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/cobalt/front.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(8 + 1/12, "foot")
+            },
+            {
+                name: "Macro",
+                height: math.unit(111, "foot"),
+                default: true
+            },
+            {
+                name: "Supracosmic",
+                height: math.unit(1e42, "feet")
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

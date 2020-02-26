@@ -55,7 +55,7 @@ function makeSlice(min, max) {
     return () => {
         const characters = availableEntities["characters"].filter(x => {
             const entity = x.constructor();
-            return math.compare(entity.views[entity.view].height, min) == 1 && math.compare(entity.views[entity.view].height, max) == -1
+            return math.compare(entity.views[entity.view].height, min) == 1 && math.compare(entity.views[entity.view].height, max) != 1
         });
     
         characters.forEach(character => {
@@ -69,11 +69,12 @@ function makeSlice(min, max) {
 }
 
 scenes["x < 10m"] = makeSlice(math.unit(0, "meters"), math.unit(10, "meters"));
-scenes["10m < x < 100m"] = makeSlice(math.unit(10, "meters"), math.unit(100, "meters"));
-scenes["100m < x < 1km"] = makeSlice(math.unit(100, "meters"), math.unit(1000, "meters"));
-scenes["1km < x < 10km"] = makeSlice(math.unit(1000, "meters"), math.unit(10000, "meters"));
-scenes["10km < x < 100km"] = makeSlice(math.unit(10000, "meters"), math.unit(100000, "meters"));
-scenes["100km < x < 1000km"] = makeSlice(math.unit(100000, "meters"), math.unit(1000000, "meters"));
+scenes["10m < x <= 100m"] = makeSlice(math.unit(10, "meters"), math.unit(100, "meters"));
+scenes["100m < x <= 1km"] = makeSlice(math.unit(100, "meters"), math.unit(1000, "meters"));
+scenes["1km < x <= 10km"] = makeSlice(math.unit(1000, "meters"), math.unit(10000, "meters"));
+scenes["10km < x <= 100km"] = makeSlice(math.unit(10000, "meters"), math.unit(100000, "meters"));
+scenes["100km < x <= 1000km"] = makeSlice(math.unit(100000, "meters"), math.unit(1000000, "meters"));
+scenes["Everyone"] = makeSlice(math.unit(0.000000000000000001, "meters"), math.unit(1000000e100, "meters"));
 
 scenes["Kurri"] = () => {
     availableEntities["characters"].filter(x => {
