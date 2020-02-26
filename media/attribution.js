@@ -326,6 +326,30 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/fen/",
+            files: [
+                { name: "back.svg", source: "https://www.furaffinity.net/view/13680521/" }
+            ],
+            authors: [
+                "deerpuff",
+            ],
+            owners: [
+                "chemicalcrux"
+            ]
+        },
+        {
+            prefix: "./media/characters/fen/",
+            files: [
+                { name: "full.svg", source: "https://www.furaffinity.net/view/34622252/" }
+            ],
+            authors: [
+                "meep",
+            ],
+            owners: [
+                "chemicalcrux"
+            ]
+        },
+        {
             prefix: "./media/characters/fluoresce/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/25601125/" }
@@ -452,13 +476,50 @@ const attributionData = {
         {
             prefix: "./media/characters/mandake/",
             files: [
-                { name: "back.svg", source: " https://www.furaffinity.net/view/24771284/ " }
+                { name: "back.svg", source: "https://www.furaffinity.net/view/24771284/" }
             ],
             authors: [
                 "blur-the-fur"
             ],
             owners: [
                 "dialuca"
+            ]
+        },
+        {
+            prefix: "./media/characters/manny/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/16786820/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/16786820/" },
+            ],
+            authors: [
+                "sixsydes"
+            ],
+            owners: [
+                "dialuca"
+            ]
+        },
+        {
+            prefix: "./media/characters/march/",
+            files: [
+                { name: "front.svg", source: "https://www.deviantart.com/natsuakai/art/Comm-Big-Guy-558510348" }
+            ],
+            authors: [
+                "natsuakai"
+            ],
+            owners: [
+                "march-dragon"
+            ]
+        },
+        {
+            prefix: "./media/characters/march/",
+            files: [
+                { name: "foot.svg", source: null }
+            ],
+            authors: [
+                "watchout-4-dragon"
+            ],
+            owners: [
+                "march-dragon"
             ]
         },
         {
@@ -487,6 +548,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/noir/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/28167943/" }
+            ],
+            authors: [
+                "kclt"
+            ],
+            owners: [
+                "march-dragon"
+            ]
+        },
+        {
             prefix: "./media/characters/odi-lunar/",
             files: [
                 { name: "front.svg", source: "https://twitter.com/odi_lunar/status/1230878530612817921?s=21" }
@@ -496,6 +569,19 @@ const attributionData = {
             ],
             owners: [
                 "odi-lunar"
+            ]
+        },
+        {
+            prefix: "./media/characters/okuri/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34619004/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/34619004/" },
+            ],
+            authors: [
+                "citrinelle"
+            ],
+            owners: [
+                "okuri"
             ]
         },
         {
@@ -661,6 +747,31 @@ const attributionData = {
             ],
             owners: [
                 "little-big-x110"
+            ]
+        },
+        {
+            prefix: "./media/characters/sofia/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/11711111/" }
+            ],
+            authors: [
+                "suicidal-muffins"
+            ],
+            owners: [
+                "sofia"
+            ]
+        },
+        {
+            prefix: "./media/characters/sofia/",
+            files: [
+                { name: "front-alt.svg", source: "https://www.furaffinity.net/view/16704878/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/16704878/" }
+            ],
+            authors: [
+                "fauxlacine"
+            ],
+            owners: [
+                "sofia"
             ]
         },
         {
@@ -930,6 +1041,10 @@ const attributionData = {
             name: "Chesta",
             url: "https://www.furaffinity.net/user/chesta"
         },
+        "citrinelle": {
+            name: "Citrinelle",
+            url: "https://twitter.com/Citrinelle"
+        },
         "clown-grin": {
             name: "clown-grin",
             url: "https://www.furaffinity.net/user/clown-grin"
@@ -949,6 +1064,10 @@ const attributionData = {
         "d-eath-tail": {
             name: "Deathy",
             url: "https://www.furaffinity.net/user/d-eath-tail"
+        },
+        "deerpuff": {
+            name: "Deerpuff",
+            url: "http://furaffinity.net/user/deerpuff"
         },
         "deets": {
             name: "Deets",
@@ -973,6 +1092,10 @@ const attributionData = {
         "ethan64": {
             name: "Ethan64",
             url: "https://www.furaffinity.net/user/ethan64/"
+        },
+        "fauxlacine": {
+            name: "Fauxlacine",
+            url: "https://www.furaffinity.net/user/fauxlacine"
         },
         "flyhar": {
             name: "Flyhar",
@@ -1026,6 +1149,10 @@ const attributionData = {
             name: "just-a-little-mixed-up",
             url: "https://www.furaffinity.net/user/just-a-little-mixed-up"
         },
+        "kclt": {
+            name: "KCLT",
+            url: "https://www.furaffinity.net/user/kclt"
+        },
         "kerneldecoy": {
             name: "Kernel Decoy",
             url: "https://www.furaffinity.net/user/kerneldecoy/"
@@ -1070,9 +1197,17 @@ const attributionData = {
             name: "Mallowchu",
             url: "https://www.furaffinity.net/user/mallowchu"
         },
+        "march-dragon": {
+            name: "March",
+            url: "https://www.furaffinity.net/user/march-dragon/"
+        },
         "matty-the-mouse": {
             name: "Matty the Mouse",
             url: "https://www.furaffinity.net/user/mattythemouse/"
+        },
+        "meep": {
+            name: "Meep",
+            url: "http://furaffinity.net/user/meep"
         },
         "meershroom": {
             name: "Meershroom",
@@ -1094,9 +1229,17 @@ const attributionData = {
             name: "Muzz",
             url: "https://www.furaffinity.net/user/muzz/"
         },
+        "natsuakai": {
+            name: "Natsuakai",
+            url: "https://www.deviantart.com/natsuakai"
+        },
         "odi-lunar": {
             name: "Odi Lunar",
             url: "https://twitter.com/odi_lunar/"
+        },
+        "okuri": {
+            name: "Okuri",
+            url: "https://www.furaffinity.net/user/orionmechadragon/"
         },
         "oselotti": {
             name: "Oselotti",
@@ -1170,6 +1313,10 @@ const attributionData = {
             name: "sixsydes",
             url: "https://www.furaffinity.net/user/sixsydes/"
         },
+        "sofia": {
+            name: "Sofia",
+            url: "https://www.furaffinity.net/user/sofia.exe/"
+        },
         "solaxee": {
             name: "Sol",
             url: "https://twitter.com/Solaxee"
@@ -1193,6 +1340,10 @@ const attributionData = {
         "sugarbeans": {
             name: "sugarbeans",
             url: "https://www.furaffinity.net/user/sugarbeans/"
+        },
+        "suicidal-muffins": {
+            name: "Sucidial Muffins",
+            url: "https://www.furaffinity.net/user/suicidalmuffins/"
         },
         "sunkaro": {
             name: "Sunkaro",
@@ -1221,6 +1372,10 @@ const attributionData = {
         "vonadi": {
             name: "Vonadi",
             url: "https://www.furaffinity.net/user/vonadi/"
+        },
+        "watchout-4-dragon": {
+            name: "Watchout4dragon",
+            url: "https://twitter.com/watchout4dragon"
         },
         "wolfina-2007": {
             name: "Wolfina 2007",
