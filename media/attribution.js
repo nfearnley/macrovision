@@ -836,6 +836,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/selka/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/30722350/" }
+            ],
+            authors: [
+                "xelchew"
+            ],
+            owners: [
+                "xelchew"
+            ]
+        },
+        {
             prefix: "./media/characters/sofia/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/11711111/" }
@@ -1518,6 +1530,10 @@ const attributionData = {
         "xeebes": {
             name: "Xeebes",
             url: "https://www.furaffinity.net/user/xeebes/"
+        },
+        "xelchew": {
+            name: "Xelchew",
+            url: "https://www.furaffinity.net/user/xelchew/"
         },
         "yozey": {
             name: "Yozey",

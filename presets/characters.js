@@ -5708,6 +5708,31 @@ characterMakers["Chiros"] = () => {
     )
 };
 
+characterMakers["Selka"] = () => {
+    return makeCharacter(
+        "Selka",
+        "Xelchew",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(100, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/selka/front.svg",
+                    extra: 947/887
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5, "cm"),
+                default: true
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];
