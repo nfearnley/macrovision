@@ -5111,6 +5111,42 @@ characterMakers["Yozey"] = () => {
     )
 };
 
+characterMakers["Valeska Voss"] = () => {
+    return makeCharacter(
+        "Valeska Voss",
+        "BossVoss",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(103, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/valeska-voss/front.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Mini-Sized Sub",
+                height: math.unit(3.1, "inches")
+            },
+            {
+                name: "Mid-Sized Sub",
+                height: math.unit(6.2, "inches")
+            },
+            {
+                name: "Full-Sized Sub",
+                height: math.unit(9.3, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(5 + 2/12, "foot"),
+                default: true
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

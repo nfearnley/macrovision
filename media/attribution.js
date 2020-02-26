@@ -566,6 +566,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/valeska-voss/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/28522387/" }
+            ],
+            authors: [
+                "combat-raccoon"
+            ],
+            owners: [
+                "bossvoss"
+            ]
+        },
+        {
             prefix: "./media/characters/vector-wuff/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/16031607" }
@@ -771,6 +783,10 @@ const attributionData = {
         "clown-grin": {
             name: "clown-grin",
             url: "https://www.furaffinity.net/user/clown-grin"
+        },
+        "combat-raccoon": {
+            name: "CombatRaccoon",
+            url: "https://www.furaffinity.net/user/combatraccoon/"
         },
         "cougr": {
             name: "Cougr",
