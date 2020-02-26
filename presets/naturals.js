@@ -69,7 +69,8 @@ function makeMountains() {
         views[mountain[0]] = {
             height: math.unit(mountain[1], "feet"),
             image: { source: "./media/naturals/mountain.svg" },
-            name: mountain[0]
+            name: mountain[0],
+            rename: true
         }
     });
     return {
