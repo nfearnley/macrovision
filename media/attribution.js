@@ -200,6 +200,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/aurora/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/31191812/" }
+            ],
+            authors: [
+                "sunkaro"
+            ],
+            owners: [
+                "vonadi"
+            ]
+        },
+        {
             prefix: "./media/characters/azura-saharah/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/29494552/" },
@@ -1129,6 +1141,10 @@ const attributionData = {
             name: "sugarbeans",
             url: "https://www.furaffinity.net/user/sugarbeans/"
         },
+        "sunkaro": {
+            name: "Sunkaro",
+            url: "https://www.deviantart.com/sunkaro"
+        },
         "teaselbone": {
             name: "Teaselbone",
             url: "https://www.furaffinity.net/user/teaselbone/"
@@ -1148,6 +1164,10 @@ const attributionData = {
         "vemus": {
             name: "vemus",
             url: "https://www.furaffinity.net/user/vemus"
+        },
+        "vonadi": {
+            name: "Vonadi",
+            url: "https://www.furaffinity.net/user/vonadi/"
         },
         "wolfina-2007": {
             name: "Wolfina 2007",

@@ -5418,6 +5418,38 @@ characterMakers["Fluoresce"] = () => {
     )
 };
 
+characterMakers["Aurora"] = () => {
+    return makeCharacter(
+        "Aurora",
+        "Vonadi",
+        {
+            front: {
+                height: math.unit(9 + 6/12, "feet"),
+                weight: math.unit(523, "lbs"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/aurora/side.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(9 + 6/12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(96, "feet"),
+                default: true
+            },
+            {
+                name: "Macro+",
+                height: math.unit(243, "feet")
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];
