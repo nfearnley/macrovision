@@ -1714,7 +1714,8 @@ characterMakers["Kalista"] = () => {
                 weight: math.unit(50, "kg"),
                 name: "Front",
                 image: {
-                    source: "./media/characters/kalista/front.svg"
+                    source: "./media/characters/kalista/front.svg",
+                    extra: 1947/1700
                 }
             },
             back: {
@@ -1722,7 +1723,8 @@ characterMakers["Kalista"] = () => {
                 weight: math.unit(50, "kg"),
                 name: "Back",
                 image: {
-                    source: "./media/characters/kalista/back.svg"
+                    source: "./media/characters/kalista/back.svg",
+                    extra: 1366/1156
                 }
             }
         },
@@ -5571,7 +5573,7 @@ characterMakers["Akane Sato"] = () => {
             {
                 name: "Megamacro",
                 height: math.unit(25, "km")
-            }
+            },
         ]
     )
 };
