@@ -5322,6 +5322,66 @@ characterMakers["Teal"] = () => {
     )
 };
 
+characterMakers["Ravin Amulet"] = () => {
+    return makeCharacter(
+        "Ravin Amulet",
+        "Ravin Amulet",
+        {
+            frontCat: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(180, "lbs"),
+                name: "Front (Cat)",
+                image: {
+                    source: "./media/characters/ravin-amulet/front-cat.svg"
+                }
+            },
+            frontCatAlt: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(180, "lbs"),
+                name: "Front (Alt, Cat)",
+                image: {
+                    source: "./media/characters/ravin-amulet/front-cat-alt.svg"
+                }
+            },
+            frontWerewolf: {
+                height: math.unit(6*1.2, "feet"),
+                weight: math.unit(225, "lbs"),
+                name: "Front (Werewolf)",
+                image: {
+                    source: "./media/characters/ravin-amulet/front-werewolf.svg"
+                }
+            },
+            backWerewolf: {
+                height: math.unit(6*1.2, "feet"),
+                weight: math.unit(225, "lbs"),
+                name: "Back (Werewolf)",
+                image: {
+                    source: "./media/characters/ravin-amulet/back-werewolf.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Nano",
+                height: math.unit(1, "micrometer")
+            },
+            {
+                name: "Micro",
+                height: math.unit(1, "inch")
+            },
+            {
+                name: "Normal",
+                height: math.unit(6, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(60, "feet")
+            }
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

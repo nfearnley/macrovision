@@ -499,6 +499,21 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/ravin-amulet/",
+            files: [
+                { name: "front-cat.svg", source: null },
+                { name: "front-cat-alt.svg", source: null },
+                { name: "front-werewolf.svg", source: null },
+                { name: "back-werewolf.svg", source: null },
+            ],
+            authors: [
+                "levi-ann-porter"
+            ],
+            owners: [
+                "ravin-amulet"
+            ]
+        },
+        {
             prefix: "./media/characters/razinox/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/33242997/" },
@@ -929,6 +944,10 @@ const attributionData = {
             name: "IAMANEAGLEt",
             url: "https://www.furaffinity.net/user/iamaneaglet/"
         },
+        "jackalope": {
+            name: "jackalope",
+            url: "https://www.furaffinity.net/user/jackalope"
+        },
         "jaro-the-dragon": {
             name: "Jaro",
             url: "https://www.furaffinity.net/user/jarothedragon/"
@@ -956,6 +975,10 @@ const attributionData = {
         "lerchief2007": {
             name: "lerchief2007",
             url: "https://www.furaffinity.net/user/lerchief2007"
+        },
+        "levi-ann-porter": {
+            name: "Levi Ann Porter",
+            url: "https://twitter.com/LeviAnnPorter"
         },
         "little-big-x110": {
             name: "LittleBig",
@@ -1037,6 +1060,10 @@ const attributionData = {
             name: "Ram the Dragon",
             url: "https://www.furaffinity.net/user/ramthedragon"
         },
+        "ravin-amulet": {
+            name: "Ravin Amulet",
+            url: "https://www.furaffinity.net/user/ravinamulet/"
+        },
         "razinox": {
             name: "Razinox",
             url: "https://www.furaffinity.net/user/razinox"
@@ -1108,6 +1135,10 @@ const attributionData = {
         "vemus": {
             name: "vemus",
             url: "https://www.furaffinity.net/user/vemus"
+        },
+        "wolfina-2007": {
+            name: "Wolfina 2007",
+            url: "https://www.furaffinity.net/user/wolfina2007"
         },
         "wonderball": {
             name: "Wonderball",
