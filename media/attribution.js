@@ -313,6 +313,30 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/daniel/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/11786572/" }
+            ],
+            authors: [
+                "nommz"
+            ],
+            owners: [
+                "galactor"
+            ]
+        },
+        {
+            prefix: "./media/characters/daniel/",
+            files: [
+                { name: "leaning.svg", source: "https://www.furaffinity.net/view/13426205/" }
+            ],
+            authors: [
+                "kononiko"
+            ],
+            owners: [
+                "galactor"
+            ]
+        },
+        {
             prefix: "./media/characters/dannik/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/21578353/" }
@@ -1170,6 +1194,10 @@ const attributionData = {
             name: "Gaily",
             url: "https://www.furaffinity.net/user/gaily/"
         },
+        "galactor": {
+            name: "Galactor",
+            url: "https://www.furaffinity.net/user/galactor/"
+        },
         "gear-senpai": {
             name: "gear-senpai",
             url: "https://www.furaffinity.net/user/gear-senpai"
@@ -1213,6 +1241,10 @@ const attributionData = {
         "kclt": {
             name: "KCLT",
             url: "https://www.furaffinity.net/user/kclt"
+        },
+        "kononiko": {
+            name: "Kononiko",
+            url: "https://www.furaffinity.net/user/konokono"
         },
         "kerneldecoy": {
             name: "Kernel Decoy",
@@ -1293,6 +1325,10 @@ const attributionData = {
         "natsuakai": {
             name: "Natsuakai",
             url: "https://www.deviantart.com/natsuakai"
+        },
+        "nommz": {
+            name: "Nommz",
+            url: "https://www.furaffinity.net/user/nommz"
         },
         "odi-lunar": {
             name: "Odi Lunar",

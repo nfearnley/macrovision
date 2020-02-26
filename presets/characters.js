@@ -5642,6 +5642,38 @@ characterMakers["Prodigy"] = () => {
     )
 };
 
+characterMakers["Daniel"] = () => {
+    return makeCharacter(
+        "Daniel",
+        "Galactor",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(225, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/daniel/front.svg"
+                }
+            },
+            leaning: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(225, "lbs"),
+                name: "Leaning",
+                image: {
+                    source: "./media/characters/daniel/leaning.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(1000, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];
