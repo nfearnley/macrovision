@@ -362,3 +362,15 @@ body.toggle-bottom-name .bottom-name {
 a { 
     color: #999;
 }
+
+#options-attribution-authors {
+    text-align: center;
+}
+
+#options-attribution-owners {
+    text-align: center;
+}
+
+#options-attribution-source {
+    text-align: center;
+}

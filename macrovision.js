@@ -698,9 +698,15 @@ function displayAttribution(file) {
     const sourceHolder = document.querySelector("#options-attribution-source");
 
     if (authors === []) {
-        authorHolder.innerText = "Unknown";
+        const div = document.createElement("div");
+        div.innerText = "Unknown";
+        authorHolder.innerHTML = "";
+        authorHolder.appendChild(div);
     } else if (authors === undefined) {
-        authorHolder.innerText = "Not yet entered";
+        const div = document.createElement("div");
+        div.innerText = "Not yet entered";
+        authorHolder.innerHTML = "";
+        authorHolder.appendChild(div);
     } else {
         authorHolder.innerHTML = "";
 
@@ -718,9 +724,15 @@ function displayAttribution(file) {
     }
 
     if (owners === []) {
-        ownerHolder.innerText = "Unknown";
+        const div = document.createElement("div");
+        div.innerText = "Unknown";
+        ownerHolder.innerHTML = "";
+        ownerHolder.appendChild(div);
     } else if (owners === undefined) {
-        ownerHolder.innerText = "Not yet entered";
+        const div = document.createElement("div");
+        div.innerText = "Not yet entered";
+        ownerHolder.innerHTML = "";
+        ownerHolder.appendChild(div);
     } else {
         ownerHolder.innerHTML = "";
 
@@ -738,12 +750,19 @@ function displayAttribution(file) {
     }
 
     if (source === null) {
-        sourceHolder.innerText = "No Link"
+        const div = document.createElement("div");
+        div.innerText = "No link";
+        sourceHolder.innerHTML = "";
+        sourceHolder.appendChild(div);
     } else if (source === undefined) {
-        sourceHolder.innerText = "Not yet entered";
+        const div = document.createElement("div");
+        div.innerText = "Not yet entered";
+        sourceHolder.innerHTML = "";
+        sourceHolder.appendChild(div);
     } else {
         sourceHolder.innerHTML = "";
         const link = document.createElement("a");
+        link.style.display = "block";
         link.href = source;
         link.innerText = new URL(source).host;
         sourceHolder.appendChild(link);
