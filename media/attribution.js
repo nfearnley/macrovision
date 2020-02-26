@@ -961,6 +961,32 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/verin/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/31191465/" },
+                { name: "front-armor.svg", source: "https://www.furaffinity.net/view/31191465/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/31191465/" }
+            ],
+            authors: [
+                "theme-finland"
+            ],
+            owners: [
+                "vonadi"
+            ]
+        },
+        {
+            prefix: "./media/characters/verin/",
+            files: [
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/31191781/" }
+            ],
+            authors: [
+                "fandroit"
+            ],
+            owners: [
+                "vonadi"
+            ]
+        },
+        {
             prefix: "./media/characters/wyvrn-ripsnarl/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/15418876/" }
@@ -1202,6 +1228,10 @@ const attributionData = {
         "ethan64": {
             name: "Ethan64",
             url: "https://www.furaffinity.net/user/ethan64/"
+        },
+        "fandroit": {
+            name: "fandroit",
+            url: "https://www.furaffinity.net/user/fandroit"
         },
         "fauxlacine": {
             name: "Fauxlacine",
@@ -1494,6 +1524,10 @@ const attributionData = {
         "that-mutt-marie": {
             name: "Marie",
             url: "https://www.furaffinity.net/user/thatmuttmarie"
+        },
+        "theme-finland": {
+            name: "ThemeFinland",
+            url: "https://www.deviantart.com/themefinland"  
         },
         "twitch-the-dragon": {
             name: "Twitch",

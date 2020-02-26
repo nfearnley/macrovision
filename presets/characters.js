@@ -5733,6 +5733,66 @@ characterMakers["Selka"] = () => {
     )
 };
 
+characterMakers["Verin"] = () => {
+    return makeCharacter(
+        "Verin",
+        "Vonadi",
+        {
+            front: {
+                height: math.unit(8 + 3/12, "feet"),
+                weight: math.unit(424, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/verin/front.svg",
+                    extra: 1845/1550
+                }
+            },
+            frontArmored: {
+                height: math.unit(8 + 3/12, "feet"),
+                weight: math.unit(424, "lbs"),
+                name: "Front (Armored)",
+                image: {
+                    source: "./media/characters/verin/front-armor.svg",
+                    extra: 1845/1550 * (1 / (1 - 0.01)),
+                    bottom: 0.01
+                }
+            },
+            back: {
+                height: math.unit(8 + 3/12, "feet"),
+                weight: math.unit(424, "lbs"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/verin/back.svg",
+                    bottom: 0.1,
+                    extra: 1 / (1 - 0.1)
+                }
+            },
+            foot: {
+                height: math.unit((8 + 3/12) / 4.7, "feet"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/verin/foot.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(8 + 3/12, "feet")
+            },
+            {
+                name: "Minimacro",
+                height: math.unit(21, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(626, "feet")
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];
