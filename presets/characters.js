@@ -5502,6 +5502,38 @@ characterMakers["Ranek"] = () => {
     )
 };
 
+characterMakers["Andrew Cooper"] = () => {
+    return makeCharacter(
+        "Andrew Cooper",
+        "Vonadi",
+        {
+            front: {
+                height: math.unit(5 + 6/12, "feet"),
+                weight: math.unit(153, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/andrew-cooper/front.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Nano",
+                height: math.unit(1, "mm")
+            },
+            {
+                name: "Micro",
+                height: math.unit(2, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(194, "cm"),
+                default: true
+            }
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

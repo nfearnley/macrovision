@@ -117,6 +117,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/andrew-cooper/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/31191986/" }
+            ],
+            authors: [
+                "gear-senpai"
+            ],
+            owners: [
+                "vonadi"
+            ]
+        },
+        {
             prefix: "./media/characters/andy/",
             files: [
                 { name: "front.svg", source: null }
@@ -1112,6 +1124,10 @@ const attributionData = {
         "gaily": {
             name: "Gaily",
             url: "https://www.furaffinity.net/user/gaily/"
+        },
+        "gear-senpai": {
+            name: "gear-senpai",
+            url: "https://www.furaffinity.net/user/gear-senpai"
         },
         "geminimacro": {
             name: "geminimacro",
