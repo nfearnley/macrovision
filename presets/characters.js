@@ -5534,6 +5534,48 @@ characterMakers["Andrew Cooper"] = () => {
     )
 };
 
+characterMakers["Akane Sato"] = () => {
+    return makeCharacter(
+        "Akane Sato",
+        "Vonadi",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(180, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/akane-sato/front.svg",
+                    extra: 1219/1140
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(180, "lbs"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/akane-sato/back.svg",
+                    extra: 1219/1170
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(2.5, "meters")
+            },
+            {
+                name: "Macro",
+                height: math.unit(250, "meters"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(25, "km")
+            }
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

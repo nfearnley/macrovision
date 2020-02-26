@@ -65,6 +65,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/akane-sato/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/AkaneSato99/status/1191178914971951104" },
+                { name: "back.svg", source: "https://twitter.com/AkaneSato99/status/1191178914971951104" },
+            ],
+            authors: [
+                "collin-scorpio"
+            ],
+            owners: [
+                "akane-sato-99"
+            ]
+        },
+        {
             prefix: "./media/characters/akari/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/21329356/" }
@@ -997,6 +1010,10 @@ const attributionData = {
         },
     ],
     people: {
+        "akane-sato-99": {
+            name: "Akane Sato",
+            url: "https://twitter.com/AkaneSato99"
+        },
         "alexander-madyankin": {
             name: "Alexander Madyankin",
             url: "https://madyankin.name/"
@@ -1060,6 +1077,10 @@ const attributionData = {
         "clown-grin": {
             name: "clown-grin",
             url: "https://www.furaffinity.net/user/clown-grin"
+        },
+        "collin-scorpio": {
+            name: "CollinScorpio",
+            url: "https://www.furaffinity.net/user/collinscorpio/"
         },
         "combat-raccoon": {
             name: "CombatRaccoon",
