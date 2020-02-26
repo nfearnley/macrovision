@@ -5018,7 +5018,12 @@ characterMakers["Odi Lunar"] = () => {
         [
             {
                 name: "Micro",
-                height: math.unit(3, "inches")
+                height: math.unit(3, "inches"),
+                default: true
+            },
+            {
+                name: "Normal",
+                height: math.unit(5.5, "feet")
             }
         ]
     )
