@@ -936,12 +936,12 @@ const attributionData = {
             ]
         },
         {
-            prefix: "./media/characters/wyvern-ripsnarl/",
+            prefix: "./media/characters/wyvrn-ripsnarl/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/15418876/" }
             ],
             authors: [
-                "teaselbone"
+                "ryukak"
             ],
             owners: [
                 "lobo-raptor-lo"
@@ -1397,6 +1397,10 @@ const attributionData = {
         "roman-shamin": {
             name: "Roman Shamin",
             url: "https://twitter.com/romanshamin"
+        },
+        "ryukak": {
+            name: "ryukak",
+            url: "https://www.furaffinity.net/user/ryukak"
         },
         "scareye": {
             name: "Scareye",

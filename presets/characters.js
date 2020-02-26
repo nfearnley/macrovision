@@ -4625,9 +4625,9 @@ characterMakers["Dr. Clay"] = () => {
     )
 };
 
-characterMakers["Wyvern Ripsnarl"] = () => {
+characterMakers["Wyvrn Ripsnarl"] = () => {
     return makeCharacter(
-        "Wyvern Ripsnarl",
+        "Wyvrn Ripsnarl",
         "LoboRaptorLo",
         {
             front: {
@@ -4635,7 +4635,7 @@ characterMakers["Wyvern Ripsnarl"] = () => {
                 weight: math.unit(80, "kg"),
                 name: "Front",
                 image: {
-                    source: "./media/characters/wyvern-ripsnarl/front.svg"
+                    source: "./media/characters/wyvrn-ripsnarl/front.svg"
                 }
             }
         },
