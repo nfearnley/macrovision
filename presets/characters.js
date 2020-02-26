@@ -5382,6 +5382,42 @@ characterMakers["Ravin Amulet"] = () => {
     )
 };
 
+characterMakers["Fluoresce"] = () => {
+    return makeCharacter(
+        "Fluoresce",
+        "Ravin Amulet",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(165, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/fluoresce/front.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(6, "cm")
+            },
+            {
+                name: "Normal",
+                height: math.unit(5 + 7/12, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(56, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(1.9, "miles")
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

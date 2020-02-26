@@ -314,6 +314,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/fluoresce/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/25601125/" }
+            ],
+            authors: [
+                "jackalope",
+                "wolfina-2007"
+            ],
+            owners: [
+                "ravin-amulet"
+            ]
+        },
+        {
             prefix: "./media/characters/gemini/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/31363584/" },
