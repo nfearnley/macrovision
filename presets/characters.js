@@ -5529,7 +5529,7 @@ characterMakers["Andrew Cooper"] = () => {
             },
             {
                 name: "Normal",
-                height: math.unit(194, "cm"),
+                height: math.unit(5 + 6/12, "feet"),
                 default: true
             }
         ]
