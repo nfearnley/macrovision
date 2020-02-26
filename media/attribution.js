@@ -475,6 +475,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/razinox/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33242997/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/33242997/" }
+            ],
+            authors: [
+                "lerchief2007"
+            ],
+            owners: [
+                "razinox"
+            ]
+        },
+        {
             prefix: "./media/characters/regal/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/32825133/" },
@@ -888,6 +901,10 @@ const attributionData = {
             name: "labratkuma",
             url: "https://www.furaffinity.net/user/labratkuma"
         },
+        "lerchief2007": {
+            name: "lerchief2007",
+            url: "https://www.furaffinity.net/user/lerchief2007"
+        },
         "little-big-x110": {
             name: "LittleBig",
             url: "https://www.furaffinity.net/user/LittlebigX110"
@@ -951,6 +968,10 @@ const attributionData = {
         "quake-yote": {
             name: "Quake Yote",
             url: "https://www.furaffinity.net/user/rokossovskiy"
+        },
+        "razinox": {
+            name: "Razinox",
+            url: "https://www.furaffinity.net/user/razinox"
         },
         "rebonica": {
             name: "Rebonica",

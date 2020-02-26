@@ -5178,6 +5178,56 @@ characterMakers["Gene Zeta"] = () => {
     )
 };
 
+characterMakers["Razinox"] = () => {
+    return makeCharacter(
+        "Razinox",
+        "Razinox",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(350, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/razinox/front.svg",
+                    extra: 1686/1548
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(350, "lbs"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/razinox/back.svg",
+                    extra: 1660/1590
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(10 + 8/12, "foot")
+            },
+            {
+                name: "Minimacro",
+                height: math.unit(15, "foot")
+            },
+            {
+                name: "Macro",
+                height: math.unit(60, "foot"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(5, "miles")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(6000, "miles")
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];
