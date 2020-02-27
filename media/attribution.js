@@ -341,6 +341,8 @@ const attributionData = {
             prefix: "./media/characters/corvin/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/15581561/" },
+                { name: "front-shirt.svg", source: "https://www.furaffinity.net/view/15581561/" },
+                { name: "front-poncho.svg", source: "https://www.furaffinity.net/view/15581561/" },
                 { name: "back.svg", source: "https://www.furaffinity.net/view/15581561/" }
             ],
             authors: [

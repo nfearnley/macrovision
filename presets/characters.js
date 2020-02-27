@@ -6026,6 +6026,24 @@ characterMakers["Corvin"] = () => {
                     extra: 1803/1629
                 }
             },
+            frontShirt: {
+                height: math.unit(5 + 8/12, "feet"),
+                weight: math.unit(130, "lbs"),
+                name: "Front (Shirt)",
+                image: {
+                    source: "./media/characters/corvin/front-shirt.svg",
+                    extra: 1803/1629
+                }
+            },
+            frontPoncho: {
+                height: math.unit(5 + 8/12, "feet"),
+                weight: math.unit(130, "lbs"),
+                name: "Front (Poncho)",
+                image: {
+                    source: "./media/characters/corvin/front-poncho.svg",
+                    extra: 1803/1629
+                }
+            },
             side: {
                 height: math.unit(5 + 8/12, "feet"),
                 weight: math.unit(130, "lbs"),
