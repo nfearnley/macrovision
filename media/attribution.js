@@ -187,6 +187,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/arcturax/",
+            files: [
+                { name: "side.svg", source: "https://www.deviantart.com/francis-john/art/Commission-Arcturax-583317374" }
+            ],
+            authors: [
+                "francis-john"
+            ],
+            owners: [
+                "arcturax"
+            ]
+        },
+        {
             prefix: "./media/characters/asana/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/35087729/" },
@@ -1929,6 +1941,14 @@ const attributionData = {
         "tegon": {
             "name": "Tegon",
             "url": "https://www.furaffinity.net/user/dsc85/",
+        },
+        "francis-john": {
+            "name": "Francis-John",
+            "url": "https://www.deviantart.com/francis-john",
+        },
+        "arcturax": {
+            "name": "Arcturax",
+            "url": "https://www.furaffinity.net/user/arcturax",
         },
     }
 }

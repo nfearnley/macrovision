@@ -5923,17 +5923,49 @@ characterMakers["Tegon"] = () => {
                 default: true
             },
             {
-                name: "Normal",
-                height: math.unit(6 + 3/12, "feet"),
-                default: true
-            },
-            {
                 name: "Macro",
                 height: math.unit(300, "feet")
             },
             {
                 name: "Megamacro",
                 height: math.unit(69, "miles")
+            },
+        ]
+    )
+};
+
+characterMakers["Arcturax"] = () => {
+    return makeCharacter(
+        "Arcturax",
+        "Arcturax",
+        {
+            side: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(2304, "lbs"),
+                name: "side",
+                image: {
+                    source: "./media/characters/arcturax/side.svg",
+                    extra: 790/376
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(2, "inch")
+            },
+            {
+                name: "Normal",
+                height: math.unit(6, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(39, "feet"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(7, "miles")
             },
         ]
     )
