@@ -1084,7 +1084,7 @@ const attributionData = {
                 { name: "man-1.svg", source: "https://commons.wikimedia.org/wiki/File:Silhouette.svg" }
             ],
             authors: [
-                
+
             ]
         },
         {
@@ -1094,7 +1094,7 @@ const attributionData = {
                 { name: "vertical-titanic.svg", source: "https://creazilla.com/nodes/873-titanic-silhouette" }
             ],
             authors: [
-                
+
             ]
         },
         {
@@ -1109,474 +1109,755 @@ const attributionData = {
         },
     ],
     people: {
+        "ahastar": {
+            "name": "Ahastar",
+            "url": "https://www.furaffinity.net/user/ahastar/"
+        },
         "akane-sato-99": {
-            name: "Akane Sato",
-            url: "https://twitter.com/AkaneSato99"
+            "name": "Akane Sato",
+            "url": "https://twitter.com/AkaneSato99"
+        },
+        "akuva": {
+            "name": "Akuva",
+            "url": "https://www.furaffinity.net/user/akuva"
         },
         "alexander-madyankin": {
-            name: "Alexander Madyankin",
-            url: "https://madyankin.name/"
+            "name": "Alexander Madyankin",
+            "url": "https://madyankin.name/"
+        },
+        "anutabelko": {
+            "name": "Anutabelko",
+            "url": "https://www.furaffinity.net/user/anutabelko"
         },
         "appledectomy": {
-            name: "Appledectomy",
-            url: "https://www.furaffinity.net/user/appledectomy"
+            "name": "Appledectomy",
+            "url": "https://www.furaffinity.net/user/appledectomy"
         },
         "archy-d": {
-            name: "ArchyD",
-            url: "https://www.furaffinity.net/user/ArchyD"
+            "name": "ArchyD",
+            "url": "https://www.furaffinity.net/user/ArchyD"
+        },
+        "ashascadence": {
+            "name": "ashascadence",
+            "url": "https://www.furaffinity.net/user/ashascadence/"
+        },
+        "ashfall": {
+            "name": "Ashfall",
+            "url": "https://twitter.com/Ashfall_Fox"
         },
         "ashtrek": {
-            name: "Ashtrek",
-            url: "https://www.furaffinity.net/user/ashtrek/"
+            "name": "Ashtrek",
+            "url": "https://www.furaffinity.net/user/ashtrek/"
         },
         "aviraptia": {
-            name: "Aviraptia",
-            url: "https://www.furaffinity.net/user/aviraptia/"
+            "name": "Aviraptia",
+            "url": "https://www.furaffinity.net/user/aviraptia/"
         },
         "azura-saharah": {
-            name: "Azura Saharah",
-            url: "https://www.furaffinity.net/user/azurasaharah/"
+            "name": "Azura Saharah",
+            "url": "https://www.furaffinity.net/user/azurasaharah/"
         },
         "beao": {
-            name: "Beao",
-            url: "https://commons.wikimedia.org/wiki/User:Beao"
+            "name": "Beao",
+            "url": "https://commons.wikimedia.org/wiki/User:Beao"
         },
         "beherit": {
-            name: "Beherit",
-            url: "https://www.furaffinity.net/user/beherit/"
+            "name": "Beherit",
+            "url": "https://www.furaffinity.net/user/beherit/"
         },
         "blur-the-fur": {
-            name: "blur-the-fur",
-            url: "https://www.furaffinity.net/user/blurthefur/"
+            "name": "blur-the-fur",
+            "url": "https://www.furaffinity.net/user/blurthefur/"
         },
         "bossvoss": {
-            name: "bossvoss",
-            url: "https://www.furaffinity.net/user/bossvoss/"
+            "name": "bossvoss",
+            "url": "https://www.furaffinity.net/user/bossvoss/"
         },
         "brit-bork": {
-            name: "Koijot",
-            url: "https://twitter.com/Brit_Bork",
+            "name": "Koijot",
+            "url": "https://twitter.com/Brit_Bork"
+        },
+        "bunnox1": {
+            "name": "Bunnox1",
+            "url": "https://twitter.com/bunnox1"
+        },
+        "canictricity": {
+            "name": "Canictricity",
+            "url": "https://www.furaffinity.net/user/canictricity"
         },
         "cardboardhead": {
-            name: "cardboardhead",
-            url: "https://twitter.com/cardboardhead"
+            "name": "cardboardhead",
+            "url": "https://twitter.com/cardboardhead"
         },
         "chemicalcrux": {
-            name: "chemicalcrux",
-            url: "https://www.furaffinity.net/user/chemicalcrux"
+            "name": "chemicalcrux",
+            "url": "https://www.furaffinity.net/user/chemicalcrux"
         },
         "chesta": {
-            name: "Chesta",
-            url: "https://www.furaffinity.net/user/chesta"
+            "name": "Chesta",
+            "url": "https://www.furaffinity.net/user/chesta"
         },
         "chiropica": {
-            name: "Chiropica",
-            url: "https://www.furaffinity.net/user/chiropica/"
+            "name": "Chiropica",
+            "url": "https://www.furaffinity.net/user/chiropica/"
         },
         "citrinelle": {
-            name: "Citrinelle",
-            url: "https://twitter.com/Citrinelle"
+            "name": "Citrinelle",
+            "url": "https://twitter.com/Citrinelle"
         },
         "clown-grin": {
-            name: "clown-grin",
-            url: "https://www.furaffinity.net/user/clown-grin"
+            "name": "clown-grin",
+            "url": "https://www.furaffinity.net/user/clown-grin"
         },
         "collin-scorpio": {
-            name: "CollinScorpio",
-            url: "https://www.furaffinity.net/user/collinscorpio/"
+            "name": "CollinScorpio",
+            "url": "https://www.furaffinity.net/user/collinscorpio/"
         },
         "combat-raccoon": {
-            name: "CombatRaccoon",
-            url: "https://www.furaffinity.net/user/combatraccoon/"
+            "name": "CombatRaccoon",
+            "url": "https://www.furaffinity.net/user/combatraccoon/"
         },
         "cougr": {
-            name: "Cougr",
-            url: "https://www.furaffinity.net/user/cougr"
+            "name": "Cougr",
+            "url": "https://www.furaffinity.net/user/cougr"
         },
         "cygil": {
-            name: "Cygil",
-            url: "https://www.furaffinity.net/user/cygil"
+            "name": "Cygil",
+            "url": "https://www.furaffinity.net/user/cygil"
         },
         "d-eath-tail": {
-            name: "Deathy",
-            url: "https://www.furaffinity.net/user/d-eath-tail"
+            "name": "Deathy",
+            "url": "https://www.furaffinity.net/user/d-eath-tail"
+        },
+        "darkvulpine2": {
+            "name": "darkvulpine2",
+            "url": "https://www.furaffinity.net/user/darkvulpine2"
         },
         "deerpuff": {
-            name: "Deerpuff",
-            url: "http://furaffinity.net/user/deerpuff"
+            "name": "Deerpuff",
+            "url": "http://furaffinity.net/user/deerpuff"
         },
         "deets": {
-            name: "Deets",
-            url: "https://www.furaffinity.net/user/deets"
+            "name": "Deets",
+            "url": "https://www.furaffinity.net/user/deets"
+        },
+        "devvy": {
+            "name": "Devvy",
+            "url": "https://www.furaffinity.net/user/devvy"
         },
         "dialuca": {
-            name: "Dialuca",
-            url: "https://www.furaffinity.net/user/dialuca01"
+            "name": "Dialuca",
+            "url": "https://www.furaffinity.net/user/dialuca01"
         },
         "dragga": {
-            name: "Dragga",
-            url: "https://www.furaffinity.net/user/dragga"
+            "name": "Dragga",
+            "url": "https://www.furaffinity.net/user/dragga"
         },
         "eda": {
-            name: "Eda",
-            url: "https://www.furaffinity.net/user/eda/"
+            "name": "Eda",
+            "url": "https://www.furaffinity.net/user/eda/"
+        },
+        "eddgy-boy": {
+            "name": "Eddy Boy",
+            "url": "https://www.furaffinity.net/user/eddy-boy"
         },
         "enormouse": {
-            name: "Enormouse",
-            url: "https://twitter.com/MewMus"  
+            "name": "Enormouse",
+            "url": "https://twitter.com/MewMus"
         },
         "ethan64": {
-            name: "Ethan64",
-            url: "https://www.furaffinity.net/user/ethan64/"
+            "name": "Ethan64",
+            "url": "https://www.furaffinity.net/user/ethan64/"
+        },
+        "eveara": {
+            "name": "EveAra",
+            "url": "https://www.furaffinity.net/user/eveara/"
+        },
+        "evillabrat": {
+            "name": "evillabrat",
+            "url": "https://www.furaffinity.net/user/evillabrat"
         },
         "fandroit": {
-            name: "fandroit",
-            url: "https://www.furaffinity.net/user/fandroit"
+            "name": "fandroit",
+            "url": "https://www.furaffinity.net/user/fandroit"
         },
         "fauxlacine": {
-            name: "Fauxlacine",
-            url: "https://www.furaffinity.net/user/fauxlacine"
+            "name": "Fauxlacine",
+            "url": "https://www.furaffinity.net/user/fauxlacine"
+        },
+        "feve": {
+            "name": "Feve",
+            "url": "https://www.furaffinity.net/user/feve"
         },
         "flyhar": {
-            name: "Flyhar",
-            url: "https://www.furaffinity.net/user/flyfeline/"
+            "name": "Flyhar",
+            "url": "https://www.furaffinity.net/user/flyfeline/"
+        },
+        "fsmaverick": {
+            "name": "FsMaverick",
+            "url": "https://www.furaffinity.net/user/fsmaverick"
+        },
+        "furikake": {
+            "name": "Furikake",
+            "url": "https://www.furaffinity.net/user/furikake"
         },
         "furrypur": {
-            name: "FurryPur",
-            url: "https://www.furaffinity.net/user/furrypur/"
+            "name": "FurryPur",
+            "url": "https://www.furaffinity.net/user/furrypur/"
         },
         "gaiawolfess": {
-            name: "Gaiawolfess",
-            url: "https://www.furaffinity.net/user/gaiawolfess"
+            "name": "Gaiawolfess",
+            "url": "https://www.furaffinity.net/user/gaiawolfess"
         },
         "gaily": {
-            name: "Gaily",
-            url: "https://www.furaffinity.net/user/gaily/"
+            "name": "Gaily",
+            "url": "https://www.furaffinity.net/user/gaily/"
         },
         "galactor": {
-            name: "Galactor",
-            url: "https://www.furaffinity.net/user/galactor/"
+            "name": "Galactor",
+            "url": "https://www.furaffinity.net/user/galactor/"
         },
         "gear-senpai": {
-            name: "gear-senpai",
-            url: "https://www.furaffinity.net/user/gear-senpai"
+            "name": "gear-senpai",
+            "url": "https://www.furaffinity.net/user/gear-senpai"
         },
         "geminimacro": {
-            name: "geminimacro",
-            url: "https://www.furaffinity.net/user/lajay"
+            "name": "geminimacro",
+            "url": "https://www.furaffinity.net/user/lajay"
+        },
+        "ghostlywafflez": {
+            "name": "ghostlywafflez",
+            "url": "https://www.furaffinity.net/user/ghostlywafflez"
+        },
+        "gurenadopts": {
+            "name": "Guren Adopts",
+            "url": "https://www.furaffinity.net/user/gurenadopts"
         },
         "h-padleckas": {
-            name: "H. Padleckas",
-            url: "https://commons.wikimedia.org/wiki/User:H_Padleckas"
+            "name": "H. Padleckas",
+            "url": "https://commons.wikimedia.org/wiki/User:H_Padleckas"
         },
         "helisa-adopts": {
-            name: "Helisa",
-            url: "https://www.furaffinity.net/user/HelisaAdopts"
+            "name": "Helisa",
+            "url": "https://www.furaffinity.net/user/HelisaAdopts"
         },
         "hihikori": {
-            name: "HIHIKORI",
-            url: "https://www.furaffinity.net/user/hihikori"
+            "name": "HIHIKORI",
+            "url": "https://www.furaffinity.net/user/hihikori"
+        },
+        "homogenerousrule": {
+            "name": "homogeneousrule",
+            "url": "https://www.furaffinity.net/user/homogenousrule"
+        },
+        "hornedfreak": {
+            "name": "Hornedfreak",
+            "url": "https://www.furaffinity.net/user/hornedfreak"
         },
         "i-am-an-eaglet": {
-            name: "IAMANEAGLEt",
-            url: "https://www.furaffinity.net/user/iamaneaglet/"
+            "name": "IAMANEAGLEt",
+            "url": "https://www.furaffinity.net/user/iamaneaglet/"
         },
         "jackalope": {
-            name: "jackalope",
-            url: "https://www.furaffinity.net/user/jackalope"
+            "name": "jackalope",
+            "url": "https://www.furaffinity.net/user/jackalope"
         },
         "jaro-the-dragon": {
-            name: "Jaro",
-            url: "https://www.furaffinity.net/user/jarothedragon/"
+            "name": "Jaro",
+            "url": "https://www.furaffinity.net/user/jarothedragon/"
         },
         "jaydom": {
-            name: "Jaydom",
-            url: "https://www.furaffinity.net/user/jaydom"
+            "name": "Jaydom",
+            "url": "https://www.furaffinity.net/user/jaydom"
         },
         "just-a-little-mixed-up": {
-            name: "just-a-little-mixed-up",
-            url: "https://www.furaffinity.net/user/just-a-little-mixed-up"
+            "name": "just-a-little-mixed-up",
+            "url": "https://www.furaffinity.net/user/just-a-little-mixed-up"
         },
         "kclt": {
-            name: "KCLT",
-            url: "https://www.furaffinity.net/user/kclt"
+            "name": "KCLT",
+            "url": "https://www.furaffinity.net/user/kclt"
         },
-        "kiguren": {
-            name: "Kiguren",
-            url: "https://www.furaffinity.net/user/kiguren"
-        },
-        "kononiko": {
-            name: "Kononiko",
-            url: "https://www.furaffinity.net/user/konokono"
+        "keihound": {
+            "name": "Keihound",
+            "url": "https://www.furaffinity.net/user/keihound"
         },
         "kerneldecoy": {
-            name: "Kernel Decoy",
-            url: "https://www.furaffinity.net/user/kerneldecoy/"
+            "name": "Kernel Decoy",
+            "url": "https://www.furaffinity.net/user/kerneldecoy/"
+        },
+        "kiguren": {
+            "name": "Kiguren",
+            "url": "https://www.furaffinity.net/user/kiguren"
+        },
+        "knifelynx": {
+            "name": "KnifeLynx",
+            "url": "https://twitter.com/KnifeLynx"
+        },
+        "kononiko": {
+            "name": "Kononiko",
+            "url": "https://www.furaffinity.net/user/konokono"
         },
         "kurrikage": {
-            name: "Kurrikage",
-            url: "https://www.furaffinity.net/user/kurrikage/"
+            "name": "Kurrikage",
+            "url": "https://www.furaffinity.net/user/kurrikage/"
         },
         "labratkuma": {
-            name: "labratkuma",
-            url: "https://www.furaffinity.net/user/labratkuma"
+            "name": "labratkuma",
+            "url": "https://www.furaffinity.net/user/labratkuma"
         },
         "lerchief2007": {
-            name: "lerchief2007",
-            url: "https://www.furaffinity.net/user/lerchief2007"
+            "name": "lerchief2007",
+            "url": "https://www.furaffinity.net/user/lerchief2007"
         },
         "levi-ann-porter": {
-            name: "Levi Ann Porter",
-            url: "https://twitter.com/LeviAnnPorter"
+            "name": "Levi Ann Porter",
+            "url": "https://twitter.com/LeviAnnPorter"
+        },
+        "libra-11": {
+            "name": "Libra 11",
+            "url": "https://www.furaffinity.net/user/libra-11"
         },
         "little-big-x110": {
-            name: "LittleBig",
-            url: "https://www.furaffinity.net/user/LittlebigX110"
+            "name": "LittleBig",
+            "url": "https://www.furaffinity.net/user/LittlebigX110"
         },
         "lobo-raptor-lo": {
-            name: "LoboRaptorLo",
-            url: "https://www.furaffinity.net/user/loboraptorlo/"
+            "name": "LoboRaptorLo",
+            "url": "https://www.furaffinity.net/user/loboraptorlo/"
         },
         "lucha-libre-libro": {
-            name: "LuchaLibreLibro",
-            url: "https://www.furaffinity.net/user/luchalibrelibro/"
+            "name": "LuchaLibreLibro",
+            "url": "https://www.furaffinity.net/user/luchalibrelibro/"
+        },
+        "luzian": {
+            "name": "Luzian",
+            "url": "https://www.furaffinity.net/user/luzian"
         },
         "lynxsprout": {
-            name: "Lynxsprout",
-            url: "https://lynxsprout.carrd.co/"
+            "name": "Lynxsprout",
+            "url": "https://lynxsprout.carrd.co/"
         },
         "malakhael": {
-            name: "Malakhael",
-            url: "https://www.furaffinity.net/user/malakhael"
+            "name": "Malakhael",
+            "url": "https://www.furaffinity.net/user/malakhael"
         },
         "mallowchu": {
-            name: "Mallowchu",
-            url: "https://www.furaffinity.net/user/mallowchu"
+            "name": "Mallowchu",
+            "url": "https://www.furaffinity.net/user/mallowchu"
         },
         "march-dragon": {
-            name: "March",
-            url: "https://www.furaffinity.net/user/march-dragon/"
+            "name": "March",
+            "url": "https://www.furaffinity.net/user/march-dragon/"
         },
         "matty-the-mouse": {
-            name: "Matty the Mouse",
-            url: "https://www.furaffinity.net/user/mattythemouse/"
+            "name": "Matty the Mouse",
+            "url": "https://www.furaffinity.net/user/mattythemouse/"
         },
         "meep": {
-            name: "Meep",
-            url: "http://furaffinity.net/user/meep"
+            "name": "Meep",
+            "url": "http://furaffinity.net/user/meep"
         },
         "meershroom": {
-            name: "Meershroom",
-            url: "https://www.furaffinity.net/user/meershroom"
+            "name": "Meershroom",
+            "url": "https://www.furaffinity.net/user/meershroom"
+        },
+        "meowzi": {
+            "name": "Meowzi",
+            "url": "http://www.furaffinity.net/user/meowzi"
         },
         "miateshcha": {
-            name: "Miateshcha",
-            url: "https://www.furaffinity.net/user/miateshcha/"
+            "name": "Miateshcha",
+            "url": "https://www.furaffinity.net/user/miateshcha/"
+        },
+        "missyazriel": {
+            "name": "missyazriel",
+            "url": "https://www.furaffinity.net/user/missyazriel"
         },
         "mizumisensei": {
-            name: "Mizumisensei",
-            url: "https://twitter.com/mizumisensei"
+            "name": "Mizumisensei",
+            "url": "https://twitter.com/mizumisensei"
         },
         "movler": {
-            name: "Movler",
-            url: "https://www.furaffinity.net/user/movler/"
+            "name": "Movler",
+            "url": "https://www.furaffinity.net/user/movler/"
+        },
+        "msricket": {
+            "name": "MsRicket",
+            "url": "https://twitter.com/msricket"
         },
         "muzz": {
-            name: "Muzz",
-            url: "https://www.furaffinity.net/user/muzz/"
+            "name": "Muzz",
+            "url": "https://www.furaffinity.net/user/muzz/"
         },
         "natsuakai": {
-            name: "Natsuakai",
-            url: "https://www.deviantart.com/natsuakai"
+            "name": "Natsuakai",
+            "url": "https://www.deviantart.com/natsuakai"
+        },
+        "nazuu-m0nster": {
+            "name": "nazuu m0nster",
+            "url": "https://www.furaffinity.net/user/nazuu-m0nster"
         },
         "nommz": {
-            name: "Nommz",
-            url: "https://www.furaffinity.net/user/nommz"
+            "name": "Nommz",
+            "url": "https://www.furaffinity.net/user/nommz"
         },
         "odi-lunar": {
-            name: "Odi Lunar",
-            url: "https://twitter.com/odi_lunar/"
+            "name": "Odi Lunar",
+            "url": "https://twitter.com/odi_lunar/"
         },
         "okuri": {
-            name: "Okuri",
-            url: "https://www.furaffinity.net/user/orionmechadragon/"
+            "name": "Okuri",
+            "url": "https://www.furaffinity.net/user/orionmechadragon/"
         },
         "oselotti": {
-            name: "Oselotti",
-            url: "https://www.furaffinity.net/user/oselotti"
-        },
-        "pilli10": {
-            name: "Teal",
-            url: "https://www.furaffinity.net/user/pilli10"
+            "name": "Oselotti",
+            "url": "https://www.furaffinity.net/user/oselotti"
         },
         "phil-bronnery": {
-            name: "Phil Bronnery",
-            url: "https://www.flickr.com/people/27919241@N02"
+            "name": "Phil Bronnery",
+            "url": "https://www.flickr.com/people/27919241@N02"
+        },
+        "pig": {
+            "name": "pig",
+            "url": "https://www.furaffinity.net/user/pig"
+        },
+        "pilli10": {
+            "name": "Teal",
+            "url": "https://www.furaffinity.net/user/pilli10"
         },
         "pocket-opossum": {
-            name: "Pocket Opossum",
-            url: "https://www.furaffinity.net/user/pocketopossum/"
+            "name": "Pocket Opossum",
+            "url": "https://www.furaffinity.net/user/pocketopossum/"
         },
         "pornkitsi": {
-            name: "Pornkitsi",
-            url: "https://www.furaffinity.net/user/pornkitsi/"
+            "name": "Pornkitsi",
+            "url": "https://www.furaffinity.net/user/pornkitsi/"
         },
         "princessrei": {
-            name: "Princess Rei",
-            url: "https://twitter.com/princessrei"
+            "name": "Princess Rei",
+            "url": "https://twitter.com/princessrei"
         },
         "quake-yote": {
-            name: "Quake Yote",
-            url: "https://www.furaffinity.net/user/rokossovskiy"
+            "name": "Quake Yote",
+            "url": "https://www.furaffinity.net/user/rokossovskiy"
+        },
+        "rabidchild42": {
+            "name": "rabidchild42",
+            "url": "https://www.furaffinity.net/user/rabidchild42"
+        },
+        "racerdragon": {
+            "name": "RacerDragon",
+            "url": "https://www.furaffinity.net/user/racerdragon"
         },
         "ram-the-dragon": {
-            name: "Ram the Dragon",
-            url: "https://www.furaffinity.net/user/ramthedragon"
+            "name": "Ram the Dragon",
+            "url": "https://www.furaffinity.net/user/ramthedragon"
         },
         "ranek": {
-            name: "Ranek",
-            url: "https://www.furaffinity.net/user/ranek"
+            "name": "Ranek",
+            "url": "https://www.furaffinity.net/user/ranek"
         },
         "ravin-amulet": {
-            name: "Ravin Amulet",
-            url: "https://www.furaffinity.net/user/ravinamulet/"
+            "name": "Ravin Amulet",
+            "url": "https://www.furaffinity.net/user/ravinamulet/"
         },
         "razinox": {
-            name: "Razinox",
-            url: "https://www.furaffinity.net/user/razinox"
+            "name": "Razinox",
+            "url": "https://www.furaffinity.net/user/razinox"
         },
         "rebonica": {
-            name: "Rebonica",
-            url: "https://www.furaffinity.net/user/rebonica"
+            "name": "Rebonica",
+            "url": "https://www.furaffinity.net/user/rebonica"
         },
         "rogue": {
-            name: "Rogue Megawolf",
-            url: "https://twitter.com/roguemegawolf"
-        },
-        "rook": {
-            name: "Rook",
-            url: "https://twitter.com/rooktowers"
+            "name": "Rogue Megawolf",
+            "url": "https://twitter.com/roguemegawolf"
         },
         "roman-shamin": {
-            name: "Roman Shamin",
-            url: "https://twitter.com/romanshamin"
+            "name": "Roman Shamin",
+            "url": "https://twitter.com/romanshamin"
+        },
+        "rook": {
+            "name": "Rook",
+            "url": "https://twitter.com/rooktowers"
+        },
+        "royal-pain-in-the-ass": {
+            "name": "royal-pain-in-the-ass",
+            "url": "https://www.furaffinity.net/user/royal-pain-in-the-ass"
         },
         "ryukak": {
-            name: "ryukak",
-            url: "https://www.furaffinity.net/user/ryukak"
+            "name": "ryukak",
+            "url": "https://www.furaffinity.net/user/ryukak"
         },
         "scareye": {
-            name: "Scareye",
-            url: "https://www.furaffinity.net/user/scareye/"
+            "name": "Scareye",
+            "url": "https://www.furaffinity.net/user/scareye/"
+        },
+        "shadowblade945": {
+            "name": "shadowblade945",
+            "url": "https://www.furaffinity.net/user/shadowblade945"
         },
         "shuryashish": {
-            name: "Shuryashish",
-            url: "https://www.furaffinity.net/user/shuryashish"
+            "name": "Shuryashish",
+            "url": "https://www.furaffinity.net/user/shuryashish"
         },
         "silverwingink": {
-            name: "silverwingink",
-            url: "https://www.furaffinity.net/user/silverwingink/"
+            "name": "silverwingink",
+            "url": "https://www.furaffinity.net/user/silverwingink/"
         },
         "sixsydes": {
-            name: "sixsydes",
-            url: "https://www.furaffinity.net/user/sixsydes/"
+            "name": "sixsydes",
+            "url": "https://www.furaffinity.net/user/sixsydes/"
+        },
+        "slimytongues": {
+            "name": "Slimytongues",
+            "url": "https://www.furaffinity.net/user/slimytongues"
         },
         "sofia": {
-            name: "Sofia",
-            url: "https://www.furaffinity.net/user/sofia.exe/"
+            "name": "Sofia",
+            "url": "https://www.furaffinity.net/user/sofia.exe/"
         },
         "solaxee": {
-            name: "Sol",
-            url: "https://twitter.com/Solaxee"
+            "name": "Sol",
+            "url": "https://twitter.com/Solaxee"
         },
         "spaceweasel-2306": {
-            name: "spaceweasel2306",
-            url: "https://www.furaffinity.net/user/spaceweasel2306/"
+            "name": "spaceweasel2306",
+            "url": "https://www.furaffinity.net/user/spaceweasel2306/"
         },
         "spunky": {
-            name: "Spunky",
-            url: "https://www.furaffinity.net/user/spunky"
+            "name": "Spunky",
+            "url": "https://www.furaffinity.net/user/spunky"
         },
         "spyropurple": {
-            name: "spyropurple",
-            url: "https://www.furaffinity.net/user/spyropurple/"
+            "name": "spyropurple",
+            "url": "https://www.furaffinity.net/user/spyropurple/"
         },
         "stonerabbit": {
-            name: "stonerabbit",
-            url: "https://www.furaffinity.net/user/stonerabbit/"
+            "name": "stonerabbit",
+            "url": "https://www.furaffinity.net/user/stonerabbit/"
+        },
+        "styx-and-stoned": {
+            "name": "styxandstoned",
+            "url": "https://www.furaffinity.net/user/styxandstoned"
         },
         "sugarbeans": {
-            name: "sugarbeans",
-            url: "https://www.furaffinity.net/user/sugarbeans/"
+            "name": "sugarbeans",
+            "url": "https://www.furaffinity.net/user/sugarbeans/"
         },
         "suicidal-muffins": {
-            name: "Sucidial Muffins",
-            url: "https://www.furaffinity.net/user/suicidalmuffins/"
+            "name": "Sucidial Muffins",
+            "url": "https://www.furaffinity.net/user/suicidalmuffins/"
         },
         "sunkaro": {
-            name: "Sunkaro",
-            url: "https://www.deviantart.com/sunkaro"
+            "name": "Sunkaro",
+            "url": "https://www.deviantart.com/sunkaro"
+        },
+        "talanstrider": {
+            "name": "Talan Strider",
+            "url": "https://www.furaffinity.net/gallery/talanstrider/"
+        },
+        "tanraak": {
+            "name": "Tanraak",
+            "url": "http://www.furaffinity.net/user/tanraak"
         },
         "teaselbone": {
-            name: "Teaselbone",
-            url: "https://www.furaffinity.net/user/teaselbone/"
+            "name": "Teaselbone",
+            "url": "https://www.furaffinity.net/user/teaselbone/"
         },
         "that-mutt-marie": {
-            name: "Marie",
-            url: "https://www.furaffinity.net/user/thatmuttmarie"
+            "name": "Marie",
+            "url": "https://www.furaffinity.net/user/thatmuttmarie"
         },
         "theme-finland": {
-            name: "ThemeFinland",
-            url: "https://www.deviantart.com/themefinland"  
+            "name": "ThemeFinland",
+            "url": "https://www.deviantart.com/themefinland"
         },
         "twitch-the-dragon": {
-            name: "Twitch",
-            url: "https://www.furaffinity.net/user/twitchthedragon/"
+            "name": "Twitch",
+            "url": "https://www.furaffinity.net/user/twitchthedragon/"
         },
         "ty-rufus": {
-            name: "ty-rufus",
-            url: "https://www.furaffinity.net/user/ty-rufus"
+            "name": "ty-rufus",
+            "url": "https://www.furaffinity.net/user/ty-rufus"
         },
         "vector-wuff": {
-            name: "Vector",
-            url: "https://www.furaffinity.net/user/Megawolf91"
+            "name": "Vector",
+            "url": "https://www.furaffinity.net/user/Megawolf91"
         },
         "vemus": {
-            name: "vemus",
-            url: "https://www.furaffinity.net/user/vemus"
+            "name": "vemus",
+            "url": "https://www.furaffinity.net/user/vemus"
+        },
+        "victni": {
+            "name": "Victni",
+            "url": "https://www.furaffinity.net/user/victni/"
         },
         "vonadi": {
-            name: "Vonadi",
-            url: "https://www.furaffinity.net/user/vonadi/"
+            "name": "Vonadi",
+            "url": "https://www.furaffinity.net/user/vonadi/"
         },
         "watchout-4-dragon": {
-            name: "Watchout4dragon",
-            url: "https://twitter.com/watchout4dragon"
+            "name": "Watchout4dragon",
+            "url": "https://twitter.com/watchout4dragon"
+        },
+        "wfa": {
+            "name": "wfa",
+            "url": "https://www.furaffinity.net/user/wfa"
+        },
+        "wintuk": {
+            "name": "wintuk",
+            "url": "https://www.furaffinity.net/user/wintuk"
         },
         "wolfina-2007": {
-            name: "Wolfina 2007",
-            url: "https://www.furaffinity.net/user/wolfina2007"
+            "name": "Wolfina 2007",
+            "url": "https://www.furaffinity.net/user/wolfina2007"
         },
         "wonderball": {
-            name: "Wonderball",
-            url: "https://www.furaffinity.net/user/wonderball"
+            "name": "Wonderball",
+            "url": "https://www.furaffinity.net/user/wonderball"
         },
         "xeebes": {
-            name: "Xeebes",
-            url: "https://www.furaffinity.net/user/xeebes/"
+            "name": "Xeebes",
+            "url": "https://www.furaffinity.net/user/xeebes/"
         },
         "xelchew": {
-            name: "Xelchew",
-            url: "https://www.furaffinity.net/user/xelchew/"
+            "name": "Xelchew",
+            "url": "https://www.furaffinity.net/user/xelchew/"
         },
         "yozey": {
-            name: "Yozey",
-            url: "https://www.furaffinity.net/user/yozey/"
+            "name": "Yozey",
+            "url": "https://www.furaffinity.net/user/yozey/"
+        },
+        "yutmutt": {
+            "name": "YutMutt",
+            "url": "https://www.furaffinity.net/user/yutmutt"
         },
         "zyraxus": {
-            name: "Zyraxus",
-            url: "https://www.furaffinity.net/user/zyraxus"
+            "name": "Zyraxus",
+            "url": "https://www.furaffinity.net/user/zyraxus"
+        },
+        "shadowinkwarrior": {
+            "name": "shadowinkwarrior",
+            "url": "https://www.furaffinity.net/user/shadowinkwarrior"
+        },
+        "pythosblaze": {
+            "name": "PythosBlaze",
+            "url": "https://www.deviantart.com/pythosblaze"
+        },
+        "tyrnn": {
+            "name": "Tyrnn",
+            "url": "https://www.furaffinity.net/user/tyrnn/"
+        },
+        "stonerabbit": {
+            "name": "stonerabbit",
+            "url": "https://www.furaffinity.net/user/stonerabbit"
+        },
+        "voondahbayosh": {
+            "name": "voondahbayosh",
+            "url": "https://www.furaffinity.net/user/voondahbayosh"
+        },
+        "proximiter": {
+            "name": "proximiter",
+            "url": "https://www.furaffinity.net/user/proximiter"
+        },
+        "rainfallen": {
+            "name": "Rain Fallen",
+            "url": "https://www.furaffinity.net/user/rainfallen/"
+        },
+        "sentinelwinder": {
+            "name": "SentinelWinder",
+            "url": "https://www.furaffinity.net/user/sentinelwinder"
+        },
+        "scottred": {
+            "name": "ScottRed",
+            "url": "https://www.furaffinity.net/user/scottred/"
+        },
+        "luciella": {
+            "name": "Luciella",
+            "url": "https://www.furaffinity.net/user/luciellia/"
+        },
+        "clovishusky": {
+            "name": "ClovisHusky",
+            "url": "https://www.furaffinity.net/user/clovishusky/"
+        },
+        "phietto": {
+            "name": "Phietto",
+            "url": "https://www.furaffinity.net/user/phietto"
+        },
+        "aimee-lesley-sim": {
+            "name": "aimee-lesley-sim",
+            "url": "https://www.furaffinity.net/user/aimee-lesley-sim/"
+        },
+        "deervvitch": {
+            "name": "deervvitch",
+            "url": "https://www.furaffinity.net/user/deervvitch"
+        },
+        "dbd": {
+            "name": "dbd",
+            "url": "ttps://www.furaffinity.net/user/dbd"
+        },
+        "aggrobadger": {
+            "name": "aggrobadger",
+            "url": "https://www.furaffinity.net/user/aggrobadger"
+        },
+        "yaroul": {
+            "name": "Yaroul",
+            "url": "https://www.furaffinity.net/user/yaroul"
+        },
+        "rouncible": {
+            "name": "Rouncible",
+            "url": "https://www.furaffinity.net/user/rouncible/"
+        },
+        "faeseiren": {
+            "name": "faeseiren",
+            "url": "https://www.furaffinity.net/user/faeseiren"
+        },
+        "greenbrains": {
+            "name": "greenbrains",
+            "url": "https://www.furaffinity.net/user/greenbrains/"
+        },
+        "talikira": {
+            "name": "Talikira",
+            "url": "https://www.furaffinity.net/user/talikira"
+        },
+        "shingekiskunk": {
+            "name": "ShingekiSkunk",
+            "url": "t.me/ShingekiSkunk"
+        },
+        "rileykit": {
+            "name": "Rileykit",
+            "url": "t.me/Rileykit"
+        },
+        "ovens": {
+            "name": "Ovens",
+            "url": "https://www.furaffinity.net/user/ovens"
+        },
+        "vallhund": {
+            "name": "Vallhund",
+            "url": "https://www.furaffinity.net/user/vallhund/"
+        },
+        "hhazard": {
+            "name": "hhazard",
+            "url": "https://www.furaffinity.net/user/hhazard"
+        },
+        "softdragons": {
+            "name": "SoftDragons",
+            "url": "https://twitter.com/softdragons"
+        },
+        "mug": {
+            "name": "Mug",
+            "url": "https://www.furaffinity.net/user/mug"
+        },
+        "k437": {
+            "name": "k437",
+            "url": "https://www.furaffinity.net/user/k437"
+        },
+        "bluecatangry": {
+            "name": "bluecatangry",
+            "url": "https://www.furaffinity.net/user/bluecatangry"
         }
+
     }
 }
 
