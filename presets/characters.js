@@ -6174,7 +6174,7 @@ characterMakers["Carley"] = () => {
             },
             {
                 name: "Macro",
-                height: math.unit(300, "feet"),
+                height: math.unit(185, "feet"),
                 default: true
             },
             {
