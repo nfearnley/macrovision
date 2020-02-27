@@ -873,6 +873,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/sovrim-terraquian/",
+            files: [
+                { name: "front.svg", source: "https://www.sofurry.com/view/1187430" },
+                { name: "back.svg", source: "https://www.sofurry.com/view/1187430" }
+            ],
+            authors: [
+                "klippy"
+            ],
+            owners: [
+                "sovrim-terraquian"
+            ]
+        },
+        {
             prefix: "./media/characters/surgo/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/33348481/" },
@@ -1856,8 +1869,15 @@ const attributionData = {
         "bluecatangry": {
             "name": "bluecatangry",
             "url": "https://www.furaffinity.net/user/bluecatangry"
+        },
+        "klippy": {
+            "name": "Klippy",
+            "url": "https://www.furaffinity.net/user/Klippy"
+        },
+        "sovrim-terraquian": {
+            "name": "Sovrim Terraquian",
+            "url": "https://www.sofurry.com/user/character/details?id=1425",
         }
-
     }
 }
 

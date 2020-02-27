@@ -5793,6 +5793,54 @@ characterMakers["Verin"] = () => {
     )
 };
 
+characterMakers["Sovrim Terraquian"] = () => {
+    return makeCharacter(
+        "Sovrim Terraquian",
+        "Sovrim Terraquian",
+        {
+            front: {
+                height: math.unit(2.718, "meters"),
+                weight: math.unit(150, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/sovrim-terraquian/front.svg"
+                }
+            },
+            back: {
+                height: math.unit(2.718, "meters"),
+                weight: math.unit(150, "lbs"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/sovrim-terraquian/back.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(2, "inches")
+            },
+            {
+                name: "Small",
+                height: math.unit(1, "meter")
+            },
+            {
+                name: "Normal",
+                height: math.unit(Math.E, "meters"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(20, "meters")
+            },
+            {
+                name: "Macro+",
+                height: math.unit(400, "meters")
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];
