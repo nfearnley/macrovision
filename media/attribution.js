@@ -749,6 +749,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/reece-silvermane/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34577905/" }
+            ],
+            authors: [
+                "sunny-way"
+            ],
+            owners: [
+                "silverhorsey"
+            ]
+        },
+        {
             prefix: "./media/characters/regal/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/32825133/" },
@@ -1877,7 +1889,15 @@ const attributionData = {
         "sovrim-terraquian": {
             "name": "Sovrim Terraquian",
             "url": "https://www.sofurry.com/user/character/details?id=1425",
-        }
+        },
+        "sunny-way": {
+            "name": "Sunny Way",
+            "url": "https://www.furaffinity.net/user/sunnyway/",
+        },
+        "silverhorsey": {
+            "name": "Silverhorsey",
+            "url": "https://www.furaffinity.net/user/silverhorsey",
+        },
     }
 }
 

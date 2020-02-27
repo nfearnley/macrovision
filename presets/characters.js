@@ -5841,6 +5841,32 @@ characterMakers["Sovrim Terraquian"] = () => {
     )
 };
 
+characterMakers["Reece Silvermane"] = () => {
+    return makeCharacter(
+        "Reece Silvermane",
+        "Silverhorsey",
+        {
+            front: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(489, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/reece-silvermane/front.svg",
+                    bottom: 0.02,
+                    extra: 1 / (1 - 0.02)
+                }
+            },
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(1.5, "miles"),
+                default: true
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];
