@@ -5915,7 +5915,11 @@ characterMakers["Tegon"] = () => {
         [
             {
                 name: "Micro",
-                height: math.unit(1, "inch"),
+                height: math.unit(1, "inch")
+            },
+            {
+                name: "Normal",
+                height: math.unit(6 + 3/12, "feet"),
                 default: true
             },
             {
