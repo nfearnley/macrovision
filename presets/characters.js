@@ -5945,7 +5945,8 @@ characterMakers["Arcturax"] = () => {
                 name: "side",
                 image: {
                     source: "./media/characters/arcturax/side.svg",
-                    extra: 790/376
+                    extra: 790/376 * (1 / (1 - 0.01)),
+                    bottom: 0.01
                 }
             },
         },
