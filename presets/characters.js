@@ -5867,6 +5867,36 @@ characterMakers["Reece Silvermane"] = () => {
     )
 };
 
+characterMakers["Kane"] = () => {
+    return makeCharacter(
+        "Kane",
+        "LittleBigX110",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(78, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/kane/front.svg",
+                    extra: 978/899
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(2.1, "m"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(1, "km"),
+                default: true
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

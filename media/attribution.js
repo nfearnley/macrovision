@@ -487,6 +487,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/kane/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32495766/" }
+            ],
+            authors: [
+                "andradopts"
+            ],
+            owners: [
+                "little-big-x110"
+            ]
+        },
+        {
             prefix: "./media/characters/kennedy/",
             files: [
                 { name: "side.svg", source: "https://www.furaffinity.net/view/26538996/" },
@@ -1897,6 +1909,10 @@ const attributionData = {
         "silverhorsey": {
             "name": "Silverhorsey",
             "url": "https://www.furaffinity.net/user/silverhorsey",
+        },
+        "andradopts": {
+            "name": "andradopts",
+            "url": "https://www.furaffinity.net/user/andradopts",
         },
     }
 }
