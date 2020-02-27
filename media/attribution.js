@@ -228,6 +228,8 @@ const attributionData = {
             files: [
                 { name: "front.svg", source: null },
                 { name: "front-armor.svg", source: null },
+                { name: "side.svg", source: null },
+                { name: "back.svg", source: null }
             ],
             authors: [
                 "silverwingink"

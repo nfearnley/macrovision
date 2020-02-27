@@ -2461,7 +2461,9 @@ characterMakers["Ashtrek"] = () => {
                 weight: math.unit(70, "kg"),
                 name: "Front",
                 image: {
-                    source: "./media/characters/ashtrek/front.svg"
+                    source: "./media/characters/ashtrek/front.svg",
+                    extra: 560/524 * (1 / (1 - 0.01)),
+                    bottom: 0.01
                 }
             },
             frontArmor: {
@@ -2469,7 +2471,28 @@ characterMakers["Ashtrek"] = () => {
                 weight: math.unit(76, "kg"),
                 name: "Front (Armor)",
                 image: {
-                    source: "./media/characters/ashtrek/front-armor.svg"
+                    source: "./media/characters/ashtrek/front-armor.svg",
+                    extra: 561/527 * (1 / (1 - 0.01)),
+                    bottom: 0.01
+                }
+            },
+            side: {
+                height: math.unit(2, "meters"),
+                weight: math.unit(70, "kg"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/ashtrek/side.svg",
+                    extra: 1717/1609 * (1 / (1 - 0.005)),
+                    bottom: 0.005
+                }
+            },
+            back: {
+                height: math.unit(2, "meters"),
+                weight: math.unit(70, "kg"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/ashtrek/back.svg",
+                    extra: 1570/1501
                 }
             },
         },
