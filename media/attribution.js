@@ -884,6 +884,30 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/sentri/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/20773611/" }
+            ],
+            authors: [
+                "hakunaro"
+            ],
+            owners: [
+                "sentri"
+            ]
+        },
+        {
+            prefix: "./media/characters/sentri/",
+            files: [
+                { name: "front-alt.svg", source: "https://www.furaffinity.net/view/26222143/" }
+            ],
+            authors: [
+                "sentri"
+            ],
+            owners: [
+                "sentri"
+            ]
+        },
+        {
             prefix: "./media/characters/sofia/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/11711111/" }
@@ -1949,6 +1973,14 @@ const attributionData = {
         "arcturax": {
             "name": "Arcturax",
             "url": "https://www.furaffinity.net/user/arcturax",
+        },
+        "hakunaro": {
+            "name": "Hakunaro",
+            "url": "https://www.furaffinity.net/user/hakunaro",
+        },
+        "sentri": {
+            "name": "Sentri",
+            "url": "https://www.furaffinity.net/user/sparkfloof/",
         },
     }
 }

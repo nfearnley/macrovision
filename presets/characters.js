@@ -5942,7 +5942,7 @@ characterMakers["Arcturax"] = () => {
             side: {
                 height: math.unit(6, "feet"),
                 weight: math.unit(2304, "lbs"),
-                name: "side",
+                name: "Side",
                 image: {
                     source: "./media/characters/arcturax/side.svg",
                     extra: 790/376 * (1 / (1 - 0.01)),
@@ -5968,6 +5968,46 @@ characterMakers["Arcturax"] = () => {
                 name: "Megamacro",
                 height: math.unit(7, "miles")
             },
+        ]
+    )
+};
+
+characterMakers["Sentri"] = () => {
+    return makeCharacter(
+        "Sentri",
+        "Sentri",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(50, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/sentri/front.svg",
+                    extra: 1750/1570 * (1 / (1 - 0.025)),
+                    bottom: 0.025
+                }
+            },
+            frontAlt: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(50, "lbs"),
+                name: "Front (Alt)",
+                image: {
+                    source: "./media/characters/sentri/front-alt.svg",
+                    extra: 1750/1570 * (1 / (1 - 0.025)),
+                    bottom: 0.025
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(15, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(2500, "feet")
+            }
         ]
     )
 };
