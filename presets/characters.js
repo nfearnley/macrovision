@@ -6109,6 +6109,50 @@ characterMakers["Corvin"] = () => {
 };
 
 
+characterMakers["Q"] = () => {
+    return makeCharacter(
+        "Q",
+        "Q Walf",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(135, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/q/front.svg",
+                    extra: 854/752 * (1 / (1 - 0.005)),
+                    bottom: 0.005
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(130, "lbs"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/q/back.svg",
+                    extra: 854/752
+                }
+            },
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(90, "feet"),
+                default: true
+            },
+            {
+                name: "Extra Macro",
+                height: math.unit(300, "feet"),
+            },
+            {
+                name: "BIG WALF",
+                height: math.unit(750, "feet"),
+            },
+        ]
+    )
+};
+
+
 function makeCharacters() {
     const results = [];
     results.push({

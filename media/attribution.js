@@ -737,6 +737,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/q/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/27639390/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/27639390/" }
+            ],
+            authors: [
+                "qdd"
+            ],
+            owners: [
+                "qdd"
+            ]
+        },
+        {
             prefix: "./media/characters/ranek/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/13716690/" },
@@ -1650,6 +1663,10 @@ const attributionData = {
         "princessrei": {
             "name": "Princess Rei",
             "url": "https://twitter.com/princessrei"
+        },
+        "qdd": {
+            "name": "Q Walf",
+            "url": "https://www.furaffinity.net/user/qdd/",
         },
         "quake-yote": {
             "name": "Quake Yote",
