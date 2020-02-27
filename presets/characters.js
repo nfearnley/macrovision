@@ -6108,7 +6108,6 @@ characterMakers["Corvin"] = () => {
     )
 };
 
-
 characterMakers["Q"] = () => {
     return makeCharacter(
         "Q",
@@ -6147,6 +6146,40 @@ characterMakers["Q"] = () => {
             {
                 name: "BIG WALF",
                 height: math.unit(750, "feet"),
+            },
+        ]
+    )
+};
+
+characterMakers["Carley"] = () => {
+    return makeCharacter(
+        "Carley",
+        "QuakeYote",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/carley/front.svg",
+                    extra: 3927/3540 * (1 / (1 - 0.03)),
+                    bottom: 0.03
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6 + 3/12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(300, "feet"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(8, "miles"),
             },
         ]
     )

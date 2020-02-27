@@ -303,6 +303,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/carley/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "msricket"
+            ],
+            owners: [
+                "quake-yote"
+            ]
+        },
+        {
             prefix: "./media/characters/chiros/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/33799727/" },
