@@ -5886,12 +5886,50 @@ characterMakers["Kane"] = () => {
             {
                 name: "Normal",
                 height: math.unit(2.1, "m"),
-                default: true
             },
             {
                 name: "Macro",
                 height: math.unit(1, "km"),
                 default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Tegon"] = () => {
+    return makeCharacter(
+        "Tegon",
+        "TegonDragon",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(200, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/tegon/front.svg",
+                    bottom: 0.01,
+                    extra: 1 / (1 - 0.01)
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(1, "inch"),
+                default: true
+            },
+            {
+                name: "Normal",
+                height: math.unit(6 + 3/12, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(300, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(69, "miles")
             },
         ]
     )

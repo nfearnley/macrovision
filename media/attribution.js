@@ -949,6 +949,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/tegon/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/15972609/" }
+            ],
+            authors: [
+                "pig"
+            ],
+            owners: [
+                "tegon"
+            ]
+        },
+        {
             prefix: "./media/characters/tiberius/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/34977812/" },
@@ -1913,6 +1925,10 @@ const attributionData = {
         "andradopts": {
             "name": "andradopts",
             "url": "https://www.furaffinity.net/user/andradopts",
+        },
+        "tegon": {
+            "name": "Tegon",
+            "url": "https://www.furaffinity.net/user/dsc85/",
         },
     }
 }
