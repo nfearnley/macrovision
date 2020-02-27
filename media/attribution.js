@@ -338,6 +338,31 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/corvin/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/15581561/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/15581561/" }
+            ],
+            authors: [
+                "fiuefey"
+            ],
+            owners: [
+                "sirffuzzylogik"
+            ]
+        },
+        {
+            prefix: "./media/characters/corvin/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/18178601/" }
+            ],
+            authors: [
+                "tylowell"
+            ],
+            owners: [
+                "sirffuzzylogik"
+            ]
+        },
+        {
             prefix: "./media/characters/daniel/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/11786572/" }
@@ -1981,6 +2006,18 @@ const attributionData = {
         "sentri": {
             "name": "Sentri",
             "url": "https://www.furaffinity.net/user/sparkfloof/",
+        },
+        "fiuefey": {
+            "name": "Fiurfey",
+            "url": "https://www.furaffinity.net/user/fiuefey/",
+        },
+        "tylowell": {
+            "name": "TyLowell",
+            "url": "https://www.furaffinity.net/user/tylowell/",
+        },
+        "sirffuzzylogik": {
+            "name": "sirffuzzylogik",
+            "url": "https://www.furaffinity.net/user/sirffuzzylogik",
         },
     }
 }

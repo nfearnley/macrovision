@@ -6012,6 +6012,61 @@ characterMakers["Sentri"] = () => {
     )
 };
 
+characterMakers["Corvin"] = () => {
+    return makeCharacter(
+        "Corvin",
+        "Sirffuzzylogik",
+        {
+            front: {
+                height: math.unit(5 + 8/12, "feet"),
+                weight: math.unit(130, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/corvin/front.svg",
+                    extra: 1803/1629
+                }
+            },
+            side: {
+                height: math.unit(5 + 8/12, "feet"),
+                weight: math.unit(130, "lbs"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/corvin/side.svg",
+                    extra: 1012/945
+                }
+            },
+            back: {
+                height: math.unit(5 + 8/12, "feet"),
+                weight: math.unit(130, "lbs"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/corvin/back.svg",
+                    extra: 1803/1629
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(3, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(5 + 8/12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(300, "feet"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(500, "miles")
+            }
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];
