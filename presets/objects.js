@@ -335,6 +335,39 @@ function makeObjects() {
             }
         )
     });
+
+    results.push({
+        name: "Fruit",
+        constructor: () => makeObject(
+            "Fruit",
+            {
+                banana: {
+                    height: math.unit(3.5, "inches"),
+                    image: { source: "./media/objects/fruits/banana.svg" },
+                    name: "Banana",
+                    rename: true
+                },
+                bananaVertical: {
+                    height: math.unit(7, "inches"),
+                    image: { source: "./media/objects/fruits/banana-vertical.svg" },
+                    name: "Banana (Vertical)",
+                    rename: true
+                },
+                lemon: {
+                    height: math.unit(3.5, "inches"),
+                    image: { source: "./media/objects/fruits/lemon.svg" },
+                    name: "Lemon",
+                    rename: true
+                },
+                orange: {
+                    height: math.unit(2.8, "inches"),
+                    image: { source: "./media/objects/fruits/orange.svg" },
+                    name: "Orange",
+                    rename: true
+                },
+            }
+        )
+    });
     
     results.sort((b1, b2) => {
         e1 = b1.constructor();

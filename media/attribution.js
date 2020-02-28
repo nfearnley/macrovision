@@ -2297,6 +2297,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/objects/fruits",
+            files: [
+                { name: "banana.svg", source: null },
+                { name: "banana-vertical.svg", source: null },
+                { name: "lemon.svg", source: null },
+                { name: "orange.svg", source: null },
+            ],
+            authors: [
+                "chemicalcrux"
+            ]
+        },
+        {
             prefix: "./media/objects/",
             files: [
                 { name: "paperclip.svg", source: "https://commons.wikimedia.org/wiki/File:Ei-paperclip.svg" }
