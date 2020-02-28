@@ -2304,6 +2304,7 @@ const attributionData = {
                 { name: "lemon.svg", source: null },
                 { name: "orange.svg", source: null },
                 { name: "grape.svg", source: null },
+                { name: "pineapple.svg", source: null }
             ],
             authors: [
                 "chemicalcrux"

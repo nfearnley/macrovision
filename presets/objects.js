@@ -371,6 +371,13 @@ function makeObjects() {
                     name: "Grape",
                     rename: true
                 },
+                pineapple: {
+                    height: math.unit(17, "inches"),
+                    image: { source: "./media/objects/fruits/pineapple.svg" },
+                    name: "Pineapple",
+                    rename: true
+                },
+
             }
         )
     });
