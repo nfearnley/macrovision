@@ -26,7 +26,8 @@ function makeCharacter(name, author, viewInfo, defaultSizes, defaultSize, extraI
             },
             image: value.image,
             name: value.name,
-            info: value.info
+            info: value.info,
+            rename: value.rename
         }
 
         if (value.weight) {

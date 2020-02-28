@@ -1101,6 +1101,7 @@ function prepareEntities() {
     availableEntities["naturals"] = makeNaturals();
     availableEntities["vehicles"] = makeVehicles();
     availableEntities["cities"] = makeCities();
+    availableEntities["pokemon"] = makePokemon();
 
     availableEntities["characters"].sort((x, y) => {
         return x.name < y.name ? -1 : 1
