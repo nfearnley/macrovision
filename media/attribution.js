@@ -2303,6 +2303,7 @@ const attributionData = {
                 { name: "banana-vertical.svg", source: null },
                 { name: "lemon.svg", source: null },
                 { name: "orange.svg", source: null },
+                { name: "grape.svg", source: null },
             ],
             authors: [
                 "chemicalcrux"

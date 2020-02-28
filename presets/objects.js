@@ -365,6 +365,12 @@ function makeObjects() {
                     name: "Orange",
                     rename: true
                 },
+                grape: {
+                    height: math.unit(0.8, "inches"),
+                    image: { source: "./media/objects/fruits/grape.svg" },
+                    name: "Grape",
+                    rename: true
+                },
             }
         )
     });
