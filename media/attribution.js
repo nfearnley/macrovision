@@ -2297,7 +2297,7 @@ const attributionData = {
             ]
         },
         {
-            prefix: "./media/objects/fruits",
+            prefix: "./media/objects/fruits/",
             files: [
                 { name: "banana.svg", source: null },
                 { name: "banana-vertical.svg", source: null },
