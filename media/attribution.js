@@ -1440,6 +1440,30 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/chari-gal/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32375639/" }
+            ],
+            authors: [
+                "sonicsweeti"
+            ],
+            owners: [
+                "knoem"
+            ]
+        },
+        {
+            prefix: "./media/characters/chari-gal/",
+            files: [
+                { name: "gigantamax.svg", source: "https://www.furaffinity.net/view/33701314/" }
+            ],
+            authors: [
+                "cheeki"
+            ],
+            owners: [
+                "knoem"
+            ]
+        },
+        {
             prefix: "./media/characters/chiros/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/33799727/" },
@@ -2422,6 +2446,18 @@ const attributionData = {
                 "h-padleckas"
             ]
         },
+        {
+            prefix: "./media/vehicles/spacecraft/",
+            files: [
+                { name: "n-1.svg", source: "https://en.wikipedia.org/wiki/File:Super_heavy-lift_launch_vehicles.png" },
+                { name: "saturn-v.svg", source: "https://en.wikipedia.org/wiki/File:Super_heavy-lift_launch_vehicles.png" },
+                { name: "starship.svg", source: "https://en.wikipedia.org/wiki/File:Super_heavy-lift_launch_vehicles.png" }
+            ],
+            authors: [
+                "thorenn",
+                "chemicalcrux"
+            ]
+        },
     ],
     people: {
         "ahastar": {
@@ -3263,6 +3299,22 @@ const attributionData = {
         "bkdebo": {
             "name": "BKdebo",
             "url": "https://www.furaffinity.net/user/bkdebo",
+        },
+        "sonicsweeti": {
+            "name": "SonicSweeti",
+            "url": "https://www.furaffinity.net/user/sonicsweeti/"
+        },
+        "knoem": {
+            "name": "Knoem",
+            "url": "https://www.furaffinity.net/user/knoem",
+        },
+        "thorenn": {
+            "name": "Thorenn",
+            "url": "https://commons.wikimedia.org/wiki/User:Thorenn",
+        },
+        "cheeki": {
+            "name": "CHeeki",
+            "url": "https://www.furaffinity.net/user/cheeki",
         },
     }
 }

@@ -6354,6 +6354,46 @@ characterMakers["Coffee"] = () => {
     )
 };
 
+characterMakers["Chari-Gal"] = () => {
+    return makeCharacter(
+        "Chari-Gal",
+        "Vonadi",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(200, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/chari-gal/front.svg",
+                    extra: 1568/1385 * (1 / (1 - 0.047)),
+                    bottom: 0.047
+                }
+            },
+            gigantamax: {
+                height: math.unit(6*16, "feet"),
+                weight: math.unit(200*16*16*16, "lbs"),
+                name: "Gigantamax",
+                image: {
+                    source: "./media/characters/chari-gal/gigantamax.svg",
+                    extra: 1124/888 * (1 / (1 - 0.03)),
+                    bottom: 0.03
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 7/12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(200, "feet"),
+                default: true
+            }
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

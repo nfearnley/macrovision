@@ -27,6 +27,37 @@ function makeVehicle(name, sides, mass) {
     return makeEntity({ name: name }, views);
 }
 
+function makeMultiVehicle(name, sides) {
+    views = {
+
+    }
+
+    Object.entries(sides).forEach(([key, val]) => {
+        views[key] = {
+            attributes: {
+                height: {
+                    name: "Height",
+                    power: 1,
+                    type: "length",
+                    base: val.height
+                },
+                mass: {
+                    name: "Mass",
+                    power: 3,
+                    type: "mass",
+                    base: val.mass
+                }
+            },
+            image: val.image,
+            name: val.name,
+            rename: val.rename
+        }
+    });
+
+    return makeEntity({ name: name }, views);
+}
+
+
 function makeVehicles() {
     const results = [];
 
@@ -138,6 +169,36 @@ function makeVehicles() {
                 },
             },
             math.unit(52310, "tons")
+        )
+    });
+
+    results.push({
+        name: "Spacecraft",
+        constructor: () => makeMultiVehicle(
+            "Spacecraft",
+            {
+                "n-1": {
+                    name: "N-1",
+                    rename: true,
+                    height: math.unit(105, "meters"),
+                    mass: math.unit(95, "tons"),
+                    image: { source: "./media/vehicles/spacecraft/n-1.svg" }
+                },
+                "saturn-v": {
+                    name: "Saturn V",
+                    rename: true,
+                    height: math.unit(110.6, "meters"),
+                    mass: math.unit(140, "tons"),
+                    image: { source: "./media/vehicles/spacecraft/saturn-v.svg" }
+                },
+                "starship": {
+                    name: "Starship",
+                    rename: true,
+                    height: math.unit(118, "m"),
+                    mass: math.unit(150, "tons"),
+                    image: { source: "./media/vehicles/spacecraft/saturn-v.svg" }
+                },
+            }
         )
     });
 
