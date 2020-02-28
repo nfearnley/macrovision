@@ -1489,6 +1489,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/coffee/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/NShayd22/status/1162200383487217667" }
+            ],
+            authors: [
+                "bkdebo"
+            ],
+            owners: [
+                "bkdebo"
+            ]
+        },
+        {
             prefix: "./media/characters/corvin/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/15581561/" },
@@ -3247,6 +3259,10 @@ const attributionData = {
         "wagadraws": {
             "name": "Waga",
             "url": "https://twitter.com/WagaDraws",
+        },
+        "bkdebo": {
+            "name": "BKdebo",
+            "url": "https://www.furaffinity.net/user/bkdebo",
         },
     }
 }

@@ -6317,6 +6317,43 @@ characterMakers["Rivet"] = () => {
     )
 };
 
+characterMakers["Coffee"] = () => {
+    return makeCharacter(
+        "Coffee",
+        "Vonadi",
+        {
+            front: {
+                height: math.unit(5 + 9/12, "feet"),
+                weight: math.unit(150, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/coffee/front.svg",
+                    extra: 3666/3032
+                }
+            }
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(2, "inches"),
+            },
+            {
+                name: "Normal",
+                height: math.unit(5 + 9/12, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(80, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(25, "miles")
+            }
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];
