@@ -4816,12 +4816,12 @@ characterMakers["Rose Lion"] = () => {
             },
             {
                 name: "Micro",
-                height: math.unit(3.5, "inches")
+                height: math.unit(3.5, "inches"),
+                default: true
             },
             {
                 name: "Normal",
-                height: math.unit(6 + 1/6, "feet"),
-                default: true
+                height: math.unit(6 + 1/6, "feet")
             },
             {
                 name: "Mini-Macro",
