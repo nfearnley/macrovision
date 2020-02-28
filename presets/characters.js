@@ -6320,7 +6320,7 @@ characterMakers["Rivet"] = () => {
 characterMakers["Coffee"] = () => {
     return makeCharacter(
         "Coffee",
-        "Vonadi",
+        "CoffeeDoggo",
         {
             front: {
                 height: math.unit(5 + 9/12, "feet"),
@@ -6328,7 +6328,8 @@ characterMakers["Coffee"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/coffee/front.svg",
-                    extra: 3666/3032
+                    extra: 3666/3032 * (1 / (1 - 0.04)),
+                    bottom: 0.04
                 }
             }
         },
@@ -6357,7 +6358,7 @@ characterMakers["Coffee"] = () => {
 characterMakers["Chari-Gal"] = () => {
     return makeCharacter(
         "Chari-Gal",
-        "Vonadi",
+        "Knoem",
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -6390,6 +6391,36 @@ characterMakers["Chari-Gal"] = () => {
                 height: math.unit(200, "feet"),
                 default: true
             }
+        ]
+    )
+};
+
+characterMakers["Nova"] = () => {
+    return makeCharacter(
+        "Nova",
+        "CoffeeDoggo",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/nova/front.svg",
+                    extra: 5000/4722 * (1 / (1 - 0.02)),
+                    bottom: 0.02
+                }
+            }
+        },
+        [
+            {
+                name: "Micro-",
+                height: math.unit(0.8, "inches")
+            },
+            {
+                name: "Micro",
+                height: math.unit(2, "inches"),
+                normal: true
+            },
         ]
     )
 };

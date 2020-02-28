@@ -1860,6 +1860,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/nova/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "bkdebo"
+            ],
+            owners: [
+                "bkdebo"
+            ]
+        },
+        {
             prefix: "./media/characters/odi-lunar/",
             files: [
                 { name: "front.svg", source: "https://twitter.com/odi_lunar/status/1230878530612817921?s=21" }
