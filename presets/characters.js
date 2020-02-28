@@ -6344,7 +6344,7 @@ characterMakers["Coffee"] = () => {
             },
             {
                 name: "Macro",
-                height: math.unit(80, "feet")
+                height: math.unit(800, "feet")
             },
             {
                 name: "Megamacro",
