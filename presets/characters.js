@@ -6209,6 +6209,68 @@ characterMakers["Citrine"] = () => {
     )
 };
 
+characterMakers["Aura Starwind"] = () => {
+    return makeCharacter(
+        "Aura Starwind",
+        "StrikeVixen",
+        {
+            front: {
+                height: math.unit(14, "feet"),
+                weight: math.unit(1450, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/aura-starwind/front.svg",
+                    extra: 1455/1335
+                }
+            },
+            side: {
+                height: math.unit(14, "feet"),
+                weight: math.unit(1450, "kg"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/aura-starwind/side.svg",
+                    extra: 1654/1497
+                }
+            },
+            taur: {
+                height: math.unit(18, "feet"),
+                weight: math.unit(5500, "kg"),
+                name: "Taur",
+                image: {
+                    source: "./media/characters/aura-starwind/taur.svg",
+                    extra: 1760/1650
+                }
+            },
+            feral: {
+                height: math.unit(46, "feet"),
+                weight: math.unit(25000, "kg"),
+                name: "Feral",
+                image: {
+                    source: "./media/characters/aura-starwind/feral.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(14, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(50, "meters")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(5000, "meters")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(100000, "kilometers")
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

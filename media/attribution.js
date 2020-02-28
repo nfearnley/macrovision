@@ -1327,6 +1327,43 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/aura-starwind/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/28114444/" }
+            ],
+            authors: [
+                "blackfoxguts"
+            ],
+            owners: [
+                "strikevixen"
+            ]
+        },
+        {
+            prefix: "./media/characters/aura-starwind/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/28114444/" },
+                { name: "taur.svg", source: "https://www.furaffinity.net/view/28114444/" }
+            ],
+            authors: [
+                "tenewuff"
+            ],
+            owners: [
+                "strikevixen"
+            ]
+        },
+        {
+            prefix: "./media/characters/aura-starwind/",
+            files: [
+                { name: "feral.svg", source: null }
+            ],
+            authors: [
+                "slckness"
+            ],
+            owners: [
+                "strikevixen"
+            ]
+        },
+        {
             prefix: "./media/characters/aurora/",
             files: [
                 { name: "side.svg", source: "https://www.furaffinity.net/view/31191812/" }
@@ -3177,6 +3214,22 @@ const attributionData = {
         "thunderstrike23": {
             "name": "thunderstrike23",
             "url": "https://www.furaffinity.net/user/thunderstrike23/",
+        },
+        "blackfoxguts": {
+            "name": "blackfoxguts",
+            "url": "https://www.furaffinity.net/user/blackfoxguts/",
+        },
+        "strikevixen": {
+            "name": "StrikeVixen",
+            "url": "https://www.furaffinity.net/user/strikevixen/",
+        },
+        "tenewuff": {
+            "name": "TeneWuff",
+            "url": "http://furaffinity.net/user/tenewuff",
+        },
+        "slckness": {
+            "name": "Slckness",
+            "url": "http://furaffinity.net/user/slckness",
         },
         
     }
