@@ -6271,6 +6271,52 @@ characterMakers["Aura Starwind"] = () => {
     )
 };
 
+characterMakers["Rivet"] = () => {
+    return makeCharacter(
+        "Rivet",
+        "Vonadi",
+        {
+            front: {
+                height: math.unit(2 + 7/12, "feet"),
+                weight: math.unit(32, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/rivet/front.svg",
+                    extra: 1716/1658 * (1 / (1 - 0.03)),
+                    bottom: 0.03
+                }
+            },
+            foot: {
+                height: math.unit(0.551, "feet"),
+                name: "Rivet's Foot",
+                image: {
+                    source: "./media/characters/rivet/foot.svg"
+                },
+                rename: true
+            }
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(1.5, "inches"),
+            },
+            {
+                name: "Normal",
+                height: math.unit(2 + 7/12, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(85, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(2.2, "km")
+            }
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

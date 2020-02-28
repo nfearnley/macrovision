@@ -2001,6 +2001,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/rivet/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/31192572/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/31192572/" },
+            ],
+            authors: [
+                "wagadraws"
+            ],
+            owners: [
+                "vonadi"
+            ]
+        },
+        {
             prefix: "./media/characters/rogue/",
             files: [
                 { name: "front.svg", source: "http://rogue.macrophile.com/ken" }
@@ -3231,7 +3244,10 @@ const attributionData = {
             "name": "Slckness",
             "url": "http://furaffinity.net/user/slckness",
         },
-        
+        "wagadraws": {
+            "name": "Waga",
+            "url": "https://twitter.com/WagaDraws",
+        },
     }
 }
 
