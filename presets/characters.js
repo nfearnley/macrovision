@@ -6186,6 +6186,29 @@ characterMakers["Carley"] = () => {
     )
 };
 
+characterMakers["Citrine"] = () => {
+    return makeCharacter(
+        "Citrine",
+        "thunderstrike23",
+        {
+            front: {
+                height: math.unit(3, "feet"),
+                weight: math.unit(28, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/citrine/front.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(3, "feet")
+            }
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

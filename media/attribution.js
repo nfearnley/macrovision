@@ -1428,6 +1428,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/citrine/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "doodlies"
+            ],
+            owners: [
+                "thunderstrike23"
+            ]
+        },
+        {
             prefix: "./media/characters/cobalt/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/34983155/" }
@@ -3144,6 +3156,15 @@ const attributionData = {
             "name": "sirffuzzylogik",
             "url": "https://www.furaffinity.net/user/sirffuzzylogik",
         },
+        "doodlies": {
+            "name": "doodlies",
+            "url": "https://www.furaffinity.net/user/doodlies"
+        },
+        "thunderstrike23": {
+            "name": "thunderstrike23",
+            "url": "https://www.furaffinity.net/user/thunderstrike23/",
+        },
+        
     }
 }
 
