@@ -1737,6 +1737,30 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/katherine/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32481756/" }
+            ],
+            authors: [
+                "pixiefyre"
+            ],
+            owners: [
+                "chrisrules123"
+            ]
+        },
+        {
+            prefix: "./media/characters/katherine/",
+            files: [
+                { name: "dress.svg", source: "https://www.furaffinity.net/view/32063053/" }
+            ],
+            authors: [
+                "combat-raccoon"
+            ],
+            owners: [
+                "chrisrules123"
+            ]
+        },
+        {
             prefix: "./media/characters/kennedy/",
             files: [
                 { name: "side.svg", source: "https://www.furaffinity.net/view/26538996/" },
@@ -3384,6 +3408,14 @@ const attributionData = {
         "dragonshark": {
             "name": "DragonShark",
             "url": "https://twitter.com/ReptileGamepley",
+        },
+        "chrisrules123": {
+            "name": "chrisrules123",
+            "url": "https://www.furaffinity.net/user/chrisrules123",
+        },
+        "pixiefyre": {
+            "name": "Pixiefyre",
+            "url": "https://www.furaffinity.net/user/pixiefyre",
         },
     }
 }

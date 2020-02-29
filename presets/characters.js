@@ -6554,6 +6554,52 @@ characterMakers["Kuro-shi Uchū"] = () => {
     )
 };
 
+characterMakers["Katherine"] = () => {
+    return makeCharacter(
+        "Katherine",
+        "chrisrules123",
+        {
+            front: {
+                height: math.unit(5 + 2/12, "feet"),
+                weight: math.unit(120, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/katherine/front.svg",
+                    extra: 2075/1969
+                }
+            },
+            dress: {
+                height: math.unit(5 + 2/12, "feet"),
+                weight: math.unit(120, "lbs"),
+                name: "Dress",
+                image: {
+                    source: "./media/characters/katherine/dress.svg",
+                    extra: 2258/2064
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(1, "inches"),
+                default: true
+            },
+            {
+                name: "Normal",
+                height: math.unit(5 + 2/12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(100, "meters")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(80, "miles")
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

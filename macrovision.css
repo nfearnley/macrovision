@@ -29,11 +29,7 @@ body {
     -moz-user-drag: none;
     -o-user-drag: none;
     pointer-events: none;
-    transition: 0.2s;
-}
-
-.entity-box.grabbed {
-    transition: 0s;
+    transition: height 0.2s cubic-bezier(.1,.41,.18,.99), max-height 0.2s cubic-bezier(.1,.41,.18,.99);
 }
 
 .entity-image {

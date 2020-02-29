@@ -319,7 +319,6 @@ function clickDown(target, x, y) {
     let entY = document.querySelector("#entities").getBoundingClientRect().y;
     dragOffsetX = x - rect.left + entX;
     dragOffsetY = y - rect.top + entY;
-    target.classList.add("grabbed");
     clickTimeout = setTimeout(() => { dragging = true }, 200)
 }
 
@@ -343,7 +342,6 @@ function clickUp(e) {
         } else {
             select(clicked);
         }
-        clicked.classList.remove("grabbed");
         clicked = null;
     }
 
