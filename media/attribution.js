@@ -2371,6 +2371,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/tyrone/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32053722/" }
+            ],
+            authors: [
+                "pettyjackal"
+            ],
+            owners: [
+                "nanakisan"
+            ]
+        },
+        {
             prefix: "./media/characters/valeska-voss/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/28522387/" }
@@ -3509,6 +3521,14 @@ const attributionData = {
         "gigren": {
             "name": "gigren",
             "url": "https://www.furaffinity.net/user/gigren",
+        },
+        "nanakisan": {
+            "name": "nanakisan",
+            "url": "https://www.furaffinity.net/user/nanakisan",
+        },
+        "pettyjackal": {
+            "name": "Darrell Jackal (Petty)",
+            "url": "https://twitter.com/pettyjackal",
         },
     }
 }

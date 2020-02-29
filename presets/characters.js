@@ -6797,7 +6797,35 @@ characterMakers["Kara"] = () => {
     )
 };
 
-
+characterMakers["Tyrone"] = () => {
+    return makeCharacter(
+        "Tyrone",
+        "nanakisan",
+        {
+            front: {
+                height: math.unit(18, "feet"),
+                weight: math.unit(4050, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/tyrone/front.svg",
+                    extra: 2520/2402 * (1 / (1 - 0.025)),
+                    bottom: 0.025
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(18, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(300, "feet")
+            },
+        ]
+    )
+};
 function makeCharacters() {
     const results = [];
     results.push({
