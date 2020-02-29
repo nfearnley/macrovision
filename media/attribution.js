@@ -1600,6 +1600,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/danny/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/danny_gryphon/status/1212835551180517376" }
+            ],
+            authors: [
+                "xrosettaxx"
+            ],
+            owners: [
+                "danny-gryphon"
+            ]
+        },
+        {
             prefix: "./media/characters/dr-clay/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/33619821/" },
@@ -3529,6 +3541,14 @@ const attributionData = {
         "pettyjackal": {
             "name": "Darrell Jackal (Petty)",
             "url": "https://twitter.com/pettyjackal",
+        },
+        "xrosettaxx": {
+            "name": "XRosettaxx",
+            "url": "https://twitter.com/XRosettaxx",
+        },
+        "danny-gryphon": {
+            "name": "Danny Gryphon",
+            "url": "https://twitter.com/danny_gryphon",
         },
     }
 }

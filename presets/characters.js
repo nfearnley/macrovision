@@ -6826,6 +6826,41 @@ characterMakers["Tyrone"] = () => {
         ]
     )
 };
+
+characterMakers["Danny"] = () => {
+    return makeCharacter(
+        "Danny",
+        "danny_gryphon",
+        {
+            front: {
+                height: math.unit(7 + 8/12, "feet"),
+                weight: math.unit(120, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/danny/front.svg",
+                    extra: 1490/1350
+                }
+            },
+            back: {
+                height: math.unit(7 + 8/12, "feet"),
+                weight: math.unit(120, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/danny/back.svg",
+                    extra: 1490/1350
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(7 + 8/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};r
+
 function makeCharacters() {
     const results = [];
     results.push({
