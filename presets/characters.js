@@ -6465,7 +6465,7 @@ characterMakers["Argent"] = () => {
 characterMakers["Mira al-Cul"] = () => {
     return makeCharacter(
         "Mira al-Cul",
-        "Garouwl",
+        "Mariokartsonicriders",
         {
             lamp: {
                 height: math.unit(7 * 1559 / 989, "feet"),
@@ -6509,8 +6509,12 @@ characterMakers["Mira al-Cul"] = () => {
                 default: true
             },
             {
-                name: "True Size",
+                name: "Multiversal Matriarch",
                 height: math.unit(8.87e10, "yottameters")
+            },
+            {
+                name: "Void Mother",
+                height: math.unit(3.14e10, "yottaparsecs")
             },
         ]
     )
@@ -6595,6 +6599,55 @@ characterMakers["Katherine"] = () => {
             {
                 name: "Megamacro",
                 height: math.unit(80, "miles")
+            },
+        ]
+    )
+};
+
+characterMakers["Yevis"] = () => {
+    return makeCharacter(
+        "Yevis",
+        "Mariokartsonicriders",
+        {
+            front: {
+                height: math.unit(7 + 8/12, "feet"),
+                weight: math.unit(250, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/yevis/front.svg",
+                    extra: 1938/1755
+                }
+            }
+        },
+        [
+            {
+                name: "Mortal",
+                height: math.unit(7 + 8/12, "feet")
+            },
+            {
+                name: "Battle",
+                height: math.unit(25 + 11/12, "feet")
+            },
+            {
+                name: "Wrath",
+                height: math.unit(1654 + 11/12, "feet")
+            },
+            {
+                name: "Planet Destroyer",
+                height: math.unit(12000, "miles")
+            },
+            {
+                name: "Galaxy Conqueror",
+                height: math.unit(1.45, "zettameters"),
+                default: true
+            },
+            {
+                name: "Universal War",
+                height: math.unit(184, "gigaparsecs")
+            },
+            {
+                name: "Eternity War",
+                height: math.unit(1.98e55, "yottaparsecs")
             },
         ]
     )

@@ -2397,6 +2397,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/yevis/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/20815777/" }
+            ],
+            authors: [
+                "mr-pink"
+            ],
+            owners: [
+                "mariokartsonicriders"
+            ]
+        },
+        {
             prefix: "./media/characters/yozey/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/31547387/" },
@@ -3416,6 +3428,10 @@ const attributionData = {
         "pixiefyre": {
             "name": "Pixiefyre",
             "url": "https://www.furaffinity.net/user/pixiefyre",
+        },
+        "mr-pink": {
+            "name": "Mr. Pink",
+            "url": "https://www.furaffinity.net/user/mr.pink/",
         },
     }
 }
