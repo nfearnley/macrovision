@@ -1856,7 +1856,7 @@ const attributionData = {
                 "rubbermage"
             ],
             owners: [
-                "garouwl"
+                "mariokartsonicriders"
             ]
         },
         {
@@ -3361,8 +3361,8 @@ const attributionData = {
             "name": "RubberMage",
             "url": "https://www.furaffinity.net/user/rubbermage/",
         },
-        "garouwl": {
-            "name": "Garouwl",
+        "mariokartsonicriders": {
+            "name": "Mariokartsonicriders",
             "url": "https://www.furaffinity.net/user/mariokartsonicriders/",
         },
     }
