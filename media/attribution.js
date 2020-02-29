@@ -1700,6 +1700,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/goddess-elizabeth/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "darkietehjester"
+            ],
+            owners: [
+                "darkietehjester"
+            ]
+        },
+        {
             prefix: "./media/characters/jaro/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/26084387/" },
@@ -1710,6 +1722,18 @@ const attributionData = {
             ],
             owners: [
                 "jaro-the-dragon"
+            ]
+        },
+        {
+            prefix: "./media/characters/joshii/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "darkietehjester"
+            ],
+            owners: [
+                "darkietehjester"
             ]
         },
         {
@@ -3449,6 +3473,10 @@ const attributionData = {
         "zmaster587": {
             "name": "zmaster587",
             "url": "https://www.furaffinity.net/user/zmaster587/",
+        },
+        "darkietehjester": {
+            "name": "DarkieTehJester",
+            "url": "https://twitter.com/DarkieTehJester",
         },
     }
 }

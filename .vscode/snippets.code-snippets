@@ -43,5 +43,47 @@
 		  "},"
 		],
 		"description": "Citation"
+	  },
+	  "Character": {
+		"prefix": "character",
+		"body": [
+		  "characterMakers[\"$1\"] = () => {",
+		  "    return makeCharacter(",
+		  "        \"$1\",",
+		  "        \"$2\",",
+		  "        {",
+		  "",
+		  "        },",
+		  "        [",
+		  "            ",
+		  "        ]",
+		  "    )",
+		  "};"
+		],
+		"description": "Character"
+	  },
+	  "View": {
+		"prefix": "view",
+		"body": [
+		  "$1: {",
+		  "    height: math.unit(6, \"feet\"),",
+		  "    weight: math.unit(150, \"lb\"),",
+		  "    name: \"${1/(.*)/${1:/capitalize}/}\",",
+		  "    image: {",
+		  "        source: \"./media/characters/$2/$1.svg\"",
+		  "    }",
+		  "},"
+		],
+		"description": "View"
+	  },
+	  "Size": {
+		"prefix": "size",
+		"body": [
+		  "{",
+		  "    name: \"$1\",",
+		  "    height: math.unit($2, \"$3\")",
+		  "},"
+		],
+		"description": "Size"
 	  }
 }

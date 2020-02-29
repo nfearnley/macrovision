@@ -6693,6 +6693,74 @@ characterMakers["Xavier"] = () => {
     )
 };
 
+characterMakers["Joshii"] = () => {
+    return makeCharacter(
+        "Joshii",
+        "DarkieTehJester",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/joshii/front.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(2, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(5 + 5/12, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(785, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(24.5, "miles")
+            },
+        ]
+    )
+};
+
+characterMakers["Goddess Elizabeth"] = () => {
+    return makeCharacter(
+        "Goddess Elizabeth",
+        "DarkieTehJester",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/goddess-elizabeth/front.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(12, "feet")
+            },
+            {
+                name: "Normal",
+                height: math.unit(80, "miles"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(15000, "parsecs")
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];
