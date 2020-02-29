@@ -6761,6 +6761,34 @@ characterMakers["Goddess Elizabeth"] = () => {
     )
 };
 
+characterMakers["Kara"] = () => {
+    return makeCharacter(
+        "Kara",
+        "Vonadi",
+        {
+            front: {
+                height: math.unit(5 + 9/12, "feet"),
+                weight: math.unit(144, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/kara/front.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 9/12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(174, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

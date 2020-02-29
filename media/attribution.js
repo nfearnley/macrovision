@@ -1761,6 +1761,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/kara/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/31202660/" }
+            ],
+            authors: [
+                "mtfoxx"
+            ],
+            owners: [
+                "vonadi"
+            ]
+        },
+        {
             prefix: "./media/characters/katherine/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/32481756/" }
@@ -3477,6 +3489,10 @@ const attributionData = {
         "darkietehjester": {
             "name": "DarkieTehJester",
             "url": "https://twitter.com/DarkieTehJester",
+        },
+        "mtfoxx": {
+            "name": "Mtfoxx",
+            "url": "https://www.furaffinity.net/user/mtfoxx",
         },
     }
 }
