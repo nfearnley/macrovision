@@ -6774,6 +6774,14 @@ characterMakers["Kara"] = () => {
                     source: "./media/characters/kara/front.svg"
                 }
             },
+            feet: {
+                height: math.unit(6/6.765, "feet"),
+                name: "Kara's Feet",
+                rename: true,
+                image: {
+                    source: "./media/characters/kara/feet.svg"
+                }
+            },
         },
         [
             {

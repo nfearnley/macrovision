@@ -1773,6 +1773,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/kara/",
+            files: [
+                { name: "gigren.svg", source: "https://www.furaffinity.net/view/35111383/" }
+            ],
+            authors: [
+                "gigren"
+            ],
+            owners: [
+                "vonadi"
+            ]
+        },
+        {
             prefix: "./media/characters/katherine/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/32481756/" }
@@ -3493,6 +3505,10 @@ const attributionData = {
         "mtfoxx": {
             "name": "Mtfoxx",
             "url": "https://www.furaffinity.net/user/mtfoxx",
+        },
+        "gigren": {
+            "name": "gigren",
+            "url": "https://www.furaffinity.net/user/gigren",
         },
     }
 }
