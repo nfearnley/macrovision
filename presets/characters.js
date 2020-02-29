@@ -6699,11 +6699,18 @@ characterMakers["Joshii"] = () => {
         "DarkieTehJester",
         {
             front: {
-                height: math.unit(6, "feet"),
+                height: math.unit(5 + 5/12, "feet"),
                 weight: math.unit(150, "lb"),
                 name: "Front",
                 image: {
                     source: "./media/characters/joshii/front.svg"
+                }
+            },
+            foot: {
+                height: math.unit((5 + 5/12) * 0.1676, "feet"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/joshii/foot.svg"
                 }
             },
         },
@@ -6740,6 +6747,13 @@ characterMakers["Goddess Elizabeth"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/goddess-elizabeth/front.svg"
+                }
+            },
+            foot: {
+                height: math.unit(6 * 0.25436 / 2, "feet"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/goddess-elizabeth/foot.svg"
                 }
             },
         },

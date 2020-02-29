@@ -1714,7 +1714,8 @@ const attributionData = {
         {
             prefix: "./media/characters/goddess-elizabeth/",
             files: [
-                { name: "front.svg", source: null }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/30317113/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/30317113/" }
             ],
             authors: [
                 "darkietehjester"
@@ -1739,7 +1740,8 @@ const attributionData = {
         {
             prefix: "./media/characters/joshii/",
             files: [
-                { name: "front.svg", source: null }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35054066/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/35054066/" }
             ],
             authors: [
                 "darkietehjester"
