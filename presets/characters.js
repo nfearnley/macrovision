@@ -6425,6 +6425,40 @@ characterMakers["Nova"] = () => {
     )
 };
 
+characterMakers["Argent"] = () => {
+    return makeCharacter(
+        "Argent",
+        "ArgentVZ",
+        {
+            front: {
+                height: math.unit(3 + 1/12, "feet"),
+                weight: math.unit(21.7, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/argent/front.svg",
+                    extra: 1565/1416 * (1 / (1 - 0.01)),
+                    bottom: 0.01
+                }
+            }
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(2, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(3 + 1/12, "feet"),
+                normal: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(120, "feet")
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

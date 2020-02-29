@@ -1287,6 +1287,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/argent/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/WagaDraws/status/1229208821072924672" }
+            ],
+            authors: [
+                "wagadraws"
+            ],
+            owners: [
+                "argentvz"
+            ]
+        },
+        {
             prefix: "./media/characters/asana/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/35087729/" },
@@ -3327,6 +3339,10 @@ const attributionData = {
         "cheeki": {
             "name": "CHeeki",
             "url": "https://www.furaffinity.net/user/cheeki",
+        },
+        "argentvz": {
+            "name": "Argent",
+            "url": "https://www.furaffinity.net/user/argentvz/",
         },
     }
 }
