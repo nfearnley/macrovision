@@ -1602,8 +1602,8 @@ const attributionData = {
         {
             prefix: "./media/characters/dr-clay/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/15534343/" },
-                { name: "front-clothed.svg", source: "https://www.furaffinity.net/view/15534343/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33619821/" },
+                { name: "front-clothed.svg", source: "https://www.furaffinity.net/view/33619821/" }
             ],
             authors: [
                 "wonderball"
