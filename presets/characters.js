@@ -6469,7 +6469,6 @@ characterMakers["Mira al-Cul"] = () => {
         {
             lamp: {
                 height: math.unit(7 * 1559 / 989, "feet"),
-                weight: math.unit(750, "lbs"),
                 name: "Magic Lamp",
                 image: {
                     source: "./media/characters/mira-al-cul/lamp.svg",
@@ -6478,7 +6477,6 @@ characterMakers["Mira al-Cul"] = () => {
             },
             front: {
                 height: math.unit(7, "feet"),
-                weight: math.unit(750, "lbs"),
                 name: "Front",
                 image: {
                     source: "./media/characters/mira-al-cul/front.svg",
@@ -6514,7 +6512,7 @@ characterMakers["Mira al-Cul"] = () => {
             },
             {
                 name: "Void Mother",
-                height: math.unit(3.14e10, "yottaparsecs")
+                height: math.unit(3.14e110, "yottaparsecs")
             },
         ]
     )
