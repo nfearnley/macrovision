@@ -1781,7 +1781,7 @@ const attributionData = {
                 "shinywark"
             ],
             owners: [
-                "dragonshark"
+                "sharkmare"
             ]
         },
         {
@@ -3417,9 +3417,9 @@ const attributionData = {
             "name": "ShinyWark",
             "url": "https://twitter.com/ShinyWark",
         },
-        "dragonshark": {
-            "name": "DragonShark",
-            "url": "https://twitter.com/ReptileGamepley",
+        "sharkmare": {
+            "name": "Sharkmare",
+            "url": "https://twitter.com/sharkmare",
         },
         "chrisrules123": {
             "name": "chrisrules123",
