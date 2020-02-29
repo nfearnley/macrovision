@@ -6459,6 +6459,60 @@ characterMakers["Argent"] = () => {
     )
 };
 
+characterMakers["Mira al-Cul"] = () => {
+    return makeCharacter(
+        "Mira al-Cul",
+        "Garouwl",
+        {
+            lamp: {
+                height: math.unit(7 * 1559 / 989, "feet"),
+                weight: math.unit(750, "lbs"),
+                name: "Magic Lamp",
+                image: {
+                    source: "./media/characters/mira-al-cul/lamp.svg",
+                    extra: 1617/1559
+                }
+            },
+            front: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(750, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/mira-al-cul/front.svg",
+                    extra: 1044/990
+                }
+            },
+        },
+        [
+            {
+                name: "Heavily Restricted",
+                height: math.unit(7 * 1559 / 989, "feet")
+            },
+            {
+                name: "Freshly Freed",
+                height: math.unit(50 * 1559 / 989, "feet")
+            },
+            {
+                name: "World Encompassing",
+                height: math.unit(10000 * 1559 / 989, "miles")
+            },
+            {
+                name: "Galactic",
+                height: math.unit(1.433 * 1559 / 989, "zettameters")
+            },
+            {
+                name: "Palmed Universe",
+                height: math.unit(6000 * 1559 / 989, "yottameters"),
+                default: true
+            },
+            {
+                name: "True Size",
+                height: math.unit(8.87e10, "yottameters")
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

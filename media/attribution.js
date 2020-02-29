@@ -1847,6 +1847,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/mira-al-cul/",
+            files: [
+                { name: "lamp.svg", source: "https://www.furaffinity.net/view/24240755/" },
+                { name: "front.svg", source: "https://www.furaffinity.net/view/24240755/" }
+            ],
+            authors: [
+                "rubbermage"
+            ],
+            owners: [
+                "garouwl"
+            ]
+        },
+        {
             prefix: "./media/characters/nibbles/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/22964778/" },
@@ -3343,6 +3356,14 @@ const attributionData = {
         "argentvz": {
             "name": "Argent",
             "url": "https://www.furaffinity.net/user/argentvz/",
+        },
+        "rubbermage": {
+            "name": "RubberMage",
+            "url": "https://www.furaffinity.net/user/rubbermage/",
+        },
+        "garouwl": {
+            "name": "Garouwl",
+            "url": "https://www.furaffinity.net/user/mariokartsonicriders/",
         },
     }
 }
