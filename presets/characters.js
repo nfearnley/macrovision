@@ -6651,6 +6651,48 @@ characterMakers["Yevis"] = () => {
     )
 };
 
+characterMakers["Xavier"] = () => {
+    return makeCharacter(
+        "Xavier",
+        "zmaster587",
+        {
+            front: {
+                height: math.unit(5 + 8/12, "feet"),
+                weight: math.unit(63, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/xavier/front.svg",
+                    extra: 944/883
+                }
+            },
+            frontStretch: {
+                height: math.unit(5 + 8/12, "feet"),
+                weight: math.unit(63, "kg"),
+                name: "Stretching",
+                image: {
+                    source: "./media/characters/xavier/front-stretch.svg",
+                    extra: 962/820
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 8/12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(100, "meters"),
+                default: true
+            },
+            {
+                name: "McLargeHuge",
+                height: math.unit(10, "miles")
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

@@ -2397,6 +2397,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/xavier/",
+            files: [
+                { name: "front.svg", source: null },
+                { name: "front-stretch.svg", source: null }
+            ],
+            authors: [
+                "zmaster587"
+            ],
+            owners: [
+                "zmaster587"
+            ]
+        },
+        {
             prefix: "./media/characters/yevis/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/20815777/" }
@@ -3432,6 +3445,10 @@ const attributionData = {
         "mr-pink": {
             "name": "Mr. Pink",
             "url": "https://www.furaffinity.net/user/mr.pink/",
+        },
+        "zmaster587": {
+            "name": "zmaster587",
+            "url": "https://www.furaffinity.net/user/zmaster587/",
         },
     }
 }
