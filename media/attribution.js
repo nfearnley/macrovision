@@ -1749,6 +1749,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/kuro-shi-uchū/",
+            files: [
+                { name: "front.svg", source: "https://media.discordapp.net/attachments/300130710671458304/682667452626239526/lugiablackholeactual2.png" },
+            ],
+            authors: [
+                "shinywark"
+            ],
+            owners: [
+                "dragonshark"
+            ]
+        },
+        {
             prefix: "./media/characters/lexi/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/32187352/" }
@@ -3364,6 +3376,14 @@ const attributionData = {
         "mariokartsonicriders": {
             "name": "Mariokartsonicriders",
             "url": "https://www.furaffinity.net/user/mariokartsonicriders/",
+        },
+        "shinywark": {
+            "name": "ShinyWark",
+            "url": "https://twitter.com/ShinyWark",
+        },
+        "dragonshark": {
+            "name": "DragonShark",
+            "url": "https://twitter.com/ReptileGamepley",
         },
     }
 }

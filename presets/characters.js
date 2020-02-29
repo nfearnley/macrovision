@@ -8,6 +8,9 @@ math.createUnit("lightyears", {
     definition: "9.461e15 meters",
     prefixes: "long"
 })
+math.createUnit("AU", {
+    definition: "149597870700 meters"
+})
 function makeCharacter(name, author, viewInfo, defaultSizes, defaultSize, extraInfo) {
     if (extraInfo === undefined) {
         extraInfo = {}
@@ -6508,6 +6511,44 @@ characterMakers["Mira al-Cul"] = () => {
             {
                 name: "True Size",
                 height: math.unit(8.87e10, "yottameters")
+            },
+        ]
+    )
+};
+
+characterMakers["Kuro-shi Uchū"] = () => {
+    return makeCharacter(
+        "Kuro-shi Uchū",
+        "Dragon Shark",
+        {
+            front: {
+                height: math.unit(17 + 1/12, "feet"),
+                weight: math.unit(476.2*5, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/kuro-shi-uchū/front.svg",
+                    extra: 2329/1835 * (1 / (1 - 0.02)),
+                    bottom: 0.02
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(2, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(12, "meters")
+            },
+            {
+                name: "Planetary",
+                height: math.unit(0.00929, "AU"),
+                default: true
+            },
+            {
+                name: "Universal",
+                height: math.unit(20, "gigaparsecs")
             },
         ]
     )

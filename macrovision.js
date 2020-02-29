@@ -63,6 +63,9 @@ const entities = {
 }
 
 function constrainRel(coords) {
+    if (altHeld) {
+        return coords;
+    }
     return {
         x: Math.min(Math.max(coords.x, 0), 1),
         y: Math.min(Math.max(coords.y, 0), 1)
@@ -909,7 +912,7 @@ document.addEventListener("DOMContentLoaded", () => {
         scenes["Demo"]();
     else {
         try {
-            const data = JSON.parse(atob(param));
+            const data = JSON.parse(b64DecodeUnicode(param));
             if (data.entities === undefined) {
                 return;
             }
@@ -1324,11 +1327,34 @@ function exportScene() {
     return results;
 }
 
+// btoa doesn't like anything that isn't ASCII
+// great
+
+// thanks to https://stackoverflow.com/questions/30106476/using-javascripts-atob-to-decode-base64-doesnt-properly-decode-utf-8-strings
+// for providing an alternative
+
+function b64EncodeUnicode(str) {
+    // first we use encodeURIComponent to get percent-encoded UTF-8,
+    // then we convert the percent encodings into raw bytes which
+    // can be fed into btoa.
+    return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g,
+        function toSolidBytes(match, p1) {
+            return String.fromCharCode('0x' + p1);
+    }));
+}
+
+function b64DecodeUnicode(str) {
+    // Going backwards: from bytestream, to percent-encoding, to original string.
+    return decodeURIComponent(atob(str).split('').map(function(c) {
+        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+    }).join(''));
+}
+
 function linkScene() {
     loc = new URL(window.location);
 
 
-    window.location = loc.protocol + "//" + loc.host + loc.pathname + "?scene=" + btoa(JSON.stringify(exportScene()));
+    window.location = loc.protocol + "//" + loc.host + loc.pathname + "?scene=" + b64EncodeUnicode(JSON.stringify(exportScene()));
 }
 function copyScene() {
     const results = exportScene();
