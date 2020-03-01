@@ -1686,6 +1686,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/fliss/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/Nystre/status/1224867393308106754?s=20" }
+            ],
+            authors: [
+                "nystre"
+            ],
+            owners: [
+                "fliss"
+            ]
+        },
+        {
             prefix: "./media/characters/fluoresce/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/25601125/" }
@@ -3808,6 +3820,14 @@ const attributionData = {
         "talbot": {
             "name": "Talbot",
             "url": "https://twitter.com/fucktalbot",
+        },
+        "nystre": {
+            "name": "Nystre",
+            "url": "https://twitter.com/Nystre/",
+        },
+        "fliss": {
+            "name": "Fliss",
+            "url": "https://twitter.com/SwychBun",
         },
     }
 }

@@ -7305,6 +7305,52 @@ characterMakers["Talbot"] = () => {
     )
 };
 
+characterMakers["Fliss"] = () => {
+    return makeCharacter(
+        "Fliss",
+        "Fliss",
+        {
+            front: {
+                height: math.unit(3 + 3/12, "feet"),
+                weight: math.unit(51.8, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/fliss/front.svg",
+                    extra: 840/640
+                }
+            },
+        },
+        [
+            {
+                name: "Teeny Tiny",
+                height: math.unit(1, "mm")
+            },
+            {
+                name: "Small",
+                height: math.unit(1, "inch"),
+                default: true
+            },
+            {
+                name: "Standard Sylveon",
+                height: math.unit(3 + 3/12, "feet")
+            },
+            {
+                name: "Large Nuisance",
+                height: math.unit(33, "feet")
+            },
+            {
+                name: "City Filler",
+                height: math.unit(3000, "feet")
+            },
+            {
+                name: "New Horizon",
+                height: math.unit(6000, "miles")
+            },
+
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
