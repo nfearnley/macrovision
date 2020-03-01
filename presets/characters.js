@@ -7281,6 +7281,30 @@ characterMakers["Zelas"] = () => {
     )
 };
 
+characterMakers["Talbot"] = () => {
+    return makeCharacter(
+        "Talbot",
+        "Talbot",
+        {
+            front: {
+                height: math.unit(1, "inch"),
+                weight: math.unit(0.21, "grams"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/talbot/front.svg",
+                    extra: 594/544
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(1, "inch")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

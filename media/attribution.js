@@ -2473,6 +2473,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/talbot/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "tired-doge",
+                "talbot"
+            ],
+            owners: [
+                "talbot"
+            ]
+        },
+        {
             prefix: "./media/characters/teal/",
             files: [
                 { name: "front.svg", source: null }
@@ -3787,6 +3800,14 @@ const attributionData = {
         "cirez": {
             "name": "Cirez",
             "url": "https://www.furaffinity.net/user/cirez",
+        },
+        "tired-doge": {
+            "name": "Prince Gabriel",
+            "url": "https://twitter.com/tired_doge",
+        },
+        "talbot": {
+            "name": "Talbot",
+            "url": "https://twitter.com/fucktalbot",
         },
     }
 }
