@@ -1007,48 +1007,39 @@ function makeKurrikage() {
     return entity;
 }
 
-function makeShingo() {
-    const views = {
-        front: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(6, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(75, "kg")
+characterMakers["Shingo"] = () => {
+    return makeCharacter(
+        "Shingo",
+        "Shingo",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(75, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/shingo/front.svg",
+                    extra: 3511/3338 * (1 / (1 - 0.005)),
+                    bottom: 0.005
                 }
             },
-            image: {
-                source: "./media/characters/shingo/front.svg"
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(4, "inches")
             },
-            name: "Front"
-        }
-    };
-
-    const entity = makeEntity({ name: "Shingo", author: "Threes" }, views, []);
-
-    entity.sizes.push({
-        name: "Micro",
-        height: math.unit(4, "inches")
-    });
-
-    entity.sizes.push({
-        name: "Normal",
-        height: math.unit(6, "feet")
-    });
-
-    entity.sizes.push({
-        name: "Macro",
-        height: math.unit(108, "feet")
-    });
-    return entity;
-}
+            {
+                name: "Normal",
+                height: math.unit(6, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(108, "feet")
+            }
+        ]
+    )
+};
 
 function makeAigey() {
     const views = {
@@ -7231,10 +7222,6 @@ function makeCharacters() {
     results.push({
         name: "Kurrikage",
         constructor: makeKurrikage
-    });
-    results.push({
-        name: "Shingo",
-        constructor: makeShingo
     });
     results.push({
         name: "Aigey",

@@ -2221,6 +2221,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/shingo/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32499316/" }
+            ],
+            authors: [
+                "feve"
+            ],
+            owners: [
+                "shingo"
+            ]
+        },
+        {
             prefix: "./media/characters/starry-aqua/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/18652091/" },
@@ -3700,6 +3712,10 @@ const attributionData = {
         "tailshigh": {
             "name": "Rookie",
             "url": "https://twitter.com/Tails_High_",
+        },
+        "shingo": {
+            "name": "Shingo",
+            "url": "https://www.furaffinity.net/user/threes/",
         },
     }
 }
