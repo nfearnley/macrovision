@@ -2682,6 +2682,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/objects/shoes/",
+            files: [
+                { name: "shoe_flip-flops.svg", source: null },
+                { name: "shoe_knee-boots.svg", source: null },
+                { name: "shoe_trainers.svg", source: null },
+                { name: "shoe_stilettos.svg", source: null },
+            ],
+            authors: [
+                "chemicalcrux"
+            ]
+        },
+        {
             prefix: "./media/objects/",
             files: [
                 { name: "paperclip.svg", source: "https://commons.wikimedia.org/wiki/File:Ei-paperclip.svg" }

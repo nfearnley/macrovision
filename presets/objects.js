@@ -38,6 +38,37 @@ function makeObject(name, viewInfo) {
     return makeEntity({ name: name }, views);
 }
 
+SHOE_REFERENCE = 60
+function addShoeView(object, name, points) {
+    object[name] = {
+        height: math.unit(points / SHOE_REFERENCE, "inches"),
+        image: { source: "./media/objects/shoes/shoe_" + name + ".svg" },
+        name: name.replace(/-/g, " ").replace(/\b\w/g, x => x.toUpperCase()),
+        rename: true
+    }
+}
+
+function makeShoes() {
+    const views = {};
+
+    [
+        ["flip-flops", 154.239],
+        ["knee-boots", 841.827],
+        ["trainers", 260.607],
+        ["stilettos", 418.839]
+    ].forEach(shoe => {
+        addShoeView(views, shoe[0], shoe[1])
+    });
+
+    return {
+        name: "Shoes",
+        constructor: () => makeObject(
+            "Shoes",
+            views
+        )
+    }
+}
+
 function makeObjects() {
     const results = [];
 
@@ -381,12 +412,15 @@ function makeObjects() {
             }
         )
     });
+
+    results.push(makeShoes());
     
     results.sort((b1, b2) => {
         e1 = b1.constructor();
         e2 = b2.constructor();
         return -math.subtract(e1.views[e1.defaultView].height, e2.views[e2.defaultView].height).value;
     });
+    
 
     return results;
 }
