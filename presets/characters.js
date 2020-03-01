@@ -7008,6 +7008,46 @@ characterMakers["Luka"] = () => {
     )
 };
 
+characterMakers["Natalie Nightring"] = () => {
+    return makeCharacter(
+        "Natalie Nightring",
+        "NatEdgecomb",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/natalie-nightring/front.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Uh Oh",
+                height: math.unit(0.1, "mm")
+            },
+            {
+                name: "Small",
+                height: math.unit(3, "inches")
+            },
+            {
+                name: "Human Scale",
+                height: math.unit(6, "feet")
+            },
+            {
+                name: "Librarian",
+                height: math.unit(50, "feet"),
+                default: true
+            },
+            {
+                name: "Immense",
+                height: math.unit(200, "miles")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

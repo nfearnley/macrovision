@@ -1983,6 +1983,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/natalie-nightring/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/NatEdgecomb/status/1210278457789288451" }
+            ],
+            authors: [
+                "misterdod"
+            ],
+            owners: [
+                "natedgecomb"
+            ]
+        },
+        {
             prefix: "./media/characters/nibbles/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/22964778/" },
@@ -3611,6 +3623,14 @@ const attributionData = {
         "umbrahusky": {
             "name": "Umbra Husky",
             "url": "https://twitter.com/UmbraHusky",
+        },
+        "misterdod": {
+            "name": "DoD",
+            "url": "https://twitter.com/MisterDoD",
+        },
+        "natedgecomb": {
+            "name": "NatEdgecomb",
+            "url": "https://twitter.com/NatEdgecomb",
         },
     }
 }
