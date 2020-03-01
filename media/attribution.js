@@ -2647,6 +2647,21 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/zelas/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/18338801/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/18338801/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/18338801/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/18338801/" }
+            ],
+            authors: [
+                "flam"
+            ],
+            owners: [
+                "cirez"
+            ]
+        },
+        {
             prefix: "./media/characters/",
             files: [
                 { name: "", source: "" }
@@ -3764,6 +3779,14 @@ const attributionData = {
         "spearfrost": {
             "name": "spearfrost",
             "url": "https://www.furaffinity.net/user/spearfrost",
+        },
+        "flam": {
+            "name": "flam",
+            "url": "https://www.furaffinity.net/user/flam",
+        },
+        "cirez": {
+            "name": "Cirez",
+            "url": "https://www.furaffinity.net/user/cirez",
         },
     }
 }

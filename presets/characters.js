@@ -7230,6 +7230,57 @@ characterMakers["Pisces"] = () => {
     )
 };
 
+characterMakers["Zelas"] = () => {
+    return makeCharacter(
+        "Zelas",
+        "Cirez",
+        {
+            front: {
+                height: math.unit(2.3, "meters"),
+                weight: math.unit(120, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/zelas/front.svg"
+                }
+            },
+            side: {
+                height: math.unit(2.3, "meters"),
+                weight: math.unit(120, "kg"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/zelas/side.svg"
+                }
+            },
+            back: {
+                height: math.unit(2.3, "meters"),
+                weight: math.unit(120, "kg"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/zelas/back.svg"
+                }
+            },
+            foot: {
+                height: math.unit(1.116, "feet"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/zelas/foot.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(2.3, "meters")
+            },
+            {
+                name: "Macro",
+                height: math.unit(30, "meters"),
+                default: true
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
