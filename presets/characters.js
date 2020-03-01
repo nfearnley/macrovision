@@ -7009,7 +7009,9 @@ characterMakers["Natalie Nightring"] = () => {
                 weight: math.unit(150, "lb"),
                 name: "Front",
                 image: {
-                    source: "./media/characters/natalie-nightring/front.svg"
+                    source: "./media/characters/natalie-nightring/front.svg",
+                    extra: 1 / (1 - 0.018),
+                    bottom: 0.018
                 }
             },
         },
