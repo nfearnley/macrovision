@@ -44,7 +44,11 @@ const unitChoices = {
     ],
     mass: [
         "kilograms",
+        "milligrams",
+        "grams",
+        "tonnes",
         "lbs",
+        "ounces",
         "tons"
     ]
 }
