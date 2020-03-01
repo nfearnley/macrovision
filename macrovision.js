@@ -364,7 +364,6 @@ function deselect() {
     clearViewList();
     clearEntityOptions();
     clearViewOptions();
-    document.querySelector("#slider-entity-scale").style.display = "none";
 }
 
 function select(target) {
@@ -379,7 +378,6 @@ function select(target) {
     configViewList(selectedEntity, selectedEntity.view);
     configEntityOptions(selectedEntity, selectedEntity.view);
     configViewOptions(selectedEntity, selectedEntity.view);
-    document.querySelector("#slider-entity-scale").style.display = "block";
 }
 
 function configViewList(entity, selectedView) {
@@ -886,10 +884,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector("#slider-scale").addEventListener("mousedown", e => {
         dragScaleHandle = setInterval(doSliderScale, 50);
+        e.stopPropagation();
     });
 
     document.querySelector("#slider-scale").addEventListener("touchstart", e => {
         dragScaleHandle = setInterval(doSliderScale, 50);
+        e.stopPropagation();
     });
 
     document.querySelector("#slider-scale").addEventListener("input", e => {
@@ -909,10 +909,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector("#slider-entity-scale").addEventListener("mousedown", e => {
         dragEntityScaleHandle = setInterval(doSliderEntityScale, 50);
+        e.stopPropagation();
     });
 
     document.querySelector("#slider-entity-scale").addEventListener("touchstart", e => {
         dragEntityScaleHandle = setInterval(doSliderEntityScale, 50);
+        e.stopPropagation();
     });
 
     document.querySelector("#slider-entity-scale").addEventListener("input", e => {
