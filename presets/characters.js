@@ -7144,6 +7144,44 @@ characterMakers["Amelia Rosie"] = () => {
     )
 };
 
+characterMakers["Rook Kitara"] = () => {
+    return makeCharacter(
+        "Rook Kitara",
+        "TailsHigh",
+        {
+            front: {
+                height: math.unit(5 + 11/12, "feet"),
+                weight: math.unit(65, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/rook-kitara/front.svg",
+                    extra: 1347/1274 * (1 / (1 - 0.005)),
+                    bottom: 0.005
+                }
+            },
+        },
+        [
+            {
+                name: "Totally Unfair",
+                height: math.unit(1.8, "mm")
+            },
+            {
+                name: "Lap Rookie",
+                height: math.unit(1.4, "feet")
+            },
+            {
+                name: "Normal",
+                height: math.unit(5 + 11/12, "feet"),
+                default: true
+            },
+            {
+                name: "How Did This Happen",
+                height: math.unit(80, "miles")
+            }
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

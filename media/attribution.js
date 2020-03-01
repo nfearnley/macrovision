@@ -2298,6 +2298,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/rook-kitara/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/Tails_High_/status/1234046697958850560?s=19" }
+            ],
+            authors: [
+                "tailshigh"
+            ],
+            owners: [
+                "tailshigh"
+            ]
+        },
+        {
             prefix: "./media/characters/rose-lion/",
             files: [
                 { name: "front.svg", source: "https://twitter.com/MewMus" }
@@ -3684,6 +3696,10 @@ const attributionData = {
         "spiralingstaircase": {
             "name": "spiralingstaircase",
             "url": "https://www.deviantart.com/spiralingstaircase",
+        },
+        "tailshigh": {
+            "name": "Rookie",
+            "url": "https://twitter.com/Tails_High_",
         },
     }
 }
