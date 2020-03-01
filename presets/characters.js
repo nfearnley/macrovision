@@ -7457,6 +7457,38 @@ characterMakers["Dominic"] = () => {
     )
 };
 
+characterMakers["Major Colonel"] = () => {
+    return makeCharacter(
+        "Major Colonel",
+        "Major Colonel",
+        {
+            front: {
+                height: math.unit(400, "feet"),
+                weight: math.unit(44444444, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/major-colonel/front.svg"
+                }
+            },
+            back: {
+                height: math.unit(400, "feet"),
+                weight: math.unit(44444444, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/major-colonel/back.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(400, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

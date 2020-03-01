@@ -1932,6 +1932,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/major-colonel/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/20721264/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/20721264/" }
+            ],
+            authors: [
+                "goattrain"
+            ],
+            owners: [
+                "major-colonel"
+            ]
+        },
+        {
             prefix: "./media/characters/malfressa/",
             files: [
                 { name: "side.svg", source: "https://www.furaffinity.net/view/25377262/" },
@@ -3869,6 +3882,14 @@ const attributionData = {
         "hypocriticaldragon": {
             "name": "HypocriticalDragon",
             "url": "https://www.furaffinity.net/user/hypocriticaldragon/",
+        },
+        "major-colonel": {
+            "name": "Major-Colonel",
+            "url": "https://www.furaffinity.net/user/major-colonel/",
+        },
+        "goattrain": {
+            "name": "goattrain",
+            "url": "https://www.furaffinity.net/user/goattrain",
         },
     }
 }
