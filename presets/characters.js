@@ -6876,6 +6876,39 @@ characterMakers["Danny"] = () => {
     )
 };
 
+characterMakers["Mallow"] = () => {
+    return makeCharacter(
+        "Mallow",
+        "Mallowchu",
+        {
+            front: {
+                height: math.unit(3.5, "inches"),
+                weight: math.unit(19, "grams"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/mallow/front.svg",
+                    extra: 471/431
+                }
+            },
+            back: {
+                height: math.unit(3.5, "inches"),
+                weight: math.unit(19, "grams"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/mallow/back.svg",
+                    extra: 471/431
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(3.5, "inches")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

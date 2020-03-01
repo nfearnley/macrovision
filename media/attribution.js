@@ -1884,6 +1884,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/mallow/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/31025934/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/31025934/" }
+            ],
+            authors: [
+                "panda-puma"
+            ],
+            owners: [
+                "jesser"
+            ]
+        },
+        {
             prefix: "./media/characters/mandake/",
             files: [
                 { name: "back.svg", source: "https://www.furaffinity.net/view/24771284/" }
@@ -3551,6 +3564,14 @@ const attributionData = {
         "danny-gryphon": {
             "name": "Danny Gryphon",
             "url": "https://twitter.com/danny_gryphon",
+        },
+        "panda-puma": {
+            "name": "panda-puma",
+            "url": "https://www.furaffinity.net/user/panda-puma",
+        },
+        "jesser": {
+            "name": "JesseR",
+            "url": "https://www.furaffinity.net/user/jesser",
         },
     }
 }
