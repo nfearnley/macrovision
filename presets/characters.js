@@ -7207,8 +7207,24 @@ characterMakers["Pisces"] = () => {
                 height: math.unit(7, "feet")
             },
             {
-                name: "Macro",
-                height: math.unit(107, "feet")
+                name: "Swimming Pool",
+                height: math.unit(12.2, "meters")
+            },
+            {
+                name: "Olympic Swimming Pool",
+                height: math.unit(56.3, "meters")
+            },
+            {
+                name: "Lake Superior",
+                height: math.unit(93900, "meters")
+            },
+            {
+                name: "Mediterranean Sea",
+                height: math.unit(644457, "meters")
+            },
+            {
+                name: "World's Oceans",
+                height: math.unit(4567491, "meters")
             },
         ]
     )
