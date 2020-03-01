@@ -7351,6 +7351,40 @@ characterMakers["Fliss"] = () => {
     )
 };
 
+characterMakers["Fleta"] = () => {
+    return makeCharacter(
+        "Fleta",
+        "TheFleta",
+        {
+            front: {
+                height: math.unit(5, "cm"),
+                weight: math.unit(1.94, "g"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/fleta/front.svg",
+                    extra: 835/803
+                }
+            },
+            back: {
+                height: math.unit(5, "cm"),
+                weight: math.unit(1.94, "g"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/fleta/back.svg",
+                    extra: 835/803
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(5, "cm"),
+                default: true
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

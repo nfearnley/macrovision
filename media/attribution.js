@@ -1686,6 +1686,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/fleta/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/28202280/" }
+            ],
+            authors: [
+                "emiechii"
+            ],
+            owners: [
+                "thefleta"
+            ]
+        },
+        {
             prefix: "./media/characters/fliss/",
             files: [
                 { name: "front.svg", source: "https://twitter.com/Nystre/status/1224867393308106754?s=20" }
@@ -3828,6 +3840,14 @@ const attributionData = {
         "fliss": {
             "name": "Fliss",
             "url": "https://twitter.com/SwychBun",
+        },
+        "thefleta": {
+            "name": "TheFleta",
+            "url": "https://www.furaffinity.net/user/thefleta/",
+        },
+        "emiechii": {
+            "name": "EmieChii",
+            "url": "https://www.furaffinity.net/user/emiechii/",
         },
     }
 }
