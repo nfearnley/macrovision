@@ -7010,8 +7010,8 @@ characterMakers["Natalie Nightring"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/natalie-nightring/front.svg",
-                    extra: 1 / (1 - 0.018),
-                    bottom: 0.018
+                    extra: 1 / (1 - 0.06),
+                    bottom: 0.06
                 }
             },
         },
