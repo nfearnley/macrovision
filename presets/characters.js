@@ -7175,6 +7175,45 @@ characterMakers["Rook Kitara"] = () => {
     )
 };
 
+characterMakers["Pisces"] = () => {
+    return makeCharacter(
+        "Pisces",
+        "Pisces_Kelp",
+        {
+            front: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(300, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/pisces/front.svg",
+                    extra: 2255/2115 * (1 / (1 - 0.03)),
+                    bottom: 0.03
+                }
+            },
+            back: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(300, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/pisces/back.svg",
+                    extra: 2146/2055 * (1 / (1 - 0.04)),
+                    bottom: 0.04
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(7, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(107, "feet")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

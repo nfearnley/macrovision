@@ -2106,6 +2106,30 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/pisces/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34372397/" }
+            ],
+            authors: [
+                "zirc"
+            ],
+            owners: [
+                "pisces-kelp"
+            ]
+        },
+        {
+            prefix: "./media/characters/pisces/",
+            files: [
+                { name: "back.svg", source: "https://www.furaffinity.net/view/26525891/" }
+            ],
+            authors: [
+                "spearfrost"
+            ],
+            owners: [
+                "pisces-kelp"
+            ]
+        },
+        {
             prefix: "./media/characters/prodigy/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/31192438/" }
@@ -3728,6 +3752,18 @@ const attributionData = {
         "shingo": {
             "name": "Shingo",
             "url": "https://www.furaffinity.net/user/threes/",
+        },
+        "pisces-kelp": {
+            "name": "Pisces",
+            "url": "https://www.furaffinity.net/user/pisceskelp/",
+        },
+        "zirc": {
+            "name": "Zirc",
+            "url": "https://www.furaffinity.net/user/zirc/",
+        },
+        "spearfrost": {
+            "name": "spearfrost",
+            "url": "https://www.furaffinity.net/user/spearfrost",
         },
     }
 }
