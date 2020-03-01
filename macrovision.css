@@ -173,6 +173,7 @@ body.toggle-entity-name .entity-name {
 }
 
 #world {
+    position: relative;
     flex: 9 0 85vw;
     min-height: 85vh;
     max-height: 85vh;
@@ -371,4 +372,38 @@ a {
 
 #options-attribution-source {
     text-align: center;
+}
+
+.floating-slider {
+    position: absolute;
+    z-index: 1000;
+    width: 250px;
+    height: 50px;
+}
+
+#slider-scale {
+    top: 1%;
+    left: 5%;
+}
+
+#slider-scale:before {
+    content: "World scale";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 20px;
+}
+
+#slider-entity-scale {
+    display: none;
+    top: 1%;
+    right: 5%;
+}
+
+#slider-entity-scale:before {
+    content: "Entity scale";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 20px;
 }

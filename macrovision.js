@@ -16,6 +16,12 @@ let entityX;
 let canvasWidth;
 let canvasHeight;
 
+let dragScale = 1;
+let dragScaleHandle = null;
+
+let dragEntityScale = 1;
+let dragEntityScaleHandle = null;
+
 const unitChoices = {
     length: [
         "meters",
@@ -358,6 +364,7 @@ function deselect() {
     clearViewList();
     clearEntityOptions();
     clearViewOptions();
+    document.querySelector("#slider-entity-scale").style.display = "none";
 }
 
 function select(target) {
@@ -372,6 +379,7 @@ function select(target) {
     configViewList(selectedEntity, selectedEntity.view);
     configEntityOptions(selectedEntity, selectedEntity.view);
     configViewOptions(selectedEntity, selectedEntity.view);
+    document.querySelector("#slider-entity-scale").style.display = "block";
 }
 
 function configViewList(entity, selectedView) {
@@ -859,8 +867,66 @@ window.onfocus = function () {
     window.dispatchEvent(new Event("keydown"));
 }
 
+function doSliderScale() {
+    setWorldHeight(config.height, math.multiply(config.height, (9 + sliderScale) / 10));
+}
+
+function doSliderEntityScale() {
+    if (selected) {
+        console.log(selected)
+        entities[selected.dataset.key].scale *= (9 + sliderEntityScale) / 10;
+        updateSizes();
+    }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     prepareEntities();
+
+    document.querySelector("#slider-scale").addEventListener("mousedown", e => {
+        dragScaleHandle = setInterval(doSliderScale, 50);
+    });
+
+    document.querySelector("#slider-scale").addEventListener("touchstart", e => {
+        dragScaleHandle = setInterval(doSliderScale, 50);
+    });
+
+    document.querySelector("#slider-scale").addEventListener("input", e => {
+        const val = Number(e.target.value);
+        if (val < 1) {
+            sliderScale = (val + 1) / 2;
+        } else {
+            sliderScale = val;
+        }
+    });
+
+    document.querySelector("#slider-scale").addEventListener("change", e => {
+        clearInterval(dragScaleHandle);
+        dragScaleHandle = null;
+        e.target.value = 1;
+    });
+
+    document.querySelector("#slider-entity-scale").addEventListener("mousedown", e => {
+        dragEntityScaleHandle = setInterval(doSliderEntityScale, 50);
+    });
+
+    document.querySelector("#slider-entity-scale").addEventListener("touchstart", e => {
+        dragEntityScaleHandle = setInterval(doSliderEntityScale, 50);
+    });
+
+    document.querySelector("#slider-entity-scale").addEventListener("input", e => {
+        const val = Number(e.target.value);
+        if (val < 1) {
+            sliderEntityScale = (val + 1) / 2;
+        } else {
+            sliderEntityScale = val;
+        }
+    });
+
+    document.querySelector("#slider-entity-scale").addEventListener("change", e => {
+        clearInterval(dragEntityScaleHandle);
+        dragEntityScaleHandle = null;
+        e.target.value = 1;
+    });
 
     const sceneChoices = document.querySelector("#scene-choices");
 
