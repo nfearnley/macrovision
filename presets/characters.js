@@ -6874,7 +6874,7 @@ characterMakers["Danny"] = () => {
             },
         ]
     )
-};r
+};
 
 function makeCharacters() {
     const results = [];
