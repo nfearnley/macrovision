@@ -873,9 +873,11 @@ function doSliderScale() {
 
 function doSliderEntityScale() {
     if (selected) {
-        console.log(selected)
-        entities[selected.dataset.key].scale *= (9 + sliderEntityScale) / 10;
+        const entity = entities[selected.dataset.key];
+        entity.scale *= (9 + sliderEntityScale) / 10;
         updateSizes();
+        updateEntityOptions(entity, entity.view);
+        updateViewOptions(entity, entity.view);
     }
 }
 
