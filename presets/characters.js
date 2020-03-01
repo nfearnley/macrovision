@@ -6909,6 +6909,63 @@ characterMakers["Mallow"] = () => {
     )
 };
 
+characterMakers["Starry Aqua"] = () => {
+    return makeCharacter(
+        "Starry Aqua",
+        "StarryAqua",
+        {
+            front: {
+                height: math.unit(9, "feet"),
+                weight: math.unit(230, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/starry-aqua/front.svg"
+                }
+            },
+            back: {
+                height: math.unit(9, "feet"),
+                weight: math.unit(230, "kg"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/starry-aqua/back.svg"
+                }
+            },
+            hand: {
+                height: math.unit(9 * 0.1168, "feet"),
+                name: "Hand",
+                image: {
+                    source: "./media/characters/starry-aqua/hand.svg"
+                }
+            },
+            foot: {
+                height: math.unit(9 * 0.18, "feet"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/starry-aqua/foot.svg"
+                }
+            }
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(3, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(9, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(300, "feet"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(3200, "feet")
+            }
+        ]
+    )
+};
 function makeCharacters() {
     const results = [];
     results.push({

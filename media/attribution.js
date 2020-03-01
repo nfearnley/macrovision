@@ -2160,6 +2160,21 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/starry-aqua/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/18652091/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/18652091/" },
+                { name: "hand.svg", source: "https://www.furaffinity.net/view/18652091/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/18652091/" }
+            ],
+            authors: [
+                "rainbowfoxy"
+            ],
+            owners: [
+                "starryaqua"
+            ]
+        },
+        {
             prefix: "./media/characters/regal/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/32825133/" },
@@ -3572,6 +3587,14 @@ const attributionData = {
         "jesser": {
             "name": "JesseR",
             "url": "https://www.furaffinity.net/user/jesser",
+        },
+        "starryaqua": {
+            "name": "Starry Aqua",
+            "url": "https://www.furaffinity.net/user/starryaqua/",
+        },
+        "rainbowfoxy": {
+            "name": "RainbowFoxy",
+            "url": "https://www.furaffinity.net/user/rainbowfoxy",
         },
     }
 }
