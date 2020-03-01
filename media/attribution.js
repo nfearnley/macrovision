@@ -1218,6 +1218,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/amelia-rosie/",
+            files: [
+                { name: "back.svg", source: "https://www.dropbox.com/s/x6xbi8ls7ahfosn/abundant_amelia_by_spiralingstaircase-d68odkn.jpg?dl=0" }
+            ],
+            authors: [
+                "spiralingstaircase"
+            ],
+            owners: [
+                "colwag"
+            ]
+        },
+        {
             prefix: "./media/characters/andrew-cooper/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/31191986/" }
@@ -1585,6 +1597,18 @@ const attributionData = {
             ],
             owners: [
                 "galactor"
+            ]
+        },
+        {
+            prefix: "./media/characters/danni-rosie/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/colmecolwag/status/952327185309736960" }
+            ],
+            authors: [
+                "drdala"
+            ],
+            owners: [
+                "colwag"
             ]
         },
         {
@@ -2181,6 +2205,19 @@ const attributionData = {
             ],
             owners: [
                 "silverhorsey"
+            ]
+        },
+        {
+            prefix: "./media/characters/samantha-kruse/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/colmecolwag/status/1232022678107607040" },
+                { name: "front-undressed.svg", source: "https://twitter.com/colmecolwag/status/1232022678107607040" }
+            ],
+            authors: [
+                "baytearte"
+            ],
+            owners: [
+                "colwag"
             ]
         },
         {
@@ -3631,6 +3668,22 @@ const attributionData = {
         "natedgecomb": {
             "name": "NatEdgecomb",
             "url": "https://twitter.com/NatEdgecomb",
+        },
+        "colwag": {
+            "name": "Samantha",
+            "url": "https://twitter.com/colmecolwag",
+        },
+        "drdala": {
+            "name": "DrDala",
+            "url": "https://twitter.com/drdala",
+        },
+        "baytearte": {
+            "name": "Bayte",
+            "url": "https://twitter.com/baytearte",
+        },
+        "spiralingstaircase": {
+            "name": "spiralingstaircase",
+            "url": "https://www.deviantart.com/spiralingstaircase",
         },
     }
 }

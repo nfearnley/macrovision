@@ -7048,6 +7048,102 @@ characterMakers["Natalie Nightring"] = () => {
     )
 };
 
+characterMakers["Danni Rosie"] = () => {
+    return makeCharacter(
+        "Danni Rosie",
+        "colwag",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(180, "lbs"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/danni-rosie/front.svg",
+                    extra: 1260/1128 * (1 / (1 - 0.022)),
+                    bottom: 0.022
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(2, "inches"),
+                default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Samantha Kruse"] = () => {
+    return makeCharacter(
+        "Samantha Kruse",
+        "colwag",
+        {
+            front: {
+                height: math.unit(5 + 9/12, "feet"),
+                weight: math.unit(220, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/samantha-kruse/front.svg",
+                    extra: (985 / 935) * (1 / (1 - 0.03)),
+                    bottom: 0.03
+                }
+            },
+            frontUndressed: {
+                height: math.unit(5 + 9/12, "feet"),
+                weight: math.unit(220, "lb"),
+                name: "Front (Undressed)",
+                image: {
+                    source: "./media/characters/samantha-kruse/front-undressed.svg",
+                    extra: (973 / 923) * (1 / (1 - 0.025)),
+                    bottom: 0.025
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 9/12, "feet"),
+                default: true
+            }
+        ]
+    )
+};
+
+characterMakers["Amelia Rosie"] = () => {
+    return makeCharacter(
+        "Amelia Rosie",
+        "colwag",
+        {
+            back: {
+                height: math.unit(5 + 4/12, "feet"),
+                weight: math.unit(4963, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/amelia-rosie/back.svg",
+                    extra: 1113/963 * (1 / (1 - 0.01)),
+                    bottom: 0.01
+                }
+            },
+        },
+        [
+            {
+                name: "Level 0",
+                height: math.unit(5 + 4/12, "feet")
+            },
+            {
+                name: "Level 1",
+                height: math.unit(164597, "feet"),
+                default: true
+            },
+            {
+                name: "Level 2",
+                height: math.unit(956243, "miles")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
