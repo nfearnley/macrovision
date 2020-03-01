@@ -1636,6 +1636,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/dominic/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/29943695/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/29943695/" }
+            ],
+            authors: [
+                "verscilith"
+            ],
+            owners: [
+                "hypocriticaldragon"
+            ]
+        },
+        {
             prefix: "./media/characters/dr-clay/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/33619821/" },
@@ -3848,6 +3861,14 @@ const attributionData = {
         "emiechii": {
             "name": "EmieChii",
             "url": "https://www.furaffinity.net/user/emiechii/",
+        },
+        "verscilith": {
+            "name": "Verscilith",
+            "url": "https://www.furaffinity.net/user/verscilith",
+        },
+        "hypocriticaldragon": {
+            "name": "HypocriticalDragon",
+            "url": "https://www.furaffinity.net/user/hypocriticaldragon/",
         },
     }
 }

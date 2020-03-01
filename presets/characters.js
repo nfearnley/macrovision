@@ -7385,6 +7385,78 @@ characterMakers["Fleta"] = () => {
     )
 };
 
+characterMakers["Dominic"] = () => {
+    return makeCharacter(
+        "Dominic",
+        "HypoTheDerg",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(225, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/dominic/front.svg",
+                    extra: 1770/1620 * (1 / (1 - 0.025)),
+                    bottom: 0.025
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(225, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/dominic/back.svg",
+                    extra: 1745/1620 * (1 / (1 - 0.065)),
+                    bottom: 0.065
+                }
+            },
+        },
+        [
+            {
+                name: "Nano",
+                height: math.unit(0.1, "mm")
+            },
+            {
+                name: "Micro-",
+                height: math.unit(1, "mm")
+            },
+            {
+                name: "Micro",
+                height: math.unit(4, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(6 + 4/12, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(115, "feet")
+            },
+            {
+                name: "Macro+",
+                height: math.unit(955, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(8990, "feet")
+            },
+            {
+                name: "Gigmacro",
+                height: math.unit(9310, "miles")
+            },
+            {
+                name: "Teramacro",
+                height: math.unit(1567005010, "miles")
+            },
+            {
+                name: "Examacro",
+                height: math.unit(1425, "parsecs")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
