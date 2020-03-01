@@ -1859,6 +1859,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/luka/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/UmbraHusky/status/1100146009114624000" }
+            ],
+            authors: [
+                "umbrahusky"
+            ],
+            owners: [
+                "umbrahusky"
+            ]
+        },
+        {
             prefix: "./media/characters/malfressa/",
             files: [
                 { name: "side.svg", source: "https://www.furaffinity.net/view/25377262/" },
@@ -3595,6 +3607,10 @@ const attributionData = {
         "rainbowfoxy": {
             "name": "RainbowFoxy",
             "url": "https://www.furaffinity.net/user/rainbowfoxy",
+        },
+        "umbrahusky": {
+            "name": "Umbra Husky",
+            "url": "https://twitter.com/UmbraHusky",
         },
     }
 }

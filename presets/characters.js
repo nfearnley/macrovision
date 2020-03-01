@@ -6966,6 +6966,48 @@ characterMakers["Starry Aqua"] = () => {
         ]
     )
 };
+
+characterMakers["Luka"] = () => {
+    return makeCharacter(
+        "Luka",
+        "UmbraHusky",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(230, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/luka/front.svg",
+                    extra: 1 / (1 - 0.025),
+                    bottom: 0.025
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(12 + 8/12, "feet")
+            },
+            {
+                name: "Minimacro",
+                height: math.unit(20, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(250, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(5, "miles")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(8000, "miles")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
