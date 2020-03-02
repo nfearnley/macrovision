@@ -494,6 +494,7 @@ function configEntityOptions(entity, view) {
             entity.views[entity.defaultView].height = defaultInfo.height;
             updateEntityOptions(entity, view);
             updateViewOptions(entity, view);
+            checkFitWorld();
             updateSizes();
         });
 

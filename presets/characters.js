@@ -7111,6 +7111,22 @@ characterMakers["Amelia Rosie"] = () => {
                 name: "Level 2",
                 height: math.unit(956243, "miles")
             },
+            {
+                name: "Level 3",
+                height: math.unit(29421709423, "miles")
+            },
+            {
+                name: "Level 4",
+                height: math.unit(154, "lightyears")
+            },
+            {
+                name: "Level 5",
+                height: math.unit(4738272, "lightyears")
+            },
+            {
+                name: "Level 6",
+                height: math.unit(145787152896, "lightyears")
+            },
         ]
     )
 };
