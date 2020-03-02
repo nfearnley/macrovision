@@ -813,7 +813,8 @@ characterMakers["Zephiro"] = () => {
             },
             {
                 name: "Normal",
-                height: math.unit(5 + 3/12, "feet")
+                height: math.unit(5 + 3/12, "feet"),
+                default: true
             },
             {
                 name: "Macro",
