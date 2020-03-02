@@ -2859,6 +2859,23 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/vehicles/cars/",
+            files: [
+                { name: "car_toyota-prius-c-front.svg", source: "https://www.dimensions.guide/element/toyota-prius-c" },
+                { name: "car_toyota-prius-c-side.svg", source: "https://www.dimensions.guide/element/toyota-prius-c" },
+                { name: "car_toyota-prius-c-top.svg", source: "https://www.dimensions.guide/element/toyota-prius-c" },
+                { name: "car_vw-new-beetle-front.svg", source: "https://www.dimensions.guide/element/volkswagen-new-beetle" },
+                { name: "car_vw-new-beetle-side.svg", source: "https://www.dimensions.guide/element/volkswagen-new-beetle" },
+                { name: "car_vw-new-beetle-top.svg", source: "https://www.dimensions.guide/element/volkswagen-new-beetle" },
+                { name: "car_honda-civic-front.svg", source: "https://www.dimensions.guide/element/honda-civic" },
+                { name: "car_honda-civic-side.svg", source: "https://www.dimensions.guide/element/honda-civic" },
+                { name: "car_honda-civic-top.svg", source: "https://www.dimensions.guide/element/honda-civic" },
+            ],
+            authors: [
+                "dimensions-guide"
+            ]
+        },
+        {
             prefix: "./media/vehicles/planes/",
             files: [
                 { name: "plane_airbus-a380-800-side.svg", source: "https://en.wikipedia.org/wiki/File:Giant_planes_comparison.svg" },
