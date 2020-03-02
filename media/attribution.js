@@ -2773,6 +2773,20 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/zephiro/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/20930792/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/20930792/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/20930792/" }
+            ],
+            authors: [
+                "feve"
+            ],
+            owners: [
+                "zephiro"
+            ]
+        },
+        {
             prefix: "./media/characters/",
             files: [
                 { name: "", source: "" }
@@ -4021,6 +4035,10 @@ const attributionData = {
         "libragonslvr": {
             "name": "LibragonSlvr",
             "url": "https://twitter.com/LibragonSlvr",
+        },
+        "zephiro": {
+            "name": "Zephiro",
+            "url": "https://www.furaffinity.net/user/zephiro/",
         },
     }
 }

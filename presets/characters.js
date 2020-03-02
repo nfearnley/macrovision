@@ -770,90 +770,58 @@ function makeFlamm() {
     return entity;
 }
 
-function makeZephiro() {
-    const views = {
-        front: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(7, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(80, "kg")
+characterMakers["Zephiro"] = () => {
+    return makeCharacter(
+        "Zephiro",
+        "Zephiro",
+        {
+            front: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(80, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/zephiro/front.svg",
+                    extra: 2309/2162 * (1 / (1 - 0.069)),
+                    bottom: 0.069
                 }
             },
-            image: {
-                source: "./media/characters/zephiro/front.svg"
+            side: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(80, "kg"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/zephiro/side.svg",
+                    extra: 2403/2279 * (1 / (1 - 0.015)),
+                    bottom: 0.015
+                }
             },
-            name: "Front"
+            back: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(80, "kg"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/zephiro/back.svg",
+                    extra: 2373/2244 * (1 / (1 - 0.013)),
+                    bottom: 0.013
+                }
+            },
         },
-        side: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(7, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(80, "kg")
-                }
+        [
+            {
+                name: "Micro",
+                height: math.unit(3, "inches")
             },
-            image: {
-                source: "./media/characters/zephiro/side.svg"
+            {
+                name: "Normal",
+                height: math.unit(5 + 3/12, "feet")
             },
-            name: "Side"
-        },
-        back: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(7, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(80, "kg")
-                }
-            },
-            image: {
-                source: "./media/characters/zephiro/back.svg"
-            },
-            name: "Back"
-        }
-    };
-
-    const entity = makeEntity({ name: "Zephiro", author: "Zephiro" }, views, []);
-    entity.views.front.height = math.unit(118, "feet");
-
-    entity.sizes.push({
-        name: "Micro",
-        height: math.unit(3, "inches")
-    });
-
-    entity.sizes.push({
-        name: "Normal",
-        height: math.unit(5 + 3 / 12, "feet")
-    });
-
-    entity.sizes.push({
-        name: "Macro",
-        height: math.unit(118, "feet")
-    });
-
-    return entity;
-}
+            {
+                name: "Macro",
+                height: math.unit(118, "feet")
+            },   
+        ]
+    )
+};
 
 function makeFory() {
     const views = {
@@ -7639,10 +7607,6 @@ function makeCharacters() {
     results.push({
         name: "Flamm",
         constructor: makeFlamm
-    });
-    results.push({
-        name: "Zephiro",
-        constructor: makeZephiro
     });
     results.push({
         name: "Fory",
