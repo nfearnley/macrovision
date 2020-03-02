@@ -134,7 +134,7 @@ function updateSizes() {
 
     ordered.sort((e1, e2) => {
         if (e1[1].priority != e2[1].priority) {
-            return e1[1].priority - e2[1].priority;
+            return e2[1].priority - e1[1].priority;
         } else {
             return e1[1].views[e1[1].view].height.toNumber("meters") - e2[1].views[e2[1].view].height.toNumber("meters")
         }
@@ -900,7 +900,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector("#options-order-forward").addEventListener("click", e => {
         if (selected) {
-            entities[selected.dataset.key].priority -= 1;
+            entities[selected.dataset.key].priority += 1;
         }
         document.querySelector("#options-order-display").innerText = entities[selected.dataset.key].priority;
         updateSizes();
@@ -908,7 +908,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector("#options-order-back").addEventListener("click", e => {
         if (selected) {
-            entities[selected.dataset.key].priority += 1;
+            entities[selected.dataset.key].priority -= 1;
         }
         document.querySelector("#options-order-display").innerText = entities[selected.dataset.key].priority;
         updateSizes();
