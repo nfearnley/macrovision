@@ -7508,9 +7508,9 @@ characterMakers["Axel Lycan"] = () => {
     )
 };
 
-characterMakers["Vanrel"] = () => {
+characterMakers["Vanrel (Hyena)"] = () => {
     return makeCharacter(
-        "Vanrel",
+        "Vanrel (Hyena)",
         "Vanrel",
         {
             front: {
