@@ -57,6 +57,76 @@ function makeMultiVehicle(name, sides) {
     return makeEntity({ name: name }, views);
 }
 
+function makeAircraft() {
+    const options = [
+        ["Antonov An-225", 84, 18.1, 285000],
+        ["Airbus A380-800", 72.7, 24.1, 277000],
+        ["Stratolaunch", 73, 16.5, 540000],
+        ["Boeing 747-8", 76.3, 19.4, 220128],
+        ["Hughes H-4 Hercules", 66.6, 24.2, 136077],
+        ["Cessena 172", 8.28, 2.72, 757, 2.72]
+    ],
+
+
+    sides = {}
+    const sorted = options.sort((a,b) => a[1]-b[1])
+
+    sorted.forEach(plane => {
+        sides[plane[0] + " (Side)"] = {
+            name: plane[0] + " (Side)",
+            rename: true,
+            height: math.unit(plane[2], "meters"),
+            mass: math.unit(plane[3], "kg"),
+            image: { source: "./media/vehicles/planes/plane_" + plane[0].replace(/ /g, "-").toLowerCase() + "-side.svg" }
+        };
+        sides[plane[0] + " (Top)"] = {
+            name: plane[0] + " (Top)",
+            rename: true,
+            height: math.unit(plane[1], "meters"),
+            mass: math.unit(plane[3], "kg"),
+            image: { source: "./media/vehicles/planes/plane_" + plane[0].replace(/ /g, "-").toLowerCase() + "-top.svg" }
+        };
+
+        if (plane.length > 4) {
+            sides[plane[0] + " (Front)"] = {
+                name: plane[0] + " (Front)",
+                rename: true,
+                height: math.unit(plane[4], "meters"),
+                mass: math.unit(plane[3], "kg"),
+                image: { source: "./media/vehicles/planes/plane_" + plane[0].replace(/ /g, "-").toLowerCase() + "-front.svg" }
+            };
+        }
+    });
+
+    const entity = makeMultiVehicle("Aircraft", sides);
+
+    entity.sizes.push({
+        name: "1:72",
+        height: math.unit(sorted[0][2]/72, "meters")
+    });
+    entity.sizes.push({
+        name: "1:24",
+        height: math.unit(sorted[0][2]/24, "meters")
+    });
+    entity.sizes.push({
+        name: "1:16",
+        height: math.unit(sorted[0][2]/16, "meters")
+    });
+    entity.sizes.push({
+        name: "1:8",
+        height: math.unit(sorted[0][2]/8, "meters")
+    });
+    entity.sizes.push({
+        name: "1:4",
+        height: math.unit(sorted[0][2]/4, "meters")
+    });
+    entity.sizes.push({
+        name: "1",
+        height: math.unit(sorted[0][2], "meters")
+    });
+
+    return entity;
+}
 
 function makeVehicles() {
     const results = [];
@@ -200,6 +270,11 @@ function makeVehicles() {
                 },
             }
         )
+    });
+    
+    results.push({
+        name: "Aircraft",
+        constructor: () => makeAircraft()
     });
 
     return results;

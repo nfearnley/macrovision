@@ -2859,6 +2859,35 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/vehicles/planes/",
+            files: [
+                { name: "plane_airbus-a380-800-side.svg", source: "https://en.wikipedia.org/wiki/File:Giant_planes_comparison.svg" },
+                { name: "plane_airbus-a380-800-top.svg", source: "https://en.wikipedia.org/wiki/File:Giant_planes_comparison.svg" },
+                { name: "plane_antonov-an-225-side.svg", source: "https://en.wikipedia.org/wiki/File:Giant_planes_comparison.svg" },
+                { name: "plane_antonov-an-225-top.svg", source: "https://en.wikipedia.org/wiki/File:Giant_planes_comparison.svg" },
+                { name: "plane_boeing-747-8-side.svg", source: "https://en.wikipedia.org/wiki/File:Giant_planes_comparison.svg" },
+                { name: "plane_boeing-747-8-top.svg", source: "https://en.wikipedia.org/wiki/File:Giant_planes_comparison.svg" },
+                { name: "plane_hughes-h-4-hercules-side.svg", source: "https://en.wikipedia.org/wiki/File:Giant_planes_comparison.svg" },
+                { name: "plane_hughes-h-4-hercules-top.svg", source: "https://en.wikipedia.org/wiki/File:Giant_planes_comparison.svg" },
+                { name: "plane_stratolaunch-side.svg", source: "https://en.wikipedia.org/wiki/File:Giant_planes_comparison.svg" },
+                { name: "plane_stratolaunch-top.svg", source: "https://en.wikipedia.org/wiki/File:Giant_planes_comparison.svg" },
+            ],
+            authors: [
+                "clem-tillier"
+            ]
+        },
+        {
+            prefix: "./media/vehicles/planes/",
+            files: [
+                { name: "plane_cessena-172-side.svg", source: "https://www.dimensions.guide/element/cessna-172-skyhawk-aircraft" },
+                { name: "plane_cessena-172-top.svg", source: "https://www.dimensions.guide/element/cessna-172-skyhawk-aircraft" },
+                { name: "plane_cessena-172-front.svg", source: "https://www.dimensions.guide/element/cessna-172-skyhawk-aircraft" }
+            ],
+            authors: [
+                "dimensions-guide"
+            ],
+        },
+        {
             prefix: "./media/vehicles/spacecraft/",
             files: [
                 { name: "n-1.svg", source: "https://en.wikipedia.org/wiki/File:Super_heavy-lift_launch_vehicles.png" },
@@ -3907,6 +3936,14 @@ const attributionData = {
         "axellycan": {
             "name": "Axel Lycan",
             "url": "https://twitter.com/AxelLycan/",
+        },
+        "clem-tillier": {
+            "name": "Clem Tillier",
+            "url": "https://commons.wikimedia.org/wiki/User:Ctillier",
+        },
+        "dimensions-guide": {
+            "name": "dimensions.guide",
+            "url": "https://www.dimensions.guide/",
         },
     }
 }
