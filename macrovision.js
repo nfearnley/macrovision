@@ -133,7 +133,12 @@ function updateSizes() {
     let ordered = Object.entries(entities);
 
     ordered.sort((e1, e2) => {
-        return e1[1].views[e1[1].view].height.toNumber("meters") - e2[1].views[e2[1].view].height.toNumber("meters")
+        if (e1[1].priority != e2[1].priority) {
+            return e1[1].priority - e2[1].priority;
+        } else {
+            return e1[1].views[e1[1].view].height.toNumber("meters") - e2[1].views[e2[1].view].height.toNumber("meters")
+        }
+        
     });
 
     let zIndex = ordered.length;
@@ -494,11 +499,16 @@ function configEntityOptions(entity, view) {
 
         defaultHolder.appendChild(button);
     });
+
+    document.querySelector("#options-order-display").innerText = entity.priority;
+    document.querySelector("#options-ordering").style.display = "flex";
 }
 
 function updateEntityOptions(entity, view) {
     const scaleInput = document.querySelector("#options-entity-scale");
     scaleInput.value = entity.scale;
+
+    document.querySelector("#options-order-display").innerText = entity.priority;
 }
 
 function clearEntityOptions() {
@@ -507,6 +517,7 @@ function clearEntityOptions() {
     holder.innerHTML = "";
 
     document.querySelector("#options-entity-defaults").innerHTML = "";
+    document.querySelector("#options-ordering").style.display = "none";
 }
 
 function configViewOptions(entity, view) {
@@ -833,7 +844,8 @@ function displayEntity(entity, view, x, y) {
     box.id = "entity-" + entityIndex;
     box.dataset.key = entityIndex;
     entity.view = view;
-
+    
+    entity.priority = 0;
     entities[entityIndex] = entity;
     entity.index = entityIndex;
 
@@ -885,6 +897,22 @@ function doSliderEntityScale() {
 
 document.addEventListener("DOMContentLoaded", () => {
     prepareEntities();
+
+    document.querySelector("#options-order-forward").addEventListener("click", e => {
+        if (selected) {
+            entities[selected.dataset.key].priority -= 1;
+        }
+        document.querySelector("#options-order-display").innerText = entities[selected.dataset.key].priority;
+        updateSizes();
+    });
+
+    document.querySelector("#options-order-back").addEventListener("click", e => {
+        if (selected) {
+            entities[selected.dataset.key].priority += 1;
+        }
+        document.querySelector("#options-order-display").innerText = entities[selected.dataset.key].priority;
+        updateSizes();
+    });
 
     document.querySelector("#slider-scale").addEventListener("mousedown", e => {
         dragScaleHandle = setInterval(doSliderScale, 50);

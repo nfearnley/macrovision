@@ -126,6 +126,10 @@ body.toggle-entity-name .entity-name {
     background: transparent;
 }
 
+.options-two-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
 .options-row {
     display: flex;
     text-align: center;
