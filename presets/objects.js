@@ -414,6 +414,31 @@ function makeObjects() {
     });
 
     results.push(makeShoes());
+
+    results.push({
+        name: "Flagpole",
+        constructor: () => makeObject(
+            "Flagpole",
+            {
+                residential: {
+                    height: math.unit(20, "feet"),
+                    image: { source: "./media/objects/flagpole.svg" },
+                    name: "Residential"
+                },
+                medium: {
+                    height: math.unit(50, "feet"),
+                    image: { source: "./media/objects/flagpole.svg" },
+                    name: "Medium"
+                },
+                large: {
+                    height: math.unit(100, "feet"),
+                    image: { source: "./media/objects/flagpole.svg" },
+                    name: "Large"
+                },
+            }
+        )
+    });
+
     
     results.sort((b1, b2) => {
         e1 = b1.constructor();

@@ -2776,6 +2776,7 @@ const attributionData = {
                 { name: "pebble.svg", source: null },
                 { name: "credit-card.svg", source: null },
                 { name: "credit-card-vertical.svg", source: null },
+                { name: "flagpole.svg", source: null },
             ],
             authors: [
                 "chemicalcrux"
