@@ -1810,6 +1810,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/hector/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32081932/" }
+            ],
+            authors: [
+                "dantethebeast"
+            ],
+            owners: [
+                "libragonslvr"
+            ]
+        },
+        {
             prefix: "./media/characters/jaro/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/26084387/" },
@@ -4001,6 +4013,14 @@ const attributionData = {
         "hawkeyedelite": {
             "name": "HawkeyedElite",
             "url": "https://www.furaffinity.net/user/hawkeyedelite/",
+        },
+        "dantethebeast": {
+            "name": "Dante the Beast",
+            "url": "https://www.furaffinity.net/user/dantethebeast/",
+        },
+        "libragonslvr": {
+            "name": "LibragonSlvr",
+            "url": "https://twitter.com/LibragonSlvr",
         },
     }
 }

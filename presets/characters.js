@@ -7572,6 +7572,36 @@ characterMakers["Abbott Absol"] = () => {
     )
 };
 
+characterMakers["Hector"] = () => {
+    return makeCharacter(
+        "Hector",
+        "LibragonSlvr",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(264, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/hector/front.svg",
+                    extra: 2280/2130 * (1 / (1 - 0.07)),
+                    bottom: 0.07
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(12.25, "foot"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(160, "feet")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
