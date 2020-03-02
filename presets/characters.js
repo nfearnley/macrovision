@@ -7551,7 +7551,7 @@ characterMakers["Abbott Absol"] = () => {
         [
             {
                 name: "Megamicro",
-                height: math.unit(0.01, "mm")
+                height: math.unit(0.1, "mm")
             },
             {
                 name: "Micro",
