@@ -7489,6 +7489,31 @@ characterMakers["Major Colonel"] = () => {
     )
 };
 
+characterMakers["Axel Lycan"] = () => {
+    return makeCharacter(
+        "Axel Lycan",
+        "AxelLycan",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(120, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/axel-lycan/front.svg",
+                    extra: 1 / (1 - 0.08),
+                    bottom: 0.08
+                }
+            },
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(1, "km")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

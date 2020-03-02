@@ -1400,6 +1400,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/axel-lycan/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/AxelLycan/status/1234276829491421184" }
+            ],
+            authors: [
+                "axellycan"
+            ],
+            owners: [
+                "axellycan"
+            ]
+        },
+        {
             prefix: "./media/characters/azura-saharah/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/29494552/" },
@@ -3890,6 +3902,10 @@ const attributionData = {
         "goattrain": {
             "name": "goattrain",
             "url": "https://www.furaffinity.net/user/goattrain",
+        },
+        "axellycan": {
+            "name": "Axel Lycan",
+            "url": "https://twitter.com/AxelLycan/",
         },
     }
 }
