@@ -2343,6 +2343,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/samantha-kruse/",
+            files: [
+                { name: "fat.svg", source: null }
+            ],
+            authors: [
+                "tweedabop"
+            ],
+            owners: [
+                "colwag"
+            ]
+        },
+        {
             prefix: "./media/characters/shingo/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/32499316/" }
@@ -4059,6 +4071,10 @@ const attributionData = {
         "danyelx": {
             "name": "Danyelx",
             "url": "https://www.furaffinity.net/user/danyelx",
+        },
+        "tweedabop": {
+            "name": "Tweedabop",
+            "url": "https://twitter.com/tweedabop",
         },
     }
 }

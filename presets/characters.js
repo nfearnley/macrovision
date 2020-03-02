@@ -7061,6 +7061,15 @@ characterMakers["Samantha Kruse"] = () => {
                     bottom: 0.025
                 }
             },
+            fat: {
+                height: math.unit(5 + 9/12, "feet"),
+                weight: math.unit(900, "lb"),
+                name: "Front (Fat)",
+                image: {
+                    source: "./media/characters/samantha-kruse/fat.svg",
+                    extra: 2688/2561
+                }
+            },
         },
         [
             {
