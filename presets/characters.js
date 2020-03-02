@@ -7514,6 +7514,64 @@ characterMakers["Axel Lycan"] = () => {
     )
 };
 
+characterMakers["Vanrel"] = () => {
+    return makeCharacter(
+        "Vanrel",
+        "Vanrel",
+        {
+            front: {
+                height: math.unit(5 + 9/12, "feet"),
+                weight: math.unit(175, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/vanrel/front.svg",
+                    extra: 1086/1010
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 9/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Abbott Absol"] = () => {
+    return makeCharacter(
+        "Abbott Absol",
+        "Abbott Absol",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(103, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/abbott-absol/front.svg",
+                    extra: 2010/1842
+                }
+            },
+        },
+        [
+            {
+                name: "Megamicro",
+                height: math.unit(0.01, "mm")
+            },
+            {
+                name: "Micro",
+                height: math.unit(1, "inch")
+            },
+            {
+                name: "Normal",
+                height: math.unit(6, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

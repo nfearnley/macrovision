@@ -1112,6 +1112,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/abbott-absol/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/19023011/" }
+            ],
+            authors: [
+                "shiki-shaka"
+            ],
+            owners: [
+                "hawkeyedelite"
+            ]
+        },
+        {
             prefix: "./media/characters/abysgar/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/32424108/" }
@@ -2621,6 +2633,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/vanrel/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "buckdasystem"
+            ],
+            owners: [
+                "kuipaws"
+            ]
+        },
+        {
             prefix: "./media/characters/vector-wuff/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/16031607" }
@@ -3961,6 +3985,22 @@ const attributionData = {
         "dimensions-guide": {
             "name": "dimensions.guide",
             "url": "https://www.dimensions.guide/",
+        },
+        "buckdasystem": {
+            "name": "BuckdaSystem",
+            "url": "https://www.furaffinity.net/user/Buckdasystem",
+        },
+        "kuipaws": {
+            "name": "KuiPaws",
+            "url": "https://www.furaffinity.net/user/kuipaws",
+        },
+        "shiki-shaka": {
+            "name": "Shiki_Shaka",
+            "url": "https://www.furaffinity.net/user/shikishaka",
+        },
+        "hawkeyedelite": {
+            "name": "HawkeyedElite",
+            "url": "https://www.furaffinity.net/user/hawkeyedelite/",
         },
     }
 }
