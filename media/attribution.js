@@ -1822,6 +1822,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/ine/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32769962/" }
+            ],
+            authors: [
+                "ranger"
+            ],
+            owners: [
+                "ranger"
+            ]
+        },
+        {
             prefix: "./media/characters/jaro/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/26084387/" },
@@ -2278,6 +2290,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/ranger/",
+            files: [
+                { name: "front.svg", source: "http://www.furaffinity.net/view/32769861/" }
+            ],
+            authors: [
+                "ranger"
+            ],
+            owners: [
+                "ranger"
+            ]
+        },
+        {
             prefix: "./media/characters/ravin-amulet/",
             files: [
                 { name: "front-cat.svg", source: null },
@@ -2645,6 +2669,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/theresa/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32769920/" }
+            ],
+            authors: [
+                "ranger"
+            ],
+            owners: [
+                "ranger"
+            ]
+        },
+        {
             prefix: "./media/characters/tyrone/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/32053722/" }
@@ -2728,6 +2764,18 @@ const attributionData = {
             ],
             owners: [
                 "vonadi"
+            ]
+        },
+        {
+            prefix: "./media/characters/vial/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32770018/" }
+            ],
+            authors: [
+                "ranger"
+            ],
+            owners: [
+                "ranger"
             ]
         },
         {
@@ -4075,6 +4123,10 @@ const attributionData = {
         "tweedabop": {
             "name": "Tweedabop",
             "url": "https://twitter.com/tweedabop",
+        },
+        "ranger": {
+            "name": "Ranger",
+            "url": "https://www.furaffinity.net/user/ranger/",
         },
     }
 }

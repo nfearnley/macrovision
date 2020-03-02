@@ -7621,6 +7621,106 @@ characterMakers["Sal"] = () => {
     )
 };
 
+characterMakers["Ranger"] = () => {
+    return makeCharacter(
+        "Ranger",
+        "Ranger",
+        {
+            front: {
+                height: math.unit(3, "meters"),
+                weight: math.unit(450, "kg"),
+                name: "front",
+                image: {
+                    source: "./media/characters/ranger/front.svg",
+                    extra: 2401/2243 * (1 / (1 - 0.05)),
+                    bottom: 0.05
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(3, "meters")
+            },
+        ]
+    )
+};
+
+characterMakers["Theresa"] = () => {
+    return makeCharacter(
+        "Theresa",
+        "Ranger",
+        {
+            front: {
+                height: math.unit(14, "feet"),
+                weight: math.unit(800, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/theresa/front.svg",
+                    extra: 3575/3346 * (1 / (1 - 0.03)),
+                    bottom: 0.03
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(14, "feet")
+            },
+        ]
+    )
+};
+
+characterMakers["Ine"] = () => {
+    return makeCharacter(
+        "Ine",
+        "Ranger",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(3, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/ine/front.svg",
+                    extra: 678/539 * (1 / (1 - 0.023)),
+                    bottom: 0.023
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(2.265, "feet")
+            },
+        ]
+    )
+};
+
+characterMakers["Vial"] = () => {
+    return makeCharacter(
+        "Vial",
+        "Ranger",
+        {
+            front: {
+                height: math.unit(5, "feet"),
+                weight: math.unit(30, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/vial/front.svg",
+                    extra: 1365/1277 * (1 / (1 - 0.04)),
+                    bottom: 0.04
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5, "feet")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
