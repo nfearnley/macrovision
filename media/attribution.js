@@ -2318,6 +2318,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/sal/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/29011243/" }
+            ],
+            authors: [
+                "danyelx"
+            ],
+            owners: [
+                "spwolf"
+            ]
+        },
+        {
             prefix: "./media/characters/samantha-kruse/",
             files: [
                 { name: "front.svg", source: "https://twitter.com/colmecolwag/status/1232022678107607040" },
@@ -4039,6 +4051,14 @@ const attributionData = {
         "zephiro": {
             "name": "Zephiro",
             "url": "https://www.furaffinity.net/user/zephiro/",
+        },
+        "spwolf": {
+            "name": "spwolf",
+            "url": "https://www.furaffinity.net/user/spwolf/",
+        },
+        "danyelx": {
+            "name": "Danyelx",
+            "url": "https://www.furaffinity.net/user/danyelx",
         },
     }
 }

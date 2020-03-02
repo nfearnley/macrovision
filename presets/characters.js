@@ -7571,6 +7571,31 @@ characterMakers["Hector"] = () => {
     )
 };
 
+characterMakers["Sal"] = () => {
+    return makeCharacter(
+        "Sal",
+        "Bigdur",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/sal/front.svg",
+                    extra: 1846/1699 * (1 / (1 - 0.04)),
+                    bottom: 0.04
+                }
+            },
+        },
+        [
+            {
+                name: "Megamacro",
+                height: math.unit(10, "miles")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
