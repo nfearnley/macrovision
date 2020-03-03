@@ -3289,10 +3289,24 @@ const attributionData = {
         {
             prefix: "./media/characters/tene/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/21181722/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/21181722/" },
+                { name: "sitting.svg", source: "https://www.furaffinity.net/view/21181722/" },
+                { name: "stomping.svg", source: "https://www.furaffinity.net/view/21181722/" },
             ],
             authors: [
                 "claws-and-paws"
+            ],
+            owners: [
+                "tenebrisdrox"
+            ]
+        },
+        {
+            prefix: "./media/characters/tene/",
+            files: [
+                { name: "feral.svg", source: "https://www.furaffinity.net/view/16328827/" }
+            ],
+            authors: [
+                "aenykings"
             ],
             owners: [
                 "tenebrisdrox"
@@ -4918,6 +4932,10 @@ const attributionData = {
         "spazman": {
             "name": "Spazman",
             "url": "https://www.furaffinity.net/user/spazman/",
+        },
+        "aenykings": {
+            "name": "aenykings",
+            "url": "http://www.furaffinity.net/user/aenykings/",
         },
     }
 }

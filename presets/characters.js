@@ -7837,6 +7837,36 @@ characterMakers["Tene"] = () => {
                     bottom: 0.022
                 }
             },
+            stomping: {
+                height: math.unit(2.025, "meters"),
+                weight: math.unit(120, "lb"),
+                name: "Stomping",
+                image: {
+                    source: "./media/characters/tene/stomping.svg",
+                    extra: 938/873 * (1 / (1 - 0.01)),
+                    bottom: 0.01
+                }
+            },
+            sitting: {
+                height: math.unit(1, "meter"),
+                weight: math.unit(120, "lb"),
+                name: "Sitting",
+                image: {
+                    source: "./media/characters/tene/sitting.svg",
+                    extra: 437/415 * (1 / (1 - 0.1)),
+                    bottom: 0.1
+                }
+            },
+            feral: {
+                height: math.unit(3.9, "feet"),
+                weight: math.unit(250, "lb"),
+                name: "Feral",
+                image: {
+                    source: "./media/characters/tene/feral.svg",
+                    extra: 717/458 * (1 / (1 - 0.179)),
+                    bottom: 0.179
+                }
+            },
         },
         [
             {
