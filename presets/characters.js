@@ -8124,6 +8124,32 @@ characterMakers["Mekuto"] = () => {
     )
 };
 
+characterMakers["Dafydd Tomos"] = () => {
+    return makeCharacter(
+        "Dafydd Tomos",
+        "SolarfoxArt",
+        {
+            front: {
+                height: math.unit(6.5, "inches"),
+                weight: math.unit(13, "oz"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/dafydd-tomos/front.svg",
+                    extra: 2990/2603 * (1 / (1 - 0.03)),
+                    bottom: 0.03
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(6.5, "inches"),
+                default: true
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

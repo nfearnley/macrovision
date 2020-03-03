@@ -1640,6 +1640,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/dafydd-tomos/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/SolarfoxArt/status/1234128602939060226" }
+            ],
+            authors: [
+                "solarfoxart"
+            ],
+            owners: [
+                "solarfoxart"
+            ]
+        },
+        {
             prefix: "./media/characters/daniel/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/11786572/" }
@@ -5020,6 +5032,10 @@ const attributionData = {
         "shorty-antics-furries": {
             "name": "shorty-antics-furries",
             "url": "https://www.furaffinity.net/user/shorty-antics-furries",
+        },
+        "solarfoxart": {
+            "name": "SolarfoxArt",
+            "url": "https://twitter.com/SolarfoxArt",
         },
     }
 }
