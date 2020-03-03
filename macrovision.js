@@ -1343,7 +1343,12 @@ function fitWorld() {
     Object.entries(entities).forEach(([key, entity]) => {
         const view = entity.view;
 
-        max = fitMode.binop(max, entity.views[view].height.toNumber("meter"));
+        let extra = entity.views[view].image.extra;
+        extra = extra === undefined ? 1 : extra;
+        let bottom = entity.views[view].image.bottom;
+        bottom = bottom === undefined ? 0 : bottom;
+
+        max = fitMode.binop(max, math.multiply(extra * (1 - bottom), entity.views[view].height.toNumber("meter")));
         count += 1;
     });
 
