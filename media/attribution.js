@@ -2708,6 +2708,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/odyssey/",
+            files: [
+                { name: "side.svg", source: null }
+            ],
+            authors: [
+                "aello"
+            ],
+            owners: [
+                "freschclauhs"
+            ]
+        },
+        {
             prefix: "./media/characters/okuri/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/34619004/" },
@@ -4978,6 +4990,14 @@ const attributionData = {
         "megashi8027": {
             "name": "MegaShi8027",
             "url": "https://twitter.com/MShi8027",
+        },
+        "aello": {
+            "name": "Aello",
+            "url": "https://www.furaffinity.net/user/aello",
+        },
+        "freschclauhs": {
+            "name": "freschclauhs",
+            "url": "https://www.furaffinity.net/user/freschrenders",
         },
     }
 }

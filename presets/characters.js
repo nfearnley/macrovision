@@ -8040,6 +8040,30 @@ characterMakers["Mega Shi"] = () => {
     )
 };
 
+characterMakers["Odyssey"] = () => {
+    return makeCharacter(
+        "Odyssey",
+        "Freschlauhs",
+        {
+            side: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(140, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/odyssey/side.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Gigamacro",
+                height: math.unit(1, "AU"),
+                default: true
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
