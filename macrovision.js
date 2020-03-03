@@ -337,6 +337,7 @@ function clickDown(target, x, y) {
     dragOffsetX = x - rect.left + entX;
     dragOffsetY = y - rect.top + entY;
     clickTimeout = setTimeout(() => { dragging = true }, 200)
+    target.classList.add("no-transition");
 }
 
 // could we make this actually detect the menu area?
@@ -359,6 +360,7 @@ function clickUp(e) {
         } else {
             select(clicked);
         }
+        clicked.classList.remove("no-transition");
         clicked = null;
     }
 
