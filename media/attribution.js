@@ -1218,6 +1218,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/allatia/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/24429740/" }
+            ],
+            authors: [
+                "panda-chan"
+            ],
+            owners: [
+                "ilikefurrystoo"
+            ]
+        },
+        {
             prefix: "./media/characters/amanda/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/33462160/" }
@@ -4179,11 +4191,15 @@ const attributionData = {
         },
         "ilikefurrystoo": {
             "name": "ilikefurrystoo",
-            "url": "",
+            "url": "https://www.furaffinity.net/user/ilikefurrystoo/",
         },
         "gunnerrott": {
             "name": "GunnerRott",
             "url": "https://www.furaffinity.net/user/howitzer247/",
+        },
+        "panda-chan": {
+            "name": "panda-chan",
+            "url": "https://www.furaffinity.net/user/panda-chan",
         },
     }
 }

@@ -7788,6 +7788,39 @@ characterMakers["Gunner Rotthbauer"] = () => {
     )
 };
 
+characterMakers["Allatia"] = () => {
+    return makeCharacter(
+        "Allatia",
+        "ilikefurrystoo",
+        {
+            front: {
+                height: math.unit(5 + 5/12, "feet"),
+                weight: math.unit(140, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/allatia/front.svg",
+                    extra: 1227/1180 * (1 / (1 - 0.027)),
+                    bottom: 0.027
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 5/12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(250, "feet"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(8, "miles")
+            }
+        ]
+    )
+};
 function makeCharacters() {
     const results = [];
     results.push({
