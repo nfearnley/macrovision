@@ -3721,7 +3721,8 @@ characterMakers["Cimmaron"] = () => {
                 name: "Front (Clothed)",
                 image: {
                     source: "./media/characters/cimmaron/front-clothed.svg",
-                    extra: 701/676
+                    extra: 701/676 * (1 / (1 - 0.046)),
+                    bottom: 0.046
                 }
             },
             backClothed: {
@@ -3730,7 +3731,8 @@ characterMakers["Cimmaron"] = () => {
                 name: "Back (Clothed)",
                 image: {
                     source: "./media/characters/cimmaron/back-clothed.svg",
-                    extra: 701/676
+                    extra: 701/676 * (1 / (1 - 0.046)),
+                    bottom: 0.046
                 }
             },
             frontNude: {
@@ -3739,7 +3741,8 @@ characterMakers["Cimmaron"] = () => {
                 name: "Front (Nude)",
                 image: {
                     source: "./media/characters/cimmaron/front-nude.svg",
-                    extra: 701/676
+                    extra: 701/676 * (1 / (1 - 0.046)),
+                    bottom: 0.046
                 }
             },
             backNude: {
@@ -3748,7 +3751,8 @@ characterMakers["Cimmaron"] = () => {
                 name: "Back (Nude)",
                 image: {
                     source: "./media/characters/cimmaron/back-nude.svg",
-                    extra: 701/676
+                    extra: 701/676 * (1 / (1 - 0.046)),
+                    bottom: 0.046
                 }
             }
         },
@@ -3757,7 +3761,11 @@ characterMakers["Cimmaron"] = () => {
                 name: "Normal",
                 height: math.unit(6, "feet"),
                 default: true
-            }
+            },
+            {
+                name: "Macro Mayor",
+                height: math.unit(350, "meters")
+            },
         ]
     )
 };
