@@ -7821,6 +7821,41 @@ characterMakers["Allatia"] = () => {
         ]
     )
 };
+
+characterMakers["Tene"] = () => {
+    return makeCharacter(
+        "Tene",
+        "TenebrisDrox",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(120, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/tene/front.svg",
+                    extra: 1728/1578 * (1 / (1 - 0.022)),
+                    bottom: 0.022
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(300, "feet"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(5, "miles")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

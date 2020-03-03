@@ -2705,6 +2705,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/tene/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/21181722/" }
+            ],
+            authors: [
+                "claws-and-paws"
+            ],
+            owners: [
+                "tenebrisdrox"
+            ]
+        },
+        {
             prefix: "./media/characters/tiberius/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/34977812/" },
@@ -4200,6 +4212,14 @@ const attributionData = {
         "panda-chan": {
             "name": "panda-chan",
             "url": "https://www.furaffinity.net/user/panda-chan",
+        },
+        "claws-and-paws": {
+            "name": "claws-and-paws",
+            "url": "https://www.furaffinity.net/user/claws-and-paws/",
+        },
+        "tenebrisdrox": {
+            "name": "TenebrisDrox",
+            "url": "https://www.furaffinity.net/user/darkninja344",
         },
     }
 }
