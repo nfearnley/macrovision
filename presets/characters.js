@@ -7988,6 +7988,58 @@ characterMakers["Zero Alurus"] = () => {
     )
 };
 
+characterMakers["Mega Shi"] = () => {
+    return makeCharacter(
+        "Mega Shi",
+        "MShi8027",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(200, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/mega-shi/front.svg",
+                    extra: 1279/1250 * (1 / (1 - 0.02)),
+                    bottom: 0.02
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(200, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/mega-shi/back.svg",
+                    extra: 1279/1250 * (1 / (1 - 0.02)),
+                    bottom: 0.02
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(16 + 6/12, "feet")
+            },
+            {
+                name: "Normal",
+                height: math.unit(660, "feet"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(10, "miles")
+            },
+            {
+                name: "Interstellar",
+                height: math.unit(1e9, "miles")
+            },
+            {
+                name: "Travelling Universes",
+                height: math.unit(30e15, "parsecs")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

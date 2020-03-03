@@ -2520,6 +2520,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/mega-shi/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/MShi8027/status/1182516709208580096" },
+                { name: "back.svg", source: "https://twitter.com/MShi8027/status/1182516709208580096" },
+            ],
+            authors: [
+                "muttasaur"
+            ],
+            owners: [
+                "megashi8027"
+            ]
+        },
+        {
             prefix: "./media/characters/mira-al-cul/",
             files: [
                 { name: "lamp.svg", source: "https://www.furaffinity.net/view/24240755/" },
@@ -4957,6 +4970,14 @@ const attributionData = {
         "novadog": {
             "name": "Novadog",
             "url": "https://www.deviantart.com/novadog",
+        },
+        "muttasaur": {
+            "name": "Muttasaur",
+            "url": "https://twitter.com/Muttasaur",
+        },
+        "megashi8027": {
+            "name": "MegaShi8027",
+            "url": "https://twitter.com/MShi8027",
         },
     }
 }
