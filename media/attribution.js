@@ -2342,6 +2342,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/rovoska/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/21743555/" }
+            ],
+            authors: [
+                "monerelluvia"
+            ],
+            owners: [
+                "rovoska"
+            ]
+        },
+        {
             prefix: "./media/characters/sal/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/29011243/" }
@@ -4127,6 +4139,14 @@ const attributionData = {
         "ranger": {
             "name": "Ranger",
             "url": "https://www.furaffinity.net/user/ranger/",
+        },
+        "rovoska": {
+            "name": "Rovoska",
+            "url": "https://www.furaffinity.net/user/lovewing/",
+        },
+        "monerelluvia": {
+            "name": "monerelluvia",
+            "url": "https://www.furaffinity.net/user/monerelluvia",
         },
     }
 }

@@ -7721,6 +7721,30 @@ characterMakers["Vial"] = () => {
     )
 };
 
+characterMakers["Rovoska"] = () => {
+    return makeCharacter(
+        "Rovoska",
+        "Rovoska",
+        {
+            side: {
+                height: math.unit(3.4, "meters"),
+                weight: math.unit(1000, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/rovoska/side.svg",
+                    extra: 4403/1515
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(3.4, "meters")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
