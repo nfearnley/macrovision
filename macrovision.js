@@ -33,6 +33,7 @@ const unitChoices = {
         "feet",
         "stories",
         "miles",
+        "lightyears",
         "parsecs",
     ],
     area: [

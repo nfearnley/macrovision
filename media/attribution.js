@@ -1810,6 +1810,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/gunner-rotthbauer/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/17819310/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/17819310/" }
+            ],
+            authors: [
+                "combatraccoon"
+            ],
+            owners: [
+                "gunnerrott"
+            ]
+        },
+        {
             prefix: "./media/characters/hector/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/32081932/" }
@@ -1925,7 +1938,7 @@ const attributionData = {
                 { name: "dress.svg", source: "https://www.furaffinity.net/view/32063053/" }
             ],
             authors: [
-                "combat-raccoon"
+                "combatraccoon"
             ],
             owners: [
                 "chrisrules123"
@@ -1953,6 +1966,18 @@ const attributionData = {
             ],
             owners: [
                 "sharkmare"
+            ]
+        },
+        {
+            prefix: "./media/characters/ky'owin/",
+            files: [
+                { name: "front.svg", source: "" }
+            ],
+            authors: [
+                "seabury"
+            ],
+            owners: [
+                "kyowin"
             ]
         },
         {
@@ -2710,7 +2735,7 @@ const attributionData = {
                 { name: "front.svg", source: "https://www.furaffinity.net/view/28522387/" }
             ],
             authors: [
-                "combat-raccoon"
+                "combatraccoon"
             ],
             owners: [
                 "bossvoss"
@@ -3156,7 +3181,7 @@ const attributionData = {
             "name": "CollinScorpio",
             "url": "https://www.furaffinity.net/user/collinscorpio/"
         },
-        "combat-raccoon": {
+        "combatraccoon": {
             "name": "CombatRaccoon",
             "url": "https://www.furaffinity.net/user/combatraccoon/"
         },
@@ -4147,6 +4172,18 @@ const attributionData = {
         "monerelluvia": {
             "name": "monerelluvia",
             "url": "https://www.furaffinity.net/user/monerelluvia",
+        },
+        "seabury": {
+            "name": "Seabury",
+            "url": "",
+        },
+        "ilikefurrystoo": {
+            "name": "ilikefurrystoo",
+            "url": "",
+        },
+        "gunnerrott": {
+            "name": "GunnerRott",
+            "url": "https://www.furaffinity.net/user/howitzer247/",
         },
     }
 }

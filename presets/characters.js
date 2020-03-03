@@ -7745,6 +7745,49 @@ characterMakers["Rovoska"] = () => {
     )
 };
 
+characterMakers["Gunner Rotthbauer"] = () => {
+    return makeCharacter(
+        "Gunner Rotthbauer",
+        "GunnerRott",
+        {
+            front: {
+                height: math.unit(8, "feet"),
+                weight: math.unit(315, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/gunner-rotthbauer/front.svg"
+                }
+            },
+            back: {
+                height: math.unit(8, "feet"),
+                weight: math.unit(315, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/gunner-rotthbauer/back.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(3.5, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(8, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(250, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(1, "AU")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
