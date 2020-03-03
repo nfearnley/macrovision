@@ -7948,6 +7948,46 @@ characterMakers["Ka'Tamra \"Spaz\" Ci'Karan"] = () => {
     )
 };
 
+characterMakers["Zero Alurus"] = () => {
+    return makeCharacter(
+        "Zero Alurus",
+        "",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/zero-alurus/front.svg"
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/zero-alurus/back.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 10/12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(60, "feet"),
+                default: true
+            },
+            {
+                name: "Macro+",
+                height: math.unit(450, "feet")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

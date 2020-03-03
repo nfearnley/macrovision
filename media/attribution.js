@@ -3542,6 +3542,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/zero-alurus/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35267940/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/35267940/" }
+            ],
+            authors: [
+                "novadog"
+            ],
+            owners: [
+                "zeroalurus"
+            ]
+        },
+        {
             prefix: "./media/landmarks/",
             files: [
                 { name: "burj-khalifa.svg", source: "https://commons.wikimedia.org/wiki/File:TallestBuildings.svg" },
@@ -4936,6 +4949,14 @@ const attributionData = {
         "aenykings": {
             "name": "aenykings",
             "url": "http://www.furaffinity.net/user/aenykings/",
+        },
+        "zeroalurus": {
+            "name": "Zero Alurus",
+            "url": "https://www.furaffinity.net/user/zerozebra/",
+        },
+        "novadog": {
+            "name": "Novadog",
+            "url": "https://www.deviantart.com/novadog",
         },
     }
 }
