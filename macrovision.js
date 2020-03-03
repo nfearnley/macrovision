@@ -90,7 +90,8 @@ function snapRel(coords) {
 }
 
 function adjustAbs(coords, oldHeight, newHeight) {
-    return { x: coords.x, y: 1 + (coords.y - 1) * math.divide(oldHeight, newHeight) };
+    const ratio = math.divide(oldHeight, newHeight);
+    return { x: 0.5 + (coords.x - 0.5) * math.divide(oldHeight, newHeight), y: 1 + (coords.y - 1) * math.divide(oldHeight, newHeight) };
 }
 
 function rel2abs(coords) {
