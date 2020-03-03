@@ -2533,6 +2533,20 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/mekuto/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/13805026/" },
+                { name: "hand.svg", source: "https://www.furaffinity.net/view/13805026/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/13805026/" },
+            ],
+            authors: [
+                "shorty-antics-furries"
+            ],
+            owners: [
+                "mekuto"
+            ]
+        },
+        {
             prefix: "./media/characters/mira-al-cul/",
             files: [
                 { name: "lamp.svg", source: "https://www.furaffinity.net/view/24240755/" },
@@ -4998,6 +5012,14 @@ const attributionData = {
         "freschclauhs": {
             "name": "freschclauhs",
             "url": "https://www.furaffinity.net/user/freschrenders",
+        },
+        "mekuto": {
+            "name": "Mekuto",
+            "url": "https://www.furaffinity.net/user/mekuto",
+        },
+        "shorty-antics-furries": {
+            "name": "shorty-antics-furries",
+            "url": "https://www.furaffinity.net/user/shorty-antics-furries",
         },
     }
 }

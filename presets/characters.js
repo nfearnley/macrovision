@@ -8064,6 +8064,66 @@ characterMakers["Odyssey"] = () => {
     )
 };
 
+characterMakers["Mekuto"] = () => {
+    return makeCharacter(
+        "Mekuto",
+        "Mekuto",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(300, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/mekuto/front.svg",
+                    extra: 921/832 * (1 / (1 - 0.03)),
+                    bottom: 0.03
+                }
+            },
+            hand: {
+                height: math.unit(6/10.24, "feet"),
+                name: "Hand",
+                image: {
+                    source: "./media/characters/mekuto/hand.svg"
+                }
+            },
+            foot: {
+                height: math.unit(6/5.05, "feet"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/mekuto/foot.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Minimicro",
+                height: math.unit(0.2, "inches")
+            },
+            {
+                name: "Micro",
+                height: math.unit(1.5, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(5 + 11/12, "feet"),
+                default: true
+            },
+            {
+                name: "Minimacro",
+                height: math.unit(17 + 9/12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(177.5, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(152, "miles")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
