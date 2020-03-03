@@ -8150,6 +8150,45 @@ characterMakers["Dafydd Tomos"] = () => {
     )
 };
 
+characterMakers["Splinter"] = () => {
+    return makeCharacter(
+        "Splinter",
+        "SirSplinter",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/splinter/front.svg",
+                    extra: 2990/2882 * (1 / (1 - 0.04)),
+                    bottom: 0.04
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/splinter/back.svg",
+                    extra: 2990/2882 * (1 / (1 - 0.04)),
+                    bottom: 0.04
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(230, "meters"),
+                default: true
+            },
+        ]
+    )
+};
 function makeCharacters() {
     const results = [];
     results.push({

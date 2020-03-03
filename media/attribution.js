@@ -3024,6 +3024,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/splinter/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/31276290/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/31276290/" },
+            ],
+            authors: [
+                "cedarwolf"
+            ],
+            owners: [
+                "sirsplinter"
+            ]
+        },
+        {
             prefix: "./media/characters/sosha/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/22781088/" }
@@ -5036,6 +5049,14 @@ const attributionData = {
         "solarfoxart": {
             "name": "SolarfoxArt",
             "url": "https://twitter.com/SolarfoxArt",
+        },
+        "cedarwolf": {
+            "name": "cedarwolf",
+            "url": "https://www.furaffinity.net/user/-cedarwolf",
+        },
+        "sirsplinter": {
+            "name": "SirSplinter",
+            "url": "https://www.furaffinity.net/user/sirsplinter/",
         },
     }
 }
