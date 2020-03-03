@@ -1133,7 +1133,7 @@ const attributionData = {
                 "labratkuma"
             ],
             owners: [
-
+                "cilenomon"
             ]
         },
         {
@@ -1161,7 +1161,7 @@ const attributionData = {
                 "just-a-little-mixed-up"
             ],
             owners: [
-
+                "aigey"
             ]
         },
         {
@@ -1284,6 +1284,9 @@ const attributionData = {
             ],
             authors: [
                 "mallowchu"
+            ],
+            owners: [
+                "vercursar"
             ]
         },
         {
@@ -1524,6 +1527,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/chez/",
+            files: [
+                { name: "front.svg", source: null },
+                { name: "side.svg", source: null }
+            ],
+            authors: [
+                "ashtrek"
+            ],
+            owners: [
+                "ashtrek"
+            ]
+        },
+        {
             prefix: "./media/characters/chiros/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/33799727/" },
@@ -1612,6 +1628,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/cryae/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34372310/" }
+            ],
+            authors: [
+                "anutabelko"
+            ],
+            owners: [
+                "vercursar"
+            ]
+        },
+        {
             prefix: "./media/characters/daniel/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/11786572/" }
@@ -1685,6 +1713,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/draylen/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "cougr"
+            ],
+            owners: [
+                "draylen"
+            ]
+        },
+        {
             prefix: "./media/characters/dr-clay/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/33619821/" },
@@ -1695,6 +1735,94 @@ const attributionData = {
             ],
             owners: [
                 "little-big-x110"
+            ]
+        },
+        {
+            prefix: "./media/characters/ebony/",
+            files: [
+                { name: "front.svg", source: null },
+                { name: "side.svg", source: null },
+                { name: "back.svg", source: null }
+            ],
+            authors: [
+                "knifelynx"
+            ],
+            owners: [
+                "lazerwolf"
+            ]
+        },
+        {
+            prefix: "./media/characters/elbial/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/15459294/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/15459294/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/15459294/" },
+            ],
+            authors: [
+                "homogeneousrule"
+            ],
+            owners: [
+                "neopuc"
+            ]
+        },
+        {
+            prefix: "./media/characters/elijah/",
+            files: [
+                { name: "side.svg", source: null }
+            ],
+            authors: [
+                "slimytongues"
+            ],
+            owners: [
+                "someoneepic"
+            ]
+        },
+        {
+            prefix: "./media/characters/elijah/",
+            files: [
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/34269979/" }
+            ],
+            authors: [
+                "luzian"
+            ],
+            owners: [
+                "someoneepic"
+            ]
+        },
+        {
+            prefix: "./media/characters/elory/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/21837855/" }
+            ],
+            authors: [
+                "canictricity"
+            ],
+            owners: [
+                "vercursar"
+            ]
+        },
+        {
+            prefix: "./media/characters/erestrebah/",
+            files: [
+                { name: "front.svg", source: "http://www.furaffinity.net/view/26085781/" }
+            ],
+            authors: [
+                "missyazriel"
+            ],
+            owners: [
+                "kurrikage"
+            ]
+        },
+        {
+            prefix: "./media/characters/erestrebah/",
+            files: [
+                { name: "front.svg", source: "http://www.furaffinity.net/view/18577161/" }
+            ],
+            authors: [
+                "wintuk"
+            ],
+            owners: [
+                "kurrikage"
             ]
         },
         {
@@ -1735,6 +1863,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/flamm/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "ashfall-fox"
+            ],
+            owners: [
+                "flamm"
+            ]
+        },
+        {
             prefix: "./media/characters/fleta/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/28202280/" }
@@ -1769,6 +1909,79 @@ const attributionData = {
             ],
             owners: [
                 "ravin-amulet"
+            ]
+        },
+        {
+            prefix: "./media/characters/fory/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "victni"
+            ],
+            owners: [
+                "victni"
+            ]
+        },
+        {
+            prefix: "./media/characters/gael'rathus/",
+            files: [
+                { name: "front.svg", source: "http://www.furaffinity.net/view/20362158/" }
+            ],
+            authors: [
+                "hornedfreak"
+            ],
+            owners: [
+                "kurrikage"
+            ]
+        },
+        {
+            prefix: "./media/characters/gael'rathus/",
+            files: [
+                { name: "front-alt.svg", source: "http://www.furaffinity.net/view/23410665/" }
+            ],
+            authors: [
+                "furikake"
+            ],
+            owners: [
+                "kurrikage"
+            ]
+        },
+        {
+            prefix: "./media/characters/gael'rathus/",
+            files: [
+                { name: "front-alt-2.svg", source: "http://www.furaffinity.net/view/18991404/" }
+            ],
+            authors: [
+                "muzz"
+            ],
+            owners: [
+                "kurrikage"
+            ]
+        },
+        {
+            prefix: "./media/characters/gale/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/16522020/" },
+                { name: "front-alt-2.svg", source: "https://www.furaffinity.net/view/16607998/" },
+            ],
+            authors: [
+                "devvy"
+            ],
+            owners: [
+                "gale"
+            ]
+        },
+        {
+            prefix: "./media/characters/gale/",
+            files: [
+                { name: "front-alt.svg", source: null }
+            ],
+            authors: [
+                "msricket"
+            ],
+            owners: [
+                "gale"
             ]
         },
         {
@@ -1809,6 +2022,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/ggv/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/15086529/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/15086529/" },
+            ],
+            authors: [
+                "nazuu-m0nster"
+            ],
+            owners: [
+                "giantgrowingvixen"
+            ]
+        },
+        {
             prefix: "./media/characters/goddess-elizabeth/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/30317113/" },
@@ -1819,6 +2045,18 @@ const attributionData = {
             ],
             owners: [
                 "darkietehjester"
+            ]
+        },
+        {
+            prefix: "./media/characters/gregory/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "royal-pain-in-the-ass"
+            ],
+            owners: [
+                "vercursar"
             ]
         },
         {
@@ -1872,6 +2110,43 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/jazzy/",
+            files: [
+                { name: "front.svg", source: null },
+                { name: "back.svg", source: null }
+            ],
+            authors: [
+                "meowzi"
+            ],
+            owners: [
+                "jazzywolf"
+            ]
+        },
+        {
+            prefix: "./media/characters/jennifer/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/16949759/" }
+            ],
+            authors: [
+                "fsmaverick"
+            ],
+            owners: [
+                "neopuc"
+            ]
+        },
+        {
+            prefix: "./media/characters/jennifer/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/19334493/" }
+            ],
+            authors: [
+                "wfa"
+            ],
+            owners: [
+                "neopuc"
+            ]
+        },
+        {
             prefix: "./media/characters/joshii/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/35054066/" },
@@ -1894,6 +2169,19 @@ const attributionData = {
             ],
             owners: [
                 "little-big-x110"
+            ]
+        },
+        {
+            prefix: "./media/characters/kalista/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/19154251/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/19154251/" },
+            ],
+            authors: [
+                "darkvulpine2"
+            ],
+            owners: [
+                "darkvulpine2"
             ]
         },
         {
@@ -1981,9 +2269,60 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/kurribird/",
+            files: [
+                { name: "front.svg", source: "http://www.furaffinity.net/view/23539094/" }
+            ],
+            authors: [
+                "akuva"
+            ],
+            owners: [
+                "kurrikage"
+            ]
+        },
+        {
+            prefix: "./media/characters/kurribird/",
+            files: [
+                { name: "front-alt.svg", source: "http://www.furaffinity.net/view/18392470/" }
+            ],
+            authors: [
+                "hornedfreak"
+            ],
+            owners: [
+                "kurrikage"
+            ]
+        },
+        {
+            prefix: "./media/characters/kurrikage/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/22413650/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/22413650/" },
+                { name: "paw.svg", source: "https://www.furaffinity.net/view/22413650/" },
+                { name: "staff.svg", source: "https://www.furaffinity.net/view/22413650/" },
+            ],
+            authors: [
+                "pig"
+            ],
+            owners: [
+                "kurrikage"
+            ]
+        },
+        {
+            prefix: "./media/characters/kurrikage/",
+            files: [
+                { name: "peek.svg", source: null }
+            ],
+            authors: [
+                "evillabrat"
+            ],
+            owners: [
+                "kurrikage"
+            ]
+        },
+        {
             prefix: "./media/characters/ky'owin/",
             files: [
-                { name: "front.svg", source: "" }
+                { name: "front.svg", source: null }
             ],
             authors: [
                 "seabury"
@@ -2052,6 +2391,20 @@ const attributionData = {
             ],
             owners: [
                 "scareye"
+            ]
+        },
+        {
+            prefix: "./media/characters/malik/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/5714799/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/5714799/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/5714799/" }
+            ],
+            authors: [
+                "keihound"
+            ],
+            owners: [
+                "fuzzypaws"
             ]
         },
         {
@@ -2129,6 +2482,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/mech/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/25688886/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/25688886/" }
+            ],
+            authors: [
+                "tanraak"
+            ],
+            owners: [
+                "mechedragon"
+            ]
+        },
+        {
             prefix: "./media/characters/mira-al-cul/",
             files: [
                 { name: "lamp.svg", source: "https://www.furaffinity.net/view/24240755/" },
@@ -2142,6 +2508,44 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/mirova/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32624904/" }
+            ],
+            authors: [
+                "ghostlywafflez"
+            ],
+            owners: [
+                "cilenomon"
+            ]
+        },
+        {
+            prefix: "./media/characters/mountain/",
+            files: [
+                { name: "front.svg", source: null },
+                { name: "back.svg", source: null }
+            ],
+            authors: [
+                "libra-11"
+            ],
+            owners: [
+                "aviraptia"
+            ]
+        },
+        {
+            prefix: "./media/characters/napalm/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32602080/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/32602080/" },
+            ],
+            authors: [
+                "ahastar"
+            ],
+            owners: [
+                "rathdakrogan"
+            ]
+        },
+        {
             prefix: "./media/characters/natalie-nightring/",
             files: [
                 { name: "front.svg", source: "https://twitter.com/NatEdgecomb/status/1210278457789288451" }
@@ -2151,6 +2555,44 @@ const attributionData = {
             ],
             owners: [
                 "natedgecomb"
+            ]
+        },
+        {
+            prefix: "./media/characters/natalya/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/28619653/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/28619653/" },
+            ],
+            authors: [
+                "fsmaverick"
+            ],
+            owners: [
+                "neopuc"
+            ]
+        },
+        {
+            prefix: "./media/characters/natasha/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "fsmaverick",
+                "yutmutt"
+            ],
+            owners: [
+                "natasha"
+            ]
+        },
+        {
+            prefix: "./media/characters/nebula/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32285718/" }
+            ],
+            authors: [
+                "gurenadopts"
+            ],
+            owners: [
+                "cilenomon"
             ]
         },
         {
@@ -2167,6 +2609,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/noah/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/15460332/" },
+                { name: "talons.svg", source: "https://www.furaffinity.net/view/15460332/" }
+            ],
+            authors: [
+                "ashascadence"
+            ],
+            owners: [
+                "neopuc"
+            ]
+        },
+        {
             prefix: "./media/characters/noir/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/28167943/" }
@@ -2176,6 +2631,18 @@ const attributionData = {
             ],
             owners: [
                 "march-dragon"
+            ]
+        },
+        {
+            prefix: "./media/characters/north/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/Bunnox1/status/1215858071731408896" }
+            ],
+            authors: [
+                "bunnox1"
+            ],
+            owners: [
+                "northybat"
             ]
         },
         {
@@ -2213,6 +2680,32 @@ const attributionData = {
             ],
             owners: [
                 "okuri"
+            ]
+        },
+        {
+            prefix: "./media/characters/ona/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/23287543/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/23287543/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/23287543/" }
+            ],
+            authors: [
+                "kerneldecoy"
+            ],
+            owners: [
+                "arrogance127"
+            ]
+        },
+        {
+            prefix: "./media/characters/ona/",
+            files: [
+                { name: "front-alt.svg", source: null }
+            ],
+            authors: [
+                "eddy-boy"
+            ],
+            owners: [
+                "arrogance127"
             ]
         },
         {
@@ -2287,6 +2780,21 @@ const attributionData = {
             ],
             owners: [
                 "qdd"
+            ]
+        },
+        {
+            prefix: "./media/characters/rai/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/19705050/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/19705050/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/19705050/" }
+            ],
+            authors: [
+                "styxandstoned",
+                "shadowblade945"
+            ],
+            owners: [
+                "shadowblade945"
             ]
         },
         {
@@ -2440,6 +2948,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/sosha/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/22781088/" }
+            ],
+            authors: [
+                "eveara"
+            ],
+            owners: [
+                "sdocat"
+            ]
+        },
+        {
             prefix: "./media/characters/starry-aqua/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/18652091/" },
@@ -2465,6 +2985,18 @@ const attributionData = {
             ],
             owners: [
                 "cygil"
+            ]
+        },
+        {
+            prefix: "./media/characters/rick/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/30822024/" }
+            ],
+            authors: [
+                "victni"
+            ],
+            owners: [
+                "victni"
             ]
         },
         {
@@ -2567,6 +3099,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/sefer/",
+            files: [
+                { name: "front.svg", source: null },
+                { name: "back.svg", source: null }
+            ],
+            authors: [
+                "rabidchild42"
+            ],
+            owners: [
+                "fuzzypaws"
+            ]
+        },
+        {
             prefix: "./media/characters/selka/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/30722350/" }
@@ -2653,6 +3198,18 @@ const attributionData = {
             ],
             owners: [
                 "movler"
+            ]
+        },
+        {
+            prefix: "./media/characters/talan/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "talanstrider"
+            ],
+            owners: [
+                "talanstrider"
             ]
         },
         {
@@ -2865,6 +3422,32 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/xera/",
+            files: [
+                { name: "front.svg", source: null },
+                { name: "side.svg", source: null },
+                { name: "back.svg", source: null }
+            ],
+            authors: [
+                "ashtrek"
+            ],
+            owners: [
+                "aviraptia"
+            ]
+        },
+        {
+            prefix: "./media/characters/yakuz/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32804495/" }
+            ],
+            authors: [
+                "racerdragon"
+            ],
+            owners: [
+                "cilenomon"
+            ]
+        },
+        {
             prefix: "./media/characters/yevis/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/20815777/" }
@@ -2920,12 +3503,18 @@ const attributionData = {
             ]
         },
         {
-            prefix: "./media/characters/",
+            prefix: "./media/landmarks/",
             files: [
-                { name: "", source: "" }
+                { name: "burj-khalifa.svg", source: "https://commons.wikimedia.org/wiki/File:TallestBuildings.svg" },
+                { name: "canton-tower.svg", source: "https://commons.wikimedia.org/wiki/File:TallestBuildings.svg" },
+                { name: "cn-tower.svg", source: "https://commons.wikimedia.org/wiki/File:TallestBuildings.svg" },
+                { name: "taipei-101.svg", source: "https://commons.wikimedia.org/wiki/File:TallestBuildings.svg" },
+                { name: "empire-state-building.svg", source: "https://commons.wikimedia.org/wiki/File:TallestBuildings.svg" },
+                { name: "eiffel-tower.svg", source: "https://commons.wikimedia.org/wiki/File:TallestBuildings.svg" },
+                { name: "chrysler-building.svg", source: "https://commons.wikimedia.org/wiki/File:TallestBuildings.svg" },
             ],
             authors: [
-
+                "Донор"
             ]
         },
         {
@@ -3133,7 +3722,7 @@ const attributionData = {
             "name": "ashascadence",
             "url": "https://www.furaffinity.net/user/ashascadence/"
         },
-        "ashfall": {
+        "ashfall-fox": {
             "name": "Ashfall",
             "url": "https://twitter.com/Ashfall_Fox"
         },
@@ -3249,7 +3838,7 @@ const attributionData = {
             "name": "Eda",
             "url": "https://www.furaffinity.net/user/eda/"
         },
-        "eddgy-boy": {
+        "eddy-boy": {
             "name": "Eddy Boy",
             "url": "https://www.furaffinity.net/user/eddy-boy"
         },
@@ -3337,7 +3926,7 @@ const attributionData = {
             "name": "HIHIKORI",
             "url": "https://www.furaffinity.net/user/hihikori"
         },
-        "homogenerousrule": {
+        "homogeneousrule": {
             "name": "homogeneousrule",
             "url": "https://www.furaffinity.net/user/homogenousrule"
         },
@@ -3637,7 +4226,7 @@ const attributionData = {
             "name": "stonerabbit",
             "url": "https://www.furaffinity.net/user/stonerabbit/"
         },
-        "styx-and-stoned": {
+        "styxandstoned": {
             "name": "styxandstoned",
             "url": "https://www.furaffinity.net/user/styxandstoned"
         },
@@ -4220,6 +4809,82 @@ const attributionData = {
         "tenebrisdrox": {
             "name": "TenebrisDrox",
             "url": "https://www.furaffinity.net/user/darkninja344",
+        },
+        "Донор": {
+            "name": "Донор",
+            "url": "https://commons.wikimedia.org/wiki/User:%D0%94%D0%BE%D0%BD%D0%BE%D1%80",
+        },
+        "someoneepic": {
+            "name": "Elijah",
+            "url": "https://www.furaffinity.net/user/someoneepic",
+        },
+        "flamm": {
+            "name": "Flamm",
+            "url": "https://www.furaffinity.net/user/flammicus/",
+        },
+        "aigey": {
+            "name": "Aigey",
+            "url": "t.me/Aigey",
+        },
+        "natasha": {
+            "name": "Natasha",
+            "url": "https://twitter.com/MammaAWD",
+        },
+        "fuzzypaws": {
+            "name": "Fuzzypaws",
+            "url": "https://www.furaffinity.net/user/fuzzypaws",
+        },
+        "northybat": {
+            "name": "Northy Bat",
+            "url": "https://twitter.com/NorthyCapella/",
+        },
+        "sdocat": {
+            "name": "sdocat",
+            "url": "sdocat",
+        },
+        "neopuc": {
+            "name": "Neopuc",
+            "url": "https://www.furaffinity.net/user/neopuc/",
+        },
+        "giantgrowingvixen": {
+            "name": "GiantGrowingVixen",
+            "url": "https://www.furaffinity.net/user/giantgrowingvixen/",
+        },
+        "rathdakrogan": {
+            "name": "rathdakrogan",
+            "url": "https://www.furaffinity.net/user/rathdakrogan/",
+        },
+        "arrogance127": {
+            "name": "Arrogance127",
+            "url": "https://www.furaffinity.net/user/arrogance127/",
+        },
+        "mechedragon": {
+            "name": "Mech",
+            "url": "https://www.furaffinity.net/user/mechedragon",
+        },
+        "vercursar": {
+            "name": "Vercursar",
+            "url": "https://www.furaffinity.net/user/vercursar",
+        },
+        "cilenomon": {
+            "name": "cilenomon",
+            "url": "https://www.furaffinity.net/user/cilenomon/",
+        },
+        "draylen": {
+            "name": "Draylen",
+            "url": "https://www.furaffinity.net/user/draylen/",
+        },
+        "lazerwolf": {
+            "name": "HypeHypno",
+            "url": "https://www.furaffinity.net/user/hypehypno",
+        },
+        "gale": {
+            "name": "Gale",
+            "url": "https://www.furaffinity.net/user/galefierre/",
+        },
+        "jazzywolf": {
+            "name": "JazzyWolf",
+            "url": "https://www.furaffinity.net/user/jazzywolf",
         },
     }
 }
