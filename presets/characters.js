@@ -7856,6 +7856,30 @@ characterMakers["Tene"] = () => {
     )
 };
 
+characterMakers["Evander"] = () => {
+    return makeCharacter(
+        "Evander",
+        "KlezmerGryphon",
+        {
+            side: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/evander/side.svg",
+                    extra: 877/477
+                }
+            },
+        },
+        [
+             {
+                 name: "Normal",
+                 height: math.unit(0.9, "meters")
+             },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
