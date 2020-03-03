@@ -2184,6 +2184,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/ka'tamra-spaz-ci'karan/",
+            files: [
+                { name: "front.svg", source: null },
+                { name: "back.svg", source: null },
+            ],
+            authors: [
+                "spazman"
+            ],
+            owners: [
+                "spazman"
+            ]
+        },
+        {
             prefix: "./media/characters/kalista/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/19154251/" },
@@ -4901,6 +4914,10 @@ const attributionData = {
         "klezmer-gryphon": {
             "name": "Klezmer",
             "url": "http://furaffinity.net/user/klezmergryphon",
+        },
+        "spazman": {
+            "name": "Spazman",
+            "url": "https://www.furaffinity.net/user/spazman/",
         },
     }
 }

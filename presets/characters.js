@@ -7880,6 +7880,44 @@ characterMakers["Evander"] = () => {
     )
 };
 
+characterMakers["Ka'Tamra \"Spaz\" Ci'Karan"] = () => {
+    return makeCharacter(
+        "Ka'Tamra \"Spaz\" Ci'Karan",
+        "Spazman",
+        {
+            front: {
+                height: math.unit(12, "feet"),
+                weight: math.unit(1000, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/ka'tamra-spaz-ci'karan/front.svg",
+                    extra: 1762/1611
+                }
+            },
+            back: {
+                height: math.unit(12, "feet"),
+                weight: math.unit(1000, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/ka'tamra-spaz-ci'karan/back.svg",
+                    extra: 1762/1611
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(12, "feet"),
+                default: true
+            },
+            {
+                name: "Kaiju",
+                height: math.unit(150, "feet")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
