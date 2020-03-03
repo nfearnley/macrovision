@@ -1826,6 +1826,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/evander/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/33565709/" }
+            ],
+            authors: [
+                "klezmer-gryphon"
+            ],
+            owners: [
+                "klezmer-gryphon"
+            ]
+        },
+        {
             prefix: "./media/characters/everett/",
             files: [
                 { name: "front.svg", source: null },
@@ -4885,6 +4897,10 @@ const attributionData = {
         "jazzywolf": {
             "name": "JazzyWolf",
             "url": "https://www.furaffinity.net/user/jazzywolf",
+        },
+        "klezmer-gryphon": {
+            "name": "Klezmer",
+            "url": "http://furaffinity.net/user/klezmergryphon",
         },
     }
 }

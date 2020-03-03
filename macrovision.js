@@ -721,7 +721,6 @@ function displayAttribution(file) {
     const ownerHolder = document.querySelector("#options-attribution-owners");
     const sourceHolder = document.querySelector("#options-attribution-source");
 
-    console.log(file)
     if (authors === []) {
         const div = document.createElement("div");
         div.innerText = "Unknown";
