@@ -2795,6 +2795,7 @@ const attributionData = {
         {
             prefix: "./media/characters/odyssey/",
             files: [
+                { name: "front.svg", source: null }
                 { name: "side.svg", source: null }
             ],
             authors: [

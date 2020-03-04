@@ -8055,12 +8055,23 @@ characterMakers["Odyssey"] = () => {
         "Odyssey",
         "Freschlauhs",
         {
-            side: {
+            front: {
                 height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/odyssey/front.svg",
+                    extra: 1782/1582 * (1 / (1 - 0.01)),
+                    bottom: 0.01
+                }
+            },
+            side: {
+                height: math.unit(5.6, "feet"),
                 weight: math.unit(140, "lb"),
                 name: "Side",
                 image: {
-                    source: "./media/characters/odyssey/side.svg"
+                    source: "./media/characters/odyssey/side.svg",
+                    extra: 6462/5700
                 }
             },
         },
