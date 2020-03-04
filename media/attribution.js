@@ -1161,6 +1161,30 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/adam-silver-mane/",
+            files: [
+                { name: "anthro.svg", source: "https://www.furaffinity.net/view/33834118/" }
+            ],
+            authors: [
+                "cookie-dough"
+            ],
+            owners: [
+                "adamphillip"
+            ]
+        },
+        {
+            prefix: "./media/characters/adam-silver-mane/",
+            files: [
+                { name: "taur.svg", source: "https://www.furaffinity.net/view/17186110/" }
+            ],
+            authors: [
+                "lady-rain"
+            ],
+            owners: [
+                "adamphillip"
+            ]
+        },
+        {
             prefix: "./media/characters/aigey/",
             files: [
                 { name: "side.svg", source: "https://www.furaffinity.net/view/12006265/" }
@@ -5228,6 +5252,18 @@ const attributionData = {
         "rikes": {
             "name": "Rikes",
             "url": "https://www.furaffinity.net/user/rikes",
+        },
+        "cookie-dough": {
+            "name": "Cookie-dough",
+            "url": "https://www.furaffinity.net/user/cookie-dough",
+        },
+        "lady-rain": {
+            "name": "Lady Rain",
+            "url": "https://www.furaffinity.net/user/rainartsink/",
+        },
+        "adamphillip": {
+            "name": "adamphillip",
+            "url": "https://www.furaffinity.net/user/adamphillip/",
         },
     }
 }

@@ -8594,6 +8594,50 @@ characterMakers["Rikes"] = () => {
     )
 };
 
+characterMakers["Adam Silver-Mane"] = () => {
+    return makeCharacter(
+        "Adam Silver-Mane",
+        "Dragonknightadam",
+        {
+            anthro: {
+                height: math.unit(8, "feet"),
+                weight: math.unit(120, "kg"),
+                name: "Anthro",
+                image: {
+                    source: "./media/characters/adam-silver-mane/anthro.svg",
+                    extra: 5743/5339 * (1 / (1 - 0.07)),
+                    bottom: 0.07
+                }
+            },
+            taur: {
+                height: math.unit(16, "feet"),
+                weight: math.unit(1500, "kg"),
+                name: "Taur",
+                image: {
+                    source: "./media/characters/adam-silver-mane/taur.svg",
+                    extra: 1713/1571 * (1 / (1 - 0.01)),
+                    bottom: 0.01
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(8, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(800, "feet"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(160, "miles")
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];
