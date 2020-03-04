@@ -75,7 +75,7 @@ function makeBuildings() {
     results.push({
         name: "Two-Story Home",
         constructor: () => makeBuilding(
-            "House",
+            "Two-Story Home",
             math.unit(25, "feet"),
             { source: "./media/buildings/house.svg" }
         )
