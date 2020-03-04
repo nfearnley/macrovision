@@ -176,6 +176,59 @@ characterMakers["Sofia"] = () => {
     )
 };
 
+characterMakers["March"] = () => {
+    return makeCharacter(
+        "March",
+        "March-Dragon",
+        {
+            front: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(100, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/march/front.svg",
+                    extra: (1 / (1 - 0.015)),
+                    bottom: 0.015
+                }
+            },
+            foot: {
+                height: math.unit(0.9, "feet"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/march/foot.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(7.9, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(220, "meters")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(2.98, "km"),
+                default: true
+            },   
+            {
+                name: "Gigamacro",
+                height: math.unit(15963, "km")
+            },
+            {
+                name: "Teramacro",
+                height: math.unit(2980000000, "km")
+            },
+            {
+                name: "Examacro",
+                height: math.unit(250, "parsecs")
+            },
+        ]
+    )
+};
+
 function makeMarch() {
     const views = {
         front: {
@@ -8641,10 +8694,6 @@ characterMakers["Adam Silver-Mane"] = () => {
 
 function makeCharacters() {
     const results = [];
-    results.push({
-        name: "March",
-        constructor: makeMarch
-    });
     results.push({
         name: "Noir",
         constructor: makeNoir
