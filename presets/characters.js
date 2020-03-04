@@ -3465,7 +3465,8 @@ characterMakers["Blake"] = () => {
                 name: "Side",
                 image: {
                     source: "./media/characters/blake/side.svg",
-                    extra: 1212/1120
+                    extra: 1212/1120 * (1 / (1 - 0.05)),
+                    bottom: 0.05
                 }
             },
             crouched: {
@@ -3474,7 +3475,8 @@ characterMakers["Blake"] = () => {
                 name: "Crouched",
                 image: {
                     source: "./media/characters/blake/crouched.svg",
-                    extra: 840/587
+                    extra: 840/587 * (1 / (1 - 0.04)),
+                    bottom: 0.04
                 }
             },
             bent: {
@@ -3483,7 +3485,8 @@ characterMakers["Blake"] = () => {
                 name: "Bent",
                 image: {
                     source: "./media/characters/blake/bent.svg",
-                    extra: 592/544
+                    extra: 592/544 * (1 / (1 - 0.035)),
+                    bottom: 0.035
                 }
             },
         },
