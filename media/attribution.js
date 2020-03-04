@@ -1173,6 +1173,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/ailbhe/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/33724569/" }
+            ],
+            authors: [
+                "klezmer-gryphon"
+            ],
+            owners: [
+                "klezmer-gryphon"
+            ]
+        },
+        {
             prefix: "./media/characters/akane-sato/",
             files: [
                 { name: "front.svg", source: "https://twitter.com/AkaneSato99/status/1191178914971951104" },

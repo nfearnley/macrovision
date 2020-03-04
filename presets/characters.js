@@ -7904,7 +7904,6 @@ characterMakers["Evander"] = () => {
         {
             side: {
                 height: math.unit(6, "feet"),
-                weight: math.unit(150, "lb"),
                 name: "Side",
                 image: {
                     source: "./media/characters/evander/side.svg",
@@ -8465,6 +8464,31 @@ characterMakers["Nyanuxk"] = () => {
             {
                 name: "Teramacro",
                 height: math.unit(500000, "km")
+            },
+        ]
+    )
+};
+
+characterMakers["Ailbhe"] = () => {
+    return makeCharacter(
+        "Ailbhe",
+        "KlezmerGryphon",
+        {
+            side: {
+                height: math.unit(6, "feet"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/ailbhe/side.svg",
+                    extra: 757/464 * (1 / (1 - 0.041)),
+                    bottom: 0.041
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(1.2, "meters"),
+                default: true
             },
         ]
     )
