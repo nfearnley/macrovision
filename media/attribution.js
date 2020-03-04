@@ -1640,6 +1640,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/cuon/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/27982582/" }
+            ],
+            authors: [
+                "octopoodle"
+            ],
+            owners: [
+                "colliecuon"
+            ]
+        },
+        {
             prefix: "./media/characters/dafydd-tomos/",
             files: [
                 { name: "front.svg", source: "https://twitter.com/SolarfoxArt/status/1234128602939060226" }
@@ -5111,6 +5123,14 @@ const attributionData = {
         "delathar": {
             "name": "Delathar",
             "url": "https://www.furaffinity.net/user/delathar/",
+        },
+        "octopoodle": {
+            "name": "OctoPoodle",
+            "url": "https://www.furaffinity.net/user/octopoodle/",
+        },
+        "colliecuon": {
+            "name": "CollieCuon",
+            "url": "https://www.furaffinity.net/user/mmpw",
         },
     }
 }

@@ -8336,6 +8336,43 @@ characterMakers["Zyas"] = () => {
     )
 };
 
+characterMakers["Cuon"] = () => {
+    return makeCharacter(
+        "Cuon",
+        "CollieCuon",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/cuon/front.svg",
+                    extra: 1390/1320 * (1 / (1 - 0.008)),
+                    bottom: 0.008
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(3, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(18 + 9/12, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(360, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(360, "miles")
+            },
+        ]
+    )
+};
 
 function makeCharacters() {
     const results = [];
