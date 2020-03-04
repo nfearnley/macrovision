@@ -1310,6 +1310,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/andrew-sleepy/",
+            files: [
+                { name: "front.svg", source: "https://www.deviantart.com/theproky/art/My-OC-Andrew-Sleepy-813265071" },
+                { name: "side.svg", source: "https://www.deviantart.com/theproky/art/My-OC-Andrew-Sleepy-813265071" }
+            ],
+            authors: [
+                "zerohour99"
+            ],
+            owners: [
+                "theproky"
+            ]
+        },
+        {
             prefix: "./media/characters/andy/",
             files: [
                 { name: "front.svg", source: null }
@@ -5321,6 +5334,15 @@ const attributionData = {
             "name": "JimboHusky",
             "url": "https://www.furaffinity.net/user/jimbohusky",
         },
+        "theproky": {
+            "name": "TheProky",
+            "url": "https://www.deviantart.com/theproky",
+        },
+        "zerohour99": {
+            "name": "zerohour99",
+            "url": "https://www.deviantart.com/zerohour99",
+        },
+        
     }
 }
 

@@ -8888,6 +8888,38 @@ characterMakers["Kimiko"] = () => {
     )
 };
 
+characterMakers["Andrew Sleepy"] = () => {
+    return makeCharacter(
+        "Andrew Sleepy",
+        "Proky",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(70, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/andrew-sleepy/front.svg"
+                }
+            },
+            side: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(70, "kg"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/andrew-sleepy/side.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(1, "mm"),
+                default: true
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
