@@ -439,6 +439,36 @@ function makeObjects() {
         )
     });
 
+    results.push({
+        name: "Trees",
+        constructor: () => makeObject(
+            "Trees",
+            {
+                sycamore: {
+                    height: math.unit(35, "meters"),
+                    image: { source: "./media/objects/plants/sycamore-tree.svg" },
+                    name: "Sycamore",
+                    rename: true
+                }
+            }
+        )
+    })
+
+    results.push({
+        name: "Vending Machine",
+        constructor: () => makeObject(
+            "Vending Machine",
+            {
+                object: {
+                    height: math.unit(183, "cm"),
+                    mass: math.unit(347, "kg"),
+                    image: { source: "./media/objects/vending-machine.svg" },
+                    name: "Vending Machine"
+                }
+            }
+        )
+    })
+
     
     results.sort((b1, b2) => {
         e1 = b1.constructor();

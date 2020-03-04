@@ -3758,6 +3758,15 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/objects/",
+            files: [
+                { name: "vending-machine.svg", source: "https://www.dimensions.guide/element/beverage-vending-machine" }
+            ],
+            authors: [
+                "dimensions-guide"
+            ]
+        },        
+        {
             prefix: "./media/objects/humans/",
             files: [
                 { name: "woman-1.svg", source: "https://commons.wikimedia.org/wiki/File:1Silhouette_Female.svg" }
@@ -3774,6 +3783,15 @@ const attributionData = {
             ],
             authors: [
 
+            ]
+        },
+        {
+            prefix: "./media/objects/plants/",
+            files: [
+                { name: "sycamore-tree.svg", source: "https://www.dimensions.guide/element/sycamore-tree" }
+            ],
+            authors: [
+                "dimensions-guide"
             ]
         },
         {
