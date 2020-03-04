@@ -2584,6 +2584,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/moody/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/MoodysterDog/status/1234200931161583619" }
+            ],
+            authors: [
+                "moodysterdog"
+            ],
+            owners: [
+                "moodysterdog"
+            ]
+        },
+        {
             prefix: "./media/characters/mountain/",
             files: [
                 { name: "front.svg", source: null },
@@ -5075,6 +5087,10 @@ const attributionData = {
         "snowgabumon": {
             "name": "SnowGabumon",
             "url": "https://www.furaffinity.net/user/wonderingfox/",
+        },
+        "moodysterdog": {
+            "name": "MoodysterDog",
+            "url": "https://twitter.com/MoodysterDog",
         },
     }
 }

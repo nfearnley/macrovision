@@ -8260,6 +8260,44 @@ characterMakers["SnowGabumon"] = () => {
     )
 };
 
+characterMakers["Moody"] = () => {
+    return makeCharacter(
+        "Moody",
+        "MoodysterDog",
+        {
+            front: {
+                height: math.unit(1.7, "meters"),
+                weight: math.unit(140, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/moody/front.svg",
+                    extra: 3226/3007 * (1 / (1 - 0.087)),
+                    bottom: 0.087
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(1, "mm")
+            },
+            {
+                name: "Normal",
+                height: math.unit(1.7, "meters"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(80, "meters")
+            },
+            {
+                name: "Macro+",
+                height: math.unit(500, "meters")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
