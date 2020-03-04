@@ -8064,6 +8064,18 @@ characterMakers["Odyssey"] = () => {
         },
         [
             {
+                name: "Normal",
+                height: math.unit(5 + 4/12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(1, "km")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(1000, "km")
+            },
+            {
                 name: "Gigamacro",
                 height: math.unit(1, "AU"),
                 default: true
