@@ -3693,6 +3693,21 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/zevulfius/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33725369/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/33725369/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/33725369/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/33725369/" },
+            ],
+            authors: [
+                "geodani"
+            ],
+            owners: [
+                "nyanuxk"
+            ]
+        },
+        {
             prefix: "./media/characters/zyas/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/34495208/" }

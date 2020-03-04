@@ -8505,6 +8505,69 @@ characterMakers["Ailbhe"] = () => {
     )
 };
 
+characterMakers["Zevulfius"] = () => {
+    return makeCharacter(
+        "Zevulfius",
+        "Nyanuxk",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(120, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/zevulfius/front.svg",
+                    extra: 965/903
+                }
+            },
+            side: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(120, "kg"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/zevulfius/side.svg",
+                    extra: 939/900
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(120, "kg"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/zevulfius/back.svg",
+                    extra: 918/854 * (1 / (1 - 0.005)),
+                    bottom: 0.005
+                }
+            },
+            foot: {
+                height: math.unit(6/3.72, "feet"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/zevulfius/foot.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(750, "meters")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(20, "km"),
+                default: true
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(2000, "km")
+            },
+            {
+                name: "Teramacro",
+                height: math.unit(250000, "km")
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];
