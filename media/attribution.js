@@ -3645,6 +3645,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/zyas/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34495208/" }
+            ],
+            authors: [
+                "geodani"
+            ],
+            owners: [
+                "delathar"
+            ]
+        },
+        {
             prefix: "./media/landmarks/",
             files: [
                 { name: "burj-khalifa.svg", source: "https://commons.wikimedia.org/wiki/File:TallestBuildings.svg" },
@@ -5091,6 +5103,14 @@ const attributionData = {
         "moodysterdog": {
             "name": "MoodysterDog",
             "url": "https://twitter.com/MoodysterDog",
+        },
+        "geodani": {
+            "name": "Geodani",
+            "url": "https://www.furaffinity.net/user/geodani",
+        },
+        "delathar": {
+            "name": "Delathar",
+            "url": "https://www.furaffinity.net/user/delathar/",
         },
     }
 }

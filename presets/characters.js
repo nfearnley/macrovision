@@ -8298,6 +8298,45 @@ characterMakers["Moody"] = () => {
     )
 };
 
+characterMakers["Zyas"] = () => {
+    return makeCharacter(
+        "Zyas",
+        "Delathar",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/zyas/front.svg",
+                    extra: 1180/1120 * (1 / (1 - 0.045)),
+                    bottom: 0.045
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(10, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(500, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(5, "miles")
+            },
+            {
+                name: "Teramacro",
+                height: math.unit(150000, "miles")
+            },
+        ]
+    )
+};
+
+
 function makeCharacters() {
     const results = [];
     results.push({
