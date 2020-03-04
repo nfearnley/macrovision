@@ -7914,7 +7914,7 @@ characterMakers["Evander"] = () => {
         [
              {
                  name: "Normal",
-                 height: math.unit(0.9, "meters")
+                 height: math.unit(0.83, "meters")
              },
         ]
     )
@@ -8498,7 +8498,7 @@ characterMakers["Ailbhe"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(1.2, "meters"),
+                height: math.unit(1.07, "meters"),
                 default: true
             },
         ]
