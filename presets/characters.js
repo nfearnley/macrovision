@@ -8393,6 +8393,84 @@ characterMakers["Cuon"] = () => {
     )
 };
 
+characterMakers["Nyanuxk"] = () => {
+    return makeCharacter(
+        "Nyanuxk",
+        "Nyanuxk",
+        {
+            front: {
+                height: math.unit(2.4, "meters"),
+                weight: math.unit(70, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/nyanuxk/front.svg",
+                    extra: 1172/1084 * (1 / (1 - 0.065)),
+                    bottom: 0.065
+                }
+            },
+            side: {
+                height: math.unit(2.4, "meters"),
+                weight: math.unit(70, "kg"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/nyanuxk/side.svg",
+                    extra: 1190/1132 * (1 / (1 - 0.007)),
+                    bottom: 0.007
+                }
+            },
+            back: {
+                height: math.unit(2.4, "meters"),
+                weight: math.unit(70, "kg"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/nyanuxk/back.svg",
+                    extra: 1200/1141 * (1 / (1 - 0.015)),
+                    bottom: 0.015
+                }
+            },
+            foot: {
+                height: math.unit(0.52, "meters"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/nyanuxk/foot.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(2, "cm")
+            },
+            {
+                name: "Normal",
+                height: math.unit(2.4, "meters"),
+                default: true
+            },
+            {
+                name: "Smaller Macro",
+                height: math.unit(120, "meters")
+            },
+            {
+                name: "Bigger Macro",
+                height: math.unit(1.2, "km")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(15, "kilometers")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(2000, "km")
+            },
+            {
+                name: "Teramacro",
+                height: math.unit(500000, "km")
+            },
+        ]
+    )
+};
+
+
 function makeCharacters() {
     const results = [];
     results.push({

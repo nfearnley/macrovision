@@ -2754,6 +2754,21 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/nyanuxk/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/31316270/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/31316270/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/31316270/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/31316270/" },
+            ],
+            authors: [
+                "kurtcbrox"
+            ],
+            owners: [
+                "nyanuxk"
+            ]
+        },
+        {
             prefix: "./media/characters/odi-lunar/",
             files: [
                 { name: "front.svg", source: "https://twitter.com/odi_lunar/status/1230878530612817921?s=21" }
@@ -5157,6 +5172,14 @@ const attributionData = {
         "colliecuon": {
             "name": "CollieCuon",
             "url": "https://www.furaffinity.net/user/mmpw",
+        },
+        "kurtcbrox": {
+            "name": "KurtCbRox",
+            "url": "https://www.furaffinity.net/user/kurtcbrox",
+        },
+        "nyanuxk": {
+            "name": "Nyanuxk",
+            "url": "https://www.furaffinity.net/user/sos101/",
         },
     }
 }
