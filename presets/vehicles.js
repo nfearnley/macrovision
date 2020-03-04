@@ -238,36 +238,6 @@ function makeVehicles() {
     });
 
     results.push({
-        name: "737",
-        constructor: () => makeVehicle(
-            "737",
-            {
-                side: {
-                    name: "Side",
-                    height: math.unit(12.55, "meters"),
-                    image: { source: "./media/vehicles/737-side.svg" },
-                },
-                sideVertical: {
-                    name: "Side (Vertical)",
-                    height: math.unit(39.47, "meters"),
-                    image: { source: "./media/vehicles/737-side-vertical.svg" },
-                },
-                top: {
-                    name: "Top",
-                    height: math.unit(39.47, "meters"),
-                    image: { source: "./media/vehicles/737-top.svg" },
-                },
-                front: {
-                    name: "Front",
-                    height: math.unit(12.55, "meters"),
-                    image: { source: "./media/vehicles/737-front.svg" },
-                }
-            },
-            math.unit(90710, "lbs")
-        )
-    });
-
-    results.push({
         name: "Titanic",
         constructor: () => makeVehicle(
             "Titanic",
