@@ -8809,6 +8809,14 @@ characterMakers["Jordan Deware"] = () => {
                 default: true
             },
             {
+                name: "Minimacro",
+                height: math.unit(40, "meters")
+            },
+            {
+                name: "Small Macro",
+                height: math.unit(400, "meters")
+            },
+            {
                 name: "Macro",
                 height: math.unit(4, "miles")
             },
