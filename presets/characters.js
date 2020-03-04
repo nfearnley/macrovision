@@ -8920,6 +8920,39 @@ characterMakers["Andrew Sleepy"] = () => {
     )
 };
 
+characterMakers["Judio"] = () => {
+    return makeCharacter(
+        "Judio",
+        "HypoTheDerg",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/judio/front.svg",
+                    extra: 1258/1110
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 6/12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(1000, "feet"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(10, "miles")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

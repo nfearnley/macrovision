@@ -1413,7 +1413,7 @@ const attributionData = {
                 { name: "side.svg", source: null }
             ],
             authors: [
-                "ashtrek"
+                "ashrsek"
             ],
             owners: [
                 "aviraptia"
@@ -2262,6 +2262,19 @@ const attributionData = {
             ],
             owners: [
                 "darkietehjester"
+            ]
+        },
+        {
+            prefix: "./media/characters/judio/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/30553235/" }
+            ],
+            authors: [
+                "panda-chan",
+                "paox"
+            ],
+            owners: [
+                "ilikefurrystoo"
             ]
         },
         {
@@ -5342,7 +5355,10 @@ const attributionData = {
             "name": "zerohour99",
             "url": "https://www.deviantart.com/zerohour99",
         },
-        
+        "paox": {
+            "name": "Paox",
+            "url": "https://www.furaffinity.net/user/paox",
+        },
     }
 }
 
