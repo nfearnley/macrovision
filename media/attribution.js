@@ -3163,6 +3163,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/rikes/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/14959433/" }
+            ],
+            authors: [
+                "jaeh"
+            ],
+            owners: [
+                "rikes"
+            ]
+        },
+        {
             prefix: "./media/characters/rikky/",
             files: [
                 { name: "side.svg", source: null }
@@ -5208,6 +5220,14 @@ const attributionData = {
         "nyanuxk": {
             "name": "Nyanuxk",
             "url": "https://www.furaffinity.net/user/sos101/",
+        },
+        "jaeh": {
+            "name": "JAEH",
+            "url": "https://www.furaffinity.net/user/jaeh",
+        },
+        "rikes": {
+            "name": "Rikes",
+            "url": "https://www.furaffinity.net/user/rikes",
         },
     }
 }

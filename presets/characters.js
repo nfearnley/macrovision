@@ -8568,6 +8568,32 @@ characterMakers["Zevulfius"] = () => {
     )
 };
 
+characterMakers["Rikes"] = () => {
+    return makeCharacter(
+        "Rikes",
+        "VeryLargeDog",
+        {
+            front: {
+                height: math.unit(100, "feet"),
+                weight: math.unit(350, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/rikes/front.svg",
+                    extra: 1565/1483 * (1 / (1 - 0.017)),
+                    bottom: 0.017
+                }
+            },
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(100, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];
