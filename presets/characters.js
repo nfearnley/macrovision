@@ -8197,6 +8197,69 @@ characterMakers["Splinter"] = () => {
         ]
     )
 };
+
+characterMakers["SnowGabumon"] = () => {
+    return makeCharacter(
+        "SnowGabumon",
+        "SnowGabumon",
+        {
+            front: {
+                height: math.unit(4 + 10/12, "feet"),
+                weight: math.unit(480, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/snow-gabumon/front.svg",
+                    extra: 1140/963 * (1 / (1 - 0.058)),
+                    bottom: 0.058
+                }
+            },
+            back: {
+                height: math.unit(4 + 10/12, "feet"),
+                weight: math.unit(480, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/snow-gabumon/back.svg",
+                    extra: 1115/962 * (1 / (1 - 0.041)),
+                    bottom: 0.041
+                }
+            },
+            frontUndresed: {
+                height: math.unit(4 + 10/12, "feet"),
+                weight: math.unit(480, "lb"),
+                name: "Front (Undressed)",
+                image: {
+                    source: "./media/characters/snow-gabumon/front-undressed.svg",
+                    extra: 1061/960 * (1 / (1 - 0.045)),
+                    bottom: 0.045
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(1, "inch")
+            },
+            {
+                name: "Normal",
+                height: math.unit(4 + 10/12, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(200, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(120, "miles")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(9800, "miles")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

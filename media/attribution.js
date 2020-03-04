@@ -3024,6 +3024,20 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/snow-gabumon/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/28018794/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/28018794/" },
+                { name: "front-undressed.svg", source: "https://www.furaffinity.net/view/28018794/" },
+            ],
+            authors: [
+                "watchout-4-dragon"
+            ],
+            owners: [
+                "snowgabumon"
+            ]
+        },
+        {
             prefix: "./media/characters/splinter/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/31276290/" },
@@ -5057,6 +5071,10 @@ const attributionData = {
         "sirsplinter": {
             "name": "SirSplinter",
             "url": "https://www.furaffinity.net/user/sirsplinter/",
+        },
+        "snowgabumon": {
+            "name": "SnowGabumon",
+            "url": "https://www.furaffinity.net/user/wonderingfox/",
         },
     }
 }
