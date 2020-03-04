@@ -2362,6 +2362,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/kimiko/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/32689858/" }
+            ],
+            authors: [
+                "jimbohusky"
+            ],
+            owners: [
+                "hypocriticaldragon"
+            ]
+        },
+        {
             prefix: "./media/characters/kuro-shi-uchū/",
             files: [
                 { name: "front.svg", source: "https://media.discordapp.net/attachments/300130710671458304/682667452626239526/lugiablackholeactual2.png" },
@@ -5304,6 +5316,10 @@ const attributionData = {
         "jordandeware": {
             "name": "Jordan Deware",
             "url": "https://twitter.com/JordanDeware27",
+        },
+        "jimbohusky": {
+            "name": "JimboHusky",
+            "url": "https://www.furaffinity.net/user/jimbohusky",
         },
     }
 }

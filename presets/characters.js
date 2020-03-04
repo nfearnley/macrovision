@@ -8836,6 +8836,57 @@ characterMakers["Jordan Deware"] = () => {
     )
 };
 
+characterMakers["Kimiko"] = () => {
+    return makeCharacter(
+        "Kimiko",
+        "HypoTheDerg",
+        {
+            side: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/kimiko/side.svg",
+                    extra: 600/358
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(15, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(220, "feet")
+            },
+            {
+                name: "Macro+",
+                height: math.unit(1450, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(11500, "feet")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(9500, "miles")
+            },
+            {
+                name: "Teramacro",
+                height: math.unit(2208005005, "miles")
+            },
+            {
+                name: "Examacro",
+                height: math.unit(2750, "parsecs")
+            },
+            {
+                name: "Zettamacro",
+                height: math.unit(101500, "parsecs")
+            },
+        ]
+    )
+};
 
 function makeCharacters() {
     const results = [];
