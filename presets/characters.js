@@ -8953,6 +8953,48 @@ characterMakers["Judio"] = () => {
     )
 };
 
+characterMakers["Nomaxice"] = () => {
+    return makeCharacter(
+        "Nomaxice",
+        "Nomaxice",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(68, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/nomaxice/front.svg",
+                    extra: 1498/1073 * (1 / (1 - 0.075)),
+                    bottom: 0.075
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(8, "cm")
+            },
+            {
+                name: "Norm",
+                height: math.unit(1.82, "m")
+            },
+            {
+                name: "Big",
+                height: math.unit(8, "meters"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(18, "meters")
+            },
+            {
+                name: "Macro+",
+                height: math.unit(88, "meters")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

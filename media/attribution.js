@@ -2828,6 +2828,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/nomaxice/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "dracodare"
+            ],
+            owners: [
+                "nomaxice"
+            ]
+        },
+        {
             prefix: "./media/characters/north/",
             files: [
                 { name: "front.svg", source: "https://twitter.com/Bunnox1/status/1215858071731408896" }
@@ -5358,6 +5370,14 @@ const attributionData = {
         "paox": {
             "name": "Paox",
             "url": "https://www.furaffinity.net/user/paox",
+        },
+        "nomaxice": {
+            "name": "Nomaxice",
+            "url": "https://meow.social/@Nomaxice",
+        },
+        "dracodare": {
+            "name": "Dracodare",
+            "url": "https://meow.social/@Dracodare",
         },
     }
 }
