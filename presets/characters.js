@@ -8741,6 +8741,40 @@ characterMakers["Ky'owin"] = () => {
     )
 };
 
+characterMakers["Mal"] = () => {
+    return makeCharacter(
+        "Mal",
+        "agrosarmadillo",
+        {
+            front: {
+                height: math.unit(4, "feet"),
+                weight: math.unit(50, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/mal/front.svg",
+                    extra: 785/724 * (1 / (1 - 0.07)),
+                    bottom: 0.07
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(4, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(4, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(200, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

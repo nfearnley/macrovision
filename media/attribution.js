@@ -2462,6 +2462,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/mal/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35287475/" }
+            ],
+            authors: [
+                "holyspaghettiobatman"
+            ],
+            owners: [
+                "agrosarmadillo"
+            ]
+        },
+        {
             prefix: "./media/characters/malfressa/",
             files: [
                 { name: "side.svg", source: "https://www.furaffinity.net/view/25377262/" },
@@ -5264,6 +5276,14 @@ const attributionData = {
         "adamphillip": {
             "name": "adamphillip",
             "url": "https://www.furaffinity.net/user/adamphillip/",
+        },
+        "agrosarmadillo": {
+            "name": "agrosarmadillo",
+            "url": "https://www.furaffinity.net/user/agrosarmadillo/",
+        },
+        "holyspaghettiobatman": {
+            "name": "holyspaghettiobatman",
+            "url": "https://www.furaffinity.net/user/holyspaghettiobatman",
         },
     }
 }
