@@ -1087,7 +1087,6 @@ const attributionData = {
                 "pokemon"
             ]
         },
-
         {
             prefix: "./media/buildings/",
             files: [
@@ -1097,6 +1096,15 @@ const attributionData = {
             ],
             authors: [
                 "chemicalcrux"
+            ]
+        },
+        {
+            prefix: "./media/buildings/",
+            files: [
+                { name: "bus-stop.svg", source: "https://www.dimensions.guide/element/covered-bus-stop" },
+            ],
+            authors: [
+                "dimensions-guide"
             ]
         },
         {

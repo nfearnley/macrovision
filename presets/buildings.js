@@ -99,6 +99,15 @@ function makeBuildings() {
         )
     });
 
+    results.push({
+        name: "Bus Stop",
+        constructor: () => makeBuilding(
+            "Bus Stop",
+            math.unit(8, "feet"),
+            { source: "./media/buildings/bus-stop.svg" }
+        )
+    });
+
     results.push(
         {
             name: "Wide Skyscraper",
