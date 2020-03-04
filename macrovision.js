@@ -1117,7 +1117,7 @@ document.addEventListener("DOMContentLoaded", () => {
         arrangeEntities(order);
     });
 
-    document.querySelector("#options-world-fit").addEventListener("click", fitWorld);
+    document.querySelector("#options-world-fit").addEventListener("click", () => fitWorld(true));
 
     document.querySelector("#options-world-autofit").addEventListener("input", e => {
         config.autoFit = e.target.checked;
@@ -1337,7 +1337,7 @@ const fitModes = {
     }
 }
 
-function fitWorld() {
+function fitWorld(manual=false) {
     const fitMode = fitModes[config.autoFitMode]
     let max = fitMode.start
 
@@ -1359,7 +1359,11 @@ function fitWorld() {
 
     max = math.unit(max, "meter")
 
+    if (manual)
+        altHeld = true;
     setWorldHeight(config.height, math.multiply(max, 1.1));
+    if (manual)
+        altHeld = false;
 }
 
 function updateWorldHeight() {

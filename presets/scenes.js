@@ -22,7 +22,7 @@ scenes["Demo"] = () => {
     
     entity = availableEntitiesByName["Houston"].constructor();
     displayEntity(entity, entity.defaultView, 0.5, 1);
-    fitWorld();
+    fitWorld(true);
 }
 
 scenes["Military"] = () => {
@@ -48,7 +48,7 @@ scenes["Military"] = () => {
     displayEntity(entity, entity.defaultView, 0, 1);
 
     arrangeEntities(getSortedEntities());
-    fitWorld();
+    fitWorld(true);
 }
 
 function makeSlice(min, max) {
@@ -64,7 +64,7 @@ function makeSlice(min, max) {
         });
     
         arrangeEntities(getSortedEntities());
-        fitWorld();
+        fitWorld(true);
     }
 }
 
@@ -86,7 +86,7 @@ scenes["Kurri"] = () => {
     });
     
     arrangeEntities(getSortedEntities());
-    fitWorld();
+    fitWorld(true);
 
 
 }
