@@ -2421,7 +2421,7 @@ const attributionData = {
                 "seabury"
             ],
             owners: [
-                "kyowin"
+                "ilikefurrystoo"
             ]
         },
         {
@@ -5059,7 +5059,7 @@ const attributionData = {
         },
         "seabury": {
             "name": "Seabury",
-            "url": "",
+            "url": "https://www.instagram.com/seaburyyy/",
         },
         "ilikefurrystoo": {
             "name": "ilikefurrystoo",

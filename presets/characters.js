@@ -8691,6 +8691,56 @@ characterMakers["Adam Silver-Mane"] = () => {
     )
 };
 
+characterMakers["Ky'owin"] = () => {
+    return makeCharacter(
+        "Ky'owin",
+        "Kyowin",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/ky'owin/front.svg",
+                    extra: 3888/3068 * (1 / (1 - 0.015)),
+                    bottom: 0.015
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6 + 8/12, "feet")
+            },
+            {
+                name: "Large",
+                height: math.unit(68, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(132, "feet")
+            },
+            {
+                name: "Macro+",
+                height: math.unit(340, "feet")
+            },
+            {
+                name: "Macro++",
+                height: math.unit(680, "feet"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(1, "mile")
+            },
+            {
+                name: "Megamacro+",
+                height: math.unit(10, "miles")
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];
