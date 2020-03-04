@@ -8775,6 +8775,59 @@ characterMakers["Mal"] = () => {
     )
 };
 
+characterMakers["Jordan Deware"] = () => {
+    return makeCharacter(
+        "Jordan Deware",
+        "JordanDeware",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/jordan-deware/front.svg",
+                    extra: 1191/1012
+                }
+            },
+        },
+        [
+            {
+                name: "Nano",
+                height: math.unit(0.01, "mm")
+            },
+            {
+                name: "Minimicro",
+                height: math.unit(1, "mm")
+            },
+            {
+                name: "Micro",
+                height: math.unit(0.5, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(4, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(4, "miles")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(40, "miles")
+            },
+            {
+                name: "Megamacro+",
+                height: math.unit(400, "miles")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(400000, "miles")
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];

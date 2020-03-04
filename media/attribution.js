@@ -2227,6 +2227,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/jordan-deware/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/atsuinekowo/status/1125875752724062209?s=21" }
+            ],
+            authors: [
+                "atsuinekowo"
+            ],
+            owners: [
+                "jordandeware"
+            ]
+        },
+        {
             prefix: "./media/characters/joshii/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/35054066/" },
@@ -5284,6 +5296,14 @@ const attributionData = {
         "holyspaghettiobatman": {
             "name": "holyspaghettiobatman",
             "url": "https://www.furaffinity.net/user/holyspaghettiobatman",
+        },
+        "atsuinekowo": {
+            "name": "atsuinekowo",
+            "url": "https://twitter.com/atsuinekowo",
+        },
+        "jordandeware": {
+            "name": "Jordan Deware",
+            "url": "https://twitter.com/JordanDeware27",
         },
     }
 }
