@@ -9540,6 +9540,40 @@ characterMakers["BMC"] = () => {
     )
 };
 
+characterMakers["Sven the Kaiju"] = () => {
+    return makeCharacter(
+        "Sven the Kaiju",
+        "OfActionMan",
+        {
+            front: {
+                height: math.unit(20, "feet"),
+                weight: math.unit(2016, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/sven-the-kaiju/front.svg",
+                    extra: 1479/1449 * (1 / (1 - 0.05)),
+                    bottom: 0.05
+                }
+            },
+        },
+        [
+            {
+                name: "Fairy",
+                height: math.unit(6, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(20, "feet"),
+                default: true
+            },
+            {
+                name: "Rampage",
+                height: math.unit(200, "feet")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

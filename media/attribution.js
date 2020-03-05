@@ -3634,6 +3634,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/sven-the-kaiju/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32824691/" }
+            ],
+            authors: [
+                "moshi-the-bobcat"
+            ],
+            owners: [
+                "ofactionman"
+            ]
+        },
+        {
             prefix: "./media/characters/talan/",
             files: [
                 { name: "front.svg", source: null }
@@ -5630,6 +5642,14 @@ const attributionData = {
         "konadh": {
             "name": "Kona",
             "url": "https://twitter.com/oversizedstag",
+        },
+        "ofactionman": {
+            "name": "OfActionMan",
+            "url": "https://www.furaffinity.net/user/ofactionman/",
+        },
+        "moshi-the-bobcat": {
+            "name": "Moshi the Bobcat",
+            "url": "https://www.furaffinity.net/user/moshi.the.bobcat",
         },
     }
 }
