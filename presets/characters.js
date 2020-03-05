@@ -10082,6 +10082,76 @@ characterMakers["Chauncey (Chantz)"] = () => {
     )
 };
 
+characterMakers["Colin T."] = () => {
+    return makeCharacter(
+        "Colin T.",
+        "DragonLugia58",
+        {
+            front: {
+                height: math.unit(1.8796, "m"),
+                weight: math.unit(230, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/colin-t/front.svg",
+                    extra: 1272/1193 * (1 / (1 - 0.07)),
+                    bottom: 0.07
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(0.571, "meters")
+            },
+            {
+                name: "Normal",
+                height: math.unit(1.8796, "meters")
+            },
+            {
+                name: "Tall",
+                height: math.unit(4, "meters")
+            },
+            {
+                name: "Macro",
+                height: math.unit(67.241, "meters")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(371.856, "meters")
+            },
+            {
+                name: "Planetary",
+                height: math.unit(12631.5689, "km")
+            },
+        ]
+    )
+};
+
+characterMakers["Matvei"] = () => {
+    return makeCharacter(
+        "Matvei",
+        "Matt_Da_Master",
+        {
+            front: {
+                height: math.unit(1.85, "meters"),
+                weight: math.unit(80, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/matvei/front.svg",
+                    extra: 614/594 * (1 / (1 - 0.01)),
+                    bottom: 0.01
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(1.85, "meters")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

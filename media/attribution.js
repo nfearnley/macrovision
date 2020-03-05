@@ -1708,6 +1708,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/colin-t/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/30026249/" }
+            ],
+            authors: [
+                "theannoyingnpc"
+            ],
+            owners: [
+                "dragonlugia58"
+            ]
+        },
+        {
             prefix: "./media/characters/cordite/",
             files: [
                 { name: "anthro.svg", source: null }
@@ -1967,6 +1979,18 @@ const attributionData = {
             ],
             owners: [
                 "vercursar"
+            ]
+        },
+        {
+            prefix: "./media/characters/epifox/",
+            files: [
+                { name: "front.svg", source: "" }
+            ],
+            authors: [
+                ""
+            ],
+            owners: [
+                "epifox"
             ]
         },
         {
@@ -2819,6 +2843,18 @@ const attributionData = {
             ],
             owners: [
                 "little-big-x110"
+            ]
+        },
+        {
+            prefix: "./media/characters/matvei/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34325191/" }
+            ],
+            authors: [
+                "matt-da-master"
+            ],
+            owners: [
+                "matt-da-master"
             ]
         },
         {
@@ -5859,6 +5895,18 @@ const attributionData = {
         "rygalo": {
             "name": "RyGaLo",
             "url": "https://twitter.com/RyGaLo43",
+        },
+        "theannoyingnpc": {
+            "name": "TheAnnoyingNPC",
+            "url": "https://www.furaffinity.net/user/theannoyingnpc/",
+        },
+        "dragonlugia58": {
+            "name": "DragonLugia58",
+            "url": "https://www.furaffinity.net/user/dragonlugia58",
+        },
+        "matt-da-master": {
+            "name": "Matt_Da_Master",
+            "url": "https://www.furaffinity.net/user/mattdamaster/",
         },
     }
 }
