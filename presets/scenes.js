@@ -1,27 +1,7 @@
 const scenes = {};
 
 scenes["Demo"] = () => {
-    removeAllEntities();
-
-    let entity = availableEntitiesByName["Fen"].constructor();
-    displayEntity(entity, entity.defaultView, 0, 1);
-
-    entity = availableEntitiesByName["Deerpuff"].constructor();
-    displayEntity(entity, entity.defaultView, 0, 1);
-
-    entity = availableEntitiesByName["Sofia"].constructor();
-    entity.views[entity.view].height = entity.sizes[2].height;
-    displayEntity(entity, entity.defaultView, 0, 1);
-
-    entity = availableEntitiesByName["Vivian"].constructor();
-    entity.views[entity.view].height = entity.sizes[2].height;
-    displayEntity(entity, entity.defaultView, 0, 1);
-
-
-    arrangeEntities(getSortedEntities());
-    
-    entity = availableEntitiesByName["Houston"].constructor();
-    displayEntity(entity, entity.defaultView, 0.5, 1);
+    importScene({"entities":[{"name":"Fen","scale":13.37613697164259,"view":"back","x":"0.4739888072901602","y":"1"},{"name":"Cars","scale":1,"view":"Toyota Prius C (Side)","x":"0.5446325587240624","y":"1"},{"name":"Flagpole","scale":1,"view":"medium","x":"0.6884494749664603","y":"1"},{"name":"Aircraft","scale":1,"view":"Cessena 172 (Side)","x":"0.5554263161666061","y":"0.22135128477620036"},{"name":"Bus","scale":1,"view":"side","x":"0.3384726446176792","y":"1"},{"name":"Leopard 2 Rev. 1","scale":1,"view":"side","x":"0.6168929701770606","y":"1"},{"name":"Trees","scale":1,"view":"sycamore","x":"0.19678198200160846","y":"1"},{"name":"18-Wheeler","scale":1,"view":"side","x":"0.7563502890715608","y":"1"},{"name":"Cars","scale":1,"view":"Toyota Prius C (Top)","x":"0.5363900938385269","y":"0.7215473541048467"},{"name":"Human","scale":1,"view":"woman1","x":"0.4756975717747481","y":"1"},{"name":"Human","scale":1,"view":"man1","x":"0.47400075247875356","y":"0.2538019287833828"}],"world":{"height":38.5,"unit":"meters"}})
     fitWorld(true);
 }
 
