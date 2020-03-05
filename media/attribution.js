@@ -3982,6 +3982,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/xylrem/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/DownbeatMetal/status/1235131515568295937/" }
+            ],
+            authors: [
+                "caindra"
+            ],
+            owners: [
+                "downbeatmetal"
+            ]
+        },
+        {
             prefix: "./media/characters/yakuz/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/32804495/" }
@@ -5781,6 +5793,14 @@ const attributionData = {
         "koragos": {
             "name": "Koragos",
             "url": "https://www.furaffinity.net/user/koragos/",
+        },
+        "caindra": {
+            "name": "Caindra",
+            "url": "https://www.furaffinity.net/user/caindra",
+        },
+        "downbeatmetal": {
+            "name": "Alklys Chaser",
+            "url": "https://twitter.com/DownbeatMetal",
         },
     }
 }

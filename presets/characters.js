@@ -9874,6 +9874,44 @@ characterMakers["Koragos"] = () => {
     )
 };
 
+characterMakers["Xylrem"] = () => {
+    return makeCharacter(
+        "Xylrem",
+        "",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(250, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/xylrem/front.svg",
+                    extra: 3323/3050 * (1 / (1 - 0.065)),
+                    bottom: 0.065
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(4, "feet")
+            },
+            {
+                name: "Normal",
+                height: math.unit(16, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(2720, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(25000, "miles")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
