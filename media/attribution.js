@@ -2609,6 +2609,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/lykonous/",
+            files: [
+                { name: "kaiju.svg", source: "https://www.deviantart.com/mokoshan/art/Kaiju-Lykos-830415325" }
+            ],
+            authors: [
+                "mokoshan"
+            ],
+            owners: [
+                "roxas00137"
+            ]
+        },
+        {
             prefix: "./media/characters/major-colonel/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/20721264/" },
@@ -5692,6 +5704,14 @@ const attributionData = {
         "somedaynotsoon": {
             "name": "SomedayNotSoon",
             "url": "https://twitter.com/SomedayNS/",
+        },
+        "roxas00137": {
+            "name": "Roxas00137",
+            "url": "https://www.furaffinity.net/user/roxas00137/",
+        },
+        "mokoshan": {
+            "name": "Mokoshan",
+            "url": "https://www.deviantart.com/mokoshan",
         },
     }
 }

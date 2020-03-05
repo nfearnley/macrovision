@@ -9658,6 +9658,51 @@ characterMakers["Mel"] = () => {
     )
 };
 
+characterMakers["Lykonous"] = () => {
+    return makeCharacter(
+        "Lykonous",
+        "Lykonous",
+        {
+            kaiju: {
+                height: math.unit(1.75, "meters"),
+                weight: math.unit(55, "kg"),
+                name: "Kaiju",
+                image: {
+                    source: "./media/characters/lykonous/kaiju.svg",
+                    extra: 1055/946 * (1 / (1 - 0.135)),
+                    bottom: 0.135
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(2.5, "meters")
+            },
+            {
+                name: "Kaiju Dragon",
+                height: math.unit(60, "meters")
+            },
+            {
+                name: "Mega Kaiju",
+                height: math.unit(120, "km")
+            },
+            {
+                name: "Giga Kaiju",
+                height: math.unit(200, "megameters")
+            },
+            {
+                name: "Terra Kaiju",
+                height: math.unit(400, "gigameters")
+            },
+            {
+                name: "Kaiju Dragon God",
+                height: math.unit(13000, "exaparsecs")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
