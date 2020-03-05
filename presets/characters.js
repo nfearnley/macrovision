@@ -9402,6 +9402,102 @@ characterMakers["Pianostrong"] = () => {
     )
 };
 
+characterMakers["Kona"] = () => {
+    return makeCharacter(
+        "Kona",
+        "Konadh",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/kona/front.svg",
+                    extra: 2960/2629 * (1 / (1 - 0.005)),
+                    bottom: 0.005
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(11 + 8/12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(850, "feet"),
+                default: true
+            },
+            {
+                name: "Macro+",
+                height: math.unit(1.5, "km"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(80, "miles")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(3500, "miles")
+            },   
+        ]
+    )
+};
+
+characterMakers["Levi"] = () => {
+    return makeCharacter(
+        "Levi",
+        "LeviCurrie",
+        {
+            side: {
+                height: math.unit(1.9, "meters"),
+                weight: math.unit(326, "kg"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/levi/side.svg",
+                    extra: 1704/1334 * (1 / (1 - 0.02)),
+                    bottom: 0.02
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(1.9, "meters")
+            },
+            {
+                name: "Macro",
+                height: math.unit(20, "meters")
+            },
+            {
+                name: "Macro+",
+                height: math.unit(200, "meters")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(2, "km")
+            },
+            {
+                name: "Megamacro+",
+                height: math.unit(20, "km")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(2500, "km")
+            },
+            {
+                name: "Gigamacro+",
+                height: math.unit(120000, "km")
+            },
+            {
+                name: "Teramacro",
+                height: math.unit(7.77e6, "km")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

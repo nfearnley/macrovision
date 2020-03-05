@@ -2474,6 +2474,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/kona/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/30748987/" }
+            ],
+            authors: [
+                "helaviskrew"
+            ],
+            owners: [
+                "konadh"
+            ]
+        },
+        {
             prefix: "./media/characters/kuro-shi-uchū/",
             files: [
                 { name: "front.svg", source: "https://media.discordapp.net/attachments/300130710671458304/682667452626239526/lugiablackholeactual2.png" },
@@ -2546,6 +2558,18 @@ const attributionData = {
             ],
             owners: [
                 "ilikefurrystoo"
+            ]
+        },
+        {
+            prefix: "./media/characters/levi/",
+            files: [
+                { name: "side.svg", source: null }
+            ],
+            authors: [
+                "setiwurst"
+            ],
+            owners: [
+                "levicurrie"
             ]
         },
         {
@@ -5578,6 +5602,22 @@ const attributionData = {
         "pianostrong": {
             "name": "Pianostrong",
             "url": "https://www.furaffinity.net/user/pianostrong/",
+        },
+        "levicurrie": {
+            "name": "Levi Tahaan Currie",
+            "url": "https://twitter.com/LeviCurrie",
+        },
+        "setiwurst": {
+            "name": "SetiWurst",
+            "url": "https://www.furaffinity.net/user/setithe-wurst",
+        },
+        "helaviskrew": {
+            "name": "HelavisKrew",
+            "url": "https://www.furaffinity.net/user/helaviskrew/",
+        },
+        "konadh": {
+            "name": "Kona",
+            "url": "https://twitter.com/oversizedstag",
         },
     }
 }
