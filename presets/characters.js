@@ -9616,6 +9616,48 @@ characterMakers["Marik"] = () => {
     )
 };
 
+characterMakers["Mel"] = () => {
+    return makeCharacter(
+        "Mel",
+        "SomedayNotSoon",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(110, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/mel/front.svg",
+                    extra: 736/617 * (1 / (1 - 0.017)),
+                    bottom: 0.017
+                }
+            },
+        },
+        [
+            {
+                name: "Pico",
+                height: math.unit(3, "pm")
+            },
+            {
+                name: "Nano",
+                height: math.unit(3, "nm")
+            },
+            {
+                name: "Micro",
+                height: math.unit(0.3, "mm"),
+                default: true
+            },
+            {
+                name: "Micro+",
+                height: math.unit(3, "mm")
+            },
+            {
+                name: "Normal",
+                height: math.unit(5 + 10.5/12, "feet")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

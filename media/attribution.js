@@ -2799,6 +2799,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/mel/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/SomedayNS/status/1177379513514283008" }
+            ],
+            authors: [
+                "somedaynotsoon"
+            ],
+            owners: [
+                "somedaynotsoon"
+            ]
+        },
+        {
             prefix: "./media/characters/mira-al-cul/",
             files: [
                 { name: "lamp.svg", source: "https://www.furaffinity.net/view/24240755/" },
@@ -5676,6 +5688,10 @@ const attributionData = {
         "tidekeeper": {
             "name": "TideKeeper",
             "url": "https://www.furaffinity.net/user/tidekeeper",
+        },
+        "somedaynotsoon": {
+            "name": "SomedayNotSoon",
+            "url": "https://twitter.com/SomedayNS/",
         },
     }
 }
