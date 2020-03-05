@@ -1984,10 +1984,10 @@ const attributionData = {
         {
             prefix: "./media/characters/epifox/",
             files: [
-                { name: "front.svg", source: "" }
+                { name: "front.svg", source: null }
             ],
             authors: [
-                ""
+                "rrrax"
             ],
             owners: [
                 "epifox"
@@ -5118,11 +5118,11 @@ const attributionData = {
         },
         "shingekiskunk": {
             "name": "ShingekiSkunk",
-            "url": "t.me/ShingekiSkunk"
+            "url": "https://t.me/ShingekiSkunk"
         },
         "rileykit": {
             "name": "Rileykit",
-            "url": "t.me/Rileykit"
+            "url": "https://t.me/Rileykit"
         },
         "ovens": {
             "name": "Ovens",
@@ -5530,7 +5530,7 @@ const attributionData = {
         },
         "aigey": {
             "name": "Aigey",
-            "url": "t.me/Aigey",
+            "url": "https://t.me/Aigey",
         },
         "natasha": {
             "name": "Natasha",
@@ -5798,7 +5798,7 @@ const attributionData = {
         },
         "janedoe297": {
             "name": "janedoe297",
-            "url": "t.me/janedoe297",
+            "url": "https://t.me/janedoe297",
         },
         "pianostrong": {
             "name": "Pianostrong",
@@ -5907,6 +5907,14 @@ const attributionData = {
         "matt-da-master": {
             "name": "Matt_Da_Master",
             "url": "https://www.furaffinity.net/user/mattdamaster/",
+        },
+        "rrrax": {
+            "name": "RRRAX",
+            "url": "https://twitter.com/alligatorax/",
+        },
+        "epifox": {
+            "name": "epifox",
+            "url": "https://t.me/epifox",
         },
     }
 }

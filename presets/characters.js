@@ -10082,6 +10082,44 @@ characterMakers["Chauncey (Chantz)"] = () => {
     )
 };
 
+characterMakers["Epifox"] = () => {
+    return makeCharacter(
+        "Epifox",
+        "Epifox",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/epifox/front.svg",
+                    extra: (1 / (1 - 0.075)),
+                    bottom: 0.075
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(6, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(12, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(3810, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(500, "miles")
+            },
+        ]
+    )
+};
+
 characterMakers["Colin T."] = () => {
     return makeCharacter(
         "Colin T.",
