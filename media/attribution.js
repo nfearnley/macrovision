@@ -1234,6 +1234,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/alexi/",
+            files: [
+                { name: "front.svg", source: null },
+                { name: "back.svg", source: null }
+            ],
+            authors: [
+                "squishy0"
+            ],
+            owners: [
+                "alexiwerewolf"
+            ]
+        },
+        {
             prefix: "./media/characters/alicia/",
             files: [
                 { name: "anthro.svg", source: "https://www.furaffinity.net/view/31363235/" }
@@ -5431,6 +5444,14 @@ const attributionData = {
         "commoddity": {
             "name": "Commoddity",
             "url": "https://www.deviantart.com/commoddity",
+        },
+        "squishy0": {
+            "name": "Squishy0",
+            "url": "https://twitter.com/Squishy0",
+        },
+        "alexiwerewolf": {
+            "name": "Alexi",
+            "url": "https://twitter.com/AlexiWerewolf",
         },
     }
 }
