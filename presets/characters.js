@@ -9498,6 +9498,48 @@ characterMakers["Levi"] = () => {
     )
 };
 
+characterMakers["BMC"] = () => {
+    return makeCharacter(
+        "BMC",
+        "BigMountainCat",
+        {
+            front: {
+                height: math.unit(6 + 4/12, "feet"),
+                weight: math.unit(188, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/bmc/front.svg",
+                    extra: 1067/1022 * (1 / (1 - 0.047)),
+                    bottom: 0.047
+                }
+            },
+        },
+        [
+            {
+                name: "Human-sized",
+                height: math.unit(6 + 4/12, "feet")
+            },
+            {
+                name: "Small",
+                height: math.unit(250, "feet")
+            },
+            {
+                name: "Normal",
+                height: math.unit(1250, "feet"),
+                default: true
+            },
+            {
+                name: "Good Day",
+                height: math.unit(88, "miles")
+            },
+            {
+                name: "Largest Measured Size",
+                height: math.unit(11.2e6, "lightyears")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

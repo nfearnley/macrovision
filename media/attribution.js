@@ -1561,6 +1561,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/bmc/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35295996/" }
+            ],
+            authors: [
+                "bigmountaincat"
+            ],
+            owners: [
+                "bigmountaincat"
+            ]
+        },
+        {
             prefix: "./media/characters/carley/",
             files: [
                 { name: "front.svg", source: null }
