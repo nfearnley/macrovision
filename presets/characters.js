@@ -8100,8 +8100,16 @@ characterMakers["Mega Shi"] = () => {
                 height: math.unit(10, "miles")
             },
             {
+                name: "Planetary Launch",
+                height: math.unit(500, "miles")
+            },
+            {
                 name: "Interstellar",
                 height: math.unit(1e9, "miles")
+            },
+            {
+                name: "Leaving the Universe",
+                height: math.unit(1, "gigaparsec")
             },
             {
                 name: "Travelling Universes",
