@@ -4171,6 +4171,12 @@ const attributionData = {
                 { name: "car_honda-civic-front.svg", source: "https://www.dimensions.guide/element/honda-civic" },
                 { name: "car_honda-civic-side.svg", source: "https://www.dimensions.guide/element/honda-civic" },
                 { name: "car_honda-civic-top.svg", source: "https://www.dimensions.guide/element/honda-civic" },
+                { name: "car_lamborghini-aventador-front.svg", source: "https://www.dimensions.guide/element/lamborghini-aventador" },
+                { name: "car_lamborghini-aventador-side.svg", source: "https://www.dimensions.guide/element/lamborghini-aventador" },
+                { name: "car_lamborghini-aventador-top.svg", source: "https://www.dimensions.guide/element/lamborghini-aventador" },
+                { name: "car_ford-f-150-front.svg", source: "https://www.dimensions.guide/element/ford-f-150-2015-truck" },
+                { name: "car_ford-f-150-side.svg", source: "https://www.dimensions.guide/element/ford-f-150-2015-truck" },
+                { name: "car_ford-f-150-top.svg", source: "https://www.dimensions.guide/element/ford-f-150-2015-truck" },
             ],
             authors: [
                 "dimensions-guide"

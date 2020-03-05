@@ -133,6 +133,8 @@ function makeCars() {
         ["Toyota Prius C", 3.99, 1.45, 1134, 1, 1.07, 1],
         ["VW New Beetle", 4.13, 1.57, 1230, 1, 1, 1],
         ["Honda Civic", 4.55, 1.42, 1303, 1, 1, 1],
+        ["Lamborghini Aventador", 4.78, 1.136, 1575, 1, 1, 1],
+        ["Ford F-150", 5.89, 1.92, 1950, 1, 1, 1]
     ]
     sides = {}
     const sorted = options.sort((a,b) => a[1]-b[1])
