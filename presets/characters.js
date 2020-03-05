@@ -10026,6 +10026,51 @@ characterMakers["Neo"] = () => {
     )
 };
 
+characterMakers["Chauncey (Chantz)"] = () => {
+    return makeCharacter(
+        "Chauncey (Chantz)",
+        "RyGaLo",
+        {
+            front: {
+                height: math.unit(13 + 10/12, "feet"),
+                weight: math.unit(5320, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/chauncey-chantz/front.svg",
+                    extra: 1587/1435 * (1 / (1 - 0.02)),
+                    bottom: 0.02
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(13 + 10/12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(45, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(250, "miles")
+            },
+            {
+                name: "Planetary",
+                height: math.unit(10000, "miles")
+            },
+            {
+                name: "Galactic",
+                height: math.unit(3, "gigaparsecs")
+            },
+            {
+                name: "Universal",
+                height: math.unit(1, "yottameter")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

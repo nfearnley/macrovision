@@ -1622,6 +1622,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/chauncey-chantz/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/rygalo43/status/1223854596243648513?s=21" }
+            ],
+            authors: [
+                "rygalo"
+            ],
+            owners: [
+                "rygalo"
+            ]
+        },
+        {
             prefix: "./media/characters/chez/",
             files: [
                 { name: "front.svg", source: null },
@@ -5843,6 +5855,10 @@ const attributionData = {
         "elusive-umbreon": {
             "name": "elusive-umbreon",
             "url": "https://www.furaffinity.net/user/elusive-umbreon/",
+        },
+        "rygalo": {
+            "name": "RyGaLo",
+            "url": "https://twitter.com/RyGaLo43",
         },
     }
 }
