@@ -2975,6 +2975,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/neo/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "bastienl"
+            ],
+            owners: [
+                "elusive-umbreon"
+            ]
+        },
+        {
             prefix: "./media/characters/nibbles/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/22964778/" },
@@ -5823,6 +5835,14 @@ const attributionData = {
         "ikideru": {
             "name": "Ikideru",
             "url": "https://www.furaffinity.net/user/ikiderusheppy/",
+        },
+        "bastienl": {
+            "name": "bastienL",
+            "url": " https://www.furaffinity.net/user/bastienl/",
+        },
+        "elusive-umbreon": {
+            "name": "elusive-umbreon",
+            "url": "https://www.furaffinity.net/user/elusive-umbreon/",
         },
     }
 }

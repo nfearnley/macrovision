@@ -9998,6 +9998,34 @@ characterMakers["Ikideru"] = () => {
     )
 };
 
+characterMakers["Neo"] = () => {
+    return makeCharacter(
+        "Neo",
+        "neonsnake",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(120, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/neo/front.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(2, "inches"),
+                default: true
+            },
+            {
+                name: "Human Size",
+                height: math.unit(5 + 8/12, "feet")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
