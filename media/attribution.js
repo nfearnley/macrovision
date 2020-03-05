@@ -2510,6 +2510,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/koragos/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34688533/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/34688533/" }
+            ],
+            authors: [
+                "koragos"
+            ],
+            owners: [
+                "koragos"
+            ]
+        },
+        {
             prefix: "./media/characters/kuro-shi-uchū/",
             files: [
                 { name: "front.svg", source: "https://media.discordapp.net/attachments/300130710671458304/682667452626239526/lugiablackholeactual2.png" },
@@ -5764,6 +5777,10 @@ const attributionData = {
         "public-domain": {
             "name": "Public Domain",
             "url": "https://en.wikipedia.org/wiki/Public_domain",
+        },
+        "koragos": {
+            "name": "Koragos",
+            "url": "https://www.furaffinity.net/user/koragos/",
         },
     }
 }

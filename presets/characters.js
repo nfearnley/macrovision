@@ -9807,6 +9807,53 @@ characterMakers["Scales"] = () => {
     )
 };
 
+characterMakers["Koragos"] = () => {
+    return makeCharacter(
+        "Koragos",
+        "Koragos",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/koragos/front.svg",
+                    extra: 841/794 * (1 / (1 - 0.035)),
+                    bottom: 0.035
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/koragos/back.svg",
+                    extra: 841/810 * (1 / (1 - 0.022)),
+                    bottom: 0.022
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6 + 11/12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(490, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(10, "miles")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(50, "miles")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
