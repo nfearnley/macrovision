@@ -4128,6 +4128,16 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/objects/",
+            files: [
+                { name: "international-space-station.svg", source: "https://publicdomainvectors.org/en/free-clipart/International-Space-Station-silhouette-vector-drawing/16001.html" },
+            ],
+            authors: [
+                "public-domain"
+            ]
+        },
+
+        {
             prefix: "./media/objects/fruits/",
             files: [
                 { name: "banana.svg", source: null },
@@ -5750,7 +5760,11 @@ const attributionData = {
         "scales": {
             "name": "Scales",
             "url": "https://twitter.com/plushderg",
-        }
+        },
+        "public-domain": {
+            "name": "Public Domain",
+            "url": "https://en.wikipedia.org/wiki/Public_domain",
+        },
     }
 }
 

@@ -469,6 +469,22 @@ function makeObjects() {
         )
     })
 
+
+    results.push({
+        name: "International Space Station",
+        constructor: () => makeObject(
+            "International Space Station",
+            {
+                object: {
+                    height: math.unit(209, "feet"),
+                    mass: math.unit(925300, "lbs"),
+                    image: { source: "./media/objects/international-space-station.svg" },
+                    name: "International Space Station"
+                }
+            }
+        )
+    })
+
     
     results.sort((b1, b2) => {
         e1 = b1.constructor();
