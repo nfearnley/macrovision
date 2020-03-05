@@ -4803,7 +4803,8 @@ characterMakers["Everett"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/everett/front.svg",
-                    extra: 2038/1737
+                    extra: 2038/1737 * (1 / (1 - 0.03)),
+                    bottom: 0.03
                 }
             },
             paw: {
