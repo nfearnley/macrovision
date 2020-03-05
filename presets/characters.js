@@ -8788,12 +8788,12 @@ characterMakers["Mal"] = () => {
             },
             {
                 name: "Normal",
-                height: math.unit(4, "feet")
+                height: math.unit(4, "feet"),
+                default: true
             },
             {
                 name: "Macro",
-                height: math.unit(200, "feet"),
-                default: true
+                height: math.unit(200, "feet")
             },
         ]
     )
