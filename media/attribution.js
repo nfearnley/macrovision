@@ -2438,6 +2438,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/king/",
+            files: [
+                { name: "back.svg", source: "https://t.me/addstickers/HugeKinglyLion" }
+            ],
+            authors: [
+                "sixsydes"
+            ],
+            owners: [
+                "kingsizedlion"
+            ]
+        },
+        {
             prefix: "./media/characters/kuro-shi-uchū/",
             files: [
                 { name: "front.svg", source: "https://media.discordapp.net/attachments/300130710671458304/682667452626239526/lugiablackholeactual2.png" },
@@ -5504,6 +5516,10 @@ const attributionData = {
         "totoly-toto": {
             "name": "Toto",
             "url": "https://twitter.com/totoly_toto",
+        },
+        "kingsizedlion": {
+            "name": "KingSizedLion",
+            "url": "https://twitter.com/KingSizedLion",
         },
     }
 }

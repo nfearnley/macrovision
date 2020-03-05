@@ -9274,6 +9274,42 @@ characterMakers["Toto"] = () => {
     )
 };
 
+characterMakers["King"] = () => {
+    return makeCharacter(
+        "King",
+        "KingSizedLion",
+        {
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/king/back.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(2, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(8, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(200, "feet"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(50, "miles")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
