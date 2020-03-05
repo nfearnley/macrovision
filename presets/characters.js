@@ -1,5 +1,9 @@
 const characterMakers = [];
 
+math.createUnit("parsec", {
+    definition: "3.086e16 meters",
+    prefixes: "long"
+})
 math.createUnit("parsecs", {
     definition: "3.086e16 meters",
     prefixes: "long"
