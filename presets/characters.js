@@ -9310,6 +9310,40 @@ characterMakers["King"] = () => {
     )
 };
 
+characterMakers["Cordite"] = () => {
+    return makeCharacter(
+        "Cordite",
+        "photonman2",
+        {
+            anthro: {
+                height: math.unit(6 + 5/12, "feet"),
+                weight: math.unit(280, "lb"),
+                name: "Anthro",
+                image: {
+                    source: "./media/characters/cordite/anthro.svg",
+                    extra: 1986/1905 * (1 / (1 - 0.025)),
+                    bottom: 0.025
+                }
+            },
+            feral: {
+                height: math.unit(2, "feet"),
+                weight: math.unit(90, "lb"),
+                name: "Feral",
+                image: {
+                    source: "./media/characters/cordite/feral.svg",
+                    extra: 1260/755 * (1 / (1 - 0.05)),
+                    bottom: 0.05
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6 + 5/12, "feet")
+            },
+        ]
+    )
+};
 function makeCharacters() {
     const results = [];
     results.push({

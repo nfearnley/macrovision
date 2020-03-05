@@ -1671,6 +1671,30 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/cordite/",
+            files: [
+                { name: "anthro.svg", source: null }
+            ],
+            authors: [
+                "bunnox"
+            ],
+            owners: [
+                "photonman2"
+            ]
+        },
+        {
+            prefix: "./media/characters/cordite/",
+            files: [
+                { name: "feral.svg", source: "https://candyorcadragons.com/images/ref-cordite-feral-sfw" }
+            ],
+            authors: [
+                "cherry-paws"
+            ],
+            owners: [
+                "photonman2"
+            ]
+        },
+        {
             prefix: "./media/characters/corvin/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/15581561/" },
@@ -5520,6 +5544,18 @@ const attributionData = {
         "kingsizedlion": {
             "name": "KingSizedLion",
             "url": "https://twitter.com/KingSizedLion",
+        },
+        "photonman2": {
+            "name": "photonman2",
+            "url": "https://www.furaffinity.net/user/photonman2",
+        },
+        "bunnox": {
+            "name": "Bunnox",
+            "url": "https://www.furaffinity.net/user/dabunnox",
+        },
+        "cherry-paws": {
+            "name": "Cherry.Paws",
+            "url": "https://www.furaffinity.net/user/cherry.paws/",
         },
     }
 }
