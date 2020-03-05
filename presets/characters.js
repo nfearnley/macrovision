@@ -3844,10 +3844,14 @@ characterMakers["Akari Kaen"] = () => {
         },
         [
             {
-                name: "Normal",
-                height: math.unit(10, "inches"),
+                name: "Micro",
+                height: math.unit(5, "inches"),
                 default: true
-            }
+            },
+            {
+                name: "Normal",
+                height: math.unit(7, "feet")
+            },
         ]
     )
 };
