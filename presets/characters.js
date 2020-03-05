@@ -9194,6 +9194,49 @@ characterMakers["Kayroo"] = () => {
     )
 };
 
+characterMakers["Rhys"] = () => {
+    return makeCharacter(
+        "Rhys",
+        "BigMountainCat",
+        {
+            front: {
+                height: math.unit(18, "feet"),
+                weight: math.unit(5800, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/rhys/front.svg",
+                    extra: 3386/3090 * (1 / (1 - 0.07)),
+                    bottom: 0.07
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(18, "feet"),
+                default: true
+            },
+            {
+                name: "Working Size",
+                height: math.unit(200, "feet")
+            },
+            {
+                name: "Demolition Size",
+                height: math.unit(2000, "feet")
+            },
+            {
+                name: "Maximum Licensed Size",
+                height: math.unit(5, "miles")
+            },
+            {
+                name: "Maximum Observed Size",
+                height: math.unit(10, "yottameters")
+            },
+        ]
+    )
+};
+
+
 function makeCharacters() {
     const results = [];
     results.push({

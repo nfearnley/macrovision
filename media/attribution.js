@@ -3287,6 +3287,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/rhys/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/31853704/" }
+            ],
+            authors: [
+                "bigmountaincat"
+            ],
+            owners: [
+                "bigmountaincat"
+            ]
+        },
+        {
             prefix: "./media/characters/rick/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/30822024/" }
@@ -5468,6 +5480,10 @@ const attributionData = {
         "kayroo": {
             "name": "Kayroo",
             "url": "https://www.furaffinity.net/user/kayroo/",
+        },
+        "bigmountaincat": {
+            "name": "BigMountainCat",
+            "url": "https://www.furaffinity.net/user/bigmountaincat/",
         },
     }
 }
