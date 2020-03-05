@@ -9574,6 +9574,48 @@ characterMakers["Sven the Kaiju"] = () => {
     )
 };
 
+characterMakers["Marik"] = () => {
+    return makeCharacter(
+        "Marik",
+        "Acrarun",
+        {
+            front: {
+                height: math.unit(4, "meters"),
+                weight: math.unit(2, "tons"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/marik/front.svg",
+                    extra: 1057/1003 * (1 / (1 - 0.08)),
+                    bottom: 0.08
+                }
+            },
+        },
+        [
+             {
+                 name: "Normal",
+                 height: math.unit(4, "meters"),
+                 default: true
+             },
+             {
+                 name: "Macro",
+                 height: math.unit(20, "meters")
+             },
+             {
+                 name: "Megamacro",
+                 height: math.unit(50, "km")
+             },
+             {
+                 name: "Gigamacro",
+                 height: math.unit(100, "km")
+             },
+             {
+                 name: "Alpha Macro",
+                 height: math.unit(7.88e7, "yottameters")
+             },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

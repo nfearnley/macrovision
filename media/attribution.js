@@ -2735,6 +2735,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/marik/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33039350" }
+            ],
+            authors: [
+                "tidekeeper"
+            ],
+            owners: [
+                "arcarun"
+            ]
+        },
+        {
             prefix: "./media/characters/martin/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/30066999" }
@@ -5656,6 +5668,14 @@ const attributionData = {
         "moshi-the-bobcat": {
             "name": "Moshi the Bobcat",
             "url": "https://www.furaffinity.net/user/moshi.the.bobcat",
+        },
+        "arcarun": {
+            "name": "Arcarun",
+            "url": "https://www.furaffinity.net/user/arcarun/",
+        },
+        "tidekeeper": {
+            "name": "TideKeeper",
+            "url": "https://www.furaffinity.net/user/tidekeeper",
         },
     }
 }
