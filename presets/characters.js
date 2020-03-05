@@ -1888,6 +1888,10 @@ characterMakers["Asana"] = () => {
             {
                 name: "Examacro",
                 height: math.unit(5e12, "lightyears")
+            },
+            {
+                name: "Max Size",
+                height: math.unit(93.016e13, "lightyears")
             }
         ],
         math.unit(7 + 5 / 6, "feet")
