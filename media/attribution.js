@@ -5499,7 +5499,7 @@ const attributionData = {
         },
         "catarsi": {
             "name": "Catarsi",
-            "url": "https://www.furaffinity.net/user/fattygatr",
+            "url": "https://www.furaffinity.net/user/catarsi/",
         },
         "totoly-toto": {
             "name": "Toto",
