@@ -9236,6 +9236,43 @@ characterMakers["Rhys"] = () => {
     )
 };
 
+characterMakers["Toto"] = () => {
+    return makeCharacter(
+        "Toto",
+        "Totoly_Toto",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(250, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/toto/front.svg",
+                    exra: 527 / 479 * (1 / (1 - 0.05)),
+                    bottom: 0.05
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(3, "feet")
+            },
+            {
+                name: "Normal",
+                height: math.unit(10, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(150, "feet"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(1200, "feet")
+            },
+        ]
+    )
+};
 
 function makeCharacters() {
     const results = [];

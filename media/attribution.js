@@ -3660,6 +3660,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/toto/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/27390320/" }
+            ],
+            authors: [
+                "catarsi"
+            ],
+            owners: [
+                "totoly-toto"
+            ]
+        },
+        {
             prefix: "./media/characters/tyrone/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/32053722/" }
@@ -5484,6 +5496,14 @@ const attributionData = {
         "bigmountaincat": {
             "name": "BigMountainCat",
             "url": "https://www.furaffinity.net/user/bigmountaincat/",
+        },
+        "catarsi": {
+            "name": "Catarsi",
+            "url": "https://www.furaffinity.net/user/fattygatr",
+        },
+        "totoly-toto": {
+            "name": "Toto",
+            "url": "https://twitter.com/totoly_toto",
         },
     }
 }
