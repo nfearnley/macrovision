@@ -9703,6 +9703,64 @@ characterMakers["Lykonous"] = () => {
     )
 };
 
+characterMakers["Blü"] = () => {
+    return makeCharacter(
+        "Blü",
+        "BluTheFagon",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/blü/front.svg",
+                    extra: 1883/1564 * (1 / (1 - 0.031)),
+                    bottom: 0.031
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(13, "feet"),
+                default: true
+            },
+            {
+                name: "Big Boi",
+                height: math.unit(150, "meters")
+            },
+            {
+                name: "Mini Stomper",
+                height: math.unit(300, "meters")
+            },
+            {
+                name: "Macro",
+                height: math.unit(1000, "meters")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(11000, "meters")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(11000, "km")
+            },
+            {
+                name: "Teramacro",
+                height: math.unit(420000, "km")
+            },
+            {
+                name: "Examacro",
+                height: math.unit(120, "parsecs")
+            },
+            {
+                name: "God Tho",
+                height: math.unit(98000000000, "parsecs")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

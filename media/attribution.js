@@ -1561,6 +1561,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/blü/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/30608202/" }
+            ],
+            authors: [
+                "booshie"
+            ],
+            owners: [
+                "bluthefagon"
+            ]
+        },
+        {
             prefix: "./media/characters/bmc/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/35295996/" }
@@ -5712,6 +5724,14 @@ const attributionData = {
         "mokoshan": {
             "name": "Mokoshan",
             "url": "https://www.deviantart.com/mokoshan",
+        },
+        "bluthefagon": {
+            "name": "Blu",
+            "url": "https://www.furaffinity.net/user/bigblufag",
+        },
+        "booshie": {
+            "name": "Booshie",
+            "url": "https://www.furaffinity.net/user/booshie/",
         },
     }
 }
