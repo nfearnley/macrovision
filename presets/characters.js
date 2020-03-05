@@ -9030,6 +9030,65 @@ characterMakers["Dydros"] = () => {
         ]
     )
 };
+
+characterMakers["Riggi"] = () => {
+    return makeCharacter(
+        "Riggi",
+        "Fyre_ace",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(100, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/riggi/front.svg",
+                    extra: 5787/5303
+                }
+            },
+            hyper: {
+                height: math.unit(6*5/3, "feet"),
+                weight: math.unit(400*5/3*5/3*5/3, "kg"),
+                name: "Hyper",
+                image: {
+                    source: "./media/characters/riggi/hyper.svg",
+                    extra: 3595/3485
+                }
+            },
+        },
+        [
+            {
+                name: "Small Macro",
+                height: math.unit(50, "feet")
+            },
+            {
+                name: "Default",
+                height: math.unit(200, "feet"),
+                default: true
+            },
+            {
+                name: "Loom",
+                height: math.unit(10000, "feet")
+            },
+            {
+                name: "Cruising Altitude",
+                height: math.unit(30000, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(100, "miles")
+            },
+            {
+                name: "Continent Sized",
+                height: math.unit(2800, "miles")
+            },
+            {
+                name: "Earth Sized",
+                height: math.unit(8000, "miles")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

@@ -3274,6 +3274,30 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/riggi/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/31187650/" }
+            ],
+            authors: [
+                "lehyen"
+            ],
+            owners: [
+                "rigalakwoger"
+            ]
+        },
+        {
+            prefix: "./media/characters/riggi/",
+            files: [
+                { name: "hyper.svg", source: "https://www.deviantart.com/commoddity/art/Riggi-and-Flamm-Roar-Power-819751277" }
+            ],
+            authors: [
+                "commoddity"
+            ],
+            owners: [
+                "rigalakwoger"
+            ]
+        },
+        {
             prefix: "./media/characters/rikes/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/14959433/" }
@@ -5395,6 +5419,18 @@ const attributionData = {
         "datcyberdrake": {
             "name": "DatCyberDrake",
             "url": "https://twitter.com/datcyberdrake/",
+        },
+        "lehyen": {
+            "name": "Lehyen",
+            "url": "https://www.furaffinity.net/user/lehyen/",
+        },
+        "rigalakwoger": {
+            "name": "RigalaKwoger",
+            "url": "https://www.furaffinity.net/user/rigalakwoger",
+        },
+        "commoddity": {
+            "name": "Commoddity",
+            "url": "https://www.deviantart.com/commoddity",
         },
     }
 }
