@@ -2402,6 +2402,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/kayroo/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "solaxee"
+            ],
+            owners: [
+                "kayroo"
+            ]
+        },
+        {
             prefix: "./media/characters/kennedy/",
             files: [
                 { name: "side.svg", source: "https://www.furaffinity.net/view/26538996/" },
@@ -5452,6 +5464,10 @@ const attributionData = {
         "alexiwerewolf": {
             "name": "Alexi",
             "url": "https://twitter.com/AlexiWerewolf",
+        },
+        "kayroo": {
+            "name": "Kayroo",
+            "url": "https://www.furaffinity.net/user/kayroo/",
         },
     }
 }
