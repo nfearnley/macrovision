@@ -9348,6 +9348,60 @@ characterMakers["Cordite"] = () => {
         ]
     )
 };
+
+characterMakers["Pianostrong"] = () => {
+    return makeCharacter(
+        "Pianostrong",
+        "Pianostrong",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/pianostrong/front.svg",
+                    extra: 6577/6254 * (1 / (1 - 0.02)),
+                    bottom: 0.02
+                }
+            },
+            side: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/pianostrong/side.svg",
+                    extra: 6106/5730
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/pianostrong/back.svg",
+                    extra: 6085/5733 * (1 / (1 - 0.01)),
+                    bottom: 0.01
+                }
+            },
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(100, "feet")
+            },
+            {
+                name: "Macro+",
+                height: math.unit(300, "feet"),
+                default: true
+            },
+            {
+                name: "Macro++",
+                height: math.unit(1000, "feet")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

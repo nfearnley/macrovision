@@ -3030,6 +3030,20 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/pianostrong/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/31674867/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/31674867/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/31674867/" },
+            ],
+            authors: [
+                "janedoe297"
+            ],
+            owners: [
+                "pianostrong"
+            ]
+        },
+        {
             prefix: "./media/characters/piper/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/22964778/" }
@@ -5556,6 +5570,14 @@ const attributionData = {
         "cherry-paws": {
             "name": "Cherry.Paws",
             "url": "https://www.furaffinity.net/user/cherry.paws/",
+        },
+        "janedoe297": {
+            "name": "janedoe297",
+            "url": "t.me/janedoe297",
+        },
+        "pianostrong": {
+            "name": "Pianostrong",
+            "url": "https://www.furaffinity.net/user/pianostrong/",
         },
     }
 }
