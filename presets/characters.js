@@ -9912,6 +9912,70 @@ characterMakers["Xylrem"] = () => {
     )
 };
 
+characterMakers["Ikideru"] = () => {
+    return makeCharacter(
+        "Ikideru",
+        "Ikideru",
+        {
+            front: {
+                height: math.unit(8, "feet"),
+                weight: math.unit(250, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/ikideru/front.svg",
+                    extra: 930/870 * (1 / (1 - 0.087)),
+                    bottom: 0.087
+                }
+            },
+            back: {
+                height: math.unit(8, "feet"),
+                weight: math.unit(250, "kg"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/ikideru/back.svg",
+                    extra: 919/852 * (1 / (1 - 0.055)),
+                    bottom: 0.055
+                }
+            },
+        },
+        [
+            {
+                name: "Rare",
+                height: math.unit(8, "feet"),
+                default: true
+            },
+            {
+                name: "Playful Loom",
+                height: math.unit(80, "feet")
+            },
+            {
+                name: "City Leaner",
+                height: math.unit(230, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(2500, "feet")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(26400, "feet")
+            },
+            {
+                name: "Tectonic Shifter",
+                height: math.unit(1.7, "megameters")
+            },
+            {
+                name: "Planet Carer",
+                height: math.unit(21, "megameters")
+            },
+            {
+                name: "God",
+                height: math.unit(11157.22, "parsecs")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

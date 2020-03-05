@@ -2252,6 +2252,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/ikideru/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/23702428/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/23702428/" },
+            ],
+            authors: [
+                "tankh"
+            ],
+            owners: [
+                "ikideru"
+            ]
+        },
+        {
             prefix: "./media/characters/ine/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/32769962/" }
@@ -5801,6 +5814,14 @@ const attributionData = {
         "downbeatmetal": {
             "name": "Alklys Chaser",
             "url": "https://twitter.com/DownbeatMetal",
+        },
+        "tankh": {
+            "name": "TankH",
+            "url": "https://www.furaffinity.net/user/tankh",
+        },
+        "ikideru": {
+            "name": "Ikideru",
+            "url": "https://www.furaffinity.net/user/ikiderusheppy/",
         },
     }
 }
