@@ -9761,6 +9761,52 @@ characterMakers["Blü"] = () => {
     )
 };
 
+characterMakers["Scales"] = () => {
+    return makeCharacter(
+        "Scales",
+        "Scales",
+        {
+            taurFront: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(200, "lb"),
+                name: "Taur (Front)",
+                image: {
+                    source: "./media/characters/scales/taur-front.svg",
+                    extra: 1 / (1 - 0.05),
+                    bottom: 0.05
+                }
+            },
+            taurBack: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(200, "lb"),
+                name: "Taur (Back)",
+                image: {
+                    source: "./media/characters/scales/taur-back.svg",
+                    extra: 1 / (1 - 0.08),
+                    bottom: 0.08
+                }
+            },
+            anthro: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(100, "lb"),
+                name: "Anthro",
+                image: {
+                    source: "./media/characters/scales/anthro.svg",
+                    extra: 1 / (1 - 0.06),
+                    bottom: 0.06
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

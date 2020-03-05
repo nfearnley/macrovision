@@ -3342,6 +3342,20 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/scales/",
+            files: [
+                { name: "taur-front.svg", source: "https://twitter.com/plushderg/status/1119248005557825537" },
+                { name: "taur-back.svg", source: "https://twitter.com/plushderg/status/1119248005557825537" },
+                { name: "anthro.svg", source: "https://twitter.com/plushderg/status/1119248005557825537" },
+            ],
+            authors: [
+                "scales"
+            ],
+            owners: [
+                "scales"
+            ]
+        },
+        {
             prefix: "./media/characters/shingo/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/32499316/" }
@@ -5733,6 +5747,10 @@ const attributionData = {
             "name": "Booshie",
             "url": "https://www.furaffinity.net/user/booshie/",
         },
+        "scales": {
+            "name": "Scales",
+            "url": "https://twitter.com/plushderg",
+        }
     }
 }
 
