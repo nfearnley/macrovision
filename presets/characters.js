@@ -101,9 +101,19 @@ characterMakers["Fen"] = () => {
                 height: math.unit(12, "feet")
             },
             {
+                name: "Minimacro",
+                height: math.unit(30, "meter"),
+                default: true,
+                info: {
+                    description: {
+                        mode: "append",
+                        text: "\n\nTOO DAMN BIG"
+                    }
+                }
+            },
+            {
                 name: "Macro",
                 height: math.unit(100, "meter"),
-                default: true,
                 info: {
                     description: {
                         mode: "append",
