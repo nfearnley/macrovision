@@ -1236,8 +1236,9 @@ const attributionData = {
         {
             prefix: "./media/characters/alexi/",
             files: [
-                { name: "front.svg", source: null },
-                { name: "back.svg", source: null }
+                { name: "front.svg", source: "https://twitter.com/AlexiWerewolf/status/1235410679642730496" },
+                { name: "back.svg", source: "https://twitter.com/AlexiWerewolf/status/1235410679642730496" },
+                { name: "front-transformed.svg", source: "https://twitter.com/AlexiWerewolf/status/1235410679642730496" }
             ],
             authors: [
                 "squishy0"

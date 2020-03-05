@@ -9120,7 +9120,7 @@ characterMakers["Alexi"] = () => {
         {
             front: {
                 height: math.unit(6, "feet"),
-                weight: math.unit(150, "lb"),
+                weight: math.unit(250, "lb"),
                 name: "Front",
                 image: {
                     source: "./media/characters/alexi/front.svg",
@@ -9130,12 +9130,22 @@ characterMakers["Alexi"] = () => {
             },
             back: {
                 height: math.unit(6, "feet"),
-                weight: math.unit(150, "lb"),
+                weight: math.unit(250, "lb"),
                 name: "Back",
                 image: {
                     source: "./media/characters/alexi/back.svg",
                     extra: 3533/3356 * (1 / (1 - 0.021)),
                     bottom: 0.021
+                }
+            },
+            frontTransformed: {
+                height: math.unit(12.5, "feet"),
+                weight: math.unit(4000, "lb"),
+                name: "Front (Transformed)",
+                image: {
+                    source: "./media/characters/alexi/front-transformed.svg",
+                    extra: 5345/5100 * (1 / (1 - 0.03)),
+                    bottom: 0.03
                 }
             },
         },
