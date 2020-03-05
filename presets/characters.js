@@ -9787,7 +9787,7 @@ characterMakers["Scales"] = () => {
                 }
             },
             anthro: {
-                height: math.unit(6, "feet"),
+                height: math.unit(6*7/12, "feet"),
                 weight: math.unit(100, "lb"),
                 name: "Anthro",
                 image: {
