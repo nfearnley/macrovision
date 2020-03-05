@@ -8995,6 +8995,41 @@ characterMakers["Nomaxice"] = () => {
     )
 };
 
+characterMakers["Dydros"] = () => {
+    return makeCharacter(
+        "Dydros",
+        "DatCyberDragon",
+        {
+            front: {
+                height: math.unit(12, "feet"),
+                weight: math.unit(1.5, "tons"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/dydros/front.svg",
+                    extra: 863/800 * (1 / (1 - 0.015)),
+                    bottom: 0.015
+                }
+            },
+            back: {
+                height: math.unit(12, "feet"),
+                weight: math.unit(1.5, "tons"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/dydros/back.svg",
+                    extra: 900/843 * (1 / (1 - 0.005)),
+                    bottom: 0.005
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
 function makeCharacters() {
     const results = [];
     results.push({

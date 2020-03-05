@@ -1819,6 +1819,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/dydros/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34813689/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/34813689/" },
+            ],
+            authors: [
+                "datcyberdrake"
+            ],
+            owners: [
+                "datcyberdrake"
+            ]
+        },
+        {
             prefix: "./media/characters/ebony/",
             files: [
                 { name: "front.svg", source: null },
@@ -5378,6 +5391,10 @@ const attributionData = {
         "dracodare": {
             "name": "Dracodare",
             "url": "https://meow.social/@Dracodare",
+        },
+        "datcyberdrake": {
+            "name": "DatCyberDrake",
+            "url": "https://twitter.com/datcyberdrake/",
         },
     }
 }
