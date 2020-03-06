@@ -1647,6 +1647,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/chip/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34325691/" }
+            ],
+            authors: [
+                "chiptuni"
+            ],
+            owners: [
+                "chiptuni"
+            ]
+        },
+        {
             prefix: "./media/characters/chiros/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/33799727/" },
@@ -6074,6 +6086,10 @@ const attributionData = {
         "rufran": {
             "name": "Rufran",
             "url": "https://www.furaffinity.net/user/rufran/",
+        },
+        "chiptuni": {
+            "name": "Chiptuni",
+            "url": "https://www.furaffinity.net/user/chiptuni/",
         },
     }
 }

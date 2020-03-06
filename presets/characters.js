@@ -10567,6 +10567,31 @@ characterMakers["Rufran"] = () => {
     )
 };
 
+characterMakers["Chip"] = () => {
+    return makeCharacter(
+        "Chip",
+        "Chiptuni",
+        {
+            front: {
+                height: math.unit(0.3, "meters"),
+                weight: math.unit(3.5, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/chip/front.svg",
+                    extra: 748/674
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(1, "inch"),
+                default: true
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
