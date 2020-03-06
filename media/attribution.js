@@ -2562,6 +2562,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/kole/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35307322" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/35307322" },
+            ],
+            authors: [
+                "eunalis"
+            ],
+            owners: [
+                "cats-55"
+            ]
+        },
+        {
             prefix: "./media/characters/kona/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/30748987/" }
@@ -6030,6 +6043,14 @@ const attributionData = {
         "piedunk": {
             "name": "Piedunk",
             "url": "https://www.furaffinity.net/gallery/piedunk/",
+        },
+        "cats-55": {
+            "name": "Cats_55",
+            "url": "https://www.furaffinity.net/user/cats55/",
+        },
+        "eunalis": {
+            "name": "Eunalis",
+            "url": "https://www.fiverr.com/eunalis",
         },
     }
 }

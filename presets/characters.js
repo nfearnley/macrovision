@@ -10470,6 +10470,41 @@ characterMakers["Sammy Mouse"] = () => {
     )
 };
 
+characterMakers["Kole"] = () => {
+    return makeCharacter(
+        "Kole",
+        "Cats_55",
+        {
+            front: {
+                height: math.unit(4, "feet"),
+                weight: math.unit(50, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/kole/front.svg",
+                    extra: 1423/1303 * (1 / (1 - 0.025)),
+                    bottom: 0.025
+                }
+            },
+            back: {
+                height: math.unit(4, "feet"),
+                weight: math.unit(50, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/kole/back.svg",
+                    extra: 1426/1280 * (1 / (1 - 0.02)),
+                    bottom: 0.02
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(4, "feet")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
