@@ -10426,6 +10426,50 @@ characterMakers["Neos"] = () => {
     )
 };
 
+characterMakers["Sammy Mouse"] = () => {
+    return makeCharacter(
+        "Sammy Mouse",
+        "Piedunk",
+        {
+            feminine: {
+                height: math.unit(5, "feet"),
+                weight: math.unit(100, "lb"),
+                name: "Feminine",
+                image: {
+                    source: "./media/characters/sammy-mouse/feminine.svg",
+                    extra: 2526/2425 * (1 / (1 - 0.123)),
+                    bottom: 0.123
+                }
+            },
+            masculine: {
+                height: math.unit(5, "feet"),
+                weight: math.unit(100, "lb"),
+                name: "Masculine",
+                image: {
+                    source: "./media/characters/sammy-mouse/masculine.svg",
+                    extra: 2526/2425 * (1 / (1 - 0.123)),
+                    bottom: 0.123
+                }
+            },
+        },
+        [
+             {
+                 name: "Micro",
+                 height: math.unit(5, "inches")
+             },
+             {
+                 name: "Normal",
+                 height: math.unit(5, "feet"),
+                 default: true
+             },
+             {
+                 name: "Macro",
+                 height: math.unit(60, "feet")
+             },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

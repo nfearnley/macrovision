@@ -3493,6 +3493,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/sammy-mouse/",
+            files: [
+                { name: "feminine.svg", source: null },
+                { name: "masculine.svg", source: null },
+            ],
+            authors: [
+                "piedunk"
+            ],
+            owners: [
+                "piedunk"
+            ]
+        },
+        {
             prefix: "./media/characters/scales/",
             files: [
                 { name: "taur-front.svg", source: "https://twitter.com/plushderg/status/1119248005557825537" },
@@ -6013,6 +6026,10 @@ const attributionData = {
         "cakeycake": {
             "name": "Cake",
             "url": "https://t.me/CakeyCake",
+        },
+        "piedunk": {
+            "name": "Piedunk",
+            "url": "https://www.furaffinity.net/gallery/piedunk/",
         },
     }
 }
