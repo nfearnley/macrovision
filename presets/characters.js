@@ -7605,8 +7605,9 @@ characterMakers["Vanrel (Hyena)"] = () => {
                 weight: math.unit(175, "lb"),
                 name: "Front",
                 image: {
-                    source: "./media/characters/vanrel/front.svg",
-                    extra: 1086/1010
+                    source: "./media/characters/vanrel-hyena/front.svg",
+                    extra: 1086/1010 * (1 / (1 - 0.04)),
+                    bottom: 0.04
                 }
             },
         },
@@ -10245,9 +10246,9 @@ characterMakers["Quincy"] = () => {
     )
 };
 
-characterMakers["Vanrel Kuiper"] = () => {
+characterMakers["Vanrel"] = () => {
     return makeCharacter(
-        "Vanrel Kuiper",
+        "Vanrel",
         "Fuzzypaws",
         {
             front: {
@@ -10255,7 +10256,7 @@ characterMakers["Vanrel Kuiper"] = () => {
                 weight: math.unit(150, "lb"),
                 name: "Front",
                 image: {
-                    source: "./media/characters/vanrel-kuiper/front.svg",
+                    source: "./media/characters/vanrel/front.svg",
                     extra: (1 / (1 - 0.02)),
                     bottom: 0.02
                 }
@@ -10265,16 +10266,16 @@ characterMakers["Vanrel Kuiper"] = () => {
                 weight: math.unit(150, "lb"),
                 name: "Side",
                 image: {
-                    source: "./media/characters/vanrel-kuiper/side.svg",
+                    source: "./media/characters/vanrel/side.svg",
                     extra: (1 / (1 - 0.025)),
                     bottom: 0.025
                 }
             },
-            paw: {
+            beans: {
                 height: math.unit(0.89, "feet"),
-                name: "Paw",
+                name: "Beans",
                 image: {
-                    source: "./media/characters/vanrel-kuiper/paw.svg"
+                    source: "./media/characters/vanrel/beans.svg"
                 }
             },
         },

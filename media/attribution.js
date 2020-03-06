@@ -3968,7 +3968,7 @@ const attributionData = {
             ]
         },
         {
-            prefix: "./media/characters/vanrel/",
+            prefix: "./media/characters/vanrel-hyena/",
             files: [
                 { name: "front.svg", source: null }
             ],
@@ -3980,7 +3980,7 @@ const attributionData = {
             ]
         },
         {
-            prefix: "./media/characters/vanrel-kuiper/",
+            prefix: "./media/characters/vanrel/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/30583316/" },
                 { name: "side.svg", source: "https://www.furaffinity.net/view/30583316/" },
