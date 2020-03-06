@@ -6025,7 +6025,7 @@ const attributionData = {
         },
         "cakeycake": {
             "name": "Cake",
-            "url": "https://t.me/CakeyCake",
+            "url": "https://www.furaffinity.net/user/Kypleo",
         },
         "piedunk": {
             "name": "Piedunk",
