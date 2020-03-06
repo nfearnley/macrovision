@@ -3062,6 +3062,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/neos/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "noirdeer"
+            ],
+            owners: [
+                "cakeycake"
+            ]
+        },
+        {
             prefix: "./media/characters/nibbles/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/22964778/" },
@@ -5993,6 +6005,14 @@ const attributionData = {
         "paradisaea": {
             "name": "Paradisaea",
             "url": "https://www.furaffinity.net/user/paradisaea/",
+        },
+        "noirdeer": {
+            "name": "NoirDeer",
+            "url": "https://twitter.com/NoirDeer",
+        },
+        "cakeycake": {
+            "name": "Cake",
+            "url": "https://t.me/CakeyCake",
         },
     }
 }

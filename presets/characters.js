@@ -10368,6 +10368,64 @@ characterMakers["Keset Vanrel"] = () => {
     )
 };
 
+characterMakers["Neos"] = () => {
+    return makeCharacter(
+        "Neos",
+        "CakeyCake",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/neos/front.svg",
+                    extra: 1696/992 * (1 / ( 1 - 0.14)),
+                    bottom: 0.14
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(54, "cm"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(100, "m")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(10, "km")
+            },
+            {
+                name: "Megamacro+",
+                height: math.unit(100, "km")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(100, "Mm")
+            },
+            {
+                name: "Teramacro",
+                height: math.unit(100, "Gm")
+            },
+            {
+                name: "Examacro",
+                height: math.unit(100, "Em")
+            },
+            {
+                name: "Godly",
+                height: math.unit(10000, "Ym")
+            },
+            {
+                name: "Beyond Godly",
+                height: math.unit(10000000, "Ym")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
