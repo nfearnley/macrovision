@@ -10076,7 +10076,7 @@ characterMakers["Chauncey (Chantz)"] = () => {
             },
             {
                 name: "Galactic",
-                height: math.unit(3, "gigaparsecs")
+                height: math.unit(40000, "parsecs")
             },
             {
                 name: "Universal",
