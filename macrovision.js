@@ -33,6 +33,7 @@ const unitChoices = {
         "feet",
         "stories",
         "miles",
+        "AUs",
         "lightyears",
         "parsecs",
     ],

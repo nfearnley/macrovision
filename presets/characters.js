@@ -15,6 +15,9 @@ math.createUnit("lightyears", {
 math.createUnit("AU", {
     definition: "149597870700 meters"
 })
+math.createUnit("AUs", {
+    definition: "149597870700 meters"
+})
 function makeCharacter(name, author, viewInfo, defaultSizes, defaultSize, extraInfo) {
     if (extraInfo === undefined) {
         extraInfo = {}
