@@ -742,10 +742,16 @@ function displayAttribution(file) {
         authorHolder.appendChild(list);
         authors.forEach(author => {
             const authorEntry = document.createElement("li");
-            const link = document.createElement("a");
-            link.href = author.url;
-            link.innerText = author.name;
-            authorEntry.appendChild(link);
+            if (author.url) {
+                const link = document.createElement("a");
+                link.href = author.url;
+                link.innerText = author.name;
+                authorEntry.appendChild(link);
+            } else {
+                const div = document.createElement("div");
+                div.innerText = author.name;
+                authorEntry.appendChild(div);
+            }
             list.appendChild(authorEntry);
         });
 
@@ -768,10 +774,16 @@ function displayAttribution(file) {
         ownerHolder.appendChild(list);
         owners.forEach(owner => {
             const ownerEntry = document.createElement("li");
-            const link = document.createElement("a");
-            link.href = owner.url;
-            link.innerText = owner.name;
-            ownerEntry.appendChild(link);
+            if (owner.url) {
+                const link = document.createElement("a");
+                link.href = owner.url;
+                link.innerText = owner.name;
+                ownerEntry.appendChild(link);
+            } else {
+                const div = document.createElement("div");
+                div.innerText = owner.name;
+                ownerEntry.appendChild(div);
+            }
             list.appendChild(ownerEntry);
         });
 

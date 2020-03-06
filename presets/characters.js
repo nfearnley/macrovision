@@ -10592,6 +10592,31 @@ characterMakers["Chip"] = () => {
     )
 };
 
+characterMakers["Torvid"] = () => {
+    return makeCharacter(
+        "Torvid",
+        "Torvid",
+        {
+            side: {
+                height: math.unit(2.3, "meters"),
+                weight: math.unit(3500, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/torvid/side.svg",
+                    extra: 1972/722 * (1 / (1 - 0.035)),
+                    bottom: 0.035
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(2.3, "meters"),
+                default: true
+            },
+        ]
+    )
+};
 function makeCharacters() {
     const results = [];
     results.push({

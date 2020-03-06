@@ -4024,6 +4024,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/torvid/",
+            files: [
+                { name: "side.svg", source: null }
+            ],
+            authors: [
+                "anonymous"
+            ],
+            owners: [
+                "torvid"
+            ]
+        },
+        {
             prefix: "./media/characters/toto/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/27390320/" }
@@ -6090,6 +6102,14 @@ const attributionData = {
         "chiptuni": {
             "name": "Chiptuni",
             "url": "https://www.furaffinity.net/user/chiptuni/",
+        },
+        "anonymous": {
+            "name": "Anonymous",
+            "url": null,
+        },
+        "torvid": {
+            "name": "Torvid",
+            "url": "https://www.furaffinity.net/user/aberrate/",
         },
     }
 }
