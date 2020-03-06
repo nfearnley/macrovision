@@ -10505,6 +10505,68 @@ characterMakers["Kole"] = () => {
     )
 };
 
+characterMakers["Rufran"] = () => {
+    return makeCharacter(
+        "Rufran",
+        "Rufran",
+        {
+            front: {
+                height: math.unit(2 + 6/12, "feet"),
+                weight: math.unit(20, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/rufran/front.svg",
+                    extra: 2041/1839 * (1 / (1 - 0.055)),
+                    bottom: 0.055
+                }
+            },
+            back: {
+                height: math.unit(2 + 6/12, "feet"),
+                weight: math.unit(20, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/rufran/back.svg",
+                    extra: 2054/1839 * (1 / (1 - 0.01)),
+                    bottom: 0.01
+                }
+            },
+            hand: {
+                height: math.unit(0.2166, "meters"),
+                name: "Hand",
+                image: {
+                    source: "./media/characters/rufran/hand.svg"
+                }
+            },
+            foot: {
+                height: math.unit(0.185, "meters"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/rufran/foot.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(1, "inch")
+            },
+            {
+                name: "Normal",
+                height: math.unit(2 + 6/12, "feet"),
+                default: true
+            },
+            {
+                name: "Big",
+                height: math.unit(60, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(325, "feet")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

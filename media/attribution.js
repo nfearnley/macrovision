@@ -3469,6 +3469,21 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/rufran/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32675074/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/32675074/" },
+                { name: "hand.svg", source: "https://www.furaffinity.net/view/32675074/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/32675074/" },
+            ],
+            authors: [
+                "kingadee"
+            ],
+            owners: [
+                "rufran"
+            ]
+        },
+        {
             prefix: "./media/characters/sal/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/29011243/" }
@@ -6051,6 +6066,14 @@ const attributionData = {
         "eunalis": {
             "name": "Eunalis",
             "url": "https://www.fiverr.com/eunalis",
+        },
+        "kingadee": {
+            "name": "Kingadee",
+            "url": "https://www.furaffinity.net/user/kingadee",
+        },
+        "rufran": {
+            "name": "Rufran",
+            "url": "https://www.furaffinity.net/user/rufran/",
         },
     }
 }
