@@ -86,14 +86,12 @@ body.toggle-entity-name .entity-name {
     overflow-y: scroll;
     height: 100%;
     scrollbar-color: #e1e1e1 #888;
-    scrollbar-width: thin;
 }
 
 #options-attribution {
     display: none;
 }
 #options::-webkit-scrollbar {
-    width: 3px;
     height: 2px;
   }
 #options::-webkit-scrollbar-button {
