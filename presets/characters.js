@@ -10245,6 +10245,49 @@ characterMakers["Quincy"] = () => {
     )
 };
 
+characterMakers["Vanrel Kuiper"] = () => {
+    return makeCharacter(
+        "Vanrel Kuiper",
+        "Fuzzypaws",
+        {
+            front: {
+                height: math.unit(4 + 7/12, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/vanrel-kuiper/front.svg",
+                    extra: (1 / (1 - 0.02)),
+                    bottom: 0.02
+                }
+            },
+            side: {
+                height: math.unit(4 + 7/12, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/vanrel-kuiper/side.svg",
+                    extra: (1 / (1 - 0.025)),
+                    bottom: 0.025
+                }
+            },
+            paw: {
+                height: math.unit(0.89, "feet"),
+                name: "Paw",
+                image: {
+                    source: "./media/characters/vanrel-kuiper/paw.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(4 + 7/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
