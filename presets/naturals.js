@@ -99,7 +99,7 @@ function makeNaturals() {
     results.push(makePlanet("Betelgeuse", math.unit(1234.2e6, "mi"), math.unit(2.188e31, "kg")));
     results.push(makePlanet("Milky Way", math.unit(105700, "lightyears"), math.unit(3e+39, "kg"), { source: "./media/naturals/milky-way.svg" }));
     results.push(makePlanet("Observable Universe", math.unit(93.016e9, "lightyears"), math.unit(10e53, "kg")));
-    results.push(makePlanet("Multiverse", math.unit(93.016e12, "lightyears"), math.unit(10e62, "kg")));
+    results.push(makePlanet("Multiverse", math.unit(1e30, "lightyears"), math.unit(1e100, "kg")));
 
     results.push(makeState("Alaska", math.unit(2071.44, "km"), math.unit(2483.83, "km"), math.unit(1723337, "km^2")));
     results.push(makeState("California", math.unit(1048.82, "km"), math.unit(852.02, "km"), math.unit(423967, "km^2")));
