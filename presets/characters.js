@@ -10190,6 +10190,61 @@ characterMakers["Matvei"] = () => {
     )
 };
 
+characterMakers["Quincy"] = () => {
+    return makeCharacter(
+        "Quincy",
+        "Paradisaea",
+        {
+            front: {
+                height: math.unit(5 + 9/12, "feet"),
+                weight: math.unit(70, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/quincy/front.svg",
+                    extra: 3041/2751 
+                }
+            },
+            back: {
+                height: math.unit(5 + 9/12, "feet"),
+                weight: math.unit(70, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/quincy/back.svg",
+                    extra: 3041/2751 
+                }
+            },
+            flying: {
+                height: math.unit(5 + 4/12, "feet"),
+                weight: math.unit(70, "lb"),
+                name: "Flying",
+                image: {
+                    source: "./media/characters/quincy/flying.svg",
+                    extra: 1044/930
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(3, "cm")
+            },
+            {
+                name: "Normal",
+                height: math.unit(5 + 9/12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(200, "meters"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(1000, "meters")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

@@ -3276,6 +3276,31 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/quincy/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32621463/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/32621463/" },
+            ],
+            authors: [
+                "fireflufferz"
+            ],
+            owners: [
+                "paradisaea"
+            ]
+        },
+        {
+            prefix: "./media/characters/quincy/",
+            files: [
+                { name: "flying.svg", source: "https://www.furaffinity.net/view/33887810/" }
+            ],
+            authors: [
+                "kirena-kaya"
+            ],
+            owners: [
+                "paradisaea"
+            ]
+        },
+        {
             prefix: "./media/characters/rai/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/19705050/" },
@@ -5915,6 +5940,18 @@ const attributionData = {
         "epifox": {
             "name": "epifox",
             "url": "https://t.me/epifox",
+        },
+        "fireflufferz": {
+            "name": "fireflufferz",
+            "url": "https://www.furaffinity.net/user/fireflufferz",
+        },
+        "kirena-kaya": {
+            "name": "Kirena-Kaya",
+            "url": "https://www.furaffinity.net/user/kirena-kaya",
+        },
+        "paradisaea": {
+            "name": "Paradisaea",
+            "url": "https://www.furaffinity.net/user/paradisaea/",
         },
     }
 }
