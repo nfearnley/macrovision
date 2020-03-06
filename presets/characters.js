@@ -3060,6 +3060,8 @@ characterMakers["Scott"] = () => {
                 name: "Side",
                 image: {
                     source: "./media/characters/scott/side.svg",
+                    extra: (1 / (1 - 0.069)),
+                    bottom: 0.069
                 }
             },
             upright: {
@@ -3068,6 +3070,8 @@ characterMakers["Scott"] = () => {
                 name: "Upright",
                 image: {
                     source: "./media/characters/scott/upright.svg",
+                    extra: (1 / (1 - 0.05)),
+                    bottom: 0.05
                 }
             },
 
