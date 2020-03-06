@@ -2524,6 +2524,20 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/keset-vanrel/",
+            files: [
+                { name: "front.svg", source: null },
+                { name: "hand.svg", source: null },
+                { name: "foot.svg", source: null },
+            ],
+            authors: [
+                "buckdasystem"
+            ],
+            owners: [
+                "kuipaws"
+            ]
+        },
+        {
             prefix: "./media/characters/kimiko/",
             files: [
                 { name: "side.svg", source: "https://www.furaffinity.net/view/32689858/" }
@@ -2570,6 +2584,19 @@ const attributionData = {
             ],
             owners: [
                 "koragos"
+            ]
+        },
+        {
+            prefix: "./media/characters/kuiper-vanrel/",
+            files: [
+                { name: "front.svg", source: null },
+                { name: "foot.svg", source: null },
+            ],
+            authors: [
+                "buckdasystem"
+            ],
+            owners: [
+                "kuipaws"
             ]
         },
         {
@@ -3984,7 +4011,7 @@ const attributionData = {
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/30583316/" },
                 { name: "side.svg", source: "https://www.furaffinity.net/view/30583316/" },
-                { name: "paw.svg", source: "https://www.furaffinity.net/view/30583316/" },
+                { name: "beans.svg", source: "https://www.furaffinity.net/view/30583316/" },
             ],
             authors: [
                 "buckdasystem"

@@ -10249,7 +10249,7 @@ characterMakers["Quincy"] = () => {
 characterMakers["Vanrel"] = () => {
     return makeCharacter(
         "Vanrel",
-        "Fuzzypaws",
+        "KuiPaws",
         {
             front: {
                 height: math.unit(4 + 7/12, "feet"),
@@ -10284,6 +10284,78 @@ characterMakers["Vanrel"] = () => {
                 name: "Normal",
                 height: math.unit(4 + 7/12, "feet"),
                 default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Kuiper Vanrel"] = () => {
+    return makeCharacter(
+        "Kuiper Vanrel",
+        "KuiPaws",
+        {
+            front: {
+                height: math.unit(7 + 5/12, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/kuiper-vanrel/front.svg",
+                    extra: 1118/1068 * (1 / (1 - 0.09)),
+                    bottom: 0.09
+                }
+            },
+            foot: {
+                height: math.unit(0.55, "meters"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/kuiper-vanrel/foot.svg",
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(7 + 5/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Keset Vanrel"] = () => {
+    return makeCharacter(
+        "Keset Vanrel",
+        "KuiPaws",
+        {
+            front: {
+                height: math.unit(8 + 5/12, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/keset-vanrel/front.svg",
+                    extra: 1150/1084 * (1 / (1 - 0.05)),
+                    bottom: 0.05
+                }
+            },
+            hand: {
+                height: math.unit(0.6, "meters"),
+                name: "Hand",
+                image: {
+                    source: "./media/characters/keset-vanrel/hand.svg"
+                }
+            },
+            foot: {
+                height: math.unit(0.94978, "meters"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/keset-vanrel/foot.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(8 + 5/12, "feet")
             },
         ]
     )
