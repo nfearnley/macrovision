@@ -10867,6 +10867,42 @@ characterMakers["Dixon"] = () => {
     )
 };
 
+characterMakers["Kauko"] = () => {
+    return makeCharacter(
+        "Kauko",
+        "Kauko",
+        {
+            front: {
+                height: math.unit(185, "cm"),
+                weight: math.unit(68, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/kauko/front.svg",
+                    extra: 1455/1421 * (1 / (1 - 0.03)),
+                    bottom: 0.03
+                }
+            },
+            back: {
+                height: math.unit(185, "cm"),
+                weight: math.unit(68, "kg"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/kauko/back.svg",
+                    extra: 1455/1421 * (1 / (1 - 0.004)),
+                    bottom: 0.004
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(185, "cm"),
+                default: true
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

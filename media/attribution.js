@@ -2524,6 +2524,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/kauko/",
+            files: [
+                { name: "front.svg", source: "https://kauko.app/refs/kingcheetah.html" },
+                { name: "back.svg", source: "https://kauko.app/refs/kingcheetah.html" },
+            ],
+            authors: [
+                "amberaria"
+            ],
+            owners: [
+                "kauko"
+            ]
+        },
+        {
             prefix: "./media/characters/kayroo/",
             files: [
                 { name: "front.svg", source: null }
@@ -6228,6 +6241,14 @@ const attributionData = {
         "megan": {
             "name": "Megan",
             "url": "https://www.furaffinity.net/user/megan",
+        },
+        "kauko": {
+            "name": "Kauko",
+            "url": "https://kauko.app/",
+        },
+        "amberaria": {
+            "name": "Amber-Aria",
+            "url": "https://www.weasyl.com/~amberaria",
         },
     }
 }
