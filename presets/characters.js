@@ -10903,6 +10903,36 @@ characterMakers["Kauko"] = () => {
     )
 };
 
+characterMakers["Varg"] = () => {
+    return makeCharacter(
+        "Varg",
+        "va0027",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/varg/front.svg",
+                    extra: 1108/1018 * (1 / (1 - 0.0375)),
+                    bottom: 0.0375
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5, "meters"),
+                default: true
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(211, "km")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

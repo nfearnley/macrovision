@@ -4197,6 +4197,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/varg/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33879374/" }
+            ],
+            authors: [
+                "va0027"
+            ],
+            owners: [
+                "pocketcookie"
+            ]
+        },
+        {
             prefix: "./media/characters/vector-wuff/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/16031607" }
@@ -6249,6 +6261,14 @@ const attributionData = {
         "amberaria": {
             "name": "Amber-Aria",
             "url": "https://www.weasyl.com/~amberaria",
+        },
+        "va0027": {
+            "name": "va0027",
+            "url": "https://www.furaffinity.net/user/va0027/",
+        },
+        "pocketcookie": {
+            "name": "pocketcookie",
+            "url": "https://www.furaffinity.net/user/pocketcookie",
         },
     }
 }
