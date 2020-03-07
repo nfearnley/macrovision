@@ -1930,6 +1930,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/drusilla/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/22510474/" }
+            ],
+            authors: [
+                "inkrend"
+            ],
+            owners: [
+                "neopuc"
+            ]
+        },
+        {
             prefix: "./media/characters/dr-clay/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/33619821/" },
@@ -6427,6 +6439,10 @@ const attributionData = {
         "ikidami": {
             "name": "Ikidami",
             "url": "http://aminoapps.com/p/sip2au",
+        },
+        "inkrend": {
+            "name": "inkrend",
+            "url": "https://www.furaffinity.net/user/inkrend",
         },
     }
 }

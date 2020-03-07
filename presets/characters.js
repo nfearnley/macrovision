@@ -11375,6 +11375,47 @@ characterMakers["Lucy"] = () => {
     )
 };
 
+characterMakers["Drusilla"] = () => {
+    return makeCharacter(
+        "Drusilla",
+        "Neopuc",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/drusilla/front.svg",
+                    extra: 678/635 * (1 / (1 - 0.03)),
+                    bottom: 0.03
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/drusilla/back.svg",
+                    extra: 678/635 * (1 / (1 - 0.005)),
+                    bottom: 0.005
+
+                }
+            },
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(100, "feet")
+            },
+            {
+                name: "Canon Height",
+                height: math.unit(2000, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
