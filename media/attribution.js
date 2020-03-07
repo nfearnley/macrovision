@@ -3380,6 +3380,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/raindrops/",
+            files: [
+                { name: "front.svg", source: null },
+                { name: "back.svg", source: null },
+            ],
+            authors: [
+                "chephe"
+            ],
+            owners: [
+                "raindropsjfl"
+            ]
+        },
+        {
             prefix: "./media/characters/ranek/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/13716690/" },
@@ -6130,6 +6143,14 @@ const attributionData = {
         "takkel": {
             "name": "takkel",
             "url": "http://aminoapps.com/p/h45283",
+        },
+        "chephe": {
+            "name": "Chephe",
+            "url": "https://www.furaffinity.net/user/chephe",
+        },
+        "raindropsjfl": {
+            "name": "RaindropsJFL",
+            "url": "https://www.furaffinity.net/user/raindropsjfl/",
         },
     }
 }

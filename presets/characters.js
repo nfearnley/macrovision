@@ -10643,6 +10643,63 @@ characterMakers["Susan"] = () => {
         ]
     )
 };
+
+characterMakers["Raindrops"] = () => {
+    return makeCharacter(
+        "Raindrops",
+        "RaindropsJFL",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/raindrops/front.svg",
+                    extra: 2655/2461 * (1 / (1 - 0.02)),
+                    bottom: 0.02
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/raindrops/back.svg",
+                    extra: 2574/2400 * (1 / (1 - 0.03)),
+                    bottom: 0.03
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(6, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(6 + 2/12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(131, "feet"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(15, "miles")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(4000, "miles")
+            },
+            {
+                name: "Teramacro",
+                height: math.unit(315000, "miles")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
