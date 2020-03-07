@@ -1879,6 +1879,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/dixon/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "seabury"
+            ],
+            owners: [
+                "seabury"
+            ]
+        },
+        {
             prefix: "./media/characters/dominic/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/29943695/" },
@@ -5711,7 +5723,7 @@ const attributionData = {
         },
         "seabury": {
             "name": "Seabury",
-            "url": "https://www.instagram.com/seaburyyy/",
+            "url": "https://www.furaffinity.net/user/seabury",
         },
         "ilikefurrystoo": {
             "name": "ilikefurrystoo",

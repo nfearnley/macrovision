@@ -10829,6 +10829,44 @@ characterMakers["Lyra Von Wulf"] = () => {
     )
 };
 
+characterMakers["Dixon"] = () => {
+    return makeCharacter(
+        "Dixon",
+        "Seabury",
+        {
+            front: {
+                height: math.unit(6 + 10/12, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/dixon/front.svg",
+                    extra: 3361/3209 * (1 / (1 - 0.01)),
+                    bottom: 0.01
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6 + 10/12, "feet"),
+                default: true
+            },
+            {
+                name: "Big",
+                height: math.unit(12, "meters")
+            },
+            {
+                name: "Macro",
+                height: math.unit(500, "meters")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(2, "km")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
