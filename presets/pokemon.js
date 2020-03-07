@@ -23957,7 +23957,7 @@ pokemonMakers["Mime Jr."] = () => {
     weight: math.unit("28.7", "lbs"),
     name: "Mime Jr.",
     image: {
-        source: "./media/pokemon/Mime Jr..svg"
+        source: "./media/pokemon/Mime Jr.svg"
     },
     rename: true
 }
