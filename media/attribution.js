@@ -1427,7 +1427,7 @@ const attributionData = {
                 { name: "side.svg", source: null }
             ],
             authors: [
-                "ashrsek"
+                "ashtrek"
             ],
             owners: [
                 "aviraptia"
