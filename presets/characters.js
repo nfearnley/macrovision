@@ -11170,6 +11170,63 @@ characterMakers["Mocha Aura"] = () => {
     )
 };
 
+characterMakers["Ilisha Devya"] = () => {
+    return makeCharacter(
+        "Ilisha Devya",
+        "Neopuc",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/ilisha-devya/front.svg",
+                    extra: (1 / (1 - 0.175)),
+                    bottom: 0.175
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/ilisha-devya/back.svg",
+                    extra: (1 / (1 - 0.015)),
+                    bottom: 0.015
+                }
+            },
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(500, "feet"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(10, "miles")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(100000, "miles")
+            },
+            {
+                name: "Examacro",
+                height: math.unit(1e9, "lightyears")
+            },
+            {
+                name: "Omniversal",
+                height: math.unit(1e33, "lightyears")
+            },
+            {
+                name: "Beyond Infinite",
+                height: math.unit(1e100, "lightyears")
+            },
+        ]
+    )
+};
+
+
 function makeCharacters() {
     const results = [];
     results.push({

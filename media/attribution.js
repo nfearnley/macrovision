@@ -2339,6 +2339,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/ilisha-devya/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/12295130/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/12295130/" },
+            ],
+            authors: [
+                "keedot"
+            ],
+            owners: [
+                "neopuc"
+            ]
+        },
+        {
             prefix: "./media/characters/ikideru/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/23702428/" },
@@ -6347,6 +6360,10 @@ const attributionData = {
         "redthegamr": {
             "name": "Redthegamr",
             "url": "https://www.furaffinity.net/user/redthegamr",
+        },
+        "keedot": {
+            "name": "Keedot",
+            "url": "https://www.furaffinity.net/user/keedot/",
         },
     }
 }
