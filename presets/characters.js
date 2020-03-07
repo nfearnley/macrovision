@@ -10922,12 +10922,12 @@ characterMakers["Varg"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(5, "meters"),
-                default: true
+                height: math.unit(5, "meters")
             },
             {
                 name: "Gigamacro",
-                height: math.unit(211, "km")
+                height: math.unit(211, "km"),
+                default: true
             },
         ]
     )
