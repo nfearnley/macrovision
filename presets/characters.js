@@ -10733,6 +10733,31 @@ characterMakers["Tezwa"] = () => {
     )
 };
 
+characterMakers["Typhus"] = () => {
+    return makeCharacter(
+        "Typhus",
+        "Jasmith",
+        {
+            front: {
+                height: math.unit(58, "feet"),
+                weight: math.unit(89000, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/typhus/front.svg",
+                    extra: 816/800 * (1 / (1 - 0.065)),
+                    bottom: 0.065
+                }
+            },
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(58, "feet")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

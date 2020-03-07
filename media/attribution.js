@@ -4085,6 +4085,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/typhus/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "anonymous"
+            ],
+            owners: [
+                "jasmith"
+            ]
+        },
+        {
             prefix: "./media/characters/tyrone/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/32053722/" }
