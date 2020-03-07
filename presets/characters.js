@@ -11226,6 +11226,129 @@ characterMakers["Ilisha Devya"] = () => {
     )
 };
 
+characterMakers["Mira"] = () => {
+    return makeCharacter(
+        "Mira",
+        "Neopuc",
+        {
+            Side: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/mira/side.svg",
+                    extra: 900/799 * (1 / (1 - 0.02)),
+                    bottom: 0.02
+                }
+            },
+        },
+        [
+            {
+                name: "Human Size",
+                height: math.unit(6, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(100, "feet"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(10, "miles")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(25000, "miles")
+            },
+            {
+                name: "Teramacro",
+                height: math.unit(300, "AU")
+            },
+            {
+                name: "Full Size",
+                height: math.unit(4.5e10, "lightyears")
+            },
+        ]
+    )
+};
+
+characterMakers["Holly"] = () => {
+    return makeCharacter(
+        "Holly",
+        "Neopuc",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/holly/front.svg",
+                    extra: 639/606
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/holly/back.svg",
+                    extra: 623/598
+                }
+            },
+            frontWorking: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front (Working)",
+                image: {
+                    source: "./media/characters/holly/front-working.svg",
+                    extra: 607/577 * (1 / (1 - 0.048)),
+                    bottom: 0.048
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(12 + 3/12, "feet")
+            },
+        ]
+    )
+};
+
+characterMakers["Porter"] = () => {
+    return makeCharacter(
+        "Porter",
+        "Neopuc",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/porter/front.svg",
+                    extra: 1 / (1 - 0.01),
+                    bottom: 0.01
+                }
+            },
+            frontRobes: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front (Robes)",
+                image: {
+                    source: "./media/characters/porter/front-robes.svg",
+                    extra: 1.01 * (1 / (1 - 0.01)),
+                    bottom: 0.01
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(11 + 9/12, "feet")
+            },   
+        ]
+    )
+};
 
 function makeCharacters() {
     const results = [];

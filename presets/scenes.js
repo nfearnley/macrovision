@@ -67,6 +67,21 @@ scenes["Kurri"] = () => {
     
     arrangeEntities(getSortedEntities());
     fitWorld(true);
+}
 
-
+scenes["Neopuc"] = () => {
+    availableEntities["characters"].filter(x => {
+        const entity = x.constructor();
+        const owners = ownersOf(entity.views[entity.view].image.source);
+        if (owners)
+            return owners.indexOf("neopuc") != -1;
+        else
+            return false;
+    }).forEach(maker => {
+        const entity = maker.constructor();
+        displayEntity(entity, entity.view, 0, 1);
+    });
+    
+    arrangeEntities(getSortedEntities());
+    fitWorld(true);
 }

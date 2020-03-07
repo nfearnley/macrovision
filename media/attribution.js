@@ -2339,6 +2339,20 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/holly/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/19248385/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/19248385/" },
+                { name: "front-working.svg", source: "https://www.furaffinity.net/view/19248385/" },
+            ],
+            authors: [
+                "touchofsnow"
+            ],
+            owners: [
+                "neopuc"
+            ]
+        },
+        {
             prefix: "./media/characters/ilisha-devya/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/12295130/" },
@@ -3051,6 +3065,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/mira/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/12856326/" }
+            ],
+            authors: [
+                "modemredpill"
+            ],
+            owners: [
+                "neopuc"
+            ]
+        },
+        {
             prefix: "./media/characters/mira-al-cul/",
             files: [
                 { name: "lamp.svg", source: "https://www.furaffinity.net/view/24240755/" },
@@ -3414,6 +3440,19 @@ const attributionData = {
             ],
             owners: [
                 "pisces-kelp"
+            ]
+        },
+        {
+            prefix: "./media/characters/porter/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/19472014/" },
+                { name: "front-robes.svg", source: "https://www.furaffinity.net/view/19472014/" },
+            ],
+            authors: [
+                "homogeneousrule"
+            ],
+            owners: [
+                "neopuc"
             ]
         },
         {
@@ -6364,6 +6403,14 @@ const attributionData = {
         "keedot": {
             "name": "Keedot",
             "url": "https://www.furaffinity.net/user/keedot/",
+        },
+        "modemredpill": {
+            "name": "modem_redpill",
+            "url": "https://www.furaffinity.net/user/modemredpill/",
+        },
+        "touchofsnow": {
+            "name": "touchofsnow",
+            "url": "https://www.furaffinity.net/user/touchofsnow/",
         },
     }
 }
