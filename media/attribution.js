@@ -1879,6 +1879,20 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/dayza/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/31199018/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/31199018/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/31199018/" },
+            ],
+            authors: [
+                "kei100"
+            ],
+            owners: [
+                "vonadi"
+            ]
+        },
+        {
             prefix: "./media/characters/dixon/",
             files: [
                 { name: "front.svg", source: null }
@@ -6269,6 +6283,10 @@ const attributionData = {
         "pocketcookie": {
             "name": "pocketcookie",
             "url": "https://www.furaffinity.net/user/pocketcookie",
+        },
+        "kei100": {
+            "name": "kei100",
+            "url": "https://www.furaffinity.net/user/kei100",
         },
     }
 }

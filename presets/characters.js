@@ -10933,6 +10933,55 @@ characterMakers["Varg"] = () => {
     )
 };
 
+characterMakers["Dayza"] = () => {
+    return makeCharacter(
+        "Dayza",
+        "Vonadi",
+        {
+            front: {
+                height: math.unit(7 + 7/12, "feet"),
+                weight: math.unit(267, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/dayza/front.svg",
+                    extra: 1262/1200 * (1 / (1 - 0.035)),
+                    bottom: 0.035
+                }
+            },
+            side: {
+                height: math.unit(7 + 7/12, "feet"),
+                weight: math.unit(267, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/dayza/side.svg",
+                    extra: 1295/1245 * (1 / (1 - 0.05)),
+                    bottom: 0.05
+                }
+            },
+            back: {
+                height: math.unit(7 + 7/12, "feet"),
+                weight: math.unit(267, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/dayza/back.svg",
+                    extra: 1241/1170
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(7 + 7/12, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(155, "feet")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
