@@ -11106,6 +11106,70 @@ characterMakers["Grynn"] = () => {
     )
 };
 
+characterMakers["Mocha Aura"] = () => {
+    return makeCharacter(
+        "Mocha Aura",
+        "Mocha-Aura",
+        {
+            front: {
+                height: math.unit(7 + 5/12, "feet"),
+                weight: math.unit(450, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/mocha-aura/front.svg",
+                    extra: 1907/1817 * (1 / (1 - 0.04)),
+                    bottom: 0.04
+                }
+            },
+            back: {
+                height: math.unit(7 + 5/12, "feet"),
+                weight: math.unit(450, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/mocha-aura/back.svg",
+                    extra: 1900/1825 * (1 / (1 - 0.045)),
+                    bottom: 0.045
+                }
+            },
+        },
+        [
+            {
+                name: "Nano",
+                height: math.unit(1, "nm")
+            },
+            {
+                name: "Megamicro",
+                height: math.unit(1, "mm")
+            },
+            {
+                name: "Micro",
+                height: math.unit(3, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(7 + 5/12, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(30, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(3500, "feet")
+            },
+            {
+                name: "Teramacro",
+                height: math.unit(500000, "miles")
+            },
+            {
+                name: "Petamacro",
+                height: math.unit(50000000000000000 , "parsecs")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

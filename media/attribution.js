@@ -3063,6 +3063,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/mocha-aura/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34482039/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/34482039/" },
+            ],
+            authors: [
+                "redthegamr"
+            ],
+            owners: [
+                "mocha-aura"
+            ]
+        },
+        {
             prefix: "./media/characters/moody/",
             files: [
                 { name: "front.svg", source: "https://twitter.com/MoodysterDog/status/1234200931161583619" }
@@ -6326,6 +6339,14 @@ const attributionData = {
         "gid-g11": {
             "name": "Gid_g11",
             "url": "https://twitter.com/Gid_g11/",
+        },
+        "mocha-aura": {
+            "name": "Mocha-Aura",
+            "url": "https://www.furaffinity.net/user/mocha-aura/",
+        },
+        "redthegamr": {
+            "name": "Redthegamr",
+            "url": "https://www.furaffinity.net/user/redthegamr",
         },
     }
 }
