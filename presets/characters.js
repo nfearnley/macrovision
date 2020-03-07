@@ -11052,6 +11052,60 @@ characterMakers["Xanthos"] = () => {
     )
 };
 
+characterMakers["Grynn"] = () => {
+    return makeCharacter(
+        "Grynn",
+        "Grynn",
+        {
+            front: {
+                height: math.unit(6 + 3/12, "feet"),
+                weight: math.unit(215, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/grynn/front.svg",
+                    extra: 4627/4209 * (1 / (1 - 0.047)),
+                    bottom: 0.047
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(6, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(6 + 3/12, "feet"),
+                default: true
+            },
+            {
+                name: "Big",
+                height: math.unit(104, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(944, "feet")
+            },
+            {
+                name: "Macro+",
+                height: math.unit(9480, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(78752, "feet")
+            },
+            {
+                name: "Megamacro+",
+                height: math.unit(630128, "feet")
+            },
+            {
+                name: "Megamacro++",
+                height: math.unit(3150695, "feet")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

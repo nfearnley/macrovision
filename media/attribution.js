@@ -2302,6 +2302,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/grynn/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/Gid_g11/status/1175459125091688448" }
+            ],
+            authors: [
+                "gid-g11"
+            ],
+            owners: [
+                "eik"
+            ]
+        },
+        {
             prefix: "./media/characters/gunner-rotthbauer/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/17819310/" },
@@ -6306,6 +6318,14 @@ const attributionData = {
         "adalfyre": {
             "name": "Adalfyre",
             "url": "https://www.furaffinity.net/user/adalfyre",
+        },
+        "eik": {
+            "name": "Eik",
+            "url": "https://www.furaffinity.net/user/eik/",
+        },
+        "gid-g11": {
+            "name": "Gid_g11",
+            "url": "https://twitter.com/Gid_g11/",
         },
     }
 }
