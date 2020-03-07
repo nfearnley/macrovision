@@ -10617,6 +10617,32 @@ characterMakers["Torvid"] = () => {
         ]
     )
 };
+
+characterMakers["Susan"] = () => {
+    return makeCharacter(
+        "Susan",
+        "Jasmith",
+        {
+            front: {
+                height: math.unit(2, "meters"),
+                weight: math.unit(150.5, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/susan/front.svg",
+                    extra: 693/635 * (1 / (1 - 0.05)),
+                    bottom: 0.05
+                }
+            },
+        },
+        [
+            {
+                name: "Megamacro",
+                height: math.unit(505, "miles"),
+                default: true
+            },
+        ]
+    )
+};
 function makeCharacters() {
     const results = [];
     results.push({

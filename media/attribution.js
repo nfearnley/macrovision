@@ -3900,6 +3900,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/susan/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35302940/" }
+            ],
+            authors: [
+                "takkel"
+            ],
+            owners: [
+                "jasmith"
+            ]
+        },
+        {
             prefix: "./media/characters/sven-the-kaiju/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/32824691/" }
@@ -6111,8 +6123,18 @@ const attributionData = {
             "name": "Torvid",
             "url": "https://www.furaffinity.net/user/aberrate/",
         },
+        "jasmith": {
+            "name": "Jasmith",
+            "url": "https://www.furaffinity.net/user/jasmith/",
+        },
+        "takkel": {
+            "name": "takkel",
+            "url": "http://aminoapps.com/p/h45283",
+        },
     }
 }
+
+//end
 
 const attribution = {};
 
