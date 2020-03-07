@@ -4024,6 +4024,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/tezwa/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/31301609" }
+            ],
+            authors: [
+                "pixiefyre"
+            ],
+            owners: [
+                "titantezwa"
+            ]
+        },
+        {
             prefix: "./media/characters/tiberius/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/34977812/" },
@@ -6151,6 +6163,10 @@ const attributionData = {
         "raindropsjfl": {
             "name": "RaindropsJFL",
             "url": "https://www.furaffinity.net/user/raindropsjfl/",
+        },
+        "titantezwa": {
+            "name": "TitanTezwa",
+            "url": "https://www.furaffinity.net/user/titantezwa/",
         },
     }
 }

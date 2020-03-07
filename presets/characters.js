@@ -10700,6 +10700,39 @@ characterMakers["Raindrops"] = () => {
     )
 };
 
+characterMakers["Tezwa"] = () => {
+    return makeCharacter(
+        "Tezwa",
+        "TitanTezwa",
+        {
+            front: {
+                height: math.unit(2.794, "meters"),
+                weight: math.unit(325, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/tezwa/front.svg",
+                    extra: 2083/1906 * (1 / (1 - 0.031)),
+                    bottom: 0.031
+                }
+            },
+            foot: {
+                height: math.unit(0.687, "meters"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/tezwa/foot.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(9 + 2/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
