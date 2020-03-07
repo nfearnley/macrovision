@@ -2802,6 +2802,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/lucy/",
+            files: [
+                { name: "legendary.svg", source: "https://www.furaffinity.net/view/35325241" }
+            ],
+            authors: [
+                "ikidami"
+            ],
+            owners: [
+                "jasmith"
+            ]
+        },
+        {
             prefix: "./media/characters/luka/",
             files: [
                 { name: "front.svg", source: "https://twitter.com/UmbraHusky/status/1100146009114624000" }
@@ -6411,6 +6423,10 @@ const attributionData = {
         "touchofsnow": {
             "name": "touchofsnow",
             "url": "https://www.furaffinity.net/user/touchofsnow/",
+        },
+        "ikidami": {
+            "name": "Ikidami",
+            "url": "http://aminoapps.com/p/sip2au",
         },
     }
 }

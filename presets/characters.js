@@ -11350,6 +11350,31 @@ characterMakers["Porter"] = () => {
     )
 };
 
+characterMakers["Lucy"] = () => {
+    return makeCharacter(
+        "Lucy",
+        "Jasmith",
+        {
+            legendary: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Legendary",
+                image: {
+                    source: "./media/characters/lucy/legendary.svg",
+                    extra: 1355/1100 * (1 / (1 - 0.045)),
+                    bottom: 0.045
+                }
+            },
+        },
+        [
+            {
+                name: "Legendary",
+                height: math.unit(86882*2, "miles")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
