@@ -2748,6 +2748,31 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/lyra-von-wulf/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/27017631/" },
+                { name: "maw.svg", source: "https://www.furaffinity.net/view/27017631/" }
+            ],
+            authors: [
+                "megan"
+            ],
+            owners: [
+                "wanny131"
+            ]
+        },
+        {
+            prefix: "./media/characters/lyra-von-wulf/",
+            files: [
+                { name: "front-mecha.svg", source: "https://www.furaffinity.net/view/28523811/" }
+            ],
+            authors: [
+                "rhinoking"
+            ],
+            owners: [
+                "wanny131"
+            ]
+        },
+        {
             prefix: "./media/characters/major-colonel/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/20721264/" },
@@ -6179,6 +6204,18 @@ const attributionData = {
         "titantezwa": {
             "name": "TitanTezwa",
             "url": "https://www.furaffinity.net/user/titantezwa/",
+        },
+        "wanny131": {
+            "name": "Wanny131",
+            "url": "https://www.furaffinity.net/user/wanny131/",
+        },
+        "rhinoking": {
+            "name": "rhinoking",
+            "url": "https://www.furaffinity.net/user/rhinoking",
+        },
+        "megan": {
+            "name": "Megan",
+            "url": "https://www.furaffinity.net/user/megan",
         },
     }
 }

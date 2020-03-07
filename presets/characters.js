@@ -10758,6 +10758,77 @@ characterMakers["Typhus"] = () => {
     )
 };
 
+characterMakers["Lyra Von Wulf"] = () => {
+    return makeCharacter(
+        "Lyra Von Wulf",
+        "LyraVonWulf",
+        {
+            front: {
+                height: math.unit(12, "feet"),
+                weight: math.unit(6, "tonnes"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/lyra-von-wulf/front.svg",
+                    extra: (1 / (1 - 0.10)),
+                    bottom: 0.10
+                }
+            },
+            frontMecha: {
+                height: math.unit(12, "feet"),
+                weight: math.unit(12, "tonnes"),
+                name: "Front (Mecha)",
+                image: {
+                    source: "./media/characters/lyra-von-wulf/front-mecha.svg",
+                    extra: (1 / (1 - 0.042)),
+                    bottom: 0.042
+                }
+            },
+            maw: {
+                height: math.unit(2.2, "feet"),
+                name: "Maw",
+                image: {
+                    source: "./media/characters/lyra-von-wulf/maw.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(12, "feet"),
+                default: true
+            },
+            {
+                name: "Classic",
+                height: math.unit(50, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(500, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(1, "mile")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(400, "miles")
+            },
+            {
+                name: "Teramacro",
+                height: math.unit(22000, "miles")
+            },
+            {
+                name: "Solarmacro",
+                height: math.unit(8600000, "miles")
+            },
+            {
+                name: "Galactic",
+                height: math.unit(1057000, "lightyears")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
