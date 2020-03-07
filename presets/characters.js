@@ -10982,6 +10982,76 @@ characterMakers["Dayza"] = () => {
     )
 };
 
+characterMakers["Xanthos"] = () => {
+    return makeCharacter(
+        "Xanthos",
+        "ArgentVZ",
+        {
+            front: {
+                height: math.unit(6 + 5/12, "feet"),
+                weight: math.unit(160, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/xanthos/front.svg",
+                    extra: (1 / (1 - 0.04)),
+                    bottom: 0.04
+                }
+            },
+            back: {
+                height: math.unit(6 + 5/12, "feet"),
+                weight: math.unit(160, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/xanthos/back.svg",
+                    extra: (1 / (1 - 0.03)),
+                    bottom: 0.03
+                }
+            },
+            hand: {
+                height: math.unit(0.928, "feet"),
+                name: "Hand",
+                image: {
+                    source: "./media/characters/xanthos/hand.svg"
+                }
+            },
+            foot: {
+                height: math.unit(1.286, "feet"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/xanthos/foot.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6 + 5/12, "feet"),
+                default: true
+            },
+            {
+                name: "Normal+",
+                height: math.unit(6, "meters")
+            },
+            {
+                name: "Macro",
+                height: math.unit(40, "feet")
+            },
+            {
+                name: "Macro+",
+                height: math.unit(200, "meters")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(20, "km")
+            },
+            {
+                name: "Megamacro+",
+                height: math.unit(100, "km")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

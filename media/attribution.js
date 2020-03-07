@@ -4297,6 +4297,21 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/xanthos/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32008581/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/32008581/" },
+                { name: "hand.svg", source: "https://www.furaffinity.net/view/32008581/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/32008581/" },
+            ],
+            authors: [
+                "adalfyre"
+            ],
+            owners: [
+                "argentvz"
+            ]
+        },
+        {
             prefix: "./media/characters/xavier/",
             files: [
                 { name: "front.svg", source: null },
@@ -6287,6 +6302,10 @@ const attributionData = {
         "kei100": {
             "name": "kei100",
             "url": "https://www.furaffinity.net/user/kei100",
+        },
+        "adalfyre": {
+            "name": "Adalfyre",
+            "url": "https://www.furaffinity.net/user/adalfyre",
         },
     }
 }
