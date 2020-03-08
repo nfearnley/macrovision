@@ -11722,7 +11722,7 @@ characterMakers["XGlidingDragonX"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/x-gliding-dragon-x/front.svg",
-                    extra: 854/691 * (1 / (1 - 0.03)),
+                    extra: 870/670 * (1 / (1 - 0.03)),
                     bottom: 0.03
                 }
             },
