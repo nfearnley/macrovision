@@ -11786,6 +11786,39 @@ characterMakers["Tempest"] = () => {
     )
 };
 
+characterMakers["Rodger"] = () => {
+    return makeCharacter(
+        "Rodger",
+        "Guywithastupidname",
+        {
+            side: {
+                height: math.unit(4 + 5/12, "feet"),
+                weight: math.unit(80, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/rodger/side.svg",
+                    extra: 1235/1118
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(1, "inch")
+            },
+            {
+                name: "Normal",
+                height: math.unit(4 + 5/12, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(120, "feet")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

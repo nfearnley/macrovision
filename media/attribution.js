@@ -3712,6 +3712,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/rodger/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/32827394/" }
+            ],
+            authors: [
+                "timanth"
+            ],
+            owners: [
+                "guywithastupidname"
+            ]
+        },
+        {
             prefix: "./media/characters/rovoska/",
             files: [
                 { name: "side.svg", source: "https://www.furaffinity.net/view/21743555/" }
@@ -6595,6 +6607,14 @@ const attributionData = {
         "xsomeonex": {
             "name": "XsomeoneX",
             "url": "https://www.furaffinity.net/user/xsomeonex/",
+        },
+        "guywithastupidname": {
+            "name": "Guywithastupidname",
+            "url": "https://www.furaffinity.net/user/guywithastupidname/",
+        },
+        "timanth": {
+            "name": "Timanth",
+            "url": "https://www.furaffinity.net/user/timanth",
         },
     }
 }
