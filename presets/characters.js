@@ -8718,24 +8718,32 @@ characterMakers["Adam Silver-Mane"] = () => {
                 height: math.unit(8, "feet")
             },
             {
+                name: "Minimacro",
+                height: math.unit(80, "feet")
+            },
+            {
                 name: "Macro",
                 height: math.unit(800, "feet"),
                 default: true
             },
             {
-                name: "Macro+",
-                height: math.unit(8, "miles")
+                name: "Megamacro",
+                height: math.unit(8000, "feet")
             },
             {
-                name: "Megamacro",
-                height: math.unit(160, "miles")
+                name: "Gigamacro",
+                height: math.unit(800, "miles")
+            },
+            {
+                name: "Teramacro",
+                height: math.unit(80000, "miles")
             },
             {
                 name: "Celestial",
                 height: math.unit(8e6, "miles")
             },
             {
-                name: "Celestial+",
+                name: "Star Dragon",
                 height: math.unit(800000, "parsecs")
             },
             {
