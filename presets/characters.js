@@ -9639,6 +9639,10 @@ characterMakers["Sven the Kaiju"] = () => {
                 name: "Rampage",
                 height: math.unit(200, "feet")
             },
+            {
+                name: "Archfey Forest Guardian",
+                height: math.unit(1, "mile")
+            },
         ]
     )
 };
