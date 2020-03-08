@@ -11737,6 +11737,30 @@ characterMakers["XGlidingDragonX"] = () => {
     )
 };
 
+characterMakers["Quilly"] = () => {
+    return makeCharacter(
+        "Quilly",
+        "Jasmith",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/quilly/front.svg",
+                    extra: 890/776
+                }
+            },
+        },
+        [
+            {
+                name: "Gigamacro",
+                height: math.unit(404090, "miles")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

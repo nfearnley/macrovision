@@ -3544,6 +3544,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/quilly/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35330786/" }
+            ],
+            authors: [
+                "eriol"
+            ],
+            owners: [
+                "jasmith"
+            ]
+        },
+        {
             prefix: "./media/characters/quincy/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/32621463/" },
@@ -6559,6 +6571,10 @@ const attributionData = {
         "xglidingdragonx": {
             "name": "XGlidingDragonX",
             "url": "https://www.furaffinity.net/user/xglidingdragonx/",
+        },
+        "eriol": {
+            "name": "Eriol",
+            "url": "https://aminoapps.com/c/furry-amino/page/user/eriol-space-cadet/lXlD_v5VtRf3ZR304o3PBm6JemKwBrpnEvmtq",
         },
     }
 }
