@@ -1892,6 +1892,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/danyel/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/DanyelxDragon/status/1080540953683873792" }
+            ],
+            authors: [
+                "danyelx"
+            ],
+            owners: [
+                "danyelx"
+            ]
+        },
+        {
             prefix: "./media/characters/dayza/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/31199018/" },
@@ -6615,6 +6627,10 @@ const attributionData = {
         "timanth": {
             "name": "Timanth",
             "url": "https://www.furaffinity.net/user/timanth",
+        },
+        "danyelx": {
+            "name": "DanyelxDragon",
+            "url": "https://twitter.com/DanyelxDragon/",
         },
     }
 }

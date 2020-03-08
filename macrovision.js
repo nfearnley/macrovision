@@ -109,7 +109,7 @@ function updateEntityElement(entity, element, zIndex) {
 
     element.style.left = position.x + "px";
     element.style.top = position.y + "px";
-    const pixels = math.divide(entity.views[view].height, config.height) * (canvasHeight - 100);
+    const pixels = math.divide(entity.views[view].height, config.height) * (canvasHeight - 50);
     const bonus = (entity.views[view].image.extra ? entity.views[view].image.extra : 1);
     element.style.setProperty("--height", pixels * bonus + "px");
 

@@ -11722,7 +11722,7 @@ characterMakers["XGlidingDragonX"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/x-gliding-dragon-x/front.svg",
-                    extra: 870/670 * (1 / (1 - 0.03)),
+                    extra: 860/690 * (1 / (1 - 0.03)),
                     bottom: 0.03
                 }
             },
@@ -11814,6 +11814,40 @@ characterMakers["Rodger"] = () => {
             {
                 name: "Macro",
                 height: math.unit(120, "feet")
+            },
+        ]
+    )
+};
+
+characterMakers["Danyel"] = () => {
+    return makeCharacter(
+        "Danyel",
+        "Danyelx",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/danyel/front.svg",
+                    extra: 1185/1123 * (1 / (1 - 0.05)),
+                    bottom: 0.05
+                }
+            },
+        },
+        [
+            {
+                name: "Shrunken",
+                height: math.unit(0.5, "mm")
+            },
+            {
+                name: "Micro",
+                height: math.unit(1, "mm"),
+                default: true
+            },
+            {
+                name: "Upsized",
+                height: math.unit(5 + 5/12, "feet")
             },
         ]
     )
