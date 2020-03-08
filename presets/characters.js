@@ -11541,6 +11541,50 @@ characterMakers["Sekvra"] = () => {
     )
 };
 
+characterMakers["Carmine"] = () => {
+    return makeCharacter(
+        "Carmine",
+        "Neopuc",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/carmine/front.svg",
+                    extra: 1 / (1 - 0.035),
+                    bottom: 0.035
+                }
+            },
+            frontArmor: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front (Armor)",
+                image: {
+                    source: "./media/characters/carmine/front-armor.svg",
+                    extra: 1 / (1 - 0.035),
+                    bottom: 0.035
+                }
+            },
+        },
+        [
+            {
+                name: "Large",
+                height: math.unit(1, "mile")
+            },
+            {
+                name: "Huge",
+                height: math.unit(40, "miles"),
+                default: true
+            },
+            {
+                name: "Colossal",
+                height: math.unit(2500, "miles")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

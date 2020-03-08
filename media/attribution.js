@@ -1598,6 +1598,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/carmine/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/15395144/" },
+                { name: "front-armor.svg", source: "https://www.furaffinity.net/view/15395144/" },
+            ],
+            authors: [
+                "ashascadence"
+            ],
+            owners: [
+                "neopuc"
+            ]
+        },
+        {
             prefix: "./media/characters/chari-gal/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/32375639/" }
