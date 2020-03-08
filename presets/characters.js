@@ -11887,6 +11887,64 @@ characterMakers["Vivian Bijoux"] = () => {
     )
 };
 
+characterMakers["Zeta"] = () => {
+    return makeCharacter(
+        "Zeta",
+        "thenerdherd102",
+        {
+            front: {
+                height: math.unit(6 + 1/12, "feet"),
+                weight: math.unit(260, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/zeta/front.svg",
+                    extra: 1968/1889 * (1 / (1 - 0.06)),
+                    bottom: 0.06
+                }
+            },
+            back: {
+                height: math.unit(6 + 1/12, "feet"),
+                weight: math.unit(260, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/zeta/back.svg",
+                    extra: 1944/1858 * (1 / (1 - 0.03)),
+                    bottom: 0.03
+                }
+            },
+            hand: {
+                height: math.unit(1.112, "feet"),
+                name: "Hand",
+                image: {
+                    source: "./media/characters/zeta/hand.svg"
+                }
+            },
+            foot: {
+                height: math.unit(1.48, "feet"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/zeta/foot.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(6, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(6 + 1/12, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(20, "feet")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

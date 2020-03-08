@@ -4684,6 +4684,21 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/zeta/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/31897529/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/31897529/" },
+                { name: "hand.svg", source: "https://www.furaffinity.net/view/31897529/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/31897529/" },
+            ],
+            authors: [
+                "ayanaki"
+            ],
+            owners: [
+                "thenerdherd102"
+            ]
+        },
+        {
             prefix: "./media/characters/zevulfius/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/33725369/" },
@@ -6643,6 +6658,14 @@ const attributionData = {
         "danyelx": {
             "name": "DanyelxDragon",
             "url": "https://twitter.com/DanyelxDragon/",
+        },
+        "thenerdherd102": {
+            "name": "thenerdherd102",
+            "url": "https://www.furaffinity.net/user/thenerdherd102/",
+        },
+        "ayanaki": {
+            "name": "ayanaki",
+            "url": "https://www.furaffinity.net/user/ayanaki",
         },
     }
 }
