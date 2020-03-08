@@ -11585,6 +11585,60 @@ characterMakers["Carmine"] = () => {
     )
 };
 
+characterMakers["Elyssia"] = () => {
+    return makeCharacter(
+        "Elyssia",
+        "Neopuc",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/elyssia/front.svg",
+                    extra: 2201/2035 * (1 / (1 - 0.05)),
+                    bottom: 0.05
+                }
+            },
+            frontClothed: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front (Clothed)",
+                image: {
+                    source: "./media/characters/elyssia/front-clothed.svg",
+                    extra: 2201/2035 * (1 / (1 - 0.05)),
+                    bottom: 0.05
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/elyssia/back.svg",
+                    extra: 2201/2035 * (1 / (1 - 0.013)),
+                    bottom: 0.013
+                }
+            },
+        },
+        [
+            {
+                name: "Smaller",
+                height: math.unit(150, "feet")
+            },
+            {
+                name: "Standard",
+                height: math.unit(1400, "feet"),
+                default: true
+            },
+            {
+                name: "Distracted",
+                height: math.unit(15000, "feet")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

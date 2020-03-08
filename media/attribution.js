@@ -2045,6 +2045,20 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/elyssia/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/28619667/" },
+                { name: "front-clothed.svg", source: "https://www.furaffinity.net/view/28619667/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/28619667/" },
+            ],
+            authors: [
+                "fsmaverick"
+            ],
+            owners: [
+                "neopuc"
+            ]
+        },
+        {
             prefix: "./media/characters/epifox/",
             files: [
                 { name: "front.svg", source: null }

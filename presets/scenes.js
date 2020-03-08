@@ -77,10 +77,15 @@ scenes["Neopuc"] = () => {
             return owners.indexOf("neopuc") != -1;
         else
             return false;
-    }).forEach(maker => {
-        const entity = maker.constructor();
+    }).map(maker => {
+        return maker.constructor();
+    }).sort((e1, e2) => {
+        return e1.sizes[e1.sizes.length - 1].height.toNumber() - e2.sizes[e2.sizes.length - 1].height.toNumber()
+    }).reduce((size, entity) => {
+        entity.views[entity.view].height = math.unit(100 * Math.sqrt(size), "meters");
         displayEntity(entity, entity.view, 0, 1);
-    });
+        return size+1;
+    }, 1)
     
     arrangeEntities(getSortedEntities());
     fitWorld(true);
