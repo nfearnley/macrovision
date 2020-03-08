@@ -3647,6 +3647,20 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/renard-thatch/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33586586/" },
+                { name: "front-posing.svg", source: "https://www.furaffinity.net/view/33586586/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/33586586/" },
+            ],
+            authors: [
+                "ifus"
+            ],
+            owners: [
+                "renardthatch"
+            ]
+        },
+        {
             prefix: "./media/characters/rovoska/",
             files: [
                 { name: "side.svg", source: "https://www.furaffinity.net/view/21743555/" }
@@ -6443,6 +6457,14 @@ const attributionData = {
         "inkrend": {
             "name": "inkrend",
             "url": "https://www.furaffinity.net/user/inkrend",
+        },
+        "ifus": {
+            "name": "Ifus",
+            "url": "https://www.furaffinity.net/user/ifus/",
+        },
+        "renardthatch": {
+            "name": "renardthatch",
+            "url": "https://www.furaffinity.net/user/renardthatch/",
         },
     }
 }

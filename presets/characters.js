@@ -11416,6 +11416,59 @@ characterMakers["Drusilla"] = () => {
     )
 };
 
+characterMakers["Renard Thatch"] = () => {
+    return makeCharacter(
+        "Renard Thatch",
+        "Renard Thatch",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(180, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/renard-thatch/front.svg",
+                    extra: 2411/2275 * (1 / (1 - 0.01)),
+                    bottom: 0.01
+                }
+            },
+            frontPosing: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(180, "lb"),
+                name: "Front (Posing)",
+                image: {
+                    source: "./media/characters/renard-thatch/front-posing.svg",
+                    extra: 2381/2261 * (1 / (1 - 0.01)),
+                    bottom: 0.01
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(180, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/renard-thatch/back.svg",
+                    extra: 2428/2288
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(3, "inches")
+            },
+            {
+                name: "Default",
+                height: math.unit(6, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(75, "feet")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
