@@ -11711,6 +11711,32 @@ characterMakers["Regena Maxwell"] = () => {
     )
 };
 
+characterMakers["XGlidingDragonX"] = () => {
+    return makeCharacter(
+        "XGlidingDragonX",
+        "XGlidingDragonX",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/x-gliding-dragon-x/front.svg",
+                    extra: 854/691 * (1 / (1 - 0.03)),
+                    bottom: 0.03
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(1.7, "meters"),
+                default: true
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

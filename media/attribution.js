@@ -4478,6 +4478,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/x-gliding-dragon-x/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/29900266/" }
+            ],
+            authors: [
+                "kitsunekit"
+            ],
+            owners: [
+                "xglidingdragonx"
+            ]
+        },
+        {
             prefix: "./media/characters/xanthos/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/32008581/" },
@@ -6539,6 +6551,14 @@ const attributionData = {
         "geckonori": {
             "name": "geckonori",
             "url": "https://www.furaffinity.net/user/geckonori",
+        },
+        "kitsunekit": {
+            "name": "KitsuneKit",
+            "url": "https://www.furaffinity.net/user/kitsunekit/",
+        },
+        "xglidingdragonx": {
+            "name": "XGlidingDragonX",
+            "url": "https://www.furaffinity.net/user/xglidingdragonx/",
         },
     }
 }
