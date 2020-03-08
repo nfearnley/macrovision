@@ -11639,6 +11639,78 @@ characterMakers["Elyssia"] = () => {
     )
 };
 
+characterMakers["Geno Maxwell"] = () => {
+    return makeCharacter(
+        "Geno Maxwell",
+        "Geckonori",
+        {
+            front: {
+                height: math.unit(7 + 4/12, "feet"),
+                weight: math.unit(500, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/geno-maxwell/front.svg",
+                    extra: 2207/2040 * (1 / (1 - 0.015)),
+                    bottom: 0.015
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(3, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(7 + 4/12, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(220, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(11, "miles")
+            },
+        ]
+    )
+};
+
+characterMakers["Regena Maxwell"] = () => {
+    return makeCharacter(
+        "Regena Maxwell",
+        "Geckonori",
+        {
+            front: {
+                height: math.unit(7 + 4/12, "feet"),
+                weight: math.unit(500, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/regena-maxwell/front.svg",
+                    extra: 3115/2770 * (1 / (1 - 0.02)),
+                    bottom: 0.02
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(7 + 4/12, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(220, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(11, "miles")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

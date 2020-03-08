@@ -2303,6 +2303,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/geno-maxwell/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/25949206/" }
+            ],
+            authors: [
+                "evillabrat"
+            ],
+            owners: [
+                "geckonori"
+            ]
+        },
+        {
             prefix: "./media/characters/ggv/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/15086529/" },
@@ -3855,6 +3867,18 @@ const attributionData = {
             ],
             owners: [
                 "cygil"
+            ]
+        },
+        {
+            prefix: "./media/characters/regena-maxwell/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33283039/" }
+            ],
+            authors: [
+                "pixiefyre"
+            ],
+            owners: [
+                "geckonori"
             ]
         },
         {
@@ -6511,6 +6535,10 @@ const attributionData = {
         "duo": {
             "name": "duo",
             "url": "https://www.furaffinity.net/user/duo/",
+        },
+        "geckonori": {
+            "name": "geckonori",
+            "url": "https://www.furaffinity.net/user/geckonori",
         },
     }
 }
