@@ -4003,6 +4003,21 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/sekvra/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/8329076/" },
+                { name: "front-clothed.svg", source: "https://www.furaffinity.net/view/8329076/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/8329076/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/8329076/" },
+            ],
+            authors: [
+                "duo"
+            ],
+            owners: [
+                "neopuc"
+            ]
+        },
+        {
             prefix: "./media/characters/selka/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/30722350/" }
@@ -6465,6 +6480,10 @@ const attributionData = {
         "renardthatch": {
             "name": "renardthatch",
             "url": "https://www.furaffinity.net/user/renardthatch/",
+        },
+        "duo": {
+            "name": "duo",
+            "url": "https://www.furaffinity.net/user/duo/",
         },
     }
 }

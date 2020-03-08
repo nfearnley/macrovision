@@ -11477,6 +11477,66 @@ characterMakers["Renard Thatch"] = () => {
     )
 };
 
+characterMakers["Sekvra"] = () => {
+    return makeCharacter(
+        "Sekvra",
+        "Neopuc",
+        {
+            front: {
+                height: math.unit(1450, "feet"),
+                weight: math.unit(1.21e6, "tons"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/sekvra/front.svg",
+                    extra: (1 / (1 - 0.03)),
+                    bottom: 0.03
+                }
+            },
+            frontClothed: {
+                height: math.unit(1450, "feet"),
+                weight: math.unit(1.21e6, "tons"),
+                name: "Front (Clothed)",
+                image: {
+                    source: "./media/characters/sekvra/front-clothed.svg",
+                    extra: (1 / (1 - 0.03)),
+                    bottom: 0.03
+                }
+            },
+            side: {
+                height: math.unit(1450, "feet"),
+                weight: math.unit(1.21e6, "tons"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/sekvra/side.svg",
+                    extra: (1 / (1 - 0.025)),
+                    bottom: 0.025
+                }
+            },
+            back: {
+                height: math.unit(1450, "feet"),
+                weight: math.unit(1.21e6, "tons"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/sekvra/back.svg",
+                    extra: (1 / (1 - 0.005)),
+                    bottom: 0.005
+                }
+            },
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(1450, "feet"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(15000, "feet")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
