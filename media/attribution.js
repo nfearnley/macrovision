@@ -2454,6 +2454,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/jamie-larsen/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/Mt_Jamie_Larsen/status/1236079279613636608" }
+            ],
+            authors: [
+                "qt-arts"
+            ],
+            owners: [
+                "mt-jamie-larsen"
+            ]
+        },
+        {
             prefix: "./media/characters/jaro/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/26084387/" },
@@ -6666,6 +6678,14 @@ const attributionData = {
         "ayanaki": {
             "name": "ayanaki",
             "url": "https://www.furaffinity.net/user/ayanaki",
+        },
+        "mt-jamie-larsen": {
+            "name": "Mt_Jamie_Larsen",
+            "url": "https://twitter.com/Mt_Jamie_Larsen/",
+        },
+        "qt-arts": {
+            "name": "QT_Arts",
+            "url": "https://twitter.com/QT_Arts",
         },
     }
 }

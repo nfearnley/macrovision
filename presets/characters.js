@@ -11945,6 +11945,41 @@ characterMakers["Zeta"] = () => {
     )
 };
 
+characterMakers["Jamie Larsen"] = () => {
+    return makeCharacter(
+        "Jamie Larsen",
+        "Mt_Jamie_Larsen",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/jamie-larsen/front.svg",
+                    extra: 962/933 * (1 / (1 - 0.02)),
+                    bottom: 0.02
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/jamie-larsen/back.svg",
+                    extra: 997/946
+                }
+            },
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(28 + 7/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
