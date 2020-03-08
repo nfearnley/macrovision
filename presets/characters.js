@@ -11853,6 +11853,40 @@ characterMakers["Danyel"] = () => {
     )
 };
 
+characterMakers["Vivian Bijoux"] = () => {
+    return makeCharacter(
+        "Vivian Bijoux",
+        "Geckonori",
+        {
+            front: {
+                height: math.unit(5 + 6/12, "feet"),
+                weight: math.unit(200, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/vivian-bijoux/front.svg",
+                    extra: (1 / (1 - 0.072)),
+                    bottom: 0.072
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 6/12, "feet"),
+                default: true
+            },
+            {
+                name: "Bad Dream",
+                height: math.unit(500, "feet")
+            },
+            {
+                name: "Nightmare",
+                height: math.unit(500, "miles")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

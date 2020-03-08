@@ -4514,6 +4514,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/vivian-bijoux/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32904452/" }
+            ],
+            authors: [
+                "geckonori"
+            ],
+            owners: [
+                "geckonori"
+            ]
+        },
+        {
             prefix: "./media/characters/wyvrn-ripsnarl/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/15418876/" }
