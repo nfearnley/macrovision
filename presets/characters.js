@@ -11761,6 +11761,31 @@ characterMakers["Quilly"] = () => {
     )
 };
 
+characterMakers["Tempest"] = () => {
+    return makeCharacter(
+        "Tempest",
+        "XsomeoneX",
+        {
+            front: {
+                height: math.unit(7 + 8/12, "feet"),
+                weight: math.unit(350, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/tempest/front.svg",
+                    extra: 1175/1086 * (1 / (1 - 0.02)),
+                    bottom: 0.02
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(7 + 8/12, "feet")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

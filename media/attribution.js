@@ -4255,6 +4255,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/tempest/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/24722256/" }
+            ],
+            authors: [
+                "pandx"
+            ],
+            owners: [
+                "xsomeonex"
+            ]
+        },
+        {
             prefix: "./media/characters/tene/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/21181722/" },
@@ -6575,6 +6587,14 @@ const attributionData = {
         "eriol": {
             "name": "Eriol",
             "url": "https://aminoapps.com/c/furry-amino/page/user/eriol-space-cadet/lXlD_v5VtRf3ZR304o3PBm6JemKwBrpnEvmtq",
+        },
+        "pandx": {
+            "name": "Pandx",
+            "url": "https://www.furaffinity.net/user/pandx",
+        },
+        "xsomeonex": {
+            "name": "XsomeoneX",
+            "url": "https://www.furaffinity.net/user/xsomeonex/",
         },
     }
 }
