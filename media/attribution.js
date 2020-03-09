@@ -3252,6 +3252,20 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/mirja/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32425168" },
+                { name: "front-dressed.svg", source: "https://www.furaffinity.net/view/32425168" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/32425168" },
+            ],
+            authors: [
+                "kurtcbrox"
+            ],
+            owners: [
+                "vabad"
+            ]
+        },
+        {
             prefix: "./media/characters/mirova/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/32624904/" }
@@ -6970,6 +6984,10 @@ const attributionData = {
         "ourhero": {
             "name": "Ourhero",
             "url": "https://www.furaffinity.net/user/ourhero",
+        },
+        "vabad": {
+            "name": "vabad",
+            "url": "https://www.furaffinity.net/user/vabad/",
         },
     }
 }

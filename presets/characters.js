@@ -12614,6 +12614,68 @@ characterMakers["Keireer"] = () => {
     )
 };
 
+characterMakers["Mirja"] = () => {
+    return makeCharacter(
+        "Mirja",
+        "vabad",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(90, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/mirja/front.svg",
+                    extra: 1789/1683 * (1 / (1 - 0.05)),
+                    bottom: 0.05
+                }
+            },
+            frontDressed: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(90, "lb"),
+                name: "Front (Dressed)",
+                image: {
+                    source: "./media/characters/mirja/front-dressed.svg",
+                    extra: 1789/1683 * (1 / (1 - 0.05)),
+                    bottom: 0.05
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(90, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/mirja/back.svg",
+                    extra: 953/917 * (1 / (1 - 0.017)),
+                    bottom: 0.017
+                }
+            },
+        },
+        [
+            {
+                name: "\"Incognito\"",
+                height: math.unit(3, "meters")
+            },
+            {
+                name: "Strolling Size",
+                height: math.unit(15, "km")
+            },
+            {
+                name: "Larger Strolling Size",
+                height: math.unit(400, "km")
+            },
+            {
+                name: "Preferred Size",
+                height: math.unit(5000, "km")
+            },
+            {
+                name: "True Size",
+                height: math.unit(30657809462086840000000000000000, "parsecs"),
+                default: true
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
