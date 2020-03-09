@@ -11976,6 +11976,18 @@ characterMakers["Jamie Larsen"] = () => {
                 height: math.unit(28 + 7/12, "feet"),
                 default: true
             },
+            {
+                name: "Macro+",
+                height: math.unit(180, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(10, "miles")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(200000, "miles")
+            },
         ]
     )
 };
