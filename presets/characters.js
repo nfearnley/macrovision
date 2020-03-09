@@ -12049,6 +12049,66 @@ characterMakers["Vance"] = () => {
     )
 };
 
+characterMakers["Xochitl"] = () => {
+    return makeCharacter(
+        "Xochitl",
+        "Neopuc",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(180, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/xochitl/front.svg",
+                    extra: 2297/2261 * (1 / (1 - 0.065)),
+                    bottom: 0.065
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(180, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/xochitl/back.svg",
+                    extra: 2386/2354 * (1 / (1 - 0.01)),
+                    bottom: 0.01
+                }
+            },
+            foot: {
+                height: math.unit(6/5 * 1.15, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/xochitl/foot.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(80, "feet")
+            },
+            {
+                name: "Macro+",
+                height: math.unit(400, "feet"),
+                default: true
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(80000, "miles")
+            },
+            {
+                name: "Gigamacro+",
+                height: math.unit(400000, "miles")
+            },
+            {
+                name: "Teramacro",
+                height: math.unit(300, "AU")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

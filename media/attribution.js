@@ -4619,6 +4619,31 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/xochitl/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/19919950/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/19919950/" },
+            ],
+            authors: [
+                "justmegabenewell"
+            ],
+            owners: [
+                "neopuc"
+            ]
+        },
+        {
+            prefix: "./media/characters/xochitl/",
+            files: [
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/22511502/" }
+            ],
+            authors: [
+                "oppaioppaioppai"
+            ],
+            owners: [
+                "neopuc"
+            ]
+        },
+        {
             prefix: "./media/characters/xylrem/",
             files: [
                 { name: "front.svg", source: "https://twitter.com/DownbeatMetal/status/1235131515568295937/" }
@@ -6705,6 +6730,14 @@ const attributionData = {
         "tendirmuldr": {
             "name": "Tendirmuldr",
             "url": "https://www.furaffinity.net/user/tendirmuldir/",
+        },
+        "justmegabenewell": {
+            "name": "JustMeGabeNewell",
+            "url": "https://www.furaffinity.net/user/justmegabenewell/",
+        },
+        "oppaioppaioppai": {
+            "name": "oppaioppaioppai",
+            "url": "https://www.furaffinity.net/user/oppaioppaioppai",
         },
     }
 }
