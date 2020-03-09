@@ -3877,6 +3877,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/shiroryu/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35315731/" }
+            ],
+            authors: [
+                "windofthewin"
+            ],
+            owners: [
+                "roxas00137"
+            ]
+        },
+        {
             prefix: "./media/characters/snow-gabumon/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/28018794/" },
@@ -6795,6 +6807,10 @@ const attributionData = {
         "jagaz": {
             "name": "jagaz",
             "url": "https://www.furaffinity.net/user/jagaz",
+        },
+        "windofthewin": {
+            "name": "windofthewin",
+            "url": "https://www.furaffinity.net/user/windofthewin",
         },
     }
 }

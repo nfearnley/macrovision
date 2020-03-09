@@ -12272,6 +12272,54 @@ characterMakers["Coatl"] = () => {
     )
 };
 
+characterMakers["Shiroryu"] = () => {
+    return makeCharacter(
+        "Shiroryu",
+        "Roxas00137",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(50, "kg"),
+                name: "front",
+                image: {
+                    source: "./media/characters/shiroryu/front.svg",
+                    extra: 1990/1935
+                }
+            },
+        },
+        [
+            {
+                name: "Mortal Mingling",
+                height: math.unit(3, "meters")
+            },
+            {
+                name: "Kaiju-ish",
+                height: math.unit(250, "meters")
+            },
+            {
+                name: "Somewhat Godly",
+                height: math.unit(400, "km"),
+                default: true
+            },
+            {
+                name: "Planetary",
+                height: math.unit(300, "megameters")
+            },
+            {
+                name: "Galaxy-dwarfing",
+                height: math.unit(450, "kiloparsecs")
+            },
+            {
+                name: "Universe Eater",
+                height: math.unit(150, "gigaparsecs")
+            },
+            {
+                name: "Almost Immeasurable",
+                height: math.unit(1.3e266, "yottaparsecs")
+            },
+        ]
+    )
+};
 function makeCharacters() {
     const results = [];
     results.push({
