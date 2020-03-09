@@ -1611,6 +1611,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/cassidy/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/16355789/" }
+            ],
+            authors: [
+                "keedot"
+            ],
+            owners: [
+                "neopuc"
+            ]
+        },
+        {
             prefix: "./media/characters/chari-gal/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/32375639/" }
@@ -4449,6 +4461,19 @@ const attributionData = {
             ],
             owners: [
                 "nanakisan"
+            ]
+        },
+        {
+            prefix: "./media/characters/umeko/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/19472005/" },
+                { name: "front-armored.svg", source: "https://www.furaffinity.net/view/19472005/" },
+            ],
+            authors: [
+                "homogeneousrule"
+            ],
+            owners: [
+                "neopuc"
             ]
         },
         {

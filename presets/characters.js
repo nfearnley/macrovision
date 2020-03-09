@@ -12320,6 +12320,89 @@ characterMakers["Shiroryu"] = () => {
         ]
     )
 };
+
+characterMakers["Umeko"] = () => {
+    return makeCharacter(
+        "Umeko",
+        "Neopuc",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/umeko/front.svg",
+                    extra: (1 / (1 - 0.019)),
+                    bottom: 0.019
+                }
+            },
+            frontArmored: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front (Armored)",
+                image: {
+                    source: "./media/characters/umeko/front-armored.svg",
+                    extra: (1 / (1 - 0.021)),
+                    bottom: 0.021
+                }
+            },
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(220, "feet"),
+                default: true
+            },
+            {
+                name: "Guardian Dragon",
+                height: math.unit(50, "miles")
+            },
+            {
+                name: "Cosmic",
+                height: math.unit(800000, "miles")
+            },
+        ]
+    )
+};
+
+characterMakers["Cassidy"] = () => {
+    return makeCharacter(
+        "Cassidy",
+        "Neopuc",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/cassidy/front.svg",
+                    extra: (1 / (1 - 0.043)),
+                    bottom: 0.043
+                }
+            },
+        },
+        [
+            {
+                name: "Canon Height",
+                height: math.unit(120, "feet"),
+                default: true
+            },
+            {
+                name: "Macro+",
+                height: math.unit(400, "feet")
+            },
+            {
+                name: "Macro++",
+                height: math.unit(4000, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(3, "miles")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
