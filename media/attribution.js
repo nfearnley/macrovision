@@ -3900,6 +3900,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/saudade/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34856923" }
+            ],
+            authors: [
+                "goattrain"
+            ],
+            owners: [
+                "lordbo"
+            ]
+        },
+        {
             prefix: "./media/characters/scales/",
             files: [
                 { name: "taur-front.svg", source: "https://twitter.com/plushderg/status/1119248005557825537" },
@@ -6934,6 +6946,10 @@ const attributionData = {
         "fluffy": {
             "name": "-fluffy-",
             "url": "https://www.furaffinity.net/user/-fluffy-",
+        },
+        "lordbo": {
+            "name": "lordbo",
+            "url": "https://www.furaffinity.net/user/lordbo/",
         },
     }
 }

@@ -12551,6 +12551,44 @@ characterMakers["Mesmyriza"] = () => {
     )
 };
 
+characterMakers["Saudade"] = () => {
+    return makeCharacter(
+        "Saudade",
+        "lordbo",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(250, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/saudade/front.svg",
+                    extra: 1172/1139 * (1 / (1 - 0.035)),
+                    bottom: 0.035
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(3, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(6, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(50, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(2800, "feet")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
