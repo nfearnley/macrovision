@@ -2479,6 +2479,20 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/jay/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35346112/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/35346112/" },
+                { name: "clothed.svg", source: "https://www.furaffinity.net/view/35346112/" },
+            ],
+            authors: [
+                "folfnox"
+            ],
+            owners: [
+                "j-forse"
+            ]
+        },
+        {
             prefix: "./media/characters/jazzy/",
             files: [
                 { name: "front.svg", source: null },
@@ -6753,6 +6767,14 @@ const attributionData = {
         "oppaioppaioppai": {
             "name": "oppaioppaioppai",
             "url": "https://www.furaffinity.net/user/oppaioppaioppai",
+        },
+        "folfnox": {
+            "name": "folfnox",
+            "url": "https://www.furaffinity.net/user/folfnox/",
+        },
+        "j-forse": {
+            "name": "J-Forse",
+            "url": "https://www.furaffinity.net/user/j-forse/",
         },
     }
 }
