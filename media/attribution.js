@@ -4426,6 +4426,21 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/vance/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/20287159/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/20287159/" },
+                { name: "hand.svg", source: "https://www.furaffinity.net/view/20287159/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/20287159/" },
+            ],
+            authors: [
+                "shorty-antics-furries"
+            ],
+            owners: [
+                "neopuc"
+            ]
+        },
+        {
             prefix: "./media/characters/vanrel-hyena/",
             files: [
                 { name: "front.svg", source: null }
@@ -6686,6 +6701,10 @@ const attributionData = {
         "qt-arts": {
             "name": "QT_Arts",
             "url": "https://twitter.com/QT_Arts",
+        },
+        "tendirmuldr": {
+            "name": "Tendirmuldr",
+            "url": "https://www.furaffinity.net/user/tendirmuldir/",
         },
     }
 }
