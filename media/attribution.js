@@ -4541,6 +4541,21 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/vincent/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/15426322/" },
+                { name: "beak.svg", source: "https://www.furaffinity.net/view/15426322/" },
+                { name: "hand.svg", source: "https://www.furaffinity.net/view/15426322/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/15426322/" },
+            ],
+            authors: [
+                "ashascadence"
+            ],
+            owners: [
+                "neopuc"
+            ]
+        },
+        {
             prefix: "./media/characters/vivian-bijoux/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/32904452/" }

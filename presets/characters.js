@@ -12109,6 +12109,66 @@ characterMakers["Xochitl"] = () => {
     )
 };
 
+characterMakers["Vincent"] = () => {
+    return makeCharacter(
+        "Vincent",
+        "Neopuc",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/vincent/front.svg",
+                    extra: 1130/1080 * (1 / (1 - 0.055)),
+                    bottom: 0.055
+                }
+            },
+            beak: {
+                height: math.unit(6 * 0.1, "feet"),
+                name: "Beak",
+                image: {
+                    source: "./media/characters/vincent/beak.svg"
+                }
+            },
+            hand: {
+                height: math.unit(6 * 0.85, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Hand",
+                image: {
+                    source: "./media/characters/vincent/hand.svg"
+                }
+            },
+            foot: {
+                height: math.unit(6 * 0.19, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/vincent/foot.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Base",
+                height: math.unit(6 + 5/12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(300, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(2, "miles")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(1000, "miles")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
