@@ -12589,6 +12589,31 @@ characterMakers["Saudade"] = () => {
     )
 };
 
+characterMakers["Keireer"] = () => {
+    return makeCharacter(
+        "Keireer",
+        "teedash",
+        {
+            front: {
+                height: math.unit(5 + 4/12, "feet"),
+                weight: math.unit(100, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/keireer/front.svg",
+                    extra: 716/666 * (1 / (1 - 0.05)),
+                    bottom: 0.05
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 4/12, "feet")
+            },   
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

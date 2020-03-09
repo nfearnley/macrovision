@@ -2727,6 +2727,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/keireer/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/18052831/" }
+            ],
+            authors: [
+                "ourhero"
+            ],
+            owners: [
+                "teedash"
+            ]
+        },
+        {
             prefix: "./media/characters/kennedy/",
             files: [
                 { name: "side.svg", source: "https://www.furaffinity.net/view/26538996/" },
@@ -6950,6 +6962,14 @@ const attributionData = {
         "lordbo": {
             "name": "lordbo",
             "url": "https://www.furaffinity.net/user/lordbo/",
+        },
+        "teedash": {
+            "name": "teedash",
+            "url": "https://www.furaffinity.net/user/teedash",
+        },
+        "ourhero": {
+            "name": "Ourhero",
+            "url": "https://www.furaffinity.net/user/ourhero",
         },
     }
 }
