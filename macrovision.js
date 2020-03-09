@@ -112,6 +112,7 @@ function updateEntityElement(entity, element, zIndex) {
     const pixels = math.divide(entity.views[view].height, config.height) * (canvasHeight - 50);
     const bonus = (entity.views[view].image.extra ? entity.views[view].image.extra : 1);
     element.style.setProperty("--height", pixels * bonus + "px");
+    element.style.setProperty("--extra", pixels * bonus - pixels + "px");
 
     if (entity.views[view].rename)
         element.querySelector(".entity-name").innerText = entity.name == "" ? "" : entity.views[view].name;

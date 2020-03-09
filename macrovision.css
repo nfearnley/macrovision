@@ -47,13 +47,14 @@ body {
 .entity-name {
     display: none;
     position: absolute;
-    top: -100%;
+    top: calc(-100% + var(--extra));
     left: 0%;
     transform: translate(-50%, -36px);
     font-size: 24px;
     pointer-events: none;
     max-width: 250px;
     width: 250px;
+    transition: all 0s;
 }
 
 body.toggle-entity-name .entity-name {
