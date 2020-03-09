@@ -3190,6 +3190,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/mesmyriza/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/22946704/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/22946704/" }
+            ],
+            authors: [
+                "braxia"
+            ],
+            owners: [
+                "fluffy"
+            ]
+        },
+        {
             prefix: "./media/characters/mel/",
             files: [
                 { name: "front.svg", source: "https://twitter.com/SomedayNS/status/1177379513514283008" }
@@ -3374,6 +3387,18 @@ const attributionData = {
             ],
             owners: [
                 "movler"
+            ]
+        },
+        {
+            prefix: "./media/characters/nillia/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/30966909/" }
+            ],
+            authors: [
+                "phantom-berserkr"
+            ],
+            owners: [
+                "neopuc"
             ]
         },
         {
@@ -6897,6 +6922,18 @@ const attributionData = {
         "ananonymousindividual": {
             "name": "AnAnonymousIndividual",
             "url": "https://www.furaffinity.net/user/ananonymousindividual/",
+        },
+        "phantom-berserkr": {
+            "name": "phantom.berserkr",
+            "url": "https://www.furaffinity.net/user/phantom.berserkr",
+        },
+        "braxia": {
+            "name": "Braxia",
+            "url": "https://www.furaffinity.net/user/braxia/",
+        },
+        "fluffy": {
+            "name": "-fluffy-",
+            "url": "https://www.furaffinity.net/user/-fluffy-",
         },
     }
 }

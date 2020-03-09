@@ -12479,6 +12479,78 @@ characterMakers["Sleekit"] = () => {
     )
 };
 
+characterMakers["Nillia"] = () => {
+    return makeCharacter(
+        "Nillia",
+        "Neopuc",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/nillia/front.svg",
+                    extra: 2195/2037 * (1 / (1 - 0.005)),
+                    bottom: 0.005
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/nillia/back.svg",
+                    extra: 2195/2037 * (1 / (1 - 0.005)),
+                    bottom: 0.005
+                }
+            },
+        },
+        [
+            {
+                name: "Canon Height",
+                height: math.unit(489, "feet")
+            }
+        ]
+    )
+};
+
+characterMakers["Mesmyriza"] = () => {
+    return makeCharacter(
+        "Mesmyriza",
+        "-fluffy-",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/mesmyriza/front.svg",
+                    extra: 2067/1784 * (1 / (1 - 0.035)),
+                    bottom: 0.035
+                }
+            },
+            foot: {
+                height: math.unit(6/(250/35), "feet"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/mesmyriza/foot.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(457, "meters"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(8, "megameters")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
