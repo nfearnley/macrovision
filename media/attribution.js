@@ -1709,6 +1709,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/coatl/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/18625122/" }
+            ],
+            authors: [
+                "daygo"
+            ],
+            owners: [
+                "jagaz"
+            ]
+        },
+        {
             prefix: "./media/characters/cobalt/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/34983155/" }
@@ -6775,6 +6787,14 @@ const attributionData = {
         "j-forse": {
             "name": "J-Forse",
             "url": "https://www.furaffinity.net/user/j-forse/",
+        },
+        "daygo": {
+            "name": "Daygo",
+            "url": "https://www.furaffinity.net/user/daygo/",
+        },
+        "jagaz": {
+            "name": "jagaz",
+            "url": "https://www.furaffinity.net/user/jagaz",
         },
     }
 }

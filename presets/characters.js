@@ -12226,6 +12226,52 @@ characterMakers["Jay"] = () => {
     )
 };
 
+characterMakers["Coatl"] = () => {
+    return makeCharacter(
+        "Coatl",
+        "Jagaz",
+        {
+            front: {
+                height: math.unit(2, "meters"),
+                weight: math.unit(500 , "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/coatl/front.svg",
+                    extra: 3948 / 3500 * (1 / (1 - 0.082)),
+                    bottom: 0.082
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(4, "meters")
+            },
+            {
+                name: "Macro",
+                height: math.unit(100, "meters"),
+                default: true
+            },
+            {
+                name: "Macro+",
+                height: math.unit(300, "meters")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(3, "gigameters")
+            },
+            {
+                name: "Megamacro+",
+                height: math.unit(300, "terameters")
+            },
+            {
+                name: "Megamacro++",
+                height: math.unit(3, "lightyears")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
