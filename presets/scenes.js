@@ -82,7 +82,7 @@ scenes["Neopuc"] = () => {
     }).sort((e1, e2) => {
         return e1.sizes[e1.sizes.length - 1].height.toNumber() - e2.sizes[e2.sizes.length - 1].height.toNumber()
     }).reduce((size, entity) => {
-        entity.views[entity.view].height = math.unit(100 * Math.sqrt(size), "meters");
+        entity.views[entity.view].height = math.unit(100 * Math.sqrt(size) * (entity.name == "Ilisha Devya" ? 2 : 1), "meters");
         displayEntity(entity, entity.view, 0, 1);
         return size+1;
     }, 1)
