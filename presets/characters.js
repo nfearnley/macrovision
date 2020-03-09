@@ -12441,6 +12441,44 @@ characterMakers["Isaac"] = () => {
     )
 };
 
+characterMakers["Sleekit"] = () => {
+    return makeCharacter(
+        "Sleekit",
+        "AnAnonymousIndividual",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(72, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/sleekit/front.svg",
+                    extra: 4693/4487 * (1 / (1 - 0.012)),
+                    bottom: 0.012
+                }
+            },
+        },
+        [
+            {
+                name: "Minimum Height",
+                height: math.unit(10, "meters")
+            },
+            {
+                name: "Smaller",
+                height: math.unit(25, "meters")
+            },
+            {
+                name: "Larger",
+                height: math.unit(38, "meters"),
+                default: true
+            },
+            {
+                name: "Maximum height",
+                height: math.unit(100, "meters")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

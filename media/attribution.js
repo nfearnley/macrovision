@@ -3913,6 +3913,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/sleekit/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32997650/" }
+            ],
+            authors: [
+                "tinyediblehumans"
+            ],
+            owners: [
+                "ananonymousindividual"
+            ]
+        },
+        {
             prefix: "./media/characters/snow-gabumon/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/28018794/" },
@@ -6877,6 +6889,14 @@ const attributionData = {
         "explicital": {
             "name": "explicital",
             "url": "https://www.furaffinity.net/user/explicital",
+        },
+        "tinyediblehumans": {
+            "name": "Tinyediblehumans",
+            "url": "https://www.furaffinity.net/user/tinyediblehumans",
+        },
+        "ananonymousindividual": {
+            "name": "AnAnonymousIndividual",
+            "url": "https://www.furaffinity.net/user/ananonymousindividual/",
         },
     }
 }
