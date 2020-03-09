@@ -4891,7 +4891,32 @@ const attributionData = {
                 "public-domain"
             ]
         },
-
+        {
+            prefix: "./media/objects/animals/",
+            files: [
+                { name: "blue-whale.svg", source: "https://www.dimensions.guide/element/blue-whale" },
+                { name: "sperm-whale.svg", source: "https://www.dimensions.guide/element/sperm-whale" },
+                { name: "dairy-cow.svg", source: "https://www.dimensions.guide/element/dairy-cows" },
+                { name: "horse.svg", source: "https://www.dimensions.guide/element/horse" },
+                { name: "african-elephant.svg", source: "https://www.dimensions.guide/element/african-elephant" },
+            ],
+            authors: [
+                "dimensions-guide"
+            ]
+        },
+        {
+            prefix: "./media/objects/dinosaurs/",
+            files: [
+                { name: "brachiosaurus.svg", source: "https://www.dimensions.guide/element/brachiosaurus" },
+                { name: "pterodactyl.svg", source: "https://www.dimensions.guide/element/pterodactyl" },
+                { name: "stegosaurus.svg", source: "https://www.dimensions.guide/element/stegosaurus" },
+                { name: "tyrannosaurus.svg", source: "https://www.dimensions.guide/element/t-rex-tyrannosaurus" },
+                { name: "velociraptor.svg", source: "https://www.dimensions.guide/element/velociraptor" },
+            ],
+            authors: [
+                "dimensions-guide"
+            ]
+        },
         {
             prefix: "./media/objects/fruits/",
             files: [

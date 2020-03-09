@@ -48,6 +48,28 @@ function addShoeView(object, name, points) {
     }
 }
 
+function makeHeightWeight(info, category, prefix="") {
+    const views = {};
+
+    info.forEach(object => {
+        views[object[0]] = {
+            height: math.unit(object[1], "meters"),
+            mass: math.unit(object[2], "kilograms"),
+            image: { source: "./media/objects/" + category.replace(/ /g, "-").toLowerCase() + "/" + prefix + object[0] + ".svg" },
+            name: object[0].replace(/-/g, " ").replace(/\b\w/g, x => x.toUpperCase()),
+            rename: true
+        }
+    });
+
+    return {
+        name: category,
+        constructor: () => makeObject(
+            category,
+            views
+        )
+    }
+}
+
 function makeShoes() {
     const views = {};
 
@@ -484,6 +506,28 @@ function makeObjects() {
             }
         )
     })
+
+    results.push(
+        makeHeightWeight([
+            ["blue-whale", 4.5, 125e3],
+            ["sperm-whale", 3, 42e3],
+            ["dairy-cow", 1.7, 800],
+            ["horse", 2.08, 550],
+            ["african-elephant", 3.2, 4000]
+        ],
+        "Animals"
+    ));
+
+    results.push(
+        makeHeightWeight([
+            ["brachiosaurus", 13, 56e3],
+            ["pterodactyl", 2.3, 200],
+            ["stegosaurus", 4.5, 7e3],
+            ["tyrannosaurus", 5.2, 14e3],
+            ["velociraptor", 1.6, 15]
+        ],
+        "Dinosaurs"
+    ));
 
     
     results.sort((b1, b2) => {
