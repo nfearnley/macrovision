@@ -2478,6 +2478,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/isaac/",
+            files: [
+                { name: "front.svg", source: "http://www.furaffinity.net/view/22465040/" }
+            ],
+            authors: [
+                "explicital"
+            ],
+            owners: [
+                "neopuc"
+            ]
+        },
+        {
             prefix: "./media/characters/jamie-larsen/",
             files: [
                 { name: "front.svg", source: "https://twitter.com/Mt_Jamie_Larsen/status/1236079279613636608" }
@@ -6861,6 +6873,10 @@ const attributionData = {
         "windofthewin": {
             "name": "windofthewin",
             "url": "https://www.furaffinity.net/user/windofthewin",
+        },
+        "explicital": {
+            "name": "explicital",
+            "url": "https://www.furaffinity.net/user/explicital",
         },
     }
 }

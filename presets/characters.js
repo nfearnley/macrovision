@@ -12403,6 +12403,44 @@ characterMakers["Cassidy"] = () => {
     )
 };
 
+characterMakers["Isaac"] = () => {
+    return makeCharacter(
+        "Isaac",
+        "Neopuc",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/isaac/front.svg",
+                    extra: 896/815 * (1 / (1 - 0.11)),
+                    bottom: 0.11
+                }
+            },
+        },
+        [
+            {
+                name: "Human Size",
+                height: math.unit(8, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(400, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(50, "miles")
+            },
+            {
+                name: "Canon Height",
+                height: math.unit(200, "AU")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
