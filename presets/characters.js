@@ -1823,7 +1823,7 @@ characterMakers["GiantGrowingVixen"] = () => {
             {
                 name: "Reasonably Sized",
                 height: math.unit(25000, "parsecs")
-            }
+            },
             {
                 name: "Slightly Uncompressed",
                 height: math.unit(7.77e31, "parsecs")
