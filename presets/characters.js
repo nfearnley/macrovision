@@ -12761,6 +12761,30 @@ characterMakers["Nightraver"] = () => {
     )
 };
 
+characterMakers["Arc"] = () => {
+    return makeCharacter(
+        "Arc",
+        "DinoKiddo",
+        {
+            side: {
+                height: math.unit(2, "inches"),
+                weight: math.unit(5, "grams"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/arc/side.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(2, "inches"),
+                default: true
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

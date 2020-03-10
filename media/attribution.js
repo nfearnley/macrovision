@@ -1373,6 +1373,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/arc/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35343831/" }
+            ],
+            authors: [
+                "poketto-monsta"
+            ],
+            owners: [
+                "dinokiddo"
+            ]
+        },
+        {
             prefix: "./media/characters/archy/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/17286706/" }
@@ -7012,6 +7024,14 @@ const attributionData = {
         "nightraver": {
             "name": "Nightraver",
             "url": "https://www.furaffinity.net/user/nightraver/",
+        },
+        "dinokiddo": {
+            "name": "DinoKiddo",
+            "url": "https://www.furaffinity.net/user/dinokiddo/",
+        },
+        "poketto-monsta": {
+            "name": "Poketto Monsta",
+            "url": "https://twitter.com/Poketto_Monsta?",
         },
     }
 }
