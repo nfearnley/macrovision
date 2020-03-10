@@ -3391,6 +3391,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/nebula-shahar/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "whimsinix"
+            ],
+            owners: [
+                "cakeycake"
+            ]
+        },
+        {
             prefix: "./media/characters/neo/",
             files: [
                 { name: "front.svg", source: null }
@@ -7032,6 +7044,10 @@ const attributionData = {
         "poketto-monsta": {
             "name": "Poketto Monsta",
             "url": "https://twitter.com/Poketto_Monsta?",
+        },
+        "whimsinix": {
+            "name": "whimsinix",
+            "url": "https://www.furaffinity.net/gallery/whimsinix/",
         },
     }
 }

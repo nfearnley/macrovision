@@ -12785,6 +12785,45 @@ characterMakers["Arc"] = () => {
     )
 };
 
+characterMakers["Nebula Shahar"] = () => {
+    return makeCharacter(
+        "Nebula Shahar",
+        "Kypleo",
+        {
+            front: {
+                height: math.unit(1.1938, "meters"),
+                weight: math.unit(54, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/nebula-shahar/front.svg",
+                    extra: 1642/1436 * (1 / (1 - 0.06)),
+                    bottom: 0.06
+                }
+            },
+        },
+        [
+            {
+                name: "Megamicro",
+                height: math.unit(0.3, "mm")
+            },
+            {
+                name: "Micro",
+                height: math.unit(3, "cm")
+            },
+            {
+                name: "Normal",
+                height: math.unit(138, "cm"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(30, "m")
+            },
+        ]
+    )
+};
+
+
 function makeCharacters() {
     const results = [];
     results.push({
