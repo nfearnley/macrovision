@@ -3992,6 +3992,21 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/shayla/",
+            files: [
+                { name: "front.svg", source: null },
+                { name: "back.svg", source: null },
+                { name: "hand.svg", source: null },
+                { name: "foot.svg", source: null },
+            ],
+            authors: [
+                "daniel-kay"
+            ],
+            owners: [
+                "ziralkia"
+            ]
+        },
+        {
             prefix: "./media/characters/shingo/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/32499316/" }
@@ -7048,6 +7063,14 @@ const attributionData = {
         "whimsinix": {
             "name": "whimsinix",
             "url": "https://www.furaffinity.net/gallery/whimsinix/",
+        },
+        "daniel-kay": {
+            "name": "Daniel_Kay",
+            "url": "https://www.furaffinity.net/user/danielkay",
+        },
+        "ziralkia": {
+            "name": "Ziralkia",
+            "url": "https://www.furaffinity.net/user/ziralkia/",
         },
     }
 }

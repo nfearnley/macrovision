@@ -12823,6 +12823,67 @@ characterMakers["Nebula Shahar"] = () => {
     )
 };
 
+characterMakers["Shayla"] = () => {
+    return makeCharacter(
+        "Shayla",
+        "Ziralkia",
+        {
+            front: {
+                height: math.unit(5.24, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/shayla/front.svg",
+                    extra: 1512/1414 * (1 / (1 - 0.01)),
+                    bottom: 0.01
+                }
+            },
+            back: {
+                height: math.unit(5.24, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/shayla/back.svg",
+                    extra: 1512/1414
+                }
+            },
+            hand: {
+                height: math.unit(0.7781496062992126, "feet"),
+                name: "Hand",
+                image: {
+                    source: "./media/characters/shayla/hand.svg"
+                }
+            },
+            foot: {
+                height: math.unit(1.4206036745406823, "feet"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/shayla/foot.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(0.32, "feet")
+            },
+            {
+                name: "Normal",
+                height: math.unit(5.24, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(492.12, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(186.41, "miles")
+            },
+        ]
+    )
+};
+
 
 function makeCharacters() {
     const results = [];
