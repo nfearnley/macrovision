@@ -12998,6 +12998,43 @@ characterMakers["Pia Sr."] = () => {
     )
 };
 
+characterMakers["KIBIBYTE"] = () => {
+    return makeCharacter(
+        "KIBIBYTE",
+        "gamefreak1215",
+        {
+            front: {
+                height: math.unit(8 + 2/12, "feet"),
+                weight: math.unit(300, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/kibibyte/front.svg",
+                    extra: 2221/2098 * (1 / (1 - 0.04)),
+                    bottom: 0.04
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(8 + 2/12, "feet"),
+                default: true
+            },
+            {
+                name: "Socialable Macro",
+                height: math.unit(50, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(300, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(500, "miles")
+            },
+        ]
+    )
+};
 function makeCharacters() {
     const results = [];
     results.push({

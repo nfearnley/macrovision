@@ -1225,7 +1225,7 @@ function prepareEntities() {
     availableEntities["pokemon"] = makePokemon();
 
     availableEntities["characters"].sort((x, y) => {
-        return x.name < y.name ? -1 : 1
+        return x.name.toLowerCase() < y.name.toLowerCase() ? -1 : 1
     });
     const holder = document.querySelector("#spawners");
 

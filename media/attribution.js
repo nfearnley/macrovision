@@ -2777,6 +2777,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/kibibyte/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "tsquare"
+            ],
+            owners: [
+                "gamefreak1215"
+            ]
+        },
+        {
             prefix: "./media/characters/kimiko/",
             files: [
                 { name: "side.svg", source: "https://www.furaffinity.net/view/32689858/" }
@@ -7104,6 +7116,14 @@ const attributionData = {
         "calheb-db": {
             "name": "Calheb-DB",
             "url": "https://www.furaffinity.net/user/calheb-db",
+        },
+        "tsquare": {
+            "name": "tsquare",
+            "url": " https://www.furaffinity.net/user/tsquare/",
+        },
+        "gamefreak1215": {
+            "name": "gamefreak1215",
+            "url": " https://www.furaffinity.net/user/gamefreak1215/",
         },
     }
 }
