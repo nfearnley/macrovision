@@ -3416,6 +3416,22 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/nightraver/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/27848086/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/27848086/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/27848086/" },
+                { name: "sole.svg", source: "https://www.furaffinity.net/view/27848086/" },
+                { name: "maw.svg", source: "https://www.furaffinity.net/view/27848086/" },
+            ],
+            authors: [
+                "bartucthebloody"
+            ],
+            owners: [
+                "nightraver"
+            ]
+        },
+        {
             prefix: "./media/characters/nillia/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/30966909/" }
@@ -6988,6 +7004,14 @@ const attributionData = {
         "vabad": {
             "name": "vabad",
             "url": "https://www.furaffinity.net/user/vabad/",
+        },
+        "bartucthebloody": {
+            "name": "BartucTheBloody",
+            "url": "https://www.furaffinity.net/user/bartucthebloody",
+        },
+        "nightraver": {
+            "name": "Nightraver",
+            "url": "https://www.furaffinity.net/user/nightraver/",
         },
     }
 }

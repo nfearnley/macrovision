@@ -12684,6 +12684,79 @@ characterMakers["Mirja"] = () => {
     )
 };
 
+characterMakers["Nightraver"] = () => {
+    return makeCharacter(
+        "Nightraver",
+        "Nightraver",
+        {
+            front: {
+                height: math.unit(15, "feet"),
+                weight: math.unit(880, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/nightraver/front.svg",
+                    extra: 2444/2160 * (1 / (1 - 0.027)),
+                    bottom: 0.027
+                }
+            },
+            back: {
+                height: math.unit(15, "feet"),
+                weight: math.unit(880, "kg"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/nightraver/back.svg",
+                    extra: 2309/2180 * (1 / (1 - 0.005)),
+                    bottom: 0.005
+                }
+            },
+            sole: {
+                height: math.unit(2.878, "feet"),
+                name: "Sole",
+                image: {
+                    source: "./media/characters/nightraver/sole.svg"
+                }
+            },
+            foot: {
+                height: math.unit(2.285, "feet"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/nightraver/foot.svg"
+                }
+            },
+            maw: {
+                height: math.unit(2.67, "feet"),
+                name: "Maw",
+                image: {
+                    source: "./media/characters/nightraver/maw.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(1, "cm")
+            },
+            {
+                name: "Normal",
+                height: math.unit(15, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(300, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(300, "miles")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(10000, "miles")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
