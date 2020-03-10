@@ -12884,6 +12884,119 @@ characterMakers["Shayla"] = () => {
     )
 };
 
+characterMakers["Pia Jr."] = () => {
+    return makeCharacter(
+        "Pia Jr.",
+        "Ziralkia",
+        {
+            front: {
+                height: math.unit(2.2, "m"),
+                weight: math.unit(120, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/pia-jr/front.svg",
+                    extra: 1000/970 * (1 / (1 - 0.035)),
+                    bottom: 0.035
+                }
+            },
+            hand: {
+                height: math.unit(0.759 * 7.21 / 6, "feet"),
+                name: "Hand",
+                image: {
+                    source: "./media/characters/pia-jr/hand.svg"
+                }
+            },
+            paw: {
+                height: math.unit(1.185 * 7.21 / 6, "feet"),
+                name: "Paw",
+                image: {
+                    source: "./media/characters/pia-jr/paw.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(1.2, "cm")
+            },
+            {
+                name: "Normal",
+                height: math.unit(2.2, "m"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(180, "m")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(420, "km")
+            },
+        ]
+    )
+};
+
+characterMakers["Pia Sr."] = () => {
+    return makeCharacter(
+        "Pia Sr.",
+        "Ziralkia",
+        {
+            front: {
+                height: math.unit(2, "m"),
+                weight: math.unit(115, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/pia-sr/front.svg",
+                    extra: 760/730 * (1 / (1 - 0.015)),
+                    bottom: 0.015
+                }
+            },
+            back: {
+                height: math.unit(2, "m"),
+                weight: math.unit(115, "kg"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/pia-sr/back.svg",
+                    extra: 760/730 * (1 / (1 - 0.01)),
+                    bottom: 0.01
+                }
+            },
+            hand: {
+                height: math.unit(0.89 * 6.56 / 6, "feet"),
+                name: "Hand",
+                image: {
+                    source: "./media/characters/pia-sr/hand.svg"
+                }
+            },
+            foot: {
+                height: math.unit(1.83, "feet"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/pia-sr/foot.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(88, "mm")
+            },
+            {
+                name: "Normal",
+                height: math.unit(2, "m"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(200, "m")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(420, "km")
+            },
+        ]
+    )
+};
 
 function makeCharacters() {
     const results = [];

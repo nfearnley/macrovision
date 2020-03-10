@@ -3621,6 +3621,35 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/pia-jr/",
+            files: [
+                { name: "front.svg", source: null },
+                { name: "hand.svg", source: null },
+                { name: "paw.svg", source: null },
+            ],
+            authors: [
+                "calheb-db"
+            ],
+            owners: [
+                "ziralkia"
+            ]
+        },
+        {
+            prefix: "./media/characters/pia-sr/",
+            files: [
+                { name: "front.svg", source: null },
+                { name: "back.svg", source: null },
+                { name: "hand.svg", source: null },
+                { name: "foot.svg", source: null },
+            ],
+            authors: [
+                "jaeh"
+            ],
+            owners: [
+                "ziralkia"
+            ]
+        },
+        {
             prefix: "./media/characters/pianostrong/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/31674867/" },
@@ -7071,6 +7100,10 @@ const attributionData = {
         "ziralkia": {
             "name": "Ziralkia",
             "url": "https://www.furaffinity.net/user/ziralkia/",
+        },
+        "calheb-db": {
+            "name": "Calheb-DB",
+            "url": "https://www.furaffinity.net/user/calheb-db",
         },
     }
 }
