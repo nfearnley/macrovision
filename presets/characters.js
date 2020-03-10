@@ -2874,11 +2874,15 @@ characterMakers["Vulpes"] = () => {
         [
             {
                 name: "Micro",
-                height: math.unit(3, "inches")
+                height: math.unit(2, "inches")
             },
             {
                 name: "Normal",
                 height: math.unit(6.3, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(850, "feet")
             },
             {
                 name: "Megamacro",
