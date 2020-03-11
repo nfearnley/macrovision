@@ -206,7 +206,7 @@ function drawScale() {
 
     let pixelsPer = (ctx.canvas.clientHeight - 100) / config.height.value;
     let heightPer = config.height.clone();
-    heightPer = math.divide(heightPer, heightPer.toNumber())
+    heightPer.value = 1;
 
     if (pixelsPer < config.minLineSize) {
         heightPer.value /= pixelsPer / config.minLineSize;
