@@ -13035,6 +13035,51 @@ characterMakers["KIBIBYTE"] = () => {
         ]
     )
 };
+
+characterMakers["Felix"] = () => {
+    return makeCharacter(
+        "Felix",
+        "MeanDumpsterCat",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/felix/front.svg",
+                    extra: 762/722 * (1 / (1 - 0.02)),
+                    bottom: 0.02
+                }
+            },
+            frontClothed: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front (Clothed)",
+                image: {
+                    source: "./media/characters/felix/front-clothed.svg",
+                    extra: 762/722 * (1 / (1 - 0.02)),
+                    bottom: 0.02
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6 + 8/12, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(2600, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(450, "miles")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({

@@ -2168,6 +2168,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/felix/",
+            files: [
+                { name: "front.svg", source: null },
+                { name: "front-clothed.svg", source: null },
+            ],
+            authors: [
+                "indiwolfonline"
+            ],
+            owners: [
+                "meandumpstercat"
+            ]
+        },
+        {
             prefix: "./media/characters/fen/",
             files: [
                 { name: "back.svg", source: "https://www.furaffinity.net/view/13680521/" }
@@ -7124,6 +7137,14 @@ const attributionData = {
         "gamefreak1215": {
             "name": "gamefreak1215",
             "url": " https://www.furaffinity.net/user/gamefreak1215/",
+        },
+        "meandumpstercat": {
+            "name": "MeanDumpsterCat",
+            "url": "https://twitter.com/MeanDumpsterCat",
+        },
+        "indiwolfonline": {
+            "name": "IndiWolfOnline",
+            "url": "https://www.furaffinity.net/user/indiwolfonline",
         },
     }
 }
