@@ -8766,6 +8766,10 @@ characterMakers["Nomaxice"] = () => {
                 height: math.unit(1.82, "m")
             },
             {
+                name: "Norm+",
+                height: math.unit(8.8, "feet")
+            },
+            {
                 name: "Big",
                 height: math.unit(8, "meters"),
                 default: true
