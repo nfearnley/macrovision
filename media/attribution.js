@@ -5197,6 +5197,7 @@ const attributionData = {
             files: [
                 { name: "eevee.svg", source: "https://fidverse.fandom.com/wiki/Malgam" },
                 { name: "sylveon.svg", source: "https://fidverse.fandom.com/wiki/https://fidverse.fandom.com/wiki/Malgam_Future" },
+                { name: "gigantamax.svg", source: "https://www.furaffinity.net/view/33746283/" }
             ],
             authors: [
                 "fidchell"

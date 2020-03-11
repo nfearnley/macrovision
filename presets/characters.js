@@ -13150,7 +13150,7 @@ characterMakers["Malgam"] = () => {
             eevee: {
                 height: math.unit(2 + 10/12, "feet"),
                 weight: math.unit(86, "lb"),
-                name: "Eevee",
+                name: "Malgam",
                 image: {
                     source: "./media/characters/malgam/eevee.svg",
                     extra: 218/180 * (1 / (1 - 0.2)),
@@ -13160,11 +13160,20 @@ characterMakers["Malgam"] = () => {
             sylveon: {
                 height: math.unit(4, "feet"),
                 weight: math.unit(101, "lb"),
-                name: "Sylveon",
+                name: "Future Malgam",
+                rename: true,
                 image: {
                     source: "./media/characters/malgam/sylveon.svg",
                     extra: 371/325 * (1 / (1 - 0.015)),
                     bottom: 0.015
+                }
+            },
+            gigantamax: {
+                height: math.unit(50, "feet"),
+                name: "Gigantamax Malgam",
+                rename: true,
+                image: {
+                    source: "./media/characters/malgam/gigantamax.svg"
                 }
             },
         },
