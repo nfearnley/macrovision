@@ -1928,6 +1928,20 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/danny-kapowsky/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/10920607/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/10920607/" },
+            ],
+            authors: [
+                "killerwolf1020",
+                "crazy-husky"
+            ],
+            owners: [
+                "nh63879"
+            ]
+        },
+        {
             prefix: "./media/characters/danyel/",
             files: [
                 { name: "front.svg", source: "https://twitter.com/DanyelxDragon/status/1080540953683873792" }
@@ -7166,6 +7180,18 @@ const attributionData = {
         "nanicreates": {
             "name": "nanicreates",
             "url": "https://www.furaffinity.net/user/nanicreates",
+        },
+        "killerwolf1020": {
+            "name": "Killerwolf1020",
+            "url": "https://www.furaffinity.net/user/killerwolf1020",
+        },
+        "crazy-husky": {
+            "name": "crazy-husky",
+            "url": "https://www.furaffinity.net/user/crazy-husky",
+        },
+        "nh63879": {
+            "name": "nh63879",
+            "url": "https://www.furaffinity.net/user/nh63879/",
         },
     }
 }

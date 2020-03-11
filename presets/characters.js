@@ -12855,6 +12855,54 @@ characterMakers["Tobo"] = () => {
     )
 };
 
+characterMakers["Danny Kapowsky"] = () => {
+    return makeCharacter(
+        "Danny Kapowsky",
+        "nh63879",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(269, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/danny-kapowsky/front.svg",
+                    extra: 766/736 * (1 / (1 - 0.044)),
+                    bottom: 0.044
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(269, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/danny-kapowsky/back.svg",
+                    extra: 797/760 * (1 / (1 - 0.025)),
+                    bottom: 0.025
+                }
+            },
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(150, "feet"),
+                default: true
+            },
+            {
+                name: "Macro+",
+                height: math.unit(200, "feet")
+            },
+            {
+                name: "Macro++",
+                height: math.unit(300, "feet")
+            },
+            {
+                name: "Macro+++",
+                height: math.unit(400, "feet")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
 
