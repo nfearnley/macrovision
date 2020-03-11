@@ -13035,11 +13035,52 @@ characterMakers["Hildegard"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(5 + 7/12, "feet")
+                height: math.unit(5 + 7/12, "feet"),
+                default: true
             },
         ]
     )
 };
+
+characterMakers["Bernard & Wilder"] = () => {
+    return makeCharacter(
+        "Bernard & Wilder",
+        "Fidchell",
+        {
+            bernard: {
+                height: math.unit(2 + 7/12, "feet"),
+                weight: math.unit(66, "lb"),
+                name: "Bernard",
+                rename: true,
+                image: {
+                    source: "./media/characters/bernard-wilder/bernard.svg",
+                    extra: 192/166 * (1 / (1 - 0.05)),
+                    bottom: 0.05
+                }
+            },
+            wilder: {
+                height: math.unit(5 + 8/12, "feet"),
+                weight: math.unit(143, "lb"),
+                name: "Wilder",
+                rename: true,
+                image: {
+                    source: "./media/characters/bernard-wilder/wilder.svg",
+                    extra: 361/312 * (1 / (1 - 0.02)),
+                    bottom: 0.02
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(2 + 7/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
+//characters
 
 function makeCharacters() {
     const results = [];

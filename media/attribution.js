@@ -5155,6 +5155,20 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/bernard-wilder/",
+            files: [
+                { name: "bernard.svg", source: "https://fidverse.fandom.com/wiki/Bernard" },
+                { name: "wilder.svg", source: "https://fidverse.fandom.com/wiki/Wilder" },
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
+        //characters
+        {
             prefix: "./media/landmarks/",
             files: [
                 { name: "burj-khalifa.svg", source: "https://commons.wikimedia.org/wiki/File:TallestBuildings.svg" },
