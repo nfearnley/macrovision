@@ -246,599 +246,365 @@ characterMakers["March"] = () => {
     )
 };
 
-function makeMarch() {
-    const views = {
-        front: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(7, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(100, "kg")
+characterMakers["Noir"] = () => {
+    return makeCharacter(
+        "Noir",
+        "March-Dragon",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(60, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/noir/front.svg",
+                    extra: (1 / (1 - 0.032)),
+                    bottom: 0.032
                 }
             },
-            image: {
-                source: "./media/characters/march/front.svg"
-            },
-            name: "Front"
         },
-        foot: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(0.9, "feet")
+        [
+            {
+                name: "Normal",
+                height: math.unit(6.6, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(500, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(2.5, "km"),
+                default: true
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(22500, "km")
+            },
+            {
+                name: "Teramacro",
+                height: math.unit(2500000000, "km")
+            },
+            {
+                name: "Examacro",
+                height: math.unit(200, "parsecs")
+            },
+        ]
+    )
+};
+
+characterMakers["Okuri"] = () => {
+    return makeCharacter(
+        "Okuri",
+        "OrinoMechadragon",
+        {
+            front: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(100, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/okuri/front.svg",
+                    extra: (1 / (1 - 0.037)),
+                    bottom: 0.037
                 }
             },
-            image: {
-                source: "./media/characters/march/foot.svg"
-            },
-            name: "Foot"
-        }
-    };
-
-    const entity = makeEntity({ name: "March", author: "March-Dragon" }, views, []);
-
-    entity.sizes.push({
-        name: "Normal",
-        height: math.unit(7.9, "feet")
-    });
-
-    entity.sizes.push({
-        name: "Macro",
-        height: math.unit(220, "meters")
-    });
-
-    entity.sizes.push({
-        name: "Megamacro",
-        height: math.unit(2.98, "km")
-    });
-
-    entity.sizes.push({
-        name: "Gigamacro",
-        height: math.unit(15963, "km")
-    });
-
-    entity.sizes.push({
-        name: "Teramacro",
-        height: math.unit(2980000000, "kilometers")
-    });
-
-    entity.sizes.push({
-        name: "Examacro",
-        height: math.unit(250, "parsecs")
-    });
-
-    entity.views.front.height = math.unit(2.98, "km");
-    return entity;
-}
-
-function makeNoir() {
-    const views = {
-        front: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(6, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(60, "kg")
+            back: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(100, "kg"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/okuri/back.svg",
+                    extra: (1 / (1 - 0.007)),
+                    bottom: 0.007
                 }
             },
-            image: {
-                source: "./media/characters/noir/front.svg",
-                bottom: 0.01
-            },
-            name: "Front"
-        }
-    };
-
-    const entity = makeEntity({ name: "Noir", author: "March-Dragon" }, views, []);
-
-    entity.sizes.push({
-        name: "Normal",
-        height: math.unit(6.6, "feet")
-    });
-
-    entity.sizes.push({
-        name: "Macro",
-        height: math.unit(500, "feet")
-    });
-
-    entity.sizes.push({
-        name: "Megamacro",
-        height: math.unit(2.5, "km")
-    });
-
-    entity.sizes.push({
-        name: "Gigamacro",
-        height: math.unit(22500, "km")
-    });
-
-    entity.sizes.push({
-        name: "Teramacro",
-        height: math.unit(2500000000, "kilometers")
-    });
-
-    entity.sizes.push({
-        name: "Examacro",
-        height: math.unit(200, "parsecs")
-    });
-
-    entity.views.front.height = math.unit(2.5, "km");
-    return entity;
-}
-
-function makeOkuri() {
-    const views = {
-        front: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(7, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(100, "kg")
-                }
-            },
-            image: {
-                source: "./media/characters/okuri/front.svg"
-            },
-            name: "Front"
         },
-        back: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(7, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(100, "kg")
+        [
+            {
+                name: "Megamacro",
+                height: math.unit(100, "miles"),
+                default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Manny"] = () => {
+    return makeCharacter(
+        "Manny",
+        "Dialuca01",
+        {
+            front: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(100, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/manny/front.svg",
+                    extra: 1 / (1 - 0.06),
+                    bottom: 0.06
                 }
             },
-            image: {
-                source: "./media/characters/okuri/back.svg"
-            },
-            name: "Back"
-        }
-    };
-
-    const entity = makeEntity({ name: "Okuri", author: "OrionMechadragon" }, views, []);
-    entity.views.front.height = math.unit(100, "miles");
-    return entity;
-}
-
-function makeManny() {
-    const views = {
-        front: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(7, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(100, "kg")
+            back: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(100, "kg"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/manny/back.svg",
+                    extra: 1 / (1 - 0.014),
+                    bottom: 0.014
                 }
             },
-            image: {
-                source: "./media/characters/manny/front.svg"
-            },
-            name: "Front"
         },
-        back: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(7, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(100, "kg")
+        [
+            {
+                name: "Normal",
+                height: math.unit(7, "feet"),
+            },
+            {
+                name: "Macro",
+                height: math.unit(78, "feet"),
+                default: true
+            },
+            {
+                name: "Macro+",
+                height: math.unit(300, "meters")
+            },
+            {
+                name: "Macro++",
+                height: math.unit(2400, "meters")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(5167, "meters")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(41769, "miles")
+            },
+        ]
+    )
+};
+
+characterMakers["Adake"] = () => {
+    return makeCharacter(
+        "Adake",
+        "Dialuca01",
+        {
+            front: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(100, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/adake/front-1.svg"
                 }
             },
-            image: {
-                source: "./media/characters/manny/back.svg"
-            },
-            name: "Back"
-        }
-    };
-
-    const entity = makeEntity({ name: "Manny", author: "Dialuca01" }, views, []);
-
-    entity.sizes.push({
-        name: "Normal",
-        height: math.unit(7, "feet")
-    });
-    entity.sizes.push({
-        name: "Macro",
-        height: math.unit(78, "feet")
-    });
-    entity.sizes.push({
-        name: "Macro+",
-        height: math.unit(300, "meters")
-    });
-    entity.sizes.push({
-        name: "Macro++",
-        height: math.unit(2400, "feet")
-    });
-    entity.sizes.push({
-        name: "Megamacro",
-        height: math.unit(5167, "meters")
-    });
-    entity.sizes.push({
-        name: "Gigamacro",
-        height: math.unit(41769, "miles")
-    });
-
-    entity.views.front.height = math.unit(78, "feet");
-    return entity;
-}
-
-function makeAdake() {
-    const views = {
-        front: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(7, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(100, "kg")
+            frontAlt: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(100, "kg"),
+                name: "Front (Alt)",
+                image: {
+                    source: "./media/characters/adake/front-2.svg",
+                    extra: (1 / (1 - 0.01)),
+                    bottom: 0.01
                 }
             },
-            image: {
-                source: "./media/characters/adake/front-1.svg"
+            back: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(100, "kg"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/adake/back.svg",
+                }
             },
-            name: "Front"
+            kneel: {
+                height: math.unit(5.385, "feet"),
+                weight: math.unit(100, "kg"),
+                name: "Kneeling",
+                image: {
+                    source: "./media/characters/adake/kneel.svg",
+                    bottom: 0.052
+                }
+            },
         },
-        frontAlt: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(7, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(100, "kg")
+        [
+            {
+                name: "Normal",
+                height: math.unit(7, "feet"),
+            },
+            {
+                name: "Macro",
+                height: math.unit(78, "feet"),
+                default: true
+            },
+            {
+                name: "Macro+",
+                height: math.unit(300, "meters")
+            },
+            {
+                name: "Macro++",
+                height: math.unit(2400, "meters")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(5167, "meters")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(41769, "miles")
+            },
+        ]
+    )
+};
+
+characterMakers["Elijah"] = () => {
+    return makeCharacter(
+        "Elijah",
+        "Elijah",
+        {
+            side: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(50, "kg"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/elijah/side.svg",
+                    extra: (1 / (1 - 0.065)),
+                    bottom: 0.065
                 }
             },
-            image: {
-                source: "./media/characters/adake/front-2.svg",
-                bottom: 0.005
+            foot: {
+                height: math.unit(2.05, "feet"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/elijah/foot.svg"
+                }
             },
-            name: "Front (Alt)"
         },
-        back: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(7, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(100, "kg")
+        [
+            {
+                name: "Normal",
+                height: math.unit(1.65, "meters")
+            },
+            {
+                name: "Macro",
+                height: math.unit(55, "meters"),
+                default: true
+            },
+            {
+                name: "Macro+",
+                height: math.unit(105, "meters")
+            },
+        ]
+    )
+};
+
+characterMakers["Rai"] = () => {
+    return makeCharacter(
+        "Rai",
+        "shadowblade945",
+        {
+            front: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(80, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/rai/front.svg",
+                    extra: (1 / (1 - 0.03)),
+                    bottom: 0.03
                 }
             },
-            image: {
-                source: "./media/characters/adake/back.svg",
+            side: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(80, "kg"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/rai/side.svg"
+                }
             },
-            name: "Back"
+            back: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(80, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/rai/back.svg",
+                    extra: (1 / (1 - 0.01)),
+                    bottom: 0.01
+                }
+            },
         },
-        kneel: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(5.385, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(100, "kg")
+        [
+            {
+                name: "Macro",
+                height: math.unit(302, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Jazzy"] = () => {
+    return makeCharacter(
+        "Jazzy",
+        "JazzyWolf",
+        {
+            front: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(80, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/jazzy/front.svg",
+                    extra: (1 / (1 - 0.01)),
+                    bottom: 0.01
                 }
             },
-            image: {
-                source: "./media/characters/adake/kneel.svg",
-                bottom: 0.05
+            back: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(80, "kg"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/jazzy/back.svg",
+                    extra: (1 / (1 - 0.01)),
+                    bottom: 0.01
+                }
             },
-            name: "Kneeling"
         },
-    };
+        [
+            {
+                name: "Macro",
+                height: math.unit(216, "feet"),
+                default: true
+            },
+        ]
+    )
+};
 
-    const entity = makeEntity({ name: "Adake", author: "Dialuca01" }, views, []);
-
-    entity.sizes.push({
-        name: "Normal",
-        height: math.unit(7, "feet")
-    });
-    entity.sizes.push({
-        name: "Macro",
-        height: math.unit(78, "feet")
-    });
-    entity.sizes.push({
-        name: "Macro+",
-        height: math.unit(300, "meters")
-    });
-    entity.sizes.push({
-        name: "Macro++",
-        height: math.unit(2400, "feet")
-    });
-    entity.sizes.push({
-        name: "Megamacro",
-        height: math.unit(5167, "meters")
-    });
-    entity.sizes.push({
-        name: "Gigamacro",
-        height: math.unit(41769, "miles")
-    });
-    entity.views.front.height = math.unit(78, "feet");
-    return entity;
-}
-
-function makeElijah() {
-    const views = {
-        side: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(7, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(50, "kg")
+characterMakers["Flamm"] = () => {
+    return makeCharacter(
+        "Flamm",
+        "Flamm",
+        {
+            front: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(80, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/flamm/front.svg",
+                    extra: (1 / (1 - 0.02)),
+                    bottom: 0.02
                 }
             },
-            image: {
-                source: "./media/characters/elijah/side.svg",
-                bottom: 0.01
-            },
-            name: "Side"
         },
-        foot: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(2, "feet")
-                }
+        [
+            {
+                name: "Normal",
+                height: math.unit(9.5, "feet")
             },
-            image: {
-                source: "./media/characters/elijah/foot.svg",
+            {
+                name: "Macro",
+                height: math.unit(200, "feet"),
+                default: true
             },
-            name: "Foot"
-        }
-    };
-
-    const entity = makeEntity({ name: "Elijah", author: "Elijah" }, views, []);
-
-    entity.sizes.push({
-        name: "Normal",
-        height: math.unit(1.65, "meters")
-    });
-
-    entity.sizes.push({
-        name: "Macro",
-        height: math.unit(55, "meters")
-    });
-
-    entity.sizes.push({
-        name: "Macro+",
-        height: math.unit(105, "meters")
-    });
-
-    entity.views.side.height = math.unit(55, "meters");
-    return entity;
-}
-
-function makeRai() {
-    const views = {
-        front: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(7, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(80, "kg")
-                }
-            },
-            image: {
-                source: "./media/characters/rai/front.svg"
-            },
-            name: "Front"
-        },
-        side: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(7, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(80, "kg")
-                }
-            },
-            image: {
-                source: "./media/characters/rai/side.svg"
-            },
-            name: "Side"
-        },
-        back: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(7, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(80, "kg")
-                }
-            },
-            image: {
-                source: "./media/characters/rai/back.svg"
-            },
-            name: "Back"
-        }
-    };
-
-    const entity = makeEntity({ name: "Rai", author: "shadowblade945" }, views, []);
-    entity.views.front.height = math.unit(302, "feet");
-    return entity;
-}
-
-function makeJazzy() {
-    const views = {
-        front: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(7, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(80, "kg")
-                }
-            },
-            image: {
-                source: "./media/characters/jazzy/front.svg",
-                bottom: 0.01
-            },
-            name: "Front"
-        },
-        back: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(7, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(80, "kg")
-                }
-            },
-            image: {
-                source: "./media/characters/jazzy/back.svg"
-            },
-            name: "Back"
-        }
-    };
-
-    const entity = makeEntity({ name: "Jazzy", author: "Jazzywolf" }, views, []);
-    entity.views.front.height = math.unit(216, "feet");
-    return entity;
-}
-
-function makeFlamm() {
-    const views = {
-        front: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(7, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(80, "kg")
-                }
-            },
-            image: {
-                source: "./media/characters/flamm/front.svg"
-            },
-            name: "Front"
-        }
-    };
-
-    const entity = makeEntity({ name: "Flamm", author: "Flamm" }, views, []);
-
-    entity.sizes.push({
-        name: "Normal",
-        height: math.unit(9.5, "feet")
-    });
-
-    entity.sizes.push({
-        name: "Macro",
-        height: math.unit(200, "feet")
-    });
-
-    entity.views.front.height = math.unit(200, "feet");
-    return entity;
-}
+        ]
+    )
+};
 
 characterMakers["Zephiro"] = () => {
     return makeCharacter(
@@ -894,157 +660,103 @@ characterMakers["Zephiro"] = () => {
     )
 };
 
-function makeFory() {
-    const views = {
-        front: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(7, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(90, "kg")
+characterMakers["Fory"] = () => {
+    return makeCharacter(
+        "Fory",
+        "Manny",
+        {
+            front: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(90, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/fory/front.svg",
+                    extra: (1 / (1 - 0.03)),
+                    bottom: 0.03
                 }
             },
-            image: {
-                source: "./media/characters/fory/front.svg"
-            },
-            name: "Front"
-        }
-    };
-
-    const entity = makeEntity({ name: "Fory", author: "Manny" }, views, []);
-
-
-    entity.sizes.push({
-        name: "Normal",
-        height: math.unit(5, "feet")
-    });
-
-    entity.sizes.push({
-        name: "Macro",
-        height: math.unit(50, "feet")
-    });
-
-    entity.views.front.height = math.unit(50, "feet");
-    return entity;
-}
-
-function makeKurrikage() {
-    const views = {
-        front: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(7, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(90, "kg")
-                }
-            },
-            image: {
-                source: "./media/characters/kurrikage/front.svg"
-            },
-            name: "Front"
         },
-        back: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(7, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(90, "kg")
-                }
+        [
+            {
+                name: "Normal",
+                height: math.unit(5, "feet")
             },
-            image: {
-                source: "./media/characters/kurrikage/back.svg"
+            {
+                name: "Macro",
+                height: math.unit(50, "feet"),
+                default: true
             },
-            name: "Back"
-        },
-        paw: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(1.5, "feet")
-                }
-            },
-            image: {
-                source: "./media/characters/kurrikage/paw.svg"
-            },
-            name: "Paw"
-        },
-        staff: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(6.7, "feet")
-                }
-            },
-            image: {
-                source: "./media/characters/kurrikage/staff.svg"
-            },
-            name: "Staff"
-        },
-        peek: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(1.05, "feet")
-                }
-            },
-            image: {
-                source: "./media/characters/kurrikage/peek.svg",
-                bottom: 0.08
-            },
-            name: "Peeking"
-        }
-    };
+        ]
+    )
+};
 
-    const entity = makeEntity({ name: "Kurrikage", author: "Kurrikage" }, views, []);
-    entity.views.front.height = math.unit(12, "feet");
-
-    entity.sizes.push({
-        name: "Normal",
-        height: math.unit(12, "feet"),
-        default: true
-    });
-    entity.sizes.push({
-        name: "Big",
-        height: math.unit(20, "feet")
-    });
-    entity.sizes.push({
-        name: "Macro",
-        height: math.unit(500, "feet")
-    });
-    entity.sizes.push({
-        name: "Megamacro",
-        height: math.unit(20, "miles")
-    });
-
-    return entity;
-}
+characterMakers["Kurrikage"] = () => {
+    return makeCharacter(
+        "Kurrikage",
+        "Kurrikage",
+        {
+            front: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(90, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/kurrikage/front.svg",
+                    extra: (1 / (1 - 0.035)),
+                    bottom: 0.035
+                }
+            },
+            back: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(90, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/kurrikage/back.svg"
+                }
+            },
+            paw: {
+                height: math.unit(1.5, "feet"),
+                name: "Paw",
+                image: {
+                    source: "./media/characters/kurrikage/paw.svg"
+                }
+            },
+            staff: {
+                height: math.unit(6.7, "feet"),
+                name: "Staff",
+                image: {
+                    source: "./media/characters/kurrikage/staff.svg"
+                }
+            },
+            peek: {
+                height: math.unit(1.05, "feet"),
+                name: "Peeking",
+                image: {
+                    source: "./media/characters/kurrikage/peek.svg",
+                    bottom: 0.08
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(12, "feet"),
+                default: true
+            },
+            {
+                name: "Big",
+                height: math.unit(20, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(500, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(20, "miles")
+            },
+        ]
+    )
+};
 
 characterMakers["Shingo"] = () => {
     return makeCharacter(
@@ -13145,62 +12857,6 @@ characterMakers["Tobo"] = () => {
 
 function makeCharacters() {
     const results = [];
-    results.push({
-        name: "Noir",
-        constructor: makeNoir
-    });
-    results.push({
-        name: "Okuri",
-        constructor: makeOkuri
-    });
-    results.push({
-        name: "Manny",
-        constructor: makeManny
-    });
-    results.push({
-        name: "Adake",
-        constructor: makeAdake
-    });
-    results.push({
-        name: "Elijah",
-        constructor: makeElijah
-    });
-    results.push({
-        name: "Rai",
-        constructor: makeRai
-    });
-    results.push({
-        name: "Jazzy",
-        constructor: makeJazzy
-    });
-    results.push({
-        name: "Flamm",
-        constructor: makeFlamm
-    });
-    results.push({
-        name: "Fory",
-        constructor: makeFory
-    });
-    results.push({
-        name: "Kurrikage",
-        constructor: makeKurrikage
-    });
-    results.push({
-        name: "Aigey",
-        constructor: makeAigey
-    });
-    results.push({
-        name: "Natasha",
-        constructor: makeNatasha
-    });
-    results.push({
-        name: "Malik",
-        constructor: makeMalik
-    });
-    results.push({
-        name: "Sefer",
-        constructor: makeSefer
-    });
 
     Object.entries(characterMakers).forEach(([key, value]) => {
         results.push({
