@@ -13054,7 +13054,7 @@ characterMakers["Bernard & Wilder"] = () => {
                 rename: true,
                 image: {
                     source: "./media/characters/bernard-wilder/bernard.svg",
-                    extra: 192/166 * (1 / (1 - 0.05)),
+                    extra: 192/128 * (1 / (1 - 0.05)),
                     bottom: 0.05
                 }
             },
@@ -13136,6 +13136,42 @@ characterMakers["Ingrid"] = () => {
             {
                 name: "Normal",
                 height: math.unit(6, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Malgam"] = () => {
+    return makeCharacter(
+        "Malgam",
+        "Fidchell",
+        {
+            eevee: {
+                height: math.unit(2 + 10/12, "feet"),
+                weight: math.unit(86, "lb"),
+                name: "Eevee",
+                image: {
+                    source: "./media/characters/malgam/eevee.svg",
+                    extra: 218/180 * (1 / (1 - 0.2)),
+                    bottom: 0.2
+                }
+            },
+            sylveon: {
+                height: math.unit(4, "feet"),
+                weight: math.unit(101, "lb"),
+                name: "Sylveon",
+                image: {
+                    source: "./media/characters/malgam/sylveon.svg",
+                    extra: 371/325 * (1 / (1 - 0.015)),
+                    bottom: 0.015
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(2 + 10/12, "feet"),
                 default: true
             },
         ]

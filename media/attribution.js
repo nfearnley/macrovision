@@ -5192,6 +5192,19 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/malgam/",
+            files: [
+                { name: "eevee.svg", source: "https://fidverse.fandom.com/wiki/Malgam" },
+                { name: "sylveon.svg", source: "https://fidverse.fandom.com/wiki/https://fidverse.fandom.com/wiki/Malgam_Future" },
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
