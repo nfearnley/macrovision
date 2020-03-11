@@ -1353,7 +1353,7 @@ const fitModes = {
     }
 }
 
-function fitWorld(manual=false) {
+function fitWorld(manual=false, factor=1.1) {
     const fitMode = fitModes[config.autoFitMode]
     let max = fitMode.start
 
@@ -1377,7 +1377,7 @@ function fitWorld(manual=false) {
 
     if (manual)
         altHeld = true;
-    setWorldHeight(config.height, math.multiply(max, 1.1));
+    setWorldHeight(config.height, math.multiply(max, factor));
     if (manual)
         altHeld = false;
 }

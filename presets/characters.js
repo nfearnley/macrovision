@@ -13177,6 +13177,32 @@ characterMakers["Malgam"] = () => {
         ]
     )
 };
+
+characterMakers["Fleur"] = () => {
+    return makeCharacter(
+        "Fleur",
+        "Fidchell",
+        {
+            front: {
+                height: math.unit(5 + 11/12, "feet"),
+                weight: math.unit(188, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/fleur/front.svg",
+                    extra: 309/283 * (1 / (1 - 0.007)),
+                    bottom: 0.007
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 11/12, "feet")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

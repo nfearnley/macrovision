@@ -5205,6 +5205,18 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/fleur/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Fleur" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",

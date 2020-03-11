@@ -78,6 +78,35 @@ function makeOwnerScene(owner) {
     }
 }
 
+function makeOwnerSceneViews(owner) {
+    return () => {
+        availableEntities["characters"].filter(x => {
+            const entity = x.constructor();
+            const owners = ownersOf(entity.views[entity.view].image.source);
+            if (owners)
+                return owners.indexOf(owner) != -1;
+            else
+                return false;
+        }).map(maker => {
+            return maker.constructor();
+        }).flatMap(entity => {
+            return Object.keys(entity.views).map(view => {
+                console.log(entity)
+                const newEnt = availableEntitiesByName[entity.identifier].constructor();
+                newEnt.view = view;
+                return newEnt;
+            });
+        }).sort((e1, e2) => {
+            return e1.sizes[e1.sizes.length - 1].height.toNumber() - e2.sizes[e2.sizes.length - 1].height.toNumber()
+        }).forEach(entity => {
+            displayEntity(entity, entity.view, 0, 1);
+        });
+        
+        arrangeEntities(getSortedEntities());
+        fitWorld(true, 2);
+    }
+}
+
 scenes["Kurri"] = () => {
     availableEntities["characters"].filter(x => {
         const entity = x.constructor();
@@ -113,4 +142,4 @@ scenes["Neopuc"] = () => {
     fitWorld(true);
 }
 
-scenes["Fidverse"] = makeOwnerScene("fidchell");
+scenes["Fidverse"] = makeOwnerSceneViews("fidchell");
