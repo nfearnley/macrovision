@@ -4612,6 +4612,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/tobo/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/28647736/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/28647736/" },
+            ],
+            authors: [
+                "nanicreates"
+            ],
+            owners: [
+                "naoya-raichi"
+            ]
+        },
+        {
             prefix: "./media/characters/torvid/",
             files: [
                 { name: "side.svg", source: null }
@@ -7145,6 +7158,14 @@ const attributionData = {
         "indiwolfonline": {
             "name": "IndiWolfOnline",
             "url": "https://www.furaffinity.net/user/indiwolfonline",
+        },
+        "naoya-raichi": {
+            "name": "Naoya_Raichi",
+            "url": "https://www.furaffinity.net/user/naoyaraichi/",
+        },
+        "nanicreates": {
+            "name": "nanicreates",
+            "url": "https://www.furaffinity.net/user/nanicreates",
         },
     }
 }

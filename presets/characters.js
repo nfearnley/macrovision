@@ -13080,6 +13080,69 @@ characterMakers["Felix"] = () => {
     )
 };
 
+characterMakers["Tobo"] = () => {
+    return makeCharacter(
+        "Tobo",
+        "Naoya_Raichi",
+        {
+            front: {
+                height: math.unit(6 + 1/12, "feet"),
+                weight: math.unit(250, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/tobo/front.svg",
+                    extra: 608/586 * (1 / (1 - 0.023)),
+                    bottom: 0.023
+                }
+            },
+            back: {
+                height: math.unit(6 + 1/12, "feet"),
+                weight: math.unit(250, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/tobo/back.svg",
+                    extra: 608/586
+                }
+            },
+        },
+        [
+            {
+                name: "Nano",
+                height: math.unit(2, "nm")
+            },
+            {
+                name: "Megamicro",
+                height: math.unit(0.1, "mm")
+            },
+            {
+                name: "Micro",
+                height: math.unit(1, "inch"),
+                default: true
+            },
+            {
+                name: "Human-sized",
+                height: math.unit(6 + 1/12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(250, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(75, "miles")
+            },
+            {
+                name: "Texas-sized",
+                height: math.unit(750, "miles")
+            },
+            {
+                name: "Teramacro",
+                height: math.unit(50000, "miles")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
     results.push({
