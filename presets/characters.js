@@ -13016,6 +13016,31 @@ characterMakers["Aevsivs"] = () => {
     )
 };
 
+characterMakers["Hildegard"] = () => {
+    return makeCharacter(
+        "Hildegard",
+        "Fidchell",
+        {
+            front: {
+                height: math.unit(5 + 7/12, "feet"),
+                weight: math.unit(159, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/hildegard/front.svg",
+                    extra: 312/286 * (1 / (1 - 0.005)),
+                    bottom: 0.005
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 7/12, "feet")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
 

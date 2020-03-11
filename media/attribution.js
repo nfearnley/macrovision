@@ -5143,6 +5143,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/hildegard/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Hildegard" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
+        {
             prefix: "./media/landmarks/",
             files: [
                 { name: "burj-khalifa.svg", source: "https://commons.wikimedia.org/wiki/File:TallestBuildings.svg" },
@@ -7276,6 +7288,10 @@ const attributionData = {
         "aevsivs": {
             "name": "Aevsivs",
             "url": "https://twitter.com/Aevsivs",
+        },
+        "fidchell": {
+            "name": "Fidchell",
+            "url": "https://www.furaffinity.net/user/fidchellvore/",
         },
     }
 }

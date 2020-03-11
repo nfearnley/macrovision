@@ -47,7 +47,7 @@ body {
 .entity-name {
     display: none;
     position: absolute;
-    top: calc(-100% + var(--extra));
+    top: calc(-100% + var(--extra) / 2);
     left: 0%;
     transform: translate(-50%, -36px);
     font-size: 24px;
