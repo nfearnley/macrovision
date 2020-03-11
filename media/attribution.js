@@ -2219,6 +2219,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/finn/",
+            files: [
+                { name: "side.svg", source: null }
+            ],
+            authors: [
+                "llcomics"
+            ],
+            owners: [
+                "finn-the-fennecfox"
+            ]
+        },
+        {
             prefix: "./media/characters/flamm/",
             files: [
                 { name: "front.svg", source: null }
@@ -7192,6 +7204,14 @@ const attributionData = {
         "nh63879": {
             "name": "nh63879",
             "url": "https://www.furaffinity.net/user/nh63879/",
+        },
+        "llcomics": {
+            "name": "LL Comics",
+            "url": "http://aminoapps.com/p/agjxea",
+        },
+        "finn-the-fennecfox": {
+            "name": "Finn",
+            "url": "https://www.furaffinity.net/user/Finn-the-FennecFox",
         },
     }
 }

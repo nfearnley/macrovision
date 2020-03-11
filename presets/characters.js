@@ -12903,6 +12903,32 @@ characterMakers["Danny Kapowsky"] = () => {
     )
 };
 
+characterMakers["Finn"] = () => {
+    return makeCharacter(
+        "Finn",
+        "Finn-The-Fennecfox",
+        {
+            side: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(170, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/finn/side.svg",
+                    extra: 1953/1807 * (1 / (1 - 0.057)),
+                    bottom: 0.057
+                }
+            },
+        },
+        [
+            {
+                name: "Megamacro",
+                height: math.unit(14445, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
 
