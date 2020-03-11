@@ -2170,8 +2170,8 @@ const attributionData = {
         {
             prefix: "./media/characters/felix/",
             files: [
-                { name: "front.svg", source: null },
-                { name: "front-clothed.svg", source: null },
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34908541/" },
+                { name: "front-clothed.svg", source: "https://www.furaffinity.net/view/34908541/" },
             ],
             authors: [
                 "indiwolfonline"
