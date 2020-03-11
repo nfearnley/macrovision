@@ -13080,6 +13080,40 @@ characterMakers["Bernard & Wilder"] = () => {
     )
 };
 
+characterMakers["Hearth"] = () => {
+    return makeCharacter(
+        "Hearth",
+        "Fidchell",
+        {
+            anthro: {
+                height: math.unit(6 + 1/12, "feet"),
+                weight: math.unit(155, "lb"),
+                name: "Anthro",
+                image: {
+                    source: "./media/characters/hearth/anthro.svg",
+                    extra: 260/250 * (1 / (1 - 0.02)),
+                    bottom: 0.02
+                }
+            },
+            feral: {
+                height: math.unit(3.78, "feet"),
+                weight: math.unit(35, "kg"),
+                name: "Feral",
+                image: {
+                    source: "./media/characters/hearth/feral.svg",
+                    extra: 153/135 * (1 / (1 - 0.03)),
+                    bottom: 0.03
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6 + 1/12, "feet")
+            },
+        ]
+    )
+};
 //characters
 
 function makeCharacters() {

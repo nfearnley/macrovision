@@ -5167,6 +5167,19 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/hearth/",
+            files: [
+                { name: "anthro.svg", source: "https://fidverse.fandom.com/wiki/Hearth" },
+                { name: "feral.svg", source: "https://fidverse.fandom.com/wiki/Hearth" },
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
