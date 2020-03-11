@@ -1185,6 +1185,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/aevsivs/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/28301694/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/28301694/" },
+            ],
+            authors: [
+                "tankh"
+            ],
+            owners: [
+                "aevsivs"
+            ]
+        },
+        {
             prefix: "./media/characters/aigey/",
             files: [
                 { name: "side.svg", source: "https://www.furaffinity.net/view/12006265/" }
@@ -1375,7 +1388,7 @@ const attributionData = {
         {
             prefix: "./media/characters/arc/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/35343831/" }
+                { name: "side.svg", source: "https://www.furaffinity.net/view/35343831/" },
             ],
             authors: [
                 "poketto-monsta"
@@ -1718,6 +1731,21 @@ const attributionData = {
             ],
             owners: [
                 "movler"
+            ]
+        },
+        {
+            prefix: "./media/characters/cimmaron/",
+            files: [
+                { name: "front-clothed.svg", source: "https://www.furaffinity.net/user/cimmaronspirit11/" },
+                { name: "back-clothed.svg", source: "https://www.furaffinity.net/user/cimmaronspirit11/" },
+                { name: "front-nude.svg", source: "https://www.furaffinity.net/user/cimmaronspirit11/" },
+                { name: "back-nude.svg", source: "https://www.furaffinity.net/user/cimmaronspirit11/" },
+            ],
+            authors: [
+                "vallhund"
+            ],
+            owners: [
+                "cimmaron"
             ]
         },
         {
@@ -7240,6 +7268,14 @@ const attributionData = {
         "dracodare": {
             "name": "dracodare",
             "url": "www.furaffinity.com/user/dracodare",
+        },
+        "cimmaron": {
+            "name": "Cimmaron",
+            "url": "https://www.furaffinity.net/user/cimmaronspirit11/",
+        },
+        "aevsivs": {
+            "name": "Aevsivs",
+            "url": "https://twitter.com/Aevsivs",
         },
     }
 }

@@ -255,17 +255,6 @@ https://www.furaffinity.net/view/21787301/
 
 * front.svg
 
-## Cimmaron
-
-**https://www.furaffinity.net/user/vallhund/**
-
-https://www.furaffinity.net/view/20308475/
-
-* front-clothed.svg
-* back-clothed.svg
-* front-nude.svg
-* back-nude.svg
-
 ## Akari
 
 **https://www.furaffinity.net/user/spyropurple/**

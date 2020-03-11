@@ -12978,6 +12978,44 @@ characterMakers["Roy"] = () => {
     )
 };
 
+characterMakers["Aevsivs"] = () => {
+    return makeCharacter(
+        "Aevsivs",
+        "Aevsivs",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(100, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/aevsivs/front.svg",
+                    extra: (1 / (1 - 0.03)),
+                    bottom: 0.03
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(100, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/aevsivs/back.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(2, "inches"),
+                default: true
+            },
+            {
+                name: "Normal",
+                height: math.unit(5, "feet")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
 
@@ -12986,6 +13024,23 @@ function makeCharacters() {
             name: key,
             constructor: value
         });
+    });
+
+    results.push({
+        name: "Aigey",
+        constructor: makeAigey
+    });
+    results.push({
+        name: "Natasha",
+        constructor: makeNatasha
+    });
+    results.push({
+        name: "Malik",
+        constructor: makeMalik
+    });
+    results.push({
+        name: "Sefer",
+        constructor: makeSefer
     });
     return results;
 }
