@@ -5180,6 +5180,18 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/ingrid/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Ingrid" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",

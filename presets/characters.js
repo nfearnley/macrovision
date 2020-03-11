@@ -13109,7 +13109,34 @@ characterMakers["Hearth"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(6 + 1/12, "feet")
+                height: math.unit(6 + 1/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Ingrid"] = () => {
+    return makeCharacter(
+        "Ingrid",
+        "Fidchell",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(182, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/ingrid/front.svg",
+                    extra: 294/268 * (1 / (1 - 0.027)),
+                    bottom: 0.027
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6, "feet"),
+                default: true
             },
         ]
     )
