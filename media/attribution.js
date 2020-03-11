@@ -5217,6 +5217,18 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/jude/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Jude" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",

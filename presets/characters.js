@@ -13197,7 +13197,34 @@ characterMakers["Fleur"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(5 + 11/12, "feet")
+                height: math.unit(5 + 11/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Jude"] = () => {
+    return makeCharacter(
+        "Jude",
+        "Fidchell",
+        {
+            front: {
+                height: math.unit(5 + 4/12, "feet"),
+                weight: math.unit(122, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/jude/front.svg",
+                    extra: 288/273 * (1 / (1 - 0.03)),
+                    bottom: 0.03
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 4/12, "feet"),
+                default: true
             },
         ]
     )
