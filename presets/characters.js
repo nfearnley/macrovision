@@ -12929,6 +12929,44 @@ characterMakers["Finn"] = () => {
     )
 };
 
+characterMakers["Roy"] = () => {
+    return makeCharacter(
+        "Roy",
+        "dracodare",
+        {
+            front: {
+                height: math.unit(5 + 6/12, "feet"),
+                weight: math.unit(125, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/roy/front.svg",
+                    extra: (1 / (1 - 0.11)),
+                    bottom: 0.11
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(3, "inches"),
+                default: true
+            },
+            {
+                name: "Normal",
+                height: math.unit(5 + 6/12, "feet")
+            },
+            {
+                name: "Lesser Macro",
+                height: math.unit(60, "feet")
+            },
+            {
+                name: "Greater Macro",
+                height: math.unit(120, "feet")
+            },
+        ]
+    )
+};
+
 function makeCharacters() {
     const results = [];
 

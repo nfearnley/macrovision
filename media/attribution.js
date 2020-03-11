@@ -3981,6 +3981,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/roy/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "dracodare"
+            ],
+            owners: [
+                "dracodare"
+            ]
+        },
+        {
             prefix: "./media/characters/rufran/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/32675074/" },
@@ -7212,6 +7224,10 @@ const attributionData = {
         "finn-the-fennecfox": {
             "name": "Finn",
             "url": "https://www.furaffinity.net/user/Finn-the-FennecFox",
+        },
+        "dracodare": {
+            "name": "dracodare",
+            "url": "www.furaffinity.com/user/dracodare",
         },
     }
 }
