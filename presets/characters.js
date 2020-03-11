@@ -8755,6 +8755,13 @@ characterMakers["Nomaxice"] = () => {
                     bottom: 0.075
                 }
             },
+            foot: {
+                height: math.unit(1.1, "feet"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/nomaxice/foot.svg"
+                }
+            },
         },
         [
             {

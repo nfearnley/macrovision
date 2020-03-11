@@ -3556,6 +3556,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/nomaxice/",
+            files: [
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/30285328/" }
+            ],
+            authors: [
+                "proximiter"
+            ],
+            owners: [
+                "nomaxice"
+            ]
+        },
+        {
             prefix: "./media/characters/north/",
             files: [
                 { name: "front.svg", source: "https://twitter.com/Bunnox1/status/1215858071731408896" }
