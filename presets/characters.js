@@ -13576,7 +13576,8 @@ characterMakers["Ashe"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(5 + 11/12, "feet")
+                height: math.unit(5 + 11/12, "feet"),
+                default: true
             },
         ]
     )
@@ -13588,8 +13589,8 @@ characterMakers["Beatrix"] = () => {
         "Fidchell",
         {
             front: {
-                height: math.unit(6, "feet"),
-                weight: math.unit(150, "lb"),
+                height: math.unit(5 + 5/12, "feet"),
+                weight: math.unit(135, "lb"),
                 name: "Front",
                 image: {
                     source: "./media/characters/beatrix/front.svg",
@@ -13601,12 +13602,88 @@ characterMakers["Beatrix"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(6, "feet")
+                height: math.unit(6, "feet"),
+                default: true
             },
         ]
     )
 };
 
+characterMakers["Ignatius"] = () => {
+    return makeCharacter(
+        "Ignatius",
+        "Fidchell",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/ignatius/front.svg",
+                    extra: 245/222 * (1 / (1 - 0.01)),
+                    bottom: 0.01
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 5/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Mei Li"] = () => {
+    return makeCharacter(
+        "Mei Li",
+        "Fidchell",
+        {
+            front: {
+                height: math.unit(6 + 2/12, "feet"),
+                weight: math.unit(138, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/mei-li/front.svg",
+                    extra: 237/229 * (1 / (1 - 0.03)),
+                    bottom: 0.03
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6 + 2/12, "feet")
+            },
+        ]
+    )
+};
+
+characterMakers["Puru"] = () => {
+    return makeCharacter(
+        "Puru",
+        "Fidchell",
+        {
+            front: {
+                height: math.unit(2 + 4/12, "feet"),
+                weight: math.unit(62, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/puru/front.svg",
+                    extra: 206/149 * (1 / (1 - 0.06)),
+                    bottom: 0.06
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(2 + 4/12, "feet")
+            },
+        ]
+    )
+};
 
 //characters
 

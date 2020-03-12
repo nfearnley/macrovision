@@ -5399,6 +5399,42 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/igantius/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Igantius" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
+        {
+            prefix: "./media/characters/mei-li/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Mei_Li" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
+        {
+            prefix: "./media/characters/puru/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Puru" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
