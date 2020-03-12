@@ -279,6 +279,15 @@ function makeEntity(info, views, sizes) {
             if (this.size === undefined && this.sizes.length > 0) {
                 this.views[this.defaultView].height = this.sizes[0].height;
                 this.size = this.sizes[0];
+                console.warn("No default size set for " + info.name);
+            } else if (this.sizes.length == 0) {
+                this.sizes = [
+                    {
+                        name: "Normal",
+                        height: this.views[this.defaultView].height
+                    }
+                ];
+                this.size = this.sizes[0];
             }
 
             this.desc = {};
