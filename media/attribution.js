@@ -5548,6 +5548,54 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/elise/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Elise" },
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
+        {
+            prefix: "./media/characters/glade/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Glade" },
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
+        {
+            prefix: "./media/characters/rina/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Rina" },
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
+        {
+            prefix: "./media/characters/veronica/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Veronica" },
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",

@@ -13927,7 +13927,8 @@ characterMakers["Grottos"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(10 + 9/12, "feet")
+                height: math.unit(10 + 9/12, "feet"),
+                default: true
             },
         ]
     )
@@ -13960,11 +13961,116 @@ characterMakers["Frifna"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(9 + 6/12, "feet")
+                height: math.unit(9 + 6/12, "feet"),
+                default: true
             },
         ]
     )
 };
+
+characterMakers["Elise"] = () => {
+    return makeCharacter(
+        "Elise",
+        "Fidchell",
+        {
+            front: {
+                height: math.unit(6 + 2/12, "feet"),
+                weight: math.unit(168, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/elise/front.svg",
+                    extra: 276/271
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6 + 2/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Glade"] = () => {
+    return makeCharacter(
+        "Glade",
+        "Fidchell",
+        {
+            front: {
+                height: math.unit(5 + 10/12, "feet"),
+                weight: math.unit(210, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/glade/front.svg",
+                    extra: 258/247 * (1 / (1 - 0.008)),
+                    bottom: 0.008
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 10/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Rina"] = () => {
+    return makeCharacter(
+        "Rina",
+        "Fidchell",
+        {
+            front: {
+                height: math.unit(5 + 10/12, "feet"),
+                weight: math.unit(129, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/rina/front.svg",
+                    extra: 266/255 * (1 / (1 - 0.005)),
+                    bottom: 0.005
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 10/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Veronica"] = () => {
+    return makeCharacter(
+        "Veronica",
+        "Fidchell",
+        {
+            front: {
+                height: math.unit(6 + 1/12, "feet"),
+                weight: math.unit(192, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/veronica/front.svg",
+                    extra: 319/309 * (1 / (1 - 0.005)),
+                    bottom: 0.005
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6 + 1/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
