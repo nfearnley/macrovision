@@ -5266,6 +5266,18 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/sol/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Sol" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
