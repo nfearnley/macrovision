@@ -5522,6 +5522,19 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/grottos/",
+            files: [
+                { name: "anthro.svg", source: "https://fidverse.fandom.com/wiki/Grottos" },
+                { name: "feral.svg", source: "https://fidverse.fandom.com/wiki/Grottos" },
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",

@@ -13898,6 +13898,41 @@ characterMakers["Embra"] = () => {
     )
 };
 
+characterMakers["Grottos"] = () => {
+    return makeCharacter(
+        "Grottos",
+        "Fidchell",
+        {
+            anthro: {
+                height: math.unit(10 + 9/12, "feet"),
+                weight: math.unit(224, "lb"),
+                name: "Anthro",
+                image: {
+                    source: "./media/characters/grottos/anthro.svg",
+                    extra: 350/332 * (1 / (1 - 0.045)),
+                    bottom: 0.045
+                }
+            },
+            feral: {
+                height: math.unit(20 + 7/12, "feet"),
+                weight: math.unit(629, "lb"),
+                name: "Feral",
+                image: {
+                    source: "./media/characters/grottos/feral.svg",
+                    extra: 207/190 * (1 / (1 - 0.05)),
+                    bottom: 0.05
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(10 + 9/12, "feet")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
