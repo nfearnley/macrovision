@@ -5312,7 +5312,7 @@ const attributionData = {
                 "fidchell"
             ],
             owners: [
-                "fidchell"
+                "cam"
             ]
         },
         {
@@ -5336,7 +5336,7 @@ const attributionData = {
                 "fidchell"
             ],
             owners: [
-                "fidchell"
+                "cam"
             ]
         },
         {
@@ -7682,6 +7682,10 @@ const attributionData = {
         "flixard": {
             "name": "Flixard",
             "url": "https://www.furaffinity.net/user/flixard/",
+        },
+        "cam": {
+            "name": "Cam",
+            "url": "https://www.furaffinity.net/user/paintedmutt",
         },
     }
 }
