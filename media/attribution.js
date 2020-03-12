@@ -5315,6 +5315,18 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/gabriel/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Gabriel" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",

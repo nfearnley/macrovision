@@ -13425,6 +13425,30 @@ characterMakers["Topaz"] = () => {
     )
 };
 
+characterMakers["Gabriel"] = () => {
+    return makeCharacter(
+        "Gabriel",
+        "Fidchell",
+        {
+            front: {
+                height: math.unit(5 + 11/12, "feet"),
+                weight: math.unit(144, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/gabriel/front.svg",
+                    extra: 285/262 * (1 / (1 - 0.004)),
+                    bottom: 0.004
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 11/12, "feet")
+            },
+        ]
+    )
+};
 
 //characters
 
