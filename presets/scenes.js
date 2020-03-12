@@ -146,6 +146,7 @@ scenes["Fidverse"] = () => {
     makeOwnerSceneViews("fidchell")();
     document.querySelector("#entity-" + (entityIndex-1)).dataset.x = 0.5;
     document.querySelector("#entity-" + (entityIndex-2)).dataset.x = 0.25;
+    document.querySelector("#entity-" + (entityIndex-3)).dataset.x = 0.75;
     updateSizes();
     fitWorld(true, 1);
 }
