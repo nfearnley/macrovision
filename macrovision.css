@@ -133,6 +133,8 @@ body.toggle-entity-name .entity-name {
     display: flex;
     text-align: center;
     width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .options-block {
@@ -441,4 +443,12 @@ a {
 
 a.corner-ribbon {
     text-decoration: none;
+}
+
+input[type=checkbox] {
+    transform: scale(2);
+}
+
+input ~ label {
+    user-select: none;
 }

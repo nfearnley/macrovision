@@ -928,6 +928,14 @@ function doSliderEntityScale() {
 document.addEventListener("DOMContentLoaded", () => {
     prepareEntities();
 
+    document.querySelector("#options-world-show-names").addEventListener("input", e => {
+        document.body.classList[e.target.checked ? "add" : "remove"]("toggle-entity-name");
+    });
+
+    document.querySelector("#options-world-show-bottom-names").addEventListener("input", e => {
+        document.body.classList[e.target.checked ? "add" : "remove"]("toggle-bottom-name");
+    });
+
     document.querySelector("#options-order-forward").addEventListener("click", e => {
         if (selected) {
             entities[selected.dataset.key].priority += 1;
