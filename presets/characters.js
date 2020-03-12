@@ -13933,6 +13933,38 @@ characterMakers["Grottos"] = () => {
     )
 };
 
+characterMakers["Frifna"] = () => {
+    return makeCharacter(
+        "Frifna",
+        "Fidchell",
+        {
+            anthro: {
+                height: math.unit(9 + 6/12, "feet"),
+                weight: math.unit(298, "lb"),
+                name: "Anthro",
+                image: {
+                    source: "./media/characters/frifna/anthro.svg",
+                    extra: 282/269 * (1 / (1 - 0.015)),
+                    bottom: 0.015
+                }
+            },
+            feral: {
+                height: math.unit(16 + 2/12, "feet"),
+                weight: math.unit(624, "lb"),
+                name: "Feral",
+                image: {
+                    source: "./media/characters/frifna/feral.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(9 + 6/12, "feet")
+            },
+        ]
+    )
+};
 //characters
 
 function makeCharacters() {

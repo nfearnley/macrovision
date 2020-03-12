@@ -5535,6 +5535,19 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/frifna/",
+            files: [
+                { name: "anthro.svg", source: "https://fidverse.fandom.com/wiki/Frifna" },
+                { name: "feral.svg", source: "https://fidverse.fandom.com/wiki/Frifna" },
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",

@@ -78,15 +78,17 @@ function makeOwnerScene(owner) {
     }
 }
 
-function makeOwnerSceneViews(owner) {
+function makeOwnerSceneViews(owners) {
     return () => {
-        availableEntities["characters"].filter(x => {
-            const entity = x.constructor();
-            const owners = ownersOf(entity.views[entity.view].image.source);
-            if (owners)
-                return owners.indexOf(owner) != -1;
-            else
-                return false;
+        owners.flatMap(owner => {
+            return availableEntities["characters"].filter(x => {
+                const entity = x.constructor();
+                const owners = ownersOf(entity.views[entity.view].image.source);
+                if (owners)
+                    return owners.indexOf(owner) != -1;
+                else
+                    return false;
+            })
         }).map(maker => {
             return maker.constructor();
         }).flatMap(entity => {
@@ -143,7 +145,7 @@ scenes["Neopuc"] = () => {
 }
 
 scenes["Fidverse"] = () => {
-    makeOwnerSceneViews("fidchell")();
+    makeOwnerSceneViews(["fidchell", "cam"])();
     document.querySelector("#entity-" + (entityIndex-1)).dataset.x = 0.5;
     document.querySelector("#entity-" + (entityIndex-2)).dataset.x = 0.25;
     document.querySelector("#entity-" + (entityIndex-3)).dataset.x = 0.75;
