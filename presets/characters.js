@@ -13340,6 +13340,41 @@ characterMakers["Seara"] = () => {
      )
  };
 
+ characterMakers["Umiko"] = () => {
+     return makeCharacter(
+         "Umiko",
+         "Fidchell",
+         {
+            buizel: {
+                height: math.unit(2 + 5/12, "feet"),
+                weight: math.unit(87, "lb"),
+                name: "Buizel",
+                image: {
+                    source: "./media/characters/umiko/buizel.svg",
+                    extra: 172/157 * (1 / (1 - 0.01)),
+                    bottom: 0.01
+                }
+            },
+            floatzel: {
+                height: math.unit(5 + 9/12, "feet"),
+                weight: math.unit(250, "lb"),
+                name: "Floatzel",
+                image: {
+                    source: "./media/characters/umiko/floatzel.svg",
+                    extra: 262/248
+                }
+            },
+         },
+         [
+             {
+                 name: "Normal",
+                 height: math.unit(2 + 5/12, "feet"),
+                 default: true
+             },
+         ]
+     )
+ };
+
 //characters
 
 function makeCharacters() {

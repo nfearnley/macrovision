@@ -5278,6 +5278,19 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/umiko/",
+            files: [
+                { name: "buizel.svg", source: "https://fidverse.fandom.com/wiki/Umiko" },
+                { name: "floatzel.svg", source: "https://fidverse.fandom.com/wiki/Umiko" },
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
