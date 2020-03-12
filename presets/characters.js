@@ -13837,6 +13837,31 @@ characterMakers["Purna"] = () => {
     )
 };
 
+characterMakers["Kuva"] = () => {
+    return makeCharacter(
+        "Kuva",
+        "Fidchell",
+        {
+            front: {
+                height: math.unit(5 + 9/12, "feet"),
+                weight: math.unit(142, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/kuva/front.svg",
+                    extra: 281/271 * (1 / (1 - 0.006)),
+                    bottom: 0.006
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 9/12, "feet")
+            },   
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

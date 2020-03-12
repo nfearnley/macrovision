@@ -5497,6 +5497,18 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/kuva/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Kuva" },
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
