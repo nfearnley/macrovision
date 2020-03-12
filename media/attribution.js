@@ -5375,6 +5375,18 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/ashe/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Ashe" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",

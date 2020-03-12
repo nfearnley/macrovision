@@ -13557,6 +13557,32 @@ characterMakers["Shard"] = () => {
     )
 };
 
+characterMakers["Ashe"] = () => {
+    return makeCharacter(
+        "Ashe",
+        "Fidchell",
+        {
+            front: {
+                height: math.unit(5 + 11/12, "feet"),
+                weight: math.unit(146, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/ashe/front.svg",
+                    extra: 400/373 * (1 / (1 - 0.01)),
+                    bottom: 0.01
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 11/12, "feet")
+            },
+        ]
+    )
+};
+
+
 //characters
 
 function makeCharacters() {
