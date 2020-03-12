@@ -5242,6 +5242,18 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/caspian/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Caspian" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
