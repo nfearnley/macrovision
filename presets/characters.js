@@ -13862,6 +13862,42 @@ characterMakers["Kuva"] = () => {
     )
 };
 
+characterMakers["Embra"] = () => {
+    return makeCharacter(
+        "Embra",
+        "Fidchell",
+        {
+            anthro: {
+                height: math.unit(9 + 2/12, "feet"),
+                weight: math.unit(270, "lb"),
+                name: "Anthro",
+                image: {
+                    source: "./media/characters/embra/anthro.svg",
+                    extra: 200/187 * (1 / (1 - 0.02)),
+                    bottom: 0.02
+                }
+            },
+            feral: {
+                height: math.unit(18 + 8/12, "feet"),
+                weight: math.unit(576, "lb"),
+                name: "Feral",
+                image: {
+                    source: "./media/characters/embra/feral.svg",
+                    extra: 152/137 * (1 / (1 - 0.037)),
+                    bottom: 0.037
+                }
+            },
+        },
+        [
+             {
+                 name: "Normal",
+                 height: math.unit(9 + 2/12, "feet"),
+                 default: true
+             },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

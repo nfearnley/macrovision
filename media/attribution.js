@@ -5509,6 +5509,19 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/embra/",
+            files: [
+                { name: "anthro.svg", source: "https://fidverse.fandom.com/wiki/Embra" },
+                { name: "feral.svg", source: "https://fidverse.fandom.com/wiki/Embra" },
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
