@@ -5460,6 +5460,31 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/java/",
+            files: [
+                { name: "fallen.svg", source: "https://fidverse.fandom.com/wiki/Java_(Fallen)" },
+                { name: "godkin.svg", source: "https://fidverse.fandom.com/wiki/Java_(Godkin)" },
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
+        {
+            prefix: "./media/characters/skoll/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Skoll" },
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",

@@ -13746,6 +13746,70 @@ characterMakers["Cobalt (Dracha)"] = () => {
         ]
     )
 };
+
+characterMakers["Java"] = () => {
+    return makeCharacter(
+        "Java",
+        "Fidchell",
+        {
+            fallen: {
+                height: math.unit(11 + 8/12, "feet"),
+                weight: math.unit(485, "lb"),
+                name: "Java (Fallen)",
+                rename: true,
+                image: {
+                    source: "./media/characters/java/fallen.svg",
+                    extra: 226/208 * (1 / (1 - 0.005)),
+                    bottom: 0.005
+                }
+            },
+            godkin: {
+                height: math.unit(10 + 6/12, "feet"),
+                weight: math.unit(328, "lb"),
+                name: "Java (Godkin)",
+                rename: true,
+                image: {
+                    source: "./media/characters/java/godkin.svg",
+                    extra: 270/262 * (1 / (1 - 0.02)),
+                    bottom: 0.02
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(11 + 8/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Skoll"] = () => {
+    return makeCharacter(
+        "Skoll",
+        "Fidchell",
+        {
+            front: {
+                height: math.unit(7 + 8/12, "feet"),
+                weight: math.unit(320, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/skoll/front.svg",
+                    extra: 232/220 * (1 / (1 - 0.02)),
+                    bottom: 0.02
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(7 + 8/12, "feet")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
