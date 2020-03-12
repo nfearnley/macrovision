@@ -13505,6 +13505,58 @@ characterMakers["Vulcan"] = () => {
     )
 };
 
+characterMakers["Gault"] = () => {
+    return makeCharacter(
+        "Gault",
+        "Fidchell",
+        {
+            front: {
+                height: math.unit(5 + 10/12, "feet"),
+                weight: math.unit(264, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/gault/front.svg",
+                    extra: 161/140 * (1 / (1 - 0.028)),
+                    bottom: 0.028
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 10/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Shard"] = () => {
+    return makeCharacter(
+        "Shard",
+        "Fidchell",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/shard/front.svg",
+                    extra: 273/238 * (1 / (1 - 0.02)),
+                    bottom: 0.02
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(3 + 6/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

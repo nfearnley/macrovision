@@ -5351,6 +5351,30 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/gault/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Gault" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
+        {
+            prefix: "./media/characters/shard/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Shard" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
