@@ -13265,140 +13265,166 @@ characterMakers["Seara"] = () => {
     )
 };
 
- characterMakers["Caspian"] = () => {
-     return makeCharacter(
-         "Caspian",
-         "Fidchell",
-         {
-            front: {
-                height: math.unit(16 + 5/12, "feet"),
-                weight: math.unit(524, "lb"),
-                name: "Front",
-                image: {
-                    source: "./media/characters/caspian/front.svg",
-                    extra: (1 / (1 - 0.04)),
-                    bottom: 0.04
-                }
+characterMakers["Caspian"] = () => {
+    return makeCharacter(
+        "Caspian",
+        "Fidchell",
+        {
+        front: {
+            height: math.unit(16 + 5/12, "feet"),
+            weight: math.unit(524, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/caspian/front.svg",
+                extra: (1 / (1 - 0.04)),
+                bottom: 0.04
+            }
+        },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(16 + 5/12, "feet")
             },
-         },
-         [
-             {
-                 name: "Normal",
-                 height: math.unit(16 + 5/12, "feet")
-             },
-         ]
-     )
- };
+        ]
+    )
+};
 
- characterMakers["Mika"] = () => {
-     return makeCharacter(
-         "Mika",
-         "Fidchell",
-         {
+characterMakers["Mika"] = () => {
+    return makeCharacter(
+        "Mika",
+        "Fidchell",
+        {
+        front: {
+            height: math.unit(5 + 7/12, "feet"),
+            weight: math.unit(170, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/mika/front.svg",
+                extra: (1 / (1 - 0.016)),
+                bottom: 0.016
+            }
+        },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 7/12, "feet")
+            },
+        ]
+    )
+};
+
+characterMakers["Sol"] = () => {
+    return makeCharacter(
+        "Sol",
+        "Fidchell",
+        {
+        front: {
+            height: math.unit(6 + 2/12, "feet"),
+            weight: math.unit(268, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/sol/front.svg",
+                extra: 247/231 * (1 / (1 - 0.05)),
+                bottom: 0.05
+            }
+        },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6 + 2/12, "feet")
+            },
+        ]
+    )
+};
+
+characterMakers["Umiko"] = () => {
+    return makeCharacter(
+        "Umiko",
+        "Fidchell",
+        {
+        buizel: {
+            height: math.unit(2 + 5/12, "feet"),
+            weight: math.unit(87, "lb"),
+            name: "Buizel",
+            image: {
+                source: "./media/characters/umiko/buizel.svg",
+                extra: 172/157 * (1 / (1 - 0.01)),
+                bottom: 0.01
+            }
+        },
+        floatzel: {
+            height: math.unit(5 + 9/12, "feet"),
+            weight: math.unit(250, "lb"),
+            name: "Floatzel",
+            image: {
+                source: "./media/characters/umiko/floatzel.svg",
+                extra: 262/248
+            }
+        },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(2 + 5/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Iliac"] = () => {
+    return makeCharacter(
+        "Iliac",
+        "Fidchell",
+        {
+        front: {
+            height: math.unit(6 + 2/12, "feet"),
+            weight: math.unit(146, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/iliac/front.svg",
+                extra: 389/365 * (1 / (1 - 0.035)),
+                bottom: 0.035
+            }
+        },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6 + 2/12, "feet")
+            },
+        ]
+    )
+};
+
+characterMakers["Topaz"] = () => {
+    return makeCharacter(
+        "Topaz",
+        "Fidchell",
+        {
             front: {
-                height: math.unit(5 + 7/12, "feet"),
+                height: math.unit(6, "feet"),
                 weight: math.unit(170, "lb"),
                 name: "Front",
                 image: {
-                    source: "./media/characters/mika/front.svg",
-                    extra: (1 / (1 - 0.016)),
-                    bottom: 0.016
+                    source: "./media/characters/topaz/front.svg",
+                    extra: 317/303 * (1 / (1 - 0.055)),
+                    bottom: 0.055
                 }
             },
-         },
-         [
-             {
-                 name: "Normal",
-                 height: math.unit(5 + 7/12, "feet")
-             },
-         ]
-     )
- };
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6, "feet")
+            },
+        ]
+    )
+};
 
- characterMakers["Sol"] = () => {
-     return makeCharacter(
-         "Sol",
-         "Fidchell",
-         {
-            front: {
-                height: math.unit(6 + 2/12, "feet"),
-                weight: math.unit(268, "lb"),
-                name: "Front",
-                image: {
-                    source: "./media/characters/sol/front.svg",
-                    extra: 247/231 * (1 / (1 - 0.05)),
-                    bottom: 0.05
-                }
-            },
-         },
-         [
-             {
-                 name: "Normal",
-                 height: math.unit(6 + 2/12, "feet")
-             },
-         ]
-     )
- };
-
- characterMakers["Umiko"] = () => {
-     return makeCharacter(
-         "Umiko",
-         "Fidchell",
-         {
-            buizel: {
-                height: math.unit(2 + 5/12, "feet"),
-                weight: math.unit(87, "lb"),
-                name: "Buizel",
-                image: {
-                    source: "./media/characters/umiko/buizel.svg",
-                    extra: 172/157 * (1 / (1 - 0.01)),
-                    bottom: 0.01
-                }
-            },
-            floatzel: {
-                height: math.unit(5 + 9/12, "feet"),
-                weight: math.unit(250, "lb"),
-                name: "Floatzel",
-                image: {
-                    source: "./media/characters/umiko/floatzel.svg",
-                    extra: 262/248
-                }
-            },
-         },
-         [
-             {
-                 name: "Normal",
-                 height: math.unit(2 + 5/12, "feet"),
-                 default: true
-             },
-         ]
-     )
- };
-
- characterMakers["Iliac"] = () => {
-     return makeCharacter(
-         "Iliac",
-         "Fidchell",
-         {
-            front: {
-                height: math.unit(6 + 2/12, "feet"),
-                weight: math.unit(146, "lb"),
-                name: "Front",
-                image: {
-                    source: "./media/characters/iliac/front.svg",
-                    extra: 389/365 * (1 / (1 - 0.035)),
-                    bottom: 0.035
-                }
-            },
-         },
-         [
-             {
-                 name: "Normal",
-                 height: math.unit(6 + 2/12, "feet")
-             },
-         ]
-     )
- };
 
 //characters
 
