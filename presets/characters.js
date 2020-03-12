@@ -13290,6 +13290,31 @@ characterMakers["Seara"] = () => {
      )
  };
 
+ characterMakers["Mika"] = () => {
+     return makeCharacter(
+         "Mika",
+         "Fidchell",
+         {
+            front: {
+                height: math.unit(5 + 7/12, "feet"),
+                weight: math.unit(170, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/mika/front.svg",
+                    extra: (1 / (1 - 0.016)),
+                    bottom: 0.016
+                }
+            },
+         },
+         [
+             {
+                 name: "Normal",
+                 height: math.unit(5 + 7/12, "feet")
+             },
+         ]
+     )
+ };
+
 //characters
 
 function makeCharacters() {

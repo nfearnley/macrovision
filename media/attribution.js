@@ -5254,6 +5254,18 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/mika/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Mika" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
