@@ -13394,7 +13394,8 @@ characterMakers["Iliac"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(6 + 2/12, "feet")
+                height: math.unit(6 + 2/12, "feet"),
+                default: true
             },
         ]
     )
@@ -13419,7 +13420,8 @@ characterMakers["Topaz"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(6, "feet")
+                height: math.unit(6, "feet"),
+                default: true
             },
         ]
     )
@@ -13444,7 +13446,8 @@ characterMakers["Gabriel"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(5 + 11/12, "feet")
+                height: math.unit(5 + 11/12, "feet"),
+                default: true
             },
         ]
     )
@@ -13469,8 +13472,35 @@ characterMakers["Tempest (Suicune)"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(6 + 5/12, "feet")
+                height: math.unit(6 + 5/12, "feet"),
+                default: true
             },
+        ]
+    )
+};
+
+characterMakers["Vulcan"] = () => {
+    return makeCharacter(
+        "Vulcan",
+        "Fidchell",
+        {
+            front: {
+                height: math.unit(7 + 2/12, "feet"),
+                weight: math.unit(322, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/vulcan/front.svg",
+                    extra: 154/147 * (1 / (1 - 0.04)),
+                    bottom: 0.04
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(7 + 2/12, "feet"),
+                default: true
+            },   
         ]
     )
 };

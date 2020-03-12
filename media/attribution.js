@@ -5339,6 +5339,18 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/vulcan/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Vulcan" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
