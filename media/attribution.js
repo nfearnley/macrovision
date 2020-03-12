@@ -5291,6 +5291,18 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/iliac/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Iliac" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
