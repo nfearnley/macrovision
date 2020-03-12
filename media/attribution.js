@@ -5230,6 +5230,18 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/seara/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Seara" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
