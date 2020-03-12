@@ -5485,6 +5485,18 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/purna/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Purna" },
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",

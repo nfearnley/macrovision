@@ -13804,7 +13804,34 @@ characterMakers["Skoll"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(7 + 8/12, "feet")
+                height: math.unit(7 + 8/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Purna"] = () => {
+    return makeCharacter(
+        "Purna",
+        "Fidchell",
+        {
+            front: {
+                height: math.unit(5 + 9/12, "feet"),
+                weight: math.unit(170, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/purna/front.svg",
+                    extra: 239/229 * (1 / (1 - 0.01)),
+                    bottom: 0.01
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 9/12, "feet"),
+                default: true
             },
         ]
     )
