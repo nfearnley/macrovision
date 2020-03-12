@@ -13711,6 +13711,41 @@ characterMakers["Kee"] = () => {
     )
 };
 
+characterMakers["Cobalt (Dracha)"] = () => {
+    return makeCharacter(
+        "Cobalt (Dracha)",
+        "Fidchell",
+        {
+            anthro: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(190, "lb"),
+                name: "Anthro",
+                image: {
+                    source: "./media/characters/cobalt-dracha/anthro.svg",
+                    extra: 231/225 * (1 / (1 - 0.04)),
+                    bottom: 0.04
+                }
+            },
+            feral: {
+                height: math.unit(9 + 7/12, "feet"),
+                weight: math.unit(294, "lb"),
+                name: "Feral",
+                image: {
+                    source: "./media/characters/cobalt-dracha/feral.svg",
+                    extra: 692/633 * (1 / (1 - 0.05)),
+                    bottom: 0.05
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(7, "feet"),
+                default: true
+            },
+        ]
+    )
+};
 //characters
 
 function makeCharacters() {

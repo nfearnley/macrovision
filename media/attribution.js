@@ -5447,6 +5447,19 @@ const attributionData = {
                 "flixard"
             ]
         },
+        {
+            prefix: "./media/characters/cobalt-dracha/",
+            files: [
+                { name: "anthro.svg", source: "https://fidverse.fandom.com/wiki/Cobalt" },
+                { name: "feral.svg", source: "https://fidverse.fandom.com/wiki/Cobalt" },
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
