@@ -5387,6 +5387,18 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/beatrix/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Beatrix" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
