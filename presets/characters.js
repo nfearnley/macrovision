@@ -13450,6 +13450,31 @@ characterMakers["Gabriel"] = () => {
     )
 };
 
+characterMakers["Tempest (Suicune)"] = () => {
+    return makeCharacter(
+        "Tempest (Suicune)",
+        "Fidchell",
+        {
+            side: {
+                height: math.unit(6 + 5/12, "feet"),
+                weight: math.unit(300, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/tempest-suicune/side.svg",
+                    extra: 195/154 * (1 / (1 - 0.04)),
+                    bottom: 0.04
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6 + 5/12, "feet")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

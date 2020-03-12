@@ -5327,6 +5327,18 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/tempest-suicune/",
+            files: [
+                { name: "side.svg", source: "https://fidverse.fandom.com/wiki/Tempest" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
