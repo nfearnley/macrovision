@@ -5435,6 +5435,18 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/kee/",
+            files: [
+                { name: "taur.svg", source: null }
+            ],
+            authors: [
+                "akudrache"
+            ],
+            owners: [
+                "flixard"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
@@ -7574,6 +7586,14 @@ const attributionData = {
         "fidchell": {
             "name": "Fidchell",
             "url": "https://www.furaffinity.net/user/fidchellvore/",
+        },
+        "akudrache": {
+            "name": "AkuDrache",
+            "url": "https://www.furaffinity.net/user/akudrache/",
+        },
+        "flixard": {
+            "name": "Flixard",
+            "url": "https://www.furaffinity.net/user/flixard/",
         },
     }
 }

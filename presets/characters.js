@@ -13685,6 +13685,32 @@ characterMakers["Puru"] = () => {
     )
 };
 
+characterMakers["Kee"] = () => {
+    return makeCharacter(
+        "Kee",
+        "AardwolfKee",
+        {
+            taur: {
+                height: math.unit(11, "feet"),
+                weight: math.unit(500, "lb"),
+                name: "Taur",
+                image: {
+                    source: "./media/characters/kee/taur.svg",
+                    extra: (1 / (1 - 0.04)),
+                    bottom: 0.04
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(11, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
