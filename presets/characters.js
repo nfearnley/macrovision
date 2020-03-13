@@ -14296,7 +14296,7 @@ characterMakers["Cafat"] = () => {
         "Dalken",
         {
             side: {
-                height: math.unit(5, "feet"),
+                height: math.unit(7, "feet"),
                 weight: math.unit(170, "lb"),
                 name: "Side",
                 image: {
@@ -14305,7 +14305,7 @@ characterMakers["Cafat"] = () => {
                 }
             },
             sideFull: {
-                height: math.unit(5, "feet"),
+                height: math.unit(7, "feet"),
                 weight: math.unit(170, "lb"),
                 name: "Side (Full)",
                 image: {
@@ -14317,7 +14317,7 @@ characterMakers["Cafat"] = () => {
         [
             {
                 name: "Small",
-                height: math.unit(5, "feet"),
+                height: math.unit(7, "feet"),
                 default: true
             },
             {
