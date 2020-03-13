@@ -5956,6 +5956,18 @@ const attributionData = {
                 "ruby02"
             ]
         },
+        {
+            prefix: "./media/characters/jack/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35356467/" }
+            ],
+            authors: [
+                "nix-noble"
+            ],
+            owners: [
+                "jasmith"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
@@ -8208,6 +8220,10 @@ const attributionData = {
         "matamii": {
             "name": "Matamii",
             "url": "https://twitter.com/Matamii2?s=09",
+        },
+        "nix-noble": {
+            "name": "Nix Noble",
+            "url": "http://aminoapps.com/p/m82qof",
         },
     }
 }

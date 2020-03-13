@@ -14260,6 +14260,36 @@ characterMakers["Maxwell"] = () => {
     )
 };
 
+characterMakers["Jack"] = () => {
+    return makeCharacter(
+        "Jack",
+        "Jasmith",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/jack/front.svg",
+                    extra: 1754/1640,
+                    bottom: 0.01
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(80000, "feet"),
+                default: true
+            },
+            {
+                name: "Max size",
+                height: math.unit(10, "lightyears")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
