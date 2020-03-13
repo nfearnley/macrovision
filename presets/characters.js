@@ -14399,6 +14399,31 @@ characterMakers["Nakata"] = () => {
     )
 };
 
+characterMakers["Lily"] = () => {
+    return makeCharacter(
+        "Lily",
+        "nexcg",
+        {
+            front: {
+                height: math.unit(4.91, "feet"),
+                weight: math.unit(100, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/lily/front.svg",
+                    extra: 1585/1415,
+                    bottom: 0.02
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(4.91, "feet")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

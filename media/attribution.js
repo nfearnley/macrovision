@@ -6006,6 +6006,18 @@ const attributionData = {
                 "dalken"
             ]
         },
+        {
+            prefix: "./media/characters/lily/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/27908198/" }
+            ],
+            authors: [
+                "draekos"
+            ],
+            owners: [
+                "nexcg"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
@@ -8282,6 +8294,14 @@ const attributionData = {
         "lezified": {
             "name": "lezified",
             "url": "https://www.furaffinity.net/user/lezified",
+        },
+        "draekos": {
+            "name": "Draekos",
+            "url": "https://www.furaffinity.net/user/draekos",
+        },
+        "nexcg": {
+            "name": "nexcg",
+            "url": "https://www.furaffinity.net/user/nexcg/",
         },
     }
 }
