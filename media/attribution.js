@@ -5971,8 +5971,9 @@ const attributionData = {
         {
             prefix: "./media/characters/cafat/",
             files: [
+                { name: "upright.svg", source: "https://t.me/addstickers/Fhaalen" },
+                { name: "upright-full.svg", source: "https://t.me/addstickers/Fhaalen" },
                 { name: "side.svg", source: "https://t.me/addstickers/Fhaalen" },
-                { name: "side-full.svg", source: "https://t.me/addstickers/Fhaalen" },
             ],
             authors: [
                 "kuppy"

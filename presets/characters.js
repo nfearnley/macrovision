@@ -14295,22 +14295,30 @@ characterMakers["Cafat"] = () => {
         "Cafat",
         "Dalken",
         {
-            side: {
+            upright: {
                 height: math.unit(7, "feet"),
                 weight: math.unit(170, "lb"),
-                name: "Side",
+                name: "Upright",
                 image: {
-                    source: "./media/characters/cafat/side.svg",
+                    source: "./media/characters/cafat/upright.svg",
                     bottom: 0.01
                 }
             },
-            sideFull: {
+            uprightFull: {
                 height: math.unit(7, "feet"),
                 weight: math.unit(170, "lb"),
-                name: "Side (Full)",
+                name: "Upright (Full)",
                 image: {
-                    source: "./media/characters/cafat/side-full.svg",
+                    source: "./media/characters/cafat/upright-full.svg",
                     bottom: 0.01
+                }
+            },
+            side: {
+                height: math.unit(5, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/cafat/side.svg"
                 }
             },
         },
