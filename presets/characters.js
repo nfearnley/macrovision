@@ -151,7 +151,7 @@ characterMakers["Sofia"] = () => {
                 image: {
                     source: "./media/characters/sofia/front.svg",
                     bottom: 0.01,
-                    extra: 1 / (1 - 0.01)
+                    extra: 1
                 }
             },
             frontAlt: {
@@ -200,7 +200,7 @@ characterMakers["March"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/march/front.svg",
-                    extra: (1 / (1 - 0.015)),
+                    extra: 1,
                     bottom: 0.015
                 }
             },
@@ -253,7 +253,7 @@ characterMakers["Noir"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/noir/front.svg",
-                    extra: (1 / (1 - 0.032)),
+                    extra: 1,
                     bottom: 0.032
                 }
             },
@@ -299,7 +299,7 @@ characterMakers["Okuri"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/okuri/front.svg",
-                    extra: (1 / (1 - 0.037)),
+                    extra: 1,
                     bottom: 0.037
                 }
             },
@@ -309,7 +309,7 @@ characterMakers["Okuri"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/okuri/back.svg",
-                    extra: (1 / (1 - 0.007)),
+                    extra: 1,
                     bottom: 0.007
                 }
             },
@@ -335,7 +335,7 @@ characterMakers["Manny"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/manny/front.svg",
-                    extra: 1 / (1 - 0.06),
+                    extra: 1,
                     bottom: 0.06
                 }
             },
@@ -345,7 +345,7 @@ characterMakers["Manny"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/manny/back.svg",
-                    extra: 1 / (1 - 0.014),
+                    extra: 1,
                     bottom: 0.014
                 }
             },
@@ -399,7 +399,7 @@ characterMakers["Adake"] = () => {
                 name: "Front (Alt)",
                 image: {
                     source: "./media/characters/adake/front-2.svg",
-                    extra: (1 / (1 - 0.01)),
+                    extra: 1,
                     bottom: 0.01
                 }
             },
@@ -462,7 +462,7 @@ characterMakers["Elijah"] = () => {
                 name: "Side",
                 image: {
                     source: "./media/characters/elijah/side.svg",
-                    extra: (1 / (1 - 0.065)),
+                    extra: 1,
                     bottom: 0.065
                 }
             },
@@ -503,7 +503,7 @@ characterMakers["Rai"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/rai/front.svg",
-                    extra: (1 / (1 - 0.03)),
+                    extra: 1,
                     bottom: 0.03
                 }
             },
@@ -521,7 +521,7 @@ characterMakers["Rai"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/rai/back.svg",
-                    extra: (1 / (1 - 0.01)),
+                    extra: 1,
                     bottom: 0.01
                 }
             },
@@ -531,7 +531,7 @@ characterMakers["Rai"] = () => {
                 name: "Feral",
                 image: {
                     source: "./media/characters/rai/feral.svg",
-                    extra: 1050/659 * (1 / (1 - 0.07)),
+                    extra: 1050/659 ,
                     bottom: 0.07
                 }
             },
@@ -568,7 +568,7 @@ characterMakers["Jazzy"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/jazzy/front.svg",
-                    extra: (1 / (1 - 0.01)),
+                    extra: 1,
                     bottom: 0.01
                 }
             },
@@ -578,7 +578,7 @@ characterMakers["Jazzy"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/jazzy/back.svg",
-                    extra: (1 / (1 - 0.01)),
+                    extra: 1,
                     bottom: 0.01
                 }
             },
@@ -604,7 +604,7 @@ characterMakers["Flamm"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/flamm/front.svg",
-                    extra: (1 / (1 - 0.02)),
+                    extra: 1,
                     bottom: 0.02
                 }
             },
@@ -634,7 +634,7 @@ characterMakers["Zephiro"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/zephiro/front.svg",
-                    extra: 2309/2162 * (1 / (1 - 0.069)),
+                    extra: 2309/2162 ,
                     bottom: 0.069
                 }
             },
@@ -644,7 +644,7 @@ characterMakers["Zephiro"] = () => {
                 name: "Side",
                 image: {
                     source: "./media/characters/zephiro/side.svg",
-                    extra: 2403/2279 * (1 / (1 - 0.015)),
+                    extra: 2403/2279 ,
                     bottom: 0.015
                 }
             },
@@ -654,7 +654,7 @@ characterMakers["Zephiro"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/zephiro/back.svg",
-                    extra: 2373/2244 * (1 / (1 - 0.013)),
+                    extra: 2373/2244 ,
                     bottom: 0.013
                 }
             },
@@ -688,7 +688,7 @@ characterMakers["Fory"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/fory/front.svg",
-                    extra: (1 / (1 - 0.03)),
+                    extra: 1,
                     bottom: 0.03
                 }
             },
@@ -718,7 +718,7 @@ characterMakers["Kurrikage"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/kurrikage/front.svg",
-                    extra: (1 / (1 - 0.035)),
+                    extra: 1,
                     bottom: 0.035
                 }
             },
@@ -786,7 +786,7 @@ characterMakers["Shingo"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/shingo/front.svg",
-                    extra: 3511/3338 * (1 / (1 - 0.005)),
+                    extra: 3511/3338 ,
                     bottom: 0.005
                 }
             },
@@ -2239,7 +2239,7 @@ characterMakers["Ashtrek"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/ashtrek/front.svg",
-                    extra: 560/524 * (1 / (1 - 0.01)),
+                    extra: 560/524 ,
                     bottom: 0.01
                 }
             },
@@ -2249,7 +2249,7 @@ characterMakers["Ashtrek"] = () => {
                 name: "Front (Armor)",
                 image: {
                     source: "./media/characters/ashtrek/front-armor.svg",
-                    extra: 561/527 * (1 / (1 - 0.01)),
+                    extra: 561/527 ,
                     bottom: 0.01
                 }
             },
@@ -2259,7 +2259,7 @@ characterMakers["Ashtrek"] = () => {
                 name: "Side",
                 image: {
                     source: "./media/characters/ashtrek/side.svg",
-                    extra: 1717/1609 * (1 / (1 - 0.005)),
+                    extra: 1717/1609 ,
                     bottom: 0.005
                 }
             },
@@ -2802,7 +2802,7 @@ characterMakers["Scott"] = () => {
                 name: "Side",
                 image: {
                     source: "./media/characters/scott/side.svg",
-                    extra: (1 / (1 - 0.069)),
+                    extra: 1,
                     bottom: 0.069
                 }
             },
@@ -2812,7 +2812,7 @@ characterMakers["Scott"] = () => {
                 name: "Upright",
                 image: {
                     source: "./media/characters/scott/upright.svg",
-                    extra: (1 / (1 - 0.05)),
+                    extra: 1,
                     bottom: 0.05
                 }
             },
@@ -3097,7 +3097,7 @@ characterMakers["Deerpuff"] = () => {
                 image: {
                     source: "./media/characters/deerpuff/sitting.svg",
                     bottom: 44 / 400,
-                    extra: 1 / (1 - 44 / 400)
+                    extra: 1
                 }
             },
             taurLaying: {
@@ -3159,7 +3159,7 @@ characterMakers["Vivian"] = () => {
                 image: {
                     source: "./media/characters/vivian/sitting.svg",
                     bottom: 1 / 6.4,
-                    extra: (1 / (1 - 1 / 6.4)) * (1 + 164 / 1600)
+                    extra: 1,
                 }
             },
         },
@@ -3302,7 +3302,7 @@ characterMakers["Blake"] = () => {
                 name: "Side",
                 image: {
                     source: "./media/characters/blake/side.svg",
-                    extra: 1212/1120 * (1 / (1 - 0.05)),
+                    extra: 1212/1120 ,
                     bottom: 0.05
                 }
             },
@@ -3312,7 +3312,7 @@ characterMakers["Blake"] = () => {
                 name: "Crouched",
                 image: {
                     source: "./media/characters/blake/crouched.svg",
-                    extra: 840/587 * (1 / (1 - 0.04)),
+                    extra: 840/587 ,
                     bottom: 0.04
                 }
             },
@@ -3322,7 +3322,7 @@ characterMakers["Blake"] = () => {
                 name: "Bent",
                 image: {
                     source: "./media/characters/blake/bent.svg",
-                    extra: 592/544 * (1 / (1 - 0.035)),
+                    extra: 592/544 ,
                     bottom: 0.035
                 }
             },
@@ -3568,7 +3568,7 @@ characterMakers["Cimmaron"] = () => {
                 name: "Front (Clothed)",
                 image: {
                     source: "./media/characters/cimmaron/front-clothed.svg",
-                    extra: 701/676 * (1 / (1 - 0.046)),
+                    extra: 701/676 ,
                     bottom: 0.046
                 }
             },
@@ -3578,7 +3578,7 @@ characterMakers["Cimmaron"] = () => {
                 name: "Back (Clothed)",
                 image: {
                     source: "./media/characters/cimmaron/back-clothed.svg",
-                    extra: 701/676 * (1 / (1 - 0.046)),
+                    extra: 701/676 ,
                     bottom: 0.046
                 }
             },
@@ -3588,7 +3588,7 @@ characterMakers["Cimmaron"] = () => {
                 name: "Front (Nude)",
                 image: {
                     source: "./media/characters/cimmaron/front-nude.svg",
-                    extra: 701/676 * (1 / (1 - 0.046)),
+                    extra: 701/676 ,
                     bottom: 0.046
                 }
             },
@@ -3598,7 +3598,7 @@ characterMakers["Cimmaron"] = () => {
                 name: "Back (Nude)",
                 image: {
                     source: "./media/characters/cimmaron/back-nude.svg",
-                    extra: 701/676 * (1 / (1 - 0.046)),
+                    extra: 701/676 ,
                     bottom: 0.046
                 }
             }
@@ -3628,8 +3628,8 @@ characterMakers["Akari Kaen"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/akari/front.svg",
-                    bottom: 0.04,
-                    extra: (1 / (1 - 0.04)) * (962/901)
+                    extra: 962/901,
+                    bottom: 0.04
                 }
             }
         },
@@ -3983,7 +3983,7 @@ characterMakers["Malfressa"] = () => {
                 name: "Feral",
                 image: {
                     source: "./media/characters/malfressa/feral.svg",
-                    extra: 2108/837 * (1 / (1 - 0.02)),
+                    extra: 2108/837 ,
                     bottom: 0.02
                 }
             },
@@ -4578,7 +4578,7 @@ characterMakers["Everett"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/everett/front.svg",
-                    extra: 2038/1737 * (1 / (1 - 0.03)),
+                    extra: 2038/1737 ,
                     bottom: 0.03
                 }
             },
@@ -5017,7 +5017,7 @@ characterMakers["Gene Zeta"] = () => {
                 image: {
                     source: "./media/characters/gene-zeta/front.svg",
                     bottom: 0.03,
-                    extra: 1 / (1 - 0.03)
+                    extra: 1
                 }
             }
         },
@@ -5157,7 +5157,7 @@ characterMakers["Teal"] = () => {
                 image: {
                     source: "./media/characters/teal/front-alt.svg",
                     bottom: 0.04,
-                    extra: 1 / (1 - 0.04)
+                    extra: 1
                 }
             },
         },
@@ -5604,7 +5604,7 @@ characterMakers["Verin"] = () => {
                 name: "Front (Armored)",
                 image: {
                     source: "./media/characters/verin/front-armor.svg",
-                    extra: 1845/1550 * (1 / (1 - 0.01)),
+                    extra: 1845/1550 ,
                     bottom: 0.01
                 }
             },
@@ -5615,7 +5615,7 @@ characterMakers["Verin"] = () => {
                 image: {
                     source: "./media/characters/verin/back.svg",
                     bottom: 0.1,
-                    extra: 1 / (1 - 0.1)
+                    extra: 1
                 }
             },
             foot: {
@@ -5704,7 +5704,7 @@ characterMakers["Reece Silvermane"] = () => {
                 image: {
                     source: "./media/characters/reece-silvermane/front.svg",
                     bottom: 0.02,
-                    extra: 1 / (1 - 0.02)
+                    extra: 1
                 }
             },
         },
@@ -5759,7 +5759,7 @@ characterMakers["Tegon"] = () => {
                 image: {
                     source: "./media/characters/tegon/front.svg",
                     bottom: 0.01,
-                    extra: 1 / (1 - 0.01)
+                    extra: 1
                 }
             },
         },
@@ -5796,7 +5796,7 @@ characterMakers["Arcturax"] = () => {
                 name: "Side",
                 image: {
                     source: "./media/characters/arcturax/side.svg",
-                    extra: 790/376 * (1 / (1 - 0.01)),
+                    extra: 790/376 ,
                     bottom: 0.01
                 }
             },
@@ -5834,7 +5834,7 @@ characterMakers["Sentri"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/sentri/front.svg",
-                    extra: 1750/1570 * (1 / (1 - 0.025)),
+                    extra: 1750/1570 ,
                     bottom: 0.025
                 }
             },
@@ -5844,7 +5844,7 @@ characterMakers["Sentri"] = () => {
                 name: "Front (Alt)",
                 image: {
                     source: "./media/characters/sentri/front-alt.svg",
-                    extra: 1750/1570 * (1 / (1 - 0.025)),
+                    extra: 1750/1570 ,
                     bottom: 0.025
                 }
             },
@@ -5947,7 +5947,7 @@ characterMakers["Q"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/q/front.svg",
-                    extra: 854/752 * (1 / (1 - 0.005)),
+                    extra: 854/752 ,
                     bottom: 0.005
                 }
             },
@@ -5990,7 +5990,7 @@ characterMakers["Carley"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/carley/front.svg",
-                    extra: 3927/3540 * (1 / (1 - 0.03)),
+                    extra: 3927/3540 ,
                     bottom: 0.03
                 }
             }
@@ -6111,7 +6111,7 @@ characterMakers["Rivet"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/rivet/front.svg",
-                    extra: 1716/1658 * (1 / (1 - 0.03)),
+                    extra: 1716/1658 ,
                     bottom: 0.03
                 }
             },
@@ -6157,7 +6157,7 @@ characterMakers["Coffee"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/coffee/front.svg",
-                    extra: 3666/3032 * (1 / (1 - 0.04)),
+                    extra: 3666/3032 ,
                     bottom: 0.04
                 }
             }
@@ -6195,7 +6195,7 @@ characterMakers["Chari-Gal"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/chari-gal/front.svg",
-                    extra: 1568/1385 * (1 / (1 - 0.047)),
+                    extra: 1568/1385 ,
                     bottom: 0.047
                 }
             },
@@ -6205,7 +6205,7 @@ characterMakers["Chari-Gal"] = () => {
                 name: "Gigantamax",
                 image: {
                     source: "./media/characters/chari-gal/gigantamax.svg",
-                    extra: 1124/888 * (1 / (1 - 0.03)),
+                    extra: 1124/888 ,
                     bottom: 0.03
                 }
             },
@@ -6235,7 +6235,7 @@ characterMakers["Nova"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/nova/front.svg",
-                    extra: 5000/4722 * (1 / (1 - 0.02)),
+                    extra: 5000/4722 ,
                     bottom: 0.02
                 }
             }
@@ -6265,7 +6265,7 @@ characterMakers["Argent"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/argent/front.svg",
-                    extra: 1565/1416 * (1 / (1 - 0.01)),
+                    extra: 1565/1416 ,
                     bottom: 0.01
                 }
             }
@@ -6355,7 +6355,7 @@ characterMakers["Kuro-shi Uchū"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/kuro-shi-uchū/front.svg",
-                    extra: 2329/1835 * (1 / (1 - 0.02)),
+                    extra: 2329/1835 ,
                     bottom: 0.02
                 }
             },
@@ -6648,7 +6648,7 @@ characterMakers["Tyrone"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/tyrone/front.svg",
-                    extra: 2520/2402 * (1 / (1 - 0.025)),
+                    extra: 2520/2402 ,
                     bottom: 0.025
                 }
             },
@@ -6804,7 +6804,7 @@ characterMakers["Luka"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/luka/front.svg",
-                    extra: 1 / (1 - 0.025),
+                    extra: 1,
                     bottom: 0.025
                 }
             },
@@ -6846,7 +6846,7 @@ characterMakers["Natalie Nightring"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/natalie-nightring/front.svg",
-                    extra: 1 / (1 - 0.06),
+                    extra: 1,
                     bottom: 0.06
                 }
             },
@@ -6888,7 +6888,7 @@ characterMakers["Danni Rosie"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/danni-rosie/front.svg",
-                    extra: 1260/1128 * (1 / (1 - 0.022)),
+                    extra: 1260/1128 ,
                     bottom: 0.022
                 }
             },
@@ -6914,7 +6914,7 @@ characterMakers["Samantha Kruse"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/samantha-kruse/front.svg",
-                    extra: (985 / 935) * (1 / (1 - 0.03)),
+                    extra: (985 / 935) ,
                     bottom: 0.03
                 }
             },
@@ -6924,7 +6924,7 @@ characterMakers["Samantha Kruse"] = () => {
                 name: "Front (Undressed)",
                 image: {
                     source: "./media/characters/samantha-kruse/front-undressed.svg",
-                    extra: (973 / 923) * (1 / (1 - 0.025)),
+                    extra: (973 / 923) ,
                     bottom: 0.025
                 }
             },
@@ -6959,7 +6959,7 @@ characterMakers["Amelia Rosie"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/amelia-rosie/back.svg",
-                    extra: 1113/963 * (1 / (1 - 0.01)),
+                    extra: 1113/963 ,
                     bottom: 0.01
                 }
             },
@@ -7009,7 +7009,7 @@ characterMakers["Rook Kitara"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/rook-kitara/front.svg",
-                    extra: 1347/1274 * (1 / (1 - 0.005)),
+                    extra: 1347/1274 ,
                     bottom: 0.005
                 }
             },
@@ -7047,7 +7047,7 @@ characterMakers["Pisces"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/pisces/front.svg",
-                    extra: 2255/2115 * (1 / (1 - 0.03)),
+                    extra: 2255/2115 ,
                     bottom: 0.03
                 }
             },
@@ -7057,7 +7057,7 @@ characterMakers["Pisces"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/pisces/back.svg",
-                    extra: 2146/2055 * (1 / (1 - 0.04)),
+                    extra: 2146/2055 ,
                     bottom: 0.04
                 }
             },
@@ -7259,7 +7259,7 @@ characterMakers["Dominic"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/dominic/front.svg",
-                    extra: 1770/1620 * (1 / (1 - 0.025)),
+                    extra: 1770/1620 ,
                     bottom: 0.025
                 }
             },
@@ -7269,7 +7269,7 @@ characterMakers["Dominic"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/dominic/back.svg",
-                    extra: 1745/1620 * (1 / (1 - 0.065)),
+                    extra: 1745/1620 ,
                     bottom: 0.065
                 }
             },
@@ -7363,7 +7363,7 @@ characterMakers["Axel Lycan"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/axel-lycan/front.svg",
-                    extra: 1 / (1 - 0.08),
+                    extra: 1,
                     bottom: 0.08
                 }
             },
@@ -7389,7 +7389,7 @@ characterMakers["Vanrel (Hyena)"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/vanrel-hyena/front.svg",
-                    extra: 1086/1010 * (1 / (1 - 0.04)),
+                    extra: 1086/1010 ,
                     bottom: 0.04
                 }
             },
@@ -7448,7 +7448,7 @@ characterMakers["Hector"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/hector/front.svg",
-                    extra: 2280/2130 * (1 / (1 - 0.07)),
+                    extra: 2280/2130 ,
                     bottom: 0.07
                 }
             },
@@ -7478,7 +7478,7 @@ characterMakers["Sal"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/sal/front.svg",
-                    extra: 1846/1699 * (1 / (1 - 0.04)),
+                    extra: 1846/1699 ,
                     bottom: 0.04
                 }
             },
@@ -7504,7 +7504,7 @@ characterMakers["Ranger"] = () => {
                 name: "front",
                 image: {
                     source: "./media/characters/ranger/front.svg",
-                    extra: 2401/2243 * (1 / (1 - 0.05)),
+                    extra: 2401/2243 ,
                     bottom: 0.05
                 }
             },
@@ -7530,7 +7530,7 @@ characterMakers["Theresa"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/theresa/front.svg",
-                    extra: 3575/3346 * (1 / (1 - 0.03)),
+                    extra: 3575/3346 ,
                     bottom: 0.03
                 }
             },
@@ -7556,7 +7556,7 @@ characterMakers["Ine"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/ine/front.svg",
-                    extra: 678/539 * (1 / (1 - 0.023)),
+                    extra: 678/539 ,
                     bottom: 0.023
                 }
             },
@@ -7582,7 +7582,7 @@ characterMakers["Vial"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/vial/front.svg",
-                    extra: 1365/1277 * (1 / (1 - 0.04)),
+                    extra: 1365/1277 ,
                     bottom: 0.04
                 }
             },
@@ -7677,7 +7677,7 @@ characterMakers["Allatia"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/allatia/front.svg",
-                    extra: 1227/1180 * (1 / (1 - 0.027)),
+                    extra: 1227/1180 ,
                     bottom: 0.027
                 }
             },
@@ -7711,7 +7711,7 @@ characterMakers["Tene"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/tene/front.svg",
-                    extra: 1728/1578 * (1 / (1 - 0.022)),
+                    extra: 1728/1578 ,
                     bottom: 0.022
                 }
             },
@@ -7721,7 +7721,7 @@ characterMakers["Tene"] = () => {
                 name: "Stomping",
                 image: {
                     source: "./media/characters/tene/stomping.svg",
-                    extra: 938/873 * (1 / (1 - 0.01)),
+                    extra: 938/873 ,
                     bottom: 0.01
                 }
             },
@@ -7731,7 +7731,7 @@ characterMakers["Tene"] = () => {
                 name: "Sitting",
                 image: {
                     source: "./media/characters/tene/sitting.svg",
-                    extra: 437/415 * (1 / (1 - 0.1)),
+                    extra: 437/415 ,
                     bottom: 0.1
                 }
             },
@@ -7741,7 +7741,7 @@ characterMakers["Tene"] = () => {
                 name: "Feral",
                 image: {
                     source: "./media/characters/tene/feral.svg",
-                    extra: 717/458 * (1 / (1 - 0.179)),
+                    extra: 717/458 ,
                     bottom: 0.179
                 }
             },
@@ -7877,7 +7877,7 @@ characterMakers["Mega Shi"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/mega-shi/front.svg",
-                    extra: 1279/1250 * (1 / (1 - 0.02)),
+                    extra: 1279/1250 ,
                     bottom: 0.02
                 }
             },
@@ -7887,7 +7887,7 @@ characterMakers["Mega Shi"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/mega-shi/back.svg",
-                    extra: 1279/1250 * (1 / (1 - 0.02)),
+                    extra: 1279/1250 ,
                     bottom: 0.02
                 }
             },
@@ -7937,7 +7937,7 @@ characterMakers["Odyssey"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/odyssey/front.svg",
-                    extra: 1782/1582 * (1 / (1 - 0.01)),
+                    extra: 1782/1582 ,
                     bottom: 0.01
                 }
             },
@@ -7988,7 +7988,7 @@ characterMakers["Mekuto"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/mekuto/front.svg",
-                    extra: 921/832 * (1 / (1 - 0.03)),
+                    extra: 921/832 ,
                     bottom: 0.03
                 }
             },
@@ -8048,7 +8048,7 @@ characterMakers["Dafydd Tomos"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/dafydd-tomos/front.svg",
-                    extra: 2990/2603 * (1 / (1 - 0.03)),
+                    extra: 2990/2603 ,
                     bottom: 0.03
                 }
             },
@@ -8074,7 +8074,7 @@ characterMakers["Splinter"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/splinter/front.svg",
-                    extra: 2990/2882 * (1 / (1 - 0.04)),
+                    extra: 2990/2882 ,
                     bottom: 0.04
                 }
             },
@@ -8084,7 +8084,7 @@ characterMakers["Splinter"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/splinter/back.svg",
-                    extra: 2990/2882 * (1 / (1 - 0.04)),
+                    extra: 2990/2882 ,
                     bottom: 0.04
                 }
             },
@@ -8114,7 +8114,7 @@ characterMakers["SnowGabumon"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/snow-gabumon/front.svg",
-                    extra: 1140/963 * (1 / (1 - 0.058)),
+                    extra: 1140/963 ,
                     bottom: 0.058
                 }
             },
@@ -8124,7 +8124,7 @@ characterMakers["SnowGabumon"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/snow-gabumon/back.svg",
-                    extra: 1115/962 * (1 / (1 - 0.041)),
+                    extra: 1115/962 ,
                     bottom: 0.041
                 }
             },
@@ -8134,7 +8134,7 @@ characterMakers["SnowGabumon"] = () => {
                 name: "Front (Undressed)",
                 image: {
                     source: "./media/characters/snow-gabumon/front-undressed.svg",
-                    extra: 1061/960 * (1 / (1 - 0.045)),
+                    extra: 1061/960 ,
                     bottom: 0.045
                 }
             },
@@ -8176,7 +8176,7 @@ characterMakers["Moody"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/moody/front.svg",
-                    extra: 3226/3007 * (1 / (1 - 0.087)),
+                    extra: 3226/3007 ,
                     bottom: 0.087
                 }
             },
@@ -8214,7 +8214,7 @@ characterMakers["Zyas"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/zyas/front.svg",
-                    extra: 1180/1120 * (1 / (1 - 0.045)),
+                    extra: 1180/1120 ,
                     bottom: 0.045
                 }
             },
@@ -8252,7 +8252,7 @@ characterMakers["Cuon"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/cuon/front.svg",
-                    extra: 1390/1320 * (1 / (1 - 0.008)),
+                    extra: 1390/1320 ,
                     bottom: 0.008
                 }
             },
@@ -8290,7 +8290,7 @@ characterMakers["Nyanuxk"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/nyanuxk/front.svg",
-                    extra: 1172/1084 * (1 / (1 - 0.065)),
+                    extra: 1172/1084 ,
                     bottom: 0.065
                 }
             },
@@ -8300,7 +8300,7 @@ characterMakers["Nyanuxk"] = () => {
                 name: "Side",
                 image: {
                     source: "./media/characters/nyanuxk/side.svg",
-                    extra: 1190/1132 * (1 / (1 - 0.007)),
+                    extra: 1190/1132 ,
                     bottom: 0.007
                 }
             },
@@ -8310,7 +8310,7 @@ characterMakers["Nyanuxk"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/nyanuxk/back.svg",
-                    extra: 1200/1141 * (1 / (1 - 0.015)),
+                    extra: 1200/1141 ,
                     bottom: 0.015
                 }
             },
@@ -8366,7 +8366,7 @@ characterMakers["Ailbhe"] = () => {
                 name: "Side",
                 image: {
                     source: "./media/characters/ailbhe/side.svg",
-                    extra: 757/464 * (1 / (1 - 0.041)),
+                    extra: 757/464 ,
                     bottom: 0.041
                 }
             },
@@ -8410,7 +8410,7 @@ characterMakers["Zevulfius"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/zevulfius/back.svg",
-                    extra: 918/854 * (1 / (1 - 0.005)),
+                    extra: 918/854 ,
                     bottom: 0.005
                 }
             },
@@ -8455,7 +8455,7 @@ characterMakers["Rikes"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/rikes/front.svg",
-                    extra: 1565/1483 * (1 / (1 - 0.017)),
+                    extra: 1565/1483 ,
                     bottom: 0.017
                 }
             },
@@ -8481,7 +8481,7 @@ characterMakers["Adam Silver-Mane"] = () => {
                 name: "Anthro",
                 image: {
                     source: "./media/characters/adam-silver-mane/anthro.svg",
-                    extra: 5743/5339 * (1 / (1 - 0.07)),
+                    extra: 5743/5339 ,
                     bottom: 0.07
                 }
             },
@@ -8491,7 +8491,7 @@ characterMakers["Adam Silver-Mane"] = () => {
                 name: "Taur",
                 image: {
                     source: "./media/characters/adam-silver-mane/taur.svg",
-                    extra: 1713/1571 * (1 / (1 - 0.01)),
+                    extra: 1713/1571 ,
                     bottom: 0.01
                 }
             },
@@ -8549,7 +8549,7 @@ characterMakers["Ky'owin"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/ky'owin/front.svg",
-                    extra: 3888/3068 * (1 / (1 - 0.015)),
+                    extra: 3888/3068 ,
                     bottom: 0.015
                 }
             },
@@ -8599,7 +8599,7 @@ characterMakers["Mal"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/mal/front.svg",
-                    extra: 785/724 * (1 / (1 - 0.07)),
+                    extra: 785/724 ,
                     bottom: 0.07
                 }
             },
@@ -8812,7 +8812,7 @@ characterMakers["Nomaxice"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/nomaxice/front.svg",
-                    extra: 1498/1073 * (1 / (1 - 0.075)),
+                    extra: 1498/1073 ,
                     bottom: 0.075
                 }
             },
@@ -8865,7 +8865,7 @@ characterMakers["Dydros"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/dydros/front.svg",
-                    extra: 863/800 * (1 / (1 - 0.015)),
+                    extra: 863/800 ,
                     bottom: 0.015
                 }
             },
@@ -8875,7 +8875,7 @@ characterMakers["Dydros"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/dydros/back.svg",
-                    extra: 900/843 * (1 / (1 - 0.005)),
+                    extra: 900/843 ,
                     bottom: 0.005
                 }
             },
@@ -8959,7 +8959,7 @@ characterMakers["Alexi"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/alexi/front.svg",
-                    extra: 3483/3291 * (1 / (1 - 0.04)),
+                    extra: 3483/3291 ,
                     bottom: 0.04
                 }
             },
@@ -8969,7 +8969,7 @@ characterMakers["Alexi"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/alexi/back.svg",
-                    extra: 3533/3356 * (1 / (1 - 0.021)),
+                    extra: 3533/3356 ,
                     bottom: 0.021
                 }
             },
@@ -8979,7 +8979,7 @@ characterMakers["Alexi"] = () => {
                 name: "Front (Transformed)",
                 image: {
                     source: "./media/characters/alexi/front-transformed.svg",
-                    extra: 5345/5100 * (1 / (1 - 0.03)),
+                    extra: 5345/5100 ,
                     bottom: 0.03
                 }
             },
@@ -9021,7 +9021,7 @@ characterMakers["Kayroo"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/kayroo/front.svg",
-                    extra: 1153/1038 * (1 / (1 - 0.06)),
+                    extra: 1153/1038 ,
                     bottom: 0.06
                 }
             },
@@ -9075,7 +9075,7 @@ characterMakers["Rhys"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/rhys/front.svg",
-                    extra: 3386/3090 * (1 / (1 - 0.07)),
+                    extra: 3386/3090 ,
                     bottom: 0.07
                 }
             },
@@ -9117,7 +9117,7 @@ characterMakers["Toto"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/toto/front.svg",
-                    exra: 527 / 479 * (1 / (1 - 0.05)),
+                    extra: 527 / 479,
                     bottom: 0.05
                 }
             },
@@ -9191,7 +9191,7 @@ characterMakers["Cordite"] = () => {
                 name: "Anthro",
                 image: {
                     source: "./media/characters/cordite/anthro.svg",
-                    extra: 1986/1905 * (1 / (1 - 0.025)),
+                    extra: 1986/1905 ,
                     bottom: 0.025
                 }
             },
@@ -9201,7 +9201,7 @@ characterMakers["Cordite"] = () => {
                 name: "Feral",
                 image: {
                     source: "./media/characters/cordite/feral.svg",
-                    extra: 1260/755 * (1 / (1 - 0.05)),
+                    extra: 1260/755 ,
                     bottom: 0.05
                 }
             },
@@ -9227,7 +9227,7 @@ characterMakers["Pianostrong"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/pianostrong/front.svg",
-                    extra: 6577/6254 * (1 / (1 - 0.02)),
+                    extra: 6577/6254 ,
                     bottom: 0.02
                 }
             },
@@ -9246,7 +9246,7 @@ characterMakers["Pianostrong"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/pianostrong/back.svg",
-                    extra: 6085/5733 * (1 / (1 - 0.01)),
+                    extra: 6085/5733 ,
                     bottom: 0.01
                 }
             },
@@ -9280,7 +9280,7 @@ characterMakers["Kona"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/kona/front.svg",
-                    extra: 2960/2629 * (1 / (1 - 0.005)),
+                    extra: 2960/2629 ,
                     bottom: 0.005
                 }
             },
@@ -9323,7 +9323,7 @@ characterMakers["Levi"] = () => {
                 name: "Side",
                 image: {
                     source: "./media/characters/levi/side.svg",
-                    extra: 1704/1334 * (1 / (1 - 0.02)),
+                    extra: 1704/1334 ,
                     bottom: 0.02
                 }
             },
@@ -9377,7 +9377,7 @@ characterMakers["BMC"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/bmc/front.svg",
-                    extra: 1067/1022 * (1 / (1 - 0.047)),
+                    extra: 1067/1022 ,
                     bottom: 0.047
                 }
             },
@@ -9419,7 +9419,7 @@ characterMakers["Sven the Kaiju"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/sven-the-kaiju/front.svg",
-                    extra: 1479/1449 * (1 / (1 - 0.05)),
+                    extra: 1479/1449 ,
                     bottom: 0.05
                 }
             },
@@ -9457,7 +9457,7 @@ characterMakers["Marik"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/marik/front.svg",
-                    extra: 1057/1003 * (1 / (1 - 0.08)),
+                    extra: 1057/1003 ,
                     bottom: 0.08
                 }
             },
@@ -9499,7 +9499,7 @@ characterMakers["Mel"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/mel/front.svg",
-                    extra: 736/617 * (1 / (1 - 0.017)),
+                    extra: 736/617 ,
                     bottom: 0.017
                 }
             },
@@ -9541,7 +9541,7 @@ characterMakers["Lykonous"] = () => {
                 name: "Kaiju",
                 image: {
                     source: "./media/characters/lykonous/kaiju.svg",
-                    extra: 1055/946 * (1 / (1 - 0.135)),
+                    extra: 1055/946 ,
                     bottom: 0.135
                 }
             },
@@ -9587,7 +9587,7 @@ characterMakers["Blü"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/blü/front.svg",
-                    extra: 1883/1564 * (1 / (1 - 0.031)),
+                    extra: 1883/1564 ,
                     bottom: 0.031
                 }
             },
@@ -9645,7 +9645,7 @@ characterMakers["Scales"] = () => {
                 name: "Taur (Front)",
                 image: {
                     source: "./media/characters/scales/taur-front.svg",
-                    extra: 1 / (1 - 0.05),
+                    extra: 1,
                     bottom: 0.05
                 }
             },
@@ -9655,7 +9655,7 @@ characterMakers["Scales"] = () => {
                 name: "Taur (Back)",
                 image: {
                     source: "./media/characters/scales/taur-back.svg",
-                    extra: 1 / (1 - 0.08),
+                    extra: 1,
                     bottom: 0.08
                 }
             },
@@ -9665,7 +9665,7 @@ characterMakers["Scales"] = () => {
                 name: "Anthro",
                 image: {
                     source: "./media/characters/scales/anthro.svg",
-                    extra: 1 / (1 - 0.06),
+                    extra: 1,
                     bottom: 0.06
                 }
             },
@@ -9691,7 +9691,7 @@ characterMakers["Koragos"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/koragos/front.svg",
-                    extra: 841/794 * (1 / (1 - 0.035)),
+                    extra: 841/794 ,
                     bottom: 0.035
                 }
             },
@@ -9701,7 +9701,7 @@ characterMakers["Koragos"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/koragos/back.svg",
-                    extra: 841/810 * (1 / (1 - 0.022)),
+                    extra: 841/810 ,
                     bottom: 0.022
                 }
             },
@@ -9739,7 +9739,7 @@ characterMakers["Xylrem"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/xylrem/front.svg",
-                    extra: 3323/3050 * (1 / (1 - 0.065)),
+                    extra: 3323/3050 ,
                     bottom: 0.065
                 }
             },
@@ -9777,7 +9777,7 @@ characterMakers["Ikideru"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/ikideru/front.svg",
-                    extra: 930/870 * (1 / (1 - 0.087)),
+                    extra: 930/870 ,
                     bottom: 0.087
                 }
             },
@@ -9787,7 +9787,7 @@ characterMakers["Ikideru"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/ikideru/back.svg",
-                    extra: 919/852 * (1 / (1 - 0.055)),
+                    extra: 919/852 ,
                     bottom: 0.055
                 }
             },
@@ -9869,7 +9869,7 @@ characterMakers["Chauncey (Chantz)"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/chauncey-chantz/front.svg",
-                    extra: 1587/1435 * (1 / (1 - 0.02)),
+                    extra: 1587/1435 ,
                     bottom: 0.02
                 }
             },
@@ -9915,7 +9915,7 @@ characterMakers["Epifox"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/epifox/front.svg",
-                    extra: (1 / (1 - 0.075)),
+                    extra: 1,
                     bottom: 0.075
                 }
             },
@@ -9953,7 +9953,7 @@ characterMakers["Colin T."] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/colin-t/front.svg",
-                    extra: 1272/1193 * (1 / (1 - 0.07)),
+                    extra: 1272/1193 ,
                     bottom: 0.07
                 }
             },
@@ -9999,7 +9999,7 @@ characterMakers["Matvei"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/matvei/front.svg",
-                    extra: 614/594 * (1 / (1 - 0.01)),
+                    extra: 614/594 ,
                     bottom: 0.01
                 }
             },
@@ -10080,7 +10080,7 @@ characterMakers["Vanrel"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/vanrel/front.svg",
-                    extra: (1 / (1 - 0.02)),
+                    extra: 1,
                     bottom: 0.02
                 }
             },
@@ -10090,7 +10090,7 @@ characterMakers["Vanrel"] = () => {
                 name: "Side",
                 image: {
                     source: "./media/characters/vanrel/side.svg",
-                    extra: (1 / (1 - 0.025)),
+                    extra: 1,
                     bottom: 0.025
                 }
             },
@@ -10123,7 +10123,7 @@ characterMakers["Kuiper Vanrel"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/kuiper-vanrel/front.svg",
-                    extra: 1118/1068 * (1 / (1 - 0.09)),
+                    extra: 1118/1068 ,
                     bottom: 0.09
                 }
             },
@@ -10156,7 +10156,7 @@ characterMakers["Keset Vanrel"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/keset-vanrel/front.svg",
-                    extra: 1150/1084 * (1 / (1 - 0.05)),
+                    extra: 1150/1084 ,
                     bottom: 0.05
                 }
             },
@@ -10196,7 +10196,7 @@ characterMakers["Neos"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/neos/front.svg",
-                    extra: 1696/992 * (1 / ( 1 - 0.14)),
+                    extra: 1696/992 ,
                     bottom: 0.14
                 }
             },
@@ -10254,7 +10254,7 @@ characterMakers["Sammy Mouse"] = () => {
                 name: "Feminine",
                 image: {
                     source: "./media/characters/sammy-mouse/feminine.svg",
-                    extra: 2526/2425 * (1 / (1 - 0.123)),
+                    extra: 2526/2425 ,
                     bottom: 0.123
                 }
             },
@@ -10264,7 +10264,7 @@ characterMakers["Sammy Mouse"] = () => {
                 name: "Masculine",
                 image: {
                     source: "./media/characters/sammy-mouse/masculine.svg",
-                    extra: 2526/2425 * (1 / (1 - 0.123)),
+                    extra: 2526/2425 ,
                     bottom: 0.123
                 }
             },
@@ -10298,7 +10298,7 @@ characterMakers["Kole"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/kole/front.svg",
-                    extra: 1423/1303 * (1 / (1 - 0.025)),
+                    extra: 1423/1303 ,
                     bottom: 0.025
                 }
             },
@@ -10308,7 +10308,7 @@ characterMakers["Kole"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/kole/back.svg",
-                    extra: 1426/1280 * (1 / (1 - 0.02)),
+                    extra: 1426/1280 ,
                     bottom: 0.02
                 }
             },
@@ -10334,7 +10334,7 @@ characterMakers["Rufran"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/rufran/front.svg",
-                    extra: 2041/1839 * (1 / (1 - 0.055)),
+                    extra: 2041/1839 ,
                     bottom: 0.055
                 }
             },
@@ -10344,7 +10344,7 @@ characterMakers["Rufran"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/rufran/back.svg",
-                    extra: 2054/1839 * (1 / (1 - 0.01)),
+                    extra: 2054/1839 ,
                     bottom: 0.01
                 }
             },
@@ -10421,7 +10421,7 @@ characterMakers["Torvid"] = () => {
                 name: "Side",
                 image: {
                     source: "./media/characters/torvid/side.svg",
-                    extra: 1972/722 * (1 / (1 - 0.035)),
+                    extra: 1972/722 ,
                     bottom: 0.035
                 }
             },
@@ -10447,7 +10447,7 @@ characterMakers["Susan"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/susan/front.svg",
-                    extra: 693/635 * (1 / (1 - 0.05)),
+                    extra: 693/635 ,
                     bottom: 0.05
                 }
             },
@@ -10473,7 +10473,7 @@ characterMakers["Raindrops"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/raindrops/front.svg",
-                    extra: 2655/2461 * (1 / (1 - 0.02)),
+                    extra: 2655/2461 ,
                     bottom: 0.02
                 }
             },
@@ -10483,7 +10483,7 @@ characterMakers["Raindrops"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/raindrops/back.svg",
-                    extra: 2574/2400 * (1 / (1 - 0.03)),
+                    extra: 2574/2400 ,
                     bottom: 0.03
                 }
             },
@@ -10529,7 +10529,7 @@ characterMakers["Tezwa"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/tezwa/front.svg",
-                    extra: 2083/1906 * (1 / (1 - 0.031)),
+                    extra: 2083/1906 ,
                     bottom: 0.031
                 }
             },
@@ -10562,7 +10562,7 @@ characterMakers["Typhus"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/typhus/front.svg",
-                    extra: 816/800 * (1 / (1 - 0.065)),
+                    extra: 816/800 ,
                     bottom: 0.065
                 }
             },
@@ -10588,7 +10588,7 @@ characterMakers["Lyra Von Wulf"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/lyra-von-wulf/front.svg",
-                    extra: (1 / (1 - 0.10)),
+                    extra: 1,
                     bottom: 0.10
                 }
             },
@@ -10598,7 +10598,7 @@ characterMakers["Lyra Von Wulf"] = () => {
                 name: "Front (Mecha)",
                 image: {
                     source: "./media/characters/lyra-von-wulf/front-mecha.svg",
-                    extra: (1 / (1 - 0.042)),
+                    extra: 1,
                     bottom: 0.042
                 }
             },
@@ -10659,7 +10659,7 @@ characterMakers["Dixon"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/dixon/front.svg",
-                    extra: 3361/3209 * (1 / (1 - 0.01)),
+                    extra: 3361/3209 ,
                     bottom: 0.01
                 }
             },
@@ -10697,7 +10697,7 @@ characterMakers["Kauko"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/kauko/front.svg",
-                    extra: 1455/1421 * (1 / (1 - 0.03)),
+                    extra: 1455/1421 ,
                     bottom: 0.03
                 }
             },
@@ -10707,7 +10707,7 @@ characterMakers["Kauko"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/kauko/back.svg",
-                    extra: 1455/1421 * (1 / (1 - 0.004)),
+                    extra: 1455/1421 ,
                     bottom: 0.004
                 }
             },
@@ -10733,7 +10733,7 @@ characterMakers["Varg"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/varg/front.svg",
-                    extra: 1108/1018 * (1 / (1 - 0.0375)),
+                    extra: 1108/1018 ,
                     bottom: 0.0375
                 }
             },
@@ -10763,7 +10763,7 @@ characterMakers["Dayza"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/dayza/front.svg",
-                    extra: 1262/1200 * (1 / (1 - 0.035)),
+                    extra: 1262/1200 ,
                     bottom: 0.035
                 }
             },
@@ -10773,7 +10773,7 @@ characterMakers["Dayza"] = () => {
                 name: "Side",
                 image: {
                     source: "./media/characters/dayza/side.svg",
-                    extra: 1295/1245 * (1 / (1 - 0.05)),
+                    extra: 1295/1245 ,
                     bottom: 0.05
                 }
             },
@@ -10812,7 +10812,7 @@ characterMakers["Xanthos"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/xanthos/front.svg",
-                    extra: (1 / (1 - 0.04)),
+                    extra: 1,
                     bottom: 0.04
                 }
             },
@@ -10822,7 +10822,7 @@ characterMakers["Xanthos"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/xanthos/back.svg",
-                    extra: (1 / (1 - 0.03)),
+                    extra: 1,
                     bottom: 0.03
                 }
             },
@@ -10882,7 +10882,7 @@ characterMakers["Grynn"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/grynn/front.svg",
-                    extra: 4627/4209 * (1 / (1 - 0.047)),
+                    extra: 4627/4209 ,
                     bottom: 0.047
                 }
             },
@@ -10936,7 +10936,7 @@ characterMakers["Mocha Aura"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/mocha-aura/front.svg",
-                    extra: 1907/1817 * (1 / (1 - 0.04)),
+                    extra: 1907/1817 ,
                     bottom: 0.04
                 }
             },
@@ -10946,7 +10946,7 @@ characterMakers["Mocha Aura"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/mocha-aura/back.svg",
-                    extra: 1900/1825 * (1 / (1 - 0.045)),
+                    extra: 1900/1825 ,
                     bottom: 0.045
                 }
             },
@@ -11000,7 +11000,7 @@ characterMakers["Ilisha Devya"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/ilisha-devya/front.svg",
-                    extra: (1 / (1 - 0.175)),
+                    extra: 1,
                     bottom: 0.175
                 }
             },
@@ -11010,7 +11010,7 @@ characterMakers["Ilisha Devya"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/ilisha-devya/back.svg",
-                    extra: (1 / (1 - 0.015)),
+                    extra: 1,
                     bottom: 0.015
                 }
             },
@@ -11056,7 +11056,7 @@ characterMakers["Mira"] = () => {
                 name: "Side",
                 image: {
                     source: "./media/characters/mira/side.svg",
-                    extra: 900/799 * (1 / (1 - 0.02)),
+                    extra: 900/799 ,
                     bottom: 0.02
                 }
             },
@@ -11120,7 +11120,7 @@ characterMakers["Holly"] = () => {
                 name: "Front (Working)",
                 image: {
                     source: "./media/characters/holly/front-working.svg",
-                    extra: 607/577 * (1 / (1 - 0.048)),
+                    extra: 607/577 ,
                     bottom: 0.048
                 }
             },
@@ -11146,7 +11146,7 @@ characterMakers["Porter"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/porter/front.svg",
-                    extra: 1 / (1 - 0.01),
+                    extra: 1,
                     bottom: 0.01
                 }
             },
@@ -11156,7 +11156,7 @@ characterMakers["Porter"] = () => {
                 name: "Front (Robes)",
                 image: {
                     source: "./media/characters/porter/front-robes.svg",
-                    extra: 1.01 * (1 / (1 - 0.01)),
+                    extra: 1.01 ,
                     bottom: 0.01
                 }
             },
@@ -11182,7 +11182,7 @@ characterMakers["Lucy"] = () => {
                 name: "Legendary",
                 image: {
                     source: "./media/characters/lucy/legendary.svg",
-                    extra: 1355/1100 * (1 / (1 - 0.045)),
+                    extra: 1355/1100 ,
                     bottom: 0.045
                 }
             },
@@ -11208,7 +11208,7 @@ characterMakers["Drusilla"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/drusilla/front.svg",
-                    extra: 678/635 * (1 / (1 - 0.03)),
+                    extra: 678/635 ,
                     bottom: 0.03
                 }
             },
@@ -11218,7 +11218,7 @@ characterMakers["Drusilla"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/drusilla/back.svg",
-                    extra: 678/635 * (1 / (1 - 0.005)),
+                    extra: 678/635 ,
                     bottom: 0.005
 
                 }
@@ -11249,7 +11249,7 @@ characterMakers["Renard Thatch"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/renard-thatch/front.svg",
-                    extra: 2411/2275 * (1 / (1 - 0.01)),
+                    extra: 2411/2275 ,
                     bottom: 0.01
                 }
             },
@@ -11259,7 +11259,7 @@ characterMakers["Renard Thatch"] = () => {
                 name: "Front (Posing)",
                 image: {
                     source: "./media/characters/renard-thatch/front-posing.svg",
-                    extra: 2381/2261 * (1 / (1 - 0.01)),
+                    extra: 2381/2261 ,
                     bottom: 0.01
                 }
             },
@@ -11302,7 +11302,7 @@ characterMakers["Sekvra"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/sekvra/front.svg",
-                    extra: (1 / (1 - 0.03)),
+                    extra: 1,
                     bottom: 0.03
                 }
             },
@@ -11312,7 +11312,7 @@ characterMakers["Sekvra"] = () => {
                 name: "Front (Clothed)",
                 image: {
                     source: "./media/characters/sekvra/front-clothed.svg",
-                    extra: (1 / (1 - 0.03)),
+                    extra: 1,
                     bottom: 0.03
                 }
             },
@@ -11322,7 +11322,7 @@ characterMakers["Sekvra"] = () => {
                 name: "Side",
                 image: {
                     source: "./media/characters/sekvra/side.svg",
-                    extra: (1 / (1 - 0.025)),
+                    extra: 1,
                     bottom: 0.025
                 }
             },
@@ -11332,7 +11332,7 @@ characterMakers["Sekvra"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/sekvra/back.svg",
-                    extra: (1 / (1 - 0.005)),
+                    extra: 1,
                     bottom: 0.005
                 }
             },
@@ -11362,7 +11362,7 @@ characterMakers["Carmine"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/carmine/front.svg",
-                    extra: 1 / (1 - 0.035),
+                    extra: 1,
                     bottom: 0.035
                 }
             },
@@ -11372,7 +11372,7 @@ characterMakers["Carmine"] = () => {
                 name: "Front (Armor)",
                 image: {
                     source: "./media/characters/carmine/front-armor.svg",
-                    extra: 1 / (1 - 0.035),
+                    extra: 1,
                     bottom: 0.035
                 }
             },
@@ -11406,7 +11406,7 @@ characterMakers["Elyssia"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/elyssia/front.svg",
-                    extra: 2201/2035 * (1 / (1 - 0.05)),
+                    extra: 2201/2035 ,
                     bottom: 0.05
                 }
             },
@@ -11416,7 +11416,7 @@ characterMakers["Elyssia"] = () => {
                 name: "Front (Clothed)",
                 image: {
                     source: "./media/characters/elyssia/front-clothed.svg",
-                    extra: 2201/2035 * (1 / (1 - 0.05)),
+                    extra: 2201/2035 ,
                     bottom: 0.05
                 }
             },
@@ -11426,7 +11426,7 @@ characterMakers["Elyssia"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/elyssia/back.svg",
-                    extra: 2201/2035 * (1 / (1 - 0.013)),
+                    extra: 2201/2035 ,
                     bottom: 0.013
                 }
             },
@@ -11460,7 +11460,7 @@ characterMakers["Geno Maxwell"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/geno-maxwell/front.svg",
-                    extra: 2207/2040 * (1 / (1 - 0.015)),
+                    extra: 2207/2040 ,
                     bottom: 0.015
                 }
             },
@@ -11498,7 +11498,7 @@ characterMakers["Regena Maxwell"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/regena-maxwell/front.svg",
-                    extra: 3115/2770 * (1 / (1 - 0.02)),
+                    extra: 3115/2770 ,
                     bottom: 0.02
                 }
             },
@@ -11532,7 +11532,7 @@ characterMakers["XGlidingDragonX"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/x-gliding-dragon-x/front.svg",
-                    extra: 860/690 * (1 / (1 - 0.03)),
+                    extra: 860/690 ,
                     bottom: 0.03
                 }
             },
@@ -11583,7 +11583,7 @@ characterMakers["Tempest"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/tempest/front.svg",
-                    extra: 1175/1086 * (1 / (1 - 0.02)),
+                    extra: 1175/1086 ,
                     bottom: 0.02
                 }
             },
@@ -11642,7 +11642,7 @@ characterMakers["Danyel"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/danyel/front.svg",
-                    extra: 1185/1123 * (1 / (1 - 0.05)),
+                    extra: 1185/1123 ,
                     bottom: 0.05
                 }
             },
@@ -11676,7 +11676,7 @@ characterMakers["Vivian Bijoux"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/vivian-bijoux/front.svg",
-                    extra: (1 / (1 - 0.072)),
+                    extra: 1,
                     bottom: 0.072
                 }
             },
@@ -11710,7 +11710,7 @@ characterMakers["Zeta"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/zeta/front.svg",
-                    extra: 1968/1889 * (1 / (1 - 0.06)),
+                    extra: 1968/1889 ,
                     bottom: 0.06
                 }
             },
@@ -11720,7 +11720,7 @@ characterMakers["Zeta"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/zeta/back.svg",
-                    extra: 1944/1858 * (1 / (1 - 0.03)),
+                    extra: 1944/1858 ,
                     bottom: 0.03
                 }
             },
@@ -11768,7 +11768,7 @@ characterMakers["Jamie Larsen"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/jamie-larsen/front.svg",
-                    extra: 962/933 * (1 / (1 - 0.02)),
+                    extra: 962/933 ,
                     bottom: 0.02
                 }
             },
@@ -11815,7 +11815,7 @@ characterMakers["Vance"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/vance/front.svg",
-                    extra: 1980/1890 * (1 / (1 - 0.09)),
+                    extra: 1980/1890 ,
                     bottom: 0.09
                 }
             },
@@ -11825,7 +11825,7 @@ characterMakers["Vance"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/vance/back.svg",
-                    extra: 2081/1994 * (1 / (1 - 0.014)),
+                    extra: 2081/1994 ,
                     bottom: 0.014
                 }
             },
@@ -11873,7 +11873,7 @@ characterMakers["Xochitl"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/xochitl/front.svg",
-                    extra: 2297/2261 * (1 / (1 - 0.065)),
+                    extra: 2297/2261 ,
                     bottom: 0.065
                 }
             },
@@ -11883,7 +11883,7 @@ characterMakers["Xochitl"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/xochitl/back.svg",
-                    extra: 2386/2354 * (1 / (1 - 0.01)),
+                    extra: 2386/2354 ,
                     bottom: 0.01
                 }
             },
@@ -11933,7 +11933,7 @@ characterMakers["Vincent"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/vincent/front.svg",
-                    extra: 1130/1080 * (1 / (1 - 0.055)),
+                    extra: 1130/1080 ,
                     bottom: 0.055
                 }
             },
@@ -11994,7 +11994,7 @@ characterMakers["Jay"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/jay/front.svg",
-                    extra: 1510/1430 * (1 / (1 - 0.042)),
+                    extra: 1510/1430 ,
                     bottom: 0.042
                 }
             },
@@ -12004,7 +12004,7 @@ characterMakers["Jay"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/jay/back.svg",
-                    extra: 1510/1430 * (1 / (1 - 0.025)),
+                    extra: 1510/1430 ,
                     bottom: 0.025
                 }
             },
@@ -12014,7 +12014,7 @@ characterMakers["Jay"] = () => {
                 name: "Front (Clothed)",
                 image: {
                     source: "./media/characters/jay/clothed.svg",
-                    extra: 744/699 * (1 / (1 - 0.043)),
+                    extra: 744/699 ,
                     bottom: 0.043
                 }
             },
@@ -12052,7 +12052,7 @@ characterMakers["Coatl"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/coatl/front.svg",
-                    extra: 3948 / 3500 * (1 / (1 - 0.082)),
+                    extra: 3948 / 3500 ,
                     bottom: 0.082
                 }
             },
@@ -12147,7 +12147,7 @@ characterMakers["Umeko"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/umeko/front.svg",
-                    extra: (1 / (1 - 0.019)),
+                    extra: 1,
                     bottom: 0.019
                 }
             },
@@ -12157,7 +12157,7 @@ characterMakers["Umeko"] = () => {
                 name: "Front (Armored)",
                 image: {
                     source: "./media/characters/umeko/front-armored.svg",
-                    extra: (1 / (1 - 0.021)),
+                    extra: 1,
                     bottom: 0.021
                 }
             },
@@ -12191,7 +12191,7 @@ characterMakers["Cassidy"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/cassidy/front.svg",
-                    extra: (1 / (1 - 0.043)),
+                    extra: 1,
                     bottom: 0.043
                 }
             },
@@ -12229,7 +12229,7 @@ characterMakers["Isaac"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/isaac/front.svg",
-                    extra: 896/815 * (1 / (1 - 0.11)),
+                    extra: 896/815 ,
                     bottom: 0.11
                 }
             },
@@ -12267,7 +12267,7 @@ characterMakers["Sleekit"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/sleekit/front.svg",
-                    extra: 4693/4487 * (1 / (1 - 0.012)),
+                    extra: 4693/4487 ,
                     bottom: 0.012
                 }
             },
@@ -12305,7 +12305,7 @@ characterMakers["Nillia"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/nillia/front.svg",
-                    extra: 2195/2037 * (1 / (1 - 0.005)),
+                    extra: 2195/2037 ,
                     bottom: 0.005
                 }
             },
@@ -12315,7 +12315,7 @@ characterMakers["Nillia"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/nillia/back.svg",
-                    extra: 2195/2037 * (1 / (1 - 0.005)),
+                    extra: 2195/2037 ,
                     bottom: 0.005
                 }
             },
@@ -12341,7 +12341,7 @@ characterMakers["Mesmyriza"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/mesmyriza/front.svg",
-                    extra: 2067/1784 * (1 / (1 - 0.035)),
+                    extra: 2067/1784 ,
                     bottom: 0.035
                 }
             },
@@ -12378,7 +12378,7 @@ characterMakers["Saudade"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/saudade/front.svg",
-                    extra: 1172/1139 * (1 / (1 - 0.035)),
+                    extra: 1172/1139 ,
                     bottom: 0.035
                 }
             },
@@ -12416,7 +12416,7 @@ characterMakers["Keireer"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/keireer/front.svg",
-                    extra: 716/666 * (1 / (1 - 0.05)),
+                    extra: 716/666 ,
                     bottom: 0.05
                 }
             },
@@ -12442,7 +12442,7 @@ characterMakers["Mirja"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/mirja/front.svg",
-                    extra: 1789/1683 * (1 / (1 - 0.05)),
+                    extra: 1789/1683 ,
                     bottom: 0.05
                 }
             },
@@ -12452,7 +12452,7 @@ characterMakers["Mirja"] = () => {
                 name: "Front (Dressed)",
                 image: {
                     source: "./media/characters/mirja/front-dressed.svg",
-                    extra: 1789/1683 * (1 / (1 - 0.05)),
+                    extra: 1789/1683 ,
                     bottom: 0.05
                 }
             },
@@ -12462,7 +12462,7 @@ characterMakers["Mirja"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/mirja/back.svg",
-                    extra: 953/917 * (1 / (1 - 0.017)),
+                    extra: 953/917 ,
                     bottom: 0.017
                 }
             },
@@ -12504,7 +12504,7 @@ characterMakers["Nightraver"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/nightraver/front.svg",
-                    extra: 2444/2160 * (1 / (1 - 0.027)),
+                    extra: 2444/2160 ,
                     bottom: 0.027
                 }
             },
@@ -12514,7 +12514,7 @@ characterMakers["Nightraver"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/nightraver/back.svg",
-                    extra: 2309/2180 * (1 / (1 - 0.005)),
+                    extra: 2309/2180 ,
                     bottom: 0.005
                 }
             },
@@ -12601,7 +12601,7 @@ characterMakers["Nebula Shahar"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/nebula-shahar/front.svg",
-                    extra: 1642/1436 * (1 / (1 - 0.06)),
+                    extra: 1642/1436 ,
                     bottom: 0.06
                 }
             },
@@ -12639,7 +12639,7 @@ characterMakers["Shayla"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/shayla/front.svg",
-                    extra: 1512/1414 * (1 / (1 - 0.01)),
+                    extra: 1512/1414 ,
                     bottom: 0.01
                 }
             },
@@ -12700,7 +12700,7 @@ characterMakers["Pia Jr."] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/pia-jr/front.svg",
-                    extra: 1000/970 * (1 / (1 - 0.035)),
+                    extra: 1000/970 ,
                     bottom: 0.035
                 }
             },
@@ -12752,7 +12752,7 @@ characterMakers["Pia Sr."] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/pia-sr/front.svg",
-                    extra: 760/730 * (1 / (1 - 0.015)),
+                    extra: 760/730 ,
                     bottom: 0.015
                 }
             },
@@ -12762,7 +12762,7 @@ characterMakers["Pia Sr."] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/pia-sr/back.svg",
-                    extra: 760/730 * (1 / (1 - 0.01)),
+                    extra: 760/730 ,
                     bottom: 0.01
                 }
             },
@@ -12814,7 +12814,7 @@ characterMakers["KIBIBYTE"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/kibibyte/front.svg",
-                    extra: 2221/2098 * (1 / (1 - 0.04)),
+                    extra: 2221/2098 ,
                     bottom: 0.04
                 }
             },
@@ -12852,7 +12852,7 @@ characterMakers["Felix"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/felix/front.svg",
-                    extra: 762/722 * (1 / (1 - 0.02)),
+                    extra: 762/722 ,
                     bottom: 0.02
                 }
             },
@@ -12862,7 +12862,7 @@ characterMakers["Felix"] = () => {
                 name: "Front (Clothed)",
                 image: {
                     source: "./media/characters/felix/front-clothed.svg",
-                    extra: 762/722 * (1 / (1 - 0.02)),
+                    extra: 762/722 ,
                     bottom: 0.02
                 }
             },
@@ -12896,7 +12896,7 @@ characterMakers["Tobo"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/tobo/front.svg",
-                    extra: 608/586 * (1 / (1 - 0.023)),
+                    extra: 608/586 ,
                     bottom: 0.023
                 }
             },
@@ -12959,7 +12959,7 @@ characterMakers["Danny Kapowsky"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/danny-kapowsky/front.svg",
-                    extra: 766/736 * (1 / (1 - 0.044)),
+                    extra: 766/736 ,
                     bottom: 0.044
                 }
             },
@@ -12969,7 +12969,7 @@ characterMakers["Danny Kapowsky"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/danny-kapowsky/back.svg",
-                    extra: 797/760 * (1 / (1 - 0.025)),
+                    extra: 797/760 ,
                     bottom: 0.025
                 }
             },
@@ -13007,7 +13007,7 @@ characterMakers["Finn"] = () => {
                 name: "Side",
                 image: {
                     source: "./media/characters/finn/side.svg",
-                    extra: 1953/1807 * (1 / (1 - 0.057)),
+                    extra: 1953/1807 ,
                     bottom: 0.057
                 }
             },
@@ -13033,7 +13033,7 @@ characterMakers["Roy"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/roy/front.svg",
-                    extra: (1 / (1 - 0.11)),
+                    extra: 1,
                     bottom: 0.11
                 }
             },
@@ -13071,7 +13071,7 @@ characterMakers["Aevsivs"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/aevsivs/front.svg",
-                    extra: (1 / (1 - 0.03)),
+                    extra: 1,
                     bottom: 0.03
                 }
             },
@@ -13109,7 +13109,7 @@ characterMakers["Hildegard"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/hildegard/front.svg",
-                    extra: 312/286 * (1 / (1 - 0.005)),
+                    extra: 312/286 ,
                     bottom: 0.005
                 }
             },
@@ -13136,7 +13136,7 @@ characterMakers["Bernard & Wilder"] = () => {
                 rename: true,
                 image: {
                     source: "./media/characters/bernard-wilder/bernard.svg",
-                    extra: 192/128 * (1 / (1 - 0.05)),
+                    extra: 192/128 ,
                     bottom: 0.05
                 }
             },
@@ -13147,7 +13147,7 @@ characterMakers["Bernard & Wilder"] = () => {
                 rename: true,
                 image: {
                     source: "./media/characters/bernard-wilder/wilder.svg",
-                    extra: 361/312 * (1 / (1 - 0.02)),
+                    extra: 361/312 ,
                     bottom: 0.02
                 }
             },
@@ -13173,7 +13173,7 @@ characterMakers["Hearth"] = () => {
                 name: "Anthro",
                 image: {
                     source: "./media/characters/hearth/anthro.svg",
-                    extra: 260/250 * (1 / (1 - 0.02)),
+                    extra: 260/250 ,
                     bottom: 0.02
                 }
             },
@@ -13183,7 +13183,7 @@ characterMakers["Hearth"] = () => {
                 name: "Feral",
                 image: {
                     source: "./media/characters/hearth/feral.svg",
-                    extra: 153/135 * (1 / (1 - 0.03)),
+                    extra: 153/135 ,
                     bottom: 0.03
                 }
             },
@@ -13209,7 +13209,7 @@ characterMakers["Ingrid"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/ingrid/front.svg",
-                    extra: 294/268 * (1 / (1 - 0.027)),
+                    extra: 294/268 ,
                     bottom: 0.027
                 }
             },
@@ -13235,7 +13235,7 @@ characterMakers["Malgam"] = () => {
                 name: "Malgam",
                 image: {
                     source: "./media/characters/malgam/eevee.svg",
-                    extra: 218/180 * (1 / (1 - 0.2)),
+                    extra: 218/180 ,
                     bottom: 0.2
                 }
             },
@@ -13246,7 +13246,7 @@ characterMakers["Malgam"] = () => {
                 rename: true,
                 image: {
                     source: "./media/characters/malgam/sylveon.svg",
-                    extra: 371/325 * (1 / (1 - 0.015)),
+                    extra: 371/325 ,
                     bottom: 0.015
                 }
             },
@@ -13280,7 +13280,7 @@ characterMakers["Fleur"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/fleur/front.svg",
-                    extra: 309/283 * (1 / (1 - 0.007)),
+                    extra: 309/283 ,
                     bottom: 0.007
                 }
             },
@@ -13306,7 +13306,7 @@ characterMakers["Jude"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/jude/front.svg",
-                    extra: 288/273 * (1 / (1 - 0.03)),
+                    extra: 288/273 ,
                     bottom: 0.03
                 }
             },
@@ -13332,7 +13332,7 @@ characterMakers["Seara"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/seara/front.svg",
-                    extra: (1 / (1 - 0.05)),
+                    extra: 1,
                     bottom: 0.05
                 }
             },
@@ -13358,7 +13358,7 @@ characterMakers["Caspian"] = () => {
             name: "Front",
             image: {
                 source: "./media/characters/caspian/front.svg",
-                extra: (1 / (1 - 0.04)),
+                extra: 1,
                 bottom: 0.04
             }
         },
@@ -13384,7 +13384,7 @@ characterMakers["Mika"] = () => {
             name: "Front",
             image: {
                 source: "./media/characters/mika/front.svg",
-                extra: (1 / (1 - 0.016)),
+                extra: 1,
                 bottom: 0.016
             }
         },
@@ -13410,7 +13410,7 @@ characterMakers["Sol"] = () => {
             name: "Front",
             image: {
                 source: "./media/characters/sol/front.svg",
-                extra: 247/231 * (1 / (1 - 0.05)),
+                extra: 247/231 ,
                 bottom: 0.05
             }
         },
@@ -13436,7 +13436,7 @@ characterMakers["Umiko"] = () => {
             name: "Buizel",
             image: {
                 source: "./media/characters/umiko/buizel.svg",
-                extra: 172/157 * (1 / (1 - 0.01)),
+                extra: 172/157 ,
                 bottom: 0.01
             }
         },
@@ -13471,7 +13471,7 @@ characterMakers["Iliac"] = () => {
             name: "Front",
             image: {
                 source: "./media/characters/iliac/front.svg",
-                extra: 389/365 * (1 / (1 - 0.035)),
+                extra: 389/365 ,
                 bottom: 0.035
             }
         },
@@ -13497,7 +13497,7 @@ characterMakers["Topaz"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/topaz/front.svg",
-                    extra: 317/303 * (1 / (1 - 0.055)),
+                    extra: 317/303 ,
                     bottom: 0.055
                 }
             },
@@ -13523,7 +13523,7 @@ characterMakers["Gabriel"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/gabriel/front.svg",
-                    extra: 285/262 * (1 / (1 - 0.004)),
+                    extra: 285/262 ,
                     bottom: 0.004
                 }
             },
@@ -13549,7 +13549,7 @@ characterMakers["Tempest (Suicune)"] = () => {
                 name: "Side",
                 image: {
                     source: "./media/characters/tempest-suicune/side.svg",
-                    extra: 195/154 * (1 / (1 - 0.04)),
+                    extra: 195/154 ,
                     bottom: 0.04
                 }
             },
@@ -13575,7 +13575,7 @@ characterMakers["Vulcan"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/vulcan/front.svg",
-                    extra: 154/147 * (1 / (1 - 0.04)),
+                    extra: 154/147 ,
                     bottom: 0.04
                 }
             },
@@ -13601,7 +13601,7 @@ characterMakers["Gault"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/gault/front.svg",
-                    extra: 161/140 * (1 / (1 - 0.028)),
+                    extra: 161/140 ,
                     bottom: 0.028
                 }
             },
@@ -13627,7 +13627,7 @@ characterMakers["Shard"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/shard/front.svg",
-                    extra: 273/238 * (1 / (1 - 0.02)),
+                    extra: 273/238 ,
                     bottom: 0.02
                 }
             },
@@ -13653,7 +13653,7 @@ characterMakers["Ashe"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/ashe/front.svg",
-                    extra: 400/373 * (1 / (1 - 0.01)),
+                    extra: 400/373 ,
                     bottom: 0.01
                 }
             },
@@ -13679,7 +13679,7 @@ characterMakers["Beatrix"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/beatrix/front.svg",
-                    extra: 392/379 * (1 / (1 - 0.01)),
+                    extra: 392/379 ,
                     bottom: 0.01
                 }
             },
@@ -13705,7 +13705,7 @@ characterMakers["Ignatius"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/ignatius/front.svg",
-                    extra: 245/222 * (1 / (1 - 0.01)),
+                    extra: 245/222 ,
                     bottom: 0.01
                 }
             },
@@ -13731,7 +13731,7 @@ characterMakers["Mei Li"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/mei-li/front.svg",
-                    extra: 237/229 * (1 / (1 - 0.03)),
+                    extra: 237/229 ,
                     bottom: 0.03
                 }
             },
@@ -13757,7 +13757,7 @@ characterMakers["Puru"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/puru/front.svg",
-                    extra: 206/149 * (1 / (1 - 0.06)),
+                    extra: 206/149 ,
                     bottom: 0.06
                 }
             },
@@ -13783,7 +13783,7 @@ characterMakers["Kee"] = () => {
                 name: "Taur",
                 image: {
                     source: "./media/characters/kee/taur.svg",
-                    extra: (1 / (1 - 0.04)),
+                    extra: 1,
                     bottom: 0.04
                 }
             },
@@ -13809,7 +13809,7 @@ characterMakers["Cobalt (Dracha)"] = () => {
                 name: "Anthro",
                 image: {
                     source: "./media/characters/cobalt-dracha/anthro.svg",
-                    extra: 231/225 * (1 / (1 - 0.04)),
+                    extra: 231/225 ,
                     bottom: 0.04
                 }
             },
@@ -13819,7 +13819,7 @@ characterMakers["Cobalt (Dracha)"] = () => {
                 name: "Feral",
                 image: {
                     source: "./media/characters/cobalt-dracha/feral.svg",
-                    extra: 692/633 * (1 / (1 - 0.05)),
+                    extra: 692/633 ,
                     bottom: 0.05
                 }
             },
@@ -13846,7 +13846,7 @@ characterMakers["Java"] = () => {
                 rename: true,
                 image: {
                     source: "./media/characters/java/fallen.svg",
-                    extra: 226/208 * (1 / (1 - 0.005)),
+                    extra: 226/208 ,
                     bottom: 0.005
                 }
             },
@@ -13857,7 +13857,7 @@ characterMakers["Java"] = () => {
                 rename: true,
                 image: {
                     source: "./media/characters/java/godkin.svg",
-                    extra: 270/262 * (1 / (1 - 0.02)),
+                    extra: 270/262 ,
                     bottom: 0.02
                 }
             },
@@ -13883,7 +13883,7 @@ characterMakers["Skoll"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/skoll/front.svg",
-                    extra: 232/220 * (1 / (1 - 0.02)),
+                    extra: 232/220 ,
                     bottom: 0.02
                 }
             },
@@ -13909,7 +13909,7 @@ characterMakers["Purna"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/purna/front.svg",
-                    extra: 239/229 * (1 / (1 - 0.01)),
+                    extra: 239/229 ,
                     bottom: 0.01
                 }
             },
@@ -13935,7 +13935,7 @@ characterMakers["Kuva"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/kuva/front.svg",
-                    extra: 281/271 * (1 / (1 - 0.006)),
+                    extra: 281/271 ,
                     bottom: 0.006
                 }
             },
@@ -13961,7 +13961,7 @@ characterMakers["Embra"] = () => {
                 name: "Anthro",
                 image: {
                     source: "./media/characters/embra/anthro.svg",
-                    extra: 200/187 * (1 / (1 - 0.02)),
+                    extra: 200/187 ,
                     bottom: 0.02
                 }
             },
@@ -13971,7 +13971,7 @@ characterMakers["Embra"] = () => {
                 name: "Feral",
                 image: {
                     source: "./media/characters/embra/feral.svg",
-                    extra: 152/137 * (1 / (1 - 0.037)),
+                    extra: 152/137 ,
                     bottom: 0.037
                 }
             },
@@ -13997,7 +13997,7 @@ characterMakers["Grottos"] = () => {
                 name: "Anthro",
                 image: {
                     source: "./media/characters/grottos/anthro.svg",
-                    extra: 350/332 * (1 / (1 - 0.045)),
+                    extra: 350/332 ,
                     bottom: 0.045
                 }
             },
@@ -14007,7 +14007,7 @@ characterMakers["Grottos"] = () => {
                 name: "Feral",
                 image: {
                     source: "./media/characters/grottos/feral.svg",
-                    extra: 207/190 * (1 / (1 - 0.05)),
+                    extra: 207/190 ,
                     bottom: 0.05
                 }
             },
@@ -14033,7 +14033,7 @@ characterMakers["Frifna"] = () => {
                 name: "Anthro",
                 image: {
                     source: "./media/characters/frifna/anthro.svg",
-                    extra: 282/269 * (1 / (1 - 0.015)),
+                    extra: 282/269 ,
                     bottom: 0.015
                 }
             },
@@ -14092,7 +14092,7 @@ characterMakers["Glade"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/glade/front.svg",
-                    extra: 258/247 * (1 / (1 - 0.008)),
+                    extra: 258/247 ,
                     bottom: 0.008
                 }
             },
@@ -14118,7 +14118,7 @@ characterMakers["Rina"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/rina/front.svg",
-                    extra: 266/255 * (1 / (1 - 0.005)),
+                    extra: 266/255 ,
                     bottom: 0.005
                 }
             },
@@ -14144,7 +14144,7 @@ characterMakers["Veronica"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/veronica/front.svg",
-                    extra: 319/309 * (1 / (1 - 0.005)),
+                    extra: 319/309 ,
                     bottom: 0.005
                 }
             },
@@ -14170,7 +14170,7 @@ characterMakers["Braxton"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/braxton/front.svg",
-                    extra: 1057/984 * (1 / (1 - 0.05)),
+                    extra: 1057/984 ,
                     bottom: 0.05
                 }
             },
@@ -14208,7 +14208,7 @@ characterMakers["Blue Feyonics"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/blue-feyonics/front.svg",
-                    extra: 1403/1306 * (1 / (1 - 0.047)),
+                    extra: 1403/1306 ,
                     bottom: 0.047
                 }
             },
