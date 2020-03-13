@@ -502,7 +502,7 @@ characterMakers["Rai"] = () => {
         "shadowblade945",
         {
             front: {
-                height: math.unit(7, "feet"),
+                height: math.unit(11, "feet"),
                 weight: math.unit(80, "kg"),
                 name: "Front",
                 image: {
@@ -512,7 +512,7 @@ characterMakers["Rai"] = () => {
                 }
             },
             side: {
-                height: math.unit(7, "feet"),
+                height: math.unit(11, "feet"),
                 weight: math.unit(80, "kg"),
                 name: "Side",
                 image: {
@@ -520,7 +520,7 @@ characterMakers["Rai"] = () => {
                 }
             },
             back: {
-                height: math.unit(7, "feet"),
+                height: math.unit(11, "feet"),
                 weight: math.unit(80, "lb"),
                 name: "Back",
                 image: {
@@ -548,6 +548,10 @@ characterMakers["Rai"] = () => {
             },
         },
         [
+            {
+                name: "Normal",
+                height: math.unit(11, "feet")
+            },
             {
                 name: "Macro",
                 height: math.unit(302, "feet"),
