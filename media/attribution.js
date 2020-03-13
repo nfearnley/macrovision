@@ -1120,6 +1120,46 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/cities/",
+            files: [
+                { name: "city_atlanta.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_boston.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_calgary.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_chicago.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_columbus.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_dallas.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_detroit.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_edmonton.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_guadalajara.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_houston.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_indianapolis.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_jacksonville.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_kansas-city.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_los-angeles.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_mexico-city.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_mississauga.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_montreal.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_new-york-city.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_ottawa.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_philadelphia.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_phoenix.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_puebla.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_san-antonio.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_san-diego.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_san-francisco.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_seattle.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_st-louis.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_tijuana.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_toronto.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_vancouver.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_washington.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_winnipeg.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+            ],
+            authors: [
+                "freedesignfile"
+            ]
+        },
+        {
             prefix: "./media/characters/abbott-absol/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/19023011/" }
@@ -5934,15 +5974,37 @@ const attributionData = {
         {
             prefix: "./media/naturals/",
             files: [
-                { name: "milky-way.svg", source: null }
+                { name: "planet-generic.svg", source: null },
+                { name: "saturn.svg", source: null },
+                { name: "milky-way.svg", source: null },
             ],
             authors: [
                 "chemicalcrux"
             ]
         },
         {
+            prefix: "./media/naturals/",
+            files: [
+                { name: "alaska.svg", source: "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg" },
+                { name: "california.svg", source: "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg" },
+                { name: "colorado.svg", source: "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg" },
+                { name: "florida.svg", source: "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg" },
+                { name: "maine.svg", source: "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg" },
+                { name: "montana.svg", source: "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg" },
+                { name: "new-york.svg", source: "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg" },
+                { name: "texas.svg", source: "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg" },
+            ],
+            authors: [
+                "theshibboleth"
+            ]
+        },
+        {
             prefix: "./media/objects/",
             files: [
+                { name: "soda-can.svg", source: null },
+                { name: "sewing-pin.svg", source: null },
+                { name: "pin-head.svg", source: null },
+                { name: "lamp.svg", source: null },
                 { name: "nail-polish.svg", source: null },
                 { name: "shot-glass.svg", source: null },
                 { name: "beer-bottle.svg", source: null },
@@ -6070,7 +6132,8 @@ const attributionData = {
             prefix: "./media/vehicles/",
             files: [
                 { name: "bus.svg", source: null },
-                { name: "leopard-2-revolution-1.svg", source: null },
+                { name: "vertical-bus.svg", source: null },
+                { name: "leopard-2-revolution-1.svg", source: "http://leopardclub.ca/reviews/Tiger_Model/Revolution/" },
             ],
             authors: [
                 "chemicalcrux"
@@ -8117,6 +8180,14 @@ const attributionData = {
         "mirandaarqayla": {
             "name": "Miranda Arqayla",
             "url": "https://www.furaffinity.net/user/mirandaarqayla/",
+        },
+        "freedesignfile": {
+            "name": "freedesignfile",
+            "url": "https://freedesignfile.com/",
+        },
+        "theshibboleth": {
+            "name": "Theshibboleth",
+            "url": "https://commons.wikimedia.org/wiki/Special:Contributions/Theshibboleth",
         },
     }
 }

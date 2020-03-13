@@ -732,7 +732,6 @@ function displayAttribution(file) {
     const owners = ownersOfFull(file);
     const source = sourceOf(file);
 
-    console.log(file)
     const authorHolder = document.querySelector("#options-attribution-authors");
     const ownerHolder = document.querySelector("#options-attribution-owners");
     const sourceHolder = document.querySelector("#options-attribution-source");
