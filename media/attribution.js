@@ -5610,6 +5610,18 @@ const attributionData = {
                 "jdolbear"
             ]
         },
+        {
+            prefix: "./media/characters/blue-feyonics/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/31656809/" }
+            ],
+            authors: [
+                "fearlesstiger"
+            ],
+            owners: [
+                "bluefiremarkii"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
@@ -7769,6 +7781,14 @@ const attributionData = {
         "dicelion": {
             "name": "dicelion",
             "url": "https://www.furaffinity.net/user/dicelion",
+        },
+        "fearlesstiger": {
+            "name": "fearlesstiger",
+            "url": "https://www.furaffinity.net/user/fearlesstiger",
+        },
+        "bluefiremarkii": {
+            "name": "Bluefiremarkii",
+            "url": "https://www.furaffinity.net/user/bluefiremarkii/",
         },
     }
 }

@@ -14130,6 +14130,31 @@ characterMakers["Braxton"] = () => {
     )
 };
 
+characterMakers["Blue Feyonics"] = () => {
+    return makeCharacter(
+        "Blue Feyonics",
+        "bluefiremarkii",
+        {
+            front: {
+                height: math.unit(6 + 7/12, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/blue-feyonics/front.svg",
+                    extra: 1403/1306 * (1 / (1 - 0.047)),
+                    bottom: 0.047
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6 + 7/12, "feet")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
