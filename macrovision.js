@@ -843,6 +843,7 @@ function displayEntity(entity, view, x, y) {
     img.addEventListener("dragstart", e => {
         e.preventDefault();
     });
+    
     const nameTag = document.createElement("div");
     nameTag.classList.add("entity-name");
     nameTag.innerText = entity.name;
@@ -872,6 +873,11 @@ function displayEntity(entity, view, x, y) {
         };
         testClick(fakeEvent);
     });
+
+    const heightBar = document.createElement("div");
+    heightBar.classList.add("height-bar");
+
+    box.appendChild(heightBar);
 
     box.id = "entity-" + entityIndex;
     box.dataset.key = entityIndex;
@@ -936,6 +942,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector("#options-world-show-bottom-names").addEventListener("input", e => {
         document.body.classList[e.target.checked ? "add" : "remove"]("toggle-bottom-name");
+    });
+
+    document.querySelector("#options-world-show-height-bars").addEventListener("input", e => {
+        document.body.classList[e.target.checked ? "add" : "remove"]("toggle-height-bars");
     });
 
     document.querySelector("#options-order-forward").addEventListener("click", e => {
