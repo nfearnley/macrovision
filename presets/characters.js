@@ -18,10 +18,11 @@ math.createUnit("AU", {
 math.createUnit("AUs", {
     definition: "149597870700 meters"
 })
-function makeCharacter(name, author, viewInfo, defaultSizes, defaultSize, extraInfo) {
+function makeCharacter(name, author, viewInfo, defaultSizes, extraInfo) {
     if (extraInfo === undefined) {
         extraInfo = {}
     }
+
     views = {};
 
     Object.entries(viewInfo).forEach(([key, value]) => {
@@ -51,10 +52,6 @@ function makeCharacter(name, author, viewInfo, defaultSizes, defaultSize, extraI
     });
 
     const entity = makeEntity(Object.assign(extraInfo, { name: name, author: author }), views, defaultSizes);
-
-    if (defaultSize) {
-        entity.views[entity.defaultView].height = defaultSize;
-    }
 
     return entity;
 }
@@ -133,7 +130,6 @@ characterMakers["Fen"] = () => {
                 height: math.unit(10, "miles")
             }
         ],
-        math.unit(100, "meter"),
         {
             description: {
                 title: "Bio",
@@ -182,14 +178,14 @@ characterMakers["Sofia"] = () => {
             },
             {
                 name: "Macro",
-                height: math.unit(96, "feet")
+                height: math.unit(96, "feet"),
+                default: true
             },
             {
                 name: "Megamerger",
                 height: math.unit(650, "feet")
             },
-        ],
-        math.unit(96, "feet")
+        ]
     )
 };
 
@@ -1068,10 +1064,10 @@ characterMakers["North"] = () => {
             },
             {
                 name: "Megamacro",
-                height: math.unit(101, "miles")
+                height: math.unit(101, "miles"),
+                default: true
             }
-        ],
-        math.unit(101, "miles")
+        ]
     )
 };
 
@@ -1101,7 +1097,8 @@ characterMakers["Talan"] = () => {
             },
             {
                 name: "Megamacro",
-                height: math.unit(2, "miles")
+                height: math.unit(2, "miles"),
+                default: true
             },
             {
                 name: "Gigamacro",
@@ -1111,8 +1108,7 @@ characterMakers["Talan"] = () => {
                 name: "Teramacro",
                 height: math.unit(100, "parsecs")
             }
-        ],
-        math.unit(2, "miles")
+        ]
     )
 };
 
@@ -1149,7 +1145,8 @@ characterMakers["Gael'Rathus"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(9, "feet")
+                height: math.unit(9, "feet"),
+                default: true
             },
             {
                 name: "Large",
@@ -1163,8 +1160,7 @@ characterMakers["Gael'Rathus"] = () => {
                 name: "Megamacro",
                 height: math.unit(10, "miles")
             }
-        ],
-        math.unit(9, "feet")
+        ]
     )
 };
 
@@ -1185,10 +1181,10 @@ characterMakers["Sosha"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(12, "feet")
+                height: math.unit(12, "feet"),
+                default: true
             }
-        ],
-        math.unit(12, "feet")
+        ]
     )
 };
 
@@ -1223,7 +1219,8 @@ characterMakers["Kurribird"] = () => {
             },
             {
                 name: "Big",
-                height: math.unit(15, "feet")
+                height: math.unit(12, "feet"),
+                default: true
             },
             {
                 name: "Macro",
@@ -1233,8 +1230,7 @@ characterMakers["Kurribird"] = () => {
                 name: "Megamacro",
                 height: math.unit(2, "miles")
             }
-        ],
-        math.unit(12, "feet")
+        ]
     )
 };
 
@@ -1275,7 +1271,8 @@ characterMakers["Elbial"] = () => {
             },
             {
                 name: "Macro",
-                height: math.unit(500, "feet")
+                height: math.unit(500, "feet"),
+                default: true
             },
             {
                 name: "Megamacro",
@@ -1289,8 +1286,7 @@ characterMakers["Elbial"] = () => {
                 name: "Full-Size",
                 height: math.unit(8000000, "gigaparsecs")
             }
-        ],
-        math.unit(500, "feet")
+        ]
     )
 };
 
@@ -1322,7 +1318,8 @@ characterMakers["Noah"] = () => {
             },
             {
                 name: "Macro",
-                height: math.unit(750, "feet")
+                height: math.unit(750, "feet"),
+                default: true
             },
             {
                 name: "Megamacro",
@@ -1336,8 +1333,7 @@ characterMakers["Noah"] = () => {
                 name: "Full-Size",
                 height: math.unit(3000000000, "miles")
             }
-        ],
-        math.unit(750, "feet")
+        ]
     )
 };
 
@@ -1366,7 +1362,8 @@ characterMakers["Natalya"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(150, "feet")
+                height: math.unit(150, "feet"),
+                default: true
             },
             {
                 name: "Megamacro",
@@ -1376,8 +1373,7 @@ characterMakers["Natalya"] = () => {
                 name: "Full-Size",
                 height: math.unit(600, "kiloparsecs")
             }
-        ],
-        math.unit(150, "feet")
+        ]
     )
 };
 
@@ -1411,7 +1407,8 @@ characterMakers["Erestrebah"] = () => {
             },
             {
                 name: "Large",
-                height: math.unit(50, "feet")
+                height: math.unit(50, "feet"),
+                default: true
             },
             {
                 name: "Macro",
@@ -1425,8 +1422,7 @@ characterMakers["Erestrebah"] = () => {
                 name: "Megamacro",
                 height: math.unit(3, "miles")
             }
-        ],
-        math.unit(50, "feet")
+        ]
     )
 };
 
@@ -1457,7 +1453,8 @@ characterMakers["Jennifer"] = () => {
         [
             {
                 name: "Canon Height",
-                height: math.unit(120, "feet")
+                height: math.unit(120, "feet"),
+                default: true
             },
             {
                 name: "Macro+",
@@ -1467,8 +1464,7 @@ characterMakers["Jennifer"] = () => {
                 name: "Megamacro",
                 height: math.unit(20000, "feet")
             }
-        ],
-        math.unit(120, "feet")
+        ]
     )
 };
 
@@ -1507,7 +1503,8 @@ characterMakers["Kalista"] = () => {
             },
             {
                 name: "Macro",
-                height: math.unit(100, "feet")
+                height: math.unit(100, "feet"),
+                default: true
             },
             {
                 name: "Macro+",
@@ -1517,8 +1514,7 @@ characterMakers["Kalista"] = () => {
                 name: "True Form",
                 height: math.unit(8924, "miles")
             }
-        ],
-        math.unit(100, "feet")
+        ]
     )
 };
 
@@ -1551,7 +1547,8 @@ characterMakers["GiantGrowingVixen"] = () => {
             },
             {
                 name: "Horribly Small",
-                height: math.unit(47.7, "miles")
+                height: math.unit(47.7, "miles"),
+                default: true
             },
             {
                 name: "Reasonably Sized",
@@ -1565,8 +1562,7 @@ characterMakers["GiantGrowingVixen"] = () => {
                 name: "Omniversal",
                 height: math.unit(1e300, "meters")
             },
-        ],
-        math.unit(47.7, "miles")
+        ]
     )
 };
 
@@ -1595,10 +1591,10 @@ characterMakers["Napalm"] = () => {
         [
             {
                 name: "Standard",
-                height: math.unit(55, "feet")
+                height: math.unit(55, "feet"),
+                default: true
             }
-        ],
-        math.unit(55, "feet")
+        ]
     )
 };
 
@@ -1629,7 +1625,8 @@ characterMakers["Asana"] = () => {
         [
             {
                 name: "Standard",
-                height: math.unit(7 + 5 / 6, "feet")
+                height: math.unit(7 + 5 / 6, "feet"),
+                default: true
             },
             {
                 name: "Large",
@@ -1651,8 +1648,7 @@ characterMakers["Asana"] = () => {
                 name: "Max Size",
                 height: math.unit(1e31, "lightyears")
             }
-        ],
-        math.unit(7 + 5 / 6, "feet")
+        ]
     )
 };
 
@@ -1693,9 +1689,11 @@ characterMakers["Ebony"] = () => {
             },
         },
         [
+            // TODO check why I did this lol
             {
                 name: "Standard",
-                height: math.unit(9 / 8 * (7 + 5 / 12), "feet")
+                height: math.unit(9 / 8 * (7 + 5 / 12), "feet"),
+                default: true
             },
             {
                 name: "Macro",
@@ -1705,8 +1703,7 @@ characterMakers["Ebony"] = () => {
                 name: "Gigamacro",
                 height: math.unit(13000, "km")
             }
-        ],
-        math.unit(7 + 5 / 12, "feet")
+        ]
     )
 };
 
@@ -1743,14 +1740,14 @@ characterMakers["Mountain"] = () => {
             },
             {
                 name: "Gigamacro",
-                height: math.unit(10000, "km")
+                height: math.unit(10000, "km"),
+                default: true
             },
             {
                 name: "Examacro",
                 height: math.unit(10e9, "lightyears")
             }
-        ],
-        math.unit(10000, "km")
+        ]
     )
 };
 
@@ -1771,14 +1768,14 @@ characterMakers["Rick"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(8, "feet")
+                height: math.unit(8, "feet"),
+                default: true
             },
             {
                 name: "Macro",
                 height: math.unit(5, "km")
             }
-        ],
-        math.unit(8, "feet")
+        ]
     )
 };
 
@@ -1822,7 +1819,8 @@ characterMakers["Ona"] = () => {
         [
             {
                 name: "Megamacro",
-                height: math.unit(70, "km")
+                height: math.unit(70, "km"),
+                default: true
             },
             {
                 name: "Gigamacro",
@@ -1832,8 +1830,7 @@ characterMakers["Ona"] = () => {
                 name: "Examacro",
                 height: math.unit(3800000, "lightyears")
             },
-        ],
-        math.unit(70, "km")
+        ]
     )
 };
 
@@ -1868,14 +1865,14 @@ characterMakers["Mech"] = () => {
             },
             {
                 name: "Macro",
-                height: math.unit(300, "feet")
+                height: math.unit(300, "feet"),
+                default: true
             },
             {
                 name: "Macro+",
                 height: math.unit(1500, "feet")
             },
-        ],
-        math.unit(300, "feet")
+        ]
     )
 };
 
@@ -1896,14 +1893,14 @@ characterMakers["Gregory"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(1.3, "meter")
+                height: math.unit(1.3, "meter"),
+                default: true
             },
             {
                 name: "Macro",
                 height: math.unit(20, "meter")
             }
-        ],
-        math.unit(1.3, "meter")
+        ]
     )
 };
 
@@ -1924,14 +1921,14 @@ characterMakers["Elory"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(2.8, "meter")
+                height: math.unit(2.8, "meter"),
+                default: true
             },
             {
                 name: "Macro",
                 height: math.unit(38, "meter")
             }
-        ],
-        math.unit(2.8, "meter")
+        ]
     )
 };
 
@@ -1952,7 +1949,8 @@ characterMakers["Angelpatamon"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(470, "feet")
+                height: math.unit(470, "feet"),
+                default: true
             },
             {
                 name: "Deity Size I",
@@ -1962,8 +1960,7 @@ characterMakers["Angelpatamon"] = () => {
                 name: "Deity Size II",
                 height: math.unit(171907.2, "km")
             }
-        ],
-        math.unit(470, "feet")
+        ]
     )
 };
 
@@ -1985,10 +1982,10 @@ characterMakers["Cryae"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(7.2, "meter")
+                height: math.unit(7.2, "meter"),
+                default: true
             }
-        ],
-        math.unit(7.2, "meter")
+        ]
     )
 };
 
@@ -2031,7 +2028,8 @@ characterMakers["Xera"] = () => {
             },
             {
                 name: "Macro",
-                height: math.unit(500, "meters")
+                height: math.unit(500, "meters"),
+                default: true
             },
             {
                 name: "Macro+",
@@ -2045,8 +2043,7 @@ characterMakers["Xera"] = () => {
                 name: "Teramacro",
                 height: math.unit(3e6, "km")
             }
-        ],
-        math.unit(500, "meters")
+        ]
     )
 };
 
@@ -2072,7 +2069,8 @@ characterMakers["Nebula"] = () => {
             },
             {
                 name: "Macro",
-                height: math.unit(1500, "meters")
+                height: math.unit(1500, "meters"),
+                default: true
             },
             {
                 name: "Megamacro",
@@ -2082,8 +2080,7 @@ characterMakers["Nebula"] = () => {
                 name: "Gigamacro",
                 height: math.unit(27000, "km")
             }
-        ],
-        math.unit(1500, "meters")
+        ]
     )
 };
 
@@ -2108,7 +2105,8 @@ characterMakers["Abysgar"] = () => {
             },
             {
                 name: "Macro",
-                height: math.unit(1250, "meters")
+                height: math.unit(1250, "meters"),
+                default: true
             },
             {
                 name: "Megamacro",
@@ -2118,8 +2116,7 @@ characterMakers["Abysgar"] = () => {
                 name: "Gigamacro",
                 height: math.unit(26000, "km")
             }
-        ],
-        math.unit(1250, "meters")
+        ]
     )
 };
 
@@ -2144,7 +2141,8 @@ characterMakers["Yakuz"] = () => {
             },
             {
                 name: "Macro",
-                height: math.unit(2500, "meters")
+                height: math.unit(1500, "meters"),
+                default: true
             },
             {
                 name: "Megamacro",
@@ -2154,8 +2152,7 @@ characterMakers["Yakuz"] = () => {
                 name: "Gigamacro",
                 height: math.unit(100000, "km")
             }
-        ],
-        math.unit(1500, "meters")
+        ]
     )
 };
 
@@ -2180,7 +2177,8 @@ characterMakers["Mirova"] = () => {
             },
             {
                 name: "Macro",
-                height: math.unit(900, "meters")
+                height: math.unit(900, "meters"),
+                default: true
             },
             {
                 name: "Megamacro",
@@ -2190,8 +2188,7 @@ characterMakers["Mirova"] = () => {
                 name: "Gigamacro",
                 height: math.unit(20000, "km")
             }
-        ],
-        math.unit(900, "meters")
+        ]
     )
 };
 
@@ -2212,7 +2209,8 @@ characterMakers["Asana (Mech)"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(28.35, "feet")
+                height: math.unit(28.35, "feet"),
+                default: true
             },
             {
                 name: "Macro",
@@ -2226,8 +2224,7 @@ characterMakers["Asana (Mech)"] = () => {
                 name: "Examacro",
                 height: math.unit(6e8, "lightyears")
             },
-        ],
-        math.unit(28.35, "feet")
+        ]
     )
 };
 
@@ -2283,7 +2280,8 @@ characterMakers["Ashtrek"] = () => {
             },
             {
                 name: "DEFCON 4",
-                height: math.unit(500, "meters")
+                height: math.unit(500, "meters"),
+                default: true
             },
             {
                 name: "DEFCON 3",
@@ -2301,8 +2299,7 @@ characterMakers["Ashtrek"] = () => {
                 name: "DEFCON 0",
                 height: math.unit(3, "gigaparsecs")
             },
-        ],
-        math.unit(500, "meters")
+        ]
     )
 };
 
@@ -2343,14 +2340,14 @@ characterMakers["Gale"] = () => {
             },
             {
                 name: "Macro",
-                height: math.unit(150, "feet")
+                height: math.unit(150, "feet"),
+                default: true
             },
             {
                 name: "Macro+",
                 height: math.unit(300, "feet")
             },
-        ],
-        math.unit(150, "feet")
+        ]
     )
 };
 
@@ -2371,10 +2368,10 @@ characterMakers["Draylen"] = () => {
         [
             {
                 name: "Macro",
-                height: math.unit(150, "feet")
+                height: math.unit(150, "feet"),
+                default: true
             }
-        ],
-        math.unit(150, "feet")
+        ]
     )
 };
 
@@ -2403,14 +2400,14 @@ characterMakers["Chez"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(7 + 9 / 12, "feet")
+                height: math.unit(7 + 9 / 12, "feet"),
+                default: true
             },
             {
                 name: "God King",
                 height: math.unit(9750000, "meters")
             }
-        ],
-        math.unit(7 + 9 / 12, "feet")
+        ]
     )
 };
 
@@ -2464,10 +2461,10 @@ characterMakers["Kaylum"] = () => {
             },
             {
                 name: "Macro",
-                height: math.unit(138, "meters")
+                height: math.unit(138, "meters"),
+                default: true
             }
-        ],
-        math.unit(138, "meters")
+        ]
     )
 };
 
@@ -2489,14 +2486,14 @@ characterMakers["Geta"] = () => {
         [
             {
                 name: "Micro",
-                height: math.unit(3, "inches")
+                height: math.unit(3, "inches"),
+                default: true
             },
             {
                 name: "Normal",
                 height: math.unit(5 + 5 / 12, "feet")
             }
-        ],
-        math.unit(3, "inches")
+        ]
     )
 };
 
@@ -2518,14 +2515,14 @@ characterMakers["Tyrnn"] = () => {
         [
             {
                 name: "Main Height",
-                height: math.unit(355, "feet")
+                height: math.unit(355, "feet"),
+                default: true
             },
             {
                 name: "Fave. Height",
                 height: math.unit(2400, "feet")
             }
-        ],
-        math.unit(355, "feet")
+        ]
     )
 };
 
@@ -2551,7 +2548,8 @@ characterMakers["Apple"] = () => {
             },
             {
                 name: "Megamacro",
-                height: math.unit(50, "miles")
+                height: math.unit(50, "miles"),
+                default: true
             },
             {
                 name: "Gigamacro",
@@ -2561,8 +2559,7 @@ characterMakers["Apple"] = () => {
                 name: "Teramacro",
                 height: math.unit(250000, "miles")
             },
-        ],
-        math.unit(50, "miles")
+        ]
     )
 };
 
@@ -2619,14 +2616,14 @@ characterMakers["Vulpes"] = () => {
             },
             {
                 name: "Megamacro",
-                height: math.unit(7500, "feet")
+                height: math.unit(7500, "feet"),
+                default: true
             },
             {
                 name: "Gigamacro",
                 height: math.unit(570000, "miles")
             }
-        ],
-        math.unit(7500, "feet")
+        ]
     )
 };
 
@@ -2676,7 +2673,8 @@ characterMakers["Rain Fallen"] = () => {
             },
             {
                 name: "Macro",
-                height: math.unit(150, "meter")
+                height: math.unit(150, "meter"),
+                default: true
             },
             {
                 name: "Megamacro",
@@ -2702,8 +2700,7 @@ characterMakers["Rain Fallen"] = () => {
                 name: "Void",
                 height: math.unit(6.66e66, "yottameters")
             }
-        ],
-        math.unit(150, "meter")
+        ]
     )
 };
 
@@ -2737,10 +2734,10 @@ characterMakers["Zaakira"] = () => {
             },
             {
                 name: "Macro",
-                height: math.unit(279, "feet")
+                height: math.unit(279, "feet"),
+                default: true
             }
-        ],
-        math.unit(279, "feet")
+        ]
     )
 };
 
@@ -2787,10 +2784,10 @@ characterMakers["Sigvald"] = () => {
             },
             {
                 name: "Macro+",
-                height: math.unit(200, "feet")
+                height: math.unit(200, "feet"),
+                default: true
             },
-        ],
-        math.unit(200, "feet")
+        ]
     )
 };
 
@@ -2821,8 +2818,13 @@ characterMakers["Scott"] = () => {
             },
 
         },
-        [],
-        math.unit(12, "feet")
+        [
+            {
+                name: "Normal",
+                height: math.unit(12, "feet"),
+                default: true
+            },
+        ]
     )
 };
 
@@ -2841,8 +2843,13 @@ characterMakers["Tobias"] = () => {
                 }
             },
         },
-        [],
-        math.unit(8, "meters")
+        [
+            {
+                name: "Normal",
+                height: math.unit(8, "meters"),
+                default: true
+            },
+        ]
     )
 };
 
@@ -2870,8 +2877,13 @@ characterMakers["Kieran"] = () => {
                 }
             },
         },
-        [],
-        math.unit(5.5, "feet")
+        [
+            {
+                name: "Normal",
+                height: math.unit(5.5, "feet"),
+                default: true
+            },
+        ]
     )
 };
 
@@ -2902,17 +2914,17 @@ characterMakers["Sanya"] = () => {
             },
             {
                 name: "Macro",
-                height: math.unit(16, "meters")
+                height: math.unit(16, "meters"),
+                default: true
             },
-        ],
-        math.unit(16, "meters")
+        ]
     )
 };
 
 characterMakers["Miranda"] = () => {
     return makeCharacter(
         "Miranda",
-        "MirandaAqrayla",
+        "MirandaArqayla",
         {
             side: {
                 height: math.unit(2, "meters"),
@@ -2927,17 +2939,17 @@ characterMakers["Miranda"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(10, "feet")
+                height: math.unit(10, "feet"),
+                default: true
             }
-        ],
-        math.unit(10, "feet")
+        ]
     )
 };
 
 characterMakers["James"] = () => {
     return makeCharacter(
         "James",
-        "MirandaAqrayla",
+        "MirandaArqayla",
         {
             side: {
                 height: math.unit(2, "meters"),
@@ -2952,17 +2964,17 @@ characterMakers["James"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(8.5, "feet")
+                height: math.unit(8.5, "feet"),
+                default: true
             }
-        ],
-        math.unit(8.5, "feet")
+        ]
     )
 };
 
 characterMakers["Heather"] = () => {
     return makeCharacter(
         "Heather",
-        "MirandaAqrayla",
+        "MirandaArqayla",
         {
             side: {
                 height: math.unit(9.5, "feet"),
@@ -2976,17 +2988,17 @@ characterMakers["Heather"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(9.5, "feet")
+                height: math.unit(9.5, "feet"),
+                default: true
             }
-        ],
-        math.unit(9.5, "feet")
+        ]
     )
 };
 
 characterMakers["Lukas"] = () => {
     return makeCharacter(
         "Lukas",
-        "MirandaAqrayla",
+        "MirandaArqayla",
         {
             side: {
                 height: math.unit(6.5, "feet"),
@@ -3001,17 +3013,17 @@ characterMakers["Lukas"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(6.5, "feet")
+                height: math.unit(6.5, "feet"),
+                default: true
             }
-        ],
-        math.unit(6.5, "feet")
+        ]
     )
 };
 
 characterMakers["Louise"] = () => {
     return makeCharacter(
         "Louise",
-        "MirandaAqrayla",
+        "MirandaArqayla",
         {
             side: {
                 height: math.unit(5, "feet"),
@@ -3025,10 +3037,10 @@ characterMakers["Louise"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(5, "feet")
+                height: math.unit(5, "feet"),
+                default: true
             }
-        ],
-        math.unit(5, "feet")
+        ]
     )
 };
 
@@ -3049,7 +3061,8 @@ characterMakers["Ramona"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(5.3, "meters")
+                height: math.unit(5.3, "meters"),
+                default: true
             },
             {
                 name: "Macro",
@@ -3059,8 +3072,7 @@ characterMakers["Ramona"] = () => {
                 name: "Macro+",
                 height: math.unit(50, "stories")
             },
-        ],
-        math.unit(5.3, "meters")
+        ]
     )
 };
 
@@ -3108,7 +3120,8 @@ characterMakers["Deerpuff"] = () => {
             },
             {
                 name: "Macropuff",
-                height: math.unit(1500, "feet")
+                height: math.unit(1500, "feet"),
+                default: true
             },
             {
                 name: "Megapuff",
@@ -3122,8 +3135,7 @@ characterMakers["Deerpuff"] = () => {
                 name: "Omegapuff",
                 height: math.unit(1000, "lightyears")
             },
-        ],
-        math.unit(1500, "feet")
+        ]
     )
 };
 
@@ -3154,7 +3166,8 @@ characterMakers["Vivian"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(7, "feet")
+                height: math.unit(7, "feet"),
+                default: true
             },
             {
                 name: "Macro",
@@ -3172,8 +3185,7 @@ characterMakers["Vivian"] = () => {
                 name: "Megamacro+",
                 height: math.unit(2750000, "meters")
             },
-        ],
-        math.unit(7, "feet")
+        ]
     )
 };
 
@@ -3247,7 +3259,8 @@ characterMakers["Psymon"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(11.25, "feet")
+                height: math.unit(11.25, "feet"),
+                default: true
             }
         ]
     )
@@ -3271,7 +3284,8 @@ characterMakers["Daimos"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(8, "feet")
+                height: math.unit(8, "feet"),
+                default: true
             }
         ]
     )
@@ -3316,7 +3330,8 @@ characterMakers["Blake"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(8 + 1/6, "feet")
+                height: math.unit(8 + 1/6, "feet"),
+                default: true
             }
         ]
     )
@@ -3349,7 +3364,8 @@ characterMakers["Guisetto"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(10 + 11/12, "feet")
+                height: math.unit(10 + 11/12, "feet"),
+                default: true
             }
         ]
     )
@@ -3426,7 +3442,8 @@ characterMakers["Huoyan"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(65, "feet")
+                height: math.unit(65, "feet"),
+                default: true
             }
         ]
     )
@@ -3449,7 +3466,8 @@ characterMakers["Tails"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(5 + 3/4, "feet")
+                height: math.unit(5 + 3/4, "feet"),
+                default: true
             }
         ]
     )
@@ -3472,7 +3490,8 @@ characterMakers["Rainy"] = () => {
         [
             {
                 name: "Macro",
-                height: math.unit(800, "feet")
+                height: math.unit(800, "feet"),
+                default: true
             }
         ]
     )
@@ -3495,7 +3514,8 @@ characterMakers["Rainier"] = () => {
         [
             {
                 name: "Micro",
-                height: math.unit(2, "mm")
+                height: math.unit(2, "mm"),
+                default: true
             }
         ]
     )
@@ -3518,7 +3538,8 @@ characterMakers["Andy"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(8, "feet")
+                height: math.unit(8, "feet"),
+                default: true
             },
             {
                 name: "Macro",
@@ -3747,7 +3768,8 @@ characterMakers["Guy"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(6 + 1/6, "feet")
+                height: math.unit(6 + 1/6, "feet"),
+                default: true
             },
             {
                 name: "Large",
@@ -4468,7 +4490,8 @@ characterMakers["Wyvrn Ripsnarl"] = () => {
         [
             {
                 name: "Teramacro",
-                height: math.unit(500000, "lightyears")
+                height: math.unit(500000, "lightyears"),
+                default: true
             },
         ]
     )
@@ -4875,7 +4898,8 @@ characterMakers["Mandake"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(7, "feet")
+                height: math.unit(7, "feet"),
+                default: true
             },
             {
                 name: "Macro",
@@ -6006,7 +6030,8 @@ characterMakers["Citrine"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(3, "feet")
+                height: math.unit(3, "feet"),
+                default: true
             }
         ]
     )
@@ -6056,7 +6081,8 @@ characterMakers["Aura Starwind"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(14, "feet")
+                height: math.unit(14, "feet"),
+                default: true
             },
             {
                 name: "Macro",
@@ -6222,7 +6248,7 @@ characterMakers["Nova"] = () => {
             {
                 name: "Micro",
                 height: math.unit(2, "inches"),
-                normal: true
+                default: true
             },
         ]
     )
@@ -6252,7 +6278,7 @@ characterMakers["Argent"] = () => {
             {
                 name: "Normal",
                 height: math.unit(3 + 1/12, "feet"),
-                normal: true
+                default: true
             },
             {
                 name: "Macro",
@@ -6702,7 +6728,8 @@ characterMakers["Mallow"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(3.5, "inches")
+                height: math.unit(3.5, "inches"),
+                default: true
             },
         ]
     )
@@ -6785,7 +6812,8 @@ characterMakers["Luka"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(12 + 8/12, "feet")
+                height: math.unit(12 + 8/12, "feet"),
+                default: true
             },
             {
                 name: "Minimacro",
@@ -7037,7 +7065,8 @@ characterMakers["Pisces"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(7, "feet")
+                height: math.unit(7, "feet"),
+                default: true
             },
             {
                 name: "Swimming Pool",
@@ -7132,7 +7161,8 @@ characterMakers["Talbot"] = () => {
         [
             {
                 name: "Micro",
-                height: math.unit(1, "inch")
+                height: math.unit(1, "inch"),
+                default: true
             },
         ]
     )
@@ -7341,7 +7371,8 @@ characterMakers["Axel Lycan"] = () => {
         [
             {
                 name: "Macro",
-                height: math.unit(1, "km")
+                height: math.unit(1, "km"),
+                default: true
             },
         ]
     )
@@ -7455,7 +7486,8 @@ characterMakers["Sal"] = () => {
         [
             {
                 name: "Megamacro",
-                height: math.unit(10, "miles")
+                height: math.unit(10, "miles"),
+                default: true
             },
         ]
     )
@@ -7480,7 +7512,8 @@ characterMakers["Ranger"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(3, "meters")
+                height: math.unit(3, "meters"),
+                default: true
             },
         ]
     )
@@ -7505,7 +7538,8 @@ characterMakers["Theresa"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(14, "feet")
+                height: math.unit(14, "feet"),
+                default: true
             },
         ]
     )
@@ -7530,7 +7564,8 @@ characterMakers["Ine"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(2.265, "feet")
+                height: math.unit(2.265, "feet"),
+                default: true
             },
         ]
     )
@@ -7555,7 +7590,8 @@ characterMakers["Vial"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(5, "feet")
+                height: math.unit(5, "feet"),
+                default: true
             },
         ]
     )
@@ -7579,7 +7615,8 @@ characterMakers["Rovoska"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(3.4, "meters")
+                height: math.unit(3.4, "meters"),
+                default: true
             },
         ]
     )
@@ -7614,7 +7651,8 @@ characterMakers["Gunner Rotthbauer"] = () => {
             },
             {
                 name: "Normal",
-                height: math.unit(8, "feet")
+                height: math.unit(8, "feet"),
+                default: true
             },
             {
                 name: "Macro",
@@ -7743,7 +7781,8 @@ characterMakers["Evander"] = () => {
         [
              {
                  name: "Normal",
-                 height: math.unit(0.83, "meters")
+                 height: math.unit(0.83, "meters"),
+                 default: true
              },
         ]
     )
@@ -8662,7 +8701,8 @@ characterMakers["Kimiko"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(15, "feet")
+                height: math.unit(15, "feet"),
+                default: true
             },
             {
                 name: "Macro",
@@ -8997,7 +9037,8 @@ characterMakers["Kayroo"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(8, "feet")
+                height: math.unit(8, "feet"),
+                default: true
             },
             {
                 name: "Minimacro",
@@ -9168,7 +9209,8 @@ characterMakers["Cordite"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(6 + 5/12, "feet")
+                height: math.unit(6 + 5/12, "feet"),
+                default: true
             },
         ]
     )
@@ -9289,7 +9331,8 @@ characterMakers["Levi"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(1.9, "meters")
+                height: math.unit(1.9, "meters"),
+                default: true
             },
             {
                 name: "Macro",
@@ -9506,7 +9549,8 @@ characterMakers["Lykonous"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(2.5, "meters")
+                height: math.unit(2.5, "meters"),
+                default: true
             },
             {
                 name: "Kaiju Dragon",
@@ -9665,7 +9709,8 @@ characterMakers["Koragos"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(6 + 11/12, "feet")
+                height: math.unit(6 + 11/12, "feet"),
+                default: true
             },
             {
                 name: "Macro",
@@ -9832,7 +9877,8 @@ characterMakers["Chauncey (Chantz)"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(13 + 10/12, "feet")
+                height: math.unit(13 + 10/12, "feet"),
+                default: true
             },
             {
                 name: "Macro",
@@ -9919,7 +9965,8 @@ characterMakers["Colin T."] = () => {
             },
             {
                 name: "Normal",
-                height: math.unit(1.8796, "meters")
+                height: math.unit(1.8796, "meters"),
+                default: true
             },
             {
                 name: "Tall",
@@ -9960,7 +10007,8 @@ characterMakers["Matvei"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(1.85, "meters")
+                height: math.unit(1.85, "meters"),
+                default: true
             },
         ]
     )
@@ -10130,7 +10178,8 @@ characterMakers["Keset Vanrel"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(8 + 5/12, "feet")
+                height: math.unit(8 + 5/12, "feet"),
+                default: true
             },
         ]
     )
@@ -10267,7 +10316,8 @@ characterMakers["Kole"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(4, "feet")
+                height: math.unit(4, "feet"),
+                default: true
             },
         ]
     )
@@ -10520,7 +10570,8 @@ characterMakers["Typhus"] = () => {
         [
             {
                 name: "Macro",
-                height: math.unit(58, "feet")
+                height: math.unit(58, "feet"),
+                default: true
             },
         ]
     )
@@ -11077,7 +11128,8 @@ characterMakers["Holly"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(12 + 3/12, "feet")
+                height: math.unit(12 + 3/12, "feet"),
+                default: true
             },
         ]
     )
@@ -11112,7 +11164,8 @@ characterMakers["Porter"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(11 + 9/12, "feet")
+                height: math.unit(11 + 9/12, "feet"),
+                default: true
             },   
         ]
     )
@@ -11137,7 +11190,8 @@ characterMakers["Lucy"] = () => {
         [
             {
                 name: "Legendary",
-                height: math.unit(86882*2, "miles")
+                height: math.unit(86882*2, "miles"),
+                default: true
             },
         ]
     )
@@ -11511,7 +11565,8 @@ characterMakers["Quilly"] = () => {
         [
             {
                 name: "Gigamacro",
-                height: math.unit(404090, "miles")
+                height: math.unit(404090, "miles"),
+                default: true
             },
         ]
     )
@@ -11536,7 +11591,8 @@ characterMakers["Tempest"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(7 + 8/12, "feet")
+                height: math.unit(7 + 8/12, "feet"),
+                default: true
             },
         ]
     )
@@ -11791,7 +11847,8 @@ characterMakers["Vance"] = () => {
         [
             {
                 name: "Small",
-                height: math.unit(90, "feet")
+                height: math.unit(90, "feet"),
+                default: true
             },
             {
                 name: "Macro",
@@ -11907,7 +11964,8 @@ characterMakers["Vincent"] = () => {
         [
             {
                 name: "Base",
-                height: math.unit(6 + 5/12, "feet")
+                height: math.unit(6 + 5/12, "feet"),
+                default: true
             },
             {
                 name: "Macro",
@@ -11928,7 +11986,7 @@ characterMakers["Vincent"] = () => {
 characterMakers["Jay"] = () => {
     return makeCharacter(
         "Jay",
-        "Neopuc",
+        "J-Forse",
         {
             front: {
                 height: math.unit(6 + 2/12, "feet"),
@@ -11968,7 +12026,8 @@ characterMakers["Jay"] = () => {
             },
             {
                 name: "Normal",
-                height: math.unit(6 + 2/12, "feet")
+                height: math.unit(6 + 2/12, "feet"),
+                default: true
             },
             {
                 name: "Macro",
@@ -12264,7 +12323,8 @@ characterMakers["Nillia"] = () => {
         [
             {
                 name: "Canon Height",
-                height: math.unit(489, "feet")
+                height: math.unit(489, "feet"),
+                default: true
             }
         ]
     )
@@ -12364,7 +12424,8 @@ characterMakers["Keireer"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(5 + 4/12, "feet")
+                height: math.unit(5 + 4/12, "feet"),
+                default: true
             },   
         ]
     )
@@ -13305,7 +13366,8 @@ characterMakers["Caspian"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(16 + 5/12, "feet")
+                height: math.unit(16 + 5/12, "feet"),
+                default: true
             },
         ]
     )
@@ -13330,7 +13392,8 @@ characterMakers["Mika"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(5 + 7/12, "feet")
+                height: math.unit(5 + 7/12, "feet"),
+                default: true
             },
         ]
     )
@@ -13355,7 +13418,8 @@ characterMakers["Sol"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(6 + 2/12, "feet")
+                height: math.unit(6 + 2/12, "feet"),
+                default: true
             },
         ]
     )
@@ -13675,7 +13739,8 @@ characterMakers["Mei Li"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(6 + 2/12, "feet")
+                height: math.unit(6 + 2/12, "feet"),
+                default: true
             },
         ]
     )
@@ -13700,7 +13765,8 @@ characterMakers["Puru"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(2 + 4/12, "feet")
+                height: math.unit(2 + 4/12, "feet"),
+                default: true
             },
         ]
     )
@@ -13877,7 +13943,8 @@ characterMakers["Kuva"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(5 + 9/12, "feet")
+                height: math.unit(5 + 9/12, "feet"),
+                default: true
             },   
         ]
     )
@@ -14149,7 +14216,8 @@ characterMakers["Blue Feyonics"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(6 + 7/12, "feet")
+                height: math.unit(6 + 7/12, "feet"),
+                default: true
             },
         ]
     )

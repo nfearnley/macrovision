@@ -28,7 +28,7 @@ function makeBuilding(name, height, image) {
 }
 
 
-function makeSkyscraper(name, image, startingSize) {
+function makeSkyscraper(name, image) {
     views = {
         building: {
             attributes: {
@@ -52,7 +52,8 @@ function makeSkyscraper(name, image, startingSize) {
     });
     sizes.push({
         name: "Medium",
-        height: math.unit(40, "stories")
+        height: math.unit(40, "stories"),
+        default: true
     });
     sizes.push({
         name: "Supertall",
@@ -65,7 +66,6 @@ function makeSkyscraper(name, image, startingSize) {
 
     const entity = makeEntity({ name: name }, views, sizes);
 
-    entity.views[entity.defaultView].height = startingSize;
     return entity;
 }
 
@@ -113,8 +113,7 @@ function makeBuildings() {
             name: "Wide Skyscraper",
             constructor: () => makeSkyscraper(
                 "Wide Skyscraper",
-                { source: "./media/buildings/skyscrapers/wide.svg" },
-                math.unit(40, "stories")
+                { source: "./media/buildings/skyscrapers/wide.svg" }
             )
         }
     );
@@ -124,8 +123,7 @@ function makeBuildings() {
             name: "Skyscraper",
             constructor: () => makeSkyscraper(
                 "Skyscraper",
-                { source: "./media/buildings/skyscrapers/medium.svg" },
-                math.unit(40, "stories")
+                { source: "./media/buildings/skyscrapers/medium.svg" }
             )
         }
     );
@@ -135,8 +133,7 @@ function makeBuildings() {
             name: "Slender Skyscraper",
             constructor: () => makeSkyscraper(
                 "Slender Skyscraper",
-                { source: "./media/buildings/skyscrapers/slender.svg" },
-                math.unit(40, "stories")
+                { source: "./media/buildings/skyscrapers/slender.svg" }
             )
         }
     );
@@ -146,8 +143,7 @@ function makeBuildings() {
             name: "Narrow Skyscraper",
             constructor: () => makeSkyscraper(
                 "Narrow Skyscraper",
-                { source: "./media/buildings/skyscrapers/narrow.svg" },
-                math.unit(40, "stories")
+                { source: "./media/buildings/skyscrapers/narrow.svg" }
             )
         }
     );

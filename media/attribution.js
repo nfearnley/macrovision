@@ -5622,6 +5622,288 @@ const attributionData = {
                 "bluefiremarkii"
             ]
         },
+        {
+            prefix: "./media/characters/kaylum/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32179617/" }
+            ],
+            authors: [
+                "shadowinkwarrior"
+            ],
+            owners: [
+                "thatonescalie"
+            ]
+        },
+        {
+            prefix: "./media/characters/geta/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/6315780/" }
+            ],
+            authors: [
+                "pythosblaze"
+            ],
+            owners: [
+                "aeznon"
+            ]
+        },
+        {
+            prefix: "./media/characters/tyrnn/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34600469/" }
+            ],
+            authors: [
+                "tyrnn"
+            ],
+            owners: [
+                "tyrnn"
+            ]
+        },
+        {
+            prefix: "./media/characters/apple/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33002197/" }
+            ],
+            authors: [
+                "stonerabbit"
+            ],
+            owners: [
+                "appledectomy"
+            ]
+        },
+        {
+            prefix: "./media/characters/vulpes/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/27057320/" }
+            ],
+            authors: [
+                "voondahbayosh",
+                "proximiter"
+            ],
+            owners: [
+                "vulpes-pawpad"
+            ]
+        },
+        {
+            prefix: "./media/characters/rain-fallen/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/26091968/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/26091968/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/26091968/" },
+                { name: "feral.svg", source: "https://www.furaffinity.net/view/26091968/" },
+            ],
+            authors: [
+                "rainfallen"
+            ],
+            owners: [
+                "rainfelln"
+            ]
+        },
+        {
+            prefix: "./media/characters/zaakira/",
+            files: [
+                { name: "standing.svg", source: "https://www.furaffinity.net/view/20127378/" }
+            ],
+            authors: [
+                "citrinelle"
+            ],
+            owners: [
+                "jazzywolf"
+            ]
+        },
+        {
+            prefix: "./media/characters/zaakira/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/23174731/" }
+            ],
+            authors: [
+                "sentinelwinder"
+            ],
+            owners: [
+                "jazzywolf"
+            ]
+        },
+        {
+            prefix: "./media/characters/sigvald/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35331220/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/35331220/" }
+            ],
+            authors: [
+                "meowzi"
+            ],
+            owners: [
+                "darkclawdeathstrike"
+            ]
+        },
+        {
+            prefix: "./media/characters/scott/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/34772713/" },
+                { name: "upright.svg", source: "https://www.furaffinity.net/view/34023485/" }
+            ],
+            authors: [
+                "scottred"
+            ],
+            owners: [
+                "scottred"
+            ]
+        },
+        {
+            prefix: "./media/characters/tobias/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/28272209/" }
+            ],
+            authors: [
+                "luciellia"
+            ],
+            owners: [
+                "tobias"
+            ]
+        },
+        {
+            prefix: "./media/characters/kieran/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/22902180/" }
+            ],
+            authors: [
+                "clovishusky"
+            ],
+            owners: [
+                "darkfigure"
+            ]
+        },
+        {
+            prefix: "./media/characters/kieran/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/22243143/" }
+            ],
+            authors: [
+                "phietto"
+            ],
+            owners: [
+                "darkfigure"
+            ]
+        },
+        {
+            prefix: "./media/characters/sanya/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/33047036/" }
+            ],
+            authors: [
+                "aimee-lesley-sim"
+            ],
+            owners: [
+                "banterghost"
+            ]
+        },
+        {
+            prefix: "./media/characters/miranda/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/26193861/" }
+            ],
+            authors: [
+                "deervvitch"
+            ],
+            owners: [
+                "mirandaarqayla"
+            ]
+        },
+        {
+            prefix: "./media/characters/james/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/29953279/" }
+            ],
+            authors: [
+                "dbd"
+            ],
+            owners: [
+                "mirandaarqayla"
+            ]
+        },
+        {
+            prefix: "./media/characters/heather/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/26252276/" }
+            ],
+            authors: [
+                "aggrobadger"
+            ],
+            owners: [
+                "mirandaarqayla"
+            ]
+        },
+        {
+            prefix: "./media/characters/lukas/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/27930832/" }
+            ],
+            authors: [
+                "dbd"
+            ],
+            owners: [
+                "mirandaarqayla"
+            ]
+        },
+        {
+            prefix: "./media/characters/louise/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/35088521/" }
+            ],
+            authors: [
+                "yaroul"
+            ],
+            owners: [
+                "mirandaarqayla"
+            ]
+        },
+        {
+            prefix: "./media/characters/ramona/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/26183197/" }
+            ],
+            authors: [
+                "rouncible"
+            ],
+            owners: [
+                "sofia"
+            ]
+        },
+        {
+            prefix: "./media/characters/deerpuff/",
+            files: [
+                { name: "standing.svg", source: null }
+            ],
+            authors: [
+                "deerpuff"
+            ],
+            owners: [
+                "deerpuff"
+            ]
+        },
+        {
+            prefix: "./media/characters/deerpuff/",
+            files: [
+                { name: "sitting.svg", source: "https://t.me/addstickers/ZTSoS" }
+            ],
+            authors: [
+                "faeseiren"
+            ],
+            owners: [
+                "deerpuff"
+            ]
+        },
+        {
+            prefix: "./media/characters/deerpuff/",
+            files: [
+                { name: "taur-laying.svg.svg", source: "https://www.furaffinity.net/view/29325973/" }
+            ],
+            authors: [
+                "greenbrains"
+            ],
+            owners: [
+                "deerpuff"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
@@ -5782,6 +6064,16 @@ const attributionData = {
             ],
             authors: [
                 "dimensions-guide"
+            ]
+        },
+        {
+            prefix: "./media/vehicles/",
+            files: [
+                { name: "bus.svg", source: null },
+                { name: "leopard-2-revolution-1.svg", source: null },
+            ],
+            authors: [
+                "chemicalcrux"
             ]
         },
         {
@@ -6542,7 +6834,7 @@ const attributionData = {
             "name": "ScottRed",
             "url": "https://www.furaffinity.net/user/scottred/"
         },
-        "luciella": {
+        "luciellia": {
             "name": "Luciella",
             "url": "https://www.furaffinity.net/user/luciellia/"
         },
@@ -7789,6 +8081,42 @@ const attributionData = {
         "bluefiremarkii": {
             "name": "Bluefiremarkii",
             "url": "https://www.furaffinity.net/user/bluefiremarkii/",
+        },
+        "thatonescalie": {
+            "name": "ThatOneScalie",
+            "url": "https://www.furaffinity.net/user/thatonescalie",
+        },
+        "aeznon": {
+            "name": "Aeznon",
+            "url": "https://www.furaffinity.net/user/aeznon/",
+        },
+        "appledectomy": {
+            "name": "Appledectomy",
+            "url": "https://www.furaffinity.net/user/appledectomy/",
+        },
+        "vulpes-pawpad": {
+            "name": "Vulpes_Pawpad",
+            "url": "https://www.furaffinity.net/user/vulpespawpad/",
+        },
+        "darkclawdeathstrike": {
+            "name": "Darkclaw_Deathstrike",
+            "url": "https://www.furaffinity.net/user/darkclawdeathstrike",
+        },
+        "tobias": {
+            "name": "TowynCoyote",
+            "url": "https://www.furaffinity.net/user/towyncoyote",
+        },
+        "darkfigure": {
+            "name": "darkfigure",
+            "url": "https://www.furaffinity.net/user/darkfigure",
+        },
+        "banterghost": {
+            "name": "banterghost",
+            "url": "https://www.furaffinity.net/user/banterghost",
+        },
+        "mirandaarqayla": {
+            "name": "Miranda Arqayla",
+            "url": "https://www.furaffinity.net/user/mirandaarqayla/",
         },
     }
 }
