@@ -5993,6 +5993,18 @@ const attributionData = {
                 "virgo113"
             ]
         },
+        {
+            prefix: "./media/characters/nakata/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/24739399/" }
+            ],
+            authors: [
+                "lezified"
+            ],
+            owners: [
+                "dalken"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
@@ -8265,6 +8277,10 @@ const attributionData = {
         "riolu4aural": {
             "name": "Riolu4aural",
             "url": "https://www.deviantart.com/riolu4aural",
+        },
+        "lezified": {
+            "name": "lezified",
+            "url": "https://www.furaffinity.net/user/lezified",
         },
     }
 }

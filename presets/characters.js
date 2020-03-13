@@ -14356,6 +14356,41 @@ characterMakers["Verin Raharra"] = () => {
         ]
     )
 };
+
+characterMakers["Nakata"] = () => {
+    return makeCharacter(
+        "Nakata",
+        "Dalken",
+        {
+            front: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(230, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/nakata/front.svg",
+                    extra: 1.005,
+                    bottom: 0.01
+                }
+            },
+        },
+        [
+           {
+               name: "Normal",
+               height: math.unit(7, "feet"),
+               default: true
+           },
+           {
+               name: "Big",
+               height: math.unit(14, "feet")
+           },
+           {
+               name: "Macro",
+               height: math.unit(400, "feet")
+           }, 
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
