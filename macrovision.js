@@ -1251,6 +1251,7 @@ function prepareEntities() {
     availableEntities["landmarks"] = makeLandmarks();
     availableEntities["characters"] = makeCharacters();
     availableEntities["objects"] = makeObjects();
+    availableEntities["food"] = makeFood();
     availableEntities["naturals"] = makeNaturals();
     availableEntities["vehicles"] = makeVehicles();
     availableEntities["cities"] = makeCities();
