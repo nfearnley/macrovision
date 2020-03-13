@@ -56,8 +56,8 @@ const unitChoices = {
 }
 const config = {
     height: math.unit(1500, "meters"),
-    minLineSize: 50,
-    maxLineSize: 250,
+    minLineSize: 100,
+    maxLineSize: 150,
     autoFit: false,
     autoFitMode: "max"
 }
@@ -206,20 +206,24 @@ function drawScale() {
 
     const ctx = canvas.getContext("2d");
 
-    let pixelsPer = (ctx.canvas.clientHeight - 100) / config.height.value;
-    let heightPer = config.height.clone();
-    heightPer.value = 1;
+    let pixelsPer = (ctx.canvas.clientHeight - 100) / config.height.toNumber();
+
+    heightPer = 1;
+
 
     if (pixelsPer < config.minLineSize) {
-        heightPer.value /= pixelsPer / config.minLineSize;
-        pixelsPer = config.minLineSize;
+        const factor = math.ceil(config.minLineSize / pixelsPer);
+        heightPer *= factor;
+        pixelsPer *= factor;
     }
 
     if (pixelsPer > config.maxLineSize) {
-        heightPer.value /= pixelsPer / config.maxLineSize;
-        pixelsPer = config.maxLineSize;
+        const factor = math.ceil(pixelsPer / config.maxLineSize);
+        heightPer /= factor;
+        pixelsPer /= factor;
     }
 
+    heightPer = math.unit(heightPer, config.height.units[0].unit.name)
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.scale(1, 1);
     ctx.canvas.width = canvas.clientWidth;
