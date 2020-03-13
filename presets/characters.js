@@ -14290,6 +14290,72 @@ characterMakers["Jack"] = () => {
     )
 };
 
+characterMakers["Cafat"] = () => {
+    return makeCharacter(
+        "Cafat",
+        "Dalken",
+        {
+            side: {
+                height: math.unit(5, "feet"),
+                weight: math.unit(170, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/cafat/side.svg",
+                    bottom: 0.01
+                }
+            },
+            sideFull: {
+                height: math.unit(5, "feet"),
+                weight: math.unit(170, "lb"),
+                name: "Side (Full)",
+                image: {
+                    source: "./media/characters/cafat/side-full.svg",
+                    bottom: 0.01
+                }
+            },
+        },
+        [
+            {
+                name: "Small",
+                height: math.unit(5, "feet"),
+                default: true
+            },
+            {
+                name: "Large",
+                height: math.unit(15.5, "feet")
+            },
+        ]
+    )
+};
+
+characterMakers["Verin Raharra"] = () => {
+    return makeCharacter(
+        "Verin Raharra",
+        "Virgo113",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/verin-raharra/front.svg",
+                    extra: 5019/4835,
+                    bottom: 0.023
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(7 + 5/12, "feet")
+            },
+            {
+                name: "Upsized",
+                height: math.unit(20, "feet")
+            },
+        ]
+    )
+};
 //characters
 
 function makeCharacters() {

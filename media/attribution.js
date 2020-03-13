@@ -5968,6 +5968,31 @@ const attributionData = {
                 "jasmith"
             ]
         },
+        {
+            prefix: "./media/characters/cafat/",
+            files: [
+                { name: "side.svg", source: "https://t.me/addstickers/Fhaalen" },
+                { name: "side-full.svg", source: "https://t.me/addstickers/Fhaalen" },
+            ],
+            authors: [
+                "kuppy"
+            ],
+            owners: [
+                "dalken"
+            ]
+        },
+        {
+            prefix: "./media/characters/verin-raharra/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34610806/" }
+            ],
+            authors: [
+                "riolu4aural"
+            ],
+            owners: [
+                "virgo113"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
@@ -8224,6 +8249,22 @@ const attributionData = {
         "nix-noble": {
             "name": "Nix Noble",
             "url": "http://aminoapps.com/p/m82qof",
+        },
+        "kuppy": {
+            "name": "Kuppy",
+            "url": "https://www.furaffinity.net/user/kuppy/",
+        },
+        "dalken": {
+            "name": "Dalken",
+            "url": "https://www.furaffinity.net/user/dalken/",
+        },
+        "virgo113": {
+            "name": "Virgo113",
+            "url": "https://www.furaffinity.net/user/virgo113/",
+        },
+        "riolu4aural": {
+            "name": "Riolu4aural",
+            "url": "https://www.deviantart.com/riolu4aural",
         },
     }
 }
