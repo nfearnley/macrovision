@@ -14092,6 +14092,44 @@ characterMakers["Veronica"] = () => {
     )
 };
 
+characterMakers["Braxton"] = () => {
+    return makeCharacter(
+        "Braxton",
+        "jdolbear",
+        {
+            front: {
+                height: math.unit(9 + 3/12, "feet"),
+                weight: math.unit(1100, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/braxton/front.svg",
+                    extra: 1057/984 * (1 / (1 - 0.05)),
+                    bottom: 0.05
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(9 + 3/12, "feet")
+            },
+            {
+                name: "Giant",
+                height: math.unit(300, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(700, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(6000, "feet")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

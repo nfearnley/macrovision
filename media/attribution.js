@@ -5598,6 +5598,18 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/braxton/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/15912764" }
+            ],
+            authors: [
+                "dicelion"
+            ],
+            owners: [
+                "jdolbear"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
@@ -7749,6 +7761,14 @@ const attributionData = {
         "cam": {
             "name": "Cam",
             "url": "https://www.furaffinity.net/user/paintedmutt",
+        },
+        "jdolbear": {
+            "name": "jdolbear",
+            "url": "https://www.furaffinity.net/user/jdolbear/",
+        },
+        "dicelion": {
+            "name": "dicelion",
+            "url": "https://www.furaffinity.net/user/dicelion",
         },
     }
 }
