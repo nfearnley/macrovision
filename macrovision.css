@@ -465,7 +465,7 @@ body.toggle-height-bars .height-bar {
     min-height: 3px;
     height: 3px;
     position: absolute;
-    background: repeating-linear-gradient(90deg, #aaaaaaff, #aaaaaaff 20px, #aaaaaa00 20px, #aaaaaa00 40px);
+    background: repeating-linear-gradient(90deg, #ffffff88, #ffffff88 20px, #ffffff00 20px, #ffffff00 40px);
     top: calc(-100% + var(--extra));
-    left: calc(-120vw + 24px);
+    left: calc(-120vw);
 }
