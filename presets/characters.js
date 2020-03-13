@@ -529,6 +529,23 @@ characterMakers["Rai"] = () => {
                     bottom: 0.01
                 }
             },
+            feral: {
+                height: math.unit(11, "feet"),
+                weight: math.unit(800, "lb"),
+                name: "Feral",
+                image: {
+                    source: "./media/characters/rai/feral.svg",
+                    extra: 1050/659 * (1 / (1 - 0.07)),
+                    bottom: 0.07
+                }
+            },
+            maw: {
+                height: math.unit(6/3.81416, "feet"),
+                name: "Maw",
+                image: {
+                    source: "./media/characters/rai/maw.svg"
+                }
+            },
         },
         [
             {

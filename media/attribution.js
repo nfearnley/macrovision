@@ -3870,7 +3870,9 @@ const attributionData = {
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/19705050/" },
                 { name: "side.svg", source: "https://www.furaffinity.net/view/19705050/" },
-                { name: "back.svg", source: "https://www.furaffinity.net/view/19705050/" }
+                { name: "back.svg", source: "https://www.furaffinity.net/view/19705050/" },
+                { name: "feral.svg", source: "https://www.furaffinity.net/view/19705050/" },
+                { name: "maw.svg", source: "https://www.furaffinity.net/view/19705050/" },
             ],
             authors: [
                 "styxandstoned",
