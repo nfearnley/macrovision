@@ -447,6 +447,8 @@ a.corner-ribbon {
 
 input[type=checkbox] {
     transform: scale(2);
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 input ~ label {
