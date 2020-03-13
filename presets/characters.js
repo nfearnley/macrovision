@@ -14223,6 +14223,43 @@ characterMakers["Blue Feyonics"] = () => {
     )
 };
 
+characterMakers["Maxwell"] = () => {
+    return makeCharacter(
+        "Maxwell",
+        "Ruby_02",
+        {
+            front: {
+                height: math.unit(1.8, "meters"),
+                weight: math.unit(60, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/maxwell/front.svg",
+                    extra: 2060/1873
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(1, "mm")
+            },
+            {
+                name: "Normal",
+                height: math.unit(1.8, "meter"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(30, "meters")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(10, "km")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

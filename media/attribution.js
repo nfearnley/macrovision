@@ -5944,6 +5944,18 @@ const attributionData = {
                 "deerpuff"
             ]
         },
+        {
+            prefix: "./media/characters/maxwell/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35356275/" }
+            ],
+            authors: [
+                "matamii"
+            ],
+            owners: [
+                "ruby02"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
@@ -8188,6 +8200,14 @@ const attributionData = {
         "theshibboleth": {
             "name": "Theshibboleth",
             "url": "https://commons.wikimedia.org/wiki/Special:Contributions/Theshibboleth",
+        },
+        "ruby02": {
+            "name": "Ruby_02",
+            "url": "https://www.furaffinity.net/user/ruby02/",
+        },
+        "matamii": {
+            "name": "Matamii",
+            "url": "https://twitter.com/Matamii2?s=09",
         },
     }
 }
