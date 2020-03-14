@@ -6054,6 +6054,23 @@ const attributionData = {
                 "counts-his-toes"
             ]
         },
+        {
+            prefix: "./media/characters/cassandra/",
+            files: [
+                { name: "front.svg", source: "http://ref.fox.mom/bakedbeans" },
+                { name: "back.svg", source: "http://ref.fox.mom/bakedbeans" },
+                { name: "beans.svg", source: "http://ref.fox.mom/bakedbeans" },
+                { name: "skirt.svg", source: "http://ref.fox.mom/bakedbeans" },
+                { name: "hoodie.svg", source: "http://ref.fox.mom/bakedbeans" },
+                { name: "casual.svg", source: "http://ref.fox.mom/bakedbeans" },
+            ],
+            authors: [
+                "fireflufferz"
+            ],
+            owners: [
+                "arcanei"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
@@ -8354,6 +8371,10 @@ const attributionData = {
         "jazzumi": {
             "name": "Jazzumi",
             "url": "https://www.furaffinity.net/user/jazzumi",
+        },
+        "arcanei": {
+            "name": "Cassandra",
+            "url": "https://www.furaffinity.net/user/arcaeni",
         },
     }
 }
