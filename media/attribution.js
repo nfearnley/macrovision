@@ -6099,6 +6099,18 @@ const attributionData = {
                 "shal"
             ]
         },
+        {
+            prefix: "./media/characters/isabelle/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/ThonyDog31/status/1233022480735928321" }
+            ],
+            authors: [
+                "thornydog31"
+            ],
+            owners: [
+                "evilwithin"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
@@ -8419,6 +8431,14 @@ const attributionData = {
         "shal": {
             "name": "Shal",
             "url": "https://www.furaffinity.net/user/shal/",
+        },
+        "thornydog31": {
+            "name": "ThornyDog31",
+            "url": "https://twitter.com/ThonyDog31/status/1233022480735928321",
+        },
+        "evilwithin": {
+            "name": "evilwithin",
+            "url": "https://www.furaffinity.net/user/evilwithin/  ",
         },
     }
 }

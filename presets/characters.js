@@ -14653,6 +14653,59 @@ characterMakers["Veski"] = () => {
     )
 };
 
+characterMakers["Isabelle"] = () => {
+    return makeCharacter(
+        "Isabelle",
+        "evilwithin",
+        {
+            front: {
+                height: math.unit(5 + 7/12, "feet"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/isabelle/front.svg",
+                    extra: 2130/1976,
+                    bottom: 0.05
+                }
+            },
+        },
+        [
+            {
+                name: "Supermicro",
+                height: math.unit(10, "micrometers")
+            },
+            {
+                name: "Micro",
+                height: math.unit(1, "inch")
+            },
+            {
+                name: "Tiny",
+                height: math.unit(5, "inches")
+            },
+            {
+                name: "Standard",
+                height: math.unit(5 + 7/12, "inches")
+            },   
+            {
+                name: "Macro",
+                height: math.unit(80, "meters"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(250, "meters")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(5, "km")
+            },
+            {
+                name: "Cosmic",
+                height: math.unit(2.5e6, "miles")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
