@@ -1083,7 +1083,7 @@ document.addEventListener("DOMContentLoaded", () => {
     param = new URL(window.location.href).searchParams.get("scene");
 
     if (param === null)
-        scenes["Demo"]();
+        scenes["Default"]();
     else {
         try {
             const data = JSON.parse(b64DecodeUnicode(param));
@@ -1097,7 +1097,7 @@ document.addEventListener("DOMContentLoaded", () => {
             importScene(data);
         } catch (err) {
             console.error(err);
-            scenes["Demo"]();
+            scenes["Default"]();
 
             // probably wasn't valid data 
         }
