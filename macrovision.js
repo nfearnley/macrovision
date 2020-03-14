@@ -1100,7 +1100,6 @@ document.addEventListener("DOMContentLoaded", () => {
             // probably wasn't valid data 
         }
     }
-    fitWorld();
     document.querySelector("#world").addEventListener("wheel", e => {
 
 
