@@ -89,7 +89,16 @@ characterMakers["Fen"] = () => {
                         text: "\n\nMunch."
                     }
                 }
-            }
+            },
+            kneeling: {
+                height: math.unit(5.4, "feet"),
+                weight: math.unit(124.738, "kg"),
+                name: "Kneeling",
+                image: {
+                    source: "./media/characters/fen/kneeling.svg",
+                    extra: 563/507
+                }
+            },
         },
         [
             {

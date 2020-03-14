@@ -2287,6 +2287,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/fen/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35421909/" }
+            ],
+            authors: [
+                "jazzumi"
+            ],
+            owners: [
+                "chemicalcrux"
+            ]
+        },
+        {
             prefix: "./media/characters/finn/",
             files: [
                 { name: "side.svg", source: null }
@@ -8338,6 +8350,10 @@ const attributionData = {
         "counts-his-toes": {
             "name": "Counts-His-Toes",
             "url": "https://www.furaffinity.net/user/counts-his-toes/",
+        },
+        "jazzumi": {
+            "name": "Jazzumi",
+            "url": "https://www.furaffinity.net/user/jazzumi",
         },
     }
 }
