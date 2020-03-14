@@ -6057,12 +6057,12 @@ const attributionData = {
         {
             prefix: "./media/characters/pandora/",
             files: [
-                { name: "front.svg", source: "http://ref.fox.mom/bakedbeans" },
-                { name: "back.svg", source: "http://ref.fox.mom/bakedbeans" },
-                { name: "beans.svg", source: "http://ref.fox.mom/bakedbeans" },
-                { name: "skirt.svg", source: "http://ref.fox.mom/bakedbeans" },
-                { name: "hoodie.svg", source: "http://ref.fox.mom/bakedbeans" },
-                { name: "casual.svg", source: "http://ref.fox.mom/bakedbeans" },
+                { name: "front.svg", source: "https://www.furaffinity.net/view/28377847/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/28377847/" },
+                { name: "beans.svg", source: "https://www.furaffinity.net/view/28377847/" },
+                { name: "skirt.svg", source: "https://www.furaffinity.net/view/28377847/" },
+                { name: "hoodie.svg", source: "https://www.furaffinity.net/view/28377847/" },
+                { name: "casual.svg", source: "https://www.furaffinity.net/view/28377847/" },
             ],
             authors: [
                 "fireflufferz"
