@@ -468,6 +468,7 @@ body.toggle-height-bars .height-bar {
     top: calc(-100% + var(--extra));
     left: calc(-1 * var(--xpos));
     transition: 0s all;
+    z-index: -1;
 }
 
 .height-bar::before {

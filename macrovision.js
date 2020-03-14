@@ -916,9 +916,6 @@ function displayEntity(entity, view, x, y, selectEntity=false) {
 
     world.appendChild(bottomName);
     entityIndex += 1;
-
-    updateEntityElement(entity, box);
-
     if (config.autoFit) {
         fitWorld();
     }
@@ -926,7 +923,9 @@ function displayEntity(entity, view, x, y, selectEntity=false) {
     if (selectEntity)
         select(box);
 
-    entity.dirty = false;
+    entity.dirty = true;
+
+    updateSizes(true);
 }
 
 
