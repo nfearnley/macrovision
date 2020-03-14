@@ -430,8 +430,6 @@ a {
   -webkit-transform: rotate(-45deg);
 }
 
-
-
 .corner-ribbon.bottom-right{
     top: auto;
     right: -50px;
@@ -461,11 +459,32 @@ body.toggle-height-bars .height-bar {
 
 .height-bar {
     display: none;
-    min-width: 120vw;
+    min-width: calc(var(--xpos));
     min-height: 3px;
     height: 3px;
     position: absolute;
-    background: repeating-linear-gradient(90deg, #ffffff88, #ffffff88 20px, #ffffff00 20px, #ffffff00 40px);
+    opacity: 50%;
+    background: repeating-linear-gradient(90deg, #ffffff, #ffffff 20px, #ffffff00 20px, #ffffff00 40px);
     top: calc(-100% + var(--extra));
-    left: calc(-120vw);
+    left: calc(-1 * var(--xpos));
+    transition: 0s all;
+}
+
+.height-bar::before {
+    display: block;
+    background: gray;
+    position: absolute;
+    content: var(--entity-height);
+    transition: 0s all;
+}
+
+.height-bar::after {
+    display: block;
+    min-width: 24px;
+    min-height: 3px;
+    background: #ffffff;
+    position: absolute;
+    left: calc(var(--xpos) - 24px);
+    transition: 0s all;
+    content: "";
 }
