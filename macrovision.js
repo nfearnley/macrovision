@@ -103,7 +103,7 @@ function abs2rel(coords) {
     return { x: (coords.x - 50) / canvasWidth, y: coords.y / canvasHeight };
 }
 
-function updateEntityElement(entity, element, zIndex) {
+function updateEntityElement(entity, element) {
     const position = rel2abs({ x: element.dataset.x, y: element.dataset.y });
     const view = entity.view;
 
@@ -126,13 +126,9 @@ function updateEntityElement(entity, element, zIndex) {
     bottomName.style.left = position.x + entityX + "px";
     bottomName.style.top = "95vh";
     bottomName.innerText = entity.name;
-
-    if (zIndex) {
-        element.style.zIndex = zIndex;
-    }
 }
 
-function updateSizes() {
+function updateSizes(dirtyOnly = false) {
     drawScale();
 
     let ordered = Object.entries(entities);
@@ -141,7 +137,7 @@ function updateSizes() {
         if (e1[1].priority != e2[1].priority) {
             return e2[1].priority - e1[1].priority;
         } else {
-            return e1[1].views[e1[1].view].height.toNumber("meters") - e2[1].views[e2[1].view].height.toNumber("meters")
+            return e1[1].views[e1[1].view].height.value - e2[1].views[e2[1].view].height.value
         }
         
     });
@@ -150,7 +146,11 @@ function updateSizes() {
 
     ordered.forEach(entity => {
         const element = document.querySelector("#entity-" + entity[0]);
-        updateEntityElement(entity[1], element, zIndex);
+        element.style.zIndex = zIndex;
+        if (!dirtyOnly || entity[1].dirty) {
+            updateEntityElement(entity[1], element, zIndex);
+            entity[1].dirty = false;
+        }
         zIndex -= 1;
     });
 
@@ -462,11 +462,12 @@ function configEntityOptions(entity, view) {
 
     scaleInput.addEventListener("input", e => {
         entity.scale = e.target.value == 0 ? 1 : e.target.value;
-
+        entity.dirty = true;
         if (config.autoFit) {
             fitWorld();
+        } else {
+            updateSizes(true);
         }
-        updateSizes();
         updateEntityOptions(entity, view);
         updateViewOptions(entity, view);
     });
@@ -492,7 +493,8 @@ function configEntityOptions(entity, view) {
 
     nameInput.addEventListener("input", e => {
         entity.name = e.target.value;
-        updateSizes();
+        entity.dirty = true;
+        updateSizes(true);
     })
 
     nameRow.appendChild(nameInput);
@@ -512,10 +514,13 @@ function configEntityOptions(entity, view) {
 
         button.addEventListener("click", e => {
             entity.views[entity.defaultView].height = defaultInfo.height;
+            entity.dirty = true;
             updateEntityOptions(entity, view);
             updateViewOptions(entity, view);
-            checkFitWorld();
-            updateSizes();
+            if (!checkFitWorld()){
+                updateSizes(true);
+            }
+            
         });
 
         defaultHolder.appendChild(button);
@@ -579,30 +584,34 @@ function configViewOptions(entity, view) {
         input.addEventListener("input", e => {
             const value = input.value == 0 ? 1 : input.value;
             entity.views[view][key] = math.unit(value, select.value);
-
+            entity.dirty = true;
             if (config.autoFit) {
                 fitWorld();
+            } else {
+                updateSizes(true);
             }
-            updateSizes();
             updateEntityOptions(entity, view);
             updateViewOptions(entity, view, key);
         });
 
         select.setAttribute("oldUnit", select.value);
 
+            // TODO does this ever cause a change in the world?
         select.addEventListener("input", e => {
             const value = input.value == 0 ? 1 : input.value;
             const oldUnit = select.getAttribute("oldUnit");
             entity.views[view][key] = math.unit(value, oldUnit).to(select.value);
+            entity.dirty = true;
             input.value = entity.views[view][key].toNumber(select.value);
 
             select.setAttribute("oldUnit", select.value);
 
             if (config.autoFit) {
                 fitWorld();
+            } else {
+                updateSizes(true);
             }
 
-            updateSizes();
             updateEntityOptions(entity, view);
             updateViewOptions(entity, view, key);
         });
@@ -911,6 +920,8 @@ function displayEntity(entity, view, x, y) {
     }
 
     select(box);
+
+    entity.dirty = false;
 }
 
 
@@ -931,7 +942,8 @@ function doSliderEntityScale() {
     if (selected) {
         const entity = entities[selected.dataset.key];
         entity.scale *= (9 + sliderEntityScale) / 10;
-        updateSizes();
+        entity.dirty = true;
+        updateSizes(true);
         updateEntityOptions(entity, entity.view);
         updateViewOptions(entity, entity.view);
     }
@@ -1091,9 +1103,10 @@ document.addEventListener("DOMContentLoaded", () => {
             if (selected) {
                 const entity = entities[selected.dataset.key];
                 entity.views[entity.view].height = math.multiply(entity.views[entity.view].height, dir);
+                entity.dirty = true;
                 updateEntityOptions(entity, entity.view);
                 updateViewOptions(entity, entity.view);
-                updateSizes();
+                updateSizes(true);
             }
 
         } else {
@@ -1366,7 +1379,9 @@ document.addEventListener("touchmove", (e) => {
 function checkFitWorld() {
     if (config.autoFit) {
         fitWorld();
+        return true;
     }
+    return false;
 }
 
 const fitModes = {
