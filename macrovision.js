@@ -160,18 +160,10 @@ function updateSizes(dirtyOnly = false) {
 }
 
 function drawScale() {
-    const canvas = document.querySelector("#display");
-
-    /** @type {CanvasRenderingContext2D} */
-
-    const ctx = canvas.getContext("2d");
-    const clientHeight = canvasHeight;
-    const clientWidth = canvasWidth;
-
     function drawTicks(/** @type {CanvasRenderingContext2D} */ ctx, pixelsPer, heightPer) {
         let total = heightPer.clone();
         total.value = 0;
-        for (let y = clientHeight - 50; y >= 50; y -= pixelsPer) {
+        for (let y = ctx.canvas.clientHeight - 50; y >= 50; y -= pixelsPer) {
             drawTick(ctx, 50, y, total);
             total = math.add(total, heightPer);
         }
@@ -189,26 +181,34 @@ function drawScale() {
 
         ctx.beginPath();
         ctx.moveTo(x + 20, y);
-        ctx.lineTo(clientWidth - 70, y);
+        ctx.lineTo(ctx.canvas.clientWidth - 70, y);
         ctx.strokeStyle = "#aaaaaa";
         ctx.stroke();
 
         ctx.beginPath();
-        ctx.moveTo(clientWidth - 70, y);
-        ctx.lineTo(clientWidth - 50, y);
+        ctx.moveTo(ctx.canvas.clientWidth - 70, y);
+        ctx.lineTo(ctx.canvas.clientWidth - 50, y);
         ctx.strokeStyle = "#000000";
         ctx.stroke();
 
+        const oldFont = ctx.font;
+        ctx.font = 'normal 24pt coda';
         ctx.fillStyle = "#dddddd";
 
         ctx.beginPath();
         ctx.fillText(value.format({ precision: 3 }), x + 20, y + 35);
 
+        ctx.font = oldFont;
         ctx.strokeStyle = oldStroke;
         ctx.fillStyle = oldFill;
     }
+    const canvas = document.querySelector("#display");
 
-    let pixelsPer = (clientHeight - 100) / config.height.toNumber();
+    /** @type {CanvasRenderingContext2D} */
+
+    const ctx = canvas.getContext("2d");
+
+    let pixelsPer = (ctx.canvas.clientHeight - 100) / config.height.toNumber();
 
     heightPer = 1;
 
@@ -228,18 +228,16 @@ function drawScale() {
     heightPer = math.unit(heightPer, config.height.units[0].unit.name)
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.scale(1, 1);
-    ctx.canvas.width = clientWidth;
-    ctx.canvas.height = clientHeight;
-
-    ctx.font = 'normal 24pt coda';
+    ctx.canvas.width = canvas.clientWidth;
+    ctx.canvas.height = canvas.clientHeight;
 
     ctx.beginPath();
     ctx.moveTo(50, 50);
-    ctx.lineTo(50, clientHeight - 50);
+    ctx.lineTo(50, ctx.canvas.clientHeight - 50);
     ctx.stroke();
     ctx.beginPath();
-    ctx.moveTo(clientWidth - 50, 50);
-    ctx.lineTo(clientWidth - 50, clientHeight - 50);
+    ctx.moveTo(ctx.canvas.clientWidth - 50, 50);
+    ctx.lineTo(ctx.canvas.clientWidth - 50, ctx.canvas.clientHeight - 50);
     ctx.stroke();
 
     drawTicks(ctx, pixelsPer, heightPer);
