@@ -471,7 +471,109 @@ function makeObjects() {
         ],
         "Chess Pieces",
         "chess_"
-    ))
+    ));
+
+    results.push({
+        name: "Strand",
+        constructor: () => {
+            views = {};
+
+            viewInfo = {
+                opticalFibre: {
+                    name: "Optical Fibre",
+                    thickness: math.unit(0.375, "mm")
+                },
+                hair: {
+                    name: "Hair",
+                    thickness: math.unit(0.07, "mm")
+                },
+                spiderSilk: {
+                    name: "Spider Silk",
+                    thickness: math.unit(0.003, "mm")
+                },
+                suspensionCables: {
+                    name: "Suspension Bridge Cables",
+                    thickness: math.unit(3, "feet")
+                },
+                capillary: {
+                    name: "Capillary",
+                    thickness: math.unit(7.5, "micrometers")
+                },
+                vein: {
+                    name: "Vein",
+                    thickness: math.unit(10, "mm")
+                },
+                thread: {
+                    name: "Thread",
+                    thickness: math.unit(0.4, "mm")
+                },
+                powerCord: {
+                    name: "Power Cord",
+                    thickness: math.unit(0.25, "inches")
+                },
+                pianoWireBass: {
+                    name: "Piano Wire (Bass)",
+                    thickness: math.unit(8.5, "mm")
+                },
+                pianoWireTreble: {
+                    name: "Piano Wire (Treble)",
+                    thickness: math.unit(0.85, "mm")
+                },
+                guitarString: {
+                    name: "Guitar String",
+                    thickness: math.unit(0.03, "inches")
+                },
+                powerLineThin: {
+                    name: "Power Line (Thin)",
+                    thickness: math.unit(0.325, "inches")
+                },
+                powerLineThick: {
+                    name: "Power Line (Thick)",
+                    thickness: math.unit(0.720, "inches")
+                },
+                carbonNanotube: {
+                    name: "Carbon Nanotube",
+                    thickness: math.unit(4, "nm")
+                }
+
+            }
+
+            Object.entries(viewInfo).forEach(([key, value]) => {
+                views[key] = {
+                    attributes: {
+                        height: {
+                            name: "Height",
+                            power: 1,
+                            type: "length",
+                            base: math.multiply(value.thickness, 253.4385 / 5)
+                        },
+                        thickness: {
+                            name: "Thickness",
+                            power: 1,
+                            type: "length",
+                            base: value.thickness
+                        },
+                    },
+                    image: {
+                        source: "./media/objects/strand.svg"
+                    },
+                    name: value.name,
+                    rename: true
+                }
+        
+                if (value.mass) {
+                    views[key].attributes.mass = {
+                        name: "Mass",
+                        power: 3,
+                        type: "mass",
+                        base: value.mass
+                    };
+                }
+            });
+        
+            return makeEntity({ name: "Strand" }, views);
+        }
+    })
 
     
     results.sort((b1, b2) => {
