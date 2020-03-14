@@ -55,16 +55,18 @@ scenes["1km < x <= 10km"] = makeSlice(math.unit(1000, "meters"), math.unit(10000
 scenes["10km < x <= 100km"] = makeSlice(math.unit(10000, "meters"), math.unit(100000, "meters"));
 scenes["100km < x <= 1000km"] = makeSlice(math.unit(100000, "meters"), math.unit(1000000, "meters"));
 scenes["Everyone"] = () => {
+    config.height = math.unit(11, "meters");
     availableEntities.characters.map(maker => {
         return maker.constructor();
     }).reduce((counter, entity) => {
         entity.views[entity.view].height = math.unit(1, "meter");
         const count = availableEntities.characters.length;
-        const x = math.floor(counter / 10) / math.ceil(count / 10);
-        const y = (counter % 10) / 10;
+        const x = 0.05 + math.floor(counter / 10) / math.ceil(count / 10);
+        const y = (counter % 10) / 10 + 0.1;
         displayEntity(entity, entity.view, x, y);
         return counter + 1;
     }, 0);
+    updateSizes(true);
 }
 
 function makeOwnerScene(owner) {
