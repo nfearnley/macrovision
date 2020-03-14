@@ -69,6 +69,22 @@ scenes["Everyone"] = () => {
     updateSizes(true);
 }
 
+scenes["EVERYTHING"] = () => {
+    config.height = math.unit(11, "meters");
+    Object.values(availableEntitiesByName).map(maker => {
+        return maker.constructor();
+    }).reduce((counter, entity) => {
+        entity.views[entity.view].height = math.unit(1, "meter");
+        const count = Object.values(availableEntitiesByName).length;
+        const x = 0.05 + math.floor(counter / 10) / math.ceil(count / 10);
+        const y = (counter % 10) / 10 + 0.1;
+        displayEntity(entity, entity.view, x, y);
+        return counter + 1;
+    }, 0);
+    updateSizes(true);
+}
+
+
 function makeOwnerScene(owner) {
     return () => {
         availableEntities["characters"].filter(x => {
