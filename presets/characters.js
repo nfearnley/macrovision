@@ -14449,6 +14449,32 @@ characterMakers["Sheila"] = () => {
     )
 };
 
+characterMakers["Sax"] = () => {
+    return makeCharacter(
+        "Sax",
+        "Counts-His-Toes",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(190, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/sax/front.svg",
+                    extra: 1187/973,
+                    bottom: 0.042
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(4, "inches"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

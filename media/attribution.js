@@ -6030,6 +6030,18 @@ const attributionData = {
                 "miststalker"
             ]
         },
+        {
+            prefix: "./media/characters/sax/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33344909" }
+            ],
+            authors: [
+                "lutharieotterdreamer"
+            ],
+            owners: [
+                "counts-his-toes"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
@@ -8318,6 +8330,14 @@ const attributionData = {
         "miststalker": {
             "name": "Miststalker",
             "url": "https://www.furaffinity.net/user/miststalker/",
+        },
+        "lutharieotterdreamer": {
+            "name": "LutharieOtterDreamer",
+            "url": "https://www.furaffinity.net/user/lutharieotterdreamer",
+        },
+        "counts-his-toes": {
+            "name": "Counts-His-Toes",
+            "url": "https://www.furaffinity.net/user/counts-his-toes/",
         },
     }
 }
