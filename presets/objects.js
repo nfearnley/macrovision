@@ -48,6 +48,27 @@ function addShoeView(object, name, points) {
     }
 }
 
+function makeHeight(info, category, prefix="") {
+    const views = {};
+
+    info.forEach(object => {
+        views[object[0]] = {
+            height: math.unit(object[1], object[2]),
+            image: { source: "./media/objects/" + category.replace(/ /g, "-").toLowerCase() + "/" + prefix + object[0] + ".svg" },
+            name: object[0].replace(/-/g, " ").replace(/\b\w/g, x => x.toUpperCase()),
+            rename: true
+        }
+    });
+
+    return {
+        name: category,
+        constructor: () => makeObject(
+            category,
+            views
+        )
+    }
+}
+
 function makeHeightWeight(info, category, prefix="") {
     const views = {};
 
@@ -438,6 +459,19 @@ function makeObjects() {
             }
         )
     })
+    
+    results.push(makeHeight(
+        [
+            ["king", 4, "inches"],
+            ["queen", 351/407*4, "inches"],
+            ["bishop", 340/407*4, "inches"],
+            ["knight", 309/407*4, "inches"],
+            ["rook", 271/407*4, "inches"],
+            ["pawn", 197/407*4, "inches"],
+        ],
+        "Chess Pieces",
+        "chess_"
+    ))
 
     
     results.sort((b1, b2) => {

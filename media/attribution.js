@@ -6236,6 +6236,20 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/objects/game-pieces/",
+            files: [
+                { name: "chess_king.svg", source: "https://svgsilh.com/image/3413429.html" },
+                { name: "chess_queen.svg", source: "https://svgsilh.com/image/3413429.html" },
+                { name: "chess_bishop.svg", source: "https://svgsilh.com/image/3413429.html" },
+                { name: "chess_knight.svg", source: "https://svgsilh.com/image/3413429.html" },
+                { name: "chess_rook.svg", source: "https://svgsilh.com/image/3413429.html" },
+                { name: "chess_pawn.svg", source: "https://svgsilh.com/image/3413429.html" },
+            ],
+            authors: [
+                "anonymous"
+            ]
+        },
+        {
             prefix: "./media/objects/shoes/",
             files: [
                 { name: "shoe_flip-flops.svg", source: null },
