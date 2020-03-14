@@ -6055,7 +6055,7 @@ const attributionData = {
             ]
         },
         {
-            prefix: "./media/characters/cassandra/",
+            prefix: "./media/characters/pandora/",
             files: [
                 { name: "front.svg", source: "http://ref.fox.mom/bakedbeans" },
                 { name: "back.svg", source: "http://ref.fox.mom/bakedbeans" },
@@ -8373,7 +8373,7 @@ const attributionData = {
             "url": "https://www.furaffinity.net/user/jazzumi",
         },
         "arcanei": {
-            "name": "Cassandra",
+            "name": "Pandora's Fox",
             "url": "https://www.furaffinity.net/user/arcaeni",
         },
     }

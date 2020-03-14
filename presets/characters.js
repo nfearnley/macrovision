@@ -14484,17 +14484,17 @@ characterMakers["Sax"] = () => {
     )
 };
 
-characterMakers["Cassandra"] = () => {
+characterMakers["Pandora"] = () => {
     return makeCharacter(
-        "Cassandra",
-        "Cassandra",
+        "Pandora",
+        "Pandora's Fox",
         {
             front: {
                 height: math.unit(6, "feet"),
                 weight: math.unit(150, "lb"),
                 name: "Front",
                 image: {
-                    source: "./media/characters/cassandra/front.svg",
+                    source: "./media/characters/pandora/front.svg",
                     extra: 2720/2556,
                     bottom: 0.015
                 }
@@ -14504,7 +14504,7 @@ characterMakers["Cassandra"] = () => {
                 weight: math.unit(150, "lb"),
                 name: "Back",
                 image: {
-                    source: "./media/characters/cassandra/back.svg",
+                    source: "./media/characters/pandora/back.svg",
                     extra: 2720/2556,
                     bottom: 0.01
                 }
@@ -14513,7 +14513,7 @@ characterMakers["Cassandra"] = () => {
                 height: math.unit(6/8, "feet"),
                 name: "Beans",
                 image: {
-                    source: "./media/characters/cassandra/beans.svg"
+                    source: "./media/characters/pandora/beans.svg"
                 }
             },
             skirt: {
@@ -14521,7 +14521,7 @@ characterMakers["Cassandra"] = () => {
                 weight: math.unit(150, "lb"),
                 name: "Skirt",
                 image: {
-                    source: "./media/characters/cassandra/skirt.svg",
+                    source: "./media/characters/pandora/skirt.svg",
                     extra: 1622/1525,
                     bottom: 0.015
                 }
@@ -14531,7 +14531,7 @@ characterMakers["Cassandra"] = () => {
                 weight: math.unit(150, "lb"),
                 name: "Hoodie",
                 image: {
-                    source: "./media/characters/cassandra/hoodie.svg",
+                    source: "./media/characters/pandora/hoodie.svg",
                     extra: 1622/1525,
                     bottom: 0.015
                 }
@@ -14541,7 +14541,7 @@ characterMakers["Cassandra"] = () => {
                 weight: math.unit(150, "lb"),
                 name: "Casual",
                 image: {
-                    source: "./media/characters/cassandra/casual.svg",
+                    source: "./media/characters/pandora/casual.svg",
                     extra: 1622/1525,
                     bottom: 0.015
                 }
