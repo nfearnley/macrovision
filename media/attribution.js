@@ -6111,6 +6111,65 @@ const attributionData = {
                 "evilwithin"
             ]
         },
+        {
+            prefix: "./media/food/animals/",
+            files: [
+                { name: "blue-whale.svg", source: "https://www.dimensions.guide/element/blue-whale" },
+                { name: "sperm-whale.svg", source: "https://www.dimensions.guide/element/sperm-whale" },
+                { name: "dairy-cow.svg", source: "https://www.dimensions.guide/element/dairy-cows" },
+                { name: "horse.svg", source: "https://www.dimensions.guide/element/horse" },
+                { name: "african-elephant.svg", source: "https://www.dimensions.guide/element/african-elephant" },
+            ],
+            authors: [
+                "dimensions-guide"
+            ]
+        },
+        {
+            prefix: "./media/food/dinosaurs/",
+            files: [
+                { name: "brachiosaurus.svg", source: "https://www.dimensions.guide/element/brachiosaurus" },
+                { name: "pterodactyl.svg", source: "https://www.dimensions.guide/element/pterodactyl" },
+                { name: "stegosaurus.svg", source: "https://www.dimensions.guide/element/stegosaurus" },
+                { name: "tyrannosaurus.svg", source: "https://www.dimensions.guide/element/t-rex-tyrannosaurus" },
+                { name: "velociraptor.svg", source: "https://www.dimensions.guide/element/velociraptor" },
+            ],
+            authors: [
+                "dimensions-guide"
+            ]
+        },
+        {
+            prefix: "./media/food/fruits/",
+            files: [
+                { name: "banana.svg", source: null },
+                { name: "banana-vertical.svg", source: null },
+                { name: "lemon.svg", source: null },
+                { name: "orange.svg", source: null },
+                { name: "grape.svg", source: null },
+                { name: "pineapple.svg", source: null }
+            ],
+            authors: [
+                "chemicalcrux"
+            ]
+        },
+        {
+            prefix: "./media/food/humans/",
+            files: [
+                { name: "woman-1.svg", source: "https://commons.wikimedia.org/wiki/File:1Silhouette_Female.svg" }
+            ],
+            authors: [
+                "phil-bronnery",
+                "beao"
+            ]
+        },
+        {
+            prefix: "./media/food/humans/",
+            files: [
+                { name: "man-1.svg", source: "https://commons.wikimedia.org/wiki/File:Silhouette.svg" }
+            ],
+            authors: [
+                "anonymous"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
@@ -6197,46 +6256,6 @@ const attributionData = {
             ]
         },
         {
-            prefix: "./media/objects/animals/",
-            files: [
-                { name: "blue-whale.svg", source: "https://www.dimensions.guide/element/blue-whale" },
-                { name: "sperm-whale.svg", source: "https://www.dimensions.guide/element/sperm-whale" },
-                { name: "dairy-cow.svg", source: "https://www.dimensions.guide/element/dairy-cows" },
-                { name: "horse.svg", source: "https://www.dimensions.guide/element/horse" },
-                { name: "african-elephant.svg", source: "https://www.dimensions.guide/element/african-elephant" },
-            ],
-            authors: [
-                "dimensions-guide"
-            ]
-        },
-        {
-            prefix: "./media/objects/dinosaurs/",
-            files: [
-                { name: "brachiosaurus.svg", source: "https://www.dimensions.guide/element/brachiosaurus" },
-                { name: "pterodactyl.svg", source: "https://www.dimensions.guide/element/pterodactyl" },
-                { name: "stegosaurus.svg", source: "https://www.dimensions.guide/element/stegosaurus" },
-                { name: "tyrannosaurus.svg", source: "https://www.dimensions.guide/element/t-rex-tyrannosaurus" },
-                { name: "velociraptor.svg", source: "https://www.dimensions.guide/element/velociraptor" },
-            ],
-            authors: [
-                "dimensions-guide"
-            ]
-        },
-        {
-            prefix: "./media/objects/fruits/",
-            files: [
-                { name: "banana.svg", source: null },
-                { name: "banana-vertical.svg", source: null },
-                { name: "lemon.svg", source: null },
-                { name: "orange.svg", source: null },
-                { name: "grape.svg", source: null },
-                { name: "pineapple.svg", source: null }
-            ],
-            authors: [
-                "chemicalcrux"
-            ]
-        },
-        {
             prefix: "./media/objects/game-pieces/",
             files: [
                 { name: "chess_king.svg", source: "https://svgsilh.com/image/3413429.html" },
@@ -6280,25 +6299,6 @@ const attributionData = {
             ],
             authors: [
                 "dimensions-guide"
-            ]
-        },        
-        {
-            prefix: "./media/objects/humans/",
-            files: [
-                { name: "woman-1.svg", source: "https://commons.wikimedia.org/wiki/File:1Silhouette_Female.svg" }
-            ],
-            authors: [
-                "phil-bronnery",
-                "beao"
-            ]
-        },
-        {
-            prefix: "./media/objects/humans/",
-            files: [
-                { name: "man-1.svg", source: "https://commons.wikimedia.org/wiki/File:Silhouette.svg" }
-            ],
-            authors: [
-
             ]
         },
         {
