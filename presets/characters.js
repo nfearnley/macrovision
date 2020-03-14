@@ -14561,6 +14561,55 @@ characterMakers["Pandora"] = () => {
     )
 };
 
+characterMakers["Venio Darcony"] = () => {
+    return makeCharacter(
+        "Venio Darcony",
+        "redblackdragon",
+        {
+            side: {
+                height: math.unit(10, "feet"),
+                weight: math.unit(800, "kg"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/venio-darcony/side.svg",
+                    extra: 1373/1003,
+                    bottom: 0.037
+                }
+            },
+            front: {
+                height: math.unit(19, "feet"),
+                weight: math.unit(800, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/venio-darcony/front.svg"
+                }
+            },
+            back: {
+                height: math.unit(19, "feet"),
+                weight: math.unit(800, "kg"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/venio-darcony/back.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(10, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(130, "feet")
+            },
+            {
+                name: "Macro+",
+                height: math.unit(240, "feet")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

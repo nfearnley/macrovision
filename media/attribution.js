@@ -6071,6 +6071,20 @@ const attributionData = {
                 "arcanei"
             ]
         },
+        {
+            prefix: "./media/characters/venio-darcony/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/34465824/" },
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34465824/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/34465824/" },
+            ],
+            authors: [
+                "keavemind"
+            ],
+            owners: [
+                "redblackdragon"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
@@ -8375,6 +8389,14 @@ const attributionData = {
         "arcanei": {
             "name": "Pandora's Fox",
             "url": "https://www.furaffinity.net/user/arcaeni",
+        },
+        "keavemind": {
+            "name": "KeaveMind",
+            "url": "https://www.furaffinity.net/view/34465824/",
+        },
+        "redblackdragon": {
+            "name": "redblackdragon",
+            "url": "https://www.furaffinity.net/user/redblackdragon/",
         },
     }
 }
