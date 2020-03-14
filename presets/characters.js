@@ -14610,6 +14610,49 @@ characterMakers["Venio Darcony"] = () => {
     )
 };
 
+characterMakers["Veski"] = () => {
+    return makeCharacter(
+        "Veski",
+        "Veski",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/veski/front.svg",
+                    extra: 1299/1225,
+                    bottom: 0.04
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/veski/back.svg",
+                    extra: 1299/1225,
+                    bottom: 0.008
+                }
+            },
+            maw: {
+                height: math.unit(1.5 * 1.21, "feet"),
+                name: "Maw",
+                image: {
+                    source: "./media/characters/veski/maw.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(2, "km"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

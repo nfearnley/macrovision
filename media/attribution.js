@@ -6085,6 +6085,20 @@ const attributionData = {
                 "redblackdragon"
             ]
         },
+        {
+            prefix: "./media/characters/veski/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/29836829/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/29836829/" },
+                { name: "maw.svg", source: "https://www.furaffinity.net/view/29836829/" },
+            ],
+            authors: [
+                "cannibalistic-tendencies"
+            ],
+            owners: [
+                "shal"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
@@ -8397,6 +8411,14 @@ const attributionData = {
         "redblackdragon": {
             "name": "redblackdragon",
             "url": "https://www.furaffinity.net/user/redblackdragon/",
+        },
+        "cannibalistic-tendencies": {
+            "name": "Cannibalistic-Tendencies",
+            "url": "https://www.furaffinity.net/user/cannibalistic-tendencies",
+        },
+        "shal": {
+            "name": "Shal",
+            "url": "https://www.furaffinity.net/user/shal/",
         },
     }
 }
