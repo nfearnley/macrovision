@@ -967,6 +967,10 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.classList[e.target.checked ? "add" : "remove"]("toggle-height-bars");
     });
 
+    document.querySelector("#options-world-show-entity-glow").addEventListener("input", e => {
+        document.body.classList[e.target.checked ? "add" : "remove"]("toggle-entity-glow");
+    });
+
     document.querySelector("#options-order-forward").addEventListener("click", e => {
         if (selected) {
             entities[selected.dataset.key].priority += 1;
