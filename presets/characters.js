@@ -14424,6 +14424,31 @@ characterMakers["Lily"] = () => {
     )
 };
 
+characterMakers["Sheila"] = () => {
+    return makeCharacter(
+        "Sheila",
+        "Miststalker",
+        {
+            laying: {
+                height: math.unit(4 + 4/12, "feet"),
+                weight: math.unit(600, "lb"),
+                name: "Laying",
+                image: {
+                    source: "./media/characters/sheila/laying.svg",
+                    extra: 1333/1265,
+                    bottom: 0.16
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(4 + 4/12, "feet")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

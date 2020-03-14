@@ -6018,6 +6018,18 @@ const attributionData = {
                 "nexcg"
             ]
         },
+        {
+            prefix: "./media/characters/sheila/",
+            files: [
+                { name: "laying.svg", source: "https://www.furaffinity.net/view/31677105/" }
+            ],
+            authors: [
+                "lezified"
+            ],
+            owners: [
+                "miststalker"
+            ]
+        },
         //characters
         {
             prefix: "./media/landmarks/",
@@ -8302,6 +8314,10 @@ const attributionData = {
         "nexcg": {
             "name": "nexcg",
             "url": "https://www.furaffinity.net/user/nexcg/",
+        },
+        "miststalker": {
+            "name": "Miststalker",
+            "url": "https://www.furaffinity.net/user/miststalker/",
         },
     }
 }
