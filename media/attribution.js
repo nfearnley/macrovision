@@ -6280,6 +6280,31 @@ const attributionData = {
                 "macroceli"
             ]
         },
+        {
+            prefix: "./media/characters/bari/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34746232" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/34746232" },
+            ],
+            authors: [
+                "rebonica"
+            ],
+            owners: [
+                "bariamph"
+            ]
+        },
+        {
+            prefix: "./media/characters/bari/",
+            files: [
+                { name: "front-plush.svg", source: "https://www.furaffinity.net/view/27696469/" },
+            ],
+            authors: [
+                "impfangs"
+            ],
+            owners: [
+                "bariamph"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -8707,6 +8732,14 @@ const attributionData = {
         "ich": {
             "name": "ich",
             "url": "https://www.furaffinity.net/user/ich",
+        },
+        "bariamph": {
+            "name": "Sheeb",
+            "url": "https://twitter.com/bariamph",
+        },
+        "impfangs": {
+            "name": "impfangs",
+            "url": " https://www.furaffinity.net/user/impfangs/",
         },
     }
 }

@@ -15210,6 +15210,48 @@ characterMakers["Mac"] = () => {
     )
 };
 
+characterMakers["Bari"] = () => {
+    return makeCharacter(
+        "Bari",
+        "Bariamph",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/bari/front.svg",
+                    extra: 3156/2880,
+                    bottom: 0.03
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/bari/back.svg",
+                    extra: 3260/2834,
+                    bottom: 0.025
+                }
+            },
+            frontPlush: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front (Plush)",
+                image: {
+                    source: "./media/characters/bari/front-plush.svg",
+                    extra: 1112/1061,
+                    bottom: 0.002
+                }
+            },
+        },
+        [
+            
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
