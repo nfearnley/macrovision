@@ -72,7 +72,7 @@ body.toggle-entity-glow .entity-box:not(.selected) > img{
 #main-area {
     min-height: 0px;
     display: flex;
-    flex: 1 0 90vh;
+    flex: 1 1 90vh;
     width: 100%;
     flex-direction: row;
 }
