@@ -6413,6 +6413,18 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/fiona/",
+            files: [
+                { name: "side.svg", source: "https://fidverse.fandom.com/wiki/Fiona" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
