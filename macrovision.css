@@ -317,7 +317,8 @@ body.toggle-bottom-name .bottom-name {
 }
 
 #menubar button {
-    font-size: 24pt;
+    font-size: 28pt;
+    height: 36pt;
 }
 
 #help {
