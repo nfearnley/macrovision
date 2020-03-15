@@ -15326,6 +15326,82 @@ characterMakers["Max Calore"] = () => {
         ]
     )
 };
+
+characterMakers["Aspen"] = () => {
+    return makeCharacter(
+        "Aspen",
+        "Fidchell",
+        {
+            side: {
+                height: math.unit(2 + 8/12, "feet"),
+                weight: math.unit(99, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/aspen/side.svg",
+                    extra: 152/97,
+                    bottom: 0.032
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(2 + 8/12, "feet")
+            },
+        ]
+    )
+};
+
+characterMakers["Sheila (Wolf)"] = () => {
+    return makeCharacter(
+        "Sheila (Wolf)",
+        "Fidchell",
+        {
+            side: {
+                height: math.unit(3 + 2/12, "feet"),
+                weight: math.unit(224, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/sheila-wolf/side.svg",
+                    extra: 179/112,
+                    bottom: 0.03
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(3 + 2/12, "feet")
+            },
+        ]
+    )
+};
+
+characterMakers["Michelle"] = () => {
+    return makeCharacter(
+        "Michelle",
+        "Fidchell",
+        {
+            side: {
+                height: math.unit(1 + 9/12, "feet"),
+                weight: math.unit(38, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/michelle/side.svg",
+                    extra: 147/64,
+                    bottom: 0.03
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(1 + 9/12, "feet")
+            },
+        ]
+    )
+};c
+
 //characters
 
 function makeCharacters() {

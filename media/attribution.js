@@ -6329,6 +6329,42 @@ const attributionData = {
                 "flamestar"
             ]
         },
+        {
+            prefix: "./media/characters/aspen/",
+            files: [
+                { name: "side.svg", source: "https://fidverse.fandom.com/wiki/Aspen" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
+        {
+            prefix: "./media/characters/sheila-wolf/",
+            files: [
+                { name: "side.svg", source: "https://fidverse.fandom.com/wiki/Sheila" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
+        {
+            prefix: "./media/characters/michelle/",
+            files: [
+                { name: "side.svg", source: "https://fidverse.fandom.com/wiki/Michelle" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
