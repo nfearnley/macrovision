@@ -15264,6 +15264,34 @@ characterMakers["Bari"] = () => {
     )
 };
 
+characterMakers["Hunter Misha Raven"] = () => {
+    return makeCharacter(
+        "Hunter Misha Raven",
+        "ashtrek",
+        {
+            front: {
+                height: math.unit(6 + 1/12, "feet"),
+                weight: math.unit(275, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/hunter-misha-raven/front.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Mortal",
+                height: math.unit(6 + 1/12, "feet")
+            },
+            {
+                name: "Divine",
+                height: math.unit(1.12134e34, "parsecs"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

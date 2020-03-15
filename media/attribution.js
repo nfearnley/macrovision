@@ -6305,6 +6305,18 @@ const attributionData = {
                 "bariamph"
             ]
         },
+        {
+            prefix: "./media/characters/hunter-misha-raven/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "ashtrek"
+            ],
+            owners: [
+                "ashtrek"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
