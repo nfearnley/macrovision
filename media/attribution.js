@@ -6425,6 +6425,18 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/lyla/",
+            files: [
+                { name: "side.svg", source: "https://fidverse.fandom.com/wiki/Lyla" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",

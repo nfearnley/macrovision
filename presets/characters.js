@@ -15531,6 +15531,31 @@ characterMakers["Fiona"] = () => {
         ]
     )
 };
+
+characterMakers["Lyla"] = () => {
+    return makeCharacter(
+        "Lyla",
+        "Fidchell",
+        {
+            front: {
+                height: math.unit(2, "feet"),
+                weight: math.unit(62, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/lyla/front.svg",
+                    bottom: 0.1
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(2, "feet")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
