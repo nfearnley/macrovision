@@ -14822,8 +14822,12 @@ characterMakers["Ian Corvid"] = () => {
         },
         [
             {
-                name: "Microw",
+                name: "Tiny Microw",
                 height: math.unit(1, "inch")
+            },
+            {
+                name: "Microw",
+                height: math.unit(6, "inches")
             },
             {
                 name: "Crow",
