@@ -6217,6 +6217,21 @@ const attributionData = {
                 "duncan"
             ]
         },
+        {
+            prefix: "./media/characters/memory/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/catboots/status/1010996391169155073" },
+                { name: "back.svg", source: "https://twitter.com/catboots/status/1010996391169155073" },
+                { name: "front-skirt.svg", source: "https://twitter.com/catboots/status/1010996391169155073" },
+                { name: "front-dress.svg", source: "https://twitter.com/catboots/status/1010996391169155073" },
+            ],
+            authors: [
+                "catboots"
+            ],
+            owners: [
+                "boringcactus"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -8620,6 +8635,14 @@ const attributionData = {
         "duncan": {
             "name": "Duncan",
             "url": "https://www.furaffinity.net/user/duncan",
+        },
+        "catboots": {
+            "name": "catboots",
+            "url": "http://twitter.com/catboots",
+        },
+        "boringcactus": {
+            "name": "boring_cactus",
+            "url": "http://twitter.com/boring_cactus",
         },
     }
 }

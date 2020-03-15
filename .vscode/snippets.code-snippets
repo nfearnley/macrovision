@@ -65,7 +65,7 @@
 	  "View": {
 		"prefix": "view",
 		"body": [
-		  "$1: {",
+		  "${1/-//g}: {",
 		  "    height: math.unit(6, \"feet\"),",
 		  "    weight: math.unit(150, \"lb\"),",
 		  "    name: \"${1/(.*)/${1:/capitalize}/}\",",

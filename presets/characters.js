@@ -15022,6 +15022,66 @@ characterMakers["Duncan"] = () => {
     )
 };
 
+characterMakers["Memory"] = () => {
+    return makeCharacter(
+        "Memory",
+        "boringcactus",
+        {
+            front: {
+                height: math.unit(5 + 4/12, "feet"),
+                weight: math.unit(220, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/memory/front.svg",
+                    extra: 3641/3545,
+                    bottom: 0.03
+                }
+            },
+            back: {
+                height: math.unit(5 + 4/12, "feet"),
+                weight: math.unit(220, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/memory/back.svg",
+                    extra: 3641/3545,
+                    bottom: 0.025
+                }
+            },
+            frontSkirt: {
+                height: math.unit(5 + 4/12, "feet"),
+                weight: math.unit(220, "lb"),
+                name: "Front (Skirt)",
+                image: {
+                    source: "./media/characters/memory/front-skirt.svg",
+                    extra: 3641/3545,
+                    bottom: 0.03
+                }
+            },
+            frontDress: {
+                height: math.unit(5 + 4/12, "feet"),
+                weight: math.unit(220, "lb"),
+                name: "Front (Dress)",
+                image: {
+                    source: "./media/characters/memory/front-dress.svg",
+                    extra: 3641/3545,
+                    bottom: 0.03
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(6, "inches"),
+                default: true
+            },
+            {
+                name: "Normal",
+                height: math.unit(5 + 4/12, "feet")
+            },
+        ]
+    )
+};c
+
 //characters
 
 function makeCharacters() {
