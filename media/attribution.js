@@ -6401,6 +6401,18 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/davy/",
+            files: [
+                { name: "side.svg", source: "https://fidverse.fandom.com/wiki/Davy" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
