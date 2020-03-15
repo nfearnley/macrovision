@@ -6308,6 +6308,22 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/objects/cells/",
+            files: [
+                { name: "cell_animal-cell.svg", source: null },
+                { name: "cell_plant-cell.svg", source: null },
+                { name: "cell_mitochondria.svg", source: null },
+                { name: "cell_bacteria.svg", source: null },
+                { name: "cell_red-blood-cell.svg", source: null },
+                { name: "cell_white-blood-cell.svg", source: null },
+                { name: "cell_amoeba-proteus.svg", source: null },
+                { name: "cell_chaos-carolinensis.svg", source: null }
+            ],
+            authors: [
+                "chemicalcrux"
+            ]
+        },
+        {
             prefix: "./media/objects/game-pieces/",
             files: [
                 { name: "chess_king.svg", source: "https://svgsilh.com/image/3413429.html" },

@@ -559,6 +559,21 @@ function makeObjects() {
         }
     })
 
+    results.push(makeHeight(
+        [
+            ["animal-cell", 25, "micrometers"],
+            ["plant-cell", 75, "micrometers"],
+            ["mitochondria", 0.5, "micrometer"],
+            ["bacteria", 0.3, "micrometer"],
+            ["red-blood-cell", 6.5, "micrometer"],
+            ["white-blood-cell", 13, "micrometer"],
+            ["amoeba-proteus", 500, "micrometers"],
+            ["chaos-carolinensis", 1500, "micrometers"]
+        ],
+        "Cells",
+        "cell_"
+    ))
+
     
     results.sort((b1, b2) => {
         e1 = b1.constructor();
