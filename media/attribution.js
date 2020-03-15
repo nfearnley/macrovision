@@ -6205,6 +6205,18 @@ const attributionData = {
                 "jasmith"
             ]
         },
+        {
+            prefix: "./media/characters/duncan/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/24973783/" }
+            ],
+            authors: [
+                "macroceli"
+            ],
+            owners: [
+                "duncan"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -8600,6 +8612,14 @@ const attributionData = {
         "mythkaz": {
             "name": "mythkaz",
             "url": "https://www.deviantart.com/mythkaz",
+        },
+        "macroceli": {
+            "name": "macroceli",
+            "url": "https://www.furaffinity.net/user/macroceli/",
+        },
+        "duncan": {
+            "name": "Duncan",
+            "url": "https://www.furaffinity.net/user/duncan",
         },
     }
 }

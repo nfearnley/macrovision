@@ -14982,7 +14982,7 @@ characterMakers["Kyle"] = () => {
                 image: {
                     source: "./media/characters/kyle/front.svg",
                     extra: 1069/962,
-                    bottom: 0.022
+                    bottom: 77.228/1727.45
                 }
             },
         },
@@ -14990,6 +14990,32 @@ characterMakers["Kyle"] = () => {
             {
                 name: "Macro",
                 height: math.unit(150, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Duncan"] = () => {
+    return makeCharacter(
+        "Duncan",
+        "Duncan",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(300, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/duncan/front.svg",
+                    extra: 1650/1482,
+                    bottom: 0.05
+                }
+            },
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(100, "feet"),
                 default: true
             },
         ]
