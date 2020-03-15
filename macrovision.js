@@ -22,6 +22,9 @@ let dragScaleHandle = null;
 let dragEntityScale = 1;
 let dragEntityScaleHandle = null;
 
+math.createUnit("humans", {
+    definition: "5.5 feet"
+})
 const unitChoices = {
     length: [
         "meters",
@@ -31,6 +34,7 @@ const unitChoices = {
         "kilometers",
         "inches",
         "feet",
+        "humans",
         "stories",
         "miles",
         "AUs",
