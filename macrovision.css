@@ -209,10 +209,6 @@ body.toggle-entity-glow .entity-box:not(.selected) > img{
     align-items: center;
 }
 
-.menubar-group button,
-.menubar-group select {
-    height: 5vh;
-}
 
 .menu-item {
     font-size: 24px;
