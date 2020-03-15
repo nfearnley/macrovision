@@ -6232,6 +6232,30 @@ const attributionData = {
                 "boringcactus"
             ]
         },
+        {
+            prefix: "./media/characters/luno/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "sorendipity"
+            ],
+            owners: [
+                "jamesy"
+            ]
+        },
+        {
+            prefix: "./media/characters/jamesy/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "phantom-hyena"
+            ],
+            owners: [
+                "jamesy"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -8643,6 +8667,18 @@ const attributionData = {
         "boringcactus": {
             "name": "boring_cactus",
             "url": "http://twitter.com/boring_cactus",
+        },
+        "sorendipity": {
+            "name": "Sörendipity★",
+            "url": "https://aminoapps.com/c/furry-amino/page/user/sorendipity-lonesome/r0Vb_k2nSBf0B484RPKWPDWg2rr5ERr4PrRcZ",
+        },
+        "phantom-hyena": {
+            "name": "phantom.hyena",
+            "url": "https://aminoapps.com/c/furry-amino/page/user/phantom-hyena-ps79-250/3Wk6_jgYTMf8ZdewoG67j1PPaZP2Bj2XRETV",
+        },
+        "jamesy": {
+            "name": "Jamesy",
+            "url": null,
         },
     }
 }

@@ -15080,7 +15080,84 @@ characterMakers["Memory"] = () => {
             },
         ]
     )
-};c
+};
+
+characterMakers["Luno"] = () => {
+    return makeCharacter(
+        "Luno",
+        "Jamesy",
+        {
+            front: {
+                height: math.unit(4 + 11/12, "feet"),
+                weight: math.unit(100, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/luno/front.svg",
+                    extra: 1535/1487,
+                    bottom: 0.03
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(3, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(4 + 11/12, "feet"),
+                default: true
+            },            
+            {
+                name: "Macro",
+                height: math.unit(300, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(700, "miles")
+            },
+        ]
+    )
+};
+
+characterMakers["Jamesy"] = () => {
+    return makeCharacter(
+        "Jamesy",
+        "Jamesy",
+        {
+            front: {
+                height: math.unit(6 + 2/12, "feet"),
+                weight: math.unit(170, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/jamesy/front.svg",
+                    extra: 440/382,
+                    bottom: 0.005
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(3, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(6 + 2/12, "feet"),
+                default: true
+            },            
+            {
+                name: "Macro",
+                height: math.unit(300, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(700, "miles")
+            },
+        ]
+    )
+};
+
 
 //characters
 
