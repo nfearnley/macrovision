@@ -14970,6 +14970,32 @@ characterMakers["Alluria"] = () => {
     )
 };
 
+characterMakers["Kyle"] = () => {
+    return makeCharacter(
+        "Kyle",
+        "Jasmith",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/kyle/front.svg",
+                    extra: 1069/962,
+                    bottom: 0.022
+                }
+            },
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(150, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

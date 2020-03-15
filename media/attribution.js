@@ -6193,6 +6193,18 @@ const attributionData = {
                 "sir-raptor"
             ]
         },
+        {
+            prefix: "./media/characters/kyle/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35352747/" }
+            ],
+            authors: [
+                "nix-noble"
+            ],
+            owners: [
+                "jasmith"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
