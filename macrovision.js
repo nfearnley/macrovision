@@ -955,8 +955,27 @@ function doSliderEntityScale() {
     }
 }
 
+// thanks to https://developers.google.com/web/fundamentals/native-hardware/fullscreen
+
+function toggleFullScreen() {
+    var doc = window.document;
+    var docEl = doc.documentElement;
+  
+    var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+    var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+  
+    if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+      requestFullScreen.call(docEl);
+    }
+    else {
+      cancelFullScreen.call(doc);
+    }
+  }
+
 document.addEventListener("DOMContentLoaded", () => {
     prepareEntities();
+
+    document.querySelector("#menu-fullscreen").addEventListener("click", toggleFullScreen);
 
     document.querySelector("#options-world-show-names").addEventListener("input", e => {
         document.body.classList[e.target.checked ? "add" : "remove"]("toggle-entity-name");
