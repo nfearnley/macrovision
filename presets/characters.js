@@ -15158,6 +15158,32 @@ characterMakers["Jamesy"] = () => {
     )
 };
 
+characterMakers["Mark"] = () => {
+    return makeCharacter(
+        "Mark",
+        "ich",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(160, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/mark/front.svg",
+                    extra: 3300/3100,
+                    bottom: 136.42/3440.47
+                }
+            },
+        },
+        [
+            {
+                name: "Megamacro",
+                height: math.unit(8, "km"),
+                default: true
+            },
+        ]
+    )
+};
+
 
 //characters
 

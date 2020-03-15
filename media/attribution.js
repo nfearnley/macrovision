@@ -6256,6 +6256,18 @@ const attributionData = {
                 "jamesy"
             ]
         },
+        {
+            prefix: "./media/characters/mark/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "solaxee"
+            ],
+            owners: [
+                "ich"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -8679,6 +8691,10 @@ const attributionData = {
         "jamesy": {
             "name": "Jamesy",
             "url": null,
+        },
+        "ich": {
+            "name": "ich",
+            "url": "https://www.furaffinity.net/user/ich",
         },
     }
 }
