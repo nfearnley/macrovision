@@ -6365,6 +6365,30 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/nino/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Nino_Stoat" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
+        {
+            prefix: "./media/characters/viola/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Viola_Stoat" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",

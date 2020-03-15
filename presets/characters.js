@@ -15321,7 +15321,8 @@ characterMakers["Max Calore"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(6 + 3/12, "feet")
+                height: math.unit(6 + 3/12, "feet"),
+                default: true
             },
         ]
     )
@@ -15338,7 +15339,7 @@ characterMakers["Aspen"] = () => {
                 name: "Side",
                 image: {
                     source: "./media/characters/aspen/side.svg",
-                    extra: 152/97,
+                    extra: 152/138,
                     bottom: 0.032
                 }
             },
@@ -15346,7 +15347,8 @@ characterMakers["Aspen"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(2 + 8/12, "feet")
+                height: math.unit(2 + 8/12, "feet"),
+                default: true
             },
         ]
     )
@@ -15363,7 +15365,7 @@ characterMakers["Sheila (Wolf)"] = () => {
                 name: "Side",
                 image: {
                     source: "./media/characters/sheila-wolf/side.svg",
-                    extra: 179/112,
+                    extra: 179/166,
                     bottom: 0.03
                 }
             },
@@ -15371,7 +15373,8 @@ characterMakers["Sheila (Wolf)"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(3 + 2/12, "feet")
+                height: math.unit(3 + 2/12, "feet"),
+                default: true
             },
         ]
     )
@@ -15388,7 +15391,7 @@ characterMakers["Michelle"] = () => {
                 name: "Side",
                 image: {
                     source: "./media/characters/michelle/side.svg",
-                    extra: 147/64,
+                    extra: 147/136.7,
                     bottom: 0.03
                 }
             },
@@ -15396,11 +15399,60 @@ characterMakers["Michelle"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(1 + 9/12, "feet")
+                height: math.unit(1 + 9/12, "feet"),
+                default: true
             },
         ]
     )
-};c
+};
+
+characterMakers["Nino"] = () => {
+    return makeCharacter(
+        "Nino",
+        "Fidchell",
+        {
+            front: {
+                height: math.unit(1 + 1/12, "feet"),
+                weight: math.unit(18, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/nino/front.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(1 + 1/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Viola"] = () => {
+    return makeCharacter(
+        "Viola",
+        "Fidchell",
+        {
+            front: {
+                height: math.unit(1, "feet"),
+                weight: math.unit(16, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/viola/front.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(1, "feet"),
+                default: true
+            },
+        ]
+    )
+};
 
 //characters
 
