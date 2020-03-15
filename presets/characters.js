@@ -14731,6 +14731,112 @@ characterMakers["Hanzo"] = () => {
         ]
     )
 };
+
+characterMakers["Anna"] = () => {
+    return makeCharacter(
+        "Anna",
+        "dragondruid",
+        {
+            front: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(130, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/anna/front.svg",
+                    extra: 169/145,
+                    bottom: 0.06
+                }
+            },
+            full: {
+                height: math.unit(4.96, "feet"),
+                weight: math.unit(220, "lb"),
+                name: "Full",
+                image: {
+                    source: "./media/characters/anna/full.svg",
+                    extra: 138/114,
+                    bottom: 0.15
+                }
+            },
+            tongue: {
+                height: math.unit(2.53, "feet"),
+                name: "Tongue",
+                image: {
+                    source: "./media/characters/anna/tongue.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(7, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Ian Corvid"] = () => {
+    return makeCharacter(
+        "Ian Corvid",
+        "IanCorvid",
+        {
+            front: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/ian-corvid/front.svg",
+                    extra: 150/142,
+                    bottom: 0.02
+                }
+            },
+            back: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/ian-corvid/back.svg",
+                    extra: 150/143,
+                    bottom: 0.01
+                }
+            },
+            stomping: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Stomping",
+                image: {
+                    source: "./media/characters/ian-corvid/stomping.svg",
+                    extra: 76/72
+                }
+            },
+            sitting: {
+                height: math.unit(7/1.8, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Sitting",
+                image: {
+                    source: "./media/characters/ian-corvid/sitting.svg",
+                    extra: 1400/1269,
+                    bottom: 0.15
+                }
+            },
+        },
+        [
+            {
+                name: "Microw",
+                height: math.unit(1, "inch")
+            },
+            {
+                name: "Crow",
+                height: math.unit(7 + 1/12, "feet"),
+                default: true
+            },
+            {
+                name: "Macrow",
+                height: math.unit(176, "feet")
+            },
+        ]
+    )
+};
 //characters
 
 function makeCharacters() {

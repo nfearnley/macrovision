@@ -6123,6 +6123,46 @@ const attributionData = {
                 "dragondruid"
             ]
         },
+        {
+            prefix: "./media/characters/ian-corvid/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/7288950/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/7288950/" },
+                { name: "stomping.svg", source: "https://www.furaffinity.net/view/7288950/" },
+            ],
+            authors: [
+                "rickgriffin"
+            ],
+            owners: [
+                "ian-corvid"
+            ]
+        },
+        {
+            prefix: "./media/characters/ian-corvid/",
+            files: [
+                { name: "sitting.svg", source: "https://www.furaffinity.net/view/11725274/" },
+            ],
+            authors: [
+                "krowy"
+            ],
+            owners: [
+                "ian-corvid"
+            ]
+        },
+        {
+            prefix: "./media/characters/anna/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34785198/" },
+                { name: "full.svg", source: "https://www.furaffinity.net/view/34785198/" },
+                { name: "tongue.svg", source: "https://www.furaffinity.net/view/34785198/" },
+            ],
+            authors: [
+                "shikaro"
+            ],
+            owners: [
+                "dragondruid"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -8470,6 +8510,22 @@ const attributionData = {
         "dragondruid": {
             "name": "dragondruid",
             "url": "https://www.furaffinity.net/user/dragondruid/",
+        },
+        "rickgriffin": {
+            "name": "rickgriffin",
+            "url": "https://www.furaffinity.net/user/rickgriffin",
+        },
+        "ian-corvid": {
+            "name": "Ian_Corvid",
+            "url": "https://www.furaffinity.net/user/iancorvid",
+        },
+        "shikaro": {
+            "name": "Shikaro",
+            "url": "https://www.furaffinity.net/user/shikaro",
+        },
+        "krowy": {
+            "name": "krowy",
+            "url": "https://www.furaffinity.net/user/krowy",
         },
     }
 }
