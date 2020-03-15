@@ -14897,6 +14897,79 @@ characterMakers["Natalie Kellon"] = () => {
     )
 };
 
+characterMakers["Alluria"] = () => {
+    return makeCharacter(
+        "Alluria",
+        "Sir--Raptor",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/alluria/front.svg",
+                    extra: 806/738,
+                    bottom: 0.01
+                }
+            },
+            side: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/alluria/side.svg",
+                    extra: 800/750,
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/alluria/back.svg",
+                    extra: 806/738,
+                }
+            },
+            frontMaid: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front (Maid)",
+                image: {
+                    source: "./media/characters/alluria/front-maid.svg",
+                    extra: 806/738,
+                    bottom: 0.01
+                }
+            },
+            sideMaid: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Side (Maid)",
+                image: {
+                    source: "./media/characters/alluria/side-maid.svg",
+                    extra: 800/750,
+                    bottom: 0.005
+                }
+            },
+            backMaid: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Back (Maid)",
+                image: {
+                    source: "./media/characters/alluria/back-maid.svg",
+                    extra: 806/738,
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(6, "inches"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

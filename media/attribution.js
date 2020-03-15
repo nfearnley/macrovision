@@ -6176,6 +6176,23 @@ const attributionData = {
                 "lestrange110"
             ]
         },
+        {
+            prefix: "./media/characters/alluria/",
+            files: [
+                { name: "front.svg", source: "https://www.deviantart.com/sir--raptor/art/Alluria-Reference-Sheet-812398655" },
+                { name: "side.svg", source: "https://www.deviantart.com/sir--raptor/art/Alluria-Reference-Sheet-812398655" },
+                { name: "back.svg", source: "https://www.deviantart.com/sir--raptor/art/Alluria-Reference-Sheet-812398655" },
+                { name: "front-maid.svg", source: "https://www.deviantart.com/sir--raptor/art/Alluria-Reference-Sheet-812398655" },
+                { name: "side-maid.svg", source: "https://www.deviantart.com/sir--raptor/art/Alluria-Reference-Sheet-812398655" },
+                { name: "back-maid.svg", source: "https://www.deviantart.com/sir--raptor/art/Alluria-Reference-Sheet-812398655" },
+            ],
+            authors: [
+                "mythkaz"
+            ],
+            owners: [
+                "sir-raptor"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -8563,6 +8580,14 @@ const attributionData = {
         "lestrange110": {
             "name": "lestrange110",
             "url": "https://twitter.com/lestrange110",
+        },
+        "sir-raptor": {
+            "name": "Sir--Raptor",
+            "url": "https://www.deviantart.com/sir--raptor",
+        },
+        "mythkaz": {
+            "name": "mythkaz",
+            "url": "https://www.deviantart.com/mythkaz",
         },
     }
 }
