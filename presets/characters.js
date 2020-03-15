@@ -14850,6 +14850,53 @@ characterMakers["Ian Corvid"] = () => {
         ]
     )
 };
+
+characterMakers["Natalie Kellon"] = () => {
+    return makeCharacter(
+        "Natalie Kellon",
+        "lestrange110",
+        {
+            front: {
+                height: math.unit(5 + 7/12, "feet"),
+                weight: math.unit(147, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/natalie-kellon/front.svg",
+                    extra: 1214/1141,
+                    bottom: 0.02
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(1/16, "inch")
+            },
+            {
+                name: "Tiny",
+                height: math.unit(4, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(5 + 7/12, "feet"),
+                default: true
+            },
+            {
+                name: "Amazon",
+                height: math.unit(12, "feet")
+            },
+            {
+                name: "Giantess",
+                height: math.unit(160, "meters")
+            },
+            {
+                name: "Titaness",
+                height: math.unit(800, "meters")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

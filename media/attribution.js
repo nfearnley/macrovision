@@ -6164,6 +6164,18 @@ const attributionData = {
                 "dragondruid"
             ]
         },
+        {
+            prefix: "./media/characters/natalie-kellon/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35394418" }
+            ],
+            authors: [
+                "vvalkyrie99"
+            ],
+            owners: [
+                "lestrange110"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -8543,6 +8555,14 @@ const attributionData = {
         "krowy": {
             "name": "krowy",
             "url": "https://www.furaffinity.net/user/krowy",
+        },
+        "vvalkyrie99": {
+            "name": "vvalkyrie99",
+            "url": "https://www.furaffinity.net/user/vvalkyrie99",
+        },
+        "lestrange110": {
+            "name": "lestrange110",
+            "url": "https://twitter.com/lestrange110",
         },
     }
 }
