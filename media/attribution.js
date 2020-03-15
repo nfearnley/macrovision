@@ -4861,6 +4861,7 @@ const attributionData = {
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/30583316/" },
                 { name: "side.svg", source: "https://www.furaffinity.net/view/30583316/" },
+                { name: "tome.svg", source: "https://www.furaffinity.net/view/30583316/" },
                 { name: "beans.svg", source: "https://www.furaffinity.net/view/30583316/" },
             ],
             authors: [

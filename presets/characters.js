@@ -10103,6 +10103,15 @@ characterMakers["Vanrel"] = () => {
                     bottom: 0.025
                 }
             },
+            tome: {
+                height: math.unit(1.35, "feet"),
+                weight: math.unit(10, "lb"),
+                name: "Vanrel's Tome",
+                rename: true,
+                image: {
+                    source: "./media/characters/vanrel/tome.svg"
+                }
+            },
             beans: {
                 height: math.unit(0.89, "feet"),
                 name: "Beans",
