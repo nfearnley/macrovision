@@ -15216,8 +15216,8 @@ characterMakers["Bari"] = () => {
         "Bariamph",
         {
             front: {
-                height: math.unit(6, "feet"),
-                weight: math.unit(150, "lb"),
+                height: math.unit(5 + 2/12, "feet"),
+                weight: math.unit(190, "lb"),
                 name: "Front",
                 image: {
                     source: "./media/characters/bari/front.svg",
@@ -15226,8 +15226,8 @@ characterMakers["Bari"] = () => {
                 }
             },
             back: {
-                height: math.unit(6, "feet"),
-                weight: math.unit(150, "lb"),
+                height: math.unit(5 + 2/12, "feet"),
+                weight: math.unit(190, "lb"),
                 name: "Back",
                 image: {
                     source: "./media/characters/bari/back.svg",
@@ -15236,8 +15236,8 @@ characterMakers["Bari"] = () => {
                 }
             },
             frontPlush: {
-                height: math.unit(6, "feet"),
-                weight: math.unit(150, "lb"),
+                height: math.unit(5 + 2/12, "feet"),
+                weight: math.unit(190, "lb"),
                 name: "Front (Plush)",
                 image: {
                     source: "./media/characters/bari/front-plush.svg",
@@ -15247,7 +15247,19 @@ characterMakers["Bari"] = () => {
             },
         },
         [
-            
+            {
+                name: "Micro",
+                height: math.unit(3, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(5 + 2/12, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(20, "feet")
+            },
         ]
     )
 };
