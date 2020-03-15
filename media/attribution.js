@@ -6268,6 +6268,18 @@ const attributionData = {
                 "ich"
             ]
         },
+        {
+            prefix: "./media/characters/mac/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "macroceli"
+            ],
+            owners: [
+                "macroceli"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -8666,7 +8678,7 @@ const attributionData = {
         },
         "macroceli": {
             "name": "macroceli",
-            "url": "https://www.furaffinity.net/user/macroceli/",
+            "url": "https://twitter.com/Macroceli",
         },
         "duncan": {
             "name": "Duncan",

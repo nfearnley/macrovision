@@ -15184,6 +15184,31 @@ characterMakers["Mark"] = () => {
     )
 };
 
+characterMakers["Mac"] = () => {
+    return makeCharacter(
+        "Mac",
+        "Macroceli",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(400, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/mac/front.svg",
+                    extra: 1048/987.7,
+                    bottom: 60/1107.6,
+                }
+            },
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(500, "feet"),
+                default: true
+            },
+        ]
+    )
+};
 
 //characters
 
