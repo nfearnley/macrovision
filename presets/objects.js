@@ -48,13 +48,13 @@ function addShoeView(object, name, points) {
     }
 }
 
-function makeHeight(info, category, prefix="") {
+function makeHeight(info, category, prefix="", type="objects") {
     const views = {};
 
     info.forEach(object => {
         views[object[0]] = {
             height: math.unit(object[1], object[2]),
-            image: { source: "./media/objects/" + category.replace(/ /g, "-").toLowerCase() + "/" + prefix + object[0] + ".svg" },
+            image: { source: "./media/" + type + "/" + category.replace(/ /g, "-").toLowerCase() + "/" + prefix + object[0] + ".svg" },
             name: object[0].replace(/-/g, " ").replace(/\b\w/g, x => x.toUpperCase()),
             rename: true
         }
@@ -69,14 +69,13 @@ function makeHeight(info, category, prefix="") {
     }
 }
 
-function makeHeightWeight(info, category, prefix="") {
+function makeHeightWeight(info, category, prefix="", type="objects") {
     const views = {};
-
     info.forEach(object => {
         views[object[0]] = {
             height: math.unit(object[1], "meters"),
             mass: math.unit(object[2], "kilograms"),
-            image: { source: "./media/objects/" + category.replace(/ /g, "-").toLowerCase() + "/" + prefix + object[0] + ".svg" },
+            image: { source: "./media/" + type + "/" + category.replace(/ /g, "-").toLowerCase() + "/" + prefix + object[0] + ".svg" },
             name: object[0].replace(/-/g, " ").replace(/\b\w/g, x => x.toUpperCase()),
             rename: true
         }
@@ -413,21 +412,6 @@ function makeObjects() {
             }
         )
     });
-
-    results.push({
-        name: "Trees",
-        constructor: () => makeObject(
-            "Trees",
-            {
-                sycamore: {
-                    height: math.unit(35, "meters"),
-                    image: { source: "./media/objects/plants/sycamore-tree.svg" },
-                    name: "Sycamore",
-                    rename: true
-                }
-            }
-        )
-    })
 
     results.push({
         name: "Vending Machine",
