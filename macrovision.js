@@ -1327,7 +1327,8 @@ function prepareEntities() {
         const button = document.createElement("button");
         button.id = "create-entity-" + category + "-button";
 
-        button.innerText = "Create";
+        button.innerHTML = "<i class=\"far fa-plus-square\"></i>";
+        
         button.addEventListener("click", e => {
             const newEntity = entityList[select.value].constructor()
             displayEntity(newEntity, newEntity.defaultView, 0.5, 1, true);
