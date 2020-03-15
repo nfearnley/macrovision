@@ -1344,9 +1344,11 @@ function prepareEntities() {
 
 window.addEventListener("resize", () => {
     entityX = document.querySelector("#entities").getBoundingClientRect().x;
+    console.log(entityX)
     canvasWidth = document.querySelector("#display").clientWidth - 100;
     canvasHeight = document.querySelector("#display").clientHeight - 50;
     updateSizes();
+    setTimeout(updateSizes, 100)
 })
 
 document.addEventListener("mousemove", (e) => {

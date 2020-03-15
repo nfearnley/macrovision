@@ -70,9 +70,10 @@ body.toggle-entity-glow .entity-box:not(.selected) > img{
 }
 
 #main-area {
+    min-height: 0px;
     display: flex;
-    min-width: 100vw;
-    height: 90vh;
+    flex: 1 0 90vh;
+    width: 100%;
     flex-direction: row;
 }
 
@@ -173,28 +174,28 @@ body.toggle-entity-glow .entity-box:not(.selected) > img{
 
 
 #entities {
-    position: relative;
+    position: absolute;
     user-select: none;
+    width: 100%;
+    height: 100%;
 }
 
 #world {
     position: relative;
-    flex: 9 0 85vw;
-    min-height: 85vh;
-    max-height: 85vh;
+    flex: 1 0 85vw;
+    height: 100%;
     overflow: hidden;
 }
 
 #menubar {
     display: flex;
+    flex: 1 0 10vh;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    min-height: 10vh;
     min-width: 100vw;
     background: #222;
-    transition: 0.25s;
 }
 
 #menubar.hover-delete {
@@ -277,7 +278,7 @@ select.menu-item {
 
 body #test-canvas {
     position: fixed;
-    top: 100vh;
+    top: 500vh;
 }
 
 .switch {
@@ -419,7 +420,7 @@ a {
 .corner-ribbon {
   width: 200px;
   background: #e43;
-  position: absolute;
+  position: fixed;
   top: 25px;
   left: -50px;
   text-align: center;
