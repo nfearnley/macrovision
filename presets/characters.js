@@ -15292,6 +15292,40 @@ characterMakers["Hunter Misha Raven"] = () => {
     )
 };
 
+characterMakers["Max Calore"] = () => {
+    return makeCharacter(
+        "Max Calore",
+        "flamestar",
+        {
+            front: {
+                height: math.unit(6 + 3/12, "feet"),
+                weight: math.unit(220, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/max-calore/front.svg",
+                    extra: 1700/1648,
+                    bottom: 0.01
+                }
+            },
+            back: {
+                height: math.unit(6 + 3/12, "feet"),
+                weight: math.unit(220, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/max-calore/back.svg",
+                    extra: 1700/1648,
+                    bottom: 0.01
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6 + 3/12, "feet")
+            },
+        ]
+    )
+};
 //characters
 
 function makeCharacters() {

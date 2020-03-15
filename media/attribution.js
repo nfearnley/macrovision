@@ -6317,6 +6317,18 @@ const attributionData = {
                 "ashtrek"
             ]
         },
+        {
+            prefix: "./media/characters/max-calore/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/25166797/" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "flamestar"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -8752,6 +8764,10 @@ const attributionData = {
         "impfangs": {
             "name": "impfangs",
             "url": " https://www.furaffinity.net/user/impfangs/",
+        },
+        "flamestar": {
+            "name": "flamestar",
+            "url": "https://www.furaffinity.net/user/flamestar/",
         },
     }
 }
