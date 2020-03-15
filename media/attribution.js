@@ -6389,6 +6389,18 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/atlas/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Atlas" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
