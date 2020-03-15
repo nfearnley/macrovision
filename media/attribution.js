@@ -6112,6 +6112,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/hanzo/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/31251256/" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "dragondruid"
+            ]
+        },
+        //characters
+        {
             prefix: "./media/food/animals/",
             files: [
                 { name: "blue-whale.svg", source: "https://www.dimensions.guide/element/blue-whale" },
@@ -6170,7 +6183,6 @@ const attributionData = {
                 "anonymous"
             ]
         },
-        //characters
         {
             prefix: "./media/landmarks/",
             files: [
@@ -8453,7 +8465,11 @@ const attributionData = {
         },
         "evilwithin": {
             "name": "evilwithin",
-            "url": "https://www.furaffinity.net/user/evilwithin/  ",
+            "url": "https://www.furaffinity.net/user/evilwithin/",
+        }, 
+        "dragondruid": {
+            "name": "dragondruid",
+            "url": "https://www.furaffinity.net/user/dragondruid/",
         },
     }
 }

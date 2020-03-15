@@ -14706,6 +14706,31 @@ characterMakers["Isabelle"] = () => {
     )
 };
 
+characterMakers["Hanzo"] = () => {
+    return makeCharacter(
+        "Hanzo",
+        "dragondruid",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/hanzo/front.svg",
+                    extra: 374/344,
+                    bottom: 0.02
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(8, "feet"),
+                default: true
+            },
+        ]
+    )
+};
 //characters
 
 function makeCharacters() {
