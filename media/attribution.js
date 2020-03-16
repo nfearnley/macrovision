@@ -6461,6 +6461,18 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/raf/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35445400/" }
+            ],
+            authors: [
+                "the-raf"
+            ],
+            owners: [
+                "the-raf"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -8900,6 +8912,10 @@ const attributionData = {
         "flamestar": {
             "name": "flamestar",
             "url": "https://www.furaffinity.net/user/flamestar/",
+        },
+        "the-raf": {
+            "name": "the_raf",
+            "url": "https://www.furaffinity.net/user/theraf",
         },
     }
 }

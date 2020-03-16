@@ -15603,6 +15603,48 @@ characterMakers["Remus"] = () => {
     )
 };
 
+characterMakers["Raf"] = () => {
+    return makeCharacter(
+        "Raf",
+        "the_raf",
+        {
+            front: {
+                height: math.unit(4 + 11/12, "feet"),
+                weight: math.unit(114, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/raf/front.svg",
+                    bottom: 0.01
+                }
+            },
+            side: {
+                height: math.unit(4 + 11/12, "feet"),
+                weight: math.unit(114, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/raf/side.svg",
+                    bottom: 0.005
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(2, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(4 + 11/12, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(70, "feet")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
