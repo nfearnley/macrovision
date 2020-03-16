@@ -15872,6 +15872,48 @@ characterMakers["Hasani"] = () => {
     )
 };
 
+characterMakers["Nita"] = () => {
+    return makeCharacter(
+        "Nita",
+        "Ich",
+        {
+            front: {
+                height: math.unit(1.82, "meters"),
+                weight: math.unit(140, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/nita/front.svg",
+                    extra: 2473/2363,
+                    bottom: 0.01
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(1.82, "m")
+            },
+            {
+                name: "Macro",
+                height: math.unit(300, "m")
+            },
+            {
+                name: "Mistake Canon",
+                height: math.unit(0.5, "miles"),
+                default: true
+            },
+            {
+                name: "Big Mistake",
+                height: math.unit(13, "miles")
+            },
+            {
+                name: "Playing God",
+                height: math.unit(2450, "miles")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

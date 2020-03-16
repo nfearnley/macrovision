@@ -6550,6 +6550,18 @@ const attributionData = {
                 "bishop-bun"
             ]
         },
+        {
+            prefix: "./media/characters/nita/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34630244/" }
+            ],
+            authors: [
+                "diaminerre"
+            ],
+            owners: [
+                "ich"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9017,6 +9029,10 @@ const attributionData = {
         "bishop-bun": {
             "name": "Bishop",
             "url": "https://twitter.com/Bishop_Bun",
+        },
+        "diaminerre": {
+            "name": "Diaminerre",
+            "url": "https://www.furaffinity.net/user/diaminerre/",
         },
     }
 }
