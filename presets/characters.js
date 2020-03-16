@@ -15645,6 +15645,49 @@ characterMakers["Raf"] = () => {
     )
 };
 
+characterMakers["Liam Einarr"] = () => {
+    return makeCharacter(
+        "Liam Einarr",
+        "LiamEinarr",
+        {
+            front: {
+                height: math.unit(1.5, "meters"),
+                weight: math.unit(68, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/liam-einarr/front.svg",
+                    extra: 2822/2666
+                }
+            },
+            back: {
+                height: math.unit(1.5, "meters"),
+                weight: math.unit(68, "kg"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/liam-einarr/back.svg",
+                    extra: 2822/2666,
+                    bottom: 0.015
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(1.5, "meters"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(150, "meters")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(35, "km")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

@@ -6473,6 +6473,19 @@ const attributionData = {
                 "the-raf"
             ]
         },
+        {
+            prefix: "./media/characters/liam-einarr/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/19045130/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/19045130/" },
+            ],
+            authors: [
+                "its-me"
+            ],
+            owners: [
+                "liameinarr"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -8916,6 +8929,14 @@ const attributionData = {
         "the-raf": {
             "name": "the_raf",
             "url": "https://www.furaffinity.net/user/theraf",
+        },
+        "liameinarr": {
+            "name": "Liam Einarr",
+            "url": "https://www.furaffinity.net/user/liameinarr/",
+        },
+        "its-me": {
+            "name": "ITS-ME",
+            "url": "https://www.furaffinity.net/user/its-me/",
         },
     }
 }
