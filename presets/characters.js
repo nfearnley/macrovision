@@ -15556,6 +15556,53 @@ characterMakers["Lyla"] = () => {
     )
 };
 
+characterMakers["Perseus"] = () => {
+    return makeCharacter(
+        "Perseus",
+        "Fidchell",
+        {
+            side: {
+                height: math.unit(1.8, "feet"),
+                weight: math.unit(44, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/perseus/side.svg",
+                    bottom: 0.21
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(1.8, "feet")
+            },
+        ]
+    )
+};
+
+characterMakers["Remus"] = () => {
+    return makeCharacter(
+        "Remus",
+        "Fidchell",
+        {
+            side: {
+                height: math.unit(4 + 2/12, "feet"),
+                weight: math.unit(20, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/remus/side.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(4 + 2/12, "feet")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

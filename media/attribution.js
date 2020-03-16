@@ -6437,6 +6437,30 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/perseus/",
+            files: [
+                { name: "side.svg", source: "https://fidverse.fandom.com/wiki/Perseus" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
+        {
+            prefix: "./media/characters/remus/",
+            files: [
+                { name: "side.svg", source: "https://fidverse.fandom.com/wiki/Remus" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
