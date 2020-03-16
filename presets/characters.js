@@ -15946,7 +15946,6 @@ characterMakers["Deja"] = () => {
         {
             front: {
                 height: math.unit(6, "feet"),
-                weight: math.unit(150, "lb"),
                 name: "front",
                 image: {
                     source: "./media/characters/deja/front.svg",
