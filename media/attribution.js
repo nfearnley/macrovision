@@ -6562,6 +6562,30 @@ const attributionData = {
                 "ich"
             ]
         },
+        {
+            prefix: "./media/characters/deja/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/23641526/" }
+            ],
+            authors: [
+                "furrybob"
+            ],
+            owners: [
+                "dejaroo"
+            ]
+        },
+        {
+            prefix: "./media/characters/shiriko/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/heavysetkobold/status/1188623991436480517" }
+            ],
+            authors: [
+                "spottycheeks"
+            ],
+            owners: [
+                "shiriko"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9033,6 +9057,22 @@ const attributionData = {
         "diaminerre": {
             "name": "Diaminerre",
             "url": "https://www.furaffinity.net/user/diaminerre/",
+        },
+        "furrybob": {
+            "name": "furrybob",
+            "url": "https://www.furaffinity.net/user/furrybob",
+        },
+        "dejaroo": {
+            "name": "dejaroo",
+            "url": "https://www.furaffinity.net/user/dejaroo",
+        },
+        "shiriko": {
+            "name": "Shiriko",
+            "url": "https://twitter.com/heavysetkobold",
+        },
+        "spottycheeks": {
+            "name": "Momo",
+            "url": "https://twitter.com/Spottycheeks",
         },
     }
 }

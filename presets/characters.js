@@ -15914,6 +15914,31 @@ characterMakers["Nita"] = () => {
     )
 };
 
+characterMakers["Shiriko"] = () => {
+    return makeCharacter(
+        "Shiriko",
+        "Shiriko",
+        {
+            front: {
+                height: math.unit(4, "feet"),
+                weight: math.unit(120, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/shiriko/front.svg",
+                    extra: 195/188
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(4, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
