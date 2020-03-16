@@ -15800,9 +15800,17 @@ characterMakers["Alana"] = () => {
                 height: math.unit(7 + 6/12, "feet")
             },
             {
+                name: "Large",
+                height: math.unit(50, "feet")
+            },
+            {
                 name: "Macro",
                 height: math.unit(100, "feet"),
                 default: true
+            },
+            {
+                name: "Macro+",
+                height: math.unit(200, "feet")
             },
         ]
     )
