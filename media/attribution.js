@@ -6498,6 +6498,33 @@ const attributionData = {
                 "dalken"
             ]
         },
+        {
+            prefix: "./media/characters/caylex/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/31279345/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/31279345/" },
+                { name: "hand.svg", source: "https://www.furaffinity.net/view/31279345/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/31279345/" },
+            ],
+            authors: [
+                "clawdore"
+            ],
+            owners: [
+                "argentvz"
+            ]
+        },
+        {
+            prefix: "./media/characters/caylex/",
+            files: [
+                { name: "armored.svg", source: "https://www.furaffinity.net/view/32097906/" },
+            ],
+            authors: [
+                "fandroit"
+            ],
+            owners: [
+                "argentvz"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -8949,6 +8976,10 @@ const attributionData = {
         "its-me": {
             "name": "ITS-ME",
             "url": "https://www.furaffinity.net/user/its-me/",
+        },
+        "clawdore": {
+            "name": "Clawdore",
+            "url": "https://www.furaffinity.net/user/clawdore/",
         },
     }
 }

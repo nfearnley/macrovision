@@ -15714,6 +15714,70 @@ characterMakers["Linda"] = () => {
     )
 };
 
+characterMakers["Caylex"] = () => {
+    return makeCharacter(
+        "Caylex",
+        "ArgentVZ",
+        {
+            front: {
+                height: math.unit(6 + 8/12, "feet"),
+                weight: math.unit(220, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/caylex/front.svg",
+                    extra: 821/772,
+                    bottom: 0.07
+                }
+            },
+            back: {
+                height: math.unit(6 + 8/12, "feet"),
+                weight: math.unit(220, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/caylex/back.svg",
+                    extra: 821/772,
+                    bottom: 0.022
+                }
+            },
+            hand: {
+                height: math.unit(1.25, "feet"),
+                name: "Hand",
+                image: {
+                    source: "./media/characters/caylex/hand.svg"
+                }
+            },
+            foot: {
+                height: math.unit(1.6, "feet"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/caylex/foot.svg"
+                }
+            },
+            armored: {
+                height: math.unit(6 + 8/12, "feet"),
+                weight: math.unit(250, "lb"),
+                name: "Armored",
+                image: {
+                    source: "./media/characters/caylex/armored.svg",
+                    extra: 1420/1310,
+                    bottom: 0.045
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6 + 8/12, "feet"),
+                default: true
+            },
+            {
+                name: "Normal+",
+                height: math.unit(12, "feet")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
