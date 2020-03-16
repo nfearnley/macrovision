@@ -15688,6 +15688,32 @@ characterMakers["Liam Einarr"] = () => {
     )
 };
 
+characterMakers["Linda"] = () => {
+    return makeCharacter(
+        "Linda",
+        "Dalken",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(75, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/linda/front.svg",
+                    extra: 930/874,
+                    bottom: 0.004
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

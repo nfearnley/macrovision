@@ -6486,6 +6486,18 @@ const attributionData = {
                 "liameinarr"
             ]
         },
+        {
+            prefix: "./media/characters/linda/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/30405855/" }
+            ],
+            authors: [
+                "rouncible"
+            ],
+            owners: [
+                "dalken"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
