@@ -15176,9 +15176,25 @@ characterMakers["Mark"] = () => {
         },
         [
             {
+                name: "Macro",
+                height: math.unit(120, "meters")
+            },
+            {
+                name: "Bigger Macro",
+                height: math.unit(350, "meters")
+            },
+            {
                 name: "Megamacro",
                 height: math.unit(8, "km"),
                 default: true
+            },
+            {
+                name: "Continental",
+                height: math.unit(4550, "km")
+            },
+            {
+                name: "Planetary",
+                height: math.unit(65000, "km")
             },
         ]
     )
