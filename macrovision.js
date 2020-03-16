@@ -1418,7 +1418,7 @@ function checkFitWorld() {
 const fitModes = {
     "max": {
         start: 0,
-        binop: math.max,
+        binop: Math.max,
         final: (total, count) => total
     },
     "arithmetic mean": {

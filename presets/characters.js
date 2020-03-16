@@ -15939,6 +15939,40 @@ characterMakers["Shiriko"] = () => {
     )
 };
 
+characterMakers["Deja"] = () => {
+    return makeCharacter(
+        "Deja",
+        "dejaroo",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "front",
+                image: {
+                    source: "./media/characters/deja/front.svg",
+                    extra: 926/840,
+                    bottom: 0.07
+                }
+            },
+        },
+        [
+            {
+                name: "Planck Length",
+                height: math.unit(1.6e-35, "meters")
+            },
+            {
+                name: "Normal",
+                height: math.unit(30.48, "meters"),
+                default: true
+            },
+            {
+                name: "Universal",
+                height: math.unit(8.8e26, "meters")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
