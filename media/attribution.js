@@ -6537,6 +6537,19 @@ const attributionData = {
                 "adeleide"
             ]
         },
+        {
+            prefix: "./media/characters/hasani/",
+            files: [
+                { name: "front.svg", source: null },
+                { name: "back.svg", source: null },
+            ],
+            authors: [
+                "bartucthebloody"
+            ],
+            owners: [
+                "bishop-bun"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9000,6 +9013,10 @@ const attributionData = {
         "rooc": {
             "name": "Rooc",
             "url": "https://www.furaffinity.net/user/rooc/",
+        },
+        "bishop-bun": {
+            "name": "Bishop",
+            "url": "https://twitter.com/Bishop_Bun",
         },
     }
 }

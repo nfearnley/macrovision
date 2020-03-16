@@ -15832,6 +15832,46 @@ characterMakers["Alana"] = () => {
     )
 };
 
+characterMakers["Hasani"] = () => {
+    return makeCharacter(
+        "Hasani",
+        "BishopBun",
+        {
+            front: {
+                height: math.unit(6 + 1/12, "feet"),
+                weight: math.unit(210, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/hasani/front.svg",
+                    extra: 244/232,
+                    bottom: 0.01
+                }
+            },
+            back: {
+                height: math.unit(6 + 1/12, "feet"),
+                weight: math.unit(210, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/hasani/back.svg",
+                    extra: 244/232,
+                    bottom: 0.01
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6 + 1/12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(175, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
