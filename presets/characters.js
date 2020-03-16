@@ -15778,6 +15778,36 @@ characterMakers["Caylex"] = () => {
     )
 };
 
+characterMakers["Alana"] = () => {
+    return makeCharacter(
+        "Alana",
+        "Adeleide",
+        {
+            front: {
+                height: math.unit(7 + 6/12, "feet"),
+                weight: math.unit(288, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/alana/front.svg",
+                    extra: 679/653,
+                    bottom: 22.5/701
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(7 + 6/12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(100, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

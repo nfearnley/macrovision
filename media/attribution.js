@@ -6525,6 +6525,18 @@ const attributionData = {
                 "argentvz"
             ]
         },
+        {
+            prefix: "./media/characters/alana/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32938431/" }
+            ],
+            authors: [
+                "rooc"
+            ],
+            owners: [
+                "adeleide"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -8980,6 +8992,14 @@ const attributionData = {
         "clawdore": {
             "name": "Clawdore",
             "url": "https://www.furaffinity.net/user/clawdore/",
+        },
+        "adeleide": {
+            "name": "Adeleide",
+            "url": "https://www.furaffinity.net/user/Adeleide",
+        },
+        "rooc": {
+            "name": "Rooc",
+            "url": "https://www.furaffinity.net/user/rooc/",
         },
     }
 }
