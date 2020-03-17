@@ -151,7 +151,8 @@ function makeBuildings() {
     results.push(
         makeHeight(
             [
-                ["four-lane-highway", 27.432, "meters"]
+                ["four-lane-highway", 27.432, "meters"],
+                ["sidewalk", 24, "feet"]
             ],
             "Roads",
             "",

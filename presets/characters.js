@@ -16395,6 +16395,106 @@ characterMakers["Pretzel"] = () => {
     )
 };
 
+characterMakers["Roxi"] = () => {
+    return makeCharacter(
+        "Roxi",
+        "carthusflame",
+        {
+            sideFront: {
+                height: math.unit(5 + 2/12, "feet"),
+                weight: math.unit(120, "lb"),
+                name: "Front Side",
+                image: {
+                    source: "./media/characters/roxi/side-front.svg",
+                    extra: 2924/2717,
+                    bottom: 0.08
+                }
+            },
+            sideBack: {
+                height: math.unit(5 + 2/12, "feet"),
+                weight: math.unit(120, "lb"),
+                name: "Back Side",
+                image: {
+                    source: "./media/characters/roxi/side-back.svg",
+                    extra: 2904/2693,
+                    bottom: 0.06
+                }
+            },
+            front: {
+                height: math.unit(5 + 2/12, "feet"),
+                weight: math.unit(120, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/roxi/front.svg",
+                    extra: 2028/1907,
+                    bottom: 0.01
+                }
+            },
+            frontAlt: {
+                height: math.unit(5 + 2/12, "feet"),
+                weight: math.unit(120, "lb"),
+                name: "Front (Alt)",
+                image: {
+                    source: "./media/characters/roxi/front-alt.svg",
+                    extra: 1828/1798,
+                    bottom: 0.01
+                }
+            },
+            sitting: {
+                height: math.unit(2.8, "feet"),
+                weight: math.unit(120, "lb"),
+                name: "Sitting",
+                image: {
+                    source: "./media/characters/roxi/sitting.svg",
+                    extra: 2660/2462,
+                    bottom: 0.1
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 2/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Shadow"] = () => {
+    return makeCharacter(
+        "Shadow",
+        "MKShadowdrake",
+        {
+            side: {
+                height: math.unit(55, "feet"),
+                weight: math.unit(30, "tons"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/shadow/side.svg",
+                    extra: 701/628,
+                    bottom: 0.02
+                }
+            },
+            flying: {
+                height: math.unit(145, "feet"),
+                weight: math.unit(30, "tons"),
+                name: "Flying",
+                image: {
+                    source: "./media/characters/shadow/flying.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(55, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

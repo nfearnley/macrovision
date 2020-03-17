@@ -6727,6 +6727,68 @@ const attributionData = {
                 "serpentus"
             ]
         },
+        {
+            prefix: "./media/characters/roxi/",
+            files: [
+                { name: "side-front.svg", source: "https://www.furaffinity.net/view/34002220/" },
+                { name: "side-back.svg", source: "https://www.furaffinity.net/view/34002220/" },
+            ],
+            authors: [
+                "birbseeds"
+            ],
+            owners: [
+                "carthusflame"
+            ]
+        },
+        {
+            prefix: "./media/characters/roxi/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35127428/" }
+            ],
+            authors: [
+                "lambeasts"
+            ],
+            owners: [
+                "carthusflame"
+            ]
+        },
+        {
+            prefix: "./media/characters/roxi/",
+            files: [
+                { name: "front-alt.svg", source: "https://www.furaffinity.net/view/35470247/" }
+            ],
+            authors: [
+                "contrabeast"
+            ],
+            owners: [
+                "carthusflame"
+            ]
+        },
+        {
+            prefix: "./media/characters/roxi/",
+            files: [
+                { name: "sitting.svg", source: "https://www.furaffinity.net/view/35131300/" }
+            ],
+            authors: [
+                "kmatm4"
+            ],
+            owners: [
+                "carthusflame"
+            ]
+        },
+        {
+            prefix: "./media/characters/shadow/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/10776563/" },
+                { name: "flying.svg", source: "https://www.furaffinity.net/view/10776563/" },
+            ],
+            authors: [
+                "twilightsaint"
+            ],
+            owners: [
+                "abstractshadow"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9285,6 +9347,34 @@ const attributionData = {
         "echorion": {
             "name": "Echorion",
             "url": "https://t.me/Echorion",
+        },
+        "twilightsaint": {
+            "name": "TwilightSaint",
+            "url": "https://www.furaffinity.net/user/twilightsaint",
+        },
+        "abstractshadow": {
+            "name": "AbstractShadow",
+            "url": "https://www.furaffinity.net/user/abstractshadow/",
+        },
+        "kmatm4": {
+            "name": "KMAtm4",
+            "url": "https://twitter.com/KMAtm4",
+        },
+        "birbseeds": {
+            "name": "birbseeds",
+            "url": "https://www.furaffinity.net/user/birbseeds",
+        },
+        "carthusflame": {
+            "name": "Carthy",
+            "url": "https://twitter.com/carthusflame",
+        },
+        "lambeasts": {
+            "name": "Lambeasts",
+            "url": "https://www.furaffinity.net/user/lambeasts",
+        },
+        "contrabeast": {
+            "name": "contrabeast",
+            "url": "https://www.furaffinity.net/user/contrabeast",
         },
     }
 }
