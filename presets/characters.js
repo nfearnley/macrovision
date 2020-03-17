@@ -16218,6 +16218,128 @@ characterMakers["Kernel"] = () => {
     )
 };
 
+characterMakers["Jayne Folest"] = () => {
+    return makeCharacter(
+        "Jayne Folest",
+        "JayneFolest",
+        {
+            front: {
+                height: math.unit(1.75, "meters"),
+                weight: math.unit(65, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/jayne-folest/front.svg",
+                    extra: 2115/2007,
+                    bottom: 0.02
+                }
+            },
+            back: {
+                height: math.unit(1.75, "meters"),
+                weight: math.unit(65, "kg"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/jayne-folest/back.svg",
+                    extra: 2115/2007,
+                    bottom: 0.005
+                }
+            },
+            frontClothed: {
+                height: math.unit(1.75, "meters"),
+                weight: math.unit(65, "kg"),
+                name: "Front (Clothed)",
+                image: {
+                    source: "./media/characters/jayne-folest/front-clothed.svg",
+                    extra: 2115/2007,
+                    bottom: 0.035
+                }
+            },
+            hand: {
+                height: math.unit(1/1.260, "feet"),
+                name: "Hand",
+                image: {
+                    source: "./media/characters/jayne-folest/hand.svg"
+                }
+            },
+            foot: {
+                height: math.unit(1/0.918, "feet"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/jayne-folest/foot.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(4, "cm")
+            },
+            {
+                name: "Normal",
+                height: math.unit(1.75, "meters")
+            },
+            {
+                name: "Macro",
+                height: math.unit(47.5, "meters"),
+                default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Algier"] = () => {
+    return makeCharacter(
+        "Algier",
+        "Silas",
+        {
+            front: {
+                height: math.unit(180, "cm"),
+                weight: math.unit(70, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/algier/front.svg",
+                    extra: 596/572,
+                    bottom: 0.04
+                }
+            },
+            back: {
+                height: math.unit(180, "cm"),
+                weight: math.unit(70, "kg"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/algier/back.svg",
+                    extra: 596/572,
+                    bottom: 0.025
+                }
+            },
+            frontdressed: {
+                height: math.unit(180, "cm"),
+                weight: math.unit(150, "kg"),
+                name: "Front-dressed",
+                image: {
+                    source: "./media/characters/algier/front-dressed.svg",
+                    extra: 596/572,
+                    bottom: 0.038
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(5, "cm")
+            },
+            {
+                name: "Normal",
+                height: math.unit(180, "cm"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(64, "m")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

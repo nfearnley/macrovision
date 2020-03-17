@@ -6674,6 +6674,36 @@ const attributionData = {
                 "kerneldecoy"
             ]
         },
+        {
+            prefix: "./media/characters/jayne-folest/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/20650428/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/20650428/" },
+                { name: "front-clothed.svg", source: "https://www.furaffinity.net/view/20650428/" },
+                { name: "hand.svg", source: "https://www.furaffinity.net/view/20650428/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/20650428/" },
+            ],
+            authors: [
+                "quaezal"
+            ],
+            owners: [
+                "jayne"
+            ]
+        },
+        {
+            prefix: "./media/characters/algier/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/28389335/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/28389335/" },
+                { name: "front-dressed.svg", source: "https://www.furaffinity.net/view/28389335/" },
+            ],
+            authors: [
+                "laralila"
+            ],
+            owners: [
+                "silas"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9189,6 +9219,22 @@ const attributionData = {
         "kerneldecoy": {
             "name": "KernelDecoy",
             "url": "https://www.furaffinity.net/user/kerneldecoy/",
+        },
+        "quaezal": {
+            "name": "Quaezal",
+            "url": "https://www.furaffinity.net/user/quaezal",
+        },
+        "jayne": {
+            "name": "Jayne",
+            "url": "https://www.furaffinity.net/user/jayne",
+        },
+        "laralila": {
+            "name": "laralila",
+            "url": "https://www.furaffinity.net/user/laralila/",
+        },
+        "silas": {
+            "name": "Silas",
+            "url": "https://www.furaffinity.net/user/silas",
         },
     }
 }
