@@ -16024,8 +16024,8 @@ characterMakers["Bianca"] = () => {
         "Sdocat",
         {
             front: {
-                height: math.unit(6, "feet"),
-                weight: math.unit(150, "lb"),
+                height: math.unit(8, "feet"),
+                weight: math.unit(350, "lb"),
                 name: "Front",
                 image: {
                     source: "./media/characters/bianca/front.svg",
@@ -16037,11 +16037,48 @@ characterMakers["Bianca"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(8, "feet")
+                height: math.unit(8, "feet"),
+                default: true
             },
         ]
     )
-};c
+};
+
+characterMakers["Adinia"] = () => {
+    return makeCharacter(
+        "Adinia",
+        "Sdocat",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/adinia/front.svg",
+                    extra: 1845/1672,
+                    bottom: 0.02
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/adinia/back.svg",
+                    extra: 1845/1672,
+                    bottom: 0.002
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(11 + 5/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
 
 //characters
 

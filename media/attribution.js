@@ -6623,6 +6623,19 @@ const attributionData = {
                 "sdocat"
             ]
         },
+        {
+            prefix: "./media/characters/adinia/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34126723/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/34126723/" },
+            ],
+            authors: [
+                "lunamente"
+            ],
+            owners: [
+                "sdocat"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9122,6 +9135,10 @@ const attributionData = {
         "runnola": {
             "name": "RuNNoLa",
             "url": "https://www.furaffinity.net/user/emoile",
+        },
+        "lunamente": {
+            "name": "Lunamente",
+            "url": "https://www.furaffinity.net/user/lunamente",
         },
     }
 }
