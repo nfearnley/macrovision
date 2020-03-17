@@ -299,6 +299,16 @@ body.toggle-bottom-name .bottom-name {
     display: inline;
 }
 
+#menubar select {
+    max-width: 200pt;
+    height: 60pt;
+    max-height: 180pt;
+    overflow: hidden;
+    white-space: pre-wrap;
+    word-break: normal;
+    text-overflow: ellipsis;
+}
+
 #spawners > button {
     display: none;
     font-size: 24pt;
@@ -306,7 +316,6 @@ body.toggle-bottom-name .bottom-name {
 #spawners > select {
     display: none;
     font-size: 24pt;
-    max-width: 120pt;
 }
 
 #spawners > select#category-picker {
