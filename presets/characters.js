@@ -1198,6 +1198,40 @@ characterMakers["Sosha"] = () => {
     )
 };
 
+characterMakers["RuNNoLa"] = () => {
+    return makeCharacter(
+        "RuNNoLa",
+        "RuNNoLa",
+        {
+            side: {
+                height: math.unit(5 + 5/12, "feet"),
+                weight: math.unit(170, "kg"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/runnola/side.svg",
+                    extra: 741/448,
+                    bottom: 0.05
+                }
+            },
+        },
+        [
+            {
+                name: "Small",
+                height: math.unit(3, "feet")
+            },
+            {
+                name: "Normal",
+                height: math.unit(5 + 5/12, "feet"),
+                default: true
+            },
+            {
+                name: "Big",
+                height: math.unit(10, "feet")
+            },
+        ]
+    )
+};
+
 characterMakers["Kurribird"] = () => {
     return makeCharacter(
         "Kurribird",

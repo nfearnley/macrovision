@@ -6599,6 +6599,18 @@ const attributionData = {
                 "anima"
             ]
         },
+        {
+            prefix: "./media/characters/runnola/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/24452921/" }
+            ],
+            authors: [
+                "kuppy"
+            ],
+            owners: [
+                "runnola"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9094,6 +9106,10 @@ const attributionData = {
         "gordon-johnson": {
             "name": "Gordon Johnson",
             "url": "https://pixabay.com/users/gdj-1086657/",
+        },
+        "runnola": {
+            "name": "RuNNoLa",
+            "url": "https://www.furaffinity.net/user/emoile",
         },
     }
 }
