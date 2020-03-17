@@ -195,29 +195,73 @@ function makeCars() {
     return entity;
 }
 
+function makeBuses() {
+    const options = [
+        ["City Bus", 11.95, 2.99, 14000, 1, 1, 1],
+        ["Articulated Bus", 18, 3.13, 25000, 1, 1, 1],
+        ["Coach Bus", 12, 3.81, 18000, 1, 1, 1],
+        ["Shuttle Bus", 7.01, 2.67, 6000, 1, 1, 1],
+    ]
+    sides = {}
+
+    options.forEach(bus => {
+        sides[bus[0] + " (Front)"] = {
+            name: bus[0] + " (Front)",
+            rename: true,
+            height: math.unit(bus[2], "meters"),
+            mass: math.unit(bus[3], "kg"),
+            image: { source: "./media/vehicles/buses/bus_" + bus[0].replace(/ /g, "-").toLowerCase() + "-front.svg", extra: bus[4] }
+        };
+        
+        sides[bus[0] + " (Side)"] = {
+            name: bus[0] + " (Side)",
+            rename: true,
+            height: math.unit(bus[2], "meters"),
+            mass: math.unit(bus[3], "kg"),
+            image: { source: "./media/vehicles/buses/bus_" + bus[0].replace(/ /g, "-").toLowerCase() + "-side.svg", extra: bus[5] }
+        };
+
+        sides[bus[0] + " (Top)"] = {
+            name: bus[0] + " (Top)",
+            rename: true,
+            height: math.unit(bus[1], "meters"),
+            mass: math.unit(bus[3], "kg"),
+            image: { source: "./media/vehicles/buses/bus_" + bus[0].replace(/ /g, "-").toLowerCase() + "-top.svg", extra: bus[6] }
+        };
+    });
+
+    const entity = makeMultiVehicle("Buses", sides);
+
+    entity.sizes.push({
+        name: "1:72",
+        height: math.unit(options[0][2]/72, "meters")
+    });
+    entity.sizes.push({
+        name: "1:24",
+        height: math.unit(options[0][2]/24, "meters")
+    });
+    entity.sizes.push({
+        name: "1:16",
+        height: math.unit(options[0][2]/16, "meters")
+    });
+    entity.sizes.push({
+        name: "1:8",
+        height: math.unit(options[0][2]/8, "meters")
+    });
+    entity.sizes.push({
+        name: "1:4",
+        height: math.unit(options[0][2]/4, "meters")
+    });
+    entity.sizes.push({
+        name: "1",
+        height: math.unit(options[0][2], "meters")
+    });
+
+    return entity;
+}
+
 function makeVehicles() {
     const results = [];
-
-    results.push({
-        name: "Bus",
-        constructor: () => makeVehicle(
-            "Bus",
-            {
-                side: {
-                    name: "Side",
-                    height: math.unit(10.5, "feet"),
-                    image: { source: "./media/vehicles/bus.svg" }
-                },
-                vertical: {
-                    name: "Side (Vertical)",
-                    height: math.unit(38.5, "feet"),
-                    image: { source: "./media/vehicles/vertical-bus.svg" }
-                },
-
-            },
-            math.unit(30000, "lb"),
-        )
-    });
 
     results.push({
         name: "Leopard 2 Rev. 1",
@@ -317,6 +361,11 @@ function makeVehicles() {
     results.push({
         name: "Cars",
         constructor: () => makeCars()
+    });
+    
+    results.push({
+        name: "Buses",
+        constructor: () => makeBuses()
     });
 
     return results;

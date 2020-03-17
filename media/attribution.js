@@ -6936,7 +6936,6 @@ const attributionData = {
         {
             prefix: "./media/vehicles/",
             files: [
-                { name: "bus.svg", source: null },
                 { name: "vertical-bus.svg", source: null },
                 { name: "leopard-2-revolution-1.svg", source: "http://leopardclub.ca/reviews/Tiger_Model/Revolution/" },
             ],
@@ -6963,6 +6962,26 @@ const attributionData = {
             authors: [
                 "h-padleckas"
             ]
+        },
+        {
+            prefix: "./media/vehicles/buses/",
+            files: [
+                { name: "bus_city-bus-front.svg", source: "https://www.dimensions.guide/element/city-transit-buses" },
+                { name: "bus_city-bus-side.svg", source: "https://www.dimensions.guide/element/city-transit-buses" },
+                { name: "bus_city-bus-top.svg", source: "https://www.dimensions.guide/element/city-transit-buses" },
+                { name: "bus_articulated-bus-front.svg", source: "https://www.dimensions.guide/element/articulated-buses" },
+                { name: "bus_articulated-bus-side.svg", source: "https://www.dimensions.guide/element/articulated-buses" },
+                { name: "bus_articulated-bus-top.svg", source: "https://www.dimensions.guide/element/articulated-buses" },
+                { name: "bus_coach-bus-front.svg", source: "https://www.dimensions.guide/element/coach-buses" },
+                { name: "bus_coach-bus-side.svg", source: "https://www.dimensions.guide/element/coach-buses" },
+                { name: "bus_coach-bus-top.svg", source: "https://www.dimensions.guide/element/coach-buses" },
+                { name: "bus_shuttle-bus-front.svg", source: "https://www.dimensions.guide/element/minibuses-shuttle-buses" },
+                { name: "bus_shuttle-bus-side.svg", source: "https://www.dimensions.guide/element/minibuses-shuttle-buses" },
+                { name: "bus_shuttle-bus-top.svg", source: "https://www.dimensions.guide/element/minibuses-shuttle-buses" },
+            ],
+            authors: [
+                "dimensions-guide"
+            ],
         },
         {
             prefix: "./media/vehicles/cars/",
