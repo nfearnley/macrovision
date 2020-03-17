@@ -6879,6 +6879,18 @@ const attributionData = {
                 "bruyaglovae"
             ]
         },
+        {
+            prefix: "./media/characters/zara/",
+            files: [
+                { name: "side.svg", source: null }
+            ],
+            authors: [
+                "lezified"
+            ],
+            owners: [
+                "dalken"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9203,7 +9215,7 @@ const attributionData = {
             "url": "https://www.deviantart.com/riolu4aural",
         },
         "lezified": {
-            "name": "lezified",
+            "name": "L_E_Z_I_F_I_E_D",
             "url": "https://www.furaffinity.net/user/lezified",
         },
         "draekos": {

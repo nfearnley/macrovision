@@ -16741,6 +16741,31 @@ characterMakers["Xeauvok"] = () => {
     )
 };
 
+characterMakers["Zara"] = () => {
+    return makeCharacter(
+        "Zara",
+        "Dalken",
+        {
+            side: {
+                height: math.unit(10, "feet"),
+                weight: math.unit(900, "kg"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/zara/side.svg",
+                    extra: 504/498
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(10, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
