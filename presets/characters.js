@@ -16166,12 +16166,12 @@ characterMakers["Malfaren"] = () => {
             },
             {
                 name: "Bigger",
-                height: math.unit(283/124*6, "feet"),
-                default: true
+                height: math.unit(283/124*6, "feet")
             },
             {
                 name: "Massive",
                 height: math.unit(283/92*6, "feet"),
+                default: true
             },
             {
                 name: "👀💦",
