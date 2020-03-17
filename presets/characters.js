@@ -16468,7 +16468,7 @@ characterMakers["Shadow"] = () => {
         {
             side: {
                 height: math.unit(55, "feet"),
-                weight: math.unit(30, "tons"),
+                weight: math.unit(153, "tons"),
                 name: "Side",
                 image: {
                     source: "./media/characters/shadow/side.svg",
@@ -16478,7 +16478,7 @@ characterMakers["Shadow"] = () => {
             },
             flying: {
                 height: math.unit(145, "feet"),
-                weight: math.unit(30, "tons"),
+                weight: math.unit(153, "tons"),
                 name: "Flying",
                 image: {
                     source: "./media/characters/shadow/flying.svg"
@@ -16596,6 +16596,30 @@ characterMakers["Kash"] = () => {
             {
                 name: "Large",
                 height: math.unit(5, "meters")
+            },
+        ]
+    )
+};
+
+characterMakers["Lalim"] = () => {
+    return makeCharacter(
+        "Lalim",
+        "",
+        {
+            feeding: {
+                height: math.unit(6.7, "feet"),
+                weight: math.unit(350, "lb"),
+                name: "Feeding",
+                image: {
+                    source: "./media/characters/lalim/feeding.svg",
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6.7, "feet"),
+                default: true
             },
         ]
     )

@@ -1018,6 +1018,10 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.classList[e.target.checked ? "add" : "remove"]("toggle-entity-glow");
     });
 
+    document.querySelector("#options-world-show-scale-sliders").addEventListener("input", e => {
+        document.body.classList[e.target.checked ? "add" : "remove"]("toggle-scale-sliders");
+    });
+
     document.querySelector("#options-order-forward").addEventListener("click", e => {
         if (selected) {
             entities[selected.dataset.key].priority += 1;

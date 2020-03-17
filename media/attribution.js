@@ -6827,6 +6827,18 @@ const attributionData = {
                 "4wrz"
             ]
         },
+        {
+            prefix: "./media/characters/lalim/",
+            files: [
+                { name: "feeding.svg", source: "https://www.furaffinity.net/view/28273923/" }
+            ],
+            authors: [
+                "witchfang"
+            ],
+            owners: [
+                "bruyaglovae"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9429,6 +9441,14 @@ const attributionData = {
         "4wrz": {
             "name": "4wrz",
             "url": "https://www.furaffinity.net/user/4wrz",
+        },
+        "witchfang": {
+            "name": "witchfang",
+            "url": "https://www.furaffinity.net/user/witchfang",
+        },
+        "bruyaglovae": {
+            "name": "Bruyaglovae",
+            "url": "https://www.furaffinity.net/user/bruyaglovae/",
         },
     }
 }
