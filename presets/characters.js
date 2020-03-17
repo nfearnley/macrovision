@@ -16631,8 +16631,8 @@ characterMakers["De'Vout"] = () => {
         "Bruyaglovae",
         {
             front: {
-                height: math.unit(12, "feet"),
-                weight: math.unit(1000, "lb"),
+                height: math.unit(9.5, "feet"),
+                weight: math.unit(600, "lb"),
                 name: "Front",
                 image: {
                     source: "./media/characters/de'vout/front.svg",
@@ -16641,8 +16641,8 @@ characterMakers["De'Vout"] = () => {
                 }
             },
             back: {
-                height: math.unit(12, "feet"),
-                weight: math.unit(1000, "lb"),
+                height: math.unit(9.5, "feet"),
+                weight: math.unit(600, "lb"),
                 name: "Back",
                 image: {
                     source: "./media/characters/de'vout/back.svg",
@@ -16650,8 +16650,8 @@ characterMakers["De'Vout"] = () => {
                 }
             },
             frontDressed: {
-                height: math.unit(12, "feet"),
-                weight: math.unit(1000, "lb"),
+                height: math.unit(9.5, "feet"),
+                weight: math.unit(600, "lb"),
                 name: "Front (Dressed",
                 image: {
                     source: "./media/characters/de'vout/front-dressed.svg",
@@ -16660,8 +16660,8 @@ characterMakers["De'Vout"] = () => {
                 }
             },
             backDressed: {
-                height: math.unit(12, "feet"),
-                weight: math.unit(1000, "lb"),
+                height: math.unit(9.5, "feet"),
+                weight: math.unit(600, "lb"),
                 name: "Back (Dressed",
                 image: {
                     source: "./media/characters/de'vout/back-dressed.svg",
@@ -16672,7 +16672,7 @@ characterMakers["De'Vout"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(12, "feet"),
+                height: math.unit(9.5, "feet"),
                 default: true
             },
         ]
