@@ -16495,6 +16495,32 @@ characterMakers["Shadow"] = () => {
     )
 };
 
+characterMakers["Marcie"] = () => {
+    return makeCharacter(
+        "Marcie",
+        "Macroceli",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(200, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/marcie/front.svg",
+                    extra: 960/876,
+                    bottom: 58/1017.87
+                }
+            },
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(1, "mile"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

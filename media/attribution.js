@@ -6789,6 +6789,18 @@ const attributionData = {
                 "abstractshadow"
             ]
         },
+        {
+            prefix: "./media/characters/marcie/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/MarcieKangaroo/status/1004492482145607681" }
+            ],
+            authors: [
+                "macroceli"
+            ],
+            owners: [
+                "marciekangaroo"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9375,6 +9387,10 @@ const attributionData = {
         "contrabeast": {
             "name": "contrabeast",
             "url": "https://www.furaffinity.net/user/contrabeast",
+        },
+        "marciekangaroo": {
+            "name": "Marcie Roo",
+            "url": "https://twitter.com/MarcieKangaroo/",
         },
     }
 }
