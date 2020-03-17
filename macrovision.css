@@ -306,6 +306,7 @@ body.toggle-bottom-name .bottom-name {
 #spawners > select {
     display: none;
     font-size: 24pt;
+    max-width: 120pt;
 }
 
 #spawners > select#category-picker {
@@ -318,8 +319,7 @@ body.toggle-bottom-name .bottom-name {
 }
 
 #menubar button {
-    font-size: 28pt;
-    height: 36pt;
+    font-size: 48pt;
 }
 
 #help {
@@ -489,3 +489,14 @@ body.toggle-height-bars .height-bar,
     transition: 0s all;
     content: "";
 }
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
