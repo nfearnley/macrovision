@@ -148,6 +148,17 @@ function makeBuildings() {
         }
     );
 
+    results.push(
+        makeHeight(
+            [
+                ["four-lane-highway", 27.432, "meters"]
+            ],
+            "Roads",
+            "",
+            "buildings"
+        )
+    )
+
     results.sort((b1, b2) => {
         e1 = b1.constructor();
         e2 = b2.constructor();

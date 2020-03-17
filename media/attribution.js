@@ -1108,6 +1108,15 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/buildings/roads/",
+            files: [
+                { name: "four-lane-highway.svg", source: null }
+            ],
+            authors: [
+                "chemicalcrux"
+            ],
+        },
+        {
             prefix: "./media/buildings/skyscrapers/",
             files: [
                 { name: "wide.svg", source: null },
