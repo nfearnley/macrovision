@@ -6611,6 +6611,18 @@ const attributionData = {
                 "runnola"
             ]
         },
+        {
+            prefix: "./media/characters/bianca/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/26077161/" }
+            ],
+            authors: [
+                "eveara"
+            ],
+            owners: [
+                "sdocat"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -8073,7 +8085,7 @@ const attributionData = {
         },
         "sdocat": {
             "name": "sdocat",
-            "url": "sdocat",
+            "url": "https://www.furaffinity.net/user/sdocat",
         },
         "neopuc": {
             "name": "Neopuc",

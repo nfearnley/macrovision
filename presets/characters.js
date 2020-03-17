@@ -859,60 +859,47 @@ function makeAigey() {
     return entity;
 }
 
-function makeNatasha() {
-    const views = {
-        side: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(6, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(75, "kg")
+characterMakers["Natasha"] = () => {
+    return makeCharacter(
+        "Natasha",
+        "MammaAWD",
+        {
+            front: {
+                height: math.unit(5 + 5/12, "feet"),
+                weight: math.unit(75, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/natasha/front.svg",
+                    extra: 875/846,
+                    bottom: 0.01
                 }
             },
-            image: {
-                source: "./media/characters/natasha/front.svg"
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 5/12, "feet")
             },
-            name: "Side"
-        }
-    };
-
-    const entity = makeEntity({ name: "Natasha", author: "Natasha" }, views, []);
-
-    entity.sizes.push({
-        name: "Normal",
-        height: math.unit(5 + 5 / 12, "feet")
-    });
-
-    entity.sizes.push({
-        name: "Large",
-        height: math.unit(12, "feet")
-    });
-    entity.sizes.push({
-        name: "Macro",
-        height: math.unit(100, "feet")
-    });
-
-    entity.sizes.push({
-        name: "Macro+",
-        height: math.unit(260, "feet")
-    });
-
-    entity.sizes.push({
-        name: "Macro++",
-        height: math.unit(1, "mile")
-    });
-
-    entity.views[entity.defaultView].height = math.unit(100, "feet");
-
-    return entity;
-}
+            {
+                name: "Large",
+                height: math.unit(12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(100, "feet"),
+                default: true
+            },
+            {
+                name: "Macro+",
+                height: math.unit(260, "feet")
+            },
+            {
+                name: "Macro++",
+                height: math.unit(1, "mile")
+            },
+        ]
+    )
+};
 
 function makeMalik() {
     const views = {
@@ -16031,6 +16018,31 @@ characterMakers["Anima"] = () => {
     )
 };
 
+characterMakers["Bianca"] = () => {
+    return makeCharacter(
+        "Bianca",
+        "Sdocat",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/bianca/front.svg",
+                    extra: 234/225,
+                    bottom: 0.03
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(8, "feet")
+            },
+        ]
+    )
+};c
+
 //characters
 
 function makeCharacters() {
@@ -16046,10 +16058,6 @@ function makeCharacters() {
     results.push({
         name: "Aigey",
         constructor: makeAigey
-    });
-    results.push({
-        name: "Natasha",
-        constructor: makeNatasha
     });
     results.push({
         name: "Malik",
