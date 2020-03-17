@@ -9233,8 +9233,8 @@ const attributionData = {
             "url": "https://www.furaffinity.net/user/laralila/",
         },
         "silas": {
-            "name": "Silas",
-            "url": "https://www.furaffinity.net/user/silas",
+            "name": "Algier",
+            "url": "https://www.f-list.net/c/algier/",
         },
     }
 }
