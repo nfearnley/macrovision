@@ -6648,6 +6648,20 @@ const attributionData = {
                 "roxas00137"
             ]
         },
+        {
+            prefix: "./media/characters/malfaren/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/31371269/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/31371269/" },
+                { name: "maw.svg", source: "https://www.furaffinity.net/view/31371269/" },
+            ],
+            authors: [
+                "morca"
+            ],
+            owners: [
+                "malfaren"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9151,6 +9165,14 @@ const attributionData = {
         "lunamente": {
             "name": "Lunamente",
             "url": "https://www.furaffinity.net/user/lunamente",
+        },
+        "malfaren": {
+            "name": "Malfaren",
+            "url": "https://www.furaffinity.net/user/malfaren/",
+        },
+        "morca": {
+            "name": "Morca",
+            "url": "https://www.furaffinity.net/user/morca",
         },
     }
 }

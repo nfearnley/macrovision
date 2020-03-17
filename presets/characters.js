@@ -16125,6 +16125,49 @@ characterMakers["Lykasa"] = () => {
         ]
     )
 };
+
+characterMakers["Malfaren"] = () => {
+    return makeCharacter(
+        "Malfaren",
+        "Malfaren",
+        {
+            front: {
+                height: math.unit(22.36, "feet"),
+                weight: math.unit(35000, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/malfaren/front.svg",
+                    extra: 1631/1476,
+                    bottom: 0.01
+                }
+            },
+            side: {
+                height: math.unit(15.439, "feet"),
+                weight: math.unit(35000, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/malfaren/side.svg",
+                    extra: 2500/1010,
+                    bottom: 0.01
+                }
+            },
+            maw: {
+                height: math.unit(6.9, "feet"),
+                name: "Maw",
+                image: {
+                    source: "./media/characters/malfaren/maw.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(22.36, "feet"),
+                default: true
+            },
+        ]
+    )
+};
 //characters
 
 function makeCharacters() {
