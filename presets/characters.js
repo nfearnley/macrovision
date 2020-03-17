@@ -1183,7 +1183,8 @@ characterMakers["Sosha"] = () => {
                 weight: math.unit(140, "kg"),
                 name: "Side",
                 image: {
-                    source: "./media/characters/sosha/side.svg"
+                    source: "./media/characters/sosha/side.svg",
+                    bottom: 0.042
                 }
             },
         },
