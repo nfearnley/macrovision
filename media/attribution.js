@@ -6801,6 +6801,18 @@ const attributionData = {
                 "marciekangaroo"
             ]
         },
+        {
+            prefix: "./media/characters/kachina/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "kononiko"
+            ],
+            owners: [
+                "trisha"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9391,6 +9403,10 @@ const attributionData = {
         "marciekangaroo": {
             "name": "Marcie Roo",
             "url": "https://twitter.com/MarcieKangaroo/",
+        },
+        "trisha": {
+            "name": "Trisha",
+            "url": "https://www.f-list.net/c/kachina%20queens/",
         },
     }
 }
