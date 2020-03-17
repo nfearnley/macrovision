@@ -6867,6 +6867,18 @@ const attributionData = {
                 "bruyaglovae"
             ]
         },
+        {
+            prefix: "./media/characters/xeauvok/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/34859565/" }
+            ],
+            authors: [
+                "t-harley"
+            ],
+            owners: [
+                "bruyaglovae"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9481,6 +9493,10 @@ const attributionData = {
         "manedfiredrake": {
             "name": "manedfiredrake",
             "url": "https://www.furaffinity.net/user/manedfiredrake",
+        },
+        "t-harley": {
+            "name": "T-harley",
+            "url": "https://www.furaffinity.net/user/t-harley",
         },
     }
 }
