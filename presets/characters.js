@@ -16180,6 +16180,44 @@ characterMakers["Malfaren"] = () => {
         ]
     )
 };
+
+characterMakers["Kernel"] = () => {
+    return makeCharacter(
+        "Kernel",
+        "KernelDecoy",
+        {
+            front: {
+                height: math.unit(1.7, "m"),
+                weight: math.unit(70, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/kernel/front.svg",
+                    extra: 222/210,
+                    bottom: 0.007
+                }
+            },
+        },
+        [
+            {
+                name: "Nano",
+                height: math.unit(17, "micrometers")
+            },
+            {
+                name: "Micro",
+                height: math.unit(1.7, "mm")
+            },
+            {
+                name: "Small",
+                height: math.unit(1.7, "cm")
+            },
+            {
+                name: "Normal",
+                height: math.unit(1.7, "m")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

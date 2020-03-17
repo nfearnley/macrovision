@@ -6662,6 +6662,18 @@ const attributionData = {
                 "malfaren"
             ]
         },
+        {
+            prefix: "./media/characters/kernel/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/kernelDecoy/status/1239742395643826176" }
+            ],
+            authors: [
+                "kerneldecoy"
+            ],
+            owners: [
+                "kerneldecoy"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9173,6 +9185,10 @@ const attributionData = {
         "morca": {
             "name": "Morca",
             "url": "https://www.furaffinity.net/user/morca",
+        },
+        "kerneldecoy": {
+            "name": "KernelDecoy",
+            "url": "https://www.furaffinity.net/user/kerneldecoy/",
         },
     }
 }
