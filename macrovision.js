@@ -1022,6 +1022,10 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.classList[e.target.checked ? "add" : "remove"]("toggle-scale-sliders");
     });
 
+    document.querySelector("#options-world-show-bottom-cover").addEventListener("input", e => {
+        document.body.classList[e.target.checked ? "add" : "remove"]("toggle-bottom-cover");
+    });
+
     document.querySelector("#options-order-forward").addEventListener("click", e => {
         if (selected) {
             entities[selected.dataset.key].priority += 1;

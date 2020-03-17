@@ -538,4 +538,18 @@ body.toggle-height-bars .height-bar,
     overflow: hidden;
     clip: rect(0,0,0,0);
     border: 0;
-  }
+}
+
+.bottom-cover {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    left: 0%;
+    top: calc(100% - 51px);
+    background: black;
+}
+
+body.toggle-bottom-cover .bottom-cover {
+    display: inline-block;
+}
