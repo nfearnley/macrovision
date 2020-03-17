@@ -16131,6 +16131,16 @@ characterMakers["Malfaren"] = () => {
         "Malfaren",
         "Malfaren",
         {
+            side: {
+                height: math.unit(283/124*6, "feet"),
+                weight: math.unit(35000, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/malfaren/side.svg",
+                    extra: 2500/1010,
+                    bottom: 0.01
+                }
+            },
             front: {
                 height: math.unit(22.36, "feet"),
                 weight: math.unit(35000, "lb"),
@@ -16138,16 +16148,6 @@ characterMakers["Malfaren"] = () => {
                 image: {
                     source: "./media/characters/malfaren/front.svg",
                     extra: 1631/1476,
-                    bottom: 0.01
-                }
-            },
-            side: {
-                height: math.unit(15.439, "feet"),
-                weight: math.unit(35000, "lb"),
-                name: "Side",
-                image: {
-                    source: "./media/characters/malfaren/side.svg",
-                    extra: 2500/1010,
                     bottom: 0.01
                 }
             },
@@ -16161,9 +16161,21 @@ characterMakers["Malfaren"] = () => {
         },
         [
             {
-                name: "Normal",
-                height: math.unit(22.36, "feet"),
+                name: "Big",
+                height: math.unit(283/162*6, "feet"),
+            },
+            {
+                name: "Bigger",
+                height: math.unit(283/124*6, "feet"),
                 default: true
+            },
+            {
+                name: "Massive",
+                height: math.unit(283/92*6, "feet"),
+            },
+            {
+                name: "👀💦",
+                height: math.unit(283/73*6, "feet"),
             },
         ]
     )
