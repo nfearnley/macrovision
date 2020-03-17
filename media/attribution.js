@@ -6586,6 +6586,19 @@ const attributionData = {
                 "shiriko"
             ]
         },
+        {
+            prefix: "./media/characters/anima/",
+            files: [
+                { name: "side.svg", source: "https://pixabay.com/vectors/leopard-big-cat-feline-animal-2789553/" }
+            ],
+            authors: [
+                "gordon-johnson",
+                "chemicalcrux"
+            ],
+            owners: [
+                "anima"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9073,6 +9086,14 @@ const attributionData = {
         "spottycheeks": {
             "name": "Momo",
             "url": "https://twitter.com/Spottycheeks",
+        },
+        "anima": {
+            "name": "Anima",
+            "url": "https://furaffinity.net/user/anima",
+        },
+        "gordon-johnson": {
+            "name": "Gordon Johnson",
+            "url": "https://pixabay.com/users/gdj-1086657/",
         },
     }
 }

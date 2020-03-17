@@ -15972,6 +15972,30 @@ characterMakers["Deja"] = () => {
     )
 };
 
+characterMakers["Anima"] = () => {
+    return makeCharacter(
+        "Anima",
+        "Anima",
+        {
+            side: {
+                height: math.unit(8, "feet"),
+                weight: math.unit(6300, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/anima/side.svg",
+                    bottom: 0.035
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(8, "feet")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
