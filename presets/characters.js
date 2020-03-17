@@ -16604,7 +16604,7 @@ characterMakers["Kash"] = () => {
 characterMakers["Lalim"] = () => {
     return makeCharacter(
         "Lalim",
-        "",
+        "Bruyaglovae",
         {
             feeding: {
                 height: math.unit(6.7, "feet"),
@@ -16619,6 +16619,96 @@ characterMakers["Lalim"] = () => {
             {
                 name: "Normal",
                 height: math.unit(6.7, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
+characterMakers["De'Vout"] = () => {
+    return makeCharacter(
+        "De'Vout",
+        "Bruyaglovae",
+        {
+            front: {
+                height: math.unit(12, "feet"),
+                weight: math.unit(1000, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/de'vout/front.svg",
+                    extra: 1443/1328,
+                    bottom: 0.025
+                }
+            },
+            back: {
+                height: math.unit(12, "feet"),
+                weight: math.unit(1000, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/de'vout/back.svg",
+                    extra: 1443/1328
+                }
+            },
+            frontDressed: {
+                height: math.unit(12, "feet"),
+                weight: math.unit(1000, "lb"),
+                name: "Front (Dressed",
+                image: {
+                    source: "./media/characters/de'vout/front-dressed.svg",
+                    extra: 1443/1328,
+                    bottom: 0.025
+                }
+            },
+            backDressed: {
+                height: math.unit(12, "feet"),
+                weight: math.unit(1000, "lb"),
+                name: "Back (Dressed",
+                image: {
+                    source: "./media/characters/de'vout/back-dressed.svg",
+                    extra: 1443/1328
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Talana"] = () => {
+    return makeCharacter(
+        "Talana",
+        "Bruyaglovae",
+        {
+            front: {
+                height: math.unit(8, "feet"),
+                weight: math.unit(225, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/talana/front.svg",
+                    extra: 1410/1300,
+                    bottom: 0.015
+                }
+            },
+            frontDressed: {
+                height: math.unit(8, "feet"),
+                weight: math.unit(225, "lb"),
+                name: "Front (Dressed",
+                image: {
+                    source: "./media/characters/talana/front-dressed.svg",
+                    extra: 1410/1300,
+                    bottom: 0.015
+                }
+            },
+        },  
+        [
+            {
+                name: "Normal",
+                height: math.unit(8, "feet"),
                 default: true
             },
         ]

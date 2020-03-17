@@ -6839,6 +6839,34 @@ const attributionData = {
                 "bruyaglovae"
             ]
         },
+        {
+            prefix: "./media/characters/de'vout/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33550031/" },
+                { name: "front-dressed.svg", source: "https://www.furaffinity.net/view/33550031/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/33550031/" },
+                { name: "back-dressed.svg", source: "https://www.furaffinity.net/view/33550031/" },
+            ],
+            authors: [
+                "manedfiredrake"
+            ],
+            owners: [
+                "bruyaglovae"
+            ]
+        },
+        {
+            prefix: "./media/characters/talana/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34828441/" },
+                { name: "front-dressed.svg", source: "https://www.furaffinity.net/view/34828441/" }
+            ],
+            authors: [
+                "manedfiredrake"
+            ],
+            owners: [
+                "bruyaglovae"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9449,6 +9477,10 @@ const attributionData = {
         "bruyaglovae": {
             "name": "Bruyaglovae",
             "url": "https://www.furaffinity.net/user/bruyaglovae/",
+        },
+        "manedfiredrake": {
+            "name": "manedfiredrake",
+            "url": "https://www.furaffinity.net/user/manedfiredrake",
         },
     }
 }
