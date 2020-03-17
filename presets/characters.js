@@ -16080,6 +16080,51 @@ characterMakers["Adinia"] = () => {
     )
 };
 
+characterMakers["Lykasa"] = () => {
+    return makeCharacter(
+        "Lykasa",
+        "Roxas00137",
+        {
+            front: {
+                height: math.unit(3, "meters"),
+                weight: math.unit(200, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/lykasa/front.svg",
+                    extra: 1076/976,
+                    bottom: 0.06
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(3, "meters")
+            },
+            {
+                name: "Kaiku",
+                height: math.unit(120, "meters"),
+                default: true
+            },
+            {
+                name: "Mega Kaiju",
+                height: math.unit(240, "km")
+            },
+            {
+                name: "Giga Kaiju",
+                height: math.unit(400, "megameters")
+            },
+            {
+                name: "Tera Kaiju",
+                height: math.unit(800, "gigameters")
+            },
+            {
+                name: "Kaiju Dragon Goddess",
+                height: math.unit(26, "zettaparsecs")
+            },
+        ]
+    )
+};
 //characters
 
 function makeCharacters() {

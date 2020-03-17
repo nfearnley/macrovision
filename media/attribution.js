@@ -6636,6 +6636,18 @@ const attributionData = {
                 "sdocat"
             ]
         },
+        {
+            prefix: "./media/characters/lykasa/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33515151/" }
+            ],
+            authors: [
+                "mokoshan"
+            ],
+            owners: [
+                "roxas00137"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
