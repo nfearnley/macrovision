@@ -6704,6 +6704,20 @@ const attributionData = {
                 "silas"
             ]
         },
+        {
+            prefix: "./media/characters/pretzel/",
+            files: [
+                { name: "upright.svg", source: null },
+                { name: "sprawling.svg", source: null },
+                { name: "tongue.svg", source: null },
+            ],
+            authors: [
+                "echorion"
+            ],
+            owners: [
+                "serpentus"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9235,6 +9249,14 @@ const attributionData = {
         "silas": {
             "name": "Algier",
             "url": "https://www.f-list.net/c/algier/",
+        },
+        "serpentus": {
+            "name": "Serpentus",
+            "url": "https://www.furaffinity.net/user/serpentus",
+        },
+        "echorion": {
+            "name": "Echorion",
+            "url": "https://t.me/Echorion",
         },
     }
 }

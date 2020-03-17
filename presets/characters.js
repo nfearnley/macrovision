@@ -16340,6 +16340,61 @@ characterMakers["Algier"] = () => {
     )
 };
 
+characterMakers["Pretzel"] = () => {
+    return makeCharacter(
+        "Pretzel",
+        "Serpentus",
+        {
+            upright: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(300, "lb"),
+                name: "Upright",
+                image: {
+                    source: "./media/characters/pretzel/upright.svg",
+                    extra: 534/522,
+                    bottom: 0.065
+                }
+            },
+            sprawling: {
+                height: math.unit(3.75, "feet"),
+                weight: math.unit(300, "lb"),
+                name: "Sprawling",
+                image: {
+                    source: "./media/characters/pretzel/sprawling.svg",
+                    extra: 314/281,
+                    bottom: 0.1
+                }
+            },
+            tongue: {
+                height: math.unit(2, "feet"),
+                name: "Tongue",
+                image: {
+                    source: "./media/characters/pretzel/tongue.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(7, "feet"),
+                default: true
+            },
+            {
+                name: "Oversized",
+                height: math.unit(15, "feet")
+            },
+            {
+                name: "Huge",
+                height: math.unit(30, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(250, "feet")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
