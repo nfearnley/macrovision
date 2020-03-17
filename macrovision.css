@@ -286,6 +286,31 @@ body #test-canvas {
     transform: scale(2);
 }
 
+.top-name {
+    display: none;
+    text-align: center;
+    position: fixed;
+    max-width: 150px;
+    height: 50px;
+    transform: translate(-50%, 20pt);
+    z-index: 1001;
+}
+
+body.toggle-top-name .top-name.top-name-needed {
+    display: block;
+}
+
+.top-name::after {
+    display: block;
+    background-image: url("./media/ui/arrow.svg");
+    width: 70px;
+    height: 70px;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    content: "";
+    transform: translate(0, -120%);
+}
+
 .bottom-name {
     display: none;
     text-align: center;

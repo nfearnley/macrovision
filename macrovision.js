@@ -132,6 +132,18 @@ function updateEntityElement(entity, element) {
     bottomName.style.left = position.x + entityX + "px";
     bottomName.style.top = "95vh";
     bottomName.innerText = entity.name;
+
+    const topName = document.querySelector("#top-name-" + element.dataset.key);
+
+    topName.style.left = position.x + entityX + "px";
+    topName.style.top = "20vh";
+    topName.innerText = entity.name;
+
+    if (entity.views[view].height.toNumber("meters") / 10 > config.height.toNumber("meters")) {
+        topName.classList.add("top-name-needed");
+    } else {
+        topName.classList.remove("top-name-needed");
+    }
 }
 
 function updateSizes(dirtyOnly = false) {
@@ -917,6 +929,15 @@ function displayEntity(entity, view, x, y, selectEntity=false) {
     bottomName.addEventListener("click", () => select(box));
 
     world.appendChild(bottomName);
+
+    const topName = document.createElement("div");
+    topName.classList.add("top-name");
+    topName.id = "top-name-" + entityIndex;
+    topName.innerText = entity.name;
+
+    topName.addEventListener("click", () => select(box));
+
+    world.appendChild(topName);
     entityIndex += 1;
     if (config.autoFit) {
         fitWorld();
@@ -983,6 +1004,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector("#options-world-show-bottom-names").addEventListener("input", e => {
         document.body.classList[e.target.checked ? "add" : "remove"]("toggle-bottom-name");
+    });
+
+    document.querySelector("#options-world-show-top-names").addEventListener("input", e => {
+        document.body.classList[e.target.checked ? "add" : "remove"]("toggle-top-name");
     });
 
     document.querySelector("#options-world-show-height-bars").addEventListener("input", e => {
