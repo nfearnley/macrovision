@@ -16547,6 +16547,60 @@ characterMakers["Kachina"] = () => {
     )
 };
 
+characterMakers["Kash"] = () => {
+    return makeCharacter(
+        "Kash",
+        "4wrz",
+        {
+            looking: {
+                height: math.unit(2, "meters"),
+                weight: math.unit(300, "kg"),
+                name: "Looking",
+                image: {
+                    source: "./media/characters/kash/looking.svg",
+                    extra: 474/344,
+                    bottom: 0.03
+                }
+            },
+            side: {
+                height: math.unit(2, "meters"),
+                weight: math.unit(300, "kg"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/kash/side.svg",
+                    extra: 302/251,
+                    bottom: 0.03
+                }
+            },
+            front: {
+                height: math.unit(2, "meters"),
+                weight: math.unit(300, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/kash/front.svg",
+                    extra: 495/360,
+                    bottom: 0.015
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(2, "meters"),
+                default: true
+            },
+            {
+                name: "Big",
+                height: math.unit(3, "meters")
+            },
+            {
+                name: "Large",
+                height: math.unit(5, "meters")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

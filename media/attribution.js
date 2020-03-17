@@ -6813,6 +6813,20 @@ const attributionData = {
                 "trisha"
             ]
         },
+        {
+            prefix: "./media/characters/kash/",
+            files: [
+                { name: "looking.svg", source: "https://www.furaffinity.net/view/19449759/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/19449759/" },
+                { name: "front.svg", source: "https://www.furaffinity.net/view/19449759/" },
+            ],
+            authors: [
+                "vorelord"
+            ],
+            owners: [
+                "4wrz"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9407,6 +9421,14 @@ const attributionData = {
         "trisha": {
             "name": "Trisha",
             "url": "https://www.f-list.net/c/kachina%20queens/",
+        },
+        "vorelord": {
+            "name": "VoreLord",
+            "url": "https://www.furaffinity.net/user/vorelord",
+        },
+        "4wrz": {
+            "name": "4wrz",
+            "url": "https://www.furaffinity.net/user/4wrz",
         },
     }
 }
