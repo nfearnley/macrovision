@@ -17252,6 +17252,58 @@ characterMakers["Xang"] = () => {
     )
 };
 
+characterMakers["Doc Weardno"] = () => {
+    return makeCharacter(
+        "Doc Weardno",
+        "DrWeardno",
+        {
+            frontDressed: {
+                height: math.unit(5 + 7/12, "feet"),
+                weight: math.unit(140, "lb"),
+                name: "Front (Dressed)",
+                image: {
+                    source: "./media/characters/doc-weardno/front-dressed.svg"
+                }
+            },
+            backDressed: {
+                height: math.unit(5 + 7/12, "feet"),
+                weight: math.unit(140, "lb"),
+                name: "Back (Dressed)",
+                image: {
+                    source: "./media/characters/doc-weardno/back-dressed.svg"
+                }
+            },
+            front: {
+                height: math.unit(5 + 7/12, "feet"),
+                weight: math.unit(140, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/doc-weardno/front.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(3, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(5 + 7/12, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(25, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(2, "miles")
+            },
+        ]
+    )
+};
+
 
 //characters
 

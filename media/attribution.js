@@ -7067,6 +7067,20 @@ const attributionData = {
                 "xangoose"
             ]
         },
+        {
+            prefix: "./media/characters/doc-weardno/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/15206622/" },
+                { name: "front-dressed.svg", source: "https://www.furaffinity.net/view/15206622/" },
+                { name: "back-dressed.svg", source: "https://www.furaffinity.net/view/15206622/" },
+            ],
+            authors: [
+                "cane-mckeyton"
+            ],
+            owners: [
+                "drweardno"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9757,6 +9771,14 @@ const attributionData = {
         "sketchpawz": {
             "name": "sketchpawz",
             "url": "https://www.furaffinity.net/user/sketchpawz",
+        },
+        "drweardno": {
+            "name": "DrWeardno",
+            "url": "https://www.furaffinity.net/user/drweardno/",
+        },
+        "cane-mckeyton": {
+            "name": "Cane McKeyton",
+            "url": "https://www.furaffinity.net/user/cane-mckeyton/",
         },
     }
 }
