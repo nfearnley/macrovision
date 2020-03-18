@@ -7094,6 +7094,18 @@ const attributionData = {
                 "soletrainserpent"
             ]
         },
+        {
+            prefix: "./media/characters/pocket-jabari/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/23125860/" }
+            ],
+            authors: [
+                "devoid-kiss"
+            ],
+            owners: [
+                "pocketjabari"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9800,6 +9812,14 @@ const attributionData = {
         "smallbutknowingclown": {
             "name": "smallbutknowingclown",
             "url": null,
+        },
+        "pocketjabari": {
+            "name": "PocketJabari",
+            "url": "https://www.furaffinity.net/user/pocketjabari/",
+        },
+        "devoid-kiss": {
+            "name": "Devoid-Kiss",
+            "url": "https://www.furaffinity.net/user/devoid-kiss",
         },
     }
 }

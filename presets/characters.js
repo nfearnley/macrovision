@@ -17343,6 +17343,36 @@ characterMakers["Seth Whilst"] = () => {
     )
 };
 
+characterMakers["Pocket Jabari"] = () => {
+    return makeCharacter(
+        "Pocket Jabari",
+        "PocketJabari",
+        {
+            front: {
+                height: math.unit(3, "inches"),
+                weight: math.unit(60, "grams"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/pocket-jabari/front.svg",
+                    extra: 1024/974,
+                    bottom: 0.039
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(3, "inches"),
+                default: true
+            },
+            {
+                name: "Normal",
+                height: math.unit(3, "feet")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
