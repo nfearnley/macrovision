@@ -1836,7 +1836,8 @@ const attributionData = {
         {
             prefix: "./media/characters/coffee/",
             files: [
-                { name: "front.svg", source: "https://twitter.com/NShayd22/status/1162200383487217667" }
+                { name: "front.svg", source: "https://twitter.com/NShayd22/status/1162200383487217667" },
+                { name: "foot.svg", source: null }
             ],
             authors: [
                 "bkdebo"
@@ -7081,6 +7082,18 @@ const attributionData = {
                 "drweardno"
             ]
         },
+        {
+            prefix: "./media/characters/seth-whilst/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "smallbutknowingclown"
+            ],
+            owners: [
+                "soletrainserpent"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9779,6 +9792,14 @@ const attributionData = {
         "cane-mckeyton": {
             "name": "Cane McKeyton",
             "url": "https://www.furaffinity.net/user/cane-mckeyton/",
+        },
+        "soletrainserpent": {
+            "name": "soletrainserpent",
+            "url": "https://www.furaffinity.net/user/soletrainserpent/",
+        },
+        "smallbutknowingclown": {
+            "name": "smallbutknowingclown",
+            "url": null,
         },
     }
 }

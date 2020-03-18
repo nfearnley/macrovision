@@ -6191,7 +6191,14 @@ characterMakers["Coffee"] = () => {
                     extra: 3666/3032 ,
                     bottom: 0.04
                 }
-            }
+            },
+            foot: {
+                height: math.unit(1.29, "feet"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/coffee/foot.svg"
+                }
+            },
         },
         [
             {
@@ -17307,6 +17314,30 @@ characterMakers["Doc Weardno"] = () => {
     )
 };
 
+characterMakers["Seth Whilst"] = () => {
+    return makeCharacter(
+        "Seth Whilst",
+        "SethWhilst",
+        {
+            front: {
+                height: math.unit(6 + 2/12, "feet"),
+                weight: math.unit(153, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/seth-whilst/front.svg",
+                    bottom: 0.07
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6 + 2/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
 
 //characters
 
