@@ -16932,7 +16932,7 @@ characterMakers["Claude DelRoute"] = () => {
         {
             front: {
                 height: math.unit(7, "feet"),
-                weight: math.unit(150, "lb"),
+                weight: math.unit(275, "lb"),
                 name: "Front",
                 image: {
                     source: "./media/characters/claude-delroute/front.svg",
@@ -16942,7 +16942,7 @@ characterMakers["Claude DelRoute"] = () => {
             },
             side: {
                 height: math.unit(7, "feet"),
-                weight: math.unit(150, "lb"),
+                weight: math.unit(275, "lb"),
                 name: "Side",
                 image: {
                     source: "./media/characters/claude-delroute/side.svg",
@@ -16952,7 +16952,7 @@ characterMakers["Claude DelRoute"] = () => {
             },
             back: {
                 height: math.unit(7, "feet"),
-                weight: math.unit(150, "lb"),
+                weight: math.unit(275, "lb"),
                 name: "Back",
                 image: {
                     source: "./media/characters/claude-delroute/back.svg",
@@ -16969,7 +16969,15 @@ characterMakers["Claude DelRoute"] = () => {
             },
         },
         [
-            
+            {
+                name: "Normal",
+                height: math.unit(7, "feet"),
+                default: true
+            },
+            {
+                name: "Lorge",
+                height: math.unit(20, "feet")
+            },
         ]
     )
 };
