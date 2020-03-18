@@ -131,6 +131,7 @@ body.toggle-entity-glow .entity-box:not(.selected) > img{
     display: flex;
     justify-content: space-evenly;
 }
+
 .options-row {
     display: flex;
     text-align: center;
@@ -138,7 +139,6 @@ body.toggle-entity-glow .entity-box:not(.selected) > img{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
 .options-block {
     display: flex;
     text-align: center;
@@ -166,6 +166,19 @@ body.toggle-entity-glow .entity-box:not(.selected) > img{
     font-size: 24pt;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.options-banner {
+    text-align: center;
+    font-size: 24pt;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #232;
+    text-decoration: none;
+}
+
+.options-banner:hover {
+    background: #454;
 }
 
 .options-selector {
@@ -232,7 +245,8 @@ body.toggle-scale #display {
     display: block;
 }
 
-#options .options-label {
+#options .options-label,
+#options .options-banner {
     flex: 0 1;
     width: 100%;
     font-size: 150%;
