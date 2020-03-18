@@ -16766,6 +16766,35 @@ characterMakers["Zara"] = () => {
     )
 };
 
+characterMakers["Richard (Dragon)"] = () => {
+    return makeCharacter(
+        "Richard (Dragon)",
+        "Xanaomin",
+        {
+            side: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/richard-dragon/side.svg",
+                    extra: 845/340,
+                    bottom: 0.017
+                }
+            },
+            maw: {
+                height: math.unit(2.97, "feet"),
+                name: "Maw",
+                image: {
+                    source: "./media/characters/richard-dragon/maw.svg"
+                }
+            },
+        },
+        [
+            
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

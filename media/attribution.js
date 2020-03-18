@@ -6891,6 +6891,19 @@ const attributionData = {
                 "dalken"
             ]
         },
+        {
+            prefix: "./media/characters/richard-dragon/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/20848722/" },
+                { name: "maw.svg", source: "https://www.furaffinity.net/view/20848722/" },
+            ],
+            authors: [
+                "xanaomin"
+            ],
+            owners: [
+                "xanaomin"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9509,6 +9522,10 @@ const attributionData = {
         "t-harley": {
             "name": "T-harley",
             "url": "https://www.furaffinity.net/user/t-harley",
+        },
+        "xanaomin": {
+            "name": "Xanaomin",
+            "url": "https://www.furaffinity.net/user/xanaomin/",
         },
     }
 }
