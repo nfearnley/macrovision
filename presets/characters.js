@@ -16825,6 +16825,108 @@ characterMakers["Richard (Smeargle)"] = () => {
     )
 };
 
+characterMakers["Klay"] = () => {
+    return makeCharacter(
+        "Klay",
+        "klaythebat",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(110, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/klay/front.svg",
+                    extra: 962/883,
+                    bottom: 0.04
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(110, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/klay/back.svg",
+                    extra: 962/883
+                }
+            },
+            beans: {
+                height: math.unit(1.15, "feet"),
+                name: "Beans",
+                image: {
+                    source: "./media/characters/klay/beans.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(6, "inches")
+            },
+            {
+                name: "Mini",
+                height: math.unit(3, "feet")
+            },
+            {
+                name: "Normal",
+                height: math.unit(6, "feet"),
+                default: true
+            },
+            {
+                name: "Big",
+                height: math.unit(25, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(100, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(400, "feet")
+            },
+        ]
+    )
+};
+
+characterMakers["Marcus"] = () => {
+    return makeCharacter(
+        "Marcus",
+        "klaythebat",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(160, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/marcus/front.svg",
+                    extra: 734/676,
+                    bottom: 0.03
+                }
+            },
+        },
+        [
+            {
+                name: "Little",
+                height: math.unit(6, "feet")
+            },
+            {
+                name: "Normal",
+                height: math.unit(110, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(250, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(1000, "feet")
+            },
+        ]
+    )
+};
+
+
+
 //characters
 
 function makeCharacters() {

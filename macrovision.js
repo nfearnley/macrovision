@@ -533,8 +533,8 @@ function configEntityOptions(entity, view) {
         button.addEventListener("click", e => {
             entity.views[entity.defaultView].height = defaultInfo.height;
             entity.dirty = true;
-            updateEntityOptions(entity, view);
-            updateViewOptions(entity, view);
+            updateEntityOptions(entity, entity.view);
+            updateViewOptions(entity, entity.view);
             if (!checkFitWorld()){
                 updateSizes(true);
             }

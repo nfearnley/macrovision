@@ -6917,6 +6917,32 @@ const attributionData = {
                 "xanaomin"
             ]
         },
+        {
+            prefix: "./media/characters/klay/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32218784/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/32218784/" },
+                { name: "beans.svg", source: "https://www.furaffinity.net/view/32218784/" },
+            ],
+            authors: [
+                "yellowstumps"
+            ],
+            owners: [
+                "klaythebat"
+            ]
+        },
+        {
+            prefix: "./media/characters/marcus/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34701907/" },
+            ],
+            authors: [
+                "yellowstumps"
+            ],
+            owners: [
+                "klaythebat"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9543,6 +9569,14 @@ const attributionData = {
         "min": {
             "name": "Min",
             "url": "https://www.furaffinity.net/user/min/",
+        },
+        "yellowstumps": {
+            "name": "yellowstumps",
+            "url": "https://www.furaffinity.net/user/yellowstumps",
+        },
+        "klaythebat": {
+            "name": "KlayTheBat",
+            "url": "https://www.furaffinity.net/user/klaythebat/",
         },
     }
 }
