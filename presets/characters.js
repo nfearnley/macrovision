@@ -17331,6 +17331,10 @@ characterMakers["Seth Whilst"] = () => {
         },
         [
             {
+                name: "Micro",
+                height: math.unit(5, "inches")
+            },
+            {
                 name: "Normal",
                 height: math.unit(6 + 2/12, "feet"),
                 default: true
