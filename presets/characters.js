@@ -17262,7 +17262,8 @@ characterMakers["Doc Weardno"] = () => {
                 weight: math.unit(140, "lb"),
                 name: "Front (Dressed)",
                 image: {
-                    source: "./media/characters/doc-weardno/front-dressed.svg"
+                    source: "./media/characters/doc-weardno/front-dressed.svg",
+                    extra: 263/234
                 }
             },
             backDressed: {
@@ -17270,7 +17271,8 @@ characterMakers["Doc Weardno"] = () => {
                 weight: math.unit(140, "lb"),
                 name: "Back (Dressed)",
                 image: {
-                    source: "./media/characters/doc-weardno/back-dressed.svg"
+                    source: "./media/characters/doc-weardno/back-dressed.svg",
+                    extra: 266/238
                 }
             },
             front: {
@@ -17278,7 +17280,8 @@ characterMakers["Doc Weardno"] = () => {
                 weight: math.unit(140, "lb"),
                 name: "Front",
                 image: {
-                    source: "./media/characters/doc-weardno/front.svg"
+                    source: "./media/characters/doc-weardno/front.svg",
+                    extra: 254/233
                 }
             },
         },
