@@ -17084,6 +17084,44 @@ characterMakers["Desta"] = () => {
     )
 };
 
+characterMakers["Storm Alystar"] = () => {
+    return makeCharacter(
+        "Storm Alystar",
+        "Thunderbum",
+        {
+            front: {
+                height: math.unit(10, "feet"),
+                weight: math.unit(700, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/storm-alystar/front.svg",
+                    extra: 2112/1898,
+                    bottom: 0.034
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(3.5, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(10, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(400, "feet")
+            },
+            {
+                name: "Deific",
+                height: math.unit(60, "miles")
+            },
+        ]
+    )
+};
+
 
 //characters
 

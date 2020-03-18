@@ -7007,6 +7007,18 @@ const attributionData = {
                 "thatdratini"
             ]
         },
+        {
+            prefix: "./media/characters/storm-alystar/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33198784/" }
+            ],
+            authors: [
+                "bobbylontra"
+            ],
+            owners: [
+                "thunderbum"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9665,6 +9677,14 @@ const attributionData = {
         "thatdratini": {
             "name": "Desta",
             "url": "https://www.furaffinity.net/user/thatdratini/",
+        },
+        "thunderbum": {
+            "name": "Thunderbum",
+            "url": "https://www.furaffinity.net/user/thunderbum/",
+        },
+        "bobbylontra": {
+            "name": "BobbyLontra",
+            "url": "https://twitter.com/BobbyLontra",
         },
     }
 }
