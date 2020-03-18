@@ -7031,6 +7031,30 @@ const attributionData = {
                 "ilia"
             ]
         },
+        {
+            prefix: "./media/characters/kingdead/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/20329176/" }
+            ],
+            authors: [
+                "chibibuizel"
+            ],
+            owners: [
+                "kingdead"
+            ]
+        },
+        {
+            prefix: "./media/characters/kyrehx/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35485024/" }
+            ],
+            authors: [
+                "darkietehjester"
+            ],
+            owners: [
+                "kyrehx"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9701,6 +9725,18 @@ const attributionData = {
         "ilia": {
             "name": "Ilia",
             "url": "https://www.furaffinity.net/user/iliavulpie/",
+        },
+        "chibibuizel": {
+            "name": "ChibiBuizel",
+            "url": "https://www.furaffinity.net/user/chibibuizel/",
+        },
+        "kingdead": {
+            "name": "KingDead",
+            "url": "https://www.furaffinity.net/user/kingdead",
+        },
+        "kyrehx": {
+            "name": "kyrehx",
+            "url": "https://www.furaffinity.net/user/kyrehx/",
         },
     }
 }

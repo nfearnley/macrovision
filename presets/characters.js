@@ -17156,6 +17156,69 @@ characterMakers["Ilia"] = () => {
     )
 };
 
+characterMakers["KingDead"] = () => {
+    return makeCharacter(
+        "KingDead",
+        "KingDead",
+        {
+            front: {
+                height: math.unit(6 + 5/12, "feet"),
+                weight: math.unit(190, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/kingdead/front.svg",
+                    extra: 1228/1177
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(7, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(6 + 5/12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(150, "feet"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(200, "miles")
+            },
+        ]
+    )
+};
+
+characterMakers["Kyrehx"] = () => {
+    return makeCharacter(
+        "Kyrehx",
+        "Kyrehx",
+        {
+            front: {
+                height: math.unit(8, "feet"),
+                weight: math.unit(600, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/kyrehx/front.svg",
+                    extra: 1195/1095,
+                    bottom: 0.034
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(8, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 
 //characters
 
