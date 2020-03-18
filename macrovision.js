@@ -1026,6 +1026,10 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.classList[e.target.checked ? "add" : "remove"]("toggle-bottom-cover");
     });
 
+    document.querySelector("#options-world-show-scale").addEventListener("input", e => {
+        document.body.classList[e.target.checked ? "add" : "remove"]("toggle-scale");
+    });
+
     document.querySelector("#options-order-forward").addEventListener("click", e => {
         if (selected) {
             entities[selected.dataset.key].priority += 1;

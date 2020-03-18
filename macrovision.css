@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background: #111;
+    background: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -222,9 +222,14 @@ select.menu-item {
 }
 
 #display {
+    display: none;
     width: 100%;
     height: 100%;
     background: #333;
+}
+
+body.toggle-scale #display {
+    display: block;
 }
 
 #options .options-label {
