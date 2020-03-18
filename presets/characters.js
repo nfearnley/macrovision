@@ -17037,6 +17037,53 @@ characterMakers["Dragonien"] = () => {
     )
 };
 
+characterMakers["Desta"] = () => {
+    return makeCharacter(
+        "Desta",
+        "Desta",
+        {
+            front: {
+                height: math.unit(5 + 2/12, "feet"),
+                weight: math.unit(110, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/desta/front.svg",
+                    extra: 1482/1417
+                }
+            },
+            side: {
+                height: math.unit(5 + 2/12, "feet"),
+                weight: math.unit(110, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/desta/side.svg",
+                    extra: 2579/2491,
+                    bottom: 0.053
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(6, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(5 + 2/12, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(62, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(1800, "feet")
+            },
+        ]
+    )
+};
+
 
 //characters
 

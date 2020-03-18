@@ -6983,6 +6983,30 @@ const attributionData = {
                 "dragonien"
             ]
         },
+        {
+            prefix: "./media/characters/desta/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/26988779/" }
+            ],
+            authors: [
+                "shizuworks"
+            ],
+            owners: [
+                "thatdratini"
+            ]
+        },
+        {
+            prefix: "./media/characters/desta/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/26960263/" }
+            ],
+            authors: [
+                "cougr"
+            ],
+            owners: [
+                "thatdratini"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9633,6 +9657,14 @@ const attributionData = {
         "jae-lin": {
             "name": "Jae-Lin",
             "url": "https://www.furaffinity.net/user/jae-lin/",
+        },
+        "shizuworks": {
+            "name": "Shizuworks",
+            "url": "https://twitter.com/shizuworks",
+        },
+        "thatdratini": {
+            "name": "Desta",
+            "url": "https://www.furaffinity.net/user/thatdratini/",
         },
     }
 }
