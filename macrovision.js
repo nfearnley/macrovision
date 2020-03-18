@@ -962,10 +962,16 @@ window.onfocus = function () {
 }
 
 function doSliderScale() {
+    if (sliderScale == 1) {
+        clearInterval(dragScaleHandle);
+    }
     setWorldHeight(config.height, math.multiply(config.height, (9 + sliderScale) / 10));
 }
 
 function doSliderEntityScale() {
+    if (sliderEntityScale == 1) {
+        clearInterval(dragEntityScaleHandle);
+    }
     if (selected) {
         const entity = entities[selected.dataset.key];
         entity.scale *= (9 + sliderEntityScale) / 10;
@@ -1047,11 +1053,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.querySelector("#slider-scale").addEventListener("mousedown", e => {
+        clearInterval(dragScaleHandle);
         dragScaleHandle = setInterval(doSliderScale, 50);
         e.stopPropagation();
     });
 
     document.querySelector("#slider-scale").addEventListener("touchstart", e => {
+        clearInterval(dragScaleHandle);
         dragScaleHandle = setInterval(doSliderScale, 50);
         e.stopPropagation();
     });
@@ -1072,11 +1080,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.querySelector("#slider-entity-scale").addEventListener("mousedown", e => {
+        clearInterval(dragEntityScaleHandle);
         dragEntityScaleHandle = setInterval(doSliderEntityScale, 50);
         e.stopPropagation();
     });
 
     document.querySelector("#slider-entity-scale").addEventListener("touchstart", e => {
+        clearInterval(dragEntityScaleHandle);
         dragEntityScaleHandle = setInterval(doSliderEntityScale, 50);
         e.stopPropagation();
     });

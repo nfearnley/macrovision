@@ -437,6 +437,7 @@ a {
     z-index: 1000;
     width: 250px;
     height: 50px;
+    transform: scale(1.5);
 }
 
 body.toggle-scale-sliders .floating-slider {
@@ -444,7 +445,7 @@ body.toggle-scale-sliders .floating-slider {
 }
 
 #slider-scale {
-    top: 1%;
+    top: 5%;
     left: 5%;
 }
 
@@ -457,7 +458,7 @@ body.toggle-scale-sliders .floating-slider {
 }
 
 #slider-entity-scale {
-    top: 1%;
+    top: 5%;
     right: 5%;
 }
 
