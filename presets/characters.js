@@ -16925,6 +16925,54 @@ characterMakers["Marcus"] = () => {
     )
 };
 
+characterMakers["Claude DelRoute"] = () => {
+    return makeCharacter(
+        "Claude DelRoute",
+        "Claude",
+        {
+            front: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/claude-delroute/front.svg",
+                    extra: 230/214,
+                    bottom: 0.007
+                }
+            },
+            side: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/claude-delroute/side.svg",
+                    extra: 222/214,
+                    bottom: 0.01
+                }
+            },
+            back: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/claude-delroute/back.svg",
+                    extra: 230/214,
+                    bottom: 0.015
+                }
+            },
+            maw: {
+                height: math.unit(0.6407, "meters"),
+                name: "Maw",
+                image: {
+                    source: "./media/characters/claude-delroute/maw.svg"
+                }
+            },
+        },
+        [
+            
+        ]
+    )
+};
 
 
 //characters

@@ -6943,6 +6943,21 @@ const attributionData = {
                 "klaythebat"
             ]
         },
+        {
+            prefix: "./media/characters/claude-delroute/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32021927/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/32021927/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/32021927/" },
+                { name: "maw.svg", source: "https://www.furaffinity.net/view/32021927/" },
+            ],
+            authors: [
+                "tenewuff"
+            ],
+            owners: [
+                "claude"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9577,6 +9592,10 @@ const attributionData = {
         "klaythebat": {
             "name": "KlayTheBat",
             "url": "https://www.furaffinity.net/user/klaythebat/",
+        },
+        "claude": {
+            "name": "Claude DelRoute",
+            "url": "https://www.furaffinity.net/user/raphaeltheferret",
         },
     }
 }
