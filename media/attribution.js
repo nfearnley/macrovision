@@ -6958,6 +6958,31 @@ const attributionData = {
                 "claude"
             ]
         },
+        {
+            prefix: "./media/characters/dragonien/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/4202290/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/4202290/" },
+            ],
+            authors: [
+                "jae-lin"
+            ],
+            owners: [
+                "dragonien"
+            ]
+        },
+        {
+            prefix: "./media/characters/dragonien/",
+            files: [
+                { name: "back.svg", source: "https://www.furaffinity.net/view/11010840/" }
+            ],
+            authors: [
+                "puniceus-rose"
+            ],
+            owners: [
+                "dragonien"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9596,6 +9621,18 @@ const attributionData = {
         "claude": {
             "name": "Claude DelRoute",
             "url": "https://www.furaffinity.net/user/raphaeltheferret",
+        },
+        "dragonien": {
+            "name": "dragonien",
+            "url": "https://www.furaffinity.net/user/dragonien",
+        },
+        "puniceus-rose": {
+            "name": "Puniceus-Rose",
+            "url": "https://www.furaffinity.net/user/puniceus-rose/",
+        },
+        "jae-lin": {
+            "name": "Jae-Lin",
+            "url": "https://www.furaffinity.net/user/jae-lin/",
         },
     }
 }

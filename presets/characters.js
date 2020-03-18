@@ -16982,6 +16982,61 @@ characterMakers["Claude DelRoute"] = () => {
     )
 };
 
+characterMakers["Dragonien"] = () => {
+    return makeCharacter(
+        "Dragonien",
+        "Dragonien",
+        {
+            front: {
+                height: math.unit(8 + 4/12, "feet"),
+                weight: math.unit(600, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/dragonien/front.svg",
+                    extra: 100/94,
+                    bottom: 3.3/103.3445
+                }
+            },
+            back: {
+                height: math.unit(8 + 4/12, "feet"),
+                weight: math.unit(600, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/dragonien/back.svg",
+                    extra: 776/746,
+                    bottom: 6.4/782.0616
+                }
+            },
+            foot: {
+                height: math.unit(1.54, "feet"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/dragonien/foot.svg",
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(8 + 4/12, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(200, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(1, "mile")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(1000, "miles")
+            },
+        ]
+    )
+};
+
 
 //characters
 
