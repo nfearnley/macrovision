@@ -17219,6 +17219,39 @@ characterMakers["Kyrehx"] = () => {
     )
 };
 
+characterMakers["Xang"] = () => {
+    return makeCharacter(
+        "Xang",
+        "Xangoose",
+        {
+            front: {
+                height: math.unit(0.935 * (6 + 8/12), "feet"),
+                weight: math.unit(184, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/xang/front.svg",
+                    extra: 845/755
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(0.935 * (6 + 8/12), "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(0.935 * 146, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(0.935 * 3, "miles")
+            },
+        ]
+    )
+};
+
 
 //characters
 

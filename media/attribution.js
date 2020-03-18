@@ -7055,6 +7055,18 @@ const attributionData = {
                 "kyrehx"
             ]
         },
+        {
+            prefix: "./media/characters/xang/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/28062994/" }
+            ],
+            authors: [
+                "sketchpawz"
+            ],
+            owners: [
+                "xangoose"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9737,6 +9749,14 @@ const attributionData = {
         "kyrehx": {
             "name": "kyrehx",
             "url": "https://www.furaffinity.net/user/kyrehx/",
+        },
+        "xangoose": {
+            "name": "Xangoose",
+            "url": "https://www.furaffinity.net/user/xangoose/",
+        },
+        "sketchpawz": {
+            "name": "sketchpawz",
+            "url": "https://www.furaffinity.net/user/sketchpawz",
         },
     }
 }
