@@ -17122,6 +17122,40 @@ characterMakers["Storm Alystar"] = () => {
     )
 };
 
+characterMakers["Ilia"] = () => {
+    return makeCharacter(
+        "Ilia",
+        "IliaVulpine",
+        {
+            front: {
+                height: math.unit(2.35, "meters"),
+                weight: math.unit(119, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/ilia/front.svg",
+                    extra: 1285/1255,
+                    bottom: 0.06
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(2.35, "meters")
+            },
+            {
+                name: "Macro",
+                height: math.unit(140, "meters"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(100, "miles")
+            },
+        ]
+    )
+};
+
 
 //characters
 

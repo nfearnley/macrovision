@@ -7019,6 +7019,18 @@ const attributionData = {
                 "thunderbum"
             ]
         },
+        {
+            prefix: "./media/characters/ilia/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35373097/" }
+            ],
+            authors: [
+                "ilia"
+            ],
+            owners: [
+                "ilia"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9685,6 +9697,10 @@ const attributionData = {
         "bobbylontra": {
             "name": "BobbyLontra",
             "url": "https://twitter.com/BobbyLontra",
+        },
+        "ilia": {
+            "name": "Ilia",
+            "url": "https://www.furaffinity.net/user/iliavulpie/",
         },
     }
 }
