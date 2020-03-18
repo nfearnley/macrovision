@@ -16795,6 +16795,36 @@ characterMakers["Richard (Dragon)"] = () => {
     )
 };
 
+characterMakers["Richard (Smeargle)"] = () => {
+    return makeCharacter(
+        "Richard (Smeargle)",
+        "Xanaomin",
+        {
+            front: {
+                height: math.unit(4, "feet"),
+                weight: math.unit(100, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/richard-smeargle/front.svg",
+                    extra: 2952/2820,
+                    bottom: 0.028
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(4, "feet"),
+                default: true
+            },
+            {
+                name: "Dynamax",
+                height: math.unit(20, "meters")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

@@ -6904,6 +6904,19 @@ const attributionData = {
                 "xanaomin"
             ]
         },
+        {
+            prefix: "./media/characters/richard-smeargle/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/28657897/" }
+            ],
+            authors: [
+                "min",
+                "xanaomin"
+            ],
+            owners: [
+                "xanaomin"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9526,6 +9539,10 @@ const attributionData = {
         "xanaomin": {
             "name": "Xanaomin",
             "url": "https://www.furaffinity.net/user/xanaomin/",
+        },
+        "min": {
+            "name": "Min",
+            "url": "https://www.furaffinity.net/user/min/",
         },
     }
 }
