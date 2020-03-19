@@ -17478,7 +17478,7 @@ characterMakers["Irishfox"] = () => {
         {
             front: {
                 height: math.unit(5 + 9/12, "feet"),
-                weight: math.unit(150, "lb"),
+                weight: math.unit(175, "lb"),
                 name: "Front",
                 image: {
                     source: "./media/characters/irishfox/front.svg",
