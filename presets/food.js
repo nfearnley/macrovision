@@ -117,7 +117,8 @@ function makeFood() {
             ["hamburger", 2.5, "inches"],
             ["french-fry", 4, "inches"],
             ["chicken-nugget", 1.65, "inches"],
-            ["onion-ring", 4, "inches"]
+            ["onion-ring", 4, "inches"],
+            ["donut", 75, "mm"],
         ],
         "Fast Food",
         "",
