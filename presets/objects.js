@@ -10,6 +10,10 @@ math.createUnit("solarradii", {
     definition: "695990 km",
     prefixes: "long"
 });
+math.createUnit("solarmasses", {
+    definition: "2e30 kg",
+    prefixes: "long"
+});
 
 function makeObject(name, viewInfo) {
     views = {};
@@ -55,10 +59,20 @@ function addShoeView(object, name, points) {
 function makeHeight(info, category, prefix="", type="objects") {
     const views = {};
 
+
     info.forEach(object => {
+        let src;
+    
+        // this lets us provide our own source if needed
+        // useful for reusing existing art
+        if (object[3]) {
+            src = object[3];
+        } else {
+            src = "./media/" + type + "/" + category.replace(/ /g, "-").toLowerCase() + "/" + prefix + object[0] + ".svg";
+        }
         views[object[0]] = {
             height: math.unit(object[1], object[2]),
-            image: { source: "./media/" + type + "/" + category.replace(/ /g, "-").toLowerCase() + "/" + prefix + object[0] + ".svg" },
+            image: { source: src },
             name: object[0].replace(/-/g, " ").replace(/\b\w/g, x => x.toUpperCase()),
             rename: true
         }

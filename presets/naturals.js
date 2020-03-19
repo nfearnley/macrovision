@@ -83,20 +83,56 @@ function makeMountains() {
 }
 function makeNaturals() {
     const results = [];
-    results.push(makePlanet("Mercury", math.unit(4879, "km"), math.unit(0.330e24, "kg")));
-    results.push(makePlanet("Venus", math.unit(12104, "km"), math.unit(4.87e24, "kg")));
-    results.push(makePlanet("Earth", math.unit(12756, "km"), math.unit(5.97e24, "kg")));
-    results.push(makePlanet("Moon", math.unit(3475, "km"), math.unit(0.073e24, "kg")));
-    results.push(makePlanet("Mars", math.unit(6792, "km"), math.unit(0.642e24, "kg")));
-    results.push(makePlanet("Jupiter", math.unit(142984, "km"), math.unit(1898e24, "kg")));
-    results.push(makePlanet("Saturn", math.unit(120536, "km"), math.unit(568e24, "kg"), { source: "./media/naturals/saturn.svg" }));
-    results.push(makePlanet("Uranus", math.unit(51118, "km"), math.unit(86.8e24, "kg")));
-    results.push(makePlanet("Neptune", math.unit(49528, "km"), math.unit(102e24, "kg")));
-    results.push(makePlanet("Pluto", math.unit(2370, "km"), math.unit(0.0146e24, "kg")));
 
-    results.push(makePlanet("White Dwarf", math.unit(14000, "km"), math.unit(1e30, "kg")));
-    results.push(makePlanet("Sun", math.unit(865370, "mi"), math.unit(1.989e30, "kg")));
-    results.push(makePlanet("Betelgeuse", math.unit(1234.2e6, "mi"), math.unit(2.188e31, "kg")));
+    results.push(makeHeightWeight(
+        [
+            ["Mercury", 4879, "km", 0.330e24, "kg", "./media/naturals/planet-generic.svg"],
+            ["Venus", 12104, "km", 4.87e24, "kg", "./media/naturals/planet-generic.svg"],
+            ["Earth", 12756, "km", 5.97e24, "kg", "./media/naturals/planet-generic.svg"],
+            ["Moon", 3475, "km", 0.073e24, "kg", "./media/naturals/planet-generic.svg"],
+            ["Mars", 6792, "km", 0.642e24, "kg", "./media/naturals/planet-generic.svg"],
+            ["Jupiter", 142984, "km", 1898e24, "kg", "./media/naturals/planet-generic.svg"],
+            ["Saturn", 120536, "km", 568e24, "kg", "./media/naturals/saturn.svg"],
+            ["Uranus", 51118, "km", 86.8e24, "kg", "./media/naturals/planet-generic.svg"],
+            ["Neptune", 49528, "km", 102e24, "kg", "./media/naturals/planet-generic.svg"],
+            ["Pluto", 2370, "km", 0.0146e24, "kg", "./media/naturals/planet-generic.svg"]
+        ],
+        "Planets",
+        "",
+        ""
+    ));
+    
+    results.push(makeHeight(
+        [
+            ["orbit-of-mercury", 0.387*2, "AU", "./media/naturals/orbit.svg"],
+            ["orbit-of-venus", 0.723*2, "AU", "./media/naturals/orbit.svg"],
+            ["orbit-of-earth", 1*2, "AU", "./media/naturals/orbit.svg"],
+            ["orbit-of-mars", 1.524*2, "AU", "./media/naturals/orbit.svg"],
+            ["orbit-of-jupiter", 5.2044*2, "AU", "./media/naturals/orbit.svg"],
+            ["orbit-of-saturn", 9.5826*2, "AU", "./media/naturals/orbit.svg"],
+            ["orbit-of-uranus", 19.21840*2, "AU", "./media/naturals/orbit.svg"],
+            ["orbit-of-neptune", 30.11*2, "AU", "./media/naturals/orbit.svg"],
+            ["orbit-of-pluto", 39.482*2, "AU", "./media/naturals/orbit.svg"],
+        ],
+        "Orbits",
+        "",
+        ""
+    ));
+
+    results.push(makeHeightWeight(
+        [
+            ["Sun", 1, "solarradii", 1, "solarmasses", "./media/naturals/planet-generic.svg"],
+            ["White Dwarf", 14000, "km", 1e30, "kg", "./media/naturals/planet-generic.svg"],
+            ["Polaris", 37.5, "solarradii", 5.4, "solarmasses", "./media/naturals/planet-generic.svg"],
+            ["Sun (Red Giant)", 256, "solarradii", 1, "solarmasses", "./media/naturals/planet-generic.svg"],
+            ["Betelgeuse", 887, "solarradii", 11.6, "solarmasses", "./media/naturals/planet-generic.svg"],
+            ["VY Canis Majoris", 1420, "solarradii", 17, "solarmasses", "./media/naturals/planet-generic.svg"],
+        ],
+        "Stars",
+        "",
+        ""
+    ));
+
     results.push(makePlanet("Milky Way", math.unit(105700, "lightyears"), math.unit(3e+39, "kg"), { source: "./media/naturals/milky-way.svg" }));
     results.push(makePlanet("Observable Universe", math.unit(93.016e9, "lightyears"), math.unit(10e53, "kg")));
     results.push(makePlanet("Multiverse", math.unit(1e30, "lightyears"), math.unit(1e100, "kg")));
