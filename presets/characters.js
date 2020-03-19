@@ -17385,6 +17385,58 @@ characterMakers["Pocket Jabari"] = () => {
     )
 };
 
+characterMakers["Sapphy"] = () => {
+    return makeCharacter(
+        "Sapphy",
+        "Sapphy",
+        {
+            front: {
+                height: math.unit(15, "feet"),
+                weight: math.unit(3280, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/sapphy/front.svg",
+                    extra: 671/577,
+                    bottom: 0.085
+                }
+            },
+            back: {
+                height: math.unit(15, "feet"),
+                weight: math.unit(3280, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/sapphy/back.svg",
+                    extra: 631/607,
+                    bottom: 0.045
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(15, "feet")
+            },
+            {
+                name: "Casual Macro",
+                height: math.unit(120, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(2150, "feet"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(8, "miles")
+            },
+            {
+                name: "Galaxy Mom",
+                height: math.unit(6, "megalightyears")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

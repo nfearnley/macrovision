@@ -7106,6 +7106,19 @@ const attributionData = {
                 "pocketjabari"
             ]
         },
+        {
+            prefix: "./media/characters/sapphy/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32221746/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/32221746/" },
+            ],
+            authors: [
+                "ocaritna"
+            ],
+            owners: [
+                "sapphy"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9842,6 +9855,14 @@ const attributionData = {
         "devoid-kiss": {
             "name": "Devoid-Kiss",
             "url": "https://www.furaffinity.net/user/devoid-kiss",
+        },
+        "sapphy": {
+            "name": "Sapphy",
+            "url": "https://www.furaffinity.net/user/sapphy/",
+        },
+        "ocaritna": {
+            "name": "ocaritna",
+            "url": "https://www.furaffinity.net/user/ocaritna",
         },
     }
 }
