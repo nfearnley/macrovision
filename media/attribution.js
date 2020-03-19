@@ -7119,6 +7119,21 @@ const attributionData = {
                 "sapphy"
             ]
         },
+        {
+            prefix: "./media/characters/kiro/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/13366898/" }
+            ],
+            authors: [
+                "zhivagod",
+                "wilhelmwulf",
+                "paper-wings",
+                "keeya"
+            ],
+            owners: [
+                "keeya"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9863,6 +9878,22 @@ const attributionData = {
         "ocaritna": {
             "name": "ocaritna",
             "url": "https://www.furaffinity.net/user/ocaritna",
+        },
+        "zhivagod": {
+            "name": "ZhivaGod",
+            "url": "https://www.furaffinity.net/user/zhivagod",
+        },
+        "wilhelmwulf": {
+            "name": "Wilhelmwulf",
+            "url": "https://www.furaffinity.net/user/wilhelmwulf",
+        },
+        "paper-wings": {
+            "name": "Paper-Wings",
+            "url": "https://www.furaffinity.net/user/paper-wings",
+        },
+        "keeya": {
+            "name": "Keeya",
+            "url": "https://www.furaffinity.net/user/keeya",
         },
     }
 }

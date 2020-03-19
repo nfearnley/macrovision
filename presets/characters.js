@@ -17437,6 +17437,40 @@ characterMakers["Sapphy"] = () => {
     )
 };
 
+characterMakers["Kiro"] = () => {
+    return makeCharacter(
+        "Kiro",
+        "Keeya",
+        {   
+             front: {
+                 height: math.unit(6, "feet"),
+                 weight: math.unit(170, "lb"),
+                 name: "Front",
+                 image: {
+                     source: "./media/characters/kiro/front.svg",
+                     extra: 1064/1012,
+                     bottom: 0.052
+                 }
+             },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(6, "inches"),
+                default: true
+            },
+            {
+                name: "Normal",
+                height: math.unit(6, "feet")
+            },                
+            {
+                name: "Macro",
+                height: math.unit(72, "feet")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
