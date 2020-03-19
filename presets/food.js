@@ -70,11 +70,11 @@ function makeFood() {
 
     results.push(
         makeHeightWeight([
-            ["blue-whale", 4.5, 125e3],
-            ["sperm-whale", 3, 42e3],
-            ["dairy-cow", 1.7, 800],
-            ["horse", 2.08, 550],
-            ["african-elephant", 3.2, 4000]
+            ["blue-whale", 4.5, "meters", 125e3, "kg"],
+            ["sperm-whale", 3, "meters", 42e3, "kg"],
+            ["dairy-cow", 1.7, "meters", 800, "kg"],
+            ["horse", 2.08, "meters", 550, "kg"],
+            ["african-elephant", 3.2, "meters", 4000, "kg"]
         ],
         "Animals",
         "",
@@ -83,11 +83,11 @@ function makeFood() {
 
     results.push(
         makeHeightWeight([
-            ["brachiosaurus", 13, 56e3],
-            ["pterodactyl", 2.3, 200],
-            ["stegosaurus", 4.5, 7e3],
-            ["tyrannosaurus", 5.2, 14e3],
-            ["velociraptor", 1.6, 15]
+            ["brachiosaurus", 13, "meters", 56e3, "kg"],
+            ["pterodactyl", 2.3, "meters", 200, "kg"],
+            ["stegosaurus", 4.5, "meters", 7e3, "kg"],
+            ["tyrannosaurus", 5.2, "meters", 14e3, "kg"],
+            ["velociraptor", 1.6, "meters", 15, "kg"]
         ],
         "Dinosaurs",
         "",
@@ -121,6 +121,16 @@ function makeFood() {
         "",
         "food"
     ));
+
+    results.push(makeHeightWeight(
+        [
+            ["m&m", 0.5262, "inches", 43/50, "g", "./media/objects/circle.svg"],
+            ["skittle", 0.50, "inches", 53/50, "g", "./media/objects/circle.svg"],
+        ],
+        "Candy",
+        "",
+        "food"
+    ))
 
     results.sort((b1, b2) => {
         e1 = b1.constructor();

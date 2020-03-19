@@ -7121,6 +7121,15 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/food/candy/",
+            files: [
+                
+            ],
+            authors: [
+                "chemicalcrux"
+            ]
+        },
+        {
             prefix: "./media/food/dinosaurs/",
             files: [
                 { name: "brachiosaurus.svg", source: "https://www.dimensions.guide/element/brachiosaurus" },
