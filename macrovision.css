@@ -80,7 +80,7 @@ body.toggle-entity-glow .entity-box:not(.selected) > img{
 
 #options {
     position: relative;
-    min-width: 120pt;
+    min-width: 200pt;
     flex: 1 0 15vw;
     display: flex;
     justify-content: start;
