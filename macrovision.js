@@ -1005,6 +1005,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector("#menu-fullscreen").addEventListener("click", toggleFullScreen);
 
+    document.querySelector("#options-show-extra").addEventListener("input", e => {
+        document.body.classList[e.target.checked ? "add" : "remove"]("show-extra-options");
+    });
+
     document.querySelector("#options-world-show-names").addEventListener("input", e => {
         document.body.classList[e.target.checked ? "add" : "remove"]("toggle-entity-name");
     });

@@ -139,11 +139,20 @@ body.toggle-entity-glow .entity-box:not(.selected) > img{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 .options-block {
     display: flex;
     text-align: center;
     min-width: 100%;
     flex-direction: column;
+}
+
+.options-block.options-block-optional {
+    display: none;
+}
+
+body.show-extra-options .options-block.options-block-optional {
+    display: flex;
 }
 
 @media (max-aspect-ratio: 1/1) {
