@@ -17577,6 +17577,93 @@ characterMakers["Aronai Sieyes"] = () => {
         ]
     )
 };
+
+characterMakers["Xuna"] = () => {
+    return makeCharacter(
+        "Xuna",
+        "Xuna",
+        {
+            front: {
+                height: math.unit(12, "feet"),
+                weight: math.unit(410, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/xuna/front.svg",
+                    extra: 2184/1980
+                }
+            },
+            side: {
+                height: math.unit(12, "feet"),
+                weight: math.unit(410, "kg"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/xuna/side.svg",
+                    extra: 2184/1980
+                }
+            },
+            back: {
+                height: math.unit(12, "feet"),
+                weight: math.unit(410, "kg"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/xuna/back.svg",
+                    extra: 2184/1980
+                }
+            },
+        },
+        [
+            {
+                name: "Nano glow",
+                height: math.unit(10, "nm")
+            },
+            {
+                name: "Micro floof",
+                height: math.unit(0.3, "m")
+            },
+            {
+                name: "Huggable softy boi",
+                height: math.unit(3.6576, "m"),
+                default: true
+            },
+            {
+                name: "Admirable floof",
+                height: math.unit(80, "meters")
+            },
+            {
+                name: "Gentle macro",
+                height: math.unit(300, "meters")
+            },
+            {
+                name: "Very careful floof",
+                height: math.unit(3200, "meters")
+            },
+            {
+                name: "The mega floof",
+                height: math.unit(36000, "meters")
+            },
+            {
+                name: "Giga-fur-Wicker",
+                height: math.unit(4800000, "meters")
+            },
+            {
+                name: "Licky world",
+                height: math.unit(20000000, "meters")
+            },
+            {
+                name: "Floofy cyan sun",
+                height: math.unit(1500000000, "meters")
+            },
+            {
+                name: "Milky Wicker",
+                height: math.unit(1000000000000000000000, "meters")
+            },
+            {
+                name: "The observing Wicker",
+                height: math.unit(999999999999999999999999999, "meters")
+            },
+        ]
+    )
+};
 //characters
 
 function makeCharacters() {

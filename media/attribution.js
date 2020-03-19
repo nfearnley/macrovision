@@ -7173,6 +7173,20 @@ const attributionData = {
                 "aronai"
             ]
         },
+        {
+            prefix: "./media/characters/xuna/",
+            files: [
+                { name: "front.svg", source: null },
+                { name: "side.svg", source: null },
+                { name: "back.svg", source: null },
+            ],
+            authors: [
+                "yabout"
+            ],
+            owners: [
+                "yabout"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9949,6 +9963,10 @@ const attributionData = {
         "verysoft": {
             "name": "VerySoft",
             "url": "https://www.furaffinity.net/user/verysoft/",
+        },
+        "yabout": {
+            "name": "Yabout",
+            "url": "https://www.furaffinity.net/user/yabout",
         },
     }
 }
