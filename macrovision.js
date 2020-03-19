@@ -131,7 +131,7 @@ function updateEntityElement(entity, element) {
     const bottomName = document.querySelector("#bottom-name-" + element.dataset.key);
 
     bottomName.style.left = position.x + entityX + "px";
-    bottomName.style.top = "95vh";
+    bottomName.style.bottom = "0vh";
     bottomName.innerText = entity.name;
 
     const topName = document.querySelector("#top-name-" + element.dataset.key);
@@ -1000,6 +1000,14 @@ function toggleFullScreen() {
     }
   }
 
+function handleResize() {
+    entityX = document.querySelector("#entities").getBoundingClientRect().x;
+    console.log(entityX)
+    canvasWidth = document.querySelector("#display").clientWidth - 100;
+    canvasHeight = document.querySelector("#display").clientHeight - 50;
+    updateSizes();
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     prepareEntities();
 
@@ -1009,13 +1017,12 @@ document.addEventListener("DOMContentLoaded", () => {
             sidebar.classList.remove("hidden");
             e.target.classList.remove("rotate-forward");
             e.target.classList.add("rotate-backward");
-            updateSizes();
         } else {
             sidebar.classList.add("hidden");
             e.target.classList.add("rotate-forward");
             e.target.classList.remove("rotate-backward");
-            updateSizes();
         }
+        handleResize();
     });
 
     document.querySelector("#menu-fullscreen").addEventListener("click", toggleFullScreen);
@@ -1341,6 +1348,16 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    
+    window.addEventListener("resize", handleResize);
+
+    // TODO: further investigate why the tool initially starts out with wrong
+    // values under certain circumstances (seems to be narrow aspect ratios -
+    // maybe the menu bar is animating when it shouldn't)
+
+    setTimeout(handleResize, 250);
+
+
     document.querySelector("#menu-permalink").addEventListener("click", e => {
         linkScene();
     });
@@ -1428,27 +1445,6 @@ function prepareEntities() {
         newButton.classList.add("category-visible");
     });
 }
-
-window.addEventListener("resize", () => {
-    entityX = document.querySelector("#entities").getBoundingClientRect().x;
-    console.log(entityX)
-    canvasWidth = document.querySelector("#display").clientWidth - 100;
-    canvasHeight = document.querySelector("#display").clientHeight - 50;
-    updateSizes();
-})
-
-// TODO: further investigate why the tool initially starts out with wrong
-// values under certain circumstances (seems to be narrow aspect ratios -
-// maybe the menu bar is animating when it shouldn't)
-
-setTimeout(() => {
-    
-    entityX = document.querySelector("#entities").getBoundingClientRect().x;
-    console.log(entityX)
-    canvasWidth = document.querySelector("#display").clientWidth - 100;
-    canvasHeight = document.querySelector("#display").clientHeight - 50;
-    updateSizes();
-}, 250);
 
 document.addEventListener("mousemove", (e) => {
     if (clicked) {
