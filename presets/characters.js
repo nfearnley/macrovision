@@ -17509,6 +17509,74 @@ characterMakers["Irishfox"] = () => {
     )
 };
 
+characterMakers["Aronai Sieyes"] = () => {
+    return makeCharacter(
+        "Aronai Sieyes",
+        "Aronai",
+        {
+            front: {
+                height: math.unit(6 + 1/12, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/aronai-sieyes/front.svg",
+                    extra: 1556/1480,
+                    bottom: 0.015
+                }
+            },
+            side: {
+                height: math.unit(6 + 1/12, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/aronai-sieyes/side.svg",
+                    extra: 1433/1390,
+                    bottom: 0.0393
+                }
+            },
+            back: {
+                height: math.unit(6 + 1/12, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/aronai-sieyes/back.svg",
+                    extra: 1544/1494,
+                    bottom: 0.02
+                }
+            },
+            frontClothed: {
+                height: math.unit(6 + 1/12, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front (Clothed)",
+                image: {
+                    source: "./media/characters/aronai-sieyes/front-clothed.svg",
+                    extra: 1582/1527
+                }
+            },
+            feral: {
+                height: math.unit(18, "feet"),
+                weight: math.unit(150 * 3 * 3 * 3, "lb"),
+                name: "Feral",
+                image: {
+                    source: "./media/characters/aronai-sieyes/feral.svg",
+                    extra: 1530/1240,
+                    bottom: 0.035
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(2, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(6 + 1/12, "feet"),
+                default: true
+            }
+        ]
+    )
+};
 //characters
 
 function makeCharacters() {

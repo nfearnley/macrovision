@@ -7146,6 +7146,33 @@ const attributionData = {
                 "irishfox"
             ]
         },
+        {
+            prefix: "./media/characters/aronai-sieyes/",
+            files: [
+                { name: "front.svg", source: "https://arokha.com/aronai/#/char" },
+                { name: "side.svg", source: "https://arokha.com/aronai/#/char" },
+                { name: "back.svg", source: "https://arokha.com/aronai/#/char" },
+                { name: "front-clothed.svg", source: "https://arokha.com/aronai/#/char" },
+            ],
+            authors: [
+                "homogeneousrule"
+            ],
+            owners: [
+                "aronai"
+            ]
+        },
+        {
+            prefix: "./media/characters/aronai-sieyes/",
+            files: [
+                { name: "feral.svg", source: null }
+            ],
+            authors: [
+                "verysoft"
+            ],
+            owners: [
+                "aronai"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9914,6 +9941,14 @@ const attributionData = {
         "tesxacoyote": {
             "name": "tesxacoyote",
             "url": "https://www.furaffinity.net/user/tesxacoyote/",
+        },
+        "aronai": {
+            "name": "Aronai",
+            "url": "https://www.arokha.com",
+        },
+        "verysoft": {
+            "name": "VerySoft",
+            "url": "https://www.furaffinity.net/user/verysoft/",
         },
     }
 }
