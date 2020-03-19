@@ -126,6 +126,7 @@ function makeFood() {
         [
             ["m&m", 0.5262, "inches", 43/50, "g", "./media/objects/circle.svg"],
             ["skittle", 0.50, "inches", 53/50, "g", "./media/objects/circle.svg"],
+            ["gummy-bear", 2, "inches", 3.5, "g"]
         ],
         "Candy",
         "",

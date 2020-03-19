@@ -7123,7 +7123,7 @@ const attributionData = {
         {
             prefix: "./media/food/candy/",
             files: [
-                
+                { name: "gummy-bear.svg", source: null }
             ],
             authors: [
                 "chemicalcrux"
