@@ -17218,9 +17218,17 @@ characterMakers["Kyrehx"] = () => {
         },
         [
             {
+                name: "Micro",
+                height: math.unit(2, "inches")
+            },
+            {
                 name: "Normal",
                 height: math.unit(8, "feet"),
                 default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(255, "feet")
             },
         ]
     )
