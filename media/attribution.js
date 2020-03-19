@@ -7147,6 +7147,8 @@ const attributionData = {
             files: [
                 { name: "hamburger.svg", source: null },
                 { name: "french-fry.svg", source: null },
+                { name: "chicken-nugget.svg", source: null },
+                { name: "onion-ring.svg", source: null },
             ],
             authors: [
                 "chemicalcrux"
