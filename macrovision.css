@@ -18,7 +18,7 @@ body {
     justify-content: flex-start;
     height: 100%;
     width: 100%;
-    font-family: 'Coda', cursive;
+    font-family: 'Coda', sans-serif;
 }
 
 .entity-box {
