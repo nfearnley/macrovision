@@ -7217,13 +7217,14 @@ const attributionData = {
                 { name: "planet-generic.svg", source: null },
                 { name: "saturn.svg", source: null },
                 { name: "milky-way.svg", source: null },
+                { name: "orbit.svg", source: null },
             ],
             authors: [
                 "chemicalcrux"
             ]
         },
         {
-            prefix: "./media/naturals/",
+            prefix: "./media/naturals/states/",
             files: [
                 { name: "alaska.svg", source: "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg" },
                 { name: "california.svg", source: "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg" },

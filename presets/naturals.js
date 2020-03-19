@@ -1,37 +1,29 @@
-function makeState(name, height, width, area) {
-    return {
+function makeState(views, name, height, width, area) {
+    views[name] = {
+        attributes: {
+            height: {
+                name: "Height",
+                power: 1,
+                type: "length",
+                base: height
+            },
+            width: {
+                name: "Width",
+                power: 1,
+                type: "length",
+                base: width
+            },
+            area: {
+                name: "Area",
+                power: 2,
+                type: "area",
+                base: area
+            },
+        },
         name: name,
-        constructor: () => makeEntity(
-            { name: name },
-            {
-                state: {
-                    attributes: {
-                        height: {
-                            name: "Height",
-                            power: 1,
-                            type: "length",
-                            base: height
-                        },
-                        width: {
-                            name: "Width",
-                            power: 1,
-                            type: "length",
-                            base: width
-                        },
-                        area: {
-                            name: "Area",
-                            power: 2,
-                            type: "area",
-                            base: area
-                        },
-                    },
-                    name: "State",
-                    image: {
-                        source: "./media/naturals/" + name.toLowerCase().replace(" ", "-") + ".svg"
-                    }
-                }
-            }
-        )
+        image: {
+            source: "./media/naturals/states/" + name.toLowerCase().replace(" ", "-") + ".svg"
+        }
     }
 }
 
@@ -81,6 +73,22 @@ function makeMountains() {
         )
     };
 }
+
+function makeStates() {
+    
+    const stateViews = {};
+
+    makeState(stateViews, "Alaska", math.unit(2071.44, "km"), math.unit(2483.83, "km"), math.unit(1723337, "km^2"));
+    makeState(stateViews, "California", math.unit(1048.82, "km"), math.unit(852.02, "km"), math.unit(423967, "km^2"));
+    makeState(stateViews, "Colorado", math.unit(442.44, "km"), math.unit(604.47, "km"), math.unit(269601, "km^2"));
+    makeState(stateViews, "Florida", math.unit(716.79, "km"), math.unit(723.97, "km"), math.unit(170312, "km^2"));
+    makeState(stateViews, "Maine", math.unit(505.94, "km"), math.unit(330.98, "km"), math.unit(91633, "km^2"));
+    makeState(stateViews, "Montana", math.unit(497.99, "km"), math.unit(983.98, "km"), math.unit(380831, "km^2"));
+    makeState(stateViews, "New York", math.unit(494.92, "km"), math.unit(536.63, "km"), math.unit(141297, "km^2"));
+    makeState(stateViews, "Texas", math.unit(1183.33, "km"), math.unit(1226.69, "km"), math.unit(695662, "km^2"));
+
+    return makeEntity( {name: "States" }, stateViews);
+}
 function makeNaturals() {
     const results = [];
 
@@ -101,18 +109,18 @@ function makeNaturals() {
         "",
         ""
     ));
-    
+
     results.push(makeHeight(
         [
-            ["orbit-of-mercury", 0.387*2, "AU", "./media/naturals/orbit.svg"],
-            ["orbit-of-venus", 0.723*2, "AU", "./media/naturals/orbit.svg"],
-            ["orbit-of-earth", 1*2, "AU", "./media/naturals/orbit.svg"],
-            ["orbit-of-mars", 1.524*2, "AU", "./media/naturals/orbit.svg"],
-            ["orbit-of-jupiter", 5.2044*2, "AU", "./media/naturals/orbit.svg"],
-            ["orbit-of-saturn", 9.5826*2, "AU", "./media/naturals/orbit.svg"],
-            ["orbit-of-uranus", 19.21840*2, "AU", "./media/naturals/orbit.svg"],
-            ["orbit-of-neptune", 30.11*2, "AU", "./media/naturals/orbit.svg"],
-            ["orbit-of-pluto", 39.482*2, "AU", "./media/naturals/orbit.svg"],
+            ["orbit-of-mercury", 0.387 * 2, "AU", "./media/naturals/orbit.svg"],
+            ["orbit-of-venus", 0.723 * 2, "AU", "./media/naturals/orbit.svg"],
+            ["orbit-of-earth", 1 * 2, "AU", "./media/naturals/orbit.svg"],
+            ["orbit-of-mars", 1.524 * 2, "AU", "./media/naturals/orbit.svg"],
+            ["orbit-of-jupiter", 5.2044 * 2, "AU", "./media/naturals/orbit.svg"],
+            ["orbit-of-saturn", 9.5826 * 2, "AU", "./media/naturals/orbit.svg"],
+            ["orbit-of-uranus", 19.21840 * 2, "AU", "./media/naturals/orbit.svg"],
+            ["orbit-of-neptune", 30.11 * 2, "AU", "./media/naturals/orbit.svg"],
+            ["orbit-of-pluto", 39.482 * 2, "AU", "./media/naturals/orbit.svg"],
         ],
         "Orbits",
         "",
@@ -137,17 +145,12 @@ function makeNaturals() {
     results.push(makePlanet("Observable Universe", math.unit(93.016e9, "lightyears"), math.unit(10e53, "kg")));
     results.push(makePlanet("Multiverse", math.unit(1e30, "lightyears"), math.unit(1e100, "kg")));
 
-    results.push(makeState("Alaska", math.unit(2071.44, "km"), math.unit(2483.83, "km"), math.unit(1723337, "km^2")));
-    results.push(makeState("California", math.unit(1048.82, "km"), math.unit(852.02, "km"), math.unit(423967, "km^2")));
-    results.push(makeState("Colorado", math.unit(442.44, "km"), math.unit(604.47, "km"), math.unit(269601, "km^2")));
-    results.push(makeState("Florida", math.unit(716.79, "km"), math.unit(723.97, "km"), math.unit(170312, "km^2")));
-    results.push(makeState("Maine", math.unit(505.94, "km"), math.unit(330.98, "km"), math.unit(91633, "km^2")));
-    results.push(makeState("Montana", math.unit(497.99, "km"), math.unit(983.98, "km"), math.unit(380831, "km^2")));
-    results.push(makeState("New York", math.unit(494.92, "km"), math.unit(536.63, "km"), math.unit(141297, "km^2")));
-    results.push(makeState("Texas", math.unit(1183.33, "km"), math.unit(1226.69, "km"), math.unit(695662, "km^2")));
+    results.push({
+        name: "States",
+        constructor: makeStates
+    });
 
     results.push(makeMountains());
-
 
 
     results.sort((b1, b2) => {
@@ -155,6 +158,7 @@ function makeNaturals() {
         e2 = b2.constructor();
         return -math.subtract(e1.views[e1.defaultView].height, e2.views[e2.defaultView].height).value;
     });
+
 
     return results;
 }
