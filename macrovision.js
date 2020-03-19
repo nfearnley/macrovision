@@ -37,6 +37,7 @@ const unitChoices = {
         "humans",
         "stories",
         "miles",
+        "solarradii",
         "AUs",
         "lightyears",
         "parsecs",

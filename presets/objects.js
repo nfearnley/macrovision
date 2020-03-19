@@ -6,6 +6,10 @@ math.createUnit("daltons", {
     definition: "1.66e-27 kg",
     prefixes: "long"
 });
+math.createUnit("solarradii", {
+    definition: "695990 km",
+    prefixes: "long"
+});
 
 function makeObject(name, viewInfo) {
     views = {};
