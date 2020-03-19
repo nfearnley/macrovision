@@ -7134,6 +7134,18 @@ const attributionData = {
                 "keeya"
             ]
         },
+        {
+            prefix: "./media/characters/irishfox/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/17906067/" }
+            ],
+            authors: [
+                "tesxacoyote"
+            ],
+            owners: [
+                "irishfox"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9894,6 +9906,14 @@ const attributionData = {
         "keeya": {
             "name": "Keeya",
             "url": "https://www.furaffinity.net/user/keeya",
+        },
+        "irishfox": {
+            "name": "IrishFox",
+            "url": "https://www.furaffinity.net/user/irishfox/",
+        },
+        "tesxacoyote": {
+            "name": "tesxacoyote",
+            "url": "https://www.furaffinity.net/user/tesxacoyote/",
         },
     }
 }

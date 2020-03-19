@@ -17456,16 +17456,54 @@ characterMakers["Kiro"] = () => {
         [
             {
                 name: "Micro",
-                height: math.unit(6, "inches"),
-                default: true
+                height: math.unit(6, "inches")
             },
             {
                 name: "Normal",
-                height: math.unit(6, "feet")
+                height: math.unit(6, "feet"),
+                default: true
             },                
             {
                 name: "Macro",
                 height: math.unit(72, "feet")
+            },
+        ]
+    )
+};
+
+characterMakers["Irishfox"] = () => {
+    return makeCharacter(
+        "Irishfox",
+        "IrishFox",
+        {
+            front: {
+                height: math.unit(5 + 9/12, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/irishfox/front.svg",
+                    extra: 1912/1680,
+                    bottom: 0.02
+                }
+            },
+        },
+        [
+            {
+                name: "Nano",
+                height: math.unit(1, "mm")
+            },
+            {
+                name: "Micro",
+                height: math.unit(2, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(5 + 9/12, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(45, "feet")
             },
         ]
     )
