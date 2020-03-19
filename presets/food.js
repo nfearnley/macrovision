@@ -112,6 +112,16 @@ function makeFood() {
         "food"
     ));
 
+    results.push(makeHeight(
+        [
+            ["hamburger", "2.5", "inches"],
+            ["french-fry", "4", "inches"]
+        ],
+        "Fast Food",
+        "",
+        "food"
+    ));
+
     results.sort((b1, b2) => {
         e1 = b1.constructor();
         e2 = b2.constructor();

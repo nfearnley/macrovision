@@ -7134,6 +7134,16 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/food/fast-food/",
+            files: [
+                { name: "hamburger.svg", source: null },
+                { name: "french-fry.svg", source: null },
+            ],
+            authors: [
+                "chemicalcrux"
+            ]
+        },
+        {
             prefix: "./media/food/fruits/",
             files: [
                 { name: "banana.svg", source: null },
