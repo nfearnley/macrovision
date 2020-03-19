@@ -1437,6 +1437,19 @@ window.addEventListener("resize", () => {
     updateSizes();
 })
 
+// TODO: further investigate why the tool initially starts out with wrong
+// values under certain circumstances (seems to be narrow aspect ratios -
+// maybe the menu bar is animating when it shouldn't)
+
+setTimeout(() => {
+    
+    entityX = document.querySelector("#entities").getBoundingClientRect().x;
+    console.log(entityX)
+    canvasWidth = document.querySelector("#display").clientWidth - 100;
+    canvasHeight = document.querySelector("#display").clientHeight - 50;
+    updateSizes();
+}, 250);
+
 document.addEventListener("mousemove", (e) => {
     if (clicked) {
         const position = snapRel(abs2rel({ x: e.clientX - dragOffsetX, y: e.clientY - dragOffsetY }));
