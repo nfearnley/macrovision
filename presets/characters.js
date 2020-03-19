@@ -17358,7 +17358,7 @@ characterMakers["Pocket Jabari"] = () => {
         {
             front: {
                 height: math.unit(3, "inches"),
-                weight: math.unit(60, "grams"),
+                weight: math.unit(8, "grams"),
                 name: "Front",
                 image: {
                     source: "./media/characters/pocket-jabari/front.svg",
@@ -17368,6 +17368,10 @@ characterMakers["Pocket Jabari"] = () => {
             },
         },
         [
+            {
+                name: "Minimicro",
+                height: math.unit(8, "mm")
+            },
             {
                 name: "Micro",
                 height: math.unit(3, "inches"),
