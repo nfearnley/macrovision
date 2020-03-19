@@ -79,6 +79,7 @@ body.toggle-entity-glow .entity-box:not(.selected) > img{
 }
 
 #options {
+    position: relative;
     min-width: 120pt;
     flex: 1 0 15vw;
     display: flex;
@@ -89,6 +90,11 @@ body.toggle-entity-glow .entity-box:not(.selected) > img{
     overflow-y: scroll;
     height: 100%;
     scrollbar-color: #e1e1e1 #888;
+}
+
+#options.hidden {
+    min-width: 0pt;
+    flex: 0 1 0vw;
 }
 
 #options-attribution {
@@ -581,4 +587,15 @@ body.toggle-height-bars .height-bar,
 
 body.toggle-bottom-cover .bottom-cover {
     display: inline-block;
+}
+
+.transitions {
+    transition: 0.2s all;
+}
+.rotate-forward {
+    transform: rotate(-90deg);
+}
+
+.rotate-backward {
+    transform: rotate(90deg);
 }

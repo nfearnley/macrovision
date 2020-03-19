@@ -59,6 +59,10 @@
   </div>
   <div id="menubar">
     <span class="menubar-group">
+      <button id="menu-toggle-sidebar">
+        <i class="fas fa-chevron-circle-down rotate-backward transitions"></i>
+        <span class="sr-only">Toggle Sidebar</span>
+      </button>
       <button id="menu-fullscreen">
         <i class="fas fa-compress" ></i>
         <span class="sr-only">Fullscreen</span>
@@ -115,7 +119,7 @@
     </span>
   </div>
   <div id="main-area">
-    <div id="options">
+    <div id="options" class="">
       <div class="options-header">World options</div>
       <span id="options-world">
         <div class="options-label">
@@ -227,7 +231,6 @@
         </span>
       </span>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLScRC-okDZ3FtzDTkbqSrpj5_OGD-1Vl-VYizOK3QM6quus11g/viewform?usp=sf_link" class="options-banner">Submit your<br>character!</a>
-      
     </div>
     <div id="world">
       <input type="range" step="0.001" min="0" max="2" value="1" class="floating-slider" id="slider-scale"/>

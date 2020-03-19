@@ -1003,6 +1003,21 @@ function toggleFullScreen() {
 document.addEventListener("DOMContentLoaded", () => {
     prepareEntities();
 
+    document.querySelector("#menu-toggle-sidebar").addEventListener("click", e => {
+        const sidebar = document.querySelector("#options");
+        if (sidebar.classList.contains("hidden")) {
+            sidebar.classList.remove("hidden");
+            e.target.classList.remove("rotate-forward");
+            e.target.classList.add("rotate-backward");
+            updateSizes();
+        } else {
+            sidebar.classList.add("hidden");
+            e.target.classList.add("rotate-forward");
+            e.target.classList.remove("rotate-backward");
+            updateSizes();
+        }
+    });
+
     document.querySelector("#menu-fullscreen").addEventListener("click", toggleFullScreen);
 
     document.querySelector("#options-show-extra").addEventListener("input", e => {
