@@ -17736,7 +17736,7 @@ characterMakers["Goldeneye"] = () => {
                 name: "Side",
                 image: {
                     source: "./media/characters/goldeneye/side.svg",
-                    extra: 1182/788,
+                    extra: 1182/778,
                     bottom: 0.067
                 }
             },
