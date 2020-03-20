@@ -17758,6 +17758,102 @@ characterMakers["Goldeneye"] = () => {
     )
 };
 
+characterMakers["Leonardo Lycheborne"] = () => {
+    return makeCharacter(
+        "Leonardo Lycheborne",
+        "Leo",
+        {
+            front: {
+                height: math.unit(6 + 1/12, "feet"),
+                weight: math.unit(210, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/leonardo-lycheborne/front.svg",
+                    extra: 390/365,
+                    bottom: 0.032
+                }
+            },
+            side: {
+                height: math.unit(6 + 1/12, "feet"),
+                weight: math.unit(210, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/leonardo-lycheborne/side.svg",
+                    extra: 390/365,
+                    bottom: 0.005
+                }
+            },
+            back: {
+                height: math.unit(6 + 1/12, "feet"),
+                weight: math.unit(210, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/leonardo-lycheborne/back.svg",
+                    extra: 392/366,
+                    bottom: 0.01
+                }
+            },
+            hand: {
+                height: math.unit(1.08, "feet"),
+                name: "Hand",
+                image: {
+                    source: "./media/characters/leonardo-lycheborne/hand.svg"
+                }
+            },
+            foot: {
+                height: math.unit(1.32, "feet"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/leonardo-lycheborne/foot.svg"
+                }
+            },
+            were: {
+                height: math.unit(20, "feet"),
+                weight: math.unit(7800, "lb"),
+                name: "Were",
+                image: {
+                    source: "./media/characters/leonardo-lycheborne/were.svg",
+                    extra: 308/294,
+                    bottom: 0.048
+                }
+            },
+            feral: {
+                height: math.unit(7.5, "feet"),
+                weight: math.unit(600, "lb"),
+                name: "Feral",
+                image: {
+                    source: "./media/characters/leonardo-lycheborne/feral.svg",
+                    extra: 210/186,
+                    bottom: 0.108
+                }
+            },
+            taur: {
+                height: math.unit(11, "feet"),
+                weight: math.unit(3300, "lb"),
+                name: "Taur",
+                image: {
+                    source: "./media/characters/leonardo-lycheborne/taur.svg",
+                    extra: 320/303,
+                    bottom: 0.025
+                }
+            },
+            barghest: {
+                height: math.unit(11, "feet"),
+                weight: math.unit(1300, "lb"),
+                name: "Barghest",
+                image: {
+                    source: "./media/characters/leonardo-lycheborne/barghest.svg",
+                    extra: 323/302,
+                    bottom: 0.027
+                }
+            },
+        },
+        [
+            
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

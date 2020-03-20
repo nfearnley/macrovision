@@ -7224,6 +7224,26 @@ const attributionData = {
                 "goldeneyegryphonsadist"
             ]
         },
+        {
+            prefix: "./media/characters/leonardo-lycheborne/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35061192/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/35061192/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/35061192/" },
+                { name: "hand.svg", source: "https://www.furaffinity.net/view/35061192/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/35061192/" },
+                { name: "were.svg", source: "https://www.furaffinity.net/view/35061227/" },
+                { name: "feral.svg", source: "https://www.furaffinity.net/view/35061227/" },
+                { name: "taur.svg", source: "https://www.furaffinity.net/view/35061227/" },
+                { name: "barghest.svg", source: "https://www.furaffinity.net/view/35061227/" },
+            ],
+            authors: [
+                "palelilly"
+            ],
+            owners: [
+                "leo-leonal"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -10021,6 +10041,14 @@ const attributionData = {
         "neltruin": {
             "name": "Neltruin",
             "url": "https://www.furaffinity.net/user/neltruin",
+        },
+        "palelilly": {
+            "name": "PaleLilly",
+            "url": "https://www.furaffinity.net/user/palelillyillustration",
+        },
+        "leo-leonal": {
+            "name": "Leo-leonal",
+            "url": "https://www.furaffinity.net/user/leo-leonal/",
         },
     }
 }
