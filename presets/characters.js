@@ -17664,6 +17664,37 @@ characterMakers["Xuna"] = () => {
         ]
     )
 };
+
+characterMakers["Arokha Sieyes"] = () => {
+    return makeCharacter(
+        "Arokha Sieyes",
+        "Aronai",
+        {
+            front: {
+                height: math.unit(5 + 9/12, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/arokha-sieyes/front.svg",
+                    extra: 1425/1284,
+                    bottom: 0.05
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 9/12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(30, "meters"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

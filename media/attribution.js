@@ -7187,6 +7187,18 @@ const attributionData = {
                 "yabout"
             ]
         },
+        {
+            prefix: "./media/characters/arokha-sieyes/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/98207/" }
+            ],
+            authors: [
+                "cownugget"
+            ],
+            owners: [
+                "aronai"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -7230,6 +7242,7 @@ const attributionData = {
                 { name: "french-fry.svg", source: null },
                 { name: "chicken-nugget.svg", source: null },
                 { name: "onion-ring.svg", source: null },
+                { name: "tater-tor.svg", source: null }
             ],
             authors: [
                 "chemicalcrux"
@@ -9967,6 +9980,10 @@ const attributionData = {
         "yabout": {
             "name": "Yabout",
             "url": "https://www.furaffinity.net/user/yabout",
+        },
+        "cownugget": {
+            "name": "Cownugget",
+            "url": "https://www.furaffinity.net/user/cownugget",
         },
     }
 }

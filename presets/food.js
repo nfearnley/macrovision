@@ -119,7 +119,8 @@ function makeFood() {
             ["chicken-nugget", 1.65, "inches"],
             ["onion-ring", 4, "inches"],
             ["donut", 75, "mm"],
-            ["bagel", 4, "inches"]
+            ["bagel", 4, "inches"],
+            ["tater-tot", 0.8, "inches"],
         ],
         "Fast Food",
         "",
