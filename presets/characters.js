@@ -17725,9 +17725,9 @@ characterMakers["Arokh Sieyes"] = () => {
     )
 };
 
-characterMakers["Goldeneye Gryphon"] = () => {
+characterMakers["Goldeneye"] = () => {
     return makeCharacter(
-        "Goldeneye Gryphon",
+        "Goldeneye",
         "Goldeneye Gryphon",
         {
             side: {
@@ -17735,7 +17735,7 @@ characterMakers["Goldeneye Gryphon"] = () => {
                 weight: math.unit(8.5, "tonnes"),
                 name: "Side",
                 image: {
-                    source: "./media/characters/goldeneye-gryphon/side.svg",
+                    source: "./media/characters/goldeneye/side.svg",
                     extra: 1182/788,
                     bottom: 0.067
                 }
@@ -17744,7 +17744,7 @@ characterMakers["Goldeneye Gryphon"] = () => {
                 height: math.unit(3.4, "feet"),
                 name: "Paw",
                 image: {
-                    source: "./media/characters/goldeneye-gryphon/paw.svg"
+                    source: "./media/characters/goldeneye/paw.svg"
                 }
             },
         },

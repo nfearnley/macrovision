@@ -7212,7 +7212,7 @@ const attributionData = {
             ]
         },
         {
-            prefix: "./media/characters/goldeneye-gryphon/",
+            prefix: "./media/characters/goldeneye/",
             files: [
                 { name: "side.svg", source: "https://www.furaffinity.net/view/9865688/" },
                 { name: "paw.svg", source: "https://www.furaffinity.net/view/9865688/" },
