@@ -722,7 +722,7 @@ function testClick(event) {
     testCtx.drawImage(target, 0, 0, w, h);
     alpha = testCtx.getImageData(Math.floor(x / ratio), Math.floor(y / ratio), 1, 1).data[3]; // [0]R [1]G [2]B [3]A
     // If pixel is transparent,
-    // retrieve the element underneath and trigger it's click event
+    // retrieve the element underneath and trigger its click event
     if (alpha === 0) {
         const oldDisplay = target.style.display;
         target.style.display = "none";
