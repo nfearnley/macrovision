@@ -17695,6 +17695,36 @@ characterMakers["Arokha Sieyes"] = () => {
     )
 };
 
+characterMakers["Arokh Sieyes"] = () => {
+    return makeCharacter(
+        "Arokh Sieyes",
+        "Aronai",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(180, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/arokh-sieyes/front.svg",
+                    extra: 1830/1769,
+                    bottom: 0.01
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(30, "meters")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

@@ -7199,6 +7199,18 @@ const attributionData = {
                 "aronai"
             ]
         },
+        {
+            prefix: "./media/characters/arokh-sieyes/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/21194203/" }
+            ],
+            authors: [
+                "creepycoon"
+            ],
+            owners: [
+                "aronai"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -9984,6 +9996,10 @@ const attributionData = {
         "cownugget": {
             "name": "Cownugget",
             "url": "https://www.furaffinity.net/user/cownugget",
+        },
+        "creepycoon": {
+            "name": "creepycoon",
+            "url": "https://www.furaffinity.net/user/creepycoon",
         },
     }
 }
