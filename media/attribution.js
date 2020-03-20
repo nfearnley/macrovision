@@ -7211,6 +7211,19 @@ const attributionData = {
                 "aronai"
             ]
         },
+        {
+            prefix: "./media/characters/goldeneye-gryphon/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/9865688/" },
+                { name: "paw.svg", source: "https://www.furaffinity.net/view/9865688/" },
+            ],
+            authors: [
+                "neltruin"
+            ],
+            owners: [
+                "goldeneyegryphonsadist"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -10000,6 +10013,14 @@ const attributionData = {
         "creepycoon": {
             "name": "creepycoon",
             "url": "https://www.furaffinity.net/user/creepycoon",
+        },
+        "goldeneyegryphonsadist": {
+            "name": "GoldeneyeGryphonSadist",
+            "url": "https://www.furaffinity.net/user/goldeneyegryphonsadist/",
+        },
+        "neltruin": {
+            "name": "Neltruin",
+            "url": "https://www.furaffinity.net/user/neltruin",
         },
     }
 }

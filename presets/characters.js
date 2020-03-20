@@ -17714,12 +17714,45 @@ characterMakers["Arokh Sieyes"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(6, "feet"),
-                default: true
+                height: math.unit(6, "feet")
             },
             {
                 name: "Macro",
-                height: math.unit(30, "meters")
+                height: math.unit(30, "meters"),
+                default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Goldeneye Gryphon"] = () => {
+    return makeCharacter(
+        "Goldeneye Gryphon",
+        "Goldeneye Gryphon",
+        {
+            side: {
+                height: math.unit(13 + 1/12, "feet"),
+                weight: math.unit(8.5, "tonnes"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/goldeneye-gryphon/side.svg",
+                    extra: 1182/788,
+                    bottom: 0.067
+                }
+            },
+            paw: {
+                height: math.unit(3.4, "feet"),
+                name: "Paw",
+                image: {
+                    source: "./media/characters/goldeneye-gryphon/paw.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(13 + 1/12, "feet"),
+                default: true
             },
         ]
     )
