@@ -17849,7 +17849,11 @@ characterMakers["Leonardo Lycheborne"] = () => {
             },
         },
         [
-            
+            {
+                name: "Normal",
+                height: math.unit(6 + 1/12, "feet"),
+                default: true
+            },
         ]
     )
 };
