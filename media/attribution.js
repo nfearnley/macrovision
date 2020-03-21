@@ -7256,6 +7256,19 @@ const attributionData = {
                 "jethyena"
             ]
         },
+        {
+            prefix: "./media/characters/tanarath/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35523881/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/35523881/" },
+            ],
+            authors: [
+                "xenoforge"
+            ],
+            owners: [
+                "tanarathdragon"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -10069,6 +10082,14 @@ const attributionData = {
         "jethyena": {
             "name": "JetHyena",
             "url": "https://www.furaffinity.net/user/jethyena",
+        },
+        "tanarathdragon": {
+            "name": "TanarathDragon",
+            "url": "https://www.furaffinity.net/user/tanarathdragon/",
+        },
+        "xenoforge": {
+            "name": "xenoforge",
+            "url": "https://linktr.ee/TheXenoForge",
         },
     }
 }

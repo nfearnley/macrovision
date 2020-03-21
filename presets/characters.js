@@ -17911,6 +17911,42 @@ characterMakers["Jet"] = () => {
     )
 };
 
+characterMakers["Tanarath"] = () => {
+    return makeCharacter(
+        "Tanarath",
+        "TanarathDragon",
+        {
+            front: {
+                height: math.unit(15, "feet"),
+                weight: math.unit(2800, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/tanarath/front.svg",
+                    extra: 2392/2220,
+                    bottom: 0.03
+                }
+            },
+            back: {
+                height: math.unit(15, "feet"),
+                weight: math.unit(2800, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/tanarath/back.svg",
+                    extra: 2392/2220,
+                    bottom: 0.03
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(15, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
