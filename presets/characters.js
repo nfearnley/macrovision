@@ -18042,7 +18042,7 @@ characterMakers["Sebi"] = () => {
         {
             frontDressed: {
                 height: math.unit(70, "cm"),
-                weight: math.unit(5, "kg"),
+                weight: math.unit(8, "kg"),
                 name: "Front (Dressed)",
                 image: {
                     source: "./media/characters/sebi/front-dressed.svg",
@@ -18052,7 +18052,7 @@ characterMakers["Sebi"] = () => {
             },
             front: {
                 height: math.unit(70, "cm"),
-                weight: math.unit(5, "kg"),
+                weight: math.unit(8, "kg"),
                 name: "Front",
                 image: {
                     source: "./media/characters/sebi/front.svg",
