@@ -7293,6 +7293,19 @@ const attributionData = {
                 "capputhesheep"
             ]
         },
+        {
+            prefix: "./media/characters/sebi/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33701903/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/33701903/" },
+            ],
+            authors: [
+                "pinklionart"
+            ],
+            owners: [
+                "deathywolfi"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -10130,6 +10143,14 @@ const attributionData = {
         "hachisama": {
             "name": "hachisama",
             "url": "https://www.furaffinity.net/user/hachisama",
+        },
+        "deathywolfi": {
+            "name": "DeathyWolfi",
+            "url": "https://www.furaffinity.net/user/deathywolfi/",
+        },
+        "pinklionart": {
+            "name": "pinklionart",
+            "url": "https://www.furaffinity.net/user/pinklionart",
         },
     }
 }

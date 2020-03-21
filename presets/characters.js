@@ -18035,6 +18035,46 @@ characterMakers["Cappu"] = () => {
     )
 };
 
+characterMakers["Sebi"] = () => {
+    return makeCharacter(
+        "Sebi",
+        "DeathyWolfi",
+        {
+            frontDressed: {
+                height: math.unit(70, "cm"),
+                weight: math.unit(5, "kg"),
+                name: "Front (Dressed)",
+                image: {
+                    source: "./media/characters/sebi/front-dressed.svg",
+                    extra: 713.5/686.5,
+                    bottom: 0.003
+                }
+            },
+            front: {
+                height: math.unit(70, "cm"),
+                weight: math.unit(5, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/sebi/front.svg",
+                    extra: 713.5/686.5,
+                    bottom: 0.003
+                }
+            }
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(70, "cm")
+            },
+            {
+                name: "Macro",
+                height: math.unit(8, "meters"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
