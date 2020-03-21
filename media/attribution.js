@@ -7281,6 +7281,18 @@ const attributionData = {
                 "archangel2100"
             ]
         },
+        {
+            prefix: "./media/characters/cappu/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33636186/" }
+            ],
+            authors: [
+                "hachisama"
+            ],
+            owners: [
+                "capputhesheep"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -10110,6 +10122,14 @@ const attributionData = {
         "alicefrainer": {
             "name": "AliceFrainer",
             "url": "https://www.furaffinity.net/user/alicefrainer/",
+        },
+        "capputhesheep": {
+            "name": "Cappu",
+            "url": "https://www.furaffinity.net/user/capputhesheep/",
+        },
+        "hachisama": {
+            "name": "hachisama",
+            "url": "https://www.furaffinity.net/user/hachisama",
         },
     }
 }

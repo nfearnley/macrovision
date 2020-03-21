@@ -18009,6 +18009,32 @@ characterMakers["Patty CattyBatty"] = () => {
     )
 };
 
+characterMakers["Cappu"] = () => {
+    return makeCharacter(
+        "Cappu",
+        "CappuTheSheep",
+        {
+            front: {
+                height: math.unit(4 + 5/12, "feet"),
+                weight: math.unit(90, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/cappu/front.svg",
+                    extra: 1247/1152,
+                    bottom: 0.012
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(4 + 5/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
