@@ -7244,6 +7244,18 @@ const attributionData = {
                 "leo-leonal"
             ]
         },
+        {
+            prefix: "./media/characters/jet/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "tyrirtusky"
+            ],
+            owners: [
+                "jethyena"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -10049,6 +10061,14 @@ const attributionData = {
         "leo-leonal": {
             "name": "Leo-leonal",
             "url": "https://www.furaffinity.net/user/leo-leonal/",
+        },
+        "tyrirtusky": {
+            "name": "Tyrir",
+            "url": "https://twitter.com/tyrirtusky",
+        },
+        "jethyena": {
+            "name": "JetHyena",
+            "url": "https://www.furaffinity.net/user/jethyena",
         },
     }
 }

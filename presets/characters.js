@@ -17858,6 +17858,50 @@ characterMakers["Leonardo Lycheborne"] = () => {
     )
 };
 
+characterMakers["Jet"] = () => {
+    return makeCharacter(
+        "Jet",
+        "JetHyena",
+        {
+            front: {
+                height: math.unit(10, "feet"),
+                weight: math.unit(350, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/jet/front.svg",
+                    extra: 2050/1980,
+                    bottom: 0.013
+                }
+            },
+            back: {
+                height: math.unit(10, "feet"),
+                weight: math.unit(350, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/jet/back.svg",
+                    extra: 2050/1980,
+                    bottom: 0.013
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(6, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(10, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(100, "feet")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
