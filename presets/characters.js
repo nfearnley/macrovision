@@ -14402,7 +14402,8 @@ characterMakers["Verin Raharra"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(7 + 5/12, "feet")
+                height: math.unit(7 + 5/12, "feet"),
+                default: true
             },
             {
                 name: "Upsized",
@@ -14465,7 +14466,8 @@ characterMakers["Lily"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(4.91, "feet")
+                height: math.unit(4.91, "feet"),
+                default: true
             },
         ]
     )
@@ -14490,7 +14492,8 @@ characterMakers["Sheila"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(4 + 4/12, "feet")
+                height: math.unit(4 + 4/12, "feet"),
+                default: true
             },
         ]
     )
@@ -14638,7 +14641,8 @@ characterMakers["Venio Darcony"] = () => {
             },
             {
                 name: "Macro",
-                height: math.unit(130, "feet")
+                height: math.unit(130, "feet"),
+                default: true
             },
             {
                 name: "Macro+",
@@ -15595,7 +15599,8 @@ characterMakers["Lyla"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(2, "feet")
+                height: math.unit(2, "feet"),
+                default: true
             },
         ]
     )
@@ -15619,7 +15624,8 @@ characterMakers["Perseus"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(1.8, "feet")
+                height: math.unit(1.8, "feet"),
+                default: true
             },
         ]
     )
@@ -15642,7 +15648,8 @@ characterMakers["Remus"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(4 + 2/12, "feet")
+                height: math.unit(4 + 2/12, "feet"),
+                default: true
             },
         ]
     )
@@ -16019,7 +16026,8 @@ characterMakers["Anima"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(8, "feet")
+                height: math.unit(8, "feet"),
+                default: true
             },
         ]
     )
@@ -16219,7 +16227,8 @@ characterMakers["Kernel"] = () => {
             },
             {
                 name: "Normal",
-                height: math.unit(1.7, "m")
+                height: math.unit(1.7, "m"),
+                default: true
             },
         ]
     )
