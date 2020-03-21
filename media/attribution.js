@@ -7306,6 +7306,24 @@ const attributionData = {
                 "deathywolfi"
             ]
         },
+        {
+            prefix: "./media/characters/typhek/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/26577537/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/26577537/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/26577537/" },
+                { name: "palm.svg", source: "https://www.furaffinity.net/view/26577537/" },
+                { name: "fist.svg", source: "https://www.furaffinity.net/view/26577537/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/26577537/" },
+                { name: "sole.svg", source: "https://www.furaffinity.net/view/26577537/" },
+            ],
+            authors: [
+                "st3ph3n"
+            ],
+            owners: [
+                "adam0800"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -10151,6 +10169,14 @@ const attributionData = {
         "pinklionart": {
             "name": "pinklionart",
             "url": "https://www.furaffinity.net/user/pinklionart",
+        },
+        "st3ph3n": {
+            "name": "st3ph3n",
+            "url": "https://www.furaffinity.net/user/st3ph3n/",
+        },
+        "adam0800": {
+            "name": "Adam0800",
+            "url": "https://www.furaffinity.net/user/adam0800",
         },
     }
 }

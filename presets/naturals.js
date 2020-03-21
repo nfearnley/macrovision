@@ -129,12 +129,12 @@ function makeNaturals() {
 
     results.push(makeHeightWeight(
         [
-            ["Sun", 1, "solarradii", 1, "solarmasses", "./media/naturals/planet-generic.svg"],
+            ["Sun", 2*1, "solarradii", 1, "solarmasses", "./media/naturals/planet-generic.svg"],
             ["White Dwarf", 14000, "km", 1e30, "kg", "./media/naturals/planet-generic.svg"],
-            ["Polaris", 37.5, "solarradii", 5.4, "solarmasses", "./media/naturals/planet-generic.svg"],
-            ["Sun (Red Giant)", 256, "solarradii", 1, "solarmasses", "./media/naturals/planet-generic.svg"],
-            ["Betelgeuse", 887, "solarradii", 11.6, "solarmasses", "./media/naturals/planet-generic.svg"],
-            ["VY Canis Majoris", 1420, "solarradii", 17, "solarmasses", "./media/naturals/planet-generic.svg"],
+            ["Polaris", 2*37.5, "solarradii", 5.4, "solarmasses", "./media/naturals/planet-generic.svg"],
+            ["Sun (Red Giant)", 2*256, "solarradii", 1, "solarmasses", "./media/naturals/planet-generic.svg"],
+            ["Betelgeuse", 2*887, "solarradii", 11.6, "solarmasses", "./media/naturals/planet-generic.svg"],
+            ["VY Canis Majoris", 2*1420, "solarradii", 17, "solarmasses", "./media/naturals/planet-generic.svg"],
         ],
         "Stars",
         "",
@@ -142,7 +142,7 @@ function makeNaturals() {
     ));
 
     results.push(makePlanet("Milky Way", math.unit(105700, "lightyears"), math.unit(3e+39, "kg"), { source: "./media/naturals/milky-way.svg" }));
-    results.push(makePlanet("Observable Universe", math.unit(93.016e9, "lightyears"), math.unit(10e53, "kg")));
+    results.push(makePlanet("Observable Universe", math.unit(1, "universe"), math.unit(10e53, "kg")));
     results.push(makePlanet("Multiverse", math.unit(1e30, "lightyears"), math.unit(1e100, "kg")));
 
     results.push({

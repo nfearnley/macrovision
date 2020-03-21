@@ -18075,6 +18075,92 @@ characterMakers["Sebi"] = () => {
     )
 };
 
+characterMakers["Typhek"] = () => {
+    return makeCharacter(
+        "Typhek",
+        "Adam0800",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/typhek/front.svg",
+                    extra: 1948/1929,
+                    bottom: 0.025
+                }
+            },
+            side: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/typhek/side.svg",
+                    extra: 2034/2010,
+                    bottom: 0.003
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/typhek/back.svg",
+                    extra: 2005/1978,
+                    bottom: 0.004
+                }
+            },
+            palm: {
+                height: math.unit(1.2, "feet"),
+                name: "Palm",
+                image: {
+                    source: "./media/characters/typhek/palm.svg"
+                }
+            },
+            fist: {
+                height: math.unit(1.1, "feet"),
+                name: "Fist",
+                image: {
+                    source: "./media/characters/typhek/fist.svg"
+                }
+            },
+            foot: {
+                height: math.unit(1.57, "feet"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/typhek/foot.svg"
+                }
+            },
+            sole: {
+                height: math.unit(2.05, "feet"),
+                name: "Sole",
+                image: {
+                    source: "./media/characters/typhek/sole.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(40, "stories"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(1, "mile")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(4000, "solarradii")
+            },
+            {
+                name: "Universal",
+                height: math.unit(1.1, "universes")
+            }
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

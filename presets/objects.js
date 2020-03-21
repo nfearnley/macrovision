@@ -14,6 +14,23 @@ math.createUnit("solarmasses", {
     definition: "2e30 kg",
     prefixes: "long"
 });
+math.createUnit("galaxy", {
+    definition: "105700 lightyears",
+    prefixes: "long"
+});
+math.createUnit("galaxies", {
+    definition: "105700 lightyears",
+    prefixes: "long"
+});
+math.createUnit("universe", {
+    definition: "93.016e9 lightyears",
+    prefixes: "long"
+});
+math.createUnit("universes", {
+    definition: "93.016e9 lightyears",
+    prefixes: "long"
+});
+
 
 function makeObject(name, viewInfo) {
     views = {};
