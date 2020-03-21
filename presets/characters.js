@@ -17947,6 +17947,68 @@ characterMakers["Tanarath"] = () => {
     )
 };
 
+characterMakers["Patty CattyBatty"] = () => {
+    return makeCharacter(
+        "Patty CattyBatty",
+        "Archangel2100",
+        {
+            front: {
+                height: math.unit(7 + 1/12, "feet"),
+                weight: math.unit(175, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/patty-cattybatty/front.svg",
+                    extra: 908/874,
+                    bottom: 0.025
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(1, "inch")
+            },
+            {
+                name: "Normal",
+                height: math.unit(7 + 1/12, "feet")
+            },
+            {
+                name: "Mini Macro",
+                height: math.unit(155, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(1077, "feet")
+            },
+            {
+                name: "Mega Macro",
+                height: math.unit(47650, "feet"),
+                default: true
+            },
+            {
+                name: "Giga Macro",
+                height: math.unit(440, "miles")
+            },
+            {
+                name: "Tera Macro",
+                height: math.unit(8700, "miles")
+            },
+            {
+                name: "Planetary Macro",
+                height: math.unit(32700, "miles")
+            },
+            {
+                name: "Solar Macro",
+                height: math.unit(550000, "miles")
+            },
+            {
+                name: "Celestial Macro",
+                height: math.unit(2.5, "AU")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

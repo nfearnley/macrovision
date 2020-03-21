@@ -7269,6 +7269,18 @@ const attributionData = {
                 "tanarathdragon"
             ]
         },
+        {
+            prefix: "./media/characters/patty-cattybatty/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35514053/" }
+            ],
+            authors: [
+                "alicefrainer"
+            ],
+            owners: [
+                "archangel2100"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -10090,6 +10102,14 @@ const attributionData = {
         "xenoforge": {
             "name": "xenoforge",
             "url": "https://linktr.ee/TheXenoForge",
+        },
+        "archangel2100": {
+            "name": "Archangel2100",
+            "url": "https://www.furaffinity.net/user/archangel2100/",
+        },
+        "alicefrainer": {
+            "name": "AliceFrainer",
+            "url": "https://www.furaffinity.net/user/alicefrainer/",
         },
     }
 }
