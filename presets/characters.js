@@ -18161,6 +18161,67 @@ characterMakers["Typhek"] = () => {
     )
 };
 
+characterMakers["Kassy"] = () => {
+    return makeCharacter(
+        "Kassy",
+        "kclt",
+        {
+            side: {
+                height: math.unit(5 + 7/12, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/kassy/side.svg",
+                    extra: 1280/1225,
+                    bottom: 0.002
+                }
+            },
+            front: {
+                height: math.unit(5 + 7/12, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/kassy/front.svg",
+                    extra: 1280/1225,
+                    bottom: 0.025
+                }
+            },
+            back: {
+                height: math.unit(5 + 7/12, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/kassy/back.svg",
+                    extra: 1280/1225,
+                    bottom: 0.002
+                }
+            },
+            foot: {
+                height: math.unit(1.266, "feet"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/kassy/foot.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 7/12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(137, "feet"),
+                default: true
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(1, "mile")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

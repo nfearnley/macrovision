@@ -7324,6 +7324,21 @@ const attributionData = {
                 "adam0800"
             ]
         },
+        {
+            prefix: "./media/characters/kassy/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/18230883/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/25362507/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/18230883/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/18230883/" },
+            ],
+            authors: [
+                "kclt"
+            ],
+            owners: [
+                "kclt"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -10177,6 +10192,10 @@ const attributionData = {
         "adam0800": {
             "name": "Adam0800",
             "url": "https://www.furaffinity.net/user/adam0800",
+        },
+        "kclt": {
+            "name": "kclt",
+            "url": "https://www.furaffinity.net/user/kclt/",
         },
     }
 }
