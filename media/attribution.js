@@ -7375,6 +7375,18 @@ const attributionData = {
                 "mzmm"
             ]
         },
+        {
+            prefix: "./media/characters/ijzer/",
+            files: [
+                { name: "side.svg", source: null }
+            ],
+            authors: [
+                "ijzer"
+            ],
+            owners: [
+                "ijzer"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -10236,6 +10248,10 @@ const attributionData = {
         "mzmm": {
             "name": "mZmm",
             "url": "https://www.furaffinity.net/user/mzmm/",
+        },
+        "ijzer": {
+            "name": "Ijzer",
+            "url": "https://twitter.com/PurpleDerg",
         },
     }
 }

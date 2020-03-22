@@ -18312,6 +18312,48 @@ characterMakers["Milo"] = () => {
     )
 };
 
+characterMakers["Ijzer"] = () => {
+    return makeCharacter(
+        "Ijzer",
+        "Ijzer",
+        {
+            side: {
+                height: math.unit(8, "meters"),
+                weight: math.unit(90000, "kg"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/ijzer/side.svg",
+                    extra: 2756/1600,
+                    bottom: 0.01
+                }
+            },
+        },
+        [
+            {
+                name: "Small",
+                height: math.unit(3, "meters")
+            },
+            {
+                name: "Normal",
+                height: math.unit(8, "meters"),
+                default: true
+            },
+            {
+                name: "Normal+",
+                height: math.unit(10, "meters")
+            },
+            {
+                name: "Bigger",
+                height: math.unit(24, "meters")
+            },
+            {
+                name: "Huge",
+                height: math.unit(80, "meters")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
