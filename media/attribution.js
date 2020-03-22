@@ -7363,6 +7363,18 @@ const attributionData = {
                 "mzmm"
             ]
         },
+        {
+            prefix: "./media/characters/milo/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/25198244/" }
+            ],
+            authors: [
+                "pocketopossum"
+            ],
+            owners: [
+                "mzmm"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
