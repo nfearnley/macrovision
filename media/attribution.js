@@ -7387,6 +7387,20 @@ const attributionData = {
                 "ijzer"
             ]
         },
+        {
+            prefix: "./media/characters/luca-cervicum/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/27176530/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/27176530/" },
+                { name: "front-gear.svg", source: "https://www.furaffinity.net/view/27176530/" },
+            ],
+            authors: [
+                "purplelove"
+            ],
+            owners: [
+                "luca-cervicum"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -10252,6 +10266,14 @@ const attributionData = {
         "ijzer": {
             "name": "Ijzer",
             "url": "https://twitter.com/PurpleDerg",
+        },
+        "purplelove": {
+            "name": "purplelove",
+            "url": "https://www.furaffinity.net/user/purplelove",
+        },
+        "luca-cervicum": {
+            "name": "Luca Cervicum",
+            "url": "https://www.furaffinity.net/user/lucacervicum/",
         },
     }
 }

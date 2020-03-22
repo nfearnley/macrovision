@@ -18354,6 +18354,52 @@ characterMakers["Ijzer"] = () => {
     )
 };
 
+characterMakers["Luca Cervicum"] = () => {
+    return makeCharacter(
+        "Luca Cervicum",
+        "Luca Cervicum",
+        {
+            front: {
+                height: math.unit(6 + 2/12, "feet"),
+                weight: math.unit(153, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/luca-cervicum/front.svg",
+                    extra: 370/327,
+                    bottom: 0.015
+                }
+            },
+            back: {
+                height: math.unit(6 + 2/12, "feet"),
+                weight: math.unit(153, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/luca-cervicum/back.svg",
+                    extra: 367/333,
+                    bottom: 0.005
+                }
+            },
+            frontGear: {
+                height: math.unit(6 + 2/12, "feet"),
+                weight: math.unit(173, "lb"),
+                name: "Front (Gear)",
+                image: {
+                    source: "./media/characters/luca-cervicum/front-gear.svg",
+                    extra: 377/333,
+                    bottom: 0.006
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6 + 2/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
