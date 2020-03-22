@@ -7339,6 +7339,18 @@ const attributionData = {
                 "kclt"
             ]
         },
+        {
+            prefix: "./media/characters/neil/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/22274416/" }
+            ],
+            authors: [
+                "phietto"
+            ],
+            owners: [
+                "mzmm"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -10196,6 +10208,10 @@ const attributionData = {
         "kclt": {
             "name": "kclt",
             "url": "https://www.furaffinity.net/user/kclt/",
+        },
+        "mzmm": {
+            "name": "mZmm",
+            "url": "https://www.furaffinity.net/user/mzmm/",
         },
     }
 }

@@ -18222,6 +18222,36 @@ characterMakers["Kassy"] = () => {
     )
 };
 
+characterMakers["Neil"] = () => {
+    return makeCharacter(
+        "Neil",
+        "mZmm",
+        {
+            front: {
+                height: math.unit(6 + 1/12, "feet"),
+                weight: math.unit(200, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/neil/front.svg",
+                    extra: 1250/1326,
+                    bottom: 0.023
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6 + 1/12, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(200, "feet")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
