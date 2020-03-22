@@ -5117,7 +5117,7 @@ const attributionData = {
                 { name: "side.svg", source: "https://www.furaffinity.net/view/31547387/" },
             ],
             authors: [
-                "pocket-opossum"
+                "pocketopossum"
             ],
             owners: [
                 "yozey"
@@ -7351,6 +7351,18 @@ const attributionData = {
                 "mzmm"
             ]
         },
+        {
+            prefix: "./media/characters/atticus/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/27212834/" }
+            ],
+            authors: [
+                "pocketopossum"
+            ],
+            owners: [
+                "mzmm"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -8121,7 +8133,7 @@ const attributionData = {
             "name": "Teal",
             "url": "https://www.furaffinity.net/user/pilli10"
         },
-        "pocket-opossum": {
+        "pocketopossum": {
             "name": "Pocket Opossum",
             "url": "https://www.furaffinity.net/user/pocketopossum/"
         },

@@ -18233,7 +18233,7 @@ characterMakers["Neil"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/neil/front.svg",
-                    extra: 1250/1326,
+                    extra: 1326/1250,
                     bottom: 0.023
                 }
             },
@@ -18247,6 +18247,36 @@ characterMakers["Neil"] = () => {
             {
                 name: "Macro",
                 height: math.unit(200, "feet")
+            },
+        ]
+    )
+};
+
+characterMakers["Atticus"] = () => {
+    return makeCharacter(
+        "Atticus",
+        "mZmm",
+        {
+            front: {
+                height: math.unit(5 + 9/12, "feet"),
+                weight: math.unit(190, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/atticus/front.svg",
+                    extra: 2934/2785,
+                    bottom: 0.025
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 9/12, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(180, "feet")
             },
         ]
     )
