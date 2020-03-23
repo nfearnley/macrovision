@@ -775,13 +775,11 @@ function displayAttribution(file) {
         div.innerText = "Unknown";
         authorHolder.innerHTML = "";
         authorHolder.appendChild(div);
-        console.warn("No authors: " + file);
     } else if (authors === undefined) {
         const div = document.createElement("div");
         div.innerText = "Not yet entered";
         authorHolder.innerHTML = "";
         authorHolder.appendChild(div);
-        console.warn("No authors: " + file);
     } else {
         authorHolder.innerHTML = "";
 
@@ -814,7 +812,6 @@ function displayAttribution(file) {
         div.innerText = "Not yet entered";
         ownerHolder.innerHTML = "";
         ownerHolder.appendChild(div);
-        console.warn("No owners: " + file);
     } else {
         ownerHolder.innerHTML = "";
 
@@ -866,9 +863,19 @@ function removeEntity(element) {
     bottomName.parentElement.removeChild(bottomName);
     element.parentElement.removeChild(element);
 
-
 }
+
+function checkEntity(entity) {
+    Object.values(entity.views).forEach(view => {
+        if (authorsOf(view.image.source) === undefined) {
+            console.warn("No authors: " + view.image.source);
+        }
+    });
+}
+
 function displayEntity(entity, view, x, y, selectEntity=false) {
+    checkEntity(entity);
+    
     const box = document.createElement("div");
     box.classList.add("entity-box");
 

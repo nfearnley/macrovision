@@ -5747,7 +5747,11 @@ const attributionData = {
         {
             prefix: "./media/characters/vulpes/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/27057320/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/27057320/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/27057320/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/27057320/" },
+                { name: "feet.svg", source: "https://www.furaffinity.net/view/27057320/" },
+                { name: "maw.svg", source: "https://www.furaffinity.net/view/27057320/" },
             ],
             authors: [
                 "voondahbayosh",

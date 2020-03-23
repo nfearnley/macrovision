@@ -2606,7 +2606,9 @@ characterMakers["Vulpes"] = () => {
                 weight: math.unit(200, "lbs"),
                 name: "Front",
                 image: {
-                    source: "./media/characters/vulpes/front.svg"
+                    source: "./media/characters/vulpes/front.svg",
+                    extra: 573/543,
+                    bottom: 0.033
                 }
             },
             side: {
@@ -2614,7 +2616,9 @@ characterMakers["Vulpes"] = () => {
                 weight: math.unit(200, "lbs"),
                 name: "Side",
                 image: {
-                    source: "./media/characters/vulpes/side.svg"
+                    source: "./media/characters/vulpes/side.svg",
+                    extra: 573/543,
+                    bottom: 0.01
                 }
             },
             back: {
@@ -2622,7 +2626,8 @@ characterMakers["Vulpes"] = () => {
                 weight: math.unit(200, "lbs"),
                 name: "Back",
                 image: {
-                    source: "./media/characters/vulpes/back.svg"
+                    source: "./media/characters/vulpes/back.svg",
+                    extra: 573/543,
                 }
             },
             feet: {
@@ -2630,6 +2635,13 @@ characterMakers["Vulpes"] = () => {
                 name: "Feet",
                 image: {
                     source: "./media/characters/vulpes/feet.svg"
+                }
+            },
+            maw: {
+                height: math.unit(1.18, "feet"),
+                name: "Maw",
+                image: {
+                    source: "./media/characters/vulpes/maw.svg"
                 }
             },
 
