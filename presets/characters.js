@@ -1418,7 +1418,9 @@ characterMakers["Erestrebah"] = () => {
                 weight: math.unit(50, "kg"),
                 name: "Front",
                 image: {
-                    source: "./media/characters/erestrebah/front.svg"
+                    source: "./media/characters/erestrebah/front.svg",
+                    extra: 208/193,
+                    bottom: 0.055
                 }
             },
             back: {
@@ -1427,7 +1429,7 @@ characterMakers["Erestrebah"] = () => {
                 name: "Back",
                 image: {
                     source: "./media/characters/erestrebah/back.svg",
-                    extra: 1.2139
+                    extra: 1.3
                 }
             }
         },
@@ -3249,7 +3251,27 @@ characterMakers["Prince"] = () => {
                 name: "Normal",
                 height: math.unit(7.75, "feet"),
                 default: true
-            }
+            },
+            {
+                name: "Not cute",
+                height: math.unit(17, "feet")
+            },
+            {
+                name: "I said NOT",
+                height: math.unit(91, "feet")
+            },
+            {
+                name: "Please stop",
+                height: math.unit(560, "feet")
+            },
+            {
+                name: "What have you done",
+                height: math.unit(2200, "feet")
+            },
+            {
+                name: "Deer God",
+                height: math.unit(3.6, "miles")
+            },
         ]
     )
 };
@@ -3265,7 +3287,8 @@ characterMakers["Psymon"] = () => {
                 name: "Standing",
                 image: {
                     source: "./media/characters/psymon/standing.svg",
-                    extra: 1888/1810
+                    extra: 1888/1810,
+                    bottom: 0.05
                 }
             },
             slithering: {
@@ -3292,7 +3315,27 @@ characterMakers["Psymon"] = () => {
                 name: "Normal",
                 height: math.unit(11.25, "feet"),
                 default: true
-            }
+            },
+            {
+                name: "Large",
+                height: math.unit(27, "feet")
+            },
+            {
+                name: "Giant",
+                height: math.unit(87, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(365, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(3, "miles")
+            },
+            {
+                name: "World Serpent",
+                height: math.unit(8000, "miles")
+            },
         ]
     )
 };
@@ -3308,7 +3351,8 @@ characterMakers["Daimos"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/daimos/front.svg",
-                    extra: 4160/3897
+                    extra: 4160/3897,
+                    bottom: 0.021
                 }
             }
         },
@@ -3317,7 +3361,19 @@ characterMakers["Daimos"] = () => {
                 name: "Normal",
                 height: math.unit(8, "feet"),
                 default: true
-            }
+            },
+            {
+                name: "Big Dog",
+                height: math.unit(22, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(127, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(3600, "feet")
+            },
         ]
     )
 };
@@ -3363,7 +3419,23 @@ characterMakers["Blake"] = () => {
                 name: "Normal",
                 height: math.unit(8 + 1/6, "feet"),
                 default: true
-            }
+            },
+            {
+                name: "Big Backside",
+                height: math.unit(37, "feet")
+            },
+            {
+                name: "Subway Shredder",
+                height: math.unit(72, "feet")
+            },
+            {
+                name: "City Carver",
+                height: math.unit(1675, "feet")
+            },
+            {
+                name: "Tectonic Tweaker",
+                height: math.unit(2300, "miles")
+            },
         ]
     )
 };
@@ -3379,7 +3451,8 @@ characterMakers["Guisetto"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/guisetto/front.svg",
-                    extra: 856/817
+                    extra: 856/817,
+                    bottom: 0.06
                 }
             },
             airborne: {
@@ -3397,7 +3470,15 @@ characterMakers["Guisetto"] = () => {
                 name: "Normal",
                 height: math.unit(10 + 11/12, "feet"),
                 default: true
-            }
+            },
+            {
+                name: "Large",
+                height: math.unit(35, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(475, "feet")
+            },
         ]
     )
 };
@@ -3472,10 +3553,26 @@ characterMakers["Huoyan"] = () => {
         },
         [
             {
+                name: "Chef",
+                height: math.unit(9, "feet")
+            },
+            {
                 name: "Normal",
                 height: math.unit(65, "feet"),
                 default: true
-            }
+            },
+            {
+                name: "Macro",
+                height: math.unit(780, "feet")
+            },
+            {
+                name: "Flaming Mountain",
+                height: math.unit(4.8, "miles")
+            },
+            {
+                name: "Celestial",
+                height: math.unit(765000, "miles")
+            },
         ]
     )
 };

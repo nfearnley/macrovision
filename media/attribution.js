@@ -1625,11 +1625,22 @@ const attributionData = {
             prefix: "./media/characters/blake/",
             files: [
                 { name: "side.svg", source: "https://www.furaffinity.net/view/30676178/" },
-                { name: "crouched.svg", source: "https://www.furaffinity.net/view/30676178/" },
                 { name: "bent.svg", source: "https://www.furaffinity.net/view/30676178/" },
             ],
             authors: [
                 "zyraxus"
+            ],
+            owners: [
+                "kurrikage"
+            ]
+        },
+        {
+            prefix: "./media/characters/blake/",
+            files: [
+                { name: "crouched.svg", source: "https://www.furaffinity.net/view/35473789/" },
+            ],
+            authors: [
+                "hornedfreak"
             ],
             owners: [
                 "kurrikage"
@@ -2213,7 +2224,7 @@ const attributionData = {
         {
             prefix: "./media/characters/erestrebah/",
             files: [
-                { name: "front.svg", source: "http://www.furaffinity.net/view/26085781/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/26128898/" }
             ],
             authors: [
                 "missyazriel"
@@ -2225,7 +2236,7 @@ const attributionData = {
         {
             prefix: "./media/characters/erestrebah/",
             files: [
-                { name: "front.svg", source: "http://www.furaffinity.net/view/18577161/" }
+                { name: "back.svg", source: "https://www.furaffinity.net/view/18583680/" }
             ],
             authors: [
                 "wintuk"
@@ -7545,6 +7556,139 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/huoyan/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/26473925/" }
+            ],
+            authors: [
+                "allosaurex"
+            ],
+            owners: [
+                "kurrikage"
+            ]
+        },
+        {
+            prefix: "./media/characters/huoyan/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/29789905/" }
+            ],
+            authors: [
+                "hornedfreak"
+            ],
+            owners: [
+                "kurrikage"
+            ]
+        },
+        {
+            prefix: "./media/characters/psymon/",
+            files: [
+                { name: "standing.svg", source: "https://www.furaffinity.net/view/32891306/" },
+                { name: "slithering.svg", source: "https://www.furaffinity.net/view/32891306/" },
+            ],
+            authors: [
+                "farorenightclaw"
+            ],
+            owners: [
+                "kurrikage"
+            ]
+        },
+        {
+            prefix: "./media/characters/psymon/",
+            files: [
+                { name: "slithering-alt.svg", source: "https://www.furaffinity.net/view/32986285/" },
+            ],
+            authors: [
+                "capree"
+            ],
+            owners: [
+                "kurrikage"
+            ]
+        },
+        {
+            prefix: "./media/characters/guisetto/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/20611230/" }
+            ],
+            authors: [
+                "killveous"
+            ],
+            owners: [
+                "kurrikage"
+            ]
+        },
+        {
+            prefix: "./media/characters/guisetto/",
+            files: [
+                { name: "airborne.svg", source: "https://www.furaffinity.net/view/21467702/" }
+            ],
+            authors: [
+                "twistedteeth"
+            ],
+            owners: [
+                "kurrikage"
+            ]
+        },
+        {
+            prefix: "./media/characters/prince/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/25738787/" }
+            ],
+            authors: [
+                "missyazriel"
+            ],
+            owners: [
+                "kurrikage"
+            ]
+        },
+        {
+            prefix: "./media/characters/prince/",
+            files: [
+                { name: "jump.svg", source: "https://www.furaffinity.net/view/25910757/" }
+            ],
+            authors: [
+                "idefix"
+            ],
+            owners: [
+                "kurrikage"
+            ]
+        },
+        {
+            prefix: "./media/characters/daimos/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/27264189/" }
+            ],
+            authors: [
+                "smooshkin"
+            ],
+            owners: [
+                "kurrikage"
+            ]
+        },
+        {
+            prefix: "./media/characters/lux/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34261485/" }
+            ],
+            authors: [
+                "dnk-anais"
+            ],
+            owners: [
+                "kurrikage"
+            ]
+        },
+        {
+            prefix: "./media/characters/lux/",
+            files: [
+                { name: "back.svg", source: "https://www.furaffinity.net/view/35317494/" }
+            ],
+            authors: [
+                "capree"
+            ],
+            owners: [
+                "kurrikage"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -8140,7 +8284,7 @@ const attributionData = {
             "url": "https://www.furaffinity.net/user/homogenousrule"
         },
         "hornedfreak": {
-            "name": "Hornedfreak",
+            "name": "hornedfreak",
             "url": "https://www.furaffinity.net/user/hornedfreak"
         },
         "i-am-an-eaglet": {
@@ -10418,6 +10562,38 @@ const attributionData = {
         "luca-cervicum": {
             "name": "Luca Cervicum",
             "url": "https://www.furaffinity.net/user/lucacervicum/",
+        },
+        "allosaurex": {
+            "name": "Allosaurex",
+            "url": "https://www.furaffinity.net/user/allosaurex",
+        },
+        "farorenightclaw": {
+            "name": "farorenightclaw",
+            "url": "https://www.furaffinity.net/user/farorenightclaw",
+        },
+        "capree": {
+            "name": "capree",
+            "url": "https://www.furaffinity.net/user/capree",
+        },
+        "killveous": {
+            "name": "Killveous",
+            "url": "https://www.furaffinity.net/user/killveous",
+        },
+        "twistedteeth": {
+            "name": "twistedteeth",
+            "url": "https://www.furaffinity.net/user/twistedteeth",
+        },
+        "idefix": {
+            "name": "idefix",
+            "url": "https://www.furaffinity.net/user/idefix",
+        },
+        "smooshkin": {
+            "name": "smooshkin",
+            "url": "https://www.furaffinity.net/user/smooshkin",
+        },
+        "dnk-anais": {
+            "name": "dnk-anais",
+            "url": "https://www.furaffinity.net/user/dnk-anais",
         },
     }
 }
