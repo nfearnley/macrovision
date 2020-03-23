@@ -3835,7 +3835,9 @@ characterMakers["Gin"] = () => {
                 weight: math.unit(170, "lbs"),
                 name: "Front",
                 image: {
-                    source: "./media/characters/gin/front.svg"
+                    source: "./media/characters/gin/front.svg",
+                    extra: 1.053,
+                    bottom: 0.025
                 }
             },
             foot: {

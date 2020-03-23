@@ -7666,7 +7666,7 @@ const attributionData = {
             ]
         },
         {
-            prefix: "./media/characters/lux/",
+            prefix: "./media/characters/luxor/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/34261485/" }
             ],
@@ -7678,7 +7678,7 @@ const attributionData = {
             ]
         },
         {
-            prefix: "./media/characters/lux/",
+            prefix: "./media/characters/luxor/",
             files: [
                 { name: "back.svg", source: "https://www.furaffinity.net/view/35317494/" }
             ],
@@ -7687,6 +7687,69 @@ const attributionData = {
             ],
             owners: [
                 "kurrikage"
+            ]
+        },
+        {
+            prefix: "./media/characters/vivian/",
+            files: [
+                { name: "stomping.svg", source: "https://www.furaffinity.net/view/21702945/" },
+                { name: "sitting.svg", source: "https://www.furaffinity.net/view/21787301/" },
+            ],
+            authors: [
+                "fauxlacine"
+            ],
+            owners: [
+                "fauxlacine"
+            ]
+        },
+        {
+            prefix: "./media/characters/cryae/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/34372310/" }
+            ],
+            authors: [
+                "anuta-belko"
+            ],
+            owners: [
+                "vercursar"
+            ]
+        },
+        {
+            prefix: "./media/characters/cynosura/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/31144728/" }
+            ],
+            authors: [
+                "hhazard"
+            ],
+            owners: [
+                "cynosura"
+            ]
+        },
+        {
+            prefix: "./media/characters/cynosura/",
+            files: [
+                { name: "back.svg", source: "https://www.furaffinity.net/view/34184301/" }
+            ],
+            authors: [
+                "softdragons"
+            ],
+            owners: [
+                "cynosura"
+            ]
+        },
+        {
+            prefix: "./media/characters/gin/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34278152/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/34278152/" },
+                { name: "sole.svg", source: "https://www.furaffinity.net/view/34794072/" },
+            ],
+            authors: [
+                "mug"
+            ],
+            owners: [
+                "ozzie-gt"
             ]
         },
         //characters
@@ -10594,6 +10657,18 @@ const attributionData = {
         "dnk-anais": {
             "name": "dnk-anais",
             "url": "https://www.furaffinity.net/user/dnk-anais",
+        },
+        "cynosura": {
+            "name": "Cynosura",
+            "url": "https://www.furaffinity.net/user/cynosura/",
+        },
+        "anuta-belko": {
+            "name": "anuta_belko",
+            "url": "https://www.furaffinity.net/user/anutabelko/",
+        },
+        "ozzie-gt": {
+            "name": "Ozzie_gt",
+            "url": "https://www.furaffinity.net/user/ozziegt/",
         },
     }
 }
