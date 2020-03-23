@@ -7401,6 +7401,150 @@ const attributionData = {
                 "luca-cervicum"
             ]
         },
+        {
+            prefix: "./media/characters/oliver/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Oliver" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
+        {
+            prefix: "./media/characters/shane/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Shane" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
+        {
+            prefix: "./media/characters/shin/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Shin" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
+        {
+            prefix: "./media/characters/xerxes/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Xerxes" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
+        {
+            prefix: "./media/characters/chaska/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Chaska" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
+        {
+            prefix: "./media/characters/enuk/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Enuk" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
+        {
+            prefix: "./media/characters/bruun/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Bruun" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
+        {
+            prefix: "./media/characters/alexeev/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Alexeev" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
+        {
+            prefix: "./media/characters/evelyn/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Evelyn" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
+        {
+            prefix: "./media/characters/inca/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Inca" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
+        {
+            prefix: "./media/characters/magdalene/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Magdalene" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
+        {
+            prefix: "./media/characters/mera/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Mera" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
