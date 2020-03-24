@@ -18821,6 +18821,41 @@ characterMakers["Mera"] = () => {
     )
 };
 
+characterMakers["Ceres"] = () => {
+    return makeCharacter(
+        "Ceres",
+        "Radarn",
+        {
+            front: {
+                height: math.unit(6 + 7/12, "feet"),
+                weight: math.unit(160, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/ceres/front.svg",
+                    extra: 1023/950,
+                    bottom: 0.027
+                }
+            },
+            back: {
+                height: math.unit(6 + 7/12, "feet"),
+                weight: math.unit(160, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/ceres/back.svg",
+                    extra: 1023/950
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6 + 7/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

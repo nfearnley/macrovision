@@ -7756,6 +7756,19 @@ const attributionData = {
                 "ozzie-gt"
             ]
         },
+        {
+            prefix: "./media/characters/ceres/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/19731950/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/19731950/" },
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "radarn"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
@@ -7836,6 +7849,20 @@ const attributionData = {
             ],
             authors: [
                 "anonymous"
+            ]
+        },
+        {
+            prefix: "./media/games/halo/halo/",
+            files: [
+                { name: "side.svg", source: null },
+                { name: "edge.svg", source: null },
+                { name: "angled.svg", source: null },
+            ],
+            authors: [
+                "chemicalcrux"
+            ],
+            owners: [
+                "halo"
             ]
         },
         {
@@ -10673,6 +10700,14 @@ const attributionData = {
         "ozzie-gt": {
             "name": "Ozzie_gt",
             "url": "https://www.furaffinity.net/user/ozziegt/",
+        },
+        "halo": {
+            "name": "Halo",
+            "url": "https://en.wikipedia.org/wiki/Halo_(franchise)",
+        },
+        "radarn": {
+            "name": "Radarn",
+            "url": "https://www.furaffinity.net/user/radarn/",
         },
     }
 }
