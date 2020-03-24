@@ -7769,6 +7769,18 @@ const attributionData = {
                 "radarn"
             ]
         },
+        {
+            prefix: "./media/characters/kris/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/23828882/" },
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "radarn"
+            ]
+        },
         //characters
         {
             prefix: "./media/food/animals/",
