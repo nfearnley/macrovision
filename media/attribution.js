@@ -7847,7 +7847,8 @@ const attributionData = {
         {
             prefix: "./media/food/candy/",
             files: [
-                { name: "gummy-bear.svg", source: null }
+                { name: "gummy-bear.svg", source: null },
+                { name: "lifesaver.svg", source: null },
             ],
             authors: [
                 "chemicalcrux"
