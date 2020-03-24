@@ -18912,6 +18912,44 @@ characterMakers["Taluthus"] = () => {
     )
 };
 
+characterMakers["Dawn"] = () => {
+    return makeCharacter(
+        "Dawn",
+        "Radarn",
+        {
+            front: {
+                height: math.unit(5 + 9/12, "feet"),
+                weight: math.unit(145, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/dawn/front.svg",
+                    extra: 2094/2016,
+                    bottom: 0.025
+                }
+            },
+            back: {
+                height: math.unit(5 + 9/12, "feet"),
+                weight: math.unit(160, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/dawn/back.svg",
+                    extra: 2112/2080,
+                    bottom: 0.005
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6 + 7/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
+
+
 //characters
 
 function makeCharacters() {

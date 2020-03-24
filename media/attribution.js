@@ -7803,6 +7803,19 @@ const attributionData = {
                 "taluthus"
             ]
         },
+        {
+            prefix: "./media/characters/dawn/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/27707123/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/27707123/" },
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "radarn"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
