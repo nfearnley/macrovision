@@ -7791,6 +7791,18 @@ const attributionData = {
                 "radarn"
             ]
         },
+        {
+            prefix: "./media/characters/taluthus/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/23381216/" }
+            ],
+            authors: [
+                "greatwhitejill"
+            ],
+            owners: [
+                "taluthus"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -10730,6 +10742,14 @@ const attributionData = {
         "radarn": {
             "name": "Radarn",
             "url": "https://www.furaffinity.net/user/radarn/",
+        },
+        "greatwhitejill": {
+            "name": "greatwhitejill",
+            "url": "https://www.furaffinity.net/user/greatwhitejill",
+        },
+        "taluthus": {
+            "name": "Taluthus",
+            "url": "https://www.furaffinity.net/user/taluthus",
         },
     }
 }

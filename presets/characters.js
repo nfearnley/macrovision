@@ -18881,6 +18881,37 @@ characterMakers["Kris"] = () => {
         ]
     )
 };
+
+characterMakers["Taluthus"] = () => {
+    return makeCharacter(
+        "Taluthus",
+        "Taluthus",
+        {
+            front: {
+                height: math.unit(7, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/taluthus/front.svg",
+                    extra: 903/833,
+                    bottom: 0.015
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(7, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(300, "feet")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
