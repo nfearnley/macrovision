@@ -18889,7 +18889,7 @@ characterMakers["Taluthus"] = () => {
         {
             front: {
                 height: math.unit(7, "feet"),
-                weight: math.unit(150, "lb"),
+                weight: math.unit(120, "kg"),
                 name: "Front",
                 image: {
                     source: "./media/characters/taluthus/front.svg",
