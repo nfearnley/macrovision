@@ -1129,6 +1129,16 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/buildings/street-lamps/",
+            files: [
+                { name: "residential.svg", source: null },
+                { name: "freeway.svg", source: null },
+            ],
+            authors: [
+                "chemicalcrux"
+            ]
+        },
+        {
             prefix: "./media/cities/",
             files: [
                 { name: "city_atlanta.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},

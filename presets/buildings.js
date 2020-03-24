@@ -160,6 +160,18 @@ function makeBuildings() {
         )
     )
 
+    results.push(
+        makeHeight (
+            [
+                ["residential", 12, "feet"],
+                ["freeway", 50, "feet"]
+            ],
+            "Street Lamps",
+            "",
+            "buildings"
+        )
+    )
+
     results.sort((b1, b2) => {
         e1 = b1.constructor();
         e2 = b2.constructor();
