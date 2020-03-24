@@ -1011,7 +1011,6 @@ function toggleFullScreen() {
 
 function handleResize() {
     entityX = document.querySelector("#entities").getBoundingClientRect().x;
-    console.log(entityX)
     canvasWidth = document.querySelector("#display").clientWidth - 100;
     canvasHeight = document.querySelector("#display").clientHeight - 50;
     updateSizes();
@@ -1240,6 +1239,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     world.addEventListener("mousedown", e => deselect());
+    document.querySelector("#entities").addEventListener("mousedown", deselect);
     document.querySelector("#display").addEventListener("mousedown", deselect);
     document.addEventListener("mouseup", e => clickUp(e));
     document.addEventListener("touchend", e => {
