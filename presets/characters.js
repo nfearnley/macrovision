@@ -17686,7 +17686,7 @@ characterMakers["Aronai Sieyes"] = () => {
         },
         [
             {
-                name: "Normal",
+                name: "Micro",
                 height: math.unit(2, "inches")
             },
             {
