@@ -8169,6 +8169,22 @@ const attributionData = {
                 "chemicalcrux"
             ]
         },
+        {
+            prefix: "./media/vehicles/trains/",
+            files: [
+                { name: "train_60'-boxcar-side.svg", source: "https://www.gbrx.com/manufacturing/north-america-rail/boxcars/60-plate-f-boxcar/" },
+                { name: "train_60'-boxcar-front.svg", source: "https://www.gbrx.com/manufacturing/north-america-rail/boxcars/60-plate-f-boxcar/" },
+                { name: "train_64'-flatcar-side.svg", source: "https://www.gbrx.com/manufacturing/north-america-rail/flatcars/64-heavy-duty-flatcar/" },
+                { name: "train_64'-flatcar-front.svg", source: "https://www.gbrx.com/manufacturing/north-america-rail/flatcars/64-heavy-duty-flatcar/" },
+                { name: "train_3250-cubic-ft-hopper-side.svg", source: "https://www.gbrx.com/manufacturing/north-america-rail/covered-hopper-railcars/3250-covered-hopper-railcar/" },
+                { name: "train_3250-cubic-ft-hopper-front.svg", source: "https://www.gbrx.com/manufacturing/north-america-rail/covered-hopper-railcars/3250-covered-hopper-railcar/" },
+                { name: "train_28600-gallon-tank-car-side.svg", source: "https://www.gbrx.com/manufacturing/north-america-rail/tank-cars/286k-crude-oil-tank-car/" },
+                { name: "train_28600-gallon-tank-car-front.svg", source: "https://www.gbrx.com/manufacturing/north-america-rail/tank-cars/286k-crude-oil-tank-car/" },
+            ],
+            authors: [
+                "chemicalcrux"
+            ]
+        },
     ],
     people: {
         "ahastar": {

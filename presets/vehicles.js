@@ -260,6 +260,54 @@ function makeBuses() {
     return entity;
 }
 
+function makeVehicleGroup(info, name, prefix) {
+    sides = {}
+
+    let defaultHeight;
+
+    info.forEach(vehicle => {
+        Object.entries(vehicle.sides).forEach(([sideName, data]) => {
+            if (!defaultHeight) {
+                defaultHeight = data.height;
+            }
+            sides[vehicle.name + " (" + sideName + ")"] = {
+                name: vehicle.name + " (" + sideName + ")",
+                rename: true,
+                height: data.height,
+                mass: vehicle.mass,
+                image: { source: "./media/vehicles/" + name.replace(/ /g, "-").toLowerCase() + "/" + prefix + "_" + vehicle.name.replace(/ /g, "-").toLowerCase() + "-" + sideName.replace(/ /g, "-").toLowerCase() + ".svg", extra: (data.extra ? data.extra : 1) }
+            };
+        });
+    });
+
+    console.log(sides)
+
+    const entity = makeMultiVehicle(name, sides);
+
+    entity.sizes.push({
+        name: "1:72",
+        height: math.unit(math.divide(defaultHeight,72))
+    });
+    entity.sizes.push({
+        name: "1:24",
+        height: math.unit(math.divide(defaultHeight,24))
+    });
+    entity.sizes.push({
+        name: "1:16",
+        height: math.unit(math.divide(defaultHeight,16))
+    });
+    entity.sizes.push({
+        name: "1:8",
+        height: math.unit(math.divide(defaultHeight,8))
+    });
+    entity.sizes.push({
+        name: "1:4",
+        height: math.unit(math.divide(defaultHeight,4))
+    });
+
+    return entity;
+}
+
 function makeVehicles() {
     const results = [];
 
@@ -366,6 +414,46 @@ function makeVehicles() {
     results.push({
         name: "Buses",
         constructor: () => makeBuses()
+    });
+    
+    results.push({
+        name: "Trains",
+        constructor: () => makeVehicleGroup([
+            {
+                name: "60' Boxcar",
+                mass: math.unit(80900, "lbs"),
+                sides: {
+                    "Side": { height: math.unit(17, "feet") },
+                    "Front": { height: math.unit(17, "feet") }
+                }
+            },
+            {
+                name: "64' Flatcar",
+                mass: math.unit(66000, "lbs"),
+                sides: {
+                    "Side": { height: math.unit(5.03, "feet") },
+                    "Front": { height: math.unit(5.03, "feet") },
+                }
+            },
+            {
+                name: "3250 Cubic Ft Hopper",
+                mass: math.unit(52000, "lbs"),
+                sides: {
+                    "Side": { height: math.unit(15 + 3/12, "feet") },
+                    "Front": { height: math.unit(15 + 3/12, "feet") },
+                }
+            },
+            {
+                name: "28600 Gallon Tank Car",
+                mass: math.unit(93000, "lbs"),
+                sides: {
+                    "Side": { height: math.unit(15 + 5.7/12, "feet") },
+                    "Front": { height: math.unit(15 + 5.7/12, "feet") },
+                }
+            }
+        ],
+        "Trains",
+        "train")
     });
 
     return results;
