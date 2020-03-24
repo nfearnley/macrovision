@@ -7783,6 +7783,20 @@ const attributionData = {
         },
         //characters
         {
+            prefix: "./media/fiction/halo/halo/",
+            files: [
+                { name: "side.svg", source: null },
+                { name: "edge.svg", source: null },
+                { name: "angled.svg", source: null },
+            ],
+            authors: [
+                "chemicalcrux"
+            ],
+            owners: [
+                "halo"
+            ]
+        },
+        {
             prefix: "./media/food/animals/",
             files: [
                 { name: "blue-whale.svg", source: "https://www.dimensions.guide/element/blue-whale" },
@@ -7861,20 +7875,6 @@ const attributionData = {
             ],
             authors: [
                 "anonymous"
-            ]
-        },
-        {
-            prefix: "./media/games/halo/halo/",
-            files: [
-                { name: "side.svg", source: null },
-                { name: "edge.svg", source: null },
-                { name: "angled.svg", source: null },
-            ],
-            authors: [
-                "chemicalcrux"
-            ],
-            owners: [
-                "halo"
             ]
         },
         {
