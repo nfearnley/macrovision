@@ -156,6 +156,11 @@ body.toggle-entity-glow .entity-box:not(.selected) > img{
     flex-direction: column;
 }
 
+.options-label {
+    text-align: center;
+    user-select: none;
+}
+
 .options-block.options-block-optional {
     display: none;
 }
@@ -184,6 +189,8 @@ body.show-extra-options .options-block.options-block-optional {
     font-size: 24pt;
     margin-top: 10px;
     margin-bottom: 10px;
+    background: #333;
+    user-select: none;
 }
 
 .options-banner {
@@ -193,6 +200,7 @@ body.show-extra-options .options-block.options-block-optional {
     margin-bottom: 10px;
     background: #232;
     text-decoration: none;
+    user-select: none;
 }
 
 .options-banner:hover {
@@ -268,10 +276,6 @@ body.toggle-scale #display {
     flex: 0 1;
     width: 100%;
     font-size: 150%;
-}
-
-.options-label {
-    text-align: center;
 }
 
 .options-row .options-field-numeric {
