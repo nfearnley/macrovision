@@ -31,16 +31,14 @@
 
 <body class="toggle-bottom-name toggle-top-name toggle-scale">
   <div id="help">
-    <h1>Discord</h1>
-    <p>
-      <ul>
-        <li><a href="https://discord.gg/vqcKVV6">Join the Discord server!</a></li>
-      </ul>
-    </p>
+    <h1>Menu</h1>
+    <div id="help-icons">
+
+    </div>
     <h1>Navigation</h1>
     <p>
       <ul>
-        <li>Scroll to zoom in/out. Entities will go off the top of the screen if they're in the air and you zoom in!</li>
+        <li>Scroll to zoom in/out.</li>
 
         <li>Alt-scroll to zoom in/out and preserve positions on the screen.</li>
         
@@ -50,69 +48,25 @@
     <h1>Adding/removing entities</h1>
     <p>
       <ul>
-        <li>Drag something to the top of the screen to delete it, or press the delete key</li>
+        <li>Remove the selected entity with the Delete key</li>
+        <li>Alternatively, drag them off the top of the screen</li>
       </ul>
-    </p>
-    <h1>Adding your own character</h1>
-    <p>
-      <a href="https://docs.google.com/forms/d/1esagCHSNd1kvCFoTGfCacaHXe2L8dKalqgKEHqHgGuM/edit">Submit your stuff here!</a>
     </p>
     <button id="close-help">Close</button>
   </div>
   <div id="menubar">
-    <span class="menubar-group">
-      <button id="menu-toggle-sidebar">
-        <i class="fas fa-chevron-circle-down rotate-backward transitions"></i>
-        <span class="sr-only">Toggle Sidebar</span>
-      </button>
-      <button id="menu-fullscreen">
-        <i class="fas fa-compress" ></i>
-        <span class="sr-only">Fullscreen</span>
-      </button>
-    </span>
-    <span class="menubar-group">
-      <button id="menu-clear">
-        <i class="fas fa-trash-alt"></i>
-        <span class="sr-only">Clear</span>
-      </button>
-    </span>
-    <span class="menubar-group">
-      <button id="menu-order-height">
-        <i class="fas fa-sort-numeric-up"></i>
-        <span class="sr-only">Sort</span>
-      </button>
-    </span>
-    <span class="menubar-group">
-      <button id="menu-permalink">
-        <i class="fas fa-link"></i>
-        <span class="sr-only">Permalink</span>
-      </button>
-      <button id="menu-export">
-        <i class="fas fa-share"></i>
-        <span class="sr-only">Export</span>
-      </button>
-      <button id="menu-save">
-        <i class="fas fa-download"></i>
-        <span class="sr-only">Save</span>
-      </button>
-      <button id="menu-load">
-        <i class="fas fa-upload"></i>
-        <span class="sr-only">Load</span>
-      </button>
-    </span>
     <span class="menubar-group" id="spawners">
 
     </span>
-  </span>
-  <span class="menubar-group" id="scenes">
-    <button id="load-scene">
-      <i class="fas fa-cloud-upload-alt"></i>
-        <span class="sr-only">Load Scene</span>
-    </button>
-    <select id="scene-choices">
+    <span class="menubar-group" id="scenes">
+      <button id="load-scene">
+        <i class="fas fa-cloud-upload-alt"></i>
+          <span class="sr-only">Load Scene</span>
+      </button>
+      <select id="scene-choices">
 
-    </select>
-  </span>
+      </select>
+    </span>
     <span class="menubar-group">
       <button id="open-help">
         <i class="far fa-question-circle"></i>

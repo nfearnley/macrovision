@@ -1016,7 +1016,133 @@ function handleResize() {
     updateSizes();
 }
 
+function prepareMenu() {
+
+    const menubar = document.querySelector("#menubar");
+    const help = document.querySelector("#help-icons");
+    const spawners = document.querySelector("#spawners");
+
+    [
+        [
+            {
+                name: "Show/hide sidebar",
+                id: "menu-toggle-sidebar",
+                icon: "fas fa-chevron-circle-down",
+                rotates: true
+            },
+            {
+                name: "Fullscreen",
+                id: "menu-fullscreen",
+                icon: "fas fa-compress"
+            }
+        ],
+        [
+            {
+                name: "Clear",
+                id: "menu-clear",
+                icon: "fas fa-trash-alt"
+            }
+        ],
+        [
+            {
+                name: "Sort by height",
+                id: "menu-order-height",
+                icon: "fas fa-sort-numeric-up"
+            }
+        ],
+        [
+            {
+                name: "Permalink",
+                id: "menu-permalink",
+                icon: "fas fa-link"
+            },
+            {
+                name: "Export",
+                id: "menu-export",
+                icon: "fas fa-share"
+            },
+            {
+                name: "Save",
+                id: "menu-save",
+                icon: "fas fa-download"
+            },
+            {
+                name: "Load",
+                id: "menu-load",
+                icon: "fas fa-upload"
+            }
+        ]
+    ].forEach(group => {
+        const span = document.createElement("span");
+        span.classList.add("menubar-group");
+        group.forEach(entry => {
+            const button = document.createElement("button");
+            button.id = entry.id;
+
+            const icon = document.createElement("i");
+            icon.classList.add(...entry.icon.split(" "));
+            
+            if (entry.rotates) {
+                icon.classList.add("rotate-backward", "transitions");
+            }
+
+            const srText = document.createElement("span");
+            srText.classList.add("sr-only");
+            srText.innerText = entry.name;
+
+            button.appendChild(icon);
+            button.appendChild(srText);
+
+            span.appendChild(button);
+
+            const helperEntry = document.createElement("div");
+            const helperIcon = document.createElement("icon");
+            const helperText = document.createElement("span");
+
+            helperIcon.classList.add(...entry.icon.split(" "));
+            helperText.innerText = entry.name;
+            
+            helperEntry.appendChild(helperIcon);
+            helperEntry.appendChild(helperText);
+
+            help.appendChild(helperEntry);
+        });
+
+        menubar.insertBefore(span, spawners);
+    });
+
+    if (checkHelpDate()) {
+        document.querySelector("#open-help").classList.add("highlighted");
+    }
+}
+
+const lastHelpChange = 1585150501917;
+
+function checkHelpDate() {
+    try {
+        const old = localStorage.getItem("help-viewed");
+
+        if (old === null || old < lastHelpChange) {
+            return true;
+        }
+
+        return false;
+    } catch {
+        console.warn("Could not set the help-viewed date");
+        return false;
+    }
+}
+
+function setHelpDate() {
+    try {
+        localStorage.setItem("help-viewed", Date.now());
+    } catch {
+        console.warn("Could not set the help-viewed date");
+    }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
+    prepareMenu();
     prepareEntities();
 
     document.querySelector("#menu-toggle-sidebar").addEventListener("click", e => {
@@ -1160,6 +1286,8 @@ document.addEventListener("DOMContentLoaded", () => {
     canvasHeight = document.querySelector("#display").clientHeight - 50;
 
     document.querySelector("#open-help").addEventListener("click", e => {
+        setHelpDate();
+        document.querySelector("#open-help").classList.remove("highlighted");
         document.querySelector("#help").classList.add("visible");
     });
 
