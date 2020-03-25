@@ -408,6 +408,8 @@ function deselect() {
         selected.classList.remove("selected");
     }
 
+    document.getElementById("options-selected-entity-none").selected = "selected";
+
     clearAttribution();
 
     selected = null;
@@ -420,6 +422,8 @@ function select(target) {
     deselect();
     selected = target;
     selectedEntity = entities[target.dataset.key];
+
+    document.getElementById("options-selected-entity-" + target.dataset.key).selected = "selected";
 
     selected.classList.add("selected");
     
@@ -869,6 +873,10 @@ function removeEntity(element) {
     if (selected == element) {
         deselect();
     }
+
+    const option = document.querySelector("#options-selected-entity-" + element.dataset.key);
+    option.parentElement.removeChild(option);
+
     delete entities[element.dataset.key];
     const bottomName = document.querySelector("#bottom-name-" + element.dataset.key);
     bottomName.parentElement.removeChild(bottomName);
@@ -959,6 +967,13 @@ function displayEntity(entity, view, x, y, selectEntity=false) {
     topName.addEventListener("click", () => select(box));
 
     world.appendChild(topName);
+    
+    const entityOption = document.createElement("option");
+    entityOption.id = "options-selected-entity-" + entityIndex;
+    entityOption.value = entityIndex;
+    entityOption.innerText = entity.name;
+
+    document.getElementById("options-selected-entity").appendChild(entityOption);
     entityIndex += 1;
     if (config.autoFit) {
         fitWorld();
@@ -1155,6 +1170,15 @@ function setHelpDate() {
 document.addEventListener("DOMContentLoaded", () => {
     prepareMenu();
     prepareEntities();
+
+    document.querySelector("#options-selected-entity").addEventListener("input", e => {
+        if (e.target.value == "none") {
+            deselect()
+        } else {
+            select(document.querySelector("#entity-" + e.target.value));
+        }
+        
+    });
 
     document.querySelector("#menu-toggle-sidebar").addEventListener("click", e => {
         const sidebar = document.querySelector("#options");
