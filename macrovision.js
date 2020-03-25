@@ -612,7 +612,7 @@ function configViewOptions(entity, view) {
         });
 
 
-        input.addEventListener("input", e => {
+        input.addEventListener("change", e => {
             const value = input.value == 0 ? 1 : input.value;
             entity.views[view][key] = math.unit(value, select.value);
             entity.dirty = true;

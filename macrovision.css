@@ -90,7 +90,7 @@ body.toggle-entity-glow .entity-box:not(.selected) > img{
     flex-direction: column;
     background: #444;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
     height: 100%;
     scrollbar-color: #e1e1e1 #888;
 }
@@ -144,21 +144,27 @@ body.toggle-entity-glow .entity-box:not(.selected) > img{
 .options-row {
     display: flex;
     text-align: center;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .options-block {
     display: flex;
     text-align: center;
-    min-width: 100%;
+    min-width: 90%;
+    width: 90%;
+    margin: auto;
     flex-direction: column;
 }
 
 .options-label {
     text-align: center;
     user-select: none;
+    margin-top: 12px;
+    margin-bottom: 4px;
 }
 
 .options-block.options-block-optional {
