@@ -1372,7 +1372,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
         if (shiftHeld) {
-            const dir = e.deltaY > 0 ? 0.9 : 1.1;
+            const dir = e.deltaY > 0 ? 10/11 : 11/10;
             if (selected) {
                 const entity = entities[selected.dataset.key];
                 entity.views[entity.view].height = math.multiply(entity.views[entity.view].height, dir);
@@ -1383,7 +1383,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
         } else {
-            const dir = e.deltaY < 0 ? 0.9 : 1.1;
+            const dir = e.deltaY < 0 ? 10/11 : 11/10;
             setWorldHeight(config.height, math.multiply(config.height, dir));
             updateWorldOptions();
         }
