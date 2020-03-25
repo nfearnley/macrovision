@@ -467,6 +467,9 @@ function updateWorldOptions(entity, view) {
 
 function configEntityOptions(entity, view) {
     const holder = document.querySelector("#options-entity");
+    
+    document.querySelector("#entity-category-header").style.display = "block";
+    document.querySelector("#entity-category").style.display = "block";
 
     holder.innerHTML = "";
 
@@ -559,16 +562,23 @@ function updateEntityOptions(entity, view) {
 }
 
 function clearEntityOptions() {
+    document.querySelector("#entity-category-header").style.display = "none";
+    document.querySelector("#entity-category").style.display = "none";
+    /*
     const holder = document.querySelector("#options-entity");
 
     holder.innerHTML = "";
 
     document.querySelector("#options-entity-defaults").innerHTML = "";
     document.querySelector("#options-ordering").style.display = "none";
+    document.querySelector("#options-ordering").style.display = "none";*/
 }
 
 function configViewOptions(entity, view) {
     const holder = document.querySelector("#options-view");
+    
+    document.querySelector("#view-category-header").style.display = "block";
+    document.querySelector("#view-category").style.display = "block";
 
     holder.innerHTML = "";
 
@@ -670,9 +680,8 @@ function getSortedEntities() {
 }
 
 function clearViewOptions() {
-    const holder = document.querySelector("#options-view");
-
-    holder.innerHTML = "";
+    document.querySelector("#view-category-header").style.display = "none";
+    document.querySelector("#view-category").style.display = "none";
 }
 
 // this is a crime against humanity, and also stolen from
@@ -757,10 +766,12 @@ function removeAllEntities() {
 }
 
 function clearAttribution() {
+    document.querySelector("#attribution-category-header").style.display = "none";
     document.querySelector("#options-attribution").style.display = "none";
 }
 
 function displayAttribution(file) {
+    document.querySelector("#attribution-category-header").style.display = "block";
     document.querySelector("#options-attribution").style.display = "inline";
     const authors = authorsOfFull(file);
     const owners = ownersOfFull(file);
@@ -1502,6 +1513,10 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#menu-load").addEventListener("click", e => {
         loadScene();
     });
+
+    clearEntityOptions();
+    clearViewOptions();
+    clearAttribution();
 });
 
 function prepareEntities() {
