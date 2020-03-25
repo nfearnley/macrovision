@@ -1429,14 +1429,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    document.querySelector("#options-world-autofit-mode").addEventListener("input", e => {
-        config.autoFitMode = e.target.value;
-
-        if (config.autoFit) {
-            fitWorld();
-        }
-    })
-
     document.addEventListener("keydown", e => {
         if (e.key == "Delete") {
             if (selected) {
