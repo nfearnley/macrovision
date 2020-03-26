@@ -7855,6 +7855,18 @@ const attributionData = {
                 "deathywolfi"
             ]
         },
+        {
+            prefix: "./media/characters/juniper/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35396495/" }
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "dahwchooa"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -10835,6 +10847,10 @@ const attributionData = {
         "frozen-iceblade": {
             "name": "Frozen-Iceblade",
             "url": "https://www.furaffinity.net/user/frozen-iceblade/",
+        },
+        "dahwchooa": {
+            "name": "dahwchooa",
+            "url": "https://www.furaffinity.net/user/dahwchooa/",
         },
     }
 }

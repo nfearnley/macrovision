@@ -19092,6 +19092,31 @@ characterMakers["Deathy"] = () => {
     )
 };
 
+characterMakers["Juniper"] = () => {
+    return makeCharacter(
+        "Juniper",
+        "Dahwchooa",
+        {
+            front: {
+                height: math.unit(16, "feet"),
+                weight: math.unit(4000, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/juniper/front.svg",
+                    bottom: 0.04
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(16, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 
 //characters
 
