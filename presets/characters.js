@@ -18948,6 +18948,46 @@ characterMakers["Dawn"] = () => {
     )
 };
 
+characterMakers["Arador"] = () => {
+    return makeCharacter(
+        "Arador",
+        "AradorTD",
+        {
+            anthro: {
+                height: math.unit(8 + 3/12, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Anthro",
+                image: {
+                    source: "./media/characters/arador/anthro.svg",
+                    extra: 1835/1718,
+                    bottom: 0.025
+                }
+            },
+            feral: {
+                height: math.unit(4, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Feral",
+                image: {
+                    source: "./media/characters/arador/feral.svg",
+                    extra: 1683/1514,
+                    bottom: 0.07
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(8 + 3/12, "feet")
+            },
+            {
+                name: "Macro",
+                height: math.unit(82.5, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 
 
 //characters

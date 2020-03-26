@@ -7816,6 +7816,19 @@ const attributionData = {
                 "radarn"
             ]
         },
+        {
+            prefix: "./media/characters/arador/",
+            files: [
+                { name: "anthro.svg", source: "https://twitter.com/AradorTD/status/1095454810432770049" },
+                { name: "feral.svg", source: "https://twitter.com/AradorTD/status/1095454810432770049" },
+            ],
+            authors: [
+                "aradortd"
+            ],
+            owners: [
+                "aradortd"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -10780,6 +10793,10 @@ const attributionData = {
         "taluthus": {
             "name": "Taluthus",
             "url": "https://www.furaffinity.net/user/taluthus",
+        },
+        "aradortd": {
+            "name": "AradorTD",
+            "url": "https://twitter.com/AradorTD",
         },
     }
 }
