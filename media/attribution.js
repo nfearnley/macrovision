@@ -7867,6 +7867,19 @@ const attributionData = {
                 "dahwchooa"
             ]
         },
+        {
+            prefix: "./media/characters/hipster/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33250417/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/33250417/" },
+            ],
+            authors: [
+                "strawbear"
+            ],
+            owners: [
+                "hipsterfox37"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -10851,6 +10864,14 @@ const attributionData = {
         "dahwchooa": {
             "name": "dahwchooa",
             "url": "https://www.furaffinity.net/user/dahwchooa/",
+        },
+        "strawbear": {
+            "name": "StrawBear",
+            "url": "https://www.furaffinity.net/user/strawbear",
+        },
+        "hipsterfox37": {
+            "name": "Hipsterfox37",
+            "url": "https://www.furaffinity.net/user/hipsterfox37/",
         },
     }
 }

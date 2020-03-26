@@ -19117,6 +19117,53 @@ characterMakers["Juniper"] = () => {
     )
 };
 
+characterMakers["Hipster"] = () => {
+    return makeCharacter(
+        "Hipster",
+        "Hipsterfox37",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/hipster/front.svg",
+                    extra: 1312/1209,
+                    bottom: 0.025
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/hipster/back.svg",
+                    extra: 1281/1196,
+                    bottom: 0.01
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(1, "mm")
+            },
+            {
+                name: "Normal",
+                height: math.unit(4, "inches"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(500, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(1000, "miles")
+            },
+        ]
+    )
+};
 
 //characters
 
