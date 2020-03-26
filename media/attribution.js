@@ -7892,6 +7892,20 @@ const attributionData = {
                 "tendirmuldr"
             ]
         },
+        {
+            prefix: "./media/characters/mort/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/23173992/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/23173992/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/23173992/" },
+            ],
+            authors: [
+                "lemondeer"
+            ],
+            owners: [
+                "lemondeer"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -10888,6 +10902,10 @@ const attributionData = {
         "puzzles": {
             "name": "Puzzles",
             "url": "https://t.me/PuzzlesDraws",
+        },
+        "lemondeer": {
+            "name": "LemonDeer",
+            "url": "https://www.furaffinity.net/user/lemondeer/",
         },
     }
 }

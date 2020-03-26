@@ -19200,6 +19200,51 @@ characterMakers["Tendirmuldr"] = () => {
     )
 };
 
+characterMakers["Mort"] = () => {
+    return makeCharacter(
+        "Mort",
+        "LemonDeer",
+        {
+            front: {
+                height: math.unit(10.79, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/mort/front.svg",
+                    extra: 365/318,
+                    bottom: 0.01
+                }
+            },
+            side: {
+                height: math.unit(10.79, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/mort/side.svg",
+                    extra: 365/318,
+                    bottom: 0.052
+                }
+            },
+            back: {
+                height: math.unit(10.79, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/mort/back.svg",
+                    extra: 371/332,
+                    bottom: 0.18
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(10.79, "feet"),
+                default: true
+            },
+        ]
+    )
+};
 //characters
 
 function makeCharacters() {
