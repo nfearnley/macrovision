@@ -2320,7 +2320,7 @@ const attributionData = {
         {
             prefix: "./media/characters/fen/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/35421909/" }
+                { name: "kneeling.svg", source: "https://www.furaffinity.net/view/35421909/" }
             ],
             authors: [
                 "jazzumi"
