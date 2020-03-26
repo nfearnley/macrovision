@@ -18955,7 +18955,7 @@ characterMakers["Arador"] = () => {
         {
             anthro: {
                 height: math.unit(8 + 3/12, "feet"),
-                weight: math.unit(150, "lb"),
+                weight: math.unit(450, "lb"),
                 name: "Anthro",
                 image: {
                     source: "./media/characters/arador/anthro.svg",
@@ -18965,7 +18965,7 @@ characterMakers["Arador"] = () => {
             },
             feral: {
                 height: math.unit(4, "feet"),
-                weight: math.unit(150, "lb"),
+                weight: math.unit(200, "lb"),
                 name: "Feral",
                 image: {
                     source: "./media/characters/arador/feral.svg",
