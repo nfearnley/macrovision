@@ -19042,6 +19042,56 @@ characterMakers["Dharsi"] = () => {
     )
 };
 
+characterMakers["Deathy"] = () => {
+    return makeCharacter(
+        "Deathy",
+        "DeathyWolfi",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/deathy/front.svg",
+                    extra: 1552/1463,
+                    bottom: 0.025
+                }
+            },
+            side: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/deathy/side.svg",
+                    extra: 1604/1455,
+                    bottom: 0.025
+                }
+            },
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/deathy/back.svg",
+                    extra: 1580/1463,
+                    bottom: 0.005
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(5, "millimeters")
+            },
+            {
+                name: "Normal",
+                height: math.unit(6 + 5/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 
 //characters
 

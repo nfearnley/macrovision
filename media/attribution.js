@@ -7841,6 +7841,20 @@ const attributionData = {
                 "dharsi"
             ]
         },
+        {
+            prefix: "./media/characters/deathy/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/31013307/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/31013307/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/31013307/" },
+            ],
+            authors: [
+                "frozen-iceblade"
+            ],
+            owners: [
+                "deathywolfi"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -10817,6 +10831,10 @@ const attributionData = {
         "gwp": {
             "name": "gwp",
             "url": "https://www.furaffinity.net/user/gwp",
+        },
+        "frozen-iceblade": {
+            "name": "Frozen-Iceblade",
+            "url": "https://www.furaffinity.net/user/frozen-iceblade/",
         },
     }
 }
