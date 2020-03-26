@@ -4650,23 +4650,32 @@ characterMakers["Vemus"] = () => {
                 name: "Front",
                 image: {
                     source: "./media/characters/vemus/front.svg",
-                    extra: 2384/2084
+                    extra: 2384/2084,
+                    bottom: 0.0123
                 }
             }
         },
         [
             {
                 name: "Normal",
-                height: math.unit(3, "meters"),
+                height: math.unit(3.75, "meters"),
                 default: true
             },
             {
-                name: "Lorg",
-                height: math.unit(7, "meters")
+                name: "Big",
+                height: math.unit(8, "meters")
             },
             {
-                name: "More Lorg",
-                height: math.unit(250, "meters")
+                name: "Macro",
+                height: math.unit(100, "meters")
+            },
+            {
+                name: "Macro+",
+                height: math.unit(1500, "meters")
+            },
+            {
+                name: "Stellar",
+                height: math.unit(14e8, "meters")
             },
         ]
     )
