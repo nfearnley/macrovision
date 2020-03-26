@@ -7880,6 +7880,18 @@ const attributionData = {
                 "hipsterfox37"
             ]
         },
+        {
+            prefix: "./media/characters/tendirmuldr/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/30603300/" }
+            ],
+            authors: [
+                "puzzles"
+            ],
+            owners: [
+                "tendirmuldr"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -10872,6 +10884,10 @@ const attributionData = {
         "hipsterfox37": {
             "name": "Hipsterfox37",
             "url": "https://www.furaffinity.net/user/hipsterfox37/",
+        },
+        "puzzles": {
+            "name": "Puzzles",
+            "url": "https://t.me/PuzzlesDraws",
         },
     }
 }

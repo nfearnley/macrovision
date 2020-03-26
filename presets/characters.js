@@ -19165,6 +19165,32 @@ characterMakers["Hipster"] = () => {
     )
 };
 
+characterMakers["Tendirmuldr"] = () => {
+    return makeCharacter(
+        "Tendirmuldr",
+        "Tendirmuldr",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/tendirmuldr/front.svg",
+                    extra: 1878/1772,
+                    bottom: 0.015
+                }
+            },
+        },
+        [
+            {
+                name: "Megamacro",
+                height: math.unit(1500, "miles"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
