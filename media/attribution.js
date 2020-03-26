@@ -7829,6 +7829,18 @@ const attributionData = {
                 "aradortd"
             ]
         },
+        {
+            prefix: "./media/characters/dharsi/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35608995/" }
+            ],
+            authors: [
+                "gwp"
+            ],
+            owners: [
+                "dharsi"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -10797,6 +10809,14 @@ const attributionData = {
         "aradortd": {
             "name": "AradorTD",
             "url": "https://twitter.com/AradorTD",
+        },
+        "dharsi": {
+            "name": "Dharsi",
+            "url": "https://www.furaffinity.net/user/dharsi/",
+        },
+        "gwp": {
+            "name": "gwp",
+            "url": "https://www.furaffinity.net/user/gwp",
         },
     }
 }

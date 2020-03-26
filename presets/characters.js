@@ -18988,6 +18988,59 @@ characterMakers["Arador"] = () => {
     )
 };
 
+characterMakers["Dharsi"] = () => {
+    return makeCharacter(
+        "Dharsi",
+        "Dharsi",
+        {
+            front: {
+                height: math.unit(5 + 10/12, "feet"),
+                weight: math.unit(125, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/dharsi/front.svg",
+                    extra: 716/630,
+                    bottom: 0.035
+                }
+            },
+        },
+        [
+            {
+                name: "Nano",
+                height: math.unit(100, "nm")
+            },
+            {
+                name: "Micro",
+                height: math.unit(2, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(5 + 10/12, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(1000, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(10, "miles")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(3000, "miles")
+            },
+            {
+                name: "Teramacro",
+                height: math.unit(500000, "miles")
+            },
+            {
+                name: "Teramacro+",
+                height: math.unit(30, "galaxies")
+            },
+        ]
+    )
+};
 
 
 //characters
