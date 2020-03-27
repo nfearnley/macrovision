@@ -8095,6 +8095,19 @@ const attributionData = {
                 "rezavax"
             ]
         },
+        {
+            prefix: "./media/characters/athea/",
+            files: [
+                { name: "side.svg", source: "https://twitter.com/Cattaur_Athea/status/1243630128216903680" },
+                { name: "sitting.svg", source: "https://twitter.com/Cattaur_Athea/status/1243630128216903680" },
+            ],
+            authors: [
+                "feeriion"
+            ],
+            owners: [
+                "athea"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11143,6 +11156,14 @@ const attributionData = {
         "oddthesungod": {
             "name": "oddthesungod",
             "url": "https://www.furaffinity.net/user/oddthesungod",
+        },
+        "feeriion": {
+            "name": "feeriion",
+            "url": "https://twitter.com/feeriion",
+        },
+        "athea": {
+            "name": "Athea",
+            "url": "https://twitter.com/Cattaur_Athea",
         },
     }
 }

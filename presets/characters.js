@@ -19701,6 +19701,54 @@ characterMakers["Reza"] = () => {
     )
 };
 
+characterMakers["Athea"] = () => {
+    return makeCharacter(
+        "Athea",
+        "Athea",
+        {
+            side: {
+                height: math.unit(15, "feet"),
+                weight: math.unit(14, "tons"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/athea/side.svg",
+                    extra: 960/540,
+                    bottom: 0.003
+                }
+            },
+            sitting: {
+                height: math.unit(6*2.85, "feet"),
+                weight: math.unit(14, "tons"),
+                name: "Sitting",
+                image: {
+                    source: "./media/characters/athea/sitting.svg",
+                    extra: 621/581,
+                    bottom: 0.075
+                }
+            },
+        },
+        [
+            {
+                name: "Lap Cat",
+                height: math.unit(2.5, "feet")
+            },
+            {
+                name: "Minimacro",
+                height: math.unit(15, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(120, "feet")
+            },
+            {
+                name: "Macro+",
+                height: math.unit(640, "feet")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
