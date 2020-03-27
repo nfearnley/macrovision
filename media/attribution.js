@@ -8135,6 +8135,20 @@ const attributionData = {
                 "chomp-chi"
             ]
         },
+        {
+            prefix: "./media/characters/sen/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/25048028/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/25048028/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/25048028/" },
+            ],
+            authors: [
+                "verysoft"
+            ],
+            owners: [
+                "looneyluna"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11203,6 +11217,10 @@ const attributionData = {
         "chomp-chi": {
             "name": "chomp-chi",
             "url": "https://www.furaffinity.net/user/chomp-chi",
+        },
+        "looneyluna": {
+            "name": "Looneyluna",
+            "url": "https://www.furaffinity.net/user/looneyluna/",
         },
     }
 }

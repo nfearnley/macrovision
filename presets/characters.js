@@ -19802,8 +19802,6 @@ characterMakers["Seroko"] = () => {
     )
 };
 
-2242
-
 characterMakers["Quatzi"] = () => {
     return makeCharacter(
         "Quatzi",
@@ -19829,6 +19827,51 @@ characterMakers["Quatzi"] = () => {
             {
                 name: "Big",
                 height: math.unit(7.7, "feet")
+            },
+        ]
+    )
+};
+
+characterMakers["Sen"] = () => {
+    return makeCharacter(
+        "Sen",
+        "Looneyluna",
+        {
+            front: {
+                height: math.unit(5 + 11/12, "feet"),
+                weight: math.unit(180, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/sen/front.svg",
+                    extra: 1321/1254,
+                    bottom: 0.015
+                }
+            },
+            side: {
+                height: math.unit(5 + 11/12, "feet"),
+                weight: math.unit(180, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/sen/side.svg",
+                    extra: 1321/1254,
+                    bottom: 0.007
+                }
+            },
+            back: {
+                height: math.unit(5 + 11/12, "feet"),
+                weight: math.unit(180, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/sen/back.svg",
+                    extra: 1321/1254
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 11/12, "feet"),
+                default: true
             },
         ]
     )
