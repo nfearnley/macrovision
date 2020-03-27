@@ -19493,7 +19493,7 @@ characterMakers["Biscuit"] = () => {
                 image: {
                     source: "./media/characters/biscuit/side.svg",
                     extra: 858/791,
-                    bottom: 0.025
+                    bottom: 0.044
                 }
             },
         },
