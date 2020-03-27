@@ -7982,6 +7982,19 @@ const attributionData = {
                 "meep"
             ]
         },
+        {
+            prefix: "./media/characters/scramble/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/23428204/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/23428204/" },
+            ],
+            authors: [
+                "meep"
+            ],
+            owners: [
+                "meep"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",

@@ -19258,7 +19258,7 @@ characterMakers["Lycoa"] = () => {
                 image: {
                     source: "./media/characters/lycoa/front.svg",
                     extra: 1875/1789,
-                    bottom: 0.015
+                    bottom: 0.022
                 }
             },
             back: {
@@ -19439,6 +19439,42 @@ characterMakers["Kira"] = () => {
             {
                 name: "Normal",
                 height: math.unit(5 + 3/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
+characterMakers["Scramble"] = () => {
+    return makeCharacter(
+        "Scramble",
+        "meep",
+        {
+            front: {
+                height: math.unit(5 + 4/12, "feet"),
+                weight: math.unit(145, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/scramble/front.svg",
+                    extra: 763/727,
+                    bottom: 0.05
+                }
+            },
+            back: {
+                height: math.unit(5 + 4/12, "feet"),
+                weight: math.unit(145, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/scramble/back.svg",
+                    extra: 826/737,
+                    bottom: 0.002
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 4/12, "feet"),
                 default: true
             },
         ]
