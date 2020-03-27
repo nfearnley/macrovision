@@ -19575,9 +19575,19 @@ characterMakers["Rena Dyne"] = () => {
         "Rena Dyne",
         "renadyne",
         {
+            anthro: {
+                height: math.unit(5 + 7/12, "feet"),
+                weight: math.unit(175, "lb"),
+                name: "Anthro",
+                image: {
+                    source: "./media/characters/rena-dyne/anthro.svg",
+                    extra: 1849/1785,
+                    bottom: 0.005
+                }
+            },
             taur: {
                 height: math.unit(15 + 6/12, "feet"),
-                weight: math.unit(150, "lb"),
+                weight: math.unit(8000, "lb"),
                 name: "Taur",
                 image: {
                     source: "./media/characters/rena-dyne/taur.svg",
@@ -19589,7 +19599,7 @@ characterMakers["Rena Dyne"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(15 + 6/12, "feet"),
+                height: math.unit(5 + 7/12, "feet"),
                 default: true
             },
         ]

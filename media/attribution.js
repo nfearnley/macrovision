@@ -8046,6 +8046,18 @@ const attributionData = {
                 "renadyne"
             ]
         },
+        {
+            prefix: "./media/characters/rena-dyne/",
+            files: [
+                { name: "anthro.svg", source: "https://www.furaffinity.net/view/31563584/" }
+            ],
+            authors: [
+                "currypuppy"
+            ],
+            owners: [
+                "renadyne"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11082,6 +11094,10 @@ const attributionData = {
         "renadyne": {
             "name": "renadyne",
             "url": "https://www.furaffinity.net/user/renadyne/",
+        },
+        "currypuppy": {
+            "name": "currypuppy",
+            "url": "https://www.furaffinity.net/user/currypuppy",
         },
     }
 }
