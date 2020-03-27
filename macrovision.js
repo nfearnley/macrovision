@@ -23,7 +23,7 @@ let dragEntityScale = 1;
 let dragEntityScaleHandle = null;
 
 math.createUnit("humans", {
-    definition: "5.5 feet"
+    definition: "5.75 feet"
 })
 const unitChoices = {
     length: [
