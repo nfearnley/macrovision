@@ -7931,6 +7931,18 @@ const attributionData = {
                 "xrequiem"
             ]
         },
+        {
+            prefix: "./media/characters/briar/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "hoot"
+            ],
+            owners: [
+                "xrequiem"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -10939,6 +10951,10 @@ const attributionData = {
         "sidgi": {
             "name": "Sidgi",
             "url": "https://www.furaffinity.net/user/sidgi/",
+        },
+        "hoot": {
+            "name": "Hoot",
+            "url": "https://www.furaffinity.net/user/hoot/",
         },
     }
 }
