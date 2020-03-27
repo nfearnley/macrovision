@@ -8070,6 +8070,18 @@ const attributionData = {
                 "meep"
             ]
         },
+        {
+            prefix: "./media/characters/poffin/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/22869277/" },
+            ],
+            authors: [
+                "meep"
+            ],
+            owners: [
+                "meep"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",

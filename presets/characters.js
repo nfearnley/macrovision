@@ -19507,6 +19507,31 @@ characterMakers["Biscuit"] = () => {
     )
 };
 
+characterMakers["Poffin"] = () => {
+    return makeCharacter(
+        "Poffin",
+        "meep",
+        {
+            front: {
+                height: math.unit(5 + 2/12, "feet"),
+                weight: math.unit(120, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/poffin/front.svg",
+                    extra: 786/680,
+                    bottom: 0.005
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 2/12, "feet")
+            },
+        ]
+    )
+};
+
 characterMakers["Dhari"] = () => {
     return makeCharacter(
         "Dhari",
