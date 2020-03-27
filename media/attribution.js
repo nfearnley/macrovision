@@ -8058,6 +8058,18 @@ const attributionData = {
                 "renadyne"
             ]
         },
+        {
+            prefix: "./media/characters/weremeep/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/22869277/" },
+            ],
+            authors: [
+                "meep"
+            ],
+            owners: [
+                "meep"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",

@@ -19606,6 +19606,40 @@ characterMakers["Rena Dyne"] = () => {
     )
 };
 
+characterMakers["Weremeep"] = () => {
+    return makeCharacter(
+        "Weremeep",
+        "meep",
+        {
+            front: {
+                height: math.unit(8, "feet"),
+                weight: math.unit(600, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/weremeep/front.svg",
+                    extra: 967/862,
+                    bottom: 0.01
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(8, "feet"),
+                default: true
+            },
+            {
+                name: "Lorg",
+                height: math.unit(12, "feet")
+            },
+            {
+                name: "Oh Lawd She Comin'",
+                height: math.unit(20, "feet")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
