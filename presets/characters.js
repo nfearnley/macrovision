@@ -19245,6 +19245,46 @@ characterMakers["Mort"] = () => {
         ]
     )
 };
+
+characterMakers["Lycoa"] = () => {
+    return makeCharacter(
+        "Lycoa",
+        "Varden",
+        {
+            front: {
+                height: math.unit(8, "feet"),
+                weight: math.unit(1, "ton"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/lycoa/front.svg",
+                    extra: 1875/1789,
+                    bottom: 0.015
+                }
+            },
+            back: {
+                height: math.unit(8, "feet"),
+                weight: math.unit(1, "ton"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/lycoa/back.svg",
+                    extra: 1835/1781,
+                    bottom: 0.03
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(8, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(30, "feet")
+            },
+        ]
+    )
+};
 //characters
 
 function makeCharacters() {

@@ -7906,6 +7906,19 @@ const attributionData = {
                 "lemondeer"
             ]
         },
+        {
+            prefix: "./media/characters/lycoa/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/23840575/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/23840575/" },
+            ],
+            authors: [
+                "sidgi"
+            ],
+            owners: [
+                "xrequiem"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -10906,6 +10919,14 @@ const attributionData = {
         "lemondeer": {
             "name": "LemonDeer",
             "url": "https://www.furaffinity.net/user/lemondeer/",
+        },
+        "xrequiem": {
+            "name": "xRequiem",
+            "url": "https://www.furaffinity.net/user/xrequiem",
+        },
+        "sidgi": {
+            "name": "Sidgi",
+            "url": "https://www.furaffinity.net/user/sidgi/",
         },
     }
 }
