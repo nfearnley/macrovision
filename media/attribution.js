@@ -8007,6 +8007,33 @@ const attributionData = {
                 "meep"
             ]
         },
+        {
+            prefix: "./media/characters/dhari/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/26746146/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/26746146/" },
+                { name: "maw.svg", source: "https://www.furaffinity.net/view/26746146/" },
+            ],
+            authors: [
+                "gabira"
+            ],
+            owners: [
+                "schefus"
+            ]
+        },
+        {
+            prefix: "./media/characters/dhari/",
+            files: [
+                { name: "front-dressed.svg", source: null },
+                { name: "back-dressed.svg", source: null },
+            ],
+            authors: [
+                "vide"
+            ],
+            owners: [
+                "schefus"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11023,6 +11050,18 @@ const attributionData = {
         "karjin-s-basement": {
             "name": "Karjin",
             "url": "https://www.deviantart.com/karijn-s-basement/",
+        },
+        "schefus": {
+            "name": "Schefus",
+            "url": "https://www.furaffinity.net/user/schefus",
+        },
+        "gabira": {
+            "name": "Gabira",
+            "url": "https://www.furaffinity.net/user/gabira",
+        },
+        "vide": {
+            "name": "Vide",
+            "url": "https://www.furaffinity.net/user/vide/",
         },
     }
 }

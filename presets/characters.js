@@ -19507,6 +19507,69 @@ characterMakers["Biscuit"] = () => {
     )
 };
 
+characterMakers["Dhari"] = () => {
+    return makeCharacter(
+        "Dhari",
+        "Dhari",
+        {
+            front: {
+                height: math.unit(6 + 3/12, "feet"),
+                weight: math.unit(519, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/dhari/front.svg",
+                    extra: 1048/946,
+                    bottom: 0.015
+                }
+            },
+            back: {
+                height: math.unit(6 + 3/12, "feet"),
+                weight: math.unit(519, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/dhari/back.svg",
+                    extra: 1048/931,
+                    bottom: 0.005
+                }
+            },
+            frontDressed: {
+                height: math.unit(6 + 3/12, "feet"),
+                weight: math.unit(519, "lb"),
+                name: "Front (Dressed)",
+                image: {
+                    source: "./media/characters/dhari/front-dressed.svg",
+                    extra: 1713/1546,
+                    bottom: 0.02
+                }
+            },
+            backDressed: {
+                height: math.unit(6 + 3/12, "feet"),
+                weight: math.unit(519, "lb"),
+                name: "Back (Dressed)",
+                image: {
+                    source: "./media/characters/dhari/back-dressed.svg",
+                    extra: 1699/1537,
+                    bottom: 0.01
+                }
+            },
+            maw: {
+                height: math.unit(0.95, "feet"),
+                name: "Maw",
+                image: {
+                    source: "./media/characters/dhari/maw.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6 + 3/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
