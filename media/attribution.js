@@ -8109,6 +8109,20 @@ const attributionData = {
                 "athea"
             ]
         },
+        {
+            prefix: "./media/characters/seroko/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/27264595/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/27264595/" },
+                { name: "front-dressed.svg", source: "https://www.furaffinity.net/view/27264595/" },
+            ],
+            authors: [
+                "dai-dai"
+            ],
+            owners: [
+                "neon-the-good-draggy"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11165,6 +11179,14 @@ const attributionData = {
         "athea": {
             "name": "Athea",
             "url": "https://twitter.com/Cattaur_Athea",
+        },
+        "dai-dai": {
+            "name": "dai.dai",
+            "url": "https://www.furaffinity.net/user/dai.dai",
+        },
+        "neon-the-good-draggy": {
+            "name": "Neon_the_good_draggy",
+            "url": "https://www.furaffinity.net/user/neonthegooddraggy/",
         },
     }
 }

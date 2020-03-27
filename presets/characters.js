@@ -19756,6 +19756,52 @@ characterMakers["Athea"] = () => {
     )
 };
 
+characterMakers["Seroko"] = () => {
+    return makeCharacter(
+        "Seroko",
+        "Seroko",
+        {
+            front: {
+                height: math.unit(8 + 8/12, "feet"),
+                weight: math.unit(130, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/seroko/front.svg",
+                    extra: 1385/1280,
+                    bottom: 0.025
+                }
+            },
+            back: {
+                height: math.unit(8 + 8/12, "feet"),
+                weight: math.unit(130, "kg"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/seroko/back.svg",
+                    extra: 1369/1238,
+                    bottom: 0.018
+                }
+            },
+            frontDressed: {
+                height: math.unit(8 + 8/12, "feet"),
+                weight: math.unit(130, "kg"),
+                name: "Front (Dressed)",
+                image: {
+                    source: "./media/characters/seroko/front-dressed.svg",
+                    extra: 1366/1275,
+                    bottom: 0.03
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(8 + 8/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
