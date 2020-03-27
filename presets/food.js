@@ -7,13 +7,13 @@ function makeFood() {
             "Human",
             {
                 woman1: {
-                    height: math.unit(5 + 4/12, "feet"),
+                    height: math.unit(5 + 7/12, "feet"),
                     mass: math.unit(140, "lbs"),
                     image: { source: "./media/food/humans/woman-1.svg" },
                     name: "Woman 1"
                 },
                 man1: {
-                    height: math.unit(5 + 6/12, "feet"),
+                    height: math.unit(5 + 11/12, "feet"),
                     mass: math.unit(150, "lbs"),
                     image: { source: "./media/food/humans/man-1.svg" },
                     name: "Man 1"
