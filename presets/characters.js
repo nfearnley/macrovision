@@ -19285,6 +19285,32 @@ characterMakers["Lycoa"] = () => {
         ]
     )
 };
+
+characterMakers["Naldara"] = () => {
+    return makeCharacter(
+        "Naldara",
+        "Varden",
+        {
+            front: {
+                height: math.unit(4 + 2/12, "feet"),
+                weight: math.unit(70, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/naldara/front.svg",
+                    extra: 841/720,
+                    bottom: 0.04
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(4 + 2/12, "feet")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

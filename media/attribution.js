@@ -7919,6 +7919,18 @@ const attributionData = {
                 "xrequiem"
             ]
         },
+        {
+            prefix: "./media/characters/naldara/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/25741953/" }
+            ],
+            authors: [
+                "meep"
+            ],
+            owners: [
+                "xrequiem"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
