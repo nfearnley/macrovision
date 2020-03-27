@@ -19570,6 +19570,32 @@ characterMakers["Dhari"] = () => {
     )
 };
 
+characterMakers["Rena Dyne"] = () => {
+    return makeCharacter(
+        "Rena Dyne",
+        "renadyne",
+        {
+            taur: {
+                height: math.unit(15 + 6/12, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Taur",
+                image: {
+                    source: "./media/characters/rena-dyne/taur.svg",
+                    extra: 2315/2234,
+                    bottom: 0.033
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(15 + 6/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

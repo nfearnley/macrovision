@@ -8034,6 +8034,18 @@ const attributionData = {
                 "schefus"
             ]
         },
+        {
+            prefix: "./media/characters/rena-dyne/",
+            files: [
+                { name: "taur.svg", source: "https://www.furaffinity.net/view/32302249/" }
+            ],
+            authors: [
+                "kitsune-kajiru"
+            ],
+            owners: [
+                "renadyne"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11062,6 +11074,14 @@ const attributionData = {
         "vide": {
             "name": "Vide",
             "url": "https://www.furaffinity.net/user/vide/",
+        },
+        "kitsune-kajiru": {
+            "name": "Kitsune-Kajiru",
+            "url": "https://www.furaffinity.net/user/kitsune-kajiru",
+        },
+        "renadyne": {
+            "name": "renadyne",
+            "url": "https://www.furaffinity.net/user/renadyne/",
         },
     }
 }
