@@ -19802,6 +19802,38 @@ characterMakers["Seroko"] = () => {
     )
 };
 
+2242
+
+characterMakers["Quatzi"] = () => {
+    return makeCharacter(
+        "Quatzi",
+        "chomp-chi",
+        {
+            front: {
+                height: math.unit(5.5, "feet"),
+                weight: math.unit(160, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/quatzi/front.svg",
+                    extra: 2346/2242,
+                    bottom: 0.015
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5.5, "feet"),
+                default: true
+            },
+            {
+                name: "Big",
+                height: math.unit(7.7, "feet")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

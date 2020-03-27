@@ -8123,6 +8123,18 @@ const attributionData = {
                 "neon-the-good-draggy"
             ]
         },
+        {
+            prefix: "./media/characters/quatzi/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/31068454/" }
+            ],
+            authors: [
+                "meep"
+            ],
+            owners: [
+                "chomp-chi"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11187,6 +11199,10 @@ const attributionData = {
         "neon-the-good-draggy": {
             "name": "Neon_the_good_draggy",
             "url": "https://www.furaffinity.net/user/neonthegooddraggy/",
+        },
+        "chomp-chi": {
+            "name": "chomp-chi",
+            "url": "https://www.furaffinity.net/user/chomp-chi",
         },
     }
 }
