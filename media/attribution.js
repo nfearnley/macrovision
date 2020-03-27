@@ -7967,6 +7967,21 @@ const attributionData = {
                 "xrequiem"
             ]
         },
+        {
+            prefix: "./media/characters/kira/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/23740762/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/23740762/" },
+                { name: "front-dressed.svg", source: "https://www.furaffinity.net/view/23740762/" },
+                { name: "beans.svg", source: "https://www.furaffinity.net/view/23740762/" },
+            ],
+            authors: [
+                "meep"
+            ],
+            owners: [
+                "meep"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",

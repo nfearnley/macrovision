@@ -19392,6 +19392,59 @@ characterMakers["Artemis"] = () => {
     )
 };
 
+characterMakers["Kira"] = () => {
+    return makeCharacter(
+        "Kira",
+        "meep",
+        {
+            front: {
+                height: math.unit(5 + 3/12, "feet"),
+                weight: math.unit(160, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/kira/front.svg",
+                    extra: 906/786,
+                    bottom: 0.01
+                }
+            },
+            back: {
+                height: math.unit(5 + 3/12, "feet"),
+                weight: math.unit(160, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/kira/back.svg",
+                    extra: 882/757,
+                    bottom: 0.005
+                }
+            },
+            frontDressed: {
+                height: math.unit(5 + 3/12, "feet"),
+                weight: math.unit(160, "lb"),
+                name: "Front (Dressed)",
+                image: {
+                    source: "./media/characters/kira/front-dressed.svg",
+                    extra: 906/786,
+                    bottom: 0.01
+                }
+            },
+            beans: {
+                height: math.unit(0.92, "feet"),
+                name: "Beans",
+                image: {
+                    source: "./media/characters/kira/beans.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 3/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
