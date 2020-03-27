@@ -19726,6 +19726,13 @@ characterMakers["Athea"] = () => {
                     bottom: 0.075
                 }
             },
+            maw: {
+                height: math.unit(7.59498031496063, "feet"),
+                name: "Maw",
+                image: {
+                    source: "./media/characters/athea/maw.svg"
+                }
+            },
         },
         [
             {

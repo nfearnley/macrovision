@@ -8100,6 +8100,7 @@ const attributionData = {
             files: [
                 { name: "side.svg", source: "https://twitter.com/Cattaur_Athea/status/1243630128216903680" },
                 { name: "sitting.svg", source: "https://twitter.com/Cattaur_Athea/status/1243630128216903680" },
+                { name: "maw.svg", source: "https://twitter.com/Cattaur_Athea/status/1243630128216903680" },
             ],
             authors: [
                 "feeriion"
