@@ -7943,6 +7943,18 @@ const attributionData = {
                 "xrequiem"
             ]
         },
+        {
+            prefix: "./media/characters/vanguard/",
+            files: [
+                { name: "side.svg", source: null }
+            ],
+            authors: [
+                "karjin-s-basement"
+            ],
+            owners: [
+                "xrequiem"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -10955,6 +10967,10 @@ const attributionData = {
         "hoot": {
             "name": "Hoot",
             "url": "https://www.furaffinity.net/user/hoot/",
+        },
+        "karjin-s-basement": {
+            "name": "Karjin",
+            "url": "https://www.deviantart.com/karijn-s-basement/",
         },
     }
 }

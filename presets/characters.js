@@ -19336,6 +19336,32 @@ characterMakers["Briar"] = () => {
     )
 };
 
+characterMakers["Vanguard"] = () => {
+    return makeCharacter(
+        "Vanguard",
+        "Varden",
+        {
+            side: {
+                height: math.unit(10, "feet"),
+                weight: math.unit(500, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/vanguard/side.svg",
+                    extra: 502/425,
+                    bottom: 0.087
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(10, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
