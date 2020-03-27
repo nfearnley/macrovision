@@ -19368,8 +19368,8 @@ characterMakers["Artemis"] = () => {
         "Varden",
         {
             front: {
-                height: math.unit(6, "feet"),
-                weight: math.unit(150, "lb"),
+                height: math.unit(7.5, "feet"),
+                weight: math.unit(2, "lb"),
                 name: "Front",
                 image: {
                     source: "./media/characters/artemis/front.svg",
