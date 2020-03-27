@@ -19481,6 +19481,32 @@ characterMakers["Scramble"] = () => {
     )
 };
 
+characterMakers["Biscuit"] = () => {
+    return makeCharacter(
+        "Biscuit",
+        "meep",
+        {
+            side: {
+                height: math.unit(6 + 2/12, "feet"),
+                weight: math.unit(190, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/biscuit/side.svg",
+                    extra: 858/791,
+                    bottom: 0.025
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(6 + 2/12, "feet"),
+                default: true
+            },   
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

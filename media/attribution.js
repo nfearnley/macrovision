@@ -7995,6 +7995,18 @@ const attributionData = {
                 "meep"
             ]
         },
+        {
+            prefix: "./media/characters/biscuit/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/22869277/" },
+            ],
+            authors: [
+                "meep"
+            ],
+            owners: [
+                "meep"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
