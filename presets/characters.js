@@ -19665,6 +19665,42 @@ characterMakers["Weremeep"] = () => {
     )
 };
 
+characterMakers["Reza"] = () => {
+    return makeCharacter(
+        "Reza",
+        "rezavax",
+        {
+            front: {
+                height: math.unit(4, "feet"),
+                weight: math.unit(90, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/reza/front.svg",
+                    extra: 1183/1111,
+                    bottom: 0.017
+                }
+            },
+            back: {
+                height: math.unit(4, "feet"),
+                weight: math.unit(90, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/reza/back.svg",
+                    extra: 1183/1111,
+                    bottom: 0.01
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(4, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

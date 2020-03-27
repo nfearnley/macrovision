@@ -8082,6 +8082,19 @@ const attributionData = {
                 "meep"
             ]
         },
+        {
+            prefix: "./media/characters/reza/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/25655890/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/25655890/" },
+            ],
+            authors: [
+                "oddthesungod"
+            ],
+            owners: [
+                "rezavax"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11122,6 +11135,14 @@ const attributionData = {
         "currypuppy": {
             "name": "currypuppy",
             "url": "https://www.furaffinity.net/user/currypuppy",
+        },
+        "rezavax": {
+            "name": "Rezavax",
+            "url": "https://www.furaffinity.net/user/rezavax/",
+        },
+        "oddthesungod": {
+            "name": "oddthesungod",
+            "url": "https://www.furaffinity.net/user/oddthesungod",
         },
     }
 }
