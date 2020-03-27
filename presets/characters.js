@@ -19206,8 +19206,8 @@ characterMakers["Mort"] = () => {
         "LemonDeer",
         {
             front: {
-                height: math.unit(10.79, "feet"),
-                weight: math.unit(150, "lb"),
+                height: math.unit(14, "feet"),
+                weight: math.unit(12000, "lb"),
                 name: "Front",
                 image: {
                     source: "./media/characters/mort/front.svg",
@@ -19216,8 +19216,8 @@ characterMakers["Mort"] = () => {
                 }
             },
             side: {
-                height: math.unit(10.79, "feet"),
-                weight: math.unit(150, "lb"),
+                height: math.unit(14, "feet"),
+                weight: math.unit(12000, "lb"),
                 name: "Side",
                 image: {
                     source: "./media/characters/mort/side.svg",
@@ -19226,8 +19226,8 @@ characterMakers["Mort"] = () => {
                 }
             },
             back: {
-                height: math.unit(10.79, "feet"),
-                weight: math.unit(150, "lb"),
+                height: math.unit(14, "feet"),
+                weight: math.unit(12000, "lb"),
                 name: "Back",
                 image: {
                     source: "./media/characters/mort/back.svg",
@@ -19239,7 +19239,7 @@ characterMakers["Mort"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(10.79, "feet"),
+                height: math.unit(14, "feet"),
                 default: true
             },
         ]
