@@ -7955,6 +7955,18 @@ const attributionData = {
                 "xrequiem"
             ]
         },
+        {
+            prefix: "./media/characters/artemis/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/29084844/" }
+            ],
+            authors: [
+                "meep"
+            ],
+            owners: [
+                "xrequiem"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",

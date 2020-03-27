@@ -19362,6 +19362,36 @@ characterMakers["Vanguard"] = () => {
     )
 };
 
+characterMakers["Artemis"] = () => {
+    return makeCharacter(
+        "Artemis",
+        "Varden",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(150, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/artemis/front.svg",
+                    extra: 1192/1075,
+                    bottom: 0.07
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(7.5, "feet"),
+                default: true
+            },
+            {
+                name: "Enlarged",
+                height: math.unit(12, "feet")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
