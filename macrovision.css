@@ -78,36 +78,19 @@ body.toggle-entity-glow .entity-box:not(.selected) > img{
     display: flex;
     flex: 1 1 90vh;
     width: 100%;
-}
-
-@media (max-aspect-ratio: 1/1) {
-    #main-area {
-        flex-direction: column;    
-    }
-
-    #options {
-        flex: 1 1 25vh;
-        flex-direction: row;
-        overflow-x: auto;
-        overflow-y: auto;
-    }
-}
-
-@media (min-aspect-ratio: 1/1) {
-    #options {
-        flex: 1 1 15vw;
-        flex-direction: column;
-        overflow-x: hidden;
-        overflow-y: auto;
-    }
+    flex-direction: row;
 }
 
 #options {
     position: relative;
+    flex: 1 1 15vw;
     min-width: 140pt;
     display: flex;
     justify-content: start;
+    flex-direction: column;
     background: #444;
+    overflow-x: hidden;
+    overflow-y: auto;
     height: 100%;
     scrollbar-color: #e1e1e1 #888;
 }
@@ -160,37 +143,7 @@ body.toggle-entity-glow .entity-box:not(.selected) > img{
 
 .options-category {
     position: relative;
-    flex: 1 1 15vw;
-    display: inline-flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    max-height: 100%;
-    align-content: flex-start;
 }
-
-/* options-view needs this for..some reason */
-
-@media (min-aspect-ratio: 1/1) {
-
-#options-entity,
-#options-view {
-    width: 100%;
-}
-
-}
-/* column-order flexboxes don't grow to contain their contents,
-so we have to do this and set the width via JS */
-
-@media (max-aspect-ratio: 1/1) {
-    .options-category {
-        min-width: var(--calc-width);
-    }
-    .options-category  * {
-        max-width: 250px !important;
-    }
-}
-
-
 
 .options-row {
     position: relative;
@@ -202,12 +155,13 @@ so we have to do this and set the width via JS */
     margin-right: auto;
     margin-top: 8px;
     margin-bottom: 8px;
-    max-width: 200px;
+    max-width: 90%;
 }
 
 .options-block {
     display: flex;
     text-align: center;
+    min-width: 90%;
     width: 90%;
     margin: auto;
     flex-direction: column;
@@ -265,19 +219,9 @@ body.show-extra-options .options-block.options-block-optional {
     height: 100%;
 }
 
-@media (max-aspect-ratio: 1/1) {
-    #world {
-        flex: 1 1 85vh;
-    }
-}
-
-@media (min-aspect-ratio: 1/1) {
-    #world {
-        flex: 1 1 85vw;
-    }
-}
 #world {
     position: relative;
+    flex: 1 1 85vw;
     height: 100%;
     overflow: hidden;
 }

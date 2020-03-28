@@ -473,7 +473,7 @@ function configEntityOptions(entity, view) {
     const holder = document.querySelector("#options-entity");
     
     document.querySelector("#entity-category-header").style.display = "block";
-    document.querySelector("#entity-category").style.display = "inline-flex";
+    document.querySelector("#entity-category").style.display = "block";
 
     holder.innerHTML = "";
 
@@ -555,9 +555,7 @@ function configEntityOptions(entity, view) {
     });
 
     document.querySelector("#options-order-display").innerText = entity.priority;
-    document.querySelector("#options-ordering").style.display = "inline-flex";
-    
-    updateOptionsBoxes();
+    document.querySelector("#options-ordering").style.display = "flex";
 }
 
 function updateEntityOptions(entity, view) {
@@ -565,8 +563,6 @@ function updateEntityOptions(entity, view) {
     setNumericInput(scaleInput, entity.scale);
 
     document.querySelector("#options-order-display").innerText = entity.priority;
-
-    updateOptionsBoxes();
 }
 
 function clearEntityOptions() {
@@ -586,7 +582,7 @@ function configViewOptions(entity, view) {
     const holder = document.querySelector("#options-view");
     
     document.querySelector("#view-category-header").style.display = "block";
-    document.querySelector("#view-category").style.display = "inline-flex";
+    document.querySelector("#view-category").style.display = "block";
 
     holder.innerHTML = "";
 
@@ -660,8 +656,6 @@ function configViewOptions(entity, view) {
         row.appendChild(select);
     });
 
-    updateOptionsBoxes();
-
 }
 
 function updateViewOptions(entity, view, changed) {
@@ -676,8 +670,6 @@ function updateViewOptions(entity, view, changed) {
         }
 
     });
-
-    updateOptionsBoxes();
 }
 
 function setNumericInput(input, value, round=3) {
@@ -1048,23 +1040,11 @@ function toggleFullScreen() {
     }
   }
 
-function updateOptionsBoxes() {
-    document.querySelectorAll(".options-category").forEach(category => {
-        console.log(category)
-        console.log(category.lastElementChild)
-        console.log(category.getBoundingClientRect().x)
-        console.log(category.lastElementChild.getBoundingClientRect().x)
-        
-        category.style.setProperty("--calc-width", category.lastElementChild.getBoundingClientRect().x + category.lastElementChild.getBoundingClientRect().width - category.getBoundingClientRect().x + "px");
-        console.log(category.style.minWidth)
-    })
-}
 function handleResize() {
     entityX = document.querySelector("#entities").getBoundingClientRect().x;
     canvasWidth = document.querySelector("#display").clientWidth - 100;
     canvasHeight = document.querySelector("#display").clientHeight - 50;
     updateSizes();
-    updateOptionsBoxes();
 }
 
 function prepareMenu() {
