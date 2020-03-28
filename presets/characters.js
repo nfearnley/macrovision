@@ -19584,6 +19584,33 @@ characterMakers["Dhari"] = () => {
                     source: "./media/characters/dhari/maw.svg"
                 }
             },
+            wereFront: {
+                height: math.unit(12 + 8/12, "feet"),
+                weight: math.unit(4000, "lb"),
+                name: "Front (Were)",
+                image: {
+                    source: "./media/characters/dhari/were-front.svg",
+                    extra: 1065/969,
+                    bottom: 0.015
+                }
+            },
+            wereBack: {
+                height: math.unit(12 + 8/12, "feet"),
+                weight: math.unit(4000, "lb"),
+                name: "Back (Were)",
+                image: {
+                    source: "./media/characters/dhari/were-back.svg",
+                    extra: 1065/969,
+                    bottom: 0.012
+                }
+            },
+            wereMaw: {
+                height: math.unit(0.625, "meters"),
+                name: "Maw (Were)",
+                image: {
+                    source: "./media/characters/dhari/were-maw.svg"
+                }
+            },
         },
         [
             {

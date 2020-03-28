@@ -8013,6 +8013,9 @@ const attributionData = {
                 { name: "front.svg", source: "https://www.furaffinity.net/view/26746146/" },
                 { name: "back.svg", source: "https://www.furaffinity.net/view/26746146/" },
                 { name: "maw.svg", source: "https://www.furaffinity.net/view/26746146/" },
+                { name: "were-front.svg", source: "https://www.furaffinity.net/view/26746146/" },
+                { name: "were-back.svg", source: "https://www.furaffinity.net/view/26746146/" },
+                { name: "were-back.svg", source: "https://www.furaffinity.net/view/26746146/" },
             ],
             authors: [
                 "gabira"
