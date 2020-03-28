@@ -1101,6 +1101,11 @@ function prepareMenu() {
                 name: "Load",
                 id: "menu-load",
                 icon: "fas fa-upload"
+            },
+            {
+                name: "Load Autosave",
+                id: "menu-load-autosave",
+                icon: "fas fa-redo"
             }
         ]
     ].forEach(group => {
@@ -1355,11 +1360,7 @@ document.addEventListener("DOMContentLoaded", () => {
     param = new URL(window.location.href).searchParams.get("scene");
 
     if (param === null) {
-        if (loadScene("autosave")) {
-            deleteScene("autosave");
-        } else {
-            scenes["Default"]();
-        }
+        scenes["Default"]();
     }
         
     else {
@@ -1550,6 +1551,9 @@ document.addEventListener("DOMContentLoaded", () => {
         loadScene();
     });
 
+    document.querySelector("#menu-load-autosave").addEventListener("click", e => {
+        loadScene("autosave");
+    });
     clearEntityOptions();
     clearViewOptions();
     clearAttribution();
