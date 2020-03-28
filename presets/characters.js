@@ -19917,6 +19917,46 @@ characterMakers["Fruity"] = () => {
     )
 };
 
+characterMakers["Zost"] = () => {
+    return makeCharacter(
+        "Zost",
+        "Varden",
+        {
+            side: {
+                height: math.unit(10, "feet"),
+                weight: math.unit(500, "lb"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/zost/side.svg",
+                    extra: 966/880,
+                    bottom: 0.075
+                }
+            },
+            mawFront: {
+                height: math.unit(1.08, "meters"),
+                name: "Maw (Front)",
+                image: {
+                    source: "./media/characters/zost/maw-front.svg"
+                }
+            },
+            mawSide: {
+                height: math.unit(2.66, "feet"),
+                name: "Maw (Side)",
+                image: {
+                    source: "./media/characters/zost/maw-side.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(10, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

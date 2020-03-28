@@ -8162,6 +8162,20 @@ const attributionData = {
                 "fruitofthedoom"
             ]
         },
+        {
+            prefix: "./media/characters/zost/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/24597547/" },
+                { name: "maw-front.svg", source: "https://www.furaffinity.net/view/24597547/" },
+                { name: "maw-side.svg", source: "https://www.furaffinity.net/view/24597547/" },
+            ],
+            authors: [
+                "kaprikaaz"
+            ],
+            owners: [
+                "xrequiem"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11242,6 +11256,10 @@ const attributionData = {
         "moffeen": {
             "name": "moffeen",
             "url": "https://www.furaffinity.net/user/moffeen",
+        },
+        "kaprikaaz": {
+            "name": "KaprikaAZ",
+            "url": "https://www.furaffinity.net/user/kaprikaaz/",
         },
     }
 }
