@@ -121,7 +121,7 @@ body.toggle-entity-glow .entity-box:not(.selected) > img{
     display: none;
 }
 #options::-webkit-scrollbar {
-    height: 2px;
+    height: 10px;
   }
 #options::-webkit-scrollbar-button {
     width: 0px;
