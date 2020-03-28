@@ -19905,9 +19905,13 @@ characterMakers["Fruity"] = () => {
         },
         [
             {
-                name: "Demonic",
+                name: "Normal",
                 height: math.unit(166.6, "cm"),
                 default: true
+            },
+            {
+                name: "Demonic",
+                height: math.unit(166.6, "feet")
             },
         ]
     )
