@@ -496,7 +496,7 @@ a {
     z-index: 1000;
     width: 250px;
     height: 50px;
-    transform: scale(1.5);
+    transform: translate(-50%, 0) scale(1.5);;
 }
 
 body.toggle-scale-sliders .floating-slider {
@@ -505,7 +505,7 @@ body.toggle-scale-sliders .floating-slider {
 
 #slider-scale {
     top: 5%;
-    left: 5%;
+    left: 50%;
 }
 
 #slider-scale:before {
@@ -517,8 +517,8 @@ body.toggle-scale-sliders .floating-slider {
 }
 
 #slider-entity-scale {
-    top: 5%;
-    right: 5%;
+    top: 15%;
+    left: 50%;
 }
 
 #slider-entity-scale:before {
