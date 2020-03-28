@@ -466,7 +466,7 @@ function updateWorldOptions(entity, view) {
 
     const converted = config.height.toNumber(heightSelect.value);
 
-    heightInput.value = math.round(converted, 3);
+    setNumericInput(heightInput, converted);
 }
 
 function configEntityOptions(entity, view) {
@@ -502,7 +502,7 @@ function configEntityOptions(entity, view) {
 
     scaleInput.setAttribute("min", 1);
     scaleInput.setAttribute("type", "number");
-    scaleInput.value = entity.scale;
+    setNumericInput(scaleInput, entity.scale);
 
     scaleRow.appendChild(scaleInput);
     holder.appendChild(scaleLabel);
@@ -560,7 +560,7 @@ function configEntityOptions(entity, view) {
 
 function updateEntityOptions(entity, view) {
     const scaleInput = document.querySelector("#options-entity-scale");
-    scaleInput.value = entity.scale;
+    setNumericInput(scaleInput, entity.scale);
 
     document.querySelector("#options-order-display").innerText = entity.priority;
 }
@@ -604,7 +604,7 @@ function configViewOptions(entity, view) {
         input.setAttribute("type", "number");
         input.setAttribute("min", 1);
 
-        input.value = entity.views[view][key].value;
+        setNumericInput(input, entity.views[view][key].value);
 
         const select = document.createElement("select");
         select.classList.add("options-field-unit");
@@ -638,7 +638,7 @@ function configViewOptions(entity, view) {
             const oldUnit = select.getAttribute("oldUnit");
             entity.views[view][key] = math.unit(value, oldUnit).to(select.value);
             entity.dirty = true;
-            input.value = entity.views[view][key].toNumber(select.value);
+            setNumericInput(input, entity.views[view][key].toNumber(select.value));
 
             select.setAttribute("oldUnit", select.value);
 
@@ -666,10 +666,14 @@ function updateViewOptions(entity, view, changed) {
             
             const currentUnit = select.value;
             const convertedAmount = entity.views[view][key].toNumber(currentUnit);
-            input.value = math.round(convertedAmount, 5);
+            setNumericInput(input, convertedAmount);
         }
 
     });
+}
+
+function setNumericInput(input, value, round=3) {
+    input.value = math.round(value, round);
 }
 
 function getSortedEntities() {
@@ -1394,7 +1398,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     updateSizes();
 
-    document.querySelector("#options-height-value").addEventListener("input", e => {
+    document.querySelector("#options-height-value").addEventListener("change", e => {
         updateWorldHeight();
     })
     unitSelector.addEventListener("input", e => {
@@ -1717,7 +1721,7 @@ function setWorldHeight(oldHeight, newHeight) {
     config.height = newHeight.to(document.querySelector("#options-height-unit").value)
 
     const unit = document.querySelector("#options-height-unit").value;
-    document.querySelector("#options-height-value").value = config.height.toNumber(unit);
+    setNumericInput(document.querySelector("#options-height-value"), config.height.toNumber(unit));
     Object.entries(entities).forEach(([key, entity]) => {
         const element = document.querySelector("#entity-" + key);
         let newPosition;
