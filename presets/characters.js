@@ -19877,6 +19877,42 @@ characterMakers["Sen"] = () => {
     )
 };
 
+characterMakers["Fruity"] = () => {
+    return makeCharacter(
+        "Fruity",
+        "FruitOfTheDoom",
+        {
+            front: {
+                height: math.unit(166.6, "cm"),
+                weight: math.unit(66.6, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/fruity/front.svg",
+                    extra: 1510/1386,
+                    bottom: 0.04
+                }
+            },
+            back: {
+                height: math.unit(166.6, "cm"),
+                weight: math.unit(66.6, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/fruity/back.svg",
+                    extra: 1563/1435,
+                    bottom: 0.005
+                }
+            },
+        },
+        [
+            {
+                name: "Demonic",
+                height: math.unit(166.6, "cm"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

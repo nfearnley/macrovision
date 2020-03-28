@@ -8149,6 +8149,19 @@ const attributionData = {
                 "looneyluna"
             ]
         },
+        {
+            prefix: "./media/characters/fruity/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34341438/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/34341438/" },
+            ],
+            authors: [
+                "moffeen"
+            ],
+            owners: [
+                "fruitofthedoom"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11221,6 +11234,14 @@ const attributionData = {
         "looneyluna": {
             "name": "Looneyluna",
             "url": "https://www.furaffinity.net/user/looneyluna/",
+        },
+        "fruitofthedoom": {
+            "name": "FruitOfTheDoom",
+            "url": "https://www.furaffinity.net/user/fruitofthedoom/",
+        },
+        "moffeen": {
+            "name": "moffeen",
+            "url": "https://www.furaffinity.net/user/moffeen",
         },
     }
 }
