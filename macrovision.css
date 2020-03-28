@@ -141,15 +141,21 @@ body.toggle-entity-glow .entity-box:not(.selected) > img{
     justify-content: space-evenly;
 }
 
+.options-category {
+    position: relative;
+}
+
 .options-row {
+    position: relative;
+    flex-direction: column;
     display: flex;
     text-align: center;
     align-items: center;
-    width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 8px;
     margin-bottom: 8px;
+    max-width: 90%;
 }
 
 .options-block {
@@ -176,21 +182,6 @@ body.show-extra-options .options-block.options-block-optional {
     display: flex;
 }
 
-@media (max-aspect-ratio: 1/1) {
-
-    .options-row {
-        flex-direction: column;
-    }
-
-    .options-row > .options-field-numeric {
-        width: 100%;
-    }
-
-    .options-row > .options-field-unit {
-        width: 100%;
-    }
-}
-
 .options-header {
     text-align: center;
     font-size: 24pt;
@@ -211,7 +202,8 @@ body.show-extra-options .options-block.options-block-optional {
 }
 
 .options-banner:hover {
-    background: #454;
+    color: #222;
+    background: #494;
 }
 
 .options-selector {
@@ -286,20 +278,20 @@ body.toggle-scale #display {
 }
 
 .options-row .options-field-numeric {
-    flex: 1 1 60%;
-    min-width: 0px;
+    flex: 1 1 100%;
+    max-width: 90%;
     font-size: 150%;
 }
 
 .options-row .options-field-text {
     flex: 1 1 100%;
-    min-width: 0px;
+    max-width: 90%;
     font-size: 150%;
 }
 
 .options-row .options-field-unit {
-    flex: 1 1 40%;
-    min-width: 0px;
+    flex: 1 1 10%;
+    max-width: 90%;
     font-size: 150%;
 }
 

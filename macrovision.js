@@ -607,6 +607,7 @@ function configViewOptions(entity, view) {
         input.value = entity.views[view][key].value;
 
         const select = document.createElement("select");
+        select.classList.add("options-field-unit");
         select.id = "options-view-" + key + "-select"
 
         unitChoices[val.type].forEach(name => {
