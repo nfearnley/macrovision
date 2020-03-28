@@ -636,9 +636,9 @@ function configViewOptions(entity, view) {
         select.addEventListener("input", e => {
             const value = input.value == 0 ? 1 : input.value;
             const oldUnit = select.getAttribute("oldUnit");
-            entity.views[view][key] = math.unit(value, oldUnit).to(select.value);
+            entity.views[entity.view][key] = math.unit(value, oldUnit).to(select.value);
             entity.dirty = true;
-            setNumericInput(input, entity.views[view][key].toNumber(select.value));
+            setNumericInput(input, entity.views[entity.view][key].toNumber(select.value));
 
             select.setAttribute("oldUnit", select.value);
 
