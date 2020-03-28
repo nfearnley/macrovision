@@ -1176,6 +1176,7 @@ document.addEventListener("DOMContentLoaded", () => {
     prepareMenu();
     prepareEntities();
 
+    window.addEventListener("unload", () => saveScene("autosave"));
     document.querySelector("#options-selected-entity").addEventListener("input", e => {
         if (e.target.value == "none") {
             deselect()
@@ -1353,8 +1354,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     param = new URL(window.location.href).searchParams.get("scene");
 
-    if (param === null)
-        scenes["Default"]();
+    if (param === null) {
+        if (loadScene("autosave")) {
+            deleteScene("autosave");
+        } else {
+            scenes["Default"]();
+        }
+    }
+        
     else {
         try {
             const data = JSON.parse(b64DecodeUnicode(param));
@@ -1739,26 +1746,38 @@ function setWorldHeight(oldHeight, newHeight) {
     updateSizes();
 }
 
-function loadScene() {
+function loadScene(name="default") {
     try {
-        const data = JSON.parse(localStorage.getItem("macrovision-save"));
+        const data = JSON.parse(localStorage.getItem("macrovision-save-" + name));
+        if (data === null) {
+            return false;
+        }
         importScene(data);
+        return true;
     } catch (err) {
         alert("Something went wrong while loading (maybe you didn't have anything saved. Check the F12 console for the error.")
         console.error(err);
+        return false;
     }
 }
 
-function saveScene() {
+function saveScene(name="default") {
     try {
         const string = JSON.stringify(exportScene());
-        localStorage.setItem("macrovision-save", string);
+        localStorage.setItem("macrovision-save-" + name, string);
     } catch (err) {
         alert("Something went wrong while saving (maybe I don't have localStorage permissions, or exporting failed). Check the F12 console for the error.")
         console.error(err);
     }
 }
 
+function deleteScene(name="default") {
+    try {
+        localStorage.removeItem("macrovision-save-" + name)
+    } catch(err) {
+        console.error(err);
+    }
+}
 function exportScene() {
     const results = {};
 
