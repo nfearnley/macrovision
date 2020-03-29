@@ -240,35 +240,57 @@ const countryData = [["Zimbabwe",389139344886.9551,750673.8733651662],
 ["Antarctica",9873880556033.318,3705614.001089979],
 ["Sint Maarten",41933349.229216255,5539.704322566973]];
 
-
-function makeState(views, name, height, width, area) {
-    views[name] = {
-        attributes: {
-            height: {
-                name: "Height",
-                power: 1,
-                type: "length",
-                base: height
-            },
-            width: {
-                name: "Width",
-                power: 1,
-                type: "length",
-                base: width
-            },
-            area: {
-                name: "Area",
-                power: 2,
-                type: "area",
-                base: area
-            },
-        },
-        name: name,
-        image: {
-            source: "./media/naturals/states/" + name.toLowerCase().replace(" ", "-") + ".svg"
-        }
-    }
-}
+const stateData = [["Alaska",1452514225725.9436,1868373.8543388732],
+["Alabama",134183493809.92227,532965.3777696239],
+["Arkansas",137594312821.44278,390088.00657864026],
+["Arizona",294757028937.5847,633186.8250454122],
+["California",406293983906.08356,1052709.4946563328],
+["Colorado",269648516308.92535,450204.53976080974],
+["Connecticut",12660002907.845184,118267.25668779382],
+["District of Columbia",143239048.97410837,22849.35891797693],
+["Delaware",5301476457.13695,154538.7770483073],
+["Florida",147061503225.29276,725785.7361081617],
+["Georgia",152545609645.3165,515643.4608175565],
+["Hawaii",16276457956.22964,1072045.4061879863],
+["Iowa",144371045331.47766,349101.761916603],
+["Idaho",215165271391.04874,777597.4487340406],
+["Illinois",149962816232.10614,614341.3685248627],
+["Indiana",94418933046.32669,441183.50429391616],
+["Kansas",211603378234.17575,339716.0845083418],
+["Kentucky",104059819167.07492,288923.8165505772],
+["Louisiana",119735851466.82343,446546.83642277156],
+["Massachusetts",21240814302.251324,180458.12859798397],
+["Maryland",25142576638.752808,199510.82555067376],
+["Maine",83320514510.73213,487259.3522773301],
+["Michigan",248831526119.40704,735361.3389467007],
+["Minnesota",223905746565.9167,652250.567964836],
+["Missouri",181327659750.11615,514688.64139698073],
+["Mississippi",123907979131.48102,535154.9372703212],
+["Montana",378043596367.47034,523842.3904506136],
+["North Carolina",128508233574.94186,306028.3207092302],
+["North Dakota",181516551961.1925,345149.0784229827],
+["Nebraska",199879423825.03116,341927.3618479088],
+["New Hampshire",24194580764.403435,288427.55344232],
+["New Jersey",19628854900.92644,268835.7774083556],
+["New Mexico",314637500694.8689,631664.9951280521],
+["Nevada",286249761376.3085,779935.1168063006],
+["New York",136767165418.95305,500159.906709641],
+["Ohio",116221291680.81133,436881.72983926453],
+["Oklahoma",180427267305.4764,381292.86025305686],
+["Oregon",250918651052.89493,474937.6214419664],
+["Pennsylvania",119213832983.51472,315004.6904564087],
+["Rhode Island",2607765149.7594714,76364.10164281644],
+["South Carolina",80044862853.43794,354848.4371203905],
+["South Dakota",197935435136.62775,380974.5700711944],
+["Tennessee",108984514303.16504,189546.14728804305],
+["Texas",681029919907.9698,1177438.055205133],
+["Utah",219421759907.71756,557946.3739070743],
+["Virginia",102776048838.10104,320700.31725016324],
+["Vermont",24577426263.49393,254009.8998166826],
+["Washington",173341861295.48312,381943.3240589823],
+["Wisconsin",168949350785.5707,534233.1040137928],
+["West Virginia",62625585161.76298,382039.17230066983],
+["Wyoming",253670441447.10522,450348.1722393462]];
 
 function makePlanet(name, diameter, mass, image) {
     return {
@@ -315,22 +337,6 @@ function makeMountains() {
             views
         )
     };
-}
-
-function makeStates() {
-    
-    const stateViews = {};
-
-    makeState(stateViews, "Alaska", math.unit(2071.44, "km"), math.unit(2483.83, "km"), math.unit(1723337, "km^2"));
-    makeState(stateViews, "California", math.unit(1048.82, "km"), math.unit(852.02, "km"), math.unit(423967, "km^2"));
-    makeState(stateViews, "Colorado", math.unit(442.44, "km"), math.unit(604.47, "km"), math.unit(269601, "km^2"));
-    makeState(stateViews, "Florida", math.unit(716.79, "km"), math.unit(723.97, "km"), math.unit(170312, "km^2"));
-    makeState(stateViews, "Maine", math.unit(505.94, "km"), math.unit(330.98, "km"), math.unit(91633, "km^2"));
-    makeState(stateViews, "Montana", math.unit(497.99, "km"), math.unit(983.98, "km"), math.unit(380831, "km^2"));
-    makeState(stateViews, "New York", math.unit(494.92, "km"), math.unit(536.63, "km"), math.unit(141297, "km^2"));
-    makeState(stateViews, "Texas", math.unit(1183.33, "km"), math.unit(1226.69, "km"), math.unit(695662, "km^2"));
-
-    return makeEntity( {name: "States" }, stateViews);
 }
 
 function makeGIS(data, category) {
@@ -424,10 +430,6 @@ function makeNaturals() {
     results.push(makePlanet("Observable Universe", math.unit(1, "universe"), math.unit(10e53, "kg")));
     results.push(makePlanet("Multiverse", math.unit(1e30, "lightyears"), math.unit(1e100, "kg")));
 
-    results.push({
-        name: "States",
-        constructor: makeStates
-    });
 
     results.push(makeMountains());
 
@@ -436,6 +438,13 @@ function makeNaturals() {
             return c1[0].localeCompare(c2[0])
         }),
         "Countries"
+    ));
+
+    results.push(makeGIS(
+        stateData.sort((s1, s2) => {
+            return s1[0].localeCompare(s2[0])
+        }),
+        "States"
     ));
 
 

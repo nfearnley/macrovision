@@ -8328,24 +8328,15 @@ const attributionData = {
             ]
         },
         {
-            prefix: "./media/naturals/states/",
-            files: [
-                { name: "alaska.svg", source: "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg" },
-                { name: "california.svg", source: "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg" },
-                { name: "colorado.svg", source: "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg" },
-                { name: "florida.svg", source: "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg" },
-                { name: "maine.svg", source: "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg" },
-                { name: "montana.svg", source: "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg" },
-                { name: "new-york.svg", source: "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg" },
-                { name: "texas.svg", source: "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg" },
-            ],
+            prefix: "./media/naturals/countries",
+            all: "https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/",
             authors: [
-                "theshibboleth"
+                "naturalearth"
             ]
         },
         {
-            prefix: "./media/naturals/countries",
-            all: "https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/",
+            prefix: "./media/naturals/states",
+            all: "https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-1-states-provinces/",
             authors: [
                 "naturalearth"
             ]
@@ -10543,10 +10534,6 @@ const attributionData = {
         "freedesignfile": {
             "name": "freedesignfile",
             "url": "https://freedesignfile.com/",
-        },
-        "theshibboleth": {
-            "name": "Theshibboleth",
-            "url": "https://commons.wikimedia.org/wiki/Special:Contributions/Theshibboleth",
         },
         "ruby02": {
             "name": "Ruby_02",
