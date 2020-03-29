@@ -11383,10 +11383,15 @@ function ownersOf(file) {
 function ownersOfFull(file) {
     const result = [];
     if (attribution.files[file]) {
-        attribution.files[file].owners.forEach(owner => {
-            result.push(attributionData.people[owner]);
-        });
-        return result;
+        if (attribution.files[file].owners) {
+            attribution.files[file].owners.forEach(owner => {
+                result.push(attributionData.people[owner]);
+            });
+            return result;
+        }
+        else {
+            return [];
+        }
     }
     else {
         const found = attribution.prefixes[Object.keys(attribution.prefixes).find(path => {
@@ -11394,8 +11399,10 @@ function ownersOfFull(file) {
         })];
         
 
-        if (found === undefined || found.owners === undefined) {
+        if (found === undefined) {
             return undefined;
+        } else if (found.owners === undefined) {
+            return [];  
         } else {
             found.owners.forEach(owner => {
                 result.push(attributionData.people[owner]);
