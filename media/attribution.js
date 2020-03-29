@@ -11365,7 +11365,7 @@ function authorsOfFull(file) {
 
 function ownersOf(file) {
     if (attribution.files[file])
-        return attribution.files[file].authors;
+        return attribution.files[file].owners;
     else {
         const found = attribution.prefixes[Object.keys(attribution.prefixes).find(path => {
             return (file.indexOf(path) == 0);
