@@ -488,7 +488,7 @@ function configEntityOptions(entity, view) {
     scaleInput.classList.add("options-field-numeric");
     scaleInput.id = "options-entity-scale";
 
-    scaleInput.addEventListener("input", e => {
+    scaleInput.addEventListener("change", e => {
         entity.scale = e.target.value == 0 ? 1 : e.target.value;
         entity.dirty = true;
         if (config.autoFit) {
@@ -499,6 +499,10 @@ function configEntityOptions(entity, view) {
         updateEntityOptions(entity, view);
         updateViewOptions(entity, view);
     });
+
+    scaleInput.addEventListener("keydown", e => {
+        e.stopPropagation();
+    })
 
     scaleInput.setAttribute("min", 1);
     scaleInput.setAttribute("type", "number");
@@ -523,6 +527,10 @@ function configEntityOptions(entity, view) {
         entity.name = e.target.value;
         entity.dirty = true;
         updateSizes(true);
+    })
+
+    nameInput.addEventListener("keydown", e => {
+        e.stopPropagation();
     })
 
     nameRow.appendChild(nameInput);
@@ -629,6 +637,10 @@ function configViewOptions(entity, view) {
             updateEntityOptions(entity, view);
             updateViewOptions(entity, view, key);
         });
+
+        input.addEventListener("keydown", e => {
+            e.stopPropagation();
+        })
 
         select.setAttribute("oldUnit", select.value);
 
@@ -1414,6 +1426,11 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#options-height-value").addEventListener("change", e => {
         updateWorldHeight();
     })
+
+    document.querySelector("#options-height-value").addEventListener("keydown", e => {
+        e.stopPropagation();
+    })
+
     unitSelector.addEventListener("input", e => {
         checkFitWorld();
         updateWorldHeight();
