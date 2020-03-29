@@ -416,6 +416,8 @@ function deselect() {
     clearViewList();
     clearEntityOptions();
     clearViewOptions();
+    
+    document.querySelector("#delete-entity").disabled = true;
 }
 
 function select(target) {
@@ -432,6 +434,8 @@ function select(target) {
     configViewList(selectedEntity, selectedEntity.view);
     configEntityOptions(selectedEntity, selectedEntity.view);
     configViewOptions(selectedEntity, selectedEntity.view);
+    
+    document.querySelector("#delete-entity").disabled = false;
 }
 
 function configViewList(entity, selectedView) {
@@ -1083,7 +1087,7 @@ function prepareMenu() {
             {
                 name: "Clear",
                 id: "menu-clear",
-                icon: "fas fa-trash-alt"
+                icon: "fas fa-file"
             }
         ],
         [
@@ -1472,6 +1476,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector("#menu-clear").addEventListener("click", e => {
         removeAllEntities();
+    });
+    
+    document.querySelector("#delete-entity").disabled = true;
+    document.querySelector("#delete-entity").addEventListener("click", e => {
+        if (selected) {
+            removeEntity(selected);
+            selected = null;
+        }
     });
 
     document.querySelector("#menu-order-height").addEventListener("click", e => {
