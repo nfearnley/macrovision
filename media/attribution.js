@@ -8342,6 +8342,13 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/naturals/lakes",
+            all: "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-lakes/",
+            authors: [
+                "naturalearth"
+            ]
+        },
+        {
             prefix: "./media/objects/",
             files: [
                 { name: "soda-can.svg", source: null },
