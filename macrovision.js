@@ -1152,7 +1152,7 @@ function prepareMenu() {
     }
 }
 
-const lastHelpChange = 1585150501917;
+const lastHelpChange = 1585487259753;
 
 function checkHelpDate() {
     try {
@@ -1385,14 +1385,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
         if (shiftHeld) {
-            const dir = e.deltaY > 0 ? 10/11 : 11/10;
             if (selected) {
+                const dir = e.deltaY > 0 ? 10/11 : 11/10;
                 const entity = entities[selected.dataset.key];
                 entity.views[entity.view].height = math.multiply(entity.views[entity.view].height, dir);
                 entity.dirty = true;
                 updateEntityOptions(entity, entity.view);
                 updateViewOptions(entity, entity.view);
                 updateSizes(true);
+            } else {
+                document.querySelectorAll(".entity-box").forEach(element => {
+                    element.dataset.x = parseFloat(element.dataset.x) + (e.deltaY < 0 ? 0.1 : -0.1);
+                });
+                updateSizes();
             }
 
         } else {
@@ -1464,6 +1469,20 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         arrangeEntities(order);
+    });
+
+    document.querySelector("#options-world-scroll-left").addEventListener("click", () => {
+        document.querySelectorAll(".entity-box").forEach(element => {
+            element.dataset.x = parseFloat(element.dataset.x) + 0.1;
+        });
+        updateSizes();
+    });
+
+    document.querySelector("#options-world-scroll-right").addEventListener("click", () => {
+        document.querySelectorAll(".entity-box").forEach(element => {
+            element.dataset.x = parseFloat(element.dataset.x) - 0.1;
+        });
+        updateSizes();
     });
 
     document.querySelector("#options-world-fit").addEventListener("click", () => fitWorld(true));

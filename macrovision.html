@@ -47,6 +47,7 @@
         <li>Scroll to zoom.</li>
         <li>Alt-scroll to zoom preserve positions on the screen.</li>
         <li>Shift-scroll with an entity selected to scale it.</li>
+        <li>Shift-scroll without a selection to move horizontally.</li>
       </ul>
     </p>
     <h1>Adding/removing entities</h1>
@@ -90,6 +91,12 @@
           <input class="options-field-numeric" type="number" id="options-height-value" min="1" value="10">
           <select class="options-field-unit" id="options-height-unit">
           </select>
+        </div>
+        <div class="options-row">
+          <button class="options-button" id="options-world-scroll-left">Scroll left</button>
+        </div>
+        <div class="options-row">
+          <button class="options-button" id="options-world-scroll-right">Scroll right</button>
         </div>
         <div class="options-row">
           <button class="options-button" id="options-world-fit">Fit to entities</button>
