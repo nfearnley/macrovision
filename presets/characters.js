@@ -19984,6 +19984,42 @@ characterMakers["Zost"] = () => {
     )
 };
 
+characterMakers["Luci"] = () => {
+    return makeCharacter(
+        "Luci",
+        "sydst",
+        {
+            front: {
+                height: math.unit(5 + 4/12, "feet"),
+                weight: math.unit(120, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/luci/front.svg",
+                    extra: 1985/1884,
+                    bottom: 0.04
+                }
+            },
+            back: {
+                height: math.unit(5 + 4/12, "feet"),
+                weight: math.unit(120, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/luci/back.svg",
+                    extra: 1892/1791,
+                    bottom: 0.002
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 4/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

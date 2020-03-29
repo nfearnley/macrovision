@@ -8179,6 +8179,19 @@ const attributionData = {
                 "xrequiem"
             ]
         },
+        {
+            prefix: "./media/characters/luci/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/21689013/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/21689013/" },
+            ],
+            authors: [
+                "jezzthejevix"
+            ],
+            owners: [
+                "sydst"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11263,6 +11276,14 @@ const attributionData = {
         "kaprikaaz": {
             "name": "KaprikaAZ",
             "url": "https://www.furaffinity.net/user/kaprikaaz/",
+        },
+        "sydst": {
+            "name": "sydst",
+            "url": "https://www.furaffinity.net/user/sydst/",
+        },
+        "jezzthejevix": {
+            "name": "JessTheJevix",
+            "url": "https://www.furaffinity.net/user/jezzthejevix",
         },
     }
 }
