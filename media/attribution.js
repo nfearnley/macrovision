@@ -8344,6 +8344,13 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/naturals/countries",
+            all: "https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/",
+            authors: [
+                "naturalearth"
+            ]
+        },
+        {
             prefix: "./media/objects/",
             files: [
                 { name: "soda-can.svg", source: null },
@@ -11285,6 +11292,10 @@ const attributionData = {
             "name": "JessTheJevix",
             "url": "https://www.furaffinity.net/user/jezzthejevix",
         },
+        "naturalearth": {
+            "name": "Natural Earth",
+            "url": "https://www.naturalearthdata.com",
+        },
     }
 }
 
@@ -11294,61 +11305,110 @@ const attribution = {};
 
 function prepareAttribution() {
     attribution["files"] = {};
+    attribution["prefixes"] = {};
 
     attributionData.sources.forEach(citation => {
-        citation.files.forEach(file => {
-            attribution.files[citation.prefix + file.name] = {
+        if (citation.all !== undefined) {
+            attribution.prefixes[citation.prefix] = {
                 authors: citation.authors,
                 owners: citation.owners,
-                source: file.source
+                source: citation.all
             }
-        })
+        } else {
+            citation.files.forEach(file => {
+                attribution.files[citation.prefix + file.name] = {
+                    authors: citation.authors,
+                    owners: citation.owners,
+                    source: file.source
+                }
+            })
+        }
+        
     });
 }
 
 function authorsOf(file) {
     if (attribution.files[file])
         return attribution.files[file].authors;
-    else
-        return undefined;
+    else {
+        const found = attribution.prefixes[Object.keys(attribution.prefixes).find(path => {
+            return (file.indexOf(path) == 0);
+        })];
+        
+
+        if (found === undefined) {
+            return undefined;
+        } else {
+            return found.authors;
+        }
+    }
 }
 
 function authorsOfFull(file) {
+    const result = [];
     if (attribution.files[file]) {
-        const result = [];
         attribution.files[file].authors.forEach(author => {
             result.push(attributionData.people[author]);
         });
-
         return result;
     }
-    else
-        return undefined;
+    else {
+        const found = attribution.prefixes[Object.keys(attribution.prefixes).find(path => {
+            return (file.indexOf(path) == 0);
+        })];
+        
+
+        if (found === undefined || found.authors === undefined) {
+            return undefined;
+        } else {
+            found.authors.forEach(author => {
+                result.push(attributionData.people[author]);
+            });
+            return result;
+        }
+    }
 }
 
 function ownersOf(file) {
     if (attribution.files[file])
-        return attribution.files[file].owners;
-    else
-        return undefined;
+        return attribution.files[file].authors;
+    else {
+        const found = attribution.prefixes[Object.keys(attribution.prefixes).find(path => {
+            return (file.indexOf(path) == 0);
+        })];
+        
+
+        if (found === undefined) {
+            return undefined;
+        } else {
+            return found.owners;
+        }
+    }
 }
 
 function ownersOfFull(file) {
+    const result = [];
     if (attribution.files[file]) {
-        if (attribution.files[file].owners !== undefined) {
-            const result = [];
-            attribution.files[file].owners.forEach(owner => {
+        attribution.files[file].owners.forEach(owner => {
+            result.push(attributionData.people[owner]);
+        });
+        return result;
+    }
+    else {
+        const found = attribution.prefixes[Object.keys(attribution.prefixes).find(path => {
+            return (file.indexOf(path) == 0);
+        })];
+        
+
+        if (found === undefined || found.owners === undefined) {
+            return undefined;
+        } else {
+            found.owners.forEach(owner => {
                 result.push(attributionData.people[owner]);
             });
-
             return result;
-        } else {
-            return [];
         }
-
     }
-    else
-        return undefined;
 }
 
 function sourceOf(file) {
