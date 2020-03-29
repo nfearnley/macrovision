@@ -6730,11 +6730,13 @@ characterMakers["Goddess Elizabeth"] = () => {
                 weight: math.unit(150, "lb"),
                 name: "Front",
                 image: {
-                    source: "./media/characters/goddess-elizabeth/front.svg"
+                    source: "./media/characters/goddess-elizabeth/front.svg",
+                    extra: 1800/1525,
+                    bottom: 0.005
                 }
             },
             foot: {
-                height: math.unit(6 * 0.25436 / 2, "feet"),
+                height: math.unit(6 * 0.25436 * 1800/1525 / 2, "feet"),
                 name: "Foot",
                 image: {
                     source: "./media/characters/goddess-elizabeth/foot.svg"
