@@ -11408,8 +11408,18 @@ function ownersOfFull(file) {
 function sourceOf(file) {
     if (attribution.files[file])
         return attribution.files[file].source;
-    else
-        return undefined;
+    else {
+        const found = attribution.prefixes[Object.keys(attribution.prefixes).find(path => {
+            return (file.indexOf(path) == 0);
+        })];
+        
+
+        if (found === undefined) {
+            return undefined;
+        } else {
+            return found.source;
+        }
+    }
 }
 
 prepareAttribution();
