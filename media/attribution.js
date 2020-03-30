@@ -8451,6 +8451,21 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/species/synx/",
+            files: [
+                { name: "goo-chick.svg", source: "https://twitter.com/ChimeraSynx/status/1212231503779778560" },
+                { name: "ooze-eel.svg", source: "https://twitter.com/ChimeraSynx/status/1212231503779778560" },
+                { name: "synx.svg", source: "https://twitter.com/ChimeraSynx/status/1212231503779778560" },
+                { name: "weeper.svg", source: "https://twitter.com/ChimeraSynx/status/1212231503779778560" },
+            ],
+            authors: [
+                "chimerasynx"
+            ],
+            owners: [
+                "chimerasynx"
+            ]
+        },
+        {
             prefix: "./media/vehicles/",
             files: [
                 { name: "vertical-bus.svg", source: null },
@@ -11289,6 +11304,10 @@ const attributionData = {
         "naturalearth": {
             "name": "Natural Earth",
             "url": "https://www.naturalearthdata.com",
+        },
+        "chimerasynx": {
+            "name": "ChimeraSynx",
+            "url": "https://twitter.com/ChimeraSynx/",
         },
     }
 }
