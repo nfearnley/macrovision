@@ -8192,6 +8192,19 @@ const attributionData = {
                 "sydst"
             ]
         },
+        {
+            prefix: "./media/characters/2th/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35645962/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/35645962/" },
+            ],
+            authors: [
+                "kenson"
+            ],
+            owners: [
+                "kenson"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11308,6 +11321,10 @@ const attributionData = {
         "chimerasynx": {
             "name": "ChimeraSynx",
             "url": "https://twitter.com/ChimeraSynx/",
+        },
+        "kenson": {
+            "name": "Kenson",
+            "url": "https://www.furaffinity.net/user/kenson/",
         },
     }
 }

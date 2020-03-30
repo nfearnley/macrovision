@@ -20022,6 +20022,59 @@ characterMakers["Luci"] = () => {
     )
 };
 
+characterMakers["2th"] = () => {
+    return makeCharacter(
+        "2th",
+        "Kenson",
+        {
+            front: {
+                height: math.unit(1500, "feet"),
+                weight: math.unit(3.8, "megatons"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/2th/front.svg",
+                    extra: 3489/3350,
+                    bottom: 0.1
+                }
+            },
+            foot: {
+                height: math.unit(461, "feet"),
+                name: "Foot",
+                image: {
+                    source: "./media/characters/2th/foot.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "\"Micro\"",
+                height: math.unit(15 + 7/12, "feet")
+            },
+            {
+                name: "Normal",
+                height: math.unit(1500, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(5000, "feet")
+            },
+            {
+                name: "Megamacro",
+                height: math.unit(15, "miles")
+            },
+            {
+                name: "Gigamacro",
+                height: math.unit(4000, "miles")
+            },
+            {
+                name: "Galactic",
+                height: math.unit(50, "AU")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
