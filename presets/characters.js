@@ -20029,7 +20029,7 @@ characterMakers["2th"] = () => {
         {
             front: {
                 height: math.unit(1500, "feet"),
-                weight: math.unit(3.8, "megatons"),
+                weight: math.unit(3.8e6, "tons"),
                 name: "Front",
                 image: {
                     source: "./media/characters/2th/front.svg",
