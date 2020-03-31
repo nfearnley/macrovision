@@ -8278,6 +8278,19 @@ const attributionData = {
                 "amethyst-lumisade"
             ]
         },
+        {
+            prefix: "./media/characters/yumi-akiyama/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/28881947/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/28881947/" },
+            ],
+            authors: [
+                "yumiakiyama"
+            ],
+            owners: [
+                "yumiakiyama"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11430,6 +11443,10 @@ const attributionData = {
         "amethyst-lumisade": {
             "name": "Amethyst Lumisade",
             "url": "https://www.furaffinity.net/user/amethystlumisade/",
+        },
+        "yumiakiyama": {
+            "name": "Yuki Akiyama",
+            "url": "https://www.furaffinity.net/user/yumiakiyama/",
         },
     }
 }

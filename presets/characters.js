@@ -20114,6 +20114,46 @@ characterMakers["Amethyst"] = () => {
     )
 };
 
+characterMakers["Yumi Akiyama"] = () => {
+    return makeCharacter(
+        "Yumi Akiyama",
+        "Yumi Akiyama",
+        {
+            front: {
+                height: math.unit(4 + 11/12, "feet"),
+                weight: math.unit(120, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/yumi-akiyama/front.svg",
+                    extra: 1327/1235,
+                    bottom: 0.02
+                }
+            },
+            back: {
+                height: math.unit(4 + 11/12, "feet"),
+                weight: math.unit(120, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/yumi-akiyama/back.svg",
+                    extra: 1287/1245,
+                    bottom: 0.002
+                }
+            },
+        },
+        [
+            {
+                name: "Galactic",
+                height: math.unit(50, "galaxies"),
+                default: true
+            },
+            {
+                name: "Universal",
+                height: math.unit(100, "universes")
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
