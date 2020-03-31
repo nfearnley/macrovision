@@ -4,8 +4,7 @@ const pokemonMakers = {};
 
 pokemonMakers["Abomasnow"] = () => {
     return makeCharacter(
-        "Abomasnow",
-        "Pokemon",
+        { name: "Abomasnow" },
         {
             
 "Abomasnow": {
@@ -58,8 +57,7 @@ pokemonMakers["Abomasnow"] = () => {
 
 pokemonMakers["Abra"] = () => {
     return makeCharacter(
-        "Abra",
-        "Pokemon",
+        { name: "Abra" },
         {
             
 "Abra": {
@@ -102,8 +100,7 @@ pokemonMakers["Abra"] = () => {
 
 pokemonMakers["Absol"] = () => {
     return makeCharacter(
-        "Absol",
-        "Pokemon",
+        { name: "Absol" },
         {
             
 "Absol": {
@@ -156,8 +153,7 @@ pokemonMakers["Absol"] = () => {
 
 pokemonMakers["Accelgor"] = () => {
     return makeCharacter(
-        "Accelgor",
-        "Pokemon",
+        { name: "Accelgor" },
         {
             
 "Accelgor": {
@@ -200,8 +196,7 @@ pokemonMakers["Accelgor"] = () => {
 
 pokemonMakers["Aegislash"] = () => {
     return makeCharacter(
-        "Aegislash",
-        "Pokemon",
+        { name: "Aegislash" },
         {
             
 "Blade Forme": {
@@ -254,8 +249,7 @@ pokemonMakers["Aegislash"] = () => {
 
 pokemonMakers["Aerodactyl"] = () => {
     return makeCharacter(
-        "Aerodactyl",
-        "Pokemon",
+        { name: "Aerodactyl" },
         {
             
 "Aerodactyl": {
@@ -308,8 +302,7 @@ pokemonMakers["Aerodactyl"] = () => {
 
 pokemonMakers["Aggron"] = () => {
     return makeCharacter(
-        "Aggron",
-        "Pokemon",
+        { name: "Aggron" },
         {
             
 "Aggron": {
@@ -362,8 +355,7 @@ pokemonMakers["Aggron"] = () => {
 
 pokemonMakers["Aipom"] = () => {
     return makeCharacter(
-        "Aipom",
-        "Pokemon",
+        { name: "Aipom" },
         {
             
 "Aipom": {
@@ -406,8 +398,7 @@ pokemonMakers["Aipom"] = () => {
 
 pokemonMakers["Alakazam"] = () => {
     return makeCharacter(
-        "Alakazam",
-        "Pokemon",
+        { name: "Alakazam" },
         {
             
 "Alakazam": {
@@ -460,8 +451,7 @@ pokemonMakers["Alakazam"] = () => {
 
 pokemonMakers["Alcremie"] = () => {
     return makeCharacter(
-        "Alcremie",
-        "Pokemon",
+        { name: "Alcremie" },
         {
             
 "Vanilla Cream": {
@@ -514,8 +504,7 @@ pokemonMakers["Alcremie"] = () => {
 
 pokemonMakers["Alomomola"] = () => {
     return makeCharacter(
-        "Alomomola",
-        "Pokemon",
+        { name: "Alomomola" },
         {
             
 "Alomomola": {
@@ -558,8 +547,7 @@ pokemonMakers["Alomomola"] = () => {
 
 pokemonMakers["Altaria"] = () => {
     return makeCharacter(
-        "Altaria",
-        "Pokemon",
+        { name: "Altaria" },
         {
             
 "Altaria": {
@@ -612,8 +600,7 @@ pokemonMakers["Altaria"] = () => {
 
 pokemonMakers["Amaura"] = () => {
     return makeCharacter(
-        "Amaura",
-        "Pokemon",
+        { name: "Amaura" },
         {
             
 "Amaura": {
@@ -656,8 +643,7 @@ pokemonMakers["Amaura"] = () => {
 
 pokemonMakers["Ambipom"] = () => {
     return makeCharacter(
-        "Ambipom",
-        "Pokemon",
+        { name: "Ambipom" },
         {
             
 "Ambipom": {
@@ -700,8 +686,7 @@ pokemonMakers["Ambipom"] = () => {
 
 pokemonMakers["Amoonguss"] = () => {
     return makeCharacter(
-        "Amoonguss",
-        "Pokemon",
+        { name: "Amoonguss" },
         {
             
 "Amoonguss": {
@@ -744,8 +729,7 @@ pokemonMakers["Amoonguss"] = () => {
 
 pokemonMakers["Ampharos"] = () => {
     return makeCharacter(
-        "Ampharos",
-        "Pokemon",
+        { name: "Ampharos" },
         {
             
 "Ampharos": {
@@ -798,8 +782,7 @@ pokemonMakers["Ampharos"] = () => {
 
 pokemonMakers["Anorith"] = () => {
     return makeCharacter(
-        "Anorith",
-        "Pokemon",
+        { name: "Anorith" },
         {
             
 "Anorith": {
@@ -842,8 +825,7 @@ pokemonMakers["Anorith"] = () => {
 
 pokemonMakers["Appletun"] = () => {
     return makeCharacter(
-        "Appletun",
-        "Pokemon",
+        { name: "Appletun" },
         {
             
 "Appletun": {
@@ -896,8 +878,7 @@ pokemonMakers["Appletun"] = () => {
 
 pokemonMakers["Applin"] = () => {
     return makeCharacter(
-        "Applin",
-        "Pokemon",
+        { name: "Applin" },
         {
             
 "Applin": {
@@ -940,8 +921,7 @@ pokemonMakers["Applin"] = () => {
 
 pokemonMakers["Araquanid"] = () => {
     return makeCharacter(
-        "Araquanid",
-        "Pokemon",
+        { name: "Araquanid" },
         {
             
 "Araquanid": {
@@ -984,8 +964,7 @@ pokemonMakers["Araquanid"] = () => {
 
 pokemonMakers["Arbok"] = () => {
     return makeCharacter(
-        "Arbok",
-        "Pokemon",
+        { name: "Arbok" },
         {
             
 "Arbok": {
@@ -1028,8 +1007,7 @@ pokemonMakers["Arbok"] = () => {
 
 pokemonMakers["Arcanine"] = () => {
     return makeCharacter(
-        "Arcanine",
-        "Pokemon",
+        { name: "Arcanine" },
         {
             
 "Arcanine": {
@@ -1072,8 +1050,7 @@ pokemonMakers["Arcanine"] = () => {
 
 pokemonMakers["Arceus"] = () => {
     return makeCharacter(
-        "Arceus",
-        "Pokemon",
+        { name: "Arceus" },
         {
             
 "Bug": {
@@ -1286,8 +1263,7 @@ pokemonMakers["Arceus"] = () => {
 
 pokemonMakers["Archen"] = () => {
     return makeCharacter(
-        "Archen",
-        "Pokemon",
+        { name: "Archen" },
         {
             
 "Archen": {
@@ -1330,8 +1306,7 @@ pokemonMakers["Archen"] = () => {
 
 pokemonMakers["Archeops"] = () => {
     return makeCharacter(
-        "Archeops",
-        "Pokemon",
+        { name: "Archeops" },
         {
             
 "Archeops": {
@@ -1374,8 +1349,7 @@ pokemonMakers["Archeops"] = () => {
 
 pokemonMakers["Arctovish"] = () => {
     return makeCharacter(
-        "Arctovish",
-        "Pokemon",
+        { name: "Arctovish" },
         {
             
 "Arctovish": {
@@ -1418,8 +1392,7 @@ pokemonMakers["Arctovish"] = () => {
 
 pokemonMakers["Arctozolt"] = () => {
     return makeCharacter(
-        "Arctozolt",
-        "Pokemon",
+        { name: "Arctozolt" },
         {
             
 "Arctozolt": {
@@ -1462,8 +1435,7 @@ pokemonMakers["Arctozolt"] = () => {
 
 pokemonMakers["Ariados"] = () => {
     return makeCharacter(
-        "Ariados",
-        "Pokemon",
+        { name: "Ariados" },
         {
             
 "Ariados": {
@@ -1506,8 +1478,7 @@ pokemonMakers["Ariados"] = () => {
 
 pokemonMakers["Armaldo"] = () => {
     return makeCharacter(
-        "Armaldo",
-        "Pokemon",
+        { name: "Armaldo" },
         {
             
 "Armaldo": {
@@ -1550,8 +1521,7 @@ pokemonMakers["Armaldo"] = () => {
 
 pokemonMakers["Aromatisse"] = () => {
     return makeCharacter(
-        "Aromatisse",
-        "Pokemon",
+        { name: "Aromatisse" },
         {
             
 "Aromatisse": {
@@ -1594,8 +1564,7 @@ pokemonMakers["Aromatisse"] = () => {
 
 pokemonMakers["Aron"] = () => {
     return makeCharacter(
-        "Aron",
-        "Pokemon",
+        { name: "Aron" },
         {
             
 "Aron": {
@@ -1638,8 +1607,7 @@ pokemonMakers["Aron"] = () => {
 
 pokemonMakers["Arrokuda"] = () => {
     return makeCharacter(
-        "Arrokuda",
-        "Pokemon",
+        { name: "Arrokuda" },
         {
             
 "Arrokuda": {
@@ -1682,8 +1650,7 @@ pokemonMakers["Arrokuda"] = () => {
 
 pokemonMakers["Articuno"] = () => {
     return makeCharacter(
-        "Articuno",
-        "Pokemon",
+        { name: "Articuno" },
         {
             
 "Articuno": {
@@ -1726,8 +1693,7 @@ pokemonMakers["Articuno"] = () => {
 
 pokemonMakers["Greninja"] = () => {
     return makeCharacter(
-        "Greninja",
-        "Pokemon",
+        { name: "Greninja" },
         {
             
 "Ash-Greninja": {
@@ -1780,8 +1746,7 @@ pokemonMakers["Greninja"] = () => {
 
 pokemonMakers["Audino"] = () => {
     return makeCharacter(
-        "Audino",
-        "Pokemon",
+        { name: "Audino" },
         {
             
 "Audino": {
@@ -1834,8 +1799,7 @@ pokemonMakers["Audino"] = () => {
 
 pokemonMakers["Aurorus"] = () => {
     return makeCharacter(
-        "Aurorus",
-        "Pokemon",
+        { name: "Aurorus" },
         {
             
 "Aurorus": {
@@ -1878,8 +1842,7 @@ pokemonMakers["Aurorus"] = () => {
 
 pokemonMakers["Avalugg"] = () => {
     return makeCharacter(
-        "Avalugg",
-        "Pokemon",
+        { name: "Avalugg" },
         {
             
 "Avalugg": {
@@ -1922,8 +1885,7 @@ pokemonMakers["Avalugg"] = () => {
 
 pokemonMakers["Axew"] = () => {
     return makeCharacter(
-        "Axew",
-        "Pokemon",
+        { name: "Axew" },
         {
             
 "Axew": {
@@ -1966,8 +1928,7 @@ pokemonMakers["Axew"] = () => {
 
 pokemonMakers["Azelf"] = () => {
     return makeCharacter(
-        "Azelf",
-        "Pokemon",
+        { name: "Azelf" },
         {
             
 "Azelf": {
@@ -2010,8 +1971,7 @@ pokemonMakers["Azelf"] = () => {
 
 pokemonMakers["Azumarill"] = () => {
     return makeCharacter(
-        "Azumarill",
-        "Pokemon",
+        { name: "Azumarill" },
         {
             
 "Azumarill": {
@@ -2054,8 +2014,7 @@ pokemonMakers["Azumarill"] = () => {
 
 pokemonMakers["Azurill"] = () => {
     return makeCharacter(
-        "Azurill",
-        "Pokemon",
+        { name: "Azurill" },
         {
             
 "Azurill": {
@@ -2098,8 +2057,7 @@ pokemonMakers["Azurill"] = () => {
 
 pokemonMakers["Bagon"] = () => {
     return makeCharacter(
-        "Bagon",
-        "Pokemon",
+        { name: "Bagon" },
         {
             
 "Bagon": {
@@ -2142,8 +2100,7 @@ pokemonMakers["Bagon"] = () => {
 
 pokemonMakers["Baltoy"] = () => {
     return makeCharacter(
-        "Baltoy",
-        "Pokemon",
+        { name: "Baltoy" },
         {
             
 "Baltoy": {
@@ -2186,8 +2143,7 @@ pokemonMakers["Baltoy"] = () => {
 
 pokemonMakers["Banette"] = () => {
     return makeCharacter(
-        "Banette",
-        "Pokemon",
+        { name: "Banette" },
         {
             
 "Banette": {
@@ -2240,8 +2196,7 @@ pokemonMakers["Banette"] = () => {
 
 pokemonMakers["Barbaracle"] = () => {
     return makeCharacter(
-        "Barbaracle",
-        "Pokemon",
+        { name: "Barbaracle" },
         {
             
 "Barbaracle": {
@@ -2284,8 +2239,7 @@ pokemonMakers["Barbaracle"] = () => {
 
 pokemonMakers["Barboach"] = () => {
     return makeCharacter(
-        "Barboach",
-        "Pokemon",
+        { name: "Barboach" },
         {
             
 "Barboach": {
@@ -2328,8 +2282,7 @@ pokemonMakers["Barboach"] = () => {
 
 pokemonMakers["Barraskewda"] = () => {
     return makeCharacter(
-        "Barraskewda",
-        "Pokemon",
+        { name: "Barraskewda" },
         {
             
 "Barraskewda": {
@@ -2372,8 +2325,7 @@ pokemonMakers["Barraskewda"] = () => {
 
 pokemonMakers["Basculin"] = () => {
     return makeCharacter(
-        "Basculin",
-        "Pokemon",
+        { name: "Basculin" },
         {
             
 "Blue-Striped Form": {
@@ -2426,8 +2378,7 @@ pokemonMakers["Basculin"] = () => {
 
 pokemonMakers["Bastiodon"] = () => {
     return makeCharacter(
-        "Bastiodon",
-        "Pokemon",
+        { name: "Bastiodon" },
         {
             
 "Bastiodon": {
@@ -2470,8 +2421,7 @@ pokemonMakers["Bastiodon"] = () => {
 
 pokemonMakers["Bayleef"] = () => {
     return makeCharacter(
-        "Bayleef",
-        "Pokemon",
+        { name: "Bayleef" },
         {
             
 "Bayleef": {
@@ -2514,8 +2464,7 @@ pokemonMakers["Bayleef"] = () => {
 
 pokemonMakers["Beartic"] = () => {
     return makeCharacter(
-        "Beartic",
-        "Pokemon",
+        { name: "Beartic" },
         {
             
 "Beartic": {
@@ -2558,8 +2507,7 @@ pokemonMakers["Beartic"] = () => {
 
 pokemonMakers["Beautifly"] = () => {
     return makeCharacter(
-        "Beautifly",
-        "Pokemon",
+        { name: "Beautifly" },
         {
             
 "Beautifly": {
@@ -2602,8 +2550,7 @@ pokemonMakers["Beautifly"] = () => {
 
 pokemonMakers["Beedrill"] = () => {
     return makeCharacter(
-        "Beedrill",
-        "Pokemon",
+        { name: "Beedrill" },
         {
             
 "Beedrill": {
@@ -2656,8 +2603,7 @@ pokemonMakers["Beedrill"] = () => {
 
 pokemonMakers["Beheeyem"] = () => {
     return makeCharacter(
-        "Beheeyem",
-        "Pokemon",
+        { name: "Beheeyem" },
         {
             
 "Beheeyem": {
@@ -2700,8 +2646,7 @@ pokemonMakers["Beheeyem"] = () => {
 
 pokemonMakers["Beldum"] = () => {
     return makeCharacter(
-        "Beldum",
-        "Pokemon",
+        { name: "Beldum" },
         {
             
 "Beldum": {
@@ -2744,8 +2689,7 @@ pokemonMakers["Beldum"] = () => {
 
 pokemonMakers["Bellossom"] = () => {
     return makeCharacter(
-        "Bellossom",
-        "Pokemon",
+        { name: "Bellossom" },
         {
             
 "Bellossom": {
@@ -2788,8 +2732,7 @@ pokemonMakers["Bellossom"] = () => {
 
 pokemonMakers["Bellsprout"] = () => {
     return makeCharacter(
-        "Bellsprout",
-        "Pokemon",
+        { name: "Bellsprout" },
         {
             
 "Bellsprout": {
@@ -2832,8 +2775,7 @@ pokemonMakers["Bellsprout"] = () => {
 
 pokemonMakers["Bergmite"] = () => {
     return makeCharacter(
-        "Bergmite",
-        "Pokemon",
+        { name: "Bergmite" },
         {
             
 "Bergmite": {
@@ -2876,8 +2818,7 @@ pokemonMakers["Bergmite"] = () => {
 
 pokemonMakers["Bewear"] = () => {
     return makeCharacter(
-        "Bewear",
-        "Pokemon",
+        { name: "Bewear" },
         {
             
 "Bewear": {
@@ -2920,8 +2861,7 @@ pokemonMakers["Bewear"] = () => {
 
 pokemonMakers["Bibarel"] = () => {
     return makeCharacter(
-        "Bibarel",
-        "Pokemon",
+        { name: "Bibarel" },
         {
             
 "Bibarel": {
@@ -2964,8 +2904,7 @@ pokemonMakers["Bibarel"] = () => {
 
 pokemonMakers["Bidoof"] = () => {
     return makeCharacter(
-        "Bidoof",
-        "Pokemon",
+        { name: "Bidoof" },
         {
             
 "Bidoof": {
@@ -3008,8 +2947,7 @@ pokemonMakers["Bidoof"] = () => {
 
 pokemonMakers["Binacle"] = () => {
     return makeCharacter(
-        "Binacle",
-        "Pokemon",
+        { name: "Binacle" },
         {
             
 "Binacle": {
@@ -3052,8 +2990,7 @@ pokemonMakers["Binacle"] = () => {
 
 pokemonMakers["Bisharp"] = () => {
     return makeCharacter(
-        "Bisharp",
-        "Pokemon",
+        { name: "Bisharp" },
         {
             
 "Bisharp": {
@@ -3096,8 +3033,7 @@ pokemonMakers["Bisharp"] = () => {
 
 pokemonMakers["Blacephalon"] = () => {
     return makeCharacter(
-        "Blacephalon",
-        "Pokemon",
+        { name: "Blacephalon" },
         {
             
 "Blacephalon": {
@@ -3140,8 +3076,7 @@ pokemonMakers["Blacephalon"] = () => {
 
 pokemonMakers["Kyurem"] = () => {
     return makeCharacter(
-        "Kyurem",
-        "Pokemon",
+        { name: "Kyurem" },
         {
             
 "Black Kyurem": {
@@ -3204,8 +3139,7 @@ pokemonMakers["Kyurem"] = () => {
 
 pokemonMakers["Blastoise"] = () => {
     return makeCharacter(
-        "Blastoise",
-        "Pokemon",
+        { name: "Blastoise" },
         {
             
 "Blastoise": {
@@ -3258,8 +3192,7 @@ pokemonMakers["Blastoise"] = () => {
 
 pokemonMakers["Blaziken"] = () => {
     return makeCharacter(
-        "Blaziken",
-        "Pokemon",
+        { name: "Blaziken" },
         {
             
 "Blaziken": {
@@ -3312,8 +3245,7 @@ pokemonMakers["Blaziken"] = () => {
 
 pokemonMakers["Blipbug"] = () => {
     return makeCharacter(
-        "Blipbug",
-        "Pokemon",
+        { name: "Blipbug" },
         {
             
 "Blipbug": {
@@ -3356,8 +3288,7 @@ pokemonMakers["Blipbug"] = () => {
 
 pokemonMakers["Blissey"] = () => {
     return makeCharacter(
-        "Blissey",
-        "Pokemon",
+        { name: "Blissey" },
         {
             
 "Blissey": {
@@ -3400,8 +3331,7 @@ pokemonMakers["Blissey"] = () => {
 
 pokemonMakers["Blitzle"] = () => {
     return makeCharacter(
-        "Blitzle",
-        "Pokemon",
+        { name: "Blitzle" },
         {
             
 "Blitzle": {
@@ -3444,8 +3374,7 @@ pokemonMakers["Blitzle"] = () => {
 
 pokemonMakers["Boldore"] = () => {
     return makeCharacter(
-        "Boldore",
-        "Pokemon",
+        { name: "Boldore" },
         {
             
 "Boldore": {
@@ -3488,8 +3417,7 @@ pokemonMakers["Boldore"] = () => {
 
 pokemonMakers["Boltund"] = () => {
     return makeCharacter(
-        "Boltund",
-        "Pokemon",
+        { name: "Boltund" },
         {
             
 "Boltund": {
@@ -3532,8 +3460,7 @@ pokemonMakers["Boltund"] = () => {
 
 pokemonMakers["Bonsly"] = () => {
     return makeCharacter(
-        "Bonsly",
-        "Pokemon",
+        { name: "Bonsly" },
         {
             
 "Bonsly": {
@@ -3576,8 +3503,7 @@ pokemonMakers["Bonsly"] = () => {
 
 pokemonMakers["Bouffalant"] = () => {
     return makeCharacter(
-        "Bouffalant",
-        "Pokemon",
+        { name: "Bouffalant" },
         {
             
 "Bouffalant": {
@@ -3620,8 +3546,7 @@ pokemonMakers["Bouffalant"] = () => {
 
 pokemonMakers["Bounsweet"] = () => {
     return makeCharacter(
-        "Bounsweet",
-        "Pokemon",
+        { name: "Bounsweet" },
         {
             
 "Bounsweet": {
@@ -3664,8 +3589,7 @@ pokemonMakers["Bounsweet"] = () => {
 
 pokemonMakers["Braixen"] = () => {
     return makeCharacter(
-        "Braixen",
-        "Pokemon",
+        { name: "Braixen" },
         {
             
 "Braixen": {
@@ -3708,8 +3632,7 @@ pokemonMakers["Braixen"] = () => {
 
 pokemonMakers["Braviary"] = () => {
     return makeCharacter(
-        "Braviary",
-        "Pokemon",
+        { name: "Braviary" },
         {
             
 "Braviary": {
@@ -3752,8 +3675,7 @@ pokemonMakers["Braviary"] = () => {
 
 pokemonMakers["Breloom"] = () => {
     return makeCharacter(
-        "Breloom",
-        "Pokemon",
+        { name: "Breloom" },
         {
             
 "Breloom": {
@@ -3796,8 +3718,7 @@ pokemonMakers["Breloom"] = () => {
 
 pokemonMakers["Brionne"] = () => {
     return makeCharacter(
-        "Brionne",
-        "Pokemon",
+        { name: "Brionne" },
         {
             
 "Brionne": {
@@ -3840,8 +3761,7 @@ pokemonMakers["Brionne"] = () => {
 
 pokemonMakers["Bronzong"] = () => {
     return makeCharacter(
-        "Bronzong",
-        "Pokemon",
+        { name: "Bronzong" },
         {
             
 "Bronzong": {
@@ -3884,8 +3804,7 @@ pokemonMakers["Bronzong"] = () => {
 
 pokemonMakers["Bronzor"] = () => {
     return makeCharacter(
-        "Bronzor",
-        "Pokemon",
+        { name: "Bronzor" },
         {
             
 "Bronzor": {
@@ -3928,8 +3847,7 @@ pokemonMakers["Bronzor"] = () => {
 
 pokemonMakers["Bruxish"] = () => {
     return makeCharacter(
-        "Bruxish",
-        "Pokemon",
+        { name: "Bruxish" },
         {
             
 "Bruxish": {
@@ -3972,8 +3890,7 @@ pokemonMakers["Bruxish"] = () => {
 
 pokemonMakers["Budew"] = () => {
     return makeCharacter(
-        "Budew",
-        "Pokemon",
+        { name: "Budew" },
         {
             
 "Budew": {
@@ -4016,8 +3933,7 @@ pokemonMakers["Budew"] = () => {
 
 pokemonMakers["Buizel"] = () => {
     return makeCharacter(
-        "Buizel",
-        "Pokemon",
+        { name: "Buizel" },
         {
             
 "Buizel": {
@@ -4060,8 +3976,7 @@ pokemonMakers["Buizel"] = () => {
 
 pokemonMakers["Bulbasaur"] = () => {
     return makeCharacter(
-        "Bulbasaur",
-        "Pokemon",
+        { name: "Bulbasaur" },
         {
             
 "Bulbasaur": {
@@ -4104,8 +4019,7 @@ pokemonMakers["Bulbasaur"] = () => {
 
 pokemonMakers["Buneary"] = () => {
     return makeCharacter(
-        "Buneary",
-        "Pokemon",
+        { name: "Buneary" },
         {
             
 "Buneary": {
@@ -4148,8 +4062,7 @@ pokemonMakers["Buneary"] = () => {
 
 pokemonMakers["Bunnelby"] = () => {
     return makeCharacter(
-        "Bunnelby",
-        "Pokemon",
+        { name: "Bunnelby" },
         {
             
 "Bunnelby": {
@@ -4192,8 +4105,7 @@ pokemonMakers["Bunnelby"] = () => {
 
 pokemonMakers["Burmy"] = () => {
     return makeCharacter(
-        "Burmy",
-        "Pokemon",
+        { name: "Burmy" },
         {
             
 "Plant Cloak": {
@@ -4256,8 +4168,7 @@ pokemonMakers["Burmy"] = () => {
 
 pokemonMakers["Butterfree"] = () => {
     return makeCharacter(
-        "Butterfree",
-        "Pokemon",
+        { name: "Butterfree" },
         {
             
 "Butterfree": {
@@ -4310,8 +4221,7 @@ pokemonMakers["Butterfree"] = () => {
 
 pokemonMakers["Buzzwole"] = () => {
     return makeCharacter(
-        "Buzzwole",
-        "Pokemon",
+        { name: "Buzzwole" },
         {
             
 "Buzzwole": {
@@ -4354,8 +4264,7 @@ pokemonMakers["Buzzwole"] = () => {
 
 pokemonMakers["Cacnea"] = () => {
     return makeCharacter(
-        "Cacnea",
-        "Pokemon",
+        { name: "Cacnea" },
         {
             
 "Cacnea": {
@@ -4398,8 +4307,7 @@ pokemonMakers["Cacnea"] = () => {
 
 pokemonMakers["Cacturne"] = () => {
     return makeCharacter(
-        "Cacturne",
-        "Pokemon",
+        { name: "Cacturne" },
         {
             
 "Cacturne": {
@@ -4442,8 +4350,7 @@ pokemonMakers["Cacturne"] = () => {
 
 pokemonMakers["Camerupt"] = () => {
     return makeCharacter(
-        "Camerupt",
-        "Pokemon",
+        { name: "Camerupt" },
         {
             
 "Camerupt": {
@@ -4496,8 +4403,7 @@ pokemonMakers["Camerupt"] = () => {
 
 pokemonMakers["Carbink"] = () => {
     return makeCharacter(
-        "Carbink",
-        "Pokemon",
+        { name: "Carbink" },
         {
             
 "Carbink": {
@@ -4540,8 +4446,7 @@ pokemonMakers["Carbink"] = () => {
 
 pokemonMakers["Carkol"] = () => {
     return makeCharacter(
-        "Carkol",
-        "Pokemon",
+        { name: "Carkol" },
         {
             
 "Carkol": {
@@ -4584,8 +4489,7 @@ pokemonMakers["Carkol"] = () => {
 
 pokemonMakers["Carnivine"] = () => {
     return makeCharacter(
-        "Carnivine",
-        "Pokemon",
+        { name: "Carnivine" },
         {
             
 "Carnivine": {
@@ -4628,8 +4532,7 @@ pokemonMakers["Carnivine"] = () => {
 
 pokemonMakers["Carracosta"] = () => {
     return makeCharacter(
-        "Carracosta",
-        "Pokemon",
+        { name: "Carracosta" },
         {
             
 "Carracosta": {
@@ -4672,8 +4575,7 @@ pokemonMakers["Carracosta"] = () => {
 
 pokemonMakers["Carvanha"] = () => {
     return makeCharacter(
-        "Carvanha",
-        "Pokemon",
+        { name: "Carvanha" },
         {
             
 "Carvanha": {
@@ -4716,8 +4618,7 @@ pokemonMakers["Carvanha"] = () => {
 
 pokemonMakers["Cascoon"] = () => {
     return makeCharacter(
-        "Cascoon",
-        "Pokemon",
+        { name: "Cascoon" },
         {
             
 "Cascoon": {
@@ -4760,8 +4661,7 @@ pokemonMakers["Cascoon"] = () => {
 
 pokemonMakers["Castform"] = () => {
     return makeCharacter(
-        "Castform",
-        "Pokemon",
+        { name: "Castform" },
         {
             
 "Rainy Form": {
@@ -4834,8 +4734,7 @@ pokemonMakers["Castform"] = () => {
 
 pokemonMakers["Caterpie"] = () => {
     return makeCharacter(
-        "Caterpie",
-        "Pokemon",
+        { name: "Caterpie" },
         {
             
 "Caterpie": {
@@ -4878,8 +4777,7 @@ pokemonMakers["Caterpie"] = () => {
 
 pokemonMakers["Celebi"] = () => {
     return makeCharacter(
-        "Celebi",
-        "Pokemon",
+        { name: "Celebi" },
         {
             
 "Celebi": {
@@ -4922,8 +4820,7 @@ pokemonMakers["Celebi"] = () => {
 
 pokemonMakers["Celesteela"] = () => {
     return makeCharacter(
-        "Celesteela",
-        "Pokemon",
+        { name: "Celesteela" },
         {
             
 "Celesteela": {
@@ -4966,8 +4863,7 @@ pokemonMakers["Celesteela"] = () => {
 
 pokemonMakers["Centiskorch"] = () => {
     return makeCharacter(
-        "Centiskorch",
-        "Pokemon",
+        { name: "Centiskorch" },
         {
             
 "Centiskorch": {
@@ -5020,8 +4916,7 @@ pokemonMakers["Centiskorch"] = () => {
 
 pokemonMakers["Chandelure"] = () => {
     return makeCharacter(
-        "Chandelure",
-        "Pokemon",
+        { name: "Chandelure" },
         {
             
 "Chandelure": {
@@ -5064,8 +4959,7 @@ pokemonMakers["Chandelure"] = () => {
 
 pokemonMakers["Chansey"] = () => {
     return makeCharacter(
-        "Chansey",
-        "Pokemon",
+        { name: "Chansey" },
         {
             
 "Chansey": {
@@ -5108,8 +5002,7 @@ pokemonMakers["Chansey"] = () => {
 
 pokemonMakers["Charizard"] = () => {
     return makeCharacter(
-        "Charizard",
-        "Pokemon",
+        { name: "Charizard" },
         {
             
 "Charizard": {
@@ -5182,8 +5075,7 @@ pokemonMakers["Charizard"] = () => {
 
 pokemonMakers["Charjabug"] = () => {
     return makeCharacter(
-        "Charjabug",
-        "Pokemon",
+        { name: "Charjabug" },
         {
             
 "Charjabug": {
@@ -5226,8 +5118,7 @@ pokemonMakers["Charjabug"] = () => {
 
 pokemonMakers["Charmander"] = () => {
     return makeCharacter(
-        "Charmander",
-        "Pokemon",
+        { name: "Charmander" },
         {
             
 "Charmander": {
@@ -5270,8 +5161,7 @@ pokemonMakers["Charmander"] = () => {
 
 pokemonMakers["Charmeleon"] = () => {
     return makeCharacter(
-        "Charmeleon",
-        "Pokemon",
+        { name: "Charmeleon" },
         {
             
 "Charmeleon": {
@@ -5314,8 +5204,7 @@ pokemonMakers["Charmeleon"] = () => {
 
 pokemonMakers["Chatot"] = () => {
     return makeCharacter(
-        "Chatot",
-        "Pokemon",
+        { name: "Chatot" },
         {
             
 "Chatot": {
@@ -5358,8 +5247,7 @@ pokemonMakers["Chatot"] = () => {
 
 pokemonMakers["Cherrim"] = () => {
     return makeCharacter(
-        "Cherrim",
-        "Pokemon",
+        { name: "Cherrim" },
         {
             
 "Overcast Form": {
@@ -5412,8 +5300,7 @@ pokemonMakers["Cherrim"] = () => {
 
 pokemonMakers["Cherubi"] = () => {
     return makeCharacter(
-        "Cherubi",
-        "Pokemon",
+        { name: "Cherubi" },
         {
             
 "Cherubi": {
@@ -5456,8 +5343,7 @@ pokemonMakers["Cherubi"] = () => {
 
 pokemonMakers["Chesnaught"] = () => {
     return makeCharacter(
-        "Chesnaught",
-        "Pokemon",
+        { name: "Chesnaught" },
         {
             
 "Chesnaught": {
@@ -5500,8 +5386,7 @@ pokemonMakers["Chesnaught"] = () => {
 
 pokemonMakers["Chespin"] = () => {
     return makeCharacter(
-        "Chespin",
-        "Pokemon",
+        { name: "Chespin" },
         {
             
 "Chespin": {
@@ -5544,8 +5429,7 @@ pokemonMakers["Chespin"] = () => {
 
 pokemonMakers["Chewtle"] = () => {
     return makeCharacter(
-        "Chewtle",
-        "Pokemon",
+        { name: "Chewtle" },
         {
             
 "Chewtle": {
@@ -5588,8 +5472,7 @@ pokemonMakers["Chewtle"] = () => {
 
 pokemonMakers["Chikorita"] = () => {
     return makeCharacter(
-        "Chikorita",
-        "Pokemon",
+        { name: "Chikorita" },
         {
             
 "Chikorita": {
@@ -5632,8 +5515,7 @@ pokemonMakers["Chikorita"] = () => {
 
 pokemonMakers["Chimchar"] = () => {
     return makeCharacter(
-        "Chimchar",
-        "Pokemon",
+        { name: "Chimchar" },
         {
             
 "Chimchar": {
@@ -5676,8 +5558,7 @@ pokemonMakers["Chimchar"] = () => {
 
 pokemonMakers["Chimecho"] = () => {
     return makeCharacter(
-        "Chimecho",
-        "Pokemon",
+        { name: "Chimecho" },
         {
             
 "Chimecho": {
@@ -5720,8 +5601,7 @@ pokemonMakers["Chimecho"] = () => {
 
 pokemonMakers["Chinchou"] = () => {
     return makeCharacter(
-        "Chinchou",
-        "Pokemon",
+        { name: "Chinchou" },
         {
             
 "Chinchou": {
@@ -5764,8 +5644,7 @@ pokemonMakers["Chinchou"] = () => {
 
 pokemonMakers["Chingling"] = () => {
     return makeCharacter(
-        "Chingling",
-        "Pokemon",
+        { name: "Chingling" },
         {
             
 "Chingling": {
@@ -5808,8 +5687,7 @@ pokemonMakers["Chingling"] = () => {
 
 pokemonMakers["Cinccino"] = () => {
     return makeCharacter(
-        "Cinccino",
-        "Pokemon",
+        { name: "Cinccino" },
         {
             
 "Cinccino": {
@@ -5852,8 +5730,7 @@ pokemonMakers["Cinccino"] = () => {
 
 pokemonMakers["Cinderace"] = () => {
     return makeCharacter(
-        "Cinderace",
-        "Pokemon",
+        { name: "Cinderace" },
         {
             
 "Cinderace": {
@@ -5896,8 +5773,7 @@ pokemonMakers["Cinderace"] = () => {
 
 pokemonMakers["Clamperl"] = () => {
     return makeCharacter(
-        "Clamperl",
-        "Pokemon",
+        { name: "Clamperl" },
         {
             
 "Clamperl": {
@@ -5940,8 +5816,7 @@ pokemonMakers["Clamperl"] = () => {
 
 pokemonMakers["Clauncher"] = () => {
     return makeCharacter(
-        "Clauncher",
-        "Pokemon",
+        { name: "Clauncher" },
         {
             
 "Clauncher": {
@@ -5984,8 +5859,7 @@ pokemonMakers["Clauncher"] = () => {
 
 pokemonMakers["Clawitzer"] = () => {
     return makeCharacter(
-        "Clawitzer",
-        "Pokemon",
+        { name: "Clawitzer" },
         {
             
 "Clawitzer": {
@@ -6028,8 +5902,7 @@ pokemonMakers["Clawitzer"] = () => {
 
 pokemonMakers["Claydol"] = () => {
     return makeCharacter(
-        "Claydol",
-        "Pokemon",
+        { name: "Claydol" },
         {
             
 "Claydol": {
@@ -6072,8 +5945,7 @@ pokemonMakers["Claydol"] = () => {
 
 pokemonMakers["Clefable"] = () => {
     return makeCharacter(
-        "Clefable",
-        "Pokemon",
+        { name: "Clefable" },
         {
             
 "Clefable": {
@@ -6116,8 +5988,7 @@ pokemonMakers["Clefable"] = () => {
 
 pokemonMakers["Clefairy"] = () => {
     return makeCharacter(
-        "Clefairy",
-        "Pokemon",
+        { name: "Clefairy" },
         {
             
 "Clefairy": {
@@ -6160,8 +6031,7 @@ pokemonMakers["Clefairy"] = () => {
 
 pokemonMakers["Cleffa"] = () => {
     return makeCharacter(
-        "Cleffa",
-        "Pokemon",
+        { name: "Cleffa" },
         {
             
 "Cleffa": {
@@ -6204,8 +6074,7 @@ pokemonMakers["Cleffa"] = () => {
 
 pokemonMakers["Clobbopus"] = () => {
     return makeCharacter(
-        "Clobbopus",
-        "Pokemon",
+        { name: "Clobbopus" },
         {
             
 "Clobbopus": {
@@ -6248,8 +6117,7 @@ pokemonMakers["Clobbopus"] = () => {
 
 pokemonMakers["Cloyster"] = () => {
     return makeCharacter(
-        "Cloyster",
-        "Pokemon",
+        { name: "Cloyster" },
         {
             
 "Cloyster": {
@@ -6292,8 +6160,7 @@ pokemonMakers["Cloyster"] = () => {
 
 pokemonMakers["Coalossal"] = () => {
     return makeCharacter(
-        "Coalossal",
-        "Pokemon",
+        { name: "Coalossal" },
         {
             
 "Coalossal": {
@@ -6346,8 +6213,7 @@ pokemonMakers["Coalossal"] = () => {
 
 pokemonMakers["Cobalion"] = () => {
     return makeCharacter(
-        "Cobalion",
-        "Pokemon",
+        { name: "Cobalion" },
         {
             
 "Cobalion": {
@@ -6390,8 +6256,7 @@ pokemonMakers["Cobalion"] = () => {
 
 pokemonMakers["Cofagrigus"] = () => {
     return makeCharacter(
-        "Cofagrigus",
-        "Pokemon",
+        { name: "Cofagrigus" },
         {
             
 "Cofagrigus": {
@@ -6434,8 +6299,7 @@ pokemonMakers["Cofagrigus"] = () => {
 
 pokemonMakers["Combee"] = () => {
     return makeCharacter(
-        "Combee",
-        "Pokemon",
+        { name: "Combee" },
         {
             
 "Combee": {
@@ -6478,8 +6342,7 @@ pokemonMakers["Combee"] = () => {
 
 pokemonMakers["Combusken"] = () => {
     return makeCharacter(
-        "Combusken",
-        "Pokemon",
+        { name: "Combusken" },
         {
             
 "Combusken": {
@@ -6522,8 +6385,7 @@ pokemonMakers["Combusken"] = () => {
 
 pokemonMakers["Comfey"] = () => {
     return makeCharacter(
-        "Comfey",
-        "Pokemon",
+        { name: "Comfey" },
         {
             
 "Comfey": {
@@ -6566,8 +6428,7 @@ pokemonMakers["Comfey"] = () => {
 
 pokemonMakers["Conkeldurr"] = () => {
     return makeCharacter(
-        "Conkeldurr",
-        "Pokemon",
+        { name: "Conkeldurr" },
         {
             
 "Conkeldurr": {
@@ -6610,8 +6471,7 @@ pokemonMakers["Conkeldurr"] = () => {
 
 pokemonMakers["Copperajah"] = () => {
     return makeCharacter(
-        "Copperajah",
-        "Pokemon",
+        { name: "Copperajah" },
         {
             
 "Copperajah": {
@@ -6664,8 +6524,7 @@ pokemonMakers["Copperajah"] = () => {
 
 pokemonMakers["Corphish"] = () => {
     return makeCharacter(
-        "Corphish",
-        "Pokemon",
+        { name: "Corphish" },
         {
             
 "Corphish": {
@@ -6708,8 +6567,7 @@ pokemonMakers["Corphish"] = () => {
 
 pokemonMakers["Corsola"] = () => {
     return makeCharacter(
-        "Corsola",
-        "Pokemon",
+        { name: "Corsola" },
         {
             
 "Galarian Form": {
@@ -6762,8 +6620,7 @@ pokemonMakers["Corsola"] = () => {
 
 pokemonMakers["Corviknight"] = () => {
     return makeCharacter(
-        "Corviknight",
-        "Pokemon",
+        { name: "Corviknight" },
         {
             
 "Corviknight": {
@@ -6816,8 +6673,7 @@ pokemonMakers["Corviknight"] = () => {
 
 pokemonMakers["Corvisquire"] = () => {
     return makeCharacter(
-        "Corvisquire",
-        "Pokemon",
+        { name: "Corvisquire" },
         {
             
 "Corvisquire": {
@@ -6860,8 +6716,7 @@ pokemonMakers["Corvisquire"] = () => {
 
 pokemonMakers["Cosmoem"] = () => {
     return makeCharacter(
-        "Cosmoem",
-        "Pokemon",
+        { name: "Cosmoem" },
         {
             
 "Cosmoem": {
@@ -6904,8 +6759,7 @@ pokemonMakers["Cosmoem"] = () => {
 
 pokemonMakers["Cosmog"] = () => {
     return makeCharacter(
-        "Cosmog",
-        "Pokemon",
+        { name: "Cosmog" },
         {
             
 "Cosmog": {
@@ -6948,8 +6802,7 @@ pokemonMakers["Cosmog"] = () => {
 
 pokemonMakers["Cottonee"] = () => {
     return makeCharacter(
-        "Cottonee",
-        "Pokemon",
+        { name: "Cottonee" },
         {
             
 "Cottonee": {
@@ -6992,8 +6845,7 @@ pokemonMakers["Cottonee"] = () => {
 
 pokemonMakers["Crabominable"] = () => {
     return makeCharacter(
-        "Crabominable",
-        "Pokemon",
+        { name: "Crabominable" },
         {
             
 "Crabominable": {
@@ -7036,8 +6888,7 @@ pokemonMakers["Crabominable"] = () => {
 
 pokemonMakers["Crabrawler"] = () => {
     return makeCharacter(
-        "Crabrawler",
-        "Pokemon",
+        { name: "Crabrawler" },
         {
             
 "Crabrawler": {
@@ -7080,8 +6931,7 @@ pokemonMakers["Crabrawler"] = () => {
 
 pokemonMakers["Cradily"] = () => {
     return makeCharacter(
-        "Cradily",
-        "Pokemon",
+        { name: "Cradily" },
         {
             
 "Cradily": {
@@ -7124,8 +6974,7 @@ pokemonMakers["Cradily"] = () => {
 
 pokemonMakers["Cramorant"] = () => {
     return makeCharacter(
-        "Cramorant",
-        "Pokemon",
+        { name: "Cramorant" },
         {
             
 "Cramorant": {
@@ -7168,8 +7017,7 @@ pokemonMakers["Cramorant"] = () => {
 
 pokemonMakers["Cranidos"] = () => {
     return makeCharacter(
-        "Cranidos",
-        "Pokemon",
+        { name: "Cranidos" },
         {
             
 "Cranidos": {
@@ -7212,8 +7060,7 @@ pokemonMakers["Cranidos"] = () => {
 
 pokemonMakers["Crawdaunt"] = () => {
     return makeCharacter(
-        "Crawdaunt",
-        "Pokemon",
+        { name: "Crawdaunt" },
         {
             
 "Crawdaunt": {
@@ -7256,8 +7103,7 @@ pokemonMakers["Crawdaunt"] = () => {
 
 pokemonMakers["Cresselia"] = () => {
     return makeCharacter(
-        "Cresselia",
-        "Pokemon",
+        { name: "Cresselia" },
         {
             
 "Cresselia": {
@@ -7300,8 +7146,7 @@ pokemonMakers["Cresselia"] = () => {
 
 pokemonMakers["Croagunk"] = () => {
     return makeCharacter(
-        "Croagunk",
-        "Pokemon",
+        { name: "Croagunk" },
         {
             
 "Croagunk": {
@@ -7344,8 +7189,7 @@ pokemonMakers["Croagunk"] = () => {
 
 pokemonMakers["Crobat"] = () => {
     return makeCharacter(
-        "Crobat",
-        "Pokemon",
+        { name: "Crobat" },
         {
             
 "Crobat": {
@@ -7388,8 +7232,7 @@ pokemonMakers["Crobat"] = () => {
 
 pokemonMakers["Croconaw"] = () => {
     return makeCharacter(
-        "Croconaw",
-        "Pokemon",
+        { name: "Croconaw" },
         {
             
 "Croconaw": {
@@ -7432,8 +7275,7 @@ pokemonMakers["Croconaw"] = () => {
 
 pokemonMakers["Crustle"] = () => {
     return makeCharacter(
-        "Crustle",
-        "Pokemon",
+        { name: "Crustle" },
         {
             
 "Crustle": {
@@ -7476,8 +7318,7 @@ pokemonMakers["Crustle"] = () => {
 
 pokemonMakers["Cryogonal"] = () => {
     return makeCharacter(
-        "Cryogonal",
-        "Pokemon",
+        { name: "Cryogonal" },
         {
             
 "Cryogonal": {
@@ -7520,8 +7361,7 @@ pokemonMakers["Cryogonal"] = () => {
 
 pokemonMakers["Cubchoo"] = () => {
     return makeCharacter(
-        "Cubchoo",
-        "Pokemon",
+        { name: "Cubchoo" },
         {
             
 "Cubchoo": {
@@ -7564,8 +7404,7 @@ pokemonMakers["Cubchoo"] = () => {
 
 pokemonMakers["Cubone"] = () => {
     return makeCharacter(
-        "Cubone",
-        "Pokemon",
+        { name: "Cubone" },
         {
             
 "Cubone": {
@@ -7608,8 +7447,7 @@ pokemonMakers["Cubone"] = () => {
 
 pokemonMakers["Cufant"] = () => {
     return makeCharacter(
-        "Cufant",
-        "Pokemon",
+        { name: "Cufant" },
         {
             
 "Cufant": {
@@ -7652,8 +7490,7 @@ pokemonMakers["Cufant"] = () => {
 
 pokemonMakers["Cursola"] = () => {
     return makeCharacter(
-        "Cursola",
-        "Pokemon",
+        { name: "Cursola" },
         {
             
 "Cursola": {
@@ -7696,8 +7533,7 @@ pokemonMakers["Cursola"] = () => {
 
 pokemonMakers["Cutiefly"] = () => {
     return makeCharacter(
-        "Cutiefly",
-        "Pokemon",
+        { name: "Cutiefly" },
         {
             
 "Cutiefly": {
@@ -7740,8 +7576,7 @@ pokemonMakers["Cutiefly"] = () => {
 
 pokemonMakers["Cyndaquil"] = () => {
     return makeCharacter(
-        "Cyndaquil",
-        "Pokemon",
+        { name: "Cyndaquil" },
         {
             
 "Cyndaquil": {
@@ -7784,8 +7619,7 @@ pokemonMakers["Cyndaquil"] = () => {
 
 pokemonMakers["Darkrai"] = () => {
     return makeCharacter(
-        "Darkrai",
-        "Pokemon",
+        { name: "Darkrai" },
         {
             
 "Darkrai": {
@@ -7828,8 +7662,7 @@ pokemonMakers["Darkrai"] = () => {
 
 pokemonMakers["Darmanitan"] = () => {
     return makeCharacter(
-        "Darmanitan",
-        "Pokemon",
+        { name: "Darmanitan" },
         {
             
 "Galarian Form": {
@@ -7892,8 +7725,7 @@ pokemonMakers["Darmanitan"] = () => {
 
 pokemonMakers["Dartrix"] = () => {
     return makeCharacter(
-        "Dartrix",
-        "Pokemon",
+        { name: "Dartrix" },
         {
             
 "Dartrix": {
@@ -7936,8 +7768,7 @@ pokemonMakers["Dartrix"] = () => {
 
 pokemonMakers["Darumaka"] = () => {
     return makeCharacter(
-        "Darumaka",
-        "Pokemon",
+        { name: "Darumaka" },
         {
             
 "Galarian Form": {
@@ -7990,8 +7821,7 @@ pokemonMakers["Darumaka"] = () => {
 
 pokemonMakers["Decidueye"] = () => {
     return makeCharacter(
-        "Decidueye",
-        "Pokemon",
+        { name: "Decidueye" },
         {
             
 "Decidueye": {
@@ -8034,8 +7864,7 @@ pokemonMakers["Decidueye"] = () => {
 
 pokemonMakers["Dedenne"] = () => {
     return makeCharacter(
-        "Dedenne",
-        "Pokemon",
+        { name: "Dedenne" },
         {
             
 "Dedenne": {
@@ -8078,8 +7907,7 @@ pokemonMakers["Dedenne"] = () => {
 
 pokemonMakers["Deerling"] = () => {
     return makeCharacter(
-        "Deerling",
-        "Pokemon",
+        { name: "Deerling" },
         {
             
 "Autumn Form": {
@@ -8152,8 +7980,7 @@ pokemonMakers["Deerling"] = () => {
 
 pokemonMakers["Deino"] = () => {
     return makeCharacter(
-        "Deino",
-        "Pokemon",
+        { name: "Deino" },
         {
             
 "Deino": {
@@ -8196,8 +8023,7 @@ pokemonMakers["Deino"] = () => {
 
 pokemonMakers["Delcatty"] = () => {
     return makeCharacter(
-        "Delcatty",
-        "Pokemon",
+        { name: "Delcatty" },
         {
             
 "Delcatty": {
@@ -8240,8 +8066,7 @@ pokemonMakers["Delcatty"] = () => {
 
 pokemonMakers["Delibird"] = () => {
     return makeCharacter(
-        "Delibird",
-        "Pokemon",
+        { name: "Delibird" },
         {
             
 "Delibird": {
@@ -8284,8 +8109,7 @@ pokemonMakers["Delibird"] = () => {
 
 pokemonMakers["Delphox"] = () => {
     return makeCharacter(
-        "Delphox",
-        "Pokemon",
+        { name: "Delphox" },
         {
             
 "Delphox": {
@@ -8328,8 +8152,7 @@ pokemonMakers["Delphox"] = () => {
 
 pokemonMakers["Deoxys"] = () => {
     return makeCharacter(
-        "Deoxys",
-        "Pokemon",
+        { name: "Deoxys" },
         {
             
 "Attack Forme": {
@@ -8402,8 +8225,7 @@ pokemonMakers["Deoxys"] = () => {
 
 pokemonMakers["Dewgong"] = () => {
     return makeCharacter(
-        "Dewgong",
-        "Pokemon",
+        { name: "Dewgong" },
         {
             
 "Dewgong": {
@@ -8446,8 +8268,7 @@ pokemonMakers["Dewgong"] = () => {
 
 pokemonMakers["Dewott"] = () => {
     return makeCharacter(
-        "Dewott",
-        "Pokemon",
+        { name: "Dewott" },
         {
             
 "Dewott": {
@@ -8490,8 +8311,7 @@ pokemonMakers["Dewott"] = () => {
 
 pokemonMakers["Dewpider"] = () => {
     return makeCharacter(
-        "Dewpider",
-        "Pokemon",
+        { name: "Dewpider" },
         {
             
 "Dewpider": {
@@ -8534,8 +8354,7 @@ pokemonMakers["Dewpider"] = () => {
 
 pokemonMakers["Dhelmise"] = () => {
     return makeCharacter(
-        "Dhelmise",
-        "Pokemon",
+        { name: "Dhelmise" },
         {
             
 "Dhelmise": {
@@ -8578,8 +8397,7 @@ pokemonMakers["Dhelmise"] = () => {
 
 pokemonMakers["Dialga"] = () => {
     return makeCharacter(
-        "Dialga",
-        "Pokemon",
+        { name: "Dialga" },
         {
             
 "Dialga": {
@@ -8622,8 +8440,7 @@ pokemonMakers["Dialga"] = () => {
 
 pokemonMakers["Diancie"] = () => {
     return makeCharacter(
-        "Diancie",
-        "Pokemon",
+        { name: "Diancie" },
         {
             
 "Diancie": {
@@ -8676,8 +8493,7 @@ pokemonMakers["Diancie"] = () => {
 
 pokemonMakers["Diggersby"] = () => {
     return makeCharacter(
-        "Diggersby",
-        "Pokemon",
+        { name: "Diggersby" },
         {
             
 "Diggersby": {
@@ -8720,8 +8536,7 @@ pokemonMakers["Diggersby"] = () => {
 
 pokemonMakers["Diglett"] = () => {
     return makeCharacter(
-        "Diglett",
-        "Pokemon",
+        { name: "Diglett" },
         {
             
 "Alola Form": {
@@ -8774,8 +8589,7 @@ pokemonMakers["Diglett"] = () => {
 
 pokemonMakers["Ditto"] = () => {
     return makeCharacter(
-        "Ditto",
-        "Pokemon",
+        { name: "Ditto" },
         {
             
 "Ditto": {
@@ -8818,8 +8632,7 @@ pokemonMakers["Ditto"] = () => {
 
 pokemonMakers["Dodrio"] = () => {
     return makeCharacter(
-        "Dodrio",
-        "Pokemon",
+        { name: "Dodrio" },
         {
             
 "Dodrio": {
@@ -8862,8 +8675,7 @@ pokemonMakers["Dodrio"] = () => {
 
 pokemonMakers["Doduo"] = () => {
     return makeCharacter(
-        "Doduo",
-        "Pokemon",
+        { name: "Doduo" },
         {
             
 "Doduo": {
@@ -8906,8 +8718,7 @@ pokemonMakers["Doduo"] = () => {
 
 pokemonMakers["Donphan"] = () => {
     return makeCharacter(
-        "Donphan",
-        "Pokemon",
+        { name: "Donphan" },
         {
             
 "Donphan": {
@@ -8950,8 +8761,7 @@ pokemonMakers["Donphan"] = () => {
 
 pokemonMakers["Dottler"] = () => {
     return makeCharacter(
-        "Dottler",
-        "Pokemon",
+        { name: "Dottler" },
         {
             
 "Dottler": {
@@ -8994,8 +8804,7 @@ pokemonMakers["Dottler"] = () => {
 
 pokemonMakers["Doublade"] = () => {
     return makeCharacter(
-        "Doublade",
-        "Pokemon",
+        { name: "Doublade" },
         {
             
 "Doublade": {
@@ -9038,8 +8847,7 @@ pokemonMakers["Doublade"] = () => {
 
 pokemonMakers["Dracovish"] = () => {
     return makeCharacter(
-        "Dracovish",
-        "Pokemon",
+        { name: "Dracovish" },
         {
             
 "Dracovish": {
@@ -9082,8 +8890,7 @@ pokemonMakers["Dracovish"] = () => {
 
 pokemonMakers["Dracozolt"] = () => {
     return makeCharacter(
-        "Dracozolt",
-        "Pokemon",
+        { name: "Dracozolt" },
         {
             
 "Dracozolt": {
@@ -9126,8 +8933,7 @@ pokemonMakers["Dracozolt"] = () => {
 
 pokemonMakers["Dragalge"] = () => {
     return makeCharacter(
-        "Dragalge",
-        "Pokemon",
+        { name: "Dragalge" },
         {
             
 "Dragalge": {
@@ -9170,8 +8976,7 @@ pokemonMakers["Dragalge"] = () => {
 
 pokemonMakers["Dragapult"] = () => {
     return makeCharacter(
-        "Dragapult",
-        "Pokemon",
+        { name: "Dragapult" },
         {
             
 "Dragapult": {
@@ -9214,8 +9019,7 @@ pokemonMakers["Dragapult"] = () => {
 
 pokemonMakers["Dragonair"] = () => {
     return makeCharacter(
-        "Dragonair",
-        "Pokemon",
+        { name: "Dragonair" },
         {
             
 "Dragonair": {
@@ -9258,8 +9062,7 @@ pokemonMakers["Dragonair"] = () => {
 
 pokemonMakers["Dragonite"] = () => {
     return makeCharacter(
-        "Dragonite",
-        "Pokemon",
+        { name: "Dragonite" },
         {
             
 "Dragonite": {
@@ -9302,8 +9105,7 @@ pokemonMakers["Dragonite"] = () => {
 
 pokemonMakers["Drakloak"] = () => {
     return makeCharacter(
-        "Drakloak",
-        "Pokemon",
+        { name: "Drakloak" },
         {
             
 "Drakloak": {
@@ -9346,8 +9148,7 @@ pokemonMakers["Drakloak"] = () => {
 
 pokemonMakers["Drampa"] = () => {
     return makeCharacter(
-        "Drampa",
-        "Pokemon",
+        { name: "Drampa" },
         {
             
 "Drampa": {
@@ -9390,8 +9191,7 @@ pokemonMakers["Drampa"] = () => {
 
 pokemonMakers["Drapion"] = () => {
     return makeCharacter(
-        "Drapion",
-        "Pokemon",
+        { name: "Drapion" },
         {
             
 "Drapion": {
@@ -9434,8 +9234,7 @@ pokemonMakers["Drapion"] = () => {
 
 pokemonMakers["Dratini"] = () => {
     return makeCharacter(
-        "Dratini",
-        "Pokemon",
+        { name: "Dratini" },
         {
             
 "Dratini": {
@@ -9478,8 +9277,7 @@ pokemonMakers["Dratini"] = () => {
 
 pokemonMakers["Drednaw"] = () => {
     return makeCharacter(
-        "Drednaw",
-        "Pokemon",
+        { name: "Drednaw" },
         {
             
 "Drednaw": {
@@ -9532,8 +9330,7 @@ pokemonMakers["Drednaw"] = () => {
 
 pokemonMakers["Dreepy"] = () => {
     return makeCharacter(
-        "Dreepy",
-        "Pokemon",
+        { name: "Dreepy" },
         {
             
 "Dreepy": {
@@ -9576,8 +9373,7 @@ pokemonMakers["Dreepy"] = () => {
 
 pokemonMakers["Drifblim"] = () => {
     return makeCharacter(
-        "Drifblim",
-        "Pokemon",
+        { name: "Drifblim" },
         {
             
 "Drifblim": {
@@ -9620,8 +9416,7 @@ pokemonMakers["Drifblim"] = () => {
 
 pokemonMakers["Drifloon"] = () => {
     return makeCharacter(
-        "Drifloon",
-        "Pokemon",
+        { name: "Drifloon" },
         {
             
 "Drifloon": {
@@ -9664,8 +9459,7 @@ pokemonMakers["Drifloon"] = () => {
 
 pokemonMakers["Drilbur"] = () => {
     return makeCharacter(
-        "Drilbur",
-        "Pokemon",
+        { name: "Drilbur" },
         {
             
 "Drilbur": {
@@ -9708,8 +9502,7 @@ pokemonMakers["Drilbur"] = () => {
 
 pokemonMakers["Drizzile"] = () => {
     return makeCharacter(
-        "Drizzile",
-        "Pokemon",
+        { name: "Drizzile" },
         {
             
 "Drizzile": {
@@ -9752,8 +9545,7 @@ pokemonMakers["Drizzile"] = () => {
 
 pokemonMakers["Drowzee"] = () => {
     return makeCharacter(
-        "Drowzee",
-        "Pokemon",
+        { name: "Drowzee" },
         {
             
 "Drowzee": {
@@ -9796,8 +9588,7 @@ pokemonMakers["Drowzee"] = () => {
 
 pokemonMakers["Druddigon"] = () => {
     return makeCharacter(
-        "Druddigon",
-        "Pokemon",
+        { name: "Druddigon" },
         {
             
 "Druddigon": {
@@ -9840,8 +9631,7 @@ pokemonMakers["Druddigon"] = () => {
 
 pokemonMakers["Dubwool"] = () => {
     return makeCharacter(
-        "Dubwool",
-        "Pokemon",
+        { name: "Dubwool" },
         {
             
 "Dubwool": {
@@ -9884,8 +9674,7 @@ pokemonMakers["Dubwool"] = () => {
 
 pokemonMakers["Ducklett"] = () => {
     return makeCharacter(
-        "Ducklett",
-        "Pokemon",
+        { name: "Ducklett" },
         {
             
 "Ducklett": {
@@ -9928,8 +9717,7 @@ pokemonMakers["Ducklett"] = () => {
 
 pokemonMakers["Dugtrio"] = () => {
     return makeCharacter(
-        "Dugtrio",
-        "Pokemon",
+        { name: "Dugtrio" },
         {
             
 "Alola Form": {
@@ -9982,8 +9770,7 @@ pokemonMakers["Dugtrio"] = () => {
 
 pokemonMakers["Dunsparce"] = () => {
     return makeCharacter(
-        "Dunsparce",
-        "Pokemon",
+        { name: "Dunsparce" },
         {
             
 "Dunsparce": {
@@ -10026,8 +9813,7 @@ pokemonMakers["Dunsparce"] = () => {
 
 pokemonMakers["Duosion"] = () => {
     return makeCharacter(
-        "Duosion",
-        "Pokemon",
+        { name: "Duosion" },
         {
             
 "Duosion": {
@@ -10070,8 +9856,7 @@ pokemonMakers["Duosion"] = () => {
 
 pokemonMakers["Duraludon"] = () => {
     return makeCharacter(
-        "Duraludon",
-        "Pokemon",
+        { name: "Duraludon" },
         {
             
 "Duraludon": {
@@ -10124,8 +9909,7 @@ pokemonMakers["Duraludon"] = () => {
 
 pokemonMakers["Durant"] = () => {
     return makeCharacter(
-        "Durant",
-        "Pokemon",
+        { name: "Durant" },
         {
             
 "Durant": {
@@ -10168,8 +9952,7 @@ pokemonMakers["Durant"] = () => {
 
 pokemonMakers["Dusclops"] = () => {
     return makeCharacter(
-        "Dusclops",
-        "Pokemon",
+        { name: "Dusclops" },
         {
             
 "Dusclops": {
@@ -10212,8 +9995,7 @@ pokemonMakers["Dusclops"] = () => {
 
 pokemonMakers["Dusknoir"] = () => {
     return makeCharacter(
-        "Dusknoir",
-        "Pokemon",
+        { name: "Dusknoir" },
         {
             
 "Dusknoir": {
@@ -10256,8 +10038,7 @@ pokemonMakers["Dusknoir"] = () => {
 
 pokemonMakers["Duskull"] = () => {
     return makeCharacter(
-        "Duskull",
-        "Pokemon",
+        { name: "Duskull" },
         {
             
 "Duskull": {
@@ -10300,8 +10081,7 @@ pokemonMakers["Duskull"] = () => {
 
 pokemonMakers["Dustox"] = () => {
     return makeCharacter(
-        "Dustox",
-        "Pokemon",
+        { name: "Dustox" },
         {
             
 "Dustox": {
@@ -10344,8 +10124,7 @@ pokemonMakers["Dustox"] = () => {
 
 pokemonMakers["Dwebble"] = () => {
     return makeCharacter(
-        "Dwebble",
-        "Pokemon",
+        { name: "Dwebble" },
         {
             
 "Dwebble": {
@@ -10388,8 +10167,7 @@ pokemonMakers["Dwebble"] = () => {
 
 pokemonMakers["Eelektrik"] = () => {
     return makeCharacter(
-        "Eelektrik",
-        "Pokemon",
+        { name: "Eelektrik" },
         {
             
 "Eelektrik": {
@@ -10432,8 +10210,7 @@ pokemonMakers["Eelektrik"] = () => {
 
 pokemonMakers["Eelektross"] = () => {
     return makeCharacter(
-        "Eelektross",
-        "Pokemon",
+        { name: "Eelektross" },
         {
             
 "Eelektross": {
@@ -10476,8 +10253,7 @@ pokemonMakers["Eelektross"] = () => {
 
 pokemonMakers["Eevee"] = () => {
     return makeCharacter(
-        "Eevee",
-        "Pokemon",
+        { name: "Eevee" },
         {
             
 "Eevee": {
@@ -10530,8 +10306,7 @@ pokemonMakers["Eevee"] = () => {
 
 pokemonMakers["Eiscue"] = () => {
     return makeCharacter(
-        "Eiscue",
-        "Pokemon",
+        { name: "Eiscue" },
         {
             
 "Ice Face": {
@@ -10574,8 +10349,7 @@ pokemonMakers["Eiscue"] = () => {
 
 pokemonMakers["Ekans"] = () => {
     return makeCharacter(
-        "Ekans",
-        "Pokemon",
+        { name: "Ekans" },
         {
             
 "Ekans": {
@@ -10618,8 +10392,7 @@ pokemonMakers["Ekans"] = () => {
 
 pokemonMakers["Eldegoss"] = () => {
     return makeCharacter(
-        "Eldegoss",
-        "Pokemon",
+        { name: "Eldegoss" },
         {
             
 "Eldegoss": {
@@ -10662,8 +10435,7 @@ pokemonMakers["Eldegoss"] = () => {
 
 pokemonMakers["Electabuzz"] = () => {
     return makeCharacter(
-        "Electabuzz",
-        "Pokemon",
+        { name: "Electabuzz" },
         {
             
 "Electabuzz": {
@@ -10706,8 +10478,7 @@ pokemonMakers["Electabuzz"] = () => {
 
 pokemonMakers["Electivire"] = () => {
     return makeCharacter(
-        "Electivire",
-        "Pokemon",
+        { name: "Electivire" },
         {
             
 "Electivire": {
@@ -10750,8 +10521,7 @@ pokemonMakers["Electivire"] = () => {
 
 pokemonMakers["Electrike"] = () => {
     return makeCharacter(
-        "Electrike",
-        "Pokemon",
+        { name: "Electrike" },
         {
             
 "Electrike": {
@@ -10794,8 +10564,7 @@ pokemonMakers["Electrike"] = () => {
 
 pokemonMakers["Electrode"] = () => {
     return makeCharacter(
-        "Electrode",
-        "Pokemon",
+        { name: "Electrode" },
         {
             
 "Electrode": {
@@ -10838,8 +10607,7 @@ pokemonMakers["Electrode"] = () => {
 
 pokemonMakers["Elekid"] = () => {
     return makeCharacter(
-        "Elekid",
-        "Pokemon",
+        { name: "Elekid" },
         {
             
 "Elekid": {
@@ -10882,8 +10650,7 @@ pokemonMakers["Elekid"] = () => {
 
 pokemonMakers["Elgyem"] = () => {
     return makeCharacter(
-        "Elgyem",
-        "Pokemon",
+        { name: "Elgyem" },
         {
             
 "Elgyem": {
@@ -10926,8 +10693,7 @@ pokemonMakers["Elgyem"] = () => {
 
 pokemonMakers["Emboar"] = () => {
     return makeCharacter(
-        "Emboar",
-        "Pokemon",
+        { name: "Emboar" },
         {
             
 "Emboar": {
@@ -10970,8 +10736,7 @@ pokemonMakers["Emboar"] = () => {
 
 pokemonMakers["Emolga"] = () => {
     return makeCharacter(
-        "Emolga",
-        "Pokemon",
+        { name: "Emolga" },
         {
             
 "Emolga": {
@@ -11014,8 +10779,7 @@ pokemonMakers["Emolga"] = () => {
 
 pokemonMakers["Empoleon"] = () => {
     return makeCharacter(
-        "Empoleon",
-        "Pokemon",
+        { name: "Empoleon" },
         {
             
 "Empoleon": {
@@ -11058,8 +10822,7 @@ pokemonMakers["Empoleon"] = () => {
 
 pokemonMakers["Entei"] = () => {
     return makeCharacter(
-        "Entei",
-        "Pokemon",
+        { name: "Entei" },
         {
             
 "Entei": {
@@ -11102,8 +10865,7 @@ pokemonMakers["Entei"] = () => {
 
 pokemonMakers["Escavalier"] = () => {
     return makeCharacter(
-        "Escavalier",
-        "Pokemon",
+        { name: "Escavalier" },
         {
             
 "Escavalier": {
@@ -11146,8 +10908,7 @@ pokemonMakers["Escavalier"] = () => {
 
 pokemonMakers["Espeon"] = () => {
     return makeCharacter(
-        "Espeon",
-        "Pokemon",
+        { name: "Espeon" },
         {
             
 "Espeon": {
@@ -11190,8 +10951,7 @@ pokemonMakers["Espeon"] = () => {
 
 pokemonMakers["Espurr"] = () => {
     return makeCharacter(
-        "Espurr",
-        "Pokemon",
+        { name: "Espurr" },
         {
             
 "Espurr": {
@@ -11234,8 +10994,7 @@ pokemonMakers["Espurr"] = () => {
 
 pokemonMakers["Eternatus"] = () => {
     return makeCharacter(
-        "Eternatus",
-        "Pokemon",
+        { name: "Eternatus" },
         {
             
 "Eternatus": {
@@ -11278,8 +11037,7 @@ pokemonMakers["Eternatus"] = () => {
 
 pokemonMakers["Excadrill"] = () => {
     return makeCharacter(
-        "Excadrill",
-        "Pokemon",
+        { name: "Excadrill" },
         {
             
 "Excadrill": {
@@ -11322,8 +11080,7 @@ pokemonMakers["Excadrill"] = () => {
 
 pokemonMakers["Exeggcute"] = () => {
     return makeCharacter(
-        "Exeggcute",
-        "Pokemon",
+        { name: "Exeggcute" },
         {
             
 "Exeggcute": {
@@ -11366,8 +11123,7 @@ pokemonMakers["Exeggcute"] = () => {
 
 pokemonMakers["Exeggutor"] = () => {
     return makeCharacter(
-        "Exeggutor",
-        "Pokemon",
+        { name: "Exeggutor" },
         {
             
 "Alola Form": {
@@ -11420,8 +11176,7 @@ pokemonMakers["Exeggutor"] = () => {
 
 pokemonMakers["Exploud"] = () => {
     return makeCharacter(
-        "Exploud",
-        "Pokemon",
+        { name: "Exploud" },
         {
             
 "Exploud": {
@@ -11464,8 +11219,7 @@ pokemonMakers["Exploud"] = () => {
 
 pokemonMakers["Falinks"] = () => {
     return makeCharacter(
-        "Falinks",
-        "Pokemon",
+        { name: "Falinks" },
         {
             
 "Falinks": {
@@ -11508,8 +11262,7 @@ pokemonMakers["Falinks"] = () => {
 
 pokemonMakers["Rotom"] = () => {
     return makeCharacter(
-        "Rotom",
-        "Pokemon",
+        { name: "Rotom" },
         {
             
 "Fan Rotom": {
@@ -11602,8 +11355,7 @@ pokemonMakers["Rotom"] = () => {
 
 pokemonMakers["Farfetch'd"] = () => {
     return makeCharacter(
-        "Farfetch'd",
-        "Pokemon",
+        { name: "Farfetch'd" },
         {
             
 "Galarian Form": {
@@ -11656,8 +11408,7 @@ pokemonMakers["Farfetch'd"] = () => {
 
 pokemonMakers["Fearow"] = () => {
     return makeCharacter(
-        "Fearow",
-        "Pokemon",
+        { name: "Fearow" },
         {
             
 "Fearow": {
@@ -11700,8 +11451,7 @@ pokemonMakers["Fearow"] = () => {
 
 pokemonMakers["Feebas"] = () => {
     return makeCharacter(
-        "Feebas",
-        "Pokemon",
+        { name: "Feebas" },
         {
             
 "Feebas": {
@@ -11744,8 +11494,7 @@ pokemonMakers["Feebas"] = () => {
 
 pokemonMakers["Fennekin"] = () => {
     return makeCharacter(
-        "Fennekin",
-        "Pokemon",
+        { name: "Fennekin" },
         {
             
 "Fennekin": {
@@ -11788,8 +11537,7 @@ pokemonMakers["Fennekin"] = () => {
 
 pokemonMakers["Feraligatr"] = () => {
     return makeCharacter(
-        "Feraligatr",
-        "Pokemon",
+        { name: "Feraligatr" },
         {
             
 "Feraligatr": {
@@ -11832,8 +11580,7 @@ pokemonMakers["Feraligatr"] = () => {
 
 pokemonMakers["Ferroseed"] = () => {
     return makeCharacter(
-        "Ferroseed",
-        "Pokemon",
+        { name: "Ferroseed" },
         {
             
 "Ferroseed": {
@@ -11876,8 +11623,7 @@ pokemonMakers["Ferroseed"] = () => {
 
 pokemonMakers["Ferrothorn"] = () => {
     return makeCharacter(
-        "Ferrothorn",
-        "Pokemon",
+        { name: "Ferrothorn" },
         {
             
 "Ferrothorn": {
@@ -11920,8 +11666,7 @@ pokemonMakers["Ferrothorn"] = () => {
 
 pokemonMakers["Finneon"] = () => {
     return makeCharacter(
-        "Finneon",
-        "Pokemon",
+        { name: "Finneon" },
         {
             
 "Finneon": {
@@ -11964,8 +11709,7 @@ pokemonMakers["Finneon"] = () => {
 
 pokemonMakers["Flaaffy"] = () => {
     return makeCharacter(
-        "Flaaffy",
-        "Pokemon",
+        { name: "Flaaffy" },
         {
             
 "Flaaffy": {
@@ -12008,8 +11752,7 @@ pokemonMakers["Flaaffy"] = () => {
 
 pokemonMakers["Flabébé"] = () => {
     return makeCharacter(
-        "Flabébé",
-        "Pokemon",
+        { name: "Flabébé" },
         {
             
 "Flabébé": {
@@ -12052,8 +11795,7 @@ pokemonMakers["Flabébé"] = () => {
 
 pokemonMakers["Flapple"] = () => {
     return makeCharacter(
-        "Flapple",
-        "Pokemon",
+        { name: "Flapple" },
         {
             
 "Flapple": {
@@ -12106,8 +11848,7 @@ pokemonMakers["Flapple"] = () => {
 
 pokemonMakers["Flareon"] = () => {
     return makeCharacter(
-        "Flareon",
-        "Pokemon",
+        { name: "Flareon" },
         {
             
 "Flareon": {
@@ -12150,8 +11891,7 @@ pokemonMakers["Flareon"] = () => {
 
 pokemonMakers["Fletchinder"] = () => {
     return makeCharacter(
-        "Fletchinder",
-        "Pokemon",
+        { name: "Fletchinder" },
         {
             
 "Fletchinder": {
@@ -12194,8 +11934,7 @@ pokemonMakers["Fletchinder"] = () => {
 
 pokemonMakers["Fletchling"] = () => {
     return makeCharacter(
-        "Fletchling",
-        "Pokemon",
+        { name: "Fletchling" },
         {
             
 "Fletchling": {
@@ -12238,8 +11977,7 @@ pokemonMakers["Fletchling"] = () => {
 
 pokemonMakers["Floatzel"] = () => {
     return makeCharacter(
-        "Floatzel",
-        "Pokemon",
+        { name: "Floatzel" },
         {
             
 "Floatzel": {
@@ -12282,8 +12020,7 @@ pokemonMakers["Floatzel"] = () => {
 
 pokemonMakers["Floette"] = () => {
     return makeCharacter(
-        "Floette",
-        "Pokemon",
+        { name: "Floette" },
         {
             
 "Floette": {
@@ -12326,8 +12063,7 @@ pokemonMakers["Floette"] = () => {
 
 pokemonMakers["Florges"] = () => {
     return makeCharacter(
-        "Florges",
-        "Pokemon",
+        { name: "Florges" },
         {
             
 "Florges": {
@@ -12370,8 +12106,7 @@ pokemonMakers["Florges"] = () => {
 
 pokemonMakers["Flygon"] = () => {
     return makeCharacter(
-        "Flygon",
-        "Pokemon",
+        { name: "Flygon" },
         {
             
 "Flygon": {
@@ -12414,8 +12149,7 @@ pokemonMakers["Flygon"] = () => {
 
 pokemonMakers["Fomantis"] = () => {
     return makeCharacter(
-        "Fomantis",
-        "Pokemon",
+        { name: "Fomantis" },
         {
             
 "Fomantis": {
@@ -12458,8 +12192,7 @@ pokemonMakers["Fomantis"] = () => {
 
 pokemonMakers["Foongus"] = () => {
     return makeCharacter(
-        "Foongus",
-        "Pokemon",
+        { name: "Foongus" },
         {
             
 "Foongus": {
@@ -12502,8 +12235,7 @@ pokemonMakers["Foongus"] = () => {
 
 pokemonMakers["Forretress"] = () => {
     return makeCharacter(
-        "Forretress",
-        "Pokemon",
+        { name: "Forretress" },
         {
             
 "Forretress": {
@@ -12546,8 +12278,7 @@ pokemonMakers["Forretress"] = () => {
 
 pokemonMakers["Fraxure"] = () => {
     return makeCharacter(
-        "Fraxure",
-        "Pokemon",
+        { name: "Fraxure" },
         {
             
 "Fraxure": {
@@ -12590,8 +12321,7 @@ pokemonMakers["Fraxure"] = () => {
 
 pokemonMakers["Frillish"] = () => {
     return makeCharacter(
-        "Frillish",
-        "Pokemon",
+        { name: "Frillish" },
         {
             
 "Frillish": {
@@ -12634,8 +12364,7 @@ pokemonMakers["Frillish"] = () => {
 
 pokemonMakers["Froakie"] = () => {
     return makeCharacter(
-        "Froakie",
-        "Pokemon",
+        { name: "Froakie" },
         {
             
 "Froakie": {
@@ -12678,8 +12407,7 @@ pokemonMakers["Froakie"] = () => {
 
 pokemonMakers["Frogadier"] = () => {
     return makeCharacter(
-        "Frogadier",
-        "Pokemon",
+        { name: "Frogadier" },
         {
             
 "Frogadier": {
@@ -12722,8 +12450,7 @@ pokemonMakers["Frogadier"] = () => {
 
 pokemonMakers["Froslass"] = () => {
     return makeCharacter(
-        "Froslass",
-        "Pokemon",
+        { name: "Froslass" },
         {
             
 "Froslass": {
@@ -12766,8 +12493,7 @@ pokemonMakers["Froslass"] = () => {
 
 pokemonMakers["Frosmoth"] = () => {
     return makeCharacter(
-        "Frosmoth",
-        "Pokemon",
+        { name: "Frosmoth" },
         {
             
 "Frosmoth": {
@@ -12810,8 +12536,7 @@ pokemonMakers["Frosmoth"] = () => {
 
 pokemonMakers["Furfrou"] = () => {
     return makeCharacter(
-        "Furfrou",
-        "Pokemon",
+        { name: "Furfrou" },
         {
             
 "Diamond Trim": {
@@ -12884,8 +12609,7 @@ pokemonMakers["Furfrou"] = () => {
 
 pokemonMakers["Furret"] = () => {
     return makeCharacter(
-        "Furret",
-        "Pokemon",
+        { name: "Furret" },
         {
             
 "Furret": {
@@ -12928,8 +12652,7 @@ pokemonMakers["Furret"] = () => {
 
 pokemonMakers["Gabite"] = () => {
     return makeCharacter(
-        "Gabite",
-        "Pokemon",
+        { name: "Gabite" },
         {
             
 "Gabite": {
@@ -12972,8 +12695,7 @@ pokemonMakers["Gabite"] = () => {
 
 pokemonMakers["Gallade"] = () => {
     return makeCharacter(
-        "Gallade",
-        "Pokemon",
+        { name: "Gallade" },
         {
             
 "Gallade": {
@@ -13026,8 +12748,7 @@ pokemonMakers["Gallade"] = () => {
 
 pokemonMakers["Galvantula"] = () => {
     return makeCharacter(
-        "Galvantula",
-        "Pokemon",
+        { name: "Galvantula" },
         {
             
 "Galvantula": {
@@ -13070,8 +12791,7 @@ pokemonMakers["Galvantula"] = () => {
 
 pokemonMakers["Garbodor"] = () => {
     return makeCharacter(
-        "Garbodor",
-        "Pokemon",
+        { name: "Garbodor" },
         {
             
 "Garbodor": {
@@ -13124,8 +12844,7 @@ pokemonMakers["Garbodor"] = () => {
 
 pokemonMakers["Garchomp"] = () => {
     return makeCharacter(
-        "Garchomp",
-        "Pokemon",
+        { name: "Garchomp" },
         {
             
 "Garchomp": {
@@ -13178,8 +12897,7 @@ pokemonMakers["Garchomp"] = () => {
 
 pokemonMakers["Gardevoir"] = () => {
     return makeCharacter(
-        "Gardevoir",
-        "Pokemon",
+        { name: "Gardevoir" },
         {
             
 "Gardevoir": {
@@ -13232,8 +12950,7 @@ pokemonMakers["Gardevoir"] = () => {
 
 pokemonMakers["Gastly"] = () => {
     return makeCharacter(
-        "Gastly",
-        "Pokemon",
+        { name: "Gastly" },
         {
             
 "Gastly": {
@@ -13276,8 +12993,7 @@ pokemonMakers["Gastly"] = () => {
 
 pokemonMakers["Gastrodon"] = () => {
     return makeCharacter(
-        "Gastrodon",
-        "Pokemon",
+        { name: "Gastrodon" },
         {
             
 "East Sea": {
@@ -13330,8 +13046,7 @@ pokemonMakers["Gastrodon"] = () => {
 
 pokemonMakers["Genesect"] = () => {
     return makeCharacter(
-        "Genesect",
-        "Pokemon",
+        { name: "Genesect" },
         {
             
 "Genesect": {
@@ -13374,8 +13089,7 @@ pokemonMakers["Genesect"] = () => {
 
 pokemonMakers["Gengar"] = () => {
     return makeCharacter(
-        "Gengar",
-        "Pokemon",
+        { name: "Gengar" },
         {
             
 "Gengar": {
@@ -13438,8 +13152,7 @@ pokemonMakers["Gengar"] = () => {
 
 pokemonMakers["Geodude"] = () => {
     return makeCharacter(
-        "Geodude",
-        "Pokemon",
+        { name: "Geodude" },
         {
             
 "Alola Form": {
@@ -13492,8 +13205,7 @@ pokemonMakers["Geodude"] = () => {
 
 pokemonMakers["Gible"] = () => {
     return makeCharacter(
-        "Gible",
-        "Pokemon",
+        { name: "Gible" },
         {
             
 "Gible": {
@@ -13536,8 +13248,7 @@ pokemonMakers["Gible"] = () => {
 
 pokemonMakers["Gigalith"] = () => {
     return makeCharacter(
-        "Gigalith",
-        "Pokemon",
+        { name: "Gigalith" },
         {
             
 "Gigalith": {
@@ -13580,8 +13291,7 @@ pokemonMakers["Gigalith"] = () => {
 
 pokemonMakers["Grimmsnarl"] = () => {
     return makeCharacter(
-        "Grimmsnarl",
-        "Pokemon",
+        { name: "Grimmsnarl" },
         {
             
 "Grimmsnarl": {
@@ -13634,8 +13344,7 @@ pokemonMakers["Grimmsnarl"] = () => {
 
 pokemonMakers["Hatterene"] = () => {
     return makeCharacter(
-        "Hatterene",
-        "Pokemon",
+        { name: "Hatterene" },
         {
             
 "Hatterene": {
@@ -13688,8 +13397,7 @@ pokemonMakers["Hatterene"] = () => {
 
 pokemonMakers["Kingler"] = () => {
     return makeCharacter(
-        "Kingler",
-        "Pokemon",
+        { name: "Kingler" },
         {
             
 "Kingler": {
@@ -13742,8 +13450,7 @@ pokemonMakers["Kingler"] = () => {
 
 pokemonMakers["Lapras"] = () => {
     return makeCharacter(
-        "Lapras",
-        "Pokemon",
+        { name: "Lapras" },
         {
             
 "Lapras": {
@@ -13796,8 +13503,7 @@ pokemonMakers["Lapras"] = () => {
 
 pokemonMakers["Machamp"] = () => {
     return makeCharacter(
-        "Machamp",
-        "Pokemon",
+        { name: "Machamp" },
         {
             
 "Machamp": {
@@ -13850,8 +13556,7 @@ pokemonMakers["Machamp"] = () => {
 
 pokemonMakers["Meowth"] = () => {
     return makeCharacter(
-        "Meowth",
-        "Pokemon",
+        { name: "Meowth" },
         {
             
 "Alola Form": {
@@ -13924,8 +13629,7 @@ pokemonMakers["Meowth"] = () => {
 
 pokemonMakers["Orbeetle"] = () => {
     return makeCharacter(
-        "Orbeetle",
-        "Pokemon",
+        { name: "Orbeetle" },
         {
             
 "Orbeetle": {
@@ -13978,8 +13682,7 @@ pokemonMakers["Orbeetle"] = () => {
 
 pokemonMakers["Pikachu"] = () => {
     return makeCharacter(
-        "Pikachu",
-        "Pokemon",
+        { name: "Pikachu" },
         {
             
 "Pikachu": {
@@ -14032,8 +13735,7 @@ pokemonMakers["Pikachu"] = () => {
 
 pokemonMakers["Sandaconda"] = () => {
     return makeCharacter(
-        "Sandaconda",
-        "Pokemon",
+        { name: "Sandaconda" },
         {
             
 "Sandaconda": {
@@ -14086,8 +13788,7 @@ pokemonMakers["Sandaconda"] = () => {
 
 pokemonMakers["Snorlax"] = () => {
     return makeCharacter(
-        "Snorlax",
-        "Pokemon",
+        { name: "Snorlax" },
         {
             
 "Snorlax": {
@@ -14140,8 +13841,7 @@ pokemonMakers["Snorlax"] = () => {
 
 pokemonMakers["Toxtricity"] = () => {
     return makeCharacter(
-        "Toxtricity",
-        "Pokemon",
+        { name: "Toxtricity" },
         {
             
 "Amped Form": {
@@ -14204,8 +13904,7 @@ pokemonMakers["Toxtricity"] = () => {
 
 pokemonMakers["Girafarig"] = () => {
     return makeCharacter(
-        "Girafarig",
-        "Pokemon",
+        { name: "Girafarig" },
         {
             
 "Girafarig": {
@@ -14248,8 +13947,7 @@ pokemonMakers["Girafarig"] = () => {
 
 pokemonMakers["Giratina"] = () => {
     return makeCharacter(
-        "Giratina",
-        "Pokemon",
+        { name: "Giratina" },
         {
             
 "Altered Forme": {
@@ -14302,8 +14000,7 @@ pokemonMakers["Giratina"] = () => {
 
 pokemonMakers["Glaceon"] = () => {
     return makeCharacter(
-        "Glaceon",
-        "Pokemon",
+        { name: "Glaceon" },
         {
             
 "Glaceon": {
@@ -14346,8 +14043,7 @@ pokemonMakers["Glaceon"] = () => {
 
 pokemonMakers["Glalie"] = () => {
     return makeCharacter(
-        "Glalie",
-        "Pokemon",
+        { name: "Glalie" },
         {
             
 "Glalie": {
@@ -14400,8 +14096,7 @@ pokemonMakers["Glalie"] = () => {
 
 pokemonMakers["Glameow"] = () => {
     return makeCharacter(
-        "Glameow",
-        "Pokemon",
+        { name: "Glameow" },
         {
             
 "Glameow": {
@@ -14444,8 +14139,7 @@ pokemonMakers["Glameow"] = () => {
 
 pokemonMakers["Gligar"] = () => {
     return makeCharacter(
-        "Gligar",
-        "Pokemon",
+        { name: "Gligar" },
         {
             
 "Gligar": {
@@ -14488,8 +14182,7 @@ pokemonMakers["Gligar"] = () => {
 
 pokemonMakers["Gliscor"] = () => {
     return makeCharacter(
-        "Gliscor",
-        "Pokemon",
+        { name: "Gliscor" },
         {
             
 "Gliscor": {
@@ -14532,8 +14225,7 @@ pokemonMakers["Gliscor"] = () => {
 
 pokemonMakers["Gloom"] = () => {
     return makeCharacter(
-        "Gloom",
-        "Pokemon",
+        { name: "Gloom" },
         {
             
 "Gloom": {
@@ -14576,8 +14268,7 @@ pokemonMakers["Gloom"] = () => {
 
 pokemonMakers["Gogoat"] = () => {
     return makeCharacter(
-        "Gogoat",
-        "Pokemon",
+        { name: "Gogoat" },
         {
             
 "Gogoat": {
@@ -14620,8 +14311,7 @@ pokemonMakers["Gogoat"] = () => {
 
 pokemonMakers["Golbat"] = () => {
     return makeCharacter(
-        "Golbat",
-        "Pokemon",
+        { name: "Golbat" },
         {
             
 "Golbat": {
@@ -14664,8 +14354,7 @@ pokemonMakers["Golbat"] = () => {
 
 pokemonMakers["Goldeen"] = () => {
     return makeCharacter(
-        "Goldeen",
-        "Pokemon",
+        { name: "Goldeen" },
         {
             
 "Goldeen": {
@@ -14708,8 +14397,7 @@ pokemonMakers["Goldeen"] = () => {
 
 pokemonMakers["Golduck"] = () => {
     return makeCharacter(
-        "Golduck",
-        "Pokemon",
+        { name: "Golduck" },
         {
             
 "Golduck": {
@@ -14752,8 +14440,7 @@ pokemonMakers["Golduck"] = () => {
 
 pokemonMakers["Golem"] = () => {
     return makeCharacter(
-        "Golem",
-        "Pokemon",
+        { name: "Golem" },
         {
             
 "Alola Form": {
@@ -14806,8 +14493,7 @@ pokemonMakers["Golem"] = () => {
 
 pokemonMakers["Golett"] = () => {
     return makeCharacter(
-        "Golett",
-        "Pokemon",
+        { name: "Golett" },
         {
             
 "Golett": {
@@ -14850,8 +14536,7 @@ pokemonMakers["Golett"] = () => {
 
 pokemonMakers["Golisopod"] = () => {
     return makeCharacter(
-        "Golisopod",
-        "Pokemon",
+        { name: "Golisopod" },
         {
             
 "Golisopod": {
@@ -14894,8 +14579,7 @@ pokemonMakers["Golisopod"] = () => {
 
 pokemonMakers["Golurk"] = () => {
     return makeCharacter(
-        "Golurk",
-        "Pokemon",
+        { name: "Golurk" },
         {
             
 "Golurk": {
@@ -14938,8 +14622,7 @@ pokemonMakers["Golurk"] = () => {
 
 pokemonMakers["Goodra"] = () => {
     return makeCharacter(
-        "Goodra",
-        "Pokemon",
+        { name: "Goodra" },
         {
             
 "Goodra": {
@@ -14982,8 +14665,7 @@ pokemonMakers["Goodra"] = () => {
 
 pokemonMakers["Goomy"] = () => {
     return makeCharacter(
-        "Goomy",
-        "Pokemon",
+        { name: "Goomy" },
         {
             
 "Goomy": {
@@ -15026,8 +14708,7 @@ pokemonMakers["Goomy"] = () => {
 
 pokemonMakers["Gorebyss"] = () => {
     return makeCharacter(
-        "Gorebyss",
-        "Pokemon",
+        { name: "Gorebyss" },
         {
             
 "Gorebyss": {
@@ -15070,8 +14751,7 @@ pokemonMakers["Gorebyss"] = () => {
 
 pokemonMakers["Gossifleur"] = () => {
     return makeCharacter(
-        "Gossifleur",
-        "Pokemon",
+        { name: "Gossifleur" },
         {
             
 "Gossifleur": {
@@ -15114,8 +14794,7 @@ pokemonMakers["Gossifleur"] = () => {
 
 pokemonMakers["Gothita"] = () => {
     return makeCharacter(
-        "Gothita",
-        "Pokemon",
+        { name: "Gothita" },
         {
             
 "Gothita": {
@@ -15158,8 +14837,7 @@ pokemonMakers["Gothita"] = () => {
 
 pokemonMakers["Gothitelle"] = () => {
     return makeCharacter(
-        "Gothitelle",
-        "Pokemon",
+        { name: "Gothitelle" },
         {
             
 "Gothitelle": {
@@ -15202,8 +14880,7 @@ pokemonMakers["Gothitelle"] = () => {
 
 pokemonMakers["Gothorita"] = () => {
     return makeCharacter(
-        "Gothorita",
-        "Pokemon",
+        { name: "Gothorita" },
         {
             
 "Gothorita": {
@@ -15246,8 +14923,7 @@ pokemonMakers["Gothorita"] = () => {
 
 pokemonMakers["Gourgeist"] = () => {
     return makeCharacter(
-        "Gourgeist",
-        "Pokemon",
+        { name: "Gourgeist" },
         {
             
 "Large Size": {
@@ -15320,8 +14996,7 @@ pokemonMakers["Gourgeist"] = () => {
 
 pokemonMakers["Granbull"] = () => {
     return makeCharacter(
-        "Granbull",
-        "Pokemon",
+        { name: "Granbull" },
         {
             
 "Granbull": {
@@ -15364,8 +15039,7 @@ pokemonMakers["Granbull"] = () => {
 
 pokemonMakers["Grapploct"] = () => {
     return makeCharacter(
-        "Grapploct",
-        "Pokemon",
+        { name: "Grapploct" },
         {
             
 "Grapploct": {
@@ -15408,8 +15082,7 @@ pokemonMakers["Grapploct"] = () => {
 
 pokemonMakers["Graveler"] = () => {
     return makeCharacter(
-        "Graveler",
-        "Pokemon",
+        { name: "Graveler" },
         {
             
 "Alola Form": {
@@ -15462,8 +15135,7 @@ pokemonMakers["Graveler"] = () => {
 
 pokemonMakers["Greedent"] = () => {
     return makeCharacter(
-        "Greedent",
-        "Pokemon",
+        { name: "Greedent" },
         {
             
 "Greedent": {
@@ -15506,8 +15178,7 @@ pokemonMakers["Greedent"] = () => {
 
 pokemonMakers["Grimer"] = () => {
     return makeCharacter(
-        "Grimer",
-        "Pokemon",
+        { name: "Grimer" },
         {
             
 "Alola Form": {
@@ -15560,8 +15231,7 @@ pokemonMakers["Grimer"] = () => {
 
 pokemonMakers["Grookey"] = () => {
     return makeCharacter(
-        "Grookey",
-        "Pokemon",
+        { name: "Grookey" },
         {
             
 "Grookey": {
@@ -15604,8 +15274,7 @@ pokemonMakers["Grookey"] = () => {
 
 pokemonMakers["Grotle"] = () => {
     return makeCharacter(
-        "Grotle",
-        "Pokemon",
+        { name: "Grotle" },
         {
             
 "Grotle": {
@@ -15648,8 +15317,7 @@ pokemonMakers["Grotle"] = () => {
 
 pokemonMakers["Groudon"] = () => {
     return makeCharacter(
-        "Groudon",
-        "Pokemon",
+        { name: "Groudon" },
         {
             
 "Groudon": {
@@ -15702,8 +15370,7 @@ pokemonMakers["Groudon"] = () => {
 
 pokemonMakers["Grovyle"] = () => {
     return makeCharacter(
-        "Grovyle",
-        "Pokemon",
+        { name: "Grovyle" },
         {
             
 "Grovyle": {
@@ -15746,8 +15413,7 @@ pokemonMakers["Grovyle"] = () => {
 
 pokemonMakers["Growlithe"] = () => {
     return makeCharacter(
-        "Growlithe",
-        "Pokemon",
+        { name: "Growlithe" },
         {
             
 "Growlithe": {
@@ -15790,8 +15456,7 @@ pokemonMakers["Growlithe"] = () => {
 
 pokemonMakers["Grubbin"] = () => {
     return makeCharacter(
-        "Grubbin",
-        "Pokemon",
+        { name: "Grubbin" },
         {
             
 "Grubbin": {
@@ -15834,8 +15499,7 @@ pokemonMakers["Grubbin"] = () => {
 
 pokemonMakers["Grumpig"] = () => {
     return makeCharacter(
-        "Grumpig",
-        "Pokemon",
+        { name: "Grumpig" },
         {
             
 "Grumpig": {
@@ -15878,8 +15542,7 @@ pokemonMakers["Grumpig"] = () => {
 
 pokemonMakers["Gulpin"] = () => {
     return makeCharacter(
-        "Gulpin",
-        "Pokemon",
+        { name: "Gulpin" },
         {
             
 "Gulpin": {
@@ -15922,8 +15585,7 @@ pokemonMakers["Gulpin"] = () => {
 
 pokemonMakers["Gumshoos"] = () => {
     return makeCharacter(
-        "Gumshoos",
-        "Pokemon",
+        { name: "Gumshoos" },
         {
             
 "Gumshoos": {
@@ -15966,8 +15628,7 @@ pokemonMakers["Gumshoos"] = () => {
 
 pokemonMakers["Gurdurr"] = () => {
     return makeCharacter(
-        "Gurdurr",
-        "Pokemon",
+        { name: "Gurdurr" },
         {
             
 "Gurdurr": {
@@ -16010,8 +15671,7 @@ pokemonMakers["Gurdurr"] = () => {
 
 pokemonMakers["Guzzlord"] = () => {
     return makeCharacter(
-        "Guzzlord",
-        "Pokemon",
+        { name: "Guzzlord" },
         {
             
 "Guzzlord": {
@@ -16054,8 +15714,7 @@ pokemonMakers["Guzzlord"] = () => {
 
 pokemonMakers["Gyarados"] = () => {
     return makeCharacter(
-        "Gyarados",
-        "Pokemon",
+        { name: "Gyarados" },
         {
             
 "Gyarados": {
@@ -16108,8 +15767,7 @@ pokemonMakers["Gyarados"] = () => {
 
 pokemonMakers["Hakamo-o"] = () => {
     return makeCharacter(
-        "Hakamo-o",
-        "Pokemon",
+        { name: "Hakamo-o" },
         {
             
 "Hakamo-o": {
@@ -16152,8 +15810,7 @@ pokemonMakers["Hakamo-o"] = () => {
 
 pokemonMakers["Happiny"] = () => {
     return makeCharacter(
-        "Happiny",
-        "Pokemon",
+        { name: "Happiny" },
         {
             
 "Happiny": {
@@ -16196,8 +15853,7 @@ pokemonMakers["Happiny"] = () => {
 
 pokemonMakers["Hariyama"] = () => {
     return makeCharacter(
-        "Hariyama",
-        "Pokemon",
+        { name: "Hariyama" },
         {
             
 "Hariyama": {
@@ -16240,8 +15896,7 @@ pokemonMakers["Hariyama"] = () => {
 
 pokemonMakers["Hatenna"] = () => {
     return makeCharacter(
-        "Hatenna",
-        "Pokemon",
+        { name: "Hatenna" },
         {
             
 "Hatenna": {
@@ -16284,8 +15939,7 @@ pokemonMakers["Hatenna"] = () => {
 
 pokemonMakers["Hattrem"] = () => {
     return makeCharacter(
-        "Hattrem",
-        "Pokemon",
+        { name: "Hattrem" },
         {
             
 "Hattrem": {
@@ -16328,8 +15982,7 @@ pokemonMakers["Hattrem"] = () => {
 
 pokemonMakers["Haunter"] = () => {
     return makeCharacter(
-        "Haunter",
-        "Pokemon",
+        { name: "Haunter" },
         {
             
 "Haunter": {
@@ -16372,8 +16025,7 @@ pokemonMakers["Haunter"] = () => {
 
 pokemonMakers["Hawlucha"] = () => {
     return makeCharacter(
-        "Hawlucha",
-        "Pokemon",
+        { name: "Hawlucha" },
         {
             
 "Hawlucha": {
@@ -16416,8 +16068,7 @@ pokemonMakers["Hawlucha"] = () => {
 
 pokemonMakers["Haxorus"] = () => {
     return makeCharacter(
-        "Haxorus",
-        "Pokemon",
+        { name: "Haxorus" },
         {
             
 "Haxorus": {
@@ -16460,8 +16111,7 @@ pokemonMakers["Haxorus"] = () => {
 
 pokemonMakers["Heatmor"] = () => {
     return makeCharacter(
-        "Heatmor",
-        "Pokemon",
+        { name: "Heatmor" },
         {
             
 "Heatmor": {
@@ -16504,8 +16154,7 @@ pokemonMakers["Heatmor"] = () => {
 
 pokemonMakers["Heatran"] = () => {
     return makeCharacter(
-        "Heatran",
-        "Pokemon",
+        { name: "Heatran" },
         {
             
 "Heatran": {
@@ -16548,8 +16197,7 @@ pokemonMakers["Heatran"] = () => {
 
 pokemonMakers["Heliolisk"] = () => {
     return makeCharacter(
-        "Heliolisk",
-        "Pokemon",
+        { name: "Heliolisk" },
         {
             
 "Heliolisk": {
@@ -16592,8 +16240,7 @@ pokemonMakers["Heliolisk"] = () => {
 
 pokemonMakers["Helioptile"] = () => {
     return makeCharacter(
-        "Helioptile",
-        "Pokemon",
+        { name: "Helioptile" },
         {
             
 "Helioptile": {
@@ -16636,8 +16283,7 @@ pokemonMakers["Helioptile"] = () => {
 
 pokemonMakers["Heracross"] = () => {
     return makeCharacter(
-        "Heracross",
-        "Pokemon",
+        { name: "Heracross" },
         {
             
 "Heracross": {
@@ -16690,8 +16336,7 @@ pokemonMakers["Heracross"] = () => {
 
 pokemonMakers["Herdier"] = () => {
     return makeCharacter(
-        "Herdier",
-        "Pokemon",
+        { name: "Herdier" },
         {
             
 "Herdier": {
@@ -16734,8 +16379,7 @@ pokemonMakers["Herdier"] = () => {
 
 pokemonMakers["Hippopotas"] = () => {
     return makeCharacter(
-        "Hippopotas",
-        "Pokemon",
+        { name: "Hippopotas" },
         {
             
 "Hippopotas": {
@@ -16778,8 +16422,7 @@ pokemonMakers["Hippopotas"] = () => {
 
 pokemonMakers["Hippowdon"] = () => {
     return makeCharacter(
-        "Hippowdon",
-        "Pokemon",
+        { name: "Hippowdon" },
         {
             
 "Hippowdon": {
@@ -16822,8 +16465,7 @@ pokemonMakers["Hippowdon"] = () => {
 
 pokemonMakers["Hitmonchan"] = () => {
     return makeCharacter(
-        "Hitmonchan",
-        "Pokemon",
+        { name: "Hitmonchan" },
         {
             
 "Hitmonchan": {
@@ -16866,8 +16508,7 @@ pokemonMakers["Hitmonchan"] = () => {
 
 pokemonMakers["Hitmonlee"] = () => {
     return makeCharacter(
-        "Hitmonlee",
-        "Pokemon",
+        { name: "Hitmonlee" },
         {
             
 "Hitmonlee": {
@@ -16910,8 +16551,7 @@ pokemonMakers["Hitmonlee"] = () => {
 
 pokemonMakers["Hitmontop"] = () => {
     return makeCharacter(
-        "Hitmontop",
-        "Pokemon",
+        { name: "Hitmontop" },
         {
             
 "Hitmontop": {
@@ -16954,8 +16594,7 @@ pokemonMakers["Hitmontop"] = () => {
 
 pokemonMakers["Ho-Oh"] = () => {
     return makeCharacter(
-        "Ho-Oh",
-        "Pokemon",
+        { name: "Ho-Oh" },
         {
             
 "Ho-Oh": {
@@ -16998,8 +16637,7 @@ pokemonMakers["Ho-Oh"] = () => {
 
 pokemonMakers["Honchkrow"] = () => {
     return makeCharacter(
-        "Honchkrow",
-        "Pokemon",
+        { name: "Honchkrow" },
         {
             
 "Honchkrow": {
@@ -17042,8 +16680,7 @@ pokemonMakers["Honchkrow"] = () => {
 
 pokemonMakers["Honedge"] = () => {
     return makeCharacter(
-        "Honedge",
-        "Pokemon",
+        { name: "Honedge" },
         {
             
 "Honedge": {
@@ -17086,8 +16723,7 @@ pokemonMakers["Honedge"] = () => {
 
 pokemonMakers["Hoopa"] = () => {
     return makeCharacter(
-        "Hoopa",
-        "Pokemon",
+        { name: "Hoopa" },
         {
             
 "Hoopa Confined": {
@@ -17140,8 +16776,7 @@ pokemonMakers["Hoopa"] = () => {
 
 pokemonMakers["Hoothoot"] = () => {
     return makeCharacter(
-        "Hoothoot",
-        "Pokemon",
+        { name: "Hoothoot" },
         {
             
 "Hoothoot": {
@@ -17184,8 +16819,7 @@ pokemonMakers["Hoothoot"] = () => {
 
 pokemonMakers["Hoppip"] = () => {
     return makeCharacter(
-        "Hoppip",
-        "Pokemon",
+        { name: "Hoppip" },
         {
             
 "Hoppip": {
@@ -17228,8 +16862,7 @@ pokemonMakers["Hoppip"] = () => {
 
 pokemonMakers["Horsea"] = () => {
     return makeCharacter(
-        "Horsea",
-        "Pokemon",
+        { name: "Horsea" },
         {
             
 "Horsea": {
@@ -17272,8 +16905,7 @@ pokemonMakers["Horsea"] = () => {
 
 pokemonMakers["Houndoom"] = () => {
     return makeCharacter(
-        "Houndoom",
-        "Pokemon",
+        { name: "Houndoom" },
         {
             
 "Houndoom": {
@@ -17326,8 +16958,7 @@ pokemonMakers["Houndoom"] = () => {
 
 pokemonMakers["Houndour"] = () => {
     return makeCharacter(
-        "Houndour",
-        "Pokemon",
+        { name: "Houndour" },
         {
             
 "Houndour": {
@@ -17370,8 +17001,7 @@ pokemonMakers["Houndour"] = () => {
 
 pokemonMakers["Huntail"] = () => {
     return makeCharacter(
-        "Huntail",
-        "Pokemon",
+        { name: "Huntail" },
         {
             
 "Huntail": {
@@ -17414,8 +17044,7 @@ pokemonMakers["Huntail"] = () => {
 
 pokemonMakers["Hydreigon"] = () => {
     return makeCharacter(
-        "Hydreigon",
-        "Pokemon",
+        { name: "Hydreigon" },
         {
             
 "Hydreigon": {
@@ -17458,8 +17087,7 @@ pokemonMakers["Hydreigon"] = () => {
 
 pokemonMakers["Hypno"] = () => {
     return makeCharacter(
-        "Hypno",
-        "Pokemon",
+        { name: "Hypno" },
         {
             
 "Hypno": {
@@ -17502,8 +17130,7 @@ pokemonMakers["Hypno"] = () => {
 
 pokemonMakers["Igglybuff"] = () => {
     return makeCharacter(
-        "Igglybuff",
-        "Pokemon",
+        { name: "Igglybuff" },
         {
             
 "Igglybuff": {
@@ -17546,8 +17173,7 @@ pokemonMakers["Igglybuff"] = () => {
 
 pokemonMakers["Illumise"] = () => {
     return makeCharacter(
-        "Illumise",
-        "Pokemon",
+        { name: "Illumise" },
         {
             
 "Illumise": {
@@ -17590,8 +17216,7 @@ pokemonMakers["Illumise"] = () => {
 
 pokemonMakers["Impidimp"] = () => {
     return makeCharacter(
-        "Impidimp",
-        "Pokemon",
+        { name: "Impidimp" },
         {
             
 "Impidimp": {
@@ -17634,8 +17259,7 @@ pokemonMakers["Impidimp"] = () => {
 
 pokemonMakers["Incineroar"] = () => {
     return makeCharacter(
-        "Incineroar",
-        "Pokemon",
+        { name: "Incineroar" },
         {
             
 "Incineroar": {
@@ -17678,8 +17302,7 @@ pokemonMakers["Incineroar"] = () => {
 
 pokemonMakers["Indeedee"] = () => {
     return makeCharacter(
-        "Indeedee",
-        "Pokemon",
+        { name: "Indeedee" },
         {
             
 "Female": {
@@ -17732,8 +17355,7 @@ pokemonMakers["Indeedee"] = () => {
 
 pokemonMakers["Infernape"] = () => {
     return makeCharacter(
-        "Infernape",
-        "Pokemon",
+        { name: "Infernape" },
         {
             
 "Infernape": {
@@ -17776,8 +17398,7 @@ pokemonMakers["Infernape"] = () => {
 
 pokemonMakers["Inkay"] = () => {
     return makeCharacter(
-        "Inkay",
-        "Pokemon",
+        { name: "Inkay" },
         {
             
 "Inkay": {
@@ -17820,8 +17441,7 @@ pokemonMakers["Inkay"] = () => {
 
 pokemonMakers["Inteleon"] = () => {
     return makeCharacter(
-        "Inteleon",
-        "Pokemon",
+        { name: "Inteleon" },
         {
             
 "Inteleon": {
@@ -17864,8 +17484,7 @@ pokemonMakers["Inteleon"] = () => {
 
 pokemonMakers["Ivysaur"] = () => {
     return makeCharacter(
-        "Ivysaur",
-        "Pokemon",
+        { name: "Ivysaur" },
         {
             
 "Ivysaur": {
@@ -17908,8 +17527,7 @@ pokemonMakers["Ivysaur"] = () => {
 
 pokemonMakers["Jangmo-o"] = () => {
     return makeCharacter(
-        "Jangmo-o",
-        "Pokemon",
+        { name: "Jangmo-o" },
         {
             
 "Jangmo-o": {
@@ -17952,8 +17570,7 @@ pokemonMakers["Jangmo-o"] = () => {
 
 pokemonMakers["Jellicent"] = () => {
     return makeCharacter(
-        "Jellicent",
-        "Pokemon",
+        { name: "Jellicent" },
         {
             
 "Jellicent": {
@@ -17996,8 +17613,7 @@ pokemonMakers["Jellicent"] = () => {
 
 pokemonMakers["Jigglypuff"] = () => {
     return makeCharacter(
-        "Jigglypuff",
-        "Pokemon",
+        { name: "Jigglypuff" },
         {
             
 "Jigglypuff": {
@@ -18040,8 +17656,7 @@ pokemonMakers["Jigglypuff"] = () => {
 
 pokemonMakers["Jirachi"] = () => {
     return makeCharacter(
-        "Jirachi",
-        "Pokemon",
+        { name: "Jirachi" },
         {
             
 "Jirachi": {
@@ -18084,8 +17699,7 @@ pokemonMakers["Jirachi"] = () => {
 
 pokemonMakers["Jolteon"] = () => {
     return makeCharacter(
-        "Jolteon",
-        "Pokemon",
+        { name: "Jolteon" },
         {
             
 "Jolteon": {
@@ -18128,8 +17742,7 @@ pokemonMakers["Jolteon"] = () => {
 
 pokemonMakers["Joltik"] = () => {
     return makeCharacter(
-        "Joltik",
-        "Pokemon",
+        { name: "Joltik" },
         {
             
 "Joltik": {
@@ -18172,8 +17785,7 @@ pokemonMakers["Joltik"] = () => {
 
 pokemonMakers["Jumpluff"] = () => {
     return makeCharacter(
-        "Jumpluff",
-        "Pokemon",
+        { name: "Jumpluff" },
         {
             
 "Jumpluff": {
@@ -18216,8 +17828,7 @@ pokemonMakers["Jumpluff"] = () => {
 
 pokemonMakers["Jynx"] = () => {
     return makeCharacter(
-        "Jynx",
-        "Pokemon",
+        { name: "Jynx" },
         {
             
 "Jynx": {
@@ -18260,8 +17871,7 @@ pokemonMakers["Jynx"] = () => {
 
 pokemonMakers["Kabuto"] = () => {
     return makeCharacter(
-        "Kabuto",
-        "Pokemon",
+        { name: "Kabuto" },
         {
             
 "Kabuto": {
@@ -18304,8 +17914,7 @@ pokemonMakers["Kabuto"] = () => {
 
 pokemonMakers["Kabutops"] = () => {
     return makeCharacter(
-        "Kabutops",
-        "Pokemon",
+        { name: "Kabutops" },
         {
             
 "Kabutops": {
@@ -18348,8 +17957,7 @@ pokemonMakers["Kabutops"] = () => {
 
 pokemonMakers["Kadabra"] = () => {
     return makeCharacter(
-        "Kadabra",
-        "Pokemon",
+        { name: "Kadabra" },
         {
             
 "Kadabra": {
@@ -18392,8 +18000,7 @@ pokemonMakers["Kadabra"] = () => {
 
 pokemonMakers["Kakuna"] = () => {
     return makeCharacter(
-        "Kakuna",
-        "Pokemon",
+        { name: "Kakuna" },
         {
             
 "Kakuna": {
@@ -18436,8 +18043,7 @@ pokemonMakers["Kakuna"] = () => {
 
 pokemonMakers["Kangaskhan"] = () => {
     return makeCharacter(
-        "Kangaskhan",
-        "Pokemon",
+        { name: "Kangaskhan" },
         {
             
 "Kangaskhan": {
@@ -18490,8 +18096,7 @@ pokemonMakers["Kangaskhan"] = () => {
 
 pokemonMakers["Karrablast"] = () => {
     return makeCharacter(
-        "Karrablast",
-        "Pokemon",
+        { name: "Karrablast" },
         {
             
 "Karrablast": {
@@ -18534,8 +18139,7 @@ pokemonMakers["Karrablast"] = () => {
 
 pokemonMakers["Kartana"] = () => {
     return makeCharacter(
-        "Kartana",
-        "Pokemon",
+        { name: "Kartana" },
         {
             
 "Kartana": {
@@ -18578,8 +18182,7 @@ pokemonMakers["Kartana"] = () => {
 
 pokemonMakers["Kecleon"] = () => {
     return makeCharacter(
-        "Kecleon",
-        "Pokemon",
+        { name: "Kecleon" },
         {
             
 "Kecleon": {
@@ -18622,8 +18225,7 @@ pokemonMakers["Kecleon"] = () => {
 
 pokemonMakers["Keldeo"] = () => {
     return makeCharacter(
-        "Keldeo",
-        "Pokemon",
+        { name: "Keldeo" },
         {
             
 "Ordinary Form": {
@@ -18676,8 +18278,7 @@ pokemonMakers["Keldeo"] = () => {
 
 pokemonMakers["Kingdra"] = () => {
     return makeCharacter(
-        "Kingdra",
-        "Pokemon",
+        { name: "Kingdra" },
         {
             
 "Kingdra": {
@@ -18720,8 +18321,7 @@ pokemonMakers["Kingdra"] = () => {
 
 pokemonMakers["Kirlia"] = () => {
     return makeCharacter(
-        "Kirlia",
-        "Pokemon",
+        { name: "Kirlia" },
         {
             
 "Kirlia": {
@@ -18764,8 +18364,7 @@ pokemonMakers["Kirlia"] = () => {
 
 pokemonMakers["Klang"] = () => {
     return makeCharacter(
-        "Klang",
-        "Pokemon",
+        { name: "Klang" },
         {
             
 "Klang": {
@@ -18808,8 +18407,7 @@ pokemonMakers["Klang"] = () => {
 
 pokemonMakers["Klefki"] = () => {
     return makeCharacter(
-        "Klefki",
-        "Pokemon",
+        { name: "Klefki" },
         {
             
 "Klefki": {
@@ -18852,8 +18450,7 @@ pokemonMakers["Klefki"] = () => {
 
 pokemonMakers["Klink"] = () => {
     return makeCharacter(
-        "Klink",
-        "Pokemon",
+        { name: "Klink" },
         {
             
 "Klink": {
@@ -18896,8 +18493,7 @@ pokemonMakers["Klink"] = () => {
 
 pokemonMakers["Klinklang"] = () => {
     return makeCharacter(
-        "Klinklang",
-        "Pokemon",
+        { name: "Klinklang" },
         {
             
 "Klinklang": {
@@ -18940,8 +18536,7 @@ pokemonMakers["Klinklang"] = () => {
 
 pokemonMakers["Koffing"] = () => {
     return makeCharacter(
-        "Koffing",
-        "Pokemon",
+        { name: "Koffing" },
         {
             
 "Koffing": {
@@ -18984,8 +18579,7 @@ pokemonMakers["Koffing"] = () => {
 
 pokemonMakers["Komala"] = () => {
     return makeCharacter(
-        "Komala",
-        "Pokemon",
+        { name: "Komala" },
         {
             
 "Komala": {
@@ -19028,8 +18622,7 @@ pokemonMakers["Komala"] = () => {
 
 pokemonMakers["Kommo-o"] = () => {
     return makeCharacter(
-        "Kommo-o",
-        "Pokemon",
+        { name: "Kommo-o" },
         {
             
 "Kommo-o": {
@@ -19072,8 +18665,7 @@ pokemonMakers["Kommo-o"] = () => {
 
 pokemonMakers["Krabby"] = () => {
     return makeCharacter(
-        "Krabby",
-        "Pokemon",
+        { name: "Krabby" },
         {
             
 "Krabby": {
@@ -19116,8 +18708,7 @@ pokemonMakers["Krabby"] = () => {
 
 pokemonMakers["Kricketot"] = () => {
     return makeCharacter(
-        "Kricketot",
-        "Pokemon",
+        { name: "Kricketot" },
         {
             
 "Kricketot": {
@@ -19160,8 +18751,7 @@ pokemonMakers["Kricketot"] = () => {
 
 pokemonMakers["Kricketune"] = () => {
     return makeCharacter(
-        "Kricketune",
-        "Pokemon",
+        { name: "Kricketune" },
         {
             
 "Kricketune": {
@@ -19204,8 +18794,7 @@ pokemonMakers["Kricketune"] = () => {
 
 pokemonMakers["Krokorok"] = () => {
     return makeCharacter(
-        "Krokorok",
-        "Pokemon",
+        { name: "Krokorok" },
         {
             
 "Krokorok": {
@@ -19248,8 +18837,7 @@ pokemonMakers["Krokorok"] = () => {
 
 pokemonMakers["Krookodile"] = () => {
     return makeCharacter(
-        "Krookodile",
-        "Pokemon",
+        { name: "Krookodile" },
         {
             
 "Krookodile": {
@@ -19292,8 +18880,7 @@ pokemonMakers["Krookodile"] = () => {
 
 pokemonMakers["Kyogre"] = () => {
     return makeCharacter(
-        "Kyogre",
-        "Pokemon",
+        { name: "Kyogre" },
         {
             
 "Kyogre": {
@@ -19346,8 +18933,7 @@ pokemonMakers["Kyogre"] = () => {
 
 pokemonMakers["Lairon"] = () => {
     return makeCharacter(
-        "Lairon",
-        "Pokemon",
+        { name: "Lairon" },
         {
             
 "Lairon": {
@@ -19390,8 +18976,7 @@ pokemonMakers["Lairon"] = () => {
 
 pokemonMakers["Lampent"] = () => {
     return makeCharacter(
-        "Lampent",
-        "Pokemon",
+        { name: "Lampent" },
         {
             
 "Lampent": {
@@ -19434,8 +19019,7 @@ pokemonMakers["Lampent"] = () => {
 
 pokemonMakers["Landorus"] = () => {
     return makeCharacter(
-        "Landorus",
-        "Pokemon",
+        { name: "Landorus" },
         {
             
 "Incarnate Forme": {
@@ -19488,8 +19072,7 @@ pokemonMakers["Landorus"] = () => {
 
 pokemonMakers["Lanturn"] = () => {
     return makeCharacter(
-        "Lanturn",
-        "Pokemon",
+        { name: "Lanturn" },
         {
             
 "Lanturn": {
@@ -19532,8 +19115,7 @@ pokemonMakers["Lanturn"] = () => {
 
 pokemonMakers["Larvesta"] = () => {
     return makeCharacter(
-        "Larvesta",
-        "Pokemon",
+        { name: "Larvesta" },
         {
             
 "Larvesta": {
@@ -19576,8 +19158,7 @@ pokemonMakers["Larvesta"] = () => {
 
 pokemonMakers["Larvitar"] = () => {
     return makeCharacter(
-        "Larvitar",
-        "Pokemon",
+        { name: "Larvitar" },
         {
             
 "Larvitar": {
@@ -19620,8 +19201,7 @@ pokemonMakers["Larvitar"] = () => {
 
 pokemonMakers["Latias"] = () => {
     return makeCharacter(
-        "Latias",
-        "Pokemon",
+        { name: "Latias" },
         {
             
 "Latias": {
@@ -19674,8 +19254,7 @@ pokemonMakers["Latias"] = () => {
 
 pokemonMakers["Latios"] = () => {
     return makeCharacter(
-        "Latios",
-        "Pokemon",
+        { name: "Latios" },
         {
             
 "Latios": {
@@ -19728,8 +19307,7 @@ pokemonMakers["Latios"] = () => {
 
 pokemonMakers["Leafeon"] = () => {
     return makeCharacter(
-        "Leafeon",
-        "Pokemon",
+        { name: "Leafeon" },
         {
             
 "Leafeon": {
@@ -19772,8 +19350,7 @@ pokemonMakers["Leafeon"] = () => {
 
 pokemonMakers["Leavanny"] = () => {
     return makeCharacter(
-        "Leavanny",
-        "Pokemon",
+        { name: "Leavanny" },
         {
             
 "Leavanny": {
@@ -19816,8 +19393,7 @@ pokemonMakers["Leavanny"] = () => {
 
 pokemonMakers["Ledian"] = () => {
     return makeCharacter(
-        "Ledian",
-        "Pokemon",
+        { name: "Ledian" },
         {
             
 "Ledian": {
@@ -19860,8 +19436,7 @@ pokemonMakers["Ledian"] = () => {
 
 pokemonMakers["Ledyba"] = () => {
     return makeCharacter(
-        "Ledyba",
-        "Pokemon",
+        { name: "Ledyba" },
         {
             
 "Ledyba": {
@@ -19904,8 +19479,7 @@ pokemonMakers["Ledyba"] = () => {
 
 pokemonMakers["Lickilicky"] = () => {
     return makeCharacter(
-        "Lickilicky",
-        "Pokemon",
+        { name: "Lickilicky" },
         {
             
 "Lickilicky": {
@@ -19948,8 +19522,7 @@ pokemonMakers["Lickilicky"] = () => {
 
 pokemonMakers["Lickitung"] = () => {
     return makeCharacter(
-        "Lickitung",
-        "Pokemon",
+        { name: "Lickitung" },
         {
             
 "Lickitung": {
@@ -19992,8 +19565,7 @@ pokemonMakers["Lickitung"] = () => {
 
 pokemonMakers["Liepard"] = () => {
     return makeCharacter(
-        "Liepard",
-        "Pokemon",
+        { name: "Liepard" },
         {
             
 "Liepard": {
@@ -20036,8 +19608,7 @@ pokemonMakers["Liepard"] = () => {
 
 pokemonMakers["Lileep"] = () => {
     return makeCharacter(
-        "Lileep",
-        "Pokemon",
+        { name: "Lileep" },
         {
             
 "Lileep": {
@@ -20080,8 +19651,7 @@ pokemonMakers["Lileep"] = () => {
 
 pokemonMakers["Lilligant"] = () => {
     return makeCharacter(
-        "Lilligant",
-        "Pokemon",
+        { name: "Lilligant" },
         {
             
 "Lilligant": {
@@ -20124,8 +19694,7 @@ pokemonMakers["Lilligant"] = () => {
 
 pokemonMakers["Lillipup"] = () => {
     return makeCharacter(
-        "Lillipup",
-        "Pokemon",
+        { name: "Lillipup" },
         {
             
 "Lillipup": {
@@ -20168,8 +19737,7 @@ pokemonMakers["Lillipup"] = () => {
 
 pokemonMakers["Linoone"] = () => {
     return makeCharacter(
-        "Linoone",
-        "Pokemon",
+        { name: "Linoone" },
         {
             
 "Galarian Form": {
@@ -20222,8 +19790,7 @@ pokemonMakers["Linoone"] = () => {
 
 pokemonMakers["Litleo"] = () => {
     return makeCharacter(
-        "Litleo",
-        "Pokemon",
+        { name: "Litleo" },
         {
             
 "Litleo": {
@@ -20266,8 +19833,7 @@ pokemonMakers["Litleo"] = () => {
 
 pokemonMakers["Litten"] = () => {
     return makeCharacter(
-        "Litten",
-        "Pokemon",
+        { name: "Litten" },
         {
             
 "Litten": {
@@ -20310,8 +19876,7 @@ pokemonMakers["Litten"] = () => {
 
 pokemonMakers["Litwick"] = () => {
     return makeCharacter(
-        "Litwick",
-        "Pokemon",
+        { name: "Litwick" },
         {
             
 "Litwick": {
@@ -20354,8 +19919,7 @@ pokemonMakers["Litwick"] = () => {
 
 pokemonMakers["Lombre"] = () => {
     return makeCharacter(
-        "Lombre",
-        "Pokemon",
+        { name: "Lombre" },
         {
             
 "Lombre": {
@@ -20398,8 +19962,7 @@ pokemonMakers["Lombre"] = () => {
 
 pokemonMakers["Lopunny"] = () => {
     return makeCharacter(
-        "Lopunny",
-        "Pokemon",
+        { name: "Lopunny" },
         {
             
 "Lopunny": {
@@ -20452,8 +20015,7 @@ pokemonMakers["Lopunny"] = () => {
 
 pokemonMakers["Lotad"] = () => {
     return makeCharacter(
-        "Lotad",
-        "Pokemon",
+        { name: "Lotad" },
         {
             
 "Lotad": {
@@ -20496,8 +20058,7 @@ pokemonMakers["Lotad"] = () => {
 
 pokemonMakers["Loudred"] = () => {
     return makeCharacter(
-        "Loudred",
-        "Pokemon",
+        { name: "Loudred" },
         {
             
 "Loudred": {
@@ -20540,8 +20101,7 @@ pokemonMakers["Loudred"] = () => {
 
 pokemonMakers["Lucario"] = () => {
     return makeCharacter(
-        "Lucario",
-        "Pokemon",
+        { name: "Lucario" },
         {
             
 "Lucario": {
@@ -20594,8 +20154,7 @@ pokemonMakers["Lucario"] = () => {
 
 pokemonMakers["Ludicolo"] = () => {
     return makeCharacter(
-        "Ludicolo",
-        "Pokemon",
+        { name: "Ludicolo" },
         {
             
 "Ludicolo": {
@@ -20638,8 +20197,7 @@ pokemonMakers["Ludicolo"] = () => {
 
 pokemonMakers["Lugia"] = () => {
     return makeCharacter(
-        "Lugia",
-        "Pokemon",
+        { name: "Lugia" },
         {
             
 "Lugia": {
@@ -20682,8 +20240,7 @@ pokemonMakers["Lugia"] = () => {
 
 pokemonMakers["Lumineon"] = () => {
     return makeCharacter(
-        "Lumineon",
-        "Pokemon",
+        { name: "Lumineon" },
         {
             
 "Lumineon": {
@@ -20726,8 +20283,7 @@ pokemonMakers["Lumineon"] = () => {
 
 pokemonMakers["Lunala"] = () => {
     return makeCharacter(
-        "Lunala",
-        "Pokemon",
+        { name: "Lunala" },
         {
             
 "Lunala": {
@@ -20770,8 +20326,7 @@ pokemonMakers["Lunala"] = () => {
 
 pokemonMakers["Lunatone"] = () => {
     return makeCharacter(
-        "Lunatone",
-        "Pokemon",
+        { name: "Lunatone" },
         {
             
 "Lunatone": {
@@ -20814,8 +20369,7 @@ pokemonMakers["Lunatone"] = () => {
 
 pokemonMakers["Lurantis"] = () => {
     return makeCharacter(
-        "Lurantis",
-        "Pokemon",
+        { name: "Lurantis" },
         {
             
 "Lurantis": {
@@ -20858,8 +20412,7 @@ pokemonMakers["Lurantis"] = () => {
 
 pokemonMakers["Luvdisc"] = () => {
     return makeCharacter(
-        "Luvdisc",
-        "Pokemon",
+        { name: "Luvdisc" },
         {
             
 "Luvdisc": {
@@ -20902,8 +20455,7 @@ pokemonMakers["Luvdisc"] = () => {
 
 pokemonMakers["Luxio"] = () => {
     return makeCharacter(
-        "Luxio",
-        "Pokemon",
+        { name: "Luxio" },
         {
             
 "Luxio": {
@@ -20946,8 +20498,7 @@ pokemonMakers["Luxio"] = () => {
 
 pokemonMakers["Luxray"] = () => {
     return makeCharacter(
-        "Luxray",
-        "Pokemon",
+        { name: "Luxray" },
         {
             
 "Luxray": {
@@ -20990,8 +20541,7 @@ pokemonMakers["Luxray"] = () => {
 
 pokemonMakers["Lycanroc"] = () => {
     return makeCharacter(
-        "Lycanroc",
-        "Pokemon",
+        { name: "Lycanroc" },
         {
             
 "Midday Form": {
@@ -21044,8 +20594,7 @@ pokemonMakers["Lycanroc"] = () => {
 
 pokemonMakers["Machoke"] = () => {
     return makeCharacter(
-        "Machoke",
-        "Pokemon",
+        { name: "Machoke" },
         {
             
 "Machoke": {
@@ -21088,8 +20637,7 @@ pokemonMakers["Machoke"] = () => {
 
 pokemonMakers["Machop"] = () => {
     return makeCharacter(
-        "Machop",
-        "Pokemon",
+        { name: "Machop" },
         {
             
 "Machop": {
@@ -21132,8 +20680,7 @@ pokemonMakers["Machop"] = () => {
 
 pokemonMakers["Magby"] = () => {
     return makeCharacter(
-        "Magby",
-        "Pokemon",
+        { name: "Magby" },
         {
             
 "Magby": {
@@ -21176,8 +20723,7 @@ pokemonMakers["Magby"] = () => {
 
 pokemonMakers["Magcargo"] = () => {
     return makeCharacter(
-        "Magcargo",
-        "Pokemon",
+        { name: "Magcargo" },
         {
             
 "Magcargo": {
@@ -21220,8 +20766,7 @@ pokemonMakers["Magcargo"] = () => {
 
 pokemonMakers["Magearna"] = () => {
     return makeCharacter(
-        "Magearna",
-        "Pokemon",
+        { name: "Magearna" },
         {
             
 "Magearna": {
@@ -21264,8 +20809,7 @@ pokemonMakers["Magearna"] = () => {
 
 pokemonMakers["Magikarp"] = () => {
     return makeCharacter(
-        "Magikarp",
-        "Pokemon",
+        { name: "Magikarp" },
         {
             
 "Magikarp": {
@@ -21308,8 +20852,7 @@ pokemonMakers["Magikarp"] = () => {
 
 pokemonMakers["Magmar"] = () => {
     return makeCharacter(
-        "Magmar",
-        "Pokemon",
+        { name: "Magmar" },
         {
             
 "Magmar": {
@@ -21352,8 +20895,7 @@ pokemonMakers["Magmar"] = () => {
 
 pokemonMakers["Magmortar"] = () => {
     return makeCharacter(
-        "Magmortar",
-        "Pokemon",
+        { name: "Magmortar" },
         {
             
 "Magmortar": {
@@ -21396,8 +20938,7 @@ pokemonMakers["Magmortar"] = () => {
 
 pokemonMakers["Magnemite"] = () => {
     return makeCharacter(
-        "Magnemite",
-        "Pokemon",
+        { name: "Magnemite" },
         {
             
 "Magnemite": {
@@ -21440,8 +20981,7 @@ pokemonMakers["Magnemite"] = () => {
 
 pokemonMakers["Magneton"] = () => {
     return makeCharacter(
-        "Magneton",
-        "Pokemon",
+        { name: "Magneton" },
         {
             
 "Magneton": {
@@ -21484,8 +21024,7 @@ pokemonMakers["Magneton"] = () => {
 
 pokemonMakers["Magnezone"] = () => {
     return makeCharacter(
-        "Magnezone",
-        "Pokemon",
+        { name: "Magnezone" },
         {
             
 "Magnezone": {
@@ -21528,8 +21067,7 @@ pokemonMakers["Magnezone"] = () => {
 
 pokemonMakers["Makuhita"] = () => {
     return makeCharacter(
-        "Makuhita",
-        "Pokemon",
+        { name: "Makuhita" },
         {
             
 "Makuhita": {
@@ -21572,8 +21110,7 @@ pokemonMakers["Makuhita"] = () => {
 
 pokemonMakers["Malamar"] = () => {
     return makeCharacter(
-        "Malamar",
-        "Pokemon",
+        { name: "Malamar" },
         {
             
 "Malamar": {
@@ -21616,8 +21153,7 @@ pokemonMakers["Malamar"] = () => {
 
 pokemonMakers["Mamoswine"] = () => {
     return makeCharacter(
-        "Mamoswine",
-        "Pokemon",
+        { name: "Mamoswine" },
         {
             
 "Mamoswine": {
@@ -21660,8 +21196,7 @@ pokemonMakers["Mamoswine"] = () => {
 
 pokemonMakers["Manaphy"] = () => {
     return makeCharacter(
-        "Manaphy",
-        "Pokemon",
+        { name: "Manaphy" },
         {
             
 "Manaphy": {
@@ -21704,8 +21239,7 @@ pokemonMakers["Manaphy"] = () => {
 
 pokemonMakers["Mandibuzz"] = () => {
     return makeCharacter(
-        "Mandibuzz",
-        "Pokemon",
+        { name: "Mandibuzz" },
         {
             
 "Mandibuzz": {
@@ -21748,8 +21282,7 @@ pokemonMakers["Mandibuzz"] = () => {
 
 pokemonMakers["Manectric"] = () => {
     return makeCharacter(
-        "Manectric",
-        "Pokemon",
+        { name: "Manectric" },
         {
             
 "Manectric": {
@@ -21802,8 +21335,7 @@ pokemonMakers["Manectric"] = () => {
 
 pokemonMakers["Mankey"] = () => {
     return makeCharacter(
-        "Mankey",
-        "Pokemon",
+        { name: "Mankey" },
         {
             
 "Mankey": {
@@ -21846,8 +21378,7 @@ pokemonMakers["Mankey"] = () => {
 
 pokemonMakers["Mantine"] = () => {
     return makeCharacter(
-        "Mantine",
-        "Pokemon",
+        { name: "Mantine" },
         {
             
 "Mantine": {
@@ -21890,8 +21421,7 @@ pokemonMakers["Mantine"] = () => {
 
 pokemonMakers["Mantyke"] = () => {
     return makeCharacter(
-        "Mantyke",
-        "Pokemon",
+        { name: "Mantyke" },
         {
             
 "Mantyke": {
@@ -21934,8 +21464,7 @@ pokemonMakers["Mantyke"] = () => {
 
 pokemonMakers["Maractus"] = () => {
     return makeCharacter(
-        "Maractus",
-        "Pokemon",
+        { name: "Maractus" },
         {
             
 "Maractus": {
@@ -21978,8 +21507,7 @@ pokemonMakers["Maractus"] = () => {
 
 pokemonMakers["Mareanie"] = () => {
     return makeCharacter(
-        "Mareanie",
-        "Pokemon",
+        { name: "Mareanie" },
         {
             
 "Mareanie": {
@@ -22022,8 +21550,7 @@ pokemonMakers["Mareanie"] = () => {
 
 pokemonMakers["Mareep"] = () => {
     return makeCharacter(
-        "Mareep",
-        "Pokemon",
+        { name: "Mareep" },
         {
             
 "Mareep": {
@@ -22066,8 +21593,7 @@ pokemonMakers["Mareep"] = () => {
 
 pokemonMakers["Marill"] = () => {
     return makeCharacter(
-        "Marill",
-        "Pokemon",
+        { name: "Marill" },
         {
             
 "Marill": {
@@ -22110,8 +21636,7 @@ pokemonMakers["Marill"] = () => {
 
 pokemonMakers["Marowak"] = () => {
     return makeCharacter(
-        "Marowak",
-        "Pokemon",
+        { name: "Marowak" },
         {
             
 "Alola Form": {
@@ -22164,8 +21689,7 @@ pokemonMakers["Marowak"] = () => {
 
 pokemonMakers["Marshadow"] = () => {
     return makeCharacter(
-        "Marshadow",
-        "Pokemon",
+        { name: "Marshadow" },
         {
             
 "Marshadow": {
@@ -22208,8 +21732,7 @@ pokemonMakers["Marshadow"] = () => {
 
 pokemonMakers["Marshtomp"] = () => {
     return makeCharacter(
-        "Marshtomp",
-        "Pokemon",
+        { name: "Marshtomp" },
         {
             
 "Marshtomp": {
@@ -22252,8 +21775,7 @@ pokemonMakers["Marshtomp"] = () => {
 
 pokemonMakers["Masquerain"] = () => {
     return makeCharacter(
-        "Masquerain",
-        "Pokemon",
+        { name: "Masquerain" },
         {
             
 "Masquerain": {
@@ -22296,8 +21818,7 @@ pokemonMakers["Masquerain"] = () => {
 
 pokemonMakers["Mawile"] = () => {
     return makeCharacter(
-        "Mawile",
-        "Pokemon",
+        { name: "Mawile" },
         {
             
 "Mawile": {
@@ -22350,8 +21871,7 @@ pokemonMakers["Mawile"] = () => {
 
 pokemonMakers["Medicham"] = () => {
     return makeCharacter(
-        "Medicham",
-        "Pokemon",
+        { name: "Medicham" },
         {
             
 "Medicham": {
@@ -22404,8 +21924,7 @@ pokemonMakers["Medicham"] = () => {
 
 pokemonMakers["Meditite"] = () => {
     return makeCharacter(
-        "Meditite",
-        "Pokemon",
+        { name: "Meditite" },
         {
             
 "Meditite": {
@@ -22448,8 +21967,7 @@ pokemonMakers["Meditite"] = () => {
 
 pokemonMakers["Metagross"] = () => {
     return makeCharacter(
-        "Metagross",
-        "Pokemon",
+        { name: "Metagross" },
         {
             
 "Mega Metagross": {
@@ -22502,8 +22020,7 @@ pokemonMakers["Metagross"] = () => {
 
 pokemonMakers["Mewtwo"] = () => {
     return makeCharacter(
-        "Mewtwo",
-        "Pokemon",
+        { name: "Mewtwo" },
         {
             
 "Mega Mewtwo X": {
@@ -22566,8 +22083,7 @@ pokemonMakers["Mewtwo"] = () => {
 
 pokemonMakers["Pidgeot"] = () => {
     return makeCharacter(
-        "Pidgeot",
-        "Pokemon",
+        { name: "Pidgeot" },
         {
             
 "Mega Pidgeot": {
@@ -22620,8 +22136,7 @@ pokemonMakers["Pidgeot"] = () => {
 
 pokemonMakers["Pinsir"] = () => {
     return makeCharacter(
-        "Pinsir",
-        "Pokemon",
+        { name: "Pinsir" },
         {
             
 "Mega Pinsir": {
@@ -22674,8 +22189,7 @@ pokemonMakers["Pinsir"] = () => {
 
 pokemonMakers["Rayquaza"] = () => {
     return makeCharacter(
-        "Rayquaza",
-        "Pokemon",
+        { name: "Rayquaza" },
         {
             
 "Mega Rayquaza": {
@@ -22728,8 +22242,7 @@ pokemonMakers["Rayquaza"] = () => {
 
 pokemonMakers["Sableye"] = () => {
     return makeCharacter(
-        "Sableye",
-        "Pokemon",
+        { name: "Sableye" },
         {
             
 "Mega Sableye": {
@@ -22782,8 +22295,7 @@ pokemonMakers["Sableye"] = () => {
 
 pokemonMakers["Salamence"] = () => {
     return makeCharacter(
-        "Salamence",
-        "Pokemon",
+        { name: "Salamence" },
         {
             
 "Mega Salamence": {
@@ -22836,8 +22348,7 @@ pokemonMakers["Salamence"] = () => {
 
 pokemonMakers["Sceptile"] = () => {
     return makeCharacter(
-        "Sceptile",
-        "Pokemon",
+        { name: "Sceptile" },
         {
             
 "Mega Sceptile": {
@@ -22890,8 +22401,7 @@ pokemonMakers["Sceptile"] = () => {
 
 pokemonMakers["Scizor"] = () => {
     return makeCharacter(
-        "Scizor",
-        "Pokemon",
+        { name: "Scizor" },
         {
             
 "Mega Scizor": {
@@ -22944,8 +22454,7 @@ pokemonMakers["Scizor"] = () => {
 
 pokemonMakers["Sharpedo"] = () => {
     return makeCharacter(
-        "Sharpedo",
-        "Pokemon",
+        { name: "Sharpedo" },
         {
             
 "Mega Sharpedo": {
@@ -22998,8 +22507,7 @@ pokemonMakers["Sharpedo"] = () => {
 
 pokemonMakers["Slowbro"] = () => {
     return makeCharacter(
-        "Slowbro",
-        "Pokemon",
+        { name: "Slowbro" },
         {
             
 "Mega Slowbro": {
@@ -23052,8 +22560,7 @@ pokemonMakers["Slowbro"] = () => {
 
 pokemonMakers["Steelix"] = () => {
     return makeCharacter(
-        "Steelix",
-        "Pokemon",
+        { name: "Steelix" },
         {
             
 "Mega Steelix": {
@@ -23106,8 +22613,7 @@ pokemonMakers["Steelix"] = () => {
 
 pokemonMakers["Swampert"] = () => {
     return makeCharacter(
-        "Swampert",
-        "Pokemon",
+        { name: "Swampert" },
         {
             
 "Mega Swampert": {
@@ -23160,8 +22666,7 @@ pokemonMakers["Swampert"] = () => {
 
 pokemonMakers["Tyranitar"] = () => {
     return makeCharacter(
-        "Tyranitar",
-        "Pokemon",
+        { name: "Tyranitar" },
         {
             
 "Mega Tyranitar": {
@@ -23214,8 +22719,7 @@ pokemonMakers["Tyranitar"] = () => {
 
 pokemonMakers["Venusaur"] = () => {
     return makeCharacter(
-        "Venusaur",
-        "Pokemon",
+        { name: "Venusaur" },
         {
             
 "Mega Venusaur": {
@@ -23268,8 +22772,7 @@ pokemonMakers["Venusaur"] = () => {
 
 pokemonMakers["Meganium"] = () => {
     return makeCharacter(
-        "Meganium",
-        "Pokemon",
+        { name: "Meganium" },
         {
             
 "Meganium": {
@@ -23312,8 +22815,7 @@ pokemonMakers["Meganium"] = () => {
 
 pokemonMakers["Melmetal"] = () => {
     return makeCharacter(
-        "Melmetal",
-        "Pokemon",
+        { name: "Melmetal" },
         {
             
 "Melmetal": {
@@ -23356,8 +22858,7 @@ pokemonMakers["Melmetal"] = () => {
 
 pokemonMakers["Meloetta"] = () => {
     return makeCharacter(
-        "Meloetta",
-        "Pokemon",
+        { name: "Meloetta" },
         {
             
 "Aria Forme": {
@@ -23410,8 +22911,7 @@ pokemonMakers["Meloetta"] = () => {
 
 pokemonMakers["Meltan"] = () => {
     return makeCharacter(
-        "Meltan",
-        "Pokemon",
+        { name: "Meltan" },
         {
             
 "Meltan": {
@@ -23454,8 +22954,7 @@ pokemonMakers["Meltan"] = () => {
 
 pokemonMakers["Meowstic"] = () => {
     return makeCharacter(
-        "Meowstic",
-        "Pokemon",
+        { name: "Meowstic" },
         {
             
 "Female": {
@@ -23508,8 +23007,7 @@ pokemonMakers["Meowstic"] = () => {
 
 pokemonMakers["Mesprit"] = () => {
     return makeCharacter(
-        "Mesprit",
-        "Pokemon",
+        { name: "Mesprit" },
         {
             
 "Mesprit": {
@@ -23552,8 +23050,7 @@ pokemonMakers["Mesprit"] = () => {
 
 pokemonMakers["Metang"] = () => {
     return makeCharacter(
-        "Metang",
-        "Pokemon",
+        { name: "Metang" },
         {
             
 "Metang": {
@@ -23596,8 +23093,7 @@ pokemonMakers["Metang"] = () => {
 
 pokemonMakers["Metapod"] = () => {
     return makeCharacter(
-        "Metapod",
-        "Pokemon",
+        { name: "Metapod" },
         {
             
 "Metapod": {
@@ -23640,8 +23136,7 @@ pokemonMakers["Metapod"] = () => {
 
 pokemonMakers["Mew"] = () => {
     return makeCharacter(
-        "Mew",
-        "Pokemon",
+        { name: "Mew" },
         {
             
 "Mew": {
@@ -23684,8 +23179,7 @@ pokemonMakers["Mew"] = () => {
 
 pokemonMakers["Mienfoo"] = () => {
     return makeCharacter(
-        "Mienfoo",
-        "Pokemon",
+        { name: "Mienfoo" },
         {
             
 "Mienfoo": {
@@ -23728,8 +23222,7 @@ pokemonMakers["Mienfoo"] = () => {
 
 pokemonMakers["Mienshao"] = () => {
     return makeCharacter(
-        "Mienshao",
-        "Pokemon",
+        { name: "Mienshao" },
         {
             
 "Mienshao": {
@@ -23772,8 +23265,7 @@ pokemonMakers["Mienshao"] = () => {
 
 pokemonMakers["Mightyena"] = () => {
     return makeCharacter(
-        "Mightyena",
-        "Pokemon",
+        { name: "Mightyena" },
         {
             
 "Mightyena": {
@@ -23816,8 +23308,7 @@ pokemonMakers["Mightyena"] = () => {
 
 pokemonMakers["Milcery"] = () => {
     return makeCharacter(
-        "Milcery",
-        "Pokemon",
+        { name: "Milcery" },
         {
             
 "Milcery": {
@@ -23860,8 +23351,7 @@ pokemonMakers["Milcery"] = () => {
 
 pokemonMakers["Milotic"] = () => {
     return makeCharacter(
-        "Milotic",
-        "Pokemon",
+        { name: "Milotic" },
         {
             
 "Milotic": {
@@ -23904,8 +23394,7 @@ pokemonMakers["Milotic"] = () => {
 
 pokemonMakers["Miltank"] = () => {
     return makeCharacter(
-        "Miltank",
-        "Pokemon",
+        { name: "Miltank" },
         {
             
 "Miltank": {
@@ -23948,8 +23437,7 @@ pokemonMakers["Miltank"] = () => {
 
 pokemonMakers["Mime Jr."] = () => {
     return makeCharacter(
-        "Mime Jr.",
-        "Pokemon",
+        { name: "Mime Jr." },
         { 
             
 "Mime Jr.": {
@@ -23992,8 +23480,7 @@ pokemonMakers["Mime Jr."] = () => {
 
 pokemonMakers["Mimikyu"] = () => {
     return makeCharacter(
-        "Mimikyu",
-        "Pokemon",
+        { name: "Mimikyu" },
         {
             
 "Mimikyu": {
@@ -24036,8 +23523,7 @@ pokemonMakers["Mimikyu"] = () => {
 
 pokemonMakers["Minccino"] = () => {
     return makeCharacter(
-        "Minccino",
-        "Pokemon",
+        { name: "Minccino" },
         {
             
 "Minccino": {
@@ -24080,8 +23566,7 @@ pokemonMakers["Minccino"] = () => {
 
 pokemonMakers["Minior"] = () => {
     return makeCharacter(
-        "Minior",
-        "Pokemon",
+        { name: "Minior" },
         {
             
 "Meteor Form": {
@@ -24134,8 +23619,7 @@ pokemonMakers["Minior"] = () => {
 
 pokemonMakers["Minun"] = () => {
     return makeCharacter(
-        "Minun",
-        "Pokemon",
+        { name: "Minun" },
         {
             
 "Minun": {
@@ -24178,8 +23662,7 @@ pokemonMakers["Minun"] = () => {
 
 pokemonMakers["Misdreavus"] = () => {
     return makeCharacter(
-        "Misdreavus",
-        "Pokemon",
+        { name: "Misdreavus" },
         {
             
 "Misdreavus": {
@@ -24222,8 +23705,7 @@ pokemonMakers["Misdreavus"] = () => {
 
 pokemonMakers["Mismagius"] = () => {
     return makeCharacter(
-        "Mismagius",
-        "Pokemon",
+        { name: "Mismagius" },
         {
             
 "Mismagius": {
@@ -24266,8 +23748,7 @@ pokemonMakers["Mismagius"] = () => {
 
 pokemonMakers["Moltres"] = () => {
     return makeCharacter(
-        "Moltres",
-        "Pokemon",
+        { name: "Moltres" },
         {
             
 "Moltres": {
@@ -24310,8 +23791,7 @@ pokemonMakers["Moltres"] = () => {
 
 pokemonMakers["Monferno"] = () => {
     return makeCharacter(
-        "Monferno",
-        "Pokemon",
+        { name: "Monferno" },
         {
             
 "Monferno": {
@@ -24354,8 +23834,7 @@ pokemonMakers["Monferno"] = () => {
 
 pokemonMakers["Morelull"] = () => {
     return makeCharacter(
-        "Morelull",
-        "Pokemon",
+        { name: "Morelull" },
         {
             
 "Morelull": {
@@ -24398,8 +23877,7 @@ pokemonMakers["Morelull"] = () => {
 
 pokemonMakers["Morgrem"] = () => {
     return makeCharacter(
-        "Morgrem",
-        "Pokemon",
+        { name: "Morgrem" },
         {
             
 "Morgrem": {
@@ -24442,8 +23920,7 @@ pokemonMakers["Morgrem"] = () => {
 
 pokemonMakers["Morpeko"] = () => {
     return makeCharacter(
-        "Morpeko",
-        "Pokemon",
+        { name: "Morpeko" },
         {
             
 "Full Belly Mode": {
@@ -24496,8 +23973,7 @@ pokemonMakers["Morpeko"] = () => {
 
 pokemonMakers["Mothim"] = () => {
     return makeCharacter(
-        "Mothim",
-        "Pokemon",
+        { name: "Mothim" },
         {
             
 "Mothim": {
@@ -24540,8 +24016,7 @@ pokemonMakers["Mothim"] = () => {
 
 pokemonMakers["Mr. Mime"] = () => {
     return makeCharacter(
-        "Mr. Mime",
-        "Pokemon",
+        { name: "Mr. Mime" },
         {
             
 "Galarian Form": {
@@ -24604,8 +24079,7 @@ pokemonMakers["Mr. Mime"] = () => {
 
 pokemonMakers["Mudbray"] = () => {
     return makeCharacter(
-        "Mudbray",
-        "Pokemon",
+        { name: "Mudbray" },
         {
             
 "Mudbray": {
@@ -24648,8 +24122,7 @@ pokemonMakers["Mudbray"] = () => {
 
 pokemonMakers["Mudkip"] = () => {
     return makeCharacter(
-        "Mudkip",
-        "Pokemon",
+        { name: "Mudkip" },
         {
             
 "Mudkip": {
@@ -24692,8 +24165,7 @@ pokemonMakers["Mudkip"] = () => {
 
 pokemonMakers["Mudsdale"] = () => {
     return makeCharacter(
-        "Mudsdale",
-        "Pokemon",
+        { name: "Mudsdale" },
         {
             
 "Mudsdale": {
@@ -24736,8 +24208,7 @@ pokemonMakers["Mudsdale"] = () => {
 
 pokemonMakers["Muk"] = () => {
     return makeCharacter(
-        "Muk",
-        "Pokemon",
+        { name: "Muk" },
         {
             
 "Alola Form": {
@@ -24790,8 +24261,7 @@ pokemonMakers["Muk"] = () => {
 
 pokemonMakers["Munchlax"] = () => {
     return makeCharacter(
-        "Munchlax",
-        "Pokemon",
+        { name: "Munchlax" },
         {
             
 "Munchlax": {
@@ -24834,8 +24304,7 @@ pokemonMakers["Munchlax"] = () => {
 
 pokemonMakers["Munna"] = () => {
     return makeCharacter(
-        "Munna",
-        "Pokemon",
+        { name: "Munna" },
         {
             
 "Munna": {
@@ -24878,8 +24347,7 @@ pokemonMakers["Munna"] = () => {
 
 pokemonMakers["Murkrow"] = () => {
     return makeCharacter(
-        "Murkrow",
-        "Pokemon",
+        { name: "Murkrow" },
         {
             
 "Murkrow": {
@@ -24922,8 +24390,7 @@ pokemonMakers["Murkrow"] = () => {
 
 pokemonMakers["Musharna"] = () => {
     return makeCharacter(
-        "Musharna",
-        "Pokemon",
+        { name: "Musharna" },
         {
             
 "Musharna": {
@@ -24966,8 +24433,7 @@ pokemonMakers["Musharna"] = () => {
 
 pokemonMakers["Naganadel"] = () => {
     return makeCharacter(
-        "Naganadel",
-        "Pokemon",
+        { name: "Naganadel" },
         {
             
 "Naganadel": {
@@ -25010,8 +24476,7 @@ pokemonMakers["Naganadel"] = () => {
 
 pokemonMakers["Natu"] = () => {
     return makeCharacter(
-        "Natu",
-        "Pokemon",
+        { name: "Natu" },
         {
             
 "Natu": {
@@ -25054,8 +24519,7 @@ pokemonMakers["Natu"] = () => {
 
 pokemonMakers["Necrozma"] = () => {
     return makeCharacter(
-        "Necrozma",
-        "Pokemon",
+        { name: "Necrozma" },
         {
             
 "Dawn Wings": {
@@ -25128,8 +24592,7 @@ pokemonMakers["Necrozma"] = () => {
 
 pokemonMakers["Nickit"] = () => {
     return makeCharacter(
-        "Nickit",
-        "Pokemon",
+        { name: "Nickit" },
         {
             
 "Nickit": {
@@ -25172,8 +24635,7 @@ pokemonMakers["Nickit"] = () => {
 
 pokemonMakers["Nidoking"] = () => {
     return makeCharacter(
-        "Nidoking",
-        "Pokemon",
+        { name: "Nidoking" },
         {
             
 "Nidoking": {
@@ -25216,8 +24678,7 @@ pokemonMakers["Nidoking"] = () => {
 
 pokemonMakers["Nidoqueen"] = () => {
     return makeCharacter(
-        "Nidoqueen",
-        "Pokemon",
+        { name: "Nidoqueen" },
         {
             
 "Nidoqueen": {
@@ -25260,8 +24721,7 @@ pokemonMakers["Nidoqueen"] = () => {
 
 pokemonMakers["Nidoran♀"] = () => {
     return makeCharacter(
-        "Nidoran♀",
-        "Pokemon",
+        { name: "Nidoran♀" },
         {
             
 "Nidoran♀": {
@@ -25304,8 +24764,7 @@ pokemonMakers["Nidoran♀"] = () => {
 
 pokemonMakers["Nidoran♂"] = () => {
     return makeCharacter(
-        "Nidoran♂",
-        "Pokemon",
+        { name: "Nidoran♂" },
         {
             
 "Nidoran♂": {
@@ -25348,8 +24807,7 @@ pokemonMakers["Nidoran♂"] = () => {
 
 pokemonMakers["Nidorina"] = () => {
     return makeCharacter(
-        "Nidorina",
-        "Pokemon",
+        { name: "Nidorina" },
         {
             
 "Nidorina": {
@@ -25392,8 +24850,7 @@ pokemonMakers["Nidorina"] = () => {
 
 pokemonMakers["Nidorino"] = () => {
     return makeCharacter(
-        "Nidorino",
-        "Pokemon",
+        { name: "Nidorino" },
         {
             
 "Nidorino": {
@@ -25436,8 +24893,7 @@ pokemonMakers["Nidorino"] = () => {
 
 pokemonMakers["Nihilego"] = () => {
     return makeCharacter(
-        "Nihilego",
-        "Pokemon",
+        { name: "Nihilego" },
         {
             
 "Nihilego": {
@@ -25480,8 +24936,7 @@ pokemonMakers["Nihilego"] = () => {
 
 pokemonMakers["Nincada"] = () => {
     return makeCharacter(
-        "Nincada",
-        "Pokemon",
+        { name: "Nincada" },
         {
             
 "Nincada": {
@@ -25524,8 +24979,7 @@ pokemonMakers["Nincada"] = () => {
 
 pokemonMakers["Ninetales"] = () => {
     return makeCharacter(
-        "Ninetales",
-        "Pokemon",
+        { name: "Ninetales" },
         {
             
 "Alola Form": {
@@ -25578,8 +25032,7 @@ pokemonMakers["Ninetales"] = () => {
 
 pokemonMakers["Ninjask"] = () => {
     return makeCharacter(
-        "Ninjask",
-        "Pokemon",
+        { name: "Ninjask" },
         {
             
 "Ninjask": {
@@ -25622,8 +25075,7 @@ pokemonMakers["Ninjask"] = () => {
 
 pokemonMakers["Noctowl"] = () => {
     return makeCharacter(
-        "Noctowl",
-        "Pokemon",
+        { name: "Noctowl" },
         {
             
 "Noctowl": {
@@ -25666,8 +25118,7 @@ pokemonMakers["Noctowl"] = () => {
 
 pokemonMakers["Noibat"] = () => {
     return makeCharacter(
-        "Noibat",
-        "Pokemon",
+        { name: "Noibat" },
         {
             
 "Noibat": {
@@ -25710,8 +25161,7 @@ pokemonMakers["Noibat"] = () => {
 
 pokemonMakers["Noivern"] = () => {
     return makeCharacter(
-        "Noivern",
-        "Pokemon",
+        { name: "Noivern" },
         {
             
 "Noivern": {
@@ -25754,8 +25204,7 @@ pokemonMakers["Noivern"] = () => {
 
 pokemonMakers["Nosepass"] = () => {
     return makeCharacter(
-        "Nosepass",
-        "Pokemon",
+        { name: "Nosepass" },
         {
             
 "Nosepass": {
@@ -25798,8 +25247,7 @@ pokemonMakers["Nosepass"] = () => {
 
 pokemonMakers["Numel"] = () => {
     return makeCharacter(
-        "Numel",
-        "Pokemon",
+        { name: "Numel" },
         {
             
 "Numel": {
@@ -25842,8 +25290,7 @@ pokemonMakers["Numel"] = () => {
 
 pokemonMakers["Nuzleaf"] = () => {
     return makeCharacter(
-        "Nuzleaf",
-        "Pokemon",
+        { name: "Nuzleaf" },
         {
             
 "Nuzleaf": {
@@ -25886,8 +25333,7 @@ pokemonMakers["Nuzleaf"] = () => {
 
 pokemonMakers["Obstagoon"] = () => {
     return makeCharacter(
-        "Obstagoon",
-        "Pokemon",
+        { name: "Obstagoon" },
         {
             
 "Obstagoon": {
@@ -25930,8 +25376,7 @@ pokemonMakers["Obstagoon"] = () => {
 
 pokemonMakers["Octillery"] = () => {
     return makeCharacter(
-        "Octillery",
-        "Pokemon",
+        { name: "Octillery" },
         {
             
 "Octillery": {
@@ -25974,8 +25419,7 @@ pokemonMakers["Octillery"] = () => {
 
 pokemonMakers["Oddish"] = () => {
     return makeCharacter(
-        "Oddish",
-        "Pokemon",
+        { name: "Oddish" },
         {
             
 "Oddish": {
@@ -26018,8 +25462,7 @@ pokemonMakers["Oddish"] = () => {
 
 pokemonMakers["Omanyte"] = () => {
     return makeCharacter(
-        "Omanyte",
-        "Pokemon",
+        { name: "Omanyte" },
         {
             
 "Omanyte": {
@@ -26062,8 +25505,7 @@ pokemonMakers["Omanyte"] = () => {
 
 pokemonMakers["Omastar"] = () => {
     return makeCharacter(
-        "Omastar",
-        "Pokemon",
+        { name: "Omastar" },
         {
             
 "Omastar": {
@@ -26106,8 +25548,7 @@ pokemonMakers["Omastar"] = () => {
 
 pokemonMakers["Onix"] = () => {
     return makeCharacter(
-        "Onix",
-        "Pokemon",
+        { name: "Onix" },
         {
             
 "Onix": {
@@ -26150,8 +25591,7 @@ pokemonMakers["Onix"] = () => {
 
 pokemonMakers["Oranguru"] = () => {
     return makeCharacter(
-        "Oranguru",
-        "Pokemon",
+        { name: "Oranguru" },
         {
             
 "Oranguru": {
@@ -26194,8 +25634,7 @@ pokemonMakers["Oranguru"] = () => {
 
 pokemonMakers["Oricorio"] = () => {
     return makeCharacter(
-        "Oricorio",
-        "Pokemon",
+        { name: "Oricorio" },
         {
             
 "Baile Style": {
@@ -26268,8 +25707,7 @@ pokemonMakers["Oricorio"] = () => {
 
 pokemonMakers["Oshawott"] = () => {
     return makeCharacter(
-        "Oshawott",
-        "Pokemon",
+        { name: "Oshawott" },
         {
             
 "Oshawott": {
@@ -26312,8 +25750,7 @@ pokemonMakers["Oshawott"] = () => {
 
 pokemonMakers["Pachirisu"] = () => {
     return makeCharacter(
-        "Pachirisu",
-        "Pokemon",
+        { name: "Pachirisu" },
         {
             
 "Pachirisu": {
@@ -26356,8 +25793,7 @@ pokemonMakers["Pachirisu"] = () => {
 
 pokemonMakers["Palkia"] = () => {
     return makeCharacter(
-        "Palkia",
-        "Pokemon",
+        { name: "Palkia" },
         {
             
 "Palkia": {
@@ -26400,8 +25836,7 @@ pokemonMakers["Palkia"] = () => {
 
 pokemonMakers["Palossand"] = () => {
     return makeCharacter(
-        "Palossand",
-        "Pokemon",
+        { name: "Palossand" },
         {
             
 "Palossand": {
@@ -26444,8 +25879,7 @@ pokemonMakers["Palossand"] = () => {
 
 pokemonMakers["Palpitoad"] = () => {
     return makeCharacter(
-        "Palpitoad",
-        "Pokemon",
+        { name: "Palpitoad" },
         {
             
 "Palpitoad": {
@@ -26488,8 +25922,7 @@ pokemonMakers["Palpitoad"] = () => {
 
 pokemonMakers["Pancham"] = () => {
     return makeCharacter(
-        "Pancham",
-        "Pokemon",
+        { name: "Pancham" },
         {
             
 "Pancham": {
@@ -26532,8 +25965,7 @@ pokemonMakers["Pancham"] = () => {
 
 pokemonMakers["Pangoro"] = () => {
     return makeCharacter(
-        "Pangoro",
-        "Pokemon",
+        { name: "Pangoro" },
         {
             
 "Pangoro": {
@@ -26576,8 +26008,7 @@ pokemonMakers["Pangoro"] = () => {
 
 pokemonMakers["Panpour"] = () => {
     return makeCharacter(
-        "Panpour",
-        "Pokemon",
+        { name: "Panpour" },
         {
             
 "Panpour": {
@@ -26620,8 +26051,7 @@ pokemonMakers["Panpour"] = () => {
 
 pokemonMakers["Pansage"] = () => {
     return makeCharacter(
-        "Pansage",
-        "Pokemon",
+        { name: "Pansage" },
         {
             
 "Pansage": {
@@ -26664,8 +26094,7 @@ pokemonMakers["Pansage"] = () => {
 
 pokemonMakers["Pansear"] = () => {
     return makeCharacter(
-        "Pansear",
-        "Pokemon",
+        { name: "Pansear" },
         {
             
 "Pansear": {
@@ -26708,8 +26137,7 @@ pokemonMakers["Pansear"] = () => {
 
 pokemonMakers["Paras"] = () => {
     return makeCharacter(
-        "Paras",
-        "Pokemon",
+        { name: "Paras" },
         {
             
 "Paras": {
@@ -26752,8 +26180,7 @@ pokemonMakers["Paras"] = () => {
 
 pokemonMakers["Parasect"] = () => {
     return makeCharacter(
-        "Parasect",
-        "Pokemon",
+        { name: "Parasect" },
         {
             
 "Parasect": {
@@ -26796,8 +26223,7 @@ pokemonMakers["Parasect"] = () => {
 
 pokemonMakers["Passimian"] = () => {
     return makeCharacter(
-        "Passimian",
-        "Pokemon",
+        { name: "Passimian" },
         {
             
 "Passimian": {
@@ -26840,8 +26266,7 @@ pokemonMakers["Passimian"] = () => {
 
 pokemonMakers["Patrat"] = () => {
     return makeCharacter(
-        "Patrat",
-        "Pokemon",
+        { name: "Patrat" },
         {
             
 "Patrat": {
@@ -26884,8 +26309,7 @@ pokemonMakers["Patrat"] = () => {
 
 pokemonMakers["Pawniard"] = () => {
     return makeCharacter(
-        "Pawniard",
-        "Pokemon",
+        { name: "Pawniard" },
         {
             
 "Pawniard": {
@@ -26928,8 +26352,7 @@ pokemonMakers["Pawniard"] = () => {
 
 pokemonMakers["Pelipper"] = () => {
     return makeCharacter(
-        "Pelipper",
-        "Pokemon",
+        { name: "Pelipper" },
         {
             
 "Pelipper": {
@@ -26972,8 +26395,7 @@ pokemonMakers["Pelipper"] = () => {
 
 pokemonMakers["Perrserker"] = () => {
     return makeCharacter(
-        "Perrserker",
-        "Pokemon",
+        { name: "Perrserker" },
         {
             
 "Perrserker": {
@@ -27016,8 +26438,7 @@ pokemonMakers["Perrserker"] = () => {
 
 pokemonMakers["Persian"] = () => {
     return makeCharacter(
-        "Persian",
-        "Pokemon",
+        { name: "Persian" },
         {
             
 "Alola Form": {
@@ -27070,8 +26491,7 @@ pokemonMakers["Persian"] = () => {
 
 pokemonMakers["Petilil"] = () => {
     return makeCharacter(
-        "Petilil",
-        "Pokemon",
+        { name: "Petilil" },
         {
             
 "Petilil": {
@@ -27114,8 +26534,7 @@ pokemonMakers["Petilil"] = () => {
 
 pokemonMakers["Phanpy"] = () => {
     return makeCharacter(
-        "Phanpy",
-        "Pokemon",
+        { name: "Phanpy" },
         {
             
 "Phanpy": {
@@ -27158,8 +26577,7 @@ pokemonMakers["Phanpy"] = () => {
 
 pokemonMakers["Phantump"] = () => {
     return makeCharacter(
-        "Phantump",
-        "Pokemon",
+        { name: "Phantump" },
         {
             
 "Phantump": {
@@ -27202,8 +26620,7 @@ pokemonMakers["Phantump"] = () => {
 
 pokemonMakers["Pheromosa"] = () => {
     return makeCharacter(
-        "Pheromosa",
-        "Pokemon",
+        { name: "Pheromosa" },
         {
             
 "Pheromosa": {
@@ -27246,8 +26663,7 @@ pokemonMakers["Pheromosa"] = () => {
 
 pokemonMakers["Phione"] = () => {
     return makeCharacter(
-        "Phione",
-        "Pokemon",
+        { name: "Phione" },
         {
             
 "Phione": {
@@ -27290,8 +26706,7 @@ pokemonMakers["Phione"] = () => {
 
 pokemonMakers["Pichu"] = () => {
     return makeCharacter(
-        "Pichu",
-        "Pokemon",
+        { name: "Pichu" },
         {
             
 "Pichu": {
@@ -27334,8 +26749,7 @@ pokemonMakers["Pichu"] = () => {
 
 pokemonMakers["Pidgeotto"] = () => {
     return makeCharacter(
-        "Pidgeotto",
-        "Pokemon",
+        { name: "Pidgeotto" },
         {
             
 "Pidgeotto": {
@@ -27378,8 +26792,7 @@ pokemonMakers["Pidgeotto"] = () => {
 
 pokemonMakers["Pidgey"] = () => {
     return makeCharacter(
-        "Pidgey",
-        "Pokemon",
+        { name: "Pidgey" },
         {
             
 "Pidgey": {
@@ -27422,8 +26835,7 @@ pokemonMakers["Pidgey"] = () => {
 
 pokemonMakers["Pidove"] = () => {
     return makeCharacter(
-        "Pidove",
-        "Pokemon",
+        { name: "Pidove" },
         {
             
 "Pidove": {
@@ -27466,8 +26878,7 @@ pokemonMakers["Pidove"] = () => {
 
 pokemonMakers["Pignite"] = () => {
     return makeCharacter(
-        "Pignite",
-        "Pokemon",
+        { name: "Pignite" },
         {
             
 "Pignite": {
@@ -27510,8 +26921,7 @@ pokemonMakers["Pignite"] = () => {
 
 pokemonMakers["Pikipek"] = () => {
     return makeCharacter(
-        "Pikipek",
-        "Pokemon",
+        { name: "Pikipek" },
         {
             
 "Pikipek": {
@@ -27554,8 +26964,7 @@ pokemonMakers["Pikipek"] = () => {
 
 pokemonMakers["Piloswine"] = () => {
     return makeCharacter(
-        "Piloswine",
-        "Pokemon",
+        { name: "Piloswine" },
         {
             
 "Piloswine": {
@@ -27598,8 +27007,7 @@ pokemonMakers["Piloswine"] = () => {
 
 pokemonMakers["Pincurchin"] = () => {
     return makeCharacter(
-        "Pincurchin",
-        "Pokemon",
+        { name: "Pincurchin" },
         {
             
 "Pincurchin": {
@@ -27642,8 +27050,7 @@ pokemonMakers["Pincurchin"] = () => {
 
 pokemonMakers["Pineco"] = () => {
     return makeCharacter(
-        "Pineco",
-        "Pokemon",
+        { name: "Pineco" },
         {
             
 "Pineco": {
@@ -27686,8 +27093,7 @@ pokemonMakers["Pineco"] = () => {
 
 pokemonMakers["Piplup"] = () => {
     return makeCharacter(
-        "Piplup",
-        "Pokemon",
+        { name: "Piplup" },
         {
             
 "Piplup": {
@@ -27730,8 +27136,7 @@ pokemonMakers["Piplup"] = () => {
 
 pokemonMakers["Plusle"] = () => {
     return makeCharacter(
-        "Plusle",
-        "Pokemon",
+        { name: "Plusle" },
         {
             
 "Plusle": {
@@ -27774,8 +27179,7 @@ pokemonMakers["Plusle"] = () => {
 
 pokemonMakers["Poipole"] = () => {
     return makeCharacter(
-        "Poipole",
-        "Pokemon",
+        { name: "Poipole" },
         {
             
 "Poipole": {
@@ -27818,8 +27222,7 @@ pokemonMakers["Poipole"] = () => {
 
 pokemonMakers["Politoed"] = () => {
     return makeCharacter(
-        "Politoed",
-        "Pokemon",
+        { name: "Politoed" },
         {
             
 "Politoed": {
@@ -27862,8 +27265,7 @@ pokemonMakers["Politoed"] = () => {
 
 pokemonMakers["Poliwag"] = () => {
     return makeCharacter(
-        "Poliwag",
-        "Pokemon",
+        { name: "Poliwag" },
         {
             
 "Poliwag": {
@@ -27906,8 +27308,7 @@ pokemonMakers["Poliwag"] = () => {
 
 pokemonMakers["Poliwhirl"] = () => {
     return makeCharacter(
-        "Poliwhirl",
-        "Pokemon",
+        { name: "Poliwhirl" },
         {
             
 "Poliwhirl": {
@@ -27950,8 +27351,7 @@ pokemonMakers["Poliwhirl"] = () => {
 
 pokemonMakers["Poliwrath"] = () => {
     return makeCharacter(
-        "Poliwrath",
-        "Pokemon",
+        { name: "Poliwrath" },
         {
             
 "Poliwrath": {
@@ -27994,8 +27394,7 @@ pokemonMakers["Poliwrath"] = () => {
 
 pokemonMakers["Polteageist"] = () => {
     return makeCharacter(
-        "Polteageist",
-        "Pokemon",
+        { name: "Polteageist" },
         {
             
 "Polteageist": {
@@ -28038,8 +27437,7 @@ pokemonMakers["Polteageist"] = () => {
 
 pokemonMakers["Ponyta"] = () => {
     return makeCharacter(
-        "Ponyta",
-        "Pokemon",
+        { name: "Ponyta" },
         {
             
 "Galarian Form": {
@@ -28092,8 +27490,7 @@ pokemonMakers["Ponyta"] = () => {
 
 pokemonMakers["Poochyena"] = () => {
     return makeCharacter(
-        "Poochyena",
-        "Pokemon",
+        { name: "Poochyena" },
         {
             
 "Poochyena": {
@@ -28136,8 +27533,7 @@ pokemonMakers["Poochyena"] = () => {
 
 pokemonMakers["Popplio"] = () => {
     return makeCharacter(
-        "Popplio",
-        "Pokemon",
+        { name: "Popplio" },
         {
             
 "Popplio": {
@@ -28180,8 +27576,7 @@ pokemonMakers["Popplio"] = () => {
 
 pokemonMakers["Porygon-Z"] = () => {
     return makeCharacter(
-        "Porygon-Z",
-        "Pokemon",
+        { name: "Porygon-Z" },
         {
             
 "Porygon-Z": {
@@ -28224,8 +27619,7 @@ pokemonMakers["Porygon-Z"] = () => {
 
 pokemonMakers["Porygon"] = () => {
     return makeCharacter(
-        "Porygon",
-        "Pokemon",
+        { name: "Porygon" },
         {
             
 "Porygon": {
@@ -28268,8 +27662,7 @@ pokemonMakers["Porygon"] = () => {
 
 pokemonMakers["Porygon2"] = () => {
     return makeCharacter(
-        "Porygon2",
-        "Pokemon",
+        { name: "Porygon2" },
         {
             
 "Porygon2": {
@@ -28312,8 +27705,7 @@ pokemonMakers["Porygon2"] = () => {
 
 pokemonMakers["Primarina"] = () => {
     return makeCharacter(
-        "Primarina",
-        "Pokemon",
+        { name: "Primarina" },
         {
             
 "Primarina": {
@@ -28356,8 +27748,7 @@ pokemonMakers["Primarina"] = () => {
 
 pokemonMakers["Primeape"] = () => {
     return makeCharacter(
-        "Primeape",
-        "Pokemon",
+        { name: "Primeape" },
         {
             
 "Primeape": {
@@ -28400,8 +27791,7 @@ pokemonMakers["Primeape"] = () => {
 
 pokemonMakers["Prinplup"] = () => {
     return makeCharacter(
-        "Prinplup",
-        "Pokemon",
+        { name: "Prinplup" },
         {
             
 "Prinplup": {
@@ -28444,8 +27834,7 @@ pokemonMakers["Prinplup"] = () => {
 
 pokemonMakers["Probopass"] = () => {
     return makeCharacter(
-        "Probopass",
-        "Pokemon",
+        { name: "Probopass" },
         {
             
 "Probopass": {
@@ -28488,8 +27877,7 @@ pokemonMakers["Probopass"] = () => {
 
 pokemonMakers["Psyduck"] = () => {
     return makeCharacter(
-        "Psyduck",
-        "Pokemon",
+        { name: "Psyduck" },
         {
             
 "Psyduck": {
@@ -28532,8 +27920,7 @@ pokemonMakers["Psyduck"] = () => {
 
 pokemonMakers["Pumpkaboo"] = () => {
     return makeCharacter(
-        "Pumpkaboo",
-        "Pokemon",
+        { name: "Pumpkaboo" },
         {
             
 "Large Size": {
@@ -28606,8 +27993,7 @@ pokemonMakers["Pumpkaboo"] = () => {
 
 pokemonMakers["Pupitar"] = () => {
     return makeCharacter(
-        "Pupitar",
-        "Pokemon",
+        { name: "Pupitar" },
         {
             
 "Pupitar": {
@@ -28650,8 +28036,7 @@ pokemonMakers["Pupitar"] = () => {
 
 pokemonMakers["Purrloin"] = () => {
     return makeCharacter(
-        "Purrloin",
-        "Pokemon",
+        { name: "Purrloin" },
         {
             
 "Purrloin": {
@@ -28694,8 +28079,7 @@ pokemonMakers["Purrloin"] = () => {
 
 pokemonMakers["Purugly"] = () => {
     return makeCharacter(
-        "Purugly",
-        "Pokemon",
+        { name: "Purugly" },
         {
             
 "Purugly": {
@@ -28738,8 +28122,7 @@ pokemonMakers["Purugly"] = () => {
 
 pokemonMakers["Pyroar"] = () => {
     return makeCharacter(
-        "Pyroar",
-        "Pokemon",
+        { name: "Pyroar" },
         {
             
 "Female": {
@@ -28792,8 +28175,7 @@ pokemonMakers["Pyroar"] = () => {
 
 pokemonMakers["Pyukumuku"] = () => {
     return makeCharacter(
-        "Pyukumuku",
-        "Pokemon",
+        { name: "Pyukumuku" },
         {
             
 "Pyukumuku": {
@@ -28836,8 +28218,7 @@ pokemonMakers["Pyukumuku"] = () => {
 
 pokemonMakers["Quagsire"] = () => {
     return makeCharacter(
-        "Quagsire",
-        "Pokemon",
+        { name: "Quagsire" },
         {
             
 "Quagsire": {
@@ -28880,8 +28261,7 @@ pokemonMakers["Quagsire"] = () => {
 
 pokemonMakers["Quilava"] = () => {
     return makeCharacter(
-        "Quilava",
-        "Pokemon",
+        { name: "Quilava" },
         {
             
 "Quilava": {
@@ -28924,8 +28304,7 @@ pokemonMakers["Quilava"] = () => {
 
 pokemonMakers["Quilladin"] = () => {
     return makeCharacter(
-        "Quilladin",
-        "Pokemon",
+        { name: "Quilladin" },
         {
             
 "Quilladin": {
@@ -28968,8 +28347,7 @@ pokemonMakers["Quilladin"] = () => {
 
 pokemonMakers["Qwilfish"] = () => {
     return makeCharacter(
-        "Qwilfish",
-        "Pokemon",
+        { name: "Qwilfish" },
         {
             
 "Qwilfish": {
@@ -29012,8 +28390,7 @@ pokemonMakers["Qwilfish"] = () => {
 
 pokemonMakers["Raboot"] = () => {
     return makeCharacter(
-        "Raboot",
-        "Pokemon",
+        { name: "Raboot" },
         {
             
 "Raboot": {
@@ -29056,8 +28433,7 @@ pokemonMakers["Raboot"] = () => {
 
 pokemonMakers["Raichu"] = () => {
     return makeCharacter(
-        "Raichu",
-        "Pokemon",
+        { name: "Raichu" },
         {
             
 "Alola Form": {
@@ -29110,8 +28486,7 @@ pokemonMakers["Raichu"] = () => {
 
 pokemonMakers["Raikou"] = () => {
     return makeCharacter(
-        "Raikou",
-        "Pokemon",
+        { name: "Raikou" },
         {
             
 "Raikou": {
@@ -29154,8 +28529,7 @@ pokemonMakers["Raikou"] = () => {
 
 pokemonMakers["Ralts"] = () => {
     return makeCharacter(
-        "Ralts",
-        "Pokemon",
+        { name: "Ralts" },
         {
             
 "Ralts": {
@@ -29198,8 +28572,7 @@ pokemonMakers["Ralts"] = () => {
 
 pokemonMakers["Rampardos"] = () => {
     return makeCharacter(
-        "Rampardos",
-        "Pokemon",
+        { name: "Rampardos" },
         {
             
 "Rampardos": {
@@ -29242,8 +28615,7 @@ pokemonMakers["Rampardos"] = () => {
 
 pokemonMakers["Rapidash"] = () => {
     return makeCharacter(
-        "Rapidash",
-        "Pokemon",
+        { name: "Rapidash" },
         {
             
 "Galarian Form": {
@@ -29296,8 +28668,7 @@ pokemonMakers["Rapidash"] = () => {
 
 pokemonMakers["Raticate"] = () => {
     return makeCharacter(
-        "Raticate",
-        "Pokemon",
+        { name: "Raticate" },
         {
             
 "Alola Form": {
@@ -29350,8 +28721,7 @@ pokemonMakers["Raticate"] = () => {
 
 pokemonMakers["Rattata"] = () => {
     return makeCharacter(
-        "Rattata",
-        "Pokemon",
+        { name: "Rattata" },
         {
             
 "Alola Form": {
@@ -29404,8 +28774,7 @@ pokemonMakers["Rattata"] = () => {
 
 pokemonMakers["Regice"] = () => {
     return makeCharacter(
-        "Regice",
-        "Pokemon",
+        { name: "Regice" },
         {
             
 "Regice": {
@@ -29448,8 +28817,7 @@ pokemonMakers["Regice"] = () => {
 
 pokemonMakers["Regigigas"] = () => {
     return makeCharacter(
-        "Regigigas",
-        "Pokemon",
+        { name: "Regigigas" },
         {
             
 "Regigigas": {
@@ -29492,8 +28860,7 @@ pokemonMakers["Regigigas"] = () => {
 
 pokemonMakers["Regirock"] = () => {
     return makeCharacter(
-        "Regirock",
-        "Pokemon",
+        { name: "Regirock" },
         {
             
 "Regirock": {
@@ -29536,8 +28903,7 @@ pokemonMakers["Regirock"] = () => {
 
 pokemonMakers["Registeel"] = () => {
     return makeCharacter(
-        "Registeel",
-        "Pokemon",
+        { name: "Registeel" },
         {
             
 "Registeel": {
@@ -29580,8 +28946,7 @@ pokemonMakers["Registeel"] = () => {
 
 pokemonMakers["Relicanth"] = () => {
     return makeCharacter(
-        "Relicanth",
-        "Pokemon",
+        { name: "Relicanth" },
         {
             
 "Relicanth": {
@@ -29624,8 +28989,7 @@ pokemonMakers["Relicanth"] = () => {
 
 pokemonMakers["Remoraid"] = () => {
     return makeCharacter(
-        "Remoraid",
-        "Pokemon",
+        { name: "Remoraid" },
         {
             
 "Remoraid": {
@@ -29668,8 +29032,7 @@ pokemonMakers["Remoraid"] = () => {
 
 pokemonMakers["Reshiram"] = () => {
     return makeCharacter(
-        "Reshiram",
-        "Pokemon",
+        { name: "Reshiram" },
         {
             
 "Reshiram": {
@@ -29712,8 +29075,7 @@ pokemonMakers["Reshiram"] = () => {
 
 pokemonMakers["Reuniclus"] = () => {
     return makeCharacter(
-        "Reuniclus",
-        "Pokemon",
+        { name: "Reuniclus" },
         {
             
 "Reuniclus": {
@@ -29756,8 +29118,7 @@ pokemonMakers["Reuniclus"] = () => {
 
 pokemonMakers["Rhydon"] = () => {
     return makeCharacter(
-        "Rhydon",
-        "Pokemon",
+        { name: "Rhydon" },
         {
             
 "Rhydon": {
@@ -29800,8 +29161,7 @@ pokemonMakers["Rhydon"] = () => {
 
 pokemonMakers["Rhyhorn"] = () => {
     return makeCharacter(
-        "Rhyhorn",
-        "Pokemon",
+        { name: "Rhyhorn" },
         {
             
 "Rhyhorn": {
@@ -29844,8 +29204,7 @@ pokemonMakers["Rhyhorn"] = () => {
 
 pokemonMakers["Rhyperior"] = () => {
     return makeCharacter(
-        "Rhyperior",
-        "Pokemon",
+        { name: "Rhyperior" },
         {
             
 "Rhyperior": {
@@ -29888,8 +29247,7 @@ pokemonMakers["Rhyperior"] = () => {
 
 pokemonMakers["Ribombee"] = () => {
     return makeCharacter(
-        "Ribombee",
-        "Pokemon",
+        { name: "Ribombee" },
         {
             
 "Ribombee": {
@@ -29932,8 +29290,7 @@ pokemonMakers["Ribombee"] = () => {
 
 pokemonMakers["Rillaboom"] = () => {
     return makeCharacter(
-        "Rillaboom",
-        "Pokemon",
+        { name: "Rillaboom" },
         {
             
 "Rillaboom": {
@@ -29976,8 +29333,7 @@ pokemonMakers["Rillaboom"] = () => {
 
 pokemonMakers["Riolu"] = () => {
     return makeCharacter(
-        "Riolu",
-        "Pokemon",
+        { name: "Riolu" },
         {
             
 "Riolu": {
@@ -30020,8 +29376,7 @@ pokemonMakers["Riolu"] = () => {
 
 pokemonMakers["Rockruff"] = () => {
     return makeCharacter(
-        "Rockruff",
-        "Pokemon",
+        { name: "Rockruff" },
         {
             
 "Rockruff": {
@@ -30064,8 +29419,7 @@ pokemonMakers["Rockruff"] = () => {
 
 pokemonMakers["Roggenrola"] = () => {
     return makeCharacter(
-        "Roggenrola",
-        "Pokemon",
+        { name: "Roggenrola" },
         {
             
 "Roggenrola": {
@@ -30108,8 +29462,7 @@ pokemonMakers["Roggenrola"] = () => {
 
 pokemonMakers["Rolycoly"] = () => {
     return makeCharacter(
-        "Rolycoly",
-        "Pokemon",
+        { name: "Rolycoly" },
         {
             
 "Rolycoly": {
@@ -30152,8 +29505,7 @@ pokemonMakers["Rolycoly"] = () => {
 
 pokemonMakers["Rookidee"] = () => {
     return makeCharacter(
-        "Rookidee",
-        "Pokemon",
+        { name: "Rookidee" },
         {
             
 "Rookidee": {
@@ -30196,8 +29548,7 @@ pokemonMakers["Rookidee"] = () => {
 
 pokemonMakers["Roselia"] = () => {
     return makeCharacter(
-        "Roselia",
-        "Pokemon",
+        { name: "Roselia" },
         {
             
 "Roselia": {
@@ -30240,8 +29591,7 @@ pokemonMakers["Roselia"] = () => {
 
 pokemonMakers["Roserade"] = () => {
     return makeCharacter(
-        "Roserade",
-        "Pokemon",
+        { name: "Roserade" },
         {
             
 "Roserade": {
@@ -30284,8 +29634,7 @@ pokemonMakers["Roserade"] = () => {
 
 pokemonMakers["Rowlet"] = () => {
     return makeCharacter(
-        "Rowlet",
-        "Pokemon",
+        { name: "Rowlet" },
         {
             
 "Rowlet": {
@@ -30328,8 +29677,7 @@ pokemonMakers["Rowlet"] = () => {
 
 pokemonMakers["Rufflet"] = () => {
     return makeCharacter(
-        "Rufflet",
-        "Pokemon",
+        { name: "Rufflet" },
         {
             
 "Rufflet": {
@@ -30372,8 +29720,7 @@ pokemonMakers["Rufflet"] = () => {
 
 pokemonMakers["Runerigus"] = () => {
     return makeCharacter(
-        "Runerigus",
-        "Pokemon",
+        { name: "Runerigus" },
         {
             
 "Runerigus": {
@@ -30416,8 +29763,7 @@ pokemonMakers["Runerigus"] = () => {
 
 pokemonMakers["Salandit"] = () => {
     return makeCharacter(
-        "Salandit",
-        "Pokemon",
+        { name: "Salandit" },
         {
             
 "Salandit": {
@@ -30460,8 +29806,7 @@ pokemonMakers["Salandit"] = () => {
 
 pokemonMakers["Salazzle"] = () => {
     return makeCharacter(
-        "Salazzle",
-        "Pokemon",
+        { name: "Salazzle" },
         {
             
 "Salazzle": {
@@ -30504,8 +29849,7 @@ pokemonMakers["Salazzle"] = () => {
 
 pokemonMakers["Samurott"] = () => {
     return makeCharacter(
-        "Samurott",
-        "Pokemon",
+        { name: "Samurott" },
         {
             
 "Samurott": {
@@ -30548,8 +29892,7 @@ pokemonMakers["Samurott"] = () => {
 
 pokemonMakers["Sandile"] = () => {
     return makeCharacter(
-        "Sandile",
-        "Pokemon",
+        { name: "Sandile" },
         {
             
 "Sandile": {
@@ -30592,8 +29935,7 @@ pokemonMakers["Sandile"] = () => {
 
 pokemonMakers["Sandshrew"] = () => {
     return makeCharacter(
-        "Sandshrew",
-        "Pokemon",
+        { name: "Sandshrew" },
         {
             
 "Alola Form": {
@@ -30646,8 +29988,7 @@ pokemonMakers["Sandshrew"] = () => {
 
 pokemonMakers["Sandslash"] = () => {
     return makeCharacter(
-        "Sandslash",
-        "Pokemon",
+        { name: "Sandslash" },
         {
             
 "Alola Form": {
@@ -30700,8 +30041,7 @@ pokemonMakers["Sandslash"] = () => {
 
 pokemonMakers["Sandygast"] = () => {
     return makeCharacter(
-        "Sandygast",
-        "Pokemon",
+        { name: "Sandygast" },
         {
             
 "Sandygast": {
@@ -30744,8 +30084,7 @@ pokemonMakers["Sandygast"] = () => {
 
 pokemonMakers["Sawk"] = () => {
     return makeCharacter(
-        "Sawk",
-        "Pokemon",
+        { name: "Sawk" },
         {
             
 "Sawk": {
@@ -30788,8 +30127,7 @@ pokemonMakers["Sawk"] = () => {
 
 pokemonMakers["Sawsbuck"] = () => {
     return makeCharacter(
-        "Sawsbuck",
-        "Pokemon",
+        { name: "Sawsbuck" },
         {
             
 "Autumn Form": {
@@ -30862,8 +30200,7 @@ pokemonMakers["Sawsbuck"] = () => {
 
 pokemonMakers["Scatterbug"] = () => {
     return makeCharacter(
-        "Scatterbug",
-        "Pokemon",
+        { name: "Scatterbug" },
         {
             
 "Scatterbug": {
@@ -30906,8 +30243,7 @@ pokemonMakers["Scatterbug"] = () => {
 
 pokemonMakers["Scolipede"] = () => {
     return makeCharacter(
-        "Scolipede",
-        "Pokemon",
+        { name: "Scolipede" },
         {
             
 "Scolipede": {
@@ -30950,8 +30286,7 @@ pokemonMakers["Scolipede"] = () => {
 
 pokemonMakers["Scorbunny"] = () => {
     return makeCharacter(
-        "Scorbunny",
-        "Pokemon",
+        { name: "Scorbunny" },
         {
             
 "Scorbunny": {
@@ -30994,8 +30329,7 @@ pokemonMakers["Scorbunny"] = () => {
 
 pokemonMakers["Scrafty"] = () => {
     return makeCharacter(
-        "Scrafty",
-        "Pokemon",
+        { name: "Scrafty" },
         {
             
 "Scrafty": {
@@ -31038,8 +30372,7 @@ pokemonMakers["Scrafty"] = () => {
 
 pokemonMakers["Scraggy"] = () => {
     return makeCharacter(
-        "Scraggy",
-        "Pokemon",
+        { name: "Scraggy" },
         {
             
 "Scraggy": {
@@ -31082,8 +30415,7 @@ pokemonMakers["Scraggy"] = () => {
 
 pokemonMakers["Scyther"] = () => {
     return makeCharacter(
-        "Scyther",
-        "Pokemon",
+        { name: "Scyther" },
         {
             
 "Scyther": {
@@ -31126,8 +30458,7 @@ pokemonMakers["Scyther"] = () => {
 
 pokemonMakers["Seadra"] = () => {
     return makeCharacter(
-        "Seadra",
-        "Pokemon",
+        { name: "Seadra" },
         {
             
 "Seadra": {
@@ -31170,8 +30501,7 @@ pokemonMakers["Seadra"] = () => {
 
 pokemonMakers["Seaking"] = () => {
     return makeCharacter(
-        "Seaking",
-        "Pokemon",
+        { name: "Seaking" },
         {
             
 "Seaking": {
@@ -31214,8 +30544,7 @@ pokemonMakers["Seaking"] = () => {
 
 pokemonMakers["Sealeo"] = () => {
     return makeCharacter(
-        "Sealeo",
-        "Pokemon",
+        { name: "Sealeo" },
         {
             
 "Sealeo": {
@@ -31258,8 +30587,7 @@ pokemonMakers["Sealeo"] = () => {
 
 pokemonMakers["Seedot"] = () => {
     return makeCharacter(
-        "Seedot",
-        "Pokemon",
+        { name: "Seedot" },
         {
             
 "Seedot": {
@@ -31302,8 +30630,7 @@ pokemonMakers["Seedot"] = () => {
 
 pokemonMakers["Seel"] = () => {
     return makeCharacter(
-        "Seel",
-        "Pokemon",
+        { name: "Seel" },
         {
             
 "Seel": {
@@ -31346,8 +30673,7 @@ pokemonMakers["Seel"] = () => {
 
 pokemonMakers["Seismitoad"] = () => {
     return makeCharacter(
-        "Seismitoad",
-        "Pokemon",
+        { name: "Seismitoad" },
         {
             
 "Seismitoad": {
@@ -31390,8 +30716,7 @@ pokemonMakers["Seismitoad"] = () => {
 
 pokemonMakers["Sentret"] = () => {
     return makeCharacter(
-        "Sentret",
-        "Pokemon",
+        { name: "Sentret" },
         {
             
 "Sentret": {
@@ -31434,8 +30759,7 @@ pokemonMakers["Sentret"] = () => {
 
 pokemonMakers["Serperior"] = () => {
     return makeCharacter(
-        "Serperior",
-        "Pokemon",
+        { name: "Serperior" },
         {
             
 "Serperior": {
@@ -31478,8 +30802,7 @@ pokemonMakers["Serperior"] = () => {
 
 pokemonMakers["Servine"] = () => {
     return makeCharacter(
-        "Servine",
-        "Pokemon",
+        { name: "Servine" },
         {
             
 "Servine": {
@@ -31522,8 +30845,7 @@ pokemonMakers["Servine"] = () => {
 
 pokemonMakers["Seviper"] = () => {
     return makeCharacter(
-        "Seviper",
-        "Pokemon",
+        { name: "Seviper" },
         {
             
 "Seviper": {
@@ -31566,8 +30888,7 @@ pokemonMakers["Seviper"] = () => {
 
 pokemonMakers["Sewaddle"] = () => {
     return makeCharacter(
-        "Sewaddle",
-        "Pokemon",
+        { name: "Sewaddle" },
         {
             
 "Sewaddle": {
@@ -31610,8 +30931,7 @@ pokemonMakers["Sewaddle"] = () => {
 
 pokemonMakers["Shaymin"] = () => {
     return makeCharacter(
-        "Shaymin",
-        "Pokemon",
+        { name: "Shaymin" },
         {
             
 "Land Forme": {
@@ -31664,8 +30984,7 @@ pokemonMakers["Shaymin"] = () => {
 
 pokemonMakers["Shedinja"] = () => {
     return makeCharacter(
-        "Shedinja",
-        "Pokemon",
+        { name: "Shedinja" },
         {
             
 "Shedinja": {
@@ -31708,8 +31027,7 @@ pokemonMakers["Shedinja"] = () => {
 
 pokemonMakers["Shelgon"] = () => {
     return makeCharacter(
-        "Shelgon",
-        "Pokemon",
+        { name: "Shelgon" },
         {
             
 "Shelgon": {
@@ -31752,8 +31070,7 @@ pokemonMakers["Shelgon"] = () => {
 
 pokemonMakers["Shellder"] = () => {
     return makeCharacter(
-        "Shellder",
-        "Pokemon",
+        { name: "Shellder" },
         {
             
 "Shellder": {
@@ -31796,8 +31113,7 @@ pokemonMakers["Shellder"] = () => {
 
 pokemonMakers["Shellos"] = () => {
     return makeCharacter(
-        "Shellos",
-        "Pokemon",
+        { name: "Shellos" },
         {
             
 "East Sea": {
@@ -31850,8 +31166,7 @@ pokemonMakers["Shellos"] = () => {
 
 pokemonMakers["Shelmet"] = () => {
     return makeCharacter(
-        "Shelmet",
-        "Pokemon",
+        { name: "Shelmet" },
         {
             
 "Shelmet": {
@@ -31894,8 +31209,7 @@ pokemonMakers["Shelmet"] = () => {
 
 pokemonMakers["Shieldon"] = () => {
     return makeCharacter(
-        "Shieldon",
-        "Pokemon",
+        { name: "Shieldon" },
         {
             
 "Shieldon": {
@@ -31938,8 +31252,7 @@ pokemonMakers["Shieldon"] = () => {
 
 pokemonMakers["Shiftry"] = () => {
     return makeCharacter(
-        "Shiftry",
-        "Pokemon",
+        { name: "Shiftry" },
         {
             
 "Shiftry": {
@@ -31982,8 +31295,7 @@ pokemonMakers["Shiftry"] = () => {
 
 pokemonMakers["Shiinotic"] = () => {
     return makeCharacter(
-        "Shiinotic",
-        "Pokemon",
+        { name: "Shiinotic" },
         {
             
 "Shiinotic": {
@@ -32026,8 +31338,7 @@ pokemonMakers["Shiinotic"] = () => {
 
 pokemonMakers["Shinx"] = () => {
     return makeCharacter(
-        "Shinx",
-        "Pokemon",
+        { name: "Shinx" },
         {
             
 "Shinx": {
@@ -32070,8 +31381,7 @@ pokemonMakers["Shinx"] = () => {
 
 pokemonMakers["Shroomish"] = () => {
     return makeCharacter(
-        "Shroomish",
-        "Pokemon",
+        { name: "Shroomish" },
         {
             
 "Shroomish": {
@@ -32114,8 +31424,7 @@ pokemonMakers["Shroomish"] = () => {
 
 pokemonMakers["Shuckle"] = () => {
     return makeCharacter(
-        "Shuckle",
-        "Pokemon",
+        { name: "Shuckle" },
         {
             
 "Shuckle": {
@@ -32158,8 +31467,7 @@ pokemonMakers["Shuckle"] = () => {
 
 pokemonMakers["Shuppet"] = () => {
     return makeCharacter(
-        "Shuppet",
-        "Pokemon",
+        { name: "Shuppet" },
         {
             
 "Shuppet": {
@@ -32202,8 +31510,7 @@ pokemonMakers["Shuppet"] = () => {
 
 pokemonMakers["Sigilyph"] = () => {
     return makeCharacter(
-        "Sigilyph",
-        "Pokemon",
+        { name: "Sigilyph" },
         {
             
 "Sigilyph": {
@@ -32246,8 +31553,7 @@ pokemonMakers["Sigilyph"] = () => {
 
 pokemonMakers["Silcoon"] = () => {
     return makeCharacter(
-        "Silcoon",
-        "Pokemon",
+        { name: "Silcoon" },
         {
             
 "Silcoon": {
@@ -32290,8 +31596,7 @@ pokemonMakers["Silcoon"] = () => {
 
 pokemonMakers["Silicobra"] = () => {
     return makeCharacter(
-        "Silicobra",
-        "Pokemon",
+        { name: "Silicobra" },
         {
             
 "Silicobra": {
@@ -32334,8 +31639,7 @@ pokemonMakers["Silicobra"] = () => {
 
 pokemonMakers["Simipour"] = () => {
     return makeCharacter(
-        "Simipour",
-        "Pokemon",
+        { name: "Simipour" },
         {
             
 "Simipour": {
@@ -32378,8 +31682,7 @@ pokemonMakers["Simipour"] = () => {
 
 pokemonMakers["Simisage"] = () => {
     return makeCharacter(
-        "Simisage",
-        "Pokemon",
+        { name: "Simisage" },
         {
             
 "Simisage": {
@@ -32422,8 +31725,7 @@ pokemonMakers["Simisage"] = () => {
 
 pokemonMakers["Simisear"] = () => {
     return makeCharacter(
-        "Simisear",
-        "Pokemon",
+        { name: "Simisear" },
         {
             
 "Simisear": {
@@ -32466,8 +31768,7 @@ pokemonMakers["Simisear"] = () => {
 
 pokemonMakers["Sinistea"] = () => {
     return makeCharacter(
-        "Sinistea",
-        "Pokemon",
+        { name: "Sinistea" },
         {
             
 "Sinistea": {
@@ -32510,8 +31811,7 @@ pokemonMakers["Sinistea"] = () => {
 
 pokemonMakers["Sirfetch'd"] = () => {
     return makeCharacter(
-        "Sirfetch'd",
-        "Pokemon",
+        { name: "Sirfetch'd" },
         {
             
 "Sirfetch'd": {
@@ -32554,8 +31854,7 @@ pokemonMakers["Sirfetch'd"] = () => {
 
 pokemonMakers["Sizzlipede"] = () => {
     return makeCharacter(
-        "Sizzlipede",
-        "Pokemon",
+        { name: "Sizzlipede" },
         {
             
 "Sizzlipede": {
@@ -32598,8 +31897,7 @@ pokemonMakers["Sizzlipede"] = () => {
 
 pokemonMakers["Skarmory"] = () => {
     return makeCharacter(
-        "Skarmory",
-        "Pokemon",
+        { name: "Skarmory" },
         {
             
 "Skarmory": {
@@ -32642,8 +31940,7 @@ pokemonMakers["Skarmory"] = () => {
 
 pokemonMakers["Skiddo"] = () => {
     return makeCharacter(
-        "Skiddo",
-        "Pokemon",
+        { name: "Skiddo" },
         {
             
 "Skiddo": {
@@ -32686,8 +31983,7 @@ pokemonMakers["Skiddo"] = () => {
 
 pokemonMakers["Skiploom"] = () => {
     return makeCharacter(
-        "Skiploom",
-        "Pokemon",
+        { name: "Skiploom" },
         {
             
 "Skiploom": {
@@ -32730,8 +32026,7 @@ pokemonMakers["Skiploom"] = () => {
 
 pokemonMakers["Skitty"] = () => {
     return makeCharacter(
-        "Skitty",
-        "Pokemon",
+        { name: "Skitty" },
         {
             
 "Skitty": {
@@ -32774,8 +32069,7 @@ pokemonMakers["Skitty"] = () => {
 
 pokemonMakers["Skorupi"] = () => {
     return makeCharacter(
-        "Skorupi",
-        "Pokemon",
+        { name: "Skorupi" },
         {
             
 "Skorupi": {
@@ -32818,8 +32112,7 @@ pokemonMakers["Skorupi"] = () => {
 
 pokemonMakers["Skrelp"] = () => {
     return makeCharacter(
-        "Skrelp",
-        "Pokemon",
+        { name: "Skrelp" },
         {
             
 "Skrelp": {
@@ -32862,8 +32155,7 @@ pokemonMakers["Skrelp"] = () => {
 
 pokemonMakers["Skuntank"] = () => {
     return makeCharacter(
-        "Skuntank",
-        "Pokemon",
+        { name: "Skuntank" },
         {
             
 "Skuntank": {
@@ -32906,8 +32198,7 @@ pokemonMakers["Skuntank"] = () => {
 
 pokemonMakers["Skwovet"] = () => {
     return makeCharacter(
-        "Skwovet",
-        "Pokemon",
+        { name: "Skwovet" },
         {
             
 "Skwovet": {
@@ -32950,8 +32241,7 @@ pokemonMakers["Skwovet"] = () => {
 
 pokemonMakers["Slaking"] = () => {
     return makeCharacter(
-        "Slaking",
-        "Pokemon",
+        { name: "Slaking" },
         {
             
 "Slaking": {
@@ -32994,8 +32284,7 @@ pokemonMakers["Slaking"] = () => {
 
 pokemonMakers["Slakoth"] = () => {
     return makeCharacter(
-        "Slakoth",
-        "Pokemon",
+        { name: "Slakoth" },
         {
             
 "Slakoth": {
@@ -33038,8 +32327,7 @@ pokemonMakers["Slakoth"] = () => {
 
 pokemonMakers["Sliggoo"] = () => {
     return makeCharacter(
-        "Sliggoo",
-        "Pokemon",
+        { name: "Sliggoo" },
         {
             
 "Sliggoo": {
@@ -33082,8 +32370,7 @@ pokemonMakers["Sliggoo"] = () => {
 
 pokemonMakers["Slowking"] = () => {
     return makeCharacter(
-        "Slowking",
-        "Pokemon",
+        { name: "Slowking" },
         {
             
 "Slowking": {
@@ -33126,8 +32413,7 @@ pokemonMakers["Slowking"] = () => {
 
 pokemonMakers["Slowpoke"] = () => {
     return makeCharacter(
-        "Slowpoke",
-        "Pokemon",
+        { name: "Slowpoke" },
         {
             
 "Slowpoke": {
@@ -33170,8 +32456,7 @@ pokemonMakers["Slowpoke"] = () => {
 
 pokemonMakers["Slugma"] = () => {
     return makeCharacter(
-        "Slugma",
-        "Pokemon",
+        { name: "Slugma" },
         {
             
 "Slugma": {
@@ -33214,8 +32499,7 @@ pokemonMakers["Slugma"] = () => {
 
 pokemonMakers["Slurpuff"] = () => {
     return makeCharacter(
-        "Slurpuff",
-        "Pokemon",
+        { name: "Slurpuff" },
         {
             
 "Slurpuff": {
@@ -33258,8 +32542,7 @@ pokemonMakers["Slurpuff"] = () => {
 
 pokemonMakers["Smeargle"] = () => {
     return makeCharacter(
-        "Smeargle",
-        "Pokemon",
+        { name: "Smeargle" },
         {
             
 "Smeargle": {
@@ -33302,8 +32585,7 @@ pokemonMakers["Smeargle"] = () => {
 
 pokemonMakers["Smoochum"] = () => {
     return makeCharacter(
-        "Smoochum",
-        "Pokemon",
+        { name: "Smoochum" },
         {
             
 "Smoochum": {
@@ -33346,8 +32628,7 @@ pokemonMakers["Smoochum"] = () => {
 
 pokemonMakers["Sneasel"] = () => {
     return makeCharacter(
-        "Sneasel",
-        "Pokemon",
+        { name: "Sneasel" },
         {
             
 "Sneasel": {
@@ -33390,8 +32671,7 @@ pokemonMakers["Sneasel"] = () => {
 
 pokemonMakers["Snivy"] = () => {
     return makeCharacter(
-        "Snivy",
-        "Pokemon",
+        { name: "Snivy" },
         {
             
 "Snivy": {
@@ -33434,8 +32714,7 @@ pokemonMakers["Snivy"] = () => {
 
 pokemonMakers["Snom"] = () => {
     return makeCharacter(
-        "Snom",
-        "Pokemon",
+        { name: "Snom" },
         {
             
 "Snom": {
@@ -33478,8 +32757,7 @@ pokemonMakers["Snom"] = () => {
 
 pokemonMakers["Snorunt"] = () => {
     return makeCharacter(
-        "Snorunt",
-        "Pokemon",
+        { name: "Snorunt" },
         {
             
 "Snorunt": {
@@ -33522,8 +32800,7 @@ pokemonMakers["Snorunt"] = () => {
 
 pokemonMakers["Snover"] = () => {
     return makeCharacter(
-        "Snover",
-        "Pokemon",
+        { name: "Snover" },
         {
             
 "Snover": {
@@ -33566,8 +32843,7 @@ pokemonMakers["Snover"] = () => {
 
 pokemonMakers["Snubbull"] = () => {
     return makeCharacter(
-        "Snubbull",
-        "Pokemon",
+        { name: "Snubbull" },
         {
             
 "Snubbull": {
@@ -33610,8 +32886,7 @@ pokemonMakers["Snubbull"] = () => {
 
 pokemonMakers["Sobble"] = () => {
     return makeCharacter(
-        "Sobble",
-        "Pokemon",
+        { name: "Sobble" },
         {
             
 "Sobble": {
@@ -33654,8 +32929,7 @@ pokemonMakers["Sobble"] = () => {
 
 pokemonMakers["Solgaleo"] = () => {
     return makeCharacter(
-        "Solgaleo",
-        "Pokemon",
+        { name: "Solgaleo" },
         {
             
 "Solgaleo": {
@@ -33698,8 +32972,7 @@ pokemonMakers["Solgaleo"] = () => {
 
 pokemonMakers["Solosis"] = () => {
     return makeCharacter(
-        "Solosis",
-        "Pokemon",
+        { name: "Solosis" },
         {
             
 "Solosis ": {
@@ -33742,8 +33015,7 @@ pokemonMakers["Solosis"] = () => {
 
 pokemonMakers["Solrock"] = () => {
     return makeCharacter(
-        "Solrock",
-        "Pokemon",
+        { name: "Solrock" },
         {
             
 "Solrock": {
@@ -33786,8 +33058,7 @@ pokemonMakers["Solrock"] = () => {
 
 pokemonMakers["Spearow"] = () => {
     return makeCharacter(
-        "Spearow",
-        "Pokemon",
+        { name: "Spearow" },
         {
             
 "Spearow": {
@@ -33830,8 +33101,7 @@ pokemonMakers["Spearow"] = () => {
 
 pokemonMakers["Spewpa"] = () => {
     return makeCharacter(
-        "Spewpa",
-        "Pokemon",
+        { name: "Spewpa" },
         {
             
 "Spewpa": {
@@ -33874,8 +33144,7 @@ pokemonMakers["Spewpa"] = () => {
 
 pokemonMakers["Spheal"] = () => {
     return makeCharacter(
-        "Spheal",
-        "Pokemon",
+        { name: "Spheal" },
         {
             
 "Spheal": {
@@ -33918,8 +33187,7 @@ pokemonMakers["Spheal"] = () => {
 
 pokemonMakers["Spinarak"] = () => {
     return makeCharacter(
-        "Spinarak",
-        "Pokemon",
+        { name: "Spinarak" },
         {
             
 "Spinarak": {
@@ -33962,8 +33230,7 @@ pokemonMakers["Spinarak"] = () => {
 
 pokemonMakers["Spinda"] = () => {
     return makeCharacter(
-        "Spinda",
-        "Pokemon",
+        { name: "Spinda" },
         {
             
 "Spinda": {
@@ -34006,8 +33273,7 @@ pokemonMakers["Spinda"] = () => {
 
 pokemonMakers["Spiritomb"] = () => {
     return makeCharacter(
-        "Spiritomb",
-        "Pokemon",
+        { name: "Spiritomb" },
         {
             
 "Spiritomb": {
@@ -34050,8 +33316,7 @@ pokemonMakers["Spiritomb"] = () => {
 
 pokemonMakers["Spoink"] = () => {
     return makeCharacter(
-        "Spoink",
-        "Pokemon",
+        { name: "Spoink" },
         {
             
 "Spoink": {
@@ -34094,8 +33359,7 @@ pokemonMakers["Spoink"] = () => {
 
 pokemonMakers["Spritzee"] = () => {
     return makeCharacter(
-        "Spritzee",
-        "Pokemon",
+        { name: "Spritzee" },
         {
             
 "Spritzee": {
@@ -34138,8 +33402,7 @@ pokemonMakers["Spritzee"] = () => {
 
 pokemonMakers["Squirtle"] = () => {
     return makeCharacter(
-        "Squirtle",
-        "Pokemon",
+        { name: "Squirtle" },
         {
             
 "Squirtle": {
@@ -34182,8 +33445,7 @@ pokemonMakers["Squirtle"] = () => {
 
 pokemonMakers["Stakataka"] = () => {
     return makeCharacter(
-        "Stakataka",
-        "Pokemon",
+        { name: "Stakataka" },
         {
             
 "Stakataka": {
@@ -34226,8 +33488,7 @@ pokemonMakers["Stakataka"] = () => {
 
 pokemonMakers["Stantler"] = () => {
     return makeCharacter(
-        "Stantler",
-        "Pokemon",
+        { name: "Stantler" },
         {
             
 "Stantler": {
@@ -34270,8 +33531,7 @@ pokemonMakers["Stantler"] = () => {
 
 pokemonMakers["Staraptor"] = () => {
     return makeCharacter(
-        "Staraptor",
-        "Pokemon",
+        { name: "Staraptor" },
         {
             
 "Staraptor": {
@@ -34314,8 +33574,7 @@ pokemonMakers["Staraptor"] = () => {
 
 pokemonMakers["Staravia"] = () => {
     return makeCharacter(
-        "Staravia",
-        "Pokemon",
+        { name: "Staravia" },
         {
             
 "Staravia": {
@@ -34358,8 +33617,7 @@ pokemonMakers["Staravia"] = () => {
 
 pokemonMakers["Starly"] = () => {
     return makeCharacter(
-        "Starly",
-        "Pokemon",
+        { name: "Starly" },
         {
             
 "Starly": {
@@ -34402,8 +33660,7 @@ pokemonMakers["Starly"] = () => {
 
 pokemonMakers["Starmie"] = () => {
     return makeCharacter(
-        "Starmie",
-        "Pokemon",
+        { name: "Starmie" },
         {
             
 "Starmie": {
@@ -34446,8 +33703,7 @@ pokemonMakers["Starmie"] = () => {
 
 pokemonMakers["Staryu"] = () => {
     return makeCharacter(
-        "Staryu",
-        "Pokemon",
+        { name: "Staryu" },
         {
             
 "Staryu": {
@@ -34490,8 +33746,7 @@ pokemonMakers["Staryu"] = () => {
 
 pokemonMakers["Steenee"] = () => {
     return makeCharacter(
-        "Steenee",
-        "Pokemon",
+        { name: "Steenee" },
         {
             
 "Steenee": {
@@ -34534,8 +33789,7 @@ pokemonMakers["Steenee"] = () => {
 
 pokemonMakers["Stonjourner"] = () => {
     return makeCharacter(
-        "Stonjourner",
-        "Pokemon",
+        { name: "Stonjourner" },
         {
             
 "Stonjourner": {
@@ -34578,8 +33832,7 @@ pokemonMakers["Stonjourner"] = () => {
 
 pokemonMakers["Stoutland"] = () => {
     return makeCharacter(
-        "Stoutland",
-        "Pokemon",
+        { name: "Stoutland" },
         {
             
 "Stoutland": {
@@ -34622,8 +33875,7 @@ pokemonMakers["Stoutland"] = () => {
 
 pokemonMakers["Stufful"] = () => {
     return makeCharacter(
-        "Stufful",
-        "Pokemon",
+        { name: "Stufful" },
         {
             
 "Stufful": {
@@ -34666,8 +33918,7 @@ pokemonMakers["Stufful"] = () => {
 
 pokemonMakers["Stunfisk"] = () => {
     return makeCharacter(
-        "Stunfisk",
-        "Pokemon",
+        { name: "Stunfisk" },
         {
             
 "Galarian Form": {
@@ -34720,8 +33971,7 @@ pokemonMakers["Stunfisk"] = () => {
 
 pokemonMakers["Stunky"] = () => {
     return makeCharacter(
-        "Stunky",
-        "Pokemon",
+        { name: "Stunky" },
         {
             
 "Stunky": {
@@ -34764,8 +34014,7 @@ pokemonMakers["Stunky"] = () => {
 
 pokemonMakers["Sudowoodo"] = () => {
     return makeCharacter(
-        "Sudowoodo",
-        "Pokemon",
+        { name: "Sudowoodo" },
         {
             
 "Sudowoodo": {
@@ -34808,8 +34057,7 @@ pokemonMakers["Sudowoodo"] = () => {
 
 pokemonMakers["Suicune"] = () => {
     return makeCharacter(
-        "Suicune",
-        "Pokemon",
+        { name: "Suicune" },
         {
             
 "Suicune": {
@@ -34852,8 +34100,7 @@ pokemonMakers["Suicune"] = () => {
 
 pokemonMakers["Sunflora"] = () => {
     return makeCharacter(
-        "Sunflora",
-        "Pokemon",
+        { name: "Sunflora" },
         {
             
 "Sunflora": {
@@ -34896,8 +34143,7 @@ pokemonMakers["Sunflora"] = () => {
 
 pokemonMakers["Sunkern"] = () => {
     return makeCharacter(
-        "Sunkern",
-        "Pokemon",
+        { name: "Sunkern" },
         {
             
 "Sunkern": {
@@ -34940,8 +34186,7 @@ pokemonMakers["Sunkern"] = () => {
 
 pokemonMakers["Surskit"] = () => {
     return makeCharacter(
-        "Surskit",
-        "Pokemon",
+        { name: "Surskit" },
         {
             
 "Surskit": {
@@ -34984,8 +34229,7 @@ pokemonMakers["Surskit"] = () => {
 
 pokemonMakers["Swablu"] = () => {
     return makeCharacter(
-        "Swablu",
-        "Pokemon",
+        { name: "Swablu" },
         {
             
 "Swablu": {
@@ -35028,8 +34272,7 @@ pokemonMakers["Swablu"] = () => {
 
 pokemonMakers["Swadloon"] = () => {
     return makeCharacter(
-        "Swadloon",
-        "Pokemon",
+        { name: "Swadloon" },
         {
             
 "Swadloon": {
@@ -35072,8 +34315,7 @@ pokemonMakers["Swadloon"] = () => {
 
 pokemonMakers["Swalot"] = () => {
     return makeCharacter(
-        "Swalot",
-        "Pokemon",
+        { name: "Swalot" },
         {
             
 "Swalot": {
@@ -35116,8 +34358,7 @@ pokemonMakers["Swalot"] = () => {
 
 pokemonMakers["Swanna"] = () => {
     return makeCharacter(
-        "Swanna",
-        "Pokemon",
+        { name: "Swanna" },
         {
             
 "Swanna": {
@@ -35160,8 +34401,7 @@ pokemonMakers["Swanna"] = () => {
 
 pokemonMakers["Swellow"] = () => {
     return makeCharacter(
-        "Swellow",
-        "Pokemon",
+        { name: "Swellow" },
         {
             
 "Swellow": {
@@ -35204,8 +34444,7 @@ pokemonMakers["Swellow"] = () => {
 
 pokemonMakers["Swinub"] = () => {
     return makeCharacter(
-        "Swinub",
-        "Pokemon",
+        { name: "Swinub" },
         {
             
 "Swinub": {
@@ -35248,8 +34487,7 @@ pokemonMakers["Swinub"] = () => {
 
 pokemonMakers["Swirlix"] = () => {
     return makeCharacter(
-        "Swirlix",
-        "Pokemon",
+        { name: "Swirlix" },
         {
             
 "Swirlix": {
@@ -35292,8 +34530,7 @@ pokemonMakers["Swirlix"] = () => {
 
 pokemonMakers["Swoobat"] = () => {
     return makeCharacter(
-        "Swoobat",
-        "Pokemon",
+        { name: "Swoobat" },
         {
             
 "Swoobat": {
@@ -35336,8 +34573,7 @@ pokemonMakers["Swoobat"] = () => {
 
 pokemonMakers["Sylveon"] = () => {
     return makeCharacter(
-        "Sylveon",
-        "Pokemon",
+        { name: "Sylveon" },
         {
             
 "Sylveon": {
@@ -35380,8 +34616,7 @@ pokemonMakers["Sylveon"] = () => {
 
 pokemonMakers["Taillow"] = () => {
     return makeCharacter(
-        "Taillow",
-        "Pokemon",
+        { name: "Taillow" },
         {
             
 "Taillow": {
@@ -35424,8 +34659,7 @@ pokemonMakers["Taillow"] = () => {
 
 pokemonMakers["Talonflame"] = () => {
     return makeCharacter(
-        "Talonflame",
-        "Pokemon",
+        { name: "Talonflame" },
         {
             
 "Talonflame": {
@@ -35468,8 +34702,7 @@ pokemonMakers["Talonflame"] = () => {
 
 pokemonMakers["Tangela"] = () => {
     return makeCharacter(
-        "Tangela",
-        "Pokemon",
+        { name: "Tangela" },
         {
             
 "Tangela": {
@@ -35512,8 +34745,7 @@ pokemonMakers["Tangela"] = () => {
 
 pokemonMakers["Tangrowth"] = () => {
     return makeCharacter(
-        "Tangrowth",
-        "Pokemon",
+        { name: "Tangrowth" },
         {
             
 "Tangrowth": {
@@ -35556,8 +34788,7 @@ pokemonMakers["Tangrowth"] = () => {
 
 pokemonMakers["Tapu"] = () => {
     return makeCharacter(
-        "Tapu",
-        "Pokemon",
+        { name: "Tapu" },
         {
             
 "Tapu Bulu": {
@@ -35630,8 +34861,7 @@ pokemonMakers["Tapu"] = () => {
 
 pokemonMakers["Tauros"] = () => {
     return makeCharacter(
-        "Tauros",
-        "Pokemon",
+        { name: "Tauros" },
         {
             
 "Tauros": {
@@ -35674,8 +34904,7 @@ pokemonMakers["Tauros"] = () => {
 
 pokemonMakers["Teddiursa"] = () => {
     return makeCharacter(
-        "Teddiursa",
-        "Pokemon",
+        { name: "Teddiursa" },
         {
             
 "Teddiursa": {
@@ -35718,8 +34947,7 @@ pokemonMakers["Teddiursa"] = () => {
 
 pokemonMakers["Tentacool"] = () => {
     return makeCharacter(
-        "Tentacool",
-        "Pokemon",
+        { name: "Tentacool" },
         {
             
 "Tentacool": {
@@ -35762,8 +34990,7 @@ pokemonMakers["Tentacool"] = () => {
 
 pokemonMakers["Tentacruel"] = () => {
     return makeCharacter(
-        "Tentacruel",
-        "Pokemon",
+        { name: "Tentacruel" },
         {
             
 "Tentacruel": {
@@ -35806,8 +35033,7 @@ pokemonMakers["Tentacruel"] = () => {
 
 pokemonMakers["Tepig"] = () => {
     return makeCharacter(
-        "Tepig",
-        "Pokemon",
+        { name: "Tepig" },
         {
             
 "Tepig": {
@@ -35850,8 +35076,7 @@ pokemonMakers["Tepig"] = () => {
 
 pokemonMakers["Terrakion"] = () => {
     return makeCharacter(
-        "Terrakion",
-        "Pokemon",
+        { name: "Terrakion" },
         {
             
 "Terrakion": {
@@ -35894,8 +35119,7 @@ pokemonMakers["Terrakion"] = () => {
 
 pokemonMakers["Thievul"] = () => {
     return makeCharacter(
-        "Thievul",
-        "Pokemon",
+        { name: "Thievul" },
         {
             
 "Thievul": {
@@ -35938,8 +35162,7 @@ pokemonMakers["Thievul"] = () => {
 
 pokemonMakers["Throh"] = () => {
     return makeCharacter(
-        "Throh",
-        "Pokemon",
+        { name: "Throh" },
         {
             
 "Throh": {
@@ -35982,8 +35205,7 @@ pokemonMakers["Throh"] = () => {
 
 pokemonMakers["Thundurus"] = () => {
     return makeCharacter(
-        "Thundurus",
-        "Pokemon",
+        { name: "Thundurus" },
         {
             
 "Incarnate Forme": {
@@ -36036,8 +35258,7 @@ pokemonMakers["Thundurus"] = () => {
 
 pokemonMakers["Thwackey"] = () => {
     return makeCharacter(
-        "Thwackey",
-        "Pokemon",
+        { name: "Thwackey" },
         {
             
 "Thwackey": {
@@ -36080,8 +35301,7 @@ pokemonMakers["Thwackey"] = () => {
 
 pokemonMakers["Timburr"] = () => {
     return makeCharacter(
-        "Timburr",
-        "Pokemon",
+        { name: "Timburr" },
         {
             
 "Timburr": {
@@ -36124,8 +35344,7 @@ pokemonMakers["Timburr"] = () => {
 
 pokemonMakers["Tirtouga"] = () => {
     return makeCharacter(
-        "Tirtouga",
-        "Pokemon",
+        { name: "Tirtouga" },
         {
             
 "Tirtouga": {
@@ -36168,8 +35387,7 @@ pokemonMakers["Tirtouga"] = () => {
 
 pokemonMakers["Togedemaru"] = () => {
     return makeCharacter(
-        "Togedemaru",
-        "Pokemon",
+        { name: "Togedemaru" },
         {
             
 "Togedemaru": {
@@ -36212,8 +35430,7 @@ pokemonMakers["Togedemaru"] = () => {
 
 pokemonMakers["Togekiss"] = () => {
     return makeCharacter(
-        "Togekiss",
-        "Pokemon",
+        { name: "Togekiss" },
         {
             
 "Togekiss": {
@@ -36256,8 +35473,7 @@ pokemonMakers["Togekiss"] = () => {
 
 pokemonMakers["Togepi"] = () => {
     return makeCharacter(
-        "Togepi",
-        "Pokemon",
+        { name: "Togepi" },
         {
             
 "Togepi": {
@@ -36300,8 +35516,7 @@ pokemonMakers["Togepi"] = () => {
 
 pokemonMakers["Togetic"] = () => {
     return makeCharacter(
-        "Togetic",
-        "Pokemon",
+        { name: "Togetic" },
         {
             
 "Togetic": {
@@ -36344,8 +35559,7 @@ pokemonMakers["Togetic"] = () => {
 
 pokemonMakers["Torchic"] = () => {
     return makeCharacter(
-        "Torchic",
-        "Pokemon",
+        { name: "Torchic" },
         {
             
 "Torchic": {
@@ -36388,8 +35602,7 @@ pokemonMakers["Torchic"] = () => {
 
 pokemonMakers["Torkoal"] = () => {
     return makeCharacter(
-        "Torkoal",
-        "Pokemon",
+        { name: "Torkoal" },
         {
             
 "Torkoal": {
@@ -36432,8 +35645,7 @@ pokemonMakers["Torkoal"] = () => {
 
 pokemonMakers["Tornadus"] = () => {
     return makeCharacter(
-        "Tornadus",
-        "Pokemon",
+        { name: "Tornadus" },
         {
             
 "Incarnate Forme": {
@@ -36486,8 +35698,7 @@ pokemonMakers["Tornadus"] = () => {
 
 pokemonMakers["Torracat"] = () => {
     return makeCharacter(
-        "Torracat",
-        "Pokemon",
+        { name: "Torracat" },
         {
             
 "Torracat": {
@@ -36530,8 +35741,7 @@ pokemonMakers["Torracat"] = () => {
 
 pokemonMakers["Torterra"] = () => {
     return makeCharacter(
-        "Torterra",
-        "Pokemon",
+        { name: "Torterra" },
         {
             
 "Torterra": {
@@ -36574,8 +35784,7 @@ pokemonMakers["Torterra"] = () => {
 
 pokemonMakers["Totodile"] = () => {
     return makeCharacter(
-        "Totodile",
-        "Pokemon",
+        { name: "Totodile" },
         {
             
 "Totodile": {
@@ -36618,8 +35827,7 @@ pokemonMakers["Totodile"] = () => {
 
 pokemonMakers["Toucannon"] = () => {
     return makeCharacter(
-        "Toucannon",
-        "Pokemon",
+        { name: "Toucannon" },
         {
             
 "Toucannon": {
@@ -36662,8 +35870,7 @@ pokemonMakers["Toucannon"] = () => {
 
 pokemonMakers["Toxapex"] = () => {
     return makeCharacter(
-        "Toxapex",
-        "Pokemon",
+        { name: "Toxapex" },
         {
             
 "Toxapex": {
@@ -36706,8 +35913,7 @@ pokemonMakers["Toxapex"] = () => {
 
 pokemonMakers["Toxel"] = () => {
     return makeCharacter(
-        "Toxel",
-        "Pokemon",
+        { name: "Toxel" },
         {
             
 "Toxel": {
@@ -36750,8 +35956,7 @@ pokemonMakers["Toxel"] = () => {
 
 pokemonMakers["Toxicroak"] = () => {
     return makeCharacter(
-        "Toxicroak",
-        "Pokemon",
+        { name: "Toxicroak" },
         {
             
 "Toxicroak": {
@@ -36794,8 +35999,7 @@ pokemonMakers["Toxicroak"] = () => {
 
 pokemonMakers["Tranquill"] = () => {
     return makeCharacter(
-        "Tranquill",
-        "Pokemon",
+        { name: "Tranquill" },
         {
             
 "Tranquill": {
@@ -36838,8 +36042,7 @@ pokemonMakers["Tranquill"] = () => {
 
 pokemonMakers["Trapinch"] = () => {
     return makeCharacter(
-        "Trapinch",
-        "Pokemon",
+        { name: "Trapinch" },
         {
             
 "Trapinch": {
@@ -36882,8 +36085,7 @@ pokemonMakers["Trapinch"] = () => {
 
 pokemonMakers["Treecko"] = () => {
     return makeCharacter(
-        "Treecko",
-        "Pokemon",
+        { name: "Treecko" },
         {
             
 "Treecko": {
@@ -36926,8 +36128,7 @@ pokemonMakers["Treecko"] = () => {
 
 pokemonMakers["Trevenant"] = () => {
     return makeCharacter(
-        "Trevenant",
-        "Pokemon",
+        { name: "Trevenant" },
         {
             
 "Trevenant": {
@@ -36970,8 +36171,7 @@ pokemonMakers["Trevenant"] = () => {
 
 pokemonMakers["Tropius"] = () => {
     return makeCharacter(
-        "Tropius",
-        "Pokemon",
+        { name: "Tropius" },
         {
             
 "Tropius": {
@@ -37014,8 +36214,7 @@ pokemonMakers["Tropius"] = () => {
 
 pokemonMakers["Trubbish"] = () => {
     return makeCharacter(
-        "Trubbish",
-        "Pokemon",
+        { name: "Trubbish" },
         {
             
 "Trubbish": {
@@ -37058,8 +36257,7 @@ pokemonMakers["Trubbish"] = () => {
 
 pokemonMakers["Trumbeak"] = () => {
     return makeCharacter(
-        "Trumbeak",
-        "Pokemon",
+        { name: "Trumbeak" },
         {
             
 "Trumbeak": {
@@ -37102,8 +36300,7 @@ pokemonMakers["Trumbeak"] = () => {
 
 pokemonMakers["Tsareena"] = () => {
     return makeCharacter(
-        "Tsareena",
-        "Pokemon",
+        { name: "Tsareena" },
         {
             
 "Tsareena": {
@@ -37146,8 +36343,7 @@ pokemonMakers["Tsareena"] = () => {
 
 pokemonMakers["Turtonator"] = () => {
     return makeCharacter(
-        "Turtonator",
-        "Pokemon",
+        { name: "Turtonator" },
         {
             
 "Turtonator": {
@@ -37190,8 +36386,7 @@ pokemonMakers["Turtonator"] = () => {
 
 pokemonMakers["Turtwig"] = () => {
     return makeCharacter(
-        "Turtwig",
-        "Pokemon",
+        { name: "Turtwig" },
         {
             
 "Turtwig": {
@@ -37234,8 +36429,7 @@ pokemonMakers["Turtwig"] = () => {
 
 pokemonMakers["Tympole"] = () => {
     return makeCharacter(
-        "Tympole",
-        "Pokemon",
+        { name: "Tympole" },
         {
             
 "Tympole": {
@@ -37278,8 +36472,7 @@ pokemonMakers["Tympole"] = () => {
 
 pokemonMakers["Tynamo"] = () => {
     return makeCharacter(
-        "Tynamo",
-        "Pokemon",
+        { name: "Tynamo" },
         {
             
 "Tynamo": {
@@ -37322,8 +36515,7 @@ pokemonMakers["Tynamo"] = () => {
 
 pokemonMakers["Typhlosion"] = () => {
     return makeCharacter(
-        "Typhlosion",
-        "Pokemon",
+        { name: "Typhlosion" },
         {
             
 "Typhlosion": {
@@ -37366,8 +36558,7 @@ pokemonMakers["Typhlosion"] = () => {
 
 pokemonMakers["Tyrantrum"] = () => {
     return makeCharacter(
-        "Tyrantrum",
-        "Pokemon",
+        { name: "Tyrantrum" },
         {
             
 "Tyrantrum": {
@@ -37410,8 +36601,7 @@ pokemonMakers["Tyrantrum"] = () => {
 
 pokemonMakers["Tyrogue"] = () => {
     return makeCharacter(
-        "Tyrogue",
-        "Pokemon",
+        { name: "Tyrogue" },
         {
             
 "Tyrogue": {
@@ -37454,8 +36644,7 @@ pokemonMakers["Tyrogue"] = () => {
 
 pokemonMakers["Tyrunt"] = () => {
     return makeCharacter(
-        "Tyrunt",
-        "Pokemon",
+        { name: "Tyrunt" },
         {
             
 "Tyrunt": {
@@ -37498,8 +36687,7 @@ pokemonMakers["Tyrunt"] = () => {
 
 pokemonMakers["Umbreon"] = () => {
     return makeCharacter(
-        "Umbreon",
-        "Pokemon",
+        { name: "Umbreon" },
         {
             
 "Umbreon": {
@@ -37542,8 +36730,7 @@ pokemonMakers["Umbreon"] = () => {
 
 pokemonMakers["Unfezant"] = () => {
     return makeCharacter(
-        "Unfezant",
-        "Pokemon",
+        { name: "Unfezant" },
         {
             
 "Unfezant": {
@@ -37586,8 +36773,7 @@ pokemonMakers["Unfezant"] = () => {
 
 pokemonMakers["Unown"] = () => {
     return makeCharacter(
-        "Unown",
-        "Pokemon",
+        { name: "Unown" },
         {
             
 "Unown": {
@@ -37630,8 +36816,7 @@ pokemonMakers["Unown"] = () => {
 
 pokemonMakers["Ursaring"] = () => {
     return makeCharacter(
-        "Ursaring",
-        "Pokemon",
+        { name: "Ursaring" },
         {
             
 "Ursaring": {
@@ -37674,8 +36859,7 @@ pokemonMakers["Ursaring"] = () => {
 
 pokemonMakers["Uxie"] = () => {
     return makeCharacter(
-        "Uxie",
-        "Pokemon",
+        { name: "Uxie" },
         {
             
 "Uxie": {
@@ -37718,8 +36902,7 @@ pokemonMakers["Uxie"] = () => {
 
 pokemonMakers["Vanillish"] = () => {
     return makeCharacter(
-        "Vanillish",
-        "Pokemon",
+        { name: "Vanillish" },
         {
             
 "Vanillish": {
@@ -37762,8 +36945,7 @@ pokemonMakers["Vanillish"] = () => {
 
 pokemonMakers["Vanillite"] = () => {
     return makeCharacter(
-        "Vanillite",
-        "Pokemon",
+        { name: "Vanillite" },
         {
             
 "Vanillite": {
@@ -37806,8 +36988,7 @@ pokemonMakers["Vanillite"] = () => {
 
 pokemonMakers["Vanilluxe"] = () => {
     return makeCharacter(
-        "Vanilluxe",
-        "Pokemon",
+        { name: "Vanilluxe" },
         {
             
 "Vanilluxe": {
@@ -37850,8 +37031,7 @@ pokemonMakers["Vanilluxe"] = () => {
 
 pokemonMakers["Vaporeon"] = () => {
     return makeCharacter(
-        "Vaporeon",
-        "Pokemon",
+        { name: "Vaporeon" },
         {
             
 "Vaporeon": {
@@ -37894,8 +37074,7 @@ pokemonMakers["Vaporeon"] = () => {
 
 pokemonMakers["Venipede"] = () => {
     return makeCharacter(
-        "Venipede",
-        "Pokemon",
+        { name: "Venipede" },
         {
             
 "Venipede": {
@@ -37938,8 +37117,7 @@ pokemonMakers["Venipede"] = () => {
 
 pokemonMakers["Venomoth"] = () => {
     return makeCharacter(
-        "Venomoth",
-        "Pokemon",
+        { name: "Venomoth" },
         {
             
 "Venomoth": {
@@ -37982,8 +37160,7 @@ pokemonMakers["Venomoth"] = () => {
 
 pokemonMakers["Venonat"] = () => {
     return makeCharacter(
-        "Venonat",
-        "Pokemon",
+        { name: "Venonat" },
         {
             
 "Venonat": {
@@ -38026,8 +37203,7 @@ pokemonMakers["Venonat"] = () => {
 
 pokemonMakers["Vespiquen"] = () => {
     return makeCharacter(
-        "Vespiquen",
-        "Pokemon",
+        { name: "Vespiquen" },
         {
             
 "Vespiquen": {
@@ -38070,8 +37246,7 @@ pokemonMakers["Vespiquen"] = () => {
 
 pokemonMakers["Vibrava"] = () => {
     return makeCharacter(
-        "Vibrava",
-        "Pokemon",
+        { name: "Vibrava" },
         {
             
 "Vibrava": {
@@ -38114,8 +37289,7 @@ pokemonMakers["Vibrava"] = () => {
 
 pokemonMakers["Victini"] = () => {
     return makeCharacter(
-        "Victini",
-        "Pokemon",
+        { name: "Victini" },
         {
             
 "Victini": {
@@ -38158,8 +37332,7 @@ pokemonMakers["Victini"] = () => {
 
 pokemonMakers["Victreebel"] = () => {
     return makeCharacter(
-        "Victreebel",
-        "Pokemon",
+        { name: "Victreebel" },
         {
             
 "Victreebel": {
@@ -38202,8 +37375,7 @@ pokemonMakers["Victreebel"] = () => {
 
 pokemonMakers["Vigoroth"] = () => {
     return makeCharacter(
-        "Vigoroth",
-        "Pokemon",
+        { name: "Vigoroth" },
         {
             
 "Vigoroth": {
@@ -38246,8 +37418,7 @@ pokemonMakers["Vigoroth"] = () => {
 
 pokemonMakers["Vikavolt"] = () => {
     return makeCharacter(
-        "Vikavolt",
-        "Pokemon",
+        { name: "Vikavolt" },
         {
             
 "Vikavolt": {
@@ -38290,8 +37461,7 @@ pokemonMakers["Vikavolt"] = () => {
 
 pokemonMakers["Vileplume"] = () => {
     return makeCharacter(
-        "Vileplume",
-        "Pokemon",
+        { name: "Vileplume" },
         {
             
 "Vileplume": {
@@ -38334,8 +37504,7 @@ pokemonMakers["Vileplume"] = () => {
 
 pokemonMakers["Virizion"] = () => {
     return makeCharacter(
-        "Virizion",
-        "Pokemon",
+        { name: "Virizion" },
         {
             
 "Virizion": {
@@ -38378,8 +37547,7 @@ pokemonMakers["Virizion"] = () => {
 
 pokemonMakers["Vivillon"] = () => {
     return makeCharacter(
-        "Vivillon",
-        "Pokemon",
+        { name: "Vivillon" },
         {
             
 "Vivillon": {
@@ -38422,8 +37590,7 @@ pokemonMakers["Vivillon"] = () => {
 
 pokemonMakers["Volbeat"] = () => {
     return makeCharacter(
-        "Volbeat",
-        "Pokemon",
+        { name: "Volbeat" },
         {
             
 "Volbeat": {
@@ -38466,8 +37633,7 @@ pokemonMakers["Volbeat"] = () => {
 
 pokemonMakers["Volcanion"] = () => {
     return makeCharacter(
-        "Volcanion",
-        "Pokemon",
+        { name: "Volcanion" },
         {
             
 "Volcanion": {
@@ -38510,8 +37676,7 @@ pokemonMakers["Volcanion"] = () => {
 
 pokemonMakers["Volcarona"] = () => {
     return makeCharacter(
-        "Volcarona",
-        "Pokemon",
+        { name: "Volcarona" },
         {
             
 "Volcarona": {
@@ -38554,8 +37719,7 @@ pokemonMakers["Volcarona"] = () => {
 
 pokemonMakers["Voltorb"] = () => {
     return makeCharacter(
-        "Voltorb",
-        "Pokemon",
+        { name: "Voltorb" },
         {
             
 "Voltorb": {
@@ -38598,8 +37762,7 @@ pokemonMakers["Voltorb"] = () => {
 
 pokemonMakers["Vullaby"] = () => {
     return makeCharacter(
-        "Vullaby",
-        "Pokemon",
+        { name: "Vullaby" },
         {
             
 "Vullaby": {
@@ -38642,8 +37805,7 @@ pokemonMakers["Vullaby"] = () => {
 
 pokemonMakers["Vulpix"] = () => {
     return makeCharacter(
-        "Vulpix",
-        "Pokemon",
+        { name: "Vulpix" },
         {
             
 "Alola Form": {
@@ -38696,8 +37858,7 @@ pokemonMakers["Vulpix"] = () => {
 
 pokemonMakers["Wailmer"] = () => {
     return makeCharacter(
-        "Wailmer",
-        "Pokemon",
+        { name: "Wailmer" },
         {
             
 "Wailmer": {
@@ -38740,8 +37901,7 @@ pokemonMakers["Wailmer"] = () => {
 
 pokemonMakers["Wailord"] = () => {
     return makeCharacter(
-        "Wailord",
-        "Pokemon",
+        { name: "Wailord" },
         {
             
 "Wailord": {
@@ -38784,8 +37944,7 @@ pokemonMakers["Wailord"] = () => {
 
 pokemonMakers["Walrein"] = () => {
     return makeCharacter(
-        "Walrein",
-        "Pokemon",
+        { name: "Walrein" },
         {
             
 "Walrein": {
@@ -38828,8 +37987,7 @@ pokemonMakers["Walrein"] = () => {
 
 pokemonMakers["Wartortle"] = () => {
     return makeCharacter(
-        "Wartortle",
-        "Pokemon",
+        { name: "Wartortle" },
         {
             
 "Wartortle": {
@@ -38872,8 +38030,7 @@ pokemonMakers["Wartortle"] = () => {
 
 pokemonMakers["Watchog"] = () => {
     return makeCharacter(
-        "Watchog",
-        "Pokemon",
+        { name: "Watchog" },
         {
             
 "Watchog": {
@@ -38916,8 +38073,7 @@ pokemonMakers["Watchog"] = () => {
 
 pokemonMakers["Weavile"] = () => {
     return makeCharacter(
-        "Weavile",
-        "Pokemon",
+        { name: "Weavile" },
         {
             
 "Weavile": {
@@ -38960,8 +38116,7 @@ pokemonMakers["Weavile"] = () => {
 
 pokemonMakers["Weedle"] = () => {
     return makeCharacter(
-        "Weedle",
-        "Pokemon",
+        { name: "Weedle" },
         {
             
 "Weedle": {
@@ -39004,8 +38159,7 @@ pokemonMakers["Weedle"] = () => {
 
 pokemonMakers["Weepinbell"] = () => {
     return makeCharacter(
-        "Weepinbell",
-        "Pokemon",
+        { name: "Weepinbell" },
         {
             
 "Weepinbell": {
@@ -39048,8 +38202,7 @@ pokemonMakers["Weepinbell"] = () => {
 
 pokemonMakers["Weezing"] = () => {
     return makeCharacter(
-        "Weezing",
-        "Pokemon",
+        { name: "Weezing" },
         {
             
 "Galarian Form": {
@@ -39102,8 +38255,7 @@ pokemonMakers["Weezing"] = () => {
 
 pokemonMakers["Whimsicott"] = () => {
     return makeCharacter(
-        "Whimsicott",
-        "Pokemon",
+        { name: "Whimsicott" },
         {
             
 "Whimsicott": {
@@ -39146,8 +38298,7 @@ pokemonMakers["Whimsicott"] = () => {
 
 pokemonMakers["Whirlipede"] = () => {
     return makeCharacter(
-        "Whirlipede",
-        "Pokemon",
+        { name: "Whirlipede" },
         {
             
 "Whirlipede": {
@@ -39190,8 +38341,7 @@ pokemonMakers["Whirlipede"] = () => {
 
 pokemonMakers["Whiscash"] = () => {
     return makeCharacter(
-        "Whiscash",
-        "Pokemon",
+        { name: "Whiscash" },
         {
             
 "Whiscash": {
@@ -39234,8 +38384,7 @@ pokemonMakers["Whiscash"] = () => {
 
 pokemonMakers["Whismur"] = () => {
     return makeCharacter(
-        "Whismur",
-        "Pokemon",
+        { name: "Whismur" },
         {
             
 "Whismur": {
@@ -39278,8 +38427,7 @@ pokemonMakers["Whismur"] = () => {
 
 pokemonMakers["Wigglytuff"] = () => {
     return makeCharacter(
-        "Wigglytuff",
-        "Pokemon",
+        { name: "Wigglytuff" },
         {
             
 "Wigglytuff": {
@@ -39322,8 +38470,7 @@ pokemonMakers["Wigglytuff"] = () => {
 
 pokemonMakers["Wimpod"] = () => {
     return makeCharacter(
-        "Wimpod",
-        "Pokemon",
+        { name: "Wimpod" },
         {
             
 "Wimpod": {
@@ -39366,8 +38513,7 @@ pokemonMakers["Wimpod"] = () => {
 
 pokemonMakers["Wingull"] = () => {
     return makeCharacter(
-        "Wingull",
-        "Pokemon",
+        { name: "Wingull" },
         {
             
 "Wingull": {
@@ -39410,8 +38556,7 @@ pokemonMakers["Wingull"] = () => {
 
 pokemonMakers["Wishiwashi"] = () => {
     return makeCharacter(
-        "Wishiwashi",
-        "Pokemon",
+        { name: "Wishiwashi" },
         {
             
 "School Form": {
@@ -39464,8 +38609,7 @@ pokemonMakers["Wishiwashi"] = () => {
 
 pokemonMakers["Wobbuffet"] = () => {
     return makeCharacter(
-        "Wobbuffet",
-        "Pokemon",
+        { name: "Wobbuffet" },
         {
             
 "Wobbuffet": {
@@ -39508,8 +38652,7 @@ pokemonMakers["Wobbuffet"] = () => {
 
 pokemonMakers["Woobat"] = () => {
     return makeCharacter(
-        "Woobat",
-        "Pokemon",
+        { name: "Woobat" },
         {
             
 "Woobat": {
@@ -39552,8 +38695,7 @@ pokemonMakers["Woobat"] = () => {
 
 pokemonMakers["Wooloo"] = () => {
     return makeCharacter(
-        "Wooloo",
-        "Pokemon",
+        { name: "Wooloo" },
         {
             
 "Wooloo": {
@@ -39596,8 +38738,7 @@ pokemonMakers["Wooloo"] = () => {
 
 pokemonMakers["Wooper"] = () => {
     return makeCharacter(
-        "Wooper",
-        "Pokemon",
+        { name: "Wooper" },
         {
             
 "Wooper": {
@@ -39640,8 +38781,7 @@ pokemonMakers["Wooper"] = () => {
 
 pokemonMakers["Wormadam"] = () => {
     return makeCharacter(
-        "Wormadam",
-        "Pokemon",
+        { name: "Wormadam" },
         {
             
 "Plant Cloak": {
@@ -39704,8 +38844,7 @@ pokemonMakers["Wormadam"] = () => {
 
 pokemonMakers["Wurmple"] = () => {
     return makeCharacter(
-        "Wurmple",
-        "Pokemon",
+        { name: "Wurmple" },
         {
             
 "Wurmple": {
@@ -39748,8 +38887,7 @@ pokemonMakers["Wurmple"] = () => {
 
 pokemonMakers["Wynaut"] = () => {
     return makeCharacter(
-        "Wynaut",
-        "Pokemon",
+        { name: "Wynaut" },
         {
             
 "Wynaut": {
@@ -39792,8 +38930,7 @@ pokemonMakers["Wynaut"] = () => {
 
 pokemonMakers["Xatu"] = () => {
     return makeCharacter(
-        "Xatu",
-        "Pokemon",
+        { name: "Xatu" },
         {
             
 "Xatu": {
@@ -39836,8 +38973,7 @@ pokemonMakers["Xatu"] = () => {
 
 pokemonMakers["Xerneas"] = () => {
     return makeCharacter(
-        "Xerneas",
-        "Pokemon",
+        { name: "Xerneas" },
         {
             
 "Xerneas": {
@@ -39880,8 +39016,7 @@ pokemonMakers["Xerneas"] = () => {
 
 pokemonMakers["Xurkitree"] = () => {
     return makeCharacter(
-        "Xurkitree",
-        "Pokemon",
+        { name: "Xurkitree" },
         {
             
 "Xurkitree": {
@@ -39924,8 +39059,7 @@ pokemonMakers["Xurkitree"] = () => {
 
 pokemonMakers["Yamask"] = () => {
     return makeCharacter(
-        "Yamask",
-        "Pokemon",
+        { name: "Yamask" },
         {
             
 "Galarian Form": {
@@ -39978,8 +39112,7 @@ pokemonMakers["Yamask"] = () => {
 
 pokemonMakers["Yamper"] = () => {
     return makeCharacter(
-        "Yamper",
-        "Pokemon",
+        { name: "Yamper" },
         {
             
 "Yamper": {
@@ -40022,8 +39155,7 @@ pokemonMakers["Yamper"] = () => {
 
 pokemonMakers["Yanma"] = () => {
     return makeCharacter(
-        "Yanma",
-        "Pokemon",
+        { name: "Yanma" },
         {
             
 "Yanma": {
@@ -40066,8 +39198,7 @@ pokemonMakers["Yanma"] = () => {
 
 pokemonMakers["Yanmega"] = () => {
     return makeCharacter(
-        "Yanmega",
-        "Pokemon",
+        { name: "Yanmega" },
         {
             
 "Yanmega": {
@@ -40110,8 +39241,7 @@ pokemonMakers["Yanmega"] = () => {
 
 pokemonMakers["Yungoos"] = () => {
     return makeCharacter(
-        "Yungoos",
-        "Pokemon",
+        { name: "Yungoos" },
         {
             
 "Yungoos": {
@@ -40154,8 +39284,7 @@ pokemonMakers["Yungoos"] = () => {
 
 pokemonMakers["Yveltal"] = () => {
     return makeCharacter(
-        "Yveltal",
-        "Pokemon",
+        { name: "Yveltal" },
         {
             
 "Yveltal": {
@@ -40198,8 +39327,7 @@ pokemonMakers["Yveltal"] = () => {
 
 pokemonMakers["Zacian"] = () => {
     return makeCharacter(
-        "Zacian",
-        "Pokemon",
+        { name: "Zacian" },
         {
             
 "Crowned Sword": {
@@ -40252,8 +39380,7 @@ pokemonMakers["Zacian"] = () => {
 
 pokemonMakers["Zamazenta"] = () => {
     return makeCharacter(
-        "Zamazenta",
-        "Pokemon",
+        { name: "Zamazenta" },
         {
             
 "Crowned Shield": {
@@ -40306,8 +39433,7 @@ pokemonMakers["Zamazenta"] = () => {
 
 pokemonMakers["Zangoose"] = () => {
     return makeCharacter(
-        "Zangoose",
-        "Pokemon",
+        { name: "Zangoose" },
         {
             
 "Zangoose": {
@@ -40350,8 +39476,7 @@ pokemonMakers["Zangoose"] = () => {
 
 pokemonMakers["Zapdos"] = () => {
     return makeCharacter(
-        "Zapdos",
-        "Pokemon",
+        { name: "Zapdos" },
         {
             
 "Zapdos": {
@@ -40394,8 +39519,7 @@ pokemonMakers["Zapdos"] = () => {
 
 pokemonMakers["Zebstrika"] = () => {
     return makeCharacter(
-        "Zebstrika",
-        "Pokemon",
+        { name: "Zebstrika" },
         {
             
 "Zebstrika": {
@@ -40438,8 +39562,7 @@ pokemonMakers["Zebstrika"] = () => {
 
 pokemonMakers["Zekrom"] = () => {
     return makeCharacter(
-        "Zekrom",
-        "Pokemon",
+        { name: "Zekrom" },
         {
             
 "Zekrom": {
@@ -40482,8 +39605,7 @@ pokemonMakers["Zekrom"] = () => {
 
 pokemonMakers["Zeraora"] = () => {
     return makeCharacter(
-        "Zeraora",
-        "Pokemon",
+        { name: "Zeraora" },
         {
             
 "Zeraora": {
@@ -40526,8 +39648,7 @@ pokemonMakers["Zeraora"] = () => {
 
 pokemonMakers["Zigzagoon"] = () => {
     return makeCharacter(
-        "Zigzagoon",
-        "Pokemon",
+        { name: "Zigzagoon" },
         {
             
 "Galarian Form": {
@@ -40580,8 +39701,7 @@ pokemonMakers["Zigzagoon"] = () => {
 
 pokemonMakers["Zoroark"] = () => {
     return makeCharacter(
-        "Zoroark",
-        "Pokemon",
+        { name: "Zoroark" },
         {
             
 "Zoroark": {
@@ -40624,8 +39744,7 @@ pokemonMakers["Zoroark"] = () => {
 
 pokemonMakers["Zorua"] = () => {
     return makeCharacter(
-        "Zorua",
-        "Pokemon",
+        { name: "Zorua" },
         {
             
 "Zorua": {
@@ -40668,8 +39787,7 @@ pokemonMakers["Zorua"] = () => {
 
 pokemonMakers["Zubat"] = () => {
     return makeCharacter(
-        "Zubat",
-        "Pokemon",
+        { name: "Zubat" },
         {
             
 "Zubat": {
@@ -40712,8 +39830,7 @@ pokemonMakers["Zubat"] = () => {
 
 pokemonMakers["Zweilous"] = () => {
     return makeCharacter(
-        "Zweilous",
-        "Pokemon",
+        { name: "Zweilous" },
         {
             
 "Zweilous": {
@@ -40756,8 +39873,7 @@ pokemonMakers["Zweilous"] = () => {
 
 pokemonMakers["Zygarde"] = () => {
     return makeCharacter(
-        "Zygarde",
-        "Pokemon",
+        { name: "Zygarde" },
         {
             
 "10% Forme": {
