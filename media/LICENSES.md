@@ -40,22 +40,6 @@ https://www.furaffinity.net/view/21787301/
 
 * front.svg
 
-## Rainy
-
-**t.me/Rileykit**
-
-(no link)
-
-* front.svg
-
-## Rainier
-
-**https://www.furaffinity.net/user/ovens**
-
-(no link)
-
-* front.svg
-
 ## Andy
 
 **https://twitter.com/cardboardhead**
@@ -101,11 +85,3 @@ https://www.furaffinity.net/view/34278152/
 https://www.furaffinity.net/view/34794072/
 
 * sole.svg
-
-## Guy
-
-**https://www.furaffinity.net/user/bluecatangry**
-
-https://www.furaffinity.net/view/34962837
-
-* front.svg

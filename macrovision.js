@@ -1573,7 +1573,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    
     window.addEventListener("resize", handleResize);
 
     // TODO: further investigate why the tool initially starts out with wrong

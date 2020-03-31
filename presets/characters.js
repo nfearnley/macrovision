@@ -2682,7 +2682,7 @@ characterMakers["Rain Fallen"] = () => {
                 weight: math.unit(210, "lbs"),
                 name: "Front",
                 image: {
-                    source: "./media/characters/rain/front.svg"
+                    source: "./media/characters/rain-fallen/front.svg"
                 }
             },
             side: {
@@ -2690,7 +2690,7 @@ characterMakers["Rain Fallen"] = () => {
                 weight: math.unit(210, "lbs"),
                 name: "Side",
                 image: {
-                    source: "./media/characters/rain/side.svg"
+                    source: "./media/characters/rain-fallen/side.svg"
                 }
             },
             back: {
@@ -2698,7 +2698,7 @@ characterMakers["Rain Fallen"] = () => {
                 weight: math.unit(210, "lbs"),
                 name: "Back",
                 image: {
-                    source: "./media/characters/rain/back.svg"
+                    source: "./media/characters/rain-fallen/back.svg"
                 }
             },
             feral: {
@@ -2706,7 +2706,7 @@ characterMakers["Rain Fallen"] = () => {
                 weight: math.unit(700, "lbs"),
                 name: "Feral",
                 image: {
-                    source: "./media/characters/rain/feral.svg"
+                    source: "./media/characters/rain-fallen/feral.svg"
                 }
             },
 
@@ -19307,7 +19307,8 @@ characterMakers["Naldara"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(4 + 2/12, "feet")
+                height: math.unit(4 + 2/12, "feet"),
+                default: true
             },
         ]
     )
@@ -19332,7 +19333,8 @@ characterMakers["Briar"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(13 + 7/12, "feet")
+                height: math.unit(13 + 7/12, "feet"),
+                default: true
             },
         ]
     )
@@ -19528,7 +19530,8 @@ characterMakers["Poffin"] = () => {
         [
             {
                 name: "Normal",
-                height: math.unit(5 + 2/12, "feet")
+                height: math.unit(5 + 2/12, "feet"),
+                default: true
             },
         ]
     )

@@ -2017,7 +2017,8 @@ const attributionData = {
         {
             prefix: "./media/characters/danny/",
             files: [
-                { name: "front.svg", source: "https://twitter.com/danny_gryphon/status/1212835551180517376" }
+                { name: "front.svg", source: "https://twitter.com/danny_gryphon/status/1212835551180517376" },
+                { name: "back.svg", source: "https://twitter.com/danny_gryphon/status/1212835551180517376" }
             ],
             authors: [
                 "xrosettaxx"
@@ -2106,7 +2107,8 @@ const attributionData = {
         {
             prefix: "./media/characters/drusilla/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/22510474/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/22510474/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/22510474/" },
             ],
             authors: [
                 "inkrend"
@@ -2356,7 +2358,8 @@ const attributionData = {
         {
             prefix: "./media/characters/fleta/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/28202280/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/28202280/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/28202280/" },
             ],
             authors: [
                 "emiechii"
@@ -2454,7 +2457,7 @@ const attributionData = {
         {
             prefix: "./media/characters/gale/",
             files: [
-                { name: "front-alt.svg", source: null }
+                { name: "front-alt-1.svg", source: null }
             ],
             authors: [
                 "msricket"
@@ -2654,7 +2657,8 @@ const attributionData = {
         {
             prefix: "./media/characters/jamie-larsen/",
             files: [
-                { name: "front.svg", source: "https://twitter.com/Mt_Jamie_Larsen/status/1236079279613636608" }
+                { name: "front.svg", source: "https://twitter.com/Mt_Jamie_Larsen/status/1236079279613636608" },
+                { name: "back.svg", source: "https://twitter.com/Mt_Jamie_Larsen/status/1236079279613636608" },
             ],
             authors: [
                 "qt-arts"
@@ -2718,7 +2722,7 @@ const attributionData = {
         {
             prefix: "./media/characters/jennifer/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/19334493/" }
+                { name: "front-alt.svg", source: "https://www.furaffinity.net/view/19334493/" }
             ],
             authors: [
                 "wfa"
@@ -2818,7 +2822,7 @@ const attributionData = {
         {
             prefix: "./media/characters/kara/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/31202660/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/31202660/" },
             ],
             authors: [
                 "mtfoxx"
@@ -2830,7 +2834,7 @@ const attributionData = {
         {
             prefix: "./media/characters/kara/",
             files: [
-                { name: "gigren.svg", source: "https://www.furaffinity.net/view/35111383/" }
+                { name: "feet.svg", source: "https://www.furaffinity.net/view/35111383/" }
             ],
             authors: [
                 "gigren"
@@ -2879,7 +2883,8 @@ const attributionData = {
         {
             prefix: "./media/characters/kayroo/",
             files: [
-                { name: "front.svg", source: null }
+                { name: "front.svg", source: null },
+                { name: "foot.svg", source: null },
             ],
             authors: [
                 "solaxee"
@@ -3620,7 +3625,8 @@ const attributionData = {
         {
             prefix: "./media/characters/nillia/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/30966909/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/30966909/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/30966909/" },
             ],
             authors: [
                 "phantom-berserkr"
@@ -4289,7 +4295,7 @@ const attributionData = {
         {
             prefix: "./media/characters/sosha/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/22781088/" }
+                { name: "side.svg", source: "https://www.furaffinity.net/view/22781088/" }
             ],
             authors: [
                 "eveara"
@@ -4740,7 +4746,8 @@ const attributionData = {
         {
             prefix: "./media/characters/tezwa/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/31301609" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/31301609" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/31301609" },
             ],
             authors: [
                 "pixiefyre"
@@ -5486,9 +5493,9 @@ const attributionData = {
             ]
         },
         {
-            prefix: "./media/characters/igantius/",
+            prefix: "./media/characters/ignatius/",
             files: [
-                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Igantius" }
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Ignatius" }
             ],
             authors: [
                 "fidchell"
@@ -5709,7 +5716,8 @@ const attributionData = {
         {
             prefix: "./media/characters/kaylum/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/32179617/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32179617/" },
+                { name: "front-wingless.svg", source: "https://www.furaffinity.net/view/32179617/" },
             ],
             authors: [
                 "shadowinkwarrior"
@@ -5783,7 +5791,7 @@ const attributionData = {
                 "rainfallen"
             ],
             owners: [
-                "rainfelln"
+                "rainfallen"
             ]
         },
         {
@@ -5801,7 +5809,7 @@ const attributionData = {
         {
             prefix: "./media/characters/zaakira/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/23174731/" }
+                { name: "laying.svg", source: "https://www.furaffinity.net/view/23174731/" }
             ],
             authors: [
                 "sentinelwinder"
@@ -5863,7 +5871,7 @@ const attributionData = {
         {
             prefix: "./media/characters/kieran/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/22243143/" }
+                { name: "side.svg", source: "https://www.furaffinity.net/view/22243143/" }
             ],
             authors: [
                 "phietto"
@@ -5983,7 +5991,7 @@ const attributionData = {
         {
             prefix: "./media/characters/deerpuff/",
             files: [
-                { name: "taur-laying.svg.svg", source: "https://www.furaffinity.net/view/29325973/" }
+                { name: "taur-laying.svg", source: "https://www.furaffinity.net/view/29325973/" }
             ],
             authors: [
                 "greenbrains"
@@ -6355,7 +6363,8 @@ const attributionData = {
         {
             prefix: "./media/characters/max-calore/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/25166797/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/25166797/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/25166797/" },
             ],
             authors: [
                 "fidchell"
@@ -6463,7 +6472,7 @@ const attributionData = {
         {
             prefix: "./media/characters/lyla/",
             files: [
-                { name: "side.svg", source: "https://fidverse.fandom.com/wiki/Lyla" }
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Lyla" }
             ],
             authors: [
                 "fidchell"
@@ -6499,7 +6508,8 @@ const attributionData = {
         {
             prefix: "./media/characters/raf/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/35445400/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35445400/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/35445400/" },
             ],
             authors: [
                 "the-raf"
@@ -7272,7 +7282,8 @@ const attributionData = {
         {
             prefix: "./media/characters/jet/",
             files: [
-                { name: "front.svg", source: null }
+                { name: "front.svg", source: null },
+                { name: "back.svg", source: null },
             ],
             authors: [
                 "tyrirtusky"
@@ -7322,7 +7333,7 @@ const attributionData = {
             prefix: "./media/characters/sebi/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/33701903/" },
-                { name: "back.svg", source: "https://www.furaffinity.net/view/33701903/" },
+                { name: "front-dressed.svg", source: "https://www.furaffinity.net/view/33701903/" },
             ],
             authors: [
                 "pinklionart"
@@ -8015,7 +8026,7 @@ const attributionData = {
                 { name: "maw.svg", source: "https://www.furaffinity.net/view/26746146/" },
                 { name: "were-front.svg", source: "https://www.furaffinity.net/view/26746146/" },
                 { name: "were-back.svg", source: "https://www.furaffinity.net/view/26746146/" },
-                { name: "were-back.svg", source: "https://www.furaffinity.net/view/26746146/" },
+                { name: "were-maw.svg", source: "https://www.furaffinity.net/view/26746146/" },
             ],
             authors: [
                 "gabira"
@@ -8203,6 +8214,54 @@ const attributionData = {
             ],
             owners: [
                 "kenson"
+            ]
+        },
+        {
+            prefix: "./media/characters/guy/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34962837" }
+            ],
+            authors: [
+                "bluecatangry"
+            ],
+            owners: [
+                "whatastandupguy"
+            ]
+        },
+        {
+            prefix: "./media/characters/rainier/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/25983632/" }
+            ],
+            authors: [
+                "ovens"
+            ],
+            owners: [
+                "ruleroftherainforest"
+            ]
+        },
+        {
+            prefix: "./media/characters/rainy/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "rileykit"
+            ],
+            owners: [
+                "ruleroftherainforest"
+            ]
+        },
+        {
+            prefix: "./media/characters/tails/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "shingekiskunk"
+            ],
+            owners: [
+                "ruleroftherainforest"
             ]
         },
         //characters
@@ -11325,6 +11384,14 @@ const attributionData = {
         "kenson": {
             "name": "Kenson",
             "url": "https://www.furaffinity.net/user/kenson/",
+        },
+        "whatastandupguy": {
+            "name": "Whatastandupguy",
+            "url": "https://www.furaffinity.net/user/whatastandupguy/",
+        },
+        "ruleroftherainforest": {
+            "name": "RulerOfTheRainforest",
+            "url": "https://www.furaffinity.net/user/ruleroftherainforest",
         },
     }
 }
