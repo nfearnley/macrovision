@@ -50,7 +50,6 @@
 		  "characterMakers[\"$1\"] = () => {",
 		  "    return makeCharacter(",
 		  "        \"$1\",",
-		  "        \"$2\",",
 		  "        {",
 		  "",
 		  "        },",
