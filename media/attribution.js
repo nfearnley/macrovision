@@ -660,7 +660,7 @@ const attributionData = {
                 { name: "Milcery.svg", source: "https://www.pokemon.com/us/pokedex/868" },
                 { name: "Milotic.svg", source: "https://www.pokemon.com/us/pokedex/350" },
                 { name: "Miltank.svg", source: "https://www.pokemon.com/us/pokedex/241" },
-                { name: "Mime Jr..svg", source: "https://www.pokemon.com/us/pokedex/439" },
+                { name: "Mime Jr.svg", source: "https://www.pokemon.com/us/pokedex/439" },
                 { name: "Mimikyu.svg", source: "https://www.pokemon.com/us/pokedex/778" },
                 { name: "Minccino.svg", source: "https://www.pokemon.com/us/pokedex/572" },
                 { name: "Minior - Meteor Form.svg", source: "https://www.pokemon.com/us/pokedex/774" },
@@ -1076,8 +1076,8 @@ const attributionData = {
                 { name: "Zorua.svg", source: "https://www.pokemon.com/us/pokedex/570" },
                 { name: "Zubat.svg", source: "https://www.pokemon.com/us/pokedex/41" },
                 { name: "Zweilous.svg", source: "https://www.pokemon.com/us/pokedex/634" },
-                { name: "Zygarde - 10% Forme.svg", source: "https://www.pokemon.com/us/pokedex/718" },
-                { name: "Zygarde - 50% Forme.svg", source: "https://www.pokemon.com/us/pokedex/718" },
+                { name: "Zygarde - 10%25 Forme.svg", source: "https://www.pokemon.com/us/pokedex/718" },
+                { name: "Zygarde - 50%25 Forme.svg", source: "https://www.pokemon.com/us/pokedex/718" },
                 { name: "Zygarde - Complete Forme.svg", source: "https://www.pokemon.com/us/pokedex/718" }
             ],
             authors: [
@@ -8365,6 +8365,15 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/food/trees/",
+            files: [
+                { name: "sycamore-tree.svg", source: "https://www.dimensions.guide/element/sycamore-tree" }
+            ],
+            authors: [
+                "dimensions-guide"
+            ]
+        },
+        {
             prefix: "./media/landmarks/",
             files: [
                 { name: "burj-khalifa.svg", source: "https://commons.wikimedia.org/wiki/File:TallestBuildings.svg" },
@@ -8397,6 +8406,7 @@ const attributionData = {
                 { name: "saturn.svg", source: null },
                 { name: "milky-way.svg", source: null },
                 { name: "orbit.svg", source: null },
+                { name: "mountain.svg", source: null },
             ],
             authors: [
                 "chemicalcrux"
@@ -8421,6 +8431,15 @@ const attributionData = {
             all: "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-lakes/",
             authors: [
                 "naturalearth"
+            ]
+        },
+        {
+            prefix: "./media/food/plants/",
+            files: [
+                { name: "grass.svg", source: "https://www.freepik.com/free-vector/grass-border-silhouette-realistic-design_4904217.htm#page=1&query=grass%20silhouette&position=0" }
+            ],
+            authors: [
+                "pikisuperstar"
             ]
         },
         {
@@ -8517,24 +8536,6 @@ const attributionData = {
             ]
         },
         {
-            prefix: "./media/objects/plants/",
-            files: [
-                { name: "grass.svg", source: "https://www.freepik.com/free-vector/grass-border-silhouette-realistic-design_4904217.htm#page=1&query=grass%20silhouette&position=0" }
-            ],
-            authors: [
-                "pikisuperstar"
-            ]
-        },
-        {
-            prefix: "./media/objects/trees/",
-            files: [
-                { name: "sycamore-tree.svg", source: "https://www.dimensions.guide/element/sycamore-tree" }
-            ],
-            authors: [
-                "dimensions-guide"
-            ]
-        },
-        {
             prefix: "./media/species/synx/",
             files: [
                 { name: "goo-chick.svg", source: "https://twitter.com/ChimeraSynx/status/1212231503779778560" },
@@ -8552,8 +8553,8 @@ const attributionData = {
         {
             prefix: "./media/vehicles/",
             files: [
-                { name: "vertical-bus.svg", source: null },
                 { name: "leopard-2-revolution-1.svg", source: "http://leopardclub.ca/reviews/Tiger_Model/Revolution/" },
+                { name: "vertical-leopard-2-revolution-1.svg", source: "http://leopardclub.ca/reviews/Tiger_Model/Revolution/" },
             ],
             authors: [
                 "chemicalcrux"
