@@ -818,46 +818,34 @@ characterMakers["Shingo"] = () => {
     )
 };
 
-function makeAigey() {
-    const views = {
-        side: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(6, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(75, "kg")
+characterMakers["Aigey"] = () => {
+    return makeCharacter(
+        "Aigey",
+        "Aigey",
+        {
+            side: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(75, "kg"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/aigey/side.svg"
                 }
             },
-            image: {
-                source: "./media/characters/aigey/side.svg"
+        },
+        [
+            {
+                name: "Macro",
+                height: math.unit(200, "feet"),
+                default: true
             },
-            name: "Side"
-        }
-    };
+            {
+                name: "Megamacro",
+                height: math.unit(100, "miles")
+            },
+        ]
+    )
+};
 
-    const entity = makeEntity({ name: "Aigey", author: "Aigey" }, views, []);
-
-    entity.sizes.push({
-        name: "Macro",
-        height: math.unit(200, "feet")
-    });
-
-    entity.sizes.push({
-        name: "Megamacro",
-        height: math.unit(100, "miles")
-    });
-
-    entity.views[entity.defaultView].height = math.unit(200, "feet");
-
-    return entity;
-}
 
 characterMakers["Natasha"] = () => {
     return makeCharacter(
@@ -901,138 +889,82 @@ characterMakers["Natasha"] = () => {
     )
 };
 
-function makeMalik() {
-    const views = {
-        front: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(6, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(75, "kg")
+characterMakers["Malik"] = () => {
+    return makeCharacter(
+        "Malik",
+        "Fuzzypaws",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(75, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/malik/front.svg"
                 }
             },
-            image: {
-                source: "./media/characters/malik/front.svg"
-            },
-            name: "Front"
-        },
-        side: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(6, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(75, "kg")
+            side: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(75, "kg"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/malik/side.svg",
+                    extra: 1.1539
                 }
             },
-            image: {
-                extra: 1.1539,
-                source: "./media/characters/malik/side.svg"
-            },
-            name: "Side"
-        },
-        back: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(6, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(75, "kg")
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(75, "kg"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/malik/back.svg"
                 }
             },
-            image: {
-                source: "./media/characters/malik/back.svg"
-            },
-            name: "Back"
         },
-    };
+        [
+            {
+                name: "Macro",
+                height: math.unit(156, "feet"),
+                default: true
+            },
+            {
+                name: "Macro+",
+                height: math.unit(1188, "feet")
+            },
+        ]
+    )
+};
 
-    const entity = makeEntity({ name: "Malik", author: "Fuzzypaws" }, views, []);
-
-    entity.sizes.push({
-        name: "Macro",
-        height: math.unit(156, "feet")
-    });
-
-    entity.sizes.push({
-        name: "Macro+",
-        height: math.unit(1188, "feet")
-    });
-
-    entity.views[entity.defaultView].height = math.unit(156, "feet");
-
-    return entity;
-}
-
-function makeSefer() {
-    const views = {
-        front: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(6, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(75, "kg")
+characterMakers["Sefer"] = () => {
+    return makeCharacter(
+        "Sefer",
+        "Fuzzypaws",
+        {
+            front: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(75, "kg"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/sefer/front.svg"
                 }
             },
-            image: {
-                source: "./media/characters/sefer/front.svg"
-            },
-            name: "Front"
-        },
-        back: {
-            attributes: {
-                height: {
-                    name: "Height",
-                    power: 1,
-                    type: "length",
-                    base: math.unit(6, "feet")
-                },
-                weight: {
-                    name: "Weight",
-                    power: 3,
-                    type: "mass",
-                    base: math.unit(75, "kg")
+            back: {
+                height: math.unit(6, "feet"),
+                weight: math.unit(75, "kg"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/sefer/back.svg"
                 }
             },
-            image: {
-                source: "./media/characters/sefer/back.svg"
-            },
-            name: "Back"
         },
-    };
-
-    const entity = makeEntity({ name: "Sefer", author: "Fuzzypaws" }, views, []);
-
-    entity.views[entity.defaultView].height = math.unit(6, "feet");
-
-    return entity;
-}
+        [
+            {
+                name: "Normal",
+                height: math.unit(6, "feet"),
+                default: true
+            },
+        ]
+    )
+};
 
 characterMakers["North"] = () => {
     return makeCharacter(
@@ -20164,19 +20096,6 @@ function makeCharacters() {
             name: key,
             constructor: value
         });
-    });
-
-    results.push({
-        name: "Aigey",
-        constructor: makeAigey
-    });
-    results.push({
-        name: "Malik",
-        constructor: makeMalik
-    });
-    results.push({
-        name: "Sefer",
-        constructor: makeSefer
     });
     return results;
 }
