@@ -2,7 +2,7 @@ const speciesMakers = {};
 
 speciesMakers["Synx"] = () => {
     const species = makeCharacter(
-        "Synx",
+        { name: "Synx" },
         {
             goochick: {
                 height: math.unit(0.5, "feet"),

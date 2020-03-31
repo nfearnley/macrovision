@@ -18,11 +18,7 @@ math.createUnit("AU", {
 math.createUnit("AUs", {
     definition: "149597870700 meters"
 })
-function makeCharacter(name, viewInfo, defaultSizes, extraInfo) {
-    if (extraInfo === undefined) {
-        extraInfo = {};
-    }
-
+function makeCharacter(info, viewInfo, defaultSizes) {
     views = {};
 
     Object.entries(viewInfo).forEach(([key, value]) => {
@@ -51,14 +47,21 @@ function makeCharacter(name, viewInfo, defaultSizes, extraInfo) {
         }
     });
 
-    const entity = makeEntity(Object.assign(extraInfo, { name: name }), views, defaultSizes);
+    const entity = makeEntity(info, views, defaultSizes);
 
     return entity;
 }
 
 characterMakers["Fen"] = () => {
     return makeCharacter(
-        "Fen",
+        {
+            name: "Fen",
+            species: "Crux",
+            description: {
+                title: "Bio",
+                text: "Very furry. Sheds on everything."
+            }
+        },
         {
             back: {
                 height: math.unit(2.2428, "meter"),
@@ -137,19 +140,13 @@ characterMakers["Fen"] = () => {
                 name: "Megamacro",
                 height: math.unit(10, "miles")
             }
-        ],
-        {
-            description: {
-                title: "Bio",
-                text: "Very furry. Sheds on everything."
-            }
-        }
+        ]
     )
 };
 
 characterMakers["Sofia"] = () => {
     return makeCharacter(
-        "Sofia",
+        { name: "Sofia" },
         {
             front: {
                 height: math.unit(183, "cm"),
@@ -198,7 +195,7 @@ characterMakers["Sofia"] = () => {
 
 characterMakers["March"] = () => {
     return makeCharacter(
-        "March",
+        { name: "March" },
         {
             front: {
                 height: math.unit(7, "feet"),
@@ -250,7 +247,7 @@ characterMakers["March"] = () => {
 
 characterMakers["Noir"] = () => {
     return makeCharacter(
-        "Noir",
+        { name: "Noir" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -295,7 +292,7 @@ characterMakers["Noir"] = () => {
 
 characterMakers["Okuri"] = () => {
     return makeCharacter(
-        "Okuri",
+        { name: "Okuri" },
         {
             front: {
                 height: math.unit(7, "feet"),
@@ -330,7 +327,7 @@ characterMakers["Okuri"] = () => {
 
 characterMakers["Manny"] = () => {
     return makeCharacter(
-        "Manny",
+        { name: "Manny" },
         {
             front: {
                 height: math.unit(7, "feet"),
@@ -385,7 +382,7 @@ characterMakers["Manny"] = () => {
 
 characterMakers["Adake"] = () => {
     return makeCharacter(
-        "Adake",
+        { name: "Adake" },
         {
             front: {
                 height: math.unit(7, "feet"),
@@ -455,7 +452,7 @@ characterMakers["Adake"] = () => {
 
 characterMakers["Elijah"] = () => {
     return makeCharacter(
-        "Elijah",
+        { name: "Elijah" },
         {
             side: {
                 height: math.unit(7, "feet"),
@@ -495,7 +492,7 @@ characterMakers["Elijah"] = () => {
 
 characterMakers["Rai"] = () => {
     return makeCharacter(
-        "Rai",
+        { name: "Rai" },
         {
             front: {
                 height: math.unit(11, "feet"),
@@ -559,7 +556,7 @@ characterMakers["Rai"] = () => {
 
 characterMakers["Jazzy"] = () => {
     return makeCharacter(
-        "Jazzy",
+        { name: "Jazzy" },
         {
             front: {
                 height: math.unit(7, "feet"),
@@ -594,7 +591,7 @@ characterMakers["Jazzy"] = () => {
 
 characterMakers["Flamm"] = () => {
     return makeCharacter(
-        "Flamm",
+        { name: "Flamm" },
         {
             front: {
                 height: math.unit(7, "feet"),
@@ -623,7 +620,7 @@ characterMakers["Flamm"] = () => {
 
 characterMakers["Zephiro"] = () => {
     return makeCharacter(
-        "Zephiro",
+        { name: "Zephiro" },
         {
             front: {
                 height: math.unit(7, "feet"),
@@ -676,7 +673,7 @@ characterMakers["Zephiro"] = () => {
 
 characterMakers["Fory"] = () => {
     return makeCharacter(
-        "Fory",
+        { name: "Fory" },
         {
             front: {
                 height: math.unit(7, "feet"),
@@ -705,7 +702,7 @@ characterMakers["Fory"] = () => {
 
 characterMakers["Kurrikage"] = () => {
     return makeCharacter(
-        "Kurrikage",
+        { name: "Kurrikage" },
         {
             front: {
                 height: math.unit(7, "feet"),
@@ -772,7 +769,7 @@ characterMakers["Kurrikage"] = () => {
 
 characterMakers["Shingo"] = () => {
     return makeCharacter(
-        "Shingo",
+        { name: "Shingo" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -805,7 +802,7 @@ characterMakers["Shingo"] = () => {
 
 characterMakers["Aigey"] = () => {
     return makeCharacter(
-        "Aigey",
+        { name: "Aigey" },
         {
             side: {
                 height: math.unit(6, "feet"),
@@ -833,7 +830,7 @@ characterMakers["Aigey"] = () => {
 
 characterMakers["Natasha"] = () => {
     return makeCharacter(
-        "Natasha",
+        { name: "Natasha" },
         {
             front: {
                 height: math.unit(5 + 5/12, "feet"),
@@ -874,7 +871,7 @@ characterMakers["Natasha"] = () => {
 
 characterMakers["Malik"] = () => {
     return makeCharacter(
-        "Malik",
+        { name: "Malik" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -918,7 +915,7 @@ characterMakers["Malik"] = () => {
 
 characterMakers["Sefer"] = () => {
     return makeCharacter(
-        "Sefer",
+        { name: "Sefer" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -949,7 +946,7 @@ characterMakers["Sefer"] = () => {
 
 characterMakers["North"] = () => {
     return makeCharacter(
-        "North",
+        { name: "North" },
         {
             body: {
                 height: math.unit(2.2428, "meter"),
@@ -981,7 +978,7 @@ characterMakers["North"] = () => {
 
 characterMakers["Talan"] = () => {
     return makeCharacter(
-        "Talan",
+        { name: "Talan" },
         {
             body: {
                 height: math.unit(2, "meter"),
@@ -1021,7 +1018,7 @@ characterMakers["Talan"] = () => {
 
 characterMakers["Gael'Rathus"] = () => {
     return makeCharacter(
-        "Gael'Rathus",
+        { name: "Gael'Rathus" },
         {
             front: {
                 height: math.unit(2, "meter"),
@@ -1072,7 +1069,7 @@ characterMakers["Gael'Rathus"] = () => {
 
 characterMakers["Sosha"] = () => {
     return makeCharacter(
-        "Sosha",
+        { name: "Sosha" },
         {
             side: {
                 height: math.unit(2, "meter"),
@@ -1096,7 +1093,7 @@ characterMakers["Sosha"] = () => {
 
 characterMakers["RuNNoLa"] = () => {
     return makeCharacter(
-        "RuNNoLa",
+        { name: "RuNNoLa" },
         {
             side: {
                 height: math.unit(5 + 5/12, "feet"),
@@ -1129,7 +1126,7 @@ characterMakers["RuNNoLa"] = () => {
 
 characterMakers["Kurribird"] = () => {
     return makeCharacter(
-        "Kurribird",
+        { name: "Kurribird" },
         {
             front: {
                 height: math.unit(2, "meter"),
@@ -1174,7 +1171,7 @@ characterMakers["Kurribird"] = () => {
 
 characterMakers["Elbial"] = () => {
     return makeCharacter(
-        "Elbial",
+        { name: "Elbial" },
         {
             front: {
                 height: math.unit(2, "meter"),
@@ -1229,7 +1226,7 @@ characterMakers["Elbial"] = () => {
 
 characterMakers["Noah"] = () => {
     return makeCharacter(
-        "Noah",
+        { name: "Noah" },
         {
             front: {
                 height: math.unit(2, "meter"),
@@ -1275,7 +1272,7 @@ characterMakers["Noah"] = () => {
 
 characterMakers["Natalya"] = () => {
     return makeCharacter(
-        "Natalya",
+        { name: "Natalya" },
         {
             front: {
                 height: math.unit(2, "meter"),
@@ -1314,7 +1311,7 @@ characterMakers["Natalya"] = () => {
 
 characterMakers["Erestrebah"] = () => {
     return makeCharacter(
-        "Erestrebah",
+        { name: "Erestrebah" },
         {
             front: {
                 height: math.unit(2, "meter"),
@@ -1364,7 +1361,7 @@ characterMakers["Erestrebah"] = () => {
 
 characterMakers["Jennifer"] = () => {
     return makeCharacter(
-        "Jennifer",
+        { name: "Jennifer" },
         {
             front: {
                 height: math.unit(2, "meter"),
@@ -1405,7 +1402,7 @@ characterMakers["Jennifer"] = () => {
 
 characterMakers["Kalista"] = () => {
     return makeCharacter(
-        "Kalista",
+        { name: "Kalista" },
         {
             front: {
                 height: math.unit(2, "meter"),
@@ -1454,7 +1451,7 @@ characterMakers["Kalista"] = () => {
 
 characterMakers["GiantGrowingVixen"] = () => {
     return makeCharacter(
-        "GiantGrowingVixen",
+        { name: "GiantGrowingVixen" },
         {
             front: {
                 height: math.unit(2, "meter"),
@@ -1501,7 +1498,7 @@ characterMakers["GiantGrowingVixen"] = () => {
 
 characterMakers["Napalm"] = () => {
     return makeCharacter(
-        "Napalm",
+        { name: "Napalm" },
         {
             front: {
                 height: math.unit(2, "meter"),
@@ -1532,7 +1529,7 @@ characterMakers["Napalm"] = () => {
 
 characterMakers["Asana"] = () => {
     return makeCharacter(
-        "Asana",
+        { name: "Asana" },
         {
             front: {
                 height: math.unit(7 + 5 / 6, "feet"),
@@ -1585,7 +1582,7 @@ characterMakers["Asana"] = () => {
 
 characterMakers["Ebony"] = () => {
     return makeCharacter(
-        "Ebony",
+        { name: "Ebony" },
         {
             front: {
                 height: math.unit(2, "meter"),
@@ -1639,7 +1636,7 @@ characterMakers["Ebony"] = () => {
 
 characterMakers["Mountain"] = () => {
     return makeCharacter(
-        "Mountain",
+        { name: "Mountain" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -1682,7 +1679,7 @@ characterMakers["Mountain"] = () => {
 
 characterMakers["Rick"] = () => {
     return makeCharacter(
-        "Rick",
+        { name: "Rick" },
         {
             front: {
                 height: math.unit(8, "feet"),
@@ -1709,7 +1706,7 @@ characterMakers["Rick"] = () => {
 
 characterMakers["Ona"] = () => {
     return makeCharacter(
-        "Ona",
+        { name: "Ona" },
         {
             front: {
                 height: math.unit(8, "feet"),
@@ -1763,7 +1760,7 @@ characterMakers["Ona"] = () => {
 
 characterMakers["Mech"] = () => {
     return makeCharacter(
-        "Mech",
+        { name: "Mech" },
         {
             front: {
                 height: math.unit(12, "feet"),
@@ -1804,7 +1801,7 @@ characterMakers["Mech"] = () => {
 
 characterMakers["Gregory"] = () => {
     return makeCharacter(
-        "Gregory",
+        { name: "Gregory" },
         {
             front: {
                 height: math.unit(1.3, "meter"),
@@ -1831,7 +1828,7 @@ characterMakers["Gregory"] = () => {
 
 characterMakers["Elory"] = () => {
     return makeCharacter(
-        "Elory",
+        { name: "Elory" },
         {
             front: {
                 height: math.unit(2.8, "meter"),
@@ -1858,7 +1855,7 @@ characterMakers["Elory"] = () => {
 
 characterMakers["Angelpatamon"] = () => {
     return makeCharacter(
-        "Angelpatamon",
+        { name: "Angelpatamon" },
         {
             front: {
                 height: math.unit(470, "feet"),
@@ -1889,7 +1886,7 @@ characterMakers["Angelpatamon"] = () => {
 
 characterMakers["Cryae"] = () => {
     return makeCharacter(
-        "Cryae",
+        { name: "Cryae" },
         {
             side: {
                 height: math.unit(7.2, "meter"),
@@ -1913,7 +1910,7 @@ characterMakers["Cryae"] = () => {
 
 characterMakers["Xera"] = () => {
     return makeCharacter(
-        "Xera",
+        { name: "Xera" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -1970,7 +1967,7 @@ characterMakers["Xera"] = () => {
 
 characterMakers["Nebula"] = () => {
     return makeCharacter(
-        "Nebula",
+        { name: "Nebula" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -2006,7 +2003,7 @@ characterMakers["Nebula"] = () => {
 
 characterMakers["Abysgar"] = () => {
     return makeCharacter(
-        "Abysgar",
+        { name: "Abysgar" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -2041,7 +2038,7 @@ characterMakers["Abysgar"] = () => {
 
 characterMakers["Yakuz"] = () => {
     return makeCharacter(
-        "Yakuz",
+        { name: "Yakuz" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -2076,7 +2073,7 @@ characterMakers["Yakuz"] = () => {
 
 characterMakers["Mirova"] = () => {
     return makeCharacter(
-        "Mirova",
+        { name: "Mirova" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -2111,7 +2108,7 @@ characterMakers["Mirova"] = () => {
 
 characterMakers["Asana (Mech)"] = () => {
     return makeCharacter(
-        "Asana (Mech)",
+        { name: "Asana (Mech)" },
         {
             side: {
                 height: math.unit(28.35, "feet"),
@@ -2146,7 +2143,7 @@ characterMakers["Asana (Mech)"] = () => {
 
 characterMakers["Ashtrek"] = () => {
     return makeCharacter(
-        "Ashtrek",
+        { name: "Ashtrek" },
         {
             front: {
                 height: math.unit(2, "meters"),
@@ -2220,7 +2217,7 @@ characterMakers["Ashtrek"] = () => {
 
 characterMakers["Gale"] = () => {
     return makeCharacter(
-        "Gale",
+        { name: "Gale" },
         {
             front: {
                 height: math.unit(2, "meters"),
@@ -2267,7 +2264,7 @@ characterMakers["Gale"] = () => {
 
 characterMakers["Draylen"] = () => {
     return makeCharacter(
-        "Draylen",
+        { name: "Draylen" },
         {
             front: {
                 height: math.unit(2, "meters"),
@@ -2290,7 +2287,7 @@ characterMakers["Draylen"] = () => {
 
 characterMakers["Chez"] = () => {
     return makeCharacter(
-        "Chez",
+        { name: "Chez" },
         {
             front: {
                 height: math.unit(7 + 9 / 12, "feet"),
@@ -2325,7 +2322,7 @@ characterMakers["Chez"] = () => {
 
 characterMakers["Kaylum"] = () => {
     return makeCharacter(
-        "Kaylum",
+        { name: "Kaylum" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -2381,7 +2378,7 @@ characterMakers["Kaylum"] = () => {
 
 characterMakers["Geta"] = () => {
     return makeCharacter(
-        "Geta",
+        { name: "Geta" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -2409,7 +2406,7 @@ characterMakers["Geta"] = () => {
 
 characterMakers["Tyrnn"] = () => {
     return makeCharacter(
-        "Tyrnn",
+        { name: "Tyrnn" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -2437,7 +2434,7 @@ characterMakers["Tyrnn"] = () => {
 
 characterMakers["Apple"] = () => {
     return makeCharacter(
-        "Apple",
+        { name: "Apple" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -2473,7 +2470,7 @@ characterMakers["Apple"] = () => {
 
 characterMakers["Vulpes"] = () => {
     return makeCharacter(
-        "Vulpes",
+        { name: "Vulpes" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -2548,7 +2545,7 @@ characterMakers["Vulpes"] = () => {
 
 characterMakers["Rain Fallen"] = () => {
     return makeCharacter(
-        "Rain Fallen",
+        { name: "Rain Fallen" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -2624,7 +2621,7 @@ characterMakers["Rain Fallen"] = () => {
 
 characterMakers["Zaakira"] = () => {
     return makeCharacter(
-        "Zaakira",
+        { name: "Zaakira" },
         {
             standing: {
                 height: math.unit(6, "feet"),
@@ -2660,7 +2657,7 @@ characterMakers["Zaakira"] = () => {
 
 characterMakers["Sigvald"] = () => {
     return makeCharacter(
-        "Sigvald",
+        { name: "Sigvald" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -2709,7 +2706,7 @@ characterMakers["Sigvald"] = () => {
 
 characterMakers["Scott"] = () => {
     return makeCharacter(
-        "Scott",
+        { name: "Scott" },
         {
             side: {
                 height: math.unit(12, "feet"),
@@ -2745,7 +2742,7 @@ characterMakers["Scott"] = () => {
 
 characterMakers["Tobias"] = () => {
     return makeCharacter(
-        "Tobias",
+        { name: "Tobias" },
         {
             side: {
                 height: math.unit(8, "meters"),
@@ -2769,7 +2766,7 @@ characterMakers["Tobias"] = () => {
 
 characterMakers["Kieran"] = () => {
     return makeCharacter(
-        "Kieran",
+        { name: "Kieran" },
         {
             front: {
                 height: math.unit(5.5, "feet"),
@@ -2802,7 +2799,7 @@ characterMakers["Kieran"] = () => {
 
 characterMakers["Sanya"] = () => {
     return makeCharacter(
-        "Sanya",
+        { name: "Sanya" },
         {
             side: {
                 height: math.unit(2, "meters"),
@@ -2835,7 +2832,7 @@ characterMakers["Sanya"] = () => {
 
 characterMakers["Miranda"] = () => {
     return makeCharacter(
-        "Miranda",
+        { name: "Miranda" },
         {
             side: {
                 height: math.unit(2, "meters"),
@@ -2859,7 +2856,7 @@ characterMakers["Miranda"] = () => {
 
 characterMakers["James"] = () => {
     return makeCharacter(
-        "James",
+        { name: "James" },
         {
             side: {
                 height: math.unit(2, "meters"),
@@ -2883,7 +2880,7 @@ characterMakers["James"] = () => {
 
 characterMakers["Heather"] = () => {
     return makeCharacter(
-        "Heather",
+        { name: "Heather" },
         {
             side: {
                 height: math.unit(9.5, "feet"),
@@ -2906,7 +2903,7 @@ characterMakers["Heather"] = () => {
 
 characterMakers["Lukas"] = () => {
     return makeCharacter(
-        "Lukas",
+        { name: "Lukas" },
         {
             side: {
                 height: math.unit(6.5, "feet"),
@@ -2930,7 +2927,7 @@ characterMakers["Lukas"] = () => {
 
 characterMakers["Louise"] = () => {
     return makeCharacter(
-        "Louise",
+        { name: "Louise" },
         {
             side: {
                 height: math.unit(5, "feet"),
@@ -2953,7 +2950,7 @@ characterMakers["Louise"] = () => {
 
 characterMakers["Ramona"] = () => {
     return makeCharacter(
-        "Ramona",
+        { name: "Ramona" },
         {
             side: {
                 height: math.unit(6, "feet"),
@@ -2984,7 +2981,7 @@ characterMakers["Ramona"] = () => {
 
 characterMakers["Deerpuff"] = () => {
     return makeCharacter(
-        "Deerpuff",
+        { name: "Deerpuff" },
         {
             standing: {
                 height: math.unit(5.75, "feet"),
@@ -3046,7 +3043,7 @@ characterMakers["Deerpuff"] = () => {
 
 characterMakers["Vivian"] = () => {
     return makeCharacter(
-        "Vivian",
+        { name: "Vivian" },
         {
             stomping: {
                 height: math.unit(6, "feet"),
@@ -3095,7 +3092,7 @@ characterMakers["Vivian"] = () => {
 
 characterMakers["Prince"] = () => {
     return makeCharacter(
-        "Prince",
+        { name: "Prince" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -3148,7 +3145,7 @@ characterMakers["Prince"] = () => {
 
 characterMakers["Psymon"] = () => {
     return makeCharacter(
-        "Psymon",
+        { name: "Psymon" },
         {
             standing: {
                 height: math.unit(6, "feet"),
@@ -3211,7 +3208,7 @@ characterMakers["Psymon"] = () => {
 
 characterMakers["Daimos"] = () => {
     return makeCharacter(
-        "Daimos",
+        { name: "Daimos" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -3248,7 +3245,7 @@ characterMakers["Daimos"] = () => {
 
 characterMakers["Blake"] = () => {
     return makeCharacter(
-        "Blake",
+        { name: "Blake" },
         {
             side: {
                 height: math.unit(6, "feet"),
@@ -3309,7 +3306,7 @@ characterMakers["Blake"] = () => {
 
 characterMakers["Guisetto"] = () => {
     return makeCharacter(
-        "Guisetto",
+        { name: "Guisetto" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -3351,7 +3348,7 @@ characterMakers["Guisetto"] = () => {
 
 characterMakers["Luxor"] = () => {
     return makeCharacter(
-        "Luxor",
+        { name: "Luxor" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -3396,7 +3393,7 @@ characterMakers["Luxor"] = () => {
 
 characterMakers["Huoyan"] = () => {
     return makeCharacter(
-        "Huoyan",
+        { name: "Huoyan" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -3443,7 +3440,7 @@ characterMakers["Huoyan"] = () => {
 
 characterMakers["Tails"] = () => {
     return makeCharacter(
-        "Tails",
+        { name: "Tails" },
         {
             front: {
                 height: math.unit(5 + 3/4, "feet"),
@@ -3466,7 +3463,7 @@ characterMakers["Tails"] = () => {
 
 characterMakers["Rainy"] = () => {
     return makeCharacter(
-        "Rainy",
+        { name: "Rainy" },
         {
             front: {
                 height: math.unit(4, "feet"),
@@ -3489,7 +3486,7 @@ characterMakers["Rainy"] = () => {
 
 characterMakers["Rainier"] = () => {
     return makeCharacter(
-        "Rainier",
+        { name: "Rainier" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -3512,7 +3509,7 @@ characterMakers["Rainier"] = () => {
 
 characterMakers["Andy"] = () => {
     return makeCharacter(
-        "Andy",
+        { name: "Andy" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -3547,7 +3544,7 @@ characterMakers["Andy"] = () => {
 
 characterMakers["Cimmaron"] = () => {
     return makeCharacter(
-        "Cimmaron",
+        { name: "Cimmaron" },
         {
             frontClothed: {
                 height: math.unit(6, "feet"),
@@ -3606,7 +3603,7 @@ characterMakers["Cimmaron"] = () => {
 
 characterMakers["Akari Kaen"] = () => {
     return makeCharacter(
-        "Akari Kaen",
+        { name: "Akari Kaen" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -3635,7 +3632,7 @@ characterMakers["Akari Kaen"] = () => {
 
 characterMakers["Cynosura"] = () => {
     return makeCharacter(
-        "Cynosura",
+        { name: "Cynosura" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -3684,7 +3681,7 @@ characterMakers["Cynosura"] = () => {
 
 characterMakers["Gin"] = () => {
     return makeCharacter(
-        "Gin",
+        { name: "Gin" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -3739,7 +3736,7 @@ characterMakers["Gin"] = () => {
 
 characterMakers["Guy"] = () => {
     return makeCharacter(
-        "Guy",
+        { name: "Guy" },
         {
             front: {
                 height: math.unit(6 + 1/6, "feet"),
@@ -3778,7 +3775,7 @@ characterMakers["Guy"] = () => {
 
 characterMakers["Tiberius"] = () => {
     return makeCharacter(
-        "Tiberius",
+        { name: "Tiberius" },
         {
             front: {
                 height: math.unit(9, "feet"),
@@ -3811,7 +3808,7 @@ characterMakers["Tiberius"] = () => {
 
 characterMakers["Surgo"] = () => {
     return makeCharacter(
-        "Surgo",
+        { name: "Surgo" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -3852,7 +3849,7 @@ characterMakers["Surgo"] = () => {
 
 characterMakers["Cibus"] = () => {
     return makeCharacter(
-        "Cibus",
+        { name: "Cibus" },
         {
             side: {
                 height: math.unit(6, "feet"),
@@ -3876,7 +3873,7 @@ characterMakers["Cibus"] = () => {
 
 characterMakers["Nibbles"] = () => {
     return makeCharacter(
-        "Nibbles",
+        { name: "Nibbles" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -3907,7 +3904,7 @@ characterMakers["Nibbles"] = () => {
 
 characterMakers["Rikky"] = () => {
     return makeCharacter(
-        "Rikky",
+        { name: "Rikky" },
         {
             side: {
                 height: math.unit(5 + 1/6, "feet"),
@@ -3938,7 +3935,7 @@ characterMakers["Rikky"] = () => {
 
 characterMakers["Malfressa"] = () => {
     return makeCharacter(
-        "Malfressa",
+        { name: "Malfressa" },
         {
             side: {
                 height: math.unit(370, "cm"),
@@ -3983,7 +3980,7 @@ characterMakers["Malfressa"] = () => {
 
 characterMakers["Jaro"] = () => {
     return makeCharacter(
-        "Jaro",
+        { name: "Jaro" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -4026,7 +4023,7 @@ characterMakers["Jaro"] = () => {
 
 characterMakers["Rogue"] = () => {
     return makeCharacter(
-        "Rogue",
+        { name: "Rogue" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -4049,7 +4046,7 @@ characterMakers["Rogue"] = () => {
 
 characterMakers["Piper"] = () => {
     return makeCharacter(
-        "Piper",
+        { name: "Piper" },
         {
             front: {
                 height: math.unit(5 + 8/12, "feet"),
@@ -4085,7 +4082,7 @@ characterMakers["Piper"] = () => {
 
 characterMakers["Gemini"] = () => {
     return makeCharacter(
-        "Gemini",
+        { name: "Gemini" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -4129,7 +4126,7 @@ characterMakers["Gemini"] = () => {
 
 characterMakers["Alicia"] = () => {
     return makeCharacter(
-        "Alicia",
+        { name: "Alicia" },
         {
             anthro: {
                 height: math.unit(2.35, "meters"),
@@ -4168,7 +4165,7 @@ characterMakers["Alicia"] = () => {
 
 characterMakers["Archy"] = () => {
     return makeCharacter(
-        "Archy",
+        { name: "Archy" },
         {
             front: {
                 height: math.unit(7, "feet"),
@@ -4207,7 +4204,7 @@ characterMakers["Archy"] = () => {
 
 characterMakers["Berri"] = () => {
     return makeCharacter(
-        "Berri",
+        { name: "Berri" },
         {
             front: {
                 height: math.unit(1.65, "meters"),
@@ -4250,7 +4247,7 @@ characterMakers["Berri"] = () => {
 
 characterMakers["Lexi"] = () => {
     return makeCharacter(
-        "Lexi",
+        { name: "Lexi" },
         {
             front: {
                 height: math.unit(1.72, "meters"),
@@ -4281,7 +4278,7 @@ characterMakers["Lexi"] = () => {
 
 characterMakers["Martin"] = () => {
     return makeCharacter(
-        "Martin",
+        { name: "Martin" },
         {
             front: {
                 height: math.unit(1.69, "meters"),
@@ -4309,7 +4306,7 @@ characterMakers["Martin"] = () => {
 
 characterMakers["Juno"] = () => {
     return makeCharacter(
-        "Juno",
+        { name: "Juno" },
         {
             front: {
                 height: math.unit(1.69, "meters"),
@@ -4340,7 +4337,7 @@ characterMakers["Juno"] = () => {
 
 characterMakers["Samantha"] = () => {
     return makeCharacter(
-        "Samantha",
+        { name: "Samantha" },
         {
             front: {
                 height: math.unit(1.93, "meters"),
@@ -4395,7 +4392,7 @@ characterMakers["Samantha"] = () => {
 
 characterMakers["Dr. Clay"] = () => {
     return makeCharacter(
-        "Dr. Clay",
+        { name: "Dr. Clay" },
         {
             front: {
                 height: math.unit(1.92, "meters"),
@@ -4442,7 +4439,7 @@ characterMakers["Dr. Clay"] = () => {
 
 characterMakers["Wyvrn Ripsnarl"] = () => {
     return makeCharacter(
-        "Wyvrn Ripsnarl",
+        { name: "Wyvrn Ripsnarl" },
         {
             front: {
                 height: math.unit(2, "meters"),
@@ -4465,7 +4462,7 @@ characterMakers["Wyvrn Ripsnarl"] = () => {
 
 characterMakers["Vemus"] = () => {
     return makeCharacter(
-        "Vemus",
+        { name: "Vemus" },
         {
             front: {
                 height: math.unit(2, "meters"),
@@ -4506,7 +4503,7 @@ characterMakers["Vemus"] = () => {
 
 characterMakers["Beherit"] = () => {
     return makeCharacter(
-        "Beherit",
+        { name: "Beherit" },
         {
             front: {
                 height: math.unit(2, "meters"),
@@ -4542,7 +4539,7 @@ characterMakers["Beherit"] = () => {
 
 characterMakers["Everett"] = () => {
     return makeCharacter(
-        "Everett",
+        { name: "Everett" },
         {
             front: {
                 height: math.unit(2, "meters"),
@@ -4587,7 +4584,7 @@ characterMakers["Everett"] = () => {
 
 characterMakers["Rose Lion"] = () => {
     return makeCharacter(
-        "Rose Lion",
+        { name: "Rose Lion" },
         {
             front: {
                 height: math.unit(2, "meters"),
@@ -4630,7 +4627,7 @@ characterMakers["Rose Lion"] = () => {
 
 characterMakers["Regal"] = () => {
     return makeCharacter(
-        "Regal",
+        { name: "Regal" },
         {
             front: {
                 height: math.unit(2, "meters"),
@@ -4661,7 +4658,7 @@ characterMakers["Regal"] = () => {
 
 characterMakers["Opal"] = () => {
     return makeCharacter(
-        "Opal",
+        { name: "Opal" },
         {
             front: {
                 height: math.unit(4 + 11/12, "feet"),
@@ -4708,7 +4705,7 @@ characterMakers["Opal"] = () => {
 
 characterMakers["Vector Wuff"] = () => {
     return makeCharacter(
-        "Vector Wuff",
+        { name: "Vector Wuff" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -4739,7 +4736,7 @@ characterMakers["Vector Wuff"] = () => {
 
 characterMakers["Dannik"] = () => {
     return makeCharacter(
-        "Dannik",
+        { name: "Dannik" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -4762,7 +4759,7 @@ characterMakers["Dannik"] = () => {
 
 characterMakers["Azura Saharah"] = () => {
     return makeCharacter(
-        "Azura Saharah",
+        { name: "Azura Saharah" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -4793,7 +4790,7 @@ characterMakers["Azura Saharah"] = () => {
 
 characterMakers["Kennedy"] = () => {
     return makeCharacter(
-        "Kennedy",
+        { name: "Kennedy" },
         {
             side: {
                 height: math.unit(5 + 4/12, "feet"),
@@ -4820,7 +4817,7 @@ characterMakers["Kennedy"] = () => {
 
 characterMakers["Odi Lunar"] = () => {
     return makeCharacter(
-        "Odi Lunar",
+        { name: "Odi Lunar" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -4847,7 +4844,7 @@ characterMakers["Odi Lunar"] = () => {
 
 characterMakers["Mandake"] = () => {
     return makeCharacter(
-        "Mandake",
+        { name: "Mandake" },
         {
             back: {
                 height: math.unit(6, "feet"),
@@ -4890,7 +4887,7 @@ characterMakers["Mandake"] = () => {
 
 characterMakers["Yozey"] = () => {
     return makeCharacter(
-        "Yozey",
+        { name: "Yozey" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -4933,7 +4930,7 @@ characterMakers["Yozey"] = () => {
 
 characterMakers["Valeska Voss"] = () => {
     return makeCharacter(
-        "Valeska Voss",
+        { name: "Valeska Voss" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -4968,7 +4965,7 @@ characterMakers["Valeska Voss"] = () => {
 
 characterMakers["Gene Zeta"] = () => {
     return makeCharacter(
-        "Gene Zeta",
+        { name: "Gene Zeta" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -4993,7 +4990,7 @@ characterMakers["Gene Zeta"] = () => {
 
 characterMakers["Razinox"] = () => {
     return makeCharacter(
-        "Razinox",
+        { name: "Razinox" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -5042,7 +5039,7 @@ characterMakers["Razinox"] = () => {
 
 characterMakers["Cobalt"] = () => {
     return makeCharacter(
-        "Cobalt",
+        { name: "Cobalt" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -5073,7 +5070,7 @@ characterMakers["Cobalt"] = () => {
 
 characterMakers["Amanda"] = () => {
     return makeCharacter(
-        "Amanda",
+        { name: "Amanda" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -5096,7 +5093,7 @@ characterMakers["Amanda"] = () => {
 
 characterMakers["Teal"] = () => {
     return makeCharacter(
-        "Teal",
+        { name: "Teal" },
         {
             front: {
                 height: math.unit(5.59, "feet"),
@@ -5133,7 +5130,7 @@ characterMakers["Teal"] = () => {
 
 characterMakers["Ravin Amulet"] = () => {
     return makeCharacter(
-        "Ravin Amulet",
+        { name: "Ravin Amulet" },
         {
             frontCat: {
                 height: math.unit(6, "feet"),
@@ -5192,7 +5189,7 @@ characterMakers["Ravin Amulet"] = () => {
 
 characterMakers["Fluoresce"] = () => {
     return makeCharacter(
-        "Fluoresce",
+        { name: "Fluoresce" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -5227,7 +5224,7 @@ characterMakers["Fluoresce"] = () => {
 
 characterMakers["Aurora"] = () => {
     return makeCharacter(
-        "Aurora",
+        { name: "Aurora" },
         {
             front: {
                 height: math.unit(9 + 6/12, "feet"),
@@ -5258,7 +5255,7 @@ characterMakers["Aurora"] = () => {
 
 characterMakers["Ranek"] = () => {
     return makeCharacter(
-        "Ranek",
+        { name: "Ranek" },
         {
             front: {
                 height: math.unit(194, "cm"),
@@ -5309,7 +5306,7 @@ characterMakers["Ranek"] = () => {
 
 characterMakers["Andrew Cooper"] = () => {
     return makeCharacter(
-        "Andrew Cooper",
+        { name: "Andrew Cooper" },
         {
             front: {
                 height: math.unit(5 + 6/12, "feet"),
@@ -5340,7 +5337,7 @@ characterMakers["Andrew Cooper"] = () => {
 
 characterMakers["Akane Sato"] = () => {
     return makeCharacter(
-        "Akane Sato",
+        { name: "Akane Sato" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -5381,7 +5378,7 @@ characterMakers["Akane Sato"] = () => {
 
 characterMakers["Rook"] = () => {
     return makeCharacter(
-        "Rook",
+        { name: "Rook" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -5412,7 +5409,7 @@ characterMakers["Rook"] = () => {
 
 characterMakers["Prodigy"] = () => {
     return makeCharacter(
-        "Prodigy",
+        { name: "Prodigy" },
         {
             front: {
                 height: math.unit(12 + 2/12, "feet"),
@@ -5443,7 +5440,7 @@ characterMakers["Prodigy"] = () => {
 
 characterMakers["Daniel"] = () => {
     return makeCharacter(
-        "Daniel",
+        { name: "Daniel" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -5474,7 +5471,7 @@ characterMakers["Daniel"] = () => {
 
 characterMakers["Chiros"] = () => {
     return makeCharacter(
-        "Chiros",
+        { name: "Chiros" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -5507,7 +5504,7 @@ characterMakers["Chiros"] = () => {
 
 characterMakers["Selka"] = () => {
     return makeCharacter(
-        "Selka",
+        { name: "Selka" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -5531,7 +5528,7 @@ characterMakers["Selka"] = () => {
 
 characterMakers["Verin"] = () => {
     return makeCharacter(
-        "Verin",
+        { name: "Verin" },
         {
             front: {
                 height: math.unit(8 + 3/12, "feet"),
@@ -5590,7 +5587,7 @@ characterMakers["Verin"] = () => {
 
 characterMakers["Sovrim Terraquian"] = () => {
     return makeCharacter(
-        "Sovrim Terraquian",
+        { name: "Sovrim Terraquian" },
         {
             front: {
                 height: math.unit(2.718, "meters"),
@@ -5637,7 +5634,7 @@ characterMakers["Sovrim Terraquian"] = () => {
 
 characterMakers["Reece Silvermane"] = () => {
     return makeCharacter(
-        "Reece Silvermane",
+        { name: "Reece Silvermane" },
         {
             front: {
                 height: math.unit(7, "feet"),
@@ -5662,7 +5659,7 @@ characterMakers["Reece Silvermane"] = () => {
 
 characterMakers["Kane"] = () => {
     return makeCharacter(
-        "Kane",
+        { name: "Kane" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -5690,7 +5687,7 @@ characterMakers["Kane"] = () => {
 
 characterMakers["Tegon"] = () => {
     return makeCharacter(
-        "Tegon",
+        { name: "Tegon" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -5727,7 +5724,7 @@ characterMakers["Tegon"] = () => {
 
 characterMakers["Arcturax"] = () => {
     return makeCharacter(
-        "Arcturax",
+        { name: "Arcturax" },
         {
             side: {
                 height: math.unit(6, "feet"),
@@ -5764,7 +5761,7 @@ characterMakers["Arcturax"] = () => {
 
 characterMakers["Sentri"] = () => {
     return makeCharacter(
-        "Sentri",
+        { name: "Sentri" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -5803,7 +5800,7 @@ characterMakers["Sentri"] = () => {
 
 characterMakers["Corvin"] = () => {
     return makeCharacter(
-        "Corvin",
+        { name: "Corvin" },
         {
             front: {
                 height: math.unit(5 + 8/12, "feet"),
@@ -5875,7 +5872,7 @@ characterMakers["Corvin"] = () => {
 
 characterMakers["Q"] = () => {
     return makeCharacter(
-        "Q",
+        { name: "Q" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -5917,7 +5914,7 @@ characterMakers["Q"] = () => {
 
 characterMakers["Carley"] = () => {
     return makeCharacter(
-        "Carley",
+        { name: "Carley" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -5950,7 +5947,7 @@ characterMakers["Carley"] = () => {
 
 characterMakers["Citrine"] = () => {
     return makeCharacter(
-        "Citrine",
+        { name: "Citrine" },
         {
             front: {
                 height: math.unit(3, "feet"),
@@ -5973,7 +5970,7 @@ characterMakers["Citrine"] = () => {
 
 characterMakers["Aura Starwind"] = () => {
     return makeCharacter(
-        "Aura Starwind",
+        { name: "Aura Starwind" },
         {
             front: {
                 height: math.unit(14, "feet"),
@@ -6035,7 +6032,7 @@ characterMakers["Aura Starwind"] = () => {
 
 characterMakers["Rivet"] = () => {
     return makeCharacter(
-        "Rivet",
+        { name: "Rivet" },
         {
             front: {
                 height: math.unit(2 + 7/12, "feet"),
@@ -6080,7 +6077,7 @@ characterMakers["Rivet"] = () => {
 
 characterMakers["Coffee"] = () => {
     return makeCharacter(
-        "Coffee",
+        { name: "Coffee" },
         {
             front: {
                 height: math.unit(5 + 9/12, "feet"),
@@ -6124,7 +6121,7 @@ characterMakers["Coffee"] = () => {
 
 characterMakers["Chari-Gal"] = () => {
     return makeCharacter(
-        "Chari-Gal",
+        { name: "Chari-Gal" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -6163,7 +6160,7 @@ characterMakers["Chari-Gal"] = () => {
 
 characterMakers["Nova"] = () => {
     return makeCharacter(
-        "Nova",
+        { name: "Nova" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -6192,7 +6189,7 @@ characterMakers["Nova"] = () => {
 
 characterMakers["Argent"] = () => {
     return makeCharacter(
-        "Argent",
+        { name: "Argent" },
         {
             front: {
                 height: math.unit(3 + 1/12, "feet"),
@@ -6225,7 +6222,7 @@ characterMakers["Argent"] = () => {
 
 characterMakers["Mira al-Cul"] = () => {
     return makeCharacter(
-        "Mira al-Cul",
+        { name: "Mira al-Cul" },
         {
             lamp: {
                 height: math.unit(7 * 1559 / 989, "feet"),
@@ -6280,7 +6277,7 @@ characterMakers["Mira al-Cul"] = () => {
 
 characterMakers["Kuro-shi Uchū"] = () => {
     return makeCharacter(
-        "Kuro-shi Uchū",
+        { name: "Kuro-shi Uchū" },
         {
             front: {
                 height: math.unit(17 + 1/12, "feet"),
@@ -6317,7 +6314,7 @@ characterMakers["Kuro-shi Uchū"] = () => {
 
 characterMakers["Katherine"] = () => {
     return makeCharacter(
-        "Katherine",
+        { name: "Katherine" },
         {
             front: {
                 height: math.unit(5 + 2/12, "feet"),
@@ -6362,7 +6359,7 @@ characterMakers["Katherine"] = () => {
 
 characterMakers["Yevis"] = () => {
     return makeCharacter(
-        "Yevis",
+        { name: "Yevis" },
         {
             front: {
                 height: math.unit(7 + 8/12, "feet"),
@@ -6410,7 +6407,7 @@ characterMakers["Yevis"] = () => {
 
 characterMakers["Xavier"] = () => {
     return makeCharacter(
-        "Xavier",
+        { name: "Xavier" },
         {
             front: {
                 height: math.unit(5 + 8/12, "feet"),
@@ -6451,7 +6448,7 @@ characterMakers["Xavier"] = () => {
 
 characterMakers["Joshii"] = () => {
     return makeCharacter(
-        "Joshii",
+        { name: "Joshii" },
         {
             front: {
                 height: math.unit(5 + 5/12, "feet"),
@@ -6493,7 +6490,7 @@ characterMakers["Joshii"] = () => {
 
 characterMakers["Goddess Elizabeth"] = () => {
     return makeCharacter(
-        "Goddess Elizabeth",
+        { name: "Goddess Elizabeth" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -6533,7 +6530,7 @@ characterMakers["Goddess Elizabeth"] = () => {
 
 characterMakers["Kara"] = () => {
     return makeCharacter(
-        "Kara",
+        { name: "Kara" },
         {
             front: {
                 height: math.unit(5 + 9/12, "feet"),
@@ -6568,7 +6565,7 @@ characterMakers["Kara"] = () => {
 
 characterMakers["Tyrone"] = () => {
     return makeCharacter(
-        "Tyrone",
+        { name: "Tyrone" },
         {
             front: {
                 height: math.unit(18, "feet"),
@@ -6597,7 +6594,7 @@ characterMakers["Tyrone"] = () => {
 
 characterMakers["Danny"] = () => {
     return makeCharacter(
-        "Danny",
+        { name: "Danny" },
         {
             front: {
                 height: math.unit(7 + 8/12, "feet"),
@@ -6630,7 +6627,7 @@ characterMakers["Danny"] = () => {
 
 characterMakers["Mallow"] = () => {
     return makeCharacter(
-        "Mallow",
+        { name: "Mallow" },
         {
             front: {
                 height: math.unit(3.5, "inches"),
@@ -6663,7 +6660,7 @@ characterMakers["Mallow"] = () => {
 
 characterMakers["Starry Aqua"] = () => {
     return makeCharacter(
-        "Starry Aqua",
+        { name: "Starry Aqua" },
         {
             front: {
                 height: math.unit(9, "feet"),
@@ -6720,7 +6717,7 @@ characterMakers["Starry Aqua"] = () => {
 
 characterMakers["Luka"] = () => {
     return makeCharacter(
-        "Luka",
+        { name: "Luka" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -6761,7 +6758,7 @@ characterMakers["Luka"] = () => {
 
 characterMakers["Natalie Nightring"] = () => {
     return makeCharacter(
-        "Natalie Nightring",
+        { name: "Natalie Nightring" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -6802,7 +6799,7 @@ characterMakers["Natalie Nightring"] = () => {
 
 characterMakers["Danni Rosie"] = () => {
     return makeCharacter(
-        "Danni Rosie",
+        { name: "Danni Rosie" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -6827,7 +6824,7 @@ characterMakers["Danni Rosie"] = () => {
 
 characterMakers["Samantha Kruse"] = () => {
     return makeCharacter(
-        "Samantha Kruse",
+        { name: "Samantha Kruse" },
         {
             front: {
                 height: math.unit(5 + 9/12, "feet"),
@@ -6871,7 +6868,7 @@ characterMakers["Samantha Kruse"] = () => {
 
 characterMakers["Amelia Rosie"] = () => {
     return makeCharacter(
-        "Amelia Rosie",
+        { name: "Amelia Rosie" },
         {
             back: {
                 height: math.unit(5 + 4/12, "feet"),
@@ -6920,7 +6917,7 @@ characterMakers["Amelia Rosie"] = () => {
 
 characterMakers["Rook Kitara"] = () => {
     return makeCharacter(
-        "Rook Kitara",
+        { name: "Rook Kitara" },
         {
             front: {
                 height: math.unit(5 + 11/12, "feet"),
@@ -6957,7 +6954,7 @@ characterMakers["Rook Kitara"] = () => {
 
 characterMakers["Pisces"] = () => {
     return makeCharacter(
-        "Pisces",
+        { name: "Pisces" },
         {
             front: {
                 height: math.unit(7, "feet"),
@@ -7012,7 +7009,7 @@ characterMakers["Pisces"] = () => {
 
 characterMakers["Zelas"] = () => {
     return makeCharacter(
-        "Zelas",
+        { name: "Zelas" },
         {
             front: {
                 height: math.unit(2.3, "meters"),
@@ -7062,7 +7059,7 @@ characterMakers["Zelas"] = () => {
 
 characterMakers["Talbot"] = () => {
     return makeCharacter(
-        "Talbot",
+        { name: "Talbot" },
         {
             front: {
                 height: math.unit(1, "inch"),
@@ -7086,7 +7083,7 @@ characterMakers["Talbot"] = () => {
 
 characterMakers["Fliss"] = () => {
     return makeCharacter(
-        "Fliss",
+        { name: "Fliss" },
         {
             front: {
                 height: math.unit(3 + 3/12, "feet"),
@@ -7131,7 +7128,7 @@ characterMakers["Fliss"] = () => {
 
 characterMakers["Fleta"] = () => {
     return makeCharacter(
-        "Fleta",
+        { name: "Fleta" },
         {
             front: {
                 height: math.unit(5, "cm"),
@@ -7164,7 +7161,7 @@ characterMakers["Fleta"] = () => {
 
 characterMakers["Dominic"] = () => {
     return makeCharacter(
-        "Dominic",
+        { name: "Dominic" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -7235,7 +7232,7 @@ characterMakers["Dominic"] = () => {
 
 characterMakers["Major Colonel"] = () => {
     return makeCharacter(
-        "Major Colonel",
+        { name: "Major Colonel" },
         {
             front: {
                 height: math.unit(400, "feet"),
@@ -7266,7 +7263,7 @@ characterMakers["Major Colonel"] = () => {
 
 characterMakers["Axel Lycan"] = () => {
     return makeCharacter(
-        "Axel Lycan",
+        { name: "Axel Lycan" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -7291,7 +7288,7 @@ characterMakers["Axel Lycan"] = () => {
 
 characterMakers["Vanrel (Hyena)"] = () => {
     return makeCharacter(
-        "Vanrel (Hyena)",
+        { name: "Vanrel (Hyena)" },
         {
             front: {
                 height: math.unit(5 + 9/12, "feet"),
@@ -7316,7 +7313,7 @@ characterMakers["Vanrel (Hyena)"] = () => {
 
 characterMakers["Abbott Absol"] = () => {
     return makeCharacter(
-        "Abbott Absol",
+        { name: "Abbott Absol" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -7348,7 +7345,7 @@ characterMakers["Abbott Absol"] = () => {
 
 characterMakers["Hector"] = () => {
     return makeCharacter(
-        "Hector",
+        { name: "Hector" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -7377,7 +7374,7 @@ characterMakers["Hector"] = () => {
 
 characterMakers["Sal"] = () => {
     return makeCharacter(
-        "Sal",
+        { name: "Sal" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -7402,7 +7399,7 @@ characterMakers["Sal"] = () => {
 
 characterMakers["Ranger"] = () => {
     return makeCharacter(
-        "Ranger",
+        { name: "Ranger" },
         {
             front: {
                 height: math.unit(3, "meters"),
@@ -7427,7 +7424,7 @@ characterMakers["Ranger"] = () => {
 
 characterMakers["Theresa"] = () => {
     return makeCharacter(
-        "Theresa",
+        { name: "Theresa" },
         {
             front: {
                 height: math.unit(14, "feet"),
@@ -7452,7 +7449,7 @@ characterMakers["Theresa"] = () => {
 
 characterMakers["Ine"] = () => {
     return makeCharacter(
-        "Ine",
+        { name: "Ine" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -7477,7 +7474,7 @@ characterMakers["Ine"] = () => {
 
 characterMakers["Vial"] = () => {
     return makeCharacter(
-        "Vial",
+        { name: "Vial" },
         {
             front: {
                 height: math.unit(5, "feet"),
@@ -7502,7 +7499,7 @@ characterMakers["Vial"] = () => {
 
 characterMakers["Rovoska"] = () => {
     return makeCharacter(
-        "Rovoska",
+        { name: "Rovoska" },
         {
             side: {
                 height: math.unit(3.4, "meters"),
@@ -7526,7 +7523,7 @@ characterMakers["Rovoska"] = () => {
 
 characterMakers["Gunner Rotthbauer"] = () => {
     return makeCharacter(
-        "Gunner Rotthbauer",
+        { name: "Gunner Rotthbauer" },
         {
             front: {
                 height: math.unit(8, "feet"),
@@ -7569,7 +7566,7 @@ characterMakers["Gunner Rotthbauer"] = () => {
 
 characterMakers["Allatia"] = () => {
     return makeCharacter(
-        "Allatia",
+        { name: "Allatia" },
         {
             front: {
                 height: math.unit(5 + 5/12, "feet"),
@@ -7602,7 +7599,7 @@ characterMakers["Allatia"] = () => {
 
 characterMakers["Tene"] = () => {
     return makeCharacter(
-        "Tene",
+        { name: "Tene" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -7665,7 +7662,7 @@ characterMakers["Tene"] = () => {
 
 characterMakers["Evander"] = () => {
     return makeCharacter(
-        "Evander",
+        { name: "Evander" },
         {
             side: {
                 height: math.unit(6, "feet"),
@@ -7688,7 +7685,7 @@ characterMakers["Evander"] = () => {
 
 characterMakers["Ka'Tamra \"Spaz\" Ci'Karan"] = () => {
     return makeCharacter(
-        "Ka'Tamra \"Spaz\" Ci'Karan",
+        { name: "Ka'Tamra \"Spaz\" Ci'Karan" },
         {
             front: {
                 height: math.unit(12, "feet"),
@@ -7725,7 +7722,7 @@ characterMakers["Ka'Tamra \"Spaz\" Ci'Karan"] = () => {
 
 characterMakers["Zero Alurus"] = () => {
     return makeCharacter(
-        "Zero Alurus",
+        { name: "Zero Alurus" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -7764,7 +7761,7 @@ characterMakers["Zero Alurus"] = () => {
 
 characterMakers["Mega Shi"] = () => {
     return makeCharacter(
-        "Mega Shi",
+        { name: "Mega Shi" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -7823,7 +7820,7 @@ characterMakers["Mega Shi"] = () => {
 
 characterMakers["Odyssey"] = () => {
     return makeCharacter(
-        "Odyssey",
+        { name: "Odyssey" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -7873,7 +7870,7 @@ characterMakers["Odyssey"] = () => {
 
 characterMakers["Mekuto"] = () => {
     return makeCharacter(
-        "Mekuto",
+        { name: "Mekuto" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -7932,7 +7929,7 @@ characterMakers["Mekuto"] = () => {
 
 characterMakers["Dafydd Tomos"] = () => {
     return makeCharacter(
-        "Dafydd Tomos",
+        { name: "Dafydd Tomos" },
         {
             front: {
                 height: math.unit(6.5, "inches"),
@@ -7957,7 +7954,7 @@ characterMakers["Dafydd Tomos"] = () => {
 
 characterMakers["Splinter"] = () => {
     return makeCharacter(
-        "Splinter",
+        { name: "Splinter" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -7996,7 +7993,7 @@ characterMakers["Splinter"] = () => {
 
 characterMakers["SnowGabumon"] = () => {
     return makeCharacter(
-        "SnowGabumon",
+        { name: "SnowGabumon" },
         {
             front: {
                 height: math.unit(4 + 10/12, "feet"),
@@ -8057,7 +8054,7 @@ characterMakers["SnowGabumon"] = () => {
 
 characterMakers["Moody"] = () => {
     return makeCharacter(
-        "Moody",
+        { name: "Moody" },
         {
             front: {
                 height: math.unit(1.7, "meters"),
@@ -8094,7 +8091,7 @@ characterMakers["Moody"] = () => {
 
 characterMakers["Zyas"] = () => {
     return makeCharacter(
-        "Zyas",
+        { name: "Zyas" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -8131,7 +8128,7 @@ characterMakers["Zyas"] = () => {
 
 characterMakers["Cuon"] = () => {
     return makeCharacter(
-        "Cuon",
+        { name: "Cuon" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -8168,7 +8165,7 @@ characterMakers["Cuon"] = () => {
 
 characterMakers["Nyanuxk"] = () => {
     return makeCharacter(
-        "Nyanuxk",
+        { name: "Nyanuxk" },
         {
             front: {
                 height: math.unit(2.4, "meters"),
@@ -8244,7 +8241,7 @@ characterMakers["Nyanuxk"] = () => {
 
 characterMakers["Ailbhe"] = () => {
     return makeCharacter(
-        "Ailbhe",
+        { name: "Ailbhe" },
         {
             side: {
                 height: math.unit(6, "feet"),
@@ -8268,7 +8265,7 @@ characterMakers["Ailbhe"] = () => {
 
 characterMakers["Zevulfius"] = () => {
     return makeCharacter(
-        "Zevulfius",
+        { name: "Zevulfius" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -8330,7 +8327,7 @@ characterMakers["Zevulfius"] = () => {
 
 characterMakers["Rikes"] = () => {
     return makeCharacter(
-        "Rikes",
+        { name: "Rikes" },
         {
             front: {
                 height: math.unit(100, "feet"),
@@ -8355,7 +8352,7 @@ characterMakers["Rikes"] = () => {
 
 characterMakers["Adam Silver-Mane"] = () => {
     return makeCharacter(
-        "Adam Silver-Mane",
+        { name: "Adam Silver-Mane" },
         {
             anthro: {
                 height: math.unit(8, "feet"),
@@ -8422,7 +8419,7 @@ characterMakers["Adam Silver-Mane"] = () => {
 
 characterMakers["Ky'owin"] = () => {
     return makeCharacter(
-        "Ky'owin",
+        { name: "Ky'owin" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -8471,7 +8468,7 @@ characterMakers["Ky'owin"] = () => {
 
 characterMakers["Mal"] = () => {
     return makeCharacter(
-        "Mal",
+        { name: "Mal" },
         {
             front: {
                 height: math.unit(4, "feet"),
@@ -8504,7 +8501,7 @@ characterMakers["Mal"] = () => {
 
 characterMakers["Jordan Deware"] = () => {
     return makeCharacter(
-        "Jordan Deware",
+        { name: "Jordan Deware" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -8564,7 +8561,7 @@ characterMakers["Jordan Deware"] = () => {
 
 characterMakers["Kimiko"] = () => {
     return makeCharacter(
-        "Kimiko",
+        { name: "Kimiko" },
         {
             side: {
                 height: math.unit(6, "feet"),
@@ -8616,7 +8613,7 @@ characterMakers["Kimiko"] = () => {
 
 characterMakers["Andrew Sleepy"] = () => {
     return makeCharacter(
-        "Andrew Sleepy",
+        { name: "Andrew Sleepy" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -8647,7 +8644,7 @@ characterMakers["Andrew Sleepy"] = () => {
 
 characterMakers["Judio"] = () => {
     return makeCharacter(
-        "Judio",
+        { name: "Judio" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -8679,7 +8676,7 @@ characterMakers["Judio"] = () => {
 
 characterMakers["Nomaxice"] = () => {
     return makeCharacter(
-        "Nomaxice",
+        { name: "Nomaxice" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -8731,7 +8728,7 @@ characterMakers["Nomaxice"] = () => {
 
 characterMakers["Dydros"] = () => {
     return makeCharacter(
-        "Dydros",
+        { name: "Dydros" },
         {
             front: {
                 height: math.unit(12, "feet"),
@@ -8766,7 +8763,7 @@ characterMakers["Dydros"] = () => {
 
 characterMakers["Riggi"] = () => {
     return makeCharacter(
-        "Riggi",
+        { name: "Riggi" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -8823,7 +8820,7 @@ characterMakers["Riggi"] = () => {
 
 characterMakers["Alexi"] = () => {
     return makeCharacter(
-        "Alexi",
+        { name: "Alexi" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -8884,7 +8881,7 @@ characterMakers["Alexi"] = () => {
 
 characterMakers["Kayroo"] = () => {
     return makeCharacter(
-        "Kayroo",
+        { name: "Kayroo" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -8937,7 +8934,7 @@ characterMakers["Kayroo"] = () => {
 
 characterMakers["Rhys"] = () => {
     return makeCharacter(
-        "Rhys",
+        { name: "Rhys" },
         {
             front: {
                 height: math.unit(18, "feet"),
@@ -8978,7 +8975,7 @@ characterMakers["Rhys"] = () => {
 
 characterMakers["Toto"] = () => {
     return makeCharacter(
-        "Toto",
+        { name: "Toto" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -9015,7 +9012,7 @@ characterMakers["Toto"] = () => {
 
 characterMakers["King"] = () => {
     return makeCharacter(
-        "King",
+        { name: "King" },
         {
             back: {
                 height: math.unit(6, "feet"),
@@ -9050,7 +9047,7 @@ characterMakers["King"] = () => {
 
 characterMakers["Cordite"] = () => {
     return makeCharacter(
-        "Cordite",
+        { name: "Cordite" },
         {
             anthro: {
                 height: math.unit(6 + 5/12, "feet"),
@@ -9085,7 +9082,7 @@ characterMakers["Cordite"] = () => {
 
 characterMakers["Pianostrong"] = () => {
     return makeCharacter(
-        "Pianostrong",
+        { name: "Pianostrong" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -9137,7 +9134,7 @@ characterMakers["Pianostrong"] = () => {
 
 characterMakers["Kona"] = () => {
     return makeCharacter(
-        "Kona",
+        { name: "Kona" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -9179,7 +9176,7 @@ characterMakers["Kona"] = () => {
 
 characterMakers["Levi"] = () => {
     return makeCharacter(
-        "Levi",
+        { name: "Levi" },
         {
             side: {
                 height: math.unit(1.9, "meters"),
@@ -9232,7 +9229,7 @@ characterMakers["Levi"] = () => {
 
 characterMakers["BMC"] = () => {
     return makeCharacter(
-        "BMC",
+        { name: "BMC" },
         {
             front: {
                 height: math.unit(6 + 4/12, "feet"),
@@ -9273,7 +9270,7 @@ characterMakers["BMC"] = () => {
 
 characterMakers["Sven the Kaiju"] = () => {
     return makeCharacter(
-        "Sven the Kaiju",
+        { name: "Sven the Kaiju" },
         {
             front: {
                 height: math.unit(20, "feet"),
@@ -9310,7 +9307,7 @@ characterMakers["Sven the Kaiju"] = () => {
 
 characterMakers["Marik"] = () => {
     return makeCharacter(
-        "Marik",
+        { name: "Marik" },
         {
             front: {
                 height: math.unit(4, "meters"),
@@ -9351,7 +9348,7 @@ characterMakers["Marik"] = () => {
 
 characterMakers["Mel"] = () => {
     return makeCharacter(
-        "Mel",
+        { name: "Mel" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -9392,7 +9389,7 @@ characterMakers["Mel"] = () => {
 
 characterMakers["Lykonous"] = () => {
     return makeCharacter(
-        "Lykonous",
+        { name: "Lykonous" },
         {
             kaiju: {
                 height: math.unit(1.75, "meters"),
@@ -9437,7 +9434,7 @@ characterMakers["Lykonous"] = () => {
 
 characterMakers["Blü"] = () => {
     return makeCharacter(
-        "Blü",
+        { name: "Blü" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -9494,7 +9491,7 @@ characterMakers["Blü"] = () => {
 
 characterMakers["Scales"] = () => {
     return makeCharacter(
-        "Scales",
+        { name: "Scales" },
         {
             taurFront: {
                 height: math.unit(6, "feet"),
@@ -9539,7 +9536,7 @@ characterMakers["Scales"] = () => {
 
 characterMakers["Koragos"] = () => {
     return makeCharacter(
-        "Koragos",
+        { name: "Koragos" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -9586,7 +9583,7 @@ characterMakers["Koragos"] = () => {
 
 characterMakers["Xylrem"] = () => {
     return makeCharacter(
-        "Xylrem",
+        { name: "Xylrem" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -9623,7 +9620,7 @@ characterMakers["Xylrem"] = () => {
 
 characterMakers["Ikideru"] = () => {
     return makeCharacter(
-        "Ikideru",
+        { name: "Ikideru" },
         {
             front: {
                 height: math.unit(8, "feet"),
@@ -9686,7 +9683,7 @@ characterMakers["Ikideru"] = () => {
 
 characterMakers["Neo"] = () => {
     return makeCharacter(
-        "Neo",
+        { name: "Neo" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -9713,7 +9710,7 @@ characterMakers["Neo"] = () => {
 
 characterMakers["Chauncey (Chantz)"] = () => {
     return makeCharacter(
-        "Chauncey (Chantz)",
+        { name: "Chauncey (Chantz)" },
         {
             front: {
                 height: math.unit(13 + 10/12, "feet"),
@@ -9758,7 +9755,7 @@ characterMakers["Chauncey (Chantz)"] = () => {
 
 characterMakers["Epifox"] = () => {
     return makeCharacter(
-        "Epifox",
+        { name: "Epifox" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -9795,7 +9792,7 @@ characterMakers["Epifox"] = () => {
 
 characterMakers["Colin T."] = () => {
     return makeCharacter(
-        "Colin T.",
+        { name: "Colin T." },
         {
             front: {
                 height: math.unit(1.8796, "m"),
@@ -9840,7 +9837,7 @@ characterMakers["Colin T."] = () => {
 
 characterMakers["Matvei"] = () => {
     return makeCharacter(
-        "Matvei",
+        { name: "Matvei" },
         {
             front: {
                 height: math.unit(1.85, "meters"),
@@ -9865,7 +9862,7 @@ characterMakers["Matvei"] = () => {
 
 characterMakers["Quincy"] = () => {
     return makeCharacter(
-        "Quincy",
+        { name: "Quincy" },
         {
             front: {
                 height: math.unit(5 + 9/12, "feet"),
@@ -9919,7 +9916,7 @@ characterMakers["Quincy"] = () => {
 
 characterMakers["Vanrel"] = () => {
     return makeCharacter(
-        "Vanrel",
+        { name: "Vanrel" },
         {
             front: {
                 height: math.unit(4 + 7/12, "feet"),
@@ -9970,7 +9967,7 @@ characterMakers["Vanrel"] = () => {
 
 characterMakers["Kuiper Vanrel"] = () => {
     return makeCharacter(
-        "Kuiper Vanrel",
+        { name: "Kuiper Vanrel" },
         {
             front: {
                 height: math.unit(7 + 5/12, "feet"),
@@ -10002,7 +9999,7 @@ characterMakers["Kuiper Vanrel"] = () => {
 
 characterMakers["Keset Vanrel"] = () => {
     return makeCharacter(
-        "Keset Vanrel",
+        { name: "Keset Vanrel" },
         {
             front: {
                 height: math.unit(8 + 5/12, "feet"),
@@ -10041,7 +10038,7 @@ characterMakers["Keset Vanrel"] = () => {
 
 characterMakers["Neos"] = () => {
     return makeCharacter(
-        "Neos",
+        { name: "Neos" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -10098,7 +10095,7 @@ characterMakers["Neos"] = () => {
 
 characterMakers["Sammy Mouse"] = () => {
     return makeCharacter(
-        "Sammy Mouse",
+        { name: "Sammy Mouse" },
         {
             feminine: {
                 height: math.unit(5, "feet"),
@@ -10141,7 +10138,7 @@ characterMakers["Sammy Mouse"] = () => {
 
 characterMakers["Kole"] = () => {
     return makeCharacter(
-        "Kole",
+        { name: "Kole" },
         {
             front: {
                 height: math.unit(4, "feet"),
@@ -10176,7 +10173,7 @@ characterMakers["Kole"] = () => {
 
 characterMakers["Rufran"] = () => {
     return makeCharacter(
-        "Rufran",
+        { name: "Rufran" },
         {
             front: {
                 height: math.unit(2 + 6/12, "feet"),
@@ -10237,7 +10234,7 @@ characterMakers["Rufran"] = () => {
 
 characterMakers["Chip"] = () => {
     return makeCharacter(
-        "Chip",
+        { name: "Chip" },
         {
             front: {
                 height: math.unit(0.3, "meters"),
@@ -10261,7 +10258,7 @@ characterMakers["Chip"] = () => {
 
 characterMakers["Torvid"] = () => {
     return makeCharacter(
-        "Torvid",
+        { name: "Torvid" },
         {
             side: {
                 height: math.unit(2.3, "meters"),
@@ -10286,7 +10283,7 @@ characterMakers["Torvid"] = () => {
 
 characterMakers["Susan"] = () => {
     return makeCharacter(
-        "Susan",
+        { name: "Susan" },
         {
             front: {
                 height: math.unit(2, "meters"),
@@ -10311,7 +10308,7 @@ characterMakers["Susan"] = () => {
 
 characterMakers["Raindrops"] = () => {
     return makeCharacter(
-        "Raindrops",
+        { name: "Raindrops" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -10366,7 +10363,7 @@ characterMakers["Raindrops"] = () => {
 
 characterMakers["Tezwa"] = () => {
     return makeCharacter(
-        "Tezwa",
+        { name: "Tezwa" },
         {
             front: {
                 height: math.unit(2.794, "meters"),
@@ -10398,7 +10395,7 @@ characterMakers["Tezwa"] = () => {
 
 characterMakers["Typhus"] = () => {
     return makeCharacter(
-        "Typhus",
+        { name: "Typhus" },
         {
             front: {
                 height: math.unit(58, "feet"),
@@ -10423,7 +10420,7 @@ characterMakers["Typhus"] = () => {
 
 characterMakers["Lyra Von Wulf"] = () => {
     return makeCharacter(
-        "Lyra Von Wulf",
+        { name: "Lyra Von Wulf" },
         {
             front: {
                 height: math.unit(12, "feet"),
@@ -10493,7 +10490,7 @@ characterMakers["Lyra Von Wulf"] = () => {
 
 characterMakers["Dixon"] = () => {
     return makeCharacter(
-        "Dixon",
+        { name: "Dixon" },
         {
             front: {
                 height: math.unit(6 + 10/12, "feet"),
@@ -10530,7 +10527,7 @@ characterMakers["Dixon"] = () => {
 
 characterMakers["Kauko"] = () => {
     return makeCharacter(
-        "Kauko",
+        { name: "Kauko" },
         {
             front: {
                 height: math.unit(185, "cm"),
@@ -10565,7 +10562,7 @@ characterMakers["Kauko"] = () => {
 
 characterMakers["Varg"] = () => {
     return makeCharacter(
-        "Varg",
+        { name: "Varg" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -10594,7 +10591,7 @@ characterMakers["Varg"] = () => {
 
 characterMakers["Dayza"] = () => {
     return makeCharacter(
-        "Dayza",
+        { name: "Dayza" },
         {
             front: {
                 height: math.unit(7 + 7/12, "feet"),
@@ -10642,7 +10639,7 @@ characterMakers["Dayza"] = () => {
 
 characterMakers["Xanthos"] = () => {
     return makeCharacter(
-        "Xanthos",
+        { name: "Xanthos" },
         {
             front: {
                 height: math.unit(6 + 5/12, "feet"),
@@ -10711,7 +10708,7 @@ characterMakers["Xanthos"] = () => {
 
 characterMakers["Grynn"] = () => {
     return makeCharacter(
-        "Grynn",
+        { name: "Grynn" },
         {
             front: {
                 height: math.unit(6 + 3/12, "feet"),
@@ -10764,7 +10761,7 @@ characterMakers["Grynn"] = () => {
 
 characterMakers["Mocha Aura"] = () => {
     return makeCharacter(
-        "Mocha Aura",
+        { name: "Mocha Aura" },
         {
             front: {
                 height: math.unit(7 + 5/12, "feet"),
@@ -10827,7 +10824,7 @@ characterMakers["Mocha Aura"] = () => {
 
 characterMakers["Ilisha Devya"] = () => {
     return makeCharacter(
-        "Ilisha Devya",
+        { name: "Ilisha Devya" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -10882,7 +10879,7 @@ characterMakers["Ilisha Devya"] = () => {
 
 characterMakers["Mira"] = () => {
     return makeCharacter(
-        "Mira",
+        { name: "Mira" },
         {
             Side: {
                 height: math.unit(6, "feet"),
@@ -10927,7 +10924,7 @@ characterMakers["Mira"] = () => {
 
 characterMakers["Holly"] = () => {
     return makeCharacter(
-        "Holly",
+        { name: "Holly" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -10970,7 +10967,7 @@ characterMakers["Holly"] = () => {
 
 characterMakers["Porter"] = () => {
     return makeCharacter(
-        "Porter",
+        { name: "Porter" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -11005,7 +11002,7 @@ characterMakers["Porter"] = () => {
 
 characterMakers["Lucy"] = () => {
     return makeCharacter(
-        "Lucy",
+        { name: "Lucy" },
         {
             legendary: {
                 height: math.unit(6, "feet"),
@@ -11030,7 +11027,7 @@ characterMakers["Lucy"] = () => {
 
 characterMakers["Drusilla"] = () => {
     return makeCharacter(
-        "Drusilla",
+        { name: "Drusilla" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -11070,7 +11067,7 @@ characterMakers["Drusilla"] = () => {
 
 characterMakers["Renard Thatch"] = () => {
     return makeCharacter(
-        "Renard Thatch",
+        { name: "Renard Thatch" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -11122,7 +11119,7 @@ characterMakers["Renard Thatch"] = () => {
 
 characterMakers["Sekvra"] = () => {
     return makeCharacter(
-        "Sekvra",
+        { name: "Sekvra" },
         {
             front: {
                 height: math.unit(1450, "feet"),
@@ -11181,7 +11178,7 @@ characterMakers["Sekvra"] = () => {
 
 characterMakers["Carmine"] = () => {
     return makeCharacter(
-        "Carmine",
+        { name: "Carmine" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -11224,7 +11221,7 @@ characterMakers["Carmine"] = () => {
 
 characterMakers["Elyssia"] = () => {
     return makeCharacter(
-        "Elyssia",
+        { name: "Elyssia" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -11277,7 +11274,7 @@ characterMakers["Elyssia"] = () => {
 
 characterMakers["Geno Maxwell"] = () => {
     return makeCharacter(
-        "Geno Maxwell",
+        { name: "Geno Maxwell" },
         {
             front: {
                 height: math.unit(7 + 4/12, "feet"),
@@ -11314,7 +11311,7 @@ characterMakers["Geno Maxwell"] = () => {
 
 characterMakers["Regena Maxwell"] = () => {
     return makeCharacter(
-        "Regena Maxwell",
+        { name: "Regena Maxwell" },
         {
             front: {
                 height: math.unit(7 + 4/12, "feet"),
@@ -11347,7 +11344,7 @@ characterMakers["Regena Maxwell"] = () => {
 
 characterMakers["XGlidingDragonX"] = () => {
     return makeCharacter(
-        "XGlidingDragonX",
+        { name: "XGlidingDragonX" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -11372,7 +11369,7 @@ characterMakers["XGlidingDragonX"] = () => {
 
 characterMakers["Quilly"] = () => {
     return makeCharacter(
-        "Quilly",
+        { name: "Quilly" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -11396,7 +11393,7 @@ characterMakers["Quilly"] = () => {
 
 characterMakers["Tempest"] = () => {
     return makeCharacter(
-        "Tempest",
+        { name: "Tempest" },
         {
             front: {
                 height: math.unit(7 + 8/12, "feet"),
@@ -11421,7 +11418,7 @@ characterMakers["Tempest"] = () => {
 
 characterMakers["Rodger"] = () => {
     return makeCharacter(
-        "Rodger",
+        { name: "Rodger" },
         {
             side: {
                 height: math.unit(4 + 5/12, "feet"),
@@ -11453,7 +11450,7 @@ characterMakers["Rodger"] = () => {
 
 characterMakers["Danyel"] = () => {
     return makeCharacter(
-        "Danyel",
+        { name: "Danyel" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -11486,7 +11483,7 @@ characterMakers["Danyel"] = () => {
 
 characterMakers["Vivian Bijoux"] = () => {
     return makeCharacter(
-        "Vivian Bijoux",
+        { name: "Vivian Bijoux" },
         {
             front: {
                 height: math.unit(5 + 6/12, "feet"),
@@ -11519,7 +11516,7 @@ characterMakers["Vivian Bijoux"] = () => {
 
 characterMakers["Zeta"] = () => {
     return makeCharacter(
-        "Zeta",
+        { name: "Zeta" },
         {
             front: {
                 height: math.unit(6 + 1/12, "feet"),
@@ -11576,7 +11573,7 @@ characterMakers["Zeta"] = () => {
 
 characterMakers["Jamie Larsen"] = () => {
     return makeCharacter(
-        "Jamie Larsen",
+        { name: "Jamie Larsen" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -11622,7 +11619,7 @@ characterMakers["Jamie Larsen"] = () => {
 
 characterMakers["Vance"] = () => {
     return makeCharacter(
-        "Vance",
+        { name: "Vance" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -11679,7 +11676,7 @@ characterMakers["Vance"] = () => {
 
 characterMakers["Xochitl"] = () => {
     return makeCharacter(
-        "Xochitl",
+        { name: "Xochitl" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -11738,7 +11735,7 @@ characterMakers["Xochitl"] = () => {
 
 characterMakers["Vincent"] = () => {
     return makeCharacter(
-        "Vincent",
+        { name: "Vincent" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -11798,7 +11795,7 @@ characterMakers["Vincent"] = () => {
 
 characterMakers["Jay"] = () => {
     return makeCharacter(
-        "Jay",
+        { name: "Jay" },
         {
             front: {
                 height: math.unit(6 + 2/12, "feet"),
@@ -11855,7 +11852,7 @@ characterMakers["Jay"] = () => {
 
 characterMakers["Coatl"] = () => {
     return makeCharacter(
-        "Coatl",
+        { name: "Coatl" },
         {
             front: {
                 height: math.unit(2, "meters"),
@@ -11900,7 +11897,7 @@ characterMakers["Coatl"] = () => {
 
 characterMakers["Shiroryu"] = () => {
     return makeCharacter(
-        "Shiroryu",
+        { name: "Shiroryu" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -11948,7 +11945,7 @@ characterMakers["Shiroryu"] = () => {
 
 characterMakers["Umeko"] = () => {
     return makeCharacter(
-        "Umeko",
+        { name: "Umeko" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -11991,7 +11988,7 @@ characterMakers["Umeko"] = () => {
 
 characterMakers["Cassidy"] = () => {
     return makeCharacter(
-        "Cassidy",
+        { name: "Cassidy" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -12028,7 +12025,7 @@ characterMakers["Cassidy"] = () => {
 
 characterMakers["Isaac"] = () => {
     return makeCharacter(
-        "Isaac",
+        { name: "Isaac" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -12065,7 +12062,7 @@ characterMakers["Isaac"] = () => {
 
 characterMakers["Sleekit"] = () => {
     return makeCharacter(
-        "Sleekit",
+        { name: "Sleekit" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -12102,7 +12099,7 @@ characterMakers["Sleekit"] = () => {
 
 characterMakers["Nillia"] = () => {
     return makeCharacter(
-        "Nillia",
+        { name: "Nillia" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -12137,7 +12134,7 @@ characterMakers["Nillia"] = () => {
 
 characterMakers["Mesmyriza"] = () => {
     return makeCharacter(
-        "Mesmyriza",
+        { name: "Mesmyriza" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -12173,7 +12170,7 @@ characterMakers["Mesmyriza"] = () => {
 
 characterMakers["Saudade"] = () => {
     return makeCharacter(
-        "Saudade",
+        { name: "Saudade" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -12210,7 +12207,7 @@ characterMakers["Saudade"] = () => {
 
 characterMakers["Keireer"] = () => {
     return makeCharacter(
-        "Keireer",
+        { name: "Keireer" },
         {
             front: {
                 height: math.unit(5 + 4/12, "feet"),
@@ -12235,7 +12232,7 @@ characterMakers["Keireer"] = () => {
 
 characterMakers["Mirja"] = () => {
     return makeCharacter(
-        "Mirja",
+        { name: "Mirja" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -12296,7 +12293,7 @@ characterMakers["Mirja"] = () => {
 
 characterMakers["Nightraver"] = () => {
     return makeCharacter(
-        "Nightraver",
+        { name: "Nightraver" },
         {
             front: {
                 height: math.unit(15, "feet"),
@@ -12368,7 +12365,7 @@ characterMakers["Nightraver"] = () => {
 
 characterMakers["Arc"] = () => {
     return makeCharacter(
-        "Arc",
+        { name: "Arc" },
         {
             side: {
                 height: math.unit(2, "inches"),
@@ -12391,7 +12388,7 @@ characterMakers["Arc"] = () => {
 
 characterMakers["Nebula Shahar"] = () => {
     return makeCharacter(
-        "Nebula Shahar",
+        { name: "Nebula Shahar" },
         {
             front: {
                 height: math.unit(1.1938, "meters"),
@@ -12428,7 +12425,7 @@ characterMakers["Nebula Shahar"] = () => {
 
 characterMakers["Shayla"] = () => {
     return makeCharacter(
-        "Shayla",
+        { name: "Shayla" },
         {
             front: {
                 height: math.unit(5.24, "feet"),
@@ -12488,7 +12485,7 @@ characterMakers["Shayla"] = () => {
 
 characterMakers["Pia Jr."] = () => {
     return makeCharacter(
-        "Pia Jr.",
+        { name: "Pia Jr." },
         {
             front: {
                 height: math.unit(2.2, "m"),
@@ -12539,7 +12536,7 @@ characterMakers["Pia Jr."] = () => {
 
 characterMakers["Pia Sr."] = () => {
     return makeCharacter(
-        "Pia Sr.",
+        { name: "Pia Sr." },
         {
             front: {
                 height: math.unit(2, "m"),
@@ -12600,7 +12597,7 @@ characterMakers["Pia Sr."] = () => {
 
 characterMakers["KIBIBYTE"] = () => {
     return makeCharacter(
-        "KIBIBYTE",
+        { name: "KIBIBYTE" },
         {
             front: {
                 height: math.unit(8 + 2/12, "feet"),
@@ -12637,7 +12634,7 @@ characterMakers["KIBIBYTE"] = () => {
 
 characterMakers["Felix"] = () => {
     return makeCharacter(
-        "Felix",
+        { name: "Felix" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -12680,7 +12677,7 @@ characterMakers["Felix"] = () => {
 
 characterMakers["Tobo"] = () => {
     return makeCharacter(
-        "Tobo",
+        { name: "Tobo" },
         {
             front: {
                 height: math.unit(6 + 1/12, "feet"),
@@ -12742,7 +12739,7 @@ characterMakers["Tobo"] = () => {
 
 characterMakers["Danny Kapowsky"] = () => {
     return makeCharacter(
-        "Danny Kapowsky",
+        { name: "Danny Kapowsky" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -12789,7 +12786,7 @@ characterMakers["Danny Kapowsky"] = () => {
 
 characterMakers["Finn"] = () => {
     return makeCharacter(
-        "Finn",
+        { name: "Finn" },
         {
             side: {
                 height: math.unit(6, "feet"),
@@ -12814,7 +12811,7 @@ characterMakers["Finn"] = () => {
 
 characterMakers["Roy"] = () => {
     return makeCharacter(
-        "Roy",
+        { name: "Roy" },
         {
             front: {
                 height: math.unit(5 + 6/12, "feet"),
@@ -12851,7 +12848,7 @@ characterMakers["Roy"] = () => {
 
 characterMakers["Aevsivs"] = () => {
     return makeCharacter(
-        "Aevsivs",
+        { name: "Aevsivs" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -12888,7 +12885,7 @@ characterMakers["Aevsivs"] = () => {
 
 characterMakers["Hildegard"] = () => {
     return makeCharacter(
-        "Hildegard",
+        { name: "Hildegard" },
         {
             front: {
                 height: math.unit(5 + 7/12, "feet"),
@@ -12913,7 +12910,7 @@ characterMakers["Hildegard"] = () => {
 
 characterMakers["Bernard & Wilder"] = () => {
     return makeCharacter(
-        "Bernard & Wilder",
+        { name: "Bernard & Wilder" },
         {
             bernard: {
                 height: math.unit(2 + 7/12, "feet"),
@@ -12950,7 +12947,7 @@ characterMakers["Bernard & Wilder"] = () => {
 
 characterMakers["Hearth"] = () => {
     return makeCharacter(
-        "Hearth",
+        { name: "Hearth" },
         {
             anthro: {
                 height: math.unit(6 + 1/12, "feet"),
@@ -12985,7 +12982,7 @@ characterMakers["Hearth"] = () => {
 
 characterMakers["Ingrid"] = () => {
     return makeCharacter(
-        "Ingrid",
+        { name: "Ingrid" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -13010,7 +13007,7 @@ characterMakers["Ingrid"] = () => {
 
 characterMakers["Malgam"] = () => {
     return makeCharacter(
-        "Malgam",
+        { name: "Malgam" },
         {
             eevee: {
                 height: math.unit(2 + 10/12, "feet"),
@@ -13054,7 +13051,7 @@ characterMakers["Malgam"] = () => {
 
 characterMakers["Fleur"] = () => {
     return makeCharacter(
-        "Fleur",
+        { name: "Fleur" },
         {
             front: {
                 height: math.unit(5 + 11/12, "feet"),
@@ -13079,7 +13076,7 @@ characterMakers["Fleur"] = () => {
 
 characterMakers["Jude"] = () => {
     return makeCharacter(
-        "Jude",
+        { name: "Jude" },
         {
             front: {
                 height: math.unit(5 + 4/12, "feet"),
@@ -13104,7 +13101,7 @@ characterMakers["Jude"] = () => {
 
 characterMakers["Seara"] = () => {
     return makeCharacter(
-        "Seara",
+        { name: "Seara" },
         {
             front: {
                 height: math.unit(5 + 11/12, "feet"),
@@ -13129,7 +13126,7 @@ characterMakers["Seara"] = () => {
 
 characterMakers["Caspian"] = () => {
     return makeCharacter(
-        "Caspian",
+        { name: "Caspian" },
         {
         front: {
             height: math.unit(16 + 5/12, "feet"),
@@ -13154,7 +13151,7 @@ characterMakers["Caspian"] = () => {
 
 characterMakers["Mika"] = () => {
     return makeCharacter(
-        "Mika",
+        { name: "Mika" },
         {
         front: {
             height: math.unit(5 + 7/12, "feet"),
@@ -13179,7 +13176,7 @@ characterMakers["Mika"] = () => {
 
 characterMakers["Sol"] = () => {
     return makeCharacter(
-        "Sol",
+        { name: "Sol" },
         {
         front: {
             height: math.unit(6 + 2/12, "feet"),
@@ -13204,7 +13201,7 @@ characterMakers["Sol"] = () => {
 
 characterMakers["Umiko"] = () => {
     return makeCharacter(
-        "Umiko",
+        { name: "Umiko" },
         {
         buizel: {
             height: math.unit(2 + 5/12, "feet"),
@@ -13238,7 +13235,7 @@ characterMakers["Umiko"] = () => {
 
 characterMakers["Iliac"] = () => {
     return makeCharacter(
-        "Iliac",
+        { name: "Iliac" },
         {
         front: {
             height: math.unit(6 + 2/12, "feet"),
@@ -13263,7 +13260,7 @@ characterMakers["Iliac"] = () => {
 
 characterMakers["Topaz"] = () => {
     return makeCharacter(
-        "Topaz",
+        { name: "Topaz" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -13288,7 +13285,7 @@ characterMakers["Topaz"] = () => {
 
 characterMakers["Gabriel"] = () => {
     return makeCharacter(
-        "Gabriel",
+        { name: "Gabriel" },
         {
             front: {
                 height: math.unit(5 + 11/12, "feet"),
@@ -13313,7 +13310,7 @@ characterMakers["Gabriel"] = () => {
 
 characterMakers["Tempest (Suicune)"] = () => {
     return makeCharacter(
-        "Tempest (Suicune)",
+        { name: "Tempest (Suicune)" },
         {
             side: {
                 height: math.unit(6 + 5/12, "feet"),
@@ -13338,7 +13335,7 @@ characterMakers["Tempest (Suicune)"] = () => {
 
 characterMakers["Vulcan"] = () => {
     return makeCharacter(
-        "Vulcan",
+        { name: "Vulcan" },
         {
             front: {
                 height: math.unit(7 + 2/12, "feet"),
@@ -13363,7 +13360,7 @@ characterMakers["Vulcan"] = () => {
 
 characterMakers["Gault"] = () => {
     return makeCharacter(
-        "Gault",
+        { name: "Gault" },
         {
             front: {
                 height: math.unit(5 + 10/12, "feet"),
@@ -13388,7 +13385,7 @@ characterMakers["Gault"] = () => {
 
 characterMakers["Shard"] = () => {
     return makeCharacter(
-        "Shard",
+        { name: "Shard" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -13413,7 +13410,7 @@ characterMakers["Shard"] = () => {
 
 characterMakers["Ashe"] = () => {
     return makeCharacter(
-        "Ashe",
+        { name: "Ashe" },
         {
             front: {
                 height: math.unit(5 + 11/12, "feet"),
@@ -13438,7 +13435,7 @@ characterMakers["Ashe"] = () => {
 
 characterMakers["Beatrix"] = () => {
     return makeCharacter(
-        "Beatrix",
+        { name: "Beatrix" },
         {
             front: {
                 height: math.unit(5 + 5/12, "feet"),
@@ -13463,7 +13460,7 @@ characterMakers["Beatrix"] = () => {
 
 characterMakers["Ignatius"] = () => {
     return makeCharacter(
-        "Ignatius",
+        { name: "Ignatius" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -13488,7 +13485,7 @@ characterMakers["Ignatius"] = () => {
 
 characterMakers["Mei Li"] = () => {
     return makeCharacter(
-        "Mei Li",
+        { name: "Mei Li" },
         {
             front: {
                 height: math.unit(6 + 2/12, "feet"),
@@ -13513,7 +13510,7 @@ characterMakers["Mei Li"] = () => {
 
 characterMakers["Puru"] = () => {
     return makeCharacter(
-        "Puru",
+        { name: "Puru" },
         {
             front: {
                 height: math.unit(2 + 4/12, "feet"),
@@ -13538,7 +13535,7 @@ characterMakers["Puru"] = () => {
 
 characterMakers["Kee"] = () => {
     return makeCharacter(
-        "Kee",
+        { name: "Kee" },
         {
             taur: {
                 height: math.unit(11, "feet"),
@@ -13563,7 +13560,7 @@ characterMakers["Kee"] = () => {
 
 characterMakers["Cobalt (Dracha)"] = () => {
     return makeCharacter(
-        "Cobalt (Dracha)",
+        { name: "Cobalt (Dracha)" },
         {
             anthro: {
                 height: math.unit(7, "feet"),
@@ -13598,7 +13595,7 @@ characterMakers["Cobalt (Dracha)"] = () => {
 
 characterMakers["Java"] = () => {
     return makeCharacter(
-        "Java",
+        { name: "Java" },
         {
             fallen: {
                 height: math.unit(11 + 8/12, "feet"),
@@ -13635,7 +13632,7 @@ characterMakers["Java"] = () => {
 
 characterMakers["Skoll"] = () => {
     return makeCharacter(
-        "Skoll",
+        { name: "Skoll" },
         {
             front: {
                 height: math.unit(7 + 8/12, "feet"),
@@ -13660,7 +13657,7 @@ characterMakers["Skoll"] = () => {
 
 characterMakers["Purna"] = () => {
     return makeCharacter(
-        "Purna",
+        { name: "Purna" },
         {
             front: {
                 height: math.unit(5 + 9/12, "feet"),
@@ -13685,7 +13682,7 @@ characterMakers["Purna"] = () => {
 
 characterMakers["Kuva"] = () => {
     return makeCharacter(
-        "Kuva",
+        { name: "Kuva" },
         {
             front: {
                 height: math.unit(5 + 9/12, "feet"),
@@ -13710,7 +13707,7 @@ characterMakers["Kuva"] = () => {
 
 characterMakers["Embra"] = () => {
     return makeCharacter(
-        "Embra",
+        { name: "Embra" },
         {
             anthro: {
                 height: math.unit(9 + 2/12, "feet"),
@@ -13745,7 +13742,7 @@ characterMakers["Embra"] = () => {
 
 characterMakers["Grottos"] = () => {
     return makeCharacter(
-        "Grottos",
+        { name: "Grottos" },
         {
             anthro: {
                 height: math.unit(10 + 9/12, "feet"),
@@ -13780,7 +13777,7 @@ characterMakers["Grottos"] = () => {
 
 characterMakers["Frifna"] = () => {
     return makeCharacter(
-        "Frifna",
+        { name: "Frifna" },
         {
             anthro: {
                 height: math.unit(9 + 6/12, "feet"),
@@ -13813,7 +13810,7 @@ characterMakers["Frifna"] = () => {
 
 characterMakers["Elise"] = () => {
     return makeCharacter(
-        "Elise",
+        { name: "Elise" },
         {
             front: {
                 height: math.unit(6 + 2/12, "feet"),
@@ -13837,7 +13834,7 @@ characterMakers["Elise"] = () => {
 
 characterMakers["Glade"] = () => {
     return makeCharacter(
-        "Glade",
+        { name: "Glade" },
         {
             front: {
                 height: math.unit(5 + 10/12, "feet"),
@@ -13862,7 +13859,7 @@ characterMakers["Glade"] = () => {
 
 characterMakers["Rina"] = () => {
     return makeCharacter(
-        "Rina",
+        { name: "Rina" },
         {
             front: {
                 height: math.unit(5 + 10/12, "feet"),
@@ -13887,7 +13884,7 @@ characterMakers["Rina"] = () => {
 
 characterMakers["Veronica"] = () => {
     return makeCharacter(
-        "Veronica",
+        { name: "Veronica" },
         {
             front: {
                 height: math.unit(6 + 1/12, "feet"),
@@ -13912,7 +13909,7 @@ characterMakers["Veronica"] = () => {
 
 characterMakers["Braxton"] = () => {
     return makeCharacter(
-        "Braxton",
+        { name: "Braxton" },
         {
             front: {
                 height: math.unit(9 + 3/12, "feet"),
@@ -13949,7 +13946,7 @@ characterMakers["Braxton"] = () => {
 
 characterMakers["Blue Feyonics"] = () => {
     return makeCharacter(
-        "Blue Feyonics",
+        { name: "Blue Feyonics" },
         {
             front: {
                 height: math.unit(6 + 7/12, "feet"),
@@ -13974,7 +13971,7 @@ characterMakers["Blue Feyonics"] = () => {
 
 characterMakers["Maxwell"] = () => {
     return makeCharacter(
-        "Maxwell",
+        { name: "Maxwell" },
         {
             front: {
                 height: math.unit(1.8, "meters"),
@@ -14010,7 +14007,7 @@ characterMakers["Maxwell"] = () => {
 
 characterMakers["Jack"] = () => {
     return makeCharacter(
-        "Jack",
+        { name: "Jack" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -14039,7 +14036,7 @@ characterMakers["Jack"] = () => {
 
 characterMakers["Cafat"] = () => {
     return makeCharacter(
-        "Cafat",
+        { name: "Cafat" },
         {
             upright: {
                 height: math.unit(7, "feet"),
@@ -14084,7 +14081,7 @@ characterMakers["Cafat"] = () => {
 
 characterMakers["Verin Raharra"] = () => {
     return makeCharacter(
-        "Verin Raharra",
+        { name: "Verin Raharra" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -14113,7 +14110,7 @@ characterMakers["Verin Raharra"] = () => {
 
 characterMakers["Nakata"] = () => {
     return makeCharacter(
-        "Nakata",
+        { name: "Nakata" },
         {
             front: {
                 height: math.unit(7, "feet"),
@@ -14146,7 +14143,7 @@ characterMakers["Nakata"] = () => {
 
 characterMakers["Lily"] = () => {
     return makeCharacter(
-        "Lily",
+        { name: "Lily" },
         {
             front: {
                 height: math.unit(4.91, "feet"),
@@ -14171,7 +14168,7 @@ characterMakers["Lily"] = () => {
 
 characterMakers["Sheila"] = () => {
     return makeCharacter(
-        "Sheila",
+        { name: "Sheila" },
         {
             laying: {
                 height: math.unit(4 + 4/12, "feet"),
@@ -14196,7 +14193,7 @@ characterMakers["Sheila"] = () => {
 
 characterMakers["Sax"] = () => {
     return makeCharacter(
-        "Sax",
+        { name: "Sax" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -14221,7 +14218,7 @@ characterMakers["Sax"] = () => {
 
 characterMakers["Pandora"] = () => {
     return makeCharacter(
-        "Pandora",
+        { name: "Pandora" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -14297,7 +14294,7 @@ characterMakers["Pandora"] = () => {
 
 characterMakers["Venio Darcony"] = () => {
     return makeCharacter(
-        "Venio Darcony",
+        { name: "Venio Darcony" },
         {
             side: {
                 height: math.unit(10, "feet"),
@@ -14346,7 +14343,7 @@ characterMakers["Venio Darcony"] = () => {
 
 characterMakers["Veski"] = () => {
     return makeCharacter(
-        "Veski",
+        { name: "Veski" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -14388,7 +14385,7 @@ characterMakers["Veski"] = () => {
 
 characterMakers["Isabelle"] = () => {
     return makeCharacter(
-        "Isabelle",
+        { name: "Isabelle" },
         {
             front: {
                 height: math.unit(5 + 7/12, "feet"),
@@ -14440,7 +14437,7 @@ characterMakers["Isabelle"] = () => {
 
 characterMakers["Hanzo"] = () => {
     return makeCharacter(
-        "Hanzo",
+        { name: "Hanzo" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -14465,7 +14462,7 @@ characterMakers["Hanzo"] = () => {
 
 characterMakers["Anna"] = () => {
     return makeCharacter(
-        "Anna",
+        { name: "Anna" },
         {
             front: {
                 height: math.unit(7, "feet"),
@@ -14507,7 +14504,7 @@ characterMakers["Anna"] = () => {
 
 characterMakers["Ian Corvid"] = () => {
     return makeCharacter(
-        "Ian Corvid",
+        { name: "Ian Corvid" },
         {
             front: {
                 height: math.unit(7, "feet"),
@@ -14573,7 +14570,7 @@ characterMakers["Ian Corvid"] = () => {
 
 characterMakers["Natalie Kellon"] = () => {
     return makeCharacter(
-        "Natalie Kellon",
+        { name: "Natalie Kellon" },
         {
             front: {
                 height: math.unit(5 + 7/12, "feet"),
@@ -14618,7 +14615,7 @@ characterMakers["Natalie Kellon"] = () => {
 
 characterMakers["Alluria"] = () => {
     return makeCharacter(
-        "Alluria",
+        { name: "Alluria" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -14690,7 +14687,7 @@ characterMakers["Alluria"] = () => {
 
 characterMakers["Kyle"] = () => {
     return makeCharacter(
-        "Kyle",
+        { name: "Kyle" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -14715,7 +14712,7 @@ characterMakers["Kyle"] = () => {
 
 characterMakers["Duncan"] = () => {
     return makeCharacter(
-        "Duncan",
+        { name: "Duncan" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -14740,7 +14737,7 @@ characterMakers["Duncan"] = () => {
 
 characterMakers["Memory"] = () => {
     return makeCharacter(
-        "Memory",
+        { name: "Memory" },
         {
             front: {
                 height: math.unit(5 + 4/12, "feet"),
@@ -14799,7 +14796,7 @@ characterMakers["Memory"] = () => {
 
 characterMakers["Luno"] = () => {
     return makeCharacter(
-        "Luno",
+        { name: "Luno" },
         {
             front: {
                 height: math.unit(4 + 11/12, "feet"),
@@ -14836,7 +14833,7 @@ characterMakers["Luno"] = () => {
 
 characterMakers["Jamesy"] = () => {
     return makeCharacter(
-        "Jamesy",
+        { name: "Jamesy" },
         {
             front: {
                 height: math.unit(6 + 2/12, "feet"),
@@ -14873,7 +14870,7 @@ characterMakers["Jamesy"] = () => {
 
 characterMakers["Mark"] = () => {
     return makeCharacter(
-        "Mark",
+        { name: "Mark" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -14914,7 +14911,7 @@ characterMakers["Mark"] = () => {
 
 characterMakers["Mac"] = () => {
     return makeCharacter(
-        "Mac",
+        { name: "Mac" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -14939,7 +14936,7 @@ characterMakers["Mac"] = () => {
 
 characterMakers["Bari"] = () => {
     return makeCharacter(
-        "Bari",
+        { name: "Bari" },
         {
             front: {
                 height: math.unit(5 + 2/12, "feet"),
@@ -14992,7 +14989,7 @@ characterMakers["Bari"] = () => {
 
 characterMakers["Hunter Misha Raven"] = () => {
     return makeCharacter(
-        "Hunter Misha Raven",
+        { name: "Hunter Misha Raven" },
         {
             front: {
                 height: math.unit(6 + 1/12, "feet"),
@@ -15019,7 +15016,7 @@ characterMakers["Hunter Misha Raven"] = () => {
 
 characterMakers["Max Calore"] = () => {
     return makeCharacter(
-        "Max Calore",
+        { name: "Max Calore" },
         {
             front: {
                 height: math.unit(6 + 3/12, "feet"),
@@ -15054,7 +15051,7 @@ characterMakers["Max Calore"] = () => {
 
 characterMakers["Aspen"] = () => {
     return makeCharacter(
-        "Aspen",
+        { name: "Aspen" },
         {
             side: {
                 height: math.unit(2 + 8/12, "feet"),
@@ -15079,7 +15076,7 @@ characterMakers["Aspen"] = () => {
 
 characterMakers["Sheila (Wolf)"] = () => {
     return makeCharacter(
-        "Sheila (Wolf)",
+        { name: "Sheila (Wolf)" },
         {
             side: {
                 height: math.unit(3 + 2/12, "feet"),
@@ -15104,7 +15101,7 @@ characterMakers["Sheila (Wolf)"] = () => {
 
 characterMakers["Michelle"] = () => {
     return makeCharacter(
-        "Michelle",
+        { name: "Michelle" },
         {
             side: {
                 height: math.unit(1 + 9/12, "feet"),
@@ -15129,7 +15126,7 @@ characterMakers["Michelle"] = () => {
 
 characterMakers["Nino"] = () => {
     return makeCharacter(
-        "Nino",
+        { name: "Nino" },
         {
             front: {
                 height: math.unit(1 + 1/12, "feet"),
@@ -15152,7 +15149,7 @@ characterMakers["Nino"] = () => {
 
 characterMakers["Viola"] = () => {
     return makeCharacter(
-        "Viola",
+        { name: "Viola" },
         {
             front: {
                 height: math.unit(1, "feet"),
@@ -15175,7 +15172,7 @@ characterMakers["Viola"] = () => {
 
 characterMakers["Atlas"] = () => {
     return makeCharacter(
-        "Atlas",
+        { name: "Atlas" },
         {
             front: {
                 height: math.unit(6 + 5/12, "feet"),
@@ -15200,7 +15197,7 @@ characterMakers["Atlas"] = () => {
 
 characterMakers["Davy"] = () => {
     return makeCharacter(
-        "Davy",
+        { name: "Davy" },
         {
             side: {
                 height: math.unit(1 + 10/12, "feet"),
@@ -15225,7 +15222,7 @@ characterMakers["Davy"] = () => {
 
 characterMakers["Fiona"] = () => {
     return makeCharacter(
-        "Fiona",
+        { name: "Fiona" },
         {
             side: {
                 height: math.unit(4 + 8/12, "feet"),
@@ -15250,7 +15247,7 @@ characterMakers["Fiona"] = () => {
 
 characterMakers["Lyla"] = () => {
     return makeCharacter(
-        "Lyla",
+        { name: "Lyla" },
         {
             front: {
                 height: math.unit(2, "feet"),
@@ -15274,7 +15271,7 @@ characterMakers["Lyla"] = () => {
 
 characterMakers["Perseus"] = () => {
     return makeCharacter(
-        "Perseus",
+        { name: "Perseus" },
         {
             side: {
                 height: math.unit(1.8, "feet"),
@@ -15298,7 +15295,7 @@ characterMakers["Perseus"] = () => {
 
 characterMakers["Remus"] = () => {
     return makeCharacter(
-        "Remus",
+        { name: "Remus" },
         {
             side: {
                 height: math.unit(4 + 2/12, "feet"),
@@ -15321,7 +15318,7 @@ characterMakers["Remus"] = () => {
 
 characterMakers["Raf"] = () => {
     return makeCharacter(
-        "Raf",
+        { name: "Raf" },
         {
             front: {
                 height: math.unit(4 + 11/12, "feet"),
@@ -15362,7 +15359,7 @@ characterMakers["Raf"] = () => {
 
 characterMakers["Liam Einarr"] = () => {
     return makeCharacter(
-        "Liam Einarr",
+        { name: "Liam Einarr" },
         {
             front: {
                 height: math.unit(1.5, "meters"),
@@ -15404,7 +15401,7 @@ characterMakers["Liam Einarr"] = () => {
 
 characterMakers["Linda"] = () => {
     return makeCharacter(
-        "Linda",
+        { name: "Linda" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -15429,7 +15426,7 @@ characterMakers["Linda"] = () => {
 
 characterMakers["Caylex"] = () => {
     return makeCharacter(
-        "Caylex",
+        { name: "Caylex" },
         {
             front: {
                 height: math.unit(6 + 8/12, "feet"),
@@ -15492,7 +15489,7 @@ characterMakers["Caylex"] = () => {
 
 characterMakers["Alana"] = () => {
     return makeCharacter(
-        "Alana",
+        { name: "Alana" },
         {
             front: {
                 height: math.unit(7 + 6/12, "feet"),
@@ -15529,7 +15526,7 @@ characterMakers["Alana"] = () => {
 
 characterMakers["Hasani"] = () => {
     return makeCharacter(
-        "Hasani",
+        { name: "Hasani" },
         {
             front: {
                 height: math.unit(6 + 1/12, "feet"),
@@ -15568,7 +15565,7 @@ characterMakers["Hasani"] = () => {
 
 characterMakers["Nita"] = () => {
     return makeCharacter(
-        "Nita",
+        { name: "Nita" },
         {
             front: {
                 height: math.unit(1.82, "meters"),
@@ -15609,7 +15606,7 @@ characterMakers["Nita"] = () => {
 
 characterMakers["Shiriko"] = () => {
     return makeCharacter(
-        "Shiriko",
+        { name: "Shiriko" },
         {
             front: {
                 height: math.unit(4, "feet"),
@@ -15633,7 +15630,7 @@ characterMakers["Shiriko"] = () => {
 
 characterMakers["Deja"] = () => {
     return makeCharacter(
-        "Deja",
+        { name: "Deja" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -15665,7 +15662,7 @@ characterMakers["Deja"] = () => {
 
 characterMakers["Anima"] = () => {
     return makeCharacter(
-        "Anima",
+        { name: "Anima" },
         {
             side: {
                 height: math.unit(8, "feet"),
@@ -15689,7 +15686,7 @@ characterMakers["Anima"] = () => {
 
 characterMakers["Bianca"] = () => {
     return makeCharacter(
-        "Bianca",
+        { name: "Bianca" },
         {
             front: {
                 height: math.unit(8, "feet"),
@@ -15714,7 +15711,7 @@ characterMakers["Bianca"] = () => {
 
 characterMakers["Adinia"] = () => {
     return makeCharacter(
-        "Adinia",
+        { name: "Adinia" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -15749,7 +15746,7 @@ characterMakers["Adinia"] = () => {
 
 characterMakers["Lykasa"] = () => {
     return makeCharacter(
-        "Lykasa",
+        { name: "Lykasa" },
         {
             front: {
                 height: math.unit(3, "meters"),
@@ -15794,7 +15791,7 @@ characterMakers["Lykasa"] = () => {
 
 characterMakers["Malfaren"] = () => {
     return makeCharacter(
-        "Malfaren",
+        { name: "Malfaren" },
         {
             side: {
                 height: math.unit(283/124*6, "feet"),
@@ -15848,7 +15845,7 @@ characterMakers["Malfaren"] = () => {
 
 characterMakers["Kernel"] = () => {
     return makeCharacter(
-        "Kernel",
+        { name: "Kernel" },
         {
             front: {
                 height: math.unit(1.7, "m"),
@@ -15885,7 +15882,7 @@ characterMakers["Kernel"] = () => {
 
 characterMakers["Jayne Folest"] = () => {
     return makeCharacter(
-        "Jayne Folest",
+        { name: "Jayne Folest" },
         {
             front: {
                 height: math.unit(1.75, "meters"),
@@ -15952,7 +15949,7 @@ characterMakers["Jayne Folest"] = () => {
 
 characterMakers["Algier"] = () => {
     return makeCharacter(
-        "Algier",
+        { name: "Algier" },
         {
             front: {
                 height: math.unit(180, "cm"),
@@ -16005,7 +16002,7 @@ characterMakers["Algier"] = () => {
 
 characterMakers["Pretzel"] = () => {
     return makeCharacter(
-        "Pretzel",
+        { name: "Pretzel" },
         {
             upright: {
                 height: math.unit(7, "feet"),
@@ -16059,7 +16056,7 @@ characterMakers["Pretzel"] = () => {
 
 characterMakers["Roxi"] = () => {
     return makeCharacter(
-        "Roxi",
+        { name: "Roxi" },
         {
             sideFront: {
                 height: math.unit(5 + 2/12, "feet"),
@@ -16124,7 +16121,7 @@ characterMakers["Roxi"] = () => {
 
 characterMakers["Shadow"] = () => {
     return makeCharacter(
-        "Shadow",
+        { name: "Shadow" },
         {
             side: {
                 height: math.unit(55, "feet"),
@@ -16157,7 +16154,7 @@ characterMakers["Shadow"] = () => {
 
 characterMakers["Marcie"] = () => {
     return makeCharacter(
-        "Marcie",
+        { name: "Marcie" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -16182,7 +16179,7 @@ characterMakers["Marcie"] = () => {
 
 characterMakers["Kachina"] = () => {
     return makeCharacter(
-        "Kachina",
+        { name: "Kachina" },
         {
             front: {
                 height: math.unit(7, "feet"),
@@ -16207,7 +16204,7 @@ characterMakers["Kachina"] = () => {
 
 characterMakers["Kash"] = () => {
     return makeCharacter(
-        "Kash",
+        { name: "Kash" },
         {
             looking: {
                 height: math.unit(2, "meters"),
@@ -16260,7 +16257,7 @@ characterMakers["Kash"] = () => {
 
 characterMakers["Lalim"] = () => {
     return makeCharacter(
-        "Lalim",
+        { name: "Lalim" },
         {
             feeding: {
                 height: math.unit(6.7, "feet"),
@@ -16283,7 +16280,7 @@ characterMakers["Lalim"] = () => {
 
 characterMakers["De'Vout"] = () => {
     return makeCharacter(
-        "De'Vout",
+        { name: "De'Vout" },
         {
             front: {
                 height: math.unit(9.5, "feet"),
@@ -16336,7 +16333,7 @@ characterMakers["De'Vout"] = () => {
 
 characterMakers["Talana"] = () => {
     return makeCharacter(
-        "Talana",
+        { name: "Talana" },
         {
             front: {
                 height: math.unit(8, "feet"),
@@ -16371,7 +16368,7 @@ characterMakers["Talana"] = () => {
 
 characterMakers["Xeauvok"] = () => {
     return makeCharacter(
-        "Xeauvok",
+        { name: "Xeauvok" },
         {
             side: {
                 height: math.unit(7.2, "feet"),
@@ -16396,7 +16393,7 @@ characterMakers["Xeauvok"] = () => {
 
 characterMakers["Zara"] = () => {
     return makeCharacter(
-        "Zara",
+        { name: "Zara" },
         {
             side: {
                 height: math.unit(10, "feet"),
@@ -16420,7 +16417,7 @@ characterMakers["Zara"] = () => {
 
 characterMakers["Richard (Dragon)"] = () => {
     return makeCharacter(
-        "Richard (Dragon)",
+        { name: "Richard (Dragon)" },
         {
             side: {
                 height: math.unit(6, "feet"),
@@ -16448,7 +16445,7 @@ characterMakers["Richard (Dragon)"] = () => {
 
 characterMakers["Richard (Smeargle)"] = () => {
     return makeCharacter(
-        "Richard (Smeargle)",
+        { name: "Richard (Smeargle)" },
         {
             front: {
                 height: math.unit(4, "feet"),
@@ -16477,7 +16474,7 @@ characterMakers["Richard (Smeargle)"] = () => {
 
 characterMakers["Klay"] = () => {
     return makeCharacter(
-        "Klay",
+        { name: "Klay" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -16538,7 +16535,7 @@ characterMakers["Klay"] = () => {
 
 characterMakers["Marcus"] = () => {
     return makeCharacter(
-        "Marcus",
+        { name: "Marcus" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -16575,7 +16572,7 @@ characterMakers["Marcus"] = () => {
 
 characterMakers["Claude DelRoute"] = () => {
     return makeCharacter(
-        "Claude DelRoute",
+        { name: "Claude DelRoute" },
         {
             front: {
                 height: math.unit(7, "feet"),
@@ -16631,7 +16628,7 @@ characterMakers["Claude DelRoute"] = () => {
 
 characterMakers["Dragonien"] = () => {
     return makeCharacter(
-        "Dragonien",
+        { name: "Dragonien" },
         {
             front: {
                 height: math.unit(8 + 4/12, "feet"),
@@ -16685,7 +16682,7 @@ characterMakers["Dragonien"] = () => {
 
 characterMakers["Desta"] = () => {
     return makeCharacter(
-        "Desta",
+        { name: "Desta" },
         {
             front: {
                 height: math.unit(5 + 2/12, "feet"),
@@ -16731,7 +16728,7 @@ characterMakers["Desta"] = () => {
 
 characterMakers["Storm Alystar"] = () => {
     return makeCharacter(
-        "Storm Alystar",
+        { name: "Storm Alystar" },
         {
             front: {
                 height: math.unit(10, "feet"),
@@ -16768,7 +16765,7 @@ characterMakers["Storm Alystar"] = () => {
 
 characterMakers["Ilia"] = () => {
     return makeCharacter(
-        "Ilia",
+        { name: "Ilia" },
         {
             front: {
                 height: math.unit(2.35, "meters"),
@@ -16801,7 +16798,7 @@ characterMakers["Ilia"] = () => {
 
 characterMakers["KingDead"] = () => {
     return makeCharacter(
-        "KingDead",
+        { name: "KingDead" },
         {
             front: {
                 height: math.unit(6 + 5/12, "feet"),
@@ -16837,7 +16834,7 @@ characterMakers["KingDead"] = () => {
 
 characterMakers["Kyrehx"] = () => {
     return makeCharacter(
-        "Kyrehx",
+        { name: "Kyrehx" },
         {
             front: {
                 height: math.unit(8, "feet"),
@@ -16870,7 +16867,7 @@ characterMakers["Kyrehx"] = () => {
 
 characterMakers["Xang"] = () => {
     return makeCharacter(
-        "Xang",
+        { name: "Xang" },
         {
             front: {
                 height: math.unit(0.935 * (6 + 8/12), "feet"),
@@ -16902,7 +16899,7 @@ characterMakers["Xang"] = () => {
 
 characterMakers["Doc Weardno"] = () => {
     return makeCharacter(
-        "Doc Weardno",
+        { name: "Doc Weardno" },
         {
             frontDressed: {
                 height: math.unit(5 + 7/12, "feet"),
@@ -16956,7 +16953,7 @@ characterMakers["Doc Weardno"] = () => {
 
 characterMakers["Seth Whilst"] = () => {
     return makeCharacter(
-        "Seth Whilst",
+        { name: "Seth Whilst" },
         {
             front: {
                 height: math.unit(6 + 2/12, "feet"),
@@ -16984,7 +16981,7 @@ characterMakers["Seth Whilst"] = () => {
 
 characterMakers["Pocket Jabari"] = () => {
     return makeCharacter(
-        "Pocket Jabari",
+        { name: "Pocket Jabari" },
         {
             front: {
                 height: math.unit(3, "inches"),
@@ -17017,7 +17014,7 @@ characterMakers["Pocket Jabari"] = () => {
 
 characterMakers["Sapphy"] = () => {
     return makeCharacter(
-        "Sapphy",
+        { name: "Sapphy" },
         {
             front: {
                 height: math.unit(15, "feet"),
@@ -17068,7 +17065,7 @@ characterMakers["Sapphy"] = () => {
 
 characterMakers["Kiro"] = () => {
     return makeCharacter(
-        "Kiro",
+        { name: "Kiro" },
         {   
              front: {
                  height: math.unit(6, "feet"),
@@ -17101,7 +17098,7 @@ characterMakers["Kiro"] = () => {
 
 characterMakers["Irishfox"] = () => {
     return makeCharacter(
-        "Irishfox",
+        { name: "Irishfox" },
         {
             front: {
                 height: math.unit(5 + 9/12, "feet"),
@@ -17138,7 +17135,7 @@ characterMakers["Irishfox"] = () => {
 
 characterMakers["Aronai Sieyes"] = () => {
     return makeCharacter(
-        "Aronai Sieyes",
+        { name: "Aronai Sieyes" },
         {
             front: {
                 height: math.unit(6 + 1/12, "feet"),
@@ -17206,7 +17203,7 @@ characterMakers["Aronai Sieyes"] = () => {
 
 characterMakers["Xuna"] = () => {
     return makeCharacter(
-        "Xuna",
+        { name: "Xuna" },
         {
             front: {
                 height: math.unit(12, "feet"),
@@ -17292,7 +17289,7 @@ characterMakers["Xuna"] = () => {
 
 characterMakers["Arokha Sieyes"] = () => {
     return makeCharacter(
-        "Arokha Sieyes",
+        { name: "Arokha Sieyes" },
         {
             front: {
                 height: math.unit(5 + 9/12, "feet"),
@@ -17321,7 +17318,7 @@ characterMakers["Arokha Sieyes"] = () => {
 
 characterMakers["Arokh Sieyes"] = () => {
     return makeCharacter(
-        "Arokh Sieyes",
+        { name: "Arokh Sieyes" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -17350,7 +17347,7 @@ characterMakers["Arokh Sieyes"] = () => {
 
 characterMakers["Goldeneye"] = () => {
     return makeCharacter(
-        "Goldeneye",
+        { name: "Goldeneye" },
         {
             side: {
                 height: math.unit(13 + 1/12, "feet"),
@@ -17382,7 +17379,7 @@ characterMakers["Goldeneye"] = () => {
 
 characterMakers["Leonardo Lycheborne"] = () => {
     return makeCharacter(
-        "Leonardo Lycheborne",
+        { name: "Leonardo Lycheborne" },
         {
             front: {
                 height: math.unit(6 + 1/12, "feet"),
@@ -17481,7 +17478,7 @@ characterMakers["Leonardo Lycheborne"] = () => {
 
 characterMakers["Jet"] = () => {
     return makeCharacter(
-        "Jet",
+        { name: "Jet" },
         {
             front: {
                 height: math.unit(10, "feet"),
@@ -17524,7 +17521,7 @@ characterMakers["Jet"] = () => {
 
 characterMakers["Tanarath"] = () => {
     return makeCharacter(
-        "Tanarath",
+        { name: "Tanarath" },
         {
             front: {
                 height: math.unit(15, "feet"),
@@ -17559,7 +17556,7 @@ characterMakers["Tanarath"] = () => {
 
 characterMakers["Patty CattyBatty"] = () => {
     return makeCharacter(
-        "Patty CattyBatty",
+        { name: "Patty CattyBatty" },
         {
             front: {
                 height: math.unit(7 + 1/12, "feet"),
@@ -17620,7 +17617,7 @@ characterMakers["Patty CattyBatty"] = () => {
 
 characterMakers["Cappu"] = () => {
     return makeCharacter(
-        "Cappu",
+        { name: "Cappu" },
         {
             front: {
                 height: math.unit(4 + 5/12, "feet"),
@@ -17645,7 +17642,7 @@ characterMakers["Cappu"] = () => {
 
 characterMakers["Sebi"] = () => {
     return makeCharacter(
-        "Sebi",
+        { name: "Sebi" },
         {
             frontDressed: {
                 height: math.unit(70, "cm"),
@@ -17684,7 +17681,7 @@ characterMakers["Sebi"] = () => {
 
 characterMakers["Typhek"] = () => {
     return makeCharacter(
-        "Typhek",
+        { name: "Typhek" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -17769,7 +17766,7 @@ characterMakers["Typhek"] = () => {
 
 characterMakers["Kassy"] = () => {
     return makeCharacter(
-        "Kassy",
+        { name: "Kassy" },
         {
             side: {
                 height: math.unit(5 + 7/12, "feet"),
@@ -17829,7 +17826,7 @@ characterMakers["Kassy"] = () => {
 
 characterMakers["Neil"] = () => {
     return makeCharacter(
-        "Neil",
+        { name: "Neil" },
         {
             front: {
                 height: math.unit(6 + 1/12, "feet"),
@@ -17858,7 +17855,7 @@ characterMakers["Neil"] = () => {
 
 characterMakers["Atticus"] = () => {
     return makeCharacter(
-        "Atticus",
+        { name: "Atticus" },
         {
             front: {
                 height: math.unit(5 + 9/12, "feet"),
@@ -17887,7 +17884,7 @@ characterMakers["Atticus"] = () => {
 
 characterMakers["Milo"] = () => {
     return makeCharacter(
-        "Milo",
+        { name: "Milo" },
         {
             side: {
                 height: math.unit(9, "feet"),
@@ -17916,7 +17913,7 @@ characterMakers["Milo"] = () => {
 
 characterMakers["Ijzer"] = () => {
     return makeCharacter(
-        "Ijzer",
+        { name: "Ijzer" },
         {
             side: {
                 height: math.unit(8, "meters"),
@@ -17957,7 +17954,7 @@ characterMakers["Ijzer"] = () => {
 
 characterMakers["Luca Cervicum"] = () => {
     return makeCharacter(
-        "Luca Cervicum",
+        { name: "Luca Cervicum" },
         {
             front: {
                 height: math.unit(6 + 2/12, "feet"),
@@ -18002,7 +17999,7 @@ characterMakers["Luca Cervicum"] = () => {
 
 characterMakers["Oliver"] = () => {
     return makeCharacter(
-        "Oliver",
+        { name: "Oliver" },
         {
             front: {
                 height: math.unit(6 + 1/12, "feet"),
@@ -18027,7 +18024,7 @@ characterMakers["Oliver"] = () => {
 
 characterMakers["Shane"] = () => {
     return makeCharacter(
-        "Shane",
+        { name: "Shane" },
         {
             front: {
                 height: math.unit(5 + 7/12, "feet"),
@@ -18052,7 +18049,7 @@ characterMakers["Shane"] = () => {
 
 characterMakers["Shin"] = () => {
     return makeCharacter(
-        "Shin",
+        { name: "Shin" },
         {
             front: {
                 height: math.unit(5 + 9/12, "feet"),
@@ -18077,7 +18074,7 @@ characterMakers["Shin"] = () => {
 
 characterMakers["Xerxes"] = () => {
     return makeCharacter(
-        "Xerxes",
+        { name: "Xerxes" },
         {
             front: {
                 height: math.unit(5 + 10/12, "feet"),
@@ -18102,7 +18099,7 @@ characterMakers["Xerxes"] = () => {
 
 characterMakers["Chaska"] = () => {
     return makeCharacter(
-        "Chaska",
+        { name: "Chaska" },
         {
             front: {
                 height: math.unit(6 + 7/12, "feet"),
@@ -18127,7 +18124,7 @@ characterMakers["Chaska"] = () => {
 
 characterMakers["Enuk"] = () => {
     return makeCharacter(
-        "Enuk",
+        { name: "Enuk" },
         {
             front: {
                 height: math.unit(5 + 8/12, "feet"),
@@ -18152,7 +18149,7 @@ characterMakers["Enuk"] = () => {
 
 characterMakers["Bruun"] = () => {
     return makeCharacter(
-        "Bruun",
+        { name: "Bruun" },
         {
             front: {
                 height: math.unit(5 + 10/12, "feet"),
@@ -18177,7 +18174,7 @@ characterMakers["Bruun"] = () => {
 
 characterMakers["Alexeev"] = () => {
     return makeCharacter(
-        "Alexeev",
+        { name: "Alexeev" },
         {
             front: {
                 height: math.unit(6 + 10/12, "feet"),
@@ -18202,7 +18199,7 @@ characterMakers["Alexeev"] = () => {
 
 characterMakers["Evelyn"] = () => {
     return makeCharacter(
-        "Evelyn",
+        { name: "Evelyn" },
         {
             front: {
                 height: math.unit(2 + 8/12, "feet"),
@@ -18226,7 +18223,7 @@ characterMakers["Evelyn"] = () => {
 
 characterMakers["Inca"] = () => {
     return makeCharacter(
-        "Inca",
+        { name: "Inca" },
         {
             front: {
                 height: math.unit(5 + 9/12, "feet"),
@@ -18251,7 +18248,7 @@ characterMakers["Inca"] = () => {
 
 characterMakers["Magdalene"] = () => {
     return makeCharacter(
-        "Magdalene",
+        { name: "Magdalene" },
         {
             front: {
                 height: math.unit(5 + 1/12, "feet"),
@@ -18275,7 +18272,7 @@ characterMakers["Magdalene"] = () => {
 
 characterMakers["Mera"] = () => {
     return makeCharacter(
-        "Mera",
+        { name: "Mera" },
         {
             front: {
                 height: math.unit(6 + 3/12, "feet"),
@@ -18300,7 +18297,7 @@ characterMakers["Mera"] = () => {
 
 characterMakers["Ceres"] = () => {
     return makeCharacter(
-        "Ceres",
+        { name: "Ceres" },
         {
             front: {
                 height: math.unit(6 + 7/12, "feet"),
@@ -18334,7 +18331,7 @@ characterMakers["Ceres"] = () => {
 
 characterMakers["Kris"] = () => {
     return makeCharacter(
-        "Kris",
+        { name: "Kris" },
         {
             front: {
                 height: math.unit(5 + 10/12, "feet"),
@@ -18359,7 +18356,7 @@ characterMakers["Kris"] = () => {
 
 characterMakers["Taluthus"] = () => {
     return makeCharacter(
-        "Taluthus",
+        { name: "Taluthus" },
         {
             front: {
                 height: math.unit(7, "feet"),
@@ -18388,7 +18385,7 @@ characterMakers["Taluthus"] = () => {
 
 characterMakers["Dawn"] = () => {
     return makeCharacter(
-        "Dawn",
+        { name: "Dawn" },
         {
             front: {
                 height: math.unit(5 + 9/12, "feet"),
@@ -18423,7 +18420,7 @@ characterMakers["Dawn"] = () => {
 
 characterMakers["Arador"] = () => {
     return makeCharacter(
-        "Arador",
+        { name: "Arador" },
         {
             anthro: {
                 height: math.unit(8 + 3/12, "feet"),
@@ -18462,7 +18459,7 @@ characterMakers["Arador"] = () => {
 
 characterMakers["Dharsi"] = () => {
     return makeCharacter(
-        "Dharsi",
+        { name: "Dharsi" },
         {
             front: {
                 height: math.unit(5 + 10/12, "feet"),
@@ -18515,7 +18512,7 @@ characterMakers["Dharsi"] = () => {
 
 characterMakers["Deathy"] = () => {
     return makeCharacter(
-        "Deathy",
+        { name: "Deathy" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -18564,7 +18561,7 @@ characterMakers["Deathy"] = () => {
 
 characterMakers["Juniper"] = () => {
     return makeCharacter(
-        "Juniper",
+        { name: "Juniper" },
         {
             front: {
                 height: math.unit(16, "feet"),
@@ -18588,7 +18585,7 @@ characterMakers["Juniper"] = () => {
 
 characterMakers["Hipster"] = () => {
     return makeCharacter(
-        "Hipster",
+        { name: "Hipster" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -18635,7 +18632,7 @@ characterMakers["Hipster"] = () => {
 
 characterMakers["Tendirmuldr"] = () => {
     return makeCharacter(
-        "Tendirmuldr",
+        { name: "Tendirmuldr" },
         {
             front: {
                 height: math.unit(6, "feet"),
@@ -18660,7 +18657,7 @@ characterMakers["Tendirmuldr"] = () => {
 
 characterMakers["Mort"] = () => {
     return makeCharacter(
-        "Mort",
+        { name: "Mort" },
         {
             front: {
                 height: math.unit(14, "feet"),
@@ -18705,7 +18702,7 @@ characterMakers["Mort"] = () => {
 
 characterMakers["Lycoa"] = () => {
     return makeCharacter(
-        "Lycoa",
+        { name: "Lycoa" },
         {
             front: {
                 height: math.unit(8, "feet"),
@@ -18744,7 +18741,7 @@ characterMakers["Lycoa"] = () => {
 
 characterMakers["Naldara"] = () => {
     return makeCharacter(
-        "Naldara",
+        { name: "Naldara" },
         {
             front: {
                 height: math.unit(4 + 2/12, "feet"),
@@ -18769,7 +18766,7 @@ characterMakers["Naldara"] = () => {
 
 characterMakers["Briar"] = () => {
     return makeCharacter(
-        "Briar",
+        { name: "Briar" },
         {
             front: {
                 height: math.unit(13 + 7/12, "feet"),
@@ -18794,7 +18791,7 @@ characterMakers["Briar"] = () => {
 
 characterMakers["Vanguard"] = () => {
     return makeCharacter(
-        "Vanguard",
+        { name: "Vanguard" },
         {
             side: {
                 height: math.unit(10, "feet"),
@@ -18819,7 +18816,7 @@ characterMakers["Vanguard"] = () => {
 
 characterMakers["Artemis"] = () => {
     return makeCharacter(
-        "Artemis",
+        { name: "Artemis" },
         {
             front: {
                 height: math.unit(7.5, "feet"),
@@ -18848,7 +18845,7 @@ characterMakers["Artemis"] = () => {
 
 characterMakers["Kira"] = () => {
     return makeCharacter(
-        "Kira",
+        { name: "Kira" },
         {
             front: {
                 height: math.unit(5 + 3/12, "feet"),
@@ -18900,7 +18897,7 @@ characterMakers["Kira"] = () => {
 
 characterMakers["Scramble"] = () => {
     return makeCharacter(
-        "Scramble",
+        { name: "Scramble" },
         {
             front: {
                 height: math.unit(5 + 4/12, "feet"),
@@ -18935,7 +18932,7 @@ characterMakers["Scramble"] = () => {
 
 characterMakers["Biscuit"] = () => {
     return makeCharacter(
-        "Biscuit",
+        { name: "Biscuit" },
         {
             side: {
                 height: math.unit(6 + 2/12, "feet"),
@@ -18960,7 +18957,7 @@ characterMakers["Biscuit"] = () => {
 
 characterMakers["Poffin"] = () => {
     return makeCharacter(
-        "Poffin",
+        { name: "Poffin" },
         {
             front: {
                 height: math.unit(5 + 2/12, "feet"),
@@ -18985,7 +18982,7 @@ characterMakers["Poffin"] = () => {
 
 characterMakers["Dhari"] = () => {
     return makeCharacter(
-        "Dhari",
+        { name: "Dhari" },
         {
             front: {
                 height: math.unit(6 + 3/12, "feet"),
@@ -19074,7 +19071,7 @@ characterMakers["Dhari"] = () => {
 
 characterMakers["Rena Dyne"] = () => {
     return makeCharacter(
-        "Rena Dyne",
+        { name: "Rena Dyne" },
         {
             anthro: {
                 height: math.unit(5 + 7/12, "feet"),
@@ -19109,7 +19106,7 @@ characterMakers["Rena Dyne"] = () => {
 
 characterMakers["Weremeep"] = () => {
     return makeCharacter(
-        "Weremeep",
+        { name: "Weremeep" },
         {
             front: {
                 height: math.unit(8, "feet"),
@@ -19142,7 +19139,7 @@ characterMakers["Weremeep"] = () => {
 
 characterMakers["Reza"] = () => {
     return makeCharacter(
-        "Reza",
+        { name: "Reza" },
         {
             front: {
                 height: math.unit(4, "feet"),
@@ -19177,7 +19174,7 @@ characterMakers["Reza"] = () => {
 
 characterMakers["Athea"] = () => {
     return makeCharacter(
-        "Athea",
+        { name: "Athea" },
         {
             side: {
                 height: math.unit(15, "feet"),
@@ -19231,7 +19228,7 @@ characterMakers["Athea"] = () => {
 
 characterMakers["Seroko"] = () => {
     return makeCharacter(
-        "Seroko",
+        { name: "Seroko" },
         {
             front: {
                 height: math.unit(8 + 8/12, "feet"),
@@ -19276,7 +19273,7 @@ characterMakers["Seroko"] = () => {
 
 characterMakers["Quatzi"] = () => {
     return makeCharacter(
-        "Quatzi",
+        { name: "Quatzi" },
         {
             front: {
                 height: math.unit(5.5, "feet"),
@@ -19305,7 +19302,7 @@ characterMakers["Quatzi"] = () => {
 
 characterMakers["Sen"] = () => {
     return makeCharacter(
-        "Sen",
+        { name: "Sen" },
         {
             front: {
                 height: math.unit(5 + 11/12, "feet"),
@@ -19349,7 +19346,7 @@ characterMakers["Sen"] = () => {
 
 characterMakers["Fruity"] = () => {
     return makeCharacter(
-        "Fruity",
+        { name: "Fruity" },
         {
             front: {
                 height: math.unit(166.6, "cm"),
@@ -19388,7 +19385,7 @@ characterMakers["Fruity"] = () => {
 
 characterMakers["Zost"] = () => {
     return makeCharacter(
-        "Zost",
+        { name: "Zost" },
         {
             side: {
                 height: math.unit(10, "feet"),
@@ -19427,7 +19424,7 @@ characterMakers["Zost"] = () => {
 
 characterMakers["Luci"] = () => {
     return makeCharacter(
-        "Luci",
+        { name: "Luci" },
         {
             front: {
                 height: math.unit(5 + 4/12, "feet"),
@@ -19462,7 +19459,7 @@ characterMakers["Luci"] = () => {
 
 characterMakers["2th"] = () => {
     return makeCharacter(
-        "2th",
+        { name: "2th" },
         {
             front: {
                 height: math.unit(1500, "feet"),
@@ -19514,7 +19511,7 @@ characterMakers["2th"] = () => {
 
 characterMakers["Amethyst"] = () => {
     return makeCharacter(
-        "Amethyst",
+        { name: "Amethyst" },
         {
             front: {
                 height: math.unit(5 + 6/12, "feet"),
@@ -19549,7 +19546,7 @@ characterMakers["Amethyst"] = () => {
 
 characterMakers["Yumi Akiyama"] = () => {
     return makeCharacter(
-        "Yumi Akiyama",
+        { name: "Yumi Akiyama" },
         {
             front: {
                 height: math.unit(4 + 11/12, "feet"),
