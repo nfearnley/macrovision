@@ -8265,6 +8265,19 @@ const attributionData = {
                 "ruleroftherainforest"
             ]
         },
+        {
+            prefix: "./media/characters/amethyst/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/21157485/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/21157485/" },
+            ],
+            authors: [
+                "kikimochan"
+            ],
+            owners: [
+                "amethyst-lumisade"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11409,6 +11422,14 @@ const attributionData = {
         "pikisuperstar": {
             "name": "pikisuperstar",
             "url": "https://www.freepik.com/pikisuperstar",
+        },
+        "kikimochan": {
+            "name": "kikimochan",
+            "url": "https://www.furaffinity.net/user/kikimochan",
+        },
+        "amethyst-lumisade": {
+            "name": "Amethyst Lumisade",
+            "url": "https://www.furaffinity.net/user/amethystlumisade/",
         },
     }
 }

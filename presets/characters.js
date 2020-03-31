@@ -20078,6 +20078,42 @@ characterMakers["2th"] = () => {
     )
 };
 
+characterMakers["Amethyst"] = () => {
+    return makeCharacter(
+        "Amethyst",
+        "AmethystSnowmew",
+        {
+            front: {
+                height: math.unit(5 + 6/12, "feet"),
+                weight: math.unit(220, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/amethyst/front.svg",
+                    extra: 2078/2040,
+                    bottom: 0.045
+                }
+            },
+            back: {
+                height: math.unit(5 + 6/12, "feet"),
+                weight: math.unit(220, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/amethyst/back.svg",
+                    extra: 2021/1989,
+                    bottom: 0.02
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(5 + 6/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {
