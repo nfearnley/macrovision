@@ -280,8 +280,6 @@ function makeVehicleGroup(info, name, prefix) {
         });
     });
 
-    console.log(sides)
-
     const entity = makeMultiVehicle(name, sides);
 
     entity.sizes.push({

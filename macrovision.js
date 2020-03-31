@@ -22,6 +22,8 @@ let dragScaleHandle = null;
 let dragEntityScale = 1;
 let dragEntityScaleHandle = null;
 
+let worldSizeDirty = false;
+
 math.createUnit("humans", {
     definition: "5.75 feet"
 })
@@ -150,7 +152,7 @@ function updateEntityElement(entity, element) {
 }
 
 function updateSizes(dirtyOnly = false) {
-    drawScale();
+    drawScale(dirtyOnly);
 
     let ordered = Object.entries(entities);
 
@@ -178,7 +180,9 @@ function updateSizes(dirtyOnly = false) {
 
 }
 
-function drawScale() {
+function drawScale(ifDirty=false) {
+    if (ifDirty && !worldSizeDirty)
+        return;
     function drawTicks(/** @type {CanvasRenderingContext2D} */ ctx, pixelsPer, heightPer) {
         let total = heightPer.clone();
         total.value = 0;
@@ -913,7 +917,7 @@ function checkEntity(entity) {
     });
 }
 
-function displayEntity(entity, view, x, y, selectEntity=false) {
+function displayEntity(entity, view, x, y, selectEntity=false, refresh=false) {
     checkEntity(entity);
     
     const box = document.createElement("div");
@@ -1005,7 +1009,8 @@ function displayEntity(entity, view, x, y, selectEntity=false) {
 
     entity.dirty = true;
 
-    updateSizes(true);
+    if (refresh)
+        updateSizes(true);
 }
 
 
@@ -1648,7 +1653,7 @@ function prepareEntities() {
         
         button.addEventListener("click", e => {
             const newEntity = entityList[select.value].constructor()
-            displayEntity(newEntity, newEntity.defaultView, 0.5, 1, true);
+            displayEntity(newEntity, newEntity.defaultView, 0.5, 1, true, true);
         });
 
         const categoryOption = document.createElement("option");
@@ -1777,6 +1782,7 @@ function updateWorldHeight() {
 }
 
 function setWorldHeight(oldHeight, newHeight) {
+    worldSizeDirty = true;
     config.height = newHeight.to(document.querySelector("#options-height-unit").value)
 
     const unit = document.querySelector("#options-height-unit").value;

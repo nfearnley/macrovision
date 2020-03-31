@@ -1110,7 +1110,8 @@ const attributionData = {
         {
             prefix: "./media/buildings/roads/",
             files: [
-                { name: "four-lane-highway.svg", source: null }
+                { name: "four-lane-highway.svg", source: null },
+                { name: "sidewalk.svg", source: null },
             ],
             authors: [
                 "chemicalcrux"
@@ -8322,7 +8323,9 @@ const attributionData = {
                 { name: "french-fry.svg", source: null },
                 { name: "chicken-nugget.svg", source: null },
                 { name: "onion-ring.svg", source: null },
-                { name: "tater-tor.svg", source: null }
+                { name: "tater-tot.svg", source: null },
+                { name: "bagel.svg", source: null },
+                { name: "donut.svg", source: null },
             ],
             authors: [
                 "chemicalcrux"
@@ -8468,7 +8471,7 @@ const attributionData = {
             ]
         },
         {
-            prefix: "./media/objects/game-pieces/",
+            prefix: "./media/objects/chess-pieces/",
             files: [
                 { name: "chess_king.svg", source: "https://svgsilh.com/image/3413429.html" },
                 { name: "chess_queen.svg", source: "https://svgsilh.com/image/3413429.html" },
@@ -8515,6 +8518,15 @@ const attributionData = {
         },
         {
             prefix: "./media/objects/plants/",
+            files: [
+                { name: "grass.svg", source: "https://www.freepik.com/free-vector/grass-border-silhouette-realistic-design_4904217.htm#page=1&query=grass%20silhouette&position=0" }
+            ],
+            authors: [
+                "pikisuperstar"
+            ]
+        },
+        {
+            prefix: "./media/objects/trees/",
             files: [
                 { name: "sycamore-tree.svg", source: "https://www.dimensions.guide/element/sycamore-tree" }
             ],
@@ -11392,6 +11404,10 @@ const attributionData = {
         "ruleroftherainforest": {
             "name": "RulerOfTheRainforest",
             "url": "https://www.furaffinity.net/user/ruleroftherainforest",
+        },
+        "pikisuperstar": {
+            "name": "pikisuperstar",
+            "url": "https://www.freepik.com/pikisuperstar",
         },
     }
 }
