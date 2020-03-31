@@ -40765,7 +40765,7 @@ pokemonMakers["Zygarde"] = () => {
     weight: math.unit("73.9", "lbs"),
     name: "10% Forme",
     image: {
-        source: "./media/pokemon/Zygarde - 10% Forme.svg"
+        source: "./media/pokemon/Zygarde - 10%25 Forme.svg"
     },
     rename: true
 },
@@ -40775,7 +40775,7 @@ pokemonMakers["Zygarde"] = () => {
     weight: math.unit("672.4", "lbs"),
     name: "50% Forme",
     image: {
-        source: "./media/pokemon/Zygarde - 50% Forme.svg"
+        source: "./media/pokemon/Zygarde - 50%25 Forme.svg"
     },
     rename: true
 },
