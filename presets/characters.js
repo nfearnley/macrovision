@@ -19583,6 +19583,60 @@ characterMakers["Yumi Akiyama"] = () => {
     )
 };
 
+characterMakers["Rifter Yrmori"] = () => {
+    return makeCharacter(
+        { name: "Rifter Yrmori" },
+        {
+            front: {
+                height: math.unit(8, "feet"),
+                weight: math.unit(500, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/rifter-yrmori/front.svg",
+                    extra: 1180/1125,
+                    bottom: 0.02
+                }
+            },
+            back: {
+                height: math.unit(8, "feet"),
+                weight: math.unit(500, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/rifter-yrmori/back.svg",
+                    extra: 1190/1145,
+                    bottom: 0.001
+                }
+            },
+            wings: {
+                height: math.unit(7.75, "feet"),
+                weight: math.unit(500, "lb"),
+                name: "Wings",
+                image: {
+                    source: "./media/characters/rifter-yrmori/wings.svg",
+                    extra: 1357/1285
+                }
+            },
+            maw: {
+                height: math.unit(0.8, "feet"),
+                name: "Maw",
+                image: {
+                    source: "./media/characters/rifter-yrmori/maw.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(8, "feet"),
+                default: true
+            },
+            {
+                name: "Macro",
+                height: math.unit(42, "meters")
+            },
+        ]
+    )
+};
 //characters
 
 function makeCharacters() {

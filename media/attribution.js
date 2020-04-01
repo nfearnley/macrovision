@@ -8291,6 +8291,22 @@ const attributionData = {
                 "yumiakiyama"
             ]
         },
+        {
+            prefix: "./media/characters/rifter-yrmori/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/30503952/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/30503952/" },
+                { name: "wings.svg", source: "https://www.furaffinity.net/view/30503952/" },
+                { name: "maw.svg", source: "https://www.furaffinity.net/view/30503952/" },
+            ],
+            authors: [
+                "gaiawolfess",
+                "malakhael"
+            ],
+            owners: [
+                "foxinov"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11468,6 +11484,10 @@ const attributionData = {
             "name": "Yuki Akiyama",
             "url": "https://www.furaffinity.net/user/yumiakiyama/",
         },
+        "foxinov": {
+            "name": "Foxinov",
+            "url": "https://www.furaffinity.net/user/foxinov/",
+        }
     }
 }
 
