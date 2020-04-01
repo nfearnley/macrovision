@@ -1615,16 +1615,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function prepareEntities() {
     availableEntities["buildings"] = makeBuildings();
-    availableEntities["landmarks"] = makeLandmarks();
     availableEntities["characters"] = makeCharacters();
-    availableEntities["species"] = makeSpecies();
-    availableEntities["objects"] = makeObjects();
+    availableEntities["cities"] = makeCities();
     availableEntities["fiction"] = makeFiction();
     availableEntities["food"] = makeFood();
+    availableEntities["landmarks"] = makeLandmarks();
     availableEntities["naturals"] = makeNaturals();
-    availableEntities["vehicles"] = makeVehicles();
-    availableEntities["cities"] = makeCities();
+    availableEntities["objects"] = makeObjects();
     availableEntities["pokemon"] = makePokemon();
+    availableEntities["species"] = makeSpecies();
+    availableEntities["vehicles"] = makeVehicles();
 
     availableEntities["characters"].sort((x, y) => {
         return x.name.toLowerCase() < y.name.toLowerCase() ? -1 : 1
