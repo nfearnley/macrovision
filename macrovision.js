@@ -904,7 +904,9 @@ function removeEntity(element) {
 
     delete entities[element.dataset.key];
     const bottomName = document.querySelector("#bottom-name-" + element.dataset.key);
+    const topName = document.querySelector("#top-name-" + element.dataset.key);
     bottomName.parentElement.removeChild(bottomName);
+    topName.parentElement.removeChild(topName);
     element.parentElement.removeChild(element);
 
 }
