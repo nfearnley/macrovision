@@ -52,12 +52,12 @@ function makeSlice(min, max) {
     }
 }
 
-scenes["x < 10m"] = makeSlice(math.unit(0, "meters"), math.unit(10, "meters"));
-scenes["10m < x <= 100m"] = makeSlice(math.unit(10, "meters"), math.unit(100, "meters"));
-scenes["100m < x <= 1km"] = makeSlice(math.unit(100, "meters"), math.unit(1000, "meters"));
-scenes["1km < x <= 10km"] = makeSlice(math.unit(1000, "meters"), math.unit(10000, "meters"));
-scenes["10km < x <= 100km"] = makeSlice(math.unit(10000, "meters"), math.unit(100000, "meters"));
-scenes["100km < x <= 1000km"] = makeSlice(math.unit(100000, "meters"), math.unit(1000000, "meters"));
+scenes["<10m"] = makeSlice(math.unit(0, "meters"), math.unit(10, "meters"));
+scenes["10m-100m"] = makeSlice(math.unit(10, "meters"), math.unit(100, "meters"));
+scenes["100m-1km"] = makeSlice(math.unit(100, "meters"), math.unit(1000, "meters"));
+scenes["1km-10km"] = makeSlice(math.unit(1000, "meters"), math.unit(10000, "meters"));
+scenes["10km-100km"] = makeSlice(math.unit(10000, "meters"), math.unit(100000, "meters"));
+scenes["100km-1000km"] = makeSlice(math.unit(100000, "meters"), math.unit(1000000, "meters"));
 scenes["Everyone"] = () => {
     config.height = math.unit(11, "meters");
     availableEntities.characters.map(maker => {

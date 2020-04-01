@@ -371,7 +371,9 @@ body.toggle-bottom-name .bottom-name {
 }
 
 #menubar select {
+    font-size: 16pt;
     max-width: 200pt;
+    min-width: 120pt;
     height: 40pt;
     max-height: 180pt;
     overflow: hidden;
@@ -386,7 +388,6 @@ body.toggle-bottom-name .bottom-name {
 }
 #spawners > select {
     display: none;
-    font-size: 24pt;
 }
 
 #spawners > select#category-picker {
@@ -400,7 +401,8 @@ body.toggle-bottom-name .bottom-name {
 
 #menubar button {
     position: relative;
-    font-size: 36pt;
+    font-size: 32pt;
+    height: 40pt;
     z-index: 1;
 }
 
