@@ -1,4 +1,4 @@
-const characterMakers = [];
+const characterMakers = {};
 
 math.createUnit("parsec", {
     definition: "3.086e16 meters",
