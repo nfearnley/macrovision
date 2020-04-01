@@ -127,6 +127,26 @@ function makeFood() {
         "food"
     ));
 
+    results.push(makeHeight(
+        [
+            ["pringles-can", 9.16, "inches"],
+        ],
+        "Snacks",
+        "",
+        "food"
+    ));
+
+    results.push(makeHeight(
+        [
+            ["chicken-egg", 2.084, "inches"],
+            ["quail-egg", 1.05, "inches"],
+            ["ostritch-egg", 5.9, "inches"]
+        ],
+        "Eggs",
+        "",
+        "food"
+    ));
+
     results.push(makeHeightWeight(
         [
             ["m&m", 0.5262, "inches", 43/50, "g", "./media/objects/circle.svg"],

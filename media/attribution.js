@@ -8343,6 +8343,17 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/food/eggs/",
+            files: [
+                { name: "chicken-egg.svg", source: null },
+                { name: "quail-egg.svg", source: null },
+                { name: "ostritch-egg.svg", source: null },
+            ],
+            authors: [
+                "chemicalcrux"
+            ]
+        },
+        {
             prefix: "./media/food/fast-food/",
             files: [
                 { name: "hamburger.svg", source: null },
@@ -8352,6 +8363,15 @@ const attributionData = {
                 { name: "tater-tot.svg", source: null },
                 { name: "bagel.svg", source: null },
                 { name: "donut.svg", source: null },
+            ],
+            authors: [
+                "chemicalcrux"
+            ]
+        },
+        {
+            prefix: "./media/food/snacks/",
+            files: [
+                { name: "pringles-can.svg", source: null },
             ],
             authors: [
                 "chemicalcrux"
