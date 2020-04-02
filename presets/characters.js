@@ -19637,6 +19637,88 @@ characterMakers["Rifter Yrmori"] = () => {
         ]
     )
 };
+
+characterMakers["Tahajin"] = () => {
+    return makeCharacter(
+        { name: "Tahajin" },
+        {
+            were: {
+                height: math.unit(25 + 6/12, "feet"),
+                weight: math.unit(10000, "lb"),
+                name: "Were",
+                image: {
+                    source: "./media/characters/tahajin/were.svg",
+                    extra: 801/770,
+                    bottom: 0.042
+                }
+            },
+            aquatic: {
+                height: math.unit(6 + 4/12, "feet"),
+                weight: math.unit(160, "lb"),
+                name: "Aquatic",
+                image: {
+                    source: "./media/characters/tahajin/aquatic.svg",
+                    extra: 572/542,
+                    bottom: 0.04
+                }
+            },
+            chow: {
+                height: math.unit(8 + 11/12, "feet"),
+                weight: math.unit(450, "lb"),
+                name: "Chow",
+                image: {
+                    source: "./media/characters/tahajin/chow.svg",
+                    extra: 660/640,
+                    bottom: 0.015
+                }
+            },
+            demiNaga: {
+                height: math.unit(6 + 8/12, "feet"),
+                weight: math.unit(300, "lb"),
+                name: "Demi Naga",
+                image: {
+                    source: "./media/characters/tahajin/demi-naga.svg",
+                    extra: 643/615,
+                    bottom: 0.1
+                }
+            },
+            data: {
+                height: math.unit(5, "inches"),
+                weight: math.unit(0.1, "lb"),
+                name: "Data",
+                image: {
+                    source: "./media/characters/tahajin/data.svg"
+                }
+            },
+            fluu: {
+                height: math.unit(5 + 7/12, "feet"),
+                weight: math.unit(140, "lb"),
+                name: "Fluu",
+                image: {
+                    source: "./media/characters/tahajin/fluu.svg",
+                    extra: 628/592,
+                    bottom: 0.02
+                }
+            },
+            starWarrior: {
+                height: math.unit(4 + 5/12, "feet"),
+                weight: math.unit(50, "lb"),
+                name: "Star Warrior",
+                image: {
+                    source: "./media/characters/tahajin/star-warrior.svg"
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(25 + 6/12, "feet"),
+                default: true
+            },
+        ]
+    )
+};
+
 //characters
 
 function makeCharacters() {

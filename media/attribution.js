@@ -8307,6 +8307,24 @@ const attributionData = {
                 "foxinov"
             ]
         },
+        {
+            prefix: "./media/characters/tahajin/",
+            files: [
+                { name: "were.svg", source: "https://www.furaffinity.net/view/27266921/" },
+                { name: "aquatic.svg", source: "https://www.furaffinity.net/view/27266921/" },
+                { name: "chow.svg", source: "https://www.furaffinity.net/view/27266921/" },
+                { name: "demi-naga.svg", source: "https://www.furaffinity.net/view/27266921/" },
+                { name: "data.svg", source: "https://www.furaffinity.net/view/27266921/" },
+                { name: "were.svg", source: "https://www.furaffinity.net/view/27266921/" },
+                { name: "were.svg", source: "https://www.furaffinity.net/view/27266921/" },
+            ],
+            authors: [
+                "meep"
+            ],
+            owners: [
+                "hajinn"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11487,7 +11505,11 @@ const attributionData = {
         "foxinov": {
             "name": "Foxinov",
             "url": "https://www.furaffinity.net/user/foxinov/",
-        }
+        },
+        "hajinn": {
+            "name": "Hajinn",
+            "url": "https://www.furaffinity.net/user/hajinn/",
+        },
     }
 }
 
