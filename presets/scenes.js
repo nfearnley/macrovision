@@ -110,20 +110,23 @@ scenes["EVERY VIEW AAAAA"] = () => {
 }
 
 
-function makeOwnerScene(owner) {
+function makeOwnerScene(owners) {
     return () => {
-        availableEntities["characters"].filter(x => {
-            const entity = x.constructor();
-            const owners = ownersOf(entity.views[entity.view].image.source);
-            if (owners)
-                return owners.indexOf(owner) != -1;
-            else
-                return false;
+        owners.flatMap(owner => {
+            return availableEntities["characters"].filter(x => {
+                const entity = x.constructor();
+                const owners = ownersOf(entity.views[entity.view].image.source);
+                if (owners)
+                    return owners.indexOf(owner) != -1;
+                else
+                    return false;
+            })
         }).map(maker => {
             return maker.constructor();
         }).sort((e1, e2) => {
-            return e1.sizes[e1.sizes.length - 1].height.toNumber() - e2.sizes[e2.sizes.length - 1].height.toNumber()
+            return e1.views[e1.view].height.toNumber() - e2.views[e2.view].height.toNumber()
         }).forEach(entity => {
+            console.log(entity)
             displayEntity(entity, entity.view, 0, 1);
         });
         
@@ -163,18 +166,7 @@ function makeOwnerSceneViews(owners) {
     }
 }
 
-scenes["Kurri"] = () => {
-    availableEntities["characters"].filter(x => {
-        const entity = x.constructor();
-        return entity.info.author == "Kurrikage";
-    }).forEach(maker => {
-        const entity = maker.constructor();
-        displayEntity(entity, entity.view, 0, 1);
-    });
-    
-    arrangeEntities(getSortedEntities());
-    fitWorld(true);
-}
+scenes["Kurri"] = makeOwnerScene(["kurrikage"]);
 
 scenes["Neopuc"] = () => {
     availableEntities["characters"].filter(x => {
