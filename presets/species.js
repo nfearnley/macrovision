@@ -57,10 +57,9 @@ function makeSpecies() {
     const results = [];
 
     Object.entries(speciesMakers).forEach(([key, value]) => {
-        results.push({
-            name: key,
-            constructor: value
-        });
+        results.push(
+            value()
+        );
     });
 
     return results;

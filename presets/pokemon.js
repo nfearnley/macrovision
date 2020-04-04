@@ -39937,10 +39937,9 @@ function makePokemon() {
     const results = [];
 
         Object.entries(pokemonMakers).forEach(([key, value]) => {
-        results.push({
-            name: key,
-            constructor: value
-        });
+        results.push(
+            value()
+        );
     });
 
     return results.sort((a, b) => {
