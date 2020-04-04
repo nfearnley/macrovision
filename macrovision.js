@@ -1044,8 +1044,6 @@ function displayEntity(entity, view, x, y, selectEntity=false, refresh=false) {
     const image = entity.views[view].image;
     img.src = image.source;
 
-    displayAttribution(image.source);
-
     if (image.bottom !== undefined) {
         img.style.setProperty("--offset", ((-1 + image.bottom) * 100) + "%")
     } else {
