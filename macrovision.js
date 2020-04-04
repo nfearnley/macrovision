@@ -24,9 +24,71 @@ let dragEntityScaleHandle = null;
 
 let worldSizeDirty = false;
 
+
+
 math.createUnit("humans", {
     definition: "5.75 feet"
+});
+
+math.createUnit("story", {
+    definition: "12 feet",
+    prefixes: "long"
+});
+math.createUnit("stories", {
+    definition: "12 feet",
+    prefixes: "long"
+});
+math.createUnit("parsec", {
+    definition: "3.086e16 meters",
+    prefixes: "long"
 })
+math.createUnit("parsecs", {
+    definition: "3.086e16 meters",
+    prefixes: "long"
+})
+math.createUnit("lightyears", {
+    definition: "9.461e15 meters",
+    prefixes: "long"
+})
+math.createUnit("AU", {
+    definition: "149597870700 meters"
+})
+math.createUnit("AUs", {
+    definition: "149597870700 meters"
+})
+math.createUnit("dalton", {
+    definition: "1.66e-27 kg",
+    prefixes: "long"
+});
+math.createUnit("daltons", {
+    definition: "1.66e-27 kg",
+    prefixes: "long"
+});
+math.createUnit("solarradii", {
+    definition: "695990 km",
+    prefixes: "long"
+});
+math.createUnit("solarmasses", {
+    definition: "2e30 kg",
+    prefixes: "long"
+});
+math.createUnit("galaxy", {
+    definition: "105700 lightyears",
+    prefixes: "long"
+});
+math.createUnit("galaxies", {
+    definition: "105700 lightyears",
+    prefixes: "long"
+});
+math.createUnit("universe", {
+    definition: "93.016e9 lightyears",
+    prefixes: "long"
+});
+math.createUnit("universes", {
+    definition: "93.016e9 lightyears",
+    prefixes: "long"
+});
+
 const unitChoices = {
     length: [
         "meters",
@@ -266,14 +328,56 @@ function drawScale(ifDirty=false) {
     drawTicks(ctx, pixelsPer, heightPer);
 }
 
+// Entities are generated as needed, and we make a copy
+// every time - the resulting objects get mutated, after all.
+// But we also want to be able to read some information without 
+// calling the constructor -- e.g. making a list of authors and
+// owners. So, this function is used to generate that information.
+// It is invoked like makeEntity so that it can be dropped in easily,
+// but returns an object that lets you construct many copies of an  entity,
+// rather than creating a new entity.
+function createEntityMaker(info, views, sizes) {
+    const maker = {};
+
+    maker.name = info.name;
+    maker.constructor = () => makeEntity(info, views, sizes);
+    maker.authors = [];
+    maker.owners = [];
+
+    Object.values(views).forEach(view => {
+        const authors = authorsOf(view.image.source);
+        if (authors) {
+            authors.forEach(author => {
+                if (maker.authors.indexOf(author) == -1) {
+                    maker.authors.push(author);
+                }
+            });
+        }
+        const owners = ownersOf(view.image.source);
+        if (owners) {
+            owners.forEach(owner => {
+                if (maker.owners.indexOf(owner) == -1) {
+                    maker.owners.push(owner);
+                }
+            });
+        }
+    });
+
+    return maker;
+}
+
+// This function serializes and parses its arguments to avoid sharing
+// references to a common object. This allows for the objects to be 
+// safely mutated.
+
 function makeEntity(info, views, sizes) {
     const entityTemplate = {
         name: info.name,
         identifier: info.name,
         scale: 1,
-        info: info,
-        views: views,
-        sizes: sizes === undefined ? [] : sizes,
+        info: JSON.parse(JSON.stringify(info)),
+        views: JSON.parse(JSON.stringify(views), math.reviver),
+        sizes: sizes === undefined ? [] : JSON.parse(JSON.stringify(sizes), math.reviver),
         init: function () {
             const entity = this;
             Object.entries(this.views).forEach(([viewKey, view]) => {

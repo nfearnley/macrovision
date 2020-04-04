@@ -1,12 +1,4 @@
 
-math.createUnit("story", {
-    definition: "12 feet",
-    prefixes: "long"
-});
-math.createUnit("stories", {
-    definition: "12 feet",
-    prefixes: "long"
-});
 
 function makeBuilding(name, height, image) {
     views = {

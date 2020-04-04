@@ -1,23 +1,5 @@
 const characterMakers = {};
 
-math.createUnit("parsec", {
-    definition: "3.086e16 meters",
-    prefixes: "long"
-})
-math.createUnit("parsecs", {
-    definition: "3.086e16 meters",
-    prefixes: "long"
-})
-math.createUnit("lightyears", {
-    definition: "9.461e15 meters",
-    prefixes: "long"
-})
-math.createUnit("AU", {
-    definition: "149597870700 meters"
-})
-math.createUnit("AUs", {
-    definition: "149597870700 meters"
-})
 function makeCharacter(info, viewInfo, defaultSizes) {
     views = {};
 
@@ -47,13 +29,10 @@ function makeCharacter(info, viewInfo, defaultSizes) {
         }
     });
 
-    const entity = makeEntity(info, views, defaultSizes);
-
-    return entity;
+    return createEntityMaker(info, views, defaultSizes);
 }
 
-characterMakers["Fen"] = () => {
-    return makeCharacter(
+characterMakers["Fen"] = () => makeCharacter(
         {
             name: "Fen",
             species: "Crux",
@@ -142,10 +121,8 @@ characterMakers["Fen"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Sofia"] = () => {
-    return makeCharacter(
+characterMakers["Sofia"] = () => makeCharacter(
         { name: "Sofia" },
         {
             front: {
@@ -191,10 +168,8 @@ characterMakers["Sofia"] = () => {
             },
         ]
     )
-};
 
-characterMakers["March"] = () => {
-    return makeCharacter(
+characterMakers["March"] = () => makeCharacter(
         { name: "March" },
         {
             front: {
@@ -243,10 +218,8 @@ characterMakers["March"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Noir"] = () => {
-    return makeCharacter(
+characterMakers["Noir"] = () => makeCharacter(
         { name: "Noir" },
         {
             front: {
@@ -288,10 +261,8 @@ characterMakers["Noir"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Okuri"] = () => {
-    return makeCharacter(
+characterMakers["Okuri"] = () => makeCharacter(
         { name: "Okuri" },
         {
             front: {
@@ -323,10 +294,8 @@ characterMakers["Okuri"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Manny"] = () => {
-    return makeCharacter(
+characterMakers["Manny"] = () => makeCharacter(
         { name: "Manny" },
         {
             front: {
@@ -378,10 +347,8 @@ characterMakers["Manny"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Adake"] = () => {
-    return makeCharacter(
+characterMakers["Adake"] = () => makeCharacter(
         { name: "Adake" },
         {
             front: {
@@ -448,10 +415,8 @@ characterMakers["Adake"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Elijah"] = () => {
-    return makeCharacter(
+characterMakers["Elijah"] = () => makeCharacter(
         { name: "Elijah" },
         {
             side: {
@@ -488,10 +453,8 @@ characterMakers["Elijah"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Rai"] = () => {
-    return makeCharacter(
+characterMakers["Rai"] = () => makeCharacter(
         { name: "Rai" },
         {
             front: {
@@ -552,10 +515,8 @@ characterMakers["Rai"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Jazzy"] = () => {
-    return makeCharacter(
+characterMakers["Jazzy"] = () => makeCharacter(
         { name: "Jazzy" },
         {
             front: {
@@ -587,10 +548,8 @@ characterMakers["Jazzy"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Flamm"] = () => {
-    return makeCharacter(
+characterMakers["Flamm"] = () => makeCharacter(
         { name: "Flamm" },
         {
             front: {
@@ -616,10 +575,8 @@ characterMakers["Flamm"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Zephiro"] = () => {
-    return makeCharacter(
+characterMakers["Zephiro"] = () => makeCharacter(
         { name: "Zephiro" },
         {
             front: {
@@ -669,10 +626,8 @@ characterMakers["Zephiro"] = () => {
             },   
         ]
     )
-};
 
-characterMakers["Fory"] = () => {
-    return makeCharacter(
+characterMakers["Fory"] = () => makeCharacter(
         { name: "Fory" },
         {
             front: {
@@ -698,10 +653,8 @@ characterMakers["Fory"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Kurrikage"] = () => {
-    return makeCharacter(
+characterMakers["Kurrikage"] = () => makeCharacter(
         { name: "Kurrikage" },
         {
             front: {
@@ -765,10 +718,8 @@ characterMakers["Kurrikage"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Shingo"] = () => {
-    return makeCharacter(
+characterMakers["Shingo"] = () => makeCharacter(
         { name: "Shingo" },
         {
             front: {
@@ -798,10 +749,8 @@ characterMakers["Shingo"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Aigey"] = () => {
-    return makeCharacter(
+characterMakers["Aigey"] = () => makeCharacter(
         { name: "Aigey" },
         {
             side: {
@@ -825,11 +774,9 @@ characterMakers["Aigey"] = () => {
             },
         ]
     )
-};
 
 
-characterMakers["Natasha"] = () => {
-    return makeCharacter(
+characterMakers["Natasha"] = () => makeCharacter(
         { name: "Natasha" },
         {
             front: {
@@ -867,10 +814,8 @@ characterMakers["Natasha"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Malik"] = () => {
-    return makeCharacter(
+characterMakers["Malik"] = () => makeCharacter(
         { name: "Malik" },
         {
             front: {
@@ -911,10 +856,8 @@ characterMakers["Malik"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Sefer"] = () => {
-    return makeCharacter(
+characterMakers["Sefer"] = () => makeCharacter(
         { name: "Sefer" },
         {
             front: {
@@ -942,10 +885,8 @@ characterMakers["Sefer"] = () => {
             },
         ]
     )
-};
 
-characterMakers["North"] = () => {
-    return makeCharacter(
+characterMakers["North"] = () => makeCharacter(
         { name: "North" },
         {
             body: {
@@ -974,10 +915,8 @@ characterMakers["North"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Talan"] = () => {
-    return makeCharacter(
+characterMakers["Talan"] = () => makeCharacter(
         { name: "Talan" },
         {
             body: {
@@ -1014,10 +953,8 @@ characterMakers["Talan"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Gael'Rathus"] = () => {
-    return makeCharacter(
+characterMakers["Gael'Rathus"] = () => makeCharacter(
         { name: "Gael'Rathus" },
         {
             front: {
@@ -1065,10 +1002,8 @@ characterMakers["Gael'Rathus"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Sosha"] = () => {
-    return makeCharacter(
+characterMakers["Sosha"] = () => makeCharacter(
         { name: "Sosha" },
         {
             side: {
@@ -1089,10 +1024,8 @@ characterMakers["Sosha"] = () => {
             }
         ]
     )
-};
 
-characterMakers["RuNNoLa"] = () => {
-    return makeCharacter(
+characterMakers["RuNNoLa"] = () => makeCharacter(
         { name: "RuNNoLa" },
         {
             side: {
@@ -1122,10 +1055,8 @@ characterMakers["RuNNoLa"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Kurribird"] = () => {
-    return makeCharacter(
+characterMakers["Kurribird"] = () => makeCharacter(
         { name: "Kurribird" },
         {
             front: {
@@ -1167,10 +1098,8 @@ characterMakers["Kurribird"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Elbial"] = () => {
-    return makeCharacter(
+characterMakers["Elbial"] = () => makeCharacter(
         { name: "Elbial" },
         {
             front: {
@@ -1222,10 +1151,8 @@ characterMakers["Elbial"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Noah"] = () => {
-    return makeCharacter(
+characterMakers["Noah"] = () => makeCharacter(
         { name: "Noah" },
         {
             front: {
@@ -1268,10 +1195,8 @@ characterMakers["Noah"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Natalya"] = () => {
-    return makeCharacter(
+characterMakers["Natalya"] = () => makeCharacter(
         { name: "Natalya" },
         {
             front: {
@@ -1307,10 +1232,8 @@ characterMakers["Natalya"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Erestrebah"] = () => {
-    return makeCharacter(
+characterMakers["Erestrebah"] = () => makeCharacter(
         { name: "Erestrebah" },
         {
             front: {
@@ -1357,10 +1280,8 @@ characterMakers["Erestrebah"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Jennifer"] = () => {
-    return makeCharacter(
+characterMakers["Jennifer"] = () => makeCharacter(
         { name: "Jennifer" },
         {
             front: {
@@ -1398,10 +1319,8 @@ characterMakers["Jennifer"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Kalista"] = () => {
-    return makeCharacter(
+characterMakers["Kalista"] = () => makeCharacter(
         { name: "Kalista" },
         {
             front: {
@@ -1447,10 +1366,8 @@ characterMakers["Kalista"] = () => {
             }
         ]
     )
-};
 
-characterMakers["GiantGrowingVixen"] = () => {
-    return makeCharacter(
+characterMakers["GiantGrowingVixen"] = () => makeCharacter(
         { name: "GiantGrowingVixen" },
         {
             front: {
@@ -1494,10 +1411,8 @@ characterMakers["GiantGrowingVixen"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Napalm"] = () => {
-    return makeCharacter(
+characterMakers["Napalm"] = () => makeCharacter(
         { name: "Napalm" },
         {
             front: {
@@ -1525,10 +1440,8 @@ characterMakers["Napalm"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Asana"] = () => {
-    return makeCharacter(
+characterMakers["Asana"] = () => makeCharacter(
         { name: "Asana" },
         {
             front: {
@@ -1578,10 +1491,8 @@ characterMakers["Asana"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Ebony"] = () => {
-    return makeCharacter(
+characterMakers["Ebony"] = () => makeCharacter(
         { name: "Ebony" },
         {
             front: {
@@ -1632,10 +1543,8 @@ characterMakers["Ebony"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Mountain"] = () => {
-    return makeCharacter(
+characterMakers["Mountain"] = () => makeCharacter(
         { name: "Mountain" },
         {
             front: {
@@ -1675,10 +1584,8 @@ characterMakers["Mountain"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Rick"] = () => {
-    return makeCharacter(
+characterMakers["Rick"] = () => makeCharacter(
         { name: "Rick" },
         {
             front: {
@@ -1702,10 +1609,8 @@ characterMakers["Rick"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Ona"] = () => {
-    return makeCharacter(
+characterMakers["Ona"] = () => makeCharacter(
         { name: "Ona" },
         {
             front: {
@@ -1756,10 +1661,8 @@ characterMakers["Ona"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Mech"] = () => {
-    return makeCharacter(
+characterMakers["Mech"] = () => makeCharacter(
         { name: "Mech" },
         {
             front: {
@@ -1797,10 +1700,8 @@ characterMakers["Mech"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Gregory"] = () => {
-    return makeCharacter(
+characterMakers["Gregory"] = () => makeCharacter(
         { name: "Gregory" },
         {
             front: {
@@ -1824,10 +1725,8 @@ characterMakers["Gregory"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Elory"] = () => {
-    return makeCharacter(
+characterMakers["Elory"] = () => makeCharacter(
         { name: "Elory" },
         {
             front: {
@@ -1851,10 +1750,8 @@ characterMakers["Elory"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Angelpatamon"] = () => {
-    return makeCharacter(
+characterMakers["Angelpatamon"] = () => makeCharacter(
         { name: "Angelpatamon" },
         {
             front: {
@@ -1882,10 +1779,8 @@ characterMakers["Angelpatamon"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Cryae"] = () => {
-    return makeCharacter(
+characterMakers["Cryae"] = () => makeCharacter(
         { name: "Cryae" },
         {
             side: {
@@ -1906,10 +1801,8 @@ characterMakers["Cryae"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Xera"] = () => {
-    return makeCharacter(
+characterMakers["Xera"] = () => makeCharacter(
         { name: "Xera" },
         {
             front: {
@@ -1963,10 +1856,8 @@ characterMakers["Xera"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Nebula"] = () => {
-    return makeCharacter(
+characterMakers["Nebula"] = () => makeCharacter(
         { name: "Nebula" },
         {
             front: {
@@ -1999,10 +1890,8 @@ characterMakers["Nebula"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Abysgar"] = () => {
-    return makeCharacter(
+characterMakers["Abysgar"] = () => makeCharacter(
         { name: "Abysgar" },
         {
             front: {
@@ -2034,10 +1923,8 @@ characterMakers["Abysgar"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Yakuz"] = () => {
-    return makeCharacter(
+characterMakers["Yakuz"] = () => makeCharacter(
         { name: "Yakuz" },
         {
             front: {
@@ -2069,10 +1956,8 @@ characterMakers["Yakuz"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Mirova"] = () => {
-    return makeCharacter(
+characterMakers["Mirova"] = () => makeCharacter(
         { name: "Mirova" },
         {
             front: {
@@ -2104,10 +1989,8 @@ characterMakers["Mirova"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Asana (Mech)"] = () => {
-    return makeCharacter(
+characterMakers["Asana (Mech)"] = () => makeCharacter(
         { name: "Asana (Mech)" },
         {
             side: {
@@ -2139,10 +2022,8 @@ characterMakers["Asana (Mech)"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Ashtrek"] = () => {
-    return makeCharacter(
+characterMakers["Ashtrek"] = () => makeCharacter(
         { name: "Ashtrek" },
         {
             front: {
@@ -2213,10 +2094,8 @@ characterMakers["Ashtrek"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Gale"] = () => {
-    return makeCharacter(
+characterMakers["Gale"] = () => makeCharacter(
         { name: "Gale" },
         {
             front: {
@@ -2260,10 +2139,8 @@ characterMakers["Gale"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Draylen"] = () => {
-    return makeCharacter(
+characterMakers["Draylen"] = () => makeCharacter(
         { name: "Draylen" },
         {
             front: {
@@ -2283,10 +2160,8 @@ characterMakers["Draylen"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Chez"] = () => {
-    return makeCharacter(
+characterMakers["Chez"] = () => makeCharacter(
         { name: "Chez" },
         {
             front: {
@@ -2318,10 +2193,8 @@ characterMakers["Chez"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Kaylum"] = () => {
-    return makeCharacter(
+characterMakers["Kaylum"] = () => makeCharacter(
         { name: "Kaylum" },
         {
             front: {
@@ -2374,10 +2247,8 @@ characterMakers["Kaylum"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Geta"] = () => {
-    return makeCharacter(
+characterMakers["Geta"] = () => makeCharacter(
         { name: "Geta" },
         {
             front: {
@@ -2402,10 +2273,8 @@ characterMakers["Geta"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Tyrnn"] = () => {
-    return makeCharacter(
+characterMakers["Tyrnn"] = () => makeCharacter(
         { name: "Tyrnn" },
         {
             front: {
@@ -2430,10 +2299,8 @@ characterMakers["Tyrnn"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Apple"] = () => {
-    return makeCharacter(
+characterMakers["Apple"] = () => makeCharacter(
         { name: "Apple" },
         {
             front: {
@@ -2466,10 +2333,8 @@ characterMakers["Apple"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Vulpes"] = () => {
-    return makeCharacter(
+characterMakers["Vulpes"] = () => makeCharacter(
         { name: "Vulpes" },
         {
             front: {
@@ -2541,10 +2406,8 @@ characterMakers["Vulpes"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Rain Fallen"] = () => {
-    return makeCharacter(
+characterMakers["Rain Fallen"] = () => makeCharacter(
         { name: "Rain Fallen" },
         {
             front: {
@@ -2617,10 +2480,8 @@ characterMakers["Rain Fallen"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Zaakira"] = () => {
-    return makeCharacter(
+characterMakers["Zaakira"] = () => makeCharacter(
         { name: "Zaakira" },
         {
             standing: {
@@ -2653,10 +2514,8 @@ characterMakers["Zaakira"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Sigvald"] = () => {
-    return makeCharacter(
+characterMakers["Sigvald"] = () => makeCharacter(
         { name: "Sigvald" },
         {
             front: {
@@ -2702,10 +2561,8 @@ characterMakers["Sigvald"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Scott"] = () => {
-    return makeCharacter(
+characterMakers["Scott"] = () => makeCharacter(
         { name: "Scott" },
         {
             side: {
@@ -2738,10 +2595,8 @@ characterMakers["Scott"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Tobias"] = () => {
-    return makeCharacter(
+characterMakers["Tobias"] = () => makeCharacter(
         { name: "Tobias" },
         {
             side: {
@@ -2762,10 +2617,8 @@ characterMakers["Tobias"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Kieran"] = () => {
-    return makeCharacter(
+characterMakers["Kieran"] = () => makeCharacter(
         { name: "Kieran" },
         {
             front: {
@@ -2795,10 +2648,8 @@ characterMakers["Kieran"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Sanya"] = () => {
-    return makeCharacter(
+characterMakers["Sanya"] = () => makeCharacter(
         { name: "Sanya" },
         {
             side: {
@@ -2828,10 +2679,8 @@ characterMakers["Sanya"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Miranda"] = () => {
-    return makeCharacter(
+characterMakers["Miranda"] = () => makeCharacter(
         { name: "Miranda" },
         {
             side: {
@@ -2852,10 +2701,8 @@ characterMakers["Miranda"] = () => {
             }
         ]
     )
-};
 
-characterMakers["James"] = () => {
-    return makeCharacter(
+characterMakers["James"] = () => makeCharacter(
         { name: "James" },
         {
             side: {
@@ -2876,10 +2723,8 @@ characterMakers["James"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Heather"] = () => {
-    return makeCharacter(
+characterMakers["Heather"] = () => makeCharacter(
         { name: "Heather" },
         {
             side: {
@@ -2899,10 +2744,8 @@ characterMakers["Heather"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Lukas"] = () => {
-    return makeCharacter(
+characterMakers["Lukas"] = () => makeCharacter(
         { name: "Lukas" },
         {
             side: {
@@ -2923,10 +2766,8 @@ characterMakers["Lukas"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Louise"] = () => {
-    return makeCharacter(
+characterMakers["Louise"] = () => makeCharacter(
         { name: "Louise" },
         {
             side: {
@@ -2946,10 +2787,8 @@ characterMakers["Louise"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Ramona"] = () => {
-    return makeCharacter(
+characterMakers["Ramona"] = () => makeCharacter(
         { name: "Ramona" },
         {
             side: {
@@ -2977,10 +2816,8 @@ characterMakers["Ramona"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Deerpuff"] = () => {
-    return makeCharacter(
+characterMakers["Deerpuff"] = () => makeCharacter(
         { name: "Deerpuff" },
         {
             standing: {
@@ -3039,10 +2876,8 @@ characterMakers["Deerpuff"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Vivian"] = () => {
-    return makeCharacter(
+characterMakers["Vivian"] = () => makeCharacter(
         { name: "Vivian" },
         {
             stomping: {
@@ -3088,10 +2923,8 @@ characterMakers["Vivian"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Prince"] = () => {
-    return makeCharacter(
+characterMakers["Prince"] = () => makeCharacter(
         { name: "Prince" },
         {
             front: {
@@ -3141,10 +2974,8 @@ characterMakers["Prince"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Psymon"] = () => {
-    return makeCharacter(
+characterMakers["Psymon"] = () => makeCharacter(
         { name: "Psymon" },
         {
             standing: {
@@ -3204,10 +3035,8 @@ characterMakers["Psymon"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Daimos"] = () => {
-    return makeCharacter(
+characterMakers["Daimos"] = () => makeCharacter(
         { name: "Daimos" },
         {
             front: {
@@ -3241,10 +3070,8 @@ characterMakers["Daimos"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Blake"] = () => {
-    return makeCharacter(
+characterMakers["Blake"] = () => makeCharacter(
         { name: "Blake" },
         {
             side: {
@@ -3302,10 +3129,8 @@ characterMakers["Blake"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Guisetto"] = () => {
-    return makeCharacter(
+characterMakers["Guisetto"] = () => makeCharacter(
         { name: "Guisetto" },
         {
             front: {
@@ -3344,10 +3169,8 @@ characterMakers["Guisetto"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Luxor"] = () => {
-    return makeCharacter(
+characterMakers["Luxor"] = () => makeCharacter(
         { name: "Luxor" },
         {
             front: {
@@ -3389,10 +3212,8 @@ characterMakers["Luxor"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Huoyan"] = () => {
-    return makeCharacter(
+characterMakers["Huoyan"] = () => makeCharacter(
         { name: "Huoyan" },
         {
             front: {
@@ -3436,10 +3257,8 @@ characterMakers["Huoyan"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Tails"] = () => {
-    return makeCharacter(
+characterMakers["Tails"] = () => makeCharacter(
         { name: "Tails" },
         {
             front: {
@@ -3459,10 +3278,8 @@ characterMakers["Tails"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Rainy"] = () => {
-    return makeCharacter(
+characterMakers["Rainy"] = () => makeCharacter(
         { name: "Rainy" },
         {
             front: {
@@ -3482,10 +3299,8 @@ characterMakers["Rainy"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Rainier"] = () => {
-    return makeCharacter(
+characterMakers["Rainier"] = () => makeCharacter(
         { name: "Rainier" },
         {
             front: {
@@ -3505,10 +3320,8 @@ characterMakers["Rainier"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Andy"] = () => {
-    return makeCharacter(
+characterMakers["Andy"] = () => makeCharacter(
         { name: "Andy" },
         {
             front: {
@@ -3540,10 +3353,8 @@ characterMakers["Andy"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Cimmaron"] = () => {
-    return makeCharacter(
+characterMakers["Cimmaron"] = () => makeCharacter(
         { name: "Cimmaron" },
         {
             frontClothed: {
@@ -3599,10 +3410,8 @@ characterMakers["Cimmaron"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Akari Kaen"] = () => {
-    return makeCharacter(
+characterMakers["Akari Kaen"] = () => makeCharacter(
         { name: "Akari Kaen" },
         {
             front: {
@@ -3628,10 +3437,8 @@ characterMakers["Akari Kaen"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Cynosura"] = () => {
-    return makeCharacter(
+characterMakers["Cynosura"] = () => makeCharacter(
         { name: "Cynosura" },
         {
             front: {
@@ -3677,10 +3484,8 @@ characterMakers["Cynosura"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Gin"] = () => {
-    return makeCharacter(
+characterMakers["Gin"] = () => makeCharacter(
         { name: "Gin" },
         {
             front: {
@@ -3732,10 +3537,8 @@ characterMakers["Gin"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Guy"] = () => {
-    return makeCharacter(
+characterMakers["Guy"] = () => makeCharacter(
         { name: "Guy" },
         {
             front: {
@@ -3771,10 +3574,8 @@ characterMakers["Guy"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Tiberius"] = () => {
-    return makeCharacter(
+characterMakers["Tiberius"] = () => makeCharacter(
         { name: "Tiberius" },
         {
             front: {
@@ -3804,10 +3605,8 @@ characterMakers["Tiberius"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Surgo"] = () => {
-    return makeCharacter(
+characterMakers["Surgo"] = () => makeCharacter(
         { name: "Surgo" },
         {
             front: {
@@ -3845,10 +3644,8 @@ characterMakers["Surgo"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Cibus"] = () => {
-    return makeCharacter(
+characterMakers["Cibus"] = () => makeCharacter(
         { name: "Cibus" },
         {
             side: {
@@ -3869,10 +3666,8 @@ characterMakers["Cibus"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Nibbles"] = () => {
-    return makeCharacter(
+characterMakers["Nibbles"] = () => makeCharacter(
         { name: "Nibbles" },
         {
             front: {
@@ -3900,10 +3695,8 @@ characterMakers["Nibbles"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Rikky"] = () => {
-    return makeCharacter(
+characterMakers["Rikky"] = () => makeCharacter(
         { name: "Rikky" },
         {
             side: {
@@ -3931,10 +3724,8 @@ characterMakers["Rikky"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Malfressa"] = () => {
-    return makeCharacter(
+characterMakers["Malfressa"] = () => makeCharacter(
         { name: "Malfressa" },
         {
             side: {
@@ -3976,10 +3767,8 @@ characterMakers["Malfressa"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Jaro"] = () => {
-    return makeCharacter(
+characterMakers["Jaro"] = () => makeCharacter(
         { name: "Jaro" },
         {
             front: {
@@ -4019,10 +3808,8 @@ characterMakers["Jaro"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Rogue"] = () => {
-    return makeCharacter(
+characterMakers["Rogue"] = () => makeCharacter(
         { name: "Rogue" },
         {
             front: {
@@ -4042,10 +3829,8 @@ characterMakers["Rogue"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Piper"] = () => {
-    return makeCharacter(
+characterMakers["Piper"] = () => makeCharacter(
         { name: "Piper" },
         {
             front: {
@@ -4078,10 +3863,8 @@ characterMakers["Piper"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Gemini"] = () => {
-    return makeCharacter(
+characterMakers["Gemini"] = () => makeCharacter(
         { name: "Gemini" },
         {
             front: {
@@ -4122,10 +3905,8 @@ characterMakers["Gemini"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Alicia"] = () => {
-    return makeCharacter(
+characterMakers["Alicia"] = () => makeCharacter(
         { name: "Alicia" },
         {
             anthro: {
@@ -4161,10 +3942,8 @@ characterMakers["Alicia"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Archy"] = () => {
-    return makeCharacter(
+characterMakers["Archy"] = () => makeCharacter(
         { name: "Archy" },
         {
             front: {
@@ -4200,10 +3979,8 @@ characterMakers["Archy"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Berri"] = () => {
-    return makeCharacter(
+characterMakers["Berri"] = () => makeCharacter(
         { name: "Berri" },
         {
             front: {
@@ -4243,10 +4020,8 @@ characterMakers["Berri"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Lexi"] = () => {
-    return makeCharacter(
+characterMakers["Lexi"] = () => makeCharacter(
         { name: "Lexi" },
         {
             front: {
@@ -4274,10 +4049,8 @@ characterMakers["Lexi"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Martin"] = () => {
-    return makeCharacter(
+characterMakers["Martin"] = () => makeCharacter(
         { name: "Martin" },
         {
             front: {
@@ -4302,10 +4075,8 @@ characterMakers["Martin"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Juno"] = () => {
-    return makeCharacter(
+characterMakers["Juno"] = () => makeCharacter(
         { name: "Juno" },
         {
             front: {
@@ -4333,10 +4104,8 @@ characterMakers["Juno"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Samantha"] = () => {
-    return makeCharacter(
+characterMakers["Samantha"] = () => makeCharacter(
         { name: "Samantha" },
         {
             front: {
@@ -4388,10 +4157,8 @@ characterMakers["Samantha"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Dr. Clay"] = () => {
-    return makeCharacter(
+characterMakers["Dr. Clay"] = () => makeCharacter(
         { name: "Dr. Clay" },
         {
             front: {
@@ -4435,10 +4202,8 @@ characterMakers["Dr. Clay"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Wyvrn Ripsnarl"] = () => {
-    return makeCharacter(
+characterMakers["Wyvrn Ripsnarl"] = () => makeCharacter(
         { name: "Wyvrn Ripsnarl" },
         {
             front: {
@@ -4458,10 +4223,8 @@ characterMakers["Wyvrn Ripsnarl"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Vemus"] = () => {
-    return makeCharacter(
+characterMakers["Vemus"] = () => makeCharacter(
         { name: "Vemus" },
         {
             front: {
@@ -4499,10 +4262,8 @@ characterMakers["Vemus"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Beherit"] = () => {
-    return makeCharacter(
+characterMakers["Beherit"] = () => makeCharacter(
         { name: "Beherit" },
         {
             front: {
@@ -4535,10 +4296,8 @@ characterMakers["Beherit"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Everett"] = () => {
-    return makeCharacter(
+characterMakers["Everett"] = () => makeCharacter(
         { name: "Everett" },
         {
             front: {
@@ -4580,10 +4339,8 @@ characterMakers["Everett"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Rose Lion"] = () => {
-    return makeCharacter(
+characterMakers["Rose Lion"] = () => makeCharacter(
         { name: "Rose Lion" },
         {
             front: {
@@ -4623,10 +4380,8 @@ characterMakers["Rose Lion"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Regal"] = () => {
-    return makeCharacter(
+characterMakers["Regal"] = () => makeCharacter(
         { name: "Regal" },
         {
             front: {
@@ -4654,10 +4409,8 @@ characterMakers["Regal"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Opal"] = () => {
-    return makeCharacter(
+characterMakers["Opal"] = () => makeCharacter(
         { name: "Opal" },
         {
             front: {
@@ -4701,10 +4454,8 @@ characterMakers["Opal"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Vector Wuff"] = () => {
-    return makeCharacter(
+characterMakers["Vector Wuff"] = () => makeCharacter(
         { name: "Vector Wuff" },
         {
             front: {
@@ -4732,10 +4483,8 @@ characterMakers["Vector Wuff"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Dannik"] = () => {
-    return makeCharacter(
+characterMakers["Dannik"] = () => makeCharacter(
         { name: "Dannik" },
         {
             front: {
@@ -4755,10 +4504,8 @@ characterMakers["Dannik"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Azura Saharah"] = () => {
-    return makeCharacter(
+characterMakers["Azura Saharah"] = () => makeCharacter(
         { name: "Azura Saharah" },
         {
             front: {
@@ -4786,10 +4533,8 @@ characterMakers["Azura Saharah"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Kennedy"] = () => {
-    return makeCharacter(
+characterMakers["Kennedy"] = () => makeCharacter(
         { name: "Kennedy" },
         {
             side: {
@@ -4813,10 +4558,8 @@ characterMakers["Kennedy"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Odi Lunar"] = () => {
-    return makeCharacter(
+characterMakers["Odi Lunar"] = () => makeCharacter(
         { name: "Odi Lunar" },
         {
             front: {
@@ -4840,10 +4583,8 @@ characterMakers["Odi Lunar"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Mandake"] = () => {
-    return makeCharacter(
+characterMakers["Mandake"] = () => makeCharacter(
         { name: "Mandake" },
         {
             back: {
@@ -4883,10 +4624,8 @@ characterMakers["Mandake"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Yozey"] = () => {
-    return makeCharacter(
+characterMakers["Yozey"] = () => makeCharacter(
         { name: "Yozey" },
         {
             front: {
@@ -4926,10 +4665,8 @@ characterMakers["Yozey"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Valeska Voss"] = () => {
-    return makeCharacter(
+characterMakers["Valeska Voss"] = () => makeCharacter(
         { name: "Valeska Voss" },
         {
             front: {
@@ -4961,10 +4698,8 @@ characterMakers["Valeska Voss"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Gene Zeta"] = () => {
-    return makeCharacter(
+characterMakers["Gene Zeta"] = () => makeCharacter(
         { name: "Gene Zeta" },
         {
             front: {
@@ -4986,10 +4721,8 @@ characterMakers["Gene Zeta"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Razinox"] = () => {
-    return makeCharacter(
+characterMakers["Razinox"] = () => makeCharacter(
         { name: "Razinox" },
         {
             front: {
@@ -5035,10 +4768,8 @@ characterMakers["Razinox"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Cobalt"] = () => {
-    return makeCharacter(
+characterMakers["Cobalt"] = () => makeCharacter(
         { name: "Cobalt" },
         {
             front: {
@@ -5066,10 +4797,8 @@ characterMakers["Cobalt"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Amanda"] = () => {
-    return makeCharacter(
+characterMakers["Amanda"] = () => makeCharacter(
         { name: "Amanda" },
         {
             front: {
@@ -5089,10 +4818,8 @@ characterMakers["Amanda"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Teal"] = () => {
-    return makeCharacter(
+characterMakers["Teal"] = () => makeCharacter(
         { name: "Teal" },
         {
             front: {
@@ -5126,10 +4853,8 @@ characterMakers["Teal"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Ravin Amulet"] = () => {
-    return makeCharacter(
+characterMakers["Ravin Amulet"] = () => makeCharacter(
         { name: "Ravin Amulet" },
         {
             frontCat: {
@@ -5185,10 +4910,8 @@ characterMakers["Ravin Amulet"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Fluoresce"] = () => {
-    return makeCharacter(
+characterMakers["Fluoresce"] = () => makeCharacter(
         { name: "Fluoresce" },
         {
             front: {
@@ -5220,10 +4943,8 @@ characterMakers["Fluoresce"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Aurora"] = () => {
-    return makeCharacter(
+characterMakers["Aurora"] = () => makeCharacter(
         { name: "Aurora" },
         {
             front: {
@@ -5251,10 +4972,8 @@ characterMakers["Aurora"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Ranek"] = () => {
-    return makeCharacter(
+characterMakers["Ranek"] = () => makeCharacter(
         { name: "Ranek" },
         {
             front: {
@@ -5302,10 +5021,8 @@ characterMakers["Ranek"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Andrew Cooper"] = () => {
-    return makeCharacter(
+characterMakers["Andrew Cooper"] = () => makeCharacter(
         { name: "Andrew Cooper" },
         {
             front: {
@@ -5333,10 +5050,8 @@ characterMakers["Andrew Cooper"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Akane Sato"] = () => {
-    return makeCharacter(
+characterMakers["Akane Sato"] = () => makeCharacter(
         { name: "Akane Sato" },
         {
             front: {
@@ -5374,10 +5089,8 @@ characterMakers["Akane Sato"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Rook"] = () => {
-    return makeCharacter(
+characterMakers["Rook"] = () => makeCharacter(
         { name: "Rook" },
         {
             front: {
@@ -5405,10 +5118,8 @@ characterMakers["Rook"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Prodigy"] = () => {
-    return makeCharacter(
+characterMakers["Prodigy"] = () => makeCharacter(
         { name: "Prodigy" },
         {
             front: {
@@ -5436,10 +5147,8 @@ characterMakers["Prodigy"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Daniel"] = () => {
-    return makeCharacter(
+characterMakers["Daniel"] = () => makeCharacter(
         { name: "Daniel" },
         {
             front: {
@@ -5467,10 +5176,8 @@ characterMakers["Daniel"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Chiros"] = () => {
-    return makeCharacter(
+characterMakers["Chiros"] = () => makeCharacter(
         { name: "Chiros" },
         {
             front: {
@@ -5500,10 +5207,8 @@ characterMakers["Chiros"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Selka"] = () => {
-    return makeCharacter(
+characterMakers["Selka"] = () => makeCharacter(
         { name: "Selka" },
         {
             front: {
@@ -5524,10 +5229,8 @@ characterMakers["Selka"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Verin"] = () => {
-    return makeCharacter(
+characterMakers["Verin"] = () => makeCharacter(
         { name: "Verin" },
         {
             front: {
@@ -5583,10 +5286,8 @@ characterMakers["Verin"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Sovrim Terraquian"] = () => {
-    return makeCharacter(
+characterMakers["Sovrim Terraquian"] = () => makeCharacter(
         { name: "Sovrim Terraquian" },
         {
             front: {
@@ -5630,10 +5331,8 @@ characterMakers["Sovrim Terraquian"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Reece Silvermane"] = () => {
-    return makeCharacter(
+characterMakers["Reece Silvermane"] = () => makeCharacter(
         { name: "Reece Silvermane" },
         {
             front: {
@@ -5655,10 +5354,8 @@ characterMakers["Reece Silvermane"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Kane"] = () => {
-    return makeCharacter(
+characterMakers["Kane"] = () => makeCharacter(
         { name: "Kane" },
         {
             front: {
@@ -5683,10 +5380,8 @@ characterMakers["Kane"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Tegon"] = () => {
-    return makeCharacter(
+characterMakers["Tegon"] = () => makeCharacter(
         { name: "Tegon" },
         {
             front: {
@@ -5720,10 +5415,8 @@ characterMakers["Tegon"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Arcturax"] = () => {
-    return makeCharacter(
+characterMakers["Arcturax"] = () => makeCharacter(
         { name: "Arcturax" },
         {
             side: {
@@ -5757,10 +5450,8 @@ characterMakers["Arcturax"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Sentri"] = () => {
-    return makeCharacter(
+characterMakers["Sentri"] = () => makeCharacter(
         { name: "Sentri" },
         {
             front: {
@@ -5796,10 +5487,8 @@ characterMakers["Sentri"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Corvin"] = () => {
-    return makeCharacter(
+characterMakers["Corvin"] = () => makeCharacter(
         { name: "Corvin" },
         {
             front: {
@@ -5868,10 +5557,8 @@ characterMakers["Corvin"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Q"] = () => {
-    return makeCharacter(
+characterMakers["Q"] = () => makeCharacter(
         { name: "Q" },
         {
             front: {
@@ -5910,10 +5597,8 @@ characterMakers["Q"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Carley"] = () => {
-    return makeCharacter(
+characterMakers["Carley"] = () => makeCharacter(
         { name: "Carley" },
         {
             front: {
@@ -5943,10 +5628,8 @@ characterMakers["Carley"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Citrine"] = () => {
-    return makeCharacter(
+characterMakers["Citrine"] = () => makeCharacter(
         { name: "Citrine" },
         {
             front: {
@@ -5966,10 +5649,8 @@ characterMakers["Citrine"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Aura Starwind"] = () => {
-    return makeCharacter(
+characterMakers["Aura Starwind"] = () => makeCharacter(
         { name: "Aura Starwind" },
         {
             front: {
@@ -6028,10 +5709,8 @@ characterMakers["Aura Starwind"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Rivet"] = () => {
-    return makeCharacter(
+characterMakers["Rivet"] = () => makeCharacter(
         { name: "Rivet" },
         {
             front: {
@@ -6073,10 +5752,8 @@ characterMakers["Rivet"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Coffee"] = () => {
-    return makeCharacter(
+characterMakers["Coffee"] = () => makeCharacter(
         { name: "Coffee" },
         {
             front: {
@@ -6117,10 +5794,8 @@ characterMakers["Coffee"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Chari-Gal"] = () => {
-    return makeCharacter(
+characterMakers["Chari-Gal"] = () => makeCharacter(
         { name: "Chari-Gal" },
         {
             front: {
@@ -6156,10 +5831,8 @@ characterMakers["Chari-Gal"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Nova"] = () => {
-    return makeCharacter(
+characterMakers["Nova"] = () => makeCharacter(
         { name: "Nova" },
         {
             front: {
@@ -6185,10 +5858,8 @@ characterMakers["Nova"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Argent"] = () => {
-    return makeCharacter(
+characterMakers["Argent"] = () => makeCharacter(
         { name: "Argent" },
         {
             front: {
@@ -6218,10 +5889,8 @@ characterMakers["Argent"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Mira al-Cul"] = () => {
-    return makeCharacter(
+characterMakers["Mira al-Cul"] = () => makeCharacter(
         { name: "Mira al-Cul" },
         {
             lamp: {
@@ -6273,10 +5942,8 @@ characterMakers["Mira al-Cul"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Kuro-shi Uchū"] = () => {
-    return makeCharacter(
+characterMakers["Kuro-shi Uchū"] = () => makeCharacter(
         { name: "Kuro-shi Uchū" },
         {
             front: {
@@ -6310,10 +5977,8 @@ characterMakers["Kuro-shi Uchū"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Katherine"] = () => {
-    return makeCharacter(
+characterMakers["Katherine"] = () => makeCharacter(
         { name: "Katherine" },
         {
             front: {
@@ -6355,10 +6020,8 @@ characterMakers["Katherine"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Yevis"] = () => {
-    return makeCharacter(
+characterMakers["Yevis"] = () => makeCharacter(
         { name: "Yevis" },
         {
             front: {
@@ -6403,10 +6066,8 @@ characterMakers["Yevis"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Xavier"] = () => {
-    return makeCharacter(
+characterMakers["Xavier"] = () => makeCharacter(
         { name: "Xavier" },
         {
             front: {
@@ -6444,10 +6105,8 @@ characterMakers["Xavier"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Joshii"] = () => {
-    return makeCharacter(
+characterMakers["Joshii"] = () => makeCharacter(
         { name: "Joshii" },
         {
             front: {
@@ -6486,10 +6145,8 @@ characterMakers["Joshii"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Goddess Elizabeth"] = () => {
-    return makeCharacter(
+characterMakers["Goddess Elizabeth"] = () => makeCharacter(
         { name: "Goddess Elizabeth" },
         {
             front: {
@@ -6526,10 +6183,8 @@ characterMakers["Goddess Elizabeth"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Kara"] = () => {
-    return makeCharacter(
+characterMakers["Kara"] = () => makeCharacter(
         { name: "Kara" },
         {
             front: {
@@ -6561,10 +6216,8 @@ characterMakers["Kara"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Tyrone"] = () => {
-    return makeCharacter(
+characterMakers["Tyrone"] = () => makeCharacter(
         { name: "Tyrone" },
         {
             front: {
@@ -6590,10 +6243,8 @@ characterMakers["Tyrone"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Danny"] = () => {
-    return makeCharacter(
+characterMakers["Danny"] = () => makeCharacter(
         { name: "Danny" },
         {
             front: {
@@ -6623,10 +6274,8 @@ characterMakers["Danny"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Mallow"] = () => {
-    return makeCharacter(
+characterMakers["Mallow"] = () => makeCharacter(
         { name: "Mallow" },
         {
             front: {
@@ -6656,10 +6305,8 @@ characterMakers["Mallow"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Starry Aqua"] = () => {
-    return makeCharacter(
+characterMakers["Starry Aqua"] = () => makeCharacter(
         { name: "Starry Aqua" },
         {
             front: {
@@ -6713,10 +6360,8 @@ characterMakers["Starry Aqua"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Luka"] = () => {
-    return makeCharacter(
+characterMakers["Luka"] = () => makeCharacter(
         { name: "Luka" },
         {
             front: {
@@ -6754,10 +6399,8 @@ characterMakers["Luka"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Natalie Nightring"] = () => {
-    return makeCharacter(
+characterMakers["Natalie Nightring"] = () => makeCharacter(
         { name: "Natalie Nightring" },
         {
             front: {
@@ -6795,10 +6438,8 @@ characterMakers["Natalie Nightring"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Danni Rosie"] = () => {
-    return makeCharacter(
+characterMakers["Danni Rosie"] = () => makeCharacter(
         { name: "Danni Rosie" },
         {
             front: {
@@ -6820,10 +6461,8 @@ characterMakers["Danni Rosie"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Samantha Kruse"] = () => {
-    return makeCharacter(
+characterMakers["Samantha Kruse"] = () => makeCharacter(
         { name: "Samantha Kruse" },
         {
             front: {
@@ -6864,10 +6503,8 @@ characterMakers["Samantha Kruse"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Amelia Rosie"] = () => {
-    return makeCharacter(
+characterMakers["Amelia Rosie"] = () => makeCharacter(
         { name: "Amelia Rosie" },
         {
             back: {
@@ -6913,10 +6550,8 @@ characterMakers["Amelia Rosie"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Rook Kitara"] = () => {
-    return makeCharacter(
+characterMakers["Rook Kitara"] = () => makeCharacter(
         { name: "Rook Kitara" },
         {
             front: {
@@ -6950,10 +6585,8 @@ characterMakers["Rook Kitara"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Pisces"] = () => {
-    return makeCharacter(
+characterMakers["Pisces"] = () => makeCharacter(
         { name: "Pisces" },
         {
             front: {
@@ -7005,10 +6638,8 @@ characterMakers["Pisces"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Zelas"] = () => {
-    return makeCharacter(
+characterMakers["Zelas"] = () => makeCharacter(
         { name: "Zelas" },
         {
             front: {
@@ -7055,10 +6686,8 @@ characterMakers["Zelas"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Talbot"] = () => {
-    return makeCharacter(
+characterMakers["Talbot"] = () => makeCharacter(
         { name: "Talbot" },
         {
             front: {
@@ -7079,10 +6708,8 @@ characterMakers["Talbot"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Fliss"] = () => {
-    return makeCharacter(
+characterMakers["Fliss"] = () => makeCharacter(
         { name: "Fliss" },
         {
             front: {
@@ -7124,10 +6751,8 @@ characterMakers["Fliss"] = () => {
 
         ]
     )
-};
 
-characterMakers["Fleta"] = () => {
-    return makeCharacter(
+characterMakers["Fleta"] = () => makeCharacter(
         { name: "Fleta" },
         {
             front: {
@@ -7157,10 +6782,8 @@ characterMakers["Fleta"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Dominic"] = () => {
-    return makeCharacter(
+characterMakers["Dominic"] = () => makeCharacter(
         { name: "Dominic" },
         {
             front: {
@@ -7228,10 +6851,8 @@ characterMakers["Dominic"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Major Colonel"] = () => {
-    return makeCharacter(
+characterMakers["Major Colonel"] = () => makeCharacter(
         { name: "Major Colonel" },
         {
             front: {
@@ -7259,10 +6880,8 @@ characterMakers["Major Colonel"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Axel Lycan"] = () => {
-    return makeCharacter(
+characterMakers["Axel Lycan"] = () => makeCharacter(
         { name: "Axel Lycan" },
         {
             front: {
@@ -7284,10 +6903,8 @@ characterMakers["Axel Lycan"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Vanrel (Hyena)"] = () => {
-    return makeCharacter(
+characterMakers["Vanrel (Hyena)"] = () => makeCharacter(
         { name: "Vanrel (Hyena)" },
         {
             front: {
@@ -7309,10 +6926,8 @@ characterMakers["Vanrel (Hyena)"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Abbott Absol"] = () => {
-    return makeCharacter(
+characterMakers["Abbott Absol"] = () => makeCharacter(
         { name: "Abbott Absol" },
         {
             front: {
@@ -7341,10 +6956,8 @@ characterMakers["Abbott Absol"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Hector"] = () => {
-    return makeCharacter(
+characterMakers["Hector"] = () => makeCharacter(
         { name: "Hector" },
         {
             front: {
@@ -7370,10 +6983,8 @@ characterMakers["Hector"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Sal"] = () => {
-    return makeCharacter(
+characterMakers["Sal"] = () => makeCharacter(
         { name: "Sal" },
         {
             front: {
@@ -7395,10 +7006,8 @@ characterMakers["Sal"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Ranger"] = () => {
-    return makeCharacter(
+characterMakers["Ranger"] = () => makeCharacter(
         { name: "Ranger" },
         {
             front: {
@@ -7420,10 +7029,8 @@ characterMakers["Ranger"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Theresa"] = () => {
-    return makeCharacter(
+characterMakers["Theresa"] = () => makeCharacter(
         { name: "Theresa" },
         {
             front: {
@@ -7445,10 +7052,8 @@ characterMakers["Theresa"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Ine"] = () => {
-    return makeCharacter(
+characterMakers["Ine"] = () => makeCharacter(
         { name: "Ine" },
         {
             front: {
@@ -7470,10 +7075,8 @@ characterMakers["Ine"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Vial"] = () => {
-    return makeCharacter(
+characterMakers["Vial"] = () => makeCharacter(
         { name: "Vial" },
         {
             front: {
@@ -7495,10 +7098,8 @@ characterMakers["Vial"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Rovoska"] = () => {
-    return makeCharacter(
+characterMakers["Rovoska"] = () => makeCharacter(
         { name: "Rovoska" },
         {
             side: {
@@ -7519,10 +7120,8 @@ characterMakers["Rovoska"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Gunner Rotthbauer"] = () => {
-    return makeCharacter(
+characterMakers["Gunner Rotthbauer"] = () => makeCharacter(
         { name: "Gunner Rotthbauer" },
         {
             front: {
@@ -7562,10 +7161,8 @@ characterMakers["Gunner Rotthbauer"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Allatia"] = () => {
-    return makeCharacter(
+characterMakers["Allatia"] = () => makeCharacter(
         { name: "Allatia" },
         {
             front: {
@@ -7595,10 +7192,8 @@ characterMakers["Allatia"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Tene"] = () => {
-    return makeCharacter(
+characterMakers["Tene"] = () => makeCharacter(
         { name: "Tene" },
         {
             front: {
@@ -7658,10 +7253,8 @@ characterMakers["Tene"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Evander"] = () => {
-    return makeCharacter(
+characterMakers["Evander"] = () => makeCharacter(
         { name: "Evander" },
         {
             side: {
@@ -7681,10 +7274,8 @@ characterMakers["Evander"] = () => {
              },
         ]
     )
-};
 
-characterMakers["Ka'Tamra \"Spaz\" Ci'Karan"] = () => {
-    return makeCharacter(
+characterMakers["Ka'Tamra \"Spaz\" Ci'Karan"] = () => makeCharacter(
         { name: "Ka'Tamra \"Spaz\" Ci'Karan" },
         {
             front: {
@@ -7718,10 +7309,8 @@ characterMakers["Ka'Tamra \"Spaz\" Ci'Karan"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Zero Alurus"] = () => {
-    return makeCharacter(
+characterMakers["Zero Alurus"] = () => makeCharacter(
         { name: "Zero Alurus" },
         {
             front: {
@@ -7757,10 +7346,8 @@ characterMakers["Zero Alurus"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Mega Shi"] = () => {
-    return makeCharacter(
+characterMakers["Mega Shi"] = () => makeCharacter(
         { name: "Mega Shi" },
         {
             front: {
@@ -7816,10 +7403,8 @@ characterMakers["Mega Shi"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Odyssey"] = () => {
-    return makeCharacter(
+characterMakers["Odyssey"] = () => makeCharacter(
         { name: "Odyssey" },
         {
             front: {
@@ -7866,10 +7451,8 @@ characterMakers["Odyssey"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Mekuto"] = () => {
-    return makeCharacter(
+characterMakers["Mekuto"] = () => makeCharacter(
         { name: "Mekuto" },
         {
             front: {
@@ -7925,10 +7508,8 @@ characterMakers["Mekuto"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Dafydd Tomos"] = () => {
-    return makeCharacter(
+characterMakers["Dafydd Tomos"] = () => makeCharacter(
         { name: "Dafydd Tomos" },
         {
             front: {
@@ -7950,10 +7531,8 @@ characterMakers["Dafydd Tomos"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Splinter"] = () => {
-    return makeCharacter(
+characterMakers["Splinter"] = () => makeCharacter(
         { name: "Splinter" },
         {
             front: {
@@ -7989,10 +7568,8 @@ characterMakers["Splinter"] = () => {
             },
         ]
     )
-};
 
-characterMakers["SnowGabumon"] = () => {
-    return makeCharacter(
+characterMakers["SnowGabumon"] = () => makeCharacter(
         { name: "SnowGabumon" },
         {
             front: {
@@ -8050,10 +7627,8 @@ characterMakers["SnowGabumon"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Moody"] = () => {
-    return makeCharacter(
+characterMakers["Moody"] = () => makeCharacter(
         { name: "Moody" },
         {
             front: {
@@ -8087,10 +7662,8 @@ characterMakers["Moody"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Zyas"] = () => {
-    return makeCharacter(
+characterMakers["Zyas"] = () => makeCharacter(
         { name: "Zyas" },
         {
             front: {
@@ -8124,10 +7697,8 @@ characterMakers["Zyas"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Cuon"] = () => {
-    return makeCharacter(
+characterMakers["Cuon"] = () => makeCharacter(
         { name: "Cuon" },
         {
             front: {
@@ -8161,10 +7732,8 @@ characterMakers["Cuon"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Nyanuxk"] = () => {
-    return makeCharacter(
+characterMakers["Nyanuxk"] = () => makeCharacter(
         { name: "Nyanuxk" },
         {
             front: {
@@ -8237,10 +7806,8 @@ characterMakers["Nyanuxk"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Ailbhe"] = () => {
-    return makeCharacter(
+characterMakers["Ailbhe"] = () => makeCharacter(
         { name: "Ailbhe" },
         {
             side: {
@@ -8261,10 +7828,8 @@ characterMakers["Ailbhe"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Zevulfius"] = () => {
-    return makeCharacter(
+characterMakers["Zevulfius"] = () => makeCharacter(
         { name: "Zevulfius" },
         {
             front: {
@@ -8323,10 +7888,8 @@ characterMakers["Zevulfius"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Rikes"] = () => {
-    return makeCharacter(
+characterMakers["Rikes"] = () => makeCharacter(
         { name: "Rikes" },
         {
             front: {
@@ -8348,10 +7911,8 @@ characterMakers["Rikes"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Adam Silver-Mane"] = () => {
-    return makeCharacter(
+characterMakers["Adam Silver-Mane"] = () => makeCharacter(
         { name: "Adam Silver-Mane" },
         {
             anthro: {
@@ -8415,10 +7976,8 @@ characterMakers["Adam Silver-Mane"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Ky'owin"] = () => {
-    return makeCharacter(
+characterMakers["Ky'owin"] = () => makeCharacter(
         { name: "Ky'owin" },
         {
             front: {
@@ -8464,10 +8023,8 @@ characterMakers["Ky'owin"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Mal"] = () => {
-    return makeCharacter(
+characterMakers["Mal"] = () => makeCharacter(
         { name: "Mal" },
         {
             front: {
@@ -8497,10 +8054,8 @@ characterMakers["Mal"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Jordan Deware"] = () => {
-    return makeCharacter(
+characterMakers["Jordan Deware"] = () => makeCharacter(
         { name: "Jordan Deware" },
         {
             front: {
@@ -8557,10 +8112,8 @@ characterMakers["Jordan Deware"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Kimiko"] = () => {
-    return makeCharacter(
+characterMakers["Kimiko"] = () => makeCharacter(
         { name: "Kimiko" },
         {
             side: {
@@ -8609,10 +8162,8 @@ characterMakers["Kimiko"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Andrew Sleepy"] = () => {
-    return makeCharacter(
+characterMakers["Andrew Sleepy"] = () => makeCharacter(
         { name: "Andrew Sleepy" },
         {
             front: {
@@ -8640,10 +8191,8 @@ characterMakers["Andrew Sleepy"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Judio"] = () => {
-    return makeCharacter(
+characterMakers["Judio"] = () => makeCharacter(
         { name: "Judio" },
         {
             front: {
@@ -8672,10 +8221,8 @@ characterMakers["Judio"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Nomaxice"] = () => {
-    return makeCharacter(
+characterMakers["Nomaxice"] = () => makeCharacter(
         { name: "Nomaxice" },
         {
             front: {
@@ -8724,10 +8271,8 @@ characterMakers["Nomaxice"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Dydros"] = () => {
-    return makeCharacter(
+characterMakers["Dydros"] = () => makeCharacter(
         { name: "Dydros" },
         {
             front: {
@@ -8759,10 +8304,8 @@ characterMakers["Dydros"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Riggi"] = () => {
-    return makeCharacter(
+characterMakers["Riggi"] = () => makeCharacter(
         { name: "Riggi" },
         {
             front: {
@@ -8816,10 +8359,8 @@ characterMakers["Riggi"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Alexi"] = () => {
-    return makeCharacter(
+characterMakers["Alexi"] = () => makeCharacter(
         { name: "Alexi" },
         {
             front: {
@@ -8877,10 +8418,8 @@ characterMakers["Alexi"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Kayroo"] = () => {
-    return makeCharacter(
+characterMakers["Kayroo"] = () => makeCharacter(
         { name: "Kayroo" },
         {
             front: {
@@ -8930,10 +8469,8 @@ characterMakers["Kayroo"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Rhys"] = () => {
-    return makeCharacter(
+characterMakers["Rhys"] = () => makeCharacter(
         { name: "Rhys" },
         {
             front: {
@@ -8971,10 +8508,8 @@ characterMakers["Rhys"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Toto"] = () => {
-    return makeCharacter(
+characterMakers["Toto"] = () => makeCharacter(
         { name: "Toto" },
         {
             front: {
@@ -9008,10 +8543,8 @@ characterMakers["Toto"] = () => {
             },
         ]
     )
-};
 
-characterMakers["King"] = () => {
-    return makeCharacter(
+characterMakers["King"] = () => makeCharacter(
         { name: "King" },
         {
             back: {
@@ -9043,10 +8576,8 @@ characterMakers["King"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Cordite"] = () => {
-    return makeCharacter(
+characterMakers["Cordite"] = () => makeCharacter(
         { name: "Cordite" },
         {
             anthro: {
@@ -9078,10 +8609,8 @@ characterMakers["Cordite"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Pianostrong"] = () => {
-    return makeCharacter(
+characterMakers["Pianostrong"] = () => makeCharacter(
         { name: "Pianostrong" },
         {
             front: {
@@ -9130,10 +8659,8 @@ characterMakers["Pianostrong"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Kona"] = () => {
-    return makeCharacter(
+characterMakers["Kona"] = () => makeCharacter(
         { name: "Kona" },
         {
             front: {
@@ -9172,10 +8699,8 @@ characterMakers["Kona"] = () => {
             },   
         ]
     )
-};
 
-characterMakers["Levi"] = () => {
-    return makeCharacter(
+characterMakers["Levi"] = () => makeCharacter(
         { name: "Levi" },
         {
             side: {
@@ -9225,10 +8750,8 @@ characterMakers["Levi"] = () => {
             },
         ]
     )
-};
 
-characterMakers["BMC"] = () => {
-    return makeCharacter(
+characterMakers["BMC"] = () => makeCharacter(
         { name: "BMC" },
         {
             front: {
@@ -9266,10 +8789,8 @@ characterMakers["BMC"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Sven the Kaiju"] = () => {
-    return makeCharacter(
+characterMakers["Sven the Kaiju"] = () => makeCharacter(
         { name: "Sven the Kaiju" },
         {
             front: {
@@ -9303,10 +8824,8 @@ characterMakers["Sven the Kaiju"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Marik"] = () => {
-    return makeCharacter(
+characterMakers["Marik"] = () => makeCharacter(
         { name: "Marik" },
         {
             front: {
@@ -9344,10 +8863,8 @@ characterMakers["Marik"] = () => {
              },
         ]
     )
-};
 
-characterMakers["Mel"] = () => {
-    return makeCharacter(
+characterMakers["Mel"] = () => makeCharacter(
         { name: "Mel" },
         {
             front: {
@@ -9385,10 +8902,8 @@ characterMakers["Mel"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Lykonous"] = () => {
-    return makeCharacter(
+characterMakers["Lykonous"] = () => makeCharacter(
         { name: "Lykonous" },
         {
             kaiju: {
@@ -9430,10 +8945,8 @@ characterMakers["Lykonous"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Blü"] = () => {
-    return makeCharacter(
+characterMakers["Blü"] = () => makeCharacter(
         { name: "Blü" },
         {
             front: {
@@ -9487,10 +9000,8 @@ characterMakers["Blü"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Scales"] = () => {
-    return makeCharacter(
+characterMakers["Scales"] = () => makeCharacter(
         { name: "Scales" },
         {
             taurFront: {
@@ -9532,10 +9043,8 @@ characterMakers["Scales"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Koragos"] = () => {
-    return makeCharacter(
+characterMakers["Koragos"] = () => makeCharacter(
         { name: "Koragos" },
         {
             front: {
@@ -9579,10 +9088,8 @@ characterMakers["Koragos"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Xylrem"] = () => {
-    return makeCharacter(
+characterMakers["Xylrem"] = () => makeCharacter(
         { name: "Xylrem" },
         {
             front: {
@@ -9616,10 +9123,8 @@ characterMakers["Xylrem"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Ikideru"] = () => {
-    return makeCharacter(
+characterMakers["Ikideru"] = () => makeCharacter(
         { name: "Ikideru" },
         {
             front: {
@@ -9679,10 +9184,8 @@ characterMakers["Ikideru"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Neo"] = () => {
-    return makeCharacter(
+characterMakers["Neo"] = () => makeCharacter(
         { name: "Neo" },
         {
             front: {
@@ -9706,10 +9209,8 @@ characterMakers["Neo"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Chauncey (Chantz)"] = () => {
-    return makeCharacter(
+characterMakers["Chauncey (Chantz)"] = () => makeCharacter(
         { name: "Chauncey (Chantz)" },
         {
             front: {
@@ -9751,10 +9252,8 @@ characterMakers["Chauncey (Chantz)"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Epifox"] = () => {
-    return makeCharacter(
+characterMakers["Epifox"] = () => makeCharacter(
         { name: "Epifox" },
         {
             front: {
@@ -9788,10 +9287,8 @@ characterMakers["Epifox"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Colin T."] = () => {
-    return makeCharacter(
+characterMakers["Colin T."] = () => makeCharacter(
         { name: "Colin T." },
         {
             front: {
@@ -9833,10 +9330,8 @@ characterMakers["Colin T."] = () => {
             },
         ]
     )
-};
 
-characterMakers["Matvei"] = () => {
-    return makeCharacter(
+characterMakers["Matvei"] = () => makeCharacter(
         { name: "Matvei" },
         {
             front: {
@@ -9858,10 +9353,8 @@ characterMakers["Matvei"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Quincy"] = () => {
-    return makeCharacter(
+characterMakers["Quincy"] = () => makeCharacter(
         { name: "Quincy" },
         {
             front: {
@@ -9912,10 +9405,8 @@ characterMakers["Quincy"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Vanrel"] = () => {
-    return makeCharacter(
+characterMakers["Vanrel"] = () => makeCharacter(
         { name: "Vanrel" },
         {
             front: {
@@ -9963,10 +9454,8 @@ characterMakers["Vanrel"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Kuiper Vanrel"] = () => {
-    return makeCharacter(
+characterMakers["Kuiper Vanrel"] = () => makeCharacter(
         { name: "Kuiper Vanrel" },
         {
             front: {
@@ -9995,10 +9484,8 @@ characterMakers["Kuiper Vanrel"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Keset Vanrel"] = () => {
-    return makeCharacter(
+characterMakers["Keset Vanrel"] = () => makeCharacter(
         { name: "Keset Vanrel" },
         {
             front: {
@@ -10034,10 +9521,8 @@ characterMakers["Keset Vanrel"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Neos"] = () => {
-    return makeCharacter(
+characterMakers["Neos"] = () => makeCharacter(
         { name: "Neos" },
         {
             front: {
@@ -10091,10 +9576,8 @@ characterMakers["Neos"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Sammy Mouse"] = () => {
-    return makeCharacter(
+characterMakers["Sammy Mouse"] = () => makeCharacter(
         { name: "Sammy Mouse" },
         {
             feminine: {
@@ -10134,10 +9617,8 @@ characterMakers["Sammy Mouse"] = () => {
              },
         ]
     )
-};
 
-characterMakers["Kole"] = () => {
-    return makeCharacter(
+characterMakers["Kole"] = () => makeCharacter(
         { name: "Kole" },
         {
             front: {
@@ -10169,10 +9650,8 @@ characterMakers["Kole"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Rufran"] = () => {
-    return makeCharacter(
+characterMakers["Rufran"] = () => makeCharacter(
         { name: "Rufran" },
         {
             front: {
@@ -10230,10 +9709,8 @@ characterMakers["Rufran"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Chip"] = () => {
-    return makeCharacter(
+characterMakers["Chip"] = () => makeCharacter(
         { name: "Chip" },
         {
             front: {
@@ -10254,10 +9731,8 @@ characterMakers["Chip"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Torvid"] = () => {
-    return makeCharacter(
+characterMakers["Torvid"] = () => makeCharacter(
         { name: "Torvid" },
         {
             side: {
@@ -10279,10 +9754,8 @@ characterMakers["Torvid"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Susan"] = () => {
-    return makeCharacter(
+characterMakers["Susan"] = () => makeCharacter(
         { name: "Susan" },
         {
             front: {
@@ -10304,10 +9777,8 @@ characterMakers["Susan"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Raindrops"] = () => {
-    return makeCharacter(
+characterMakers["Raindrops"] = () => makeCharacter(
         { name: "Raindrops" },
         {
             front: {
@@ -10359,10 +9830,8 @@ characterMakers["Raindrops"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Tezwa"] = () => {
-    return makeCharacter(
+characterMakers["Tezwa"] = () => makeCharacter(
         { name: "Tezwa" },
         {
             front: {
@@ -10391,10 +9860,8 @@ characterMakers["Tezwa"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Typhus"] = () => {
-    return makeCharacter(
+characterMakers["Typhus"] = () => makeCharacter(
         { name: "Typhus" },
         {
             front: {
@@ -10416,10 +9883,8 @@ characterMakers["Typhus"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Lyra Von Wulf"] = () => {
-    return makeCharacter(
+characterMakers["Lyra Von Wulf"] = () => makeCharacter(
         { name: "Lyra Von Wulf" },
         {
             front: {
@@ -10486,10 +9951,8 @@ characterMakers["Lyra Von Wulf"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Dixon"] = () => {
-    return makeCharacter(
+characterMakers["Dixon"] = () => makeCharacter(
         { name: "Dixon" },
         {
             front: {
@@ -10523,10 +9986,8 @@ characterMakers["Dixon"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Kauko"] = () => {
-    return makeCharacter(
+characterMakers["Kauko"] = () => makeCharacter(
         { name: "Kauko" },
         {
             front: {
@@ -10558,10 +10019,8 @@ characterMakers["Kauko"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Varg"] = () => {
-    return makeCharacter(
+characterMakers["Varg"] = () => makeCharacter(
         { name: "Varg" },
         {
             front: {
@@ -10587,10 +10046,8 @@ characterMakers["Varg"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Dayza"] = () => {
-    return makeCharacter(
+characterMakers["Dayza"] = () => makeCharacter(
         { name: "Dayza" },
         {
             front: {
@@ -10635,10 +10092,8 @@ characterMakers["Dayza"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Xanthos"] = () => {
-    return makeCharacter(
+characterMakers["Xanthos"] = () => makeCharacter(
         { name: "Xanthos" },
         {
             front: {
@@ -10704,10 +10159,8 @@ characterMakers["Xanthos"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Grynn"] = () => {
-    return makeCharacter(
+characterMakers["Grynn"] = () => makeCharacter(
         { name: "Grynn" },
         {
             front: {
@@ -10757,10 +10210,8 @@ characterMakers["Grynn"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Mocha Aura"] = () => {
-    return makeCharacter(
+characterMakers["Mocha Aura"] = () => makeCharacter(
         { name: "Mocha Aura" },
         {
             front: {
@@ -10820,10 +10271,8 @@ characterMakers["Mocha Aura"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Ilisha Devya"] = () => {
-    return makeCharacter(
+characterMakers["Ilisha Devya"] = () => makeCharacter(
         { name: "Ilisha Devya" },
         {
             front: {
@@ -10875,10 +10324,8 @@ characterMakers["Ilisha Devya"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Mira"] = () => {
-    return makeCharacter(
+characterMakers["Mira"] = () => makeCharacter(
         { name: "Mira" },
         {
             Side: {
@@ -10920,10 +10367,8 @@ characterMakers["Mira"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Holly"] = () => {
-    return makeCharacter(
+characterMakers["Holly"] = () => makeCharacter(
         { name: "Holly" },
         {
             front: {
@@ -10963,10 +10408,8 @@ characterMakers["Holly"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Porter"] = () => {
-    return makeCharacter(
+characterMakers["Porter"] = () => makeCharacter(
         { name: "Porter" },
         {
             front: {
@@ -10998,10 +10441,8 @@ characterMakers["Porter"] = () => {
             },   
         ]
     )
-};
 
-characterMakers["Lucy"] = () => {
-    return makeCharacter(
+characterMakers["Lucy"] = () => makeCharacter(
         { name: "Lucy" },
         {
             legendary: {
@@ -11023,10 +10464,8 @@ characterMakers["Lucy"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Drusilla"] = () => {
-    return makeCharacter(
+characterMakers["Drusilla"] = () => makeCharacter(
         { name: "Drusilla" },
         {
             front: {
@@ -11063,10 +10502,8 @@ characterMakers["Drusilla"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Renard Thatch"] = () => {
-    return makeCharacter(
+characterMakers["Renard Thatch"] = () => makeCharacter(
         { name: "Renard Thatch" },
         {
             front: {
@@ -11115,10 +10552,8 @@ characterMakers["Renard Thatch"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Sekvra"] = () => {
-    return makeCharacter(
+characterMakers["Sekvra"] = () => makeCharacter(
         { name: "Sekvra" },
         {
             front: {
@@ -11174,10 +10609,8 @@ characterMakers["Sekvra"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Carmine"] = () => {
-    return makeCharacter(
+characterMakers["Carmine"] = () => makeCharacter(
         { name: "Carmine" },
         {
             front: {
@@ -11217,10 +10650,8 @@ characterMakers["Carmine"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Elyssia"] = () => {
-    return makeCharacter(
+characterMakers["Elyssia"] = () => makeCharacter(
         { name: "Elyssia" },
         {
             front: {
@@ -11270,10 +10701,8 @@ characterMakers["Elyssia"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Geno Maxwell"] = () => {
-    return makeCharacter(
+characterMakers["Geno Maxwell"] = () => makeCharacter(
         { name: "Geno Maxwell" },
         {
             front: {
@@ -11307,10 +10736,8 @@ characterMakers["Geno Maxwell"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Regena Maxwell"] = () => {
-    return makeCharacter(
+characterMakers["Regena Maxwell"] = () => makeCharacter(
         { name: "Regena Maxwell" },
         {
             front: {
@@ -11340,10 +10767,8 @@ characterMakers["Regena Maxwell"] = () => {
             },
         ]
     )
-};
 
-characterMakers["XGlidingDragonX"] = () => {
-    return makeCharacter(
+characterMakers["XGlidingDragonX"] = () => makeCharacter(
         { name: "XGlidingDragonX" },
         {
             front: {
@@ -11365,10 +10790,8 @@ characterMakers["XGlidingDragonX"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Quilly"] = () => {
-    return makeCharacter(
+characterMakers["Quilly"] = () => makeCharacter(
         { name: "Quilly" },
         {
             front: {
@@ -11389,10 +10812,8 @@ characterMakers["Quilly"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Tempest"] = () => {
-    return makeCharacter(
+characterMakers["Tempest"] = () => makeCharacter(
         { name: "Tempest" },
         {
             front: {
@@ -11414,10 +10835,8 @@ characterMakers["Tempest"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Rodger"] = () => {
-    return makeCharacter(
+characterMakers["Rodger"] = () => makeCharacter(
         { name: "Rodger" },
         {
             side: {
@@ -11446,10 +10865,8 @@ characterMakers["Rodger"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Danyel"] = () => {
-    return makeCharacter(
+characterMakers["Danyel"] = () => makeCharacter(
         { name: "Danyel" },
         {
             front: {
@@ -11479,10 +10896,8 @@ characterMakers["Danyel"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Vivian Bijoux"] = () => {
-    return makeCharacter(
+characterMakers["Vivian Bijoux"] = () => makeCharacter(
         { name: "Vivian Bijoux" },
         {
             front: {
@@ -11512,10 +10927,8 @@ characterMakers["Vivian Bijoux"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Zeta"] = () => {
-    return makeCharacter(
+characterMakers["Zeta"] = () => makeCharacter(
         { name: "Zeta" },
         {
             front: {
@@ -11569,10 +10982,8 @@ characterMakers["Zeta"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Jamie Larsen"] = () => {
-    return makeCharacter(
+characterMakers["Jamie Larsen"] = () => makeCharacter(
         { name: "Jamie Larsen" },
         {
             front: {
@@ -11615,10 +11026,8 @@ characterMakers["Jamie Larsen"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Vance"] = () => {
-    return makeCharacter(
+characterMakers["Vance"] = () => makeCharacter(
         { name: "Vance" },
         {
             front: {
@@ -11672,10 +11081,8 @@ characterMakers["Vance"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Xochitl"] = () => {
-    return makeCharacter(
+characterMakers["Xochitl"] = () => makeCharacter(
         { name: "Xochitl" },
         {
             front: {
@@ -11731,10 +11138,8 @@ characterMakers["Xochitl"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Vincent"] = () => {
-    return makeCharacter(
+characterMakers["Vincent"] = () => makeCharacter(
         { name: "Vincent" },
         {
             front: {
@@ -11791,10 +11196,8 @@ characterMakers["Vincent"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Jay"] = () => {
-    return makeCharacter(
+characterMakers["Jay"] = () => makeCharacter(
         { name: "Jay" },
         {
             front: {
@@ -11848,10 +11251,8 @@ characterMakers["Jay"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Coatl"] = () => {
-    return makeCharacter(
+characterMakers["Coatl"] = () => makeCharacter(
         { name: "Coatl" },
         {
             front: {
@@ -11893,10 +11294,8 @@ characterMakers["Coatl"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Shiroryu"] = () => {
-    return makeCharacter(
+characterMakers["Shiroryu"] = () => makeCharacter(
         { name: "Shiroryu" },
         {
             front: {
@@ -11941,10 +11340,8 @@ characterMakers["Shiroryu"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Umeko"] = () => {
-    return makeCharacter(
+characterMakers["Umeko"] = () => makeCharacter(
         { name: "Umeko" },
         {
             front: {
@@ -11984,10 +11381,8 @@ characterMakers["Umeko"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Cassidy"] = () => {
-    return makeCharacter(
+characterMakers["Cassidy"] = () => makeCharacter(
         { name: "Cassidy" },
         {
             front: {
@@ -12021,10 +11416,8 @@ characterMakers["Cassidy"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Isaac"] = () => {
-    return makeCharacter(
+characterMakers["Isaac"] = () => makeCharacter(
         { name: "Isaac" },
         {
             front: {
@@ -12058,10 +11451,8 @@ characterMakers["Isaac"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Sleekit"] = () => {
-    return makeCharacter(
+characterMakers["Sleekit"] = () => makeCharacter(
         { name: "Sleekit" },
         {
             front: {
@@ -12095,10 +11486,8 @@ characterMakers["Sleekit"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Nillia"] = () => {
-    return makeCharacter(
+characterMakers["Nillia"] = () => makeCharacter(
         { name: "Nillia" },
         {
             front: {
@@ -12130,10 +11519,8 @@ characterMakers["Nillia"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Mesmyriza"] = () => {
-    return makeCharacter(
+characterMakers["Mesmyriza"] = () => makeCharacter(
         { name: "Mesmyriza" },
         {
             front: {
@@ -12166,10 +11553,8 @@ characterMakers["Mesmyriza"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Saudade"] = () => {
-    return makeCharacter(
+characterMakers["Saudade"] = () => makeCharacter(
         { name: "Saudade" },
         {
             front: {
@@ -12203,10 +11588,8 @@ characterMakers["Saudade"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Keireer"] = () => {
-    return makeCharacter(
+characterMakers["Keireer"] = () => makeCharacter(
         { name: "Keireer" },
         {
             front: {
@@ -12228,10 +11611,8 @@ characterMakers["Keireer"] = () => {
             },   
         ]
     )
-};
 
-characterMakers["Mirja"] = () => {
-    return makeCharacter(
+characterMakers["Mirja"] = () => makeCharacter(
         { name: "Mirja" },
         {
             front: {
@@ -12289,10 +11670,8 @@ characterMakers["Mirja"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Nightraver"] = () => {
-    return makeCharacter(
+characterMakers["Nightraver"] = () => makeCharacter(
         { name: "Nightraver" },
         {
             front: {
@@ -12361,10 +11740,8 @@ characterMakers["Nightraver"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Arc"] = () => {
-    return makeCharacter(
+characterMakers["Arc"] = () => makeCharacter(
         { name: "Arc" },
         {
             side: {
@@ -12384,10 +11761,8 @@ characterMakers["Arc"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Nebula Shahar"] = () => {
-    return makeCharacter(
+characterMakers["Nebula Shahar"] = () => makeCharacter(
         { name: "Nebula Shahar" },
         {
             front: {
@@ -12421,10 +11796,8 @@ characterMakers["Nebula Shahar"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Shayla"] = () => {
-    return makeCharacter(
+characterMakers["Shayla"] = () => makeCharacter(
         { name: "Shayla" },
         {
             front: {
@@ -12481,10 +11854,8 @@ characterMakers["Shayla"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Pia Jr."] = () => {
-    return makeCharacter(
+characterMakers["Pia Jr."] = () => makeCharacter(
         { name: "Pia Jr." },
         {
             front: {
@@ -12532,10 +11903,8 @@ characterMakers["Pia Jr."] = () => {
             },
         ]
     )
-};
 
-characterMakers["Pia Sr."] = () => {
-    return makeCharacter(
+characterMakers["Pia Sr."] = () => makeCharacter(
         { name: "Pia Sr." },
         {
             front: {
@@ -12593,10 +11962,8 @@ characterMakers["Pia Sr."] = () => {
             },
         ]
     )
-};
 
-characterMakers["KIBIBYTE"] = () => {
-    return makeCharacter(
+characterMakers["KIBIBYTE"] = () => makeCharacter(
         { name: "KIBIBYTE" },
         {
             front: {
@@ -12630,10 +11997,8 @@ characterMakers["KIBIBYTE"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Felix"] = () => {
-    return makeCharacter(
+characterMakers["Felix"] = () => makeCharacter(
         { name: "Felix" },
         {
             front: {
@@ -12673,10 +12038,8 @@ characterMakers["Felix"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Tobo"] = () => {
-    return makeCharacter(
+characterMakers["Tobo"] = () => makeCharacter(
         { name: "Tobo" },
         {
             front: {
@@ -12735,10 +12098,8 @@ characterMakers["Tobo"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Danny Kapowsky"] = () => {
-    return makeCharacter(
+characterMakers["Danny Kapowsky"] = () => makeCharacter(
         { name: "Danny Kapowsky" },
         {
             front: {
@@ -12782,10 +12143,8 @@ characterMakers["Danny Kapowsky"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Finn"] = () => {
-    return makeCharacter(
+characterMakers["Finn"] = () => makeCharacter(
         { name: "Finn" },
         {
             side: {
@@ -12807,10 +12166,8 @@ characterMakers["Finn"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Roy"] = () => {
-    return makeCharacter(
+characterMakers["Roy"] = () => makeCharacter(
         { name: "Roy" },
         {
             front: {
@@ -12844,10 +12201,8 @@ characterMakers["Roy"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Aevsivs"] = () => {
-    return makeCharacter(
+characterMakers["Aevsivs"] = () => makeCharacter(
         { name: "Aevsivs" },
         {
             front: {
@@ -12881,10 +12236,8 @@ characterMakers["Aevsivs"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Hildegard"] = () => {
-    return makeCharacter(
+characterMakers["Hildegard"] = () => makeCharacter(
         { name: "Hildegard" },
         {
             front: {
@@ -12906,10 +12259,8 @@ characterMakers["Hildegard"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Bernard & Wilder"] = () => {
-    return makeCharacter(
+characterMakers["Bernard & Wilder"] = () => makeCharacter(
         { name: "Bernard & Wilder" },
         {
             bernard: {
@@ -12943,10 +12294,8 @@ characterMakers["Bernard & Wilder"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Hearth"] = () => {
-    return makeCharacter(
+characterMakers["Hearth"] = () => makeCharacter(
         { name: "Hearth" },
         {
             anthro: {
@@ -12978,10 +12327,8 @@ characterMakers["Hearth"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Ingrid"] = () => {
-    return makeCharacter(
+characterMakers["Ingrid"] = () => makeCharacter(
         { name: "Ingrid" },
         {
             front: {
@@ -13003,10 +12350,8 @@ characterMakers["Ingrid"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Malgam"] = () => {
-    return makeCharacter(
+characterMakers["Malgam"] = () => makeCharacter(
         { name: "Malgam" },
         {
             eevee: {
@@ -13047,10 +12392,8 @@ characterMakers["Malgam"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Fleur"] = () => {
-    return makeCharacter(
+characterMakers["Fleur"] = () => makeCharacter(
         { name: "Fleur" },
         {
             front: {
@@ -13072,10 +12415,8 @@ characterMakers["Fleur"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Jude"] = () => {
-    return makeCharacter(
+characterMakers["Jude"] = () => makeCharacter(
         { name: "Jude" },
         {
             front: {
@@ -13097,10 +12438,8 @@ characterMakers["Jude"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Seara"] = () => {
-    return makeCharacter(
+characterMakers["Seara"] = () => makeCharacter(
         { name: "Seara" },
         {
             front: {
@@ -13122,10 +12461,8 @@ characterMakers["Seara"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Caspian"] = () => {
-    return makeCharacter(
+characterMakers["Caspian"] = () => makeCharacter(
         { name: "Caspian" },
         {
         front: {
@@ -13147,10 +12484,8 @@ characterMakers["Caspian"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Mika"] = () => {
-    return makeCharacter(
+characterMakers["Mika"] = () => makeCharacter(
         { name: "Mika" },
         {
         front: {
@@ -13172,10 +12507,8 @@ characterMakers["Mika"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Sol"] = () => {
-    return makeCharacter(
+characterMakers["Sol"] = () => makeCharacter(
         { name: "Sol" },
         {
         front: {
@@ -13197,10 +12530,8 @@ characterMakers["Sol"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Umiko"] = () => {
-    return makeCharacter(
+characterMakers["Umiko"] = () => makeCharacter(
         { name: "Umiko" },
         {
         buizel: {
@@ -13231,10 +12562,8 @@ characterMakers["Umiko"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Iliac"] = () => {
-    return makeCharacter(
+characterMakers["Iliac"] = () => makeCharacter(
         { name: "Iliac" },
         {
         front: {
@@ -13256,10 +12585,8 @@ characterMakers["Iliac"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Topaz"] = () => {
-    return makeCharacter(
+characterMakers["Topaz"] = () => makeCharacter(
         { name: "Topaz" },
         {
             front: {
@@ -13281,10 +12608,8 @@ characterMakers["Topaz"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Gabriel"] = () => {
-    return makeCharacter(
+characterMakers["Gabriel"] = () => makeCharacter(
         { name: "Gabriel" },
         {
             front: {
@@ -13306,10 +12631,8 @@ characterMakers["Gabriel"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Tempest (Suicune)"] = () => {
-    return makeCharacter(
+characterMakers["Tempest (Suicune)"] = () => makeCharacter(
         { name: "Tempest (Suicune)" },
         {
             side: {
@@ -13331,10 +12654,8 @@ characterMakers["Tempest (Suicune)"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Vulcan"] = () => {
-    return makeCharacter(
+characterMakers["Vulcan"] = () => makeCharacter(
         { name: "Vulcan" },
         {
             front: {
@@ -13356,10 +12677,8 @@ characterMakers["Vulcan"] = () => {
             },   
         ]
     )
-};
 
-characterMakers["Gault"] = () => {
-    return makeCharacter(
+characterMakers["Gault"] = () => makeCharacter(
         { name: "Gault" },
         {
             front: {
@@ -13381,10 +12700,8 @@ characterMakers["Gault"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Shard"] = () => {
-    return makeCharacter(
+characterMakers["Shard"] = () => makeCharacter(
         { name: "Shard" },
         {
             front: {
@@ -13406,10 +12723,8 @@ characterMakers["Shard"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Ashe"] = () => {
-    return makeCharacter(
+characterMakers["Ashe"] = () => makeCharacter(
         { name: "Ashe" },
         {
             front: {
@@ -13431,10 +12746,8 @@ characterMakers["Ashe"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Beatrix"] = () => {
-    return makeCharacter(
+characterMakers["Beatrix"] = () => makeCharacter(
         { name: "Beatrix" },
         {
             front: {
@@ -13456,10 +12769,8 @@ characterMakers["Beatrix"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Ignatius"] = () => {
-    return makeCharacter(
+characterMakers["Ignatius"] = () => makeCharacter(
         { name: "Ignatius" },
         {
             front: {
@@ -13481,10 +12792,8 @@ characterMakers["Ignatius"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Mei Li"] = () => {
-    return makeCharacter(
+characterMakers["Mei Li"] = () => makeCharacter(
         { name: "Mei Li" },
         {
             front: {
@@ -13506,10 +12815,8 @@ characterMakers["Mei Li"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Puru"] = () => {
-    return makeCharacter(
+characterMakers["Puru"] = () => makeCharacter(
         { name: "Puru" },
         {
             front: {
@@ -13531,10 +12838,8 @@ characterMakers["Puru"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Kee"] = () => {
-    return makeCharacter(
+characterMakers["Kee"] = () => makeCharacter(
         { name: "Kee" },
         {
             taur: {
@@ -13556,10 +12861,8 @@ characterMakers["Kee"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Cobalt (Dracha)"] = () => {
-    return makeCharacter(
+characterMakers["Cobalt (Dracha)"] = () => makeCharacter(
         { name: "Cobalt (Dracha)" },
         {
             anthro: {
@@ -13591,10 +12894,8 @@ characterMakers["Cobalt (Dracha)"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Java"] = () => {
-    return makeCharacter(
+characterMakers["Java"] = () => makeCharacter(
         { name: "Java" },
         {
             fallen: {
@@ -13628,10 +12929,8 @@ characterMakers["Java"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Skoll"] = () => {
-    return makeCharacter(
+characterMakers["Skoll"] = () => makeCharacter(
         { name: "Skoll" },
         {
             front: {
@@ -13653,10 +12952,8 @@ characterMakers["Skoll"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Purna"] = () => {
-    return makeCharacter(
+characterMakers["Purna"] = () => makeCharacter(
         { name: "Purna" },
         {
             front: {
@@ -13678,10 +12975,8 @@ characterMakers["Purna"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Kuva"] = () => {
-    return makeCharacter(
+characterMakers["Kuva"] = () => makeCharacter(
         { name: "Kuva" },
         {
             front: {
@@ -13703,10 +12998,8 @@ characterMakers["Kuva"] = () => {
             },   
         ]
     )
-};
 
-characterMakers["Embra"] = () => {
-    return makeCharacter(
+characterMakers["Embra"] = () => makeCharacter(
         { name: "Embra" },
         {
             anthro: {
@@ -13738,10 +13031,8 @@ characterMakers["Embra"] = () => {
              },
         ]
     )
-};
 
-characterMakers["Grottos"] = () => {
-    return makeCharacter(
+characterMakers["Grottos"] = () => makeCharacter(
         { name: "Grottos" },
         {
             anthro: {
@@ -13773,10 +13064,8 @@ characterMakers["Grottos"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Frifna"] = () => {
-    return makeCharacter(
+characterMakers["Frifna"] = () => makeCharacter(
         { name: "Frifna" },
         {
             anthro: {
@@ -13806,10 +13095,8 @@ characterMakers["Frifna"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Elise"] = () => {
-    return makeCharacter(
+characterMakers["Elise"] = () => makeCharacter(
         { name: "Elise" },
         {
             front: {
@@ -13830,10 +13117,8 @@ characterMakers["Elise"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Glade"] = () => {
-    return makeCharacter(
+characterMakers["Glade"] = () => makeCharacter(
         { name: "Glade" },
         {
             front: {
@@ -13855,10 +13140,8 @@ characterMakers["Glade"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Rina"] = () => {
-    return makeCharacter(
+characterMakers["Rina"] = () => makeCharacter(
         { name: "Rina" },
         {
             front: {
@@ -13880,10 +13163,8 @@ characterMakers["Rina"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Veronica"] = () => {
-    return makeCharacter(
+characterMakers["Veronica"] = () => makeCharacter(
         { name: "Veronica" },
         {
             front: {
@@ -13905,10 +13186,8 @@ characterMakers["Veronica"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Braxton"] = () => {
-    return makeCharacter(
+characterMakers["Braxton"] = () => makeCharacter(
         { name: "Braxton" },
         {
             front: {
@@ -13942,10 +13221,8 @@ characterMakers["Braxton"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Blue Feyonics"] = () => {
-    return makeCharacter(
+characterMakers["Blue Feyonics"] = () => makeCharacter(
         { name: "Blue Feyonics" },
         {
             front: {
@@ -13967,10 +13244,8 @@ characterMakers["Blue Feyonics"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Maxwell"] = () => {
-    return makeCharacter(
+characterMakers["Maxwell"] = () => makeCharacter(
         { name: "Maxwell" },
         {
             front: {
@@ -14003,10 +13278,8 @@ characterMakers["Maxwell"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Jack"] = () => {
-    return makeCharacter(
+characterMakers["Jack"] = () => makeCharacter(
         { name: "Jack" },
         {
             front: {
@@ -14032,10 +13305,8 @@ characterMakers["Jack"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Cafat"] = () => {
-    return makeCharacter(
+characterMakers["Cafat"] = () => makeCharacter(
         { name: "Cafat" },
         {
             upright: {
@@ -14077,10 +13348,8 @@ characterMakers["Cafat"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Verin Raharra"] = () => {
-    return makeCharacter(
+characterMakers["Verin Raharra"] = () => makeCharacter(
         { name: "Verin Raharra" },
         {
             front: {
@@ -14106,10 +13375,8 @@ characterMakers["Verin Raharra"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Nakata"] = () => {
-    return makeCharacter(
+characterMakers["Nakata"] = () => makeCharacter(
         { name: "Nakata" },
         {
             front: {
@@ -14139,10 +13406,8 @@ characterMakers["Nakata"] = () => {
            }, 
         ]
     )
-};
 
-characterMakers["Lily"] = () => {
-    return makeCharacter(
+characterMakers["Lily"] = () => makeCharacter(
         { name: "Lily" },
         {
             front: {
@@ -14164,10 +13429,8 @@ characterMakers["Lily"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Sheila"] = () => {
-    return makeCharacter(
+characterMakers["Sheila"] = () => makeCharacter(
         { name: "Sheila" },
         {
             laying: {
@@ -14189,10 +13452,8 @@ characterMakers["Sheila"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Sax"] = () => {
-    return makeCharacter(
+characterMakers["Sax"] = () => makeCharacter(
         { name: "Sax" },
         {
             front: {
@@ -14214,10 +13475,8 @@ characterMakers["Sax"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Pandora"] = () => {
-    return makeCharacter(
+characterMakers["Pandora"] = () => makeCharacter(
         { name: "Pandora" },
         {
             front: {
@@ -14290,10 +13549,8 @@ characterMakers["Pandora"] = () => {
             },  
         ]
     )
-};
 
-characterMakers["Venio Darcony"] = () => {
-    return makeCharacter(
+characterMakers["Venio Darcony"] = () => makeCharacter(
         { name: "Venio Darcony" },
         {
             side: {
@@ -14339,10 +13596,8 @@ characterMakers["Venio Darcony"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Veski"] = () => {
-    return makeCharacter(
+characterMakers["Veski"] = () => makeCharacter(
         { name: "Veski" },
         {
             front: {
@@ -14381,10 +13636,8 @@ characterMakers["Veski"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Isabelle"] = () => {
-    return makeCharacter(
+characterMakers["Isabelle"] = () => makeCharacter(
         { name: "Isabelle" },
         {
             front: {
@@ -14433,10 +13686,8 @@ characterMakers["Isabelle"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Hanzo"] = () => {
-    return makeCharacter(
+characterMakers["Hanzo"] = () => makeCharacter(
         { name: "Hanzo" },
         {
             front: {
@@ -14458,10 +13709,8 @@ characterMakers["Hanzo"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Anna"] = () => {
-    return makeCharacter(
+characterMakers["Anna"] = () => makeCharacter(
         { name: "Anna" },
         {
             front: {
@@ -14500,10 +13749,8 @@ characterMakers["Anna"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Ian Corvid"] = () => {
-    return makeCharacter(
+characterMakers["Ian Corvid"] = () => makeCharacter(
         { name: "Ian Corvid" },
         {
             front: {
@@ -14566,10 +13813,8 @@ characterMakers["Ian Corvid"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Natalie Kellon"] = () => {
-    return makeCharacter(
+characterMakers["Natalie Kellon"] = () => makeCharacter(
         { name: "Natalie Kellon" },
         {
             front: {
@@ -14611,10 +13856,8 @@ characterMakers["Natalie Kellon"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Alluria"] = () => {
-    return makeCharacter(
+characterMakers["Alluria"] = () => makeCharacter(
         { name: "Alluria" },
         {
             front: {
@@ -14683,10 +13926,8 @@ characterMakers["Alluria"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Kyle"] = () => {
-    return makeCharacter(
+characterMakers["Kyle"] = () => makeCharacter(
         { name: "Kyle" },
         {
             front: {
@@ -14708,10 +13949,8 @@ characterMakers["Kyle"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Duncan"] = () => {
-    return makeCharacter(
+characterMakers["Duncan"] = () => makeCharacter(
         { name: "Duncan" },
         {
             front: {
@@ -14733,10 +13972,8 @@ characterMakers["Duncan"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Memory"] = () => {
-    return makeCharacter(
+characterMakers["Memory"] = () => makeCharacter(
         { name: "Memory" },
         {
             front: {
@@ -14792,10 +14029,8 @@ characterMakers["Memory"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Luno"] = () => {
-    return makeCharacter(
+characterMakers["Luno"] = () => makeCharacter(
         { name: "Luno" },
         {
             front: {
@@ -14829,10 +14064,8 @@ characterMakers["Luno"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Jamesy"] = () => {
-    return makeCharacter(
+characterMakers["Jamesy"] = () => makeCharacter(
         { name: "Jamesy" },
         {
             front: {
@@ -14866,10 +14099,8 @@ characterMakers["Jamesy"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Mark"] = () => {
-    return makeCharacter(
+characterMakers["Mark"] = () => makeCharacter(
         { name: "Mark" },
         {
             front: {
@@ -14907,10 +14138,8 @@ characterMakers["Mark"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Mac"] = () => {
-    return makeCharacter(
+characterMakers["Mac"] = () => makeCharacter(
         { name: "Mac" },
         {
             front: {
@@ -14932,10 +14161,8 @@ characterMakers["Mac"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Bari"] = () => {
-    return makeCharacter(
+characterMakers["Bari"] = () => makeCharacter(
         { name: "Bari" },
         {
             front: {
@@ -14985,10 +14212,8 @@ characterMakers["Bari"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Hunter Misha Raven"] = () => {
-    return makeCharacter(
+characterMakers["Hunter Misha Raven"] = () => makeCharacter(
         { name: "Hunter Misha Raven" },
         {
             front: {
@@ -15012,10 +14237,8 @@ characterMakers["Hunter Misha Raven"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Max Calore"] = () => {
-    return makeCharacter(
+characterMakers["Max Calore"] = () => makeCharacter(
         { name: "Max Calore" },
         {
             front: {
@@ -15047,10 +14270,8 @@ characterMakers["Max Calore"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Aspen"] = () => {
-    return makeCharacter(
+characterMakers["Aspen"] = () => makeCharacter(
         { name: "Aspen" },
         {
             side: {
@@ -15072,10 +14293,8 @@ characterMakers["Aspen"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Sheila (Wolf)"] = () => {
-    return makeCharacter(
+characterMakers["Sheila (Wolf)"] = () => makeCharacter(
         { name: "Sheila (Wolf)" },
         {
             side: {
@@ -15097,10 +14316,8 @@ characterMakers["Sheila (Wolf)"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Michelle"] = () => {
-    return makeCharacter(
+characterMakers["Michelle"] = () => makeCharacter(
         { name: "Michelle" },
         {
             side: {
@@ -15122,10 +14339,8 @@ characterMakers["Michelle"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Nino"] = () => {
-    return makeCharacter(
+characterMakers["Nino"] = () => makeCharacter(
         { name: "Nino" },
         {
             front: {
@@ -15145,10 +14360,8 @@ characterMakers["Nino"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Viola"] = () => {
-    return makeCharacter(
+characterMakers["Viola"] = () => makeCharacter(
         { name: "Viola" },
         {
             front: {
@@ -15168,10 +14381,8 @@ characterMakers["Viola"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Atlas"] = () => {
-    return makeCharacter(
+characterMakers["Atlas"] = () => makeCharacter(
         { name: "Atlas" },
         {
             front: {
@@ -15193,10 +14404,8 @@ characterMakers["Atlas"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Davy"] = () => {
-    return makeCharacter(
+characterMakers["Davy"] = () => makeCharacter(
         { name: "Davy" },
         {
             side: {
@@ -15218,10 +14427,8 @@ characterMakers["Davy"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Fiona"] = () => {
-    return makeCharacter(
+characterMakers["Fiona"] = () => makeCharacter(
         { name: "Fiona" },
         {
             side: {
@@ -15243,10 +14450,8 @@ characterMakers["Fiona"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Lyla"] = () => {
-    return makeCharacter(
+characterMakers["Lyla"] = () => makeCharacter(
         { name: "Lyla" },
         {
             front: {
@@ -15267,10 +14472,8 @@ characterMakers["Lyla"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Perseus"] = () => {
-    return makeCharacter(
+characterMakers["Perseus"] = () => makeCharacter(
         { name: "Perseus" },
         {
             side: {
@@ -15291,10 +14494,8 @@ characterMakers["Perseus"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Remus"] = () => {
-    return makeCharacter(
+characterMakers["Remus"] = () => makeCharacter(
         { name: "Remus" },
         {
             side: {
@@ -15314,10 +14515,8 @@ characterMakers["Remus"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Raf"] = () => {
-    return makeCharacter(
+characterMakers["Raf"] = () => makeCharacter(
         { name: "Raf" },
         {
             front: {
@@ -15355,10 +14554,8 @@ characterMakers["Raf"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Liam Einarr"] = () => {
-    return makeCharacter(
+characterMakers["Liam Einarr"] = () => makeCharacter(
         { name: "Liam Einarr" },
         {
             front: {
@@ -15397,10 +14594,8 @@ characterMakers["Liam Einarr"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Linda"] = () => {
-    return makeCharacter(
+characterMakers["Linda"] = () => makeCharacter(
         { name: "Linda" },
         {
             front: {
@@ -15422,10 +14617,8 @@ characterMakers["Linda"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Caylex"] = () => {
-    return makeCharacter(
+characterMakers["Caylex"] = () => makeCharacter(
         { name: "Caylex" },
         {
             front: {
@@ -15485,10 +14678,8 @@ characterMakers["Caylex"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Alana"] = () => {
-    return makeCharacter(
+characterMakers["Alana"] = () => makeCharacter(
         { name: "Alana" },
         {
             front: {
@@ -15522,10 +14713,8 @@ characterMakers["Alana"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Hasani"] = () => {
-    return makeCharacter(
+characterMakers["Hasani"] = () => makeCharacter(
         { name: "Hasani" },
         {
             front: {
@@ -15561,10 +14750,8 @@ characterMakers["Hasani"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Nita"] = () => {
-    return makeCharacter(
+characterMakers["Nita"] = () => makeCharacter(
         { name: "Nita" },
         {
             front: {
@@ -15602,10 +14789,8 @@ characterMakers["Nita"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Shiriko"] = () => {
-    return makeCharacter(
+characterMakers["Shiriko"] = () => makeCharacter(
         { name: "Shiriko" },
         {
             front: {
@@ -15626,10 +14811,8 @@ characterMakers["Shiriko"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Deja"] = () => {
-    return makeCharacter(
+characterMakers["Deja"] = () => makeCharacter(
         { name: "Deja" },
         {
             front: {
@@ -15658,10 +14841,8 @@ characterMakers["Deja"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Anima"] = () => {
-    return makeCharacter(
+characterMakers["Anima"] = () => makeCharacter(
         { name: "Anima" },
         {
             side: {
@@ -15682,10 +14863,8 @@ characterMakers["Anima"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Bianca"] = () => {
-    return makeCharacter(
+characterMakers["Bianca"] = () => makeCharacter(
         { name: "Bianca" },
         {
             front: {
@@ -15707,10 +14886,8 @@ characterMakers["Bianca"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Adinia"] = () => {
-    return makeCharacter(
+characterMakers["Adinia"] = () => makeCharacter(
         { name: "Adinia" },
         {
             front: {
@@ -15742,10 +14919,8 @@ characterMakers["Adinia"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Lykasa"] = () => {
-    return makeCharacter(
+characterMakers["Lykasa"] = () => makeCharacter(
         { name: "Lykasa" },
         {
             front: {
@@ -15787,10 +14962,8 @@ characterMakers["Lykasa"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Malfaren"] = () => {
-    return makeCharacter(
+characterMakers["Malfaren"] = () => makeCharacter(
         { name: "Malfaren" },
         {
             side: {
@@ -15841,10 +15014,8 @@ characterMakers["Malfaren"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Kernel"] = () => {
-    return makeCharacter(
+characterMakers["Kernel"] = () => makeCharacter(
         { name: "Kernel" },
         {
             front: {
@@ -15878,10 +15049,8 @@ characterMakers["Kernel"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Jayne Folest"] = () => {
-    return makeCharacter(
+characterMakers["Jayne Folest"] = () => makeCharacter(
         { name: "Jayne Folest" },
         {
             front: {
@@ -15945,10 +15114,8 @@ characterMakers["Jayne Folest"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Algier"] = () => {
-    return makeCharacter(
+characterMakers["Algier"] = () => makeCharacter(
         { name: "Algier" },
         {
             front: {
@@ -15998,10 +15165,8 @@ characterMakers["Algier"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Pretzel"] = () => {
-    return makeCharacter(
+characterMakers["Pretzel"] = () => makeCharacter(
         { name: "Pretzel" },
         {
             upright: {
@@ -16052,10 +15217,8 @@ characterMakers["Pretzel"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Roxi"] = () => {
-    return makeCharacter(
+characterMakers["Roxi"] = () => makeCharacter(
         { name: "Roxi" },
         {
             sideFront: {
@@ -16117,10 +15280,8 @@ characterMakers["Roxi"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Shadow"] = () => {
-    return makeCharacter(
+characterMakers["Shadow"] = () => makeCharacter(
         { name: "Shadow" },
         {
             side: {
@@ -16150,10 +15311,8 @@ characterMakers["Shadow"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Marcie"] = () => {
-    return makeCharacter(
+characterMakers["Marcie"] = () => makeCharacter(
         { name: "Marcie" },
         {
             front: {
@@ -16175,10 +15334,8 @@ characterMakers["Marcie"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Kachina"] = () => {
-    return makeCharacter(
+characterMakers["Kachina"] = () => makeCharacter(
         { name: "Kachina" },
         {
             front: {
@@ -16200,10 +15357,8 @@ characterMakers["Kachina"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Kash"] = () => {
-    return makeCharacter(
+characterMakers["Kash"] = () => makeCharacter(
         { name: "Kash" },
         {
             looking: {
@@ -16253,10 +15408,8 @@ characterMakers["Kash"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Lalim"] = () => {
-    return makeCharacter(
+characterMakers["Lalim"] = () => makeCharacter(
         { name: "Lalim" },
         {
             feeding: {
@@ -16276,10 +15429,8 @@ characterMakers["Lalim"] = () => {
             },
         ]
     )
-};
 
-characterMakers["De'Vout"] = () => {
-    return makeCharacter(
+characterMakers["De'Vout"] = () => makeCharacter(
         { name: "De'Vout" },
         {
             front: {
@@ -16329,10 +15480,8 @@ characterMakers["De'Vout"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Talana"] = () => {
-    return makeCharacter(
+characterMakers["Talana"] = () => makeCharacter(
         { name: "Talana" },
         {
             front: {
@@ -16364,10 +15513,8 @@ characterMakers["Talana"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Xeauvok"] = () => {
-    return makeCharacter(
+characterMakers["Xeauvok"] = () => makeCharacter(
         { name: "Xeauvok" },
         {
             side: {
@@ -16389,10 +15536,8 @@ characterMakers["Xeauvok"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Zara"] = () => {
-    return makeCharacter(
+characterMakers["Zara"] = () => makeCharacter(
         { name: "Zara" },
         {
             side: {
@@ -16413,10 +15558,8 @@ characterMakers["Zara"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Richard (Dragon)"] = () => {
-    return makeCharacter(
+characterMakers["Richard (Dragon)"] = () => makeCharacter(
         { name: "Richard (Dragon)" },
         {
             side: {
@@ -16441,10 +15584,8 @@ characterMakers["Richard (Dragon)"] = () => {
             
         ]
     )
-};
 
-characterMakers["Richard (Smeargle)"] = () => {
-    return makeCharacter(
+characterMakers["Richard (Smeargle)"] = () => makeCharacter(
         { name: "Richard (Smeargle)" },
         {
             front: {
@@ -16470,10 +15611,8 @@ characterMakers["Richard (Smeargle)"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Klay"] = () => {
-    return makeCharacter(
+characterMakers["Klay"] = () => makeCharacter(
         { name: "Klay" },
         {
             front: {
@@ -16531,10 +15670,8 @@ characterMakers["Klay"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Marcus"] = () => {
-    return makeCharacter(
+characterMakers["Marcus"] = () => makeCharacter(
         { name: "Marcus" },
         {
             front: {
@@ -16568,10 +15705,8 @@ characterMakers["Marcus"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Claude DelRoute"] = () => {
-    return makeCharacter(
+characterMakers["Claude DelRoute"] = () => makeCharacter(
         { name: "Claude DelRoute" },
         {
             front: {
@@ -16624,10 +15759,8 @@ characterMakers["Claude DelRoute"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Dragonien"] = () => {
-    return makeCharacter(
+characterMakers["Dragonien"] = () => makeCharacter(
         { name: "Dragonien" },
         {
             front: {
@@ -16678,10 +15811,8 @@ characterMakers["Dragonien"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Desta"] = () => {
-    return makeCharacter(
+characterMakers["Desta"] = () => makeCharacter(
         { name: "Desta" },
         {
             front: {
@@ -16724,10 +15855,8 @@ characterMakers["Desta"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Storm Alystar"] = () => {
-    return makeCharacter(
+characterMakers["Storm Alystar"] = () => makeCharacter(
         { name: "Storm Alystar" },
         {
             front: {
@@ -16761,10 +15890,8 @@ characterMakers["Storm Alystar"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Ilia"] = () => {
-    return makeCharacter(
+characterMakers["Ilia"] = () => makeCharacter(
         { name: "Ilia" },
         {
             front: {
@@ -16794,10 +15921,8 @@ characterMakers["Ilia"] = () => {
             },
         ]
     )
-};
 
-characterMakers["KingDead"] = () => {
-    return makeCharacter(
+characterMakers["KingDead"] = () => makeCharacter(
         { name: "KingDead" },
         {
             front: {
@@ -16830,10 +15955,8 @@ characterMakers["KingDead"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Kyrehx"] = () => {
-    return makeCharacter(
+characterMakers["Kyrehx"] = () => makeCharacter(
         { name: "Kyrehx" },
         {
             front: {
@@ -16863,10 +15986,8 @@ characterMakers["Kyrehx"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Xang"] = () => {
-    return makeCharacter(
+characterMakers["Xang"] = () => makeCharacter(
         { name: "Xang" },
         {
             front: {
@@ -16895,10 +16016,8 @@ characterMakers["Xang"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Doc Weardno"] = () => {
-    return makeCharacter(
+characterMakers["Doc Weardno"] = () => makeCharacter(
         { name: "Doc Weardno" },
         {
             frontDressed: {
@@ -16949,10 +16068,8 @@ characterMakers["Doc Weardno"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Seth Whilst"] = () => {
-    return makeCharacter(
+characterMakers["Seth Whilst"] = () => makeCharacter(
         { name: "Seth Whilst" },
         {
             front: {
@@ -16977,10 +16094,8 @@ characterMakers["Seth Whilst"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Pocket Jabari"] = () => {
-    return makeCharacter(
+characterMakers["Pocket Jabari"] = () => makeCharacter(
         { name: "Pocket Jabari" },
         {
             front: {
@@ -17010,10 +16125,8 @@ characterMakers["Pocket Jabari"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Sapphy"] = () => {
-    return makeCharacter(
+characterMakers["Sapphy"] = () => makeCharacter(
         { name: "Sapphy" },
         {
             front: {
@@ -17061,10 +16174,8 @@ characterMakers["Sapphy"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Kiro"] = () => {
-    return makeCharacter(
+characterMakers["Kiro"] = () => makeCharacter(
         { name: "Kiro" },
         {   
              front: {
@@ -17094,10 +16205,8 @@ characterMakers["Kiro"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Irishfox"] = () => {
-    return makeCharacter(
+characterMakers["Irishfox"] = () => makeCharacter(
         { name: "Irishfox" },
         {
             front: {
@@ -17131,10 +16240,8 @@ characterMakers["Irishfox"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Aronai Sieyes"] = () => {
-    return makeCharacter(
+characterMakers["Aronai Sieyes"] = () => makeCharacter(
         { name: "Aronai Sieyes" },
         {
             front: {
@@ -17199,10 +16306,8 @@ characterMakers["Aronai Sieyes"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Xuna"] = () => {
-    return makeCharacter(
+characterMakers["Xuna"] = () => makeCharacter(
         { name: "Xuna" },
         {
             front: {
@@ -17285,10 +16390,8 @@ characterMakers["Xuna"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Arokha Sieyes"] = () => {
-    return makeCharacter(
+characterMakers["Arokha Sieyes"] = () => makeCharacter(
         { name: "Arokha Sieyes" },
         {
             front: {
@@ -17314,10 +16417,8 @@ characterMakers["Arokha Sieyes"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Arokh Sieyes"] = () => {
-    return makeCharacter(
+characterMakers["Arokh Sieyes"] = () => makeCharacter(
         { name: "Arokh Sieyes" },
         {
             front: {
@@ -17343,10 +16444,8 @@ characterMakers["Arokh Sieyes"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Goldeneye"] = () => {
-    return makeCharacter(
+characterMakers["Goldeneye"] = () => makeCharacter(
         { name: "Goldeneye" },
         {
             side: {
@@ -17375,10 +16474,8 @@ characterMakers["Goldeneye"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Leonardo Lycheborne"] = () => {
-    return makeCharacter(
+characterMakers["Leonardo Lycheborne"] = () => makeCharacter(
         { name: "Leonardo Lycheborne" },
         {
             front: {
@@ -17474,10 +16571,8 @@ characterMakers["Leonardo Lycheborne"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Jet"] = () => {
-    return makeCharacter(
+characterMakers["Jet"] = () => makeCharacter(
         { name: "Jet" },
         {
             front: {
@@ -17517,10 +16612,8 @@ characterMakers["Jet"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Tanarath"] = () => {
-    return makeCharacter(
+characterMakers["Tanarath"] = () => makeCharacter(
         { name: "Tanarath" },
         {
             front: {
@@ -17552,10 +16645,8 @@ characterMakers["Tanarath"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Patty CattyBatty"] = () => {
-    return makeCharacter(
+characterMakers["Patty CattyBatty"] = () => makeCharacter(
         { name: "Patty CattyBatty" },
         {
             front: {
@@ -17613,10 +16704,8 @@ characterMakers["Patty CattyBatty"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Cappu"] = () => {
-    return makeCharacter(
+characterMakers["Cappu"] = () => makeCharacter(
         { name: "Cappu" },
         {
             front: {
@@ -17638,10 +16727,8 @@ characterMakers["Cappu"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Sebi"] = () => {
-    return makeCharacter(
+characterMakers["Sebi"] = () => makeCharacter(
         { name: "Sebi" },
         {
             frontDressed: {
@@ -17677,10 +16764,8 @@ characterMakers["Sebi"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Typhek"] = () => {
-    return makeCharacter(
+characterMakers["Typhek"] = () => makeCharacter(
         { name: "Typhek" },
         {
             front: {
@@ -17762,10 +16847,8 @@ characterMakers["Typhek"] = () => {
             }
         ]
     )
-};
 
-characterMakers["Kassy"] = () => {
-    return makeCharacter(
+characterMakers["Kassy"] = () => makeCharacter(
         { name: "Kassy" },
         {
             side: {
@@ -17822,10 +16905,8 @@ characterMakers["Kassy"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Neil"] = () => {
-    return makeCharacter(
+characterMakers["Neil"] = () => makeCharacter(
         { name: "Neil" },
         {
             front: {
@@ -17851,10 +16932,8 @@ characterMakers["Neil"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Atticus"] = () => {
-    return makeCharacter(
+characterMakers["Atticus"] = () => makeCharacter(
         { name: "Atticus" },
         {
             front: {
@@ -17880,10 +16959,8 @@ characterMakers["Atticus"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Milo"] = () => {
-    return makeCharacter(
+characterMakers["Milo"] = () => makeCharacter(
         { name: "Milo" },
         {
             side: {
@@ -17909,10 +16986,8 @@ characterMakers["Milo"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Ijzer"] = () => {
-    return makeCharacter(
+characterMakers["Ijzer"] = () => makeCharacter(
         { name: "Ijzer" },
         {
             side: {
@@ -17950,10 +17025,8 @@ characterMakers["Ijzer"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Luca Cervicum"] = () => {
-    return makeCharacter(
+characterMakers["Luca Cervicum"] = () => makeCharacter(
         { name: "Luca Cervicum" },
         {
             front: {
@@ -17995,10 +17068,8 @@ characterMakers["Luca Cervicum"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Oliver"] = () => {
-    return makeCharacter(
+characterMakers["Oliver"] = () => makeCharacter(
         { name: "Oliver" },
         {
             front: {
@@ -18020,10 +17091,8 @@ characterMakers["Oliver"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Shane"] = () => {
-    return makeCharacter(
+characterMakers["Shane"] = () => makeCharacter(
         { name: "Shane" },
         {
             front: {
@@ -18045,10 +17114,8 @@ characterMakers["Shane"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Shin"] = () => {
-    return makeCharacter(
+characterMakers["Shin"] = () => makeCharacter(
         { name: "Shin" },
         {
             front: {
@@ -18070,10 +17137,8 @@ characterMakers["Shin"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Xerxes"] = () => {
-    return makeCharacter(
+characterMakers["Xerxes"] = () => makeCharacter(
         { name: "Xerxes" },
         {
             front: {
@@ -18095,10 +17160,8 @@ characterMakers["Xerxes"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Chaska"] = () => {
-    return makeCharacter(
+characterMakers["Chaska"] = () => makeCharacter(
         { name: "Chaska" },
         {
             front: {
@@ -18120,10 +17183,8 @@ characterMakers["Chaska"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Enuk"] = () => {
-    return makeCharacter(
+characterMakers["Enuk"] = () => makeCharacter(
         { name: "Enuk" },
         {
             front: {
@@ -18145,10 +17206,8 @@ characterMakers["Enuk"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Bruun"] = () => {
-    return makeCharacter(
+characterMakers["Bruun"] = () => makeCharacter(
         { name: "Bruun" },
         {
             front: {
@@ -18170,10 +17229,8 @@ characterMakers["Bruun"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Alexeev"] = () => {
-    return makeCharacter(
+characterMakers["Alexeev"] = () => makeCharacter(
         { name: "Alexeev" },
         {
             front: {
@@ -18195,10 +17252,8 @@ characterMakers["Alexeev"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Evelyn"] = () => {
-    return makeCharacter(
+characterMakers["Evelyn"] = () => makeCharacter(
         { name: "Evelyn" },
         {
             front: {
@@ -18219,10 +17274,8 @@ characterMakers["Evelyn"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Inca"] = () => {
-    return makeCharacter(
+characterMakers["Inca"] = () => makeCharacter(
         { name: "Inca" },
         {
             front: {
@@ -18244,10 +17297,8 @@ characterMakers["Inca"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Magdalene"] = () => {
-    return makeCharacter(
+characterMakers["Magdalene"] = () => makeCharacter(
         { name: "Magdalene" },
         {
             front: {
@@ -18268,10 +17319,8 @@ characterMakers["Magdalene"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Mera"] = () => {
-    return makeCharacter(
+characterMakers["Mera"] = () => makeCharacter(
         { name: "Mera" },
         {
             front: {
@@ -18293,10 +17342,8 @@ characterMakers["Mera"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Ceres"] = () => {
-    return makeCharacter(
+characterMakers["Ceres"] = () => makeCharacter(
         { name: "Ceres" },
         {
             front: {
@@ -18327,10 +17374,8 @@ characterMakers["Ceres"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Kris"] = () => {
-    return makeCharacter(
+characterMakers["Kris"] = () => makeCharacter(
         { name: "Kris" },
         {
             front: {
@@ -18352,10 +17397,8 @@ characterMakers["Kris"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Taluthus"] = () => {
-    return makeCharacter(
+characterMakers["Taluthus"] = () => makeCharacter(
         { name: "Taluthus" },
         {
             front: {
@@ -18381,10 +17424,8 @@ characterMakers["Taluthus"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Dawn"] = () => {
-    return makeCharacter(
+characterMakers["Dawn"] = () => makeCharacter(
         { name: "Dawn" },
         {
             front: {
@@ -18416,10 +17457,8 @@ characterMakers["Dawn"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Arador"] = () => {
-    return makeCharacter(
+characterMakers["Arador"] = () => makeCharacter(
         { name: "Arador" },
         {
             anthro: {
@@ -18455,10 +17494,8 @@ characterMakers["Arador"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Dharsi"] = () => {
-    return makeCharacter(
+characterMakers["Dharsi"] = () => makeCharacter(
         { name: "Dharsi" },
         {
             front: {
@@ -18508,10 +17545,8 @@ characterMakers["Dharsi"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Deathy"] = () => {
-    return makeCharacter(
+characterMakers["Deathy"] = () => makeCharacter(
         { name: "Deathy" },
         {
             front: {
@@ -18557,10 +17592,8 @@ characterMakers["Deathy"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Juniper"] = () => {
-    return makeCharacter(
+characterMakers["Juniper"] = () => makeCharacter(
         { name: "Juniper" },
         {
             front: {
@@ -18581,10 +17614,8 @@ characterMakers["Juniper"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Hipster"] = () => {
-    return makeCharacter(
+characterMakers["Hipster"] = () => makeCharacter(
         { name: "Hipster" },
         {
             front: {
@@ -18628,10 +17659,8 @@ characterMakers["Hipster"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Tendirmuldr"] = () => {
-    return makeCharacter(
+characterMakers["Tendirmuldr"] = () => makeCharacter(
         { name: "Tendirmuldr" },
         {
             front: {
@@ -18653,10 +17682,8 @@ characterMakers["Tendirmuldr"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Mort"] = () => {
-    return makeCharacter(
+characterMakers["Mort"] = () => makeCharacter(
         { name: "Mort" },
         {
             front: {
@@ -18698,10 +17725,8 @@ characterMakers["Mort"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Lycoa"] = () => {
-    return makeCharacter(
+characterMakers["Lycoa"] = () => makeCharacter(
         { name: "Lycoa" },
         {
             front: {
@@ -18737,10 +17762,8 @@ characterMakers["Lycoa"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Naldara"] = () => {
-    return makeCharacter(
+characterMakers["Naldara"] = () => makeCharacter(
         { name: "Naldara" },
         {
             front: {
@@ -18762,10 +17785,8 @@ characterMakers["Naldara"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Briar"] = () => {
-    return makeCharacter(
+characterMakers["Briar"] = () => makeCharacter(
         { name: "Briar" },
         {
             front: {
@@ -18787,10 +17808,8 @@ characterMakers["Briar"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Vanguard"] = () => {
-    return makeCharacter(
+characterMakers["Vanguard"] = () => makeCharacter(
         { name: "Vanguard" },
         {
             side: {
@@ -18812,10 +17831,8 @@ characterMakers["Vanguard"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Artemis"] = () => {
-    return makeCharacter(
+characterMakers["Artemis"] = () => makeCharacter(
         { name: "Artemis" },
         {
             front: {
@@ -18841,10 +17858,8 @@ characterMakers["Artemis"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Kira"] = () => {
-    return makeCharacter(
+characterMakers["Kira"] = () => makeCharacter(
         { name: "Kira" },
         {
             front: {
@@ -18893,10 +17908,8 @@ characterMakers["Kira"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Scramble"] = () => {
-    return makeCharacter(
+characterMakers["Scramble"] = () => makeCharacter(
         { name: "Scramble" },
         {
             front: {
@@ -18928,10 +17941,8 @@ characterMakers["Scramble"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Biscuit"] = () => {
-    return makeCharacter(
+characterMakers["Biscuit"] = () => makeCharacter(
         { name: "Biscuit" },
         {
             side: {
@@ -18953,10 +17964,8 @@ characterMakers["Biscuit"] = () => {
             },   
         ]
     )
-};
 
-characterMakers["Poffin"] = () => {
-    return makeCharacter(
+characterMakers["Poffin"] = () => makeCharacter(
         { name: "Poffin" },
         {
             front: {
@@ -18978,10 +17987,8 @@ characterMakers["Poffin"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Dhari"] = () => {
-    return makeCharacter(
+characterMakers["Dhari"] = () => makeCharacter(
         { name: "Dhari" },
         {
             front: {
@@ -19067,10 +18074,8 @@ characterMakers["Dhari"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Rena Dyne"] = () => {
-    return makeCharacter(
+characterMakers["Rena Dyne"] = () => makeCharacter(
         { name: "Rena Dyne" },
         {
             anthro: {
@@ -19102,10 +18107,8 @@ characterMakers["Rena Dyne"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Weremeep"] = () => {
-    return makeCharacter(
+characterMakers["Weremeep"] = () => makeCharacter(
         { name: "Weremeep" },
         {
             front: {
@@ -19135,10 +18138,8 @@ characterMakers["Weremeep"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Reza"] = () => {
-    return makeCharacter(
+characterMakers["Reza"] = () => makeCharacter(
         { name: "Reza" },
         {
             front: {
@@ -19170,10 +18171,8 @@ characterMakers["Reza"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Athea"] = () => {
-    return makeCharacter(
+characterMakers["Athea"] = () => makeCharacter(
         { name: "Athea" },
         {
             side: {
@@ -19224,10 +18223,8 @@ characterMakers["Athea"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Seroko"] = () => {
-    return makeCharacter(
+characterMakers["Seroko"] = () => makeCharacter(
         { name: "Seroko" },
         {
             front: {
@@ -19269,10 +18266,8 @@ characterMakers["Seroko"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Quatzi"] = () => {
-    return makeCharacter(
+characterMakers["Quatzi"] = () => makeCharacter(
         { name: "Quatzi" },
         {
             front: {
@@ -19298,10 +18293,8 @@ characterMakers["Quatzi"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Sen"] = () => {
-    return makeCharacter(
+characterMakers["Sen"] = () => makeCharacter(
         { name: "Sen" },
         {
             front: {
@@ -19342,10 +18335,8 @@ characterMakers["Sen"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Fruity"] = () => {
-    return makeCharacter(
+characterMakers["Fruity"] = () => makeCharacter(
         { name: "Fruity" },
         {
             front: {
@@ -19381,10 +18372,8 @@ characterMakers["Fruity"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Zost"] = () => {
-    return makeCharacter(
+characterMakers["Zost"] = () => makeCharacter(
         { name: "Zost" },
         {
             side: {
@@ -19420,10 +18409,8 @@ characterMakers["Zost"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Luci"] = () => {
-    return makeCharacter(
+characterMakers["Luci"] = () => makeCharacter(
         { name: "Luci" },
         {
             front: {
@@ -19455,10 +18442,8 @@ characterMakers["Luci"] = () => {
             },
         ]
     )
-};
 
-characterMakers["2th"] = () => {
-    return makeCharacter(
+characterMakers["2th"] = () => makeCharacter(
         { name: "2th" },
         {
             front: {
@@ -19507,10 +18492,8 @@ characterMakers["2th"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Amethyst"] = () => {
-    return makeCharacter(
+characterMakers["Amethyst"] = () => makeCharacter(
         { name: "Amethyst" },
         {
             front: {
@@ -19542,10 +18525,8 @@ characterMakers["Amethyst"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Yumi Akiyama"] = () => {
-    return makeCharacter(
+characterMakers["Yumi Akiyama"] = () => makeCharacter(
         { name: "Yumi Akiyama" },
         {
             front: {
@@ -19581,10 +18562,8 @@ characterMakers["Yumi Akiyama"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Rifter Yrmori"] = () => {
-    return makeCharacter(
+characterMakers["Rifter Yrmori"] = () => makeCharacter(
         { name: "Rifter Yrmori" },
         {
             front: {
@@ -19636,10 +18615,8 @@ characterMakers["Rifter Yrmori"] = () => {
             },
         ]
     )
-};
 
-characterMakers["Tahajin"] = () => {
-    return makeCharacter(
+characterMakers["Tahajin"] = () => makeCharacter(
         { name: "Tahajin" },
         {
             were: {
@@ -19717,7 +18694,6 @@ characterMakers["Tahajin"] = () => {
             },
         ]
     )
-};
 
 //characters
 
@@ -19725,10 +18701,7 @@ function makeCharacters() {
     const results = [];
 
     Object.entries(characterMakers).forEach(([key, value]) => {
-        results.push({
-            name: key,
-            constructor: value
-        });
+        results.push(value());
     });
     return results;
 }
