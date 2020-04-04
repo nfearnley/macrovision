@@ -1178,7 +1178,7 @@ function prepareMenu() {
 
     const menubar = document.querySelector("#menubar");
     const help = document.querySelector("#help-icons");
-    const spawners = document.querySelector("#spawners");
+    const before = document.querySelector("#scenes");
 
     [
         [
@@ -1271,7 +1271,7 @@ function prepareMenu() {
             help.appendChild(helperEntry);
         });
 
-        menubar.insertBefore(span, spawners);
+        menubar.insertBefore(span, before);
     });
 
     if (checkHelpDate()) {
@@ -1733,15 +1733,14 @@ function prepareEntities() {
     availableEntities["characters"].sort((x, y) => {
         return x.name.toLowerCase() < y.name.toLowerCase() ? -1 : 1
     });
-    const holder = document.querySelector("#spawners");
+    const holder = document.querySelector("#spawners-entities");
 
-    const categorySelect = document.createElement("select");
-    categorySelect.id = "category-picker";
+    const categorySelect = document.querySelector("#spawners-categories");
 
-    holder.appendChild(categorySelect);
     Object.entries(availableEntities).forEach(([category, entityList]) => {
         const select = document.createElement("select");
         select.id = "create-entity-" + category;
+        select.classList.add("options-field-picker");
         for (let i = 0; i < entityList.length; i++) {
             const entity = entityList[i];
             const option = document.createElement("option");

@@ -158,6 +158,10 @@ body.toggle-entity-glow .entity-box:not(.selected) > img{
     max-width: 90%;
 }
 
+.options-row.full {
+    min-width: 90%;
+}
+
 .options-block {
     display: flex;
     text-align: center;
@@ -284,7 +288,7 @@ body.toggle-scale #display {
 }
 
 .options-row .options-field-text {
-    flex: 1 1 100%;
+    flex: 1 0 90%;
     max-width: 90%;
     font-size: 150%;
 }
@@ -293,6 +297,18 @@ body.toggle-scale #display {
     flex: 1 1 10%;
     max-width: 90%;
     font-size: 150%;
+}
+
+.options-row .options-field-picker {
+    flex: 1;
+    width: 100%;
+    min-width: 90%;
+    max-width: 90%;
+    font-size: 150%;
+    overflow: hidden;
+    white-space: pre-wrap;
+    word-break: normal;
+    text-overflow: ellipsis;
 }
 
 .options-row .symbol-button {
@@ -380,23 +396,6 @@ body.toggle-bottom-name .bottom-name {
     white-space: pre-wrap;
     word-break: normal;
     text-overflow: ellipsis;
-}
-
-#spawners > button {
-    display: none;
-    font-size: 24pt;
-}
-#spawners > select {
-    display: none;
-}
-
-#spawners > select#category-picker {
-    display: inline;
-}
-
-#spawners > button.category-visible,
-#spawners > select.category-visible {
-    display: inline;
 }
 
 #menubar button {
@@ -674,4 +673,27 @@ i.far {
     text-align: center;
     font-weight: bold;
     font-size: 200%;
+}
+
+#spawners-entities > select,
+#spawners-entities > button {
+    display: none;
+}
+
+#spawners-entities > select.category-visible,
+#spawners-entities > select.category-visible + button {
+    display: block;
+}
+
+#spawners-entities > select {
+    font-size: 24pt;
+}
+
+#spawners-entities > button {
+    font-size: 40pt;
+    margin: 10px;
+}
+
+#spawners-categories {
+    font-size: 24pt;
 }
