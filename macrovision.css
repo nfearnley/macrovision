@@ -673,6 +673,10 @@ i.far {
     background: #ffffff66;
 }
 
+.scroll-button:disabled {
+    background: #ffffff11;
+}
+
 #zoom-out {
     left: 0%;
     top: 0%;
@@ -700,4 +704,9 @@ i.far {
 #grow {
     right: 0%;
     top: 50%;
+}
+
+#fit {
+    right: 0%;
+    top: 75%;
 }

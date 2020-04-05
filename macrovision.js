@@ -535,6 +535,10 @@ function deselect() {
     clearViewOptions();
     
     document.querySelector("#delete-entity").disabled = true;
+
+    document.querySelector("#grow").disabled = true;
+    document.querySelector("#shrink").disabled = true;
+    document.querySelector("#fit").disabled = true;
 }
 
 function select(target) {
@@ -553,6 +557,10 @@ function select(target) {
     configViewOptions(selectedEntity, selectedEntity.view);
     
     document.querySelector("#delete-entity").disabled = false;
+
+    document.querySelector("#grow").disabled = false;
+    document.querySelector("#shrink").disabled = false;
+    document.querySelector("#fit").disabled = false;
 }
 
 function configViewList(entity, selectedView) {
@@ -1682,6 +1690,28 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("touchend", e => {
         clearInterval(sizeHandle);
         sizeHandle = null;
+    });
+
+    document.querySelector("#fit").addEventListener("click", e => {
+        const x = parseFloat(selected.dataset.x);
+
+        Object.keys(entities).forEach(id => {
+            const element = document.querySelector("#entity-" + id);
+            const newX = parseFloat(element.dataset.x) - x + 0.5;
+            element.dataset.x = newX;
+        });
+
+        const entity = entities[selected.dataset.key];
+        const height = math.multiply(entity.views[entity.view].height, 1.1);
+        setWorldHeight(config.height, height);
+    });
+
+    document.querySelector("#fit").addEventListener("mousedown", e => {
+        e.stopPropagation();
+    });
+
+    document.querySelector("#fit").addEventListener("touchstart", e => {
+        e.stopPropagation();
     });
 
     document.querySelector("#options-world-fit").addEventListener("click", () => fitWorld(true));
