@@ -1570,24 +1570,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector("#scroll-left").addEventListener("mousedown", e => {
         scrollDirection = -1;
+        cancelInterval(doScroll);
         scrollHandle = setInterval(doScroll, 1000/20);
         e.stopPropagation();
     });
 
     document.querySelector("#scroll-right").addEventListener("mousedown", e => {
         scrollDirection = 1;
+        cancelInterval(doScroll);
         scrollHandle = setInterval(doScroll, 1000/20);
         e.stopPropagation();
     });
 
     document.querySelector("#scroll-left").addEventListener("touchstart", e => {
         scrollDirection = -1;
+        cancelInterval(doScroll);
         scrollHandle = setInterval(doScroll, 1000/20);
         e.stopPropagation();
     });
 
     document.querySelector("#scroll-right").addEventListener("touchstart", e => {
         scrollDirection = 1;
+        cancelInterval(doScroll);
         scrollHandle = setInterval(doScroll, 1000/20);
         e.stopPropagation();
     });
@@ -1604,24 +1608,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector("#zoom-in").addEventListener("mousedown", e => {
         zoomDirection = -1;
+        cancelInterval(doZoom);
         zoomHandle = setInterval(doZoom, 1000/20);
         e.stopPropagation();
     });
 
     document.querySelector("#zoom-out").addEventListener("mousedown", e => {
         zoomDirection = 1;
+        cancelInterval(doZoom);
         zoomHandle = setInterval(doZoom, 1000/20);
         e.stopPropagation();
     });
 
     document.querySelector("#zoom-in").addEventListener("touchstart", e => {
         zoomDirection = -1;
+        cancelInterval(doZoom);
         zoomHandle = setInterval(doZoom, 1000/20);
         e.stopPropagation();
     });
 
     document.querySelector("#zoom-out").addEventListener("touchstart", e => {
         zoomDirection = 1;
+        cancelInterval(doZoom);
         zoomHandle = setInterval(doZoom, 1000/20);
         e.stopPropagation();
     });
@@ -1638,24 +1646,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector("#shrink").addEventListener("mousedown", e => {
         sizeDirection = -1;
+        cancelInterval(doSize);
         sizeHandle = setInterval(doSize, 1000/20);
         e.stopPropagation();
     });
 
     document.querySelector("#grow").addEventListener("mousedown", e => {
         sizeDirection = 1;
+        cancelInterval(doSize);
         sizeHandle = setInterval(doSize, 1000/20);
         e.stopPropagation();
     });
 
     document.querySelector("#shrink").addEventListener("touchstart", e => {
         sizeDirection = -1;
+        cancelInterval(doSize);
         sizeHandle = setInterval(doSize, 1000/20);
         e.stopPropagation();
     });
 
     document.querySelector("#grow").addEventListener("touchstart", e => {
         sizeDirection = 1;
+        cancelInterval(doSize);
         sizeHandle = setInterval(doSize, 1000/20);
         e.stopPropagation();
     });
