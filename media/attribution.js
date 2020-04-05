@@ -4569,7 +4569,7 @@ const attributionData = {
             ]
         },
         {
-            prefix: "./media/characters/sofia/",
+            prefix: "./media/characters/sofia-fluttertail/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/11711111/" }
             ],
@@ -4581,7 +4581,7 @@ const attributionData = {
             ]
         },
         {
-            prefix: "./media/characters/sofia/",
+            prefix: "./media/characters/sofia-fluttertail/",
             files: [
                 { name: "front-alt.svg", source: "https://www.furaffinity.net/view/16704878/" },
                 { name: "back.svg", source: "https://www.furaffinity.net/view/16704878/" }

@@ -122,15 +122,15 @@ characterMakers["Fen"] = () => makeCharacter(
         ]
     )
 
-characterMakers["Sofia"] = () => makeCharacter(
-        { name: "Sofia" },
+characterMakers["Sofia Fluttertail"] = () => makeCharacter(
+        { name: "Sofia Fluttertail" },
         {
             front: {
                 height: math.unit(183, "cm"),
                 weight: math.unit(80, "kg"),
                 name: "Front",
                 image: {
-                    source: "./media/characters/sofia/front.svg",
+                    source: "./media/characters/sofia-fluttertail/front.svg",
                     bottom: 0.01,
                     extra: 1
                 }
@@ -140,7 +140,7 @@ characterMakers["Sofia"] = () => makeCharacter(
                 weight: math.unit(80, "kg"),
                 name: "Front (alt)",
                 image: {
-                    source: "./media/characters/sofia/front-alt.svg"
+                    source: "./media/characters/sofia-fluttertail/front-alt.svg"
                 }
             },
             back: {
@@ -148,7 +148,7 @@ characterMakers["Sofia"] = () => makeCharacter(
                 weight: math.unit(80, "kg"),
                 name: "Back",
                 image: {
-                    source: "./media/characters/sofia/back.svg"
+                    source: "./media/characters/sofia-fluttertail/back.svg"
                 }
             },
         },
