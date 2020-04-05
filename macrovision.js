@@ -1780,6 +1780,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // maybe the menu bar is animating when it shouldn't)
 
     setTimeout(handleResize, 250);
+    setTimeout(handleResize, 500);
+    setTimeout(handleResize, 750);
+    setTimeout(handleResize, 1000);
 
 
     document.querySelector("#menu-permalink").addEventListener("click", e => {
