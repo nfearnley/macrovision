@@ -25,6 +25,12 @@ let dragEntityScaleHandle = null;
 let scrollDirection = 0;
 let scrollHandle = null;
 
+let zoomDirection = 0;
+let zoomHandle = null;
+
+let sizeDirection = 0;
+let sizeHandle = null;
+
 let worldSizeDirty = false;
 
 
@@ -1130,27 +1136,6 @@ window.onfocus = function () {
     window.dispatchEvent(new Event("keydown"));
 }
 
-function doSliderScale() {
-    if (sliderScale == 1) {
-        clearInterval(dragScaleHandle);
-    }
-    setWorldHeight(config.height, math.multiply(config.height, (9 + sliderScale) / 10));
-}
-
-function doSliderEntityScale() {
-    if (sliderEntityScale == 1) {
-        clearInterval(dragEntityScaleHandle);
-    }
-    if (selected) {
-        const entity = entities[selected.dataset.key];
-        entity.scale *= (9 + sliderEntityScale) / 10;
-        entity.dirty = true;
-        updateSizes(true);
-        updateEntityOptions(entity, entity.view);
-        updateViewOptions(entity, entity.view);
-    }
-}
-
 // thanks to https://developers.google.com/web/fundamentals/native-hardware/fullscreen
 
 function toggleFullScreen() {
@@ -1313,6 +1298,25 @@ function doScroll() {
     scrollDirection *= 1.05;
 }
 
+function doZoom() {
+    const oldHeight = config.height;
+
+    setWorldHeight(oldHeight, math.multiply(oldHeight, 1 + zoomDirection / 10));
+    zoomDirection *= 1.05;
+}
+
+function doSize() {
+    if (selected) {
+        const entity = entities[selected.dataset.key];
+        const oldHeight = entity.views[entity.view].height;
+        entity.views[entity.view].height = math.multiply(oldHeight, 1 + sizeDirection/20);
+        entity.dirty = true;
+        updateSizes(true);
+        sizeDirection *= 1.05;
+    }
+}
+
+
 document.addEventListener("DOMContentLoaded", () => {
     prepareMenu();
     prepareEntities();
@@ -1367,10 +1371,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.classList[e.target.checked ? "add" : "remove"]("toggle-entity-glow");
     });
 
-    document.querySelector("#options-world-show-scale-sliders").addEventListener("input", e => {
-        document.body.classList[e.target.checked ? "add" : "remove"]("toggle-scale-sliders");
-    });
-
     document.querySelector("#options-world-show-bottom-cover").addEventListener("input", e => {
         document.body.classList[e.target.checked ? "add" : "remove"]("toggle-bottom-cover");
     });
@@ -1393,60 +1393,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         document.querySelector("#options-order-display").innerText = entities[selected.dataset.key].priority;
         updateSizes();
-    });
-
-    document.querySelector("#slider-scale").addEventListener("mousedown", e => {
-        clearInterval(dragScaleHandle);
-        dragScaleHandle = setInterval(doSliderScale, 50);
-        e.stopPropagation();
-    });
-
-    document.querySelector("#slider-scale").addEventListener("touchstart", e => {
-        clearInterval(dragScaleHandle);
-        dragScaleHandle = setInterval(doSliderScale, 50);
-        e.stopPropagation();
-    });
-
-    document.querySelector("#slider-scale").addEventListener("input", e => {
-        const val = Number(e.target.value);
-        if (val < 1) {
-            sliderScale = (val + 1) / 2;
-        } else {
-            sliderScale = val;
-        }
-    });
-
-    document.querySelector("#slider-scale").addEventListener("change", e => {
-        clearInterval(dragScaleHandle);
-        dragScaleHandle = null;
-        e.target.value = 1;
-    });
-
-    document.querySelector("#slider-entity-scale").addEventListener("mousedown", e => {
-        clearInterval(dragEntityScaleHandle);
-        dragEntityScaleHandle = setInterval(doSliderEntityScale, 50);
-        e.stopPropagation();
-    });
-
-    document.querySelector("#slider-entity-scale").addEventListener("touchstart", e => {
-        clearInterval(dragEntityScaleHandle);
-        dragEntityScaleHandle = setInterval(doSliderEntityScale, 50);
-        e.stopPropagation();
-    });
-
-    document.querySelector("#slider-entity-scale").addEventListener("input", e => {
-        const val = Number(e.target.value);
-        if (val < 1) {
-            sliderEntityScale = (val + 1) / 2;
-        } else {
-            sliderEntityScale = val;
-        }
-    });
-
-    document.querySelector("#slider-entity-scale").addEventListener("change", e => {
-        clearInterval(dragEntityScaleHandle);
-        dragEntityScaleHandle = null;
-        e.target.value = 1;
     });
 
     const sceneChoices = document.querySelector("#scene-choices");
@@ -1620,34 +1566,108 @@ document.addEventListener("DOMContentLoaded", () => {
         arrangeEntities(order);
     });
 
-    document.querySelector("#scroll-left").addEventListener("mousedown", () => {
+    // TODO: write some generic logic for this lol
+
+    document.querySelector("#scroll-left").addEventListener("mousedown", e => {
         scrollDirection = -1;
         scrollHandle = setInterval(doScroll, 1000/20);
+        e.stopPropagation();
     });
 
-    document.querySelector("#scroll-right").addEventListener("mousedown", () => {
+    document.querySelector("#scroll-right").addEventListener("mousedown", e => {
         scrollDirection = 1;
         scrollHandle = setInterval(doScroll, 1000/20);
+        e.stopPropagation();
     });
 
-    document.querySelector("#scroll-left").addEventListener("touchstart", () => {
+    document.querySelector("#scroll-left").addEventListener("touchstart", e => {
         scrollDirection = -1;
         scrollHandle = setInterval(doScroll, 1000/20);
+        e.stopPropagation();
     });
 
-    document.querySelector("#scroll-right").addEventListener("touchstart", () => {
+    document.querySelector("#scroll-right").addEventListener("touchstart", e => {
         scrollDirection = 1;
         scrollHandle = setInterval(doScroll, 1000/20);
+        e.stopPropagation();
     });
 
-    document.addEventListener("mouseup", () => {
+    document.addEventListener("mouseup", e => {
         clearInterval(scrollHandle);
         scrollHandle = null;
     });
 
-    document.addEventListener("touchend", () => {
+    document.addEventListener("touchend", e => {
         clearInterval(scrollHandle);
         scrollHandle = null;
+    });
+
+    document.querySelector("#zoom-in").addEventListener("mousedown", e => {
+        zoomDirection = -1;
+        zoomHandle = setInterval(doZoom, 1000/20);
+        e.stopPropagation();
+    });
+
+    document.querySelector("#zoom-out").addEventListener("mousedown", e => {
+        zoomDirection = 1;
+        zoomHandle = setInterval(doZoom, 1000/20);
+        e.stopPropagation();
+    });
+
+    document.querySelector("#zoom-in").addEventListener("touchstart", e => {
+        zoomDirection = -1;
+        zoomHandle = setInterval(doZoom, 1000/20);
+        e.stopPropagation();
+    });
+
+    document.querySelector("#zoom-out").addEventListener("touchstart", e => {
+        zoomDirection = 1;
+        zoomHandle = setInterval(doZoom, 1000/20);
+        e.stopPropagation();
+    });
+
+    document.addEventListener("mouseup", e => {
+        clearInterval(zoomHandle);
+        zoomHandle = null;
+    });
+
+    document.addEventListener("touchend", e => {
+        clearInterval(zoomHandle);
+        zoomHandle = null;
+    });
+
+    document.querySelector("#shrink").addEventListener("mousedown", e => {
+        sizeDirection = -1;
+        sizeHandle = setInterval(doSize, 1000/20);
+        e.stopPropagation();
+    });
+
+    document.querySelector("#grow").addEventListener("mousedown", e => {
+        sizeDirection = 1;
+        sizeHandle = setInterval(doSize, 1000/20);
+        e.stopPropagation();
+    });
+
+    document.querySelector("#shrink").addEventListener("touchstart", e => {
+        sizeDirection = -1;
+        sizeHandle = setInterval(doSize, 1000/20);
+        e.stopPropagation();
+    });
+
+    document.querySelector("#grow").addEventListener("touchstart", e => {
+        sizeDirection = 1;
+        sizeHandle = setInterval(doSize, 1000/20);
+        e.stopPropagation();
+    });
+
+    document.addEventListener("mouseup", e => {
+        clearInterval(sizeHandle);
+        sizeHandle = null;
+    });
+
+    document.addEventListener("touchend", e => {
+        clearInterval(sizeHandle);
+        sizeHandle = null;
     });
 
     document.querySelector("#options-world-fit").addEventListener("click", () => fitWorld(true));

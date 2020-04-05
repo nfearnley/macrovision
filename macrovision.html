@@ -137,10 +137,6 @@
             <label for="options-world-show-entity-glow">Glowing edges</label>
           </div>
           <div class="options-row">
-            <input type="checkbox" id="options-world-show-scale-sliders">
-            <label for="options-world-show-scale-sliders">Scale sliders</label>
-          </div>
-          <div class="options-row">
             <input type="checkbox" id="options-world-show-bottom-cover">
             <label for="options-world-show-bottom-cover">Opaque ground</label>
           </div>
@@ -211,15 +207,24 @@
       </span>
     </div>
     <div id="world">
+      <button class="scroll-button" id="zoom-in">
+        <i class="fas fa-search-plus"></i>
+      </button>
+      <button class="scroll-button" id="zoom-out">
+        <i class="fas fa-search-minus"></i>
+      </button>
       <button class="scroll-button" id="scroll-left">
         <i class="fas fa-arrow-left"></i>
       </button>
       <button class="scroll-button" id="scroll-right">
         <i class="fas fa-arrow-right"></i>
-        
       </button>
-      <input type="range" step="0.001" min="0" max="2" value="1" class="floating-slider" id="slider-scale"/>
-      <input type="range" step="0.001" min="0" max="2" value="1" class="floating-slider" id="slider-entity-scale"/>
+      <button class="scroll-button" id="shrink">
+        <i class="fas fa-compress-arrows-alt"></i>
+      </button>
+      <button class="scroll-button" id="grow">
+        <i class="fas fa-expand-arrows-alt"></i>
+      </button>
       <div id="entities">
 
       </div>
