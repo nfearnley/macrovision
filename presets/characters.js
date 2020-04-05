@@ -132,7 +132,7 @@ characterMakers["Sofia Fluttertail"] = () => makeCharacter(
                 image: {
                     source: "./media/characters/sofia-fluttertail/front.svg",
                     bottom: 0.01,
-                    extra: 1
+                    extra: 2154/2081
                 }
             },
             frontAlt: {
