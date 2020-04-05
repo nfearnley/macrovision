@@ -151,6 +151,13 @@ characterMakers["Sofia Fluttertail"] = () => makeCharacter(
                     source: "./media/characters/sofia-fluttertail/back.svg"
                 }
             },
+            maw: {
+                height: math.unit(183/5, "cm"),
+                name: "Maw",
+                image: {
+                    source: "./media/characters/sofia-fluttertail/maw.svg"
+                }
+            },
         },
         [
             {

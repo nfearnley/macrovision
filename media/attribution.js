@@ -4594,6 +4594,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/sofia-fluttertail/",
+            files: [
+                { name: "maw.svg", source: "https://twitter.com/ZakuraTech/status/1095457095065968640" }
+            ],
+            authors: [
+                "shadypixel"
+            ],
+            owners: [
+                "sofia"
+            ]
+        },
+        {
             prefix: "./media/characters/sovrim-terraquian/",
             files: [
                 { name: "front.svg", source: "https://www.sofurry.com/view/1187430" },
@@ -11509,6 +11521,10 @@ const attributionData = {
         "hajinn": {
             "name": "Hajinn",
             "url": "https://www.furaffinity.net/user/hajinn/",
+        },
+        "shadypixel": {
+            "name": "ShadyPixel",
+            "url": "https://www.furaffinity.net/user/shadypixel/",
         },
     }
 }
