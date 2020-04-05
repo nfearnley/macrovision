@@ -697,3 +697,25 @@ i.far {
 #spawners-categories {
     font-size: 24pt;
 }
+
+.scroll-button {
+    position: absolute;
+    height: 100%;
+    width: 50px;
+    font-size: 40px;
+    background: #ffffff33;
+    border: 0px;
+    z-index: 1;
+}
+
+.scroll-button:active {
+    background: #ffffff66;
+}
+
+#scroll-left {
+    left: 0%;
+}
+
+#scroll-right {
+    right: 0%;
+}

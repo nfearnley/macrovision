@@ -22,6 +22,9 @@ let dragScaleHandle = null;
 let dragEntityScale = 1;
 let dragEntityScaleHandle = null;
 
+let scrollDirection = 0;
+let scrollHandle = null;
+
 let worldSizeDirty = false;
 
 
@@ -1302,6 +1305,14 @@ function setHelpDate() {
     }
 }
 
+function doScroll() {
+    document.querySelectorAll(".entity-box").forEach(element => {
+        element.dataset.x = parseFloat(element.dataset.x) + scrollDirection/180;
+    });
+    updateSizes();
+    scrollDirection *= 1.05;
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     prepareMenu();
     prepareEntities();
@@ -1609,18 +1620,19 @@ document.addEventListener("DOMContentLoaded", () => {
         arrangeEntities(order);
     });
 
-    document.querySelector("#options-world-scroll-left").addEventListener("click", () => {
-        document.querySelectorAll(".entity-box").forEach(element => {
-            element.dataset.x = parseFloat(element.dataset.x) + 0.1;
-        });
-        updateSizes();
+    document.querySelector("#scroll-left").addEventListener("mousedown", () => {
+        scrollDirection = -1;
+        scrollHandle = setInterval(doScroll, 1000/20);
     });
 
-    document.querySelector("#options-world-scroll-right").addEventListener("click", () => {
-        document.querySelectorAll(".entity-box").forEach(element => {
-            element.dataset.x = parseFloat(element.dataset.x) - 0.1;
-        });
-        updateSizes();
+    document.querySelector("#scroll-right").addEventListener("mousedown", () => {
+        scrollDirection = 1;
+        scrollHandle = setInterval(doScroll, 1000/20);
+    });
+
+    document.addEventListener("mouseup", () => {
+        clearInterval(scrollHandle);
+        scrollHandle = null;
     });
 
     document.querySelector("#options-world-fit").addEventListener("click", () => fitWorld(true));

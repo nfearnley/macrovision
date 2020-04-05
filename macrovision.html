@@ -105,12 +105,6 @@
           </select>
         </div>
         <div class="options-row">
-          <button class="options-button" id="options-world-scroll-left">Scroll left</button>
-        </div>
-        <div class="options-row">
-          <button class="options-button" id="options-world-scroll-right">Scroll right</button>
-        </div>
-        <div class="options-row">
           <button class="options-button" id="options-world-fit">Fit to entities</button>
         </div>
         <div class="options-row">
@@ -217,6 +211,13 @@
       </span>
     </div>
     <div id="world">
+      <button class="scroll-button" id="scroll-left">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <button class="scroll-button" id="scroll-right">
+        <i class="fas fa-arrow-right"></i>
+        
+      </button>
       <input type="range" step="0.001" min="0" max="2" value="1" class="floating-slider" id="slider-scale"/>
       <input type="range" step="0.001" min="0" max="2" value="1" class="floating-slider" id="slider-entity-scale"/>
       <div id="entities">
