@@ -1579,28 +1579,28 @@ document.addEventListener("DOMContentLoaded", () => {
     // TODO: write some generic logic for this lol
 
     document.querySelector("#scroll-left").addEventListener("mousedown", e => {
-        scrollDirection = -1;
+        scrollDirection = 1;
         clearInterval(scrollHandle);
         scrollHandle = setInterval(doScroll, 1000/20);
         e.stopPropagation();
     });
 
     document.querySelector("#scroll-right").addEventListener("mousedown", e => {
-        scrollDirection = 1;
-        clearInterval(scrollHandle);
-        scrollHandle = setInterval(doScroll, 1000/20);
-        e.stopPropagation();
-    });
-
-    document.querySelector("#scroll-left").addEventListener("touchstart", e => {
         scrollDirection = -1;
         clearInterval(scrollHandle);
         scrollHandle = setInterval(doScroll, 1000/20);
         e.stopPropagation();
     });
 
-    document.querySelector("#scroll-right").addEventListener("touchstart", e => {
+    document.querySelector("#scroll-left").addEventListener("touchstart", e => {
         scrollDirection = 1;
+        clearInterval(scrollHandle);
+        scrollHandle = setInterval(doScroll, 1000/20);
+        e.stopPropagation();
+    });
+
+    document.querySelector("#scroll-right").addEventListener("touchstart", e => {
+        scrollDirection = -1;
         clearInterval(scrollHandle);
         scrollHandle = setInterval(doScroll, 1000/20);
         e.stopPropagation();
