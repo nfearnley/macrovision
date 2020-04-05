@@ -1630,7 +1630,22 @@ document.addEventListener("DOMContentLoaded", () => {
         scrollHandle = setInterval(doScroll, 1000/20);
     });
 
+    document.querySelector("#scroll-left").addEventListener("touchstart", () => {
+        scrollDirection = -1;
+        scrollHandle = setInterval(doScroll, 1000/20);
+    });
+
+    document.querySelector("#scroll-right").addEventListener("touchstart", () => {
+        scrollDirection = 1;
+        scrollHandle = setInterval(doScroll, 1000/20);
+    });
+
     document.addEventListener("mouseup", () => {
+        clearInterval(scrollHandle);
+        scrollHandle = null;
+    });
+
+    document.addEventListener("touchend", () => {
         clearInterval(scrollHandle);
         scrollHandle = null;
     });
