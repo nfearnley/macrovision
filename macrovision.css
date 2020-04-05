@@ -673,6 +673,10 @@ i.far {
     background: #ffffff66;
 }
 
+.scroll-button:hover {
+    background: #ffffff44;
+}
+
 .scroll-button:disabled {
     background: #ffffff11;
 }
