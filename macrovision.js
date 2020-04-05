@@ -1434,6 +1434,14 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector("#help").classList.remove("visible");
     });
 
+    document.querySelector("#options-height-value").addEventListener("change", e => {
+        updateWorldHeight();
+    })
+
+    document.querySelector("#options-height-value").addEventListener("keydown", e => {
+        e.stopPropagation();
+    })
+
     const unitSelector = document.querySelector("#options-height-unit");
 
     unitChoices.length.forEach(lengthOption => {
@@ -1447,6 +1455,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         unitSelector.appendChild(option);
+    });
+
+    unitSelector.setAttribute("oldUnit", "meters");
+
+    unitSelector.addEventListener("input", e => {
+        checkFitWorld();
+        const scaleInput = document.querySelector("#options-height-value");
+        const newVal = math.unit(scaleInput.value, unitSelector.getAttribute("oldUnit")).toNumber(e.target.value);
+        setNumericInput(scaleInput, newVal);
+        updateWorldHeight();
+        unitSelector.setAttribute("oldUnit", unitSelector.value);
     });
 
     param = new URL(window.location.href).searchParams.get("scene");
@@ -1502,19 +1521,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("body").appendChild(testCtx.canvas);
 
     updateSizes();
-
-    document.querySelector("#options-height-value").addEventListener("change", e => {
-        updateWorldHeight();
-    })
-
-    document.querySelector("#options-height-value").addEventListener("keydown", e => {
-        e.stopPropagation();
-    })
-
-    unitSelector.addEventListener("input", e => {
-        checkFitWorld();
-        updateWorldHeight();
-    })
 
     world.addEventListener("mousedown", e => deselect());
     document.querySelector("#entities").addEventListener("mousedown", deselect);
