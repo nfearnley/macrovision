@@ -1311,6 +1311,8 @@ function doSize() {
         const oldHeight = entity.views[entity.view].height;
         entity.views[entity.view].height = math.multiply(oldHeight, 1 + sizeDirection/20);
         entity.dirty = true;
+        updateEntityOptions(entity, entity.view);
+        updateViewOptions(entity, entity.view);
         updateSizes(true);
         sizeDirection *= 1.05;
     }
