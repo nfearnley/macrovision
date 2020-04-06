@@ -63,6 +63,12 @@ function makeFood() {
                     name: "Pineapple",
                     rename: true
                 },
+                watermelon: {
+                    height: math.unit(30, "cm"),
+                    image: { source: "./media/food/fruits/watermelon.svg" },
+                    name: "Watermelon",
+                    rename: true
+                },
 
             }
         )

@@ -8327,8 +8327,8 @@ const attributionData = {
                 { name: "chow.svg", source: "https://www.furaffinity.net/view/27266921/" },
                 { name: "demi-naga.svg", source: "https://www.furaffinity.net/view/27266921/" },
                 { name: "data.svg", source: "https://www.furaffinity.net/view/27266921/" },
-                { name: "were.svg", source: "https://www.furaffinity.net/view/27266921/" },
-                { name: "were.svg", source: "https://www.furaffinity.net/view/27266921/" },
+                { name: "fluu.svg", source: "https://www.furaffinity.net/view/27266921/" },
+                { name: "star-warrior.svg", source: "https://www.furaffinity.net/view/27266921/" },
             ],
             authors: [
                 "meep"
@@ -8444,7 +8444,8 @@ const attributionData = {
                 { name: "lemon.svg", source: null },
                 { name: "orange.svg", source: null },
                 { name: "grape.svg", source: null },
-                { name: "pineapple.svg", source: null }
+                { name: "pineapple.svg", source: null },
+                { name: "watermelon.svg", source: null }
             ],
             authors: [
                 "chemicalcrux"
