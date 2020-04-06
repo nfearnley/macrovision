@@ -18749,6 +18749,32 @@ characterMakers["Tahajin"] = () => makeCharacter(
         ]
     )
 
+    characterMakers["Sasha"] = () => makeCharacter(
+        { name: "Sasha" },
+        {
+            front: {
+                height: math.unit(5 + 3/12, "feet"),
+                weight: math.unit(137, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/sasha/front.svg",
+                    bottom: 0.045
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(5, "inches")
+            },
+            {
+                name: "Normal",
+                height: math.unit(5 + 3/12, "feet"),
+                default: true
+            },
+        ]
+    )
+
 //characters
 
 function makeCharacters() {

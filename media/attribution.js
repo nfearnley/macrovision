@@ -8351,6 +8351,18 @@ const attributionData = {
                 "gabira"
             ]
         },
+        {
+            prefix: "./media/characters/sasha/",
+            files: [
+                { name: "front.svg", source: "https://www.heroforge.com/load_config=7518224" }
+            ],
+            authors: [
+                "chemicalcrux"
+            ],
+            owners: [
+                "kompaktcat"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11540,6 +11552,10 @@ const attributionData = {
         "shadypixel": {
             "name": "ShadyPixel",
             "url": "https://www.furaffinity.net/user/shadypixel/",
+        },
+        "kompaktcat": {
+            "name": "KompaktCat",
+            "url": "https://twitter.com/KompaktCat",
         },
     }
 }
