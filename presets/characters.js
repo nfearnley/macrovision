@@ -18749,15 +18749,15 @@ characterMakers["Tahajin"] = () => makeCharacter(
         ]
     )
 
-    characterMakers["Sasha"] = () => makeCharacter(
-        { name: "Sasha" },
+    characterMakers["Sasha Katraine"] = () => makeCharacter(
+        { name: "Sasha Katraine" },
         {
             front: {
                 height: math.unit(5 + 3/12, "feet"),
                 weight: math.unit(137, "lb"),
                 name: "Front",
                 image: {
-                    source: "./media/characters/sasha/front.svg",
+                    source: "./media/characters/sasha-katraine/front.svg",
                     bottom: 0.045
                 }
             },

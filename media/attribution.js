@@ -8352,7 +8352,7 @@ const attributionData = {
             ]
         },
         {
-            prefix: "./media/characters/sasha/",
+            prefix: "./media/characters/sasha-katraine/",
             files: [
                 { name: "front.svg", source: "https://www.heroforge.com/load_config=7518224" }
             ],
