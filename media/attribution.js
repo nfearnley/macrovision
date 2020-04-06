@@ -8337,6 +8337,19 @@ const attributionData = {
                 "hajinn"
             ]
         },
+        {
+            prefix: "./media/characters/gabira/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/22244723/" }, 
+                { name: "back.svg", source: "https://www.furaffinity.net/view/22244723/" }, 
+            ],
+            authors: [
+                "gabira"
+            ],
+            owners: [
+                "gabira"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",

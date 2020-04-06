@@ -18702,6 +18702,39 @@ characterMakers["Tahajin"] = () => makeCharacter(
         ]
     )
 
+    characterMakers["Gabira"] = () => makeCharacter(
+        { name: "Gabira" },
+        {
+            front: {
+                height: math.unit(8, "feet"),
+                weight: math.unit(350, "lb"),
+                name: "Front",
+                image: {
+                    source: "./media/characters/gabira/front.svg",
+                    extra: 608/580,
+                    bottom: 0.03
+                }
+            },
+            back: {
+                height: math.unit(8, "feet"),
+                weight: math.unit(350, "lb"),
+                name: "Back",
+                image: {
+                    source: "./media/characters/gabira/back.svg",
+                    extra: 608/580,
+                    bottom: 0.03
+                }
+            },
+        },
+        [
+            {
+                name: "Normal",
+                height: math.unit(8, "feet"),
+                default: true
+            },
+        ]
+    )
+
 //characters
 
 function makeCharacters() {
