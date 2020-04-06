@@ -16569,6 +16569,20 @@ characterMakers["Leonardo Lycheborne"] = () => makeCharacter(
                     bottom: 0.027
                 }
             },
+            dick: {
+                height: math.unit((6 + 1/12) / 4.09, "feet"),
+                name: "Dick",
+                image: {
+                    source: "./media/characters/leonardo-lycheborne/dick.svg"
+                }
+            },
+            dickWere: {
+                height: math.unit((20) / 3.8, "feet"),
+                name: "Dick (Were)",
+                image: {
+                    source: "./media/characters/leonardo-lycheborne/dick.svg"
+                }
+            },
         },
         [
             {

@@ -7284,6 +7284,7 @@ const attributionData = {
                 { name: "feral.svg", source: "https://www.furaffinity.net/view/35061227/" },
                 { name: "taur.svg", source: "https://www.furaffinity.net/view/35061227/" },
                 { name: "barghest.svg", source: "https://www.furaffinity.net/view/35061227/" },
+                { name: "dick.svg", source: null },
             ],
             authors: [
                 "palelilly"
