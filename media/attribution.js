@@ -4923,6 +4923,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/vanrel/",
+            files: [
+                { name: "elemental.svg", source: null },
+            ],
+            authors: [
+                "jonesydearest"
+            ],
+            owners: [
+                "kuipaws"
+            ]
+        },
+        {
             prefix: "./media/characters/varg/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/33879374/" }
@@ -11576,6 +11588,10 @@ const attributionData = {
         "nirvah": {
             "name": "Nirvah",
             "url": "https://www.furaffinity.net/user/nirvah/",
+        },
+        "jonesydearest": {
+            "name": "JonesyDearest",
+            "url": "https://twitter.com/JonesyDearest",
         },
     }
 }

@@ -47,17 +47,15 @@
 	  "Character": {
 		"prefix": "character",
 		"body": [
-		  "characterMakers[\"$1\"] = () => {",
-		  "    return makeCharacter(",
-		  "        \"$1\",",
-		  "        {",
-		  "",
-		  "        },",
-		  "        [",
-		  "            ",
-		  "        ]",
-		  "    )",
-		  "};"
+		  "characterMakers.push(() => makeCharacter(",
+		  "    { name: \"$1\" },",
+		  "    {",
+		  "        $2",
+		  "    },",
+		  "    [",
+		  "        $3",
+		  "    ]",
+		  "))"
 		],
 		"description": "Character"
 	  },
