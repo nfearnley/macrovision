@@ -750,8 +750,14 @@ i.far {
     font-size: 40pt;
 }
 
+.menu-button-holder {
+    display: flex;
+    align-items: center;
+}
+
 .menu-text {
     font-size: 24pt;
+    margin-left: 6pt;
 }
 
 #options-entity-defaults > button {

@@ -1237,6 +1237,7 @@ function prepareMenu() {
         span.classList.add("popout-group");
         group.forEach(entry => {
             const buttonHolder = document.createElement("div");
+            buttonHolder.classList.add("menu-button-holder");
             const button = document.createElement("button");
             button.id = entry.id;
             button.classList.add("menu-button");
