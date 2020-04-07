@@ -18849,6 +18849,37 @@ characterMakers.push(() => makeCharacter(
             height: math.unit(6200, "yottameters")
         },
     ]
+));
+
+characterMakers.push(() => makeCharacter(
+    { name: "Kite" },
+    {
+        front: {
+            height: math.unit(8, "feet"),
+            weight: math.unit(250, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/kite/front.svg",
+                extra: 2796/2659,
+                bottom: 0.002
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(8, "feet"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(360, "feet")
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(1500, "feet")
+        },
+    ]
 ))
 //characters
 

@@ -8399,6 +8399,18 @@ const attributionData = {
                 "fixerdragon"
             ]
         },
+        {
+            prefix: "./media/characters/kite/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "anotherscrub"
+            ],
+            owners: [
+                "anotherscrub"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11612,6 +11624,10 @@ const attributionData = {
         "fixerdragon": {
             "name": "fixerdragon",
             "url": "https://www.furaffinity.net/user/fixerdragon/",
+        },
+        "anotherscrub": {
+            "name": "Another Scrub",
+            "url": "https://www.furaffinity.net/user/anotherscrub/",
         },
     }
 }
