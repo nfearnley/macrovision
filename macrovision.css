@@ -84,7 +84,7 @@ body.toggle-entity-glow .entity-box:not(.selected) > img{
 #options {
     position: relative;
     flex: 1 1 15vw;
-    min-width: 140pt;
+    min-width: 100pt;
     display: flex;
     justify-content: start;
     flex-direction: column;
@@ -752,4 +752,8 @@ i.far {
 
 .menu-text {
     font-size: 24pt;
+}
+
+#options-entity-defaults > button {
+    word-break: break-word;
 }
