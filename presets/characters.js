@@ -18807,6 +18807,49 @@ characterMakers.push(() => makeCharacter(
         },
     ]
 ))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Fixerdragon" },
+    {
+        side: {
+            height: math.unit(30, "meters"),
+            weight: math.unit(700, "tonnes"),
+            name: "Side",
+            image: {
+                source: "./media/characters/fixerdragon/side.svg",
+                extra: (1293.0514-116.03)/1106.86,
+                bottom: 116.03/1293.0514
+            }
+        },
+    },
+    [
+        {
+            name: "Planck",
+            height: math.unit(1.6e-35, "meters")
+        },
+        {
+            name: "Micro",
+            height: math.unit(0.4, "meters")
+        },
+        {
+            name: "Normal",
+            height: math.unit(30, "meters"),
+            default: true
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(1.2, "megameters")
+        },
+        {
+            name: "Teramacro",
+            height: math.unit(130, "terameters")
+        },
+        {
+            name: "Yottamacro",
+            height: math.unit(6200, "yottameters")
+        },
+    ]
+))
 //characters
 
 function makeCharacters() {

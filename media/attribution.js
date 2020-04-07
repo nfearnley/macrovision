@@ -8387,6 +8387,18 @@ const attributionData = {
                 "nirvah"
             ]
         },
+        {
+            prefix: "./media/characters/fixerdragon/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/12423723/" }
+            ],
+            authors: [
+                "endium"
+            ],
+            owners: [
+                "fixerdragon"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11592,6 +11604,14 @@ const attributionData = {
         "jonesydearest": {
             "name": "JonesyDearest",
             "url": "https://twitter.com/JonesyDearest",
+        },
+        "endium": {
+            "name": "Endium",
+            "url": "https://www.furaffinity.net/user/endium/",
+        },
+        "fixerdragon": {
+            "name": "fixerdragon",
+            "url": "https://www.furaffinity.net/user/fixerdragon/",
         },
     }
 }
