@@ -1170,9 +1170,8 @@ function handleResize() {
 
 function prepareMenu() {
 
-    const menubar = document.querySelector("#menubar");
+    const menubar = document.querySelector("#popout-menu");
     const help = document.querySelector("#help-icons");
-    const before = document.querySelector("#scenes");
 
     [
         [
@@ -1233,15 +1232,20 @@ function prepareMenu() {
         const span = document.createElement("span");
         span.classList.add("menubar-group");
         group.forEach(entry => {
+            const buttonHolder = document.createElement("div");
             const button = document.createElement("button");
             button.id = entry.id;
-
+            button.classList.add("menu-button");
             const icon = document.createElement("i");
             icon.classList.add(...entry.icon.split(" "));
             
             if (entry.rotates) {
                 icon.classList.add("rotate-backward", "transitions");
             }
+
+            const actionText = document.createElement("span");
+            actionText.innerText = entry.name;
+            actionText.classList.add("menu-text");
 
             const srText = document.createElement("span");
             srText.classList.add("sr-only");
@@ -1250,7 +1254,9 @@ function prepareMenu() {
             button.appendChild(icon);
             button.appendChild(srText);
 
-            span.appendChild(button);
+            buttonHolder.appendChild(button);
+            buttonHolder.appendChild(actionText);
+            span.appendChild(buttonHolder);
 
             const helperEntry = document.createElement("div");
             const helperIcon = document.createElement("icon");
@@ -1265,7 +1271,7 @@ function prepareMenu() {
             help.appendChild(helperEntry);
         });
 
-        menubar.insertBefore(span, before);
+        menubar.appendChild(span);
     });
 
     if (checkHelpDate()) {
@@ -1331,6 +1337,29 @@ document.addEventListener("DOMContentLoaded", () => {
     prepareMenu();
     prepareEntities();
 
+    document.querySelector("#toggle-menu").addEventListener("click", e => {
+        const popoutMenu = document.querySelector("#popout-menu");
+        console.log("hi")
+        if (popoutMenu.classList.contains("visible")) {
+            popoutMenu.classList.remove("visible");
+        } else {
+            const rect = e.target.getBoundingClientRect();
+            popoutMenu.classList.add("visible");
+            popoutMenu.style.left = rect.x + rect.width + 10 + "px";
+            popoutMenu.style.top = rect.y + rect.height + 10 + "px";
+        }
+        e.stopPropagation();
+    });
+
+    document.querySelector("#popout-menu").addEventListener("click", e => {
+        e.stopPropagation();
+    });
+
+    document.addEventListener("click", e => {
+        console.log("hiii")
+        document.querySelector("#popout-menu").classList.remove("visible");
+    });
+    
     window.addEventListener("unload", () => saveScene("autosave"));
     document.querySelector("#options-selected-entity").addEventListener("input", e => {
         if (e.target.value == "none") {

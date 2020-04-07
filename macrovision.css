@@ -246,12 +246,10 @@ body.show-extra-options .options-block.options-block-optional {
 }
 
 .menubar-group {
+    margin: 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 }
-
 
 .menu-item {
     font-size: 24px;
@@ -713,4 +711,37 @@ i.far {
 #fit {
     right: 0%;
     top: 75%;
+}
+
+#toggle-menu {
+    position: relative;
+    background: none;
+    color: #aaa;
+    border: 0px;
+}
+
+#popout-menu {
+    display: none;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: space-around;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    z-index: 10000;
+    background: #111;
+}
+
+#popout-menu.visible {
+    display: flex;
+}
+
+.menu-button {
+    height: 48pt;
+    width: 56pt;
+    font-size: 40pt;
+}
+
+.menu-text {
+    font-size: 24pt;
 }
