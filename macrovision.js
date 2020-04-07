@@ -1207,8 +1207,13 @@ function prepareMenu() {
                 icon: "fas fa-link"
             },
             {
-                name: "Export",
+                name: "Export to clipboard",
                 id: "menu-export",
+                icon: "fas fa-share"
+            },
+            {
+                name: "Import from clipboard",
+                id: "menu-import",
                 icon: "fas fa-share"
             },
             {
@@ -1777,24 +1782,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-    document.addEventListener("paste", e => {
-        try {
-            const data = JSON.parse(e.clipboardData.getData("text"));
-            if (data.entities === undefined) {
-                return;
-            }
-            if (data.world === undefined) {
-                return;
-            }
-
-            importScene(data);
-        } catch (err) {
-            console.error(err);
-
-            // probably wasn't valid data 
-        }
-    });
-
     window.addEventListener("resize", handleResize);
 
     // TODO: further investigate why the tool initially starts out with wrong
@@ -1813,6 +1800,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector("#menu-export").addEventListener("click", e => {
         copyScene();
+    });
+
+    document.querySelector("#menu-import").addEventListener("click", e => {
+        pasteScene();
     });
 
     document.querySelector("#menu-save").addEventListener("click", e => {
@@ -2113,11 +2104,28 @@ function linkScene() {
 function copyScene() {
     const results = exportScene();
 
-    navigator.clipboard.writeText(JSON.stringify(results))
-
-    alert("Scene copied to clipboard. Paste text into the page to load the scene.");
+    navigator.clipboard.writeText(JSON.stringify(results));
 }
 
+function pasteScene() {
+    try {
+        navigator.clipboard.readText().then(text => {
+            const data = JSON.parse(text);
+            if (data.entities === undefined) {
+                return;
+            }
+            if (data.world === undefined) {
+                return;
+            }
+
+            importScene(data);
+        }).catch(err => alert(err));
+    } catch (err) {
+        console.error(err);
+
+        // probably wasn't valid data 
+    }
+}
 // TODO - don't just search through every single entity 
 // probably just have a way to do lookups directly
 
