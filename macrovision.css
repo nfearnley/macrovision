@@ -246,7 +246,6 @@ body.show-extra-options .options-block.options-block-optional {
 }
 
 .menubar-group {
-    margin: 20px;
     display: flex;
     flex-direction: row;
 }
