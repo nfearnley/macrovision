@@ -1171,7 +1171,6 @@ function handleResize() {
 function prepareMenu() {
 
     const menubar = document.querySelector("#popout-menu");
-    const help = document.querySelector("#help-icons");
 
     [
         [
@@ -1257,18 +1256,6 @@ function prepareMenu() {
             buttonHolder.appendChild(button);
             buttonHolder.appendChild(actionText);
             span.appendChild(buttonHolder);
-
-            const helperEntry = document.createElement("div");
-            const helperIcon = document.createElement("icon");
-            const helperText = document.createElement("span");
-
-            helperIcon.classList.add(...entry.icon.split(" "));
-            helperText.innerText = entry.name;
-            
-            helperEntry.appendChild(helperIcon);
-            helperEntry.appendChild(helperText);
-
-            help.appendChild(helperEntry);
         });
 
         menubar.appendChild(span);
