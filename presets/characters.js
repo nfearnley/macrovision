@@ -18775,6 +18775,28 @@ characterMakers["Tahajin"] = () => makeCharacter(
         ]
     )
 
+    characterMakers["Der"] = () => makeCharacter(
+        { name: "Der" },
+        {
+            side: {
+                height: math.unit(4, "inches"),
+                weight: math.unit(200, "grams"),
+                name: "Side",
+                image: {
+                    source: "./media/characters/der/side.svg",
+                    extra: 719/400,
+                    bottom: 30.6/749.9187
+                }
+            },
+        },
+        [
+            {
+                name: "Micro",
+                height: math.unit(4, "inches"),
+                default: true
+            },
+        ]
+    )
 //characters
 
 function makeCharacters() {

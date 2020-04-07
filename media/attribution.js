@@ -8363,6 +8363,18 @@ const attributionData = {
                 "kompaktcat"
             ]
         },
+        {
+            prefix: "./media/characters/der/",
+            files: [
+                { name: "side.svg", source: null }
+            ],
+            authors: [
+                "icklemod"
+            ],
+            owners: [
+                "nirvah"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11556,6 +11568,14 @@ const attributionData = {
         "kompaktcat": {
             "name": "KompaktCat",
             "url": "https://twitter.com/KompaktCat",
+        },
+        "icklemod": {
+            "name": "Icklemod",
+            "url": "https://ask-ickle-mod.tumblr.com",
+        },
+        "nirvah": {
+            "name": "Nirvah",
+            "url": "https://www.furaffinity.net/user/nirvah/",
         },
     }
 }
