@@ -248,6 +248,12 @@ body.show-extra-options .options-block.options-block-optional {
 .menubar-group {
     margin: 20px;
     display: flex;
+    flex-direction: row;
+}
+
+.popout-group {
+    margin: 20px;
+    display: flex;
     flex-direction: column;
 }
 
@@ -634,23 +640,26 @@ i.far {
     font-size: 200%;
 }
 
-#spawners-entities > select,
-#spawners-entities > button {
+#spawners > select,
+#spawners > button {
     display: none;
 }
 
-#spawners-entities > select.category-visible,
-#spawners-entities > select.category-visible + button {
+#spawners > select#category-picker {
     display: block;
 }
 
-#spawners-entities > select {
+#spawners > select.category-visible,
+#spawners > select.category-visible + button {
+    display: block;
+}
+
+#spawners > select {
     font-size: 24pt;
 }
 
-#spawners-entities > button {
+#spawners > button {
     font-size: 40pt;
-    margin: 10px;
 }
 
 #spawners-categories {

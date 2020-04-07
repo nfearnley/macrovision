@@ -1230,7 +1230,7 @@ function prepareMenu() {
         ]
     ].forEach(group => {
         const span = document.createElement("span");
-        span.classList.add("menubar-group");
+        span.classList.add("popout-group");
         group.forEach(entry => {
             const buttonHolder = document.createElement("div");
             const button = document.createElement("button");
@@ -1860,14 +1860,15 @@ function prepareEntities() {
     availableEntities["characters"].sort((x, y) => {
         return x.name.toLowerCase() < y.name.toLowerCase() ? -1 : 1
     });
-    const holder = document.querySelector("#spawners-entities");
+    const holder = document.querySelector("#spawners");
+    const categorySelect = document.createElement("select");
+    categorySelect.id = "category-picker";
 
-    const categorySelect = document.querySelector("#spawners-categories");
+    holder.appendChild(categorySelect);
 
     Object.entries(availableEntities).forEach(([category, entityList]) => {
         const select = document.createElement("select");
         select.id = "create-entity-" + category;
-        select.classList.add("options-field-picker");
         for (let i = 0; i < entityList.length; i++) {
             const entity = entityList[i];
             const option = document.createElement("option");
