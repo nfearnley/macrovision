@@ -18923,8 +18923,8 @@ characterMakers.push(() => makeCharacter(
     { name: "Violette" },
     {
         front: {
-            height: math.unit(6, "feet"),
-            weight: math.unit(160, "lb"),
+            height: math.unit(293, "meters"),
+            weight: math.unit(70400, "tons"),
             name: "Front",
             image: {
                 source: "./media/characters/violette/front.svg",
@@ -18935,7 +18935,7 @@ characterMakers.push(() => makeCharacter(
     [
         {
             name: "Macro",
-            height: math.unit(300, "meters"),
+            height: math.unit(293, "meters"),
             default: true
         },
     ]
