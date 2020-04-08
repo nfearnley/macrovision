@@ -8424,6 +8424,18 @@ const attributionData = {
                 "poojawa"
             ]
         },
+        {
+            prefix: "./media/characters/violette/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35367386/" }
+            ],
+            authors: [
+                "scream"
+            ],
+            owners: [
+                "scream"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11660,6 +11672,10 @@ const attributionData = {
         "poojawa": {
             "name": "poojawa",
             "url": "https://www.furaffinity.net/user/poojawa",
+        },
+        "scream": {
+            "name": "scream",
+            "url": "https://www.furaffinity.net/user/scream",
         },
     }
 }
