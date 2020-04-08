@@ -8449,6 +8449,18 @@ const attributionData = {
                 "scream"
             ]
         },
+        {
+            prefix: "./media/characters/person/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "mrperson"
+            ],
+            owners: [
+                "mrperson"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11702,6 +11714,10 @@ const attributionData = {
         "cool3dmodel": {
             "name": "Cool3DModel",
             "url": "https://www.thingiverse.com/thing:2445539",
+        },
+        "mrperson": {
+            "name": "MrPerson",
+            "url": "https://www.furaffinity.net/user/mrperson/",
         },
     }
 }

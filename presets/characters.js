@@ -18978,6 +18978,41 @@ characterMakers.push(() => makeCharacter(
         },
     ]
 ))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Person", species: "Catdragon" },
+    {
+        front: {
+            height: math.unit(5, "feet"),
+            weight: math.unit(187, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/person/front.svg",
+                extra: 3087/2945,
+                bottom: 91/3181
+            }
+        },
+    },
+    [
+        {
+            name: "Micro",
+            height: math.unit(3, "inches")
+        },
+        {
+            name: "Normal",
+            height: math.unit(5, "feet"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(90, "feet")
+        },
+        {
+            name: "Max Size",
+            height: math.unit(280, "feet")
+        },
+    ]
+))
 //characters
 
 function makeCharacters() {
