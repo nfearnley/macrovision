@@ -18931,6 +18931,15 @@ characterMakers.push(() => makeCharacter(
                 extra: 1227/1180
             }
         },
+        back: {
+            height: math.unit(293, "meters"),
+            weight: math.unit(70400, "tons"),
+            name: "Back",
+            image: {
+                source: "./media/characters/violette/back.svg",
+                extra: 1227/1180
+            }
+        },
     },
     [
         {

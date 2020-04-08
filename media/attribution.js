@@ -8427,7 +8427,8 @@ const attributionData = {
         {
             prefix: "./media/characters/violette/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/35367386/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35367386/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/35367386/" },
             ],
             authors: [
                 "scream"
