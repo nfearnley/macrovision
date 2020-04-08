@@ -18252,6 +18252,10 @@ characterMakers.push(() => makeCharacter(
             name: "Macro+",
             height: math.unit(640, "feet")
         },
+        {
+            name: "Colossus",
+            height: math.unit(2.2, "miles")
+        },
     ]
 ))
 
