@@ -18928,7 +18928,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/violette/front.svg",
-                extra: 1227/1180
+                extra: 1227/1180,
+                bottom: 0.005
             }
         },
         back: {
@@ -18937,7 +18938,8 @@ characterMakers.push(() => makeCharacter(
             name: "Back",
             image: {
                 source: "./media/characters/violette/back.svg",
-                extra: 1227/1180
+                extra: 1227/1180,
+                bottom: 0.005
             }
         },
     },
@@ -18945,6 +18947,33 @@ characterMakers.push(() => makeCharacter(
         {
             name: "Macro",
             height: math.unit(293, "meters"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Alessandra" },
+    {
+        front: {
+            height: math.unit(1050, "feet"),
+            weight: math.unit(200000, "tons"),
+            name: "Front",
+            image: {
+                source: "./media/characters/alessandra/front.svg",
+                extra: 960/912,
+                bottom: 0.06
+            }
+        },
+    },
+    [
+        {
+            name: "Macro",
+            height: math.unit(1050, "feet")
+        },
+        {
+            name: "Macro+",
+            height: math.unit(900, "meters"),
             default: true
         },
     ]

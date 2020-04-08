@@ -8437,6 +8437,18 @@ const attributionData = {
                 "scream"
             ]
         },
+        {
+            prefix: "./media/characters/alessandra/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/24212674/" }
+            ],
+            authors: [
+                "scream"
+            ],
+            owners: [
+                "scream"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -8590,6 +8602,15 @@ const attributionData = {
             ],
             authors: [
                 "chemicalcrux"
+            ]
+        },
+        {
+            prefix: "./media/landmarks/",
+            files: [
+                { name: "statue-of-liberty.svg", source: "https://www.thingiverse.com/thing:2445539" },
+            ],
+            authors: [
+                "cool3dmodel"
             ]
         },
         {
@@ -11677,6 +11698,10 @@ const attributionData = {
         "scream": {
             "name": "scream",
             "url": "https://www.furaffinity.net/user/scream",
+        },
+        "cool3dmodel": {
+            "name": "Cool3DModel",
+            "url": "https://www.thingiverse.com/thing:2445539",
         },
     }
 }

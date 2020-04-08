@@ -110,6 +110,15 @@ function makeLandmarks() {
         )
     });
 
+    results.push({
+        name: "Statue of Liberty",
+        constructor: () => makeLandmark(
+            "Statue of Liberty",
+            math.unit(305.5, "feet"),
+            { source: "./media/landmarks/statue-of-liberty.svg" }
+        )
+    });
+
     results.sort((b1, b2) => {
         e1 = b1.constructor();
         e2 = b2.constructor();
