@@ -8411,6 +8411,19 @@ const attributionData = {
                 "anotherscrub"
             ]
         },
+        {
+            prefix: "./media/characters/poojawa-vynar/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/23954673/" },
+                { name: "front-tailless.svg", source: "https://www.furaffinity.net/view/23954673/" },
+            ],
+            authors: [
+                "orangesoiree"
+            ],
+            owners: [
+                "poojawa"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11639,6 +11652,14 @@ const attributionData = {
         "cdc": {
             "name": "CDC",
             "url": "https://chronicdata.cdc.gov",
+        },
+        "orangesoiree": {
+            "name": "OrangeSoiree",
+            "url": "https://www.furaffinity.net/user/orangesoiree",
+        },
+        "poojawa": {
+            "name": "poojawa",
+            "url": "https://www.furaffinity.net/user/poojawa",
         },
     }
 }

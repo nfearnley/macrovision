@@ -18885,6 +18885,39 @@ characterMakers.push(() => makeCharacter(
         },
     ]
 ))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Poojawa Vynar" },
+    {
+        front: {
+            height: math.unit(5 + 10/12, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/poojawa-vynar/front.svg",
+                extra: (1506.1547-55) / 1356.6,
+                bottom: 55/1506.1547
+            }
+        },
+        frontTailless: {
+            height: math.unit(5 + 10/12, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Front (Tailless)",
+            image: {
+                source: "./media/characters/poojawa-vynar/front-tailless.svg",
+                extra: (1506.1547-55) / 1356.6,
+                bottom: 55/1506.1547
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(5 + 10/12, "feet"),
+            default: true
+        },
+    ]
+))
 //characters
 
 function makeCharacters() {
