@@ -8601,6 +8601,13 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/naturals/cities",
+            all: "https://chronicdata.cdc.gov/500-Cities/500-Cities-City-Boundaries/n44h-hy2j",
+            authors: [
+                "cdc"
+            ]
+        },
+        {
             prefix: "./media/food/plants/",
             files: [
                 { name: "grass.svg", source: "https://www.freepik.com/free-vector/grass-border-silhouette-realistic-design_4904217.htm#page=1&query=grass%20silhouette&position=0" }
@@ -11628,6 +11635,10 @@ const attributionData = {
         "anotherscrub": {
             "name": "Another Scrub",
             "url": "https://www.furaffinity.net/user/anotherscrub/",
+        },
+        "cdc": {
+            "name": "CDC",
+            "url": "https://chronicdata.cdc.gov",
         },
     }
 }
