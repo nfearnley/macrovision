@@ -8486,6 +8486,18 @@ const attributionData = {
                 "thatdrunkkobold"
             ]
         },
+        {
+            prefix: "./media/characters/ruin/",
+            files: [
+                { name: "upright.svg", source: null }
+            ],
+            authors: [
+                "ruin"
+            ],
+            owners: [
+                "ruin"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11755,6 +11767,10 @@ const attributionData = {
         "thatdrunkkobold": {
             "name": "Rocky",
             "url": "https://t.me/ThatDrunkKobold",
+        },
+        "ruin": {
+            "name": "Ruin",
+            "url": null,
         },
     }
 }

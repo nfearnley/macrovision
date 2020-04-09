@@ -19071,6 +19071,28 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Ruin" },
+    {
+        upright: {
+            height: math.unit(6, "meters"),
+            weight: math.unit(4000, "kg"),
+            name: "Upright",
+            image: {
+                source: "./media/characters/ruin/upright.svg",
+                extra: 668/661,
+                bottom: 42/799.8396
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(6, "meters")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
