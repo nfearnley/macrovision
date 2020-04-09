@@ -232,7 +232,7 @@ body.show-extra-options .options-block.options-block-optional {
 
 #menubar {
     display: flex;
-    flex: 1 0 15vh;
+    flex: 1 0 30vh;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
