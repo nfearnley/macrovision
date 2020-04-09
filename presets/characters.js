@@ -19042,7 +19042,31 @@ characterMakers.push(() => makeCharacter(
     [
         {
             name: "Normal",
-            height: math.unit(4.5, "meters")
+            height: math.unit(4.5, "meters"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Rocky" },
+    {
+        front: {
+            height: math.unit(5 + 4/12, "feet"),
+            weight: math.unit(115, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/rocky/front.svg",
+                extra: 1012/975,
+                bottom: 54/1066
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(5 + 4/12, "feet"),
+            default: true
         },
     ]
 ))

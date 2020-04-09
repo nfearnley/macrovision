@@ -8474,6 +8474,18 @@ const attributionData = {
                 "ty-the-fox"
             ]
         },
+        {
+            prefix: "./media/characters/rocky/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "thatdrunkkobold"
+            ],
+            owners: [
+                "thatdrunkkobold"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11739,6 +11751,10 @@ const attributionData = {
         "ty-the-fox": {
             "name": "Ty the Fox",
             "url": "https://www.furaffinity.net/user/tythefox/",
+        },
+        "thatdrunkkobold": {
+            "name": "Rocky",
+            "url": "https://t.me/ThatDrunkKobold",
         },
     }
 }
