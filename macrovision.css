@@ -315,7 +315,6 @@ body.toggle-scale #display {
 }
 
 .options-row .symbol-button {
-    height: 75px;
     width: 75px;
     font-size: 70px;
 }
@@ -406,6 +405,10 @@ body.toggle-bottom-name .bottom-name {
     font-size: 32pt;
     height: 40pt;
     z-index: 1;
+}
+
+#open-help {
+    padding-top: 1pt;
 }
 
 #open-help.highlighted::before {
@@ -641,6 +644,7 @@ i.far {
 
 #spawners > select,
 #spawners > button {
+    padding-top: 2pt;
     display: none;
 }
 
@@ -658,7 +662,7 @@ i.far {
 }
 
 #spawners > button {
-    font-size: 40pt;
+    font-size: 30pt;
 }
 
 #spawners-categories {
@@ -722,10 +726,8 @@ i.far {
 }
 
 #toggle-menu {
+    padding-top: 2pt;
     position: relative;
-    background: none;
-    color: #aaa;
-    border: 0px;
 }
 
 #popout-menu {
@@ -762,4 +764,20 @@ i.far {
 
 #options-entity-defaults > button {
     word-break: break-word;
+}
+
+button {
+    border: 3px;
+    border-style: outset;
+    border-color: gray;
+    padding: 5px;
+    background: #eee;
+}
+
+button:hover {
+    background: #ccc;
+}
+button:enabled:active {
+    border-style: inset;
+    background: #aaa;
 }
