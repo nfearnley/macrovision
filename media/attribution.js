@@ -8461,6 +8461,19 @@ const attributionData = {
                 "mrperson"
             ]
         },
+        {
+            prefix: "./media/characters/ty/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/30718285/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/30718285/" },
+            ],
+            authors: [
+                "skaifox"
+            ],
+            owners: [
+                "ty-the-fox"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11718,6 +11731,14 @@ const attributionData = {
         "mrperson": {
             "name": "MrPerson",
             "url": "https://www.furaffinity.net/user/mrperson/",
+        },
+        "skaifox": {
+            "name": "Skaifox",
+            "url": "https://www.furaffinity.net/user/skaifox",
+        },
+        "ty-the-fox": {
+            "name": "Ty the Fox",
+            "url": "https://www.furaffinity.net/user/tythefox/",
         },
     }
 }

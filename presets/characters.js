@@ -17735,7 +17735,8 @@ characterMakers.push(() => makeCharacter(
                 source: "./media/characters/mort/side.svg",
                 extra: 365 / 318,
                 bottom: 0.052
-            }
+            },
+            default: true
         },
         back: {
             height: math.unit(14, "feet"),
@@ -19013,6 +19014,39 @@ characterMakers.push(() => makeCharacter(
         },
     ]
 ))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Ty" },
+    {
+        front: {
+            height: math.unit(4.5, "meters"),
+            weight: math.unit(3200, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/ty/front.svg",
+                extra: 1038/960,
+                bottom: 31.156/1068
+            }
+        },
+        back: {
+            height: math.unit(4.5, "meters"),
+            weight: math.unit(3200, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/ty/back.svg",
+                extra: 1044/966,
+                bottom: 7.48/1049
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(4.5, "meters")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
