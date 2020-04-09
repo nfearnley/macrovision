@@ -1332,7 +1332,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector("#toggle-menu").addEventListener("click", e => {
         const popoutMenu = document.querySelector("#popout-menu");
-        console.log("hi")
         if (popoutMenu.classList.contains("visible")) {
             popoutMenu.classList.remove("visible");
         } else {
@@ -1349,7 +1348,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.addEventListener("click", e => {
-        console.log("hiii")
         document.querySelector("#popout-menu").classList.remove("visible");
     });
     
@@ -1883,6 +1881,8 @@ function prepareEntities() {
         holder.appendChild(button);
     });
 
+    console.log("Loaded " + Object.keys(availableEntitiesByName).length + " entities");
+    
     categorySelect.addEventListener("input", e => {
         const oldSelect = document.querySelector("select.category-visible");
         oldSelect.classList.remove("category-visible");
