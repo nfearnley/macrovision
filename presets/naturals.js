@@ -929,25 +929,32 @@ function makeMountains() {
 }
 
 function makeGIS(data, category) {
+    const baseLength = math.unit(1, "meters");
+    const baseArea = math.unit(1, "meters^2");
     return {
         name: category,
         constructor: () => {
             views = {};
             data.forEach(entry => {
                 name = entry[0]
+                length = baseLength.clone();
+                area = baseArea.clone();
+                length.value = entry[2];
+                area.value = entry[1];
+
                 views[entry[0]] = {
                     attributes: {
                         height: {
                             name: "Size",
                             power: 1,
                             type: "length",
-                            base: math.unit(entry[2], "meters")
+                            base: length
                         },
                         area: {
                             name: "Area",
                             power: 2,
                             type: "area",
-                            base: math.unit(entry[1], "meters^2")
+                            base: area
                         },
                     },
                     name: name,
