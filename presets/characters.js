@@ -2614,7 +2614,8 @@ characterMakers.push(() => makeCharacter(
             name: "Side",
             image: {
                 source: "./media/characters/tobias/side.svg",
-                extra: 5 / 4
+                extra: 1474 / 1096,
+                bottom: 38.9/1513.1235
             }
         },
     },
