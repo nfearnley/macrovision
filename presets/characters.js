@@ -19094,6 +19094,59 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Robin" },
+    {
+        front: {
+            height: math.unit(5, "feet"),
+            weight: math.unit(106, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/robin/front.svg",
+                extra: 862/799,
+                bottom: 42.4/914.8856
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(5, "feet"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Saian" },
+    {
+        side: {
+            height: math.unit(3, "feet"),
+            weight: math.unit(225, "lb"),
+            name: "Side",
+            image: {
+                source: "./media/characters/saian/side.svg",
+                extra: 566/356,
+                bottom: 79.7/643
+            }
+        },
+        maw: {
+            height: math.unit(2.85, "feet"),
+            name: "Maw",
+            image: {
+                source: "./media/characters/saian/maw.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(3, "feet"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

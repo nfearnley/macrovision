@@ -8498,6 +8498,31 @@ const attributionData = {
                 "ruin"
             ]
         },
+        {
+            prefix: "./media/characters/robin/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/16687024/" }
+            ],
+            authors: [
+                "starswirls"
+            ],
+            owners: [
+                "eremitic"
+            ]
+        },
+        {
+            prefix: "./media/characters/saian/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/29652291/ " },
+                { name: "maw.svg", source: "https://www.furaffinity.net/view/29652291/ " },
+            ],
+            authors: [
+                "kuppy"
+            ],
+            owners: [
+                "eremitic"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11771,6 +11796,18 @@ const attributionData = {
         "ruin": {
             "name": "Ruin",
             "url": null,
+        },
+        "eremitic": {
+            "name": "Eremitic",
+            "url": "https://www.furaffinity.net/user/eremitic",
+        },
+        "starswirls": {
+            "name": "StarSwirls",
+            "url": " https://www.furaffinity.net/user/starswirls",
+        },
+        "kuppy": {
+            "name": "Kuppy",
+            "url": "https://www.furaffinity.net/user/kuppy",
         },
     }
 }
