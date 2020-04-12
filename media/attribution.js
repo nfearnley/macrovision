@@ -8523,6 +8523,42 @@ const attributionData = {
                 "eremitic"
             ]
         },
+        {
+            prefix: "./media/characters/equus-silvermane/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/15648375/" }
+            ],
+            authors: [
+                "venlightchaser"
+            ],
+            owners: [
+                "equussilvermane"
+            ]
+        },
+        {
+            prefix: "./media/characters/equus-silvermane/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/21839963/" }
+            ],
+            authors: [
+                "exto"
+            ],
+            owners: [
+                "equussilvermane"
+            ]
+        },
+        {
+            prefix: "./media/characters/equus-silvermane/",
+            files: [
+                { name: "side-stepping.svg", source: "https://www.furaffinity.net/view/32404813/" }
+            ],
+            authors: [
+                "tanutanuki"
+            ],
+            owners: [
+                "equussilvermane"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11808,6 +11844,22 @@ const attributionData = {
         "kuppy": {
             "name": "Kuppy",
             "url": "https://www.furaffinity.net/user/kuppy",
+        },
+        "equussilvermane": {
+            "name": "Equus Silvermane",
+            "url": "https://twitter.com/EquusSilvermane",
+        },
+        "venlightchaser": {
+            "name": "VenLightChaser",
+            "url": "https://www.furaffinity.net/user/venlightchaser/",
+        },
+        "exto": {
+            "name": "ExTo",
+            "url": "https://www.furaffinity.net/user/exto/",
+        },
+        "tanutanuki": {
+            "name": "tanutanuki",
+            "url": " https://www.furaffinity.net/user/tanutanuki/",
         },
     }
 }

@@ -19147,6 +19147,65 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Equus Silvermane" },
+    {
+        side: {
+            height: math.unit(8, "feet"),
+            weight: math.unit(300, "lb"),
+            name: "Side",
+            image: {
+                source: "./media/characters/equus-silvermane/side.svg",
+                extra: 2176/2050,
+                bottom: 65.7/2245
+            }
+        },
+        front: {
+            height: math.unit(8, "feet"),
+            weight: math.unit(300, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/equus-silvermane/front.svg",
+                extra: 4633/4400,
+                bottom: 71.3/4706.915
+            }
+        },
+        sideStepping: {
+            height: math.unit(8, "feet"),
+            weight: math.unit(300, "lb"),
+            name: "Side (Stepping)",
+            image: {
+                source: "./media/characters/equus-silvermane/side-stepping.svg",
+                extra: 1968/1860,
+                bottom: 16.4/1989
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(8, "feet")
+        },
+        {
+            name: "Minimacro",
+            height: math.unit(75, "feet"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(150, "feet")
+        },
+        {
+            name: "Macro+",
+            height: math.unit(1000, "feet")
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(1, "mile")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
