@@ -4940,10 +4940,10 @@ const attributionData = {
                 { name: "front.svg", source: "https://www.furaffinity.net/view/33879374/" }
             ],
             authors: [
-                "va0027"
+                "pocketcookie"
             ],
             owners: [
-                "pocketcookie"
+                "va0027"
             ]
         },
         {

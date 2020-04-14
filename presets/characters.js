@@ -10058,9 +10058,29 @@ characterMakers.push(() => makeCharacter(
             height: math.unit(5, "meters")
         },
         {
-            name: "Gigamacro",
+            name: "Macro",
+            height: math.unit(200, "meters")
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(20, "kilometers")
+        },
+        {
+            name: "True Size",
             height: math.unit(211, "km"),
             default: true
+        },
+        {
+            name: "Gigamacro",
+            height: math.unit(1000, "km")
+        },
+        {
+            name: "Gigamacro+",
+            height: math.unit(8000, "km")
+        },
+        {
+            name: "Teramacro",
+            height: math.unit(1000000, "km")
         },
     ]
 ))
