@@ -19243,7 +19243,41 @@ characterMakers.push(() => makeCharacter(
     [
         {
             name: "Normal",
-            height: math.unit(20, "feet")
+            height: math.unit(20, "feet"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Melody" },
+    {
+        side: {
+            height: math.unit(15.66, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Side",
+            image: {
+                source: "./media/characters/melody/side.svg",
+                extra: 1097/944,
+                bottom: 11.8/1109
+            }
+        },
+        sideOutfit: {
+            height: math.unit(15.66, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Side (Outfit)",
+            image: {
+                source: "./media/characters/melody/side-outfit.svg",
+                extra: 1097/944,
+                bottom: 11.8/1109
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(15.66, "feet"),
+            default: true
         },
     ]
 ))
