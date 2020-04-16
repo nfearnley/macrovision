@@ -19415,6 +19415,36 @@ characterMakers.push(() => makeCharacter(
         },
     ]
 ))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Anders" },
+    {
+        front: {
+            height: math.unit(50, "feet"),
+            weight: math.unit(50000, "kg"),
+            name: "Front",
+            image: {
+                source: "./media/characters/anders/front.svg",
+                extra: 570/539,
+                bottom: 14.7/586.7
+            }
+        },
+    },
+    [
+        {
+            name: "Large",
+            height: math.unit(50, "feet")
+        },
+        {
+            name: "Macro",
+            height: math.unit(2000, "feet")
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(12, "miles")
+        },
+    ]
+))
 //characters
 
 function makeCharacters() {

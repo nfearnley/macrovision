@@ -8656,6 +8656,18 @@ const attributionData = {
                 "winderus"
             ]
         },
+        {
+            prefix: "./media/characters/anders/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/8507532/" }
+            ],
+            authors: [
+                "mutant-serpentina"
+            ],
+            owners: [
+                "neopuc"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11961,6 +11973,10 @@ const attributionData = {
         "winderus": {
             "name": "Winderus",
             "url": null,
+        },
+        "mutant-serpentina": {
+            "name": "mutant-serpentina",
+            "url": "https://www.furaffinity.net/user/mutant-serpentina",
         },
     }
 }
