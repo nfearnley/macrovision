@@ -2164,6 +2164,8 @@ const attributionData = {
                 { name: "front.svg", source: "https://www.furaffinity.net/view/15459294/" },
                 { name: "side.svg", source: "https://www.furaffinity.net/view/15459294/" },
                 { name: "back.svg", source: "https://www.furaffinity.net/view/15459294/" },
+                { name: "front-dressed.svg", source: "https://www.furaffinity.net/view/15459294/" },
+                { name: "genitals.svg", source: "https://www.furaffinity.net/view/15459294/" },
             ],
             authors: [
                 "homogeneousrule"

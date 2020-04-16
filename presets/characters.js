@@ -1116,7 +1116,9 @@ characterMakers.push(() => makeCharacter(
             weight: math.unit(80, "kg"),
             name: "Front",
             image: {
-                source: "./media/characters/elbial/front.svg"
+                source: "./media/characters/elbial/front.svg",
+                extra: 1643/1556,
+                bottom: 60.2/1696
             }
         },
         side: {
@@ -1124,7 +1126,9 @@ characterMakers.push(() => makeCharacter(
             weight: math.unit(80, "kg"),
             name: "Side",
             image: {
-                source: "./media/characters/elbial/side.svg"
+                source: "./media/characters/elbial/side.svg",
+                extra: 1630/1565,
+                bottom: 71.5/1697
             }
         },
         back: {
@@ -1132,7 +1136,26 @@ characterMakers.push(() => makeCharacter(
             weight: math.unit(80, "kg"),
             name: "Back",
             image: {
-                source: "./media/characters/elbial/back.svg"
+                source: "./media/characters/elbial/back.svg",
+                extra: 1668/1595,
+                bottom: 5.6/1672
+            }
+        },
+        frontDressed: {
+            height: math.unit(2, "meter"),
+            weight: math.unit(80, "kg"),
+            name: "Front (Dressed)",
+            image: {
+                source: "./media/characters/elbial/front-dressed.svg",
+                extra: 1653/1584,
+                bottom: 57/1708
+            }
+        },
+        genitals: {
+            height: math.unit(2/3.367, "meter"),
+            name: "Genitals",
+            image: {
+                source: "./media/characters/elbial/genitals.svg"
             }
         },
     },
