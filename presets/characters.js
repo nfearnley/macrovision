@@ -19348,6 +19348,29 @@ characterMakers.push(() => makeCharacter(
         },
     ]
 ))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Ereus" },
+    {
+        side: {
+            height: math.unit(10, "feet"),
+            weight: math.unit(1000, "kg"),
+            name: "Side",
+            image: {
+                source: "./media/characters/ereus/side.svg",
+                extra: 1157/959,
+                bottom: 153/1312.5
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(10, "feet"),
+            default: true
+        },
+    ]
+))
 //characters
 
 function makeCharacters() {
