@@ -19299,11 +19299,55 @@ characterMakers.push(() => makeCharacter(
     [
         {
             name: "Normal",
-            height: math.unit(8, "feet")
+            height: math.unit(8, "feet"),
+            default: true
         },
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Sonear" },
+    {
+        front: {
+            height: math.unit(28.75, "feet"),
+            weight: math.unit(2000, "kg"),
+            name: "Front",
+            image: {
+                source: "./media/characters/sonear/front.svg",
+                extra: 1041.1/964.9,
+                bottom: 53.7/1096.6
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(28.75, "feet"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Kanara" },
+    {
+        side: {
+            height: math.unit(25.5, "feet"),
+            weight: math.unit(23000, "kg"),
+            name: "Side",
+            image: {
+                source: "./media/characters/kanara/side.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(25.5, "feet"),
+            default: true
+        },
+    ]
+))
 //characters
 
 function makeCharacters() {
