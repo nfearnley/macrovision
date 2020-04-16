@@ -19460,11 +19460,50 @@ characterMakers.push(() => makeCharacter(
         },
         {
             name: "Macro",
-            height: math.unit(2000, "feet")
+            height: math.unit(2000, "feet"),
+            default: true
         },
         {
             name: "Megamacro",
             height: math.unit(12, "miles")
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Reban" },
+    {
+        front: {
+            height: math.unit(7 + 2/12, "feet"),
+            weight: math.unit(300, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/reban/front.svg",
+                extra: 516/487,
+                bottom: 42.82/558.356
+            }
+        },
+        dick: {
+            height: math.unit(7/5, "feet"),
+            name: "Dick",
+            image: {
+                source: "./media/characters/reban/dick.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Natural Height",
+            height: math.unit(7 + 2/12, "feet")
+        },
+        {
+            name: "Macro",
+            height: math.unit(500, "feet"),
+            default: true
+        },
+        {
+            name: "Canon Height",
+            height: math.unit(50, "AU")
         },
     ]
 ))

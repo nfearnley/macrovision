@@ -8670,6 +8670,19 @@ const attributionData = {
                 "neopuc"
             ]
         },
+        {
+            prefix: "./media/characters/reban/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/6510991/" },
+                { name: "dick.svg", source: "https://www.furaffinity.net/view/6510991/" }
+            ],
+            authors: [
+                "thewhitefalcon"
+            ],
+            owners: [
+                "neopuc"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11979,6 +11992,10 @@ const attributionData = {
         "mutant-serpentina": {
             "name": "mutant-serpentina",
             "url": "https://www.furaffinity.net/user/mutant-serpentina",
+        },
+        "thewhitefalcon": {
+            "name": "thewhitefalcon",
+            "url": "https://www.furaffinity.net/user/thewhitefalcon",
         },
     }
 }
