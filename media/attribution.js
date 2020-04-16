@@ -8632,6 +8632,30 @@ const attributionData = {
                 "winderus"
             ]
         },
+        {
+            prefix: "./media/characters/e-ter/",
+            files: [
+                { name: "side.svg", source: null },
+            ],
+            authors: [
+                "winderus"
+            ],
+            owners: [
+                "winderus"
+            ]
+        },
+        {
+            prefix: "./media/characters/yamie/",
+            files: [
+                { name: "side.svg", source: null },
+            ],
+            authors: [
+                "winderus"
+            ],
+            owners: [
+                "winderus"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",

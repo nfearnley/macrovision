@@ -19371,6 +19371,50 @@ characterMakers.push(() => makeCharacter(
         },
     ]
 ))
+
+characterMakers.push(() => makeCharacter(
+    { name: "E-ter" },
+    {
+        side: {
+            height: math.unit(4.5, "feet"),
+            weight: math.unit(500, "lb"),
+            name: "Side",
+            image: {
+                source: "./media/characters/e-ter/side.svg",
+                extra: 1550/1248,
+                bottom: 146/1694
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(4.5, "feet"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Yamie" },
+    {
+        side: {
+            height: math.unit(9.7, "feet"),
+            weight: math.unit(4000, "kg"),
+            name: "Side",
+            image: {
+                source: "./media/characters/yamie/side.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(9.7, "feet"),
+            default: true
+        },
+    ]
+))
 //characters
 
 function makeCharacters() {
