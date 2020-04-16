@@ -19226,6 +19226,28 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Windar" },
+    {
+        side: {
+            height: math.unit(20, "feet"),
+            weight: math.unit(30000, "kg"),
+            name: "Side",
+            image: {
+                source: "./media/characters/windar/side.svg",
+                extra: 1491/1248,
+                bottom: 82.56/1568
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(20, "feet")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

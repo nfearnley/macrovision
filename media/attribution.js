@@ -8559,6 +8559,18 @@ const attributionData = {
                 "equussilvermane"
             ]
         },
+        {
+            prefix: "./media/characters/windar/",
+            files: [
+                { name: "side.svg", source: null }
+            ],
+            authors: [
+                "winderus"
+            ],
+            owners: [
+                "winderus"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -11860,6 +11872,10 @@ const attributionData = {
         "tanutanuki": {
             "name": "tanutanuki",
             "url": " https://www.furaffinity.net/user/tanutanuki/",
+        },
+        "winderus": {
+            "name": "Winderus",
+            "url": null,
         },
     }
 }
