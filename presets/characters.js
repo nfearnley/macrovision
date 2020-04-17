@@ -19557,6 +19557,53 @@ characterMakers.push(() => makeCharacter(
         },
     ]
 ))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Ofelia" },
+    {
+        front: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/ofelia/front.svg",
+                extra: 546/541,
+                bottom: 39/583
+            }
+        },
+        back: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/ofelia/back.svg",
+                extra: 564/559.5,
+                bottom: 8.69/573.02
+            }
+        },
+        maw: {
+            height: math.unit(1, "feet"),
+            name: "Maw",
+            image: {
+                source: "./media/characters/ofelia/maw.svg"
+            }
+        },
+        foot: {
+            height: math.unit(1.949, "feet"),
+            name: "Foot",
+            image: {
+                source: "./media/characters/ofelia/foot.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Canon Height",
+            height: math.unit(2000, "miles"),
+            default: true
+        },
+    ]
+))
 //characters
 
 function makeCharacters() {

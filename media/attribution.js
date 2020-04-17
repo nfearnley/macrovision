@@ -8698,6 +8698,21 @@ const attributionData = {
                 "neopuc"
             ]
         },
+        {
+            prefix: "./media/characters/ofelia/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/20388192/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/20388192/" },
+                { name: "maw.svg", source: "https://www.furaffinity.net/view/20388192/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/20388192/" },
+            ],
+            authors: [
+                "jazzumi"
+            ],
+            owners: [
+                "neopuc"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
