@@ -8713,6 +8713,18 @@ const attributionData = {
                 "neopuc"
             ]
         },
+        {
+            prefix: "./media/characters/samuel/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/9195440/" }
+            ],
+            authors: [
+                "keedot"
+            ],
+            owners: [
+                "neopuc"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
