@@ -8725,6 +8725,19 @@ const attributionData = {
                 "neopuc"
             ]
         },
+        {
+            prefix: "./media/characters/beishir-kiel/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/29983408/" },
+                { name: "maw.svg", source: "https://www.furaffinity.net/view/29983408/" },
+            ],
+            authors: [
+                "imperatorcaesar"
+            ],
+            owners: [
+                "neopuc"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12038,6 +12051,10 @@ const attributionData = {
         "thewhitefalcon": {
             "name": "thewhitefalcon",
             "url": "https://www.furaffinity.net/user/thewhitefalcon",
+        },
+        "imperatorcaesar": {
+            "name": "imperatorcaesar",
+            "url": "https://www.furaffinity.net/user/imperatorcaesar/",
         },
     }
 }

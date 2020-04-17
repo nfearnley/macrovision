@@ -19632,6 +19632,36 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Beishir Kiel" },
+    {
+        front: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(300, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/beishir-kiel/front.svg",
+                extra: 569/547,
+                bottom: 41.9/609
+            }
+        },
+        maw: {
+            height: math.unit(6*0.202, "feet"),
+            name: "Maw",
+            image: {
+                source: "./media/characters/beishir-kiel/maw.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Macro",
+            height: math.unit(300, "feet"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
