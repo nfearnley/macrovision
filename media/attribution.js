@@ -8683,6 +8683,21 @@ const attributionData = {
                 "neopuc"
             ]
         },
+        {
+            prefix: "./media/characters/terrance-keayes/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/30999187/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/30999187/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/30999187/" },
+                { name: "dick.svg", source: "https://www.furaffinity.net/view/30999187/" },
+            ],
+            authors: [
+                "homogeneousrule"
+            ],
+            owners: [
+                "neopuc"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",

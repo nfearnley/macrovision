@@ -19507,6 +19507,56 @@ characterMakers.push(() => makeCharacter(
         },
     ]
 ))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Terrance Keayes" },
+    {
+        front: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/terrance-keayes/front.svg",
+                extra: 1.005,
+                bottom: 151/1615
+            }
+        },
+        side: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Side",
+            image: {
+                source: "./media/characters/terrance-keayes/side.svg",
+                extra: 1.005,
+                bottom: 129.4/1544
+            }
+        },
+        back: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/terrance-keayes/back.svg",
+                extra: 1.005,
+                bottom: 58.4/1557.3
+            }
+        },
+        dick: {
+            height: math.unit(6*0.208, "feet"),
+            name: "Dick",
+            image: {
+                source: "./media/characters/terrance-keayes/dick.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Canon Height",
+            height: math.unit(35, "miles"),
+            default: true
+        },
+    ]
+))
 //characters
 
 function makeCharacters() {
