@@ -8755,6 +8755,43 @@ const attributionData = {
                 "neopuc"
             ]
         },
+        {
+            prefix: "./media/characters/logan-grey/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32598649/" }
+            ],
+            authors: [
+                "son2j"
+            ],
+            owners: [
+                "logangrey"
+            ]
+        },
+        {
+            prefix: "./media/characters/logan-grey/",
+            files: [
+                { name: "dick.svg", source: "https://www.furaffinity.net/view/30470550/" }
+            ],
+            authors: [
+                "quotefox"
+            ],
+            owners: [
+                "logangrey"
+            ]
+        },
+        {
+            prefix: "./media/characters/logan-grey/",
+            files: [
+                { name: "front-alt.svg", source: null },
+                { name: "back.svg", source: null },
+            ],
+            authors: [
+                "quotefox"
+            ],
+            owners: [
+                "logangrey"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12076,6 +12113,18 @@ const attributionData = {
         "gothwolf": {
             "name": "gothwolf",
             "url": "https://www.furaffinity.net/user/gothwolf",
+        },
+        "quotefox": {
+            "name": "QuoteFox",
+            "url": "https://www.furaffinity.net/user/quotefox",
+        },
+        "logangrey": {
+            "name": "Logan Grey",
+            "url": "https://www.furaffinity.net/user/logangrey/",
+        },
+        "son2j": {
+            "name": "Son2j",
+            "url": "https://www.furaffinity.net/user/son2j",
         },
     }
 }

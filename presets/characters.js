@@ -19710,6 +19710,64 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Logan Grey" },
+    {
+        front: {
+            height: math.unit(5 + 8/12, "feet"),
+            weight: math.unit(120, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/logan-grey/front.svg",
+                extra: 2539/2393,
+                bottom: 97.6/2636.37
+            }
+        },
+        frontAlt: {
+            height: math.unit(5 + 8/12, "feet"),
+            weight: math.unit(120, "lb"),
+            name: "Front (Alt)",
+            image: {
+                source: "./media/characters/logan-grey/front-alt.svg",
+                extra: 958/893,
+                bottom: 15/970.768
+            }
+        },
+        back: {
+            height: math.unit(5 + 8/12, "feet"),
+            weight: math.unit(120, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/logan-grey/back.svg",
+                extra: 958/893,
+                bottom: 2.1881/970.9788
+            }
+        },
+        dick: {
+            height: math.unit(1.437, "feet"),
+            name: "Dick",
+            image: {
+                source: "./media/characters/logan-grey/dick.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(5 + 8/12, "feet")
+        },
+        {
+            name: "The 500 Foot Femboy",
+            height: math.unit(500, "feet"),
+            default: true
+        },
+        {
+            name: "Megmacro",
+            height: math.unit(20, "miles")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
