@@ -426,8 +426,18 @@ characterMakers.push(() => makeCharacter(
 characterMakers.push(() => makeCharacter(
     { name: "Elijah" },
     {
+        front: {
+            height: math.unit(1.65, "meters"),
+            weight: math.unit(50, "kg"),
+            name: "Front",
+            image: {
+                source: "./media/characters/elijah/front.svg",
+                extra: 639/626,
+                bottom: 58.7/697.8
+            }
+        },
         side: {
-            height: math.unit(7, "feet"),
+            height: math.unit(1.65, "meters"),
             weight: math.unit(50, "kg"),
             name: "Side",
             image: {
@@ -436,11 +446,49 @@ characterMakers.push(() => makeCharacter(
                 bottom: 106/1943
             }
         },
+        back: {
+            height: math.unit(1.65, "meters"),
+            weight: math.unit(50, "kg"),
+            name: "Back",
+            image: {
+                source: "./media/characters/elijah/back.svg",
+                extra: 661.2/639.5,
+                bottom: 21.2/682.5
+            }
+        },
         foot: {
-            height: math.unit(2.05, "feet"),
+            height: math.unit(1.4, "feet"),
             name: "Foot",
             image: {
                 source: "./media/characters/elijah/foot.svg"
+            }
+        },
+        footFlexing: {
+            height: math.unit(1.243, "feet"),
+            name: "Foot (Flexing)",
+            image: {
+                source: "./media/characters/elijah/foot-flexing.svg"
+            }
+        },
+        footStepping: {
+            height: math.unit(1.3, "feet"),
+            name: "Foot (Stepping)",
+            image: {
+                source: "./media/characters/elijah/foot-stepping.svg"
+            }
+        },
+        beak: {
+            height: math.unit(0.666, "feet"),
+            name: "Beak",
+            image: {
+                source: "./media/characters/elijah/beak.svg"
+            }
+        },
+        dick: {
+            height: math.unit(0.85, "feet"),
+            name: "Dick",
+            image: {
+                source: "./media/characters/elijah/dick.svg"
             }
         },
     },

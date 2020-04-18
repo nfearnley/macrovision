@@ -2199,6 +2199,23 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/elijah/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/22413364/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/22413364/" },
+                { name: "foot-flexing.svg", source: "https://www.furaffinity.net/view/22413364/" },
+                { name: "foot-stepping.svg", source: "https://www.furaffinity.net/view/22413364/" },
+                { name: "beak.svg", source: "https://www.furaffinity.net/view/22413364/" },
+                { name: "dick.svg", source: "https://www.furaffinity.net/view/22413364/" },
+            ],
+            authors: [
+                "gothwolf"
+            ],
+            owners: [
+                "someoneepic"
+            ]
+        },
+        {
             prefix: "./media/characters/elory/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/21837855/" }
@@ -12055,6 +12072,10 @@ const attributionData = {
         "imperatorcaesar": {
             "name": "imperatorcaesar",
             "url": "https://www.furaffinity.net/user/imperatorcaesar/",
+        },
+        "gothwolf": {
+            "name": "gothwolf",
+            "url": "https://www.furaffinity.net/user/gothwolf",
         },
     }
 }
