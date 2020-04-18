@@ -432,8 +432,8 @@ characterMakers.push(() => makeCharacter(
             name: "Side",
             image: {
                 source: "./media/characters/elijah/side.svg",
-                extra: 1,
-                bottom: 0.065
+                extra: 1840/1795,
+                bottom: 106/1943
             }
         },
         foot: {
