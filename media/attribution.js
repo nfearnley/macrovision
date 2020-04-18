@@ -8957,6 +8957,15 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/landmarks/",
+            files: [
+                { name: "leaning-tower-of-pisa.svg", source: "https://blendswap.com/blend/15656" }
+            ],
+            authors: [
+                "ofuscado"
+            ]
+        },
+        {
             prefix: "./media/naturals/",
             files: [
                 { name: "planet-generic.svg", source: null },
@@ -12125,6 +12134,10 @@ const attributionData = {
         "son2j": {
             "name": "Son2j",
             "url": "https://www.furaffinity.net/user/son2j",
+        },
+        "ofuscado": {
+            "name": "ofuscado",
+            "url": "https://blendswap.com/profile/18998",
         },
     }
 }

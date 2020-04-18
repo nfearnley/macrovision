@@ -119,6 +119,15 @@ function makeLandmarks() {
         )
     });
 
+    results.push({
+        name: "Leaning Tower of Pisa",
+        constructor: () => makeLandmark(
+            "Leaning Tower of Pisa",
+            math.unit(305.5, "feet"),
+            { source: "./media/landmarks/leaning-tower-of-pisa.svg", bottom: 84/3755 }
+        )
+    });
+
     results.sort((b1, b2) => {
         e1 = b1.constructor();
         e2 = b2.constructor();
