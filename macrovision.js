@@ -1322,6 +1322,16 @@ function doSize() {
         updateViewOptions(entity, entity.view);
         updateSizes(true);
         sizeDirection *= 1.05;
+
+        const ownHeight = entity.views[entity.view].height.toNumber("meters");
+        const worldHeight = config.height.toNumber("meters");
+
+        console.log(ownHeight, worldHeight)
+        if (ownHeight > worldHeight) {
+             setWorldHeight(config.height, entity.views[entity.view].height)
+        } else if (ownHeight * 10 < worldHeight) {
+            setWorldHeight(config.height, math.multiply(entity.views[entity.view].height, 10));
+        }
     }
 }
 
