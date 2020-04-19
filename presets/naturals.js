@@ -977,7 +977,7 @@ function makeNaturals() {
         [
             ["Mercury", 4879, "km", 0.330e24, "kg", "./media/naturals/planet-generic.svg"],
             ["Venus", 12104, "km", 4.87e24, "kg", "./media/naturals/planet-generic.svg"],
-            ["Earth", 12756, "km", 5.97e24, "kg", "./media/naturals/planet-generic.svg"],
+            ["Earth", 12756, "km", 5.97e24, "kg", "./media/naturals/earth.svg"],
             ["Moon", 3475, "km", 0.073e24, "kg", "./media/naturals/planet-generic.svg"],
             ["Mars", 6792, "km", 0.642e24, "kg", "./media/naturals/planet-generic.svg"],
             ["Jupiter", 142984, "km", 1898e24, "kg", "./media/naturals/planet-generic.svg"],

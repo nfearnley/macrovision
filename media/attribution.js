@@ -8983,6 +8983,15 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/naturals/",
+            files: [
+                { name: "earth.svg", source: "https://www.naturalearthdata.com/downloads/110m-physical-vectors/" }
+            ],
+            authors: [
+                "naturalearth"
+            ]
+        },
+        {
             prefix: "./media/naturals/countries",
             all: "https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/",
             authors: [
