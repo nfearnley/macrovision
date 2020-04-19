@@ -723,6 +723,14 @@ characterMakers.push(() => makeCharacter(
             height: math.unit(50, "feet"),
             default: true
         },
+        {
+            name: "Megamacro",
+            height: math.unit(10, "miles")
+        },
+        {
+            name: "Gigamacro",
+            height: math.unit(5, "earths")
+        },
     ]
 ))
 
