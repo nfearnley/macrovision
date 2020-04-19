@@ -2416,7 +2416,10 @@ const attributionData = {
         {
             prefix: "./media/characters/fory/",
             files: [
-                { name: "front.svg", source: null }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35993069/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/35993069/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/35993069/" },
+                
             ],
             authors: [
                 "victni"

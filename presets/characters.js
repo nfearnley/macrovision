@@ -686,13 +686,30 @@ characterMakers.push(() => makeCharacter(
     { name: "Fory" },
     {
         front: {
-            height: math.unit(7, "feet"),
+            height: math.unit(5, "feet"),
             weight: math.unit(90, "kg"),
             name: "Front",
             image: {
                 source: "./media/characters/fory/front.svg",
-                extra: 1,
-                bottom: 0.03
+                extra: 2862/2674,
+                bottom: 180/3043.8
+            }
+        },
+        back: {
+            height: math.unit(5, "feet"),
+            weight: math.unit(90, "kg"),
+            name: "Back",
+            image: {
+                source: "./media/characters/fory/back.svg",
+                extra: 2962/2791,
+                bottom: 106/3071.8
+            }
+        },
+        foot: {
+            height: math.unit(2.14, "feet"),
+            name: "Foot",
+            image: {
+                source: "./media/characters/fory/foot.svg"
             }
         },
     },
