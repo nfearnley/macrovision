@@ -123,8 +123,17 @@ function makeLandmarks() {
         name: "Leaning Tower of Pisa",
         constructor: () => makeLandmark(
             "Leaning Tower of Pisa",
-            math.unit(305.5, "feet"),
+            math.unit(185.93, "feet"),
             { source: "./media/landmarks/leaning-tower-of-pisa.svg", bottom: 84/3755 }
+        )
+    });
+
+    results.push({
+        name: "Elizabeth Tower",
+        constructor: () => makeLandmark(
+            "Elizabeth Tower",
+            math.unit(315, "feet"),
+            { source: "./media/landmarks/elizabeth-tower.svg" }
         )
     });
 

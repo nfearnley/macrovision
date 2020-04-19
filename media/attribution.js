@@ -8951,6 +8951,7 @@ const attributionData = {
             prefix: "./media/landmarks/",
             files: [
                 { name: "statue-of-liberty.svg", source: "https://www.thingiverse.com/thing:2445539" },
+                { name: "elizabeth-tower.svg", source: "https://www.thingiverse.com/thing:2445611" },
             ],
             authors: [
                 "cool3dmodel"
