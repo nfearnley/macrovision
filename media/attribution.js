@@ -8820,6 +8820,18 @@ const attributionData = {
                 "ich"
             ]
         },
+        {
+            prefix: "./media/characters/icowom-lee/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/20472356/" }
+            ],
+            authors: [
+                "thetiedtigress"
+            ],
+            owners: [
+                "stokeman"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12184,6 +12196,14 @@ const attributionData = {
         "draganta": {
             "name": "Draganta",
             "url": "https://twitter.com/DragantaStar",
+        },
+        "stokeman": {
+            "name": "Stokeman",
+            "url": "https://www.furaffinity.net/user/stokeman/",
+        },
+        "thetiedtigress": {
+            "name": "TheTiedTigress",
+            "url": "https://www.furaffinity.net/user/thetiedtigress",
         },
     }
 }

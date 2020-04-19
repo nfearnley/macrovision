@@ -19881,6 +19881,33 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Icowom Lee" },
+    {
+        front: {
+            height: math.unit(2.3, "m"),
+            weight: math.unit(304, "kg"),
+            name: "Front",
+            image: {
+                source: "./media/characters/icowom-lee/front.svg",
+                extra: 3076/2933,
+                bottom: 51.4/3125.1889
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(2.3, "meters")
+        },
+        {
+            name: "Macro",
+            height: math.unit(94, "meters"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
