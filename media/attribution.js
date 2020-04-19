@@ -8795,6 +8795,18 @@ const attributionData = {
                 "logangrey"
             ]
         },
+        {
+            prefix: "./media/characters/draganta/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/30077488/" }
+            ],
+            authors: [
+                "rottweiler"
+            ],
+            owners: [
+                "draganta"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12151,6 +12163,14 @@ const attributionData = {
         "ofuscado": {
             "name": "ofuscado",
             "url": "https://blendswap.com/profile/18998",
+        },
+        "rottweiler": {
+            "name": "ROTTWEILER",
+            "url": "https://www.furaffinity.net/user/rottweiler/",
+        },
+        "draganta": {
+            "name": "Draganta",
+            "url": "https://twitter.com/DragantaStar",
         },
     }
 }

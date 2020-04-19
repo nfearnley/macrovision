@@ -19793,6 +19793,37 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Draganta" },
+    {
+        front: {
+            height: math.unit(8 + 2/12, "feet"),
+            weight: math.unit(275, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/draganta/front.svg",
+                extra: 1177/1135,
+                bottom: 33.46/1212.1
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(8 + 6/12, "feet"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(150, "feet")
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(1000, "miles")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
