@@ -19824,6 +19824,63 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Voski", species: "Corvid" },
+    {
+        front: {
+            height: math.unit(1.72, "m"),
+            weight: math.unit(80, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/voski/front.svg",
+                extra: 2076.22/2022.4,
+                bottom: 102.7/2177.3866
+            }
+        },
+        back: {
+            height: math.unit(1.72, "m"),
+            weight: math.unit(80, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/voski/back.svg",
+                extra: 2104/2051,
+                bottom: 10.45/2113.63
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(1.72, "m")
+        },
+        {
+            name: "Macro",
+            height: math.unit(55, "m"),
+            default: true
+        },
+        {
+            name: "Macro+",
+            height: math.unit(300, "m")
+        },
+        {
+            name: "Macro++",
+            height: math.unit(700, "m")
+        },
+        {
+            name: "Macro+++",
+            height: math.unit(4500, "m")
+        },
+        {
+            name: "Macro++++",
+            height: math.unit(45, "km")
+        },
+        {
+            name: "Macro+++++",
+            height: math.unit(1220, "km")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

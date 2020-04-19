@@ -8807,6 +8807,19 @@ const attributionData = {
                 "draganta"
             ]
         },
+        {
+            prefix: "./media/characters/voski/",
+            files: [
+                { name: "front.svg", source: null },
+                { name: "back.svg", source: null },
+            ],
+            authors: [
+                "gothwolf"
+            ],
+            owners: [
+                "ich"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
