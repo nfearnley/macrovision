@@ -502,6 +502,15 @@ function makeVehicles() {
                     "Top": { height: math.unit(76.7, "meters") },
                 }
             },
+            {
+                name: "Yahagi",
+                mass: math.unit(7590, "tonnes"),
+                sides: {
+                    "Side": { height: math.unit(37.03, "meters") },
+                    "Front": { height: math.unit(37.03, "meters") },
+                    "Top": { height: math.unit(174.5, "meters") },
+                }
+            },
         ],
         "Warships",
         "")
