@@ -1167,16 +1167,15 @@ function toggleFullScreen() {
   }
 
 function handleResize() {
-    const oldEntityX = entityX;
+    const oldCanvasWidth = canvasWidth;
     entityX = document.querySelector("#entities").getBoundingClientRect().x;
+    canvasWidth = document.querySelector("#display").clientWidth - 100;
+    canvasHeight = document.querySelector("#display").clientHeight - 50;
 
-    const change = oldEntityX / entityX;
+    const change = oldCanvasWidth / canvasWidth;
     
     doHorizReposition(change);
 
-
-    canvasWidth = document.querySelector("#display").clientWidth - 100;
-    canvasHeight = document.querySelector("#display").clientHeight - 50;
     updateSizes();
 }
 
@@ -2100,7 +2099,7 @@ function exportScene() {
         unit: unit
     }
 
-    results.entityX = entityX;
+    results.canvasWidth = canvasWidth;
 
     return results;
 }
@@ -2178,8 +2177,8 @@ function importScene(data) {
     config.height = math.unit(data.world.height, data.world.unit);
     document.querySelector("#options-height-unit").value = data.world.unit;
 
-    if (data.entityX) {
-        doHorizReposition(data.entityX / entityX);
+    if (data.canvasWidth) {
+        doHorizReposition(data.canvasWidth / canvasWidth);
     }
 
     updateSizes();
