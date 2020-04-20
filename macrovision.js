@@ -114,6 +114,7 @@ const unitChoices = {
         "humans",
         "stories",
         "miles",
+        "earths",
         "solarradii",
         "AUs",
         "lightyears",
@@ -1166,10 +1167,25 @@ function toggleFullScreen() {
   }
 
 function handleResize() {
+    const oldEntityX = entityX;
     entityX = document.querySelector("#entities").getBoundingClientRect().x;
+
+    const change = oldEntityX / entityX;
+    
+    doHorizReposition(change);
+
+
     canvasWidth = document.querySelector("#display").clientWidth - 100;
     canvasHeight = document.querySelector("#display").clientHeight - 50;
     updateSizes();
+}
+
+function doHorizReposition(change) {
+    Object.keys(entities).forEach(key => {
+        const element = document.querySelector("#entity-" + key);
+        const x = element.dataset.x;
+        element.dataset.x = (x - 0.5) * change + 0.5;
+    });
 }
 
 function prepareMenu() {
@@ -2084,6 +2100,8 @@ function exportScene() {
         unit: unit
     }
 
+    results.entityX = entityX;
+
     return results;
 }
 
@@ -2159,6 +2177,10 @@ function importScene(data) {
 
     config.height = math.unit(data.world.height, data.world.unit);
     document.querySelector("#options-height-unit").value = data.world.unit;
+
+    if (data.entityX) {
+        doHorizReposition(data.entityX / entityX);
+    }
 
     updateSizes();
 }
