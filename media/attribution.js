@@ -4693,7 +4693,11 @@ const attributionData = {
             prefix: "./media/characters/talan/",
             files: [
                 { name: "angled-sfw.svg", source: null },
-                { name: "angled-nsfw.svg", source: null }
+                { name: "angled-nsfw.svg", source: null },
+                { name: "dick-bottom.svg", source: null },
+                { name: "dick-top.svg", source: null },
+                { name: "dick-side.svg", source: null },
+                { name: "dick-front.svg", source: null },
             ],
             authors: [
                 "wotwosixtwo",

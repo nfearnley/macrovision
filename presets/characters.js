@@ -613,8 +613,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/flamm/front.svg",
-                extra: 1,
-                bottom: 0.02
+                extra: 1794/1677,
+                bottom: 31.7/1828.5
             }
         },
     },
@@ -1003,8 +1003,8 @@ characterMakers.push(() => makeCharacter(
     {
         
         angled: {
-            height: math.unit(2, "meter"),
-            weight: math.unit(70, "kg"),
+            height: math.unit(4, "meter"),
+            weight: math.unit(150, "kg"),
             name: "Angled",
             image: {
                 source: "./media/characters/talan/angled-sfw.svg",
@@ -1012,14 +1012,42 @@ characterMakers.push(() => makeCharacter(
             }
         },
         angledNsfw: {
-            height: math.unit(2, "meter"),
-            weight: math.unit(70, "kg"),
+            height: math.unit(4, "meter"),
+            weight: math.unit(150, "kg"),
             name: "Angled (NSFW)",
             image: {
                 source: "./media/characters/talan/angled-nsfw.svg",
                 bottom: 29/3734
             }
-        }
+        },
+        dickBottom: {
+            height: math.unit(0.621, "meter"),
+            name: "Dick (Bottom)",
+            image: {
+                source: "./media/characters/talan/dick-bottom.svg"
+            }
+        },
+        dickTop: {
+            height: math.unit(0.621, "meter"),
+            name: "Dick (Top)",
+            image: {
+                source: "./media/characters/talan/dick-top.svg"
+            }
+        },
+        dickSide: {
+            height: math.unit(0.305, "meter"),
+            name: "Dick (Side)",
+            image: {
+                source: "./media/characters/talan/dick-side.svg"
+            }
+        },
+        dickFront: {
+            height: math.unit(0.305, "meter"),
+            name: "Dick (Front)",
+            image: {
+                source: "./media/characters/talan/dick-front.svg"
+            }
+        },
     },
     [
         {
