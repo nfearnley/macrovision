@@ -20082,6 +20082,69 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Sprisk" },
+    {
+        front: {
+            height: math.unit(5 + 9/12, "feet"),
+            weight: math.unit(190, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/sprisk/front.svg",
+                extra: 1225/1180,
+                bottom: 42.7/1266.4
+            }
+        },
+        frontNsfw: {
+            height: math.unit(5 + 9/12, "feet"),
+            weight: math.unit(190, "lb"),
+            name: "Front (NSFW)",
+            image: {
+                source: "./media/characters/sprisk/front-nsfw.svg",
+                extra: 1225/1180,
+                bottom: 42.7/1266.4
+            }
+        },
+        back: {
+            height: math.unit(5 + 9/12, "feet"),
+            weight: math.unit(190, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/sprisk/back.svg",
+                extra: 1247/1200,
+                bottom: 5.6/1253.04
+            }
+        },
+    },
+    [
+        {
+            name: "Tiny",
+            height: math.unit(2, "inches")
+        },
+        {
+            name: "Normal",
+            height: math.unit(5 + 9/12, "feet"),
+            default: true
+        },
+        {
+            name: "Mini Macro",
+            height: math.unit(18, "feet")
+        },
+        {
+            name: "Macro",
+            height: math.unit(100, "feet")
+        },
+        {
+            name: "MACRO",
+            height: math.unit(50, "miles")
+        },
+        {
+            name: "M A C R O",
+            height: math.unit(300, "miles")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

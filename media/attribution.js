@@ -8892,6 +8892,20 @@ const attributionData = {
                 "foulsbane"
             ]
         },
+        {
+            prefix: "./media/characters/sprisk/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35230192/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/35230192/" },
+                { name: "front-nsfw.svg", source: "https://www.furaffinity.net/view/35230305/" }
+            ],
+            authors: [
+                "the-secret-x"
+            ],
+            owners: [
+                "sprisk"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12297,6 +12311,14 @@ const attributionData = {
         "wotwosixtwo": {
             "name": "wotwosixtwo",
             "url": "https://www.furaffinity.net/user/wotwosixtwo",
+        },
+        "the-secret-x": {
+            "name": "The-Secret-X",
+            "url": "https://www.furaffinity.net/user/the-secret-x/",
+        },
+        "sprisk": {
+            "name": "Sprisk",
+            "url": "https://twitter.com/Lost_in_Walmart",
         },
     }
 }
