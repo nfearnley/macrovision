@@ -1001,13 +1001,13 @@ characterMakers.push(() => makeCharacter(
 characterMakers.push(() => makeCharacter(
     { name: "Talan" },
     {
-        body: {
+        angledNsfw: {
             height: math.unit(2, "meter"),
             weight: math.unit(70, "kg"),
-            name: "Body",
+            name: "Angled (NSFW)",
             image: {
-                bottom: 0.02,
-                source: "./media/characters/talan/front.svg"
+                source: "./media/characters/talan/angled-nsfw.svg",
+                bottom: 29/3734
             }
         }
     },

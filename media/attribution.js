@@ -4692,10 +4692,11 @@ const attributionData = {
         {
             prefix: "./media/characters/talan/",
             files: [
-                { name: "front.svg", source: null }
+                { name: "angled-nsfw.svg", source: null }
             ],
             authors: [
-                "talanstrider"
+                "wotwosixtwo",
+                "chemicalcrux"
             ],
             owners: [
                 "talanstrider"
@@ -12282,6 +12283,10 @@ const attributionData = {
         "wargaming": {
             "name": "Wargaming",
             "url": "https://wargaming.net",
+        },
+        "wotwosixtwo": {
+            "name": "wotwosixtwo",
+            "url": "https://www.furaffinity.net/user/wotwosixtwo",
         },
     }
 }
