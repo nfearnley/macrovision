@@ -275,7 +275,7 @@ function makeVehicleGroup(info, name, prefix) {
                 rename: true,
                 height: data.height,
                 mass: vehicle.mass,
-                image: { source: "./media/vehicles/" + name.replace(/ /g, "-").toLowerCase() + "/" + prefix + "_" + vehicle.name.replace(/ /g, "-").toLowerCase() + "-" + sideName.replace(/ /g, "-").toLowerCase() + ".svg", extra: (data.extra ? data.extra : 1) }
+                image: { source: "./media/vehicles/" + name.replace(/ /g, "-").toLowerCase() + "/" + (prefix == "" ? "" : prefix + "_") + vehicle.name.replace(/ /g, "-").toLowerCase() + "-" + sideName.replace(/ /g, "-").toLowerCase() + ".svg", extra: (data.extra ? data.extra : 1) }
             };
         });
     });
@@ -452,6 +452,41 @@ function makeVehicles() {
         ],
         "Trains",
         "train")
+    });    
+    
+    results.push({
+        name: "Warships",
+        constructor: () => makeVehicleGroup([
+            {
+                name: "Bismarck",
+                mass: math.unit(50300, "tonnes"),
+                sides: {
+                    "Side": { height: math.unit(61.9, "meters") },
+                    "Front": { height: math.unit(61.9, "meters") },
+                    "Top": { height: math.unit(251, "meters") },
+                }
+            },
+            {
+                name: "Enterprise CV-6",
+                mass: math.unit(32060, "tons"),
+                sides: {
+                    "Side": { height: math.unit(164.5, "feet") },
+                    "Front": { height: math.unit(164.5, "feet") },
+                    "Top": { height: math.unit(827.5, "feet") },
+                }
+            },
+            {
+                name: "Hill",
+                mass: math.unit(1590, "tons"),
+                sides: {
+                    "Side": { height: math.unit(100.2, "feet") },
+                    "Front": { height: math.unit(100.2, "feet") },
+                    "Top": { height: math.unit(306, "feet") },
+                }
+            },
+        ],
+        "Warships",
+        "")
     });
 
     return results;

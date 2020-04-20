@@ -9342,6 +9342,15 @@ const attributionData = {
                 "chemicalcrux"
             ]
         },
+        {
+            prefix: "./media/vehicles/warships",
+            all: "https://gamemodels3d.com/",
+            authors: [
+                "gamemodels3d",
+                "wargaming"
+            ]
+        },
+
     ],
     people: {
         "ahastar": {
@@ -12255,6 +12264,14 @@ const attributionData = {
         "killu": {
             "name": "Killu",
             "url": "https://twitter.com/KiilugonNSFW",
+        },
+        "gamemodels3d": {
+            "name": "gamemodels3d",
+            "url": "https://gamemodels3d.com/",
+        },
+        "wargaming": {
+            "name": "Wargaming",
+            "url": "https://wargaming.net",
         },
     }
 }
