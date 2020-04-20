@@ -20150,7 +20150,7 @@ characterMakers.push(() => makeCharacter(
     {
         side: {
             height: math.unit(15.6, "meters"),
-            weight: math.unit(150, "lb"),
+            weight: math.unit(700000, "kg"),
             name: "Side",
             image: {
                 source: "./media/characters/bunsen/side.svg",
