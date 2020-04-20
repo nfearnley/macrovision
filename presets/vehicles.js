@@ -467,7 +467,7 @@ function makeVehicles() {
                 }
             },
             {
-                name: "Enterprise CV-6",
+                name: "USS Enterprise (CV-6)",
                 mass: math.unit(32060, "tons"),
                 sides: {
                     "Side": { height: math.unit(164.5, "feet") },
@@ -476,12 +476,30 @@ function makeVehicles() {
                 }
             },
             {
-                name: "Hill",
+                name: "USS Hill",
                 mass: math.unit(1590, "tons"),
                 sides: {
                     "Side": { height: math.unit(100.2, "feet") },
                     "Front": { height: math.unit(100.2, "feet") },
                     "Top": { height: math.unit(306, "feet") },
+                }
+            },
+            {
+                name: "USS Texas",
+                mass: math.unit(32060, "tons"),
+                sides: {
+                    "Side": { height: math.unit(215.2, "feet") },
+                    "Front": { height: math.unit(215.2, "feet") },
+                    "Top": { height: math.unit(827.5, "feet") },
+                }
+            },
+            {
+                name: "U-2501",
+                mass: math.unit(1621, "tonnes"),
+                sides: {
+                    "Side": { height: math.unit(13, "meters") },
+                    "Front": { height: math.unit(13, "meters") },
+                    "Top": { height: math.unit(76.7, "meters") },
                 }
             },
         ],
