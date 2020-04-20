@@ -8832,6 +8832,45 @@ const attributionData = {
                 "stokeman"
             ]
         },
+        {
+            prefix: "./media/characters/shock-diamond/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/20268606/" }
+            ],
+            authors: [
+                "wmdiscovery93"
+            ],
+            owners: [
+                "stokeman"
+            ]
+        },
+        {
+            prefix: "./media/characters/shock-diamond/",
+            files: [
+                { name: "front-nude.svg", source: null }
+            ],
+            authors: [
+                "anonymous"
+            ],
+            owners: [
+                "stokeman"
+            ]
+        },
+        {
+            prefix: "./media/characters/rory/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35969646/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/35969646/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/35969646/" },
+                { name: "dick.svg", source: "https://www.furaffinity.net/view/35969646/" },
+            ],
+            authors: [
+                "killu"
+            ],
+            owners: [
+                "foulsbane"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12204,6 +12243,18 @@ const attributionData = {
         "thetiedtigress": {
             "name": "TheTiedTigress",
             "url": "https://www.furaffinity.net/user/thetiedtigress",
+        },
+        "wmdiscovery93": {
+            "name": "WMDiscovery93",
+            "url": "https://www.furaffinity.net/view/20268606/",
+        },
+        "foulsbane": {
+            "name": "Foulsbane",
+            "url": "https://www.furaffinity.net/user/foulsbane/",
+        },
+        "killu": {
+            "name": "Killu",
+            "url": "https://twitter.com/KiilugonNSFW",
         },
     }
 }

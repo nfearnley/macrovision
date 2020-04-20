@@ -19908,6 +19908,100 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Shock Diamond", species: "Aeromorphic Synthetic Pharaoh Hound" },
+    {
+        front: {
+            height: math.unit(22, "meters"),
+            weight: math.unit(21000, "kg"),
+            name: "Front",
+            image: {
+                source: "./media/characters/shock-diamond/front.svg",
+                extra: 2204/2053,
+                bottom: 65/2239.47
+            }
+        },
+        frontNude: {
+            height: math.unit(22, "meters"),
+            weight: math.unit(21000, "kg"),
+            name: "Front (Nude)",
+            image: {
+                source: "./media/characters/shock-diamond/front-nude.svg",
+                extra: 2514/2285,
+                bottom: 13/2527.56
+            }
+        },
+    },
+    [
+        {
+            name: "Macro",
+            height: math.unit(22, "meters")
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Rory" },
+    {
+        front: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/rory/front.svg",
+                extra: 589/556,
+                bottom: 45.7/635.76
+            }
+        },
+        side: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Side",
+            image: {
+                source: "./media/characters/rory/side.svg",
+                extra: 597/564,
+                bottom: 55/653
+            }
+        },
+        back: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/rory/back.svg",
+                extra: 620/585,
+                bottom: 8.86/630.43
+            }
+        },
+        dick: {
+            height: math.unit(0.97, "feet"),
+            name: "Dick",
+            image: {
+                source: "./media/characters/rory/dick.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(5 + 4/12, "feet"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(100, "feet")
+        },
+        {
+            name: "Macro+",
+            height: math.unit(140, "feet")
+        },
+        {
+            name: "Macro++",
+            height: math.unit(300, "feet")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
