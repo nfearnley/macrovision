@@ -1001,6 +1001,16 @@ characterMakers.push(() => makeCharacter(
 characterMakers.push(() => makeCharacter(
     { name: "Talan" },
     {
+        
+        angled: {
+            height: math.unit(2, "meter"),
+            weight: math.unit(70, "kg"),
+            name: "Angled",
+            image: {
+                source: "./media/characters/talan/angled-sfw.svg",
+                bottom: 29/3734
+            }
+        },
         angledNsfw: {
             height: math.unit(2, "meter"),
             weight: math.unit(70, "kg"),

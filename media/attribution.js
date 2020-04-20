@@ -4692,6 +4692,7 @@ const attributionData = {
         {
             prefix: "./media/characters/talan/",
             files: [
+                { name: "angled-sfw.svg", source: null },
                 { name: "angled-nsfw.svg", source: null }
             ],
             authors: [
