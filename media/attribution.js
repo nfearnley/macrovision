@@ -8906,6 +8906,19 @@ const attributionData = {
                 "sprisk"
             ]
         },
+        {
+            prefix: "./media/characters/bunsen/",
+            files: [
+                { name: "side.svg", source: null },
+                { name: "foot.svg", source: null },
+            ],
+            authors: [
+                "lunalei"
+            ],
+            owners: [
+                "bunsen-dragon"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12319,6 +12332,14 @@ const attributionData = {
         "sprisk": {
             "name": "Sprisk",
             "url": "https://twitter.com/Lost_in_Walmart",
+        },
+        "lunalei": {
+            "name": "Lunalei",
+            "url": "https://www.furaffinity.net/user/lunalei",
+        },
+        "bunsen-dragon": {
+            "name": "bunsen.dragon",
+            "url": "https://www.furaffinity.net/user/bunsen.dragon/",
         },
     }
 }

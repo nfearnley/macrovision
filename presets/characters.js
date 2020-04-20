@@ -20145,6 +20145,35 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Bunsen" },
+    {
+        side: {
+            height: math.unit(15.6, "meters"),
+            weight: math.unit(150, "lb"),
+            name: "Side",
+            image: {
+                source: "./media/characters/bunsen/side.svg",
+                extra: 1644/358
+            }
+        },
+        foot: {
+            height: math.unit(1.611*1644/358, "meter"),
+            name: "Foot",
+            image: {
+                source: "./media/characters/bunsen/foot.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(15.6, "meters"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
