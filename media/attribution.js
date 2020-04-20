@@ -4694,6 +4694,11 @@ const attributionData = {
             files: [
                 { name: "angled-sfw.svg", source: null },
                 { name: "angled-nsfw.svg", source: null },
+                { name: "front-sfw.svg", source: null },
+                { name: "front-nsfw.svg", source: null },
+                { name: "side-sfw.svg", source: null },
+                { name: "side-nsfw.svg", source: null },
+                { name: "back.svg", source: null },
                 { name: "dick-bottom.svg", source: null },
                 { name: "dick-top.svg", source: null },
                 { name: "dick-side.svg", source: null },

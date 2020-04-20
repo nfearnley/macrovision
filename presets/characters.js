@@ -1020,6 +1020,32 @@ characterMakers.push(() => makeCharacter(
                 bottom: 29/3734
             }
         },
+        frontNsfw: {
+            height: math.unit(4, "meter"),
+            weight: math.unit(150, "kg"),
+            name: "Front (NSFW)",
+            image: {
+                source: "./media/characters/talan/front-nsfw.svg",
+                bottom: 29/3734
+            }
+        },
+        sideNsfw: {
+            height: math.unit(4, "meter"),
+            weight: math.unit(150, "kg"),
+            name: "Side (NSFW)",
+            image: {
+                source: "./media/characters/talan/side-nsfw.svg",
+                bottom: 29/3734
+            }
+        },
+        back: {
+            height: math.unit(4, "meter"),
+            weight: math.unit(150, "kg"),
+            name: "Back",
+            image: {
+                source: "./media/characters/talan/back.svg"
+            }
+        },
         dickBottom: {
             height: math.unit(0.621, "meter"),
             name: "Dick (Bottom)",
