@@ -47,6 +47,10 @@ math.createUnit("stories", {
     definition: "12 feet",
     prefixes: "long"
 });
+math.createUnit("earths", {
+    definition: "12756km",
+    prefixes: "long"
+});
 math.createUnit("parsec", {
     definition: "3.086e16 meters",
     prefixes: "long"
