@@ -1140,6 +1140,16 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/buildings/city-blocks/",
+            files: [
+                { name: "manhattan.svg", source: null },
+                { name: "houston.svg", source: null },
+            ],
+            authors: [
+                "chemicalcrux"
+            ]
+        },
+        {
             prefix: "./media/cities/",
             files: [
                 { name: "city_atlanta.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},

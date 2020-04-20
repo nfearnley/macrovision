@@ -164,6 +164,18 @@ function makeBuildings() {
         )
     )
 
+    results.push(
+        makeHeight (
+            [
+                ["manhattan", 141.8, "meters"],
+                ["houston", 93, "meters"]
+            ],
+            "City Blocks",
+            "",
+            "buildings"
+        )
+    )
+
     results.sort((b1, b2) => {
         e1 = b1.constructor();
         e2 = b2.constructor();
