@@ -19950,8 +19950,8 @@ characterMakers.push(() => makeCharacter(
     { name: "Rory" },
     {
         front: {
-            height: math.unit(6, "feet"),
-            weight: math.unit(150, "lb"),
+            height: math.unit(5 + 4/12, "feet"),
+            weight: math.unit(120, "lb"),
             name: "Front",
             image: {
                 source: "./media/characters/rory/front.svg",
@@ -19959,9 +19959,19 @@ characterMakers.push(() => makeCharacter(
                 bottom: 45.7/635.76
             }
         },
+        frontNude: {
+            height: math.unit(5 + 4/12, "feet"),
+            weight: math.unit(120, "lb"),
+            name: "Front (Nude)",
+            image: {
+                source: "./media/characters/rory/front-nude.svg",
+                extra: 589/556,
+                bottom: 45.7/635.76
+            }
+        },
         side: {
-            height: math.unit(6, "feet"),
-            weight: math.unit(150, "lb"),
+            height: math.unit(5 + 4/12, "feet"),
+            weight: math.unit(120, "lb"),
             name: "Side",
             image: {
                 source: "./media/characters/rory/side.svg",
@@ -19970,8 +19980,8 @@ characterMakers.push(() => makeCharacter(
             }
         },
         back: {
-            height: math.unit(6, "feet"),
-            weight: math.unit(150, "lb"),
+            height: math.unit(5 + 4/12, "feet"),
+            weight: math.unit(120, "lb"),
             name: "Back",
             image: {
                 source: "./media/characters/rory/back.svg",
@@ -19980,7 +19990,7 @@ characterMakers.push(() => makeCharacter(
             }
         },
         dick: {
-            height: math.unit(0.97, "feet"),
+            height: math.unit(0.86, "feet"),
             name: "Dick",
             image: {
                 source: "./media/characters/rory/dick.svg"
