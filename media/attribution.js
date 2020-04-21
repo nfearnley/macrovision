@@ -5927,7 +5927,7 @@ const attributionData = {
         {
             prefix: "./media/characters/kieran/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/22902180/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/22902180/", nsfw: true}
             ],
             authors: [
                 "clovishusky"

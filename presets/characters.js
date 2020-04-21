@@ -2797,7 +2797,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/kieran/front.svg",
-                extra: 1.05
+                extra: 2694/2364,
+                bottom: 217/2908
             }
         },
         side: {
