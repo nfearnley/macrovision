@@ -7590,7 +7590,7 @@ characterMakers.push(() => makeCharacter(
             }
         },
         side: {
-            height: math.unit(5.6, "feet"),
+            height: math.unit(5.7, "feet"),
             weight: math.unit(140, "lb"),
             name: "Side",
             image: {
