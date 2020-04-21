@@ -7,13 +7,13 @@ function makeFood() {
             "Human",
             {
                 woman1: {
-                    height: math.unit(5 + 7/12, "feet"),
+                    height: math.unit(5 + 7 / 12, "feet"),
                     mass: math.unit(140, "lbs"),
                     image: { source: "./media/food/humans/woman-1.svg" },
                     name: "Woman 1"
                 },
                 man1: {
-                    height: math.unit(5 + 11/12, "feet"),
+                    height: math.unit(5 + 11 / 12, "feet"),
                     mass: math.unit(150, "lbs"),
                     image: { source: "./media/food/humans/man-1.svg" },
                     name: "Man 1"
@@ -82,10 +82,10 @@ function makeFood() {
             ["horse", 2.08, "meters", 550, "kg"],
             ["african-elephant", 3.2, "meters", 4000, "kg"]
         ],
-        "Animals",
-        "",
-        "food"
-    ));
+            "Animals",
+            "",
+            "food"
+        ));
 
     results.push(
         makeHeightWeight([
@@ -95,10 +95,10 @@ function makeFood() {
             ["tyrannosaurus", 5.2, "meters", 14e3, "kg"],
             ["velociraptor", 1.6, "meters", 15, "kg"]
         ],
-        "Dinosaurs",
-        "",
-        "food"
-    ));
+            "Dinosaurs",
+            "",
+            "food"
+        ));
 
     results.push(makeHeight(
         [
@@ -155,8 +155,8 @@ function makeFood() {
 
     results.push(makeHeightWeight(
         [
-            ["m&m", 0.5262, "inches", 43/50, "g", "./media/objects/circle.svg"],
-            ["skittle", 0.50, "inches", 53/50, "g", "./media/objects/circle.svg"],
+            ["m&m", 0.5262, "inches", 43 / 50, "g", "./media/objects/circle.svg"],
+            ["skittle", 0.50, "inches", 53 / 50, "g", "./media/objects/circle.svg"],
             ["gummy-bear", 2, "inches", 3.5, "g"],
             ["lifesaver", 0.925, "inches", 3.5, "g"],
         ],
@@ -170,7 +170,7 @@ function makeFood() {
         e2 = b2.constructor();
         return -math.subtract(e1.views[e1.defaultView].height, e2.views[e2.defaultView].height).value;
     });
-    
+
 
     return results;
 }

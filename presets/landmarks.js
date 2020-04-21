@@ -96,7 +96,7 @@ function makeLandmarks() {
         name: "Washington Monument",
         constructor: () => makeLandmark(
             "Washington Monument",
-            math.unit(555 + 5/12, "feet"),
+            math.unit(555 + 5 / 12, "feet"),
             { source: "./media/landmarks/washington-monument.svg" }
         )
     });
@@ -124,7 +124,7 @@ function makeLandmarks() {
         constructor: () => makeLandmark(
             "Leaning Tower of Pisa",
             math.unit(185.93, "feet"),
-            { source: "./media/landmarks/leaning-tower-of-pisa.svg", bottom: 84/3755 }
+            { source: "./media/landmarks/leaning-tower-of-pisa.svg", bottom: 84 / 3755 }
         )
     });
 

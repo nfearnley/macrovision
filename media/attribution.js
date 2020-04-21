@@ -1152,38 +1152,38 @@ const attributionData = {
         {
             prefix: "./media/cities/",
             files: [
-                { name: "city_atlanta.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_boston.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_calgary.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_chicago.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_columbus.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_dallas.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_detroit.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_edmonton.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_guadalajara.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_houston.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_indianapolis.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_jacksonville.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_kansas-city.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_los-angeles.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_mexico-city.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_mississauga.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_montreal.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_new-york-city.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_ottawa.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_philadelphia.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_phoenix.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_puebla.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_san-antonio.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_san-diego.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_san-francisco.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_seattle.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_st-louis.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_tijuana.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_toronto.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_vancouver.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_washington.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
-                { name: "city_winnipeg.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html"},
+                { name: "city_atlanta.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_boston.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_calgary.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_chicago.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_columbus.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_dallas.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_detroit.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_edmonton.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_guadalajara.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_houston.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_indianapolis.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_jacksonville.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_kansas-city.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_los-angeles.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_mexico-city.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_mississauga.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_montreal.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_new-york-city.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_ottawa.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_philadelphia.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_phoenix.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_puebla.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_san-antonio.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_san-diego.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_san-francisco.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_seattle.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_st-louis.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_tijuana.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_toronto.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_vancouver.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_washington.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
+                { name: "city_winnipeg.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
             ],
             authors: [
                 "freedesignfile"
@@ -2429,7 +2429,7 @@ const attributionData = {
                 { name: "front.svg", source: "https://www.furaffinity.net/view/35993069/" },
                 { name: "back.svg", source: "https://www.furaffinity.net/view/35993069/" },
                 { name: "foot.svg", source: "https://www.furaffinity.net/view/35993069/" },
-                
+
             ],
             authors: [
                 "victni"
@@ -8396,8 +8396,8 @@ const attributionData = {
         {
             prefix: "./media/characters/gabira/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/22244723/" }, 
-                { name: "back.svg", source: "https://www.furaffinity.net/view/22244723/" }, 
+                { name: "front.svg", source: "https://www.furaffinity.net/view/22244723/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/22244723/" },
             ],
             authors: [
                 "gabira"
@@ -11456,7 +11456,7 @@ const attributionData = {
         "evilwithin": {
             "name": "evilwithin",
             "url": "https://www.furaffinity.net/user/evilwithin/",
-        }, 
+        },
         "dragondruid": {
             "name": "dragondruid",
             "url": "https://www.furaffinity.net/user/dragondruid/",
@@ -12388,7 +12388,7 @@ function prepareAttribution() {
                 }
             })
         }
-        
+
     });
 }
 
@@ -12399,7 +12399,7 @@ function authorsOf(file) {
         const found = attribution.prefixes[Object.keys(attribution.prefixes).find(path => {
             return (file.indexOf(path) == 0);
         })];
-        
+
 
         if (found === undefined) {
             return undefined;
@@ -12421,7 +12421,7 @@ function authorsOfFull(file) {
         const found = attribution.prefixes[Object.keys(attribution.prefixes).find(path => {
             return (file.indexOf(path) == 0);
         })];
-        
+
 
         if (found === undefined || found.authors === undefined) {
             return undefined;
@@ -12441,7 +12441,7 @@ function ownersOf(file) {
         const found = attribution.prefixes[Object.keys(attribution.prefixes).find(path => {
             return (file.indexOf(path) == 0);
         })];
-        
+
 
         if (found === undefined) {
             return undefined;
@@ -12468,12 +12468,12 @@ function ownersOfFull(file) {
         const found = attribution.prefixes[Object.keys(attribution.prefixes).find(path => {
             return (file.indexOf(path) == 0);
         })];
-        
+
 
         if (found === undefined) {
             return undefined;
         } else if (found.owners === undefined) {
-            return [];  
+            return [];
         } else {
             found.owners.forEach(owner => {
                 result.push(attributionData.people[owner]);
@@ -12490,7 +12490,7 @@ function sourceOf(file) {
         const found = attribution.prefixes[Object.keys(attribution.prefixes).find(path => {
             return (file.indexOf(path) == 0);
         })];
-        
+
 
         if (found === undefined) {
             return undefined;

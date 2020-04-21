@@ -28,7 +28,7 @@ speciesMakers["Synx"] = () => {
                 name: "Synx",
                 image: {
                     source: "./media/species/synx/synx.svg",
-                    extra: 8.06/6.6,
+                    extra: 8.06 / 6.6,
                     bottom: 0.05
                 }
             },
@@ -38,13 +38,13 @@ speciesMakers["Synx"] = () => {
                 name: "Weeper",
                 image: {
                     source: "./media/species/synx/weeper.svg",
-                    extra: 8.04/7.5,
+                    extra: 8.04 / 7.5,
                     bottom: 0.05
                 }
             },
         },
         [
-            
+
         ]
     );
 

@@ -68,8 +68,8 @@ function makeAircraft() {
     ],
 
 
-    sides = {}
-    const sorted = options.sort((a,b) => a[1]-b[1])
+        sides = {}
+    const sorted = options.sort((a, b) => a[1] - b[1])
 
     sorted.forEach(plane => {
         sides[plane[0] + " (Side)"] = {
@@ -102,23 +102,23 @@ function makeAircraft() {
 
     entity.sizes.push({
         name: "1:72",
-        height: math.unit(sorted[0][2]/72, "meters")
+        height: math.unit(sorted[0][2] / 72, "meters")
     });
     entity.sizes.push({
         name: "1:24",
-        height: math.unit(sorted[0][2]/24, "meters")
+        height: math.unit(sorted[0][2] / 24, "meters")
     });
     entity.sizes.push({
         name: "1:16",
-        height: math.unit(sorted[0][2]/16, "meters")
+        height: math.unit(sorted[0][2] / 16, "meters")
     });
     entity.sizes.push({
         name: "1:8",
-        height: math.unit(sorted[0][2]/8, "meters")
+        height: math.unit(sorted[0][2] / 8, "meters")
     });
     entity.sizes.push({
         name: "1:4",
-        height: math.unit(sorted[0][2]/4, "meters")
+        height: math.unit(sorted[0][2] / 4, "meters")
     });
     entity.sizes.push({
         name: "1",
@@ -137,7 +137,7 @@ function makeCars() {
         ["Ford F-150", 5.89, 1.92, 1950, 1, 1, 1]
     ]
     sides = {}
-    const sorted = options.sort((a,b) => a[1]-b[1])
+    const sorted = options.sort((a, b) => a[1] - b[1])
 
     sorted.forEach(car => {
         sides[car[0] + " (Front)"] = {
@@ -147,7 +147,7 @@ function makeCars() {
             mass: math.unit(car[3], "kg"),
             image: { source: "./media/vehicles/cars/car_" + car[0].replace(/ /g, "-").toLowerCase() + "-front.svg", extra: car[4] }
         };
-        
+
         sides[car[0] + " (Side)"] = {
             name: car[0] + " (Side)",
             rename: true,
@@ -169,23 +169,23 @@ function makeCars() {
 
     entity.sizes.push({
         name: "1:72",
-        height: math.unit(sorted[0][2]/72, "meters")
+        height: math.unit(sorted[0][2] / 72, "meters")
     });
     entity.sizes.push({
         name: "1:24",
-        height: math.unit(sorted[0][2]/24, "meters")
+        height: math.unit(sorted[0][2] / 24, "meters")
     });
     entity.sizes.push({
         name: "1:16",
-        height: math.unit(sorted[0][2]/16, "meters")
+        height: math.unit(sorted[0][2] / 16, "meters")
     });
     entity.sizes.push({
         name: "1:8",
-        height: math.unit(sorted[0][2]/8, "meters")
+        height: math.unit(sorted[0][2] / 8, "meters")
     });
     entity.sizes.push({
         name: "1:4",
-        height: math.unit(sorted[0][2]/4, "meters")
+        height: math.unit(sorted[0][2] / 4, "meters")
     });
     entity.sizes.push({
         name: "1",
@@ -212,7 +212,7 @@ function makeBuses() {
             mass: math.unit(bus[3], "kg"),
             image: { source: "./media/vehicles/buses/bus_" + bus[0].replace(/ /g, "-").toLowerCase() + "-front.svg", extra: bus[4] }
         };
-        
+
         sides[bus[0] + " (Side)"] = {
             name: bus[0] + " (Side)",
             rename: true,
@@ -234,23 +234,23 @@ function makeBuses() {
 
     entity.sizes.push({
         name: "1:72",
-        height: math.unit(options[0][2]/72, "meters")
+        height: math.unit(options[0][2] / 72, "meters")
     });
     entity.sizes.push({
         name: "1:24",
-        height: math.unit(options[0][2]/24, "meters")
+        height: math.unit(options[0][2] / 24, "meters")
     });
     entity.sizes.push({
         name: "1:16",
-        height: math.unit(options[0][2]/16, "meters")
+        height: math.unit(options[0][2] / 16, "meters")
     });
     entity.sizes.push({
         name: "1:8",
-        height: math.unit(options[0][2]/8, "meters")
+        height: math.unit(options[0][2] / 8, "meters")
     });
     entity.sizes.push({
         name: "1:4",
-        height: math.unit(options[0][2]/4, "meters")
+        height: math.unit(options[0][2] / 4, "meters")
     });
     entity.sizes.push({
         name: "1",
@@ -284,23 +284,23 @@ function makeVehicleGroup(info, name, prefix) {
 
     entity.sizes.push({
         name: "1:72",
-        height: math.unit(math.divide(defaultHeight,72))
+        height: math.unit(math.divide(defaultHeight, 72))
     });
     entity.sizes.push({
         name: "1:24",
-        height: math.unit(math.divide(defaultHeight,24))
+        height: math.unit(math.divide(defaultHeight, 24))
     });
     entity.sizes.push({
         name: "1:16",
-        height: math.unit(math.divide(defaultHeight,16))
+        height: math.unit(math.divide(defaultHeight, 16))
     });
     entity.sizes.push({
         name: "1:8",
-        height: math.unit(math.divide(defaultHeight,8))
+        height: math.unit(math.divide(defaultHeight, 8))
     });
     entity.sizes.push({
         name: "1:4",
-        height: math.unit(math.divide(defaultHeight,4))
+        height: math.unit(math.divide(defaultHeight, 4))
     });
 
     return entity;
@@ -336,7 +336,7 @@ function makeVehicles() {
             {
                 side: {
                     name: "Side",
-                    height: math.unit(883*1114/4250, "feet"),
+                    height: math.unit(883 * 1114 / 4250, "feet"),
                     image: { source: "./media/vehicles/titanic.svg" },
                 },
                 sideVertical: {
@@ -398,22 +398,22 @@ function makeVehicles() {
             }
         )
     });
-    
+
     results.push({
         name: "Aircraft",
         constructor: () => makeAircraft()
     });
-    
+
     results.push({
         name: "Cars",
         constructor: () => makeCars()
     });
-    
+
     results.push({
         name: "Buses",
         constructor: () => makeBuses()
     });
-    
+
     results.push({
         name: "Trains",
         constructor: () => makeVehicleGroup([
@@ -437,23 +437,23 @@ function makeVehicles() {
                 name: "3250 Cubic Ft Hopper",
                 mass: math.unit(52000, "lbs"),
                 sides: {
-                    "Side": { height: math.unit(15 + 3/12, "feet") },
-                    "Front": { height: math.unit(15 + 3/12, "feet") },
+                    "Side": { height: math.unit(15 + 3 / 12, "feet") },
+                    "Front": { height: math.unit(15 + 3 / 12, "feet") },
                 }
             },
             {
                 name: "28600 Gallon Tank Car",
                 mass: math.unit(93000, "lbs"),
                 sides: {
-                    "Side": { height: math.unit(15 + 5.7/12, "feet") },
-                    "Front": { height: math.unit(15 + 5.7/12, "feet") },
+                    "Side": { height: math.unit(15 + 5.7 / 12, "feet") },
+                    "Front": { height: math.unit(15 + 5.7 / 12, "feet") },
                 }
             }
         ],
-        "Trains",
-        "train")
-    });    
-    
+            "Trains",
+            "train")
+    });
+
     results.push({
         name: "Warships",
         constructor: () => makeVehicleGroup([
@@ -512,8 +512,8 @@ function makeVehicles() {
                 }
             },
         ],
-        "Warships",
-        "")
+            "Warships",
+            "")
     });
 
     return results;

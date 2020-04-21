@@ -1,6 +1,3 @@
-
-
-
 function makeObject(name, viewInfo) {
     views = {};
 
@@ -42,13 +39,13 @@ function addShoeView(object, name, points) {
     }
 }
 
-function makeHeight(info, category, prefix="", type="objects") {
+function makeHeight(info, category, prefix = "", type = "objects") {
     const views = {};
 
 
     info.forEach(object => {
         let src;
-    
+
         // this lets us provide our own source if needed
         // useful for reusing existing art
         if (object[3]) {
@@ -73,7 +70,7 @@ function makeHeight(info, category, prefix="", type="objects") {
     }
 }
 
-function makeHeightWeight(info, category, prefix="", type="objects") {
+function makeHeightWeight(info, category, prefix = "", type = "objects") {
     const views = {};
     info.forEach(object => {
         let src;
@@ -196,7 +193,7 @@ function makeObjects() {
             "Shot Glass",
             {
                 glass: {
-                    height: math.unit(2 + 3/8, "inches"),
+                    height: math.unit(2 + 3 / 8, "inches"),
                     mass: math.unit(75, "g"),
                     image: { source: "./media/objects/shot-glass.svg" },
                     name: "Bottle"
@@ -455,15 +452,15 @@ function makeObjects() {
             }
         )
     })
-    
+
     results.push(makeHeight(
         [
             ["king", 4, "inches"],
-            ["queen", 351/407*4, "inches"],
-            ["bishop", 340/407*4, "inches"],
-            ["knight", 309/407*4, "inches"],
-            ["rook", 271/407*4, "inches"],
-            ["pawn", 197/407*4, "inches"],
+            ["queen", 351 / 407 * 4, "inches"],
+            ["bishop", 340 / 407 * 4, "inches"],
+            ["knight", 309 / 407 * 4, "inches"],
+            ["rook", 271 / 407 * 4, "inches"],
+            ["pawn", 197 / 407 * 4, "inches"],
         ],
         "Chess Pieces",
         "chess_"
@@ -556,7 +553,7 @@ function makeObjects() {
                     name: value.name,
                     rename: true
                 }
-        
+
                 if (value.mass) {
                     views[key].attributes.mass = {
                         name: "Mass",
@@ -566,7 +563,7 @@ function makeObjects() {
                     };
                 }
             });
-        
+
             return makeEntity({ name: "Strand" }, views);
         }
     })
@@ -586,13 +583,13 @@ function makeObjects() {
         "cell_"
     ))
 
-    
+
     results.sort((b1, b2) => {
         e1 = b1.constructor();
         e2 = b2.constructor();
         return -math.subtract(e1.views[e1.defaultView].height, e2.views[e2.defaultView].height).value;
     });
-    
+
 
     return results;
 }

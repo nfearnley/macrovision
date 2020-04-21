@@ -153,7 +153,7 @@ function makeBuildings() {
     )
 
     results.push(
-        makeHeight (
+        makeHeight(
             [
                 ["residential", 12, "feet"],
                 ["freeway", 50, "feet"]
@@ -165,7 +165,7 @@ function makeBuildings() {
     )
 
     results.push(
-        makeHeight (
+        makeHeight(
             [
                 ["manhattan", 141.8, "meters"],
                 ["houston", 93, "meters"]

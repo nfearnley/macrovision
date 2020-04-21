@@ -28,7 +28,7 @@ function makeFiction() {
         )
     });
 
-    
+
     results.sort((b1, b2) => {
         e1 = b1.constructor();
         e2 = b2.constructor();

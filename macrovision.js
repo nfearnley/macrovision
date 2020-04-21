@@ -195,7 +195,7 @@ function updateEntityElement(entity, element) {
     element.style.left = position.x + "px";
     element.style.top = position.y + "px";
     element.style.setProperty("--xpos", position.x + "px");
-    element.style.setProperty("--entity-height", "'" + entity.views[view].height.to(config.height.units[0].unit.name).format({precision: 2}) + "'");
+    element.style.setProperty("--entity-height", "'" + entity.views[view].height.to(config.height.units[0].unit.name).format({ precision: 2 }) + "'");
     const pixels = math.divide(entity.views[view].height, config.height) * (canvasHeight - 50);
     const extra = entity.views[view].image.extra;
     const bottom = entity.views[view].image.bottom;
@@ -206,7 +206,7 @@ function updateEntityElement(entity, element) {
     if (entity.views[view].rename)
         element.querySelector(".entity-name").innerText = entity.name == "" ? "" : entity.views[view].name;
     else
-    element.querySelector(".entity-name").innerText = entity.name;
+        element.querySelector(".entity-name").innerText = entity.name;
 
     const bottomName = document.querySelector("#bottom-name-" + element.dataset.key);
 
@@ -238,7 +238,7 @@ function updateSizes(dirtyOnly = false) {
         } else {
             return e1[1].views[e1[1].view].height.value - e2[1].views[e2[1].view].height.value
         }
-        
+
     });
 
     let zIndex = ordered.length;
@@ -256,7 +256,7 @@ function updateSizes(dirtyOnly = false) {
 
 }
 
-function drawScale(ifDirty=false) {
+function drawScale(ifDirty = false) {
     if (ifDirty && !worldSizeDirty)
         return;
     function drawTicks(/** @type {CanvasRenderingContext2D} */ ctx, pixelsPer, heightPer) {
@@ -538,7 +538,7 @@ function deselect() {
     clearViewList();
     clearEntityOptions();
     clearViewOptions();
-    
+
     document.querySelector("#delete-entity").disabled = true;
 
     document.querySelector("#grow").disabled = true;
@@ -554,13 +554,13 @@ function select(target) {
     document.getElementById("options-selected-entity-" + target.dataset.key).selected = "selected";
 
     selected.classList.add("selected");
-    
+
     displayAttribution(selectedEntity.views[selectedEntity.view].image.source);
 
     configViewList(selectedEntity, selectedEntity.view);
     configEntityOptions(selectedEntity, selectedEntity.view);
     configViewOptions(selectedEntity, selectedEntity.view);
-    
+
     document.querySelector("#delete-entity").disabled = false;
 
     document.querySelector("#grow").disabled = false;
@@ -605,7 +605,7 @@ function updateWorldOptions(entity, view) {
 
 function configEntityOptions(entity, view) {
     const holder = document.querySelector("#options-entity");
-    
+
     document.querySelector("#entity-category-header").style.display = "block";
     document.querySelector("#entity-category").style.display = "block";
 
@@ -687,10 +687,10 @@ function configEntityOptions(entity, view) {
             entity.dirty = true;
             updateEntityOptions(entity, entity.view);
             updateViewOptions(entity, entity.view);
-            if (!checkFitWorld()){
+            if (!checkFitWorld()) {
                 updateSizes(true);
             }
-            
+
         });
 
         defaultHolder.appendChild(button);
@@ -722,7 +722,7 @@ function clearEntityOptions() {
 
 function configViewOptions(entity, view) {
     const holder = document.querySelector("#options-view");
-    
+
     document.querySelector("#view-category-header").style.display = "block";
     document.querySelector("#view-category").style.display = "block";
 
@@ -778,7 +778,7 @@ function configViewOptions(entity, view) {
 
         select.setAttribute("oldUnit", select.value);
 
-            // TODO does this ever cause a change in the world?
+        // TODO does this ever cause a change in the world?
         select.addEventListener("input", e => {
             const value = input.value == 0 ? 1 : input.value;
             const oldUnit = select.getAttribute("oldUnit");
@@ -809,7 +809,7 @@ function updateViewOptions(entity, view, changed) {
         if (key != changed) {
             const input = document.querySelector("#options-view-" + key + "-input");
             const select = document.querySelector("#options-view-" + key + "-select");
-            
+
             const currentUnit = select.value;
             const convertedAmount = entity.views[view][key].toNumber(currentUnit);
             setNumericInput(input, convertedAmount);
@@ -818,7 +818,7 @@ function updateViewOptions(entity, view, changed) {
     });
 }
 
-function setNumericInput(input, value, round=3) {
+function setNumericInput(input, value, round = 3) {
     input.value = math.round(value, round);
 }
 
@@ -1045,9 +1045,9 @@ function checkEntity(entity) {
     });
 }
 
-function displayEntity(entity, view, x, y, selectEntity=false, refresh=false) {
+function displayEntity(entity, view, x, y, selectEntity = false, refresh = false) {
     checkEntity(entity);
-    
+
     const box = document.createElement("div");
     box.classList.add("entity-box");
 
@@ -1056,7 +1056,7 @@ function displayEntity(entity, view, x, y, selectEntity=false, refresh=false) {
     img.addEventListener("dragstart", e => {
         e.preventDefault();
     });
-    
+
     const nameTag = document.createElement("div");
     nameTag.classList.add("entity-name");
     nameTag.innerText = entity.name;
@@ -1093,7 +1093,7 @@ function displayEntity(entity, view, x, y, selectEntity=false, refresh=false) {
     box.id = "entity-" + entityIndex;
     box.dataset.key = entityIndex;
     entity.view = view;
-    
+
     entity.priority = 0;
     entities[entityIndex] = entity;
     entity.index = entityIndex;
@@ -1118,7 +1118,7 @@ function displayEntity(entity, view, x, y, selectEntity=false, refresh=false) {
     topName.addEventListener("click", () => select(box));
 
     world.appendChild(topName);
-    
+
     const entityOption = document.createElement("option");
     entityOption.id = "options-selected-entity-" + entityIndex;
     entityOption.value = entityIndex;
@@ -1154,17 +1154,17 @@ window.onfocus = function () {
 function toggleFullScreen() {
     var doc = window.document;
     var docEl = doc.documentElement;
-  
+
     var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
     var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
-  
-    if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
-      requestFullScreen.call(docEl);
+
+    if (!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+        requestFullScreen.call(docEl);
     }
     else {
-      cancelFullScreen.call(doc);
+        cancelFullScreen.call(doc);
     }
-  }
+}
 
 function handleResize() {
     const oldCanvasWidth = canvasWidth;
@@ -1173,7 +1173,7 @@ function handleResize() {
     canvasHeight = document.querySelector("#display").clientHeight - 50;
 
     const change = oldCanvasWidth / canvasWidth;
-    
+
     doHorizReposition(change);
 
     updateSizes();
@@ -1262,7 +1262,7 @@ function prepareMenu() {
             button.classList.add("menu-button");
             const icon = document.createElement("i");
             icon.classList.add(...entry.icon.split(" "));
-            
+
             if (entry.rotates) {
                 icon.classList.add("rotate-backward", "transitions");
             }
@@ -1318,7 +1318,7 @@ function setHelpDate() {
 
 function doScroll() {
     document.querySelectorAll(".entity-box").forEach(element => {
-        element.dataset.x = parseFloat(element.dataset.x) + scrollDirection/180;
+        element.dataset.x = parseFloat(element.dataset.x) + scrollDirection / 180;
     });
     updateSizes();
     scrollDirection *= 1.05;
@@ -1335,7 +1335,7 @@ function doSize() {
     if (selected) {
         const entity = entities[selected.dataset.key];
         const oldHeight = entity.views[entity.view].height;
-        entity.views[entity.view].height = math.multiply(oldHeight, 1 + sizeDirection/20);
+        entity.views[entity.view].height = math.multiply(oldHeight, 1 + sizeDirection / 20);
         entity.dirty = true;
         updateEntityOptions(entity, entity.view);
         updateViewOptions(entity, entity.view);
@@ -1347,7 +1347,7 @@ function doSize() {
 
         console.log(ownHeight, worldHeight)
         if (ownHeight > worldHeight) {
-             setWorldHeight(config.height, entity.views[entity.view].height)
+            setWorldHeight(config.height, entity.views[entity.view].height)
         } else if (ownHeight * 10 < worldHeight) {
             setWorldHeight(config.height, math.multiply(entity.views[entity.view].height, 10));
         }
@@ -1379,7 +1379,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("click", e => {
         document.querySelector("#popout-menu").classList.remove("visible");
     });
-    
+
     window.addEventListener("unload", () => saveScene("autosave"));
     document.querySelector("#options-selected-entity").addEventListener("input", e => {
         if (e.target.value == "none") {
@@ -1387,7 +1387,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             select(document.querySelector("#entity-" + e.target.value));
         }
-        
+
     });
 
     document.querySelector("#menu-toggle-sidebar").addEventListener("click", e => {
@@ -1522,7 +1522,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (param === null) {
         scenes["Default"]();
     }
-        
+
     else {
         try {
             const data = JSON.parse(b64DecodeUnicode(param));
@@ -1546,7 +1546,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (shiftHeld) {
             if (selected) {
-                const dir = e.deltaY > 0 ? 10/11 : 11/10;
+                const dir = e.deltaY > 0 ? 10 / 11 : 11 / 10;
                 const entity = entities[selected.dataset.key];
                 entity.views[entity.view].height = math.multiply(entity.views[entity.view].height, dir);
                 entity.dirty = true;
@@ -1561,7 +1561,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
         } else {
-            const dir = e.deltaY < 0 ? 10/11 : 11/10;
+            const dir = e.deltaY < 0 ? 10 / 11 : 11 / 10;
             setWorldHeight(config.height, math.multiply(config.height, dir));
             updateWorldOptions();
         }
@@ -1587,7 +1587,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#entity-view").addEventListener("input", e => {
         const entity = entities[selected.dataset.key];
         entity.view = e.target.value;
-        
+
         const image = entities[selected.dataset.key].views[e.target.value].image;
         selected.querySelector(".entity-image").src = image.source;
 
@@ -1608,7 +1608,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#menu-clear").addEventListener("click", e => {
         removeAllEntities();
     });
-    
+
     document.querySelector("#delete-entity").disabled = true;
     document.querySelector("#delete-entity").addEventListener("click", e => {
         if (selected) {
@@ -1636,28 +1636,28 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#scroll-left").addEventListener("mousedown", e => {
         scrollDirection = 1;
         clearInterval(scrollHandle);
-        scrollHandle = setInterval(doScroll, 1000/20);
+        scrollHandle = setInterval(doScroll, 1000 / 20);
         e.stopPropagation();
     });
 
     document.querySelector("#scroll-right").addEventListener("mousedown", e => {
         scrollDirection = -1;
         clearInterval(scrollHandle);
-        scrollHandle = setInterval(doScroll, 1000/20);
+        scrollHandle = setInterval(doScroll, 1000 / 20);
         e.stopPropagation();
     });
 
     document.querySelector("#scroll-left").addEventListener("touchstart", e => {
         scrollDirection = 1;
         clearInterval(scrollHandle);
-        scrollHandle = setInterval(doScroll, 1000/20);
+        scrollHandle = setInterval(doScroll, 1000 / 20);
         e.stopPropagation();
     });
 
     document.querySelector("#scroll-right").addEventListener("touchstart", e => {
         scrollDirection = -1;
         clearInterval(scrollHandle);
-        scrollHandle = setInterval(doScroll, 1000/20);
+        scrollHandle = setInterval(doScroll, 1000 / 20);
         e.stopPropagation();
     });
 
@@ -1674,28 +1674,28 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#zoom-in").addEventListener("mousedown", e => {
         zoomDirection = -1;
         clearInterval(zoomHandle);
-        zoomHandle = setInterval(doZoom, 1000/20);
+        zoomHandle = setInterval(doZoom, 1000 / 20);
         e.stopPropagation();
     });
 
     document.querySelector("#zoom-out").addEventListener("mousedown", e => {
         zoomDirection = 1;
         clearInterval(zoomHandle);
-        zoomHandle = setInterval(doZoom, 1000/20);
+        zoomHandle = setInterval(doZoom, 1000 / 20);
         e.stopPropagation();
     });
 
     document.querySelector("#zoom-in").addEventListener("touchstart", e => {
         zoomDirection = -1;
         clearInterval(zoomHandle);
-        zoomHandle = setInterval(doZoom, 1000/20);
+        zoomHandle = setInterval(doZoom, 1000 / 20);
         e.stopPropagation();
     });
 
     document.querySelector("#zoom-out").addEventListener("touchstart", e => {
         zoomDirection = 1;
         clearInterval(zoomHandle);
-        zoomHandle = setInterval(doZoom, 1000/20);
+        zoomHandle = setInterval(doZoom, 1000 / 20);
         e.stopPropagation();
     });
 
@@ -1712,28 +1712,28 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#shrink").addEventListener("mousedown", e => {
         sizeDirection = -1;
         clearInterval(sizeHandle);
-        sizeHandle = setInterval(doSize, 1000/20);
+        sizeHandle = setInterval(doSize, 1000 / 20);
         e.stopPropagation();
     });
 
     document.querySelector("#grow").addEventListener("mousedown", e => {
         sizeDirection = 1;
         clearInterval(sizeHandle);
-        sizeHandle = setInterval(doSize, 1000/20);
+        sizeHandle = setInterval(doSize, 1000 / 20);
         e.stopPropagation();
     });
 
     document.querySelector("#shrink").addEventListener("touchstart", e => {
         sizeDirection = -1;
         clearInterval(sizeHandle);
-        sizeHandle = setInterval(doSize, 1000/20);
+        sizeHandle = setInterval(doSize, 1000 / 20);
         e.stopPropagation();
     });
 
     document.querySelector("#grow").addEventListener("touchstart", e => {
         sizeDirection = 1;
         clearInterval(sizeHandle);
-        sizeHandle = setInterval(doSize, 1000/20);
+        sizeHandle = setInterval(doSize, 1000 / 20);
         e.stopPropagation();
     });
 
@@ -1889,7 +1889,7 @@ function prepareEntities() {
         button.id = "create-entity-" + category + "-button";
 
         button.innerHTML = "<i class=\"far fa-plus-square\"></i>";
-        
+
         button.addEventListener("click", e => {
             const newEntity = entityList[select.value].constructor()
             displayEntity(newEntity, newEntity.defaultView, 0.5, 1, true, true);
@@ -1911,7 +1911,7 @@ function prepareEntities() {
     });
 
     console.log("Loaded " + Object.keys(availableEntitiesByName).length + " entities");
-    
+
     categorySelect.addEventListener("input", e => {
         const oldSelect = document.querySelector("select.category-visible");
         oldSelect.classList.remove("category-visible");
@@ -1987,7 +1987,7 @@ const fitModes = {
     }
 }
 
-function fitWorld(manual=false, factor=1.1) {
+function fitWorld(manual = false, factor = 1.1) {
     const fitMode = fitModes[config.autoFitMode]
     let max = fitMode.start
 
@@ -2045,7 +2045,7 @@ function setWorldHeight(oldHeight, newHeight) {
     updateSizes();
 }
 
-function loadScene(name="default") {
+function loadScene(name = "default") {
     try {
         const data = JSON.parse(localStorage.getItem("macrovision-save-" + name));
         if (data === null) {
@@ -2060,7 +2060,7 @@ function loadScene(name="default") {
     }
 }
 
-function saveScene(name="default") {
+function saveScene(name = "default") {
     try {
         const string = JSON.stringify(exportScene());
         localStorage.setItem("macrovision-save-" + name, string);
@@ -2070,10 +2070,10 @@ function saveScene(name="default") {
     }
 }
 
-function deleteScene(name="default") {
+function deleteScene(name = "default") {
     try {
         localStorage.removeItem("macrovision-save-" + name)
-    } catch(err) {
+    } catch (err) {
         console.error(err);
     }
 }
@@ -2117,12 +2117,12 @@ function b64EncodeUnicode(str) {
     return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g,
         function toSolidBytes(match, p1) {
             return String.fromCharCode('0x' + p1);
-    }));
+        }));
 }
 
 function b64DecodeUnicode(str) {
     // Going backwards: from bytestream, to percent-encoding, to original string.
-    return decodeURIComponent(atob(str).split('').map(function(c) {
+    return decodeURIComponent(atob(str).split('').map(function (c) {
         return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
     }).join(''));
 }
