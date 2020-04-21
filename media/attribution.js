@@ -8931,6 +8931,32 @@ const attributionData = {
                 "seshormerow"
             ]
         },
+        {
+            prefix: "./media/characters/pepper/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/24315127/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/24315127/" },
+                { name: "maw.svg", source: "https://www.furaffinity.net/view/24315127/" },
+            ],
+            authors: [
+                "corriezodori"
+            ],
+            owners: [
+                "corriezodori"
+            ]
+        },
+        {
+            prefix: "./media/characters/maelstrom/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/27381934/" }
+            ],
+            authors: [
+                "corriezodori"
+            ],
+            owners: [
+                "corriezodori"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12360,6 +12386,10 @@ const attributionData = {
         "seshormerow": {
             "name": "seshormerow",
             "url": "https://www.furaffinity.net/user/seshormerow/",
+        },
+        "corriezodori": {
+            "name": "CorrieZodori",
+            "url": "https://www.furaffinity.net/user/corriezodori",
         },
     }
 }

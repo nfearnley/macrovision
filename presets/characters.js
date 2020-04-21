@@ -20231,6 +20231,76 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Pepper" },
+    {
+        front: {
+            height: math.unit(9, "feet"),
+            weight: math.unit(350, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/pepper/front.svg",
+                extra: 1448/1312,
+                bottom: 9.4/1457.88
+            }
+        },
+        back: {
+            height: math.unit(9, "feet"),
+            weight: math.unit(350, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/pepper/back.svg",
+                extra: 1423/1300,
+                bottom: 4.6/1429
+            }
+        },
+        maw: {
+            height: math.unit(0.932, "feet"),
+            name: "Maw",
+            image: {
+                source: "./media/characters/pepper/maw.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(9, "feet"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Maelstrom" },
+    {
+        front: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/maelstrom/front.svg",
+                extra: 2100/1883,
+                bottom: 94/2196.7
+            }
+        },
+    },
+    [
+        {
+            name: "Less Kaiju",
+            height: math.unit(200, "feet")
+        },
+        {
+            name: "Kaiju",
+            height: math.unit(400, "feet"),
+            default: true
+        },
+        {
+            name: "Kaiju-er",
+            height: math.unit(600, "feet")
+        },
+    ]
+))
 //characters
 
 function makeCharacters() {
