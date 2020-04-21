@@ -8919,6 +8919,18 @@ const attributionData = {
                 "bunsen-dragon"
             ]
         },
+        {
+            prefix: "./media/characters/sesh/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33932659" }
+            ],
+            authors: [
+                "ritsukaxan"
+            ],
+            owners: [
+                "seshormerow"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12340,6 +12352,14 @@ const attributionData = {
         "bunsen-dragon": {
             "name": "bunsen.dragon",
             "url": "https://www.furaffinity.net/user/bunsen.dragon/",
+        },
+        "ritsukaxan": {
+            "name": "ritsukaxan",
+            "url": "https://www.furaffinity.net/user/ritsukaxan",
+        },
+        "seshormerow": {
+            "name": "seshormerow",
+            "url": "https://www.furaffinity.net/user/seshormerow/",
         },
     }
 }

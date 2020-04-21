@@ -20178,6 +20178,57 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Sesh" },
+    {
+        front: {
+            height: math.unit(4 + 11/12, "feet"),
+            weight: math.unit(140, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/sesh/front.svg",
+                extra: 3420/3231,
+                bottom: 72/3949.5
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(4 + 11/12, "feet")
+        },
+        {
+            name: "Grown",
+            height: math.unit(15, "feet"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(1500, "feet")
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(30, "miles")
+        },
+        {
+            name: "Continental",
+            height: math.unit(3000, "miles")
+        },
+        {
+            name: "Gravity Mass",
+            height: math.unit(300000, "miles")
+        },
+        {
+            name: "Planet Buster",
+            height: math.unit(30000000, "miles")
+        },
+        {
+            name: "Big",
+            height: math.unit(3000000000, "miles")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
