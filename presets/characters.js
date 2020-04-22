@@ -5270,7 +5270,8 @@ characterMakers.push(() => makeCharacter(
             weight: math.unit(65, "kg"),
             name: "Front",
             image: {
-                source: "./media/characters/rook/front.svg"
+                source: "./media/characters/rook/front.svg",
+                extra: 960/950
             }
         }
     },
