@@ -1845,11 +1845,77 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#menu-load-autosave").addEventListener("click", e => {
         loadScene("autosave");
     });
+
+    document.addEventListener("paste", e => {
+
+        let index = 0;
+        let item = null;
+        let found = false;
+
+        for (; index < e.clipboardData.items.length; index++) {
+            item = e.clipboardData.items[index];
+            if (item.type == "image/png") {
+                found = true;
+                break;
+            }
+        }
+
+        if (!found) {
+            return;
+        }
+        
+        console.log(item)
+        console.log(item.type)
+
+        let url = null;
+
+        const file = item.getAsFile();
+
+        file.arrayBuffer().then(buf => {
+            arr = new Uint8Array(buf);
+            blob = new Blob([arr], {type: file.type });
+            url = window.URL.createObjectURL(blob)
+            makeCustomEntity(url);
+        });
+        
+        
+    });
     clearEntityOptions();
     clearViewOptions();
     clearAttribution();
 });
 
+function makeCustomEntity(url) {
+    const maker = createEntityMaker(
+        {
+            name: "Custom Entity"
+        },
+        {
+            custom: {
+                attributes: {
+                    height: {
+                        name: "Height",
+                        power: 1,
+                        type: "length",
+                        base: math.unit(6, "feet")
+                    }
+                },
+                image: {
+                    source: url
+                },
+                name: "Image",
+                info: {},
+                rename: false
+            }
+        },
+        []
+    );
+
+    const entity = maker.constructor();
+
+    entity.ephemeral = true;
+    displayEntity(entity, "custom", 0.5, 0.5, true, true);
+}
 function prepareEntities() {
     availableEntities["buildings"] = makeBuildings();
     availableEntities["characters"] = makeCharacters();
@@ -2082,7 +2148,7 @@ function exportScene() {
 
     results.entities = [];
 
-    Object.entries(entities).forEach(([key, entity]) => {
+    Object.entries(entities).filter(([key, entity]) => entity.ephemeral !== true).forEach(([key, entity]) => {
         const element = document.querySelector("#entity-" + key);
         results.entities.push({
             name: entity.identifier,
