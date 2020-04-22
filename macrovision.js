@@ -1871,21 +1871,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const file = item.getAsFile();
 
-        file.arrayBuffer().then(buf => {
-            arr = new Uint8Array(buf);
-            blob = new Blob([arr], {type: file.type });
-            url = window.URL.createObjectURL(blob)
-            makeCustomEntity(url);
-        });
-        
-        
+        customEntityFromFile(file);
     });
+
+    document.querySelector("#world").addEventListener("dragover", e => {
+        e.preventDefault();
+    })
+
+    document.querySelector("#world").addEventListener("drop", e => {
+        e.preventDefault();
+        if (e.dataTransfer.files.length > 0) {
+            let entX = document.querySelector("#entities").getBoundingClientRect().x;
+            let entY = document.querySelector("#entities").getBoundingClientRect().y;
+            let coords = abs2rel({x: e.clientX-entX, y: e.clientY-entY});
+            customEntityFromFile(e.dataTransfer.files[0], coords.x, coords.y);
+        }
+    })
     clearEntityOptions();
     clearViewOptions();
     clearAttribution();
 });
 
-function makeCustomEntity(url) {
+function customEntityFromFile(file, x=0.5, y=0.5) {
+    file.arrayBuffer().then(buf => {
+        arr = new Uint8Array(buf);
+        blob = new Blob([arr], {type: file.type });
+        url = window.URL.createObjectURL(blob)
+        makeCustomEntity(url, x, y);
+    });
+}
+
+function makeCustomEntity(url, x=0.5, y=0.5) {
     const maker = createEntityMaker(
         {
             name: "Custom Entity"
@@ -1914,7 +1930,7 @@ function makeCustomEntity(url) {
     const entity = maker.constructor();
 
     entity.ephemeral = true;
-    displayEntity(entity, "custom", 0.5, 0.5, true, true);
+    displayEntity(entity, "custom", x, y, true, true);
 }
 function prepareEntities() {
     availableEntities["buildings"] = makeBuildings();
