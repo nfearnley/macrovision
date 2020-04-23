@@ -20475,6 +20475,13 @@ characterMakers.push(() => makeCharacter(
                 bottom: 85.4/2480
             }
         },
+        tail: {
+            height: math.unit(42, "feet"),
+            name: "Tail",
+            image: {
+                source: "./media/characters/erza-bear/tail.svg"
+            }
+        },
         tongue: {
             height: math.unit(8, "feet"),
             name: "Tongue",

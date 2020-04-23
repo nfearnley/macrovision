@@ -9008,6 +9008,7 @@ const attributionData = {
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/35871421/", nsfw:true },
                 { name: "back.svg", source: "https://www.furaffinity.net/view/35871421/" },
+                { name: "tail.svg", source: "https://www.furaffinity.net/view/35871421/" },
                 { name: "tongue.svg", source: "https://www.furaffinity.net/view/35871421/" },
                 { name: "dick.svg", source: "https://www.furaffinity.net/view/35871421/", nsfw:true },
                 { name: "dick-vertical.svg", source: "https://www.furaffinity.net/view/35871421/", nsfw:true },
