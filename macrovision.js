@@ -2278,7 +2278,11 @@ function importScene(data) {
 
 function renderToCanvas() {
     const ctx = document.querySelector("#display").getContext("2d");
-    Object.entries(entities).forEach(([id, entity]) => {
+    Object.entries(entities).sort((ent1, ent2) => {
+        z1 = document.querySelector("#entity-" + ent1[0]).style.zIndex;
+        z2 = document.querySelector("#entity-" + ent2[0]).style.zIndex;
+        return z1 - z2;
+    }).forEach(([id, entity]) => {
         element = document.querySelector("#entity-" + id);
         img = element.querySelector("img");
 
