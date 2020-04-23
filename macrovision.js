@@ -1941,6 +1941,8 @@ function makeCustomEntity(url, x=0.5, y=0.5) {
 
     const entity = maker.constructor();
 
+    entity.scale = config.height.toNumber("feet") / 20;
+
     entity.ephemeral = true;
     displayEntity(entity, "custom", x, y, true, true);
 }
