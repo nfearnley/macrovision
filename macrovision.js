@@ -2307,6 +2307,13 @@ function exportCanvas(callback) {
 
 function copyScreenshot() {
     renderToCanvas();
+
+    /** @type {CanvasRenderingContext2D} */
+    const ctx = document.querySelector("#display").getContext("2d");
+
+    ctx.fillStyle = "#555";
+    ctx.font = "normal normal lighter 16pt coda";
+    ctx.fillText("macrovision.crux.sexy", 10, 25);
     exportCanvas(blob => {
         navigator.clipboard.write([
             new ClipboardItem({
