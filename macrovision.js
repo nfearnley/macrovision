@@ -1258,8 +1258,8 @@ function prepareMenu() {
             }
         ]
     ].forEach(group => {
-        const span = document.createElement("span");
-        span.classList.add("popout-group");
+        // we no longer group things, so I'll just ignore the groups
+        // for now
         group.forEach(entry => {
             const buttonHolder = document.createElement("div");
             buttonHolder.classList.add("menu-button-holder");
@@ -1286,10 +1286,8 @@ function prepareMenu() {
 
             buttonHolder.appendChild(button);
             buttonHolder.appendChild(actionText);
-            span.appendChild(buttonHolder);
+            menubar.appendChild(buttonHolder);
         });
-
-        menubar.appendChild(span);
     });
 
     if (checkHelpDate()) {
