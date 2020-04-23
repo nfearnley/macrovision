@@ -1297,7 +1297,7 @@ function prepareMenu() {
     }
 }
 
-const lastHelpChange = 1585487259753;
+const lastHelpChange = 1587679987757;
 
 function checkHelpDate() {
     try {

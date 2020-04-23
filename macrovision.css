@@ -473,7 +473,7 @@ body.toggle-bottom-name .bottom-name {
 #help ul {
     text-align: left;
     list-style: circle;
-    width: 75vw;
+    width: 75%;
 }
 
 #help li {
