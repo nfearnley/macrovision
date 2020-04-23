@@ -1817,10 +1817,11 @@ const attributionData = {
         {
             prefix: "./media/characters/cimmaron/",
             files: [
-                { name: "front-clothed.svg", source: "https://www.furaffinity.net/user/cimmaronspirit11/" },
-                { name: "back-clothed.svg", source: "https://www.furaffinity.net/user/cimmaronspirit11/" },
-                { name: "front-nude.svg", source: "https://www.furaffinity.net/user/cimmaronspirit11/" },
-                { name: "back-nude.svg", source: "https://www.furaffinity.net/user/cimmaronspirit11/" },
+                { name: "front-sfw.svg", source: "https://www.furaffinity.net/view/20339383/" },
+                { name: "back-sfw.svg", source: "https://www.furaffinity.net/view/20339383/" },
+                { name: "front-nsfw.svg", source: "https://www.furaffinity.net/view/20339383/", nsfw: true },
+                { name: "back-nsfw.svg", source: "https://www.furaffinity.net/view/20339383/", nsfw: true },
+                { name: "dick.svg", source: "https://www.furaffinity.net/view/20339383/", nsfw: true },
             ],
             authors: [
                 "vallhund"

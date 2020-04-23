@@ -3576,46 +3576,53 @@ characterMakers.push(() => makeCharacter(
 characterMakers.push(() => makeCharacter(
     { name: "Cimmaron" },
     {
-        frontClothed: {
+        front: {
             height: math.unit(6, "feet"),
             weight: math.unit(210, "lbs"),
-            name: "Front (Clothed)",
+            name: "Front",
             image: {
-                source: "./media/characters/cimmaron/front-clothed.svg",
+                source: "./media/characters/cimmaron/front-sfw.svg",
                 extra: 701 / 676,
                 bottom: 0.046
             }
         },
-        backClothed: {
+        back: {
             height: math.unit(6, "feet"),
             weight: math.unit(210, "lbs"),
-            name: "Back (Clothed)",
+            name: "Back",
             image: {
-                source: "./media/characters/cimmaron/back-clothed.svg",
+                source: "./media/characters/cimmaron/back-sfw.svg",
                 extra: 701 / 676,
                 bottom: 0.046
             }
         },
-        frontNude: {
+        frontNsfw: {
             height: math.unit(6, "feet"),
             weight: math.unit(210, "lbs"),
-            name: "Front (Nude)",
+            name: "Front (NSFW)",
             image: {
-                source: "./media/characters/cimmaron/front-nude.svg",
+                source: "./media/characters/cimmaron/front-nsfw.svg",
                 extra: 701 / 676,
                 bottom: 0.046
             }
         },
-        backNude: {
+        backNsfw: {
             height: math.unit(6, "feet"),
             weight: math.unit(210, "lbs"),
-            name: "Back (Nude)",
+            name: "Back (NSFW)",
             image: {
-                source: "./media/characters/cimmaron/back-nude.svg",
+                source: "./media/characters/cimmaron/back-nsfw.svg",
                 extra: 701 / 676,
                 bottom: 0.046
             }
-        }
+        },
+        dick: {
+            height: math.unit(1.714, "feet"),
+            name: "Dick",
+            image: {
+                source: "./media/characters/cimmaron/dick.svg"
+            }
+        },
     },
     [
         {
