@@ -8898,9 +8898,10 @@ const attributionData = {
             prefix: "./media/characters/rory/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/35969646/" },
+                { name: "front-nude.svg", source: "https://www.furaffinity.net/view/35969646/", nsfw: true},
                 { name: "side.svg", source: "https://www.furaffinity.net/view/35969646/" },
                 { name: "back.svg", source: "https://www.furaffinity.net/view/35969646/" },
-                { name: "dick.svg", source: "https://www.furaffinity.net/view/35969646/" },
+                { name: "dick.svg", source: "https://www.furaffinity.net/view/35969646/", nsfw: true },
             ],
             authors: [
                 "killu"
