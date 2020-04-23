@@ -20401,6 +20401,57 @@ characterMakers.push(() => makeCharacter(
         },
     ]
 ))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Maksio" },
+    {
+        front: {
+            height: math.unit(1.5, "meters"),
+            weight: math.unit(100, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/maksio/front.svg",
+                extra: 1549/1531,
+                bottom: 123.7/1674.5429
+            }
+        },
+        back: {
+            height: math.unit(1.5, "meters"),
+            weight: math.unit(100, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/maksio/back.svg",
+                extra: 1541/1509,
+                bottom: 97/1639
+            }
+        },
+        hand: {
+            height: math.unit(0.621, "feet"),
+            name: "Hand",
+            image: {
+                source: "./media/characters/maksio/hand.svg"
+            }
+        },
+        foot: {
+            height: math.unit(1.611, "feet"),
+            name: "Foot",
+            image: {
+                source: "./media/characters/maksio/foot.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Shrunken",
+            height: math.unit(10, "cm")
+        },
+        {
+            name: "Normal",
+            height: math.unit(150, "cm"),
+            default: true
+        },
+    ]
+))
 //characters
 
 function makeCharacters() {

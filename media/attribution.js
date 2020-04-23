@@ -8987,6 +8987,21 @@ const attributionData = {
                 "geldazane"
             ]
         },
+        {
+            prefix: "./media/characters/maksio/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/8465048/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/8465048/" },
+                { name: "hand.svg", source: "https://www.furaffinity.net/view/8465048/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/8465048/" },
+            ],
+            authors: [
+                "flam"
+            ],
+            owners: [
+                "maksio"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12428,6 +12443,14 @@ const attributionData = {
         "miss-avens": {
             "name": "miss-avens",
             "url": "https://www.furaffinity.net/user/miss-avens",
+        },
+        "flam": {
+            "name": "Flam",
+            "url": "https://www.furaffinity.net/user/flam/",
+        },
+        "maksio": {
+            "name": "Maksio",
+            "url": "https://www.furaffinity.net/user/maksio5",
         },
     }
 }
