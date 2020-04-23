@@ -20452,6 +20452,56 @@ characterMakers.push(() => makeCharacter(
         },
     ]
 ))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Erza Bear" },
+    {
+        front: {
+            height: math.unit(100, "feet"),
+            name: "Front",
+            image: {
+                source: "./media/characters/erza-bear/front.svg",
+                extra: 2449/2390,
+                bottom: 46/2494
+            }
+        },
+        back: {
+            height: math.unit(100, "feet"),
+            name: "Back",
+            image: {
+                source: "./media/characters/erza-bear/back.svg",
+                extra: 2489/2430,
+                bottom: 85.4/2480
+            }
+        },
+        tongue: {
+            height: math.unit(8, "feet"),
+            name: "Tongue",
+            image: {
+                source: "./media/characters/erza-bear/tongue.svg"
+            }
+        },
+        dick: {
+            height: math.unit(10.5, "feet"),
+            name: "Dick",
+            image: {
+                source: "./media/characters/erza-bear/dick.svg"
+            }
+        },
+        dickVertical: {
+            height: math.unit(16.9, "feet"),
+            name: "Dick (Vertical)",
+            image: {
+                source: "./media/characters/erza-bear/dick-vertical.svg"
+            }
+        },
+
+    },
+    [
+        
+    ]
+))
+
 //characters
 
 function makeCharacters() {
