@@ -8957,6 +8957,19 @@ const attributionData = {
                 "corriezodori"
             ]
         },
+        {
+            prefix: "./media/characters/lexir/",
+            files: [
+                { name: "front.svg", source: null },
+                { name: "back.svg", source: null },
+            ],
+            authors: [
+                "yutmutt"
+            ],
+            owners: [
+                "geldazane"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12390,6 +12403,10 @@ const attributionData = {
         "corriezodori": {
             "name": "CorrieZodori",
             "url": "https://www.furaffinity.net/user/corriezodori",
+        },
+        "geldazane": {
+            "name": "Bronzewing",
+            "url": "https://www.furaffinity.net/user/geldazane/",
         },
     }
 }

@@ -20302,6 +20302,51 @@ characterMakers.push(() => makeCharacter(
         },
     ]
 ))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Lexir" },
+    {
+        front: {
+            height: math.unit(6 + 5/12, "feet"),
+            weight: math.unit(180, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/lexir/front.svg",
+                extra: 180/172,
+                bottom: 12/192
+            }
+        },
+        back: {
+            height: math.unit(6 + 5/12, "feet"),
+            weight: math.unit(180, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/lexir/back.svg",
+                extra: 183.84/175.5,
+                bottom: 3.1/187
+            }
+        },
+    },
+    [
+        {
+            name: "Very Smal",
+            height: math.unit(1, "nm")
+        },
+        {
+            name: "Normal",
+            height: math.unit(6 + 5/12, "feet"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(1, "mile")
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(50, "miles")
+        },
+    ]
+))
 //characters
 
 function makeCharacters() {
