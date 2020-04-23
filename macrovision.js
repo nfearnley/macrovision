@@ -1365,9 +1365,13 @@ document.addEventListener("DOMContentLoaded", () => {
     prepareMenu();
     prepareEntities();
 
-    document.querySelector("#screenshot").addEventListener("click", e => {
+    document.querySelector("#copy-screenshot").addEventListener("click", e => {
         copyScreenshot();
         toast("Copied to clipboard!");
+    });
+
+    document.querySelector("#save-screenshot").addEventListener("click", e => {
+        saveScreenshot();
     });
     document.querySelector("#toggle-menu").addEventListener("click", e => {
         const popoutMenu = document.querySelector("#popout-menu");
@@ -2309,7 +2313,7 @@ function exportCanvas(callback) {
     const blob = ctx.canvas.toBlob(callback);
 }
 
-function copyScreenshot() {
+function generateScreenshot(callback) {
     renderToCanvas();
 
     /** @type {CanvasRenderingContext2D} */
@@ -2318,12 +2322,29 @@ function copyScreenshot() {
     ctx.fillStyle = "#555";
     ctx.font = "normal normal lighter 16pt coda";
     ctx.fillText("macrovision.crux.sexy", 10, 25);
+    
     exportCanvas(blob => {
+        callback(blob);
+    });   
+}
+
+function copyScreenshot() {
+    generateScreenshot(blob => {
         navigator.clipboard.write([
             new ClipboardItem({
                 "image/png": blob
             })
         ]);
+    });   
+    drawScale(false);
+}
+
+function saveScreenshot() {
+    generateScreenshot(blob => {
+        const a = document.createElement("a");
+        a.href = URL.createObjectURL(blob);
+        a.setAttribute("download", "macrovision.png");
+        a.click();
     });   
     drawScale(false);
 }
