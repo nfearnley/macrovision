@@ -325,10 +325,16 @@ function drawScale(ifDirty = false) {
     }
 
     heightPer = math.unit(heightPer, config.height.units[0].unit.name)
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+
     ctx.scale(1, 1);
     ctx.canvas.width = canvas.clientWidth;
     ctx.canvas.height = canvas.clientHeight;
+    
+    ctx.beginPath();
+    ctx.rect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "#333";
+    ctx.fill();
 
     ctx.beginPath();
     ctx.moveTo(50, 50);
@@ -1359,6 +1365,10 @@ document.addEventListener("DOMContentLoaded", () => {
     prepareMenu();
     prepareEntities();
 
+    document.querySelector("#screenshot").addEventListener("click", e => {
+        copyScreenshot();
+        toast("Copied to clipboard!");
+    });
     document.querySelector("#toggle-menu").addEventListener("click", e => {
         const popoutMenu = document.querySelector("#popout-menu");
         if (popoutMenu.classList.contains("visible")) {
@@ -2264,4 +2274,57 @@ function importScene(data) {
     }
 
     updateSizes();
+}
+
+function renderToCanvas() {
+    const ctx = document.querySelector("#display").getContext("2d");
+    Object.entries(entities).forEach(([id, entity]) => {
+        element = document.querySelector("#entity-" + id);
+        img = element.querySelector("img");
+
+        let x = parseFloat(element.dataset.x);
+        let y = parseFloat(element.dataset.y);
+
+        let coords = rel2abs({x: x, y: y});
+
+        let offset = img.style.getPropertyValue("--offset");
+        offset = parseFloat(offset.substring(0, offset.length-1))
+        x = coords.x - img.getBoundingClientRect().width/2;
+        y = coords.y - img.getBoundingClientRect().height * (-offset/100);
+
+        let xSize = img.getBoundingClientRect().width;
+        let ySize = img.getBoundingClientRect().height;
+
+        ctx.drawImage(img, x, y, xSize, ySize);
+    });
+}
+
+function exportCanvas(callback) {
+    /** @type {CanvasRenderingContext2D} */
+    const ctx = document.querySelector("#display").getContext("2d");
+    const blob = ctx.canvas.toBlob(callback);
+}
+
+function copyScreenshot() {
+    renderToCanvas();
+    exportCanvas(blob => {
+        navigator.clipboard.write([
+            new ClipboardItem({
+                "image/png": blob
+            })
+        ]);
+    });   
+    drawScale(false);
+}
+
+function toast(msg) {
+    div = document.createElement("div");
+    div.innerHTML = msg;
+    div.classList.add("toast");
+
+    document.body.appendChild(div);
+
+    setTimeout(() => {
+        document.body.removeChild(div);
+    }, 5000)
 }
