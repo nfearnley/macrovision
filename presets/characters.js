@@ -867,8 +867,55 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/natasha/front.svg",
-                extra: 875 / 846,
-                bottom: 0.01
+                extra: 859/824,
+                bottom: 23/879.6
+            }
+        },
+        frontNsfw: {
+            height: math.unit(5 + 5 / 12, "feet"),
+            weight: math.unit(75, "kg"),
+            name: "Front (NSFW)",
+            image: {
+                source: "./media/characters/natasha/front-nsfw.svg",
+                extra: 859/824,
+                bottom: 23/879.6
+            }
+        },
+        frontErect: {
+            height: math.unit(5 + 5 / 12, "feet"),
+            weight: math.unit(75, "kg"),
+            name: "Front (Erect)",
+            image: {
+                source: "./media/characters/natasha/front-erect.svg",
+                extra: 859/824,
+                bottom: 23/879.6
+            }
+        },
+        back: {
+            height: math.unit(5 + 5 / 12, "feet"),
+            weight: math.unit(75, "kg"),
+            name: "Back",
+            image: {
+                source: "./media/characters/natasha/back.svg",
+                extra: 887.9/852.6,
+                bottom: 9.7/896.4
+            }
+        },
+        backAlt: {
+            height: math.unit(5 + 5 / 12, "feet"),
+            weight: math.unit(75, "kg"),
+            name: "Back (Alt)",
+            image: {
+                source: "./media/characters/natasha/back-alt.svg",
+                extra: 1236.7/1192,
+                bottom: 22.3/1258.2
+            }
+        },
+        dick: {
+            height: math.unit(1.772, "feet"),
+            name: "Dick",
+            image: {
+                source: "./media/characters/natasha/dick.svg"
             }
         },
     },

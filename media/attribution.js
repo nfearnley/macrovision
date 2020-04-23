@@ -3568,11 +3568,27 @@ const attributionData = {
         {
             prefix: "./media/characters/natasha/",
             files: [
-                { name: "front.svg", source: null }
+                { name: "front.svg", source: null },
+                { name: "front-nsfw.svg", source: null, nsfw: true },
+                { name: "front-erect.svg", source: null, nsfw: true },
+                { name: "back.svg", source: null },
+                { name: "dick.svg", source: null, nsfw: true },
             ],
             authors: [
                 "fsmaverick",
                 "yutmutt"
+            ],
+            owners: [
+                "natasha"
+            ]
+        },
+        {
+            prefix: "./media/characters/natasha/",
+            files: [
+                { name: "back-alt.svg", source: "https://www.furaffinity.net/view/36021528/" },
+            ],
+            authors: [
+                "miss-avens"
             ],
             owners: [
                 "natasha"
@@ -12407,6 +12423,10 @@ const attributionData = {
         "geldazane": {
             "name": "Bronzewing",
             "url": "https://www.furaffinity.net/user/geldazane/",
+        },
+        "miss-avens": {
+            "name": "miss-avens",
+            "url": "https://www.furaffinity.net/user/miss-avens",
         },
     }
 }
