@@ -48,7 +48,8 @@ characterMakers.push(() => makeCharacter(
             name: "Back",
             image: {
                 source: "./media/characters/fen/back.svg",
-                extra: 1025 / 935
+                extra: 1025 / 935,
+                bottom: 0.01
             },
             info: {
                 description: {
