@@ -9020,6 +9020,19 @@ const attributionData = {
                 "otakubear"
             ]
         },
+        {
+            prefix: "./media/characters/violet-flor/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/24523754/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/24523754/" },
+            ],
+            authors: [
+                "quillmoon"
+            ],
+            owners: [
+                "bonser"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12477,6 +12490,14 @@ const attributionData = {
         "otakubear": {
             "name": "Otakubear",
             "url": "https://www.furaffinity.net/user/otakubear/",
+        },
+        "quillmoon": {
+            "name": "QuillMoon",
+            "url": "https://www.furaffinity.net/user/quillmoon",
+        },
+        "bonser": {
+            "name": "Bonser",
+            "url": "https://www.furaffinity.net/user/bonser/",
         },
     }
 }

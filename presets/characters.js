@@ -20514,6 +20514,39 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Violet Flor", species: "Skunk" },
+    {
+        front: {
+            height: math.unit(172, "cm"),
+            weight: math.unit(73, "kg"),
+            name: "Front",
+            image: {
+                source: "./media/characters/violet-flor/front.svg",
+                extra: 1530/1442,
+                bottom: 61.9/1588.8
+            }
+        },
+        back: {
+            height: math.unit(180, "cm"),
+            weight: math.unit(73, "kg"),
+            name: "Back",
+            image: {
+                source: "./media/characters/violet-flor/back.svg",
+                extra: 1692/1630,
+                bottom: 20/1712
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(172, "cm"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
