@@ -6394,6 +6394,13 @@ characterMakers.push(() => makeCharacter(
                 source: "./media/characters/goddess-elizabeth/foot.svg"
             }
         },
+        mouth: {
+            height: math.unit(6, "feet"),
+            name: "Mouth",
+            image: {
+                source: "./media/characters/goddess-elizabeth/mouth.svg"
+            }
+        },
     },
     [
         {

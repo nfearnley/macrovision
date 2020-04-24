@@ -2566,7 +2566,8 @@ const attributionData = {
             prefix: "./media/characters/goddess-elizabeth/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/30317113/" },
-                { name: "foot.svg", source: "https://www.furaffinity.net/view/30317113/" }
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/30317113/" },
+                { name: "mouth.svg", source: "https://www.furaffinity.net/view/30317113/" },
             ],
             authors: [
                 "darkietehjester"
