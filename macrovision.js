@@ -1198,96 +1198,89 @@ function prepareMenu() {
     const menubar = document.querySelector("#popout-menu");
 
     [
-        [
-            {
-                name: "Show/hide sidebar",
-                id: "menu-toggle-sidebar",
-                icon: "fas fa-chevron-circle-down",
-                rotates: true
-            },
-            {
-                name: "Fullscreen",
-                id: "menu-fullscreen",
-                icon: "fas fa-compress"
-            }
-        ],
-        [
-            {
-                name: "Clear",
-                id: "menu-clear",
-                icon: "fas fa-file"
-            }
-        ],
-        [
-            {
-                name: "Sort by height",
-                id: "menu-order-height",
-                icon: "fas fa-sort-numeric-up"
-            }
-        ],
-        [
-            {
-                name: "Permalink",
-                id: "menu-permalink",
-                icon: "fas fa-link"
-            },
-            {
-                name: "Export to clipboard",
-                id: "menu-export",
-                icon: "fas fa-share"
-            },
-            {
-                name: "Import from clipboard",
-                id: "menu-import",
-                icon: "fas fa-share"
-            },
-            {
-                name: "Save",
-                id: "menu-save",
-                icon: "fas fa-download"
-            },
-            {
-                name: "Load",
-                id: "menu-load",
-                icon: "fas fa-upload"
-            },
-            {
-                name: "Load Autosave",
-                id: "menu-load-autosave",
-                icon: "fas fa-redo"
-            }
-        ]
-    ].forEach(group => {
-        // we no longer group things, so I'll just ignore the groups
-        // for now
-        group.forEach(entry => {
-            const buttonHolder = document.createElement("div");
-            buttonHolder.classList.add("menu-button-holder");
-            const button = document.createElement("button");
-            button.id = entry.id;
-            button.classList.add("menu-button");
-            const icon = document.createElement("i");
-            icon.classList.add(...entry.icon.split(" "));
+        {
+            name: "Show/hide sidebar",
+            id: "menu-toggle-sidebar",
+            icon: "fas fa-chevron-circle-down",
+            rotates: true
+        },
+        {
+            name: "Fullscreen",
+            id: "menu-fullscreen",
+            icon: "fas fa-compress"
+        },
+        {
+            name: "Clear",
+            id: "menu-clear",
+            icon: "fas fa-file"
+        },
+        {
+            name: "Sort by height",
+            id: "menu-order-height",
+            icon: "fas fa-sort-numeric-up"
+        },
+        {
+            name: "Permalink",
+            id: "menu-permalink",
+            icon: "fas fa-link"
+        },
+        {
+            name: "Export to clipboard",
+            id: "menu-export",
+            icon: "fas fa-share"
+        },
+        {
+            name: "Import from clipboard",
+            id: "menu-import",
+            icon: "fas fa-share"
+        },
+        {
+            name: "Save",
+            id: "menu-save",
+            icon: "fas fa-download"
+        },
+        {
+            name: "Load",
+            id: "menu-load",
+            icon: "fas fa-upload"
+        },
+        {
+            name: "Load Autosave",
+            id: "menu-load-autosave",
+            icon: "fas fa-redo"
+        },
+        {
+            name: "Add Image",
+            id: "menu-add-image",
+            icon: "fas fa-camera"
+        }
+    ].forEach(entry => {
+        const buttonHolder = document.createElement("div");
+        buttonHolder.classList.add("menu-button-holder");
+        const button = document.createElement("button");
+        button.id = entry.id;
+        button.classList.add("menu-button");
+        const icon = document.createElement("i");
+        icon.classList.add(...entry.icon.split(" "));
 
-            if (entry.rotates) {
-                icon.classList.add("rotate-backward", "transitions");
-            }
+        if (entry.rotates) {
+            icon.classList.add("rotate-backward", "transitions");
+        }
 
-            const actionText = document.createElement("span");
-            actionText.innerText = entry.name;
-            actionText.classList.add("menu-text");
+        const actionText = document.createElement("span");
+        actionText.innerText = entry.name;
+        actionText.classList.add("menu-text");
 
-            const srText = document.createElement("span");
-            srText.classList.add("sr-only");
-            srText.innerText = entry.name;
+        const srText = document.createElement("span");
+        srText.classList.add("sr-only");
+        srText.innerText = entry.name;
 
-            button.appendChild(icon);
-            button.appendChild(srText);
+        button.appendChild(icon);
+        button.appendChild(srText);
 
-            buttonHolder.appendChild(button);
-            buttonHolder.appendChild(actionText);
-            menubar.appendChild(buttonHolder);
-        });
+        buttonHolder.appendChild(button);
+        buttonHolder.appendChild(actionText);
+        menubar.appendChild(buttonHolder);
     });
 
     if (checkHelpDate()) {
@@ -1857,6 +1850,19 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#menu-load-autosave").addEventListener("click", e => {
         loadScene("autosave");
     });
+
+    document.querySelector("#menu-add-image").addEventListener("click", e => {
+        document.querySelector("#file-upload-picker").click();
+    });
+
+    document.querySelector("#file-upload-picker").addEventListener("change", e => {
+        if (e.target.files.length > 0) {
+            for (let i=0; i<e.target.files.length; i++) {
+                customEntityFromFile(e.target.files[i]);
+            }
+        }
+            
+    })
 
     document.addEventListener("paste", e => {
 
