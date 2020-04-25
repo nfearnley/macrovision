@@ -53,6 +53,27 @@ speciesMakers["Synx"] = () => {
     return species;
 };
 
+speciesMakers["Viper"] = () => makeCharacter(
+    { name: "Viper" },
+    {
+        front: {
+            height: math.unit(2.6, "meters"),
+            weight: math.unit(500, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/species/viper/front.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(2.6, "meters"),
+            default: true
+        },
+    ]
+);
+
 function makeSpecies() {
     const results = [];
 

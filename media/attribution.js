@@ -9403,6 +9403,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/species/viper/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "firaxis"
+            ],
+            owners: [
+                "firaxis"
+            ]
+        },
+        {
             prefix: "./media/vehicles/",
             files: [
                 { name: "leopard-2-revolution-1.svg", source: "http://leopardclub.ca/reviews/Tiger_Model/Revolution/" },
@@ -12542,6 +12554,10 @@ const attributionData = {
         "hexuza": {
             "name": "Hexuza",
             "url": "https://www.furaffinity.net/user/hexuza/",
+        },
+        "firaxis": {
+            "name": "Firaxis",
+            "url": "https://firaxis.com/",
         },
     }
 }
