@@ -9680,11 +9680,13 @@ characterMakers.push(() => makeCharacter(
             }
         },
         elemental: {
-            height: math.unit(4 + 2 / 12, "feet"),
+            height: math.unit(3, "feet"),
             weight: math.unit(150, "lb"),
             name: "Elemental",
             image: {
-                source: "./media/characters/vanrel/elemental.svg"
+                source: "./media/characters/vanrel/elemental.svg",
+                extra: 192.3/162.8,
+                bottom: 1.79/194.17
             }
         },
         side: {
