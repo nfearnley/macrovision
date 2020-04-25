@@ -9034,6 +9034,21 @@ const attributionData = {
                 "bonser"
             ]
         },
+        {
+            prefix: "./media/characters/lynn-rhea/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/24268094/", nsfw: true },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/24268094/", nsfw: true },
+                { name: "dicks.svg", source: "https://www.furaffinity.net/view/24268094/", nsfw: true },
+                { name: "slit.svg", source: "https://www.furaffinity.net/view/24268094/", nsfw: true },
+            ],
+            authors: [
+                "shadowraiser"
+            ],
+            owners: [
+                "lynnshark"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12499,6 +12514,14 @@ const attributionData = {
         "bonser": {
             "name": "Bonser",
             "url": "https://www.furaffinity.net/user/bonser/",
+        },
+        "shadowraiser": {
+            "name": "shadowraiser",
+            "url": "https://www.furaffinity.net/user/shadowraiser",
+        },
+        "lynnshark": {
+            "name": "LynnShark",
+            "url": "https://www.furaffinity.net/user/lynnshark/",
         },
     }
 }

@@ -20555,6 +20555,66 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Lynn Rhea", species: "Shark" },
+    {
+        front: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(220, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/lynn-rhea/front.svg",
+                extra: 310/273
+            }
+        },
+        back: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(220, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/lynn-rhea/back.svg",
+                extra: 310/273
+            }
+        },
+        dicks: {
+            height: math.unit(0.9, "feet"),
+            name: "Dicks",
+            image: {
+                source: "./media/characters/lynn-rhea/dicks.svg"
+            }
+        },
+        slit: {
+            height: math.unit(0.4, "feet"),
+            name: "Slit",
+            image: {
+                source: "./media/characters/lynn-rhea/slit.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Micro",
+            height: math.unit(1, "inch")
+        },
+        {
+            name: "Macro",
+            height: math.unit(60, "feet"),
+            default: true
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(2, "miles")
+        },
+        {
+            name: "Gigamacro",
+            height: math.unit(3, "earths")
+        },
+        {
+            name: "Galactic",
+            height: math.unit(0.8, "galaxies")
+        },
+    ]
+))
 //characters
 
 function makeCharacters() {
