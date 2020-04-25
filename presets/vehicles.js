@@ -488,9 +488,9 @@ function makeVehicles() {
                 name: "USS Texas",
                 mass: math.unit(32060, "tons"),
                 sides: {
-                    "Side": { height: math.unit(215.2, "feet") },
-                    "Front": { height: math.unit(215.2, "feet") },
-                    "Top": { height: math.unit(827.5, "feet") },
+                    "Side": { height: math.unit(146.9, "feet") },
+                    "Front": { height: math.unit(146.9, "feet") },
+                    "Top": { height: math.unit(565, "feet") },
                 }
             },
             {

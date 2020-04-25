@@ -9049,6 +9049,18 @@ const attributionData = {
                 "lynnshark"
             ]
         },
+        {
+            prefix: "./media/characters/valathos/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35918806/" }
+            ],
+            authors: [
+                "dimikendal101"
+            ],
+            owners: [
+                "hexuza"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12522,6 +12534,14 @@ const attributionData = {
         "lynnshark": {
             "name": "LynnShark",
             "url": "https://www.furaffinity.net/user/lynnshark/",
+        },
+        "dimikendal101": {
+            "name": "Dimi Kendal 101",
+            "url": "https://www.furaffinity.net/user/dimikendal101",
+        },
+        "hexuza": {
+            "name": "Hexuza",
+            "url": "https://www.furaffinity.net/user/hexuza/",
         },
     }
 }
