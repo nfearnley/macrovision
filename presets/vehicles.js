@@ -516,5 +516,22 @@ function makeVehicles() {
             "")
     });
 
+    results.push({
+        name: "Tanks",
+        constructor: () => makeVehicleGroup([
+            {
+                name: "T95 Super Heavy Tank",
+                mass: math.unit(95, "tons"),
+                sides: {
+                    "Side": { height: math.unit(18.83, "feet") },
+                    "Front": { height: math.unit(18.83, "feet") },
+                    "Top": { height: math.unit(2608/1659*36.5, "feet") },
+                }
+            },
+        ],
+            "Tanks",
+            "")
+    });
+
     return results;
 }

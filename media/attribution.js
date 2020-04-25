@@ -9611,6 +9611,14 @@ const attributionData = {
                 "wargaming"
             ]
         },
+        {
+            prefix: "./media/vehicles/tanks",
+            all: "https://gamemodels3d.com/",
+            authors: [
+                "gamemodels3d",
+                "wargaming"
+            ]
+        },
 
     ],
     people: {
