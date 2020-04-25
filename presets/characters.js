@@ -20756,6 +20756,16 @@ characterMakers.push(() => makeCharacter(
                 extra: 1957/1894
             }
         },
+        angled: {
+            height: math.unit((8 + 4/12) * (1 - 68/1875), "feet"),
+            weight: math.unit(350, "lb"),
+            name: "Angled",
+            image: {
+                source: "./media/characters/sheera-castellar/angled.svg",
+                extra: 1807/1707,
+                bottom: 68/1875
+            }
+        },
         genitals: {
             height: math.unit(2.2, "feet"),
             name: "Genitals",

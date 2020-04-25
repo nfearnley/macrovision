@@ -9098,6 +9098,7 @@ const attributionData = {
                 { name: "side.svg", source: "https://www.furaffinity.net/view/29505972/", nsfw: true },
                 { name: "back.svg", source: "https://www.furaffinity.net/view/29505972/", nsfw: true },
                 { name: "genitals.svg", source: "https://www.furaffinity.net/view/29505972/", nsfw: true },
+                { name: "angled.svg", source: "https://www.furaffinity.net/view/29505972/", nsfw: true },
             ],
             authors: [
                 "notorious84"
