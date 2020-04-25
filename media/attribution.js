@@ -4647,7 +4647,8 @@ const attributionData = {
         {
             prefix: "./media/characters/sofia-fluttertail/",
             files: [
-                { name: "maw.svg", source: "https://twitter.com/ZakuraTech/status/1095457095065968640" }
+                { name: "maw.svg", source: "https://twitter.com/ZakuraTech/status/1095457095065968640" },
+                { name: "maw-closeup.svg", source: "https://www.furaffinity.net/view/31716558/" }
             ],
             authors: [
                 "shadypixel"

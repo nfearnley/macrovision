@@ -169,6 +169,13 @@ characterMakers.push(() => makeCharacter(
                 source: "./media/characters/sofia-fluttertail/maw.svg"
             }
         },
+        mawcloseup: {
+            height: math.unit(183 / 5 * 0.41, "cm"),
+            name: "Maw (Closeup)",
+            image: {
+                source: "./media/characters/sofia-fluttertail/maw-closeup.svg"
+            }
+        },
     },
     [
         {
