@@ -20791,6 +20791,63 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Jaipur", species: "Black Panther" },
+    {
+        front: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/jaipur/front.svg",
+                extra: 3860/3731,
+                bottom: 287/4140
+            }
+        },
+        back: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/jaipur/back.svg",
+                extra: 4060/3930,
+                bottom: 151/4200
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(1.85, "meters"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(150, "meters")
+        },
+        {
+            name: "Macro+",
+            height: math.unit(0.5, "miles")
+        },
+        {
+            name: "Macro++",
+            height: math.unit(2.5, "miles")
+        },
+        {
+            name: "Macro+++",
+            height: math.unit(12, "miles")
+        },
+        {
+            name: "Macro++++",
+            height: math.unit(120, "miles")
+        },
+        {
+            name: "Macro+++++",
+            height: math.unit(1200, "miles")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

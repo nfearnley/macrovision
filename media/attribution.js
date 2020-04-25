@@ -9107,6 +9107,19 @@ const attributionData = {
                 "hexuza"
             ]
         },
+        {
+            prefix: "./media/characters/jaipur/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/21282183/", nsfw: true},
+                { name: "back.svg", source: "https://www.furaffinity.net/view/21282183/", nsfw: true },
+            ],
+            authors: [
+                "gothwolf"
+            ],
+            owners: [
+                "ich"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12624,7 +12637,7 @@ const attributionData = {
         "notorious84": {
             "name": "Notorious84",
             "url": "https://www.furaffinity.net/user/notorious84",
-        },
+        }
     }
 }
 
