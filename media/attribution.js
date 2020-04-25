@@ -9076,6 +9076,19 @@ const attributionData = {
                 "hexuza"
             ]
         },
+        {
+            prefix: "./media/characters/rupert/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/27444557/" }
+            ],
+            authors: [
+                "unistaart",
+                "hexuza"
+            ],
+            owners: [
+                "hexuza"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12585,6 +12598,10 @@ const attributionData = {
         "loopysnoopy": {
             "name": "LoopySnoopy",
             "url": "https://www.furaffinity.net/user/loopysnoopy",
+        },
+        "unistaart": {
+            "name": "UnistaArt",
+            "url": "https://www.furaffinity.net/user/unistaart",
         },
     }
 }

@@ -20675,6 +20675,29 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Rupert" },
+    {
+        front: {
+            height: math.unit(5 + 1/12, "feet"),
+            weight: math.unit(110, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/rupert/front.svg",
+                extra: 1549/1495,
+                bottom: 54.2/1604.4
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(5 + 1/12, "feet"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
