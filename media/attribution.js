@@ -9091,6 +9091,21 @@ const attributionData = {
                 "hexuza"
             ]
         },
+        {
+            prefix: "./media/characters/sheera-castellar/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/29505972/", nsfw: true },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/29505972/", nsfw: true },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/29505972/", nsfw: true },
+                { name: "genitals.svg", source: "https://www.furaffinity.net/view/29505972/", nsfw: true },
+            ],
+            authors: [
+                "notorious84"
+            ],
+            owners: [
+                "hexuza"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12604,6 +12619,10 @@ const attributionData = {
         "unistaart": {
             "name": "UnistaArt",
             "url": "https://www.furaffinity.net/user/unistaart",
+        },
+        "notorious84": {
+            "name": "Notorious84",
+            "url": "https://www.furaffinity.net/user/notorious84",
         },
     }
 }

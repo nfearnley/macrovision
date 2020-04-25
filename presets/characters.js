@@ -20725,6 +20725,62 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Sheera Castellar" },
+    {
+        front: {
+            height: math.unit(8 + 4/12, "feet"),
+            weight: math.unit(350, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/sheera-castellar/front.svg",
+                extra: 1957/1894,
+                bottom: 26.97/1975.017
+            }
+        },
+        side: {
+            height: math.unit(8 + 4/12, "feet"),
+            weight: math.unit(350, "lb"),
+            name: "Side",
+            image: {
+                source: "./media/characters/sheera-castellar/side.svg",
+                extra: 1957/1894
+            }
+        },
+        back: {
+            height: math.unit(8 + 4/12, "feet"),
+            weight: math.unit(350, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/sheera-castellar/back.svg",
+                extra: 1957/1894
+            }
+        },
+        genitals: {
+            height: math.unit(2.2, "feet"),
+            name: "Genitals",
+            image: {
+                source: "./media/characters/sheera-castellar/genitals.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(8 + 4/12, "feet")
+        },
+        {
+            name: "Macro",
+            height: math.unit(150, "feet"),
+            default: true
+        },
+        {
+            name: "Macro+",
+            height: math.unit(800, "feet")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
