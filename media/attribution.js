@@ -9052,7 +9052,7 @@ const attributionData = {
         {
             prefix: "./media/characters/valathos/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/35918806/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35918806/", nsfw: true }
             ],
             authors: [
                 "dimikendal101"
