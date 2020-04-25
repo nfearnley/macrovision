@@ -1374,6 +1374,7 @@ document.addEventListener("DOMContentLoaded", () => {
     prepareHelp();
 
     document.querySelector("#open-help").addEventListener("click", e => {
+        setHelpDate();
         document.querySelector("#help-menu").classList.add("visible");
         document.querySelector("#open-help").classList.remove("highlighted");
     });
