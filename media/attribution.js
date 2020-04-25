@@ -9064,8 +9064,8 @@ const attributionData = {
         {
             prefix: "./media/characters/azula/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/35339043/" },
-                { name: "back.svg", source: "https://www.furaffinity.net/view/35339043/" },
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35339043/", nsfw: true },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/35339043/", nsfw: true },
             ],
             authors: [
                 "val-q",
@@ -9079,7 +9079,7 @@ const attributionData = {
         {
             prefix: "./media/characters/rupert/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/27444557/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/27444557/", nsfw: true }
             ],
             authors: [
                 "unistaart",
