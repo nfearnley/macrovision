@@ -215,7 +215,6 @@ body.show-extra-options .options-block.options-block-optional {
     width: 100%;
 }
 
-
 #entities {
     position: absolute;
     user-select: none;
@@ -380,7 +379,7 @@ body.toggle-top-name .top-name.top-name-needed {
     position: fixed;
     width: 150px;
     height: 50px;
-    z-index: 349539534;
+    z-index: 10001;
     transform: translate(-50%, 0pt);
 }
 
@@ -435,55 +434,6 @@ body.toggle-bottom-name .bottom-name {
     100% {
         opacity: 100%;
     }
-}
-
-#help {
-    display: none;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    position: absolute;
-    width: 60vw;
-    height: 60vh;
-    margin: 0pt;
-    padding-top: 20vh;
-    padding-bottom: 20vh;
-    padding-left: 20vw;
-    padding-right: 20vw;
-    text-align: center;
-    background: #333;
-    opacity: 0;
-    z-index: 9999999;
-    backdrop-filter: blur(5px);
-}
-
-#help.visible {
-    display: flex;
-    opacity: 0.9;
-    justify-content: center;
-}
-
-#help h1 {
-    font-size: 150%;
-}
-
-#help p {
-    font-size: 125%;
-}
-
-#help ul {
-    text-align: left;
-    list-style: circle;
-    width: 75%;
-}
-
-#help li {
-    padding: 10px;
-}
-
-#help button {
-    height: 10vh;
-    font-size: 9vh;
 }
 
 a { 
@@ -806,4 +756,136 @@ button:enabled:active {
         transform: translate(-50%, -20vh);
         opacity: 0;
     }
+}
+
+#help-menu *::-webkit-scrollbar {
+    height: 2px;
+  }
+#help-menu *::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+#help-menu *::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+#help-menu *::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+#help-menu *::-webkit-scrollbar-thumb:active {
+    background: #000000;
+}
+#help-menu *::-webkit-scrollbar-track {
+    background: #00000000;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+#help-menu *::-webkit-scrollbar-track:hover {
+    background: #666666;
+}
+#help-menu *::-webkit-scrollbar-track:active {
+    background: #333333;
+}
+#help-menu *::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+#help-menu {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100001;
+    overflow-x: hidden;
+}
+
+#help-menu.visible {
+    display: flex;
+}
+
+#table-of-contents-holder {
+    flex: 1 1 30%;
+    padding: 15px;
+    background: #111;
+    overflow-y: auto;
+}
+
+#table-of-contents {
+    line-height: 2;
+}
+
+#table-of-contents li {
+    font-size: 150%;
+    user-select: none;
+}
+
+#table-of-contents li:hover {
+    color: #ccc;
+}
+
+#table-of-contents button {
+    position: relative;
+    width: 50pt;
+    height: 50pt;
+    font-size: 40pt;
+}
+
+#table-of-contents button i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#help-contents-holder {
+    flex: 1 1 70%;
+    background: #333;
+    padding: 25px;
+    overflow-y: auto;
+}
+
+#help-contents > h2 {
+    font-size: 250%;
+}
+
+#help-contents > h2 {
+    margin-bottom: 16pt;
+}
+
+#help-contents > h2:nth-child(1n+2) {
+    margin-top: 32pt;
+}
+
+#help-contents p {
+    text-indent: 20pt;
+    max-width: 80em;
+    line-height: 1.4em;
+    width: 80%;
+    margin-bottom: 8pt;
+    margin-top: 8pt;
+}
+
+#help-contents i.fas {
+    text-indent: 0pt;
+    margin-left: 2pt;
+    margin-right: 2pt;
+}
+
+#help-contents ul {
+    list-style: circle;
+    line-height: 1.4;
+}
+
+#help-contents b {
+    font-weight: bolder;
+}
+
+#help-contents li {
+    margin-left: 2em;
+}
+
+#help-contents img {
+    display: block;
+    margin: auto;
+    height: 60pt;
 }

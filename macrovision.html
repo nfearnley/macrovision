@@ -32,41 +32,63 @@
 
 <body class="toggle-bottom-name toggle-top-name toggle-scale">
   <input hidden="true" id="file-upload-picker" type='file' multiple='true'>
-  <div id="help">
-    <h1>Navigation</h1>
-    <p>
-      <ul>
-        <li>Drag to move entities</li>
-        <li>Alt-drag to ignore snapping and bounds</li>
+  <div id="help-menu">
+    <div id="table-of-contents-holder">
+      <ul id="table-of-contents">
+        <li><button id="close-help"><i class="fas fa-times"></i></button></li>
       </ul>
-    </p>
-    <p>
-      <ul>
-        <li>Scroll to zoom.</li>
-        <li>Alt-scroll to zoom preserve positions on the screen.</li>
-        <li>Shift-scroll with an entity selected to scale it.</li>
-        <li>Shift-scroll without a selection to move horizontally.</li>
-      </ul>
-    </p>
-    <h1>Adding/removing entities</h1>
-    <p>
-      <ul>
-        <li>Add new entities with the selection boxes at the top</li> 
-        <li>Remove the selected entity with the Delete key</li>
-        <li>Alternatively, drag them off the top of the screen</li>
-      </ul>
-    </p>
-    <h1>Sharing</h1>
-    <p>
-      <ul>
-        <li>You can copy a screenshot to your clipboard or save an image to your device in the topbar</li>
-        <li>To share a scene with others, you can get a link with the Permalink button</li>
-        <li>Alternatively, you can export the scene as text, or import one from your clipboard</li>
-        <li>You can also save one scene to your browser and load it later</li>
-        <li>The current scene is autosaved when closing the tool. You can reload it from the menu.</li>
-      </ul>
-    </p>
-    <button id="close-help">Close</button>
+    </div>
+    <div id="help-contents-holder">
+      <div id="help-contents">
+        <h2>Overview</h2>
+
+        <p>Macrovision is a tool for visualizing sizes. You can create, scale, and pose a variety of silhouettes, ranging from galactic structures to individual atoms.</p>
+
+        <h2>Adjusting the View</h2>
+
+        <p>Zoom in and out with the scroll wheel. You can also manually change the size of the world in the sidebar, or use the <i class="fas fa-search-minus"></i> and <i class="fas fa-search-plus"></i> buttons on the sides of the viewer.</p>
+
+        <h2>Creating Entities</h2>
+
+        <p>Each thing in the world is an <b>entity</b>. Macrovision comes with many of these, grouped into categories. For example, in the Naturals category, you'll find large bodies such as stars, country borders, and planets.</p>
+
+        <p>If you want to compare something that doesn't exist yet, you can create a custom entity. There are three ways you can do this:</p>
+
+        <ul>
+          <li>Drop an image into the window</li>
+          <li>Select a file from the <i class="fas fa-bars"></i> menu</li>
+          <li>Paste an image from your clipboard</li>
+        </ul>
+
+        <p>Custom entities aren't saved or exported.</p>
+
+        <h2>Changing Entities</h2>
+
+        <p>When you have an entity selected, you'll see additional sections in the sidebar: one for the entity itself, and one for its current view.</p>
+
+        <p>The entity options control things like scale (how big the entity is compared to normal) and display name. You can also pick from one or more default sizes.</p>
+
+        <p>Each entity has one or more views. For example, many characters have a front view and a back view. Each view has its own properties -- most importantly, they each have their own heights. The different views for an entity are kept in sync. If you double the height of a character and switch to their back view, that view will be twice as tall as usual.</p>
+
+        <h2>Sharing</h2>
+
+        <p>You can take a screenshot of the current scene with the <b>Screenshot</b> <i class="fas fa-camera"></i> button. The screenshot will be copied to your clipboard. You can also use the <b>Download</b> <i class="fas fa-download"></i> button to download the current scene as an image. This currently only includes the scale and the silhouettes themselves; it won't include things like names.</p>
+
+        <p>If you want to show a scene to someone else, you can use <b>Permalink</b> <i class="fas fa-link"></i> to get a permalink. It'll be pretty large, since it represents where everything is. I'll probably add a link shortener at some point!</p>
+
+        <p>You can also export the current scene as text with <b>Export</b> <i class="fas fa-share"></i>, copying it to your clipboard. You can import a scene from the clipboard with <b>Import</b> <i class="fas fa-link"></i>.</p>
+          
+        <h2>About</h2>
+
+        <p>This tool was created by me! I'm <b>chemicalcrux</b>.</p>
+
+        <p>If you've found the site helpful, consider joining the Discord server &mdash; and maybe support me on Ko-Fi, too!</p>
+
+        <a href="https://discord.gg/vqcKVV6"><img src="./logos/discord.svg"></a>
+        <a href="https://ko-fi.com/chemicalcrux"><img src="./logos/ko-fi.svg"></a>
+
+      </div>
+    </div>
   </div>
   <div id="popout-menu">
     

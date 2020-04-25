@@ -1288,7 +1288,7 @@ function prepareMenu() {
     }
 }
 
-const lastHelpChange = 1587679987757;
+const lastHelpChange = 1587847743294;
 
 function checkHelpDate() {
     try {
@@ -1351,10 +1351,36 @@ function doSize() {
     }
 }
 
+function prepareHelp() {
+    const toc = document.querySelector("#table-of-contents");
+    const holder = document.querySelector("#help-contents-holder");
+    document.querySelectorAll("#help-contents h2").forEach(header => {
+        const li = document.createElement("li");
+        
+        li.innerText = header.textContent;
+
+        li.addEventListener("click", e => {
+            holder.scrollTop = header.offsetTop;
+        });
+
+        toc.appendChild(li);
+
+    });
+}
 
 document.addEventListener("DOMContentLoaded", () => {
     prepareMenu();
     prepareEntities();
+    prepareHelp();
+
+    document.querySelector("#open-help").addEventListener("click", e => {
+        document.querySelector("#help-menu").classList.add("visible");
+        document.querySelector("#open-help").classList.remove("highlighted");
+    });
+
+    document.querySelector("#close-help").addEventListener("click", e => {
+        document.querySelector("#help-menu").classList.remove("visible");
+    });
 
     document.querySelector("#copy-screenshot").addEventListener("click", e => {
         copyScreenshot();
@@ -1476,17 +1502,6 @@ document.addEventListener("DOMContentLoaded", () => {
     entityX = document.querySelector("#entities").getBoundingClientRect().x;
     canvasWidth = document.querySelector("#display").clientWidth - 100;
     canvasHeight = document.querySelector("#display").clientHeight - 50;
-
-    document.querySelector("#open-help").addEventListener("click", e => {
-        setHelpDate();
-        document.querySelector("#open-help").classList.remove("highlighted");
-        document.querySelector("#help").classList.add("visible");
-    });
-
-
-    document.querySelector("#close-help").addEventListener("click", e => {
-        document.querySelector("#help").classList.remove("visible");
-    });
 
     document.querySelector("#options-height-value").addEventListener("change", e => {
         updateWorldHeight();
