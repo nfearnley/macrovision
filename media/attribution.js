@@ -9061,6 +9061,21 @@ const attributionData = {
                 "hexuza"
             ]
         },
+        {
+            prefix: "./media/characters/azula/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35339043/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/35339043/" },
+            ],
+            authors: [
+                "val-q",
+                "eri-yo",
+                "loopysnoopy"
+            ],
+            owners: [
+                "hexuza"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12558,6 +12573,18 @@ const attributionData = {
         "firaxis": {
             "name": "Firaxis",
             "url": "https://firaxis.com/",
+        },
+        "val-q": {
+            "name": "val-q",
+            "url": "https://www.furaffinity.net/user/val-q",
+        },
+        "eri-yo": {
+            "name": "Eri-yo",
+            "url": "https://www.furaffinity.net/user/eri-yo",
+        },
+        "loopysnoopy": {
+            "name": "LoopySnoopy",
+            "url": "https://www.furaffinity.net/user/loopysnoopy",
         },
     }
 }

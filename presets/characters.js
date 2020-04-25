@@ -20632,7 +20632,45 @@ characterMakers.push(() => makeCharacter(
     [
         {
             name: "Macro",
-            height: math.unit(1600, "feet")
+            height: math.unit(1600, "feet"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Azula" },
+    {
+        front: {
+            height: math.unit(7 + 5/12, "feet"),
+            weight: math.unit(300, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/azula/front.svg",
+                extra: 3208/2880,
+                bottom: 80.2/3277
+            }
+        },
+        back: {
+            height: math.unit(7 + 5/12, "feet"),
+            weight: math.unit(300, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/azula/back.svg",
+                extra: 3169/2822,
+                bottom: 150.6/3321
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(7 + 5/12, "feet"),
+            default: true
+        },
+        {
+            name: "Big",
+            height: math.unit(20, "feet")
         },
     ]
 ))
