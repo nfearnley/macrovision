@@ -152,6 +152,16 @@ characterMakers.push(() => makeCharacter(
                 source: "./media/characters/sofia-fluttertail/back.svg"
             }
         },
+        kneeling: {
+            height: math.unit(125, "cm"),
+            weight: math.unit(80, "kg"),
+            name: "Kneeling",
+            image: {
+                source: "./media/characters/sofia-fluttertail/kneeling.svg",
+                extra: 1033/977,
+                bottom: 23.7/1057
+            }
+        },
         maw: {
             height: math.unit(183 / 5, "cm"),
             name: "Maw",
@@ -164,6 +174,10 @@ characterMakers.push(() => makeCharacter(
         {
             name: "Normal",
             height: math.unit(1.83, "meter")
+        },
+        {
+            name: "50 Foot Collie",
+            height: math.unit(50, "feet")
         },
         {
             name: "Macro",

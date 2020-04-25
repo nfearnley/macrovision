@@ -4634,7 +4634,8 @@ const attributionData = {
             prefix: "./media/characters/sofia-fluttertail/",
             files: [
                 { name: "front-alt.svg", source: "https://www.furaffinity.net/view/16704878/" },
-                { name: "back.svg", source: "https://www.furaffinity.net/view/16704878/" }
+                { name: "back.svg", source: "https://www.furaffinity.net/view/16704878/" },
+                { name: "kneeling.svg", source: "https://www.furaffinity.net/view/14756340/" }
             ],
             authors: [
                 "fauxlacine"
