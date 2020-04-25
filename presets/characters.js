@@ -183,6 +183,10 @@ characterMakers.push(() => makeCharacter(
             height: math.unit(1.83, "meter")
         },
         {
+            name: "Size Thief",
+            height: math.unit(18, "feet")
+        },
+        {
             name: "50 Foot Collie",
             height: math.unit(50, "feet")
         },
