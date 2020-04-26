@@ -583,6 +583,17 @@ function makeObjects() {
         "cell_"
     ))
 
+    results.push(makeHeight(
+        [
+            ["stop-sign", 36, "inches"],
+            ["yield-sign", 36, "inches"],
+            ["pedestrian-crossing", 30, "inches"],
+            ["highway-exit", 150, "inches"]
+        ],
+        "Signs",
+        ""
+    ))
+
 
     results.sort((b1, b2) => {
         e1 = b1.constructor();

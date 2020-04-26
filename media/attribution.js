@@ -9497,6 +9497,13 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/objects/signs",
+            all: "https://www.txdot.gov/inside-txdot/forms-publications/publications/highway-signs.html",
+            authors: [
+                "txdot"
+            ]
+        },
+        {
             prefix: "./media/objects/",
             files: [
                 { name: "paperclip.svg", source: "https://commons.wikimedia.org/wiki/File:Ei-paperclip.svg" }
@@ -12731,6 +12738,10 @@ const attributionData = {
         "pliskin": {
             "name": "Pliskin",
             "url": "https://www.furaffinity.net/user/pliskin",
+        },
+        "txdot": {
+            "name": "TxDOT",
+            "url": "https://www.txdot.gov/content/txdot/en.html",
         },
     }
 }
