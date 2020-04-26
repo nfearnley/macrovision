@@ -9135,6 +9135,18 @@ const attributionData = {
                 "giant-wolf-sheila"
             ]
         },
+        {
+            prefix: "./media/characters/almor/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/29226273/" }
+            ],
+            authors: [
+                "stonerabbit"
+            ],
+            owners: [
+                "stonerabbit"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -10284,10 +10296,6 @@ const attributionData = {
         "tyrnn": {
             "name": "Tyrnn",
             "url": "https://www.furaffinity.net/user/tyrnn/"
-        },
-        "stonerabbit": {
-            "name": "stonerabbit",
-            "url": "https://www.furaffinity.net/user/stonerabbit"
         },
         "voondahbayosh": {
             "name": "voondahbayosh",

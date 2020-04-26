@@ -20895,6 +20895,29 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Almor", species: "Dragon" },
+    {
+        front: {
+            height: math.unit(32, "meters"),
+            weight: math.unit(300000, "kg"),
+            name: "Front",
+            image: {
+                source: "./media/characters/almor/front.svg",
+                extra: 1408/1322,
+                bottom: 94.6/1506.5
+            }
+        },
+    },
+    [
+        {
+            name: "Macro",
+            height: math.unit(32, "meters"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
