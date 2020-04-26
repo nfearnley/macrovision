@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <title>Macrovision</title>
   <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="macrovision.css"><script src="https://kit.fontawesome.com/10a16c6083.js" crossorigin="anonymous"></script> 
+  <link rel="stylesheet" href="macrovision.css">
+  <script src="https://kit.fontawesome.com/10a16c6083.js" crossorigin="anonymous"></script>
   <script src="math.min.js"></script>
   <script src="presets/characters.js"></script>
   <script src="presets/buildings.js"></script>
@@ -21,7 +22,7 @@
   <script src="presets/scenes.js"></script>
   <script src="media/attribution.js"></script>
   <script src="macrovision.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=0.75, user-scalable=0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=0.75, user-scalable=0" />
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="How big are they anyway?" />
   <meta property="og:title" content="Macrovision" />
@@ -42,17 +43,41 @@
       <div id="help-contents">
         <h2>Overview</h2>
 
-        <p>Macrovision is a tool for visualizing sizes. You can create, scale, and pose a variety of silhouettes, ranging from galactic structures to individual atoms.</p>
+        <p>Macrovision is a tool for visualizing sizes. You can create, scale, and pose a variety of silhouettes,
+          ranging from galactic structures to individual atoms.</p>
+
+        <p>This tool was created by me, <b>chemicalcrux</b>!</p>
+
+        <p>You can join the Discord server to report bugs and see what's new. If you've found the site helpful, consider
+          supporting me on Ko-Fi, too!</p>
+
+        <a href="https://discord.gg/vqcKVV6"><img src="./logos/discord.svg" alt="Link to Discord"></a>
+        <a href="https://ko-fi.com/chemicalcrux"><img src="./logos/ko-fi.svg" alt="Link to Ko-Fi"></a>
 
         <h2>Adjusting the View</h2>
 
-        <p>Zoom in and out with the scroll wheel. You can also manually change the size of the world in the sidebar, or use the <i class="fas fa-search-minus"></i> and <i class="fas fa-search-plus"></i> buttons on the sides of the viewer.</p>
+        <p>Zoom in and out with the scroll wheel. You can also manually change the size of the world in the sidebar, or
+          use the <i class="fas fa-search-minus"></i> and <i class="fas fa-search-plus"></i> buttons on the sides of the
+          viewer.</p>
+
+        <p>Shift+scroll without anything selected to move horizontally. You can also use the <i
+            class="fas fa-arrow-left"></i> and <i class="fas fa-arrow-right"></i> buttons to scroll.</p>
+
+        <p>Alt+scroll to make the world larger or smaller without changing where things are positioned on the screen.
+        </p>
 
         <h2>Creating Entities</h2>
 
-        <p>Each thing in the world is an <b>entity</b>. Macrovision comes with many of these, grouped into categories. For example, in the Naturals category, you'll find large bodies such as stars, country borders, and planets.</p>
+        <p>Each thing in the world is an <b>entity</b>. Macrovision comes with many of these, grouped into categories.
+          For example, in the Naturals category, you'll find large bodies such as stars, country borders, and planets.
+        </p>
 
-        <p>If you want to compare something that doesn't exist yet, you can create a custom entity. There are three ways you can do this:</p>
+        <p>Each entity has one or more views. For example, many characters have a front view and a back view. Some
+          entities are collections of things, like countries &mdash; these have one view for each thing they represent!
+        </p>
+
+        <p>If you want to compare something that doesn't exist yet, you can create a custom entity. There are three ways
+          you can do this:</p>
 
         <ul>
           <li>Drop an image into the window</li>
@@ -64,34 +89,34 @@
 
         <h2>Changing Entities</h2>
 
-        <p>When you have an entity selected, you'll see additional sections in the sidebar: one for the entity itself, and one for its current view.</p>
+        <p>Shift+scroll with an entity selected to grow or shrink it. You can also use the <i
+            class="fas fa-compress-arrows-alt"></i> and <i class="fas fa-expand-arrows-alt"></i> buttons to adjust size.
+        </p>
 
-        <p>The entity options control things like scale (how big the entity is compared to normal) and display name. You can also pick from one or more default sizes.</p>
+        <p>When you have an entity selected, you'll see additional sections in the sidebar: one for the entity itself,
+          and one for its current view.</p>
 
-        <p>Each entity has one or more views. For example, many characters have a front view and a back view. Each view has its own properties -- most importantly, they each have their own heights. The different views for an entity are kept in sync. If you double the height of a character and switch to their back view, that view will be twice as tall as usual.</p>
-
+        <p>The entity options control things like scale (how big the entity is compared to normal) and display name. You
+          can also pick from one or more default sizes.</p>
         <h2>Sharing</h2>
 
-        <p>You can take a screenshot of the current scene with the <b>Screenshot</b> <i class="fas fa-camera"></i> button. The screenshot will be copied to your clipboard. You can also use the <b>Download</b> <i class="fas fa-download"></i> button to download the current scene as an image. This currently only includes the scale and the silhouettes themselves; it won't include things like names.</p>
+        <p>You can take a screenshot of the current scene with the <b>Screenshot</b> <i class="fas fa-camera"></i>
+          button. The screenshot will be copied to your clipboard. You can also use the <b>Download</b> <i
+            class="fas fa-download"></i> button to download the current scene as an image. This currently only includes
+          the scale and the silhouettes themselves; it won't include things like names.</p>
 
-        <p>If you want to show a scene to someone else, you can use <b>Permalink</b> <i class="fas fa-link"></i> to get a permalink. It'll be pretty large, since it represents where everything is. I'll probably add a link shortener at some point!</p>
+        <p>If you want to show a scene to someone else, you can use <b>Permalink</b> <i class="fas fa-link"></i> to get
+          a permalink. It'll be pretty large, since it represents where everything is. I'll probably add a link
+          shortener at some point!</p>
 
-        <p>You can also export the current scene as text with <b>Export</b> <i class="fas fa-share"></i>, copying it to your clipboard. You can import a scene from the clipboard with <b>Import</b> <i class="fas fa-link"></i>.</p>
-          
-        <h2>About</h2>
-
-        <p>This tool was created by me! I'm <b>chemicalcrux</b>.</p>
-
-        <p>If you've found the site helpful, consider joining the Discord server &mdash; and maybe support me on Ko-Fi, too!</p>
-
-        <a href="https://discord.gg/vqcKVV6"><img src="./logos/discord.svg"></a>
-        <a href="https://ko-fi.com/chemicalcrux"><img src="./logos/ko-fi.svg"></a>
-
+        <p>You can also export the current scene as text with <b>Export</b> <i class="fas fa-share"></i>, copying it to
+          your clipboard. You can import a scene from the clipboard with <b>Import</b> <i
+            class="fas fa-share flipped"></i>.</p>
       </div>
     </div>
   </div>
   <div id="popout-menu">
-    
+
   </div>
   <div id="menubar">
     <button id="toggle-menu">
@@ -117,7 +142,8 @@
   </div>
   <div id="main-area">
     <div id="options" class="">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLScRC-okDZ3FtzDTkbqSrpj5_OGD-1Vl-VYizOK3QM6quus11g/viewform?usp=sf_link" class="options-banner">Submit your<br>character!</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScRC-okDZ3FtzDTkbqSrpj5_OGD-1Vl-VYizOK3QM6quus11g/viewform?usp=sf_link"
+        class="options-banner">Submit your<br>character!</a>
       <h3 class="options-header">World Info</h3>
       <span id="options-world">
         <div class="options-label">
@@ -181,7 +207,7 @@
       <div class="options-row">
         <button id="delete-entity">
           <i class="fas fa-trash-alt symbol-button"></i>
-            <span class="sr-only">Delete Entity</span>
+          <span class="sr-only">Delete Entity</span>
         </button>
       </div>
       <h3 class="options-header" id="entity-category-header">Entity Options</h3>
@@ -211,7 +237,7 @@
         <span id="options-view">
         </span>
       </div>
-      <h3 class="options-header" id="attribution-category-header" >Source</h3>
+      <h3 class="options-header" id="attribution-category-header">Source</h3>
       <span id="options-attribution">
         <div class="options-label">
           Authors
@@ -239,7 +265,7 @@
         <div class="options-row">
           <button id="load-scene">
             <i class="fas fa-play-circle symbol-button"></i>
-              <span class="sr-only">Load Scene</span>
+            <span class="sr-only">Load Scene</span>
           </button>
         </div>
       </span>
@@ -274,7 +300,7 @@
       <div class="bottom-cover"></div>
     </div>
   </div>
-  
+
 </body>
 
 </html>

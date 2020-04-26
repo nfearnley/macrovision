@@ -568,6 +568,10 @@ body.toggle-bottom-cover .bottom-cover {
     transform: rotate(90deg);
 }
 
+.flipped {
+    transform: rotate(180deg);
+}
+
 i.fas
 i.far {
     pointer-events: none;
@@ -858,7 +862,7 @@ button:enabled:active {
 
 #help-contents p {
     text-indent: 20pt;
-    max-width: 80em;
+    max-width: 60em;
     line-height: 1.4em;
     width: 80%;
     margin-bottom: 8pt;
@@ -886,6 +890,7 @@ button:enabled:active {
 
 #help-contents img {
     display: block;
-    margin: auto;
+    width: 80%;
+    max-width: 60em;
     height: 60pt;
 }

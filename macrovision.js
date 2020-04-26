@@ -1232,7 +1232,8 @@ function prepareMenu() {
         {
             name: "Import from clipboard",
             id: "menu-import",
-            icon: "fas fa-share"
+            icon: "fas fa-share",
+            classes: ["flipped"]
         },
         {
             name: "Save",
@@ -1265,6 +1266,10 @@ function prepareMenu() {
 
         if (entry.rotates) {
             icon.classList.add("rotate-backward", "transitions");
+        }
+
+        if (entry.classes) {
+            entry.classes.forEach(cls => icon.classList.add(cls));
         }
 
         const actionText = document.createElement("span");
