@@ -528,6 +528,15 @@ function makeVehicles() {
                     "Top": { height: math.unit(2608/1659*36.5, "feet") },
                 }
             },
+            {
+                name: "Leopard I",
+                mass: math.unit(42.2, "tonnes"),
+                sides: {
+                    "Side": { height: math.unit(2.80, "meters") },
+                    "Front": { height: math.unit(2.80, "meters") },
+                    "Top": { height: math.unit(9.54, "meters") },
+                }
+            },
         ],
             "Tanks",
             "")
