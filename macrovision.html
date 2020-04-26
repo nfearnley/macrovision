@@ -32,7 +32,7 @@
 </head>
 
 <body class="toggle-bottom-name toggle-top-name toggle-scale">
-  <input hidden="true" id="file-upload-picker" type='file' multiple='true'>
+  <input hidden id="file-upload-picker" type='file' multiple>
   <div id="help-menu">
     <div id="table-of-contents-holder">
       <ul id="table-of-contents">
@@ -145,7 +145,7 @@
       <a href="https://docs.google.com/forms/d/e/1FAIpQLScRC-okDZ3FtzDTkbqSrpj5_OGD-1Vl-VYizOK3QM6quus11g/viewform?usp=sf_link"
         class="options-banner">Submit your<br>character!</a>
       <h3 class="options-header">World Info</h3>
-      <span id="options-world">
+      <div id="options-world">
         <div class="options-label">
           World height
         </div>
@@ -171,11 +171,11 @@
             <label for="options-world-show-names">Names over entities</label>
           </div>
           <div class="options-row">
-            <input type="checkbox" id="options-world-show-bottom-names" checked="true">
+            <input type="checkbox" id="options-world-show-bottom-names" checked>
             <label for="options-world-show-bottom-names">Names at bottom</label>
           </div>
           <div class="options-row">
-            <input type="checkbox" id="options-world-show-top-names" checked="true">
+            <input type="checkbox" id="options-world-show-top-names" checked>
             <label for="options-world-show-top-names">Arrows for very large entities</label>
           </div>
           <div class="options-row">
@@ -191,11 +191,11 @@
             <label for="options-world-show-bottom-cover">Opaque ground</label>
           </div>
           <div class="options-row">
-            <input type="checkbox" id="options-world-show-scale" checked="true">
+            <input type="checkbox" id="options-world-show-scale" checked>
             <label for="options-world-show-scale">Scale</label>
           </div>
         </div>
-      </span>
+      </div>
       <div class="options-label">
         Selection:
       </div>
@@ -238,25 +238,25 @@
         </span>
       </div>
       <h3 class="options-header" id="attribution-category-header">Source</h3>
-      <span id="options-attribution">
+      <div id="options-attribution">
         <div class="options-label">
           Authors
         </div>
-        <span id="options-attribution-authors">
-        </span>
+        <div id="options-attribution-authors">
+        </div>
         <div class="options-label">
           Owners
         </div>
-        <span id="options-attribution-owners">
-        </span>
+        <div id="options-attribution-owners">
+        </div>
         <div class="options-label">
           Source
         </div>
-        <span id="options-attribution-source">
-        </span>
-      </span>
+        <div id="options-attribution-source">
+        </div>
+      </div>
       <h3 class="options-header" id="scenes-category-header">Preset Scenes</h3>
-      <span id="options-scenes">
+      <div id="options-scenes">
         <div class="options-row">
           <select class="options-field-picker" id="scene-choices">
 
@@ -268,7 +268,7 @@
             <span class="sr-only">Load Scene</span>
           </button>
         </div>
-      </span>
+      </div>
     </div>
     <div id="world">
       <button class="scroll-button" id="zoom-in">
@@ -283,13 +283,13 @@
       <button class="scroll-button" id="scroll-right">
         <i class="fas fa-arrow-right"></i>
       </button>
-      <button class="scroll-button" disabled="true" id="shrink">
+      <button class="scroll-button" disabled id="shrink">
         <i class="fas fa-compress-arrows-alt"></i>
       </button>
-      <button class="scroll-button" disabled="true" id="grow">
+      <button class="scroll-button" disabled id="grow">
         <i class="fas fa-expand-arrows-alt"></i>
       </button>
-      <button class="scroll-button" disabled="true" id="fit">
+      <button class="scroll-button" disabled id="fit">
         <i class="fas fa-search"></i>
       </button>
       <div id="entities">
