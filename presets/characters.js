@@ -21010,6 +21010,34 @@ characterMakers.push(() => makeCharacter(
         },
     ]
 ))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Sammy" },
+    {
+        front: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/sammy/front.svg",
+                extra: 1193/1089,
+                bottom: 30.5/1226
+            }
+        },
+    },
+    [
+        {
+            name: "Macro",
+            height: math.unit(1700, "feet"),
+            default: true
+        },
+        {
+            name: "Examacro",
+            height: math.unit(2.5e9, "lightyears")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

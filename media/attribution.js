@@ -9154,6 +9154,18 @@ const attributionData = {
                 "pliskin"
             ]
         },
+        {
+            prefix: "./media/characters/sammy/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35422561" }
+            ],
+            authors: [
+                "nix-noble"
+            ],
+            owners: [
+                "jasmith"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
