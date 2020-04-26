@@ -9166,6 +9166,30 @@ const attributionData = {
                 "jasmith"
             ]
         },
+        {
+            prefix: "./media/characters/kuru/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/29728066/" }
+            ],
+            authors: [
+                "stonerabbit"
+            ],
+            owners: [
+                "stonerabbit"
+            ]
+        },
+        {
+            prefix: "./media/characters/rakka/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "stonerabbit"
+            ],
+            owners: [
+                "stonerabbit"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",

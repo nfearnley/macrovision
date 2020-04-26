@@ -21038,6 +21038,52 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Kuru", species: "Umbra" },
+    {
+        front: {
+            height: math.unit(21, "meters"),
+            weight: math.unit(12, "tonnes"),
+            name: "Front",
+            image: {
+                source: "./media/characters/kuru/front.svg",
+                extra: 4301/3785,
+                bottom: 371.3/4691
+            }
+        },
+    },
+    [
+        {
+            name: "Macro",
+            height: math.unit(21, "meters"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Rakka", species: "Umbra" },
+    {
+        front: {
+            height: math.unit(23, "meters"),
+            weight: math.unit(12.2, "tonnes"),
+            name: "Front",
+            image: {
+                source: "./media/characters/rakka/front.svg",
+                extra: 4670/4169,
+                bottom: 301/4968.7
+            }
+        },
+    },
+    [
+        {
+            name: "Macro",
+            height: math.unit(23, "meters"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
