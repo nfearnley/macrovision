@@ -2188,39 +2188,22 @@ const attributionData = {
         {
             prefix: "./media/characters/elijah/",
             files: [
-                { name: "side.svg", source: null }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/36093445/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/36093445/" },
+                { name: "beak-open.svg", source: "https://www.furaffinity.net/view/36093445/" },
+                { name: "beak-shut.svg", source: "https://www.furaffinity.net/view/36093445/" },
+                { name: "foot-flexing.svg", source: "https://www.furaffinity.net/view/36093445/" },
+                { name: "foot-stepping.svg", source: "https://www.furaffinity.net/view/36093445/" },
+                { name: "plantigrade-leg.svg", source: "https://www.furaffinity.net/view/36093445/" },
+                { name: "plantigrade-foot-left.svg", source: "https://www.furaffinity.net/view/36093445/" },
+                { name: "plantigrade-foot-right.svg", source: "https://www.furaffinity.net/view/36093445/" },
+                { name: "front-nsfw.svg", source: "https://www.furaffinity.net/view/36093753/", nsfw:true },
+                { name: "back-nsfw.svg", source: "https://www.furaffinity.net/view/36093753/", nsfw:true },
+                { name: "dick.svg", source: "https://www.furaffinity.net/view/36093753/", nsfw:true },
+                
             ],
             authors: [
-                "slimytongues"
-            ],
-            owners: [
-                "someoneepic"
-            ]
-        },
-        {
-            prefix: "./media/characters/elijah/",
-            files: [
-                { name: "foot.svg", source: "https://www.furaffinity.net/view/34269979/" }
-            ],
-            authors: [
-                "luzian"
-            ],
-            owners: [
-                "someoneepic"
-            ]
-        },
-        {
-            prefix: "./media/characters/elijah/",
-            files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/22413364/" },
-                { name: "back.svg", source: "https://www.furaffinity.net/view/22413364/" },
-                { name: "foot-flexing.svg", source: "https://www.furaffinity.net/view/22413364/" },
-                { name: "foot-stepping.svg", source: "https://www.furaffinity.net/view/22413364/" },
-                { name: "beak.svg", source: "https://www.furaffinity.net/view/22413364/" },
-                { name: "dick.svg", source: "https://www.furaffinity.net/view/22413364/" },
-            ],
-            authors: [
-                "gothwolf"
+                "emiichii"
             ],
             owners: [
                 "someoneepic"
@@ -12692,6 +12675,10 @@ const attributionData = {
         "ivore": {
             "name": "iVore",
             "url": "https://www.furaffinity.net/user/ivore/",
+        },
+        "emiichii": {
+            "name": "EmiiChii",
+            "url": "https://www.furaffinity.net/user/emiechii",
         },
     }
 }

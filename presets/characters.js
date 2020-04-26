@@ -458,18 +458,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/elijah/front.svg",
-                extra: 639 / 626,
-                bottom: 58.7 / 697.8
-            }
-        },
-        side: {
-            height: math.unit(1.65, "meters"),
-            weight: math.unit(50, "kg"),
-            name: "Side",
-            image: {
-                source: "./media/characters/elijah/side.svg",
-                extra: 1840 / 1795,
-                bottom: 106 / 1943
+                extra: 858/830,
+                bottom: 95.5/953.8559
             }
         },
         back: {
@@ -478,43 +468,84 @@ characterMakers.push(() => makeCharacter(
             name: "Back",
             image: {
                 source: "./media/characters/elijah/back.svg",
-                extra: 661.2 / 639.5,
-                bottom: 21.2 / 682.5
+                extra: 895/850,
+                bottom: 5.3/897.956
             }
         },
-        foot: {
-            height: math.unit(1.4, "feet"),
-            name: "Foot",
+        frontNsfw: {
+            height: math.unit(1.65, "meters"),
+            weight: math.unit(50, "kg"),
+            name: "Front (NSFW)",
             image: {
-                source: "./media/characters/elijah/foot.svg"
+                source: "./media/characters/elijah/front-nsfw.svg",
+                extra: 858/830,
+                bottom: 95.5/953.8559
+            }
+        },
+        backNsfw: {
+            height: math.unit(1.65, "meters"),
+            weight: math.unit(50, "kg"),
+            name: "Back (NSFW)",
+            image: {
+                source: "./media/characters/elijah/back-nsfw.svg",
+                extra: 895/850,
+                bottom: 5.3/897.956
+            }
+        },
+        dick: {
+            height: math.unit(1, "feet"),
+            name: "Dick",
+            image: {
+                source: "./media/characters/elijah/dick.svg"
+            }
+        },
+        beakOpen: {
+            height: math.unit(1.25, "feet"),
+            name: "Beak (Open)",
+            image: {
+                source: "./media/characters/elijah/beak-open.svg"
+            }
+        },
+        beakShut: {
+            height: math.unit(1.25, "feet"),
+            name: "Beak (Shut)",
+            image: {
+                source: "./media/characters/elijah/beak-shut.svg"
             }
         },
         footFlexing: {
-            height: math.unit(1.243, "feet"),
+            height: math.unit(1.61, "feet"),
             name: "Foot (Flexing)",
             image: {
                 source: "./media/characters/elijah/foot-flexing.svg"
             }
         },
         footStepping: {
-            height: math.unit(1.3, "feet"),
+            height: math.unit(1.44, "feet"),
             name: "Foot (Stepping)",
             image: {
                 source: "./media/characters/elijah/foot-stepping.svg"
             }
         },
-        beak: {
-            height: math.unit(0.666, "feet"),
-            name: "Beak",
+        plantigradeLeg: {
+            height: math.unit(2.34, "feet"),
+            name: "Plantigrade Leg",
             image: {
-                source: "./media/characters/elijah/beak.svg"
+                source: "./media/characters/elijah/plantigrade-leg.svg"
             }
         },
-        dick: {
-            height: math.unit(0.85, "feet"),
-            name: "Dick",
+        plantigradeFootLeft: {
+            height: math.unit(0.9, "feet"),
+            name: "Plantigrade Foot (Left)",
             image: {
-                source: "./media/characters/elijah/dick.svg"
+                source: "./media/characters/elijah/plantigrade-foot-left.svg"
+            }
+        },
+        plantigradeFootRight: {
+            height: math.unit(0.9, "feet"),
+            name: "Plantigrade Foot (Right)",
+            image: {
+                source: "./media/characters/elijah/plantigrade-foot-right.svg"
             }
         },
     },
