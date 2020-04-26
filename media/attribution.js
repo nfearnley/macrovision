@@ -9147,6 +9147,18 @@ const attributionData = {
                 "stonerabbit"
             ]
         },
+        {
+            prefix: "./media/characters/silver/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32467936/" }
+            ],
+            authors: [
+                "altowovurr"
+            ],
+            owners: [
+                "ivore"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12672,6 +12684,14 @@ const attributionData = {
         "giant-wolf-sheila": {
             "name": "Giant Wolf Sheila",
             "url": "https://www.furaffinity.net/user/giantwolfsheila",
+        },
+        "altowovurr": {
+            "name": "AltOwOVurr",
+            "url": "https://www.furaffinity.net/user/altowovurr",
+        },
+        "ivore": {
+            "name": "iVore",
+            "url": "https://www.furaffinity.net/user/ivore/",
         },
     }
 }

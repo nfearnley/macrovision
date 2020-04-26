@@ -20918,6 +20918,36 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Silver" },
+    {
+        front: {
+            height: math.unit(7, "feet"),
+            weight: math.unit(200, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/silver/front.svg",
+                extra: 472.1/450.5,
+                bottom: 26.5/499.424
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(7, "feet"),
+            default: true
+        },   
+        {
+            name: "Macro",
+            height: math.unit(800, "feet")
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(250, "miles")
+        },
+    ]
+))
 //characters
 
 function makeCharacters() {
