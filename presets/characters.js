@@ -14585,14 +14585,14 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Sheila (Wolf)" },
+    { name: "Sheila (Feral Wolf)" },
     {
         side: {
             height: math.unit(3 + 2 / 12, "feet"),
             weight: math.unit(224, "lb"),
             name: "Side",
             image: {
-                source: "./media/characters/sheila-wolf/side.svg",
+                source: "./media/characters/sheila-feral-wolf/side.svg",
                 extra: 179 / 166,
                 bottom: 0.03
             }
@@ -20854,6 +20854,43 @@ characterMakers.push(() => makeCharacter(
         {
             name: "Macro+++++",
             height: math.unit(1200, "miles")
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Sheila (Wolf)" },
+    {
+        front: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/sheila-wolf/front.svg",
+                extra: 1931/1808,
+                bottom: 29.5/1960
+            }
+        },
+        dick: {
+            height: math.unit(1.464, "feet"),
+            name: "Dick",
+            image: {
+                source: "./media/characters/sheila-wolf/dick.svg"
+            }
+        },
+        muzzle: {
+            height: math.unit(0.513, "feet"),
+            name: "Muzzle",
+            image: {
+                source: "./media/characters/sheila-wolf/muzzle.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Macro",
+            height: math.unit(70, "feet"),
+            default: true
         },
     ]
 ))

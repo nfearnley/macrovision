@@ -419,7 +419,7 @@ body.toggle-bottom-name .bottom-name {
     height: 100%;
     width: 100%;
     background: white;
-    filter: drop-shadow(0px 0px 10px white);
+    filter: drop-shadow(0px 0px 10px white) drop-shadow(0px 0px 10px white);
     z-index: -1;
     animation: pulsing 5s linear 0s infinite;
 }

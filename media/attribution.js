@@ -6474,7 +6474,7 @@ const attributionData = {
             ]
         },
         {
-            prefix: "./media/characters/sheila-wolf/",
+            prefix: "./media/characters/sheila-feral-wolf/",
             files: [
                 { name: "side.svg", source: "https://fidverse.fandom.com/wiki/Sheila" }
             ],
@@ -9119,6 +9119,20 @@ const attributionData = {
             ],
             owners: [
                 "ich"
+            ]
+        },
+        {
+            prefix: "./media/characters/sheila-wolf/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/36021166/", nsfw: true },
+                { name: "dick.svg", source: "https://www.furaffinity.net/view/36021166/", nsfw: true },
+                { name: "muzzle.svg", source: "https://www.furaffinity.net/view/36021166/" },
+            ],
+            authors: [
+                "yutmutt"
+            ],
+            owners: [
+                "giant-wolf-sheila"
             ]
         },
         //characters
@@ -12646,7 +12660,11 @@ const attributionData = {
         "notorious84": {
             "name": "Notorious84",
             "url": "https://www.furaffinity.net/user/notorious84",
-        }
+        },
+        "giant-wolf-sheila": {
+            "name": "Giant Wolf Sheila",
+            "url": "https://www.furaffinity.net/user/giantwolfsheila",
+        },
     }
 }
 
