@@ -7668,6 +7668,10 @@ characterMakers.push(() => makeCharacter(
             height: math.unit(16 + 6 / 12, "feet")
         },
         {
+            name: "Third Dimension",
+            height: math.unit(40, "meters")
+        },
+        {
             name: "Normal",
             height: math.unit(660, "feet"),
             default: true
