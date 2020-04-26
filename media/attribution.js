@@ -9142,6 +9142,18 @@ const attributionData = {
                 "ivore"
             ]
         },
+        {
+            prefix: "./media/characters/pliskin/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/30914902/" }
+            ],
+            authors: [
+                "keihound"
+            ],
+            owners: [
+                "pliskin"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12679,6 +12691,10 @@ const attributionData = {
         "emiichii": {
             "name": "EmiiChii",
             "url": "https://www.furaffinity.net/user/emiechii",
+        },
+        "pliskin": {
+            "name": "Pliskin",
+            "url": "https://www.furaffinity.net/user/pliskin",
         },
     }
 }

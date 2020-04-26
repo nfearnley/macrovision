@@ -20979,6 +20979,37 @@ characterMakers.push(() => makeCharacter(
         },
     ]
 ))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Pliskin" },
+    {
+        front: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/pliskin/front.svg",
+                extra: 1469/1359,
+                bottom: 70/1540
+            }
+        },
+    },
+    [
+        {
+            name: "Micro",
+            height: math.unit(3, "inches")
+        },
+        {
+            name: "Normal",
+            height: math.unit(5 + 11/12, "feet"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(120, "feet")
+        },
+    ]
+))
 //characters
 
 function makeCharacters() {
