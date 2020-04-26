@@ -19994,6 +19994,16 @@ characterMakers.push(() => makeCharacter(
                 bottom: 102.7 / 2177.3866
             }
         },
+        frontNsfw: {
+            height: math.unit(1.72, "m"),
+            weight: math.unit(80, "lb"),
+            name: "Front (NSFW)",
+            image: {
+                source: "./media/characters/voski/front-nsfw.svg",
+                extra: 2076.22 / 2022.4,
+                bottom: 102.7 / 2177.3866
+            }
+        },
         back: {
             height: math.unit(1.72, "m"),
             weight: math.unit(80, "lb"),

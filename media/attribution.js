@@ -8852,6 +8852,7 @@ const attributionData = {
             prefix: "./media/characters/voski/",
             files: [
                 { name: "front.svg", source: null },
+                { name: "front-nsfw.svg", source: null, nsfw: true},
                 { name: "back.svg", source: null },
             ],
             authors: [
