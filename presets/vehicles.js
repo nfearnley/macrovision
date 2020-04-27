@@ -542,5 +542,22 @@ function makeVehicles() {
             "")
     });
 
+    results.push({
+        name: "Helicopters",
+        constructor: () => makeVehicleGroup([
+            {
+                name: "Mil Mi-26",
+                mass: math.unit(109349, "lbs"),
+                sides: {
+                    "Side": { height: math.unit(12.2, "meters") },
+                    "Front": { height: math.unit(12.2, "meters") },
+                    "Bottom": { height: math.unit(40.025, "meters") },
+                }
+            }
+        ],
+            "Helicopters",
+            "")
+    })
+
     return results;
 }

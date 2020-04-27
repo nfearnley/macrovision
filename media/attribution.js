@@ -9696,6 +9696,17 @@ const attributionData = {
                 "wargaming"
             ]
         },
+        {
+            prefix: "./media/vehicles/helicopters/",
+            files: [
+                { name: "mil-mi-26-side.svg", source: "https://en.wikipedia.org/wiki/Mil_Mi-26#/media/File:Mil_Mi-26_Line_Drawing.svg" },
+                { name: "mil-mi-26-front.svg", source: "https://en.wikipedia.org/wiki/Mil_Mi-26#/media/File:Mil_Mi-26_Line_Drawing.svg" },
+                { name: "mil-mi-26-bottom.svg", source: "https://en.wikipedia.org/wiki/Mil_Mi-26#/media/File:Mil_Mi-26_Line_Drawing.svg" },
+            ],
+            authors: [
+                "jetijones"
+            ]
+        },
 
     ],
     people: {
@@ -12742,6 +12753,10 @@ const attributionData = {
         "txdot": {
             "name": "TxDOT",
             "url": "https://www.txdot.gov/content/txdot/en.html",
+        },
+        "jetijones": {
+            "name": "Jetijones",
+            "url": "https://commons.wikimedia.org/wiki/User:Jetijones",
         },
     }
 }
