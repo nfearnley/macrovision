@@ -1602,7 +1602,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/kalista/front.svg",
-                extra: 1947 / 1700
+                extra: 1947 / 1700,
+                bottom: 76.6/1412.98
             }
         },
         back: {
@@ -1611,7 +1612,8 @@ characterMakers.push(() => makeCharacter(
             name: "Back",
             image: {
                 source: "./media/characters/kalista/back.svg",
-                extra: 1366 / 1156
+                extra: 1366 / 1156,
+                bottom: 33.9/1362.78
             }
         }
     },
