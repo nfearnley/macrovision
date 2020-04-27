@@ -21090,6 +21090,45 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Rhys (Feline)" },
+    {
+        front: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/rhys-feline/front.svg",
+                extra: 2488/2308,
+                bottom: 35.67/2519.19
+            }
+        },
+    },
+    [
+        {
+            name: "Really Small",
+            height: math.unit(1, "nm")
+        },
+        {
+            name: "Micro",
+            height: math.unit(4, "inches")
+        },
+        {
+            name: "Normal",
+            height: math.unit(4 + 10/12, "feet"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(100, "feet")
+        },
+        {
+            name: "Megamacto",
+            height: math.unit(50, "miles")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

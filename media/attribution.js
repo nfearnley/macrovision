@@ -9190,6 +9190,18 @@ const attributionData = {
                 "stonerabbit"
             ]
         },
+        {
+            prefix: "./media/characters/rhys-feline/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33034922/" }
+            ],
+            authors: [
+                "makar-ro"
+            ],
+            owners: [
+                "makar-ro"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12757,6 +12769,10 @@ const attributionData = {
         "jetijones": {
             "name": "Jetijones",
             "url": "https://commons.wikimedia.org/wiki/User:Jetijones",
+        },
+        "makar-ro": {
+            "name": "makar-ro",
+            "url": "https://www.furaffinity.net/user/makar-ro/",
         },
     }
 }
