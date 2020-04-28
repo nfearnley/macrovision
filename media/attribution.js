@@ -9202,6 +9202,27 @@ const attributionData = {
                 "makar-ro"
             ]
         },
+        {
+            prefix: "./media/characters/alydar/",
+            files: [
+                { name: "side.svg", source: "https://twitter.com/fromjaf/status/1248760690648608768" },
+                { name: "front.svg", source: "https://twitter.com/fromjaf/status/1248760690648608768" },
+                { name: "top.svg", source: "https://twitter.com/fromjaf/status/1248760690648608768" },
+                { name: "anthro.svg", source: "https://twitter.com/fromjaf/status/1248760690648608768" },
+                { name: "maw.svg", source: "https://twitter.com/fromjaf/status/1248760690648608768" },
+                { name: "head.svg", source: "https://twitter.com/fromjaf/status/1248760690648608768" },
+                { name: "head-alt.svg", source: "https://twitter.com/fromjaf/status/1248760690648608768" },
+                { name: "wing.svg", source: "https://twitter.com/fromjaf/status/1248760690648608768" },
+                { name: "wing-feather.svg", source: "https://twitter.com/fromjaf/status/1248760690648608768" },
+                { name: "contour-feather.svg", source: "https://twitter.com/fromjaf/status/1248760690648608768" },
+            ],
+            authors: [
+                "lemondeer"
+            ],
+            owners: [
+                "fromjaf"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12773,6 +12794,10 @@ const attributionData = {
         "makar-ro": {
             "name": "makar-ro",
             "url": "https://www.furaffinity.net/user/makar-ro/",
+        },
+        "fromjaf": {
+            "name": "fromjaf",
+            "url": "https://twitter.com/fromjaf",
         },
     }
 }

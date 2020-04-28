@@ -21129,6 +21129,116 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Alydar", species: "Raven/Snow Leopard" },
+    {
+        side: {
+            height: math.unit(30, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Side",
+            image: {
+                source: "./media/characters/alydar/side.svg",
+                extra: 234/222,
+                bottom: 6.5/241
+            }
+        },
+        front: {
+            height: math.unit(30, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/alydar/front.svg",
+                extra: 223.37/210.2,
+                bottom: 22.3/246.76
+            }
+        },
+        top: {
+            height: math.unit(64.54, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Top",
+            image: {
+                source: "./media/characters/alydar/top.svg"
+            }
+        },
+        anthro: {
+            height: math.unit(20.712, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Anthro",
+            image: {
+                source: "./media/characters/alydar/anthro.svg",
+                extra: 432/421,
+                bottom: 7.18/440
+            }
+        },
+        maw: {
+            height: math.unit(11.693, "feet"),
+            name: "Maw",
+            image: {
+                source: "./media/characters/alydar/maw.svg"
+            }
+        },
+        head: {
+            height: math.unit(11.693, "feet"),
+            name: "Head",
+            image: {
+                source: "./media/characters/alydar/head.svg"
+            }
+        },
+        headAlt: {
+            height: math.unit(12.861, "feet"),
+            name: "Head (Alt)",
+            image: {
+                source: "./media/characters/alydar/head-alt.svg"
+            }
+        },
+        wing: {
+            height: math.unit(20.712, "feet"),
+            name: "Wing",
+            image: {
+                source: "./media/characters/alydar/wing.svg"
+            }
+        },
+        wingFeather: {
+            height: math.unit(9.662, "feet"),
+            name: "Wing Feather",
+            image: {
+                source: "./media/characters/alydar/wing-feather.svg"
+            }
+        },
+        countourFeather: {
+            height: math.unit(4.154, "feet"),
+            name: "Contour Feather",
+            image: {
+                source: "./media/characters/alydar/contour-feather.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Diplomatic",
+            height: math.unit(13, "feet"),
+            default: true
+        },
+        {
+            name: "Small",
+            height: math.unit(30, "feet")
+        },
+        {
+            name: "Normal", 
+            height: math.unit(95, "feet"),
+            default: true
+        },
+        {
+            name: "Large",
+            height: math.unit(285, "feet")
+        },
+        {
+            name: "Incomprehensible",
+            height: math.unit(450, "megameters")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
