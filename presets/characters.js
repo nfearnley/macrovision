@@ -2842,21 +2842,21 @@ characterMakers.push(() => makeCharacter(
     {
         side: {
             height: math.unit(12, "feet"),
-            weight: math.unit(3000, "lbs"),
+            weight: math.unit(2000, "kg"),
             name: "Side",
             image: {
                 source: "./media/characters/scott/side.svg",
-                extra: 1,
+                extra: 754/724,
                 bottom: 0.069
             }
         },
         upright: {
             height: math.unit(12, "feet"),
-            weight: math.unit(3000, "lbs"),
+            weight: math.unit(2000, "kg"),
             name: "Upright",
             image: {
                 source: "./media/characters/scott/upright.svg",
-                extra: 1,
+                extra: 3881/3722,
                 bottom: 0.05
             }
         },
@@ -21235,6 +21235,36 @@ characterMakers.push(() => makeCharacter(
         {
             name: "Incomprehensible",
             height: math.unit(450, "megameters")
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Selicia" },
+    {
+        side: {
+            height: math.unit(11, "feet"),
+            weight: math.unit(1750, "kg"),
+            name: "Side",
+            image: {
+                source: "./media/characters/selicia/side.svg",
+                extra: 440/396,
+                bottom: 24.8/465.979
+            }
+        },
+        maw: {
+            height: math.unit(4.665, "feet"),
+            name: "Maw",
+            image: {
+                source: "./media/characters/selicia/maw.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(11, "feet"),
+            default: true
         },
     ]
 ))

@@ -9223,6 +9223,19 @@ const attributionData = {
                 "fromjaf"
             ]
         },
+        {
+            prefix: "./media/characters/selicia/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/9421226/" },
+                { name: "maw.svg", source: "https://www.furaffinity.net/view/9421226/" },
+            ],
+            authors: [
+                "vorelord"
+            ],
+            owners: [
+                "chomanderjake"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12798,6 +12811,10 @@ const attributionData = {
         "fromjaf": {
             "name": "fromjaf",
             "url": "https://twitter.com/fromjaf",
+        },
+        "chomanderjake": {
+            "name": "chomanderjake",
+            "url": "https://www.furaffinity.net/user/chomanderjake",
         },
     }
 }
