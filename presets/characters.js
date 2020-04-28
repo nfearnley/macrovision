@@ -21134,7 +21134,7 @@ characterMakers.push(() => makeCharacter(
     {
         side: {
             height: math.unit(30, "feet"),
-            weight: math.unit(150, "lb"),
+            weight: math.unit(35000, "kg"),
             name: "Side",
             image: {
                 source: "./media/characters/alydar/side.svg",
@@ -21144,7 +21144,7 @@ characterMakers.push(() => makeCharacter(
         },
         front: {
             height: math.unit(30, "feet"),
-            weight: math.unit(150, "lb"),
+            weight: math.unit(35000, "kg"),
             name: "Front",
             image: {
                 source: "./media/characters/alydar/front.svg",
@@ -21154,15 +21154,15 @@ characterMakers.push(() => makeCharacter(
         },
         top: {
             height: math.unit(64.54, "feet"),
-            weight: math.unit(150, "lb"),
+            weight: math.unit(35000, "kg"),
             name: "Top",
             image: {
                 source: "./media/characters/alydar/top.svg"
             }
         },
         anthro: {
-            height: math.unit(20.712, "feet"),
-            weight: math.unit(150, "lb"),
+            height: math.unit(30, "feet"),
+            weight: math.unit(9000, "kg"),
             name: "Anthro",
             image: {
                 source: "./media/characters/alydar/anthro.svg",
