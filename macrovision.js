@@ -372,6 +372,7 @@ function createEntityMaker(info, views, sizes) {
     maker.constructor = () => makeEntity(info, views, sizes);
     maker.authors = [];
     maker.owners = [];
+    maker.nsfw = false;
 
     Object.values(views).forEach(view => {
         const authors = authorsOf(view.image.source);
@@ -389,6 +390,10 @@ function createEntityMaker(info, views, sizes) {
                     maker.owners.push(owner);
                 }
             });
+        }
+
+        if (isNsfw(view.image.source)) {
+            maker.nsfw = true;
         }
     });
 
@@ -595,11 +600,32 @@ function configViewList(entity, selectedView) {
         option.innerText = entity.views[view].name;
         option.value = view;
 
+        if (isNsfw(entity.views[view].image.source)) {
+            option.classList.add("nsfw")
+        }
+
         if (view === selectedView) {
             option.selected = true;
+
+            if (option.classList.contains("nsfw")) {
+                list.classList.add("nsfw");
+            } else {
+                list.classList.remove("nsfw");
+            }
         }
+        
         list.appendChild(option);
     });
+
+    
+
+    list.addEventListener("change", e => {
+        if (list.options[list.selectedIndex].classList.contains("nsfw")) {
+            list.classList.add("nsfw");
+        } else {
+            list.classList.remove("nsfw");
+        }
+    })
 }
 
 function clearViewList() {
@@ -2014,8 +2040,20 @@ function prepareEntities() {
             option.innerText = entity.name;
             select.appendChild(option);
 
+            if (entity.nsfw) {
+                option.classList.add("nsfw");
+            }
+
             availableEntitiesByName[entity.name] = entity;
         };
+
+        select.addEventListener("change", e => {
+            if (select.options[select.selectedIndex].classList.contains("nsfw")) {
+                select.classList.add("nsfw");
+            } else {
+                select.classList.remove("nsfw");
+            }
+        })
 
         const button = document.createElement("button");
         button.id = "create-entity-" + category + "-button";

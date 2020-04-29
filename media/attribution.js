@@ -2172,11 +2172,11 @@ const attributionData = {
         {
             prefix: "./media/characters/elbial/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/15459294/" },
-                { name: "side.svg", source: "https://www.furaffinity.net/view/15459294/" },
-                { name: "back.svg", source: "https://www.furaffinity.net/view/15459294/" },
+                { name: "front.svg", source: "https://www.furaffinity.net/view/15459294/", nsfw: true },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/15459294/", nsfw: true },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/15459294/", nsfw: true },
                 { name: "front-dressed.svg", source: "https://www.furaffinity.net/view/15459294/" },
-                { name: "genitals.svg", source: "https://www.furaffinity.net/view/15459294/" },
+                { name: "genitals.svg", source: "https://www.furaffinity.net/view/15459294/", nsfw: true },
             ],
             authors: [
                 "homogeneousrule"
@@ -12882,7 +12882,8 @@ function prepareAttribution() {
                 attribution.files[citation.prefix + file.name] = {
                     authors: citation.authors,
                     owners: citation.owners,
-                    source: file.source
+                    source: file.source,
+                    nsfw: file.nsfw
                 }
             })
         }
@@ -12996,6 +12997,14 @@ function sourceOf(file) {
             return found.source;
         }
     }
+}
+
+function isNsfw(file) {
+    if (attribution.files[file]) {
+        return attribution.files[file].nsfw === true;
+    }
+
+    return false;
 }
 
 prepareAttribution();

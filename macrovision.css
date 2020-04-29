@@ -598,7 +598,6 @@ i.far {
 
 #spawners > select,
 #spawners > button {
-    padding-top: 2pt;
     display: none;
 }
 
@@ -724,13 +723,11 @@ i.far {
 button {
     border: 3px;
     border-style: outset;
-    border-color: gray;
-    padding: 5px;
-    background: #eee;
 }
 
+
 button:hover {
-    background: #ccc;
+    background: #555;
 }
 button:enabled:active {
     border-style: inset;
@@ -841,6 +838,7 @@ button:enabled:active {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 #help-contents-holder {
     flex: 1 1 70%;
     background: #333;
@@ -893,4 +891,38 @@ button:enabled:active {
     width: 80%;
     max-width: 60em;
     height: 60pt;
+}
+
+.nsfw {
+    color: red;
+    font-style: bold;
+}
+
+select {
+    background: #111;
+    color: #eee;
+    border-color: #444;
+}
+
+
+select > option {
+    color: #eee;
+}
+
+button:focus,
+select:focus,
+input:focus {
+    outline-color: #eee;
+}
+
+input {
+    background: #111;
+    color: #eee;
+    border-color: #444;
+}
+
+button {
+    background: #111;
+    color: #ddd;
+    border-color: #666;
 }
