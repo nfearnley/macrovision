@@ -74,6 +74,71 @@ speciesMakers["Viper"] = () => makeCharacter(
     ]
 );
 
+speciesMakers["Synths"] = () => makeCharacter(
+    { name: "Synths" },
+    {
+        front: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(300, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/species/synths/front.svg",
+                extra: 263/253.5,
+                bottom: 6.22/268.85
+            }
+        },
+        back: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(300, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/species/synths/back.svg", 
+                extra: 263.5/254.5,
+                bottom: 4.7/269
+            }
+        },
+        bulky: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(900, "lb"),
+            name: "Bulky",
+            image: {
+                source: "./media/species/synths/bulky.svg",
+                extra: 753/740,
+                bottom: 17.7/771.8
+            }
+        },
+        femme: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(400, "lb"),
+            name: "Femme",
+            image: {
+                source: "./media/species/synths/femme.svg",
+                extra: 756/733,
+                bottom: 17.2/774
+            }
+        },
+    },
+    [
+        {
+            name: "Small",
+            height: math.unit(1, "meters")
+        },
+        {
+            name: "Normal",
+            height: math.unit(2, "meters"),
+            default: true
+        },
+        {
+            name: "Big",
+            height: math.unit(3, "meters")
+        },
+        {
+            name: "Huge",
+            height: math.unit(4, "meters")
+        },
+    ]
+);
+
 function makeSpecies() {
     const results = [];
 

@@ -9597,6 +9597,21 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/species/synths/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/VaderSan/status/1098510601511419904" },
+                { name: "back.svg", source: "https://twitter.com/VaderSan/status/1098510601511419904" },
+                { name: "bulky.svg", source: "https://twitter.com/VaderSan/status/1098514374866673664" },
+                { name: "femme.svg", source: "https://twitter.com/VaderSan/status/1098514846407184384" },
+            ],
+            authors: [
+                "vader-san"
+            ],
+            owners: [
+                "vader-san"
+            ]
+        },
+        {
             prefix: "./media/vehicles/",
             files: [
                 { name: "leopard-2-revolution-1.svg", source: "http://leopardclub.ca/reviews/Tiger_Model/Revolution/" },
@@ -12815,6 +12830,10 @@ const attributionData = {
         "chomanderjake": {
             "name": "chomanderjake",
             "url": "https://www.furaffinity.net/user/chomanderjake",
+        },
+        "vader-san": {
+            "name": "Vader-San",
+            "url": "https://twitter.com/VaderSan",
         },
     }
 }
