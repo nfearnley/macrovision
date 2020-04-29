@@ -9236,6 +9236,22 @@ const attributionData = {
                 "chomanderjake"
             ]
         },
+        {
+            prefix: "./media/characters/layla/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/24078866/", nsfw: true },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/24078866/", nsfw: true },
+                { name: "cumming.svg", source: "https://www.furaffinity.net/view/24078866/", nsfw: true },
+                { name: "dick-flaccid.svg", source: "https://www.furaffinity.net/view/24078866/", nsfw: true },
+                { name: "dick-erect.svg", source: "https://www.furaffinity.net/view/24078866/", nsfw: true },
+            ],
+            authors: [
+                "impaledwolf"
+            ],
+            owners: [
+                "zorupix77"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12834,6 +12850,14 @@ const attributionData = {
         "vader-san": {
             "name": "Vader-San",
             "url": "https://twitter.com/VaderSan",
+        },
+        "zorupix77": {
+            "name": "Zorupix77",
+            "url": "https://www.furaffinity.net/user/zorupix77/",
+        },
+        "impaledwolf": {
+            "name": "ImpaledWolf",
+            "url": "https://www.furaffinity.net/user/impaledwolf",
         },
     }
 }

@@ -21269,6 +21269,87 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Layla" },
+    {
+        side: {
+            height: math.unit(2 + 6 /12, "feet"),
+            weight: math.unit(30, "lb"),
+            name: "Side",
+            image: {
+                source: "./media/characters/layla/side.svg",
+                extra: 244/188,
+                bottom: 18.2/262.1
+            }
+        },
+        back: {
+            height: math.unit(2 + 6 /12, "feet"),
+            weight: math.unit(30, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/layla/back.svg",
+                extra: 308/241.5,
+                bottom: 8.9/316.8
+            }
+        },
+        cumming: {
+            height: math.unit(2 + 6 /12, "feet"),
+            weight: math.unit(30, "lb"),
+            name: "Cumming",
+            image: {
+                source: "./media/characters/layla/cumming.svg",
+                extra: 342/279,
+                bottom: 595/938
+            }
+        },
+        dickFlaccid: {
+            height: math.unit(2.595, "feet"),
+            name: "Flaccid Genitals",
+            image: {
+                source: "./media/characters/layla/dick-flaccid.svg"
+            }
+        },
+        dickErect: {
+            height: math.unit(2.359, "feet"),
+            name: "Erect Genitals",
+            image: {
+                source: "./media/characters/layla/dick-erect.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Micro",
+            height: math.unit(1, "inch")
+        },
+        {
+            name: "Small",
+            height: math.unit(1, "foot")
+        },
+        {
+            name: "Normal",
+            height: math.unit(2 + 6/12, "feet"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(200, "feet")
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(1000, "miles")
+        },
+        {
+            name: "Planetary",
+            height: math.unit(8000, "miles")
+        },
+        {
+            name: "True Layla",
+            height: math.unit(200000*7, "multiverses")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

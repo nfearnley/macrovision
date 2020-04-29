@@ -101,6 +101,14 @@ math.createUnit("universes", {
     definition: "93.016e9 lightyears",
     prefixes: "long"
 });
+math.createUnit("multiverse", {
+    definition: "1e30 lightyears",
+    prefixes: "long"
+});
+math.createUnit("multiverses", {
+    definition: "1e30 lightyears",
+    prefixes: "long"
+});
 
 const unitChoices = {
     length: [
