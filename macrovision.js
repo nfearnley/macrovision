@@ -128,7 +128,8 @@ const unitChoices = {
         "lightyears",
         "parsecs",
         "galaxies",
-        "universes"
+        "universes",
+        "multiverses"
     ],
     area: [
         "meters^2",
