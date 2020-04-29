@@ -59,38 +59,49 @@ scenes["1km-10km"] = makeSlice(math.unit(1000, "meters"), math.unit(10000, "mete
 scenes["10km-100km"] = makeSlice(math.unit(10000, "meters"), math.unit(100000, "meters"));
 scenes["100km-1000km"] = makeSlice(math.unit(100000, "meters"), math.unit(1000000, "meters"));
 scenes["Everyone"] = () => {
+
     config.height = math.unit(11, "meters");
-    availableEntities.characters.map(maker => {
+    let entities = availableEntities.characters.map(maker => {
         return maker.constructor();
-    }).reduce((counter, entity) => {
-        entity.views[entity.view].height = math.unit(1, "meter");
-        const count = availableEntities.characters.length;
-        const x = 0.05 + math.floor(counter / 10) / math.ceil(count / 10);
-        const y = (counter % 10) / 10 + 0.1;
-        displayEntity(entity, entity.view, x, y);
-        return counter + 1;
-    }, 0);
-    updateSizes(true);
+    })
+
+    if (confirm("This scene will load " + entities.length + " entities -- are you sure?")) {
+        entities.reduce((counter, entity) => {
+            entity.views[entity.view].height = math.unit(1, "meter");
+            const count = availableEntities.characters.length;
+            const x = 0.05 + math.floor(counter / 10) / math.ceil(count / 10);
+            const y = (counter % 10) / 10 + 0.1;
+            displayEntity(entity, entity.view, x, y);
+            return counter + 1;
+        }, 0);
+        updateSizes(true);
+    }
+    
+    
 }
 
 scenes["EVERYTHING"] = () => {
     config.height = math.unit(11, "meters");
-    Object.values(availableEntitiesByName).map(maker => {
+    let entities = Object.values(availableEntitiesByName).map(maker => {
         return maker.constructor();
-    }).reduce((counter, entity) => {
-        entity.views[entity.view].height = math.unit(1, "meter");
-        const count = Object.values(availableEntitiesByName).length;
-        const x = 0.05 + math.floor(counter / 10) / math.ceil(count / 10);
-        const y = (counter % 10) / 10 + 0.1;
-        displayEntity(entity, entity.view, x, y);
-        return counter + 1;
-    }, 0);
-    updateSizes(true);
+    })
+    
+    if (confirm("This scene will load " + entities.length + " entities -- are you sure?")) {
+        entities.reduce((counter, entity) => {
+            entity.views[entity.view].height = math.unit(1, "meter");
+            const count = Object.values(availableEntitiesByName).length;
+            const x = 0.05 + math.floor(counter / 10) / math.ceil(count / 10);
+            const y = (counter % 10) / 10 + 0.1;
+            displayEntity(entity, entity.view, x, y);
+            return counter + 1;
+        }, 0);
+        updateSizes(true);
+    }
 }
 
 scenes["EVERY VIEW AAAAA"] = () => {
     config.height = math.unit(11, "meters");
-    Object.values(availableEntitiesByName).map(maker => {
+    let entities = Object.values(availableEntitiesByName).map(maker => {
         return maker.constructor();
     }).flatMap(entity => {
         return Object.keys(entity.views).map(view => {
@@ -98,15 +109,19 @@ scenes["EVERY VIEW AAAAA"] = () => {
             newEntity.view = view;
             return newEntity;
         });
-    }).reduce((counter, entity) => {
-        entity.views[entity.view].height = math.unit(1, "meter");
-        const count = Object.values(availableEntitiesByName).length;
-        const x = 0.05 + math.floor(counter / 10) / math.ceil(count / 10);
-        const y = (counter % 10) / 10 + 0.1;
-        displayEntity(entity, entity.view, x, y);
-        return counter + 1;
-    }, 0);
-    updateSizes(true);
+    })
+    
+    if (confirm("This scene will load " + entities.length + " entities -- are you sure?")) {
+        entities.reduce((counter, entity) => {
+            entity.views[entity.view].height = math.unit(1, "meter");
+            const count = Object.values(availableEntitiesByName).length;
+            const x = 0.05 + math.floor(counter / 10) / math.ceil(count / 10);
+            const y = (counter % 10) / 10 + 0.1;
+            displayEntity(entity, entity.view, x, y);
+            return counter + 1;
+        }, 0);
+        updateSizes(true);
+    }
 }
 
 
