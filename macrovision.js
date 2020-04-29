@@ -2377,7 +2377,7 @@ function saveScreenshot() {
 }
 
 function toast(msg) {
-    div = document.createElement("div");
+    let div = document.createElement("div");
     div.innerHTML = msg;
     div.classList.add("toast");
 
