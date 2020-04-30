@@ -15267,7 +15267,7 @@ characterMakers.push(() => makeCharacter(
             height: math.unit(3, "meters")
         },
         {
-            name: "Kaiku",
+            name: "Kaiju",
             height: math.unit(120, "meters"),
             default: true
         },
