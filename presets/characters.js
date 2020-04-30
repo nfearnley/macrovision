@@ -21350,6 +21350,47 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Knox" },
+    {
+        back: {
+            height: math.unit(10.5, "feet"),
+            weight: math.unit(800, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/knox/back.svg",
+                extra: 1486/1089,
+                bottom: 107/1601.4
+            }
+        },
+        side: {
+            height: math.unit(10.5, "feet"),
+            weight: math.unit(800, "lb"),
+            name: "Side",
+            image: {
+                source: "./media/characters/knox/side.svg",
+                extra: 244/218,
+                bottom: 14/260
+            }
+        },
+    },
+    [
+        {
+            name: "Compact",
+            height: math.unit(10.5, "feet"),
+            default: true
+        },
+        {
+            name: "Dynamax",
+            height: math.unit(210, "feet")
+        },
+        {
+            name: "Full Macro",
+            height: math.unit(850, "feet")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

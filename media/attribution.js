@@ -9252,6 +9252,19 @@ const attributionData = {
                 "zorupix77"
             ]
         },
+        {
+            prefix: "./media/characters/knox/",
+            files: [
+                { name: "back.svg", source: "https://www.furaffinity.net/view/34568010/" },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/34112095/" },
+            ],
+            authors: [
+                "coillte"
+            ],
+            owners: [
+                "swampykaiju"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12858,6 +12871,14 @@ const attributionData = {
         "impaledwolf": {
             "name": "ImpaledWolf",
             "url": "https://www.furaffinity.net/user/impaledwolf",
+        },
+        "coillte": {
+            "name": "Coillte",
+            "url": "https://www.furaffinity.net/view/34568010/",
+        },
+        "swampykaiju": {
+            "name": "SwampyKaiju",
+            "url": "https://www.furaffinity.net/user/swampykaiju/",
         },
     }
 }
