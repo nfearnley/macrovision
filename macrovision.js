@@ -1454,7 +1454,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.addEventListener("unload", () => saveScene("autosave"));
     document.querySelector("#options-selected-entity").addEventListener("input", e => {
-        if (e.target.value == "none") {
+        if (e.target.value == "None") {
             deselect()
         } else {
             select(document.querySelector("#entity-" + e.target.value));
