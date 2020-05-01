@@ -21391,6 +21391,62 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Shin (Pikachu)" },
+    {
+        front: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(152, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/shin-pikachu/front.svg",
+                extra: 1574/1480,
+                bottom: 53.3/1626
+            }
+        },
+        hand: {
+            height: math.unit(1.055, "feet"),
+            name: "Hand",
+            image: {
+                source: "./media/characters/shin-pikachu/hand.svg"
+            }
+        },
+        foot: {
+            height: math.unit(1.1, "feet"),
+            name: "Foot",
+            image: {
+                source: "./media/characters/shin-pikachu/foot.svg"
+            }
+        },
+        collar: {
+            height: math.unit(0.386, "feet"),
+            name: "Collar",
+            image: {
+                source: "./media/characters/shin-pikachu/collar.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Smallest",
+            height: math.unit(0.5, "inches")
+        },
+        {
+            name: "Micro",
+            height: math.unit(6, "inches")
+        },
+        {
+            name: "Normal",
+            height: math.unit(6, "feet"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(150, "feet")
+        },   
+    ]
+))
+
 //characters
 
 function makeCharacters() {

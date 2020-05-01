@@ -9265,6 +9265,21 @@ const attributionData = {
                 "swampykaiju"
             ]
         },
+        {
+            prefix: "./media/characters/shin-pikachu/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32473898/" },
+                { name: "hand.svg", source: "https://www.furaffinity.net/view/32473898/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/32473898/" },
+                { name: "collar.svg", source: "https://www.furaffinity.net/view/32473898/" },
+            ],
+            authors: [
+                "bonnibelblackberrii"
+            ],
+            owners: [
+                "sparklinshin"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12879,6 +12894,14 @@ const attributionData = {
         "swampykaiju": {
             "name": "SwampyKaiju",
             "url": "https://www.furaffinity.net/user/swampykaiju/",
+        },
+        "sparklinshin": {
+            "name": "SparklinShin",
+            "url": "https://www.furaffinity.net/user/sparklinshin/",
+        },
+        "bonnibelblackberrii": {
+            "name": "BonnibelBlackberrii",
+            "url": "https://www.deviantart.com/bonnibelblackberrii",
         },
     }
 }
