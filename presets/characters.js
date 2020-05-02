@@ -607,6 +607,16 @@ characterMakers.push(() => makeCharacter(
                 bottom: 0.07
             }
         },
+        dragon: {
+            height: math.unit(23, "feet"),
+            weight: math.unit(50000, "lb"),
+            name: "Dragon",
+            image: {
+                source: "./media/characters/rai/dragon.svg",
+                extra: 2498/2030,
+                bottom: 85.2/2584
+            }
+        },
         maw: {
             height: math.unit(6 / 3.81416, "feet"),
             name: "Maw",

@@ -4032,6 +4032,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/rai/",
+            files: [
+                { name: "dragon.svg", source: null }
+            ],
+            authors: [
+                "winderus",
+            ],
+            owners: [
+                "shadowblade945"
+            ]
+        },
+        {
             prefix: "./media/characters/raindrops/",
             files: [
                 { name: "front.svg", source: null },
