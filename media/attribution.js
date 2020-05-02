@@ -9370,6 +9370,18 @@ const attributionData = {
                 "rezavax"
             ]
         },
+        {
+            prefix: "./media/characters/shadow-blade/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/25434573/" }
+            ],
+            authors: [
+                "ashthemare"
+            ],
+            owners: [
+                "christopherdavies"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -13031,6 +13043,14 @@ const attributionData = {
         "scruff": {
             "name": "Scruff",
             "url": "https://twitter.com/ScruffKerfluff",
+        },
+        "ashthemare": {
+            "name": "AshTheMare",
+            "url": "https://www.furaffinity.net/user/ashthemare",
+        },
+        "christopherdavies": {
+            "name": "ChristopherDavies",
+            "url": "https://www.furaffinity.net/user/christopherdavies/",
         },
     }
 }

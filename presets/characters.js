@@ -21609,6 +21609,30 @@ characterMakers.push(() => makeCharacter(
         },
     ]
 ))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Shadow Blade" },
+    {
+        side: {
+            height: math.unit(5 + 11/12, "feet"),
+            weight: math.unit(1400, "lb"),
+            name: "Side",
+            image: {
+                source: "./media/characters/shadow-blade/side.svg",
+                extra: 1726/1267,
+                bottom: 58.4/1785
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(5 + 11/12, "feet"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
