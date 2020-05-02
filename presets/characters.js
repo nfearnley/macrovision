@@ -18504,6 +18504,16 @@ characterMakers.push(() => makeCharacter(
                 bottom: 0.01
             }
         },
+        drake: {
+            height: math.unit(30, "feet"),
+            weight: math.unit(246960, "lb"),
+            name: "Drake",
+            image: {
+                source: "./media/characters/reza/drake.svg",
+                extra: 2350/2024,
+                bottom: 60.7/2403
+            }
+        },
     },
     [
         {

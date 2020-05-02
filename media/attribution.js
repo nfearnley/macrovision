@@ -8182,6 +8182,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/reza/",
+            files: [
+                { name: "drake.svg", source: "https://www.furaffinity.net/view/24133741/" },
+            ],
+            authors: [
+                "lady-darkstreak"
+            ],
+            owners: [
+                "rezavax"
+            ]
+        },
+        {
             prefix: "./media/characters/athea/",
             files: [
                 { name: "side.svg", source: "https://twitter.com/Cattaur_Athea/status/1243630128216903680" },
@@ -12974,6 +12986,10 @@ const attributionData = {
         "necrobuddy": {
             "name": "Necrobuddy",
             "url": "https://www.furaffinity.net/user/necrobuddy",
+        },
+        "lady-darkstreak": {
+            "name": "lady-darkstreak",
+            "url": "https://www.furaffinity.net/user/lady-darkstreak/",
         },
     }
 }
