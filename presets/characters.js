@@ -21537,6 +21537,48 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Felix Braveheart" },
+    {
+        front: {
+            height: math.unit(13, "feet"),
+            weight: math.unit(1700, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/felix-braveheart/front.svg",
+                extra: 1222/1157,
+                bottom: 53.2/1280
+            }
+        },
+        back: {
+            height: math.unit(13, "feet"),
+            weight: math.unit(1700, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/felix-braveheart/back.svg",
+                extra: 1277/1203,
+                bottom: 50.2/1327
+            }
+        },
+        feral: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(400, "lb"),
+            name: "Feral",
+            image: {
+                source: "./media/characters/felix-braveheart/feral.svg",
+                extra: 682/625,
+                bottom: 6.9/688
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(13, "feet"),
+            default: true
+        },
+    ]
+))
 //characters
 
 function makeCharacters() {

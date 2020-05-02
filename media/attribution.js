@@ -9318,6 +9318,20 @@ const attributionData = {
                 "necrobuddy"
             ]
         },
+        {
+            prefix: "./media/characters/felix-braveheart/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/27377731/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/27377731/" },
+                { name: "feral.svg", source: "https://www.furaffinity.net/view/27377731/" },
+            ],
+            authors: [
+                "oddthesungod"
+            ],
+            owners: [
+                "rezavax"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
