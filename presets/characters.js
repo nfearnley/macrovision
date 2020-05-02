@@ -93,7 +93,7 @@ characterMakers.push(() => makeCharacter(
         },
         {
             name: "Minimacro",
-            height: math.unit(30, "meter"),
+            height: math.unit(40, "feet"),
             default: true,
             info: {
                 description: {
@@ -104,7 +104,7 @@ characterMakers.push(() => makeCharacter(
         },
         {
             name: "Macro",
-            height: math.unit(100, "meter"),
+            height: math.unit(100, "feet"),
             info: {
                 description: {
                     mode: "append",
@@ -114,11 +114,11 @@ characterMakers.push(() => makeCharacter(
         },
         {
             name: "Macro+",
-            height: math.unit(1000, "meter")
+            height: math.unit(300, "feet")
         },
         {
             name: "Megamacro",
-            height: math.unit(10, "miles")
+            height: math.unit(2, "miles")
         }
     ]
 ))
