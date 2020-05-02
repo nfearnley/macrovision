@@ -9394,6 +9394,18 @@ const attributionData = {
                 "christopherdavies"
             ]
         },
+        {
+            prefix: "./media/characters/karla-halldor/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/25611482/" }
+            ],
+            authors: [
+                "box-cat"
+            ],
+            owners: [
+                "renadyne"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -13063,6 +13075,10 @@ const attributionData = {
         "christopherdavies": {
             "name": "ChristopherDavies",
             "url": "https://www.furaffinity.net/user/christopherdavies/",
+        },
+        "box-cat": {
+            "name": "box-cat",
+            "url": "https://www.furaffinity.net/user/box-cat",
         },
     }
 }

@@ -21643,6 +21643,29 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Karla Halldor" },
+    {
+        front: {
+            height: math.unit(1 + 6/12, "feet"),
+            weight: math.unit(25, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/karla-halldor/front.svg",
+                extra: 1459/1383,
+                bottom: 12/1472
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(1 + 6/12, "feet"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
