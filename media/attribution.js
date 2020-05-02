@@ -9306,6 +9306,18 @@ const attributionData = {
                 "briantheliongod"
             ]
         },
+        {
+            prefix: "./media/characters/khemri/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "fiyawerks"
+            ],
+            owners: [
+                "necrobuddy"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12940,6 +12952,14 @@ const attributionData = {
         "gepredators": {
             "name": "gepredators",
             "url": "https://www.furaffinity.net/user/gepredators",
+        },
+        "fiyawerks": {
+            "name": "Fiyawerks",
+            "url": "https://www.deviantart.com/fiyawerks",
+        },
+        "necrobuddy": {
+            "name": "Necrobuddy",
+            "url": "https://www.furaffinity.net/user/necrobuddy",
         },
     }
 }

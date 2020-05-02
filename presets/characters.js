@@ -21510,6 +21510,33 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Khemri", species: "Jackal" },
+    {
+        front: {
+            height: math.unit(5 + 8/12, "feet"),
+            weight: math.unit(140, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/khemri/front.svg",
+                extra: 4780/4059,
+                bottom: 80.1/4859.25
+            }
+        },
+    },
+    [
+        {
+            name: "Micro",
+            height: math.unit(6, "inches")
+        },
+        {
+            name: "Normal",
+            height: math.unit(5 + 8/12, "feet"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
