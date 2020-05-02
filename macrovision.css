@@ -410,7 +410,7 @@ body.toggle-bottom-name .bottom-name {
     padding-top: 1pt;
 }
 
-#open-help.highlighted::before {
+#open-help.highlighted::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -418,7 +418,7 @@ body.toggle-bottom-name .bottom-name {
     display: block;
     height: 100%;
     width: 100%;
-    background: white;
+    background: inherit;
     filter: drop-shadow(0px 0px 10px white) drop-shadow(0px 0px 10px white);
     z-index: -1;
     animation: pulsing 5s linear 0s infinite;
