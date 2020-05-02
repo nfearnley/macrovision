@@ -53,6 +53,7 @@ function makeHeight(info, category, prefix = "", type = "objects") {
         } else {
             src = "./media/" + type + "/" + category.replace(/ /g, "-").toLowerCase() + "/" + prefix + object[0] + ".svg";
         }
+
         views[object[0]] = {
             height: math.unit(object[1], object[2]),
             image: { source: src },
@@ -593,6 +594,25 @@ function makeObjects() {
         "Signs",
         ""
     ))
+    
+
+    results.push({
+        name: "Game Consoles",
+        constructor: () => makeVehicleGroup([
+            {
+                name: "Switch",
+                mass: math.unit(10.48, "ounces"),
+                sides: {
+                    "Front": { height: math.unit(4.01, "inches") },
+                    "Top": { height: math.unit(1.13, "inches") },
+                    "Side": { height: math.unit(4.01, "inches") },
+                }
+            }
+        ],
+            "Game Consoles",
+            "",
+            "objects")
+    })
 
 
     results.sort((b1, b2) => {

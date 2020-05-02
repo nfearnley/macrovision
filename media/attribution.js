@@ -9658,6 +9658,17 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/objects/game-consoles/",
+            files: [
+                { name: "switch-front.svg", source: "https://www.dimensions.guide/element/nintendo-switch" },
+                { name: "switch-top.svg", source: "https://www.dimensions.guide/element/nintendo-switch" },
+                { name: "switch-side.svg", source: "https://www.dimensions.guide/element/nintendo-switch" },
+            ],
+            authors: [
+                "dimensions-guide"
+            ]
+        },
+        {
             prefix: "./media/objects/",
             files: [
                 { name: "paperclip.svg", source: "https://commons.wikimedia.org/wiki/File:Ei-paperclip.svg" }

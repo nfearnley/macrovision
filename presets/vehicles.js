@@ -260,7 +260,8 @@ function makeBuses() {
     return entity;
 }
 
-function makeVehicleGroup(info, name, prefix) {
+// TODO this should be named something more generic and put in objects.js
+function makeVehicleGroup(info, name, prefix, directory="vehicles") {
     sides = {}
 
     let defaultHeight;
@@ -275,7 +276,7 @@ function makeVehicleGroup(info, name, prefix) {
                 rename: true,
                 height: data.height,
                 mass: vehicle.mass,
-                image: { source: "./media/vehicles/" + name.replace(/ /g, "-").toLowerCase() + "/" + (prefix == "" ? "" : prefix + "_") + vehicle.name.replace(/ /g, "-").toLowerCase() + "-" + sideName.replace(/ /g, "-").toLowerCase() + ".svg", extra: (data.extra ? data.extra : 1) }
+                image: { source: "./media/" + directory + "/" + name.replace(/ /g, "-").toLowerCase() + "/" + (prefix == "" ? "" : prefix + "_") + vehicle.name.replace(/ /g, "-").toLowerCase() + "-" + sideName.replace(/ /g, "-").toLowerCase() + ".svg", extra: (data.extra ? data.extra : 1) }
             };
         });
     });
