@@ -2950,6 +2950,19 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/keset-vanrel/",
+            files: [
+                { name: "battle.svg", source: "https://www.furaffinity.net/view/30471138/" },
+            ],
+            authors: [
+                "buckdasystem",
+                "scruff"
+            ],
+            owners: [
+                "kuipaws"
+            ]
+        },
+        {
             prefix: "./media/characters/kibibyte/",
             files: [
                 { name: "front.svg", source: null }
@@ -3031,6 +3044,19 @@ const attributionData = {
             ],
             authors: [
                 "buckdasystem"
+            ],
+            owners: [
+                "kuipaws"
+            ]
+        },
+        {
+            prefix: "./media/characters/kuiper-vanrel/",
+            files: [
+                { name: "battle.svg", source: "https://www.furaffinity.net/view/30471123/" },
+            ],
+            authors: [
+                "buckdasystem",
+                "scruff"
             ],
             owners: [
                 "kuipaws"
@@ -13001,6 +13027,10 @@ const attributionData = {
         "lady-darkstreak": {
             "name": "lady-darkstreak",
             "url": "https://www.furaffinity.net/user/lady-darkstreak/",
+        },
+        "scruff": {
+            "name": "Scruff",
+            "url": "https://twitter.com/ScruffKerfluff",
         },
     }
 }

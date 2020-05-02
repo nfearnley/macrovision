@@ -9782,6 +9782,16 @@ characterMakers.push(() => makeCharacter(
                 source: "./media/characters/kuiper-vanrel/foot.svg",
             }
         },
+        battle: {
+            height: math.unit(6.824, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Battle",
+            image: {
+                source: "./media/characters/kuiper-vanrel/battle.svg",
+                extra: 1466/1327,
+                bottom: 29/1492.5
+            }
+        },
     },
     [
         {
@@ -9817,6 +9827,16 @@ characterMakers.push(() => makeCharacter(
             name: "Foot",
             image: {
                 source: "./media/characters/keset-vanrel/foot.svg"
+            }
+        },
+        battle: {
+            height: math.unit(7.408, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Battle",
+            image: {
+                source: "./media/characters/keset-vanrel/battle.svg",
+                extra: 1890/1386,
+                bottom: 73.28/1970
             }
         },
     },
