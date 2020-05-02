@@ -9280,6 +9280,20 @@ const attributionData = {
                 "sparklinshin"
             ]
         },
+        {
+            prefix: "./media/characters/kayda/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/36114533/", nsfw: true },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/36114533/", nsfw: true },
+                { name: "dick.svg", source: "https://www.furaffinity.net/view/36114533/", nsfw: true },
+            ],
+            authors: [
+                "yutmutt"
+            ],
+            owners: [
+                "danielethefurry"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12902,6 +12916,10 @@ const attributionData = {
         "bonnibelblackberrii": {
             "name": "BonnibelBlackberrii",
             "url": "https://www.deviantart.com/bonnibelblackberrii",
+        },
+        "danielethefurry": {
+            "name": "DanieleTheFurry",
+            "url": "https://www.furaffinity.net/user/danielethefurry/",
         },
     }
 }

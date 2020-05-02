@@ -21447,6 +21447,46 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Kayda" },
+    {
+        front: {
+            height: math.unit(28, "feet"),
+            weight: math.unit(10500, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/kayda/front.svg",
+                extra: 1536/1428,
+                bottom: 68.7/1603
+            }
+        },
+        back: {
+            height: math.unit(28, "feet"),
+            weight: math.unit(10500, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/kayda/back.svg",
+                extra: 1557/1464,
+                bottom: 39.5/1597.49
+            }
+        },
+        dick: {
+            height: math.unit(3.858, "feet"),
+            name: "Dick",
+            image: {
+                source: "./media/characters/kayda/dick.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Macro",
+            height: math.unit(28, "feet"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
