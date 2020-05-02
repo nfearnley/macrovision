@@ -9294,6 +9294,18 @@ const attributionData = {
                 "danielethefurry"
             ]
         },
+        {
+            prefix: "./media/characters/brian/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/17205790/" }
+            ],
+            authors: [
+                "gepredators"
+            ],
+            owners: [
+                "briantheliongod"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -12920,6 +12932,14 @@ const attributionData = {
         "danielethefurry": {
             "name": "DanieleTheFurry",
             "url": "https://www.furaffinity.net/user/danielethefurry/",
+        },
+        "briantheliongod": {
+            "name": "Briantheliongod",
+            "url": "https://www.furaffinity.net/user/briantheliongod/",
+        },
+        "gepredators": {
+            "name": "gepredators",
+            "url": "https://www.furaffinity.net/user/gepredators",
         },
     }
 }

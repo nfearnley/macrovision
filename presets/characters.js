@@ -21487,6 +21487,29 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Brian", species: "Barbary Lion" },
+    {
+        front: {
+            height: math.unit(10 + 11/12, "feet"),
+            weight: math.unit(1400, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/brian/front.svg",
+                extra: 737/692,
+                bottom: 55.4/785
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(10 + 11/12, "feet"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
