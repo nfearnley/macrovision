@@ -1388,7 +1388,7 @@ const settingsData = {
         name: "Height Bars",
         desc: "Draw dashed lines to the top of each entity",
         type: "toggle",
-        default: true,
+        default: false,
         get value() {
             return checkBodyClass("toggle-height-bars");
         },
