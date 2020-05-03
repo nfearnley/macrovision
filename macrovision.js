@@ -1812,9 +1812,14 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
         } else {
-            const dir = e.deltaY < 0 ? 10 / 11 : 11 / 10;
-            setWorldHeight(config.height, math.multiply(config.height, dir));
-            updateWorldOptions();
+            if (config.autoFit) {
+                toastRateLimit("Zoom is locked! Check Settings to disable.", "zoom-lock", 1000);
+            } else {
+                const dir = e.deltaY < 0 ? 10 / 11 : 11 / 10;
+                setWorldHeight(config.height, math.multiply(config.height, dir));
+                updateWorldOptions();
+            }
+            
         }
         checkFitWorld();
     })
@@ -2609,6 +2614,8 @@ function saveScreenshot() {
     drawScale(false);
 }
 
+const rateLimits = {};
+
 function toast(msg) {
     let div = document.createElement("div");
     div.innerHTML = msg;
@@ -2619,4 +2626,13 @@ function toast(msg) {
     setTimeout(() => {
         document.body.removeChild(div);
     }, 5000)
+}
+
+function toastRateLimit(msg, key, delay) {
+    if (!rateLimits[key]) {
+        toast(msg);
+        rateLimits[key] = setTimeout(() => {
+            delete rateLimits[key]
+        }, delay);
+    }
 }
