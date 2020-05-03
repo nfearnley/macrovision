@@ -120,13 +120,21 @@
       </div>
     </div>
   </div>
-  <div id="popout-menu">
+  <div class="popout-menu" id="sidebar-menu">
 
   </div>
+  <div class="popout-menu" id="settings-menu">
+    
+  </div>
   <div id="menubar">
-    <button id="toggle-menu">
-      <i class="fas fa-bars"></i>
-    </button>
+    <span class="menubar-group">
+      <button id="toggle-menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <button id="toggle-settings">
+        <i class="fas fa-cogs"></i>
+      </button>
+    </span>
     <span class="menubar-group">
       <button id="copy-screenshot">
         <i class="fas fa-camera"></i>
@@ -161,44 +169,6 @@
         </div>
         <div class="options-row">
           <button class="options-button" id="options-world-fit">Fit to entities</button>
-        </div>
-        <div class="options-row">
-          <input type="checkbox" id="options-show-extra">
-          <label for="options-show-extra">Show extra options</label>
-        </div>
-        <div class="options-block options-block-optional">
-          <div class="options-row">
-            <input type="checkbox" id="options-world-autofit">
-            <label for="options-world-autofit">Auto-size world</label>
-          </div>
-          <div class="options-row">
-            <input type="checkbox" id="options-world-show-names">
-            <label for="options-world-show-names">Names over entities</label>
-          </div>
-          <div class="options-row">
-            <input type="checkbox" id="options-world-show-bottom-names" checked>
-            <label for="options-world-show-bottom-names">Names at bottom</label>
-          </div>
-          <div class="options-row">
-            <input type="checkbox" id="options-world-show-top-names" checked>
-            <label for="options-world-show-top-names">Arrows for very large entities</label>
-          </div>
-          <div class="options-row">
-            <input type="checkbox" id="options-world-show-height-bars">
-            <label for="options-world-show-height-bars">Height bars</label>
-          </div>
-          <div class="options-row">
-            <input type="checkbox" id="options-world-show-entity-glow">
-            <label for="options-world-show-entity-glow">Glowing edges</label>
-          </div>
-          <div class="options-row">
-            <input type="checkbox" id="options-world-show-bottom-cover">
-            <label for="options-world-show-bottom-cover">Opaque ground</label>
-          </div>
-          <div class="options-row">
-            <input type="checkbox" id="options-world-show-scale" checked>
-            <label for="options-world-show-scale">Scale</label>
-          </div>
         </div>
       </div>
       <div class="options-label">

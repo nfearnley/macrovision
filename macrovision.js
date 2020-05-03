@@ -1228,9 +1228,8 @@ function doHorizReposition(change) {
     });
 }
 
-function prepareMenu() {
-
-    const menubar = document.querySelector("#popout-menu");
+function prepareSidebar() {
+    const menubar = document.querySelector("#sidebar-menu");
 
     [
         {
@@ -1322,6 +1321,148 @@ function prepareMenu() {
         buttonHolder.appendChild(actionText);
         menubar.appendChild(buttonHolder);
     });
+}
+
+function toggleBodyClass(cls, setting) {
+    if (setting) {
+        document.body.classList.add(cls);
+    } else {
+        document.body.classList.remove(cls);
+    }
+}
+
+const settingsData = {
+    "auto-scale": {
+        name: "Auto-Size World",
+        desc: "Automatically zoom to fit the largest entity",
+        type: "toggle",
+        default: true,
+        set value(param) {
+            config.autofit = param;
+        }
+    },
+    "names": {
+        name: "Show Names",
+        desc: "Display names over entities",
+        type: "toggle",
+        default: true,
+        set value(param) {
+            toggleBodyClass("toggle-entity-name", param);
+        }
+    },
+    "bottom-names": {
+        name: "Bottom Names",
+        desc: "Display names at the bottom",
+        type: "toggle",
+        default: false,
+        set value(param) {
+            toggleBodyClass("toggle-bottom-name", param);
+        }
+    },
+    "top-names": {
+        name: "Show Arrows",
+        desc: "Point to entities that are much larger than the current view",
+        type: "toggle",
+        default: false,
+        set value(param) {
+            toggleBodyClass("toggle-top-name", param);
+        }
+    },
+    "height-bars": {
+        name: "Height Bars",
+        desc: "Draw dashed lines to the top of each entity",
+        type: "toggle",
+        default: true,
+        set value(param) {
+            toggleBodyClass("toggle-height-bars", param);
+        }
+    },
+    "glowing-entities": {
+        name: "Glowing Edges",
+        desc: "Makes all entities glow",
+        type: "toggle",
+        default: false,
+        set value(param) {
+            toggleBodyClass("toggle-entity-glow", param);
+        }
+    },
+    "solid-ground": {
+        name: "Solid Ground",
+        desc: "Draw solid ground at the y=0 line",
+        type: "toggle",
+        default: false,
+        set value(param) {
+            toggleBodyClass("toggle-bottom-cover", param);
+        }
+    },
+    "show-scale": {
+        name: "Show Scale",
+        desc: "Show the scale",
+        type: "toggle",
+        default: true,
+        set value(param) {
+            toggleBodyClass("toggle-scale", param);
+        }
+    },
+}
+
+function prepareSettings(userSettings) {
+    const menubar = document.querySelector("#settings-menu");
+
+    Object.entries(settingsData).forEach(([id, entry]) => {
+        const holder = document.createElement("label");
+        holder.classList.add("settings-holder");
+        
+        const input = document.createElement("input");
+        input.id = "setting-" + id;
+
+        const name = document.createElement("label");
+        name.innerText = entry.name;
+        name.classList.add("settings-name");
+        name.setAttribute("for", input.id);
+
+        const desc = document.createElement("label");
+        desc.innerText = entry.desc;
+        desc.classList.add("settings-desc");
+        desc.setAttribute("for", input.id);
+
+        if (entry.type == "toggle") {
+            input.type = "checkbox";
+
+            input.checked = userSettings[id] === undefined ? entry.default : userSettings[id];
+            
+            holder.setAttribute("for", input.id);
+
+            input.appendChild(name);
+            input.appendChild(desc);
+            holder.appendChild(input);
+            holder.appendChild(name);
+            holder.appendChild(desc);
+            menubar.appendChild(holder);
+
+            const update = () => {
+                if (input.checked) {
+                    holder.classList.add("enabled");
+                    holder.classList.remove("disabled");
+                } else {
+                    holder.classList.remove("enabled");
+                    holder.classList.add("disabled");
+                }
+                
+                entry.value = input.checked;
+            }
+            
+            update();
+
+            input.addEventListener("change", update);
+        }
+    })
+}
+
+function prepareMenu() {
+
+    prepareSidebar();
+    prepareSettings({});
 
     if (checkHelpDate()) {
         document.querySelector("#open-help").classList.add("highlighted");
@@ -1432,10 +1573,11 @@ document.addEventListener("DOMContentLoaded", () => {
         saveScreenshot();
     });
     document.querySelector("#toggle-menu").addEventListener("click", e => {
-        const popoutMenu = document.querySelector("#popout-menu");
+        const popoutMenu = document.querySelector("#sidebar-menu");
         if (popoutMenu.classList.contains("visible")) {
             popoutMenu.classList.remove("visible");
         } else {
+            document.querySelectorAll(".popout-menu").forEach(menu => menu.classList.remove("visible"));
             const rect = e.target.getBoundingClientRect();
             popoutMenu.classList.add("visible");
             popoutMenu.style.left = rect.x + rect.width + 10 + "px";
@@ -1444,13 +1586,38 @@ document.addEventListener("DOMContentLoaded", () => {
         e.stopPropagation();
     });
 
-    document.querySelector("#popout-menu").addEventListener("click", e => {
+    document.querySelector("#sidebar-menu").addEventListener("click", e => {
         e.stopPropagation();
     });
 
     document.addEventListener("click", e => {
-        document.querySelector("#popout-menu").classList.remove("visible");
+        document.querySelector("#sidebar-menu").classList.remove("visible");
     });
+
+
+    document.querySelector("#toggle-settings").addEventListener("click", e => {
+        const popoutMenu = document.querySelector("#settings-menu");
+        if (popoutMenu.classList.contains("visible")) {
+            popoutMenu.classList.remove("visible");
+        } else {
+            document.querySelectorAll(".popout-menu").forEach(menu => menu.classList.remove("visible"));
+            const rect = e.target.getBoundingClientRect();
+            popoutMenu.classList.add("visible");
+            popoutMenu.style.left = rect.x + rect.width + 10 + "px";
+            popoutMenu.style.top = rect.y + rect.height + 10 + "px";
+        }
+        e.stopPropagation();
+    });
+
+    document.querySelector("#settings-menu").addEventListener("click", e => {
+        e.stopPropagation();
+    });
+
+    document.addEventListener("click", e => {
+        document.querySelector("#settings-menu").classList.remove("visible");
+    });
+
+
 
     window.addEventListener("unload", () => saveScene("autosave"));
     document.querySelector("#options-selected-entity").addEventListener("input", e => {
@@ -1477,38 +1644,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.querySelector("#menu-fullscreen").addEventListener("click", toggleFullScreen);
-
-    document.querySelector("#options-show-extra").addEventListener("input", e => {
-        document.body.classList[e.target.checked ? "add" : "remove"]("show-extra-options");
-    });
-
-    document.querySelector("#options-world-show-names").addEventListener("input", e => {
-        document.body.classList[e.target.checked ? "add" : "remove"]("toggle-entity-name");
-    });
-
-    document.querySelector("#options-world-show-bottom-names").addEventListener("input", e => {
-        document.body.classList[e.target.checked ? "add" : "remove"]("toggle-bottom-name");
-    });
-
-    document.querySelector("#options-world-show-top-names").addEventListener("input", e => {
-        document.body.classList[e.target.checked ? "add" : "remove"]("toggle-top-name");
-    });
-
-    document.querySelector("#options-world-show-height-bars").addEventListener("input", e => {
-        document.body.classList[e.target.checked ? "add" : "remove"]("toggle-height-bars");
-    });
-
-    document.querySelector("#options-world-show-entity-glow").addEventListener("input", e => {
-        document.body.classList[e.target.checked ? "add" : "remove"]("toggle-entity-glow");
-    });
-
-    document.querySelector("#options-world-show-bottom-cover").addEventListener("input", e => {
-        document.body.classList[e.target.checked ? "add" : "remove"]("toggle-bottom-cover");
-    });
-
-    document.querySelector("#options-world-show-scale").addEventListener("input", e => {
-        document.body.classList[e.target.checked ? "add" : "remove"]("toggle-scale");
-    });
 
     document.querySelector("#options-order-forward").addEventListener("click", e => {
         if (selected) {
@@ -1831,15 +1966,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.querySelector("#options-world-fit").addEventListener("click", () => fitWorld(true));
-
-    document.querySelector("#options-world-autofit").addEventListener("input", e => {
-        config.autoFit = e.target.checked;
-
-
-        if (config.autoFit) {
-            fitWorld();
-        }
-    });
 
     document.addEventListener("keydown", e => {
         if (e.key == "Delete") {
@@ -2184,6 +2310,7 @@ function fitWorld(manual = false, factor = 1.1) {
         altHeld = false;
 }
 
+// TODO why am I doing this
 function updateWorldHeight() {
     const unit = document.querySelector("#options-height-unit").value;
     const value = Math.max(0.000000001, document.querySelector("#options-height-value").value);

@@ -683,7 +683,7 @@ i.far {
     position: relative;
 }
 
-#popout-menu {
+.popout-menu {
     display: none;
     flex-direction: column;
     flex-wrap: wrap;
@@ -696,7 +696,7 @@ i.far {
     background: #111;
 }
 
-#popout-menu.visible {
+.popout-menu.visible {
     display: flex;
 }
 
@@ -925,4 +925,25 @@ button {
     background: #111;
     color: #ddd;
     border-color: #666;
+}
+
+.settings-holder {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px 10px;
+}
+
+.settings-holder.enabled {
+    background: green;
+    border-color: green;
+}
+
+.settings-holder.disabled {
+    background: gray;
+    border-color: gray;
+}
+
+.settings-name {
+    font-size: 200%;
+    margin-right: 16pt;
 }
