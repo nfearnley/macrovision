@@ -1323,6 +1323,9 @@ function prepareSidebar() {
     });
 }
 
+function checkBodyClass(cls) {
+    return document.body.classList.contains(cls);
+}
 function toggleBodyClass(cls, setting) {
     if (setting) {
         document.body.classList.add(cls);
@@ -1337,8 +1340,12 @@ const settingsData = {
         desc: "Automatically zoom to fit the largest entity",
         type: "toggle",
         default: true,
+        get value() {
+            return config.autoFit;
+        },
         set value(param) {
-            config.autofit = param;
+            config.autoFit = param;
+            checkFitWorld();
         }
     },
     "names": {
@@ -1346,6 +1353,9 @@ const settingsData = {
         desc: "Display names over entities",
         type: "toggle",
         default: true,
+        get value() {
+            return checkBodyClass("toggle-entity-name");
+        },
         set value(param) {
             toggleBodyClass("toggle-entity-name", param);
         }
@@ -1355,6 +1365,9 @@ const settingsData = {
         desc: "Display names at the bottom",
         type: "toggle",
         default: false,
+        get value() {
+            return checkBodyClass("toggle-bottom-name");
+        },
         set value(param) {
             toggleBodyClass("toggle-bottom-name", param);
         }
@@ -1364,6 +1377,9 @@ const settingsData = {
         desc: "Point to entities that are much larger than the current view",
         type: "toggle",
         default: false,
+        get value() {
+            return checkBodyClass("toggle-top-name");
+        },
         set value(param) {
             toggleBodyClass("toggle-top-name", param);
         }
@@ -1373,6 +1389,9 @@ const settingsData = {
         desc: "Draw dashed lines to the top of each entity",
         type: "toggle",
         default: true,
+        get value() {
+            return checkBodyClass("toggle-height-bars");
+        },
         set value(param) {
             toggleBodyClass("toggle-height-bars", param);
         }
@@ -1382,6 +1401,9 @@ const settingsData = {
         desc: "Makes all entities glow",
         type: "toggle",
         default: false,
+        get value() {
+            return checkBodyClass("toggle-entity-glow");
+        },
         set value(param) {
             toggleBodyClass("toggle-entity-glow", param);
         }
@@ -1391,6 +1413,9 @@ const settingsData = {
         desc: "Draw solid ground at the y=0 line",
         type: "toggle",
         default: false,
+        get value() {
+            return checkBodyClass("toggle-bottom-cover");
+        },
         set value(param) {
             toggleBodyClass("toggle-bottom-cover", param);
         }
@@ -1400,6 +1425,9 @@ const settingsData = {
         desc: "Show the scale",
         type: "toggle",
         default: true,
+        get value() {
+            return checkBodyClass("toggle-scale");
+        },
         set value(param) {
             toggleBodyClass("toggle-scale", param);
         }
@@ -1460,15 +1488,38 @@ function prepareSettings(userSettings) {
 }
 
 function prepareMenu() {
-
     prepareSidebar();
-    prepareSettings({});
 
     if (checkHelpDate()) {
         document.querySelector("#open-help").classList.add("highlighted");
     }
 }
 
+function getUserSettings() {
+    try {
+        const settings = JSON.parse(localStorage.getItem("settings"));
+        return settings === null ? {} : settings;
+    } catch {
+        return {};
+    }
+}
+
+function exportUserSettings() {
+    const settings = {};
+    Object.entries(settingsData).forEach(([id, entry]) => {
+        settings[id] = entry.value;
+    });
+
+    return settings;
+}
+
+function setUserSettings(settings) {
+    try {
+        localStorage.setItem("settings", JSON.stringify(settings));
+    } catch {
+        // :(
+    }
+}
 const lastHelpChange = 1587847743294;
 
 function checkHelpDate() {
@@ -1619,7 +1670,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    window.addEventListener("unload", () => saveScene("autosave"));
+    window.addEventListener("unload", () => {
+        saveScene("autosave");
+        setUserSettings(exportUserSettings());
+    });
+
     document.querySelector("#options-selected-entity").addEventListener("input", e => {
         if (e.target.value == "None") {
             deselect()
@@ -2090,6 +2145,10 @@ document.addEventListener("DOMContentLoaded", () => {
     clearEntityOptions();
     clearViewOptions();
     clearAttribution();
+
+    // we do this last because configuring settings can cause things
+    // to happen (e.g. auto-fit)
+    prepareSettings(getUserSettings());
 });
 
 function customEntityFromFile(file, x=0.5, y=0.5) {
