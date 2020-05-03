@@ -1339,7 +1339,7 @@ const settingsData = {
         name: "Auto-Size World",
         desc: "Automatically zoom to fit the largest entity",
         type: "toggle",
-        default: true,
+        default: false,
         get value() {
             return config.autoFit;
         },
