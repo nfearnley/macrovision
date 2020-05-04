@@ -9529,7 +9529,9 @@ const attributionData = {
         {
             prefix: "./media/food/trees/",
             files: [
-                { name: "sycamore-tree.svg", source: "https://www.dimensions.guide/element/sycamore-tree" }
+                { name: "sycamore-tree.svg", source: "https://www.dimensions.guide/element/sycamore-tree" },
+                { name: "pine-tree.svg", source: "https://www.dimensions.guide/element/pine-trees" },
+                { name: "palm-tree.svg", source: "https://www.dimensions.guide/element/coconut-palms" },
             ],
             authors: [
                 "dimensions-guide"

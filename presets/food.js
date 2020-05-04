@@ -102,7 +102,9 @@ function makeFood() {
 
     results.push(makeHeight(
         [
-            ["sycamore-tree", 35, "meters"]
+            ["sycamore-tree", 35, "meters"],
+            ["pine-tree", 43, "meters"],
+            ["palm-tree", 25, "meters"]
         ],
         "Trees",
         "",
