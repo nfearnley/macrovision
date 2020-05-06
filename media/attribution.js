@@ -9600,6 +9600,19 @@ const attributionData = {
                 "retroinferno"
             ]
         },
+        {
+            prefix: "./media/characters/sthara/",
+            files: [
+                { name: "female.svg", source: "https://www.furaffinity.net/view/35674840/" },
+                { name: "male.svg", source: "https://www.furaffinity.net/view/35674840/" },
+            ],
+            authors: [
+                "gasmaskfox"
+            ],
+            owners: [
+                "retroinferno"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",

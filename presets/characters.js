@@ -22239,6 +22239,39 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Sthara" },
+    {
+        female: {
+            height: math.unit(21.6, "m"),
+            weight: math.unit(Math.pow((21.6/2), 3) * 80, "kg"),
+            name: "Female",
+            image: {
+                source: "./media/characters/sthara/female.svg",
+                extra: 2516/2347,
+                bottom: 21.5/2537
+            }
+        },
+        male: {
+            height: math.unit(24, "m"),
+            weight: math.unit(Math.pow((24/2), 3) * 80, "kg"),
+            name: "Male",
+            image: {
+                source: "./media/characters/sthara/male.svg",
+                extra: 2732/2607,
+                bottom: 23/2732
+            }
+        },
+    },
+    [
+        {
+            name: "Macro",
+            height: math.unit(21.6, "meters"),
+            default: true
+        },
+    ]
+))
+
 
 //characters
 
