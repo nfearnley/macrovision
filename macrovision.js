@@ -1348,19 +1348,6 @@ const settingsData = {
             checkFitWorld();
         }
     },
-    "manual-scale": {
-        name: "Zoom to Fit",
-        desc: "Zoom to fit entities",
-        type: "toggle",
-        default: false,
-        get value() {
-            return config.autoFit;
-        },
-        set value(param) {
-            config.autoFit = param;
-            checkFitWorld();
-        }
-    },
     "names": {
         name: "Show Names",
         desc: "Display names over entities",
