@@ -21715,6 +21715,130 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Qodri Class-of-'Fortwelve-Six" },
+    {
+        front: {
+            height: math.unit(1.67, "meters"),
+            weight: math.unit(140, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/qodri-class-of-'fortwelve-six/front.svg",
+                extra: 438/410,
+                bottom: 0.75/439
+            }
+        },
+    },
+    [
+        {
+            name: "Shrunken",
+            height: math.unit(7.6, "cm")
+        },
+        {
+            name: "Human Scale",
+            height: math.unit(1.67, "meters")
+        },
+        {
+            name: "Wolxi Scale",
+            height: math.unit(36.7, "meters"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Izue Two-Mothers" },
+    {
+        front: {
+            height: math.unit(1.73, "meters"),
+            weight: math.unit(240, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/izue-two-mothers/front.svg",
+                extra: 469/437,
+                bottom: 1.24/470.6
+            }
+        },
+    },
+    [
+        {
+            name: "Shrunken",
+            height: math.unit(7.86, "cm")
+        },
+        {
+            name: "Human Scale",
+            height: math.unit(1.73, "meters")
+        },
+        {
+            name: "Wolxi Scale",
+            height: math.unit(38, "meters"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Teeku Love-Shack" },
+    {
+        front: {
+            height: math.unit(1.55, "meters"),
+            weight: math.unit(120, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/teeku-love-shack/front.svg",
+                extra: 387/362,
+                bottom: 1.51/388
+            }
+        },
+    },
+    [
+        {
+            name: "Shrunken",
+            height: math.unit(7, "cm")
+        },
+        {
+            name: "Human Scale",
+            height: math.unit(1.55, "meters")
+        },
+        {
+            name: "Wolxi Scale",
+            height: math.unit(34.1, "meters"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Dejma the Red" },
+    {
+        front: {
+            height: math.unit(1.83, "meters"),
+            weight: math.unit(135, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/dejma-the-red/front.svg",
+                extra: 480/458,
+                bottom: 1.8/482
+            }
+        },
+    },
+    [
+        {
+            name: "Shrunken",
+            height: math.unit(8.3, "cm")
+        },
+        {
+            name: "Human Scale",
+            height: math.unit(1.83, "meters")
+        },
+        {
+            name: "Wolxi Scale",
+            height: math.unit(40, "meters"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

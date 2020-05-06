@@ -9430,6 +9430,54 @@ const attributionData = {
                 "argentvz"
             ]
         },
+        {
+            prefix: "./media/characters/qodri-class-of-'fortwelve-six/",
+            files: [
+                { name: "front.svg", source: "https://www.deviantart.com/alterdims/art/Macrovision-silhouette-Qodri-840731609" }
+            ],
+            authors: [
+                "alter-dims"
+            ],
+            owners: [
+                "alter-dims"
+            ]
+        },
+        {
+            prefix: "./media/characters/izue-two-mothers/",
+            files: [
+                { name: "front.svg", source: "https://www.deviantart.com/alterdims/art/Macrovision-silhouette-Izue-840731879" }
+            ],
+            authors: [
+                "alter-dims"
+            ],
+            owners: [
+                "alter-dims"
+            ]
+        },
+        {
+            prefix: "./media/characters/teeku-love-shack/",
+            files: [
+                { name: "front.svg", source: "https://www.deviantart.com/alterdims/art/Macrovision-silhouette-Teeku-840731944" }
+            ],
+            authors: [
+                "alter-dims"
+            ],
+            owners: [
+                "alter-dims"
+            ]
+        },
+        {
+            prefix: "./media/characters/dejma-the-red/",
+            files: [
+                { name: "front.svg", source: "https://www.deviantart.com/alterdims/art/Macrovision-silhouette-Dejma-840732181" }
+            ],
+            authors: [
+                "alter-dims"
+            ],
+            owners: [
+                "alter-dims"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -13109,6 +13157,10 @@ const attributionData = {
         "khael": {
             "name": "Khael",
             "url": "https://www.furaffinity.net/user/khael/",
+        },
+        "alter-dims": {
+            "name": "alter_dims",
+            "url": "https://twitter.com/alter_dims",
         },
     }
 }
