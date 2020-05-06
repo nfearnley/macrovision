@@ -13196,7 +13196,7 @@ const attributionData = {
         },
         "psycholine": {
             "name": "Psycholine",
-            "url": null,
+            "url": "https://aminoapps.com/c/commission-amino/page/user/psycholine/Px7P_gBUPfNbdwJ4lY2Xob1ZYoqd1M3b2ahN",
         },
     }
 }
