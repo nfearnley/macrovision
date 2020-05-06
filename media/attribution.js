@@ -9478,6 +9478,34 @@ const attributionData = {
                 "alter-dims"
             ]
         },
+        {
+            prefix: "./media/characters/aki/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35940985/" },
+                { name: "front-nsfw.svg", source: "https://www.furaffinity.net/view/35940961/", nsfw: true },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/35940985/" },
+                { name: "rump.svg", source: "https://www.furaffinity.net/view/35940961/", nsfw: true },
+                { name: "dick.svg", source: "https://www.furaffinity.net/view/35940961/", nsfw: true },
+            ],
+            authors: [
+                "sikabutt"
+            ],
+            owners: [
+                "sikabutt"
+            ]
+        },
+        {
+            prefix: "./media/characters/bolt/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/35652410/" }
+            ],
+            authors: [
+                "psycholine"
+            ],
+            owners: [
+                "jasmith"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -13161,6 +13189,14 @@ const attributionData = {
         "alter-dims": {
             "name": "alter_dims",
             "url": "https://twitter.com/alter_dims",
+        },
+        "sikabutt": {
+            "name": "sikabutt",
+            "url": "https://twitter.com/sikabutt",
+        },
+        "psycholine": {
+            "name": "Psycholine",
+            "url": null,
         },
     }
 }

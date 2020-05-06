@@ -21839,6 +21839,141 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Aki" },
+    {
+        front: {
+            height: math.unit(1.78, "meters"),
+            weight: math.unit(65, "kg"),
+            name: "Front",
+            image: {
+                source: "./media/characters/aki/front.svg",
+                extra: 452/415
+            }
+        },
+        frontnsfw: {
+            height: math.unit(1.78, "meters"),
+            weight: math.unit(65, "kg"),
+            name: "Front-nsfw",
+            image: {
+                source: "./media/characters/aki/front-nsfw.svg",
+                extra: 452/415
+            }
+        },
+        back: {
+            height: math.unit(1.78, "meters"),
+            weight: math.unit(65, "kg"),
+            name: "Back",
+            image: {
+                source: "./media/characters/aki/back.svg",
+                extra: 452/415
+            }
+        },
+        rump: {
+            height: math.unit(2.05, "feet"),
+            name: "Rump",
+            image: {
+                source: "./media/characters/aki/rump.svg"
+            }
+        },
+        dick: {
+            height: math.unit(0.95, "feet"),
+            name: "Dick",
+            image: {
+                source: "./media/characters/aki/dick.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Micro",
+            height: math.unit(15, "cm")
+        },
+        {
+            name: "Normal",
+            height: math.unit(178, "cm"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(214, "m")
+        },
+        {
+            name: "Macro+",
+            height: math.unit(534, "m")
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Ari" },
+    {
+        front: {
+            height: math.unit(5 + 5/12, "feet"),
+            weight: math.unit(120, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/ari/front.svg",
+                extra: 714.5/682,
+                bottom: 8/722.5
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(5 + 5/12, "feet")
+        },
+        {
+            name: "Macro",
+            height: math.unit(100, "feet"),
+            default: true
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(100, "miles")
+        },
+        {
+            name: "Gigamacro",
+            height: math.unit(80000, "miles")
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Bolt" },
+    {
+        side: {
+            height: math.unit(9, "feet"),
+            weight: math.unit(400, "kg"),
+            name: "Side",
+            image: {
+                source: "./media/characters/bolt/side.svg",
+                extra: 1126/896,
+                bottom: 60/1187.3,
+            }
+        },
+    },
+    [
+        {
+            name: "Micro",
+            height: math.unit(5, "inches")
+        },
+        {
+            name: "Normal",
+            height: math.unit(9, "feet"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(700, "feet")
+        },
+        {
+            name: "Max Size",
+            height: math.unit(1.52e22, "yottameters")
+        },
+    ]
+))
 //characters
 
 function makeCharacters() {

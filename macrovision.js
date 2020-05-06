@@ -1337,7 +1337,20 @@ function toggleBodyClass(cls, setting) {
 const settingsData = {
     "auto-scale": {
         name: "Auto-Size World",
-        desc: "Automatically zoom to fit the largest entity",
+        desc: "Constantly zoom to fit the largest entity",
+        type: "toggle",
+        default: false,
+        get value() {
+            return config.autoFit;
+        },
+        set value(param) {
+            config.autoFit = param;
+            checkFitWorld();
+        }
+    },
+    "manual-scale": {
+        name: "Zoom to Fit",
+        desc: "Zoom to fit entities",
         type: "toggle",
         default: false,
         get value() {
