@@ -22073,6 +22073,40 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Alex", species: "Bayleef" },
+    {
+        front: {
+            height: math.unit(11, "feet"),
+            weight: math.unit(1000, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/alex/front.svg",
+                bottom: 44.5/620
+            }
+        },
+    },
+    [
+        {
+            name: "Micro",
+            height: math.unit(5, "inches")
+        },
+        {
+            name: "Normal",
+            height: math.unit(11, "feet"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(9.5e9, "feet")
+        },
+        {
+            name: "Max Size",
+            height: math.unit(1.57e283, "yottameters")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

@@ -9536,6 +9536,18 @@ const attributionData = {
                 "ludicollision"
             ]
         },
+        {
+            prefix: "./media/characters/alex/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/36237553/" }
+            ],
+            authors: [
+                "ikidami"
+            ],
+            owners: [
+                "jasmith"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
