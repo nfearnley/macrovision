@@ -9613,6 +9613,18 @@ const attributionData = {
                 "retroinferno"
             ]
         },
+        {
+            prefix: "./media/characters/luka-bryzant/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/22830826/" }
+            ],
+            authors: [
+                "pulex"
+            ],
+            owners: [
+                "trippster890"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -13328,6 +13340,14 @@ const attributionData = {
         "retroinferno": {
             "name": "RetroInferno",
             "url": "https://www.furaffinity.net/user/retroinferno/",
+        },
+        "trippster890": {
+            "name": "trippster890",
+            "url": "https://www.furaffinity.net/user/trippster890/",
+        },
+        "pulex": {
+            "name": "Pulex",
+            "url": "https://www.furaffinity.net/user/pulex/",
         },
     }
 }

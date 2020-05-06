@@ -22272,6 +22272,47 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Luka Bryzant" },
+    {
+        front: {
+            height: math.unit(6 + 4/12, "feet"),
+            weight: math.unit(175, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/luka-bryzant/front.svg",
+                extra: 311/289,
+                bottom: 4/315
+            }
+        },
+        back: {
+            height: math.unit(6 + 4/12, "feet"),
+            weight: math.unit(175, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/luka-bryzant/back.svg",
+                extra: 311/289,
+                bottom: 3.8/313.7
+            }
+        },
+    },
+    [
+        {
+            name: "Micro",
+            height: math.unit(10, "inches")
+        },
+        {
+            name: "Normal",
+            height: math.unit(6 + 4/12, "feet"),
+            default: true
+        },
+        {
+            name: "Large",
+            height: math.unit(12, "feet")
+        },
+    ]
+))
+
 
 //characters
 
