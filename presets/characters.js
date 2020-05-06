@@ -22116,7 +22116,7 @@ characterMakers.push(() => makeCharacter(
             name: "Female",
             image: {
                 source: "./media/characters/zenari/female.svg",
-                extra: 3217/3281.6,
+                extra: 3281.6/3217,
                 bottom: 72.2/3353
             }
         },
