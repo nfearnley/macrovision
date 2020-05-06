@@ -22206,6 +22206,39 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Joraxian" },
+    {
+        female: {
+            height: math.unit(26.15, "m"),
+            weight: math.unit(Math.pow((26.15/2), 3) * 85, "kg"),
+            name: "Female",
+            image: {
+                source: "./media/characters/joraxian/female.svg",
+                extra: 2943/2831,
+                bottom: 27/2972
+            }
+        },
+        male: {
+            height: math.unit(25.4, "m"),
+            weight: math.unit(Math.pow((25.4/2), 3) * 85, "kg"),
+            name: "Male",
+            image: {
+                source: "./media/characters/joraxian/male.svg",
+                extra: 2835/2741,
+                bottom: 27/2862
+            }
+        },
+    },
+    [
+        {
+            name: "Macro",
+            height: math.unit(26.15, "meters"),
+            default: true
+        },
+    ]
+))
+
 
 //characters
 

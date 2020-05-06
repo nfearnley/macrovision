@@ -9587,6 +9587,19 @@ const attributionData = {
                 "retroinferno"
             ]
         },
+        {
+            prefix: "./media/characters/joraxian/",
+            files: [
+                { name: "female.svg", source: "https://www.furaffinity.net/view/35674816/" },
+                { name: "male.svg", source: "https://www.furaffinity.net/view/35674816/" },
+            ],
+            authors: [
+                "gasmaskfox"
+            ],
+            owners: [
+                "retroinferno"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
