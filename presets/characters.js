@@ -21851,10 +21851,10 @@ characterMakers.push(() => makeCharacter(
                 extra: 452/415
             }
         },
-        frontnsfw: {
+        frontNsfw: {
             height: math.unit(1.78, "meters"),
             weight: math.unit(65, "kg"),
-            name: "Front-nsfw",
+            name: "Front (NSFW)",
             image: {
                 source: "./media/characters/aki/front-nsfw.svg",
                 extra: 452/415
@@ -21974,6 +21974,82 @@ characterMakers.push(() => makeCharacter(
         },
     ]
 ))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Draekon Sylviar", species: "Dra'gal" },
+    {
+        front: {
+            height: math.unit(4.53, "meters"),
+            weight: math.unit(3, "tons"),
+            name: "Front",
+            image: {
+                source: "./media/characters/draekon-sylviar/front.svg",
+                extra: 1228/1068,
+                bottom: 41/1270
+            }
+        },
+        tail: {
+            height: math.unit(1.772, "meter"),
+            name: "Tail",
+            image: {
+                source: "./media/characters/draekon-sylviar/tail.svg"
+            }
+        },
+        head: {
+            height: math.unit(1.331, "meter"),
+            name: "Head",
+            image: {
+                source: "./media/characters/draekon-sylviar/head.svg"
+            }
+        },
+        hand: {
+            height: math.unit(0.564, "meter"),
+            name: "Hand",
+            image: {
+                source: "./media/characters/draekon-sylviar/hand.svg"
+            }
+        },
+        foot: {
+            height: math.unit(0.621, "meter"),
+            name: "Foot",
+            image: {
+                source: "./media/characters/draekon-sylviar/foot.svg",
+                bottom: 32/324
+            }
+        },
+        dick: {
+            height: math.unit(61, "cm"),
+            name: "Dick",
+            image: {
+                source: "./media/characters/draekon-sylviar/dick.svg"
+            }
+        },
+        dickseparated: {
+            height: math.unit(61, "cm"),
+            name: "Dick-separated",
+            image: {
+                source: "./media/characters/draekon-sylviar/dick-separated.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Small",
+            height: math.unit(4.53/2, "meters"),
+            default: true
+        },
+        {
+            name: "Normal",
+            height: math.unit(4.53, "meters"),
+            default: true
+        },
+        {
+            name: "Large",
+            height: math.unit(4.53*2, "meters"),
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

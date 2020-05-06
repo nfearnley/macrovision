@@ -9506,6 +9506,24 @@ const attributionData = {
                 "jasmith"
             ]
         },
+        {
+            prefix: "./media/characters/draekon-sylviar/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/27347265/" },
+                { name: "tail.svg", source: "https://www.furaffinity.net/view/27347265/" },
+                { name: "head.svg", source: "https://www.furaffinity.net/view/27347265/" },
+                { name: "hand.svg", source: "https://www.furaffinity.net/view/27347265/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/27347265/" },
+                { name: "dick.svg", source: "https://www.furaffinity.net/view/27347265/", nsfw: true },
+                { name: "dick-separated.svg", source: "https://www.furaffinity.net/view/27347265/", nsfw: true },
+            ],
+            authors: [
+                "shinbo"
+            ],
+            owners: [
+                "draekonsylviar"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -13197,6 +13215,14 @@ const attributionData = {
         "psycholine": {
             "name": "Psycholine",
             "url": "https://aminoapps.com/c/commission-amino/page/user/psycholine/Px7P_gBUPfNbdwJ4lY2Xob1ZYoqd1M3b2ahN",
+        },
+        "shinbo": {
+            "name": "Shinbo",
+            "url": "https://www.furaffinity.net/user/shinbo",
+        },
+        "draekonsylviar": {
+            "name": "DraekonSylviar",
+            "url": "https://www.furaffinity.net/user/draekonsylviar/",
         },
     }
 }
