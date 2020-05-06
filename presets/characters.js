@@ -21666,6 +21666,55 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Ariam" },
+    {
+        front: {
+            height: math.unit(6 + 2/12, "feet"),
+            weight: math.unit(160, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/ariam/front.svg",
+                extra: 714/617,
+                bottom: 23.4/737,
+            }
+        },
+        squatting: {
+            height: math.unit(4.1, "feet"),
+            weight: math.unit(160, "lb"),
+            name: "Squatting",
+            image: {
+                source: "./media/characters/ariam/squatting.svg",
+                extra: 2617/2112,
+                bottom: 61.2/2681,
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(6 + 2/12, "feet"),
+            default: true
+        },
+        {
+            name: "Normal+",
+            height: math.unit(4, "meters")
+        },
+        {
+            name: "Macro",
+            height: math.unit(50, "meters")
+        },
+        {
+            name: "Macro+",
+            height: math.unit(100, "meters")
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(20, "km")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

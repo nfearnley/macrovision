@@ -9406,6 +9406,30 @@ const attributionData = {
                 "renadyne"
             ]
         },
+        {
+            prefix: "./media/characters/ariam/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32246987" }
+            ],
+            authors: [
+                "adalfyre"
+            ],
+            owners: [
+                "argentvz"
+            ]
+        },
+        {
+            prefix: "./media/characters/ariam/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/18162738" }
+            ],
+            authors: [
+                "khael"
+            ],
+            owners: [
+                "argentvz"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -13081,6 +13105,10 @@ const attributionData = {
         "box-cat": {
             "name": "box-cat",
             "url": "https://www.furaffinity.net/user/box-cat",
+        },
+        "khael": {
+            "name": "Khael",
+            "url": "https://www.furaffinity.net/user/khael/",
         },
     }
 }
