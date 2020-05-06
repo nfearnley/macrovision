@@ -22111,8 +22111,8 @@ characterMakers.push(() => makeCharacter(
     { name: "Zenari" },
     {
         female: {
-            height: math.unit(29.7, "m"),
-            weight: math.unit(270000, "kg"),
+            height: math.unit(29.9, "m"),
+            weight: math.unit(Math.pow((29.9/2), 3) * 80, "kg"),
             name: "Female",
             image: {
                 source: "./media/characters/zenari/female.svg",
@@ -22122,7 +22122,7 @@ characterMakers.push(() => makeCharacter(
         },
         male: {
             height: math.unit(27.7, "m"),
-            weight: math.unit(212000, "lb"),
+            weight: math.unit(Math.pow((27.7/2), 3) * 80, "kg"),
             name: "Male",
             image: {
                 source: "./media/characters/zenari/male.svg",
@@ -22132,7 +22132,44 @@ characterMakers.push(() => makeCharacter(
         },
     },
     [
-        
+        {
+            name: "Macro",
+            height: math.unit(29.7, "meters"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Mactarian" },
+    {
+        female: {
+            height: math.unit(23.8, "m"),
+            weight: math.unit(Math.pow((23.8/2), 3) * 80, "kg"),
+            name: "Female",
+            image: {
+                source: "./media/characters/mactarian/female.svg",
+                extra: 2662/2569,
+                bottom: 73/2736
+            }
+        },
+        male: {
+            height: math.unit(23.8, "m"),
+            weight: math.unit(Math.pow((23.8/2), 3) * 80, "kg"),
+            name: "Male",
+            image: {
+                source: "./media/characters/mactarian/male.svg",
+                extra: 2673/2600,
+                bottom: 76/2750
+            }
+        },
+    },
+    [
+        {
+            name: "Macro",
+            height: math.unit(23.8, "meters"),
+            default: true
+        },
     ]
 ))
 //characters

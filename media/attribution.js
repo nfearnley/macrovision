@@ -9561,6 +9561,19 @@ const attributionData = {
                 "retroinferno"
             ]
         },
+        {
+            prefix: "./media/characters/mactarian/",
+            files: [
+                { name: "female.svg", source: "https://www.furaffinity.net/view/36150184/" },
+                { name: "male.svg", source: "https://www.furaffinity.net/view/36150184/" },
+            ],
+            authors: [
+                "gasmaskfox"
+            ],
+            owners: [
+                "retroinferno"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
