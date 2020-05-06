@@ -22050,6 +22050,29 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Brawler", species: "German Shepherd" },
+    {
+        front: {
+            height: math.unit(6 + 2/12, "feet"),
+            weight: math.unit(180, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/brawler/front.svg",
+                extra: 3301/3027,
+                bottom: 138/3439
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(6 + 2/12, "feet"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

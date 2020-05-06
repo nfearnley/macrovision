@@ -9524,6 +9524,18 @@ const attributionData = {
                 "draekonsylviar"
             ]
         },
+        {
+            prefix: "./media/characters/brawler/",
+            files: [
+                { name: "front.svg", source: " https://www.furaffinity.net/view/35522776/" }
+            ],
+            authors: [
+                "gigglywiggly"
+            ],
+            owners: [
+                "ludicollision"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -13223,6 +13235,14 @@ const attributionData = {
         "draekonsylviar": {
             "name": "DraekonSylviar",
             "url": "https://www.furaffinity.net/user/draekonsylviar/",
+        },
+        "gigglywiggly": {
+            "name": "gigglywiggly",
+            "url": "https://www.furaffinity.net/user/gigglywiggly/",
+        },
+        "ludicollision": {
+            "name": "Ludicollision",
+            "url": "https://www.furaffinity.net/user/ludicollision/",
         },
     }
 }
