@@ -9548,6 +9548,19 @@ const attributionData = {
                 "jasmith"
             ]
         },
+        {
+            prefix: "./media/characters/zenari/",
+            files: [
+                { name: "female.svg", source: "https://www.furaffinity.net/view/35674919/" },
+                { name: "male.svg", source: "https://www.furaffinity.net/view/35674919/" },
+            ],
+            authors: [
+                "gasmaskfox"
+            ],
+            owners: [
+                "retroinferno"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -13255,6 +13268,14 @@ const attributionData = {
         "ludicollision": {
             "name": "Ludicollision",
             "url": "https://www.furaffinity.net/user/ludicollision/",
+        },
+        "gasmaskfox": {
+            "name": "GasMaskFox",
+            "url": "https://www.furaffinity.net/user/gasmaskfox/",
+        },
+        "retroinferno": {
+            "name": "RetroInferno",
+            "url": "https://www.furaffinity.net/user/retroinferno/",
         },
     }
 }

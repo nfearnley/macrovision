@@ -22107,6 +22107,34 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Zenari" },
+    {
+        female: {
+            height: math.unit(29.7, "m"),
+            weight: math.unit(270000, "kg"),
+            name: "Female",
+            image: {
+                source: "./media/characters/zenari/female.svg",
+                extra: 3217/3281.6,
+                bottom: 72.2/3353
+            }
+        },
+        male: {
+            height: math.unit(27.7, "m"),
+            weight: math.unit(212000, "lb"),
+            name: "Male",
+            image: {
+                source: "./media/characters/zenari/male.svg",
+                extra: 3008/2991,
+                bottom: 54.6/3069
+            }
+        },
+    },
+    [
+        
+    ]
+))
 //characters
 
 function makeCharacters() {
