@@ -9574,6 +9574,19 @@ const attributionData = {
                 "retroinferno"
             ]
         },
+        {
+            prefix: "./media/characters/umok/",
+            files: [
+                { name: "female.svg", source: "https://www.furaffinity.net/view/35674883/" },
+                { name: "male.svg", source: "https://www.furaffinity.net/view/35674883/" },
+            ],
+            authors: [
+                "gasmaskfox"
+            ],
+            owners: [
+                "retroinferno"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",

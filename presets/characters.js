@@ -22172,6 +22172,41 @@ characterMakers.push(() => makeCharacter(
         },
     ]
 ))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Umok" },
+    {
+        female: {
+            height: math.unit(19.3, "m"),
+            weight: math.unit(Math.pow((19.3/2), 3) * 60, "kg"),
+            name: "Female",
+            image: {
+                source: "./media/characters/umok/female.svg",
+                extra: 2186/2078,
+                bottom: 87/2277
+            }
+        },
+        male: {
+            height: math.unit(19.5, "m"),
+            weight: math.unit(Math.pow((19.5/2), 3) * 60, "kg"),
+            name: "Male",
+            image: {
+                source: "./media/characters/umok/male.svg",
+                extra: 2233/2140,
+                bottom: 24.4/2258
+            }
+        },
+    },
+    [
+        {
+            name: "Macro",
+            height: math.unit(19.3, "meters"),
+            default: true
+        },
+    ]
+))
+
+
 //characters
 
 function makeCharacters() {
