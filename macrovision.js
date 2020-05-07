@@ -2207,6 +2207,7 @@ function prepareEntities() {
     availableEntities["landmarks"] = makeLandmarks();
     availableEntities["naturals"] = makeNaturals();
     availableEntities["objects"] = makeObjects();
+    availableEntities["dildos"] = makeDildos();
     availableEntities["pokemon"] = makePokemon();
     availableEntities["species"] = makeSpecies();
     availableEntities["vehicles"] = makeVehicles();

@@ -9625,6 +9625,13 @@ const attributionData = {
                 "trippster890"
             ]
         },
+        {
+            prefix: "./media/dildos/chance/",
+            all: "https://bad-dragon.com/products/chanceunflared",
+            authors: [
+                "bad-dragon"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",
@@ -13348,6 +13355,10 @@ const attributionData = {
         "pulex": {
             "name": "Pulex",
             "url": "https://www.furaffinity.net/user/pulex/",
+        },
+        "bad-dragon": {
+            "name": "Bad Dragon",
+            "url": "https://bad-dragon.com/",
         },
     }
 }
