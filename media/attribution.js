@@ -2638,8 +2638,8 @@ const attributionData = {
         {
             prefix: "./media/characters/ikideru/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/23702428/" },
-                { name: "back.svg", source: "https://www.furaffinity.net/view/23702428/" },
+                { name: "front.svg", source: "https://www.furaffinity.net/view/23702428/", nsfw: true },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/23702428/", nsfw: true },
             ],
             authors: [
                 "tankh"
