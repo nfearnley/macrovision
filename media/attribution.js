@@ -9632,6 +9632,13 @@ const attributionData = {
                 "bad-dragon"
             ]
         },
+        {
+            prefix: "./media/dildos/rex/",
+            all: "https://bad-dragon.com/products/rex",
+            authors: [
+                "bad-dragon"
+            ]
+        },
         //characters
         {
             prefix: "./media/fiction/halo/halo/",

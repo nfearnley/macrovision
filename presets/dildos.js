@@ -23,7 +23,7 @@ function makeDildo(name, info, sizes) {
             );
 
             maker.sizes = [];
-            
+
             sizes.forEach(size => {
                 maker.sizes.push({
                     name: size[0],
@@ -57,6 +57,25 @@ function makeDildos() {
             ["Extra Large", 17.5, "inches"]
         ]
     ))
+
+    results.push(makeDildo(
+        "Rex",
+        [
+            ["Side", 14.5, "inches"],
+            ["Front", 14.5, "inches"],
+            ["Top", 5.54, "inches"],
+            ["Head", 2.13, "inches"]
+        ],
+        [
+            ["Mini", 6, "inches"],
+            ["Small", 8, "inches"],
+            ["Medium", 10, "inches"],
+            ["Large", 12, "inches"],
+            ["Extra Large", 14.5, "inches"]
+        ]
+    ))
+
+
 
     return results;
 }
