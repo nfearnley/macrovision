@@ -3387,8 +3387,8 @@ const attributionData = {
         {
             prefix: "./media/characters/mech/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/25688886/" },
-                { name: "back.svg", source: "https://www.furaffinity.net/view/25688886/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/25688886/", nsfw: true },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/25688886/", nsfw: true }
             ],
             authors: [
                 "tanraak"
@@ -8847,7 +8847,7 @@ const attributionData = {
         {
             prefix: "./media/characters/logan-grey/",
             files: [
-                { name: "dick.svg", source: "https://www.furaffinity.net/view/30470550/" }
+                { name: "dick.svg", source: "https://www.furaffinity.net/view/30470550/", nsfw: true }
             ],
             authors: [
                 "quotefox"
@@ -8859,7 +8859,7 @@ const attributionData = {
         {
             prefix: "./media/characters/logan-grey/",
             files: [
-                { name: "front-alt.svg", source: null },
+                { name: "front-alt.svg", source: null, nsfw: true },
                 { name: "back.svg", source: null },
             ],
             authors: [
