@@ -1166,6 +1166,19 @@ function displayEntity(entity, view, x, y, selectEntity = false, refresh = false
 
     entity.dirty = true;
 
+    if (refresh && config.autoFitAdd) {
+        const x = parseFloat(selected.dataset.x);
+
+        Object.keys(entities).forEach(id => {
+            const element = document.querySelector("#entity-" + id);
+            const newX = parseFloat(element.dataset.x) - x + 0.5;
+            element.dataset.x = newX;
+        });
+
+        const entity = entities[selected.dataset.key];
+        const height = math.multiply(entity.views[entity.view].height, 1.1);
+        setWorldHeight(config.height, height);
+    }
     if (refresh)
         updateSizes(true);
 }
@@ -1336,6 +1349,18 @@ const settingsData = {
         set value(param) {
             config.autoFit = param;
             checkFitWorld();
+        }
+    },
+    "zoom-when-adding": {
+        name: "Zoom When Adding",
+        desc: "Zoom to fit when you add a new entity",
+        type: "toggle",
+        default: false,
+        get value() {
+            return config.autoFitAdd;
+        },
+        set value(param) {
+            config.autoFitAdd = param;
         }
     },
     "names": {
