@@ -9654,6 +9654,23 @@ const attributionData = {
                 "darkietehjester"
             ]
         },
+        {
+            prefix: "./media/characters/nicky/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34902848", nsfw: true },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/34902848", nsfw: true },
+                { name: "front-clothed.svg", source: "https://www.furaffinity.net/view/34902848" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/34902848" },
+                { name: "feet.svg", source: "https://www.furaffinity.net/view/34902848" },
+                { name: "maw.svg", source: "https://www.furaffinity.net/view/34902848" },
+            ],
+            authors: [
+                "holt-odium"
+            ],
+            owners: [
+                "vonadi"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -13403,6 +13420,10 @@ const attributionData = {
         "amananon": {
             "name": "AmanAnon",
             "url": "https://www.furaffinity.net/user/amananon/",
+        },
+        "holt-odium": {
+            "name": "Holt-Odium",
+            "url": "https://www.furaffinity.net/user/holt-odium",
         },
     }
 }

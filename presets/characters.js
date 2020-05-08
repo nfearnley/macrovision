@@ -22426,6 +22426,78 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Nicky", species: "Shark" },
+    {
+        front: {
+            height: math.unit(5 + 10/12, "feet"),
+            weight: math.unit(165, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/nicky/front.svg",
+                extra: 3144/2886,
+                bottom: 45.6/3192
+            }
+        },
+        back: {
+            height: math.unit(5 + 10/12, "feet"),
+            weight: math.unit(165, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/nicky/back.svg",
+                extra: 3055/2804,
+                bottom: 28.4/3087
+            }
+        },
+        frontclothed: {
+            height: math.unit(5 + 10/12, "feet"),
+            weight: math.unit(165, "lb"),
+            name: "Front-clothed",
+            image: {
+                source: "./media/characters/nicky/front-clothed.svg",
+                extra: 3184.9/2926.9,
+                bottom: 86.5/3239.9
+            }
+        },
+        foot: {
+            height: math.unit(1.16, "feet"),
+            name: "Foot",
+            image: {
+                source: "./media/characters/nicky/foot.svg"
+            }
+        },
+        feet: {
+            height: math.unit(1.34, "feet"),
+            name: "Feet",
+            image: {
+                source: "./media/characters/nicky/feet.svg"
+            }
+        },
+        maw: {
+            height: math.unit(0.9, "feet"),
+            name: "Maw",
+            image: {
+                source: "./media/characters/nicky/maw.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(5 + 10/12, "feet"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(60, "feet")
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(1, "mile")
+        },
+    ]
+))
+
 
 //characters
 
