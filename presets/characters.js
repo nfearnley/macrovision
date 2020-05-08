@@ -22403,6 +22403,29 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Hiphae", species: "Mouse" },
+    {
+        front: {
+            height: math.unit(3 + 2/12, "inches"),
+            weight: math.unit(0.3, "ounces"),
+            name: "Front",
+            image: {
+                source: "./media/characters/hiphae/front.svg",
+                extra: 1931/1683,
+                bottom: 24/1955
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(3 + 1/2, "inches"),
+            default: true
+        },
+    ]
+))
+
 
 //characters
 

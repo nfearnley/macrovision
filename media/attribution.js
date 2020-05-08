@@ -9642,6 +9642,18 @@ const attributionData = {
                 "amananon"
             ]
         },
+        {
+            prefix: "./media/characters/hiphae/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/36221768/" }
+            ],
+            authors: [
+                "darkietehjester"
+            ],
+            owners: [
+                "darkietehjester"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
