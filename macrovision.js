@@ -1615,7 +1615,6 @@ function doSize() {
         const ownHeight = entity.views[entity.view].height.toNumber("meters");
         const worldHeight = config.height.toNumber("meters");
 
-        console.log(ownHeight, worldHeight)
         if (ownHeight > worldHeight) {
             setWorldHeight(config.height, entity.views[entity.view].height)
         } else if (ownHeight * 10 < worldHeight) {
@@ -2177,9 +2176,6 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
         
-        console.log(item)
-        console.log(item.type)
-
         let url = null;
 
         const file = item.getAsFile();
@@ -2433,7 +2429,6 @@ function recomputeFilters() {
     const ownerSet = new Set();
     document.querySelectorAll(".entity-select.category-visible > option").forEach(element => {
         const entity = availableEntities[category][element.value];
-        console.log(entity)
         if (entity.authors)
             entity.authors.forEach(author => authorSet.add(author));
         if (entity.owners)
