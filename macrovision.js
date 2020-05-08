@@ -863,8 +863,8 @@ function updateViewOptions(entity, view, changed) {
     });
 }
 
-function setNumericInput(input, value, round = 3) {
-    input.value = math.round(value, round);
+function setNumericInput(input, value, round = 6) {
+    input.value = value.toPrecision(round);
 }
 
 function getSortedEntities() {
