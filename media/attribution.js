@@ -9626,6 +9626,22 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/aman-aquila/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/21802346/", nsfw: true },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/21802346/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/21802346/" },
+                { name: "head.svg", source: "https://www.furaffinity.net/view/21802346/" },
+            ],
+            authors: [
+                "freckles"
+            ],
+            owners: [
+                "amananon"
+            ]
+        },
+        //characters
+        {
             prefix: "./media/dildos/chance/",
             all: "https://bad-dragon.com/products/chanceunflared",
             authors: [
@@ -9639,7 +9655,6 @@ const attributionData = {
                 "bad-dragon"
             ]
         },
-        //characters
         {
             prefix: "./media/fiction/halo/halo/",
             files: [
@@ -13366,6 +13381,14 @@ const attributionData = {
         "bad-dragon": {
             "name": "Bad Dragon",
             "url": "https://bad-dragon.com/",
+        },
+        "freckles": {
+            "name": "Freckles",
+            "url": "https://www.furaffinity.net/user/freckles",
+        },
+        "amananon": {
+            "name": "AmanAnon",
+            "url": "https://www.furaffinity.net/user/amananon/",
         },
     }
 }

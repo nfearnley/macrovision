@@ -22315,6 +22315,80 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Aman Aquila" },
+    {
+        front: {
+            height: math.unit(5 + 7/12, "feet"),
+            weight: math.unit(185, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/aman-aquila/front.svg",
+                extra: 1013/976,
+                bottom: 45.6/1057
+            }
+        },
+        side: {
+            height: math.unit(5 + 7/12, "feet"),
+            weight: math.unit(185, "lb"),
+            name: "Side",
+            image: {
+                source: "./media/characters/aman-aquila/side.svg",
+                extra: 1054/1011,
+                bottom: 15/1070
+            }
+        },
+        back: {
+            height: math.unit(5 + 7/12, "feet"),
+            weight: math.unit(185, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/aman-aquila/back.svg",
+                extra: 1026/970,
+                bottom: 12/1039
+            }
+        },
+        head: {
+            height: math.unit(1.211, "feet"),
+            name: "Head",
+            image: {
+                source: "./media/characters/aman-aquila/head.svg",
+            }
+        },
+    },
+    [
+        {
+            name: "Minimicro",
+            height: math.unit(0.057, "inches")
+        },
+        {
+            name: "Micro",
+            height: math.unit(7, "inches")
+        },
+        {
+            name: "Mini",
+            height: math.unit(3 + 7/12, "feet")
+        },
+        {
+            name: "Normal",
+            height: math.unit(5 + 7/12, "feet"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(157 + 7/12, "feet")
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(1557 + 7/12, "feet")
+        },
+        {
+            name: "Gigamacro",
+            height: math.unit(15557 + 7/12, "feet")
+        },
+    ]
+))
+
 
 //characters
 
