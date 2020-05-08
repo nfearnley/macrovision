@@ -722,6 +722,20 @@ function configEntityOptions(entity, view) {
                 updateSizes(true);
             }
 
+            if (config.autoFitSize) {
+                const x = parseFloat(selected.dataset.x);
+
+                Object.keys(entities).forEach(id => {
+                    const element = document.querySelector("#entity-" + id);
+                    const newX = parseFloat(element.dataset.x) - x + 0.5;
+                    element.dataset.x = newX;
+                });
+        
+                const entity = entities[selected.dataset.key];
+                const height = math.multiply(entity.views[entity.view].height, 1.1);
+                setWorldHeight(config.height, height);
+            }
+
         });
 
         defaultHolder.appendChild(button);
@@ -1355,12 +1369,24 @@ const settingsData = {
         name: "Zoom When Adding",
         desc: "Zoom to fit when you add a new entity",
         type: "toggle",
-        default: false,
+        default: true,
         get value() {
             return config.autoFitAdd;
         },
         set value(param) {
             config.autoFitAdd = param;
+        }
+    },
+    "zoom-when-sizing": {
+        name: "Zoom When Sizing",
+        desc: "Zoom to fit when you select an entity's size",
+        type: "toggle",
+        default: true,
+        get value() {
+            return config.autoFitSize;
+        },
+        set value(param) {
+            config.autoFitSize = param;
         }
     },
     "names": {
