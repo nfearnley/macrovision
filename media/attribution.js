@@ -4123,7 +4123,7 @@ const attributionData = {
         {
             prefix: "./media/characters/razinox/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/33242997/", front: nsfw },
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33242997/", nsfw: true },
                 { name: "back.svg", source: "https://www.furaffinity.net/view/33242997/" }
             ],
             authors: [
