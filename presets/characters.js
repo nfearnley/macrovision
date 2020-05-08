@@ -22104,7 +22104,7 @@ characterMakers.push(() => makeCharacter(
         },
         {
             name: "Max Size",
-            height: math.unit(1.57e283, "yottameters")
+            height: math.unit(1.4e283, "yottameters")
         },
     ]
 ))
