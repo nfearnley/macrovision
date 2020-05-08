@@ -616,16 +616,6 @@ function configViewList(entity, selectedView) {
         
         list.appendChild(option);
     });
-
-    
-
-    list.addEventListener("change", e => {
-        if (list.options[list.selectedIndex].classList.contains("nsfw")) {
-            list.classList.add("nsfw");
-        } else {
-            list.classList.remove("nsfw");
-        }
-    })
 }
 
 function clearViewList() {
@@ -1840,12 +1830,16 @@ document.addEventListener("DOMContentLoaded", () => {
         clickUp(fakeEvent);
     });
 
+    const viewList = document.querySelector("#entity-view");
+
     document.querySelector("#entity-view").addEventListener("input", e => {
         const entity = entities[selected.dataset.key];
         entity.view = e.target.value;
 
         const image = entities[selected.dataset.key].views[e.target.value].image;
         selected.querySelector(".entity-image").src = image.source;
+
+        configViewOptions(entity, entity.view);
 
         displayAttribution(image.source);
 
@@ -1858,6 +1852,14 @@ document.addEventListener("DOMContentLoaded", () => {
         updateEntityOptions(entities[selected.dataset.key], e.target.value);
         updateViewOptions(entities[selected.dataset.key], e.target.value);
     });
+
+    document.querySelector("#entity-view").addEventListener("input", e => {
+        if (viewList.options[viewList.selectedIndex].classList.contains("nsfw")) {
+            viewList.classList.add("nsfw");
+        } else {
+            viewList.classList.remove("nsfw");
+        }
+    })
 
     clearViewList();
 
