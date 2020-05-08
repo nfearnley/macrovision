@@ -5026,7 +5026,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/razinox/front.svg",
-                extra: 1686 / 1548
+                extra: 1686 / 1548,
+                bottom: 28.2/1868
             }
         },
         back: {
@@ -5035,7 +5036,8 @@ characterMakers.push(() => makeCharacter(
             name: "Back",
             image: {
                 source: "./media/characters/razinox/back.svg",
-                extra: 1660 / 1590
+                extra: 1660 / 1590,
+                bottom: 15/1665
             }
         },
     },
