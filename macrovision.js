@@ -2218,14 +2218,23 @@ function prepareEntities() {
         return x.name.toLowerCase() < y.name.toLowerCase() ? -1 : 1
     });
     const holder = document.querySelector("#spawners");
+    const filterHolder = document.querySelector("#filters");
+
     const categorySelect = document.createElement("select");
     categorySelect.id = "category-picker";
+    const filterSelect = document.createElement("select");
+    filterSelect.id = "filter-picker";
 
     holder.appendChild(categorySelect);
+    filterHolder.appendChild(filterSelect);
+
+    const authorSet = new Set();
+    const ownerSet = new Set();
 
     Object.entries(availableEntities).forEach(([category, entityList]) => {
         const select = document.createElement("select");
         select.id = "create-entity-" + category;
+        select.classList.add("entity-select");
         for (let i = 0; i < entityList.length; i++) {
             const entity = entityList[i];
             const option = document.createElement("option");
@@ -2236,6 +2245,19 @@ function prepareEntities() {
             if (entity.nsfw) {
                 option.classList.add("nsfw");
             }
+
+            if (entity.authors) {
+                entity.authors.forEach(a => {
+                    authorSet.add(a);
+                })
+            }
+            
+            if (entity.owners) {
+                entity.owners.forEach(o => {
+                    ownerSet.add(o);
+                })
+            }
+            
 
             availableEntitiesByName[entity.name] = entity;
         };
@@ -2250,6 +2272,7 @@ function prepareEntities() {
 
         const button = document.createElement("button");
         button.id = "create-entity-" + category + "-button";
+        button.classList.add("entity-button");
 
         button.innerHTML = "<i class=\"far fa-plus-square\"></i>";
 
@@ -2273,18 +2296,189 @@ function prepareEntities() {
         holder.appendChild(button);
     });
 
+    const noFilter = document.createElement("option");
+    noFilter.innerText = "No Filter";
+    noFilter.value = "none";
+    const authorFilter = document.createElement("option");
+    authorFilter.innerText = "Author";
+    authorFilter.value = "author";
+    const ownerFilter = document.createElement("option");
+    ownerFilter.innerText = "Owner";
+    ownerFilter.value = "owner";
+
+    filterSelect.appendChild(noFilter);
+    filterSelect.appendChild(authorFilter);
+    filterSelect.appendChild(ownerFilter);
+
+    const authorFilterSelect = document.createElement("select");
+    authorFilterSelect.classList.add("filter-select");
+    authorFilterSelect.id = "filter-author";
+    filterHolder.appendChild(authorFilterSelect);
+
+    Array.from(authorSet).map(author => [author, attributionData.people[author].name]).sort((e1, e2) => e1[1].toLowerCase().localeCompare(e2[1].toLowerCase())).forEach(author => {
+        const option = document.createElement("option");
+        option.innerText = author[1];
+        option.value = author[0];
+        authorFilterSelect.appendChild(option);
+    });
+
+    authorFilterSelect.addEventListener("change", e => {
+        updateFilter();
+    });
+
+    const ownerFilterSelect = document.createElement("select");
+    ownerFilterSelect.classList.add("filter-select");
+    ownerFilterSelect.id = "filter-owner";
+    filterHolder.appendChild(ownerFilterSelect);
+
+    Array.from(ownerSet).map(owner => [owner, attributionData.people[owner].name]).sort((e1, e2) => e1[1].toLowerCase().localeCompare(e2[1].toLowerCase())).forEach(owner => {
+        const option = document.createElement("option");
+        option.innerText = owner[1];
+        option.value = owner[0];
+        ownerFilterSelect.appendChild(option);
+    });
+
+    ownerFilterSelect.addEventListener("change", e => {
+        updateFilter();
+    });
+
     console.log("Loaded " + Object.keys(availableEntitiesByName).length + " entities");
 
     categorySelect.addEventListener("input", e => {
-        const oldSelect = document.querySelector("select.category-visible");
+        const oldSelect = document.querySelector(".entity-select.category-visible");
         oldSelect.classList.remove("category-visible");
-        const oldButton = document.querySelector("button.category-visible");
+        const oldButton = document.querySelector(".entity-button.category-visible");
         oldButton.classList.remove("category-visible");
 
         const newSelect = document.querySelector("#create-entity-" + e.target.value);
         newSelect.classList.add("category-visible");
         const newButton = document.querySelector("#create-entity-" + e.target.value + "-button");
         newButton.classList.add("category-visible");
+
+        recomputeFilters();
+        updateFilter();
+    });
+
+    recomputeFilters();
+
+    filterSelect.addEventListener("input", e => {
+        const oldSelect = document.querySelector(".filter-select.category-visible");
+        if (oldSelect)
+            oldSelect.classList.remove("category-visible");
+
+        const newSelect = document.querySelector("#filter-" + e.target.value);
+        if (newSelect)
+            newSelect.classList.add("category-visible");
+
+        updateFilter();
+    });
+}
+
+// Only display authors and owners if they appear
+// somewhere in the current entity list
+function recomputeFilters() {
+    const category = document.querySelector("#category-picker").value;
+    const authorSet = new Set();
+    const ownerSet = new Set();
+    document.querySelectorAll(".entity-select.category-visible > option").forEach(element => {
+        const entity = availableEntities[category][element.value];
+        console.log(entity)
+        if (entity.authors)
+            entity.authors.forEach(author => authorSet.add(author));
+        if (entity.owners)
+            entity.owners.forEach(owner => ownerSet.add(owner));
+    });
+
+    let authorFound = false;
+
+    document.querySelectorAll("#filter-author > option").forEach(element => {
+        if (authorSet.has(element.value)) {
+            element.classList.remove("filtered");
+            authorFound = true;
+        } else {
+            element.classList.add("filtered");
+        }
+    })
+
+    let ownerFound = false;
+
+    document.querySelectorAll("#filter-owner > option").forEach(element => {
+        if (ownerSet.has(element.value)) {
+            element.classList.remove("filtered");
+            ownerFound = true;
+        } else {
+            element.classList.add("filtered");
+        }
+    })
+
+    if (authorFound) {
+        document.querySelector("#filter-picker > option[value='author']").classList.remove("filtered");
+    } else {
+        document.querySelector("#filter-picker > option[value='author']").classList.add("filtered");
+    }
+
+    if (ownerFound) {
+        document.querySelector("#filter-picker > option[value='owner']").classList.remove("filtered");
+    } else {
+        document.querySelector("#filter-picker > option[value='owner']").classList.add("filtered");
+    }
+    
+
+    document.querySelector("#filter-picker").value = "none";
+    document.querySelector("#filter-picker").dispatchEvent(new Event("input"));
+}
+
+function updateFilter() {
+    const category = document.querySelector("#category-picker").value;
+    const type = document.querySelector("#filter-picker").value;
+    const filterKeySelect = document.querySelector(".filter-select.category-visible");
+
+    clearFilter();
+
+    if (!filterKeySelect) {
+        return;
+    }
+
+    const key = filterKeySelect.value;
+
+    let current = document.querySelector(".entity-select.category-visible").value;
+    let replace = false;
+    let first = null;
+    document.querySelectorAll(".entity-select.category-visible > option").forEach(element => {
+        let keep = false;
+        if (type == "author") {
+            const authorList = availableEntities[category][element.value].authors;
+            if (authorList && authorList.indexOf(key) >= 0) {
+                keep = true;
+            }
+        }
+        if (type == "owner") {
+            const ownerList = availableEntities[category][element.value].owners;
+            if (ownerList && ownerList.indexOf(key) >= 0) {
+                keep = true;
+            }
+        }
+
+        if (!keep) {
+            element.classList.add("filtered");
+
+            if (current == element.value) {
+                replace = true;
+            }
+        } else if (!first) {
+            first = element.value;
+        }
+    });
+
+    if (replace) {
+        document.querySelector(".entity-select.category-visible").value = first;
+        document.querySelector("#create-entity-" + category).dispatchEvent(new Event("change"));
+    }
+}
+
+function clearFilter() {
+    document.querySelectorAll(".entity-select.category-visible > option").forEach(element => {
+        element.classList.remove("filtered");
     });
 }
 

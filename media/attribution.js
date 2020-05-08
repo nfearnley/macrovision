@@ -2203,7 +2203,7 @@ const attributionData = {
                 
             ],
             authors: [
-                "emiichii"
+                "emiechii"
             ],
             owners: [
                 "someoneepic"
@@ -12966,7 +12966,7 @@ const attributionData = {
             "url": "https://www.furaffinity.net/user/amethystlumisade/",
         },
         "yumiakiyama": {
-            "name": "Yuki Akiyama",
+            "name": "Yumi Akiyama",
             "url": "https://www.furaffinity.net/user/yumiakiyama/",
         },
         "foxinov": {
@@ -13264,10 +13264,6 @@ const attributionData = {
         "ivore": {
             "name": "iVore",
             "url": "https://www.furaffinity.net/user/ivore/",
-        },
-        "emiichii": {
-            "name": "EmiiChii",
-            "url": "https://www.furaffinity.net/user/emiechii",
         },
         "pliskin": {
             "name": "Pliskin",

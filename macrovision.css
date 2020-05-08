@@ -597,17 +597,24 @@ i.far {
 }
 
 #spawners > select,
-#spawners > button {
+#spawners > button,
+#filters > select {
     display: none;
 }
 
-#spawners > select#category-picker {
+#spawners > select#category-picker,
+#filters > select#filter-picker {
     display: block;
 }
 
 #spawners > select.category-visible,
-#spawners > select.category-visible + button {
+#spawners > select.category-visible + button,
+#filters > select.category-visible {
     display: block;
+}
+
+option.filtered {
+    display: none;
 }
 
 #spawners > select {
