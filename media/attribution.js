@@ -2701,9 +2701,11 @@ const attributionData = {
         {
             prefix: "./media/characters/jay/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/35346112/" },
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35346112/", nsfw: true },
                 { name: "back.svg", source: "https://www.furaffinity.net/view/35346112/" },
                 { name: "clothed.svg", source: "https://www.furaffinity.net/view/35346112/" },
+                { name: "head.svg", source: "https://www.furaffinity.net/view/35346112/" },
+                { name: "size-ray.svg", source: "https://www.furaffinity.net/view/35346112/" },
             ],
             authors: [
                 "folfnox"

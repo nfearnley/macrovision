@@ -11561,7 +11561,7 @@ characterMakers.push(() => makeCharacter(
     {
         front: {
             height: math.unit(6 + 2 / 12, "feet"),
-            weight: math.unit(65, "lb"),
+            weight: math.unit(265, "lb"),
             name: "Front",
             image: {
                 source: "./media/characters/jay/front.svg",
@@ -11571,7 +11571,7 @@ characterMakers.push(() => makeCharacter(
         },
         back: {
             height: math.unit(6 + 2 / 12, "feet"),
-            weight: math.unit(65, "lb"),
+            weight: math.unit(265, "lb"),
             name: "Back",
             image: {
                 source: "./media/characters/jay/back.svg",
@@ -11581,12 +11581,26 @@ characterMakers.push(() => makeCharacter(
         },
         clothed: {
             height: math.unit(6 + 2 / 12, "feet"),
-            weight: math.unit(65, "lb"),
+            weight: math.unit(265, "lb"),
             name: "Front (Clothed)",
             image: {
                 source: "./media/characters/jay/clothed.svg",
                 extra: 744 / 699,
                 bottom: 0.043
+            }
+        },
+        head: {
+            height: math.unit(1.772, "feet"),
+            name: "Head",
+            image: {
+                source: "./media/characters/jay/head.svg"
+            }
+        },
+        sizeRay: {
+            height: math.unit(1.331, "feet"),
+            name: "Size Ray",
+            image: {
+                source: "./media/characters/jay/size-ray.svg"
             }
         },
     },
