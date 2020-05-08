@@ -4328,7 +4328,7 @@ const attributionData = {
         {
             prefix: "./media/characters/sleekit/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/32997650/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32997650/", nsfw: true }
             ],
             authors: [
                 "tinyediblehumans"
@@ -4591,9 +4591,9 @@ const attributionData = {
         {
             prefix: "./media/characters/sekvra/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/8329076/" },
-                { name: "front-clothed.svg", source: "https://www.furaffinity.net/view/8329076/" },
-                { name: "side.svg", source: "https://www.furaffinity.net/view/8329076/" },
+                { name: "front.svg", source: "https://www.furaffinity.net/view/8329076/", nsfw: true },
+                { name: "front-clothed.svg", source: "https://www.furaffinity.net/view/8329076/", nsfw: true },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/8329076/", nsfw: true },
                 { name: "back.svg", source: "https://www.furaffinity.net/view/8329076/" },
             ],
             authors: [
@@ -4734,16 +4734,16 @@ const attributionData = {
             prefix: "./media/characters/talan/",
             files: [
                 { name: "angled-sfw.svg", source: null },
-                { name: "angled-nsfw.svg", source: null },
+                { name: "angled-nsfw.svg", source: null, nsfw: true },
                 { name: "front-sfw.svg", source: null },
-                { name: "front-nsfw.svg", source: null },
+                { name: "front-nsfw.svg", source: null, nsfw: true },
                 { name: "side-sfw.svg", source: null },
-                { name: "side-nsfw.svg", source: null },
+                { name: "side-nsfw.svg", source: null, nsfw: true },
                 { name: "back.svg", source: null },
-                { name: "dick-bottom.svg", source: null },
-                { name: "dick-top.svg", source: null },
-                { name: "dick-side.svg", source: null },
-                { name: "dick-front.svg", source: null },
+                { name: "dick-bottom.svg", source: null, nsfw: true },
+                { name: "dick-top.svg", source: null, nsfw: true },
+                { name: "dick-side.svg", source: null, nsfw: true },
+                { name: "dick-front.svg", source: null, nsfw: true },
             ],
             authors: [
                 "wotwosixtwo",
@@ -5175,7 +5175,7 @@ const attributionData = {
             prefix: "./media/characters/xera/",
             files: [
                 { name: "front.svg", source: null },
-                { name: "side.svg", source: null },
+                { name: "side.svg", source: null, nsfw: true },
                 { name: "back.svg", source: null }
             ],
             authors: [
@@ -5874,9 +5874,9 @@ const attributionData = {
         {
             prefix: "./media/characters/vulpes/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/27057320/" },
-                { name: "side.svg", source: "https://www.furaffinity.net/view/27057320/" },
-                { name: "back.svg", source: "https://www.furaffinity.net/view/27057320/" },
+                { name: "front.svg", source: "https://www.furaffinity.net/view/27057320/", nsfw: true },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/27057320/", nsfw: true },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/27057320/", nsfw: true },
                 { name: "feet.svg", source: "https://www.furaffinity.net/view/27057320/" },
                 { name: "maw.svg", source: "https://www.furaffinity.net/view/27057320/" },
             ],
@@ -7052,7 +7052,7 @@ const attributionData = {
         {
             prefix: "./media/characters/richard-smeargle/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/28657897/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/28657897/", nsfw: true }
             ],
             authors: [
                 "min",
@@ -8402,8 +8402,8 @@ const attributionData = {
         {
             prefix: "./media/characters/yumi-akiyama/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/28881947/" },
-                { name: "back.svg", source: "https://www.furaffinity.net/view/28881947/" },
+                { name: "front.svg", source: "https://www.furaffinity.net/view/28881947/", nsfw: true },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/28881947/", nsfw: true },
             ],
             authors: [
                 "yumiakiyama"
@@ -8415,7 +8415,7 @@ const attributionData = {
         {
             prefix: "./media/characters/rifter-yrmori/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/30503952/" },
+                { name: "front.svg", source: "https://www.furaffinity.net/view/30503952/", nsfw: true },
                 { name: "back.svg", source: "https://www.furaffinity.net/view/30503952/" },
                 { name: "wings.svg", source: "https://www.furaffinity.net/view/30503952/" },
                 { name: "maw.svg", source: "https://www.furaffinity.net/view/30503952/" },
@@ -8573,7 +8573,7 @@ const attributionData = {
         {
             prefix: "./media/characters/rocky/",
             files: [
-                { name: "front.svg", source: null }
+                { name: "front.svg", source: null, nsfw: true }
             ],
             authors: [
                 "thatdrunkkobold"
@@ -8768,7 +8768,7 @@ const attributionData = {
             prefix: "./media/characters/reban/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/6510991/" },
-                { name: "dick.svg", source: "https://www.furaffinity.net/view/6510991/" }
+                { name: "dick.svg", source: "https://www.furaffinity.net/view/6510991/", nsfw: true }
             ],
             authors: [
                 "thewhitefalcon"
@@ -8780,10 +8780,10 @@ const attributionData = {
         {
             prefix: "./media/characters/terrance-keayes/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/30999187/" },
-                { name: "side.svg", source: "https://www.furaffinity.net/view/30999187/" },
+                { name: "front.svg", source: "https://www.furaffinity.net/view/30999187/", nsfw: true },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/30999187/", nsfw: true },
                 { name: "back.svg", source: "https://www.furaffinity.net/view/30999187/" },
-                { name: "dick.svg", source: "https://www.furaffinity.net/view/30999187/" },
+                { name: "dick.svg", source: "https://www.furaffinity.net/view/30999187/", nsfw: true },
             ],
             authors: [
                 "homogeneousrule"
@@ -8810,7 +8810,7 @@ const attributionData = {
         {
             prefix: "./media/characters/samuel/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/9195440/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/9195440/", nsfw: true }
             ],
             authors: [
                 "keedot"
@@ -8922,7 +8922,7 @@ const attributionData = {
         {
             prefix: "./media/characters/shock-diamond/",
             files: [
-                { name: "front-nude.svg", source: null }
+                { name: "front-nude.svg", source: null, nsfw: true }
             ],
             authors: [
                 "anonymous"
@@ -8951,7 +8951,7 @@ const attributionData = {
             prefix: "./media/characters/sprisk/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/35230192/" },
-                { name: "back.svg", source: "https://www.furaffinity.net/view/35230192/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/35230192/", nsfw: true },
                 { name: "front-nsfw.svg", source: "https://www.furaffinity.net/view/35230305/" }
             ],
             authors: [
@@ -8977,7 +8977,7 @@ const attributionData = {
         {
             prefix: "./media/characters/sesh/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/33932659" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33932659", nsfw: true }
             ],
             authors: [
                 "ritsukaxan"
