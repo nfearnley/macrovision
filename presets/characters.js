@@ -22583,6 +22583,17 @@ characterMakers.push(() => makeCharacter(
                 bottom: 113/2462
             }
         },
+        hammerspaceSize: {
+            height: math.unit(6.71*717, "feet"),
+            weight: math.unit(200, "lb"),
+            capacity: math.unit(1000000, "people"),
+            name: "Hammerspace Size",
+            image: {
+                source: "./media/characters/gliss/front.svg",
+                extra: 2347/2231,
+                bottom: 113/2462
+            }
+        },
     },
     [
         {

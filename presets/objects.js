@@ -24,6 +24,15 @@ function makeObject(name, viewInfo) {
                 base: value.mass
             };
         }
+
+        if (value.volume) {
+            views[key].attributes.capacity = {
+                name: "Volume",
+                power: 3,
+                type: "volume",
+                base: value.volume
+            }
+        }
     });
 
     return makeEntity({ name: name }, views);
@@ -85,6 +94,37 @@ function makeHeightWeight(info, category, prefix = "", type = "objects") {
         views[object[0]] = {
             height: math.unit(object[1], object[2]),
             mass: math.unit(object[3], object[4]),
+            image: { source: src },
+            name: object[0].replace(/-/g, " ").replace(/\b\w/g, x => x.toUpperCase()),
+            rename: true
+        }
+    });
+
+    return {
+        name: category,
+        constructor: () => makeObject(
+            category,
+            views
+        )
+    }
+}
+
+
+function makeHeightWeightSphere(info, category, prefix = "", type = "objects") {
+    const views = {};
+    info.forEach(object => {
+        let src;
+        // this lets us provide our own source if needed
+        // useful for reusing existing art
+        if (object[5]) {
+            src = object[5];
+        } else {
+            src = "./media/" + type + "/" + category.replace(/ /g, "-").toLowerCase() + "/" + prefix + object[0] + ".svg";
+        }
+        views[object[0]] = {
+            height: math.unit(object[1], object[2]),
+            mass: math.unit(object[3], object[4]),
+            volume: math.unit(Math.PI * 4 / 3 * Math.pow((object[1]/2), 3), object[2] + "^3"),
             image: { source: src },
             name: object[0].replace(/-/g, " ").replace(/\b\w/g, x => x.toUpperCase()),
             rename: true

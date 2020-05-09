@@ -973,7 +973,7 @@ function makeGIS(data, category) {
 function makeNaturals() {
     const results = [];
 
-    results.push(makeHeightWeight(
+    results.push(makeHeightWeightSphere(
         [
             ["Mercury", 4879, "km", 0.330e24, "kg", "./media/naturals/planet-generic.svg"],
             ["Venus", 12104, "km", 4.87e24, "kg", "./media/naturals/planet-generic.svg"],
