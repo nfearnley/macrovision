@@ -110,6 +110,11 @@ math.createUnit("multiverses", {
     prefixes: "long"
 });
 
+math.createUnit("people", {
+    definition: "75 liters",
+    prefixes: "long"
+});
+
 const unitChoices = {
     length: [
         "meters",
@@ -137,6 +142,13 @@ const unitChoices = {
         "kilometers^2",
         "acres",
         "miles^2"
+    ],
+    volume: [
+        "liters",
+        "milliliters",
+        "m^3",
+        "gallons",
+        "people"
     ],
     mass: [
         "kilograms",
@@ -791,8 +803,6 @@ function configViewOptions(entity, view) {
         input.setAttribute("type", "number");
         input.setAttribute("min", 1);
 
-        setNumericInput(input, entity.views[view][key].value);
-
         const select = document.createElement("select");
         select.classList.add("options-field-unit");
         select.id = "options-view-" + key + "-select"
@@ -822,6 +832,8 @@ function configViewOptions(entity, view) {
         })
 
         select.setAttribute("oldUnit", select.value);
+        
+        setNumericInput(input, entity.views[view][key].toNumber(select.value));
 
         // TODO does this ever cause a change in the world?
         select.addEventListener("input", e => {

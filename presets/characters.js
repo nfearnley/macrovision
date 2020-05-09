@@ -27,6 +27,15 @@ function makeCharacter(info, viewInfo, defaultSizes) {
                 base: value.weight
             };
         }
+
+        if (value.capacity) {
+            views[key].attributes.capacity = {
+                name: "Capacity",
+                power: 3,
+                type: "volume",
+                base: value.capacity
+            }
+        }
     });
 
     return createEntityMaker(info, views, defaultSizes);
@@ -22560,6 +22569,29 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Gliss" },
+    {
+        front: {
+            height: math.unit(6.71, "feet"),
+            weight: math.unit(200, "lb"),
+            capacity: math.unit(1000000, "people"),
+            name: "Front",
+            image: {
+                source: "./media/characters/gliss/front.svg",
+                extra: 2347/2231,
+                bottom: 113/2462
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(6.71, "feet"),
+            default: true
+        },
+    ]
+))
 
 //characters
 

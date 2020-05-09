@@ -9695,6 +9695,18 @@ const attributionData = {
                 "makar-ro"
             ]
         },
+        {
+            prefix: "./media/characters/gliss/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/18718168/" }
+            ],
+            authors: [
+                "xanaomin"
+            ],
+            owners: [
+                "xanaomin"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
