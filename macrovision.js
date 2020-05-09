@@ -114,6 +114,14 @@ math.createUnit("people", {
     definition: "75 liters",
     prefixes: "long"
 });
+math.createUnit("olympicPools", {
+    definition: "2500 m^3",
+    prefixes: "long"
+});
+math.createUnit("oceans", {
+    definition: "700000000 km^3",
+    prefixes: "long"
+});
 
 const unitChoices = {
     length: [
@@ -148,7 +156,9 @@ const unitChoices = {
         "milliliters",
         "m^3",
         "gallons",
-        "people"
+        "people",
+        "olympicPools",
+        "oceans"
     ],
     mass: [
         "kilograms",
