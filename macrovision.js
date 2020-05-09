@@ -887,6 +887,7 @@ function updateViewOptions(entity, view, changed) {
 }
 
 function setNumericInput(input, value, round = 6) {
+    if (typeof value == "string") {
     input.value = value.toPrecision(round);
 }
 
