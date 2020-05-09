@@ -282,6 +282,7 @@ function drawScale(ifDirty = false) {
         return;
     function drawTicks(/** @type {CanvasRenderingContext2D} */ ctx, pixelsPer, heightPer) {
         let total = heightPer.clone();
+        console.log(total)
         total.value = 0;
         for (let y = ctx.canvas.clientHeight - 50; y >= 50; y -= pixelsPer) {
             drawTick(ctx, 50, y, total);
@@ -345,7 +346,7 @@ function drawScale(ifDirty = false) {
         pixelsPer /= factor;
     }
 
-    heightPer = math.unit(heightPer, config.height.units[0].unit.name)
+    heightPer = math.unit(heightPer, document.querySelector("#options-height-unit").value);
     
 
     ctx.scale(1, 1);
@@ -832,7 +833,7 @@ function configViewOptions(entity, view) {
         })
 
         select.setAttribute("oldUnit", select.value);
-        
+
         setNumericInput(input, entity.views[view][key].toNumber(select.value));
 
         // TODO does this ever cause a change in the world?
