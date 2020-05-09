@@ -9671,6 +9671,30 @@ const attributionData = {
                 "vonadi"
             ]
         },
+        {
+            prefix: "./media/characters/blair/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/36270848/" }
+            ],
+            authors: [
+                "makar-ro"
+            ],
+            owners: [
+                "makar-ro"
+            ]
+        },
+        {
+            prefix: "./media/characters/fisher/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/36259743/" }
+            ],
+            authors: [
+                "makar-ro"
+            ],
+            owners: [
+                "makar-ro"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",

@@ -22498,6 +22498,68 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Blair" },
+    {
+        side: {
+            height: math.unit(10, "feet"),
+            weight: math.unit(600, "lb"),
+            name: "Side",
+            image: {
+                source: "./media/characters/blair/side.svg",
+                bottom: 16.6/475,
+                extra: 458/431
+            }
+        },
+    },
+    [
+        {
+            name: "Micro",
+            height: math.unit(8, "inches")
+        },
+        {
+            name: "Normal",
+            height: math.unit(10, "feet"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(180, "feet")
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Fisher" },
+    {
+        front: {
+            height: math.unit(5 + 4/12, "feet"),
+            weight: math.unit(125, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/fisher/front.svg",
+                extra: 444/390,
+                bottom: 2/444.8
+            }
+        },
+    },
+    [
+        {
+            name: "Micro",
+            height: math.unit(4, "inches")
+        },
+        {
+            name: "Normal",
+            height: math.unit(5 + 4/12, "feet"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(100, "feet")
+        },
+    ]
+))
+
 
 //characters
 
