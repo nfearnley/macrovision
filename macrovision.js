@@ -122,6 +122,18 @@ math.createUnit("oceans", {
     definition: "700000000 km^3",
     prefixes: "long"
 });
+math.createUnit("earthVolumes", {
+    definition: "1.0867813e12 km^3",
+    prefixes: "long"
+});
+math.createUnit("universeVolumes", {
+    definition: "4.2137775e+32 lightyears^3",
+    prefixes: "long"
+});
+math.createUnit("multiverseVolumes", {
+    definition: "5.2359878e+89 lightyears^3",
+    prefixes: "long"
+});
 
 const unitChoices = {
     length: [
@@ -158,7 +170,10 @@ const unitChoices = {
         "gallons",
         "people",
         "olympicPools",
-        "oceans"
+        "oceans",
+        "earthVolumes",
+        "universeVolumes",
+        "multiverseVolumes",
     ],
     mass: [
         "kilograms",
