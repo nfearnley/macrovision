@@ -888,6 +888,8 @@ function updateViewOptions(entity, view, changed) {
 
 function setNumericInput(input, value, round = 6) {
     if (typeof value == "string") {
+        value = parseFloat(value)
+    }
     input.value = value.toPrecision(round);
 }
 
