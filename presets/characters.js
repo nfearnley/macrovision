@@ -22593,6 +22593,40 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Dune Anderson" },
+    {
+        side: {
+            height: math.unit(1.44, "m"),
+            weight: math.unit(80, "kg"),
+            name: "Side",
+            image: {
+                source: "./media/characters/dune-anderson/side.svg",
+                bottom: 49/1426
+            }
+        },
+    },
+    [
+        {
+            name: "Wolf-sized",
+            height: math.unit(1.44, "meters")
+        },
+        {
+            name: "Normal",
+            height: math.unit(5.05, "meters"),
+            default: true
+        },
+        {
+            name: "Big",
+            height: math.unit(14.4, "meters")
+        },
+        {
+            name: "Huge",
+            height: math.unit(144, "meters")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

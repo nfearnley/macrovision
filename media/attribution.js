@@ -9707,6 +9707,18 @@ const attributionData = {
                 "xanaomin"
             ]
         },
+        {
+            prefix: "./media/characters/dune-anderson/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/36108938/" }
+            ],
+            authors: [
+                "snow-body"
+            ],
+            owners: [
+                "darkdragon9531"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -13456,6 +13468,14 @@ const attributionData = {
         "holt-odium": {
             "name": "Holt-Odium",
             "url": "https://www.furaffinity.net/user/holt-odium",
+        },
+        "darkdragon9531": {
+            "name": "DarkDragon9531",
+            "url": "https://www.furaffinity.net/user/darkdragon9531",
+        },
+        "snow-body": {
+            "name": "Snow-Body",
+            "url": "http://snow-body.deviantart.com/",
         },
     }
 }
