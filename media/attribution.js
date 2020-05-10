@@ -9743,6 +9743,21 @@ const attributionData = {
                 "darkdragon9531"
             ]
         },
+        {
+            prefix: "./media/characters/hind/",
+            files: [
+                { name: "front.svg", source: null },
+                { name: "back.svg", source: null },
+                { name: "tail.svg", source: null },
+                { name: "head.svg", source: null },
+            ],
+            authors: [
+                "clown-grin"
+            ],
+            owners: [
+                "morea-sergal"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -13508,6 +13523,10 @@ const attributionData = {
         "plumm": {
             "name": "Plumm",
             "url": "http://furaffinity.net/user/plumm",
+        },
+        "morea-sergal": {
+            "name": "Morea_Sergal",
+            "url": "https://www.furaffinity.net/user/moreasergal/",
         },
     }
 }

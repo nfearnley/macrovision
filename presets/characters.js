@@ -22656,6 +22656,61 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Hind" },
+    {
+        front: {
+            height: math.unit(7, "feet"),
+            weight: math.unit(425, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/hind/front.svg",
+                extra: 2091/1860,
+                bottom: 129/2220
+            }
+        },
+        back: {
+            height: math.unit(7, "feet"),
+            weight: math.unit(425, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/hind/back.svg",
+                extra: 2091/1860,
+                bottom: 24.6/2309
+            }
+        },
+        tail: {
+            height: math.unit(2.8, "feet"),
+            name: "Tail",
+            image: {
+                source: "./media/characters/hind/tail.svg"
+            }
+        },
+        head: {
+            height: math.unit(2.55, "feet"),
+            name: "Head",
+            image: {
+                source: "./media/characters/hind/head.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "XS",
+            height: math.unit(0.7, "feet")
+        },
+        {
+            name: "Normal",
+            height: math.unit(7, "feet"),
+            default: true
+        },
+        {
+            name: "XL",
+            height: math.unit(70, "feet")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
