@@ -2346,6 +2346,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/fen/",
+            files: [
+                { name: "goo.svg", source: "https://www.furaffinity.net/view/17898553/" }
+            ],
+            authors: [
+                "maplecookies"
+            ],
+            owners: [
+                "chemicalcrux"
+            ]
+        },
+        {
             prefix: "./media/characters/finn/",
             files: [
                 { name: "side.svg", source: null }
@@ -13476,6 +13488,10 @@ const attributionData = {
         "snow-body": {
             "name": "Snow-Body",
             "url": "http://snow-body.deviantart.com/",
+        },
+        "maplecookies": {
+            "name": "maplecookies",
+            "url": "https://www.furaffinity.net/user/maplecookies",
         },
     }
 }

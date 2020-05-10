@@ -90,6 +90,15 @@ characterMakers.push(() => makeCharacter(
                 extra: 563 / 507
             }
         },
+        goo: {
+            height: math.unit(2.8, "feet"),
+            weight: math.unit(125, "kg"),
+            name: "Goo",
+            image: {
+                source: "./media/characters/fen/goo.svg",
+                bottom: 116/613
+            }
+        },
     },
     [
         {
