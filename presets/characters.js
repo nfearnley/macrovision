@@ -22711,6 +22711,37 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Dylan (Skaven)" },
+    {
+        front: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/dylan-skaven/front.svg",
+                extra: 2318/2063,
+                bottom: 93.4/2410
+            }
+        },
+    },
+    [
+        {
+            name: "Nano",
+            height: math.unit(1, "mm")
+        },
+        {
+            name: "Micro",
+            height: math.unit(1, "cm")
+        },
+        {
+            name: "Normal",
+            height: math.unit(2.1, "meters"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

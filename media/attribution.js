@@ -9758,6 +9758,18 @@ const attributionData = {
                 "morea-sergal"
             ]
         },
+        {
+            prefix: "./media/characters/dylan-skaven/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/36251935/" }
+            ],
+            authors: [
+                "captainzepto"
+            ],
+            owners: [
+                "dylanstrategie"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -13527,6 +13539,14 @@ const attributionData = {
         "morea-sergal": {
             "name": "Morea_Sergal",
             "url": "https://www.furaffinity.net/user/moreasergal/",
+        },
+        "captainzepto": {
+            "name": "captainzepto",
+            "url": "https://www.furaffinity.net/user/captainzepto",
+        },
+        "dylanstrategie": {
+            "name": "dylanstrategie",
+            "url": "https://www.furaffinity.net/user/dylanstrategie/",
         },
     }
 }
