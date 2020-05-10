@@ -693,15 +693,53 @@ option.filtered {
 .popout-menu {
     display: none;
     flex-direction: column;
-    flex-wrap: wrap;
-    height: 80vh;
-    justify-content: space-around;
+    flex-wrap: nowrap;
+    overflow-y: scroll;
+    max-height: 80vh;
+    justify-content: end;
     position: fixed;
     top: 10%;
     left: 10%;
     z-index: 10000;
-    background: #111;
+    background: #222;
+    border-color: #333;
+    border-width: 5px;
+    border-style: solid;
 }
+
+.popout-menu::-webkit-scrollbar {
+    height: 2px;
+  }
+.popout-menu::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+.popout-menu::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+.popout-menu::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+.popout-menu::-webkit-scrollbar-thumb:active {
+    background: #000000;
+}
+.popout-menu::-webkit-scrollbar-track {
+    background: #00000000;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+.popout-menu::-webkit-scrollbar-track:hover {
+    background: #666666;
+}
+.popout-menu::-webkit-scrollbar-track:active {
+    background: #333333;
+}
+.popout-menu::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
 
 .popout-menu.visible {
     display: flex;
@@ -716,6 +754,7 @@ option.filtered {
 .menu-button-holder {
     display: flex;
     align-items: center;
+    margin: 5px 0px 5px;
 }
 
 .menu-text {
@@ -938,16 +977,24 @@ button {
     display: flex;
     align-items: center;
     padding: 10px 0px 10px;
+    border-color: #222;
+    border-width: 5px;
+    border-style: solid;
+    max-width: 240pt;
 }
 
 .settings-holder.enabled {
     background: green;
-    border-color: green;
+    border-color: darkgreen;
 }
 
+.settings-desc {
+    text-align: right;
+    margin-right: 8pt;
+}
 .settings-holder.disabled {
     background: gray;
-    border-color: gray;
+    border-color: darkslategray;
 }
 
 .settings-name {
