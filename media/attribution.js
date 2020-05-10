@@ -2358,6 +2358,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/fen/",
+            files: [
+                { name: "lounging.svg", source: "https://www.furaffinity.net/view/25613386/" }
+            ],
+            authors: [
+                "plumm"
+            ],
+            owners: [
+                "chemicalcrux"
+            ]
+        },
+        {
             prefix: "./media/characters/finn/",
             files: [
                 { name: "side.svg", source: null }
@@ -13492,6 +13504,10 @@ const attributionData = {
         "maplecookies": {
             "name": "maplecookies",
             "url": "https://www.furaffinity.net/user/maplecookies",
+        },
+        "plumm": {
+            "name": "Plumm",
+            "url": "http://furaffinity.net/user/plumm",
         },
     }
 }

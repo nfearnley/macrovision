@@ -93,10 +93,19 @@ characterMakers.push(() => makeCharacter(
         goo: {
             height: math.unit(2.8, "feet"),
             weight: math.unit(125, "kg"),
+            capacity: math.unit(2, "people"),
             name: "Goo",
             image: {
                 source: "./media/characters/fen/goo.svg",
                 bottom: 116/613
+            }
+        },
+        lounging: {
+            height: math.unit(6.5, "feet"),
+            weight: math.unit(125, "kg"),
+            name: "Lounging",
+            image: {
+                source: "./media/characters/fen/lounging.svg"
             }
         },
     },
