@@ -13979,6 +13979,66 @@ characterMakers.push(() => makeCharacter(
                 source: "./media/characters/venio-darcony/back.svg"
             }
         },
+        sideNsfw: {
+            height: math.unit(10, "feet"),
+            weight: math.unit(800, "kg"),
+            name: "Side (NSFW)",
+            image: {
+                source: "./media/characters/venio-darcony/side-nsfw.svg",
+                extra: 1373 / 1003,
+                bottom: 0.037
+            }
+        },
+        frontNsfw: {
+            height: math.unit(19, "feet"),
+            weight: math.unit(800, "kg"),
+            name: "Front (NSFW)",
+            image: {
+                source: "./media/characters/venio-darcony/front-nsfw.svg"
+            }
+        },
+        backNsfw: {
+            height: math.unit(19, "feet"),
+            weight: math.unit(800, "kg"),
+            name: "Back (NSFW)",
+            image: {
+                source: "./media/characters/venio-darcony/back-nsfw.svg"
+            }
+        },
+        sideArmored: {
+            height: math.unit(10, "feet"),
+            weight: math.unit(800, "kg"),
+            name: "Side (Armored)",
+            image: {
+                source: "./media/characters/venio-darcony/side-armored.svg",
+                extra: 1373 / 1003,
+                bottom: 0.037
+            }
+        },
+        frontArmored: {
+            height: math.unit(19, "feet"),
+            weight: math.unit(900, "kg"),
+            name: "Front (Armored)",
+            image: {
+                source: "./media/characters/venio-darcony/front-armored.svg"
+            }
+        },
+        backArmored: {
+            height: math.unit(19, "feet"),
+            weight: math.unit(900, "kg"),
+            name: "Back (Armored)",
+            image: {
+                source: "./media/characters/venio-darcony/back-armored.svg"
+            }
+        },
+        sword: {
+            height: math.unit(10, "feet"),
+            weight: math.unit(50, "lb"),
+            name: "Sword",
+            image: {
+                source: "./media/characters/venio-darcony/sword.svg"
+            }
+        },
     },
     [
         {
