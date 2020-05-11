@@ -5981,6 +5981,7 @@ characterMakers.push(() => makeCharacter(
         front: {
             height: math.unit(14, "feet"),
             weight: math.unit(1450, "kg"),
+            capacity: math.unit(15, "people"),
             name: "Front",
             image: {
                 source: "./media/characters/aura-starwind/front.svg",
@@ -5990,6 +5991,7 @@ characterMakers.push(() => makeCharacter(
         side: {
             height: math.unit(14, "feet"),
             weight: math.unit(1450, "kg"),
+            capacity: math.unit(15, "people"),
             name: "Side",
             image: {
                 source: "./media/characters/aura-starwind/side.svg",
@@ -5999,6 +6001,7 @@ characterMakers.push(() => makeCharacter(
         taur: {
             height: math.unit(18, "feet"),
             weight: math.unit(5500, "kg"),
+            capacity: math.unit(50, "people"),
             name: "Taur",
             image: {
                 source: "./media/characters/aura-starwind/taur.svg",
@@ -6008,6 +6011,7 @@ characterMakers.push(() => makeCharacter(
         feral: {
             height: math.unit(46, "feet"),
             weight: math.unit(25000, "kg"),
+            capacity: math.unit(120, "people"),
             name: "Feral",
             image: {
                 source: "./media/characters/aura-starwind/feral.svg"
