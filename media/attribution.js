@@ -9777,6 +9777,18 @@ const attributionData = {
                 "dylanstrategie"
             ]
         },
+        {
+            prefix: "./media/characters/solex-draconov/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32413593/", nsfw: true }
+            ],
+            authors: [
+                "solexfox"
+            ],
+            owners: [
+                "solexfox"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -13554,6 +13566,10 @@ const attributionData = {
         "dylanstrategie": {
             "name": "dylanstrategie",
             "url": "https://www.furaffinity.net/user/dylanstrategie/",
+        },
+        "solexfox": {
+            "name": "SolexFox",
+            "url": "https://www.furaffinity.net/user/solexfox/",
         },
     }
 }

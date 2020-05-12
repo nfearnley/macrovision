@@ -22806,6 +22806,69 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Solex Draconov", species: "Drasune" },
+    {
+        front: {
+            height: math.unit(7 + 5/12, "feet"),
+            weight: math.unit(357, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/solex-draconov/front.svg",
+                extra: 1993/1865,
+                bottom: 117/2111
+            }
+        },
+    },
+    [
+        {
+            name: "Natural Height",
+            height: math.unit(7 + 5/12, "feet"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(350, "feet")
+        },
+        {
+            name: "Macro+",
+            height: math.unit(1000, "feet")
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(20, "km")
+        },
+        {
+            name: "Megamacro+",
+            height: math.unit(1000, "km")
+        },
+        {
+            name: "Gigamacro",
+            height: math.unit(2.5, "Gm")
+        },
+        {
+            name: "Teramacro",
+            height: math.unit(15, "Tm")
+        },
+        {
+            name: "Galactic",
+            height: math.unit(30, "Zm")
+        },
+        {
+            name: "Universal",
+            height: math.unit(21000, "Ym")
+        },
+        {
+            name: "Omniversal",
+            height: math.unit(9.861e50, "Ym")
+        },
+        {
+            name: "Existential",
+            height: math.unit(1e300, "meters")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
