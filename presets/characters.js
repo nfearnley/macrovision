@@ -8723,10 +8723,20 @@ characterMakers.push(() => makeCharacter(
                 bottom: 0.021
             }
         },
+        frontTransforming: {
+            height: math.unit(8.58, "feet"),
+            weight: math.unit(1300, "lb"),
+            name: "Transforming",
+            image: {
+                source: "./media/characters/alexi/front-transforming.svg",
+                extra: 442 / 414,
+                bottom: 13.7/458.66
+            }
+        },
         frontTransformed: {
             height: math.unit(12.5, "feet"),
             weight: math.unit(4000, "lb"),
-            name: "Front (Transformed)",
+            name: "Transformed",
             image: {
                 source: "./media/characters/alexi/front-transformed.svg",
                 extra: 5345 / 5100,

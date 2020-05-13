@@ -1319,9 +1319,10 @@ const attributionData = {
         {
             prefix: "./media/characters/alexi/",
             files: [
-                { name: "front.svg", source: "https://twitter.com/AlexiWerewolf/status/1235410679642730496" },
-                { name: "back.svg", source: "https://twitter.com/AlexiWerewolf/status/1235410679642730496" },
-                { name: "front-transformed.svg", source: "https://twitter.com/AlexiWerewolf/status/1235410679642730496" }
+                { name: "front.svg", source: "https://twitter.com/AlexiWerewolf/status/1235410679642730496", nsfw: true },
+                { name: "back.svg", source: "https://twitter.com/AlexiWerewolf/status/1235410679642730496", nsfw: true },
+                { name: "front-transforming.svg", source: "https://twitter.com/AlexiWerewolf/status/1235410679642730496", nsfw: true },
+                { name: "front-transformed.svg", source: "https://twitter.com/AlexiWerewolf/status/1235410679642730496", nsfw: true }
             ],
             authors: [
                 "squishy0"
