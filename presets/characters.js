@@ -8729,8 +8729,8 @@ characterMakers.push(() => makeCharacter(
             name: "Transforming",
             image: {
                 source: "./media/characters/alexi/front-transforming.svg",
-                extra: 442 / 414,
-                bottom: 13.7/458.66
+                extra: 437 / 409,
+                bottom: 19/458.66
             }
         },
         frontTransformed: {
@@ -8739,8 +8739,8 @@ characterMakers.push(() => makeCharacter(
             name: "Transformed",
             image: {
                 source: "./media/characters/alexi/front-transformed.svg",
-                extra: 5345 / 5100,
-                bottom: 0.03
+                extra: 639 / 614,
+                bottom: 30.55/671
             }
         },
     },
