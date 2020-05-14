@@ -1423,13 +1423,13 @@ const attributionData = {
         {
             prefix: "./media/characters/andy/",
             files: [
-                { name: "front.svg", source: null }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35962465/" }
             ],
             authors: [
                 "cardboardhead"
             ],
             owners: [
-
+                "drewbermeister"
             ]
         },
         {
@@ -3933,7 +3933,7 @@ const attributionData = {
         {
             prefix: "./media/characters/piper/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/22964778/" }
+                { name: "front.svg", source: "https://twitter.com/Brit_Bork/status/1104474356040765440" }
             ],
             authors: [
                 "brit-bork"
@@ -13595,6 +13595,10 @@ const attributionData = {
         "mandarax": {
             "name": "Mandarax",
             "url": "https://www.furaffinity.net/user/mandarax/",
+        },
+        "drewbermeister": {
+            "name": "drewbermeister",
+            "url": "https://www.furaffinity.net/user/drewbermeister/",
         },
     }
 }
