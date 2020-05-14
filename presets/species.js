@@ -24,17 +24,18 @@ speciesMakers["Synx"] = () => {
             },
             synx: {
                 height: math.unit(3.4, "feet"),
-                weight: math.unit(150, "lb"),
+                weight: math.unit(300, "lb"),
                 name: "Synx",
                 image: {
                     source: "./media/species/synx/synx.svg",
                     extra: 8.06 / 6.6,
                     bottom: 0.05
-                }
+                },
+                default: true
             },
             weeper: {
                 height: math.unit(3.9, "feet"),
-                weight: math.unit(300, "lb"),
+                weight: math.unit(450, "lb"),
                 name: "Weeper",
                 image: {
                     source: "./media/species/synx/weeper.svg",

@@ -459,6 +459,11 @@ function makeEntity(info, views, sizes) {
                     this.view = viewKey;
                 }
 
+                if (view.default) {
+                    this.defaultView = viewKey;
+                    this.view = viewKey;
+                }
+
                 Object.entries(view.attributes).forEach(([key, val]) => {
                     Object.defineProperty(
                         view,
