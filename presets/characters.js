@@ -2149,7 +2149,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Ebony" },
+    { name: "Ebony", species: ["hoshiko-beast"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(2, "meter"),
@@ -23246,6 +23246,7 @@ characterMakers.push(() => makeCharacter(
         belly: {
             height: math.unit(33, "feet"),
             name: "Belly",
+            capacity: math.unit(500, "people"),
             image: {
                 source: "./media/characters/mandarax/belly.svg"
             }
