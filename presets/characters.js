@@ -23454,7 +23454,7 @@ characterMakers.push(() => makeCharacter(
     { name: "Angel", species: ["catgirl"], tags: ["anthro"] },
     {
         front: {
-            height: math.unit(7, "feet"),
+            height: math.unit(7 + 2/12, "feet"),
             weight: math.unit(200, "lb"),
             name: "Front",
             image: {
@@ -23467,7 +23467,7 @@ characterMakers.push(() => makeCharacter(
     [
         {
             name: "Normal",
-            height: math.unit(7, "feet")
+            height: math.unit(7 + 2/12, "feet")
         },
         {
             name: "Macro",
