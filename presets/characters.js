@@ -46,8 +46,8 @@ const speciesData = {
     animal: {
         name: "Animal"
     },
-    canine: {
-        name: "Canine",
+    dog: {
+        name: "Dog",
         parents: [
             "mammal"
         ]
@@ -67,7 +67,7 @@ const speciesData = {
     "rough-collie": {
         name: "Rough Collie",
         parents: [
-            "canine"
+            "dog"
         ]
     },
     dragon: {
@@ -80,6 +80,81 @@ const speciesData = {
         name: "Reptile",
         parents: [
             "animal"
+        ]
+    },
+    woodpecker: {
+        name: "Woodpecker",
+        parents: [
+            "avian"
+        ]
+    },
+    avian: {
+        name: "Avian",
+        parents: [
+            "animal"
+        ]
+    },
+    kitsune: {
+        name: "Kitsune",
+        parents: [
+            "fox"
+        ]
+    },
+    fox: {
+        name: "Fox",
+        parents: [
+            "mammal"
+        ]
+    },
+    pokemon: {
+        name: "Pokemon"
+    },
+    tiger: {
+        name: "Tiger",
+        parents: [
+            "cat"
+        ]
+    },
+    cat: {
+        name: "Cat",
+        parents: [
+            "mammal"
+        ]
+    },
+    "blue-jay": {
+        name: "Blue Jay",
+        parents: [
+            "avian"
+        ]
+    },
+    wolf: {
+        name: "Wolf",
+        parents: [
+            "mammal"
+        ]
+    },
+    coyote: {
+        name: "Coyote",
+        parents: [
+            "mammal"
+        ]
+    },
+    raccoon: {
+        name: "Raccoon",
+        parents: [
+            "mammal"
+        ]
+    },
+    weasel: {
+        name: "Weasel",
+        parents: [
+            "mammal"
+        ]
+    },
+    "red-panda": {
+        name: "Red Panda",
+        parents: [
+            "mammal"
         ]
     }
 }
@@ -347,7 +422,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Noir", species: ["Woodpecker"], tags: ["anthro"] },
+    { name: "Noir", species: ["woodpecker"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(6, "feet"),
@@ -390,7 +465,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Okuri", species: ["Kitsune"], tags: ["anthro"] },
+    { name: "Okuri", species: ["kitsune"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(7, "feet"),
@@ -423,7 +498,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Manny", species: ["Pokemon"], tags: ["anthro"] },
+    { name: "Manny", species: ["pokemon"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(7, "feet"),
@@ -476,7 +551,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Adake", species: ["Feline", "Tiger"], tags: ["anthro"] },
+    { name: "Adake", species: ["tiger"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(7, "feet"),
@@ -544,7 +619,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Elijah", species: ["Blue Jay", "Avian"], tags: ["anthro"] },
+    { name: "Elijah", species: ["blue-jay"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(1.65, "meters"),
@@ -661,7 +736,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Rai" },
+    { name: "Rai", species: ["wolf"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(11, "feet"),
@@ -733,7 +808,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Jazzy" },
+    { name: "Jazzy", species: ["coyote", "wolf"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(7, "feet"),
@@ -766,7 +841,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Flamm" },
+    { name: "Flamm", species: ["cat"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(7, "feet"),
@@ -793,7 +868,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Zephiro" },
+    { name: "Zephiro", species: ["raccoon"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(7, "feet"),
@@ -844,7 +919,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Fory" },
+    { name: "Fory", species: ["weasel"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(5, "feet"),
@@ -896,7 +971,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Kurrikage" },
+    { name: "Kurrikage", species: ["dragon"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(7, "feet"),
@@ -961,7 +1036,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Shingo" },
+    { name: "Shingo", species: ["red-panda"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(6, "feet"),
