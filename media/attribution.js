@@ -9844,6 +9844,18 @@ const attributionData = {
                 "angelthecatgirl"
             ]
         },
+        {
+            prefix: "./media/characters/pixie/",
+            files: [
+                { name: "front.svg", source: null, nsfw: true },
+            ],
+            authors: [
+                "angelthecatgirl"
+            ],
+            owners: [
+                "angelthecatgirl"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",

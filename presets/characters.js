@@ -498,6 +498,10 @@ const speciesData = {
       name: "Cowgirl",
       parents: ["mammal"]
     },
+    "pony": {
+      name: "Pony",
+      parents: ["horse"]
+    },
     
     
     
@@ -23472,7 +23476,8 @@ characterMakers.push(() => makeCharacter(
     [
         {
             name: "Normal",
-            height: math.unit(7 + 2/12, "feet")
+            height: math.unit(7 + 2/12, "feet"),
+            default: true
         },
         {
             name: "Macro",
@@ -23526,7 +23531,35 @@ characterMakers.push(() => makeCharacter(
     [
         {
             name: "Normal",
-            height: math.unit(5, "feet")
+            height: math.unit(5, "feet"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Pixie", species: ["pony"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(4 + 6/12, "feet"),
+            weight: math.unit(80, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/pixie/front.svg",
+                extra: 1924/1825,
+                bottom: 22.4/1946
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(4 + 6/12, "feet"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(40, "feet")
         },
     ]
 ))
