@@ -82,5 +82,15 @@
 		  "},"
 		],
 		"description": "Size"
+	  },
+	  "Species": {
+		"prefix": "species",
+		"body": [
+		  "\"$1\": {",
+		  "  name: \"${1/([^-]+)(-)?/${1:/capitalize}${2:+ }/g}\",",
+		  "  parents: [$2]",
+		  "}"
+		],
+		"description": "Species"
 	  }
 }
