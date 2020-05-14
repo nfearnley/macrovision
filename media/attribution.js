@@ -9790,6 +9790,22 @@ const attributionData = {
                 "solexfox"
             ]
         },
+        {
+            prefix: "./media/characters/mandarax/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/36340433/" },
+                { name: "head.svg", source: "https://www.furaffinity.net/view/36340433/" },
+                { name: "belly.svg", source: "https://www.furaffinity.net/view/36340148/" },
+                { name: "dick.svg", source: "https://www.furaffinity.net/view/36340433/", nsfw: true },
+                { name: "top.svg", source: "https://www.furaffinity.net/view/36340433/" },
+            ],
+            authors: [
+                "necrodrone13"
+            ],
+            owners: [
+                "mandarax"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -13571,6 +13587,14 @@ const attributionData = {
         "solexfox": {
             "name": "SolexFox",
             "url": "https://www.furaffinity.net/user/solexfox/",
+        },
+        "necrodrone13": {
+            "name": "Necrodrone13",
+            "url": "https://www.furaffinity.net/user/necrodrone13",
+        },
+        "mandarax": {
+            "name": "Mandarax",
+            "url": "https://www.furaffinity.net/user/mandarax/",
         },
     }
 }

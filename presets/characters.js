@@ -22879,6 +22879,57 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Mandarax" },
+    {
+        side: {
+            height: math.unit(25, "feet"),
+            weight: math.unit(90000, "lb"),
+            name: "Side",
+            image: {
+                source: "./media/characters/mandarax/side.svg",
+                extra: 614/332,
+                bottom: 55/630
+            }
+        },
+        head: {
+            height: math.unit(11.4, "feet"),
+            name: "Head",
+            image: {
+                source: "./media/characters/mandarax/head.svg"
+            }
+        },
+        belly: {
+            height: math.unit(33, "feet"),
+            name: "Belly",
+            image: {
+                source: "./media/characters/mandarax/belly.svg"
+            }
+        },
+        dick: {
+            height: math.unit(8.46, "feet"),
+            name: "Dick",
+            image: {
+                source: "./media/characters/mandarax/dick.svg"
+            }
+        },
+        top: {
+            height: math.unit(28, "meters"),
+            name: "Top",
+            image: {
+                source: "./media/characters/mandarax/top.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(25, "feet"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
