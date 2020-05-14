@@ -33,7 +33,9 @@ let sizeHandle = null;
 
 let worldSizeDirty = false;
 
-
+const tagDefs = {
+    "anthro": "Anthro"
+}
 
 math.createUnit("humans", {
     definition: "5.75 feet"
@@ -307,7 +309,6 @@ function drawScale(ifDirty = false) {
         return;
     function drawTicks(/** @type {CanvasRenderingContext2D} */ ctx, pixelsPer, heightPer) {
         let total = heightPer.clone();
-        console.log(total)
         total.value = 0;
         for (let y = ctx.canvas.clientHeight - 50; y >= 50; y -= pixelsPer) {
             drawTick(ctx, 50, y, total);
@@ -407,6 +408,8 @@ function createEntityMaker(info, views, sizes) {
     const maker = {};
 
     maker.name = info.name;
+    maker.info = info;
+
     maker.constructor = () => makeEntity(info, views, sizes);
     maker.authors = [];
     maker.owners = [];
@@ -2293,6 +2296,40 @@ function makeCustomEntity(url, x=0.5, y=0.5) {
     entity.ephemeral = true;
     displayEntity(entity, "custom", x, y, true, true);
 }
+
+const filterDefs = {
+    none: {
+        id: "none",
+        name: "None",
+        extract: maker => [],
+        render: name => name
+    },
+    author: {
+        id: "author",
+        name: "Authors",
+        extract: maker => maker.authors ? maker.authors : [],
+        render: author => attributionData.people[author].name
+    },
+    owner: {
+        id: "owner",
+        name: "Owners",
+        extract: maker => maker.owners ? maker.owners : [],
+        render: owner => attributionData.people[owner].name
+    },
+    species: {
+        id: "species",
+        name: "Species",
+        extract: maker => maker.info && maker.info.species ? [maker.info.species] : [],
+        render: species => species
+    },
+    tags: {
+        id: "tags",
+        name: "Tags",
+        extract: maker => maker.info && maker.info.tags ? maker.info.tags : [],
+        render: tag => tagDefs[tag]
+    }
+}
+
 function prepareEntities() {
     availableEntities["buildings"] = makeBuildings();
     availableEntities["characters"] = makeCharacters();
@@ -2321,8 +2358,11 @@ function prepareEntities() {
     holder.appendChild(categorySelect);
     filterHolder.appendChild(filterSelect);
 
-    const authorSet = new Set();
-    const ownerSet = new Set();
+    const filterSets = {};
+
+    Object.values(filterDefs).forEach(filter => {
+        filterSets[filter.id] = new Set();
+    })
 
     Object.entries(availableEntities).forEach(([category, entityList]) => {
         const select = document.createElement("select");
@@ -2339,18 +2379,11 @@ function prepareEntities() {
                 option.classList.add("nsfw");
             }
 
-            if (entity.authors) {
-                entity.authors.forEach(a => {
-                    authorSet.add(a);
-                })
-            }
-            
-            if (entity.owners) {
-                entity.owners.forEach(o => {
-                    ownerSet.add(o);
-                })
-            }
-            
+            Object.values(filterDefs).forEach(filter => {
+                filter.extract(entity).forEach(result => {
+                    filterSets[filter.id].add(result);
+                });
+            });            
 
             availableEntitiesByName[entity.name] = entity;
         };
@@ -2389,50 +2422,27 @@ function prepareEntities() {
         holder.appendChild(button);
     });
 
-    const noFilter = document.createElement("option");
-    noFilter.innerText = "No Filter";
-    noFilter.value = "none";
-    const authorFilter = document.createElement("option");
-    authorFilter.innerText = "Author";
-    authorFilter.value = "author";
-    const ownerFilter = document.createElement("option");
-    ownerFilter.innerText = "Owner";
-    ownerFilter.value = "owner";
-
-    filterSelect.appendChild(noFilter);
-    filterSelect.appendChild(authorFilter);
-    filterSelect.appendChild(ownerFilter);
-
-    const authorFilterSelect = document.createElement("select");
-    authorFilterSelect.classList.add("filter-select");
-    authorFilterSelect.id = "filter-author";
-    filterHolder.appendChild(authorFilterSelect);
-
-    Array.from(authorSet).map(author => [author, attributionData.people[author].name]).sort((e1, e2) => e1[1].toLowerCase().localeCompare(e2[1].toLowerCase())).forEach(author => {
+    Object.values(filterDefs).forEach(filter => {
         const option = document.createElement("option");
-        option.innerText = author[1];
-        option.value = author[0];
-        authorFilterSelect.appendChild(option);
-    });
+        option.innerText = filter.name;
+        option.value = filter.id;
+        filterSelect.appendChild(option);
 
-    authorFilterSelect.addEventListener("change", e => {
-        updateFilter();
-    });
+        const filterNameSelect = document.createElement("select");
+        filterNameSelect.classList.add("filter-select");
+        filterNameSelect.id = "filter-" + filter.id;
+        filterHolder.appendChild(filterNameSelect);
 
-    const ownerFilterSelect = document.createElement("select");
-    ownerFilterSelect.classList.add("filter-select");
-    ownerFilterSelect.id = "filter-owner";
-    filterHolder.appendChild(ownerFilterSelect);
-
-    Array.from(ownerSet).map(owner => [owner, attributionData.people[owner].name]).sort((e1, e2) => e1[1].toLowerCase().localeCompare(e2[1].toLowerCase())).forEach(owner => {
-        const option = document.createElement("option");
-        option.innerText = owner[1];
-        option.value = owner[0];
-        ownerFilterSelect.appendChild(option);
-    });
-
-    ownerFilterSelect.addEventListener("change", e => {
-        updateFilter();
+        Array.from(filterSets[filter.id]).map(name => [name, filter.render(name)]).sort((e1, e2) => e1[1].toLowerCase().localeCompare(e2[1].toLowerCase())).forEach(name => {
+            const option = document.createElement("option");
+            option.innerText = name[1];
+            option.value = name[0];
+            filterNameSelect.appendChild(option);
+        });
+        
+        filterNameSelect.addEventListener("change", e => {
+            updateFilter();
+        });
     });
 
     console.log("Loaded " + Object.keys(availableEntitiesByName).length + " entities");
@@ -2471,50 +2481,44 @@ function prepareEntities() {
 // somewhere in the current entity list
 function recomputeFilters() {
     const category = document.querySelector("#category-picker").value;
-    const authorSet = new Set();
-    const ownerSet = new Set();
+
+    const filterSets = {};
+
+    Object.values(filterDefs).forEach(filter => {
+        filterSets[filter.id] = new Set();
+    });
+    
     document.querySelectorAll(".entity-select.category-visible > option").forEach(element => {
         const entity = availableEntities[category][element.value];
-        if (entity.authors)
-            entity.authors.forEach(author => authorSet.add(author));
-        if (entity.owners)
-            entity.owners.forEach(owner => ownerSet.add(owner));
+        
+        Object.values(filterDefs).forEach(filter => {
+            filter.extract(entity).forEach(result => {
+                filterSets[filter.id].add(result);
+            });
+        });
     });
 
-    let authorFound = false;
+    Object.values(filterDefs).forEach(filter => {
+        // always show the "none" option
+        let found = filter.id == "none";
 
-    document.querySelectorAll("#filter-author > option").forEach(element => {
-        if (authorSet.has(element.value)) {
-            element.classList.remove("filtered");
-            authorFound = true;
+        document.querySelectorAll("#filter-" + filter.id + " > option").forEach(element => {
+            if (filterSets[filter.id].has(element.value) || filter.id == "none") {
+                element.classList.remove("filtered");
+                found = true;
+            } else {
+                element.classList.add("filtered");
+            }
+        });
+
+
+        const filterOption = document.querySelector("#filter-picker > option[value='" + filter.id + "']");
+        if (found) {
+            filterOption.classList.remove("filtered");
         } else {
-            element.classList.add("filtered");
+            filterOption.classList.add("filtered");
         }
-    })
-
-    let ownerFound = false;
-
-    document.querySelectorAll("#filter-owner > option").forEach(element => {
-        if (ownerSet.has(element.value)) {
-            element.classList.remove("filtered");
-            ownerFound = true;
-        } else {
-            element.classList.add("filtered");
-        }
-    })
-
-    if (authorFound) {
-        document.querySelector("#filter-picker > option[value='author']").classList.remove("filtered");
-    } else {
-        document.querySelector("#filter-picker > option[value='author']").classList.add("filtered");
-    }
-
-    if (ownerFound) {
-        document.querySelector("#filter-picker > option[value='owner']").classList.remove("filtered");
-    } else {
-        document.querySelector("#filter-picker > option[value='owner']").classList.add("filtered");
-    }
-    
+    });
 
     document.querySelector("#filter-picker").value = "none";
     document.querySelector("#filter-picker").dispatchEvent(new Event("input"));
@@ -2538,17 +2542,9 @@ function updateFilter() {
     let first = null;
     document.querySelectorAll(".entity-select.category-visible > option").forEach(element => {
         let keep = false;
-        if (type == "author") {
-            const authorList = availableEntities[category][element.value].authors;
-            if (authorList && authorList.indexOf(key) >= 0) {
-                keep = true;
-            }
-        }
-        if (type == "owner") {
-            const ownerList = availableEntities[category][element.value].owners;
-            if (ownerList && ownerList.indexOf(key) >= 0) {
-                keep = true;
-            }
+
+        if (filterDefs[type].extract(availableEntities[category][element.value]).indexOf(key) >= 0) {
+            keep = true;
         }
 
         if (!keep) {

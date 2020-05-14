@@ -49,7 +49,10 @@ characterMakers.push(() => makeCharacter(
         description: {
             title: "Bio",
             text: "Very furry. Sheds on everything."
-        }
+        },
+        tags: [
+            "anthro"
+        ]
     },
     {
         back: {
