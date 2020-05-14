@@ -2302,7 +2302,7 @@ function makeCustomEntity(url, x=0.5, y=0.5) {
 const filterDefs = {
     none: {
         id: "none",
-        name: "None",
+        name: "No Filter",
         extract: maker => [],
         render: name => name
     },
