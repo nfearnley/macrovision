@@ -34,7 +34,9 @@ let sizeHandle = null;
 let worldSizeDirty = false;
 
 const tagDefs = {
-    "anthro": "Anthro"
+    "anthro": "Anthro",
+    "feral": "Feral",
+    "taur": "Taur"
 }
 
 math.createUnit("humans", {
@@ -2319,8 +2321,8 @@ const filterDefs = {
     species: {
         id: "species",
         name: "Species",
-        extract: maker => maker.info && maker.info.species ? [maker.info.species] : [],
-        render: species => species
+        extract: maker => maker.info && maker.info.species ? getSpeciesInfo(maker.info.species) : [],
+        render: species => speciesData[species].name
     },
     tags: {
         id: "tags",
