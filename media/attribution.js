@@ -9806,6 +9806,30 @@ const attributionData = {
                 "mandarax"
             ]
         },
+        {
+            prefix: "./media/characters/pixil/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/21697998/", nsfw: true }
+            ],
+            authors: [
+                "angelthecatgirl"
+            ],
+            owners: [
+                "angelthecatgirl"
+            ]
+        },
+        {
+            prefix: "./media/characters/angel/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/13713112/" }
+            ],
+            authors: [
+                "angelthecatgirl"
+            ],
+            owners: [
+                "angelthecatgirl"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -13599,6 +13623,10 @@ const attributionData = {
         "drewbermeister": {
             "name": "drewbermeister",
             "url": "https://www.furaffinity.net/user/drewbermeister/",
+        },
+        "angelthecatgirl": {
+            "name": "AngelTheCatgirl",
+            "url": "https://www.furaffinity.net/user/angelthecatgirl/",
         },
     }
 }

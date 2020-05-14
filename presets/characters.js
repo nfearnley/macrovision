@@ -486,6 +486,16 @@ const speciesData = {
       name: "Medihound",
       parents: ["robot", "dog"]
     },
+    "sylveon": {
+      name: "Sylveon",
+      parents: ["pokemon"]
+    },
+    "catgirl": {
+      name: "Catgirl",
+      parents: ["mammal"]
+    },
+    
+    
     
     
     
@@ -23409,6 +23419,67 @@ characterMakers.push(() => makeCharacter(
             name: "Normal",
             height: math.unit(25, "feet"),
             default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Pixil", species: ["sylveon"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(5, "feet"),
+            weight: math.unit(90, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/pixil/front.svg",
+                extra: 2000/1618,
+                bottom: 12.3/2011
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(5, "feet"),
+            default: true
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(10, "miles"),
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Angel", species: ["catgirl"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(7, "feet"),
+            weight: math.unit(200, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/angel/front.svg",
+                extra: 1830/1737,
+                bottom: 22.6/1854,
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(7, "feet")
+        },
+        {
+            name: "Macro",
+            height: math.unit(1000, "feet")
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(2, "miles")
+        },
+        {
+            name: "Gigamacro",
+            height: math.unit(20, "earths")
         },
     ]
 ))
