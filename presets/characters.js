@@ -494,6 +494,11 @@ const speciesData = {
       name: "Catgirl",
       parents: ["mammal"]
     },
+    "cowgirl": {
+      name: "Cowgirl",
+      parents: ["mammal"]
+    },
+    
     
     
     
@@ -23480,6 +23485,48 @@ characterMakers.push(() => makeCharacter(
         {
             name: "Gigamacro",
             height: math.unit(20, "earths")
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Mekana", species: ["cowgirl"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(5, "feet"),
+            weight: math.unit(180, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/mekana/front.svg",
+                extra: 1671/1605,
+                bottom: 3.5/1691
+            }
+        },
+        side: {
+            height: math.unit(5, "feet"),
+            weight: math.unit(180, "lb"),
+            name: "Side",
+            image: {
+                source: "./media/characters/mekana/side.svg",
+                extra: 1671/1605,
+                bottom: 3.5/1691
+            }
+        },
+        back: {
+            height: math.unit(5, "feet"),
+            weight: math.unit(180, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/mekana/back.svg",
+                extra: 1671/1605,
+                bottom: 3.5/1691
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(5, "feet")
         },
     ]
 ))

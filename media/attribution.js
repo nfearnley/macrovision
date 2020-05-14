@@ -9830,6 +9830,20 @@ const attributionData = {
                 "angelthecatgirl"
             ]
         },
+        {
+            prefix: "./media/characters/mekana/",
+            files: [
+                { name: "front.svg", source: null, nsfw: true },
+                { name: "side.svg", source: null, nsfw: true },
+                { name: "back.svg", source: null, nsfw: true },
+            ],
+            authors: [
+                "angelthecatgirl"
+            ],
+            owners: [
+                "angelthecatgirl"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
