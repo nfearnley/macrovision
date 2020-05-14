@@ -2435,6 +2435,36 @@ function prepareEntities() {
         filterNameSelect.id = "filter-" + filter.id;
         filterHolder.appendChild(filterNameSelect);
 
+        const button = document.createElement("button");
+        button.classList.add("filter-button");
+        button.id = "create-filtered-" + filter.id + "-button";
+        filterHolder.appendChild(button);
+
+        const counter = document.createElement("div");
+        counter.classList.add("button-counter");
+        counter.innerText = "10";
+        button.appendChild(counter);
+        const i = document.createElement("i");
+        i.classList.add("fas");
+        i.classList.add("fa-plus");
+        button.appendChild(i);
+
+        button.addEventListener("click", e => {
+            const makers = Array.from(document.querySelector(".entity-select.category-visible")).filter(element => !element.classList.contains("filtered"));
+            const count = makers.length;
+            let index = 0;
+
+            makers.map(element => {
+                const category = document.querySelector("#category-picker").value;
+                const maker = availableEntities[category][element.value];
+                console.log(maker)
+                const entity = maker.constructor()
+                displayEntity(entity, entity.view, 0.1 + 0.8 * index / (count - 1), 1);
+                updateSizes(true);
+                index += 1;
+            });
+        });
+
         Array.from(filterSets[filter.id]).map(name => [name, filter.render(name)]).sort((e1, e2) => e1[1].toLowerCase().localeCompare(e2[1].toLowerCase())).forEach(name => {
             const option = document.createElement("option");
             option.innerText = name[1];
@@ -2542,6 +2572,9 @@ function updateFilter() {
     let current = document.querySelector(".entity-select.category-visible").value;
     let replace = false;
     let first = null;
+
+    let count = 0;
+
     document.querySelectorAll(".entity-select.category-visible > option").forEach(element => {
         let keep = type == "none";
 
@@ -2555,10 +2588,19 @@ function updateFilter() {
             if (current == element.value) {
                 replace = true;
             }
-        } else if (!first) {
-            first = element.value;
-        }
+        } else {
+            count += 1;
+            if (!first) {
+                first = element.value;
+            }
+        } 
     });
+
+    const button = document.querySelector(".filter-select.category-visible + button");
+
+    if (button) {
+        button.querySelector(".button-counter").innerText = count;
+    }
 
     if (replace) {
         document.querySelector(".entity-select.category-visible").value = first;

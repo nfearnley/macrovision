@@ -598,7 +598,8 @@ i.far {
 
 #spawners > select,
 #spawners > button,
-#filters > select {
+#filters > select,
+#filters > button {
     display: none;
 }
 
@@ -609,7 +610,8 @@ i.far {
 
 #spawners > select.category-visible,
 #spawners > select.category-visible + button,
-#filters > select.category-visible {
+#filters > select.category-visible,
+#filters > select.category-visible + button {
     display: block;
 }
 
@@ -1000,4 +1002,21 @@ button {
 .settings-name {
     font-size: 200%;
     margin-right: 16pt;
+}
+
+.filter-button > i {
+    color: gray;
+}
+
+.button-counter {
+    position: absolute;
+    color: white;
+    opacity: 0.75;
+    width: 25%;
+    height: 25%;
+    font-size: 16pt;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+    user-select: none;
 }
