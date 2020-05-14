@@ -2543,7 +2543,7 @@ function updateFilter() {
     let replace = false;
     let first = null;
     document.querySelectorAll(".entity-select.category-visible > option").forEach(element => {
-        let keep = false;
+        let keep = type == "none";
 
         if (filterDefs[type].extract(availableEntities[category][element.value]).indexOf(key) >= 0) {
             keep = true;
