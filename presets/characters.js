@@ -5578,7 +5578,16 @@ characterMakers.push(() => makeCharacter(
             weight: math.unit(73, "kg"),
             name: "Anthro",
             image: {
-                source: "./media/characters/alicia/anthro.svg"
+                source: "./media/characters/alicia/anthro.svg",
+                extra: 2571/2385,
+                bottom: 75/2648
+            }
+        },
+        paw: {
+            height: math.unit(1.32, "feet"),
+            name: "Paw",
+            image: {
+                source: "./media/characters/alicia/paw.svg"
             }
         },
         feral: {
