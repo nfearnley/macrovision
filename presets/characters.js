@@ -1169,24 +1169,86 @@ characterMakers.push(() => makeCharacter(
 characterMakers.push(() => makeCharacter(
     { name: "Jazzy", species: ["coyote", "wolf"], tags: ["anthro"] },
     {
+        frontDressed: {
+            height: math.unit(216, "feet"),
+            weight: math.unit(7000000, "lb"),
+            name: "Front (Dressed)",
+            image: {
+                source: "./media/characters/jazzy/front-dressed.svg",
+                extra: 2738/2651,
+                bottom: 41.8/2786
+            }
+        },
+        backDressed: {
+            height: math.unit(216, "feet"),
+            weight: math.unit(7000000, "lb"),
+            name: "Back (Dressed)",
+            image: {
+                source: "./media/characters/jazzy/back-dressed.svg",
+                extra: 2775/2673,
+                bottom: 36.8/2817
+            }
+        },
         front: {
-            height: math.unit(7, "feet"),
-            weight: math.unit(80, "kg"),
+            height: math.unit(216, "feet"),
+            weight: math.unit(7000000, "lb"),
             name: "Front",
             image: {
                 source: "./media/characters/jazzy/front.svg",
-                extra: 1,
-                bottom: 0.01
+                extra: 2738/2651,
+                bottom: 41.8/2786
             }
         },
         back: {
-            height: math.unit(7, "feet"),
-            weight: math.unit(80, "kg"),
+            height: math.unit(216, "feet"),
+            weight: math.unit(7000000, "lb"),
             name: "Back",
             image: {
                 source: "./media/characters/jazzy/back.svg",
-                extra: 1,
-                bottom: 0.01
+                extra: 2775/2673,
+                bottom: 36.8/2817
+            }
+        },
+        maw: {
+            height: math.unit(20, "feet"),
+            name: "Maw",
+            image: {
+                source: "./media/characters/jazzy/maw.svg"
+            }
+        },
+        paws: {
+            height: math.unit(27.5, "feet"),
+            name: "Paws",
+            image: {
+                source: "./media/characters/jazzy/paws.svg"
+            }
+        },
+        eye: {
+            height: math.unit(4.4, "feet"),
+            name: "Eye",
+            image: {
+                source: "./media/characters/jazzy/eye.svg"
+            }
+        },
+        droneOffense: {
+            height: math.unit(9.5, "inches"),
+            name: "Drone (Offense)",
+            image: {
+                source: "./media/characters/jazzy/drone-offense.svg"
+            }
+        },
+        droneRecon: {
+            height: math.unit(9.5, "inches"),
+            name: "Drone (Recon)",
+            image: {
+                source: "./media/characters/jazzy/drone-recon.svg"
+            }
+        },
+        droneDefense: {
+            height: math.unit(9.5, "inches"),
+            name: "Drone (Defense)",
+            image: {
+                source: "./media/characters/jazzy/drone-defense.svg"
             }
         },
     },

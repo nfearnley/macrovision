@@ -2742,8 +2742,18 @@ const attributionData = {
         {
             prefix: "./media/characters/jazzy/",
             files: [
-                { name: "front.svg", source: null },
-                { name: "back.svg", source: null }
+                { name: "front-dressed.svg", source: "https://www.furaffinity.net/view/35088899/" },
+                { name: "back-dressed.svg", source: "https://www.furaffinity.net/view/35088899/" },
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35088479/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/35088479/" },
+                { name: "front-dressed.svg", source: "https://www.furaffinity.net/view/35088899/" },
+                { name: "back-dressed.svg", source: "https://www.furaffinity.net/view/35088899/" },
+                { name: "maw.svg", source: "https://www.furaffinity.net/view/35088899/" },
+                { name: "paws.svg", source: "https://www.furaffinity.net/view/35088899/" },
+                { name: "eye.svg", source: "https://www.furaffinity.net/view/35088899/" },
+                { name: "drone-offense.svg", source: "https://www.furaffinity.net/view/35088899/" },
+                { name: "drone-recon.svg", source: "https://www.furaffinity.net/view/35088899/" },
+                { name: "drone-defense.svg", source: "https://www.furaffinity.net/view/35088899/" },
             ],
             authors: [
                 "meowzi"
