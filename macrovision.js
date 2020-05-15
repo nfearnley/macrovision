@@ -36,7 +36,8 @@ let worldSizeDirty = false;
 const tagDefs = {
     "anthro": "Anthro",
     "feral": "Feral",
-    "taur": "Taur"
+    "taur": "Taur",
+    "naga": "Naga"
 }
 
 math.createUnit("humans", {
