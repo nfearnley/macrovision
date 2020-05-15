@@ -1326,7 +1326,8 @@ characterMakers.push(() => makeCharacter(
             text: "Very furry. Sheds on everything."
         },
         tags: [
-            "anthro"
+            "anthro",
+            "goo"
         ]
     },
     {
