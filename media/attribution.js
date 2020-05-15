@@ -8946,7 +8946,24 @@ const attributionData = {
         {
             prefix: "./media/characters/icowom-lee/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/20472356/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/21340889/", nsfw: true },
+                { name: "front-tentacles.svg", source: "https://www.furaffinity.net/view/21340889/", nsfw: true },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/21340889/", nsfw: true },
+                { name: "back-tentacles.svg", source: "https://www.furaffinity.net/view/21340889/", nsfw: true },
+                { name: "rump.svg", source: "https://www.furaffinity.net/view/21340889/", nsfw: true },
+                { name: "genitals.svg", source: "https://www.furaffinity.net/view/21340889/", nsfw: true },
+            ],
+            authors: [
+                "lunar-haven-studios"
+            ],
+            owners: [
+                "stokeman"
+            ]
+        },
+        {
+            prefix: "./media/characters/icowom-lee/",
+            files: [
+                { name: "front-dressed.svg", source: "https://www.furaffinity.net/view/20472356/" }
             ],
             authors: [
                 "thetiedtigress"
@@ -13667,6 +13684,10 @@ const attributionData = {
         "angelthecatgirl": {
             "name": "AngelTheCatgirl",
             "url": "https://www.furaffinity.net/user/angelthecatgirl/",
+        },
+        "lunar-haven-studios": {
+            "name": "Lunar-Haven-Studios",
+            "url": "https://www.furaffinity.net/user/lunar-haven-studios",
         },
     }
 }

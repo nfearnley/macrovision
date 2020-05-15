@@ -21627,8 +21627,62 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/icowom-lee/front.svg",
+                extra: 985/955,
+                bottom: 25.4/1012
+            }
+        },
+        fronttentacles: {
+            height: math.unit(2.3, "m"),
+            weight: math.unit(304, "kg"),
+            name: "Front-tentacles",
+            image: {
+                source: "./media/characters/icowom-lee/front-tentacles.svg",
+                extra: 985/955,
+                bottom: 25.4/1012
+            }
+        },
+        back: {
+            height: math.unit(2.3, "m"),
+            weight: math.unit(304, "kg"),
+            name: "Back",
+            image: {
+                source: "./media/characters/icowom-lee/back.svg",
+                extra: 975/954,
+                bottom: 9.5/985
+            }
+        },
+        backtentacles: {
+            height: math.unit(2.3, "m"),
+            weight: math.unit(304, "kg"),
+            name: "Back-tentacles",
+            image: {
+                source: "./media/characters/icowom-lee/back-tentacles.svg",
+                extra: 975/954,
+                bottom: 9.5/985
+            }
+        },
+        frontDressed: {
+            height: math.unit(2.3, "m"),
+            weight: math.unit(304, "kg"),
+            name: "Front (Dressed)",
+            image: {
+                source: "./media/characters/icowom-lee/front-dressed.svg",
                 extra: 3076 / 2933,
                 bottom: 51.4 / 3125.1889
+            }
+        },
+        rump: {
+            height: math.unit(0.776, "meters"),
+            name: "Rump",
+            image: {
+                source: "./media/characters/icowom-lee/rump.svg"
+            }
+        },
+        genitals: {
+            height: math.unit(0.78, "meters"),
+            name: "Genitals",
+            image: {
+                source: "./media/characters/icowom-lee/genitals.svg"
             }
         },
     },
