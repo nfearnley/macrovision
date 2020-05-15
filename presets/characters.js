@@ -2119,7 +2119,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Fory", species: ["weasel"], tags: ["anthro"] },
+    { name: "Fory", species: ["weasel", "rabbit"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(5, "feet"),
