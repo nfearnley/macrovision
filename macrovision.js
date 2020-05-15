@@ -37,7 +37,8 @@ const tagDefs = {
     "anthro": "Anthro",
     "feral": "Feral",
     "taur": "Taur",
-    "naga": "Naga"
+    "naga": "Naga",
+    "goo": "Goo"
 }
 
 math.createUnit("humans", {
@@ -2458,7 +2459,6 @@ function prepareEntities() {
             makers.map(element => {
                 const category = document.querySelector("#category-picker").value;
                 const maker = availableEntities[category][element.value];
-                console.log(maker)
                 const entity = maker.constructor()
                 displayEntity(entity, entity.view, 0.1 + 0.8 * index / (count - 1), 1);
                 updateSizes(true);
