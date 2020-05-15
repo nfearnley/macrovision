@@ -5595,7 +5595,9 @@ characterMakers.push(() => makeCharacter(
             weight: math.unit(73, "kg"),
             name: "Feral",
             image: {
-                source: "./media/characters/alicia/feral.svg"
+                source: "./media/characters/alicia/feral.svg",
+                extra: 2123/1715,
+                bottom: 222/2349
             }
         },
     },
