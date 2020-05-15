@@ -5663,9 +5663,32 @@ characterMakers.push(() => makeCharacter(
             weight: math.unit(74, "kg"),
             name: "Front",
             image: {
-                source: "./media/characters/berri/front.svg"
+                source: "./media/characters/berri/front.svg",
+                extra: 857/837,
+                bottom: 18/877
             }
-        }
+        },
+        bum: {
+            height: math.unit(1.46, "feet"),
+            name: "Bum",
+            image: {
+                source: "./media/characters/berri/bum.svg"
+            }
+        },
+        mouth: {
+            height: math.unit(0.44, "feet"),
+            name: "Mouth",
+            image: {
+                source: "./media/characters/berri/mouth.svg"
+            }
+        },
+        paw: {
+            height: math.unit(0.826, "feet"),
+            name: "Paw",
+            image: {
+                source: "./media/characters/berri/paw.svg"
+            }
+        },
     },
     [
         {

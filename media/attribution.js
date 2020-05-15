@@ -1334,7 +1334,8 @@ const attributionData = {
         {
             prefix: "./media/characters/alicia/",
             files: [
-                { name: "anthro.svg", source: "https://www.furaffinity.net/view/31363235/" }
+                { name: "anthro.svg", source: "https://www.furaffinity.net/view/31363235/" },
+                { name: "paw.svg", source: "https://www.furaffinity.net/view/31363235/" },
 
             ],
             authors: [
@@ -1633,7 +1634,10 @@ const attributionData = {
         {
             prefix: "./media/characters/berri/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/34510917/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34510917/" },
+                { name: "bum.svg", source: "https://www.furaffinity.net/view/34510917/" },
+                { name: "mouth.svg", source: "https://www.furaffinity.net/view/34510917/" },
+                { name: "paw.svg", source: "https://www.furaffinity.net/view/34510917/" },
             ],
             authors: [
                 "lynxsprout",
