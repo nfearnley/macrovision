@@ -9486,7 +9486,7 @@ const attributionData = {
         {
             prefix: "./media/characters/ariam/",
             files: [
-                { name: "side.svg", source: "https://www.furaffinity.net/view/18162738" }
+                { name: "squatting.svg", source: "https://www.furaffinity.net/view/18162738" }
             ],
             authors: [
                 "khael"
@@ -9681,7 +9681,8 @@ const attributionData = {
         {
             prefix: "./media/characters/luka-bryzant/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/22830826/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/22830826/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/22830826/" },
             ],
             authors: [
                 "pulex"
