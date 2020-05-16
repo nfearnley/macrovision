@@ -9911,6 +9911,18 @@ const attributionData = {
                 "sirporygon-z"
             ]
         },
+        {
+            prefix: "./media/characters/ari/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "panpan-pratama"
+            ],
+            owners: [
+                "kal278"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -13720,6 +13732,14 @@ const attributionData = {
         "sirporygon-z": {
             "name": "Sirporygon-Z",
             "url": "https://www.furaffinity.net/user/sirporygon-z/",
+        },
+        "kal278": {
+            "name": "Kal278",
+            "url": "https://www.furaffinity.net/user/kal278/",
+        },
+        "panpan-pratama": {
+            "name": "panpan_pratama",
+            "url": "https://www.fiverr.com/panpan_pratama",
         },
     }
 }
