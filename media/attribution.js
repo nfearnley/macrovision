@@ -9899,6 +9899,18 @@ const attributionData = {
                 "alter-dims"
             ]
         },
+        {
+            prefix: "./media/characters/aj/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "rabbitwarrior"
+            ],
+            owners: [
+                "sirporygon-z"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -13700,6 +13712,14 @@ const attributionData = {
         "lunar-haven-studios": {
             "name": "Lunar-Haven-Studios",
             "url": "https://www.furaffinity.net/user/lunar-haven-studios",
+        },
+        "rabbitwarrior": {
+            "name": "RabbitWarrior",
+            "url": "https://www.furaffinity.net/user/rabbitwarrior",
+        },
+        "sirporygon-z": {
+            "name": "Sirporygon-Z",
+            "url": "https://www.furaffinity.net/user/sirporygon-z/",
         },
     }
 }

@@ -24489,6 +24489,33 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "AJ", species: ["wolf"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/aj/front.svg",
+                extra: 2039/1562,
+                bottom: 40/2079
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(11 + 6/12, "feet"),
+            default: true
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(60, "megameters")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
