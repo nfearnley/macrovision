@@ -2379,7 +2379,9 @@ characterMakers.push(() => makeCharacter(
             weight: math.unit(75, "kg"),
             name: "Front",
             image: {
-                source: "./media/characters/sefer/front.svg"
+                source: "./media/characters/sefer/front.svg",
+                extra: 848/659,
+                bottom: 28.3/876.442
             }
         },
         back: {
@@ -2387,7 +2389,19 @@ characterMakers.push(() => makeCharacter(
             weight: math.unit(75, "kg"),
             name: "Back",
             image: {
-                source: "./media/characters/sefer/back.svg"
+                source: "./media/characters/sefer/back.svg",
+                extra: 864/695,
+                bottom: 10/871
+            }
+        },
+        frontDressed: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(75, "kg"),
+            name: "Front (Dressed)",
+            image: {
+                source: "./media/characters/sefer/front-dressed.svg",
+                extra: 839/653,
+                bottom: 37.6/878
             }
         },
     },

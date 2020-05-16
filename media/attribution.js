@@ -4623,7 +4623,8 @@ const attributionData = {
             prefix: "./media/characters/sefer/",
             files: [
                 { name: "front.svg", source: null },
-                { name: "back.svg", source: null }
+                { name: "back.svg", source: null },
+                { name: "front-dressed.svg", source: null },
             ],
             authors: [
                 "rabidchild42"
