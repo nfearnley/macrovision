@@ -732,7 +732,7 @@ const speciesData = {
     },
     "xenomorph": {
       name: "Xenomorph",
-      parents: ["monster"]
+      parents: ["monster", "alien"]
     },
     "charr": {
       name: "Charr",
@@ -896,7 +896,7 @@ const speciesData = {
     },
     "wolxi": {
       name: "Wolxi",
-      parents: ["mammal"]
+      parents: ["mammal", "alien"]
     },
     "dratini": {
       name: "Dratini",
@@ -1222,79 +1222,24 @@ const speciesData = {
       name: "Plant",
       parents: []
     },
+    "raskatox": {
+      name: "Raskatox",
+      parents: ["raccoon", "skunk", "cat", "fox"]
+    },
+    "mikromare": {
+      name: "mikromare",
+      parents: ["alien"]
+    },
+    "alien": {
+      name: "Alien",
+      parents: ["animal"]
+    },
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-
-
-
 }
+
+// species
 
 function getSpeciesInfo(speciesList) {
     let result = new Set();
@@ -8264,7 +8209,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Rook Kitara", species: ["mammal"], tags: ["anthro"] },
+    { name: "Rook Kitara", species: ["raskatox"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(5 + 11 / 12, "feet"),
@@ -9226,7 +9171,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Dafydd Tomos", species: ["unknown"], tags: ["anthro"] },
+    { name: "Dafydd Tomos", species: ["mikromare"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(6.5, "inches"),
