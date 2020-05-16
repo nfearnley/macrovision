@@ -1597,7 +1597,10 @@ const attributionData = {
         {
             prefix: "./media/characters/axel-lycan/",
             files: [
-                { name: "front.svg", source: "https://twitter.com/AxelLycan/status/1234276829491421184" }
+                { name: "cat-front.svg", source: "https://twitter.com/AxelLycan/status/1258975369564049408" },
+                { name: "cat-back.svg", source: "https://twitter.com/AxelLycan/status/1258975369564049408" },
+                { name: "wolf-front.svg", source: "https://twitter.com/AxelLycan/status/1258975369564049408" },
+                { name: "wolf-back.svg", source: "https://twitter.com/AxelLycan/status/1258975369564049408" },
             ],
             authors: [
                 "axellycan"

@@ -8543,16 +8543,46 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Axel Lycan", species: ["cat"], tags: ["anthro"] },
+    { name: "Axel Lycan", species: ["cat", "wolf"], tags: ["anthro"] },
     {
-        front: {
+        catFront: {
             height: math.unit(6, "feet"),
             weight: math.unit(120, "lb"),
-            name: "Front",
+            name: "Front (Cat Side)",
             image: {
-                source: "./media/characters/axel-lycan/front.svg",
-                extra: 1,
-                bottom: 0.08
+                source: "./media/characters/axel-lycan/cat-front.svg",
+                extra: 430/402,
+                bottom: 43/472.35
+            }
+        },
+        catBack: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(120, "lb"),
+            name: "Back (Cat Side)",
+            image: {
+                source: "./media/characters/axel-lycan/cat-back.svg",
+                extra: 447/419,
+                bottom: 23.3/469
+            }
+        },
+        wolfFront: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(120, "lb"),
+            name: "Front (Wolf Side)",
+            image: {
+                source: "./media/characters/axel-lycan/wolf-front.svg",
+                extra: 485/456,
+                bottom: 19/504
+            }
+        },
+        wolfBack: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(120, "lb"),
+            name: "Back (Wolf Side)",
+            image: {
+                source: "./media/characters/axel-lycan/wolf-back.svg",
+                extra: 475/438,
+                bottom: 39.2/514
             }
         },
     },
