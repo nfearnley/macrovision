@@ -7536,8 +7536,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/argent/front.svg",
-                extra: 1565 / 1416,
-                bottom: 0.01
+                extra: 1471 / 1331,
+                bottom: 100.8/1575.5
             }
         }
     },
