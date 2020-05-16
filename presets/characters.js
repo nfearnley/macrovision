@@ -1234,12 +1234,16 @@ const speciesData = {
       name: "Alien",
       parents: ["animal"]
     },
+    "deity": {
+      name: "Deity",
+      parents: []
+    },
     
     
     
 }
 
-// species
+//species
 
 function getSpeciesInfo(speciesList) {
     let result = new Set();
@@ -2674,7 +2678,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Elbial", species: ["goat", "lion", "demon"], tags: ["anthro"] },
+    { name: "Elbial", species: ["goat", "lion", "demon", "deity"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(2, "meter"),
@@ -3351,7 +3355,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Angelpatamon", species: ["patamon"], tags: ["anthro"] },
+    { name: "Angelpatamon", species: ["patamon", "deity"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(470, "feet"),
@@ -5720,7 +5724,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Juno", species: ["shiba-inu"], tags: ["anthro"] },
+    { name: "Juno", species: ["shiba-inu", "deity"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(1.69, "meters"),
@@ -5749,7 +5753,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Samantha", species: ["canine"], tags: ["anthro"] },
+    { name: "Samantha", species: ["canine", "deity"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(1.93, "meters"),
@@ -7797,7 +7801,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Goddess Elizabeth", species: ["wolf"], tags: ["anthro"] },
+    { name: "Goddess Elizabeth", species: ["wolf", "deity"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(6, "feet"),
@@ -11994,7 +11998,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Ilisha Devya", species: ["alligator", "cobra"], tags: ["anthro"] },
+    { name: "Ilisha Devya", species: ["alligator", "cobra", "deity"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(6, "feet"),
@@ -13031,7 +13035,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Shiroryu", species: ["dragon"], tags: ["anthro"] },
+    { name: "Shiroryu", species: ["dragon", "deity"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(6, "feet"),
@@ -14631,7 +14635,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Java", species: ["snake"], tags: ["naga"] },
+    { name: "Java", species: ["snake", "deity"], tags: ["naga"] },
     {
         fallen: {
             height: math.unit(11 + 8 / 12, "feet"),
@@ -21185,7 +21189,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Anders", species: ["unicorn"], tags: ["anthro"] },
+    { name: "Anders", species: ["unicorn", "deity"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(50, "feet"),
@@ -24434,6 +24438,53 @@ characterMakers.push(() => makeCharacter(
         {
             name: "Macro",
             height: math.unit(40, "feet")
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "The Lascivious", species: ["wolxi", "deity"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(2.1, "meters"),
+            weight: math.unit(200, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/the-lascivious/front.svg",
+                extra: 1/0.893,
+                bottom: 3.5/573.7
+            }
+        },
+    },
+    [
+        {
+            name: "Human Scale",
+            height: math.unit(2.1, "meters")
+        },
+        {
+            name: "Wolxi Scale",
+            height: math.unit(46.2, "m"),
+            default: true
+        },
+        {
+            name: "Boinker of Buildings",
+            height: math.unit(10, "km")
+        },
+        {
+            name: "Shagger of Skyscrapers",
+            height: math.unit(40, "km")
+        },
+        {
+            name: "Banger of Boroughs",
+            height: math.unit(4000, "km")
+        },
+        {
+            name: "Screwer of States",
+            height: math.unit(100000, "km")
+        },
+        {
+            name: "Pounder of Planets",
+            height: math.unit(2000000, "km")
         },
     ]
 ))

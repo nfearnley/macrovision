@@ -9887,6 +9887,18 @@ const attributionData = {
                 "angelthecatgirl"
             ]
         },
+        {
+            prefix: "./media/characters/the-lascivious/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "alter-dims"
+            ],
+            owners: [
+                "alter-dims"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
