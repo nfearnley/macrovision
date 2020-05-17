@@ -24589,7 +24589,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Koros" },
+    { name: "Koros", species: ["dragon"], tags: ["feral"] },
     {
         side: {
             height: math.unit(31 + 8/12, "feet"),
