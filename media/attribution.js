@@ -8084,6 +8084,10 @@ const attributionData = {
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/23840575/" },
                 { name: "back.svg", source: "https://www.furaffinity.net/view/23840575/" },
+                { name: "head.svg", source: "https://www.furaffinity.net/view/23840575/" },
+                { name: "tailmaw.svg", source: "https://www.furaffinity.net/view/23840575/" },
+                { name: "tentacles.svg", source: "https://www.furaffinity.net/view/23840575/" },
+                { name: "dick.svg", source: "https://www.furaffinity.net/view/23840575/", nsfw: true },
             ],
             authors: [
                 "sidgi"

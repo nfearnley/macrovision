@@ -19607,6 +19607,34 @@ characterMakers.push(() => makeCharacter(
                 bottom: 0.03
             }
         },
+        head: {
+            height: math.unit(2.1, "feet"),
+            name: "Head",
+            image: {
+                source: "./media/characters/lycoa/head.svg"
+            }
+        },
+        tailmaw: {
+            height: math.unit(1.9, "feet"),
+            name: "Tailmaw",
+            image: {
+                source: "./media/characters/lycoa/tailmaw.svg"
+            }
+        },
+        tentacles: {
+            height: math.unit(2.1, "feet"),
+            name: "Tentacles",
+            image: {
+                source: "./media/characters/lycoa/tentacles.svg"
+            }
+        },
+        dick: {
+            height: math.unit(1.73, "feet"),
+            name: "Dick",
+            image: {
+                source: "./media/characters/lycoa/dick.svg"
+            }
+        },
     },
     [
         {
