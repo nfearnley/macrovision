@@ -24923,6 +24923,103 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Maia", species: ["mew"], tags: ["feral"] },
+    {
+        front: {
+            height: math.unit(3 + 4/12, "feet"),
+            weight: math.unit(70, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/maia/front.svg",
+                extra: 227/219.5,
+                bottom: 40 / 267
+            }
+        },
+        back: {
+            height: math.unit(3 + 4/12, "feet"),
+            weight: math.unit(70, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/maia/back.svg",
+                extra: 237/225
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(3 + 4/12, "feet"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Jabaro", species: ["cheetah"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(5 + 10/12, "feet"),
+            weight: math.unit(197, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/jabaro/front.svg",
+                extra: 225/216,
+                bottom: 5.06/230
+            }
+        },
+        back: {
+            height: math.unit(5 + 10/12, "feet"),
+            weight: math.unit(197, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/jabaro/back.svg",
+                extra: 225/219,
+                bottom: 1.9/227
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(5 + 10/12, "feet"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Risa", species: ["corvid"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(5 + 8/12, "feet"),
+            weight: math.unit(139, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/risa/front.svg",
+                extra: 270/260,
+                bottom: 11.2/282
+            }
+        },
+        back: {
+            height: math.unit(5 + 8/12, "feet"),
+            weight: math.unit(139, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/risa/back.svg",
+                extra: 264/255,
+                bottom: 4/268
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(5 + 8/12, "feet"),
+            default: true
+        },
+    ]
+))
 //characters
 
 function makeCharacters() {

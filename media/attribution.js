@@ -10030,6 +10030,45 @@ const attributionData = {
                 "maxene-sita"
             ]
         },
+        {
+            prefix: "./media/characters/maia/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Maia" },
+                { name: "back.svg", source: "https://fidverse.fandom.com/wiki/Maia" },
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
+        {
+            prefix: "./media/characters/jabaro/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Jabaro" },
+                { name: "back.svg", source: "https://fidverse.fandom.com/wiki/Jabaro" },
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
+        {
+            prefix: "./media/characters/risa/",
+            files: [
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Risa" },
+                { name: "back.svg", source: "https://fidverse.fandom.com/wiki/Risa" },
+            ],
+            authors: [
+                "fidchell"
+            ],
+            owners: [
+                "fidchell"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
