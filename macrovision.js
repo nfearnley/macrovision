@@ -2453,14 +2453,14 @@ function prepareEntities() {
 
         button.addEventListener("click", e => {
             const makers = Array.from(document.querySelector(".entity-select.category-visible")).filter(element => !element.classList.contains("filtered"));
-            const count = makers.length;
+            const count = makers.length + 1;
             let index = 0;
 
             makers.map(element => {
                 const category = document.querySelector("#category-picker").value;
                 const maker = availableEntities[category][element.value];
                 const entity = maker.constructor()
-                displayEntity(entity, entity.view, 0.1 + 0.8 * index / (count - 1), 1);
+                displayEntity(entity, entity.view, 0.1 + 0.8 * index / (count), 1);
                 updateSizes(true);
                 index += 1;
             });
