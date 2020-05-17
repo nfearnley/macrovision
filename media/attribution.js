@@ -9984,6 +9984,22 @@ const attributionData = {
                 "xrequiem"
             ]
         },
+        {
+            prefix: "./media/characters/baadra/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/27344682/", nsfw: true },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/27344682/" },
+                { name: "head.svg", source: "https://www.furaffinity.net/view/27344682/" },
+                { name: "head-angry.svg", source: "https://www.furaffinity.net/view/27344682/" },
+                { name: "head-open.svg", source: "https://www.furaffinity.net/view/27344682/" },
+            ],
+            authors: [
+                "momofluff"
+            ],
+            owners: [
+                "xrequiem"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -13805,6 +13821,10 @@ const attributionData = {
         "doodlies": {
             "name": "Doodlies",
             "url": "https://www.furaffinity.net/user/doodlies/",
+        },
+        "momofluff": {
+            "name": "Momofluff",
+            "url": "https://www.furaffinity.net/user/momofluff/",
         },
     }
 }

@@ -24768,6 +24768,60 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Baadra" },
+    {
+        front: {
+            height: math.unit(17 + 6/12, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/baadra/front.svg",
+                extra: 3137/2890,
+                bottom: 168.4/3305
+            }
+        },
+        back: {
+            height: math.unit(17 + 6/12, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/baadra/back.svg",
+                extra: 3142/2890,
+                bottom: 220/3371
+            }
+        },
+        head: {
+            height: math.unit(5.45, "feet"),
+            name: "Head",
+            image: {
+                source: "./media/characters/baadra/head.svg"
+            }
+        },
+        headAngry: {
+            height: math.unit(4.95, "feet"),
+            name: "Head (Angry)",
+            image: {
+                source: "./media/characters/baadra/head-angry.svg"
+            }
+        },
+        headOpen: {
+            height: math.unit(6, "feet"),
+            name: "Head (Open)",
+            image: {
+                source: "./media/characters/baadra/head-open.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(17 + 6/12, "feet"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
