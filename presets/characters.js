@@ -24769,7 +24769,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Baadra" },
+    { name: "Baadra", species: ["skarlan"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(17 + 6/12, "feet"),
@@ -24823,7 +24823,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Juri" },
+    { name: "Juri", species: ["kitsune"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(7 + 3/12, "feet"),
@@ -24885,6 +24885,39 @@ characterMakers.push(() => makeCharacter(
         {
             name: "Normal",
             height: math.unit(7 + 3/12, "feet"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Maxene Sita", species: ["fox", "kitsune", "demon"], tags: ["anthro"] },
+    {
+        fox: {
+            height: math.unit(5 + 6/12, "feet"),
+            weight: math.unit(140, "lb"),
+            name: "Fox",
+            image: {
+                source: "./media/characters/maxene-sita/fox.svg",
+                extra: 146/138,
+                bottom: 2.1/148.19
+            }
+        },
+        kitsune: {
+            height: math.unit(10, "feet"),
+            weight: math.unit(800, "lb"),
+            name: "Kitsune",
+            image: {
+                source: "./media/characters/maxene-sita/kitsune.svg",
+                extra: 185/176,
+                bottom: 4.7/189.9
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(5 + 6/12, "feet"),
             default: true
         },
     ]

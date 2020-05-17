@@ -10017,6 +10017,19 @@ const attributionData = {
                 "xrequiem"
             ]
         },
+        {
+            prefix: "./media/characters/maxene-sita/",
+            files: [
+                { name: "fox.svg", source: "https://www.deviantart.com/furipa93/art/C-Max-refsheet-811541162" },
+                { name: "kitsune.svg", source: "https://www.deviantart.com/furipa93/art/C-Max-refsheet-811541162" },
+            ],
+            authors: [
+                "furipa93"
+            ],
+            owners: [
+                "rizzy"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -13842,6 +13855,14 @@ const attributionData = {
         "momofluff": {
             "name": "Momofluff",
             "url": "https://www.furaffinity.net/user/momofluff/",
+        },
+        "rizzy": {
+            "name": "Rizzy",
+            "url": null,
+        },
+        "furipa93": {
+            "name": "furipa93",
+            "url": "https://www.deviantart.com/furipa93",
         },
     }
 }
