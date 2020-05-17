@@ -2585,6 +2585,7 @@ function updateFilter() {
 
         if (!keep) {
             element.classList.add("filtered");
+            element.disabled = true;
 
             if (current == element.value) {
                 replace = true;
@@ -2612,6 +2613,7 @@ function updateFilter() {
 function clearFilter() {
     document.querySelectorAll(".entity-select.category-visible > option").forEach(element => {
         element.classList.remove("filtered");
+        element.disabled = false;
     });
 }
 
