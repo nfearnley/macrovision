@@ -10027,7 +10027,7 @@ const attributionData = {
                 "furipa93"
             ],
             owners: [
-                "rizzy"
+                "maxene-sita"
             ]
         },
         //characters
@@ -13856,9 +13856,9 @@ const attributionData = {
             "name": "Momofluff",
             "url": "https://www.furaffinity.net/user/momofluff/",
         },
-        "rizzy": {
-            "name": "Rizzy",
-            "url": null,
+        "maxene-sita": {
+            "name": "Maxene Sita",
+            "url": "https://www.f-list.net/c/maxene%20sita",
         },
         "furipa93": {
             "name": "furipa93",

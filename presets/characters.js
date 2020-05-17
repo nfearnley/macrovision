@@ -24891,7 +24891,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Maxene Sita", species: ["fox", "kitsune", "demon"], tags: ["anthro"] },
+    { name: "Maxene Sita", species: ["fox"], tags: ["anthro"] },
     {
         fox: {
             height: math.unit(5 + 6/12, "feet"),
