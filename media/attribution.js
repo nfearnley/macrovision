@@ -10000,6 +10000,23 @@ const attributionData = {
                 "xrequiem"
             ]
         },
+        {
+            prefix: "./media/characters/juri/",
+            files: [
+                { name: "back.svg", source: null, nsfw: false },
+                { name: "front.svg", source: null, nsfw: false },
+                { name: "maw.svg", source: null, nsfw: false },
+                { name: "side.svg", source: null, nsfw: false },
+                { name: "sitting.svg", source: null, nsfw: false },
+                { name: "stomach.svg", source: null, nsfw: false },
+            ],
+            authors: [
+                "meep"
+            ],
+            owners: [
+                "xrequiem"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",

@@ -24822,6 +24822,74 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Juri" },
+    {
+        front: {
+            height: math.unit(7 + 3/12, "feet"),
+            weight: math.unit(180, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/juri/front.svg",
+                extra: 1401/1237,
+                bottom: 18.5/1418
+            }
+        },
+        side: {
+            height: math.unit(7 + 3/12, "feet"),
+            weight: math.unit(180, "lb"),
+            name: "Side",
+            image: {
+                source: "./media/characters/juri/side.svg",
+                extra: 1424/1242,
+                bottom: 18.5/1447
+            }
+        },
+        sitting: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(180, "lb"),
+            name: "Sitting",
+            image: {
+                source: "./media/characters/juri/sitting.svg",
+                extra: 1270/1143,
+                bottom: 100/1343
+            }
+        },
+        back: {
+            height: math.unit(7 + 3/12, "feet"),
+            weight: math.unit(180, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/juri/back.svg",
+                extra: 1377/1240,
+                bottom: 23.7/1405
+            }
+        },
+        maw: {
+            height: math.unit(2.8, "feet"),
+            name: "Maw",
+            image: {
+                source: "./media/characters/juri/maw.svg"
+            }
+        },
+        stomach: {
+            height: math.unit(0.89, "feet"),
+            capacity: math.unit(4, "liters"),
+            name: "Stomach",
+            image: {
+                source: "./media/characters/juri/stomach.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(7 + 3/12, "feet"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
