@@ -356,891 +356,891 @@ const speciesData = {
         ]
     },
     "hoshiko-beast": {
-      name: "Hoshiko Beast",
-      parents: ["animal"]
+        name: "Hoshiko Beast",
+        parents: ["animal"]
     },
     "snow-jugani": {
-      name: "Snow Jugani",
-      parents: ["cat"]
+        name: "Snow Jugani",
+        parents: ["cat"]
     },
     "patamon": {
-      name: "Patamon",
-      parents: ["digimon"]
+        name: "Patamon",
+        parents: ["digimon"]
     },
     "digimon": {
-      name: "Digimon",
+        name: "Digimon",
     },
     "jugani": {
-      name: "Jugani",
-      parents: ["cat"]
+        name: "Jugani",
+        parents: ["cat"]
     },
     "luxray": {
-      name: "Luxray",
-      parents: ["pokemon"]
+        name: "Luxray",
+        parents: ["pokemon"]
     },
     "mech": {
-      name: "Mech",
-      parents: ["machine"]
+        name: "Mech",
+        parents: ["machine"]
     },
     "zoid": {
-      name: "Zoid",
-      parents: ["mech"]
+        name: "Zoid",
+        parents: ["mech"]
     },
     "monster": {
-      name: "Monster",
-      parents: ["animal"]
+        name: "Monster",
+        parents: ["animal"]
     },
     "foo-dog": {
-      name: "Foo Dog",
-      parents: ["mammal"]
+        name: "Foo Dog",
+        parents: ["mammal"]
     },
     "elephant": {
-      name: "Elephant",
-      parents: ["mammal"]
+        name: "Elephant",
+        parents: ["mammal"]
     },
     "eagle": {
-      name: "Eagle",
-      parents: ["avian"]
+        name: "Eagle",
+        parents: ["avian"]
     },
     "cow": {
-      name: "Cow",
-      parents: ["mammal"]
+        name: "Cow",
+        parents: ["mammal"]
     },
     "crocodile": {
-      name: "Crocodile",
-      parents: ["reptile"]
+        name: "Crocodile",
+        parents: ["reptile"]
     },
     "borzoi": {
-      name: "Borzoi",
-      parents: ["dog"]
+        name: "Borzoi",
+        parents: ["dog"]
     },
     "snake": {
-      name: "Snake",
-      parents: ["reptile"]
+        name: "Snake",
+        parents: ["reptile"]
     },
     "horned-bush-viper": {
-      name: "Horned Bush Viper",
-      parents: ["snake"]
+        name: "Horned Bush Viper",
+        parents: ["snake"]
     },
     "cobra": {
-      name: "Cobra",
-      parents: ["snake"]
+        name: "Cobra",
+        parents: ["snake"]
     },
     "harpy-eagle": {
-      name: "Harpy Eagle",
-      parents: ["eagle"]
+        name: "Harpy Eagle",
+        parents: ["eagle"]
     },
     "raptor": {
-      name: "Raptor",
-      parents: ["dinosaur"]
+        name: "Raptor",
+        parents: ["dinosaur"]
     },
     "dinosaur": {
-      name: "Dinosaur",
-      parents: ["reptile"]
+        name: "Dinosaur",
+        parents: ["reptile"]
     },
     "veilhound": {
-      name: "Veilhound",
-      parents: ["hellhound", "demon"]
+        name: "Veilhound",
+        parents: ["hellhound", "demon"]
     },
     "hellhound": {
-      name: "Hellhound",
-      parents: ["canine"]
+        name: "Hellhound",
+        parents: ["canine"]
     },
     "insect": {
-      name: "Insect",
-      parents: ["animal"]
+        name: "Insect",
+        parents: ["animal"]
     },
     "beetle": {
-      name: "Beetle",
-      parents: ["insect"]
+        name: "Beetle",
+        parents: ["insect"]
     },
     "moth": {
-      name: "Moth",
-      parents: ["insect"]
+        name: "Moth",
+        parents: ["insect"]
     },
     "eastern-dragon": {
-      name: "Eastern Dragon",
-      parents: ["dragon"]
+        name: "Eastern Dragon",
+        parents: ["dragon"]
     },
     "jaguar": {
-      name: "Jaguar",
-      parents: ["cat"]
+        name: "Jaguar",
+        parents: ["cat"]
     },
     "horse": {
-      name: "Horse",
-      parents: ["mammal"]
+        name: "Horse",
+        parents: ["mammal"]
     },
     "sergal": {
-      name: "Sergal",
-      parents: ["mammal"]
+        name: "Sergal",
+        parents: ["mammal"]
     },
     "gryphon": {
-      name: "Gryphon",
-      parents: ["lion", "eagle"]
+        name: "Gryphon",
+        parents: ["lion", "eagle"]
     },
     "robot": {
-      name: "Robot",
-      parents: ["machine"]
+        name: "Robot",
+        parents: ["machine"]
     },
     "medihound": {
-      name: "Medihound",
-      parents: ["robot", "dog"]
+        name: "Medihound",
+        parents: ["robot", "dog"]
     },
     "sylveon": {
-      name: "Sylveon",
-      parents: ["pokemon"]
+        name: "Sylveon",
+        parents: ["pokemon"]
     },
     "catgirl": {
-      name: "Catgirl",
-      parents: ["mammal"]
+        name: "Catgirl",
+        parents: ["mammal"]
     },
     "cowgirl": {
-      name: "Cowgirl",
-      parents: ["mammal"]
+        name: "Cowgirl",
+        parents: ["mammal"]
     },
     "pony": {
-      name: "Pony",
-      parents: ["horse"]
+        name: "Pony",
+        parents: ["horse"]
     },
     "rabbit": {
-      name: "Rabbit",
-      parents: ["mammal"]
+        name: "Rabbit",
+        parents: ["mammal"]
     },
     "fennec-fox": {
-      name: "Fennec Fox",
-      parents: ["fox"]
+        name: "Fennec Fox",
+        parents: ["fox"]
     },
     "azodian": {
-      name: "Azodian",
-      parents: ["mouse"]
+        name: "Azodian",
+        parents: ["mouse"]
     },
     "shiba-inu": {
-      name: "Shiba Inu",
-      parents: ["dog"]
+        name: "Shiba Inu",
+        parents: ["dog"]
     },
     "changeling": {
-      name: "Changeling",
-      parents: ["insect"]
+        name: "Changeling",
+        parents: ["insect"]
     },
     "cheetah": {
-      name: "Cheetah",
-      parents: ["cat"]
+        name: "Cheetah",
+        parents: ["cat"]
     },
     "golden-jackal": {
-      name: "Golden Jackal",
-      parents: ["jackal"]
+        name: "Golden Jackal",
+        parents: ["jackal"]
     },
     "manectric": {
-      name: "Manectric",
-      parents: ["pokemon"]
+        name: "Manectric",
+        parents: ["pokemon"]
     },
     "rat": {
-      name: "Rat",
-      parents: ["rodent"]
+        name: "Rat",
+        parents: ["rodent"]
     },
     "rodent": {
-      name: "Rodent",
-      parents: ["mammal"]
+        name: "Rodent",
+        parents: ["mammal"]
     },
     "octocoon": {
-      name: "Octocoon",
-      parents: ["raccoon", "octopus"]
+        name: "Octocoon",
+        parents: ["raccoon", "octopus"]
     },
     "octopus": {
-      name: "Octopus",
-      parents: ["fish"]
+        name: "Octopus",
+        parents: ["fish"]
     },
     "werewolf": {
-      name: "Werewolf",
-      parents: ["wolf"]
+        name: "Werewolf",
+        parents: ["wolf"]
     },
     "meerkat": {
-      name: "Meerkat",
-      parents: ["mammal"]
+        name: "Meerkat",
+        parents: ["mammal"]
     },
     "human": {
-      name: "Human",
-      parents: ["mammal"]
+        name: "Human",
+        parents: ["mammal"]
     },
     "geth": {
-      name: "Geth",
-      parents: ["android"]
+        name: "Geth",
+        parents: ["android"]
     },
     "husky": {
-      name: "Husky",
-      parents: ["dog"]
+        name: "Husky",
+        parents: ["dog"]
     },
     "long-eared-bat": {
-      name: "Long Eared Bat",
-      parents: ["bat"]
+        name: "Long Eared Bat",
+        parents: ["bat"]
     },
     "lizard": {
-      name: "Lizard",
-      parents: ["reptile"]
+        name: "Lizard",
+        parents: ["reptile"]
     },
     "salamander": {
-      name: "Salamander",
-      parents: ["lizard"]
+        name: "Salamander",
+        parents: ["lizard"]
     },
     "chameleon": {
-      name: "Chameleon",
-      parents: ["lizard"]
+        name: "Chameleon",
+        parents: ["lizard"]
     },
     "gecko": {
-      name: "Gecko",
-      parents: ["lizard"]
+        name: "Gecko",
+        parents: ["lizard"]
     },
     "kobold": {
-      name: "Kobold",
-      parents: ["reptile"]
+        name: "Kobold",
+        parents: ["reptile"]
     },
     "charizard": {
-      name: "Charizard",
-      parents: ["pokemon"]
+        name: "Charizard",
+        parents: ["pokemon"]
     },
     "lugia": {
-      name: "Lugia",
-      parents: ["pokemon"]
+        name: "Lugia",
+        parents: ["pokemon"]
     },
     "cerberus": {
-      name: "Cerberus",
-      parents: ["dog"]
+        name: "Cerberus",
+        parents: ["dog"]
     },
     "tyrantrum": {
-      name: "Tyrantrum",
-      parents: ["pokemon"]
+        name: "Tyrantrum",
+        parents: ["pokemon"]
     },
     "lemur": {
-      name: "Lemur",
-      parents: ["mammal"]
+        name: "Lemur",
+        parents: ["mammal"]
     },
     "kelpie": {
-      name: "Kelpie",
-      parents: ["horse", "monster"]
+        name: "Kelpie",
+        parents: ["horse", "monster"]
     },
     "labrador": {
-      name: "Labrador",
-      parents: ["dog"]
+        name: "Labrador",
+        parents: ["dog"]
     },
     "sylveon": {
-      name: "Sylveon",
-      parents: ["eeveelution"]
+        name: "Sylveon",
+        parents: ["eeveelution"]
     },
     "eeveelution": {
-      name: "Eeveelution",
-      parents: ["pokemon"]
+        name: "Eeveelution",
+        parents: ["pokemon"]
     },
     "polar-bear": {
-      name: "Polar Bear",
-      parents: ["bear"]
+        name: "Polar Bear",
+        parents: ["bear"]
     },
     "bear": {
-      name: "Bear",
-      parents: ["mammal"]
+        name: "Bear",
+        parents: ["mammal"]
     },
     "absol": {
-      name: "Absol",
-      parents: ["pokemon"]
+        name: "Absol",
+        parents: ["pokemon"]
     },
     "wolver": {
-      name: "Wolver",
-      parents: ["mammal"]
+        name: "Wolver",
+        parents: ["mammal"]
     },
     "rottweiler": {
-      name: "Rottweiler",
-      parents: ["dog"]
+        name: "Rottweiler",
+        parents: ["dog"]
     },
     "zebra": {
-      name: "Zebra",
-      parents: ["horse"]
+        name: "Zebra",
+        parents: ["horse"]
     },
     "yoshi": {
-      name: "Yoshi",
-      parents: ["lizard"]
+        name: "Yoshi",
+        parents: ["lizard"]
     },
     "lynx": {
-      name: "Lynx",
-      parents: ["cat"]
+        name: "Lynx",
+        parents: ["cat"]
     },
     "unknown": {
-      name: "Unknown",
-      parents: []
+        name: "Unknown",
+        parents: []
     },
     "thylacine": {
-      name: "Thylacine",
-      parents: ["mammal"]
+        name: "Thylacine",
+        parents: ["mammal"]
     },
     "gabumon": {
-      name: "Gabumon",
-      parents: ["digimon"]
+        name: "Gabumon",
+        parents: ["digimon"]
     },
     "border-collie": {
-      name: "Border Collie",
-      parents: ["dog"]
+        name: "Border Collie",
+        parents: ["dog"]
     },
     "imp": {
-      name: "Imp",
-      parents: ["demon"]
+        name: "Imp",
+        parents: ["demon"]
     },
     "kangaroo": {
-      name: "Kangaroo",
-      parents: ["mammal"]
+        name: "Kangaroo",
+        parents: ["mammal"]
     },
     "renamon": {
-      name: "Renamon",
-      parents: ["digimon"]
+        name: "Renamon",
+        parents: ["digimon"]
     },
     "candy-orca-dragon": {
-      name: "Candy Orca Dragon",
-      parents: ["fish", "dragon"]
+        name: "Candy Orca Dragon",
+        parents: ["fish", "dragon"]
     },
     "sabertooth-tiger": {
-      name: "Sabertooth Tiger",
-      parents: ["cat"]
+        name: "Sabertooth Tiger",
+        parents: ["cat"]
     },
     "espurr": {
-      name: "Espurr",
-      parents: ["pokemon"]
+        name: "Espurr",
+        parents: ["pokemon"]
     },
     "otter": {
-      name: "Otter",
-      parents: ["mammal"]
+        name: "Otter",
+        parents: ["mammal"]
     },
     "elemental": {
-      name: "Elemental",
-      parents: ["mammal"]
+        name: "Elemental",
+        parents: ["mammal"]
     },
     "mew": {
-      name: "Mew",
-      parents: ["pokemon"]
+        name: "Mew",
+        parents: ["pokemon"]
     },
     "goodra": {
-      name: "Goodra",
-      parents: ["pokemon"]
+        name: "Goodra",
+        parents: ["pokemon"]
     },
     "fairy": {
-      name: "Fairy",
-      parents: ["magical"]
+        name: "Fairy",
+        parents: ["magical"]
     },
     "typhlosion": {
-      name: "Typhlosion",
-      parents: ["pokemon"]
+        name: "Typhlosion",
+        parents: ["pokemon"]
     },
     "magical": {
-      name: "Magical",
-      parents: []
+        name: "Magical",
+        parents: []
     },
     "xenomorph": {
-      name: "Xenomorph",
-      parents: ["monster", "alien"]
+        name: "Xenomorph",
+        parents: ["monster", "alien"]
     },
     "charr": {
-      name: "Charr",
-      parents: ["cat"]
+        name: "Charr",
+        parents: ["cat"]
     },
     "siberian-husky": {
-      name: "Siberian Husky",
-      parents: ["husky"]
+        name: "Siberian Husky",
+        parents: ["husky"]
     },
     "alligator": {
-      name: "Alligator",
-      parents: ["reptile"]
+        name: "Alligator",
+        parents: ["reptile"]
     },
     "bernese-mountain-dog": {
-      name: "Bernese Mountain Dog",
-      parents: ["dog"]
+        name: "Bernese Mountain Dog",
+        parents: ["dog"]
     },
     "reshiram": {
-      name: "Reshiram",
-      parents: ["pokemon"]
+        name: "Reshiram",
+        parents: ["pokemon"]
     },
     "grizzly-bear": {
-      name: "Grizzly Bear",
-      parents: ["bear"]
+        name: "Grizzly Bear",
+        parents: ["bear"]
     },
     "water-monitor": {
-      name: "Water Monitor",
-      parents: ["lizard"]
+        name: "Water Monitor",
+        parents: ["lizard"]
     },
     "banchofossa": {
-      name: "Banchofossa",
-      parents: ["mammal"]
+        name: "Banchofossa",
+        parents: ["mammal"]
     },
     "kirin": {
-      name: "Kirin",
-      parents: ["monster"]
+        name: "Kirin",
+        parents: ["monster"]
     },
     "quilava": {
-      name: "Quilava",
-      parents: ["pokemon"]
+        name: "Quilava",
+        parents: ["pokemon"]
     },
     "seviper": {
-      name: "Seviper",
-      parents: ["pokemon"]
+        name: "Seviper",
+        parents: ["pokemon"]
     },
     "flying-fox": {
-      name: "Flying Fox",
-      parents: ["bat"]
+        name: "Flying Fox",
+        parents: ["bat"]
     },
     "keynain": {
-      name: "Keynain",
-      parents: ["avian"]
+        name: "Keynain",
+        parents: ["avian"]
     },
     "lucario": {
-      name: "Lucario",
-      parents: ["pokemon"]
+        name: "Lucario",
+        parents: ["pokemon"]
     },
     "siamese-cat": {
-      name: "Siamese Cat",
-      parents: ["cat"]
+        name: "Siamese Cat",
+        parents: ["cat"]
     },
     "spider": {
-      name: "Spider",
-      parents: ["insect"]
+        name: "Spider",
+        parents: ["insect"]
     },
     "samurott": {
-      name: "Samurott",
-      parents: ["pokemon"]
+        name: "Samurott",
+        parents: ["pokemon"]
     },
     "megalodon": {
-      name: "Megalodon",
-      parents: ["shark"]
+        name: "Megalodon",
+        parents: ["shark"]
     },
     "unicorn": {
-      name: "Unicorn",
-      parents: ["horse"]
+        name: "Unicorn",
+        parents: ["horse"]
     },
     "greninja": {
-      name: "Greninja",
-      parents: ["pokemon"]
+        name: "Greninja",
+        parents: ["pokemon"]
     },
     "water-dragon": {
-      name: "Water Dragon",
-      parents: ["dragon"]
+        name: "Water Dragon",
+        parents: ["dragon"]
     },
     "cross-fox": {
-      name: "Cross Fox",
-      parents: ["fox"]
+        name: "Cross Fox",
+        parents: ["fox"]
     },
     "synth": {
-      name: "Synth",
-      parents: ["machine"]
+        name: "Synth",
+        parents: ["machine"]
     },
     "construct": {
-      name: "Construct",
-      parents: ["machine"]
+        name: "Construct",
+        parents: ["machine"]
     },
     "mexican-wolf": {
-      name: "Mexican Wolf",
-      parents: ["wolf"]
+        name: "Mexican Wolf",
+        parents: ["wolf"]
     },
     "leopard": {
-      name: "Leopard",
-      parents: ["cat"]
+        name: "Leopard",
+        parents: ["cat"]
     },
     "pig": {
-      name: "Pig",
-      parents: ["mammal"]
+        name: "Pig",
+        parents: ["mammal"]
     },
     "ampharos": {
-      name: "Ampharos",
-      parents: ["pokemon"]
+        name: "Ampharos",
+        parents: ["pokemon"]
     },
     "orca": {
-      name: "Orca",
-      parents: ["fish"]
+        name: "Orca",
+        parents: ["fish"]
     },
     "lycanroc": {
-      name: "Lycanroc",
-      parents: ["pokemon"]
+        name: "Lycanroc",
+        parents: ["pokemon"]
     },
     "surkanu": {
-      name: "Surkanu",
-      parents: ["monster"]
+        name: "Surkanu",
+        parents: ["monster"]
     },
     "seal": {
-      name: "Seal",
-      parents: ["mammal"]
+        name: "Seal",
+        parents: ["mammal"]
     },
     "keldeo": {
-      name: "Keldeo",
-      parents: ["pokemon"]
+        name: "Keldeo",
+        parents: ["pokemon"]
     },
     "great-dane": {
-      name: "Great Dane",
-      parents: ["dog"]
+        name: "Great Dane",
+        parents: ["dog"]
     },
     "black-backed-jackal": {
-      name: "Black Backed Jackal",
-      parents: ["jackal"]
+        name: "Black Backed Jackal",
+        parents: ["jackal"]
     },
     "sheep": {
-      name: "Sheep",
-      parents: ["mammal"]
+        name: "Sheep",
+        parents: ["mammal"]
     },
     "leopard-seal": {
-      name: "Leopard Seal",
-      parents: ["seal"]
+        name: "Leopard Seal",
+        parents: ["seal"]
     },
     "zoroark": {
-      name: "Zoroark",
-      parents: ["pokemon"]
+        name: "Zoroark",
+        parents: ["pokemon"]
     },
     "maned-wolf": {
-      name: "Maned Wolf",
-      parents: ["canine"]
+        name: "Maned Wolf",
+        parents: ["canine"]
     },
     "dracha": {
-      name: "Dracha",
-      parents: ["dragon"]
+        name: "Dracha",
+        parents: ["dragon"]
     },
     "wolxi": {
-      name: "Wolxi",
-      parents: ["mammal", "alien"]
+        name: "Wolxi",
+        parents: ["mammal", "alien"]
     },
     "dratini": {
-      name: "Dratini",
-      parents: ["pokemon", "dragon"]
+        name: "Dratini",
+        parents: ["pokemon", "dragon"]
     },
     "skaven": {
-      name: "Skaven",
-      parents: ["rat"]
+        name: "Skaven",
+        parents: ["rat"]
     },
     "mongoose": {
-      name: "Mongoose",
-      parents: ["mammal"]
+        name: "Mongoose",
+        parents: ["mammal"]
     },
     "lopunny": {
-      name: "Lopunny",
-      parents: ["pokemon", "rabbit"]
+        name: "Lopunny",
+        parents: ["pokemon", "rabbit"]
     },
     "feraligatr": {
-      name: "Feraligatr",
-      parents: ["pokemon", "alligator"]
+        name: "Feraligatr",
+        parents: ["pokemon", "alligator"]
     },
     "houndoom": {
-      name: "Houndoom",
-      parents: ["pokemon", "dog"]
+        name: "Houndoom",
+        parents: ["pokemon", "dog"]
     },
     "protogen": {
-      name: "Protogen",
-      parents: ["machine"]
+        name: "Protogen",
+        parents: ["machine"]
     },
     "saint-bernard": {
-      name: "Saint Bernard",
-      parents: ["dog"]
+        name: "Saint Bernard",
+        parents: ["dog"]
     },
     "crow": {
-      name: "Crow",
-      parents: ["corvid"]
+        name: "Crow",
+        parents: ["corvid"]
     },
     "delphox": {
-      name: "Delphox",
-      parents: ["pokemon", "fox"]
+        name: "Delphox",
+        parents: ["pokemon", "fox"]
     },
     "moose": {
-      name: "Moose",
-      parents: ["mammal"]
+        name: "Moose",
+        parents: ["mammal"]
     },
     "joraxian": {
-      name: "Joraxian",
-      parents: ["monster", "canine", "demon"]
+        name: "Joraxian",
+        parents: ["monster", "canine", "demon"]
     },
     "nimbat": {
-      name: "Nimbat",
-      parents: ["mammal"]
+        name: "Nimbat",
+        parents: ["mammal"]
     },
     "aardwolf": {
-      name: "Aardwolf",
-      parents: ["canine"]
+        name: "Aardwolf",
+        parents: ["canine"]
     },
     "fluudrani": {
-      name: "Fluudrani",
-      parents: ["animal"]
+        name: "Fluudrani",
+        parents: ["animal"]
     },
     "arcanine": {
-      name: "Arcanine",
-      parents: ["pokemon", "dog"]
+        name: "Arcanine",
+        parents: ["pokemon", "dog"]
     },
     "inteleon": {
-      name: "Inteleon",
-      parents: ["pokemon", "fish"]
+        name: "Inteleon",
+        parents: ["pokemon", "fish"]
     },
     "ninetales": {
-      name: "Ninetales",
-      parents: ["pokemon", "kitsune"]
+        name: "Ninetales",
+        parents: ["pokemon", "kitsune"]
     },
     "tigrex": {
-      name: "Tigrex",
-      parents: ["tiger"]
+        name: "Tigrex",
+        parents: ["tiger"]
     },
     "zorua": {
-      name: "Zorua",
-      parents: ["pokemon", "fox"]
+        name: "Zorua",
+        parents: ["pokemon", "fox"]
     },
     "vulpix": {
-      name: "Vulpix",
-      parents: ["pokemon", "fox"]
+        name: "Vulpix",
+        parents: ["pokemon", "fox"]
     },
     "barghest": {
-      name: "Barghest",
-      parents: ["monster"]
+        name: "Barghest",
+        parents: ["monster"]
     },
     "gray-wolf": {
-      name: "Gray Wolf",
-      parents: ["wolf"]
+        name: "Gray Wolf",
+        parents: ["wolf"]
     },
     "ruppells-fox": {
-      name: "Rüppell's Fox",
-      parents: ["fox"]
+        name: "Rüppell's Fox",
+        parents: ["fox"]
     },
     "bull-terrier": {
-      name: "Bull Terrier",
-      parents: ["dog"]
+        name: "Bull Terrier",
+        parents: ["dog"]
     },
     "european-honey-buzzard": {
-      name: "European Honey Buzzard",
-      parents: ["avian"]
+        name: "European Honey Buzzard",
+        parents: ["avian"]
     },
     "t-rex": {
-      name: "T Rex",
-      parents: ["dinosaur"]
+        name: "T Rex",
+        parents: ["dinosaur"]
     },
     "mactarian": {
-      name: "Mactarian",
-      parents: ["shark", "monster"]
+        name: "Mactarian",
+        parents: ["shark", "monster"]
     },
     "mewtwo-y": {
-      name: "Mewtwo Y",
-      parents: ["mewtwo"]
+        name: "Mewtwo Y",
+        parents: ["mewtwo"]
     },
     "mewtwo": {
-      name: "Mewtwo",
-      parents: ["pokemon"]
+        name: "Mewtwo",
+        parents: ["pokemon"]
     },
     "mew": {
-      name: "Mew",
-      parents: ["pokemon"]
+        name: "Mew",
+        parents: ["pokemon"]
     },
     "eevee": {
-      name: "Eevee",
-      parents: ["eeveelution"]
+        name: "Eevee",
+        parents: ["eeveelution"]
     },
     "mienshao": {
-      name: "Mienshao",
-      parents: ["pokemon"]
+        name: "Mienshao",
+        parents: ["pokemon"]
     },
     "sugar-glider": {
-      name: "Sugar Glider",
-      parents: ["opossum"]
+        name: "Sugar Glider",
+        parents: ["opossum"]
     },
     "spectral-bat": {
-      name: "Spectral Bat",
-      parents: ["bat"]
+        name: "Spectral Bat",
+        parents: ["bat"]
     },
     "scolipede": {
-      name: "Scolipede",
-      parents: ["pokemon", "insect"]
+        name: "Scolipede",
+        parents: ["pokemon", "insect"]
     },
     "jackalope": {
-      name: "Jackalope",
-      parents: ["rabbit", "antelope"]
+        name: "Jackalope",
+        parents: ["rabbit", "antelope"]
     },
     "caracal": {
-      name: "Caracal",
-      parents: ["cat"]
+        name: "Caracal",
+        parents: ["cat"]
     },
     "stoat": {
-      name: "Stoat",
-      parents: ["mammal"]
+        name: "Stoat",
+        parents: ["mammal"]
     },
     "african-golden-cat": {
-      name: "African Golden Cat",
-      parents: ["cat"]
+        name: "African Golden Cat",
+        parents: ["cat"]
     },
     "gigantosaurus": {
-      name: "Gigantosaurus",
-      parents: ["dinosaur"]
+        name: "Gigantosaurus",
+        parents: ["dinosaur"]
     },
     "zorgoia": {
-      name: "Zorgoia",
-      parents: ["mammal"]
+        name: "Zorgoia",
+        parents: ["mammal"]
     },
     "monitor-lizard": {
-      name: "Monitor Lizard",
-      parents: ["lizard"]
+        name: "Monitor Lizard",
+        parents: ["lizard"]
     },
     "ziralkia": {
-      name: "Ziralkia",
-      parents: ["mammal"]
+        name: "Ziralkia",
+        parents: ["mammal"]
     },
     "kiiasi": {
-      name: "Kiiasi",
-      parents: ["animal"]
+        name: "Kiiasi",
+        parents: ["animal"]
     },
     "synx": {
-      name: "Synx",
-      parents: ["monster"]
+        name: "Synx",
+        parents: ["monster"]
     },
     "panther": {
-      name: "Panther",
-      parents: ["cat"]
+        name: "Panther",
+        parents: ["cat"]
     },
     "azumarill": {
-      name: "Azumarill",
-      parents: ["pokemon"]
+        name: "Azumarill",
+        parents: ["pokemon"]
     },
     "river-snaptail": {
-      name: "River Snaptail",
-      parents: ["otter", "crocodile"]
+        name: "River Snaptail",
+        parents: ["otter", "crocodile"]
     },
     "great-blue-heron": {
-      name: "Great Blue Heron",
-      parents: ["avian"]
+        name: "Great Blue Heron",
+        parents: ["avian"]
     },
     "smeargle": {
-      name: "Smeargle",
-      parents: ["pokemon"]
+        name: "Smeargle",
+        parents: ["pokemon"]
     },
     "vendeilen": {
-      name: "Vendeilen",
-      parents: ["monster"]
+        name: "Vendeilen",
+        parents: ["monster"]
     },
     "ventura": {
-      name: "Ventura",
-      parents: ["canine"]
+        name: "Ventura",
+        parents: ["canine"]
     },
     "clouded-leopard": {
-      name: "Clouded Leopard",
-      parents: ["leopard"]
+        name: "Clouded Leopard",
+        parents: ["leopard"]
     },
     "argonian": {
-      name: "Argonian",
-      parents: ["lizard"]
+        name: "Argonian",
+        parents: ["lizard"]
     },
     "salazzle": {
-      name: "Salazzle",
-      parents: ["pokemon", "lizard"]
+        name: "Salazzle",
+        parents: ["pokemon", "lizard"]
     },
     "je-stoff-drachen": {
-      name: "Je-Stoff Drachen",
-      parents: ["dragon"]
+        name: "Je-Stoff Drachen",
+        parents: ["dragon"]
     },
     "finnish-spitz-dog": {
-      name: "Finnish Spitz Dog",
-      parents: ["dog"]
+        name: "Finnish Spitz Dog",
+        parents: ["dog"]
     },
     "gray-fox": {
-      name: "Gray Fox",
-      parents: ["fox"]
+        name: "Gray Fox",
+        parents: ["fox"]
     },
     "opossum": {
-      name: "opossum",
-      parents: ["mammal"]
+        name: "opossum",
+        parents: ["mammal"]
     },
     "antelope": {
-      name: "Antelope",
-      parents: ["mammal"]
+        name: "Antelope",
+        parents: ["mammal"]
     },
     "weavile": {
-      name: "Weavile",
-      parents: ["pokemon"]
+        name: "Weavile",
+        parents: ["pokemon"]
     },
     "pikachu": {
-      name: "Pikachu",
-      parents: ["pokemon", "mouse"]
+        name: "Pikachu",
+        parents: ["pokemon", "mouse"]
     },
     "grovyle": {
-      name: "Grovyle",
-      parents: ["pokemon", "plant"]
+        name: "Grovyle",
+        parents: ["pokemon", "plant"]
     },
     "sthara": {
-      name: "Sthara",
-      parents: ["snow-leopard", "reptile"]
+        name: "Sthara",
+        parents: ["snow-leopard", "reptile"]
     },
     "star-warrior": {
-      name: "Star Warrior",
-      parents: ["magical"]
+        name: "Star Warrior",
+        parents: ["magical"]
     },
     "dragonoid": {
-      name: "Dragonoid",
-      parents: ["dragon"]
+        name: "Dragonoid",
+        parents: ["dragon"]
     },
     "suicune": {
-      name: "Suicune",
-      parents: ["pokemon"]
+        name: "Suicune",
+        parents: ["pokemon"]
     },
     "vole": {
-      name: "Vole",
-      parents: ["mammal"]
+        name: "Vole",
+        parents: ["mammal"]
     },
     "blaziken": {
-      name: "Blaziken",
-      parents: ["pokemon", "avian"]
+        name: "Blaziken",
+        parents: ["pokemon", "avian"]
     },
     "buizel": {
-      name: "Buizel",
-      parents: ["pokemon", "fish"]
+        name: "Buizel",
+        parents: ["pokemon", "fish"]
     },
     "floatzel": {
-      name: "Floatzel",
-      parents: ["pokemon", "fish"]
+        name: "Floatzel",
+        parents: ["pokemon", "fish"]
     },
     "umok": {
-      name: "Umok",
-      parents: ["avian"]
+        name: "Umok",
+        parents: ["avian"]
     },
     "sea-monster": {
-      name: "Sea Monster",
-      parents: ["monster", "fish"]
+        name: "Sea Monster",
+        parents: ["monster", "fish"]
     },
     "egyptian-vulture": {
-      name: "Egyptian Vulture",
-      parents: ["avian"]
+        name: "Egyptian Vulture",
+        parents: ["avian"]
     },
     "doberman": {
-      name: "Doberman",
-      parents: ["dog"]
+        name: "Doberman",
+        parents: ["dog"]
     },
     "zangoose": {
-      name: "Zangoose",
-      parents: ["pokemon", "mongoose"]
+        name: "Zangoose",
+        parents: ["pokemon", "mongoose"]
     },
     "mongoose": {
-      name: "Mongoose",
-      parents: ["mammal"]
+        name: "Mongoose",
+        parents: ["mammal"]
     },
     "wickerbeast": {
-      name: "Wickerbeast",
-      parents: ["monster"]
+        name: "Wickerbeast",
+        parents: ["monster"]
     },
     "zenari": {
-      name: "Zenari",
-      parents: ["lizard"]
+        name: "Zenari",
+        parents: ["lizard"]
     },
     "plant": {
-      name: "Plant",
-      parents: []
+        name: "Plant",
+        parents: []
     },
     "raskatox": {
-      name: "Raskatox",
-      parents: ["raccoon", "skunk", "cat", "fox"]
+        name: "Raskatox",
+        parents: ["raccoon", "skunk", "cat", "fox"]
     },
     "mikromare": {
-      name: "mikromare",
-      parents: ["alien"]
+        name: "mikromare",
+        parents: ["alien"]
     },
     "alien": {
-      name: "Alien",
-      parents: ["animal"]
+        name: "Alien",
+        parents: ["animal"]
     },
     "deity": {
-      name: "Deity",
-      parents: []
+        name: "Deity",
+        parents: []
     },
-    
-    
-    
+
+
+
 }
 
 //species
@@ -1326,7 +1326,7 @@ characterMakers.push(() => makeCharacter(
             name: "Goo",
             image: {
                 source: "./media/characters/fen/goo.svg",
-                bottom: 116/613
+                bottom: 116 / 613
             }
         },
         lounging: {
@@ -1414,8 +1414,8 @@ characterMakers.push(() => makeCharacter(
             name: "Kneeling",
             image: {
                 source: "./media/characters/sofia-fluttertail/kneeling.svg",
-                extra: 1033/977,
-                bottom: 23.7/1057
+                extra: 1033 / 977,
+                bottom: 23.7 / 1057
             }
         },
         maw: {
@@ -1714,8 +1714,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/elijah/front.svg",
-                extra: 858/830,
-                bottom: 95.5/953.8559
+                extra: 858 / 830,
+                bottom: 95.5 / 953.8559
             }
         },
         back: {
@@ -1724,8 +1724,8 @@ characterMakers.push(() => makeCharacter(
             name: "Back",
             image: {
                 source: "./media/characters/elijah/back.svg",
-                extra: 895/850,
-                bottom: 5.3/897.956
+                extra: 895 / 850,
+                bottom: 5.3 / 897.956
             }
         },
         frontNsfw: {
@@ -1734,8 +1734,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front (NSFW)",
             image: {
                 source: "./media/characters/elijah/front-nsfw.svg",
-                extra: 858/830,
-                bottom: 95.5/953.8559
+                extra: 858 / 830,
+                bottom: 95.5 / 953.8559
             }
         },
         backNsfw: {
@@ -1744,8 +1744,8 @@ characterMakers.push(() => makeCharacter(
             name: "Back (NSFW)",
             image: {
                 source: "./media/characters/elijah/back-nsfw.svg",
-                extra: 895/850,
-                bottom: 5.3/897.956
+                extra: 895 / 850,
+                bottom: 5.3 / 897.956
             }
         },
         dick: {
@@ -1869,8 +1869,8 @@ characterMakers.push(() => makeCharacter(
             name: "Dragon",
             image: {
                 source: "./media/characters/rai/dragon.svg",
-                extra: 2498/2030,
-                bottom: 85.2/2584
+                extra: 2498 / 2030,
+                bottom: 85.2 / 2584
             }
         },
         maw: {
@@ -1903,8 +1903,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front (Dressed)",
             image: {
                 source: "./media/characters/jazzy/front-dressed.svg",
-                extra: 2738/2651,
-                bottom: 41.8/2786
+                extra: 2738 / 2651,
+                bottom: 41.8 / 2786
             }
         },
         backDressed: {
@@ -1913,8 +1913,8 @@ characterMakers.push(() => makeCharacter(
             name: "Back (Dressed)",
             image: {
                 source: "./media/characters/jazzy/back-dressed.svg",
-                extra: 2775/2673,
-                bottom: 36.8/2817
+                extra: 2775 / 2673,
+                bottom: 36.8 / 2817
             }
         },
         front: {
@@ -1923,8 +1923,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/jazzy/front.svg",
-                extra: 2738/2651,
-                bottom: 41.8/2786
+                extra: 2738 / 2651,
+                bottom: 41.8 / 2786
             }
         },
         back: {
@@ -1933,8 +1933,8 @@ characterMakers.push(() => makeCharacter(
             name: "Back",
             image: {
                 source: "./media/characters/jazzy/back.svg",
-                extra: 2775/2673,
-                bottom: 36.8/2817
+                extra: 2775 / 2673,
+                bottom: 36.8 / 2817
             }
         },
         maw: {
@@ -2252,8 +2252,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/natasha/front.svg",
-                extra: 859/824,
-                bottom: 23/879.6
+                extra: 859 / 824,
+                bottom: 23 / 879.6
             }
         },
         frontNsfw: {
@@ -2262,8 +2262,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front (NSFW)",
             image: {
                 source: "./media/characters/natasha/front-nsfw.svg",
-                extra: 859/824,
-                bottom: 23/879.6
+                extra: 859 / 824,
+                bottom: 23 / 879.6
             }
         },
         frontErect: {
@@ -2272,8 +2272,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front (Erect)",
             image: {
                 source: "./media/characters/natasha/front-erect.svg",
-                extra: 859/824,
-                bottom: 23/879.6
+                extra: 859 / 824,
+                bottom: 23 / 879.6
             }
         },
         back: {
@@ -2282,8 +2282,8 @@ characterMakers.push(() => makeCharacter(
             name: "Back",
             image: {
                 source: "./media/characters/natasha/back.svg",
-                extra: 887.9/852.6,
-                bottom: 9.7/896.4
+                extra: 887.9 / 852.6,
+                bottom: 9.7 / 896.4
             }
         },
         backAlt: {
@@ -2292,8 +2292,8 @@ characterMakers.push(() => makeCharacter(
             name: "Back (Alt)",
             image: {
                 source: "./media/characters/natasha/back-alt.svg",
-                extra: 1236.7/1192,
-                bottom: 22.3/1258.2
+                extra: 1236.7 / 1192,
+                bottom: 22.3 / 1258.2
             }
         },
         dick: {
@@ -2380,8 +2380,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/sefer/front.svg",
-                extra: 848/659,
-                bottom: 28.3/876.442
+                extra: 848 / 659,
+                bottom: 28.3 / 876.442
             }
         },
         back: {
@@ -2390,8 +2390,8 @@ characterMakers.push(() => makeCharacter(
             name: "Back",
             image: {
                 source: "./media/characters/sefer/back.svg",
-                extra: 864/695,
-                bottom: 10/871
+                extra: 864 / 695,
+                bottom: 10 / 871
             }
         },
         frontDressed: {
@@ -2400,8 +2400,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front (Dressed)",
             image: {
                 source: "./media/characters/sefer/front-dressed.svg",
-                extra: 839/653,
-                bottom: 37.6/878
+                extra: 839 / 653,
+                bottom: 37.6 / 878
             }
         },
     },
@@ -2945,7 +2945,7 @@ characterMakers.push(() => makeCharacter(
             image: {
                 source: "./media/characters/kalista/front.svg",
                 extra: 1947 / 1700,
-                bottom: 76.6/1412.98
+                bottom: 76.6 / 1412.98
             }
         },
         back: {
@@ -2955,7 +2955,7 @@ characterMakers.push(() => makeCharacter(
             image: {
                 source: "./media/characters/kalista/back.svg",
                 extra: 1366 / 1156,
-                bottom: 33.9/1362.78
+                bottom: 33.9 / 1362.78
             }
         }
     },
@@ -3713,7 +3713,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Gale", species: ["monster"], tags: ["anthro"]},
+    { name: "Gale", species: ["monster"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(2, "meters"),
@@ -4025,7 +4025,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Rain Fallen", species: ["wolf", "demon"], tags: ["anthro", "feral"]},
+    { name: "Rain Fallen", species: ["wolf", "demon"], tags: ["anthro", "feral"] },
     {
         front: {
             height: math.unit(6, "feet"),
@@ -4188,7 +4188,7 @@ characterMakers.push(() => makeCharacter(
             name: "Side",
             image: {
                 source: "./media/characters/scott/side.svg",
-                extra: 754/724,
+                extra: 754 / 724,
                 bottom: 0.069
             }
         },
@@ -4198,7 +4198,7 @@ characterMakers.push(() => makeCharacter(
             name: "Upright",
             image: {
                 source: "./media/characters/scott/upright.svg",
-                extra: 3881/3722,
+                extra: 3881 / 3722,
                 bottom: 0.05
             }
         },
@@ -4245,8 +4245,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/kieran/front.svg",
-                extra: 2694/2364,
-                bottom: 217/2908
+                extra: 2694 / 2364,
+                bottom: 217 / 2908
             }
         },
         side: {
@@ -4255,8 +4255,8 @@ characterMakers.push(() => makeCharacter(
             name: "Side",
             image: {
                 source: "./media/characters/kieran/side.svg",
-                extra: 875/777,
-                bottom: 84.6/959
+                extra: 875 / 777,
+                bottom: 84.6 / 959
             }
         },
     },
@@ -5143,7 +5143,7 @@ characterMakers.push(() => makeCharacter(
     [
         {
             name: "Normal",
-            height: math.unit(13 + 2/12, "feet")
+            height: math.unit(13 + 2 / 12, "feet")
         },
         {
             name: "Macro",
@@ -5542,8 +5542,8 @@ characterMakers.push(() => makeCharacter(
             name: "Anthro",
             image: {
                 source: "./media/characters/alicia/anthro.svg",
-                extra: 2571/2385,
-                bottom: 75/2648
+                extra: 2571 / 2385,
+                bottom: 75 / 2648
             }
         },
         paw: {
@@ -5559,8 +5559,8 @@ characterMakers.push(() => makeCharacter(
             name: "Feral",
             image: {
                 source: "./media/characters/alicia/feral.svg",
-                extra: 2123/1715,
-                bottom: 222/2349
+                extra: 2123 / 1715,
+                bottom: 222 / 2349
             }
         },
     },
@@ -5627,8 +5627,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/berri/front.svg",
-                extra: 857/837,
-                bottom: 18/877
+                extra: 857 / 837,
+                bottom: 18 / 877
             }
         },
         bum: {
@@ -6393,7 +6393,7 @@ characterMakers.push(() => makeCharacter(
             image: {
                 source: "./media/characters/razinox/front.svg",
                 extra: 1686 / 1548,
-                bottom: 28.2/1868
+                bottom: 28.2 / 1868
             }
         },
         back: {
@@ -6403,7 +6403,7 @@ characterMakers.push(() => makeCharacter(
             image: {
                 source: "./media/characters/razinox/back.svg",
                 extra: 1660 / 1590,
-                bottom: 15/1665
+                bottom: 15 / 1665
             }
         },
     },
@@ -6762,7 +6762,7 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/rook/front.svg",
-                extra: 960/950
+                extra: 960 / 950
             }
         }
     },
@@ -7537,7 +7537,7 @@ characterMakers.push(() => makeCharacter(
             image: {
                 source: "./media/characters/argent/front.svg",
                 extra: 1471 / 1331,
-                bottom: 100.8/1575.5
+                bottom: 100.8 / 1575.5
             }
         }
     },
@@ -8565,8 +8565,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front (Cat Side)",
             image: {
                 source: "./media/characters/axel-lycan/cat-front.svg",
-                extra: 430/402,
-                bottom: 43/472.35
+                extra: 430 / 402,
+                bottom: 43 / 472.35
             }
         },
         catBack: {
@@ -8575,8 +8575,8 @@ characterMakers.push(() => makeCharacter(
             name: "Back (Cat Side)",
             image: {
                 source: "./media/characters/axel-lycan/cat-back.svg",
-                extra: 447/419,
-                bottom: 23.3/469
+                extra: 447 / 419,
+                bottom: 23.3 / 469
             }
         },
         wolfFront: {
@@ -8585,8 +8585,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front (Wolf Side)",
             image: {
                 source: "./media/characters/axel-lycan/wolf-front.svg",
-                extra: 485/456,
-                bottom: 19/504
+                extra: 485 / 456,
+                bottom: 19 / 504
             }
         },
         wolfBack: {
@@ -8595,8 +8595,8 @@ characterMakers.push(() => makeCharacter(
             name: "Back (Wolf Side)",
             image: {
                 source: "./media/characters/axel-lycan/wolf-back.svg",
-                extra: 475/438,
-                bottom: 39.2/514
+                extra: 475 / 438,
+                bottom: 39.2 / 514
             }
         },
     },
@@ -10099,7 +10099,7 @@ characterMakers.push(() => makeCharacter(
             image: {
                 source: "./media/characters/alexi/front-transforming.svg",
                 extra: 437 / 409,
-                bottom: 19/458.66
+                bottom: 19 / 458.66
             }
         },
         frontTransformed: {
@@ -10109,7 +10109,7 @@ characterMakers.push(() => makeCharacter(
             image: {
                 source: "./media/characters/alexi/front-transformed.svg",
                 extra: 639 / 614,
-                bottom: 30.55/671
+                bottom: 30.55 / 671
             }
         },
     },
@@ -11051,7 +11051,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Matvei", species: ["shark"], tags: ["anthro"]},
+    { name: "Matvei", species: ["shark"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(1.85, "meters"),
@@ -11144,8 +11144,8 @@ characterMakers.push(() => makeCharacter(
             name: "Elemental",
             image: {
                 source: "./media/characters/vanrel/elemental.svg",
-                extra: 192.3/162.8,
-                bottom: 1.79/194.17
+                extra: 192.3 / 162.8,
+                bottom: 1.79 / 194.17
             }
         },
         side: {
@@ -11210,8 +11210,8 @@ characterMakers.push(() => makeCharacter(
             name: "Battle",
             image: {
                 source: "./media/characters/kuiper-vanrel/battle.svg",
-                extra: 1466/1327,
-                bottom: 29/1492.5
+                extra: 1466 / 1327,
+                bottom: 29 / 1492.5
             }
         },
     },
@@ -11257,8 +11257,8 @@ characterMakers.push(() => makeCharacter(
             name: "Battle",
             image: {
                 source: "./media/characters/keset-vanrel/battle.svg",
-                extra: 1890/1386,
-                bottom: 73.28/1970
+                extra: 1890 / 1386,
+                bottom: 73.28 / 1970
             }
         },
     },
@@ -16138,7 +16138,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Sheila (Feral Wolf)", species: ["wolf"], tags: ["feral"]},
+    { name: "Sheila (Feral Wolf)", species: ["wolf"], tags: ["feral"] },
     {
         side: {
             height: math.unit(3 + 2 / 12, "feet"),
@@ -20026,8 +20026,8 @@ characterMakers.push(() => makeCharacter(
             name: "Drake",
             image: {
                 source: "./media/characters/reza/drake.svg",
-                extra: 2350/2024,
-                bottom: 60.7/2403
+                extra: 2350 / 2024,
+                bottom: 60.7 / 2403
             }
         },
     },
@@ -21620,8 +21620,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/icowom-lee/front.svg",
-                extra: 985/955,
-                bottom: 25.4/1012
+                extra: 985 / 955,
+                bottom: 25.4 / 1012
             }
         },
         fronttentacles: {
@@ -21630,8 +21630,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front-tentacles",
             image: {
                 source: "./media/characters/icowom-lee/front-tentacles.svg",
-                extra: 985/955,
-                bottom: 25.4/1012
+                extra: 985 / 955,
+                bottom: 25.4 / 1012
             }
         },
         back: {
@@ -21640,8 +21640,8 @@ characterMakers.push(() => makeCharacter(
             name: "Back",
             image: {
                 source: "./media/characters/icowom-lee/back.svg",
-                extra: 975/954,
-                bottom: 9.5/985
+                extra: 975 / 954,
+                bottom: 9.5 / 985
             }
         },
         backtentacles: {
@@ -21650,8 +21650,8 @@ characterMakers.push(() => makeCharacter(
             name: "Back-tentacles",
             image: {
                 source: "./media/characters/icowom-lee/back-tentacles.svg",
-                extra: 975/954,
-                bottom: 9.5/985
+                extra: 975 / 954,
+                bottom: 9.5 / 985
             }
         },
         frontDressed: {
@@ -21958,8 +21958,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/pepper/front.svg",
-                extra: 1448/1312,
-                bottom: 9.4/1457.88
+                extra: 1448 / 1312,
+                bottom: 9.4 / 1457.88
             }
         },
         back: {
@@ -21968,8 +21968,8 @@ characterMakers.push(() => makeCharacter(
             name: "Back",
             image: {
                 source: "./media/characters/pepper/back.svg",
-                extra: 1423/1300,
-                bottom: 4.6/1429
+                extra: 1423 / 1300,
+                bottom: 4.6 / 1429
             }
         },
         maw: {
@@ -21998,8 +21998,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/maelstrom/front.svg",
-                extra: 2100/1883,
-                bottom: 94/2196.7
+                extra: 2100 / 1883,
+                bottom: 94 / 2196.7
             }
         },
     },
@@ -22024,23 +22024,23 @@ characterMakers.push(() => makeCharacter(
     { name: "Lexir", species: ["sergal"], tags: ["anthro"] },
     {
         front: {
-            height: math.unit(6 + 5/12, "feet"),
+            height: math.unit(6 + 5 / 12, "feet"),
             weight: math.unit(180, "lb"),
             name: "Front",
             image: {
                 source: "./media/characters/lexir/front.svg",
-                extra: 180/172,
-                bottom: 12/192
+                extra: 180 / 172,
+                bottom: 12 / 192
             }
         },
         back: {
-            height: math.unit(6 + 5/12, "feet"),
+            height: math.unit(6 + 5 / 12, "feet"),
             weight: math.unit(180, "lb"),
             name: "Back",
             image: {
                 source: "./media/characters/lexir/back.svg",
-                extra: 183.84/175.5,
-                bottom: 3.1/187
+                extra: 183.84 / 175.5,
+                bottom: 3.1 / 187
             }
         },
     },
@@ -22051,7 +22051,7 @@ characterMakers.push(() => makeCharacter(
         },
         {
             name: "Normal",
-            height: math.unit(6 + 5/12, "feet"),
+            height: math.unit(6 + 5 / 12, "feet"),
             default: true
         },
         {
@@ -22074,8 +22074,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/maksio/front.svg",
-                extra: 1549/1531,
-                bottom: 123.7/1674.5429
+                extra: 1549 / 1531,
+                bottom: 123.7 / 1674.5429
             }
         },
         back: {
@@ -22084,8 +22084,8 @@ characterMakers.push(() => makeCharacter(
             name: "Back",
             image: {
                 source: "./media/characters/maksio/back.svg",
-                extra: 1541/1509,
-                bottom: 97/1639
+                extra: 1541 / 1509,
+                bottom: 97 / 1639
             }
         },
         hand: {
@@ -22124,8 +22124,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/erza-bear/front.svg",
-                extra: 2449/2390,
-                bottom: 46/2494
+                extra: 2449 / 2390,
+                bottom: 46 / 2494
             }
         },
         back: {
@@ -22133,8 +22133,8 @@ characterMakers.push(() => makeCharacter(
             name: "Back",
             image: {
                 source: "./media/characters/erza-bear/back.svg",
-                extra: 2489/2430,
-                bottom: 85.4/2480
+                extra: 2489 / 2430,
+                bottom: 85.4 / 2480
             }
         },
         tail: {
@@ -22185,8 +22185,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/violet-flor/front.svg",
-                extra: 1530/1442,
-                bottom: 61.9/1588.8
+                extra: 1530 / 1442,
+                bottom: 61.9 / 1588.8
             }
         },
         back: {
@@ -22195,8 +22195,8 @@ characterMakers.push(() => makeCharacter(
             name: "Back",
             image: {
                 source: "./media/characters/violet-flor/back.svg",
-                extra: 1692/1630,
-                bottom: 20/1712
+                extra: 1692 / 1630,
+                bottom: 20 / 1712
             }
         },
     },
@@ -22218,7 +22218,7 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/lynn-rhea/front.svg",
-                extra: 310/273
+                extra: 310 / 273
             }
         },
         back: {
@@ -22227,7 +22227,7 @@ characterMakers.push(() => makeCharacter(
             name: "Back",
             image: {
                 source: "./media/characters/lynn-rhea/back.svg",
-                extra: 310/273
+                extra: 310 / 273
             }
         },
         dicks: {
@@ -22279,7 +22279,7 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/valathos/front.svg",
-                extra: 1451/1339
+                extra: 1451 / 1339
             }
         },
     },
@@ -22296,30 +22296,30 @@ characterMakers.push(() => makeCharacter(
     { name: "Azula", species: ["demon"], tags: ["anthro"] },
     {
         front: {
-            height: math.unit(7 + 5/12, "feet"),
+            height: math.unit(7 + 5 / 12, "feet"),
             weight: math.unit(300, "lb"),
             name: "Front",
             image: {
                 source: "./media/characters/azula/front.svg",
-                extra: 3208/2880,
-                bottom: 80.2/3277
+                extra: 3208 / 2880,
+                bottom: 80.2 / 3277
             }
         },
         back: {
-            height: math.unit(7 + 5/12, "feet"),
+            height: math.unit(7 + 5 / 12, "feet"),
             weight: math.unit(300, "lb"),
             name: "Back",
             image: {
                 source: "./media/characters/azula/back.svg",
-                extra: 3169/2822,
-                bottom: 150.6/3321
+                extra: 3169 / 2822,
+                bottom: 150.6 / 3321
             }
         },
     },
     [
         {
             name: "Normal",
-            height: math.unit(7 + 5/12, "feet"),
+            height: math.unit(7 + 5 / 12, "feet"),
             default: true
         },
         {
@@ -22333,20 +22333,20 @@ characterMakers.push(() => makeCharacter(
     { name: "Rupert", species: ["shark"], tags: ["anthro"] },
     {
         front: {
-            height: math.unit(5 + 1/12, "feet"),
+            height: math.unit(5 + 1 / 12, "feet"),
             weight: math.unit(110, "lb"),
             name: "Front",
             image: {
                 source: "./media/characters/rupert/front.svg",
-                extra: 1549/1495,
-                bottom: 54.2/1604.4
+                extra: 1549 / 1495,
+                bottom: 54.2 / 1604.4
             }
         },
     },
     [
         {
             name: "Normal",
-            height: math.unit(5 + 1/12, "feet"),
+            height: math.unit(5 + 1 / 12, "feet"),
             default: true
         },
     ]
@@ -22356,41 +22356,41 @@ characterMakers.push(() => makeCharacter(
     { name: "Sheera Castellar", species: ["dragon"], tags: ["anthro"] },
     {
         front: {
-            height: math.unit(8 + 4/12, "feet"),
+            height: math.unit(8 + 4 / 12, "feet"),
             weight: math.unit(350, "lb"),
             name: "Front",
             image: {
                 source: "./media/characters/sheera-castellar/front.svg",
-                extra: 1957/1894,
-                bottom: 26.97/1975.017
+                extra: 1957 / 1894,
+                bottom: 26.97 / 1975.017
             }
         },
         side: {
-            height: math.unit(8 + 4/12, "feet"),
+            height: math.unit(8 + 4 / 12, "feet"),
             weight: math.unit(350, "lb"),
             name: "Side",
             image: {
                 source: "./media/characters/sheera-castellar/side.svg",
-                extra: 1957/1894
+                extra: 1957 / 1894
             }
         },
         back: {
-            height: math.unit(8 + 4/12, "feet"),
+            height: math.unit(8 + 4 / 12, "feet"),
             weight: math.unit(350, "lb"),
             name: "Back",
             image: {
                 source: "./media/characters/sheera-castellar/back.svg",
-                extra: 1957/1894
+                extra: 1957 / 1894
             }
         },
         angled: {
-            height: math.unit((8 + 4/12) * (1 - 68/1875), "feet"),
+            height: math.unit((8 + 4 / 12) * (1 - 68 / 1875), "feet"),
             weight: math.unit(350, "lb"),
             name: "Angled",
             image: {
                 source: "./media/characters/sheera-castellar/angled.svg",
-                extra: 1807/1707,
-                bottom: 68/1875
+                extra: 1807 / 1707,
+                bottom: 68 / 1875
             }
         },
         genitals: {
@@ -22404,7 +22404,7 @@ characterMakers.push(() => makeCharacter(
     [
         {
             name: "Normal",
-            height: math.unit(8 + 4/12, "feet")
+            height: math.unit(8 + 4 / 12, "feet")
         },
         {
             name: "Macro",
@@ -22427,8 +22427,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/jaipur/front.svg",
-                extra: 3860/3731,
-                bottom: 287/4140
+                extra: 3860 / 3731,
+                bottom: 287 / 4140
             }
         },
         back: {
@@ -22437,8 +22437,8 @@ characterMakers.push(() => makeCharacter(
             name: "Back",
             image: {
                 source: "./media/characters/jaipur/back.svg",
-                extra: 4060/3930,
-                bottom: 151/4200
+                extra: 4060 / 3930,
+                bottom: 151 / 4200
             }
         },
     },
@@ -22484,8 +22484,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/sheila-wolf/front.svg",
-                extra: 1931/1808,
-                bottom: 29.5/1960
+                extra: 1931 / 1808,
+                bottom: 29.5 / 1960
             }
         },
         dick: {
@@ -22521,8 +22521,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/almor/front.svg",
-                extra: 1408/1322,
-                bottom: 94.6/1506.5
+                extra: 1408 / 1322,
+                bottom: 94.6 / 1506.5
             }
         },
     },
@@ -22544,8 +22544,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/silver/front.svg",
-                extra: 472.1/450.5,
-                bottom: 26.5/499.424
+                extra: 472.1 / 450.5,
+                bottom: 26.5 / 499.424
             }
         },
     },
@@ -22554,7 +22554,7 @@ characterMakers.push(() => makeCharacter(
             name: "Normal",
             height: math.unit(7, "feet"),
             default: true
-        },   
+        },
         {
             name: "Macro",
             height: math.unit(800, "feet")
@@ -22575,8 +22575,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/pliskin/front.svg",
-                extra: 1469/1359,
-                bottom: 70/1540
+                extra: 1469 / 1359,
+                bottom: 70 / 1540
             }
         },
     },
@@ -22587,7 +22587,7 @@ characterMakers.push(() => makeCharacter(
         },
         {
             name: "Normal",
-            height: math.unit(5 + 11/12, "feet"),
+            height: math.unit(5 + 11 / 12, "feet"),
             default: true
         },
         {
@@ -22606,8 +22606,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/sammy/front.svg",
-                extra: 1193/1089,
-                bottom: 30.5/1226
+                extra: 1193 / 1089,
+                bottom: 30.5 / 1226
             }
         },
     },
@@ -22633,8 +22633,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/kuru/front.svg",
-                extra: 4301/3785,
-                bottom: 371.3/4691
+                extra: 4301 / 3785,
+                bottom: 371.3 / 4691
             }
         },
     },
@@ -22656,8 +22656,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/rakka/front.svg",
-                extra: 4670/4169,
-                bottom: 301/4968.7
+                extra: 4670 / 4169,
+                bottom: 301 / 4968.7
             }
         },
     },
@@ -22679,8 +22679,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/rhys-feline/front.svg",
-                extra: 2488/2308,
-                bottom: 35.67/2519.19
+                extra: 2488 / 2308,
+                bottom: 35.67 / 2519.19
             }
         },
     },
@@ -22695,7 +22695,7 @@ characterMakers.push(() => makeCharacter(
         },
         {
             name: "Normal",
-            height: math.unit(4 + 10/12, "feet"),
+            height: math.unit(4 + 10 / 12, "feet"),
             default: true
         },
         {
@@ -22718,8 +22718,8 @@ characterMakers.push(() => makeCharacter(
             name: "Side",
             image: {
                 source: "./media/characters/alydar/side.svg",
-                extra: 234/222,
-                bottom: 6.5/241
+                extra: 234 / 222,
+                bottom: 6.5 / 241
             }
         },
         front: {
@@ -22728,8 +22728,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/alydar/front.svg",
-                extra: 223.37/210.2,
-                bottom: 22.3/246.76
+                extra: 223.37 / 210.2,
+                bottom: 22.3 / 246.76
             }
         },
         top: {
@@ -22746,8 +22746,8 @@ characterMakers.push(() => makeCharacter(
             name: "Anthro",
             image: {
                 source: "./media/characters/alydar/anthro.svg",
-                extra: 432/421,
-                bottom: 7.18/440
+                extra: 432 / 421,
+                bottom: 7.18 / 440
             }
         },
         maw: {
@@ -22804,7 +22804,7 @@ characterMakers.push(() => makeCharacter(
             height: math.unit(30, "feet")
         },
         {
-            name: "Normal", 
+            name: "Normal",
             height: math.unit(95, "feet"),
             default: true
         },
@@ -22828,8 +22828,8 @@ characterMakers.push(() => makeCharacter(
             name: "Side",
             image: {
                 source: "./media/characters/selicia/side.svg",
-                extra: 440/396,
-                bottom: 24.8/465.979
+                extra: 440 / 396,
+                bottom: 24.8 / 465.979
             }
         },
         maw: {
@@ -22853,33 +22853,33 @@ characterMakers.push(() => makeCharacter(
     { name: "Layla", species: ["zorua", "vulpix"], tags: ["feral"] },
     {
         side: {
-            height: math.unit(2 + 6 /12, "feet"),
+            height: math.unit(2 + 6 / 12, "feet"),
             weight: math.unit(30, "lb"),
             name: "Side",
             image: {
                 source: "./media/characters/layla/side.svg",
-                extra: 244/188,
-                bottom: 18.2/262.1
+                extra: 244 / 188,
+                bottom: 18.2 / 262.1
             }
         },
         back: {
-            height: math.unit(2 + 6 /12, "feet"),
+            height: math.unit(2 + 6 / 12, "feet"),
             weight: math.unit(30, "lb"),
             name: "Back",
             image: {
                 source: "./media/characters/layla/back.svg",
-                extra: 308/241.5,
-                bottom: 8.9/316.8
+                extra: 308 / 241.5,
+                bottom: 8.9 / 316.8
             }
         },
         cumming: {
-            height: math.unit(2 + 6 /12, "feet"),
+            height: math.unit(2 + 6 / 12, "feet"),
             weight: math.unit(30, "lb"),
             name: "Cumming",
             image: {
                 source: "./media/characters/layla/cumming.svg",
-                extra: 342/279,
-                bottom: 595/938
+                extra: 342 / 279,
+                bottom: 595 / 938
             }
         },
         dickFlaccid: {
@@ -22908,7 +22908,7 @@ characterMakers.push(() => makeCharacter(
         },
         {
             name: "Normal",
-            height: math.unit(2 + 6/12, "feet"),
+            height: math.unit(2 + 6 / 12, "feet"),
             default: true
         },
         {
@@ -22925,7 +22925,7 @@ characterMakers.push(() => makeCharacter(
         },
         {
             name: "True Layla",
-            height: math.unit(200000*7, "multiverses")
+            height: math.unit(200000 * 7, "multiverses")
         },
     ]
 ))
@@ -22939,8 +22939,8 @@ characterMakers.push(() => makeCharacter(
             name: "Back",
             image: {
                 source: "./media/characters/knox/back.svg",
-                extra: 1486/1089,
-                bottom: 107/1601.4
+                extra: 1486 / 1089,
+                bottom: 107 / 1601.4
             }
         },
         side: {
@@ -22949,8 +22949,8 @@ characterMakers.push(() => makeCharacter(
             name: "Side",
             image: {
                 source: "./media/characters/knox/side.svg",
-                extra: 244/218,
-                bottom: 14/260
+                extra: 244 / 218,
+                bottom: 14 / 260
             }
         },
     },
@@ -22980,8 +22980,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/shin-pikachu/front.svg",
-                extra: 1574/1480,
-                bottom: 53.3/1626
+                extra: 1574 / 1480,
+                bottom: 53.3 / 1626
             }
         },
         hand: {
@@ -23023,7 +23023,7 @@ characterMakers.push(() => makeCharacter(
         {
             name: "Macro",
             height: math.unit(150, "feet")
-        },   
+        },
     ]
 ))
 
@@ -23036,8 +23036,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/kayda/front.svg",
-                extra: 1536/1428,
-                bottom: 68.7/1603
+                extra: 1536 / 1428,
+                bottom: 68.7 / 1603
             }
         },
         back: {
@@ -23046,8 +23046,8 @@ characterMakers.push(() => makeCharacter(
             name: "Back",
             image: {
                 source: "./media/characters/kayda/back.svg",
-                extra: 1557/1464,
-                bottom: 39.5/1597.49
+                extra: 1557 / 1464,
+                bottom: 39.5 / 1597.49
             }
         },
         dick: {
@@ -23071,20 +23071,20 @@ characterMakers.push(() => makeCharacter(
     { name: "Brian", species: ["barbary-lion"], tags: ["anthro"] },
     {
         front: {
-            height: math.unit(10 + 11/12, "feet"),
+            height: math.unit(10 + 11 / 12, "feet"),
             weight: math.unit(1400, "lb"),
             name: "Front",
             image: {
                 source: "./media/characters/brian/front.svg",
-                extra: 737/692,
-                bottom: 55.4/785
+                extra: 737 / 692,
+                bottom: 55.4 / 785
             }
         },
     },
     [
         {
             name: "Normal",
-            height: math.unit(10 + 11/12, "feet"),
+            height: math.unit(10 + 11 / 12, "feet"),
             default: true
         },
     ]
@@ -23094,13 +23094,13 @@ characterMakers.push(() => makeCharacter(
     { name: "Khemri", species: ["jackal"], tags: ["anthro"] },
     {
         front: {
-            height: math.unit(5 + 8/12, "feet"),
+            height: math.unit(5 + 8 / 12, "feet"),
             weight: math.unit(140, "lb"),
             name: "Front",
             image: {
                 source: "./media/characters/khemri/front.svg",
-                extra: 4780/4059,
-                bottom: 80.1/4859.25
+                extra: 4780 / 4059,
+                bottom: 80.1 / 4859.25
             }
         },
     },
@@ -23111,7 +23111,7 @@ characterMakers.push(() => makeCharacter(
         },
         {
             name: "Normal",
-            height: math.unit(5 + 8/12, "feet"),
+            height: math.unit(5 + 8 / 12, "feet"),
             default: true
         },
     ]
@@ -23126,8 +23126,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/felix-braveheart/front.svg",
-                extra: 1222/1157,
-                bottom: 53.2/1280
+                extra: 1222 / 1157,
+                bottom: 53.2 / 1280
             }
         },
         back: {
@@ -23136,8 +23136,8 @@ characterMakers.push(() => makeCharacter(
             name: "Back",
             image: {
                 source: "./media/characters/felix-braveheart/back.svg",
-                extra: 1277/1203,
-                bottom: 50.2/1327
+                extra: 1277 / 1203,
+                bottom: 50.2 / 1327
             }
         },
         feral: {
@@ -23146,8 +23146,8 @@ characterMakers.push(() => makeCharacter(
             name: "Feral",
             image: {
                 source: "./media/characters/felix-braveheart/feral.svg",
-                extra: 682/625,
-                bottom: 6.9/688
+                extra: 682 / 625,
+                bottom: 6.9 / 688
             }
         },
     },
@@ -23164,20 +23164,20 @@ characterMakers.push(() => makeCharacter(
     { name: "Shadow Blade", species: ["horse"], tags: ["feral"] },
     {
         side: {
-            height: math.unit(5 + 11/12, "feet"),
+            height: math.unit(5 + 11 / 12, "feet"),
             weight: math.unit(1400, "lb"),
             name: "Side",
             image: {
                 source: "./media/characters/shadow-blade/side.svg",
-                extra: 1726/1267,
-                bottom: 58.4/1785
+                extra: 1726 / 1267,
+                bottom: 58.4 / 1785
             }
         },
     },
     [
         {
             name: "Normal",
-            height: math.unit(5 + 11/12, "feet"),
+            height: math.unit(5 + 11 / 12, "feet"),
             default: true
         },
     ]
@@ -23187,20 +23187,20 @@ characterMakers.push(() => makeCharacter(
     { name: "Karla Halldor", species: ["nimbat"], tags: ["anthro"] },
     {
         front: {
-            height: math.unit(1 + 6/12, "feet"),
+            height: math.unit(1 + 6 / 12, "feet"),
             weight: math.unit(25, "lb"),
             name: "Front",
             image: {
                 source: "./media/characters/karla-halldor/front.svg",
-                extra: 1459/1383,
-                bottom: 12/1472
+                extra: 1459 / 1383,
+                bottom: 12 / 1472
             }
         },
     },
     [
         {
             name: "Normal",
-            height: math.unit(1 + 6/12, "feet"),
+            height: math.unit(1 + 6 / 12, "feet"),
             default: true
         },
     ]
@@ -23210,13 +23210,13 @@ characterMakers.push(() => makeCharacter(
     { name: "Ariam", species: ["dragon"], tags: ["anthro"] },
     {
         front: {
-            height: math.unit(6 + 2/12, "feet"),
+            height: math.unit(6 + 2 / 12, "feet"),
             weight: math.unit(160, "lb"),
             name: "Front",
             image: {
                 source: "./media/characters/ariam/front.svg",
-                extra: 714/617,
-                bottom: 23.4/737,
+                extra: 714 / 617,
+                bottom: 23.4 / 737,
             }
         },
         squatting: {
@@ -23225,15 +23225,15 @@ characterMakers.push(() => makeCharacter(
             name: "Squatting",
             image: {
                 source: "./media/characters/ariam/squatting.svg",
-                extra: 2617/2112,
-                bottom: 61.2/2681,
+                extra: 2617 / 2112,
+                bottom: 61.2 / 2681,
             }
         },
     },
     [
         {
             name: "Normal",
-            height: math.unit(6 + 2/12, "feet"),
+            height: math.unit(6 + 2 / 12, "feet"),
             default: true
         },
         {
@@ -23264,8 +23264,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/qodri-class-of-'fortwelve-six/front.svg",
-                extra: 438/410,
-                bottom: 0.75/439
+                extra: 438 / 410,
+                bottom: 0.75 / 439
             }
         },
     },
@@ -23295,8 +23295,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/izue-two-mothers/front.svg",
-                extra: 469/437,
-                bottom: 1.24/470.6
+                extra: 469 / 437,
+                bottom: 1.24 / 470.6
             }
         },
     },
@@ -23326,8 +23326,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/teeku-love-shack/front.svg",
-                extra: 387/362,
-                bottom: 1.51/388
+                extra: 387 / 362,
+                bottom: 1.51 / 388
             }
         },
     },
@@ -23357,8 +23357,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/dejma-the-red/front.svg",
-                extra: 480/458,
-                bottom: 1.8/482
+                extra: 480 / 458,
+                bottom: 1.8 / 482
             }
         },
     },
@@ -23388,7 +23388,7 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/aki/front.svg",
-                extra: 452/415
+                extra: 452 / 415
             }
         },
         frontNsfw: {
@@ -23397,7 +23397,7 @@ characterMakers.push(() => makeCharacter(
             name: "Front (NSFW)",
             image: {
                 source: "./media/characters/aki/front-nsfw.svg",
-                extra: 452/415
+                extra: 452 / 415
             }
         },
         back: {
@@ -23406,7 +23406,7 @@ characterMakers.push(() => makeCharacter(
             name: "Back",
             image: {
                 source: "./media/characters/aki/back.svg",
-                extra: 452/415
+                extra: 452 / 415
             }
         },
         rump: {
@@ -23449,20 +23449,20 @@ characterMakers.push(() => makeCharacter(
     { name: "Ari", species: ["catgirl"], tags: ["anthro"] },
     {
         front: {
-            height: math.unit(5 + 5/12, "feet"),
+            height: math.unit(5 + 5 / 12, "feet"),
             weight: math.unit(120, "lb"),
             name: "Front",
             image: {
                 source: "./media/characters/ari/front.svg",
-                extra: 714.5/682,
-                bottom: 8/722.5
+                extra: 714.5 / 682,
+                bottom: 8 / 722.5
             }
         },
     },
     [
         {
             name: "Normal",
-            height: math.unit(5 + 5/12, "feet")
+            height: math.unit(5 + 5 / 12, "feet")
         },
         {
             name: "Macro",
@@ -23489,8 +23489,8 @@ characterMakers.push(() => makeCharacter(
             name: "Side",
             image: {
                 source: "./media/characters/bolt/side.svg",
-                extra: 1126/896,
-                bottom: 60/1187.3,
+                extra: 1126 / 896,
+                bottom: 60 / 1187.3,
             }
         },
     },
@@ -23524,8 +23524,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/draekon-sylviar/front.svg",
-                extra: 1228/1068,
-                bottom: 41/1270
+                extra: 1228 / 1068,
+                bottom: 41 / 1270
             }
         },
         tail: {
@@ -23554,7 +23554,7 @@ characterMakers.push(() => makeCharacter(
             name: "Foot",
             image: {
                 source: "./media/characters/draekon-sylviar/foot.svg",
-                bottom: 32/324
+                bottom: 32 / 324
             }
         },
         dick: {
@@ -23575,7 +23575,7 @@ characterMakers.push(() => makeCharacter(
     [
         {
             name: "Small",
-            height: math.unit(4.53/2, "meters"),
+            height: math.unit(4.53 / 2, "meters"),
             default: true
         },
         {
@@ -23585,7 +23585,7 @@ characterMakers.push(() => makeCharacter(
         },
         {
             name: "Large",
-            height: math.unit(4.53*2, "meters"),
+            height: math.unit(4.53 * 2, "meters"),
         },
     ]
 ))
@@ -23594,20 +23594,20 @@ characterMakers.push(() => makeCharacter(
     { name: "Brawler", species: ["german-shepherd"], tags: ["anthro"] },
     {
         front: {
-            height: math.unit(6 + 2/12, "feet"),
+            height: math.unit(6 + 2 / 12, "feet"),
             weight: math.unit(180, "lb"),
             name: "Front",
             image: {
                 source: "./media/characters/brawler/front.svg",
-                extra: 3301/3027,
-                bottom: 138/3439
+                extra: 3301 / 3027,
+                bottom: 138 / 3439
             }
         },
     },
     [
         {
             name: "Normal",
-            height: math.unit(6 + 2/12, "feet"),
+            height: math.unit(6 + 2 / 12, "feet"),
             default: true
         },
     ]
@@ -23622,7 +23622,7 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/alex/front.svg",
-                bottom: 44.5/620
+                bottom: 44.5 / 620
             }
         },
     },
@@ -23652,22 +23652,22 @@ characterMakers.push(() => makeCharacter(
     {
         female: {
             height: math.unit(29.9, "m"),
-            weight: math.unit(Math.pow((29.9/2), 3) * 80, "kg"),
+            weight: math.unit(Math.pow((29.9 / 2), 3) * 80, "kg"),
             name: "Female",
             image: {
                 source: "./media/characters/zenari/female.svg",
-                extra: 3281.6/3217,
-                bottom: 72.2/3353
+                extra: 3281.6 / 3217,
+                bottom: 72.2 / 3353
             }
         },
         male: {
             height: math.unit(27.7, "m"),
-            weight: math.unit(Math.pow((27.7/2), 3) * 80, "kg"),
+            weight: math.unit(Math.pow((27.7 / 2), 3) * 80, "kg"),
             name: "Male",
             image: {
                 source: "./media/characters/zenari/male.svg",
-                extra: 3008/2991,
-                bottom: 54.6/3069
+                extra: 3008 / 2991,
+                bottom: 54.6 / 3069
             }
         },
     },
@@ -23685,22 +23685,22 @@ characterMakers.push(() => makeCharacter(
     {
         female: {
             height: math.unit(23.8, "m"),
-            weight: math.unit(Math.pow((23.8/2), 3) * 80, "kg"),
+            weight: math.unit(Math.pow((23.8 / 2), 3) * 80, "kg"),
             name: "Female",
             image: {
                 source: "./media/characters/mactarian/female.svg",
-                extra: 2662/2569,
-                bottom: 73/2736
+                extra: 2662 / 2569,
+                bottom: 73 / 2736
             }
         },
         male: {
             height: math.unit(23.8, "m"),
-            weight: math.unit(Math.pow((23.8/2), 3) * 80, "kg"),
+            weight: math.unit(Math.pow((23.8 / 2), 3) * 80, "kg"),
             name: "Male",
             image: {
                 source: "./media/characters/mactarian/male.svg",
-                extra: 2673/2600,
-                bottom: 76/2750
+                extra: 2673 / 2600,
+                bottom: 76 / 2750
             }
         },
     },
@@ -23718,22 +23718,22 @@ characterMakers.push(() => makeCharacter(
     {
         female: {
             height: math.unit(19.3, "m"),
-            weight: math.unit(Math.pow((19.3/2), 3) * 60, "kg"),
+            weight: math.unit(Math.pow((19.3 / 2), 3) * 60, "kg"),
             name: "Female",
             image: {
                 source: "./media/characters/umok/female.svg",
-                extra: 2186/2078,
-                bottom: 87/2277
+                extra: 2186 / 2078,
+                bottom: 87 / 2277
             }
         },
         male: {
             height: math.unit(19.5, "m"),
-            weight: math.unit(Math.pow((19.5/2), 3) * 60, "kg"),
+            weight: math.unit(Math.pow((19.5 / 2), 3) * 60, "kg"),
             name: "Male",
             image: {
                 source: "./media/characters/umok/male.svg",
-                extra: 2233/2140,
-                bottom: 24.4/2258
+                extra: 2233 / 2140,
+                bottom: 24.4 / 2258
             }
         },
     },
@@ -23751,22 +23751,22 @@ characterMakers.push(() => makeCharacter(
     {
         female: {
             height: math.unit(26.15, "m"),
-            weight: math.unit(Math.pow((26.15/2), 3) * 85, "kg"),
+            weight: math.unit(Math.pow((26.15 / 2), 3) * 85, "kg"),
             name: "Female",
             image: {
                 source: "./media/characters/joraxian/female.svg",
-                extra: 2943/2831,
-                bottom: 27/2972
+                extra: 2943 / 2831,
+                bottom: 27 / 2972
             }
         },
         male: {
             height: math.unit(25.4, "m"),
-            weight: math.unit(Math.pow((25.4/2), 3) * 85, "kg"),
+            weight: math.unit(Math.pow((25.4 / 2), 3) * 85, "kg"),
             name: "Male",
             image: {
                 source: "./media/characters/joraxian/male.svg",
-                extra: 2835/2741,
-                bottom: 27/2862
+                extra: 2835 / 2741,
+                bottom: 27 / 2862
             }
         },
     },
@@ -23784,22 +23784,22 @@ characterMakers.push(() => makeCharacter(
     {
         female: {
             height: math.unit(21.6, "m"),
-            weight: math.unit(Math.pow((21.6/2), 3) * 80, "kg"),
+            weight: math.unit(Math.pow((21.6 / 2), 3) * 80, "kg"),
             name: "Female",
             image: {
                 source: "./media/characters/sthara/female.svg",
-                extra: 2516/2347,
-                bottom: 21.5/2537
+                extra: 2516 / 2347,
+                bottom: 21.5 / 2537
             }
         },
         male: {
             height: math.unit(24, "m"),
-            weight: math.unit(Math.pow((24/2), 3) * 80, "kg"),
+            weight: math.unit(Math.pow((24 / 2), 3) * 80, "kg"),
             name: "Male",
             image: {
                 source: "./media/characters/sthara/male.svg",
-                extra: 2732/2607,
-                bottom: 23/2732
+                extra: 2732 / 2607,
+                bottom: 23 / 2732
             }
         },
     },
@@ -23816,23 +23816,23 @@ characterMakers.push(() => makeCharacter(
     { name: "Luka Bryzant", species: ["german-shepherd"], tags: ["anthro"] },
     {
         front: {
-            height: math.unit(6 + 4/12, "feet"),
+            height: math.unit(6 + 4 / 12, "feet"),
             weight: math.unit(175, "lb"),
             name: "Front",
             image: {
                 source: "./media/characters/luka-bryzant/front.svg",
-                extra: 311/289,
-                bottom: 4/315
+                extra: 311 / 289,
+                bottom: 4 / 315
             }
         },
         back: {
-            height: math.unit(6 + 4/12, "feet"),
+            height: math.unit(6 + 4 / 12, "feet"),
             weight: math.unit(175, "lb"),
             name: "Back",
             image: {
                 source: "./media/characters/luka-bryzant/back.svg",
-                extra: 311/289,
-                bottom: 3.8/313.7
+                extra: 311 / 289,
+                bottom: 3.8 / 313.7
             }
         },
     },
@@ -23843,7 +23843,7 @@ characterMakers.push(() => makeCharacter(
         },
         {
             name: "Normal",
-            height: math.unit(6 + 4/12, "feet"),
+            height: math.unit(6 + 4 / 12, "feet"),
             default: true
         },
         {
@@ -23857,33 +23857,33 @@ characterMakers.push(() => makeCharacter(
     { name: "Aman Aquila", species: ["husky", "german-shepherd"], tags: ["anthro"] },
     {
         front: {
-            height: math.unit(5 + 7/12, "feet"),
+            height: math.unit(5 + 7 / 12, "feet"),
             weight: math.unit(185, "lb"),
             name: "Front",
             image: {
                 source: "./media/characters/aman-aquila/front.svg",
-                extra: 1013/976,
-                bottom: 45.6/1057
+                extra: 1013 / 976,
+                bottom: 45.6 / 1057
             }
         },
         side: {
-            height: math.unit(5 + 7/12, "feet"),
+            height: math.unit(5 + 7 / 12, "feet"),
             weight: math.unit(185, "lb"),
             name: "Side",
             image: {
                 source: "./media/characters/aman-aquila/side.svg",
-                extra: 1054/1011,
-                bottom: 15/1070
+                extra: 1054 / 1011,
+                bottom: 15 / 1070
             }
         },
         back: {
-            height: math.unit(5 + 7/12, "feet"),
+            height: math.unit(5 + 7 / 12, "feet"),
             weight: math.unit(185, "lb"),
             name: "Back",
             image: {
                 source: "./media/characters/aman-aquila/back.svg",
-                extra: 1026/970,
-                bottom: 12/1039
+                extra: 1026 / 970,
+                bottom: 12 / 1039
             }
         },
         head: {
@@ -23905,24 +23905,24 @@ characterMakers.push(() => makeCharacter(
         },
         {
             name: "Mini",
-            height: math.unit(3 + 7/12, "feet")
+            height: math.unit(3 + 7 / 12, "feet")
         },
         {
             name: "Normal",
-            height: math.unit(5 + 7/12, "feet"),
+            height: math.unit(5 + 7 / 12, "feet"),
             default: true
         },
         {
             name: "Macro",
-            height: math.unit(157 + 7/12, "feet")
+            height: math.unit(157 + 7 / 12, "feet")
         },
         {
             name: "Megamacro",
-            height: math.unit(1557 + 7/12, "feet")
+            height: math.unit(1557 + 7 / 12, "feet")
         },
         {
             name: "Gigamacro",
-            height: math.unit(15557 + 7/12, "feet")
+            height: math.unit(15557 + 7 / 12, "feet")
         },
     ]
 ))
@@ -23931,20 +23931,20 @@ characterMakers.push(() => makeCharacter(
     { name: "Hiphae", species: ["mouse"], tags: ["anthro"] },
     {
         front: {
-            height: math.unit(3 + 2/12, "inches"),
+            height: math.unit(3 + 2 / 12, "inches"),
             weight: math.unit(0.3, "ounces"),
             name: "Front",
             image: {
                 source: "./media/characters/hiphae/front.svg",
-                extra: 1931/1683,
-                bottom: 24/1955
+                extra: 1931 / 1683,
+                bottom: 24 / 1955
             }
         },
     },
     [
         {
             name: "Normal",
-            height: math.unit(3 + 1/2, "inches"),
+            height: math.unit(3 + 1 / 2, "inches"),
             default: true
         },
     ]
@@ -23954,33 +23954,33 @@ characterMakers.push(() => makeCharacter(
     { name: "Nicky", species: ["shark"], tags: ["anthro"] },
     {
         front: {
-            height: math.unit(5 + 10/12, "feet"),
+            height: math.unit(5 + 10 / 12, "feet"),
             weight: math.unit(165, "lb"),
             name: "Front",
             image: {
                 source: "./media/characters/nicky/front.svg",
-                extra: 3144/2886,
-                bottom: 45.6/3192
+                extra: 3144 / 2886,
+                bottom: 45.6 / 3192
             }
         },
         back: {
-            height: math.unit(5 + 10/12, "feet"),
+            height: math.unit(5 + 10 / 12, "feet"),
             weight: math.unit(165, "lb"),
             name: "Back",
             image: {
                 source: "./media/characters/nicky/back.svg",
-                extra: 3055/2804,
-                bottom: 28.4/3087
+                extra: 3055 / 2804,
+                bottom: 28.4 / 3087
             }
         },
         frontclothed: {
-            height: math.unit(5 + 10/12, "feet"),
+            height: math.unit(5 + 10 / 12, "feet"),
             weight: math.unit(165, "lb"),
             name: "Front-clothed",
             image: {
                 source: "./media/characters/nicky/front-clothed.svg",
-                extra: 3184.9/2926.9,
-                bottom: 86.5/3239.9
+                extra: 3184.9 / 2926.9,
+                bottom: 86.5 / 3239.9
             }
         },
         foot: {
@@ -24008,7 +24008,7 @@ characterMakers.push(() => makeCharacter(
     [
         {
             name: "Normal",
-            height: math.unit(5 + 10/12, "feet"),
+            height: math.unit(5 + 10 / 12, "feet"),
             default: true
         },
         {
@@ -24031,8 +24031,8 @@ characterMakers.push(() => makeCharacter(
             name: "Side",
             image: {
                 source: "./media/characters/blair/side.svg",
-                bottom: 16.6/475,
-                extra: 458/431
+                bottom: 16.6 / 475,
+                extra: 458 / 431
             }
         },
     },
@@ -24057,13 +24057,13 @@ characterMakers.push(() => makeCharacter(
     { name: "Fisher", species: ["dog", "fish"], tags: ["anthro"] },
     {
         front: {
-            height: math.unit(5 + 4/12, "feet"),
+            height: math.unit(5 + 4 / 12, "feet"),
             weight: math.unit(125, "lb"),
             name: "Front",
             image: {
                 source: "./media/characters/fisher/front.svg",
-                extra: 444/390,
-                bottom: 2/444.8
+                extra: 444 / 390,
+                bottom: 2 / 444.8
             }
         },
     },
@@ -24074,7 +24074,7 @@ characterMakers.push(() => makeCharacter(
         },
         {
             name: "Normal",
-            height: math.unit(5 + 4/12, "feet"),
+            height: math.unit(5 + 4 / 12, "feet"),
             default: true
         },
         {
@@ -24094,19 +24094,19 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/gliss/front.svg",
-                extra: 2347/2231,
-                bottom: 113/2462
+                extra: 2347 / 2231,
+                bottom: 113 / 2462
             }
         },
         hammerspaceSize: {
-            height: math.unit(6.71*717, "feet"),
+            height: math.unit(6.71 * 717, "feet"),
             weight: math.unit(200, "lb"),
             capacity: math.unit(1000000, "people"),
             name: "Hammerspace Size",
             image: {
                 source: "./media/characters/gliss/front.svg",
-                extra: 2347/2231,
-                bottom: 113/2462
+                extra: 2347 / 2231,
+                bottom: 113 / 2462
             }
         },
     },
@@ -24128,7 +24128,7 @@ characterMakers.push(() => makeCharacter(
             name: "Side",
             image: {
                 source: "./media/characters/dune-anderson/side.svg",
-                bottom: 49/1426
+                bottom: 49 / 1426
             }
         },
     },
@@ -24162,8 +24162,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/hind/front.svg",
-                extra: 2091/1860,
-                bottom: 129/2220
+                extra: 2091 / 1860,
+                bottom: 129 / 2220
             }
         },
         back: {
@@ -24172,8 +24172,8 @@ characterMakers.push(() => makeCharacter(
             name: "Back",
             image: {
                 source: "./media/characters/hind/back.svg",
-                extra: 2091/1860,
-                bottom: 24.6/2309
+                extra: 2091 / 1860,
+                bottom: 24.6 / 2309
             }
         },
         tail: {
@@ -24217,8 +24217,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/dylan-skaven/front.svg",
-                extra: 2318/2063,
-                bottom: 93.4/2410
+                extra: 2318 / 2063,
+                bottom: 93.4 / 2410
             }
         },
     },
@@ -24243,20 +24243,20 @@ characterMakers.push(() => makeCharacter(
     { name: "Solex Draconov", species: ["dragon", "kitsune"], tags: ["anthro"] },
     {
         front: {
-            height: math.unit(7 + 5/12, "feet"),
+            height: math.unit(7 + 5 / 12, "feet"),
             weight: math.unit(357, "lb"),
             name: "Front",
             image: {
                 source: "./media/characters/solex-draconov/front.svg",
-                extra: 1993/1865,
-                bottom: 117/2111
+                extra: 1993 / 1865,
+                bottom: 117 / 2111
             }
         },
     },
     [
         {
             name: "Natural Height",
-            height: math.unit(7 + 5/12, "feet"),
+            height: math.unit(7 + 5 / 12, "feet"),
             default: true
         },
         {
@@ -24311,8 +24311,8 @@ characterMakers.push(() => makeCharacter(
             name: "Side",
             image: {
                 source: "./media/characters/mandarax/side.svg",
-                extra: 614/332,
-                bottom: 55/630
+                extra: 614 / 332,
+                bottom: 55 / 630
             }
         },
         head: {
@@ -24363,8 +24363,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/pixil/front.svg",
-                extra: 2000/1618,
-                bottom: 12.3/2011
+                extra: 2000 / 1618,
+                bottom: 12.3 / 2011
             }
         },
     },
@@ -24385,20 +24385,20 @@ characterMakers.push(() => makeCharacter(
     { name: "Angel", species: ["catgirl"], tags: ["anthro"] },
     {
         front: {
-            height: math.unit(7 + 2/12, "feet"),
+            height: math.unit(7 + 2 / 12, "feet"),
             weight: math.unit(200, "lb"),
             name: "Front",
             image: {
                 source: "./media/characters/angel/front.svg",
-                extra: 1830/1737,
-                bottom: 22.6/1854,
+                extra: 1830 / 1737,
+                bottom: 22.6 / 1854,
             }
         },
     },
     [
         {
             name: "Normal",
-            height: math.unit(7 + 2/12, "feet"),
+            height: math.unit(7 + 2 / 12, "feet"),
             default: true
         },
         {
@@ -24425,8 +24425,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/mekana/front.svg",
-                extra: 1671/1605,
-                bottom: 3.5/1691
+                extra: 1671 / 1605,
+                bottom: 3.5 / 1691
             }
         },
         side: {
@@ -24435,8 +24435,8 @@ characterMakers.push(() => makeCharacter(
             name: "Side",
             image: {
                 source: "./media/characters/mekana/side.svg",
-                extra: 1671/1605,
-                bottom: 3.5/1691
+                extra: 1671 / 1605,
+                bottom: 3.5 / 1691
             }
         },
         back: {
@@ -24445,8 +24445,8 @@ characterMakers.push(() => makeCharacter(
             name: "Back",
             image: {
                 source: "./media/characters/mekana/back.svg",
-                extra: 1671/1605,
-                bottom: 3.5/1691
+                extra: 1671 / 1605,
+                bottom: 3.5 / 1691
             }
         },
     },
@@ -24463,20 +24463,20 @@ characterMakers.push(() => makeCharacter(
     { name: "Pixie", species: ["pony"], tags: ["anthro"] },
     {
         front: {
-            height: math.unit(4 + 6/12, "feet"),
+            height: math.unit(4 + 6 / 12, "feet"),
             weight: math.unit(80, "lb"),
             name: "Front",
             image: {
                 source: "./media/characters/pixie/front.svg",
-                extra: 1924/1825,
-                bottom: 22.4/1946
+                extra: 1924 / 1825,
+                bottom: 22.4 / 1946
             }
         },
     },
     [
         {
             name: "Normal",
-            height: math.unit(4 + 6/12, "feet"),
+            height: math.unit(4 + 6 / 12, "feet"),
             default: true
         },
         {
@@ -24495,8 +24495,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/the-lascivious/front.svg",
-                extra: 1/0.893,
-                bottom: 3.5/573.7
+                extra: 1 / 0.893,
+                bottom: 3.5 / 573.7
             }
         },
     },
@@ -24542,21 +24542,153 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/aj/front.svg",
-                extra: 2039/1562,
-                bottom: 40/2079
+                extra: 2039 / 1562,
+                bottom: 40 / 2079
             }
         },
     },
     [
         {
             name: "Normal",
-            height: math.unit(11 + 6/12, "feet"),
+            height: math.unit(11 + 6 / 12, "feet"),
             default: true
         },
         {
             name: "Megamacro",
             height: math.unit(60, "megameters")
         },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Koros" },
+    {
+        side: {
+            height: math.unit(31 + 8/12, "feet"),
+            weight: math.unit(75000, "kg"),
+            name: "Side",
+            image: {
+                source: "./media/characters/koros/side.svg",
+                extra: 1442/1297,
+                bottom: 122.7/1562
+            }
+        },
+        dicksKingsCrown: {
+            height: math.unit(6, "feet"),
+            name: "Dicks (King's Crown)",
+            image: {
+                source: "./media/characters/koros/dicks-kings-crown.svg"
+            }
+        },
+        dicksTailSet: {
+            height: math.unit(3, "feet"),
+            name: "Dicks (Tail Set)",
+            image: {
+                source: "./media/characters/koros/dicks-tail-set.svg"
+            }
+        },
+        dickCumming: {
+            height: math.unit(7.98, "feet"),
+            name: "Dick (Cumming)",
+            image: {
+                source: "./media/characters/koros/dick-cumming.svg"
+            }
+        },
+        dicksBack: {
+            height: math.unit(5.9, "feet"),
+            name: "Dicks (Back)",
+            image: {
+                source: "./media/characters/koros/dicks-back.svg"
+            }
+        },
+        dicksFront: {
+            height: math.unit(3.72, "feet"),
+            name: "Dicks (Front)",
+            image: {
+                source: "./media/characters/koros/dicks-front.svg"
+            }
+        },
+        dicksPeeking: {
+            height: math.unit(3.0, "feet"),
+            name: "Dicks (Peeking)",
+            image: {
+                source: "./media/characters/koros/dicks-peeking.svg"
+            }
+        },
+        eye: {
+            height: math.unit(1.7, "feet"),
+            name: "Eye",
+            image: {
+                source: "./media/characters/koros/eye.svg"
+            }
+        },
+        headFront: {
+            height: math.unit(11.69, "feet"),
+            name: "Head (Front)",
+            image: {
+                source: "./media/characters/koros/head-front.svg"
+            }
+        },
+        headSide: {
+            height: math.unit(14, "feet"),
+            name: "Head (Side)",
+            image: {
+                source: "./media/characters/koros/head-side.svg"
+            }
+        },
+        leg: {
+            height: math.unit(17, "feet"),
+            name: "Leg",
+            image: {
+                source: "./media/characters/koros/leg.svg"
+            }
+        },
+        mawSide: {
+            height: math.unit(12.8, "feet"),
+            name: "Maw (Side)",
+            image: {
+                source: "./media/characters/koros/maw-side.svg"
+            }
+        },
+        mawSpitting: {
+            height: math.unit(17, "feet"),
+            name: "Maw (Spitting)",
+            image: {
+                source: "./media/characters/koros/maw-spitting.svg"
+            }
+        },
+        slit: {
+            height: math.unit(2.8, "feet"),
+            name: "Slit",
+            image: {
+                source: "./media/characters/koros/slit.svg"
+            }
+        },
+        stomach: {
+            height: math.unit(6.8, "feet"),
+            capacity: math.unit(20, "people"),
+            name: "Stomach",
+            image: {
+                source: "./media/characters/koros/stomach.svg"
+            }
+        },
+        wingspanBottom: {
+            height: math.unit(114, "feet"),
+            name: "Wingspan (Bottom)",
+            image: {
+                source: "./media/characters/koros/wingspan-bottom.svg"
+            }
+        },
+        wingspanTop: {
+            height: math.unit(104, "feet"),
+            name: "Wingspan (Top)",
+            image: {
+                source: "./media/characters/koros/wingspan-top.svg"
+            }
+        },
+    },
+    [
+
     ]
 ))
 

@@ -9928,6 +9928,34 @@ const attributionData = {
                 "kal278"
             ]
         },
+        {
+            prefix: "./media/characters/koros/",
+            files: [
+                { name: "dick-cumming.svg", source: "https://www.furaffinity.net/view/24668440/", nsfw: true },
+                { name: "dicks-back.svg", source: "https://www.furaffinity.net/view/24668440/", nsfw: true },
+                { name: "dicks-front.svg", source: "https://www.furaffinity.net/view/24668440/", nsfw: true },
+                { name: "dicks-kings-crown.svg", source: "https://www.furaffinity.net/view/24668440/", nsfw: true },
+                { name: "dicks-peeking.svg", source: "https://www.furaffinity.net/view/24668440/", nsfw: true },
+                { name: "dicks-tail-set.svg", source: "https://www.furaffinity.net/view/24668440/", nsfw: true },
+                { name: "eye.svg", source: "https://www.furaffinity.net/view/24668440/", nsfw: false },
+                { name: "head-front.svg", source: "https://www.furaffinity.net/view/24668440/", nsfw: false },
+                { name: "head-side.svg", source: "https://www.furaffinity.net/view/24668440/", nsfw: false },
+                { name: "leg.svg", source: "https://www.furaffinity.net/view/24668440/", nsfw: false },
+                { name: "maw-side.svg", source: "https://www.furaffinity.net/view/24668440/", nsfw: false },
+                { name: "maw-spitting.svg", source: "https://www.furaffinity.net/view/24668440/", nsfw: false },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/24668440/", nsfw: true },
+                { name: "slit.svg", source: "https://www.furaffinity.net/view/24668440/", nsfw: true },
+                { name: "stomach.svg", source: "https://www.furaffinity.net/view/24668440/", nsfw: false },
+                { name: "wingspan-bottom.svg", source: "https://www.furaffinity.net/view/24668440/", nsfw: false },
+                { name: "wingspan-top.svg", source: "https://www.furaffinity.net/view/24668440/", nsfw: false },
+            ],
+            authors: [
+                "doodlies"
+            ],
+            owners: [
+                "xrequiem"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -13745,6 +13773,10 @@ const attributionData = {
         "panpan-pratama": {
             "name": "panpan_pratama",
             "url": "https://www.fiverr.com/panpan_pratama",
+        },
+        "doodlies": {
+            "name": "Doodlies",
+            "url": "https://www.furaffinity.net/user/doodlies/",
         },
     }
 }
