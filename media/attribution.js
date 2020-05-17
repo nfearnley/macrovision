@@ -9960,6 +9960,30 @@ const attributionData = {
                 "xrequiem"
             ]
         },
+        {
+            prefix: "./media/characters/vexx/",
+            files: [
+                { name: "front.svg", source: null, nsfw: true }
+            ],
+            authors: [
+                "doodlies"
+            ],
+            owners: [
+                "xrequiem"
+            ]
+        },
+        {
+            prefix: "./media/characters/vexx/",
+            files: [
+                { name: "maw.svg", source: null }
+            ],
+            authors: [
+                "meep"
+            ],
+            owners: [
+                "xrequiem"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",

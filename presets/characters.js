@@ -1238,6 +1238,20 @@ const speciesData = {
         name: "Deity",
         parents: []
     },
+    "skarlan": {
+      name: "Skarlan",
+      parents: ["slug", "dragon"]
+    },
+    "slug": {
+      name: "Slug",
+      parents: ["mollusk"]
+    },
+    "mollusk": {
+      name: "Mollusk",
+      parents: ["animal"]
+    },
+    
+    
 
 
 
@@ -24716,7 +24730,41 @@ characterMakers.push(() => makeCharacter(
         },
     },
     [
+        {
+            name: "Normal",
+            height: math.unit(31 + 8/12, "feet"),
+            default: true
+        },
+    ]
+))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Vexx", species: ["skarlan"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(18 + 5/12, "feet"),
+            weight: math.unit(3750, "kg"),
+            name: "Front",
+            image: {
+                source: "./media/characters/vexx/front.svg",
+                extra: 426/396,
+                bottom: 31.5/458
+            }
+        },
+        maw: {
+            height: math.unit(6, "feet"),
+            name: "Maw",
+            image: {
+                source: "./media/characters/vexx/maw.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(18 + 5/12, "feet"),
+            default: true
+        },
     ]
 ))
 
