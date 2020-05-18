@@ -413,6 +413,7 @@ function createEntityMaker(info, views, sizes) {
 
     maker.name = info.name;
     maker.info = info;
+    maker.sizes = sizes;
 
     maker.constructor = () => makeEntity(info, views, sizes);
     maker.authors = [];
@@ -2306,31 +2307,97 @@ const filterDefs = {
         id: "none",
         name: "No Filter",
         extract: maker => [],
-        render: name => name
+        render: name => name,
+        sort: (tag1, tag2) => tag1[1].localeCompare(tag2[1])
     },
     author: {
         id: "author",
         name: "Authors",
         extract: maker => maker.authors ? maker.authors : [],
-        render: author => attributionData.people[author].name
+        render: author => attributionData.people[author].name,
+        sort: (tag1, tag2) => tag1[1].localeCompare(tag2[1])
     },
     owner: {
         id: "owner",
         name: "Owners",
         extract: maker => maker.owners ? maker.owners : [],
-        render: owner => attributionData.people[owner].name
+        render: owner => attributionData.people[owner].name,
+        sort: (tag1, tag2) => tag1[1].localeCompare(tag2[1])
     },
     species: {
         id: "species",
         name: "Species",
         extract: maker => maker.info && maker.info.species ? getSpeciesInfo(maker.info.species) : [],
-        render: species => speciesData[species].name
+        render: species => speciesData[species].name,
+        sort: (tag1, tag2) => tag1[1].localeCompare(tag2[1])
     },
     tags: {
         id: "tags",
         name: "Tags",
         extract: maker => maker.info && maker.info.tags ? maker.info.tags : [],
-        render: tag => tagDefs[tag]
+        render: tag => tagDefs[tag],
+        sort: (tag1, tag2) => tag1[1].localeCompare(tag2[1])
+    },
+    size: {
+        id: "size",
+        name: "Normal Size",
+        extract: maker => maker.sizes && maker.sizes.length > 0 ? Array.from(maker.sizes.reduce((result, size) => {
+            if (result && !size.default) {
+                return result;
+            }
+            let meters = size.height.toNumber("meters");
+            if (meters < 1e-1) {
+                return ["micro"];
+            } else if (meters < 1e1) {
+                return ["moderate"];
+            } else {
+                return ["macro"];
+            }
+        }, null)) : [],
+        render: tag => { return {
+            "micro": "Micro",
+            "moderate": "Moderate",
+            "macro": "Macro"
+        }[tag]},
+        sort: (tag1, tag2) => {
+            const order = {
+                "micro": 0,
+                "moderate": 1,
+                "macro": 2
+            };
+
+            return order[tag1[0]] - order[tag2[0]];
+        }
+    },
+    allSizes: {
+        id: "allSizes",
+        name: "Possible Size",
+        extract: maker => maker.sizes ? Array.from(maker.sizes.reduce((set, size) => {
+            let meters = size.height.toNumber("meters");
+            if (meters < 1e-1) {
+                set.add("micro");
+            } else if (meters < 1e1) {
+                set.add("moderate");
+            } else {
+                set.add("macro");
+            }
+
+            return set;
+        }, new Set())) : [],
+        render: tag => { return {
+            "micro": "Micro",
+            "moderate": "Moderate",
+            "macro": "Macro"
+        }[tag]},
+        sort: (tag1, tag2) => {
+            const order = {
+                "micro": 0,
+                "moderate": 1,
+                "macro": 2
+            };
+
+            return order[tag1[0]] - order[tag2[0]];
+        }
     }
 }
 
@@ -2456,6 +2523,12 @@ function prepareEntities() {
             const count = makers.length + 1;
             let index = 0;
 
+            if (makers.length > 50) {
+                if (!confirm("Really spawn " + makers.length + " things at once?")) {
+                    return;
+                }
+            }
+
             makers.map(element => {
                 const category = document.querySelector("#category-picker").value;
                 const maker = availableEntities[category][element.value];
@@ -2466,7 +2539,7 @@ function prepareEntities() {
             });
         });
 
-        Array.from(filterSets[filter.id]).map(name => [name, filter.render(name)]).sort((e1, e2) => e1[1].toLowerCase().localeCompare(e2[1].toLowerCase())).forEach(name => {
+        Array.from(filterSets[filter.id]).map(name => [name, filter.render(name)]).sort(filterDefs[filter.id].sort).forEach(name => {
             const option = document.createElement("option");
             option.innerText = name[1];
             option.value = name[0];
