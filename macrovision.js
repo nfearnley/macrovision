@@ -2373,33 +2373,50 @@ const filterDefs = {
         id: "allSizes",
         name: "Possible Size",
         extract: maker => maker.sizes ? Array.from(maker.sizes.reduce((set, size) => {
-            let meters = size.height.toNumber("meters");
-            if (meters < 1e-1) {
-                set.add("micro");
-            } else if (meters < 1e1) {
-                set.add("moderate");
-            } else {
-                set.add("macro");
-            }
+            
+            const height = size.height;
+
+            let result = Object.entries(sizeCategories).reduce((result, [name, value]) => {
+                if (result) {
+                    return result;
+                } else {
+                    if (math.compare(height, value) <= 0) {
+                        return name;
+                    }
+                }
+            }, null);
+
+            set.add(result ? result : "infinite");
 
             return set;
         }, new Set())) : [],
-        render: tag => { return {
-            "micro": "Micro",
-            "moderate": "Moderate",
-            "macro": "Macro"
-        }[tag]},
+        render: tag => tag[0].toUpperCase() + tag.slice(1),
         sort: (tag1, tag2) => {
-            const order = {
-                "micro": 0,
-                "moderate": 1,
-                "macro": 2
-            };
+            const order = [
+                "atomic", "microscopic", "tiny", "small", "moderate", "large", "macro", "megamacro", "planetary", "stellar",
+                "galactic", "universal", "omniversal", "infinite"
+            ]
 
-            return order[tag1[0]] - order[tag2[0]];
+            return order.indexOf(tag1[0]) - order.indexOf(tag2[0]);
         }
     }
 }
+
+const sizeCategories = {
+    "atomic": math.unit(100, "angstroms"),
+    "microscopic": math.unit(100, "micrometers"),
+    "tiny": math.unit(100, "millimeters"),
+    "small": math.unit(1, "meter"),
+    "moderate": math.unit(3, "meters"),
+    "large": math.unit(10, "meters"),
+    "macro": math.unit(300, "meters"),
+    "megamacro": math.unit(1000, "kilometers"),
+    "planetary": math.unit(10, "earths"),
+    "stellar": math.unit(10, "solarradii"),
+    "galactic": math.unit(10, "galaxies"),
+    "universal": math.unit(10, "universes"),
+    "omniversal": math.unit(10, "multiverses")
+};
 
 function prepareEntities() {
     availableEntities["buildings"] = makeBuildings();
