@@ -2551,9 +2551,9 @@ function prepareEntities() {
                 const maker = availableEntities[category][element.value];
                 const entity = maker.constructor()
                 displayEntity(entity, entity.view, 0.1 + 0.8 * index / (count), 1);
-                updateSizes(true);
                 index += 1;
             });
+            updateSizes(true);
         });
 
         Array.from(filterSets[filter.id]).map(name => [name, filter.render(name)]).sort(filterDefs[filter.id].sort).forEach(name => {
