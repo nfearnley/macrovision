@@ -1262,6 +1262,11 @@ const speciesData = {
       name: "Mimic",
       parents: ["monster"]
     },
+    "calico-rat": {
+      name: "Calico Rat",
+      parents: ["rat"]
+    },
+    
     
     
 }
@@ -25195,6 +25200,29 @@ characterMakers.push(() => makeCharacter(
         {
             name: "Normal",
             height: math.unit(5 + 1/12, "feet"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Serryn", species: ["calico-rat"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(3 + 8/12, "feet"),
+            weight: math.unit(50, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/serryn/front.svg",
+                extra: 1792/1656,
+                bottom: 43.5/1840
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(3 + 8/12, "feet"),
             default: true
         },
     ]

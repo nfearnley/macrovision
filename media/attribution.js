@@ -10154,6 +10154,18 @@ const attributionData = {
                 "xrequiem"
             ]
         },
+        {
+            prefix: "./media/characters/serryn/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/27817847/" }
+            ],
+            authors: [
+                "meep"
+            ],
+            owners: [
+                "xrequiem"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
