@@ -25020,6 +25020,40 @@ characterMakers.push(() => makeCharacter(
         },
     ]
 ))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Weatley" },
+    {
+        front: {
+            height: math.unit(2 + 11/12, "feet"),
+            weight: math.unit(30, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/weatley/front.svg",
+                bottom: 10.7/414,
+                extra: 403.5/362
+            }
+        },
+        back: {
+            height: math.unit(2 + 11/12, "feet"),
+            weight: math.unit(30, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/weatley/back.svg",
+                bottom: 10.7/414,
+                extra: 403.5/362
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(2 + 11/12, "feet"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

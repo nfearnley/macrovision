@@ -10069,6 +10069,19 @@ const attributionData = {
                 "fidchell"
             ]
         },
+        {
+            prefix: "./media/characters/weatley/",
+            files: [
+                { name: "front.svg", source: null },
+                { name: "back.svg", source: null },
+            ],
+            authors: [
+                "shecatigans"
+            ],
+            owners: [
+                "xrequiem"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -13902,6 +13915,10 @@ const attributionData = {
         "furipa93": {
             "name": "furipa93",
             "url": "https://www.deviantart.com/furipa93",
+        },
+        "shecatigans": {
+            "name": "Shecatigans",
+            "url": "https://www.furaffinity.net/user/shecatigans/",
         },
     }
 }
