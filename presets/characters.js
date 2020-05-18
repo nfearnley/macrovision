@@ -25228,6 +25228,29 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Xavier Thyme" },
+    {
+        front: {
+            height: math.unit(7 + 1012, "feet"),
+            weight: math.unit(255, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/xavier-thyme/front.svg",
+                extra: 4385/3642,
+                bottom: 131/4517
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(7 + 10/12, "feet"),
+            default: true
+        },
+    ]
+))
+
 
 //characters
 

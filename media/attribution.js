@@ -10027,7 +10027,7 @@ const attributionData = {
                 "furipa93"
             ],
             owners: [
-                "maxene-sita"
+                "xavierjamesice1"
             ]
         },
         {
@@ -10164,6 +10164,18 @@ const attributionData = {
             ],
             owners: [
                 "xrequiem"
+            ]
+        },
+        {
+            prefix: "./media/characters/xavier-thyme/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/26999698/" }
+            ],
+            authors: [
+                "red"
+            ],
+            owners: [
+                "xavierjamesice1"
             ]
         },
         //characters
@@ -13988,9 +14000,9 @@ const attributionData = {
             "name": "Momofluff",
             "url": "https://www.furaffinity.net/user/momofluff/",
         },
-        "maxene-sita": {
-            "name": "Maxene Sita",
-            "url": "https://www.f-list.net/c/maxene%20sita",
+        "xavierjamesice1": {
+            "name": "XavierJamesIce_1",
+            "url": "https://www.furaffinity.net/user/xavierjamesice1/",
         },
         "furipa93": {
             "name": "furipa93",
@@ -14023,6 +14035,10 @@ const attributionData = {
         "karijn": {
             "name": "Karijn",
             "url": "https://www.furaffinity.net/user/karijn/",
+        },
+        "red": {
+            "name": "Red",
+            "url": "https://www.overlysarcasticproductions.com/",
         },
     }
 }
