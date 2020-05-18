@@ -25059,6 +25059,51 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
+    { name: "Mercury Crescent", species: ["dragon"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(5 + 2/12, "feet"),
+            weight: math.unit(50, "kg"),
+            name: "Front",
+            image: {
+                source: "./media/characters/mercury-crescent/front.svg",
+                extra: 1088/1033,
+                bottom: 18.9/1109
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(5 + 2/12, "feet"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Diamond Jones", species: ["kobold"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(2, "feet"),
+            weight: math.unit(15, "kg"),
+            name: "Front",
+            image: {
+                source: "./media/characters/diamond-jones/front.svg",
+                bottom: 16/568
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(2, "feet"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
     { name: "Sweet Bit", species: ["gestalt"], tags: ["anthro"] },
     {
         front: {

@@ -10094,6 +10094,30 @@ const attributionData = {
                 "geordibyrdy"
             ]
         },
+        {
+            prefix: "./media/characters/diamond-jones/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35839180/" }
+            ],
+            authors: [
+                "culixcupric"
+            ],
+            owners: [
+                "geordibyrdy"
+            ]
+        },
+        {
+            prefix: "./media/characters/mercury-crescent/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "spacebearbilly"
+            ],
+            owners: [
+                "geordibyrdy"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -13939,6 +13963,14 @@ const attributionData = {
         "geordibyrdy": {
             "name": "geordibyrdy",
             "url": "https://www.furaffinity.net/user/geordibyrdy/",
+        },
+        "spacebearbilly": {
+            "name": "spacebearbilly",
+            "url": "https://www.furaffinity.net/user/spacebearbilly",
+        },
+        "culixcupric": {
+            "name": "CulixCupric",
+            "url": "https://www.furaffinity.net/user/culixcupric/",
         },
     }
 }
