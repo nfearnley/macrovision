@@ -25126,6 +25126,29 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Umbrazen" },
+    {
+        side: {
+            height: math.unit(9.178, "feet"),
+            weight: math.unit(500, "lb"),
+            name: "Side",
+            image: {
+                source: "./media/characters/umbrazen/side.svg",
+                extra: 1730/1473,
+                bottom: 34.6/1765
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(9.178, "feet"),
+            default: true
+        },
+    ]
+))
+
 
 //characters
 

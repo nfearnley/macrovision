@@ -1844,7 +1844,7 @@ const attributionData = {
                 { name: "front.svg", source: null }
             ],
             authors: [
-                "doodlies"
+                "maim"
             ],
             owners: [
                 "thunderstrike23"
@@ -9954,7 +9954,7 @@ const attributionData = {
                 { name: "wingspan-top.svg", source: "https://www.furaffinity.net/view/24668440/", nsfw: false },
             ],
             authors: [
-                "doodlies"
+                "maim"
             ],
             owners: [
                 "xrequiem"
@@ -9966,7 +9966,7 @@ const attributionData = {
                 { name: "front.svg", source: null, nsfw: true }
             ],
             authors: [
-                "doodlies"
+                "maim"
             ],
             owners: [
                 "xrequiem"
@@ -10116,6 +10116,18 @@ const attributionData = {
             ],
             owners: [
                 "geordibyrdy"
+            ]
+        },
+        {
+            prefix: "./media/characters/umbrazen/",
+            files: [
+                { name: "side.svg", source: null }
+            ],
+            authors: [
+                "maim"
+            ],
+            owners: [
+                "xrequiem"
             ]
         },
         //characters
@@ -11484,9 +11496,9 @@ const attributionData = {
             "name": "sirffuzzylogik",
             "url": "https://www.furaffinity.net/user/sirffuzzylogik",
         },
-        "doodlies": {
-            "name": "doodlies",
-            "url": "https://www.furaffinity.net/user/doodlies"
+        "maim": {
+            "name": "maim",
+            "url": "https://www.furaffinity.net/user/maim"
         },
         "thunderstrike23": {
             "name": "thunderstrike23",
@@ -13935,10 +13947,6 @@ const attributionData = {
         "panpan-pratama": {
             "name": "panpan_pratama",
             "url": "https://www.fiverr.com/panpan_pratama",
-        },
-        "doodlies": {
-            "name": "Doodlies",
-            "url": "https://www.furaffinity.net/user/doodlies/",
         },
         "momofluff": {
             "name": "Momofluff",
