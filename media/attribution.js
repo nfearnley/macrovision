@@ -10133,7 +10133,7 @@ const attributionData = {
         {
             prefix: "./media/characters/arlist/",
             files: [
-                { name: "front.svg", source: null }
+                { name: "front.svg", source: null, nsfw: true }
             ],
             authors: [
                 "kingpine"
