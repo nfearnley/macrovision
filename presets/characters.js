@@ -25149,6 +25149,29 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Arlist" },
+    {
+        front: {
+            height: math.unit(10, "feet"),
+            weight: math.unit(750, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/arlist/front.svg",
+                extra: 961/778,
+                bottom: 6.2/986
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(10, "feet"),
+            default: true
+        },
+    ]
+))
+
 
 //characters
 

@@ -10130,6 +10130,18 @@ const attributionData = {
                 "xrequiem"
             ]
         },
+        {
+            prefix: "./media/characters/arlist/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "kingpine"
+            ],
+            owners: [
+                "xrequiem"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -13979,6 +13991,10 @@ const attributionData = {
         "culixcupric": {
             "name": "CulixCupric",
             "url": "https://www.furaffinity.net/user/culixcupric/",
+        },
+        "kingpine": {
+            "name": "KingPine",
+            "url": "https://twitter.com/KingPineTree",
         },
     }
 }
