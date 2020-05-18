@@ -828,7 +828,7 @@ const speciesData = {
     },
     "construct": {
         name: "Construct",
-        parents: ["machine"]
+        parents: []
     },
     "mexican-wolf": {
         name: "Mexican Wolf",
@@ -1250,11 +1250,15 @@ const speciesData = {
       name: "Mollusk",
       parents: ["animal"]
     },
+    "chimera": {
+      name: "Chimera",
+      parents: ["monster"]
+    },
+    "gestalt": {
+      name: "Gestalt",
+      parents: ["construct"]
+    },
     
-    
-
-
-
 }
 
 //species
@@ -25022,7 +25026,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Weatley" },
+    { name: "Weatley", species: ["chimera"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(2 + 11/12, "feet"),
@@ -25053,6 +25057,30 @@ characterMakers.push(() => makeCharacter(
         },
     ]
 ))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Sweet Bit", species: ["gestalt"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(3, "feet"),
+            weight: math.unit(30, "kg"),
+            name: "Front",
+            image: {
+                source: "./media/characters/sweet-bit/front.svg",
+                extra: 675/567,
+                bottom: 27.7/703
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(3, "feet"),
+            default: true
+        },
+    ]
+))
+
 
 //characters
 

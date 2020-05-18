@@ -10082,6 +10082,18 @@ const attributionData = {
                 "xrequiem"
             ]
         },
+        {
+            prefix: "./media/characters/sweet-bit/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33669356/" }
+            ],
+            authors: [
+                "lapinousmalice"
+            ],
+            owners: [
+                "geordibyrdy"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -13919,6 +13931,14 @@ const attributionData = {
         "shecatigans": {
             "name": "Shecatigans",
             "url": "https://www.furaffinity.net/user/shecatigans/",
+        },
+        "lapinousmalice": {
+            "name": "lapinousmalice",
+            "url": "https://www.furaffinity.net/user/lapinousmalice",
+        },
+        "geordibyrdy": {
+            "name": "geordibyrdy",
+            "url": "https://www.furaffinity.net/user/geordibyrdy/",
         },
     }
 }
