@@ -10142,6 +10142,18 @@ const attributionData = {
                 "xrequiem"
             ]
         },
+        {
+            prefix: "./media/characters/aradel/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/22182066/" }
+            ],
+            authors: [
+                "karijn"
+            ],
+            owners: [
+                "xrequiem"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -13995,6 +14007,10 @@ const attributionData = {
         "kingpine": {
             "name": "KingPine",
             "url": "https://twitter.com/KingPineTree",
+        },
+        "karijn": {
+            "name": "Karijn",
+            "url": "https://www.furaffinity.net/user/karijn/",
         },
     }
 }

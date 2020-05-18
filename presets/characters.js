@@ -1258,6 +1258,11 @@ const speciesData = {
       name: "Gestalt",
       parents: ["construct"]
     },
+    "mimic": {
+      name: "Mimic",
+      parents: ["monster"]
+    },
+    
     
 }
 
@@ -25127,7 +25132,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Umbrazen" },
+    { name: "Umbrazen", species: ["mimic"], tags: ["feral"] },
     {
         side: {
             height: math.unit(9.178, "feet"),
@@ -25150,7 +25155,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Arlist" },
+    { name: "Arlist", species: ["jackal"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(10, "feet"),
@@ -25167,6 +25172,29 @@ characterMakers.push(() => makeCharacter(
         {
             name: "Normal",
             height: math.unit(10, "feet"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Aradel", species: ["jackalope"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(5 + 1/12, "feet"),
+            weight: math.unit(110, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/aradel/front.svg",
+                extra: 324/303,
+                bottom: 3.6/329.4
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(5 + 1/12, "feet"),
             default: true
         },
     ]
