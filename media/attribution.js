@@ -10169,7 +10169,8 @@ const attributionData = {
         {
             prefix: "./media/characters/xavier-thyme/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/26999698/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/26999698/" },
+                { name: "front-raven.svg", source: "https://www.furaffinity.net/view/26999698/" },
             ],
             authors: [
                 "red"

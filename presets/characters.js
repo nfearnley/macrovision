@@ -25237,6 +25237,16 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/xavier-thyme/front.svg",
+                extra: 3733/3642,
+                bottom: 131/3869
+            }
+        },
+        frontRaven: {
+            height: math.unit(7 + 1012, "feet"),
+            weight: math.unit(255, "lb"),
+            name: "Front (Raven)",
+            image: {
+                source: "./media/characters/xavier-thyme/front-raven.svg",
                 extra: 4385/3642,
                 bottom: 131/4517
             }
