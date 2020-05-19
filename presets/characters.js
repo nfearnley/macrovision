@@ -25232,7 +25232,7 @@ characterMakers.push(() => makeCharacter(
     { name: "Xavier Thyme" },
     {
         front: {
-            height: math.unit(7 + 1012, "feet"),
+            height: math.unit(7 + 10/12, "feet"),
             weight: math.unit(255, "lb"),
             name: "Front",
             image: {
@@ -25242,7 +25242,7 @@ characterMakers.push(() => makeCharacter(
             }
         },
         frontRaven: {
-            height: math.unit(7 + 1012, "feet"),
+            height: math.unit(7 + 10/12, "feet"),
             weight: math.unit(255, "lb"),
             name: "Front (Raven)",
             image: {
