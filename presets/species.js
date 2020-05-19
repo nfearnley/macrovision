@@ -140,6 +140,74 @@ speciesMakers["Synths"] = () => makeCharacter(
     ]
 );
 
+speciesMakers["Sel'Var"] = () => makeCharacter(
+    { name: "Sel'Var" },
+    {
+        female: {
+            height: math.unit(7 + 1/12, "feet"),
+            weight: math.unit(190, "lb"),
+            name: "Female",
+            image: {
+                source: "./media/species/sel'var/female.svg",
+                extra: 1761/1544,
+                bottom: 57.5/1817
+            }
+        },
+        male: {
+            height: math.unit(8 + 4/12, "feet"),
+            weight: math.unit(260, "lb"),
+            name: "Male",
+            image: {
+                source: "./media/species/sel'var/male.svg",
+                extra: 1891/1786,
+                bottom: 65/1954.2
+            }
+        },
+        dick: {
+            height: math.unit(1.6, "feet"),
+            name: "Dick",
+            image: {
+                source: "./media/species/sel'var/dick.svg"
+            }
+        },
+        slit: {
+            height: math.unit(0.8, "feet"),
+            name: "Slit",
+            image: {
+                source: "./media/species/sel'var/slit.svg"
+            }
+        },
+        slitinternals: {
+            height: math.unit(1.07, "feet"),
+            name: "Slit-internals",
+            image: {
+                source: "./media/species/sel'var/slit-internals.svg"
+            }
+        },
+        maw: {
+            height: math.unit(1.18, "feet"),
+            name: "Maw",
+            image: {
+                source: "./media/species/sel'var/maw.svg"
+            }
+        },
+        dewclaw: {
+            height: math.unit(0.67, "feet"),
+            name: "Dewclaw",
+            image: {
+                source: "./media/species/sel'var/dewclaw.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(7 + 1/12, "feet"),
+            default: true
+        },
+    ]
+)
+
 function makeSpecies() {
     const results = [];
 

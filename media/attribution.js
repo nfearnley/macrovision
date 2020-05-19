@@ -10582,6 +10582,24 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/species/sel'var/",
+            files: [
+                { name: "female.svg", source: "https://www.furaffinity.net/view/23271890/" },
+                { name: "male.svg", source: "https://www.furaffinity.net/view/23271890/" },
+                { name: "dick.svg", source: "https://www.furaffinity.net/view/23271890/" },
+                { name: "slit.svg", source: "https://www.furaffinity.net/view/23271890/" },
+                { name: "slit-internal.svg", source: "https://www.furaffinity.net/view/23271890/" },
+                { name: "maw.svg", source: "https://www.furaffinity.net/view/23271890/" },
+                { name: "dewclaw.svg", source: "https://www.furaffinity.net/view/23271890/" },
+            ],
+            authors: [
+                "averoks-lair"
+            ],
+            owners: [
+                "kyrasmoonhunter"
+            ]
+        },
+        {
             prefix: "./media/vehicles/",
             files: [
                 { name: "leopard-2-revolution-1.svg", source: "http://leopardclub.ca/reviews/Tiger_Model/Revolution/" },
@@ -14040,6 +14058,14 @@ const attributionData = {
         "red": {
             "name": "Red",
             "url": "https://www.overlysarcasticproductions.com/",
+        },
+        "kyrasmoonhunter": {
+            "name": "KyrasMoonhunter",
+            "url": "https://www.furaffinity.net/user/kyrasmoonhunter/",
+        },
+        "averoks-lair": {
+            "name": "Averoks_Lair",
+            "url": "https://www.furaffinity.net/user/averokslair",
         },
     }
 }
