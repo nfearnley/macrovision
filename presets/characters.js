@@ -25164,7 +25164,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Mercury Crescent", species: ["dragon"], tags: ["anthro"] },
+    { name: "Mercury Crescent", species: ["dragon", "kobold"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(5 + 2/12, "feet"),
@@ -25209,7 +25209,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Sweet Bit", species: ["gestalt"], tags: ["anthro"] },
+    { name: "Sweet Bit", species: ["gestalt", "kobold"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(3, "feet"),
