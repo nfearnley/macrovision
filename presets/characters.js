@@ -19678,7 +19678,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Naldara", species: ["jackalope"], tags: ["anthro"] },
+    { name: "Naldara", species: ["jackalope"], tags: ["anthro", "naga"] },
     {
         front: {
             height: math.unit(4 + 2 / 12, "feet"),
@@ -19688,6 +19688,16 @@ characterMakers.push(() => makeCharacter(
                 source: "./media/characters/naldara/front.svg",
                 extra: 841 / 720,
                 bottom: 0.04
+            }
+        },
+        naga: {
+            height: math.unit(23, "feet"),
+            weight: math.unit(15000, "kg"),
+            name: "Naga",
+            image: {
+                source: "./media/characters/naldara/naga.svg",
+                extra: 3290/2959,
+                bottom: 124/3432
             }
         },
     },

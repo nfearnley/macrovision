@@ -8109,6 +8109,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/naldara/",
+            files: [
+                { name: "naga.svg", source: null }
+            ],
+            authors: [
+                "scalyschisms"
+            ],
+            owners: [
+                "xrequiem"
+            ]
+        },
+        {
             prefix: "./media/characters/briar/",
             files: [
                 { name: "front.svg", source: null }
@@ -14076,6 +14088,10 @@ const attributionData = {
         "averoks-lair": {
             "name": "Averoks_Lair",
             "url": "https://www.furaffinity.net/user/averokslair",
+        },
+        "scalyschisms": {
+            "name": "ScalySchisms",
+            "url": "https://www.furaffinity.net/user/scalyschisms/",
         },
     }
 }
