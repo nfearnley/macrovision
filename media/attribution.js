@@ -8135,7 +8135,17 @@ const attributionData = {
         {
             prefix: "./media/characters/artemis/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/29084844/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/29084844/" },
+                { name: "front-nsfw.svg", source: "https://www.furaffinity.net/view/29084844/", nsfw: true },
+                { name: "front-nsfwer.svg", source: "https://www.furaffinity.net/view/29084844/", nsfw: true },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/29084844/" },
+                { name: "back-nsfw.svg", source: "https://www.furaffinity.net/view/29084844/", nsfw: true },
+                { name: "back-nsfwer.svg", source: "https://www.furaffinity.net/view/29084844/", nsfw: true },
+                { name: "maw.svg", source: "https://www.furaffinity.net/view/29084844/" },
+                { name: "stomach.svg", source: "https://www.furaffinity.net/view/29084844/" },
+                { name: "dick-canine.svg", source: "https://www.furaffinity.net/view/29084844/", nsfw: true },
+                { name: "dick-equine.svg", source: "https://www.furaffinity.net/view/29084844/", nsfw: true },
+                { name: "dick-exotic.svg", source: "https://www.furaffinity.net/view/29084844/", nsfw: true },
             ],
             authors: [
                 "meep"

@@ -19759,6 +19759,91 @@ characterMakers.push(() => makeCharacter(
                 bottom: 0.07
             }
         },
+        frontNsfw: {
+            height: math.unit(7.5, "feet"),
+            weight: math.unit(2, "lb"),
+            name: "Front (NSFW)",
+            image: {
+                source: "./media/characters/artemis/front-nsfw.svg",
+                extra: 1192 / 1075,
+                bottom: 0.07
+            }
+        },
+        frontNsfwer: {
+            height: math.unit(7.5, "feet"),
+            weight: math.unit(2, "lb"),
+            name: "Front (NSFW-er)",
+            image: {
+                source: "./media/characters/artemis/front-nsfwer.svg",
+                extra: 1192 / 1075,
+                bottom: 0.07
+            }
+        },
+        side: {
+            height: math.unit(7.5, "feet"),
+            weight: math.unit(2, "lb"),
+            name: "Side",
+            image: {
+                source: "./media/characters/artemis/side.svg",
+                extra: 1192 / 1075,
+                bottom: 0.07
+            }
+        },
+        sideNsfw: {
+            height: math.unit(7.5, "feet"),
+            weight: math.unit(2, "lb"),
+            name: "Side (NSFW)",
+            image: {
+                source: "./media/characters/artemis/side-nsfw.svg",
+                extra: 1192 / 1075,
+                bottom: 0.07
+            }
+        },
+        sideNsfwer: {
+            height: math.unit(7.5, "feet"),
+            weight: math.unit(2, "lb"),
+            name: "Side (NSFW-er)",
+            image: {
+                source: "./media/characters/artemis/side-nsfwer.svg",
+                extra: 1192 / 1075,
+                bottom: 0.07
+            }
+        },
+        maw: {
+            height: math.unit(1.1, "feet"),
+            name: "Maw",
+            image: {
+                source: "./media/characters/artemis/maw.svg"
+            }
+        },
+        stomach: {
+            height: math.unit(0.95, "feet"),
+            name: "Stomach",
+            image: {
+                source: "./media/characters/artemis/stomach.svg"
+            }
+        },
+        dickCanine: {
+            height: math.unit(1, "feet"),
+            name: "Dick (Canine)",
+            image: {
+                source: "./media/characters/artemis/dick-canine.svg"
+            }
+        },
+        dickEquine: {
+            height: math.unit(0.85, "feet"),
+            name: "Dick (Equine)",
+            image: {
+                source: "./media/characters/artemis/dick-equine.svg"
+            }
+        },
+        dickExotic: {
+            height: math.unit(0.85, "feet"),
+            name: "Dick (Exotic)",
+            image: {
+                source: "./media/characters/artemis/dick-exotic.svg"
+            }
+        },
     },
     [
         {
