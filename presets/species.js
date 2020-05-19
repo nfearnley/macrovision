@@ -179,7 +179,7 @@ speciesMakers["Sel'Var"] = () => makeCharacter(
         },
         slitinternals: {
             height: math.unit(1.07, "feet"),
-            name: "Slit-internals",
+            name: "Slit (Internals)",
             image: {
                 source: "./media/species/sel'var/slit-internals.svg"
             }

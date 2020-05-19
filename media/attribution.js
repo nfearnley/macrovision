@@ -10588,7 +10588,7 @@ const attributionData = {
                 { name: "male.svg", source: "https://www.furaffinity.net/view/23271890/" },
                 { name: "dick.svg", source: "https://www.furaffinity.net/view/23271890/", nsfw: true },
                 { name: "slit.svg", source: "https://www.furaffinity.net/view/23271890/", nsfw: true },
-                { name: "slit-internal.svg", source: "https://www.furaffinity.net/view/23271890/", nsfw: true },
+                { name: "slit-internals.svg", source: "https://www.furaffinity.net/view/23271890/", nsfw: true },
                 { name: "maw.svg", source: "https://www.furaffinity.net/view/23271890/" },
                 { name: "dewclaw.svg", source: "https://www.furaffinity.net/view/23271890/" },
             ],
