@@ -1266,6 +1266,16 @@ const speciesData = {
       name: "Calico Rat",
       parents: ["rat"]
     },
+    "panda": {
+      name: "Panda",
+      parents: ["mammal"]
+    },
+    "oni": {
+      name: "Oni",
+      parents: ["monster"]
+    },
+    
+    
     
     
     
@@ -25355,6 +25365,77 @@ characterMakers.push(() => makeCharacter(
         },
     ]
 ))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Kiki", species: ["rabbit", "panda"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(1.6, "m"),
+            weight: math.unit(50, "kg"),
+            name: "Front",
+            image: {
+                source: "./media/characters/kiki/front.svg",
+                extra: 4682/3610,
+                bottom: 115/4777
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(1.6, "meters"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Ryoko", species: ["oni"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(50, "m"),
+            weight: math.unit(500, "tonnes"),
+            name: "Front",
+            image: {
+                source: "./media/characters/ryoko/front.svg",
+                extra: 4632/3926,
+                bottom: 193/4823
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(50, "meters"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Elio", species: ["umbra"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(30, "m"),
+            weight: math.unit(22, "tonnes"),
+            name: "Front",
+            image: {
+                source: "./media/characters/elio/front.svg",
+                extra: 4582/3720,
+                bottom: 236/4828
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(30, "meters"),
+            default: true
+        },
+    ]
+))
+
+
 
 
 //characters

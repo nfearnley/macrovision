@@ -10201,6 +10201,42 @@ const attributionData = {
                 "xavierjamesice1"
             ]
         },
+        {
+            prefix: "./media/characters/kiki/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "stonerabbit"
+            ],
+            owners: [
+                "stonerabbit"
+            ]
+        },
+        {
+            prefix: "./media/characters/ryoko/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "stonerabbit"
+            ],
+            owners: [
+                "stonerabbit"
+            ]
+        },
+        {
+            prefix: "./media/characters/elio/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "stonerabbit"
+            ],
+            owners: [
+                "stonerabbit"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
