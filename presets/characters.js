@@ -17702,6 +17702,26 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/desta/front.svg",
+                extra: 767/726,
+                bottom: 11.7/779
+            }
+        },
+        back: {
+            height: math.unit(5 + 2 / 12, "feet"),
+            weight: math.unit(110, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/desta/back.svg",
+                extra: 777/728,
+                bottom: 6/784
+            }
+        },
+        frontAlt: {
+            height: math.unit(5 + 2 / 12, "feet"),
+            weight: math.unit(110, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/desta/front-alt.svg",
                 extra: 1482 / 1417
             }
         },

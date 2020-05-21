@@ -7183,7 +7183,20 @@ const attributionData = {
         {
             prefix: "./media/characters/desta/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/26988779/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35561297/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/35561297/" },
+            ],
+            authors: [
+                "nandix"
+            ],
+            owners: [
+                "thatdratini"
+            ]
+        },
+        {
+            prefix: "./media/characters/desta/",
+            files: [
+                { name: "front-alt.svg", source: "https://www.furaffinity.net/view/26988779/" }
             ],
             authors: [
                 "shizuworks"
@@ -14128,6 +14141,10 @@ const attributionData = {
         "scalyschisms": {
             "name": "ScalySchisms",
             "url": "https://www.furaffinity.net/user/scalyschisms/",
+        },
+        "nandix": {
+            "name": "nandix",
+            "url": "https://www.furaffinity.net/user/nandix/",
         },
     }
 }
