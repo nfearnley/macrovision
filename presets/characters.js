@@ -23936,8 +23936,8 @@ characterMakers.push(() => makeCharacter(
             name: "Female",
             image: {
                 source: "./media/characters/joraxian/female.svg",
-                extra: 2943 / 2831,
-                bottom: 27 / 2972
+                extra: 2912 / 2824,
+                bottom: 36 / 2956
             }
         },
         male: {
@@ -23946,8 +23946,8 @@ characterMakers.push(() => makeCharacter(
             name: "Male",
             image: {
                 source: "./media/characters/joraxian/male.svg",
-                extra: 2835 / 2741,
-                bottom: 27 / 2862
+                extra: 2877 / 2721,
+                bottom: 82 / 2967
             }
         },
     },
