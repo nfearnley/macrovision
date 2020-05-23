@@ -2704,9 +2704,11 @@ function recomputeFilters() {
         document.querySelectorAll("#filter-" + filter.id + " > option").forEach(element => {
             if (filterSets[filter.id].has(element.value) || filter.id == "none") {
                 element.classList.remove("filtered");
+                element.disabled = false;
                 found = true;
             } else {
                 element.classList.add("filtered");
+                element.disabled = true;
             }
         });
 
@@ -2714,8 +2716,10 @@ function recomputeFilters() {
         const filterOption = document.querySelector("#filter-picker > option[value='" + filter.id + "']");
         if (found) {
             filterOption.classList.remove("filtered");
+            filterOption.disabled = false;
         } else {
             filterOption.classList.add("filtered");
+            filterOption.disabled = true;
         }
     });
 
