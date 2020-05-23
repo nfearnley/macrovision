@@ -11359,7 +11359,7 @@ characterMakers.push(() => makeCharacter(
         },
         {
             name: "Beyond Godly",
-            height: math.unit(10000000, "Ym")
+            height: math.unit(25, "multiverses")
         },
     ]
 ))
