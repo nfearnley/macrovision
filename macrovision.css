@@ -633,7 +633,7 @@ option.filtered {
 
 .scroll-button {
     position: absolute;
-    height: 25%;
+    height: 20%;
     width: 50px;
     font-size: 40px;
     background: #ffffff33;
@@ -664,27 +664,37 @@ option.filtered {
 }
 #scroll-left {
     left: 0%;
-    top: 25%;
+    top: 20%;
 }
 
 #scroll-right {
     right: 0%;
-    top: 25%;
+    top: 20%;
+}
+
+#scroll-up {
+    left: 0%;
+    top: 40%;
+}
+
+#scroll-down {
+    right: 0%;
+    top: 40%;
 }
 
 #shrink {
     left: 0%;
-    top: 50%;
+    top: 60%;
 }
 
 #grow {
     right: 0%;
-    top: 50%;
+    top: 60%;
 }
 
 #fit {
     right: 0%;
-    top: 75%;
+    top: 80%;
 }
 
 #toggle-menu {

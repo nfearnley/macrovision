@@ -193,6 +193,8 @@ const unitChoices = {
 }
 const config = {
     height: math.unit(1500, "meters"),
+    x: 0,
+    y: 0,
     minLineSize: 100,
     maxLineSize: 150,
     autoFit: false,
@@ -243,8 +245,8 @@ function pos2pix(coords) {
     const worldWidth = config.height.toNumber("meters") / canvasHeight * canvasWidth;
     const worldHeight = config.height.toNumber("meters");
 
-    const x = (coords.x / worldWidth + 0.5) * canvasWidth + 50;
-    const y = (1 - coords.y / worldHeight) * canvasHeight;
+    const x = ((coords.x - config.x) / worldWidth + 0.5) * canvasWidth + 50;
+    const y = (1 - (coords.y - config.y) / worldHeight) * canvasHeight;
 
     return { x: x, y: y };
 }
@@ -253,8 +255,8 @@ function pix2pos(coords) {
     const worldWidth = config.height.toNumber("meters") / canvasHeight * canvasWidth;
     const worldHeight = config.height.toNumber("meters");
 
-    const x = (((coords.x - 50) / canvasWidth) - 0.5) * worldWidth;
-    const y = (1 - (coords.y / canvasHeight)) * worldHeight;
+    const x = (((coords.x - 50) / canvasWidth) - 0.5) * worldWidth + config.x;
+    const y = (1 - (coords.y / canvasHeight)) * worldHeight + config.y;
 
     return { x: x, y: y };
 }
@@ -332,7 +334,7 @@ function drawScale(ifDirty = false) {
         return;
     function drawTicks(/** @type {CanvasRenderingContext2D} */ ctx, pixelsPer, heightPer) {
         let total = heightPer.clone();
-        total.value = 0;
+        total.value = math.unit(config.y, "meters").toNumber(config.unit);
         for (let y = ctx.canvas.clientHeight - 50; y >= 50; y -= pixelsPer) {
             drawTick(ctx, 50, y, total);
             total = math.add(total, heightPer);
@@ -1659,10 +1661,13 @@ function setHelpDate() {
     }
 }
 
-function doScroll() {
-    document.querySelectorAll(".entity-box").forEach(element => {
-        element.dataset.x = parseFloat(element.dataset.x) + scrollDirection / 180;
-    });
+function doYScroll() {
+    config.y += scrollDirection / 180;
+    updateSizes();
+    scrollDirection *= 1.05;
+}
+function doXScroll() {
+    config.x += scrollDirection / 180;
     updateSizes();
     scrollDirection *= 1.05;
 }
@@ -2017,28 +2022,57 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#scroll-left").addEventListener("mousedown", e => {
         scrollDirection = 1;
         clearInterval(scrollHandle);
-        scrollHandle = setInterval(doScroll, 1000 / 20);
+        scrollHandle = setInterval(doXScroll, 1000 / 20);
         e.stopPropagation();
     });
 
     document.querySelector("#scroll-right").addEventListener("mousedown", e => {
         scrollDirection = -1;
         clearInterval(scrollHandle);
-        scrollHandle = setInterval(doScroll, 1000 / 20);
+        scrollHandle = setInterval(doXScroll, 1000 / 20);
         e.stopPropagation();
     });
 
     document.querySelector("#scroll-left").addEventListener("touchstart", e => {
         scrollDirection = 1;
         clearInterval(scrollHandle);
-        scrollHandle = setInterval(doScroll, 1000 / 20);
+        scrollHandle = setInterval(doXScroll, 1000 / 20);
         e.stopPropagation();
     });
 
     document.querySelector("#scroll-right").addEventListener("touchstart", e => {
         scrollDirection = -1;
         clearInterval(scrollHandle);
-        scrollHandle = setInterval(doScroll, 1000 / 20);
+        scrollHandle = setInterval(doXScroll, 1000 / 20);
+        e.stopPropagation();
+    });
+
+
+    document.querySelector("#scroll-up").addEventListener("mousedown", e => {
+        scrollDirection = 1;
+        clearInterval(scrollHandle);
+        scrollHandle = setInterval(doYScroll, 1000 / 20);
+        e.stopPropagation();
+    });
+
+    document.querySelector("#scroll-down").addEventListener("mousedown", e => {
+        scrollDirection = -1;
+        clearInterval(scrollHandle);
+        scrollHandle = setInterval(doYScroll, 1000 / 20);
+        e.stopPropagation();
+    });
+
+    document.querySelector("#scroll-up").addEventListener("touchstart", e => {
+        scrollDirection = 1;
+        clearInterval(scrollHandle);
+        scrollHandle = setInterval(doYScroll, 1000 / 20);
+        e.stopPropagation();
+    });
+
+    document.querySelector("#scroll-down").addEventListener("touchstart", e => {
+        scrollDirection = -1;
+        clearInterval(scrollHandle);
+        scrollHandle = setInterval(doYScroll, 1000 / 20);
         e.stopPropagation();
     });
 
@@ -2899,7 +2933,9 @@ function exportScene() {
     const unit = document.querySelector("#options-height-unit").value;
     results.world = {
         height: config.height.toNumber(unit),
-        unit: unit
+        unit: unit,
+        x: config.x,
+        y: config.y
     }
 
     results.version = migrationDefs.length;
@@ -2969,7 +3005,16 @@ function findEntity(name) {
 }
 
 const migrationDefs = [
+    /*
+    Migration: 0 -> 1
+    
+    Adds x and y coordinates for the camera
+    */
 
+    data => {
+        data.world.x = 0;
+        data.world.y = 0;
+    }
 ]
     
 
@@ -2979,7 +3024,9 @@ function migrateScene(data) {
         console.trace()
         data.version = 0;
     } else if (data.version < migrationDefs.length) {
-        migrateScene(migrationDefs[data.version](data));
+        migrationDefs[data.version](data);
+        data.version += 1;
+        migrateScene(data);
     }
 }
 
@@ -2995,6 +3042,9 @@ function importScene(data) {
     });
 
     config.height = math.unit(data.world.height, data.world.unit);
+    config.x = data.world.x;
+    config.y = data.world.y;
+
     document.querySelector("#options-height-unit").value = data.world.unit;
 
     if (data.canvasWidth) {
