@@ -602,6 +602,11 @@ function hoveringInDeleteArea(e) {
 }
 
 function clickUp(e) {
+
+    if (e.which != 1) {
+        return;
+    }
+
     clearTimeout(clickTimeout);
 
     if (clicked) {
@@ -1205,14 +1210,16 @@ function displayEntity(entity, view, x, y, selectEntity = false, refresh = false
     box.dataset.x = x;
     box.dataset.y = y;
 
-    img.addEventListener("mousedown", e => { if (e.which == 1) { testClick(e); e.stopPropagation() } });
+    img.addEventListener("mousedown", e => { if (e.which == 1) { testClick(e); if (clicked) { e.stopPropagation() } } });
     img.addEventListener("touchstart", e => {
         const fakeEvent = {
             target: e.target,
             clientX: e.touches[0].clientX,
-            clientY: e.touches[0].clientY
+            clientY: e.touches[0].clientY,
+            which:  1
         };
         testClick(fakeEvent);
+        if (clicked) { e.stopPropagation() }
     });
 
     const heightBar = document.createElement("div");
@@ -1967,11 +1974,25 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    document.querySelector("#world").addEventListener("touchstart", e => {
+        panning = true;
+        panOffsetX = e.touches[0].clientX;
+        panOffsetY = e.touches[0].clientY;
+        e.preventDefault();
+    });
+
+    document.querySelector("#world").addEventListener("touchend", e => {
+        panning = false;
+    });
+
     document.querySelector("body").appendChild(testCtx.canvas);
 
     updateSizes();
 
     world.addEventListener("mousedown", e => deselect(e));
+    world.addEventListener("touchstart", e => deselect({
+        which: 1,
+    }));
     document.querySelector("#entities").addEventListener("mousedown", deselect);
     document.querySelector("#display").addEventListener("mousedown", deselect);
     document.addEventListener("mouseup", e => clickUp(e));
@@ -1979,7 +2000,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const fakeEvent = {
             target: e.target,
             clientX: e.changedTouches[0].clientX,
-            clientY: e.changedTouches[0].clientY
+            clientY: e.changedTouches[0].clientY,
+            which: 1
         };
         clickUp(fakeEvent);
     });
@@ -2060,14 +2082,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.querySelector("#scroll-left").addEventListener("touchstart", e => {
-        scrollDirection = 1;
+        scrollDirection = -1;
         clearInterval(scrollHandle);
         scrollHandle = setInterval(doXScroll, 1000 / 20);
         e.stopPropagation();
     });
 
     document.querySelector("#scroll-right").addEventListener("touchstart", e => {
-        scrollDirection = -1;
+        scrollDirection = 1;
         clearInterval(scrollHandle);
         scrollHandle = setInterval(doXScroll, 1000 / 20);
         e.stopPropagation();
@@ -2805,14 +2827,13 @@ document.addEventListener("mousemove", (e) => {
             document.querySelector("#menubar").classList.remove("hover-delete");
         }
     }
-    console.log(panning)
     if (panning && panReady) {
         
         const worldWidth = config.height.toNumber("meters") / canvasHeight * canvasWidth;
         const worldHeight = config.height.toNumber("meters");
 
-        config.x += (e.clientX - panOffsetX) / canvasWidth * worldWidth;
-        config.y -= (e.clientY - panOffsetY) / canvasHeight * worldHeight;
+        config.x -= (e.clientX - panOffsetX) / canvasWidth * worldWidth;
+        config.y += (e.clientY - panOffsetY) / canvasHeight * worldHeight;
         panOffsetX = e.clientX;
         panOffsetY = e.clientY;
         console.log(config.x, config.y)
@@ -2840,6 +2861,20 @@ document.addEventListener("touchmove", (e) => {
         } else {
             document.querySelector("#menubar").classList.remove("hover-delete");
         }
+    }
+    if (panning && panReady) {
+        
+        const worldWidth = config.height.toNumber("meters") / canvasHeight * canvasWidth;
+        const worldHeight = config.height.toNumber("meters");
+
+        config.x -= (e.touches[0].clientX - panOffsetX) / canvasWidth * worldWidth;
+        config.y += (e.touches[0].clientY - panOffsetY) / canvasHeight * worldHeight;
+        panOffsetX = e.touches[0].clientX;
+        panOffsetY = e.touches[0].clientY;
+        console.log(config.x, config.y)
+        updateSizes();
+        panReady = false;
+        setTimeout(() => panReady=true, 50);
     }
 }, { passive: false });
 
