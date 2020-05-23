@@ -202,8 +202,7 @@ const config = {
     y: 0,
     minLineSize: 100,
     maxLineSize: 150,
-    autoFit: false,
-    autoFitMode: "max"
+    autoFit: false
 }
 
 const availableEntities = {
@@ -1265,12 +1264,10 @@ function displayEntity(entity, view, x, y, selectEntity = false, refresh = false
 
     if (refresh && config.autoFitAdd) {
         const x = parseFloat(selected.dataset.x);
+        const y = parseFloat(selected.dataset.y);
 
-        Object.keys(entities).forEach(id => {
-            const element = document.querySelector("#entity-" + id);
-            const newX = parseFloat(element.dataset.x) - x + 0.5;
-            element.dataset.x = newX;
-        });
+        config.x = x;
+        config.y = y;
 
         const entity = entities[selected.dataset.key];
         const height = math.multiply(entity.views[entity.view].height, 1.1);
@@ -2190,12 +2187,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector("#fit").addEventListener("click", e => {
         const x = parseFloat(selected.dataset.x);
-
-        Object.keys(entities).forEach(id => {
-            const element = document.querySelector("#entity-" + id);
-            const newX = parseFloat(element.dataset.x) - x + 0.5;
-            element.dataset.x = newX;
-        });
+        const y = parseFloat(selected.dataset.y);
+        config.x = x;
+        config.y = y;
 
         const entity = entities[selected.dataset.key];
         const height = math.multiply(entity.views[entity.view].height, 1.1);
@@ -2211,6 +2205,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.querySelector("#options-world-fit").addEventListener("click", () => fitWorld(true));
+
+    document.querySelector("#options-reset-pos-x").addEventListener("click", () => { config.x = 0; updateSizes(); });
+    document.querySelector("#options-reset-pos-y").addEventListener("click", () => { config.y = 0; updateSizes(); });
 
     document.addEventListener("keydown", e => {
         if (e.key == "Delete") {
@@ -2845,29 +2842,17 @@ function checkFitWorld() {
     return false;
 }
 
-const fitModes = {
-    "max": {
-        start: 0,
-        binop: Math.max,
-        final: (total, count) => total
-    },
-    "arithmetic mean": {
-        start: 0,
-        binop: math.add,
-        final: (total, count) => total / count
-    },
-    "geometric mean": {
-        start: 1,
-        binop: math.multiply,
-        final: (total, count) => math.pow(total, 1 / count)
-    }
-}
-
 function fitWorld(manual = false, factor = 1.1) {
-    const fitMode = fitModes[config.autoFitMode]
-    let max = fitMode.start
+    let minX = Infinity;
+    let maxX = -Infinity;
+    let minY = Infinity;
+    let maxY = -Infinity;
 
     let count = 0;
+
+    const worldWidth = config.height.toNumber("meters") / canvasHeight * canvasWidth;
+    const worldHeight = config.height.toNumber("meters");
+
 
     Object.entries(entities).forEach(([key, entity]) => {
         const view = entity.view;
@@ -2875,19 +2860,52 @@ function fitWorld(manual = false, factor = 1.1) {
         let extra = entity.views[view].image.extra;
         extra = extra === undefined ? 1 : extra;
 
-        max = fitMode.binop(max, math.multiply(extra, entity.views[view].height.toNumber("meter")));
+        const image = document.querySelector("#entity-" + key + " > .entity-image");
+        const x = parseFloat(document.querySelector("#entity-" + key).dataset.x);
+
+        let width = image.width;
+        let height = image.height;
+
+        // only really relevant if the images haven't loaded in yet
+        if (height == 0) {
+            height = 100;
+        }
+        if (width == 0) {
+            width = height;
+        }
+
+        console.log(image)
+        console.log(image.width, image.height)
+
+        const xBottom = x - entity.views[view].height.toNumber("meters") * width / height / 2;
+        const xTop = x + entity.views[view].height.toNumber("meters") * width / height / 2;
+
+        const y = parseFloat(document.querySelector("#entity-" + key).dataset.y);
+        const yBottom = y;
+        const yTop = entity.views[view].height.toNumber("meters") + yBottom;
+
+        minX = Math.min(minX, xBottom);
+        maxX = Math.max(maxX, xTop);
+        minY = Math.min(minY, yBottom);
+        maxY = Math.max(maxY, yTop);
+
         count += 1;
     });
 
-    max = fitMode.final(max, count)
+    let ySize = (maxY - minY) * factor;
+    let xSize = (maxX - minX) * factor;
 
-    max = math.unit(max, "meter")
+    console.log(xSize, ySize, worldWidth, worldHeight)
+    if (xSize / ySize > worldWidth / worldHeight) {
+        ySize *= ((xSize / ySize) / (worldWidth / worldHeight));
+    }
 
-    if (manual)
-        altHeld = true;
-    setWorldHeight(config.height, math.multiply(max, factor));
-    if (manual)
-        altHeld = false;
+    config.x = (maxX + minX) / 2;
+    config.y = minY;
+
+    height = math.unit(ySize, "meter")
+
+    setWorldHeight(config.height, math.multiply(height, factor));
 }
 
 // TODO why am I doing this
