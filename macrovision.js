@@ -9,6 +9,11 @@ let clickTimeout = null;
 let dragOffsetX = null;
 let dragOffsetY = null;
 
+let panning = false;
+let panReady = true;
+let panOffsetX = null;
+let panOffsetY = null;
+
 let shiftHeld = false;
 let altHeld = false;
 
@@ -617,7 +622,10 @@ function clickUp(e) {
 
 }
 
-function deselect() {
+function deselect(e) {
+    if (e !== undefined && e.which == 1) {
+        return;
+    }
     if (selected) {
         selected.classList.remove("selected");
     }
@@ -1195,7 +1203,7 @@ function displayEntity(entity, view, x, y, selectEntity = false, refresh = false
     box.dataset.x = x;
     box.dataset.y = y;
 
-    img.addEventListener("mousedown", e => { testClick(e); e.stopPropagation() });
+    img.addEventListener("mousedown", e => { if (e.which == 1) { testClick(e); e.stopPropagation() } });
     img.addEventListener("touchstart", e => {
         const fakeEvent = {
             target: e.target,
@@ -1941,11 +1949,27 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         checkFitWorld();
     })
+
+    document.querySelector("#world").addEventListener("mousedown", e => {
+        // only middle mouse clicks
+        if (e.which == 2) {
+            panning = true;
+            panOffsetX = e.clientX;
+            panOffsetY = e.clientY;
+        }
+    });
+
+    document.querySelector("#world").addEventListener("mouseup", e => {
+        if (e.which == 2) {
+            panning = false;
+        }
+    });
+
     document.querySelector("body").appendChild(testCtx.canvas);
 
     updateSizes();
 
-    world.addEventListener("mousedown", e => deselect());
+    world.addEventListener("mousedown", e => deselect(e));
     document.querySelector("#entities").addEventListener("mousedown", deselect);
     document.querySelector("#display").addEventListener("mousedown", deselect);
     document.addEventListener("mouseup", e => clickUp(e));
@@ -2772,6 +2796,21 @@ document.addEventListener("mousemove", (e) => {
         } else {
             document.querySelector("#menubar").classList.remove("hover-delete");
         }
+    }
+    console.log(panning)
+    if (panning && panReady) {
+        
+        const worldWidth = config.height.toNumber("meters") / canvasHeight * canvasWidth;
+        const worldHeight = config.height.toNumber("meters");
+
+        config.x += (e.clientX - panOffsetX) / canvasWidth * worldWidth;
+        config.y -= (e.clientY - panOffsetY) / canvasHeight * worldHeight;
+        panOffsetX = e.clientX;
+        panOffsetY = e.clientY;
+        console.log(config.x, config.y)
+        updateSizes();
+        panReady = false;
+        setTimeout(() => panReady=true, 50);
     }
 });
 
