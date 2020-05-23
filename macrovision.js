@@ -305,6 +305,11 @@ function updateEntityElement(entity, element) {
 }
 
 function updateSizes(dirtyOnly = false) {
+
+    if (config.lockYAxis) {
+        config.y = 0;
+    }
+
     drawScale(dirtyOnly);
 
     let ordered = Object.entries(entities);
@@ -1442,6 +1447,27 @@ function toggleBodyClass(cls, setting) {
 }
 
 const settingsData = {
+    "lock-y-axis": {
+        name: "Lock Y-Axis",
+        desc: "Keep the camera at ground-level",
+        type: "toggle",
+        default: true,
+        get value() {
+            return config.lockYAxis;
+        },
+        set value(param) {
+            config.lockYAxis = param;
+            if (param) {
+                config.y = 0;
+                updateSizes();
+                document.querySelector("#scroll-up").disabled = true;
+                document.querySelector("#scroll-down").disabled = true;
+            } else {
+                document.querySelector("#scroll-up").disabled = false;
+                document.querySelector("#scroll-down").disabled = false;
+            }
+        }
+    },
     "auto-scale": {
         name: "Auto-Size World",
         desc: "Constantly zoom to fit the largest entity",
