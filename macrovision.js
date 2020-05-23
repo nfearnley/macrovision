@@ -1670,12 +1670,14 @@ function setHelpDate() {
 }
 
 function doYScroll() {
-    config.y += scrollDirection / 180;
+    const worldHeight = config.height.toNumber("meters");
+    config.y += scrollDirection * worldHeight / 180;
     updateSizes();
     scrollDirection *= 1.05;
 }
 function doXScroll() {
-    config.x += scrollDirection / 180;
+    const worldWidth = config.height.toNumber("meters") / canvasHeight * canvasWidth;
+    config.x += scrollDirection * worldWidth / 180 ;
     updateSizes();
     scrollDirection *= 1.05;
 }
