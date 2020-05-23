@@ -231,7 +231,12 @@ function snapRel(coords) {
 }
 
 function adjustAbs(coords, oldHeight, newHeight) {
-    return coords;
+    const ratio = math.divide(newHeight, oldHeight);
+
+    const x = coords.x * ratio;
+    const y = coords.y * ratio;
+
+    return { x: x, y: y};
 }
 
 function pos2pix(coords) {
@@ -2829,7 +2834,7 @@ function setWorldHeight(oldHeight, newHeight) {
         const element = document.querySelector("#entity-" + key);
         let newPosition;
 
-        if (!altHeld) {
+        if (altHeld) {
             newPosition = adjustAbs({ x: element.dataset.x, y: element.dataset.y }, oldHeight, config.height);
         } else {
             newPosition = { x: element.dataset.x, y: element.dataset.y };
