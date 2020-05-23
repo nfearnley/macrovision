@@ -2874,6 +2874,7 @@ function deleteScene(name = "default") {
         console.error(err);
     }
 }
+
 function exportScene() {
     const results = {};
 
@@ -2896,7 +2897,7 @@ function exportScene() {
         unit: unit
     }
 
-    results.canvasWidth = canvasWidth;
+    results.version = migrationDefs.length;
 
     return results;
 }
@@ -2962,8 +2963,25 @@ function findEntity(name) {
     return availableEntitiesByName[name];
 }
 
+const migrationDefs = [
+
+]
+    
+
+function migrateScene(data) {
+    if (data.version === undefined) {
+        alert("This save was created before save versions were tracked. The scene may import incorrectly.");
+        console.trace()
+        data.version = 0;
+    } else if (data.version < migrationDefs.length) {
+        migrateScene(migrationDefs[data.version](data));
+    }
+}
+
 function importScene(data) {
     removeAllEntities();
+
+    migrateScene(data);
 
     data.entities.forEach(entityInfo => {
         const entity = findEntity(entityInfo.name).constructor();

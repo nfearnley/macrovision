@@ -1,37 +1,7 @@
 const scenes = {};
 
 scenes["Default"] = () => {
-    importScene({ "entities": [{ "name": "Fen", "scale": 1, "view": "back", "x": "0.5152113970588236", "y": "1" }], "world": { "height": 2.9053707516337908, "unit": "meters" } });
-    fitWorld(true);
-}
-scenes["Demo"] = () => {
-    importScene({"entities":[{"name":"Fen","scale":44.58712323880864,"view":"back","x":"0.3983191636029412","y":"1"},{"name":"Cars","scale":1,"view":"Toyota Prius C (Side)","x":"0.255755974264706","y":"1"},{"name":"Aircraft","scale":1,"view":"Cessena 172 (Side)","x":"0.2915096507352941","y":"0.23103070175438598"},{"name":"Buses","scale":1,"view":"City Bus (Front)","x":"0.2189338235294118","y":"1"},{"name":"Two-Story Home","scale":1,"view":"building","x":"0.6674977022058823","y":"1"},{"name":"Statue of Liberty","scale":1,"view":"building","x":"0.8289636948529412","y":"1"},{"name":"Street Lamps","scale":1,"view":"freeway","x":"0.18566176470588233","y":"1"},{"name":"Human","scale":1,"view":"man1","x":"0.5784696691176471","y":"1"},{"name":"Human","scale":1,"view":"woman1","x":"0.4","y":"1"},{"name":"Bus Stop","scale":1,"view":"building","x":"0.19779411764705887","y":"1"}],"world":{"height":110.00000000000011,"unit":"meters"},"canvasWidth":1360})
-    fitWorld(true);
-}
-
-scenes["Military"] = () => {
-    removeAllEntities();
-
-    let entity = availableEntitiesByName["Asana (Mech)"].constructor();
-    displayEntity(entity, entity.defaultView, 0, 1);
-
-    entity = availableEntitiesByName["Napalm"].constructor();
-    displayEntity(entity, entity.defaultView, 0, 1);
-
-    entity = availableEntitiesByName["Chez"].constructor();
-    displayEntity(entity, entity.defaultView, 0, 1);
-
-    entity = availableEntitiesByName["Leopard 2 Rev. 1"].constructor();
-    displayEntity(entity, entity.defaultView, 0, 1);
-
-    entity = availableEntitiesByName["Asana"].constructor();
-    displayEntity(entity, entity.defaultView, 0, 1);
-
-    entity = availableEntitiesByName["Ashtrek"].constructor();
-    entity.views[entity.view].height = entity.sizes[0].height;
-    displayEntity(entity, entity.defaultView, 0, 1);
-
-    arrangeEntities(getSortedEntities());
+    importScene({ "entities": [{ "name": "Fen", "scale": 1, "view": "back", "x": "0", "y": "0" }], "world": { "height": 2.9053707516337908, "unit": "meters" }, "version": 0 });
     fitWorld(true);
 }
 
