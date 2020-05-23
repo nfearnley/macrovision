@@ -14,7 +14,7 @@ function makeSlice(min, max) {
 
         characters.forEach(character => {
             const entity = character.constructor();
-            displayEntity(entity, entity.view, 0, 1);
+            displayEntity(entity, entity.view, 0, 0);
         });
 
         arrangeEntities(getSortedEntities());
