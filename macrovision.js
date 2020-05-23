@@ -623,7 +623,7 @@ function clickUp(e) {
 }
 
 function deselect(e) {
-    if (e !== undefined && e.which == 1) {
+    if (e !== undefined && e.which != 1) {
         return;
     }
     if (selected) {
