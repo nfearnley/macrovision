@@ -1930,9 +1930,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 updateViewOptions(entity, entity.view);
                 updateSizes(true);
             } else {
-                document.querySelectorAll(".entity-box").forEach(element => {
-                    element.dataset.x = parseFloat(element.dataset.x) + (e.deltaY < 0 ? 0.1 : -0.1);
-                });
+                const worldWidth = config.height.toNumber("meters") / canvasHeight * canvasWidth;
+                config.x += (e.deltaY > 0 ? 1 : -1) * worldWidth / 20 ;
+                updateSizes();
                 updateSizes();
             }
 
