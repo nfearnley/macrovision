@@ -221,8 +221,8 @@ function constrainRel(coords) {
         return coords;
     }
     return {
-        x: Math.min(Math.max(coords.x, -worldWidth / 2), worldWidth / 2),
-        y: Math.min(Math.max(coords.y, 0), worldHeight)
+        x: Math.min(Math.max(coords.x, -worldWidth / 2 + config.x), worldWidth / 2 + config.x),
+        y: Math.min(Math.max(coords.y, config.y), worldHeight + config.y)
     }
 }
 function snapRel(coords) {
