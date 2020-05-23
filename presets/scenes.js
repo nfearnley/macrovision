@@ -116,7 +116,6 @@ function makeOwnerScene(owners) {
         });
 
         arrangeEntities(getSortedEntities());
-        fitWorld(true);
     }
 }
 
@@ -149,37 +148,4 @@ function makeOwnerSceneViews(owners) {
         arrangeEntities(getSortedEntities());
         fitWorld(true);
     }
-}
-
-scenes["Kurri"] = makeOwnerScene(["kurrikage"]);
-
-scenes["Neopuc"] = () => {
-    availableEntities["characters"].filter(x => {
-        const entity = x.constructor();
-        const owners = ownersOf(entity.views[entity.view].image.source);
-        if (owners)
-            return owners.indexOf("neopuc") != -1;
-        else
-            return false;
-    }).map(maker => {
-        return maker.constructor();
-    }).sort((e1, e2) => {
-        return e1.sizes[e1.sizes.length - 1].height.toNumber() - e2.sizes[e2.sizes.length - 1].height.toNumber()
-    }).reduce((size, entity) => {
-        entity.views[entity.view].height = math.unit(100 * Math.sqrt(size) * (entity.name == "Ilisha Devya" ? 2 : 1), "meters");
-        displayEntity(entity, entity.view, 0, 1);
-        return size + 1;
-    }, 1)
-
-    arrangeEntities(getSortedEntities());
-    fitWorld(true);
-}
-
-scenes["Fidverse"] = () => {
-    makeOwnerSceneViews(["fidchell", "cam"])();
-    document.querySelector("#entity-" + (entityIndex - 1)).dataset.x = 0.5;
-    document.querySelector("#entity-" + (entityIndex - 2)).dataset.x = 0.25;
-    document.querySelector("#entity-" + (entityIndex - 3)).dataset.x = 0.75;
-    updateSizes();
-    fitWorld(true, 1);
 }

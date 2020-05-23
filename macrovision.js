@@ -1031,11 +1031,14 @@ function testClick(event) {
 }
 
 function arrangeEntities(order) {
-    let x = 0.1;
-
+    fitWorld();
+    const worldWidth = config.height.toNumber("meters") / canvasHeight * canvasWidth;
+    let x = -worldWidth * 0.45 + config.x;
+    console.log(x);
     order.forEach(key => {
         document.querySelector("#entity-" + key).dataset.x = x;
-        x += 0.8 / (order.length - 1);
+        document.querySelector("#entity-" + key).dataset.y = config.y;
+        x += worldWidth * 0.9 / (order.length - 1);
     });
 
     updateSizes();
@@ -2622,11 +2625,13 @@ function prepareEntities() {
                 }
             }
 
+            const worldWidth = config.height.toNumber("meters") / canvasHeight * canvasWidth;
+
             makers.map(element => {
                 const category = document.querySelector("#category-picker").value;
                 const maker = availableEntities[category][element.value];
                 const entity = maker.constructor()
-                displayEntity(entity, entity.view, 0.1 + 0.8 * index / (count - 1), 1);
+                displayEntity(entity, entity.view, -worldWidth * 0.45 + config.x + worldWidth * 0.9 * index / (count - 1), config.y);
                 index += 1;
             });
             updateSizes(true);
