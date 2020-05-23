@@ -212,12 +212,15 @@ const entities = {
 }
 
 function constrainRel(coords) {
+    const worldWidth = config.height.toNumber("meters") / canvasHeight * canvasWidth;
+    const worldHeight = config.height.toNumber("meters");
+
     if (altHeld) {
         return coords;
     }
     return {
-        x: Math.min(Math.max(coords.x, 0), 1),
-        y: Math.min(Math.max(coords.y, 0), 1)
+        x: Math.min(Math.max(coords.x, -worldWidth / 2), worldWidth / 2),
+        y: Math.min(Math.max(coords.y, 0), worldHeight)
     }
 }
 function snapRel(coords) {
@@ -228,20 +231,31 @@ function snapRel(coords) {
 }
 
 function adjustAbs(coords, oldHeight, newHeight) {
-    const ratio = math.divide(oldHeight, newHeight);
-    return { x: 0.5 + (coords.x - 0.5) * math.divide(oldHeight, newHeight), y: 1 + (coords.y - 1) * math.divide(oldHeight, newHeight) };
+    return coords;
 }
 
-function rel2abs(coords) {
-    return { x: coords.x * canvasWidth + 50, y: coords.y * canvasHeight };
+function pos2pix(coords) {
+    const worldWidth = config.height.toNumber("meters") / canvasHeight * canvasWidth;
+    const worldHeight = config.height.toNumber("meters");
+
+    const x = (coords.x / worldWidth + 0.5) * canvasWidth + 50;
+    const y = (1 - coords.y / worldHeight) * canvasHeight;
+
+    return { x: x, y: y };
 }
 
-function abs2rel(coords) {
-    return { x: (coords.x - 50) / canvasWidth, y: coords.y / canvasHeight };
+function pix2pos(coords) {
+    const worldWidth = config.height.toNumber("meters") / canvasHeight * canvasWidth;
+    const worldHeight = config.height.toNumber("meters");
+
+    const x = (((coords.x - 50) / canvasWidth) - 0.5) * worldWidth;
+    const y = (1 - (coords.y / canvasHeight)) * worldHeight;
+
+    return { x: x, y: y };
 }
 
 function updateEntityElement(entity, element) {
-    const position = rel2abs({ x: element.dataset.x, y: element.dataset.y });
+    const position = pos2pix({ x: element.dataset.x, y: element.dataset.y });
     const view = entity.view;
 
     element.style.left = position.x + "px";
@@ -2246,7 +2260,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (e.dataTransfer.files.length > 0) {
             let entX = document.querySelector("#entities").getBoundingClientRect().x;
             let entY = document.querySelector("#entities").getBoundingClientRect().y;
-            let coords = abs2rel({x: e.clientX-entX, y: e.clientY-entY});
+            let coords = pix2pos({x: e.clientX-entX, y: e.clientY-entY});
             customEntityFromFile(e.dataTransfer.files[0], coords.x, coords.y);
         }
     })
@@ -2709,7 +2723,7 @@ function clearFilter() {
 
 document.addEventListener("mousemove", (e) => {
     if (clicked) {
-        const position = snapRel(abs2rel({ x: e.clientX - dragOffsetX, y: e.clientY - dragOffsetY }));
+        const position = snapRel(pix2pos({ x: e.clientX - dragOffsetX, y: e.clientY - dragOffsetY }));
         clicked.dataset.x = position.x;
         clicked.dataset.y = position.y;
         updateEntityElement(entities[clicked.dataset.key], clicked);
@@ -2728,7 +2742,7 @@ document.addEventListener("touchmove", (e) => {
         let x = e.touches[0].clientX;
         let y = e.touches[0].clientY;
 
-        const position = snapRel(abs2rel({ x: x - dragOffsetX, y: y - dragOffsetY }));
+        const position = snapRel(pix2pos({ x: x - dragOffsetX, y: y - dragOffsetY }));
         clicked.dataset.x = position.x;
         clicked.dataset.y = position.y;
         updateEntityElement(entities[clicked.dataset.key], clicked);
@@ -2980,7 +2994,7 @@ function renderToCanvas() {
         let x = parseFloat(element.dataset.x);
         let y = parseFloat(element.dataset.y);
 
-        let coords = rel2abs({x: x, y: y});
+        let coords = pos2pix({x: x, y: y});
 
         let offset = img.style.getPropertyValue("--offset");
         offset = parseFloat(offset.substring(0, offset.length-1))
