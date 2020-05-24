@@ -1994,12 +1994,19 @@ document.addEventListener("DOMContentLoaded", () => {
             panning = true;
             panOffsetX = e.clientX;
             panOffsetY = e.clientY;
+
+            Object.keys(entities).forEach(key => {
+                document.querySelector("#entity-" + key).classList.add("no-transition");
+            });
         }
     });
 
     document.querySelector("#world").addEventListener("mouseup", e => {
         if (e.which == 2) {
             panning = false;
+            Object.keys(entities).forEach(key => {
+                document.querySelector("#entity-" + key).classList.remove("no-transition");
+            });
         }
     });
 
@@ -2008,10 +2015,16 @@ document.addEventListener("DOMContentLoaded", () => {
         panOffsetX = e.touches[0].clientX;
         panOffsetY = e.touches[0].clientY;
         e.preventDefault();
+        Object.keys(entities).forEach(key => {
+            document.querySelector("#entity-" + key).classList.add("no-transition");
+        });
     });
 
     document.querySelector("#world").addEventListener("touchend", e => {
         panning = false;
+        Object.keys(entities).forEach(key => {
+            document.querySelector("#entity-" + key).classList.remove("no-transition");
+        });
     });
 
     document.querySelector("body").appendChild(testCtx.canvas);
@@ -2867,7 +2880,7 @@ document.addEventListener("mousemove", (e) => {
         panOffsetY = e.clientY;
         updateSizes();
         panReady = false;
-        setTimeout(() => panReady=true, 50);
+        setTimeout(() => panReady=true, 1000/120);
     }
 });
 
