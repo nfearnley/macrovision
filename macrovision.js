@@ -2619,7 +2619,7 @@ function prepareEntities() {
 
         button.addEventListener("click", e => {
             const newEntity = entityList[select.value].constructor()
-            displayEntity(newEntity, newEntity.defaultView, 0.5, 1, true, true);
+            displayEntity(newEntity, newEntity.defaultView, 0, 0, true, true);
         });
 
         const categoryOption = document.createElement("option");
