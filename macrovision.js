@@ -406,6 +406,10 @@ function drawScale(ifDirty = false) {
         pixelsPer /= factor;
     }
 
+    if (heightPer == 0) {
+        console.error("The world size is invalid! Refusing to draw the scale...");
+        return;
+    }
     heightPer = math.unit(heightPer, document.querySelector("#options-height-unit").value);
     
 
@@ -1044,7 +1048,6 @@ function arrangeEntities(order) {
     fitWorld();
     const worldWidth = config.height.toNumber("meters") / canvasHeight * canvasWidth;
     let x = -worldWidth * 0.45 + config.x;
-    console.log(x);
     order.forEach(key => {
         document.querySelector("#entity-" + key).dataset.x = x;
         document.querySelector("#entity-" + key).dataset.y = config.y;
@@ -1726,12 +1729,12 @@ function doSize() {
     if (selected) {
         const entity = entities[selected.dataset.key];
         const oldHeight = entity.views[entity.view].height;
-        entity.views[entity.view].height = math.multiply(oldHeight, 1 + sizeDirection / 20);
+        entity.views[entity.view].height = math.multiply(oldHeight, sizeDirection < 0 ? -1/sizeDirection : sizeDirection);
         entity.dirty = true;
         updateEntityOptions(entity, entity.view);
         updateViewOptions(entity, entity.view);
         updateSizes(true);
-        sizeDirection *= 1.05;
+        sizeDirection *= 1.01;
 
         const ownHeight = entity.views[entity.view].height.toNumber("meters");
         const worldHeight = config.height.toNumber("meters");
@@ -2862,7 +2865,6 @@ document.addEventListener("mousemove", (e) => {
         config.y += (e.clientY - panOffsetY) / canvasHeight * worldHeight;
         panOffsetX = e.clientX;
         panOffsetY = e.clientY;
-        console.log(config.x, config.y)
         updateSizes();
         panReady = false;
         setTimeout(() => panReady=true, 50);
@@ -2897,7 +2899,6 @@ document.addEventListener("touchmove", (e) => {
         config.y += (e.touches[0].clientY - panOffsetY) / canvasHeight * worldHeight;
         panOffsetX = e.touches[0].clientX;
         panOffsetY = e.touches[0].clientY;
-        console.log(config.x, config.y)
         updateSizes();
         panReady = false;
         setTimeout(() => panReady=true, 50);
@@ -2943,10 +2944,6 @@ function fitWorld(manual = false, factor = 1.1) {
         if (width == 0) {
             width = height;
         }
-
-        console.log(image)
-        console.log(image.width, image.height)
-
         const xBottom = x - entity.views[view].height.toNumber("meters") * width / height / 2;
         const xTop = x + entity.views[view].height.toNumber("meters") * width / height / 2;
 
@@ -2965,7 +2962,6 @@ function fitWorld(manual = false, factor = 1.1) {
     let ySize = (maxY - minY) * factor;
     let xSize = (maxX - minX) * factor;
 
-    console.log(xSize, ySize, worldWidth, worldHeight)
     if (xSize / ySize > worldWidth / worldHeight) {
         ySize *= ((xSize / ySize) / (worldWidth / worldHeight));
     }
