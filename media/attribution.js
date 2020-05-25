@@ -10250,6 +10250,19 @@ const attributionData = {
                 "stonerabbit"
             ]
         },
+        {
+            prefix: "./media/characters/azura/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35613710/" },
+                { name: "front-clothed.svg", source: "https://www.furaffinity.net/view/35613710/" },
+            ],
+            authors: [
+                "breakfastzone"
+            ],
+            owners: [
+                "bluefiremarkii"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14145,6 +14158,14 @@ const attributionData = {
         "nandix": {
             "name": "nandix",
             "url": "https://www.furaffinity.net/user/nandix/",
+        },
+        "breakfastzone": {
+            "name": "breakfastzone",
+            "url": "https://www.furaffinity.net/user/breakfastzone",
+        },
+        "bluefiremarkii": {
+            "name": "BluefiremarkII",
+            "url": "https://www.furaffinity.net/user/bluefiremarkii/",
         },
     }
 }

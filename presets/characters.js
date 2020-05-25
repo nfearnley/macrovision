@@ -25455,6 +25455,55 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Azura", species: ["phoenix"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(6 + 3/12, "feet"),
+            weight: math.unit(120, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/azura/front.svg",
+                extra: 1149/1135,
+                bottom: 45/1194
+            }
+        },
+        frontClothed: {
+            height: math.unit(6 + 3/12, "feet"),
+            weight: math.unit(120, "lb"),
+            name: "Front (Clothed)",
+            image: {
+                source: "./media/characters/azura/front-clothed.svg",
+                extra: 1149/1135,
+                bottom: 45/1194
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(6 + 3/12, "feet"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(20 + 6/12, "feet")
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(12, "miles")
+        },
+        {
+            name: "Gigamacro",
+            height: math.unit(10000, "miles")
+        },
+        {
+            name: "Teramacro",
+            height: math.unit(900000, "miles")
+        },
+    ]
+))
+
 
 
 
