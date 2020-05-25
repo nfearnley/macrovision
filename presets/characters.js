@@ -1274,6 +1274,10 @@ const speciesData = {
       name: "Oni",
       parents: ["monster"]
     },
+    "pegasus": {
+      name: "Pegasus",
+      parents: ["horse"]
+    },
     
     
     
@@ -25515,6 +25519,49 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Zeus", species: ["pegasus"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(12, "feet"),
+            weight: math.unit(1, "ton"),
+            capacity: math.unit(660000, "gallons"),
+            name: "Front",
+            image: {
+                source: "./media/characters/zeus/front.svg",
+                extra: 5005/4717,
+                bottom: 363/5388
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(12, "feet")
+        },
+        {
+            name: "Preferred Size",
+            height: math.unit(0.5, "miles"),
+            default: true
+        },
+        {
+            name: "Giga Horse",
+            height: math.unit(300, "miles")
+        },
+        {
+            name: "Riding Planets",
+            height: math.unit(30, "megameters")
+        },
+        {
+            name: "Cosmic Giant",
+            height: math.unit(3, "zettameters")
+        },
+        {
+            name: "Breeding God",
+            height: math.unit(9.92e22, "yottameters")
+        },
+    ]
+))
 
 
 

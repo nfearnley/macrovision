@@ -10264,6 +10264,18 @@ const attributionData = {
                 "bluefiremarkii"
             ]
         },
+        {
+            prefix: "./media/characters/zeus/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34276370/", nsfw: true }
+            ],
+            authors: [
+                "thebigbadwolf01"
+            ],
+            owners: [
+                "fox3087"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14167,6 +14179,14 @@ const attributionData = {
         "bluefiremarkii": {
             "name": "BluefiremarkII",
             "url": "https://www.furaffinity.net/user/bluefiremarkii/",
+        },
+        "fox3087": {
+            "name": "fox3087",
+            "url": "https://www.furaffinity.net/user/fox3087/",
+        },
+        "thebigbadwolf01": {
+            "name": "thebigbadwolf01",
+            "url": "https://www.furaffinity.net/user/thebigbadwolf01",
         },
     }
 }
