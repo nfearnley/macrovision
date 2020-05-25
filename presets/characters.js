@@ -4341,13 +4341,24 @@ characterMakers.push(() => makeCharacter(
 characterMakers.push(() => makeCharacter(
     { name: "Miranda", species: ["dragon"], tags: ["anthro"] },
     {
-        side: {
+        front: {
             height: math.unit(2, "meters"),
             weight: math.unit(120, "kg"),
             name: "Front",
             image: {
                 source: "./media/characters/miranda/front.svg",
-                extra: 10.6 / 10
+                extra: 195/185,
+                bottom: 10.9/206.5
+            }
+        },
+        back: {
+            height: math.unit(2, "meters"),
+            weight: math.unit(120, "kg"),
+            name: "Back",
+            image: {
+                source: "./media/characters/miranda/back.svg",
+                extra: 201/193,
+                bottom: 2.3/203.7
             }
         },
     },

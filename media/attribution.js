@@ -6049,7 +6049,8 @@ const attributionData = {
         {
             prefix: "./media/characters/miranda/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/26193861/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/26193861/", nsfw: true },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/26193861/" },
             ],
             authors: [
                 "deervvitch"
