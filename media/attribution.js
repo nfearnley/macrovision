@@ -10315,6 +10315,26 @@ const attributionData = {
                 "balina"
             ]
         },
+        {
+            prefix: "./media/characters/balina-mahigan/",
+            files: [
+                { name: "arm.svg", source: "https://www.furaffinity.net/view/25540594/", nsfw: "false" },
+                { name: "back-port.svg", source: "https://www.furaffinity.net/view/25540594/", nsfw: "false" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/25540594/", nsfw: "false" },
+                { name: "front.svg", source: "https://www.furaffinity.net/view/25540594/", nsfw: "false" },
+                { name: "hoofpaw.svg", source: "https://www.furaffinity.net/view/25540594/", nsfw: "false" },
+                { name: "left-hand-back.svg", source: "https://www.furaffinity.net/view/25540594/", nsfw: "false" },
+                { name: "left-hand-front.svg", source: "https://www.furaffinity.net/view/25540594/", nsfw: "false" },
+                { name: "right-hand-back.svg", source: "https://www.furaffinity.net/view/25540594/", nsfw: "false" },
+                { name: "right-hand-front.svg", source: "https://www.furaffinity.net/view/25540594/", nsfw: "false" },
+            ],
+            authors: [
+                "amber-aria"
+            ],
+            owners: [
+                "balina"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14238,6 +14258,10 @@ const attributionData = {
         "malificus": {
             "name": "Malificus",
             "url": "https://www.furaffinity.net/user/malificus",
+        },
+        "amber-aria": {
+            "name": "Amber-Aria",
+            "url": "https://www.furaffinity.net/user/amber-aria",
         },
     }
 }

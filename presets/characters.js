@@ -25694,6 +25694,88 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Balina Mahigan", species: ["wolf", "cow"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(6 + 4/12, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/balina-mahigan/front.svg",
+                extra: 447/428,
+                bottom: 18/466
+            }
+        },
+        back: {
+            height: math.unit(6 + 4/12, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/balina-mahigan/back.svg",
+                extra: 445/428,
+                bottom: 4.07/448
+            }
+        },
+        arm: {
+            height: math.unit(1.88, "feet"),
+            name: "Arm",
+            image: {
+                source: "./media/characters/balina-mahigan/arm.svg"
+            }
+        },
+        backPort: {
+            height: math.unit(0.685, "feet"),
+            name: "Back Port",
+            image: {
+                source: "./media/characters/balina-mahigan/back-port.svg"
+            }
+        },
+        hoofpaw: {
+            height: math.unit(1.41, "feet"),
+            name: "Hoofpaw",
+            image: {
+                source: "./media/characters/balina-mahigan/hoofpaw.svg"
+            }
+        },
+        leftHandBack: {
+            height: math.unit(0.938, "feet"),
+            name: "Left Hand (Back)",
+            image: {
+                source: "./media/characters/balina-mahigan/left-hand-back.svg"
+            }
+        },
+        leftHandFront: {
+            height: math.unit(0.938, "feet"),
+            name: "Left Hand (Front)",
+            image: {
+                source: "./media/characters/balina-mahigan/left-hand-front.svg"
+            }
+        },
+        rightHandBack: {
+            height: math.unit(0.95, "feet"),
+            name: "Right Hand (Back)",
+            image: {
+                source: "./media/characters/balina-mahigan/right-hand-back.svg"
+            }
+        },
+        rightHandFront: {
+            height: math.unit(0.95, "feet"),
+            name: "Right Hand (Front)",
+            image: {
+                source: "./media/characters/balina-mahigan/right-hand-front.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(6 + 4/12, "feet"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
