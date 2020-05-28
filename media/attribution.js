@@ -10288,6 +10288,18 @@ const attributionData = {
                 "bluefiremarkii"
             ]
         },
+        {
+            prefix: "./media/characters/rekhit/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/14448757/", nsfw: true }
+            ],
+            authors: [
+                "siriusdog"
+            ],
+            owners: [
+                "rekhit"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14195,6 +14207,14 @@ const attributionData = {
         "thebigbadwolf01": {
             "name": "thebigbadwolf01",
             "url": "https://www.furaffinity.net/user/thebigbadwolf01",
+        },
+        "rekhit": {
+            "name": "Rekhit",
+            "url": "https://www.furaffinity.net/user/rekhit/",
+        },
+        "siriusdog": {
+            "name": "siriusdog",
+            "url": "https://www.furaffinity.net/user/siriusdog",
         },
     }
 }

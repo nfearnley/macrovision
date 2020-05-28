@@ -25594,6 +25594,32 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Rekhit", species: ["horse"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(10, "feet"),
+            weight: math.unit(2, "tons"),
+            name: "Front",
+            image: {
+                source: "./media/characters/rekhit/front.svg",
+                extra: 2796/2590,
+                bottom: 225/3022
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(10, "feet"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(500, "feet")
+        },
+    ]
+))
 
 //characters
 
