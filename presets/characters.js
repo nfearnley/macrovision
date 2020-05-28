@@ -25621,6 +25621,79 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Dahlia Verrick" },
+    {
+        front: {
+            height: math.unit(7 + 6.451/12, "feet"),
+            weight: math.unit(200, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/dahlia-verrick/front.svg",
+                extra: 1488/1365,
+                bottom: 6.2/1495
+            }
+        },
+        back: {
+            height: math.unit(7 + 6.451/12, "feet"),
+            weight: math.unit(200, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/dahlia-verrick/back.svg",
+                extra: 1472/1351,
+                bottom: 5.28/1477
+            }
+        },
+        frontBusiness: {
+            height: math.unit(7 + 6.451/12, "feet"),
+            weight: math.unit(200, "lb"),
+            name: "Front (Business)",
+            image: {
+                source: "./media/characters/dahlia-verrick/front-business.svg",
+                extra: 1478/1381,
+                bottom: 5.5/1484
+            }
+        },
+        frontCasual: {
+            height: math.unit(7 + 6.451/12, "feet"),
+            weight: math.unit(200, "lb"),
+            name: "Front (Casual)",
+            image: {
+                source: "./media/characters/dahlia-verrick/front-casual.svg",
+                extra: 1478/1381,
+                bottom: 5.5/1484
+            }
+        },
+    },
+    [
+        {
+            name: "Travel-Sized",
+            height: math.unit(7.45, "inches")
+        },
+        {
+            name: "Normal",
+            height: math.unit(7 + 6.451/12, "feet"),
+            default: true
+        },
+        {
+            name: "Hitting the Town",
+            height: math.unit(37 + 8/12, "feet")
+        },
+        {
+            name: "Stomp in the Suburbs",
+            height: math.unit(964 + 9.728/12, "feet")
+        },
+        {
+            name: "Sit on the City",
+            height: math.unit(61747 + 10.592/12, "feet")
+        },
+        {
+            name: "Glomp the Globe",
+            height: math.unit(252919327 + 4.832/12, "feet")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

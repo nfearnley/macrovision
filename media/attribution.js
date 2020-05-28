@@ -10300,6 +10300,21 @@ const attributionData = {
                 "rekhit"
             ]
         },
+        {
+            prefix: "./media/characters/dahlia-verrick/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33745071/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/33745071/" },
+                { name: "front-business.svg", source: "https://www.furaffinity.net/view/33745071/" },
+                { name: "front-casual.svg", source: "https://www.furaffinity.net/view/33745071/" },
+            ],
+            authors: [
+                "malificus"
+            ],
+            owners: [
+                "balina"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14215,6 +14230,14 @@ const attributionData = {
         "siriusdog": {
             "name": "siriusdog",
             "url": "https://www.furaffinity.net/user/siriusdog",
+        },
+        "balina": {
+            "name": "Balina",
+            "url": "https://www.furaffinity.net/user/balina/",
+        },
+        "malificus": {
+            "name": "Malificus",
+            "url": "https://www.furaffinity.net/user/malificus",
         },
     }
 }
