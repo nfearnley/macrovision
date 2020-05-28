@@ -10335,6 +10335,18 @@ const attributionData = {
                 "balina"
             ]
         },
+        {
+            prefix: "./media/characters/balina-mejeri/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/17341227/" }
+            ],
+            authors: [
+                "limitedvision"
+            ],
+            owners: [
+                "balina"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14262,6 +14274,10 @@ const attributionData = {
         "amber-aria": {
             "name": "Amber-Aria",
             "url": "https://www.furaffinity.net/user/amber-aria",
+        },
+        "limitedvision": {
+            "name": "LimitedVision",
+            "url": "https://www.furaffinity.net/user/limitedvision",
         },
     }
 }

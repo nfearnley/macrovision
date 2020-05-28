@@ -25699,7 +25699,7 @@ characterMakers.push(() => makeCharacter(
     {
         front: {
             height: math.unit(6 + 4/12, "feet"),
-            weight: math.unit(150, "lb"),
+            weight: math.unit(300, "lb"),
             name: "Front",
             image: {
                 source: "./media/characters/balina-mahigan/front.svg",
@@ -25709,7 +25709,7 @@ characterMakers.push(() => makeCharacter(
         },
         back: {
             height: math.unit(6 + 4/12, "feet"),
-            weight: math.unit(150, "lb"),
+            weight: math.unit(300, "lb"),
             name: "Back",
             image: {
                 source: "./media/characters/balina-mahigan/back.svg",
@@ -25771,6 +25771,29 @@ characterMakers.push(() => makeCharacter(
         {
             name: "Normal",
             height: math.unit(6 + 4/12, "feet"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Balina Mejeri" },
+    {
+        front: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(275, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/balina-mejeri/front.svg",
+                extra: 517/488,
+                bottom: 44.2/561
+            }
+        },
+    },
+    [
+        {
+            name: "Business",
+            height: math.unit(155, "feet"),
             default: true
         },
     ]
