@@ -10276,6 +10276,18 @@ const attributionData = {
                 "fox3087"
             ]
         },
+        {
+            prefix: "./media/characters/fang/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/33032560/" }
+            ],
+            authors: [
+                "bluefiremarkii"
+            ],
+            owners: [
+                "bluefiremarkii"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14175,10 +14187,6 @@ const attributionData = {
         "breakfastzone": {
             "name": "breakfastzone",
             "url": "https://www.furaffinity.net/user/breakfastzone",
-        },
-        "bluefiremarkii": {
-            "name": "BluefiremarkII",
-            "url": "https://www.furaffinity.net/user/bluefiremarkii/",
         },
         "fox3087": {
             "name": "fox3087",

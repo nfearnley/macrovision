@@ -25563,6 +25563,36 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Fang", species: ["monster"], tags: ["feral"] },
+    {
+        side: {
+            height: math.unit(9, "feet"),
+            weight: math.unit(1500, "kg"),
+            name: "Side",
+            image: {
+                source: "./media/characters/fang/side.svg",
+                extra: 924/866,
+                bottom: 47.5/972.3
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(9, "feet"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(75 + 6/12, "feet")
+        },
+        {
+            name: "Teramacro",
+            height: math.unit(50000, "miles")
+        },
+    ]
+))
 
 
 //characters
