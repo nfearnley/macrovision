@@ -25968,6 +25968,45 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Epona" },
+    {
+        front: {
+            height: math.unit(7 + 7/12, "feet"),
+            weight: math.unit(225, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/epona/front.svg",
+                extra: 2445/2290,
+                bottom: 251/2696
+            }
+        },
+        back: {
+            height: math.unit(7 + 7/12, "feet"),
+            weight: math.unit(225, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/epona/back.svg",
+                extra: 2546/2408,
+                bottom: 44/2589
+            }
+        },
+        genitals: {
+            height: math.unit(1.5, "feet"),
+            name: "Genitals",
+            image: {
+                source: "./media/characters/epona/genitals.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(7 + 7/12, "feet")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

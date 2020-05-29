@@ -10402,6 +10402,20 @@ const attributionData = {
                 "tala-grovehorn"
             ]
         },
+        {
+            prefix: "./media/characters/epona/",
+            files: [
+                { name: "front.svg", source: " https://www.furaffinity.net/view/29055889", nsfw: true },
+                { name: "back.svg", source: " https://www.furaffinity.net/view/29055889", nsfw: true },
+                { name: "genitals.svg", source: " https://www.furaffinity.net/view/29055889", nsfw: true },
+            ],
+            authors: [
+                "iggi"
+            ],
+            owners: [
+                "tala-grovehorn"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
