@@ -26093,6 +26093,29 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Sabah", species: ["lucario"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(5 + 10/12, "feet"),
+            weight: math.unit(200, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/sabah/front.svg",
+                extra: 849/763,
+                bottom: 33.9/881
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(5 + 10/12, "feet"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

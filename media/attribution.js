@@ -10454,6 +10454,18 @@ const attributionData = {
                 "tala-grovehorn"
             ]
         },
+        {
+            prefix: "./media/characters/sabah/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/14444404/" }
+            ],
+            authors: [
+                "cownugget"
+            ],
+            owners: [
+                "radarn"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
