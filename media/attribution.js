@@ -10359,6 +10359,20 @@ const attributionData = {
                 "balina"
             ]
         },
+        {
+            prefix: "./media/characters/balina-amarini/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/25540497/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/25540497/" },
+                { name: "overdrive.svg", source: "https://www.furaffinity.net/view/25540497/" },
+            ],
+            authors: [
+                "padunk"
+            ],
+            owners: [
+                "balina"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14290,6 +14304,10 @@ const attributionData = {
         "limitedvision": {
             "name": "LimitedVision",
             "url": "https://www.furaffinity.net/user/limitedvision",
+        },
+        "padunk": {
+            "name": "Padunk",
+            "url": "https://www.furaffinity.net/user/padunk",
         },
     }
 }

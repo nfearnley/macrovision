@@ -25834,6 +25834,52 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Balina Amarini", species: ["wolf", "cow"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(6 + 4/12, "feet"),
+            weight: math.unit(325, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/balina-amarini/front.svg",
+                extra: 415/403,
+                bottom: 19/433.4
+            }
+        },
+        back: {
+            height: math.unit(6 + 4/12, "feet"),
+            weight: math.unit(325, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/balina-amarini/back.svg",
+                extra: 415/403,
+                bottom: 13.5/432
+            }
+        },
+        overdrive: {
+            height: math.unit(6 + 4/12, "feet"),
+            weight: math.unit(400, "lb"),
+            name: "Overdrive",
+            image: {
+                source: "./media/characters/balina-amarini/overdrive.svg",
+                extra: 269/259,
+                bottom: 12/282
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(6 + 4/12, "feet")
+        },
+        {
+            name: "Boom",
+            height: math.unit(9 + 10/12, "feet")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
