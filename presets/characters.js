@@ -3215,7 +3215,9 @@ characterMakers.push(() => makeCharacter(
             weight: math.unit(175, "lb"),
             name: "Front",
             image: {
-                source: "./media/characters/mountain/front.svg"
+                source: "./media/characters/mountain/front.svg",
+                extra: 972/955,
+                bottom: 64/1036.6
             }
         },
         back: {
@@ -3223,7 +3225,9 @@ characterMakers.push(() => makeCharacter(
             weight: math.unit(175, "lb"),
             name: "Back",
             image: {
-                source: "./media/characters/mountain/back.svg"
+                source: "./media/characters/mountain/back.svg",
+                extra: 970/950,
+                bottom: 28.25/999
             }
         },
     },
