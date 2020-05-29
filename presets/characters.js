@@ -25626,7 +25626,7 @@ characterMakers.push(() => makeCharacter(
     {
         front: {
             height: math.unit(7 + 6.451/12, "feet"),
-            weight: math.unit(200, "lb"),
+            weight: math.unit(310, "lb"),
             name: "Front",
             image: {
                 source: "./media/characters/dahlia-verrick/front.svg",
@@ -25636,7 +25636,7 @@ characterMakers.push(() => makeCharacter(
         },
         back: {
             height: math.unit(7 + 6.451/12, "feet"),
-            weight: math.unit(200, "lb"),
+            weight: math.unit(310, "lb"),
             name: "Back",
             image: {
                 source: "./media/characters/dahlia-verrick/back.svg",
@@ -25699,7 +25699,7 @@ characterMakers.push(() => makeCharacter(
     {
         front: {
             height: math.unit(6 + 4/12, "feet"),
-            weight: math.unit(300, "lb"),
+            weight: math.unit(320, "lb"),
             name: "Front",
             image: {
                 source: "./media/characters/balina-mahigan/front.svg",
@@ -25709,7 +25709,7 @@ characterMakers.push(() => makeCharacter(
         },
         back: {
             height: math.unit(6 + 4/12, "feet"),
-            weight: math.unit(300, "lb"),
+            weight: math.unit(320, "lb"),
             name: "Back",
             image: {
                 source: "./media/characters/balina-mahigan/back.svg",
@@ -25781,7 +25781,7 @@ characterMakers.push(() => makeCharacter(
     {
         front: {
             height: math.unit(6, "feet"),
-            weight: math.unit(275, "lb"),
+            weight: math.unit(320, "lb"),
             name: "Front",
             image: {
                 source: "./media/characters/balina-mejeri/front.svg",
@@ -25870,12 +25870,13 @@ characterMakers.push(() => makeCharacter(
     },
     [
         {
-            name: "Normal",
-            height: math.unit(6 + 4/12, "feet")
+            name: "Boom",
+            height: math.unit(9 + 10/12, "feet"),
+            default: true
         },
         {
-            name: "Boom",
-            height: math.unit(9 + 10/12, "feet")
+            name: "Macro",
+            height: math.unit(280, "feet")
         },
     ]
 ))
