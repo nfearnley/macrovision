@@ -10347,6 +10347,18 @@ const attributionData = {
                 "balina"
             ]
         },
+        {
+            prefix: "./media/characters/balbarian/",
+            files: [
+                { name: "kneeling.svg", source: "https://www.furaffinity.net/view/33960738/" }
+            ],
+            authors: [
+                "commoddity"
+            ],
+            owners: [
+                "balina"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",

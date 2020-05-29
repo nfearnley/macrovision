@@ -25777,7 +25777,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Balina Mejeri" },
+    { name: "Balina Mejeri", tags: ["wolf", "cow"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(6, "feet"),
@@ -25792,9 +25792,44 @@ characterMakers.push(() => makeCharacter(
     },
     [
         {
+            name: "Normal",
+            height: math.unit(6 + 4/12, "feet")
+        },
+        {
             name: "Business",
             height: math.unit(155, "feet"),
             default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Balbarian", species: ["wolf", "cow"], tags: ["anthro"] },
+    {
+        kneeling: {
+            height: math.unit(6 + 4/12, "feet"),
+            weight: math.unit(300*20, "lb"),
+            name: "Kneeling",
+            image: {
+                source: "./media/characters/balbarian/kneeling.svg",
+                extra: 922/862,
+                bottom: 42.4/965
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(6 + 4/12, "feet")
+        },
+        {
+            name: "Treasured",
+            height: math.unit(18 + 9/12, "feet"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(900, "feet")
         },
     ]
 ))
