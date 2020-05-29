@@ -10466,6 +10466,20 @@ const attributionData = {
                 "radarn"
             ]
         },
+        {
+            prefix: "./media/characters/purple-flame/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/35906196/" },
+                { name: "front-dressed.svg", source: "https://www.furaffinity.net/view/35906196/" },
+                { name: "headphones.svg", source: "https://www.furaffinity.net/view/35906196/" },
+            ],
+            authors: [
+                "purpleflix"
+            ],
+            owners: [
+                "purpleflame"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14433,6 +14447,14 @@ const attributionData = {
         "ziphora": {
             "name": "ziphora",
             "url": "https://www.furaffinity.net/user/ziphora",
+        },
+        "purpleflix": {
+            "name": "purpleflix",
+            "url": "https://twitter.com/purpleflix",
+        },
+        "purpleflame": {
+            "name": "PurpleFlame~",
+            "url": "https://www.furaffinity.net/user/purpleflame~/",
         },
     }
 }

@@ -26116,6 +26116,74 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Purple Flame", species: ["pony"], tags: ["feral"] },
+    {
+        front: {
+            height: math.unit(3 + 5/12, "feet"),
+            weight: math.unit(40, "kg"),
+            name: "Front",
+            image: {
+                source: "./media/characters/purple-flame/front.svg",
+                extra: 1577/1412,
+                bottom: 97/1694
+            }
+        },
+        frontDressed: {
+            height: math.unit(3 + 5/12, "feet"),
+            weight: math.unit(40, "kg"),
+            name: "Front (Dressed)",
+            image: {
+                source: "./media/characters/purple-flame/front-dressed.svg",
+                extra: 1577/1412,
+                bottom: 97/1694
+            }
+        },
+        headphones: {
+            height: math.unit(0.85, "feet"),
+            name: "Headphones",
+            image: {
+                source: "./media/characters/purple-flame/headphones.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Really Small",
+            height: math.unit(5, "cm")
+        },
+        {
+            name: "Micro",
+            height: math.unit(1 + 5/12, "feet")
+        },
+        {
+            name: "Normal",
+            height: math.unit(3 + 5/12, "feet"),
+            default: true
+        },
+        {
+            name: "Minimacro",
+            height: math.unit(125, "feet")
+        },
+        {
+            name: "Macro",
+            height: math.unit(0.5, "miles")
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(50, "miles")
+        },
+        {
+            name: "Gigantic",
+            height: math.unit(750, "miles")
+        },
+        {
+            name: "Planetary",
+            height: math.unit(15000, "miles")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
