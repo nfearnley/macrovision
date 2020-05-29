@@ -26026,6 +26026,42 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Amera", species: ["dragon"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(9.35, "feet"),
+            weight: math.unit(600, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/amera/front.svg",
+                extra: 891/818,
+                bottom: 30/922.7
+            }
+        },
+        back: {
+            height: math.unit(9.35, "feet"),
+            weight: math.unit(600, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/amera/back.svg",
+                extra: 876/824,
+                bottom: 6.8/884
+            }
+        },
+        dick: {
+            height: math.unit(2.14, "feet"),
+            name: "Dick",
+            image: {
+                source: "./media/characters/amera/dick.svg"
+            }
+        },
+    },
+    [
+        
+    ]
+))
+
 //characters
 
 function makeCharacters() {

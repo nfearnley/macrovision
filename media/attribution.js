@@ -10428,6 +10428,20 @@ const attributionData = {
                 "devon292"
             ]
         },
+        {
+            prefix: "./media/characters/amera/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/29055905/", nsfw: true },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/29055905/", nsfw: true },
+                { name: "dick.svg", source: "https://www.furaffinity.net/view/29055905/", nsfw: true },
+            ],
+            authors: [
+                "nearlyconscious"
+            ],
+            owners: [
+                "tala-grovehorn"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14387,6 +14401,10 @@ const attributionData = {
         "devon292": {
             "name": "devon292",
             "url": "https://www.furaffinity.net/user/devon292/",
+        },
+        "nearlyconscious": {
+            "name": "NearlyConscious",
+            "url": "https://www.furaffinity.net/user/nearlyconscious",
         },
     }
 }
