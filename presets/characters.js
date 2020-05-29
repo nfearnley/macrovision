@@ -3687,9 +3687,27 @@ characterMakers.push(() => makeCharacter(
             weight: math.unit(99.75, "tons"),
             name: "Side",
             image: {
-                source: "./media/characters/asana-mech/side.svg"
+                source: "./media/characters/asana-mech/side.svg",
+                extra: 923/699,
+                bottom: 50/975
             }
-        }
+        },
+        chaingun: {
+            height: math.unit(7, "feet"),
+            weight: math.unit(300, "lb"),
+            name: "Chaingun",
+            image: {
+                source: "./media/characters/asana-mech/chaingun.svg"
+            }
+        },
+        laser: {
+            height: math.unit(7.12, "feet"),
+            weight: math.unit(250, "lb"),
+            name: "Laser",
+            image: {
+                source: "./media/characters/asana-mech/laser.svg"
+            }
+        },
     },
     [
         {

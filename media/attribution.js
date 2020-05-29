@@ -1523,7 +1523,9 @@ const attributionData = {
         {
             prefix: "./media/characters/asana-mech/",
             files: [
-                { name: "side.svg", source: null }
+                { name: "side.svg", source: null },
+                { name: "chaingun.svg", source: null },
+                { name: "laser.svg", source: null },
             ],
             authors: [
                 "ashtrek"
