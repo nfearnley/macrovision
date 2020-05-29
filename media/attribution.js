@@ -10442,6 +10442,18 @@ const attributionData = {
                 "tala-grovehorn"
             ]
         },
+        {
+            prefix: "./media/characters/rosewen/",
+            files: [
+                { name: "kneeling.svg", source: "https://www.furaffinity.net/view/35187229/", nsfw: true }
+            ],
+            authors: [
+                "ziphora"
+            ],
+            owners: [
+                "tala-grovehorn"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14405,6 +14417,10 @@ const attributionData = {
         "nearlyconscious": {
             "name": "NearlyConscious",
             "url": "https://www.furaffinity.net/user/nearlyconscious",
+        },
+        "ziphora": {
+            "name": "ziphora",
+            "url": "https://www.furaffinity.net/user/ziphora",
         },
     }
 }

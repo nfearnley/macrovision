@@ -1278,6 +1278,10 @@ const speciesData = {
       name: "Pegasus",
       parents: ["horse"]
     },
+    "vulpera": {
+      name: "Vulpera",
+      parents: ["fennec-fox"]
+    },
     
     
     
@@ -26058,7 +26062,34 @@ characterMakers.push(() => makeCharacter(
         },
     },
     [
-        
+        {
+            name: "Normal",
+            height: math.unit(9.35, "feet"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Rosewen", species: ["vulpera"], tags: ["anthro"] },
+    {
+        kneeling: {
+            height: math.unit(3 + 4/12, "feet"),
+            weight: math.unit(90, "lb"),
+            name: "Kneeling",
+            image: {
+                source: "./media/characters/rosewen/kneeling.svg",
+                extra: 1835/1571,
+                bottom: 27.7/1862
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(3 + 4/12, "feet"),
+            default: true
+        },
     ]
 ))
 
