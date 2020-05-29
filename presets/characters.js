@@ -25882,7 +25882,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Lady Kubwa" },
+    { name: "Lady Kubwa", species: ["giraffe", "deity"], tags: ["anthro"] },
     {
         goddess: {
             height: math.unit(600, "feet"),
@@ -25919,7 +25919,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Tala Grovehorn" },
+    { name: "Tala Grovehorn", species: ["tauren"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(7 + 7/12, "feet"),
@@ -25969,7 +25969,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Epona" },
+    { name: "Epona", species: ["unicorn"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(7 + 7/12, "feet"),
