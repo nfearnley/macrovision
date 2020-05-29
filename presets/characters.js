@@ -3694,7 +3694,7 @@ characterMakers.push(() => makeCharacter(
         },
         chaingun: {
             height: math.unit(7, "feet"),
-            weight: math.unit(300, "lb"),
+            weight: math.unit(2400, "lb"),
             name: "Chaingun",
             image: {
                 source: "./media/characters/asana-mech/chaingun.svg"
@@ -3702,7 +3702,7 @@ characterMakers.push(() => makeCharacter(
         },
         laser: {
             height: math.unit(7.12, "feet"),
-            weight: math.unit(250, "lb"),
+            weight: math.unit(2000, "lb"),
             name: "Laser",
             image: {
                 source: "./media/characters/asana-mech/laser.svg"
