@@ -10416,6 +10416,18 @@ const attributionData = {
                 "tala-grovehorn"
             ]
         },
+        {
+            prefix: "./media/characters/avia-bloodbourn/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/29027543/" }
+            ],
+            authors: [
+                "b9tribeca"
+            ],
+            owners: [
+                "devon292"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14367,6 +14379,14 @@ const attributionData = {
         "tala-grovehorn": {
             "name": "Tala.Grovehorn",
             "url": "https://www.furaffinity.net/user/tala.grovehorn/",
+        },
+        "b9tribeca": {
+            "name": "B9tribeca",
+            "url": "https://www.furaffinity.net/user/b9tribeca",
+        },
+        "devon292": {
+            "name": "devon292",
+            "url": "https://www.furaffinity.net/user/devon292/",
         },
     }
 }

@@ -26007,6 +26007,25 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Avia Bloodbourn", species: ["lion"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(7, "feet"),
+            weight: math.unit(518, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/avia-bloodbourn/front.svg",
+                extra: 1466/1350,
+                bottom: 65/1527
+            }
+        },
+    },
+    [
+        
+    ]
+))
+
 //characters
 
 function makeCharacters() {
