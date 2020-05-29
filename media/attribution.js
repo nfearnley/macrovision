@@ -10377,13 +10377,29 @@ const attributionData = {
             prefix: "./media/characters/lady-kubwa/",
             files: [
                 { name: "goddess.svg", source: "https://www.furaffinity.net/view/35338032/" },
-                { name: "goddess-er.svg", source: "https://www.furaffinity.net/view/35338032/" },
+                { name: "goddess-er.svg", source: "https://www.furaffinity.net/view/35338032/", nsfw: true },
             ],
             authors: [
                 "smappa"
             ],
             owners: [
                 "thatbritishdeer"
+            ]
+        },
+        {
+            prefix: "./media/characters/tala-grovehorn/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32309373/", nsfw: true },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/32309373/", nsfw: true },
+                { name: "mouth.svg", source: "https://www.furaffinity.net/view/32309373/" },
+                { name: "dick.svg", source: "https://www.furaffinity.net/view/32309373/", nsfw: true },
+                { name: "slit.svg", source: "https://www.furaffinity.net/view/32309373/", nsfw: true },
+            ],
+            authors: [
+                "iggi"
+            ],
+            owners: [
+                "tala-grovehorn"
             ]
         },
         //characters
@@ -14329,6 +14345,14 @@ const attributionData = {
         "thatbritishdeer": {
             "name": "ThatBritishDeer",
             "url": "https://www.furaffinity.net/user/thatbritishdeer/",
+        },
+        "iggi": {
+            "name": "Iggi",
+            "url": "https://www.furaffinity.net/user/iggi",
+        },
+        "tala-grovehorn": {
+            "name": "Tala.Grovehorn",
+            "url": "https://www.furaffinity.net/user/tala.grovehorn/",
         },
     }
 }

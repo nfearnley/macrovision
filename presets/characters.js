@@ -25918,6 +25918,56 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Tala Grovehorn" },
+    {
+        front: {
+            height: math.unit(7 + 7/12, "feet"),
+            weight: math.unit(250, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/tala-grovehorn/front.svg",
+                extra: 2636/2525,
+                bottom: 147/2781
+            }
+        },
+        back: {
+            height: math.unit(7 + 7/12, "feet"),
+            weight: math.unit(250, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/tala-grovehorn/back.svg",
+                extra: 2635/2539,
+                bottom: 100/2732.8
+            }
+        },
+        mouth: {
+            height: math.unit(1.15, "feet"),
+            name: "Mouth",
+            image: {
+                source: "./media/characters/tala-grovehorn/mouth.svg"
+            }
+        },
+        dick: {
+            height: math.unit(2.36, "feet"),
+            name: "Dick",
+            image: {
+                source: "./media/characters/tala-grovehorn/dick.svg"
+            }
+        },
+        slit: {
+            height: math.unit(0.61, "feet"),
+            name: "Slit",
+            image: {
+                source: "./media/characters/tala-grovehorn/slit.svg"
+            }
+        },
+    },
+    [
+        
+    ]
+))
+
 //characters
 
 function makeCharacters() {
