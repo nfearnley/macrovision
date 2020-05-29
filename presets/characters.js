@@ -3113,7 +3113,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/asana/front.svg",
-                extra: 1128 / 1068
+                extra: 1133 / 1060,
+                bottom: 15.2/1148.6
             }
         },
         back: {
@@ -3122,7 +3123,28 @@ characterMakers.push(() => makeCharacter(
             name: "Back",
             image: {
                 source: "./media/characters/asana/back.svg",
-                extra: 1128 / 1068
+                extra: 1114 / 1043,
+                bottom: 5/1120
+            }
+        },
+        dressedDark: {
+            height: math.unit(7 + 5 / 6, "feet"),
+            weight: math.unit(325, "lb"),
+            name: "Dressed (Dark)",
+            image: {
+                source: "./media/characters/asana/dressed-dark.svg",
+                extra: 1133 / 1060,
+                bottom: 15.2/1148.6
+            }
+        },
+        dressedLight: {
+            height: math.unit(7 + 5 / 6, "feet"),
+            weight: math.unit(325, "lb"),
+            name: "Dressed (Light)",
+            image: {
+                source: "./media/characters/asana/dressed-light.svg",
+                extra: 1133 / 1060,
+                bottom: 15.2/1148.6
             }
         },
     },

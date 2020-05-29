@@ -1510,6 +1510,8 @@ const attributionData = {
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/35087729/" },
                 { name: "back.svg", source: "https://www.furaffinity.net/view/35087729/" },
+                { name: "dressed-dark.svg", source: "https://www.furaffinity.net/view/35087729/" },
+                { name: "dressed-light.svg", source: "https://www.furaffinity.net/view/35087729/" },
             ],
             authors: [
                 "silverwingink"
