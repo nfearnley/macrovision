@@ -10373,6 +10373,19 @@ const attributionData = {
                 "balina"
             ]
         },
+        {
+            prefix: "./media/characters/lady-kubwa/",
+            files: [
+                { name: "goddess.svg", source: "https://www.furaffinity.net/view/35338032/" },
+                { name: "goddess-er.svg", source: "https://www.furaffinity.net/view/35338032/" },
+            ],
+            authors: [
+                "smappa"
+            ],
+            owners: [
+                "thatbritishdeer"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14308,6 +14321,14 @@ const attributionData = {
         "padunk": {
             "name": "Padunk",
             "url": "https://www.furaffinity.net/user/padunk",
+        },
+        "smappa": {
+            "name": "Smappa",
+            "url": "https://www.furaffinity.net/user/smappa",
+        },
+        "thatbritishdeer": {
+            "name": "ThatBritishDeer",
+            "url": "https://www.furaffinity.net/user/thatbritishdeer/",
         },
     }
 }

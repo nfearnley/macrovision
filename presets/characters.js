@@ -25881,6 +25881,43 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Lady Kubwa" },
+    {
+        goddess: {
+            height: math.unit(600, "feet"),
+            weight: math.unit(2000000, "tons"),
+            name: "Goddess",
+            image: {
+                source: "./media/characters/lady-kubwa/goddess.svg",
+                extra: 1240.5/1223,
+                bottom: 22/1263
+            }
+        },
+        goddesser: {
+            height: math.unit(900, "feet"),
+            weight: math.unit(20000000, "lb"),
+            name: "Goddess-er",
+            image: {
+                source: "./media/characters/lady-kubwa/goddess-er.svg",
+                extra: 899/888,
+                bottom: 12.6/912
+            }
+        },
+    },
+    [
+        {
+            name: "Macro",
+            height: math.unit(600, "feet"),
+            default: true
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(250, "miles")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
