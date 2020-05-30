@@ -1330,17 +1330,7 @@ function handleResize() {
 
     const change = oldCanvasWidth / canvasWidth;
 
-    doHorizReposition(change);
-
     updateSizes();
-}
-
-function doHorizReposition(change) {
-    Object.keys(entities).forEach(key => {
-        const element = document.querySelector("#entity-" + key);
-        const x = element.dataset.x;
-        element.dataset.x = (x - 0.5) * change + 0.5;
-    });
 }
 
 function prepareSidebar() {
