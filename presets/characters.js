@@ -14134,8 +14134,18 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/hildegard/front.svg",
-                extra: 312 / 286,
-                bottom: 0.005
+                extra: 289 / 269,
+                bottom: 7.63/297.8
+            }
+        },
+        back: {
+            height: math.unit(5 + 7 / 12, "feet"),
+            weight: math.unit(159, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/hildegard/back.svg",
+                extra: 280/260,
+                bottom: 2.3/282
             }
         },
     },

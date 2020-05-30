@@ -5396,7 +5396,8 @@ const attributionData = {
         {
             prefix: "./media/characters/hildegard/",
             files: [
-                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Hildegard" }
+                { name: "front.svg", source: "https://fidverse.fandom.com/wiki/Hildegard" },
+                { name: "back.svg", source: "https://fidverse.fandom.com/wiki/Hildegard" },
             ],
             authors: [
                 "fidchell"
