@@ -10485,6 +10485,18 @@ const attributionData = {
                 "purpleflame"
             ]
         },
+        {
+            prefix: "./media/characters/arsenal/",
+            files: [
+                { name: "front.svg", source: "https://www.deviantart.com/justicewolf337/art/NEW-Eternity-Arsenal-Wolf-Fullbody-Style-799804555" }
+            ],
+            authors: [
+                "justicewolf337"
+            ],
+            owners: [
+                "justicewolf337"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14460,6 +14472,10 @@ const attributionData = {
         "purpleflame": {
             "name": "PurpleFlame~",
             "url": "https://www.furaffinity.net/user/purpleflame~/",
+        },
+        "justicewolf337": {
+            "name": "Justicewolf337",
+            "url": "https://twitter.com/Justicewolf337",
         },
     }
 }

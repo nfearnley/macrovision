@@ -48,12 +48,12 @@
 		"prefix": "character",
 		"body": [
 		  "characterMakers.push(() => makeCharacter(",
-		  "    { name: \"$1\" },",
+		  "    { name: \"$1\", species: [\"$2\"], tags: [\"${3:anthro}\"] },",
 		  "    {",
-		  "        $2",
+		  "        $4",
 		  "    },",
 		  "    [",
-		  "        $3",
+		  "        $5",
 		  "    ]",
 		  "))"
 		],

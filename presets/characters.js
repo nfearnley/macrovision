@@ -26242,6 +26242,29 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Arsenal", species: ["wolf", "deity"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(14, "feet"),
+            weight: math.unit(959, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/arsenal/front.svg",
+                extra: 2357/2157,
+                bottom: 93/2458
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(14, "feet"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
