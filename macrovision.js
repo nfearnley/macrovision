@@ -2728,7 +2728,7 @@ function prepareEntities() {
             oldSelect.classList.remove("category-visible");
 
         const newSelect = document.querySelector("#filter-" + e.target.value);
-        if (newSelect)
+        if (newSelect && e.target.value != "none")
             newSelect.classList.add("category-visible");
 
         updateFilter();
