@@ -3663,7 +3663,9 @@ characterMakers.push(() => makeCharacter(
             weight: math.unit(175, "lb"),
             name: "Front",
             image: {
-                source: "./media/characters/mirova/front.svg"
+                source: "./media/characters/mirova/front.svg",
+                extra: 3334/3071,
+                bottom: 42/3375.6
             }
         }
     },
