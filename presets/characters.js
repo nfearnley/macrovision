@@ -3500,7 +3500,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/xera/front.svg",
-                extra: 2300 / 2061
+                extra: 2377 / 1972,
+                bottom: 75.5/2452
             }
         },
         side: {
@@ -3509,7 +3510,8 @@ characterMakers.push(() => makeCharacter(
             name: "Side",
             image: {
                 source: "./media/characters/xera/side.svg",
-                extra: 2300 / 2061
+                extra: 2345/2019,
+                bottom: 39.7/2384
             }
         },
         back: {
@@ -3517,7 +3519,9 @@ characterMakers.push(() => makeCharacter(
             weight: math.unit(175, "lb"),
             name: "Back",
             image: {
-                source: "./media/characters/xera/back.svg"
+                source: "./media/characters/xera/back.svg",
+                extra: 2095/1984,
+                bottom: 67/2166
             }
         },
     },

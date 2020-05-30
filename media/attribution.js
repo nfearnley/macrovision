@@ -5223,7 +5223,7 @@ const attributionData = {
         {
             prefix: "./media/characters/xera/",
             files: [
-                { name: "front.svg", source: null },
+                { name: "front.svg", source: null, nsfw: true },
                 { name: "side.svg", source: null, nsfw: true },
                 { name: "back.svg", source: null }
             ],
