@@ -1167,6 +1167,9 @@ function removeEntity(element) {
     if (selected == element) {
         deselect();
     }
+    if (clicked == element) {
+        clicked = null;
+    }
 
     const option = document.querySelector("#options-selected-entity-" + element.dataset.key);
     option.parentElement.removeChild(option);
