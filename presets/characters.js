@@ -1282,6 +1282,11 @@ const speciesData = {
       name: "Vulpera",
       parents: ["fennec-fox"]
     },
+    "ceratosaurus": {
+      name: "Ceratosaurus",
+      parents: ["dinosaur"]
+    },
+    
     
     
     
