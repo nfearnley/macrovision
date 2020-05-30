@@ -3564,7 +3564,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/nebula/front.svg",
-                extra: 2600 / 2450
+                extra: 2566/2362,
+                bottom: 81/2644
             }
         }
     },
