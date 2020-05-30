@@ -10509,6 +10509,20 @@ const attributionData = {
                 "adirashrinks"
             ]
         },
+        {
+            prefix: "./media/characters/grim/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/18734059/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/18734059/" },
+                { name: "hunched.svg", source: "https://www.furaffinity.net/view/18734059/" },
+            ],
+            authors: [
+                "vallhund"
+            ],
+            owners: [
+                "grimsaurus"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14492,6 +14506,10 @@ const attributionData = {
         "adirashrinks": {
             "name": "AdiraShrinks",
             "url": "https://www.furaffinity.net/user/adirashrinks/",
+        },
+        "grimsaurus": {
+            "name": "grimsaurus",
+            "url": "https://www.furaffinity.net/user/grimsaurus/",
         },
     }
 }

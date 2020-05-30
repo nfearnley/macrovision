@@ -26292,6 +26292,49 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Grim", species: ["ceratosaurus"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(16, "feet"),
+            weight: math.unit(1000, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/grim/front.svg",
+                extra: 622/614,
+                bottom: 18.1/642
+            }
+        },
+        back: {
+            height: math.unit(16, "feet"),
+            weight: math.unit(1000, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/grim/back.svg",
+                extra: 610.6/602,
+                bottom: 40.8/652
+            }
+        },
+        hunched: {
+            height: math.unit(9.75, "feet"),
+            weight: math.unit(1000, "lb"),
+            name: "Hunched",
+            image: {
+                source: "./media/characters/grim/hunched.svg",
+                extra: 304/297,
+                bottom: 35.4/394
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(16, "feet"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
