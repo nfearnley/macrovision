@@ -26265,6 +26265,33 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Adira", species: ["mouse"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/adira/front.svg",
+                extra: 1078/1029,
+                bottom: 87/1166
+            }
+        },
+    },
+    [
+        {
+            name: "Micro",
+            height: math.unit(4, "inches"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(50, "feet")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

@@ -10497,6 +10497,18 @@ const attributionData = {
                 "justicewolf337"
             ]
         },
+        {
+            prefix: "./media/characters/adira/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/31484762/" }
+            ],
+            authors: [
+                "kononiko"
+            ],
+            owners: [
+                "adirashrinks"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14476,6 +14488,10 @@ const attributionData = {
         "justicewolf337": {
             "name": "Justicewolf337",
             "url": "https://twitter.com/Justicewolf337",
+        },
+        "adirashrinks": {
+            "name": "AdiraShrinks",
+            "url": "https://www.furaffinity.net/user/adirashrinks/",
         },
     }
 }
