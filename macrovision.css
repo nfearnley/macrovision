@@ -619,7 +619,8 @@ option.filtered {
     display: none;
 }
 
-#spawners > select {
+#spawners > select,
+#filters > select {
     font-size: 24pt;
 }
 
