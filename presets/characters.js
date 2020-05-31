@@ -26405,7 +26405,8 @@ characterMakers.push(() => makeCharacter(
         },
         {
             name: "Macro",
-            height: math.unit(91, "meters")
+            height: math.unit(91, "meters"),
+            default: true
         },
         {
             name: "Megamacro",
