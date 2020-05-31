@@ -1587,6 +1587,11 @@ const settingsData = {
     },
 }
 
+function getBoundingBox(entities, margin = 0.05) {
+
+}
+
+
 function prepareSettings(userSettings) {
     const menubar = document.querySelector("#settings-menu");
 
@@ -2246,14 +2251,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.querySelector("#fit").addEventListener("click", e => {
-        const x = parseFloat(selected.dataset.x);
-        const y = parseFloat(selected.dataset.y);
-        config.x = x;
-        config.y = y;
-
-        const entity = entities[selected.dataset.key];
-        const height = math.multiply(entity.views[entity.view].height, 1.1);
-        setWorldHeight(config.height, height);
+        if (selected) {
+            fitEntities([selected]);
+        }
     });
 
     document.querySelector("#fit").addEventListener("mousedown", e => {
@@ -2684,14 +2684,18 @@ function prepareEntities() {
 
             const worldWidth = config.height.toNumber("meters") / canvasHeight * canvasWidth;
 
-            makers.map(element => {
+            const spawned = makers.map(element => {
                 const category = document.querySelector("#category-picker").value;
                 const maker = availableEntities[category][element.value];
                 const entity = maker.constructor()
                 displayEntity(entity, entity.view, -worldWidth * 0.45 + config.x + worldWidth * 0.9 * index / (count - 1), config.y);
                 index += 1;
+                entity;
             });
             updateSizes(true);
+
+            if (config.autoFitAdd)
+                fitEntities(spawned);
         });
 
         Array.from(filterSets[filter.id]).map(name => [name, filter.render(name)]).sort(filterDefs[filter.id].sort).forEach(name => {
@@ -2920,6 +2924,10 @@ function checkFitWorld() {
 }
 
 function fitWorld(manual = false, factor = 1.1) {
+    fitEntities(entities, factor);
+}
+
+function fitEntities(manual = false, factor = 1.1) {
     let minX = Infinity;
     let maxX = -Infinity;
     let minY = Infinity;
@@ -2942,6 +2950,8 @@ function fitWorld(manual = false, factor = 1.1) {
 
         let width = image.width;
         let height = image.height;
+
+        console.log(width, height);
 
         // only really relevant if the images haven't loaded in yet
         if (height == 0) {
