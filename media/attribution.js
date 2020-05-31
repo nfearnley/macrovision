@@ -1535,10 +1535,13 @@ const attributionData = {
             ]
         },
         {
-            prefix: "./media/characters/ashtrek/",
+            prefix: "./media/characters/asche/",
             files: [
                 { name: "front.svg", source: null },
-                { name: "front-armor.svg", source: null },
+                { name: "front-underwear.svg", source: null },
+                { name: "front-dressed.svg", source: null },
+                { name: "front-armored.svg", source: null },
+                { name: "h&k-mp724.svg", source: null },
                 { name: "side.svg", source: null },
                 { name: "back.svg", source: null }
             ],

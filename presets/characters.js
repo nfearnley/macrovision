@@ -3743,44 +3743,72 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Ashtrek", species: ["fox", "dragon", "lion"], tags: ["anthro"] },
+    { name: "Asche", species: ["fox", "dragon", "lion"], tags: ["anthro"] },
     {
         front: {
-            height: math.unit(2, "meters"),
-            weight: math.unit(70, "kg"),
+            height: math.unit(5, "meters"),
+            weight: math.unit(1000, "kg"),
             name: "Front",
             image: {
-                source: "./media/characters/ashtrek/front.svg",
-                extra: 560 / 524,
-                bottom: 0.01
+                source: "./media/characters/asche/front.svg",
+                extra: 1258/1190,
+                bottom: 47/1305
+            }
+        },
+        frontUnderwear: {
+            height: math.unit(5, "meters"),
+            weight: math.unit(1000, "kg"),
+            name: "Front (Underwear)",
+            image: {
+                source: "./media/characters/asche/front-underwear.svg",
+                extra: 1258/1190,
+                bottom: 47/1305
+            }
+        },
+        frontDressed: {
+            height: math.unit(5, "meters"),
+            weight: math.unit(1000, "kg"),
+            name: "Front (Dressed)",
+            image: {
+                source: "./media/characters/asche/front-dressed.svg",
+                extra: 1258/1190,
+                bottom: 47/1305
             }
         },
         frontArmor: {
-            height: math.unit(2, "meters"),
-            weight: math.unit(76, "kg"),
-            name: "Front (Armor)",
+            height: math.unit(5, "meters"),
+            weight: math.unit(1000, "kg"),
+            name: "Front (Armored)",
             image: {
-                source: "./media/characters/ashtrek/front-armor.svg",
-                extra: 561 / 527,
-                bottom: 0.01
+                source: "./media/characters/asche/front-armored.svg",
+                extra: 1374 / 1308,
+                bottom: 23/1397
+            }
+        },
+        mp724: {
+            height: math.unit(0.96, "meters"),
+            weight: math.unit(38, "kg"),
+            name: "H&K MP724",
+            image: {
+                source: "./media/characters/asche/h&k-mp724.svg"
             }
         },
         side: {
-            height: math.unit(2, "meters"),
-            weight: math.unit(70, "kg"),
+            height: math.unit(5, "meters"),
+            weight: math.unit(1000, "kg"),
             name: "Side",
             image: {
-                source: "./media/characters/ashtrek/side.svg",
+                source: "./media/characters/asche/side.svg",
                 extra: 1717 / 1609,
                 bottom: 0.005
             }
         },
         back: {
-            height: math.unit(2, "meters"),
-            weight: math.unit(70, "kg"),
+            height: math.unit(5, "meters"),
+            weight: math.unit(1000, "kg"),
             name: "Back",
             image: {
-                source: "./media/characters/ashtrek/back.svg",
+                source: "./media/characters/asche/back.svg",
                 extra: 1570 / 1501
             }
         },
