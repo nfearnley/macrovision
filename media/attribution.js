@@ -8526,6 +8526,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/rifter-yrmori/",
+            files: [
+                { name: "maw-front.svg", source: "https://www.furaffinity.net/view/32639685/" }
+            ],
+            authors: [
+                "akudrache"
+            ],
+            owners: [
+                "foxinov"
+            ]
+        },
+        {
             prefix: "./media/characters/tahajin/",
             files: [
                 { name: "were.svg", source: "https://www.furaffinity.net/view/27266921/" },
@@ -10521,6 +10533,23 @@ const attributionData = {
             ],
             owners: [
                 "grimsaurus"
+            ]
+        },
+        {
+            prefix: "./media/characters/sinja/",
+            files: [
+                { name: "front-sfw.svg", source: "https://www.furaffinity.net/view/36600432/" },
+                { name: "front-nsfw.svg", source: "https://www.furaffinity.net/view/36600432/", nsfw: true },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/36600432/" },
+                { name: "head.svg", source: "https://www.furaffinity.net/view/36600432/" },
+                { name: "slit.svg", source: "https://www.furaffinity.net/view/36600432/", nsfw: true },
+            ],
+            authors: [
+                "hazakyaracely",
+                "raindropsjfl"
+            ],
+            owners: [
+                "raindropsjfl"
             ]
         },
         //characters
@@ -14510,6 +14539,10 @@ const attributionData = {
         "grimsaurus": {
             "name": "grimsaurus",
             "url": "https://www.furaffinity.net/user/grimsaurus/",
+        },
+        "hazakyaracely": {
+            "name": "HazakyAracely",
+            "url": "https://www.furaffinity.net/user/hazakyaracely",
         },
     }
 }

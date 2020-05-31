@@ -20740,6 +20740,13 @@ characterMakers.push(() => makeCharacter(
                 source: "./media/characters/rifter-yrmori/maw.svg"
             }
         },
+        mawfront: {
+            height: math.unit(1.45, "feet"),
+            name: "Maw (Front)",
+            image: {
+                source: "./media/characters/rifter-yrmori/maw-front.svg"
+            }
+        },
     },
     [
         {
@@ -26340,6 +26347,79 @@ characterMakers.push(() => makeCharacter(
             height: math.unit(16, "feet"),
             default: true
         },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Sinja", species: ["monster", "fox"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(2.3, "meters"),
+            weight: math.unit(300, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/sinja/front-sfw.svg",
+                extra: 1393/1294,
+                bottom: 70/1463
+            }
+        },
+        frontNsfw: {
+            height: math.unit(2.3, "meters"),
+            weight: math.unit(300, "lb"),
+            name: "Front (NSFW)",
+            image: {
+                source: "./media/characters/sinja/front-nsfw.svg",
+                extra: 1393/1294,
+                bottom: 70/1463
+            }
+        },
+        back: {
+            height: math.unit(2.3, "meters"),
+            weight: math.unit(300, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/sinja/back.svg",
+                extra: 1393/1294,
+                bottom: 70/1463
+            }
+        },
+        head: {
+            height: math.unit(1.771, "feet"),
+            name: "Head",
+            image: {
+                source: "./media/characters/sinja/head.svg"
+            }
+        },
+        slit: {
+            height: math.unit(0.8, "feet"),
+            name: "Slit",
+            image: {
+                source: "./media/characters/sinja/slit.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(2.3, "meters")
+        },
+        {
+            name: "Macro",
+            height: math.unit(91, "meters")
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(91440, "meters")
+        },
+        {
+            name: "Gigamacro",
+            height: math.unit(60960000, "meters")
+        },
+        {
+            name: "Teramacro",
+            height: math.unit(9144000000, "meters")
+        },
+
     ]
 ))
 
