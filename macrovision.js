@@ -631,7 +631,6 @@ function clickUp(e) {
         } else {
             select(clicked);
         }
-        clicked.classList.remove("no-transition");
         clicked = null;
     }
 
