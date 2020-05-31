@@ -26423,6 +26423,59 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Kyu", species: ["cat"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(1.7, "meters"),
+            weight: math.unit(130, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/kyu/front.svg",
+                extra: 415/395,
+                bottom: 5/420
+            }
+        },
+        head: {
+            height: math.unit(1.75, "feet"),
+            name: "Head",
+            image: {
+                source: "./media/characters/kyu/head.svg"
+            }
+        },
+        foot: {
+            height: math.unit(0.81, "feet"),
+            name: "Foot",
+            image: {
+                source: "./media/characters/kyu/foot.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(1.7, "meters")
+        },
+        {
+            name: "Macro",
+            height: math.unit(131, "feet"),
+            default: true
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(91440, "meters")
+        },
+        {
+            name: "Gigamacro",
+            height: math.unit(60960000, "meters")
+        },
+        {
+            name: "Teramacro",
+            height: math.unit(9144000000, "meters")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

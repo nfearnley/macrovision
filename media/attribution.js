@@ -10552,6 +10552,20 @@ const attributionData = {
                 "raindropsjfl"
             ]
         },
+        {
+            prefix: "./media/characters/kyu/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34478446/" },
+                { name: "head.svg", source: "https://www.furaffinity.net/view/34478446/" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/34478446/" },
+            ],
+            authors: [
+                "mallowchu"
+            ],
+            owners: [
+                "raindropsjfl"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
