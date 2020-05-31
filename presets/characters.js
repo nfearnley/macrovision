@@ -11650,7 +11650,7 @@ characterMakers.push(() => makeCharacter(
             image: {
                 source: "./media/characters/raindrops/front.svg",
                 extra: 2655 / 2461,
-                bottom: 0.02
+                bottom: 49/2705
             }
         },
         back: {
@@ -11660,7 +11660,7 @@ characterMakers.push(() => makeCharacter(
             image: {
                 source: "./media/characters/raindrops/back.svg",
                 extra: 2574 / 2400,
-                bottom: 0.03
+                bottom: 65/2634
             }
         },
     },
