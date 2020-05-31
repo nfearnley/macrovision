@@ -621,6 +621,7 @@ function clickUp(e) {
     clearTimeout(clickTimeout);
 
     if (clicked) {
+        clicked.classList.remove("no-transition");
         if (dragging) {
             dragging = false;
 
