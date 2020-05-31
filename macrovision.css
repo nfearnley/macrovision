@@ -24,6 +24,7 @@ body {
 .entity-box {
     position: absolute;
     --height: 100px;
+    --brightness: 1;
     max-height: var(--height);
     height: var(--height);
     text-align: center;
@@ -45,6 +46,7 @@ body {
     -o-user-drag: none;
     --offset: -100%;
     transform: translate(-50%, var(--offset));
+    filter: brightness(var(--brightness));
 }
 
 .entity-name {
@@ -66,11 +68,11 @@ body.toggle-entity-name .entity-name,
 }
 
 .entity-box.selected > img {
-    filter: drop-shadow(0px 0px 5px gold);
+    filter: brightness(var(--brightness)) drop-shadow(0px 0px 5px gold);
 }
 
 body.toggle-entity-glow .entity-box:not(.selected) > img{
-    filter: drop-shadow(0px 0px 2px white);
+    filter: brightness(var(--brightness)) drop-shadow(0px 0px 2px white);
 }
 
 #main-area {

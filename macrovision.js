@@ -280,6 +280,8 @@ function updateEntityElement(entity, element) {
     element.style.setProperty("--height", pixels * bonus + "px");
     element.style.setProperty("--extra", pixels * bonus - pixels + "px");
 
+    element.style.setProperty("--brightness", entity.brightness);
+
     if (entity.views[view].rename)
         element.querySelector(".entity-name").innerText = entity.name == "" ? "" : entity.views[view].name;
     else
@@ -835,6 +837,7 @@ function configEntityOptions(entity, view) {
     });
 
     document.querySelector("#options-order-display").innerText = entity.priority;
+    document.querySelector("#options-brightness-display").innerText = entity.brightness;
     document.querySelector("#options-ordering").style.display = "flex";
 }
 
@@ -843,6 +846,7 @@ function updateEntityOptions(entity, view) {
     setNumericInput(scaleInput, entity.scale);
 
     document.querySelector("#options-order-display").innerText = entity.priority;
+    document.querySelector("#options-brightness-display").innerText = entity.brightness;
 }
 
 function clearEntityOptions() {
@@ -1242,7 +1246,11 @@ function displayEntity(entity, view, x, y, selectEntity = false, refresh = false
     box.dataset.key = entityIndex;
     entity.view = view;
 
-    entity.priority = 0;
+    if (entity.priority === undefined)
+        entity.priority = 0;
+    if (entity.brightness === undefined)
+        entity.brightness = 1;
+
     entities[entityIndex] = entity;
     entity.index = entityIndex;
 
@@ -1875,6 +1883,22 @@ document.addEventListener("DOMContentLoaded", () => {
             entities[selected.dataset.key].priority -= 1;
         }
         document.querySelector("#options-order-display").innerText = entities[selected.dataset.key].priority;
+        updateSizes();
+    });
+
+    document.querySelector("#options-brightness-up").addEventListener("click", e => {
+        if (selected) {
+            entities[selected.dataset.key].brightness += 1;
+        }
+        document.querySelector("#options-brightness-display").innerText = entities[selected.dataset.key].brightness;
+        updateSizes();
+    });
+
+    document.querySelector("#options-brightness-down").addEventListener("click", e => {
+        if (selected) {
+            entities[selected.dataset.key].brightness = Math.max(entities[selected.dataset.key].brightness -1, 0);
+        }
+        document.querySelector("#options-brightness-display").innerText = entities[selected.dataset.key].brightness;
         updateSizes();
     });
 
@@ -2951,8 +2975,6 @@ function fitEntities(manual = false, factor = 1.1) {
         let width = image.width;
         let height = image.height;
 
-        console.log(width, height);
-
         // only really relevant if the images haven't loaded in yet
         if (height == 0) {
             height = 100;
@@ -2960,6 +2982,7 @@ function fitEntities(manual = false, factor = 1.1) {
         if (width == 0) {
             width = height;
         }
+
         const xBottom = x - entity.views[view].height.toNumber("meters") * width / height / 2;
         const xTop = x + entity.views[view].height.toNumber("meters") * width / height / 2;
 
@@ -3067,7 +3090,9 @@ function exportScene() {
             scale: entity.scale,
             view: entity.view,
             x: element.dataset.x,
-            y: element.dataset.y
+            y: element.dataset.y,
+            priority: entity.priority,
+            brightness: entity.brightness
         });
     });
 
@@ -3155,6 +3180,18 @@ const migrationDefs = [
     data => {
         data.world.x = 0;
         data.world.y = 0;
+    },
+    /*
+    Migration: 1 -> 2
+
+    Adds priority and brightness to each entity
+    */
+
+    data => {
+        data.entities.forEach(entity => {
+            entity.priority = 0;
+            entity.brightness = 1;
+        });
     }
 ]
     
@@ -3178,7 +3215,9 @@ function importScene(data) {
 
     data.entities.forEach(entityInfo => {
         const entity = findEntity(entityInfo.name).constructor();
-        entity.scale = entityInfo.scale
+        entity.scale = entityInfo.scale;
+        entity.priority = entityInfo.priority;
+        entity.brightness = entityInfo.brightness;
         displayEntity(entity, entityInfo.view, entityInfo.x, entityInfo.y);
     });
 
