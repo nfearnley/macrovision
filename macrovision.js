@@ -4,6 +4,7 @@ let selectedEntity = null;
 let entityIndex = 0;
 
 let clicked = null;
+let movingInBounds = false;
 let dragging = false;
 let clickTimeout = null;
 let dragOffsetX = null;
@@ -597,6 +598,7 @@ function combineInfo(existing, next) {
 
 function clickDown(target, x, y) {
     clicked = target;
+    movingInBounds = false;
     const rect = target.getBoundingClientRect();
     let entX = document.querySelector("#entities").getBoundingClientRect().x;
     let entY = document.querySelector("#entities").getBoundingClientRect().y;
@@ -2308,6 +2310,7 @@ document.addEventListener("DOMContentLoaded", () => {
             e.preventDefault();
         } else if (e.key == "Alt") {
             altHeld = true;
+            movingInBounds = false; // don't snap the object back in bounds when we let go
             e.preventDefault();
         }
     });
@@ -2879,7 +2882,17 @@ function clearFilter() {
 
 document.addEventListener("mousemove", (e) => {
     if (clicked) {
-        const position = snapPos(pix2pos({ x: e.clientX - dragOffsetX, y: e.clientY - dragOffsetY }));
+        let position = pix2pos({ x: e.clientX - dragOffsetX, y: e.clientY - dragOffsetY });
+
+        if (movingInBounds) {
+            position = snapPos(position);
+        } else {
+            let x = e.clientX - dragOffsetX;
+            let y = e.clientY - dragOffsetY;
+            if (x >= 0 && x <= canvasWidth && y >= 0 && y <= canvasHeight) {
+                movingInBounds = true;
+            }
+        }
         clicked.dataset.x = position.x;
         clicked.dataset.y = position.y;
         updateEntityElement(entities[clicked.dataset.key], clicked);
