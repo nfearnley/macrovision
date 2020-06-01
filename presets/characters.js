@@ -1286,6 +1286,18 @@ const speciesData = {
       name: "Ceratosaurus",
       parents: ["dinosaur"]
     },
+    "nykur": {
+      name: "Nykur",
+      parents: ["horse", "monster"]
+    },
+    "giraffe": {
+      name: "Giraffe",
+      parents: ["mammal"]
+    },
+    "tauren": {
+      name: "Tauren",
+      parents: ["cow"]
+    },
     
     
     
@@ -16882,7 +16894,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Adinia", species: ["kelpie"], tags: ["anthro"] },
+    { name: "Adinia", species: ["kelpie", "nykur"], tags: ["anthro"] },
     {
         front: {
             height: math.unit(6, "feet"),
