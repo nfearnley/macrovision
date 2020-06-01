@@ -1296,7 +1296,7 @@ const speciesData = {
     },
     "tauren": {
       name: "Tauren",
-      parents: ["cow"]
+      parents: ["cowup"]
     },
     
     
@@ -16531,7 +16531,7 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/raf/front.svg",
-                bottom: 0.01
+                bottom: 20.5/1863
             }
         },
         side: {
@@ -16540,7 +16540,7 @@ characterMakers.push(() => makeCharacter(
             name: "Side",
             image: {
                 source: "./media/characters/raf/side.svg",
-                bottom: 0.005
+                bottom: 22/1822
             }
         },
     },
