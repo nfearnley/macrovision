@@ -229,10 +229,10 @@ function constrainRel(coords) {
         y: Math.min(Math.max(coords.y, config.y), worldHeight + config.y)
     }
 }
-function snapRel(coords) {
+function snapPos(coords) {
     return constrainRel({
         x: coords.x,
-        y: altHeld ? coords.y : (Math.abs(coords.y - 1) < 0.05 ? 1 : coords.y)
+        y: (!config.lockYAxis || altHeld) ? coords.y : (Math.abs(coords.y) < config.height.toNumber("meters")/20 ? 0 : coords.y)
     });
 }
 
@@ -2879,7 +2879,7 @@ function clearFilter() {
 
 document.addEventListener("mousemove", (e) => {
     if (clicked) {
-        const position = snapRel(pix2pos({ x: e.clientX - dragOffsetX, y: e.clientY - dragOffsetY }));
+        const position = snapPos(pix2pos({ x: e.clientX - dragOffsetX, y: e.clientY - dragOffsetY }));
         clicked.dataset.x = position.x;
         clicked.dataset.y = position.y;
         updateEntityElement(entities[clicked.dataset.key], clicked);
@@ -2911,7 +2911,7 @@ document.addEventListener("touchmove", (e) => {
         let x = e.touches[0].clientX;
         let y = e.touches[0].clientY;
 
-        const position = snapRel(pix2pos({ x: x - dragOffsetX, y: y - dragOffsetY }));
+        const position = snapPos(pix2pos({ x: x - dragOffsetX, y: y - dragOffsetY }));
         clicked.dataset.x = position.x;
         clicked.dataset.y = position.y;
         updateEntityElement(entities[clicked.dataset.key], clicked);
