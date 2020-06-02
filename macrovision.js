@@ -604,6 +604,14 @@ function clickDown(target, x, y) {
     let entY = document.querySelector("#entities").getBoundingClientRect().y;
     dragOffsetX = x - rect.left + entX;
     dragOffsetY = y - rect.top + entY;
+
+    x = x - dragOffsetX;
+    y = y - dragOffsetY;
+    if (x >= 0 && x <= canvasWidth && y >= 0 && y <= canvasHeight) {
+        movingInBounds = true;
+    }
+
+
     clickTimeout = setTimeout(() => { dragging = true }, 200)
     target.classList.add("no-transition");
 }
