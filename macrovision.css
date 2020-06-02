@@ -711,8 +711,7 @@ option.filtered {
     flex-wrap: nowrap;
     overflow-y: scroll;
     max-height: 80vh;
-    min-height: 0px;
-    justify-content: end;
+    justify-content: start;
     position: fixed;
     top: 10%;
     left: 10%;
