@@ -2260,6 +2260,13 @@ characterMakers.push(() => makeCharacter(
                 bottom: 0.005
             }
         },
+        paw: {
+            height: math.unit(1, "feet"),
+            name: "Paw",
+            image: {
+                source: "./media/characters/shingo/paw.svg"
+            }
+        },
     },
     [
         {

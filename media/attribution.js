@@ -4365,6 +4365,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/shingo/",
+            files: [
+                { name: "paw.svg", source: "https://twitter.com/Shingo_Mercer/status/1232777823540011008" }
+            ],
+            authors: [
+                "keromasou"
+            ],
+            owners: [
+                "shingo"
+            ]
+        },
+        {
             prefix: "./media/characters/shiroryu/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/35315731/" }
@@ -14560,6 +14572,10 @@ const attributionData = {
         "hazakyaracely": {
             "name": "HazakyAracely",
             "url": "https://www.furaffinity.net/user/hazakyaracely",
+        },
+        "keromasou": {
+            "name": "Keromasou",
+            "url": "https://twitter.com/Keromasou",
         },
     }
 }
