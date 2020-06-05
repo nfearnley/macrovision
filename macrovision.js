@@ -828,17 +828,7 @@ function configEntityOptions(entity, view) {
             }
 
             if (config.autoFitSize) {
-                const x = parseFloat(selected.dataset.x);
-
-                Object.keys(entities).forEach(id => {
-                    const element = document.querySelector("#entity-" + id);
-                    const newX = parseFloat(element.dataset.x) - x + 0.5;
-                    element.dataset.x = newX;
-                });
-        
-                const entity = entities[selected.dataset.key];
-                const height = math.multiply(entity.views[entity.view].height, 1.1);
-                setWorldHeight(config.height, height);
+                fitEntities([selected]);
             }
 
         });
