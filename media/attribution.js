@@ -10581,6 +10581,18 @@ const attributionData = {
                 "raindropsjfl"
             ]
         },
+        {
+            prefix: "./media/characters/joey/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/birdvian/status/1124138274631692290" }
+            ],
+            authors: [
+                "birdvian"
+            ],
+            owners: [
+                "joeyakangaroo"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14576,6 +14588,14 @@ const attributionData = {
         "keromasou": {
             "name": "Keromasou",
             "url": "https://twitter.com/Keromasou",
+        },
+        "birdvian": {
+            "name": "birdvian",
+            "url": "https://twitter.com/birdvian",
+        },
+        "joeyakangaroo": {
+            "name": "Joey",
+            "url": "https://twitter.com/JoeyAKangaroo",
         },
     }
 }

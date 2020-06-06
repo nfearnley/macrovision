@@ -26524,6 +26524,33 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Joey", species: ["kangaroo"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(7 + 1/12, "feet"),
+            weight: math.unit(250, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/joey/front.svg",
+                extra: 1791/1537,
+                bottom: 28/1816
+            }
+        },
+    },
+    [
+        {
+            name: "Micro",
+            height: math.unit(3, "inches")
+        },
+        {
+            name: "Normal",
+            height: math.unit(7 + 1/12, "feet"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
