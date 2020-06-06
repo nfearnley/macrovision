@@ -26551,6 +26551,72 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Sam Evans", species: ["fox", "demon"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(165, "cm"),
+            weight: math.unit(140, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/sam-evans/front.svg",
+                extra: 3417/3230,
+                bottom: 41.3/3417
+            }
+        },
+        frontSixTails: {
+            height: math.unit(165, "cm"),
+            weight: math.unit(140, "lb"),
+            name: "Front-six-tails",
+            image: {
+                source: "./media/characters/sam-evans/front-six-tails.svg",
+                extra: 3417/3230,
+                bottom: 41.3/3417
+            }
+        },
+        back: {
+            height: math.unit(165, "cm"),
+            weight: math.unit(140, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/sam-evans/back.svg",
+                extra: 3227/3032,
+                bottom: 6.8/3234
+            }
+        },
+        face: {
+            height: math.unit(0.68, "feet"),
+            name: "Face",
+            image: {
+                source: "./media/characters/sam-evans/face.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(165, "cm"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(100, "meters")
+        },
+        {
+            name: "Macro+",
+            height: math.unit(800, "meters")
+        },
+        {
+            name: "Macro++",
+            height: math.unit(3, "km")
+        },
+        {
+            name: "Macro+++",
+            height: math.unit(30, "km")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

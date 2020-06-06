@@ -10593,6 +10593,21 @@ const attributionData = {
                 "joeyakangaroo"
             ]
         },
+        {
+            prefix: "./media/characters/sam-evans/",
+            files: [
+                { name: "front.svg", source: null, nsfw: true },
+                { name: "front-six-tails.svg", source: null, nsfw: true },
+                { name: "back.svg", source: null },
+                { name: "face.svg", source: null },
+            ],
+            authors: [
+                "sorafoxyteils"
+            ],
+            owners: [
+                "ich"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14596,6 +14611,10 @@ const attributionData = {
         "joeyakangaroo": {
             "name": "Joey",
             "url": "https://twitter.com/JoeyAKangaroo",
+        },
+        "sorafoxyteils": {
+            "name": "SoraFoxyTeils",
+            "url": "https://www.furaffinity.net/user/sorafoxyteils/",
         },
     }
 }
