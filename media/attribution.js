@@ -10608,6 +10608,19 @@ const attributionData = {
                 "ich"
             ]
         },
+        {
+            prefix: "./media/characters/juliet-a/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/19865174/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/19865174/" },
+            ],
+            authors: [
+                "superix"
+            ],
+            owners: [
+                "ardeni"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14615,6 +14628,14 @@ const attributionData = {
         "sorafoxyteils": {
             "name": "SoraFoxyTeils",
             "url": "https://www.furaffinity.net/user/sorafoxyteils/",
+        },
+        "superix": {
+            "name": "SuperiX",
+            "url": "https://www.furaffinity.net/user/superix",
+        },
+        "ardeni": {
+            "name": "Ardeni",
+            "url": "https://www.furaffinity.net/user/ardeni/",
         },
     }
 }

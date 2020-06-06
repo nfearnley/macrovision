@@ -26617,6 +26617,51 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Juliet A", species: ["lizard"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(10, "feet"),
+            weight: math.unit(750, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/juliet-a/front.svg",
+                extra: 1766/1720,
+                bottom: 43/1809
+            }
+        },
+        back: {
+            height: math.unit(10, "feet"),
+            weight: math.unit(750, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/juliet-a/back.svg",
+                extra: 1781/1734,
+                bottom: 35/1810,
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(10, "feet"),
+            default: true
+        },
+        {
+            name: "Dragon Form",
+            height: math.unit(250, "feet")
+        },
+        {
+            name: "Macro",
+            height: math.unit(1000, "feet")
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(10000, "feet")
+        }
+    ]
+))
+
 //characters
 
 function makeCharacters() {
