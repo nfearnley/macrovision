@@ -10621,6 +10621,20 @@ const attributionData = {
                 "ardeni"
             ]
         },
+        {
+            prefix: "./media/characters/wild/",
+            files: [
+                { name: "regular.svg", source: "https://twitter.com/Wildyena/status/1263116309769998336" },
+                { name: "biggums.svg", source: "https://twitter.com/Wildyena/status/1263116309769998336" },
+                { name: "maw.svg", source: "https://twitter.com/Wildyena/status/1263116309769998336" },
+            ],
+            authors: [
+                "wildyena"
+            ],
+            owners: [
+                "wildyena"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14636,6 +14650,10 @@ const attributionData = {
         "ardeni": {
             "name": "Ardeni",
             "url": "https://www.furaffinity.net/user/ardeni/",
+        },
+        "wildyena": {
+            "name": "Wildyena",
+            "url": "https://twitter.com/Wildyena",
         },
     }
 }

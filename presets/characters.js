@@ -26662,6 +26662,53 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Wild", species: ["hyena"], tags: ["anthro"] },
+    {
+        regular: {
+            height: math.unit(7 + 3/12, "feet"),
+            weight: math.unit(260, "lb"),
+            name: "Regular",
+            image: {
+                source: "./media/characters/wild/regular.svg",
+                extra: 97.45/92,
+                bottom: 6.8/104.3
+            }
+        },
+        biggums: {
+            height: math.unit(8 + 6 /12, "feet"),
+            weight: math.unit(425, "lb"),
+            name: "Biggums",
+            image: {
+                source: "./media/characters/wild/biggums.svg",
+                extra: 97.45/92,
+                bottom: 7.5/132.34
+            }
+        },
+        mawRegular: {
+            height: math.unit(1.24, "feet"),
+            name: "Maw (Regular)",
+            image: {
+                source: "./media/characters/wild/maw.svg"
+            }
+        },
+        mawBiggums: {
+            height: math.unit(1.47, "feet"),
+            name: "Maw (Biggums)",
+            image: {
+                source: "./media/characters/wild/maw.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(7 + 3/12, "feet"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
