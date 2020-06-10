@@ -10635,6 +10635,31 @@ const attributionData = {
                 "wildyena"
             ]
         },
+        {
+            prefix: "./media/characters/vidar/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/34255306/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/34255306/" },
+            ],
+            authors: [
+                "arachnideer"
+            ],
+            owners: [
+                "ranek"
+            ]
+        },
+        {
+            prefix: "./media/characters/vidar/",
+            files: [
+                { name: "feral.svg", source: "https://www.furaffinity.net/view/33760966/" },
+            ],
+            authors: [
+                "tanzanite"
+            ],
+            owners: [
+                "ranek"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14654,6 +14679,14 @@ const attributionData = {
         "wildyena": {
             "name": "Wildyena",
             "url": "https://twitter.com/Wildyena",
+        },
+        "arachnideer": {
+            "name": "Arachnideer",
+            "url": "https://www.furaffinity.net/user/arachnideer",
+        },
+        "tanzanite": {
+            "name": "-tanzanite-",
+            "url": "https://www.furaffinity.net/user/-tanzanite-",
         },
     }
 }

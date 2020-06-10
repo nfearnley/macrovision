@@ -26709,6 +26709,53 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Vidar", species: ["deer"], tags: ["anthro", "feral"] },
+    {
+        front: {
+            height: math.unit(2.5, "meters"),
+            weight: math.unit(200, "kg"),
+            name: "Front",
+            image: {
+                source: "./media/characters/vidar/front.svg",
+                extra: 2994/2795,
+                bottom: 56/3061
+            }
+        },
+        back: {
+            height: math.unit(2.5, "meters"),
+            weight: math.unit(200, "kg"),
+            name: "Back",
+            image: {
+                source: "./media/characters/vidar/back.svg",
+                extra: 3131/2928,
+                bottom: 13.5/3141.5
+            }
+        },
+        feral: {
+            height: math.unit(2.5, "meters"),
+            weight: math.unit(2000, "kg"),
+            name: "Feral",
+            image: {
+                source: "./media/characters/vidar/feral.svg",
+                extra: 2790/1765,
+                bottom: 6/2796
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(2.5, "meters"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(100, "meters")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
