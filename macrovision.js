@@ -203,7 +203,9 @@ const config = {
     y: 0,
     minLineSize: 100,
     maxLineSize: 150,
-    autoFit: false
+    autoFit: false,
+    drawYAxis: true,
+    drawXAxis: false
 }
 
 const availableEntities = {
@@ -313,7 +315,7 @@ function updateSizes(dirtyOnly = false) {
         config.y = 0;
     }
 
-    drawScale(dirtyOnly);
+    drawScales(dirtyOnly);
 
     let ordered = Object.entries(entities);
 
@@ -341,7 +343,32 @@ function updateSizes(dirtyOnly = false) {
 
 }
 
-function drawScale(ifDirty = false) {
+function drawScales(ifDirty = false) {
+    const canvas = document.querySelector("#display");
+
+    /** @type {CanvasRenderingContext2D} */
+
+    const ctx = canvas.getContext("2d");
+
+    ctx.scale(1, 1);
+    ctx.canvas.width = canvas.clientWidth;
+    ctx.canvas.height = canvas.clientHeight;
+
+    ctx.beginPath();
+    ctx.rect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "#333";
+    ctx.fill();
+
+
+    if (config.drawYAxis) {
+        drawVerticalScale(ifDirty);
+    }
+    if (config.drawXAxis) {
+        drawHorizontalScale(ifDirty);
+    }
+}
+
+function drawVerticalScale(ifDirty = false) {
     if (ifDirty && !worldSizeDirty)
         return;
     function drawTicks(/** @type {CanvasRenderingContext2D} */ ctx, pixelsPer, heightPer) {
@@ -416,14 +443,6 @@ function drawScale(ifDirty = false) {
     heightPer = math.unit(heightPer, document.querySelector("#options-height-unit").value);
     
 
-    ctx.scale(1, 1);
-    ctx.canvas.width = canvas.clientWidth;
-    ctx.canvas.height = canvas.clientHeight;
-    
-    ctx.beginPath();
-    ctx.rect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = "#333";
-    ctx.fill();
 
     ctx.beginPath();
     ctx.moveTo(50, 50);
@@ -431,6 +450,95 @@ function drawScale(ifDirty = false) {
     ctx.stroke();
     ctx.beginPath();
     ctx.moveTo(ctx.canvas.clientWidth - 50, 50);
+    ctx.lineTo(ctx.canvas.clientWidth - 50, ctx.canvas.clientHeight - 50);
+    ctx.stroke();
+
+    drawTicks(ctx, pixelsPer, heightPer);
+}
+
+// this is a lot of copypizza...
+
+function drawHorizontalScale(ifDirty = false) {
+    if (ifDirty && !worldSizeDirty)
+        return;
+    function drawTicks(/** @type {CanvasRenderingContext2D} */ ctx, pixelsPer, heightPer) {
+        let total = heightPer.clone();
+        total.value = math.unit(config.y, "meters").toNumber(config.unit) * ctx.canvas.width / ctx.canvas.height;
+        for (let x = ctx.canvas.clientWidth - 50; x >= 50; x -= pixelsPer) {
+            drawTick(ctx, x, 50, total);
+            total = math.add(total, heightPer);
+        }
+    }
+
+    function drawTick(/** @type {CanvasRenderingContext2D} */ ctx, x, y, value) {
+        const oldStroke = ctx.strokeStyle;
+        const oldFill = ctx.fillStyle;
+
+        ctx.beginPath();
+        ctx.moveTo(x, y);
+        ctx.lineTo(x, y + 20);
+        ctx.strokeStyle = "#000000";
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(x, y + 20);
+        ctx.lineTo(x, ctx.canvas.clientHeight - 70);
+        ctx.strokeStyle = "#aaaaaa";
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(x, ctx.canvas.clientHeight - 70);
+        ctx.lineTo(x, ctx.canvas.clientHeight - 50);
+        ctx.strokeStyle = "#000000";
+        ctx.stroke();
+
+        const oldFont = ctx.font;
+        ctx.font = 'normal 24pt coda';
+        ctx.fillStyle = "#dddddd";
+
+        ctx.beginPath();
+        ctx.fillText(value.format({ precision: 3 }), x + 35, y + 20);
+
+        ctx.font = oldFont;
+        ctx.strokeStyle = oldStroke;
+        ctx.fillStyle = oldFill;
+    }
+    const canvas = document.querySelector("#display");
+
+    /** @type {CanvasRenderingContext2D} */
+
+    const ctx = canvas.getContext("2d");
+
+    let pixelsPer = (ctx.canvas.clientHeight - 100) / config.height.toNumber();
+
+    heightPer = 1;
+
+
+    if (pixelsPer < config.minLineSize * 2) {
+        const factor = math.ceil(config.minLineSize * 2/ pixelsPer);
+        heightPer *= factor;
+        pixelsPer *= factor;
+    }
+
+    if (pixelsPer > config.maxLineSize * 2) {
+        const factor = math.ceil(pixelsPer / 2/ config.maxLineSize);
+        heightPer /= factor;
+        pixelsPer /= factor;
+    }
+
+    if (heightPer == 0) {
+        console.error("The world size is invalid! Refusing to draw the scale...");
+        return;
+    }
+    heightPer = math.unit(heightPer, document.querySelector("#options-height-unit").value);
+    
+
+    ctx.beginPath();
+    ctx.moveTo(50, 50);
+    ctx.lineTo(ctx.canvas.clientWidth-50, 50);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(50,  ctx.canvas.clientHeight - 50);
     ctx.lineTo(ctx.canvas.clientWidth - 50, ctx.canvas.clientHeight - 50);
     ctx.stroke();
 
@@ -1581,16 +1689,30 @@ const settingsData = {
             toggleBodyClass("toggle-bottom-cover", param);
         }
     },
-    "show-scale": {
-        name: "Show Scale",
-        desc: "Show the scale",
+    "show-vertical-scale": {
+        name: "Show Vertical Scale",
+        desc: "Draw vertical scale marks",
         type: "toggle",
         default: true,
         get value() {
-            return checkBodyClass("toggle-scale");
+            return config.drawYAxis;
         },
         set value(param) {
-            toggleBodyClass("toggle-scale", param);
+            config.drawYAxis = param;
+            drawScales(false);
+        }
+    },
+    "show-horizontal-scale": {
+        name: "Show Horiziontal Scale",
+        desc: "Draw horizontal scale marks",
+        type: "toggle",
+        default: true,
+        get value() {
+            return config.drawXAxis;
+        },
+        set value(param) {
+            config.drawXAxis = param;
+            drawScales(false);
         }
     },
 }
@@ -3301,7 +3423,7 @@ function copyScreenshot() {
             })
         ]);
     });   
-    drawScale(false);
+    drawScales(false);
 }
 
 function saveScreenshot() {
@@ -3311,7 +3433,7 @@ function saveScreenshot() {
         a.setAttribute("download", "macrovision.png");
         a.click();
     });   
-    drawScale(false);
+    drawScales(false);
 }
 
 const rateLimits = {};
