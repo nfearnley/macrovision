@@ -10660,6 +10660,18 @@ const attributionData = {
                 "ranek"
             ]
         },
+        {
+            prefix: "./media/characters/ash/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/36691452" }
+            ],
+            authors: [
+                "boogeestro"
+            ],
+            owners: [
+                "arenovas"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14687,6 +14699,14 @@ const attributionData = {
         "tanzanite": {
             "name": "-tanzanite-",
             "url": "https://www.furaffinity.net/user/-tanzanite-",
+        },
+        "boogeestro": {
+            "name": "Boogeestro",
+            "url": "https://www.furaffinity.net/user/boogeestro",
+        },
+        "arenovas": {
+            "name": "Arenovas",
+            "url": "https://www.furaffinity.net/user/arenovas",
         },
     }
 }

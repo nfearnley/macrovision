@@ -26756,6 +26756,29 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Ash", species: ["zoroark"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(5 + 9/12, "feet"),
+            weight: math.unit(120, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/ash/front.svg",
+                extra: 2189/1961,
+                bottom: 5.2/2194
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(5 + 9/12, "feet"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
