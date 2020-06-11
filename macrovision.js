@@ -463,7 +463,7 @@ function drawHorizontalScale(ifDirty = false) {
         return;
     function drawTicks(/** @type {CanvasRenderingContext2D} */ ctx, pixelsPer, heightPer) {
         let total = heightPer.clone();
-        total.value = math.unit(config.y, "meters").toNumber(config.unit) * ctx.canvas.width / ctx.canvas.height;
+        total.value = math.unit(config.x, "meters").toNumber(config.unit) * ctx.canvas.width / ctx.canvas.height;
         for (let x = ctx.canvas.clientWidth - 50; x >= 50; x -= pixelsPer) {
             drawTick(ctx, x, 50, total);
             total = math.add(total, heightPer);
