@@ -1706,7 +1706,7 @@ const settingsData = {
         name: "Show Horiziontal Scale",
         desc: "Draw horizontal scale marks",
         type: "toggle",
-        default: true,
+        default: false,
         get value() {
             return config.drawXAxis;
         },
