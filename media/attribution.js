@@ -10672,6 +10672,18 @@ const attributionData = {
                 "arenovas"
             ]
         },
+        {
+            prefix: "./media/characters/gygabite/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/SpaceXaph/status/1261370386387800065?s=09" }
+            ],
+            authors: [
+                "xaphelm"
+            ],
+            owners: [
+                "xaphelm"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14707,6 +14719,10 @@ const attributionData = {
         "arenovas": {
             "name": "Arenovas",
             "url": "https://www.furaffinity.net/user/arenovas",
+        },
+        "xaphelm": {
+            "name": "Xaphelm",
+            "url": "https://www.furaffinity.net/user/xaphelm/",
         },
     }
 }

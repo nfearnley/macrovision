@@ -1296,8 +1296,13 @@ const speciesData = {
     },
     "tauren": {
       name: "Tauren",
-      parents: ["cowup"]
+      parents: ["cow"]
     },
+    "draconi": {
+      name: "Draconi",
+      parents: ["alien", "cat", "cyborg"]
+    },
+    
     
     
     
@@ -26774,6 +26779,29 @@ characterMakers.push(() => makeCharacter(
         {
             name: "Normal",
             height: math.unit(5 + 9/12, "feet"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Gygabite", species: ["draconi"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(9, "feet"),
+            weight: math.unit(10000, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/gygabite/front.svg",
+                bottom: 31.7/537.8,
+                extra: 505/370
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(9, "feet"),
             default: true
         },
     ]
