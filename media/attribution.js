@@ -8879,7 +8879,7 @@ const attributionData = {
         {
             prefix: "./media/characters/anders/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/8507532/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/8507532/", nsfw: true }
             ],
             authors: [
                 "mutant-serpentina"
