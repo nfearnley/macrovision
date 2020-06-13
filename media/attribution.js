@@ -10685,7 +10685,7 @@ const attributionData = {
             ]
         },
         {
-            prefix: "./media/characters/bara/",
+            prefix: "./media/characters/p0tat0/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/32913319/" }
             ],
