@@ -936,7 +936,9 @@ function configEntityOptions(entity, view) {
             }
 
             if (config.autoFitSize) {
-                fitEntities([selected]);
+                let targets = {};
+                targets[selected.dataset.key] = entities[selected.dataset.key];
+                fitEntities(targets);
             }
 
         });
@@ -2398,7 +2400,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector("#fit").addEventListener("click", e => {
         if (selected) {
-            fitEntities([selected]);
+            let targets = {};
+            targets[selected.dataset.key] = entities[selected.dataset.key];
+            fitEntities(targets);
         }
     });
 
@@ -2837,12 +2841,17 @@ function prepareEntities() {
                 const entity = maker.constructor()
                 displayEntity(entity, entity.view, -worldWidth * 0.45 + config.x + worldWidth * 0.9 * index / (count - 1), config.y);
                 index += 1;
-                entity;
+                return entityIndex - 1;
             });
             updateSizes(true);
 
-            if (config.autoFitAdd)
-                fitEntities(spawned);
+            if (config.autoFitAdd) {
+                let targets = {};
+                spawned.forEach(key => {
+                    targets[key] = entities[key];
+                })
+                fitEntities(targets);
+            }
         });
 
         Array.from(filterSets[filter.id]).map(name => [name, filter.render(name)]).sort(filterDefs[filter.id].sort).forEach(name => {
@@ -3084,7 +3093,7 @@ function fitWorld(manual = false, factor = 1.1) {
     fitEntities(entities, factor);
 }
 
-function fitEntities(manual = false, factor = 1.1) {
+function fitEntities(targetEntities, manual = false, factor = 1.1) {
     let minX = Infinity;
     let maxX = -Infinity;
     let minY = Infinity;
@@ -3096,7 +3105,7 @@ function fitEntities(manual = false, factor = 1.1) {
     const worldHeight = config.height.toNumber("meters");
 
 
-    Object.entries(entities).forEach(([key, entity]) => {
+    Object.entries(targetEntities).forEach(([key, entity]) => {
         const view = entity.view;
 
         let extra = entity.views[view].image.extra;
