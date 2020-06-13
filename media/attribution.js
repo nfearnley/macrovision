@@ -10684,6 +10684,18 @@ const attributionData = {
                 "xaphelm"
             ]
         },
+        {
+            prefix: "./media/characters/bara/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/32913319/" }
+            ],
+            authors: [
+                "xaphelm"
+            ],
+            owners: [
+                "xaphelm"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",

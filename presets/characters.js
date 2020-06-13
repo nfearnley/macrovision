@@ -26807,6 +26807,29 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Bara", species: ["protogen"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(12, "feet"),
+            weight: math.unit(35000, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/bara/front.svg",
+                extra: 1065/921,
+                bottom: 55.7/1121.25
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(12, "feet"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
