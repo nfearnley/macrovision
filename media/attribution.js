@@ -10696,6 +10696,20 @@ const attributionData = {
                 "xaphelm"
             ]
         },
+        {
+            prefix: "./media/characters/dusk/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/23254816/" },
+                { name: "sitting.svg", source: "https://www.furaffinity.net/view/23254816/" },
+                { name: "head.svg", source: "https://www.furaffinity.net/view/23254816/" },
+            ],
+            authors: [
+                "anesthetics"
+            ],
+            owners: [
+                "dusk-woskgon"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14735,6 +14749,14 @@ const attributionData = {
         "xaphelm": {
             "name": "Xaphelm",
             "url": "https://www.furaffinity.net/user/xaphelm/",
+        },
+        "anesthetics": {
+            "name": "anesthetics",
+            "url": "https://www.furaffinity.net/user/anesthetics/",
+        },
+        "dusk-woskgon": {
+            "name": "Dusk_Woskgon",
+            "url": "https://www.furaffinity.net/user/duskwoskgon",
         },
     }
 }

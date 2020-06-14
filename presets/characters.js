@@ -26830,6 +26830,46 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Dusk", species: ["arcanine"], tags: ["feral"] },
+    {
+        side: {
+            height: math.unit(6.5, "feet"),
+            weight: math.unit(800, "lb"),
+            name: "Side",
+            image: {
+                source: "./media/characters/dusk/side.svg",
+                extra: 615/373,
+                bottom: 53/664
+            }
+        },
+        sitting: {
+            height: math.unit(7, "feet"),
+            weight: math.unit(800, "lb"),
+            name: "Sitting",
+            image: {
+                source: "./media/characters/dusk/sitting.svg",
+                extra: 753/425,
+                bottom: 33/774
+            }
+        },
+        head: {
+            height: math.unit(6.1, "feet"),
+            name: "Head",
+            image: {
+                source: "./media/characters/dusk/head.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(7, "feet"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
