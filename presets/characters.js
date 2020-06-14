@@ -26940,6 +26940,63 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Anchovie", species: ["cat"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(4 + 9/12, "feet"),
+            weight: math.unit(130, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/anchovie/front.svg",
+                extra: 382/350,
+                bottom: 25/409
+            }
+        },
+        back: {
+            height: math.unit(4 + 9/12, "feet"),
+            weight: math.unit(130, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/anchovie/back.svg",
+                extra: 385/352,
+                bottom: 16.6/402
+            }
+        },
+        frontDressed: {
+            height: math.unit(4 + 9/12, "feet"),
+            weight: math.unit(130, "lb"),
+            name: "Front (Dressed)",
+            image: {
+                source: "./media/characters/anchovie/front-dressed.svg",
+                extra: 382/350,
+                bottom: 25/409
+            }
+        },
+        backDressed: {
+            height: math.unit(4 + 9/12, "feet"),
+            weight: math.unit(130, "lb"),
+            name: "Back (Dressed)",
+            image: {
+                source: "./media/characters/anchovie/back-dressed.svg",
+                extra: 385/352,
+                bottom: 16.6/402
+            }
+        },
+    },
+    [
+        {
+            name: "Micro",
+            height: math.unit(6.4, "inches")
+        },
+        {
+            name: "Normal",
+            height: math.unit(4 + 9/12, "feet"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

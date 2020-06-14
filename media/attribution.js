@@ -10728,6 +10728,21 @@ const attributionData = {
                 "direwolf-jay"
             ]
         },
+        {
+            prefix: "./media/characters/anchovie/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/36800606/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/36800606/" },
+                { name: "front-dressed.svg", source: "https://www.furaffinity.net/view/36800606/" },
+                { name: "front-dressed.svg", source: "https://www.furaffinity.net/view/36800606/" },
+            ],
+            authors: [
+                "isohak23"
+            ],
+            owners: [
+                "anchovie"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14783,6 +14798,14 @@ const attributionData = {
         "juacamo": {
             "name": "Juacamo",
             "url": "https://twitter.com/Juacamo1",
+        },
+        "anchovie": {
+            "name": "Anchovie",
+            "url": "https://twitter.com/anchoviedraws",
+        },
+        "isohak23": {
+            "name": "ISOHAK23",
+            "url": "https://twitter.com/isohak23",
         },
     }
 }
