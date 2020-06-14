@@ -5995,8 +5995,14 @@ const attributionData = {
         {
             prefix: "./media/characters/sigvald/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/35331220/" },
-                { name: "back.svg", source: "https://www.furaffinity.net/view/35331220/" }
+                { name: "dick.svg", source: "https://www.furaffinity.net/view/35331220/", nsfw: true },
+                { name: "eye.svg", source: "https://www.furaffinity.net/view/35331220/", nsfw: false },
+                { name: "fem-nsfw.svg", source: "https://www.furaffinity.net/view/35331220/", nsfw: true },
+                { name: "fem-sfw.svg", source: "https://www.furaffinity.net/view/35331220/", nsfw: false },
+                { name: "herm-nsfw.svg", source: "https://www.furaffinity.net/view/35331220/", nsfw: true },
+                { name: "male-nsfw.svg", source: "https://www.furaffinity.net/view/35331220/", nsfw: true },
+                { name: "mouth.svg", source: "https://www.furaffinity.net/view/35331220/", nsfw: false },
+                { name: "paws.svg", source: "https://www.furaffinity.net/view/35331220/", nsfw: false },
             ],
             authors: [
                 "meowzi"

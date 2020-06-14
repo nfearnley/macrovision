@@ -4289,24 +4289,74 @@ characterMakers.push(() => makeCharacter(
 characterMakers.push(() => makeCharacter(
     { name: "Sigvald", species: ["dragon"], tags: ["anthro"] },
     {
-        front: {
-            height: math.unit(6, "feet"),
-            weight: math.unit(250, "lbs"),
-            name: "Front",
+        femSfw: {
+            height: math.unit(8, "feet"),
+            weight: math.unit(350, "lb"),
+            name: "Fem",
             image: {
-                source: "./media/characters/sigvald/front.svg",
-                extra: 1000 / 850
+                source: "./media/characters/sigvald/fem-sfw.svg",
+                extra: 182/164,
+                bottom: 8.7/190.5
             }
         },
-        back: {
-            height: math.unit(6, "feet"),
-            weight: math.unit(250, "lbs"),
-            name: "Back",
+        femNsfw: {
+            height: math.unit(8, "feet"),
+            weight: math.unit(350, "lb"),
+            name: "Fem (NSFW)",
             image: {
-                source: "./media/characters/sigvald/back.svg"
+                source: "./media/characters/sigvald/fem-nsfw.svg",
+                extra: 182/164,
+                bottom: 8.7/190.5
             }
         },
-
+        maleNsfw: {
+            height: math.unit(8, "feet"),
+            weight: math.unit(350, "lb"),
+            name: "Male (NSFW)",
+            image: {
+                source: "./media/characters/sigvald/male-nsfw.svg",
+                extra: 182/164,
+                bottom: 8.7/190.5
+            }
+        },
+        hermNsfw: {
+            height: math.unit(8, "feet"),
+            weight: math.unit(350, "lb"),
+            name: "Herm (NSFW)",
+            image: {
+                source: "./media/characters/sigvald/herm-nsfw.svg",
+                extra: 182/164,
+                bottom: 8.7/190.5
+            }
+        },
+        dick: {
+            height: math.unit(2.36, "feet"),
+            name: "Dick",
+            image: {
+                source: "./media/characters/sigvald/dick.svg"
+            }
+        },
+        eye: {
+            height: math.unit(0.31, "feet"),
+            name: "Eye",
+            image: {
+                source: "./media/characters/sigvald/eye.svg"
+            }
+        },
+        mouth: {
+            height: math.unit(0.92, "feet"),
+            name: "Mouth",
+            image: {
+                source: "./media/characters/sigvald/mouth.svg"
+            }
+        },
+        paws: {
+            height: math.unit(2.2, "feet"),
+            name: "Paws",
+            image: {
+                source: "./media/characters/sigvald/paws.svg"
+            }
+        }
     },
     [
         {
