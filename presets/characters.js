@@ -1302,13 +1302,10 @@ const speciesData = {
       name: "Draconi",
       parents: ["alien", "cat", "cyborg"]
     },
-    
-    
-    
-    
-    
-    
-    
+    "dire-wolf": {
+      name: "Dire Wolf",
+      parents: ["wolf"]
+    },
 }
 
 //species
@@ -26915,6 +26912,29 @@ characterMakers.push(() => makeCharacter(
         {
             name: "Normal",
             height: math.unit(7, "feet"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Jay Direwolf", species: ["dire-wolf"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(15, "feet"),
+            weight: math.unit(7000, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/jay-direwolf/front.svg",
+                extra: 1810/1732,
+                bottom: 66/1892
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(15, "feet"),
             default: true
         },
     ]

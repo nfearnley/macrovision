@@ -10716,6 +10716,18 @@ const attributionData = {
                 "dusk-woskgon"
             ]
         },
+        {
+            prefix: "./media/characters/jay-direwolf/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/DirewolfJay/status/1271161677883617280" }
+            ],
+            authors: [
+                "juacamo"
+            ],
+            owners: [
+                "direwolf-jay"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14763,6 +14775,14 @@ const attributionData = {
         "dusk-woskgon": {
             "name": "Dusk_Woskgon",
             "url": "https://www.furaffinity.net/user/duskwoskgon",
+        },
+        "direwolf-jay": {
+            "name": "Jay Direwolf",
+            "url": "https://twitter.com/DirewolfJay",
+        },
+        "juacamo": {
+            "name": "Juacamo",
+            "url": "https://twitter.com/Juacamo1",
         },
     }
 }
