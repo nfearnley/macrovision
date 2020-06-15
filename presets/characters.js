@@ -27049,6 +27049,10 @@ characterMakers.push(() => makeCharacter(
             default: true
         },
         {
+            name: "Minimacro",
+            height: math.unit(7, "meters")
+        },
+        {
             name: "Macro",
             height: math.unit(200, "meters")
         },
