@@ -26997,6 +26997,68 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "AcidRenamon", species: ["renamon", "skunk"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(2, "meters"),
+            weight: math.unit(180, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/acidrenamon/front.svg",
+                extra: 987/890,
+                bottom: 22.8/1009
+            }
+        },
+        back: {
+            height: math.unit(2, "meters"),
+            weight: math.unit(180, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/acidrenamon/back.svg",
+                extra: 983/891,
+                bottom: 8.4/992
+            }
+        },
+        head: {
+            height: math.unit(1.92, "feet"),
+            name: "Head",
+            image: {
+                source: "./media/characters/acidrenamon/head.svg"
+            }
+        },
+        rump: {
+            height: math.unit(1.72, "feet"),
+            name: "Rump",
+            image: {
+                source: "./media/characters/acidrenamon/rump.svg"
+            }
+        },
+        tail: {
+            height: math.unit(4.2, "feet"),
+            name: "Tail",
+            image: {
+                source: "./media/characters/acidrenamon/tail.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(2, "meters"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(200, "meters")
+        },
+        {
+            name: "Gigamacro",
+            height: math.unit(0.2, "earths")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

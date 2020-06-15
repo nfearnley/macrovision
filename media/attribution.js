@@ -10743,6 +10743,22 @@ const attributionData = {
                 "anchovie"
             ]
         },
+        {
+            prefix: "./media/characters/acidrenamon/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/8366222/", nsfw: true },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/8366222/", nsfw: true },
+                { name: "head.svg", source: "https://www.furaffinity.net/view/8366222/", nsfw: false },
+                { name: "rump.svg", source: "https://www.furaffinity.net/view/8366222/", nsfw: true },
+                { name: "tail.svg", source: "https://www.furaffinity.net/view/8366222/", nsfw: false },
+            ],
+            authors: [
+                "kitsune-nyx"
+            ],
+            owners: [
+                "acidrenamon"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14806,6 +14822,14 @@ const attributionData = {
         "isohak23": {
             "name": "ISOHAK23",
             "url": "https://twitter.com/isohak23",
+        },
+        "kitsune-nyx": {
+            "name": "kitsune_nyx",
+            "url": "https://www.furaffinity.net/user/kitsunenyx",
+        },
+        "acidrenamon": {
+            "name": "acidrenamon",
+            "url": "https://www.furaffinity.net/user/acidrenamon/",
         },
     }
 }
