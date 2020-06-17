@@ -10771,6 +10771,18 @@ const attributionData = {
                 "quakeroc"
             ]
         },
+        {
+            prefix: "./media/characters/kenzie-lee/",
+            files: [
+                { name: "side.svg", source: "https://twitter.com/QuakeRoc/status/1273312090808356864/photo/1" }
+            ],
+            authors: [
+                "girlwhimpers"
+            ],
+            owners: [
+                "quakeroc"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",

@@ -27080,6 +27080,16 @@ characterMakers.push(() => makeCharacter(
                 bottom: 45/1570
             }
         },
+        side: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Side",
+            image: {
+                source: "./media/characters/kenzie-lee/side.svg",
+                extra: 5505/5383,
+                bottom: 60/5573
+            }
+        },
     },
     [
         {
