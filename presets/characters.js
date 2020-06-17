@@ -27067,6 +27067,37 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Kenzie Lee", species: ["lycanroc"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/kenzie-lee/front.svg",
+                extra: 1525/1465,
+                bottom: 45/1570
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(152, "feet"),
+            default: true
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(7, "miles")
+        },
+        {
+            name: "Gigamacro",
+            height: math.unit(8000, "miles")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

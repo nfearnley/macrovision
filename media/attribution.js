@@ -1715,7 +1715,7 @@ const attributionData = {
                 "msricket"
             ],
             owners: [
-                "quake-yote"
+                "quakeroc"
             ]
         },
         {
@@ -4548,7 +4548,7 @@ const attributionData = {
                 "ethan64"
             ],
             owners: [
-                "quake-yote"
+                "quakeroc"
             ]
         },
         {
@@ -10759,6 +10759,18 @@ const attributionData = {
                 "acidrenamon"
             ]
         },
+        {
+            prefix: "./media/characters/kenzie-lee/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "cathodegaytube"
+            ],
+            owners: [
+                "quakeroc"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -11775,9 +11787,9 @@ const attributionData = {
             "name": "Q Walf",
             "url": "https://www.furaffinity.net/user/qdd/",
         },
-        "quake-yote": {
-            "name": "Quake Yote",
-            "url": "https://www.furaffinity.net/user/rokossovskiy"
+        "quakeroc": {
+            "name": "QuakeRoc",
+            "url": "https://twitter.com/QuakeRoc/"
         },
         "rabidchild42": {
             "name": "rabidchild42",
@@ -14830,6 +14842,14 @@ const attributionData = {
         "acidrenamon": {
             "name": "acidrenamon",
             "url": "https://www.furaffinity.net/user/acidrenamon/",
+        },
+        "girlwhimpers": {
+            "name": "girlwhimpers",
+            "url": "https://twitter.com/girlwhimpers/",
+        },
+        "cathodegaytube": {
+            "name": "cathodegaytube",
+            "url": "https://twitter.com/cathodegaytube",
         },
     }
 }
