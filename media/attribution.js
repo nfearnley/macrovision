@@ -10783,6 +10783,18 @@ const attributionData = {
                 "quakeroc"
             ]
         },
+        {
+            prefix: "./media/characters/withers/",
+            files: [
+                { name: "side.svg", source: "https://twitter.com/Mirihtmr/status/745589261437640705" }
+            ],
+            authors: [
+                "mirihtmr"
+            ],
+            owners: [
+                "datastains"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14862,6 +14874,14 @@ const attributionData = {
         "cathodegaytube": {
             "name": "cathodegaytube",
             "url": "https://twitter.com/cathodegaytube",
+        },
+        "mirihtmr": {
+            "name": "Mirihtmr",
+            "url": "https://twitter.com/Mirihtmr",
+        },
+        "datastains": {
+            "name": "datastains",
+            "url": "https://twitter.com/datastains",
         },
     }
 }

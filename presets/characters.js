@@ -27108,6 +27108,29 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Withers", species: ["hellhound"], tags: ["anthro"] },
+    {
+        side: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Side",
+            image: {
+                source: "./media/characters/withers/side.svg",
+                extra: 1830/1728,
+                bottom: 96/1927
+            }
+        },
+    },
+    [
+        {
+            name: "Macro",
+            height: math.unit(7, "miles"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
