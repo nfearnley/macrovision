@@ -2126,8 +2126,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 toastRateLimit("Zoom is locked! Check Settings to disable.", "zoom-lock", 1000);
             } else {
                 const dir = e.deltaY < 0 ? 10 / 11 : 11 / 10;
+                const change = config.height.toNumber("meters") - math.multiply(config.height, dir).toNumber("meters");
                 setWorldHeight(config.height, math.multiply(config.height, dir));
                 updateWorldOptions();
+
+                if (!config.lockYAxis) {
+                    config.y += change / 2;
+                }
             }
             
         }
