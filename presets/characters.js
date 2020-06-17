@@ -7820,6 +7820,10 @@ characterMakers.push(() => makeCharacter(
             name: "Void Mother",
             height: math.unit(3.14e110, "yottaparsecs")
         },
+        {
+            name: "Toying with Transcendence",
+            height: math.unit(1e307, "meters")
+        },
     ]
 ))
 
