@@ -340,6 +340,8 @@ function updateSizes(dirtyOnly = false) {
         zIndex -= 1;
     });
 
+    document.querySelector("#ground").style.top = pos2pix({x: 0, y: 0}).y + "px";
+
 
 }
 
