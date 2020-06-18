@@ -3432,6 +3432,11 @@ function generateScreenshot(callback) {
     ctx.fillStyle = "#555";
     ctx.font = "normal normal lighter 16pt coda";
     ctx.fillText("macrovision.crux.sexy", 10, 25);
+
+    if (checkBodyClass("toggle-bottom-cover")) {
+        ctx.fillStyle = "#000";
+        ctx.fillRect(0, pos2pix({x: 0, y: 0}).y, canvasWidth + 100, canvasHeight);
+    }
     
     exportCanvas(blob => {
         callback(blob);
