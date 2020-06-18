@@ -7485,7 +7485,7 @@ characterMakers.push(() => makeCharacter(
             image: {
                 source: "./media/characters/carley/front.svg",
                 extra: 3927 / 3540,
-                bottom: 0.03
+                bottom: 29.2/735
             }
         }
     },
