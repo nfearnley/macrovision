@@ -2161,7 +2161,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    document.querySelector("#world").addEventListener("mouseup", e => {
+    document.addEventListener("mouseup", e => {
         if (e.which == 2) {
             panning = false;
             Object.keys(entities).forEach(key => {
