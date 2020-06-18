@@ -27152,6 +27152,42 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Nemoskii", species: ["skunk"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(6 + 7/12, "feet"),
+            weight: math.unit(250, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/nemoskii/front.svg",
+                extra: 2270/1734,
+                bottom: 86/2354
+            }
+        },
+        back: {
+            height: math.unit(6 + 7/12, "feet"),
+            weight: math.unit(250, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/nemoskii/back.svg",
+                extra: 1845/1788,
+                bottom: 10.5/1852
+            }
+        },
+        head: {
+            height: math.unit(1.31, "feet"),
+            name: "Head",
+            image: {
+                source: "./media/characters/nemoskii/head.svg"
+            }
+        },
+    },
+    [
+        
+    ]
+))
+
 //characters
 
 function makeCharacters() {

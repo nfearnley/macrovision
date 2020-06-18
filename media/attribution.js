@@ -10795,6 +10795,20 @@ const attributionData = {
                 "datastains"
             ]
         },
+        {
+            prefix: "./media/characters/nemoskii/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33374339/", nsfw: true },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/33374339/", nsfw: false },
+                { name: "head.svg", source: "https://www.furaffinity.net/view/33374339/", nsfw: false },
+            ],
+            authors: [
+                "combatraccoon"
+            ],
+            owners: [
+                "nemoskia"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14882,6 +14896,10 @@ const attributionData = {
         "datastains": {
             "name": "datastains",
             "url": "https://twitter.com/datastains",
+        },
+        "nemoskia": {
+            "name": "Nemoskia",
+            "url": "https://www.furaffinity.net/user/nemoskia/",
         },
     }
 }
