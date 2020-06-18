@@ -2793,7 +2793,7 @@ function prepareEntities() {
 
         button.addEventListener("click", e => {
             const newEntity = entityList[select.value].constructor()
-            displayEntity(newEntity, newEntity.defaultView, config.x, config.y, true, true);
+            displayEntity(newEntity, newEntity.defaultView, config.x, config.y + (config.lockYAxis ? 0 : config.height.toNumber("meters")/2), true, true);
         });
 
         const categoryOption = document.createElement("option");
