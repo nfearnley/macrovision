@@ -253,7 +253,7 @@ function pos2pix(coords) {
     const worldHeight = config.height.toNumber("meters");
 
     const x = ((coords.x - config.x) / worldWidth + 0.5) * canvasWidth + 50;
-    const y = (1 - (coords.y - config.y) / worldHeight) * canvasHeight;
+    const y = (1 - (coords.y - config.y) / worldHeight) * (canvasHeight - 50) + 50;
 
     return { x: x, y: y };
 }
@@ -263,8 +263,7 @@ function pix2pos(coords) {
     const worldHeight = config.height.toNumber("meters");
 
     const x = (((coords.x - 50) / canvasWidth) - 0.5) * worldWidth + config.x;
-    const y = (1 - (coords.y / canvasHeight)) * worldHeight + config.y;
-
+    const y = (1 - ((coords.y - 50) / (canvasHeight - 50))) * worldHeight + config.y;
     return { x: x, y: y };
 }
 
