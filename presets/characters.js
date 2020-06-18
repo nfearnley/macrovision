@@ -5543,7 +5543,8 @@ characterMakers.push(() => makeCharacter(
             weight: math.unit(130, "lbs"),
             name: "Side",
             image: {
-                source: "./media/characters/rikky/side.svg"
+                source: "./media/characters/rikky/side.svg",
+                extra: 851/801
             }
         },
     },
