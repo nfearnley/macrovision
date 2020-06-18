@@ -375,8 +375,16 @@ function drawVerticalScale(ifDirty = false) {
         return;
     function drawTicks(/** @type {CanvasRenderingContext2D} */ ctx, pixelsPer, heightPer) {
         let total = heightPer.clone();
-        total.value = math.unit(config.y, "meters").toNumber(config.unit);
-        for (let y = ctx.canvas.clientHeight - 50; y >= 50; y -= pixelsPer) {
+        total.value = config.y;
+        let y = ctx.canvas.clientHeight - 50;
+
+        let offset = total.toNumber("meters") % heightPer.toNumber("meters");
+
+        y += offset / heightPer.toNumber("meters") * pixelsPer;
+        total = math.subtract(total, math.unit(offset, "meters"));
+
+        console.log(offset)
+        for (; y >= 50; y -= pixelsPer) {
             drawTick(ctx, 50, y, total);
             total = math.add(total, heightPer);
         }
