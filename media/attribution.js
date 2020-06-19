@@ -14951,7 +14951,7 @@ const attributionData = {
             "url": "https://twitter.com/DemKatazul",
         },
         "maru-ark": {
-            "name": "maru_ark",
+            "name": "Maru Ark",
             "url": "https://twitter.com/maru_ark",
         },
         "cansonzard": {
