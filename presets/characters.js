@@ -27184,7 +27184,44 @@ characterMakers.push(() => makeCharacter(
         },
     },
     [
-        
+        {
+            name: "Normal",
+            height: math.unit(6 + 7/12, "feet"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Arokh Takakura", species: ["dragon"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(12 + 6/12, "feet"),
+            weight: math.unit(1342, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/arokh-takakura/front.svg",
+                extra: 1089/1043,
+                bottom: 77.4/1176.7
+            }
+        },
+        back: {
+            height: math.unit(12 + 6/12, "feet"),
+            weight: math.unit(1342, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/arokh-takakura/back.svg",
+                extra: 1046/1019,
+                bottom: 102/1150
+            }
+        },
+    },
+    [
+        {
+            name: "Big",
+            height: math.unit(12 + 6/12, "feet"),
+            default: true
+        },
     ]
 ))
 

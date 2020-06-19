@@ -10809,6 +10809,19 @@ const attributionData = {
                 "nemoskia"
             ]
         },
+        {
+            prefix: "./media/characters/arokh-takakura/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/36861115/", nsfw: true },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/36861115/", nsfw: false },
+            ],
+            authors: [
+                "tankh"
+            ],
+            owners: [
+                "arokhzero"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14900,6 +14913,10 @@ const attributionData = {
         "nemoskia": {
             "name": "Nemoskia",
             "url": "https://www.furaffinity.net/user/nemoskia/",
+        },
+        "arokhzero": {
+            "name": "ArokhZero",
+            "url": "https://www.furaffinity.net/user/arokhzero/",
         },
     }
 }
