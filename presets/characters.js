@@ -27274,6 +27274,70 @@ characterMakers.push(() => makeCharacter(
         },
     ]
 ))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Cecelia Swift", species: ["otter"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(5 + 9/12, "feet"),
+            weight: math.unit(130, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/cecelia-swift/front.svg",
+                extra: 502/484,
+                bottom: 23/523
+            }
+        },
+        back: {
+            height: math.unit(5 + 9/12, "feet"),
+            weight: math.unit(130, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/cecelia-swift/back.svg",
+                extra: 499/485,
+                bottom: 12/511
+            }
+        },
+        head: {
+            height: math.unit(0.90, "feet"),
+            name: "Head",
+            image: {
+                source: "./media/characters/cecelia-swift/head.svg"
+            }
+        },
+        rump: {
+            height: math.unit(1.75, "feet"),
+            name: "Rump",
+            image: {
+                source: "./media/characters/cecelia-swift/rump.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(5 + 9/12, "feet"),
+            default: true
+        },
+        {
+            name: "Big",
+            height: math.unit(50, "feet")
+        },
+        {
+            name: "Macro",
+            height: math.unit(100, "feet")
+        },
+        {
+            name: "Macro+",
+            height: math.unit(500, "feet")
+        },
+        {
+            name: "Macro++",
+            height: math.unit(1000, "feet")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

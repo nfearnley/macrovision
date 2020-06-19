@@ -10846,6 +10846,21 @@ const attributionData = {
                 "maru-ark"
             ]
         },
+        {
+            prefix: "./media/characters/cecelia-swift/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/33522439/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/33522439/" },
+                { name: "head.svg", source: "https://www.furaffinity.net/view/33522439/" },
+                { name: "rump.svg", source: "https://www.furaffinity.net/view/33522439/" },
+            ],
+            authors: [
+                "faeseiren"
+            ],
+            owners: [
+                "holdenwrite"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14957,6 +14972,10 @@ const attributionData = {
         "cansonzard": {
             "name": "Canson",
             "url": "https://twitter.com/cansonzard",
+        },
+        "holdenwrite": {
+            "name": "holdenwrite",
+            "url": "https://www.furaffinity.net/user/holdenwrite/",
         },
     }
 }
