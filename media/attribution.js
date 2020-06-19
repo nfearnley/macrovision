@@ -10822,6 +10822,18 @@ const attributionData = {
                 "arokhzero"
             ]
         },
+        {
+            prefix: "./media/characters/theo/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "buizilla"
+            ],
+            owners: [
+                "demkatazul"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14917,6 +14929,14 @@ const attributionData = {
         "arokhzero": {
             "name": "ArokhZero",
             "url": "https://www.furaffinity.net/user/arokhzero/",
+        },
+        "buizilla": {
+            "name": "Buizilla",
+            "url": "https://www.furaffinity.net/user/buizilla/",
+        },
+        "demkatazul": {
+            "name": "Theo",
+            "url": "https://twitter.com/DemKatazul",
         },
     }
 }

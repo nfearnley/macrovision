@@ -27225,6 +27225,32 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Theo", species: ["cat"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(5 + 6/12, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/theo/front.svg",
+                extra: 902/860,
+                bottom: 22.7/925.8
+            }
+        },
+    },
+    [
+        {
+            name: "Micro",
+            height: math.unit(5, "inches")
+        },
+        {
+            name: "Normal",
+            height: math.unit(5 + 6/12, "feet"),
+            default: true
+        },
+    ]
+))
 //characters
 
 function makeCharacters() {
