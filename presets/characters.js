@@ -27193,6 +27193,29 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
+    { name: "Shui", species: ["dragon"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(1, "mile"),
+            weight: math.unit(265261.9, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/shui/front.svg",
+                extra: 1633/1564,
+                bottom: 91.5/1726
+            }
+        },
+    },
+    [
+        {
+            name: "Macro",
+            height: math.unit(1, "mile"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
     { name: "Arokh Takakura", species: ["dragon"], tags: ["anthro"] },
     {
         front: {

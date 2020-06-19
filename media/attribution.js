@@ -10834,6 +10834,18 @@ const attributionData = {
                 "demkatazul"
             ]
         },
+        {
+            prefix: "./media/characters/shui/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/maru_ark/status/1272021407673864192" }
+            ],
+            authors: [
+                "cansonzard"
+            ],
+            owners: [
+                "maru-ark"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14937,6 +14949,14 @@ const attributionData = {
         "demkatazul": {
             "name": "Theo",
             "url": "https://twitter.com/DemKatazul",
+        },
+        "maru-ark": {
+            "name": "maru_ark",
+            "url": "https://twitter.com/maru_ark",
+        },
+        "cansonzard": {
+            "name": "Canson",
+            "url": "https://twitter.com/cansonzard",
         },
     }
 }
