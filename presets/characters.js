@@ -27257,8 +27257,8 @@ characterMakers.push(() => makeCharacter(
             name: "Front",
             image: {
                 source: "./media/characters/theo/front.svg",
-                extra: 902/860,
-                bottom: 22.7/925.8
+                extra: 1184/1131,
+                bottom: 7.4/1191
             }
         },
     },
