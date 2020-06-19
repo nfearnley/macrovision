@@ -27338,6 +27338,29 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Kaunan", species: ["dragon"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/kaunan/front.svg",
+                extra: 2890/2523,
+                bottom: 49/2939
+            }
+        },
+    },
+    [
+        {
+            name: "Macro",
+            height: math.unit(150, "feet"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

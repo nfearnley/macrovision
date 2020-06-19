@@ -10861,6 +10861,18 @@ const attributionData = {
                 "holdenwrite"
             ]
         },
+        {
+            prefix: "./media/characters/kaunan/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/23052234/" }
+            ],
+            authors: [
+                "majinbanzai"
+            ],
+            owners: [
+                "rayderk"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14976,6 +14988,14 @@ const attributionData = {
         "holdenwrite": {
             "name": "holdenwrite",
             "url": "https://www.furaffinity.net/user/holdenwrite/",
+        },
+        "rayderk": {
+            "name": "RayDerk",
+            "url": "https://www.furaffinity.net/user/rayderk/",
+        },
+        "majinbanzai": {
+            "name": "majinbanzai",
+            "url": "https://www.furaffinity.net/user/majinbanzai",
         },
     }
 }
