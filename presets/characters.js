@@ -1306,6 +1306,11 @@ const speciesData = {
       name: "Dire Wolf",
       parents: ["wolf"]
     },
+    "ferromorph": {
+      name: "Ferromorph",
+      parents: ["construct"]
+    },
+    
 }
 
 //species
@@ -27392,6 +27397,45 @@ characterMakers.push(() => makeCharacter(
         {
             name: "Showoff",
             height: math.unit(175, "km")
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Edrax", species: ["ferromorph"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(7, "feet"),
+            weight: math.unit(1000, "kg"),
+            name: "Front",
+            image: {
+                source: "./media/characters/edrax/front.svg",
+                extra: 2838/2550,
+                bottom: 130/2968
+            }
+        },
+    },
+    [
+        {
+            name: "Small",
+            height: math.unit(7, "feet")
+        },
+        {
+            name: "Normal",
+            height: math.unit(1500, "meters")
+        },
+        {
+            name: "Mega",
+            height: math.unit(12000000, "km"),
+            default: true
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(10600000, "lightyears")
+        },
+        {
+            name: "Hypermacro",
+            height: math.unit(256, "yottameters")
         },
     ]
 ))

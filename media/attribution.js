@@ -10885,6 +10885,18 @@ const attributionData = {
                 "hesitate"
             ]
         },
+        {
+            prefix: "./media/characters/edrax/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/36874591/" }
+            ],
+            authors: [
+                "edrax"
+            ],
+            owners: [
+                "edrax"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -15012,6 +15024,10 @@ const attributionData = {
         "hesitate": {
             "name": "Hesitate",
             "url": "https://twitter.com/Hesitat68037145/",
+        },
+        "edrax": {
+            "name": "Edrax",
+            "url": "https://furaffinity.net/user/edrax",
         },
     }
 }
