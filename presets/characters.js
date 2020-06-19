@@ -27361,6 +27361,41 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Fei", species: ["fox"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(175, "cm"),
+            weight: math.unit(60, "kg"),
+            name: "Front",
+            image: {
+                source: "./media/characters/fei/front.svg",
+                extra: 2581/2400,
+                bottom: 82.2/2663
+            }
+        },
+    },
+    [
+        {
+            name: "Mortal",
+            height: math.unit(175, "cm")
+        },
+        {
+            name: "Normal",
+            height: math.unit(3500, "m"),
+            default: true
+        },
+        {
+            name: "Stroll",
+            height: math.unit(17.5, "km")
+        },
+        {
+            name: "Showoff",
+            height: math.unit(175, "km")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

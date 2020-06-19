@@ -10873,6 +10873,18 @@ const attributionData = {
                 "rayderk"
             ]
         },
+        {
+            prefix: "./media/characters/fei/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/36498988/" }
+            ],
+            authors: [
+                "hesitate"
+            ],
+            owners: [
+                "hesitate"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -14996,6 +15008,10 @@ const attributionData = {
         "majinbanzai": {
             "name": "majinbanzai",
             "url": "https://www.furaffinity.net/user/majinbanzai",
+        },
+        "hesitate": {
+            "name": "Hesitate",
+            "url": "https://twitter.com/Hesitat68037145/",
         },
     }
 }
