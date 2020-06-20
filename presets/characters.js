@@ -1314,6 +1314,11 @@ const speciesData = {
       name: "Meowth",
       parents: ["cat", "pokemon"]
     },
+    "pavodragon": {
+      name: "Pavodragon",
+      parents: ["dragon"]
+    },
+    
 }
 
 //species
@@ -27537,6 +27542,39 @@ characterMakers.push(() => makeCharacter(
         {
             name: "Normal",
             height: math.unit(1 + 3 / 12, "feet"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Razz", species: ["pavodragon"], tags: ["anthro", "feral"] },
+    {
+        anthro: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Anthro",
+            image: {
+                source: "./media/characters/razz/anthro.svg",
+                extra: 1437/1343,
+                bottom: 48/1485
+            }
+        },
+      feral: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Feral",
+            image: {
+                source: "./media/characters/razz/feral.svg",
+                extra: 2569/1385,
+                bottom: 95/2664
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(6, "feet"),
             default: true
         },
     ]

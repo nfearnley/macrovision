@@ -10936,6 +10936,19 @@ const attributionData = {
                 "furbait17"
             ]
         },
+        {
+            prefix: "./media/characters/razz/",
+            files: [
+                { name: "anthro.svg", source: "https://www.furaffinity.net/view/35623371/" },
+                { name: "feral.svg", source: "https://www.furaffinity.net/view/35623371/" },
+            ],
+            authors: [
+                "alphagodith"
+            ],
+            owners: [
+                "immaturecontent"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -15079,6 +15092,14 @@ const attributionData = {
         "furbait17": {
             "name": "furbait17",
             "url": "https://www.furaffinity.net/user/furbait17/",
+        },
+        "immaturecontent": {
+            "name": "ImmatureContent",
+            "url": "https://www.furaffinity.net/user/immaturecontent/",
+        },
+        "alphagodith": {
+            "name": "alphagodith",
+            "url": "https://www.furaffinity.net/user/alphagodith/",
         },
     }
 }

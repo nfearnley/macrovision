@@ -83,6 +83,17 @@
 		],
 		"description": "Size"
 	  },
+	  "Default Size": {
+		"prefix": "default-size",
+		"body": [
+		  "{",
+		  "    name: \"$1\",",
+		  "    height: math.unit($2, \"$3\"),",
+		  "    default: true",
+		  "},"
+		],
+		"description": "Default size"
+	  },
 	  "Species": {
 		"prefix": "species",
 		"body": [
