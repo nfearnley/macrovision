@@ -27445,7 +27445,7 @@ characterMakers.push(() => makeCharacter(
     {
         front: {
             height: math.unit(10, "feet"),
-            weight: math.unit(150, "lb"),
+            weight: math.unit(750, "lb"),
             name: "Front",
             image: {
                 source: "./media/characters/clove/front.svg",
@@ -27455,7 +27455,7 @@ characterMakers.push(() => makeCharacter(
         },
         back: {
             height: math.unit(10, "feet"),
-            weight: math.unit(150, "lb"),
+            weight: math.unit(750, "lb"),
             name: "Back",
             image: {
                 source: "./media/characters/clove/back.svg",
