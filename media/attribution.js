@@ -10910,6 +10910,19 @@ const attributionData = {
                 "rabbitinafoxden"
             ]
         },
+        {
+            prefix: "./media/characters/alex-rabbit/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/36458578/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/36458578/" },
+            ],
+            authors: [
+                "rabbitinafoxden"
+            ],
+            owners: [
+                "rabbitinafoxden"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",

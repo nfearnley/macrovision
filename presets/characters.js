@@ -27472,6 +27472,39 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Alex (Rabbit)", species: ["rabbit"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(4, "feet"),
+            weight: math.unit(50, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/alex-rabbit/front.svg",
+                extra: 507/458,
+                bottom: 18.5/527
+            }
+        },
+        back: {
+            height: math.unit(4, "feet"),
+            weight: math.unit(50, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/alex-rabbit/back.svg",
+                extra: 502/460,
+                bottom: 18.9/521
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(4, "feet"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
