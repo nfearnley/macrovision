@@ -1310,7 +1310,10 @@ const speciesData = {
       name: "Ferromorph",
       parents: ["construct"]
     },
-    
+    "meowth": {
+      name: "Meowth",
+      parents: ["cat", "pokemon"]
+    },
 }
 
 //species
@@ -27500,6 +27503,40 @@ characterMakers.push(() => makeCharacter(
         {
             name: "Normal",
             height: math.unit(4, "feet"),
+            default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Zander Rose", species: ["meowth"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(1 + 3 / 12, "feet"),
+            weight: math.unit(80, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/zander-rose/front.svg",
+                extra: 916 / 797,
+                bottom: 17 / 933
+            }
+        },
+        back: {
+            height: math.unit(1 + 3 / 12, "feet"),
+            weight: math.unit(80, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/zander-rose/back.svg",
+                extra: 903/779,
+                bottom: 31/934
+            }
+        },
+
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(1 + 3 / 12, "feet"),
             default: true
         },
     ]

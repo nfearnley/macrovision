@@ -10923,6 +10923,19 @@ const attributionData = {
                 "rabbitinafoxden"
             ]
         },
+        {
+            prefix: "./media/characters/zander-rose/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/36613960/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/36613960/" },
+            ],
+            authors: [
+                "kingbrysasaur"
+            ],
+            owners: [
+                "furbait17"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -15058,6 +15071,14 @@ const attributionData = {
         "rabbitinafoxden": {
             "name": "rabbitinafoxden",
             "url": "https://furaffinity.net/user/rabbitinafoxden",
+        },
+        "kingbrysasaur": {
+            "name": "KingBrysasaur",
+            "url": "https://www.furaffinity.net/user/kingbrysasaur",
+        },
+        "furbait17": {
+            "name": "furbait17",
+            "url": "https://www.furaffinity.net/user/furbait17/",
         },
     }
 }

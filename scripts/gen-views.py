@@ -6,7 +6,7 @@ TEMPLATE = """      {0}: {{
             weight: math.unit(150, "lb"),
             name: "{1}",
             image: {{
-                source: "./media/characters/{2}/{3}"
+                source: "./{2}{3}"
             }}
         }},
 """
