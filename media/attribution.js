@@ -10949,6 +10949,18 @@ const attributionData = {
                 "immaturecontent"
             ]
         },
+        {
+            prefix: "./media/characters/morrigan/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/36085005/" }
+            ],
+            authors: [
+                "luckyfelixflex"
+            ],
+            owners: [
+                "immaturecontent"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -15100,6 +15112,10 @@ const attributionData = {
         "alphagodith": {
             "name": "alphagodith",
             "url": "https://www.furaffinity.net/user/alphagodith/",
+        },
+        "luckyfelixflex": {
+            "name": "LuckyFelixFlex",
+            "url": "https://www.furaffinity.net/user/luckyfelixflex/",
         },
     }
 }

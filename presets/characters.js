@@ -27580,6 +27580,29 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Morrigan", species: ["shark"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(9 + 4/12, "feet"),
+            weight: math.unit(500, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/morrigan/front.svg",
+                extra: 2707/2579,
+                bottom: 156/2863
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(9 + 4/12, "feet"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
