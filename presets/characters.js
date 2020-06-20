@@ -27440,6 +27440,38 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Clove", species: ["rabbit"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(10, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/clove/front.svg",
+                extra: 2031/1860,
+                bottom: 47.8/2080
+            }
+        },
+        back: {
+            height: math.unit(10, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/clove/back.svg",
+                extra: 2025/1859,
+                bottom: 46/2071
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(10, "feet")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

@@ -10897,6 +10897,19 @@ const attributionData = {
                 "edrax"
             ]
         },
+        {
+            prefix: "./media/characters/clove/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/36850062/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/36850062/" },
+            ],
+            authors: [
+                "rabbitinafoxden"
+            ],
+            owners: [
+                "rabbitinafoxden"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -15028,6 +15041,10 @@ const attributionData = {
         "edrax": {
             "name": "Edrax",
             "url": "https://furaffinity.net/user/edrax",
+        },
+        "rabbitinafoxden": {
+            "name": "rabbitinafoxden",
+            "url": "https://furaffinity.net/user/rabbitinafoxden",
         },
     }
 }
