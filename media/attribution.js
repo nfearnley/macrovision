@@ -10961,6 +10961,18 @@ const attributionData = {
                 "immaturecontent"
             ]
         },
+        {
+            prefix: "./media/characters/jenene/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "deckardmcloud"
+            ],
+            owners: [
+                "kitsuni89"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -15116,6 +15128,14 @@ const attributionData = {
         "luckyfelixflex": {
             "name": "LuckyFelixFlex",
             "url": "https://www.furaffinity.net/user/luckyfelixflex/",
+        },
+        "kitsuni89": {
+            "name": "kitsuni89",
+            "url": "https://www.furaffinity.net/user/kitsuni89/",
+        },
+        "deckardmcloud": {
+            "name": "DeckardMcloud",
+            "url": "https://t.me/DeckardMcloud",
         },
     }
 }

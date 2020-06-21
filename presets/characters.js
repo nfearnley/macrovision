@@ -27603,6 +27603,29 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Jenene", species: ["wolf"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(5, "stories"),
+            weight: math.unit(4000, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/jenene/front.svg",
+                extra: 1780/1710,
+                bottom: 57/1837
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(5, "stories"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
