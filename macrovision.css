@@ -49,6 +49,10 @@ body {
     filter: brightness(var(--brightness));
 }
 
+.entity-image.flipped {
+    transform: translate(-50%, var(--offset)) scale(-1, 1);
+}
+
 .entity-name {
     display: none;
     position: absolute;
@@ -1029,3 +1033,4 @@ button {
     z-index: 1;
     user-select: none;
 }
+

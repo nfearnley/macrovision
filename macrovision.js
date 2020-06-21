@@ -2035,6 +2035,14 @@ document.addEventListener("DOMContentLoaded", () => {
         updateSizes();
     });
 
+    document.querySelector("#options-flip").addEventListener("click", e => {
+        if (selected) {
+            selected.querySelector(".entity-image").classList.toggle("flipped");
+        }
+        document.querySelector("#options-brightness-display").innerText = entities[selected.dataset.key].brightness;
+        updateSizes();
+    });
+
     const sceneChoices = document.querySelector("#scene-choices");
 
     Object.entries(scenes).forEach(([id, scene]) => {
