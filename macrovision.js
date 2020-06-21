@@ -1168,15 +1168,50 @@ function testClick(event) {
 }
 
 function arrangeEntities(order) {
-    fitWorld();
     const worldWidth = config.height.toNumber("meters") / canvasHeight * canvasWidth;
-    let x = -worldWidth * 0.45 + config.x;
+    let sum = 0;
     order.forEach(key => {
-        document.querySelector("#entity-" + key).dataset.x = x;
-        document.querySelector("#entity-" + key).dataset.y = config.y;
-        x += worldWidth * 0.9 / (order.length - 1);
+        const image = document.querySelector("#entity-" + key + " > .entity-image");
+        const meters = entities[key].views[entities[key].view].height.toNumber("meters");
+
+        let height = image.height;
+        let width = image.width;
+
+        if (height == 0) {
+            height = 100;
+        }
+        if (width == 0) {
+            width = height;
+        }
+
+        sum += meters * width / height;
     });
 
+    let x = config.x - sum / 2;
+
+    order.forEach(key => {
+
+        const image = document.querySelector("#entity-" + key + " > .entity-image");
+        const meters = entities[key].views[entities[key].view].height.toNumber("meters");
+
+        let height = image.height;
+        let width = image.width;
+
+        if (height == 0) {
+            height = 100;
+        }
+        if (width == 0) {
+            width = height;
+        }
+
+        x += meters * width / height / 2;
+        document.querySelector("#entity-" + key).dataset.x = x;
+        document.querySelector("#entity-" + key).dataset.y = config.y;
+        x += meters * width / height / 2;
+
+    })
+
+    fitWorld();
     updateSizes();
 }
 
