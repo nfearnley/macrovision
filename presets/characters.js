@@ -27729,6 +27729,37 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Roku", species: ["lion"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(7, "feet"),
+            weight: math.unit(275, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/roku/front.svg",
+                extra: 903/878,
+                bottom: 37/940
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(7, "feet"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(500, "feet")
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(200, "miles")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

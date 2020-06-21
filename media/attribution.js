@@ -10988,17 +10988,29 @@ const attributionData = {
         {
             prefix: "./media/characters/faey/",
             files: [
-                { name: "chestmaw.svg", source: "https://www.furaffinity.net/view/23128066/", nsfw: "false" },
-                { name: "foot.svg", source: "https://www.furaffinity.net/view/23128066/", nsfw: "false" },
-                { name: "jaws.svg", source: "https://www.furaffinity.net/view/23128066/", nsfw: "false" },
-                { name: "taur-sfw.svg", source: "https://www.furaffinity.net/view/23128066/", nsfw: "false" },
-                { name: "tongues.svg", source: "https://www.furaffinity.net/view/23128066/", nsfw: "false" },
+                { name: "chestmaw.svg", source: "https://www.furaffinity.net/view/23128066/", nsfw: false },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/23128066/", nsfw: false },
+                { name: "jaws.svg", source: "https://www.furaffinity.net/view/23128066/", nsfw: false },
+                { name: "taur-sfw.svg", source: "https://www.furaffinity.net/view/23128066/", nsfw: false },
+                { name: "tongues.svg", source: "https://www.furaffinity.net/view/23128066/", nsfw: false },
             ],
             authors: [
                 "sythrawolf"
             ],
             owners: [
                 "madmax9k"
+            ]
+        },
+        {
+            prefix: "./media/characters/roku/",
+            files: [
+                { name: "front.svg", source: "https://twitter.com/maru_ark/status/1233560661889896448" }
+            ],
+            authors: [
+                "furls"
+            ],
+            owners: [
+                "maru-ark"
             ]
         },
         //characters
@@ -15180,6 +15192,10 @@ const attributionData = {
         "madmax9k": {
             "name": "MaDmAx9k",
             "url": "https://www.furaffinity.net/user/madmax9k/"
+        },
+        "furls": {
+            "name": "FurLs",
+            "url": "https://www.furaffinity.net/user/furls"
         },
     }
 }
