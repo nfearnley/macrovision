@@ -11016,12 +11016,12 @@ const attributionData = {
         {
             prefix: "./media/characters/lira/",
             files: [
-                { name: "back.svg", source: null, nsfw: false },
-                { name: "front.svg", source: null, nsfw: true },
-                { name: "hand.svg", source: null, nsfw: false },
-                { name: "maw.svg", source: null, nsfw: false },
-                { name: "paw-digi.svg", source: null, nsfw: false },
-                { name: "paw-planti.svg", source: null, nsfw: false },
+                { name: "back.svg", source: "https://twitter.com/LiraKitsune/status/1157116463108562945", nsfw: false },
+                { name: "front.svg", source: "https://twitter.com/LiraKitsune/status/1157116463108562945", nsfw: true },
+                { name: "hand.svg", source: "https://twitter.com/LiraKitsune/status/1157116463108562945", nsfw: false },
+                { name: "maw.svg", source: "https://twitter.com/LiraKitsune/status/1157116463108562945", nsfw: false },
+                { name: "paw-digi.svg", source: "https://twitter.com/LiraKitsune/status/1157116463108562945", nsfw: false },
+                { name: "paw-planti.svg", source: "https://twitter.com/LiraKitsune/status/1157116463108562945", nsfw: false },
             ],
             authors: [
                 "kerneldecoy"
