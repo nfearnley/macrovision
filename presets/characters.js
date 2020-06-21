@@ -27626,6 +27626,33 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Vix Archaser", species: ["fox"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/vix-archaser/front.svg",
+                extra: 2767/2562,
+                bottom: 36/2803
+            }
+        },
+    },
+    [
+        {
+            name: "Macro",
+            height: math.unit(4, "miles")
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(250, "miles"),
+            default: true
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

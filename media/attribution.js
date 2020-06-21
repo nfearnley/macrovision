@@ -10973,6 +10973,18 @@ const attributionData = {
                 "kitsuni89"
             ]
         },
+        {
+            prefix: "./media/characters/vix-archaser/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/36894032/" }
+            ],
+            authors: [
+                "weirdiefox"
+            ],
+            owners: [
+                "vix-archaser"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -15136,6 +15148,14 @@ const attributionData = {
         "deckardmcloud": {
             "name": "DeckardMcloud",
             "url": "https://t.me/DeckardMcloud",
+        },
+        "weirdiefox": {
+            "name": "weirdiefox",
+            "url": "https://www.fiverr.com/weirdiefox",
+        },
+        "vix-archaser": {
+            "name": "Vix_Archaser",
+            "url": "https://www.furaffinity.net/user/vixarchaser/",
         },
     }
 }
