@@ -11013,6 +11013,23 @@ const attributionData = {
                 "maru-ark"
             ]
         },
+        {
+            prefix: "./media/characters/lira/",
+            files: [
+                { name: "back.svg", source: null, nsfw: false },
+                { name: "front.svg", source: null, nsfw: true },
+                { name: "hand.svg", source: null, nsfw: false },
+                { name: "maw.svg", source: null, nsfw: false },
+                { name: "paw-digi.svg", source: null, nsfw: false },
+                { name: "paw-planti.svg", source: null, nsfw: false },
+            ],
+            authors: [
+                "kerneldecoy"
+            ],
+            owners: [
+                "lirakitsune"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -15196,6 +15213,10 @@ const attributionData = {
         "furls": {
             "name": "FurLs",
             "url": "https://www.furaffinity.net/user/furls"
+        },
+        "lirakitsune": {
+            "name": "Lira",
+            "url": "https://twitter.com/LiraKitsune"
         },
     }
 }

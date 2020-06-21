@@ -27760,6 +27760,71 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Lira", species: ["kitsune"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(6 + 2/12, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/lira/front.svg",
+                extra: 1727/1605,
+                bottom: 26/1753
+            }
+        },
+        back: {
+            height: math.unit(6 + 2/12, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/lira/back.svg",
+                extra: 1713/1599,
+                bottom: 20/1733
+            }
+        },
+        hand: {
+            height: math.unit(0.75, "feet"),
+            name: "Hand",
+            image: {
+                source: "./media/characters/lira/hand.svg"
+            }
+        },
+        maw: {
+            height: math.unit(0.65, "feet"),
+            name: "Maw",
+            image: {
+                source: "./media/characters/lira/maw.svg"
+            }
+        },
+        pawDigi: {
+            height: math.unit(1.6, "feet"),
+            name: "Paw Digi",
+            image: {
+                source: "./media/characters/lira/paw-digi.svg"
+            }
+        },
+        pawPlanti: {
+            height: math.unit(1.4, "feet"),
+            name: "Paw Planti",
+            image: {
+                source: "./media/characters/lira/paw-planti.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(6 + 2/12, "feet"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(100, "feet")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
