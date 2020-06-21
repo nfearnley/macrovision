@@ -1318,6 +1318,11 @@ const speciesData = {
       name: "Pavodragon",
       parents: ["dragon"]
     },
+    "aaltranae": {
+      name: "Aaltranae",
+      parents: ["dragon"]
+    },
+    
     
 }
 
@@ -27665,6 +27670,61 @@ characterMakers.push(() => makeCharacter(
         {
             name: "Gigamacro",
             height: math.unit(1, "universe")
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Faey", species: ["aaltranae"], tags: ["taur"] },
+    {
+        taurSfw: {
+            height: math.unit(10, "meters"),
+            weight: math.unit(17500, "kg"),
+            name: "Taur",
+            image: {
+                source: "./media/characters/faey/taur-sfw.svg",
+                extra: 1200/968,
+                bottom: 41/1241
+            }
+        },
+        chestmaw: {
+            height: math.unit(2.01, "meters"),
+            name: "Chestmaw",
+            image: {
+                source: "./media/characters/faey/chestmaw.svg"
+            }
+        },
+        foot: {
+            height: math.unit(2.43, "meters"),
+            name: "Foot",
+            image: {
+                source: "./media/characters/faey/foot.svg"
+            }
+        },
+        jaws: {
+            height: math.unit(1.66, "meters"),
+            name: "Jaws",
+            image: {
+                source: "./media/characters/faey/jaws.svg"
+            }
+        },
+        tongues: {
+            height: math.unit(2.01, "meters"),
+            name: "Tongues",
+            image: {
+                source: "./media/characters/faey/tongues.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Small",
+            height: math.unit(10, "meters"),
+            default: true
+        },
+        {
+            name: "Big",
+            height: math.unit(500000, "km")
         },
     ]
 ))

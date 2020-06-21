@@ -10985,6 +10985,22 @@ const attributionData = {
                 "vix-archaser"
             ]
         },
+        {
+            prefix: "./media/characters/faey/",
+            files: [
+                { name: "chestmaw.svg", source: "https://www.furaffinity.net/view/23128066/", nsfw: "false" },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/23128066/", nsfw: "false" },
+                { name: "jaws.svg", source: "https://www.furaffinity.net/view/23128066/", nsfw: "false" },
+                { name: "taur-sfw.svg", source: "https://www.furaffinity.net/view/23128066/", nsfw: "false" },
+                { name: "tongues.svg", source: "https://www.furaffinity.net/view/23128066/", nsfw: "false" },
+            ],
+            authors: [
+                "sythrawolf"
+            ],
+            owners: [
+                "madmax9k"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -15156,6 +15172,14 @@ const attributionData = {
         "vix-archaser": {
             "name": "Vix_Archaser",
             "url": "https://www.furaffinity.net/user/vixarchaser/",
+        },
+        "sythrawolf": {
+            "name": "sythrawolf",
+            "url": "https://www.furaffinity.net/user/sythrawolf"
+        },
+        "madmax9k": {
+            "name": "MaDmAx9k",
+            "url": "https://www.furaffinity.net/user/madmax9k/"
         },
     }
 }
