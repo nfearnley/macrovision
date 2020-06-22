@@ -252,7 +252,7 @@ function pos2pix(coords) {
     const worldWidth = config.height.toNumber("meters") / canvasHeight * canvasWidth;
     const worldHeight = config.height.toNumber("meters");
 
-    const x = ((coords.x - config.x) / worldWidth + 0.5) * canvasWidth + 50;
+    const x = ((coords.x - config.x) / worldWidth + 0.5) * (canvasWidth - 50) + 50;
     const y = (1 - (coords.y - config.y) / worldHeight) * (canvasHeight - 50) + 50;
 
     return { x: x, y: y };
@@ -262,7 +262,7 @@ function pix2pos(coords) {
     const worldWidth = config.height.toNumber("meters") / canvasHeight * canvasWidth;
     const worldHeight = config.height.toNumber("meters");
 
-    const x = (((coords.x - 50) / canvasWidth) - 0.5) * worldWidth + config.x;
+    const x = (((coords.x - 50) / (canvasWidth - 50)) - 0.5) * worldWidth + config.x;
     const y = (1 - ((coords.y - 50) / (canvasHeight - 50))) * worldHeight + config.y;
     return { x: x, y: y };
 }
@@ -382,7 +382,6 @@ function drawVerticalScale(ifDirty = false) {
         y += offset / heightPer.toNumber("meters") * pixelsPer;
         total = math.subtract(total, math.unit(offset, "meters"));
 
-        console.log(offset)
         for (; y >= 50; y -= pixelsPer) {
             drawTick(ctx, 50, y, total);
             total = math.add(total, heightPer);
@@ -471,9 +470,17 @@ function drawHorizontalScale(ifDirty = false) {
     if (ifDirty && !worldSizeDirty)
         return;
     function drawTicks(/** @type {CanvasRenderingContext2D} */ ctx, pixelsPer, heightPer) {
+        console.log(heightPer);
         let total = heightPer.clone();
-        total.value = math.unit(config.x, "meters").toNumber(config.unit) * ctx.canvas.width / ctx.canvas.height;
-        for (let x = ctx.canvas.clientWidth - 50; x >= 50; x -= pixelsPer) {
+        total.value = math.unit(-config.x, "meters").toNumber(config.unit);
+        let x = ctx.canvas.clientWidth - 50;
+
+        let offset = total.toNumber("meters") % heightPer.toNumber("meters");
+
+        x += offset / heightPer.toNumber("meters") * pixelsPer;
+        total = math.subtract(total, math.unit(offset, "meters"));
+
+        for (; x >= 50; x -= pixelsPer) {
             drawTick(ctx, x, 50, total);
             total = math.add(total, heightPer);
         }
@@ -518,10 +525,9 @@ function drawHorizontalScale(ifDirty = false) {
 
     const ctx = canvas.getContext("2d");
 
-    let pixelsPer = (ctx.canvas.clientHeight - 100) / config.height.toNumber();
+    let pixelsPer = (ctx.canvas.clientHeight - 100) / config.height.toNumber("meters");
 
     heightPer = 1;
-
 
     if (pixelsPer < config.minLineSize * 2) {
         const factor = math.ceil(config.minLineSize * 2/ pixelsPer);
