@@ -11073,6 +11073,18 @@ const attributionData = {
                 "pyxaron"
             ]
         },
+        {
+            prefix: "./media/characters/meep/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/13579294/" }
+            ],
+            authors: [
+                "caitsith511"
+            ],
+            owners: [
+                "pileofmeeps"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -15280,6 +15292,14 @@ const attributionData = {
         "rah-bop": {
             "name": "rah-bop",
             "url": "https://www.deviantart.com/rah-bop"
+        },
+        "pileofmeeps": {
+            "name": "Meeps",
+            "url": "https://twitter.com/PileOfMeeps"
+        },
+        "caitsith511": {
+            "name": "caitsith511",
+            "url": "https://www.furaffinity.net/user/caitsith511"
         },
     }
 }

@@ -692,7 +692,7 @@ const speciesData = {
     },
     "candy-orca-dragon": {
         name: "Candy Orca Dragon",
-        parents: ["fish", "dragon"]
+        parents: ["fish", "dragon", "candy"]
     },
     "sabertooth-tiger": {
         name: "Sabertooth Tiger",
@@ -1330,6 +1330,11 @@ const speciesData = {
       name: "Draptor",
       parents: ["dragon"]
     },
+    "candy": {
+      name: "Candy",
+      parents: []
+    },
+    
 }
 
 //species
@@ -27958,6 +27963,33 @@ characterMakers.push(() => makeCharacter(
         {
             name: "Normal",
             height: math.unit(11, "feet")
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Meep", species: ["candy", "salamander"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/meep/front.svg",
+                extra: 88/80,
+                bottom: 6/94
+            }
+        },
+    },
+    [
+        {
+            name: "Fun Sized",
+            height: math.unit(2, "inches"),
+            default: true
+        },
+        {
+            name: "Friend Sized",
+            height: math.unit(8, "inches")
         },
     ]
 ))
