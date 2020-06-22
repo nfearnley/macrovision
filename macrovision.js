@@ -484,8 +484,9 @@ function drawHorizontalScale(ifDirty = false) {
         x += offset / heightPer.toNumber("meters") * pixelsPer;
         total = math.subtract(total, math.unit(offset, "meters"));
 
-        for (; x >= 50; x -= pixelsPer) {
-            drawTick(ctx, x, 50, total);
+        for (; x >= 50 - pixelsPer; x -= pixelsPer) {
+            // negate it so that the left side is negative
+            drawTick(ctx, x, 50, math.multiply(-1, total));
             total = math.add(total, heightPer);
         }
     }
@@ -553,12 +554,12 @@ function drawHorizontalScale(ifDirty = false) {
     
 
     ctx.beginPath();
-    ctx.moveTo(50, 50);
-    ctx.lineTo(ctx.canvas.clientWidth-50, 50);
+    ctx.moveTo(0, 50);
+    ctx.lineTo(ctx.canvas.clientWidth, 50);
     ctx.stroke();
     ctx.beginPath();
-    ctx.moveTo(50,  ctx.canvas.clientHeight - 50);
-    ctx.lineTo(ctx.canvas.clientWidth - 50, ctx.canvas.clientHeight - 50);
+    ctx.moveTo(0,  ctx.canvas.clientHeight - 50);
+    ctx.lineTo(ctx.canvas.clientWidth , ctx.canvas.clientHeight - 50);
     ctx.stroke();
 
     drawTicks(ctx, pixelsPer, heightPer);
