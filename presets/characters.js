@@ -11460,6 +11460,16 @@ characterMakers.push(() => makeCharacter(
                 bottom: 29 / 1492.5
             }
         },
+        battleAlt: {
+            height: math.unit(6.824, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Battle (Alt)",
+            image: {
+                source: "./media/characters/kuiper-vanrel/battle-alt.svg",
+                extra: 2081/1965,
+                bottom: 40/2121
+            }
+        },
     },
     [
         {

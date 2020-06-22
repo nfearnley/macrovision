@@ -3104,6 +3104,7 @@ const attributionData = {
             prefix: "./media/characters/kuiper-vanrel/",
             files: [
                 { name: "battle.svg", source: "https://www.furaffinity.net/view/30471123/" },
+                { name: "battle-alt.svg", source: "https://www.furaffinity.net/view/36458281/" },
             ],
             authors: [
                 "buckdasystem",
