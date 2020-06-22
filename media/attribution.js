@@ -11030,6 +11030,18 @@ const attributionData = {
                 "lirakitsune"
             ]
         },
+        {
+            prefix: "./media/characters/hadjet/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/30888546/" }
+            ],
+            authors: [
+                "perenthis"
+            ],
+            owners: [
+                "perenthis"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -15217,6 +15229,10 @@ const attributionData = {
         "lirakitsune": {
             "name": "Lira",
             "url": "https://twitter.com/LiraKitsune"
+        },
+        "perenthis": {
+            "name": "Perenthis",
+            "url": "https://www.furaffinity.net/user/perenthis/"
         },
     }
 }

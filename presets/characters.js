@@ -27779,7 +27779,7 @@ characterMakers.push(() => makeCharacter(
             name: "Back",
             image: {
                 source: "./media/characters/lira/back.svg",
-                extra: 1713/1599,
+                extra: 1713/159,
                 bottom: 20/1733
             }
         },
@@ -27821,6 +27821,37 @@ characterMakers.push(() => makeCharacter(
         {
             name: "Macro",
             height: math.unit(100, "feet")
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Hadjet", species: ["cat"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/hadjet/front.svg",
+                extra: 1480/1346,
+                bottom: 26/1506
+            }
+        },
+    },
+    [
+        {
+            name: "Macro",
+            height: math.unit(10, "stories"),
+            default: true
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(1.5, "miles")
+        },
+        {
+            name: "Megamacro+",
+            height: math.unit(5, "miles")
         },
     ]
 ))
