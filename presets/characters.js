@@ -1322,8 +1322,10 @@ const speciesData = {
       name: "Aaltranae",
       parents: ["dragon"]
     },
-    
-    
+    "cyborg": {
+      name: "Cyborg",
+      parents: ["machine"]
+    },
 }
 
 //species
@@ -27852,6 +27854,84 @@ characterMakers.push(() => makeCharacter(
         {
             name: "Megamacro+",
             height: math.unit(5, "miles")
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Kodran", species: ["dragon", "machine"], tags: ["feral"] },
+    {
+        side: {
+            height: math.unit(106, "feet"),
+            weight: math.unit(500, "tonnes"),
+            name: "Side",
+            image: {
+                source: "./media/characters/kodran/side.svg",
+                extra: 553/480,
+                bottom: 33/586
+            }
+        },
+        front: {
+            height: math.unit(132, "feet"),
+            weight: math.unit(500, "tonnes"),
+            name: "Front",
+            image: {
+                source: "./media/characters/kodran/front.svg",
+                extra: 667/643,
+                bottom: 42/709
+            }
+        },
+        flying: {
+            height: math.unit(350, "feet"),
+            weight: math.unit(500, "tonnes"),
+            name: "Flying",
+            image: {
+                source: "./media/characters/kodran/flying.svg"
+            }
+        },
+        foot: {
+            height: math.unit(33, "feet"),
+            name: "Foot",
+            image: {
+                source: "./media/characters/kodran/foot.svg"
+            }
+        },
+        footFront: {
+            height: math.unit(19, "feet"),
+            name: "Foot (Front)",
+            image: {
+                source: "./media/characters/kodran/foot-front.svg",
+                extra: 261/261,
+                bottom: 91/352
+            }
+        },
+        headFront: {
+            height: math.unit(53, "feet"),
+            name: "Head (Front)",
+            image: {
+                source: "./media/characters/kodran/head-front.svg"
+            }
+        },
+        headSide: {
+            height: math.unit(65, "feet"),
+            name: "Head (Side)",
+            image: {
+                source: "./media/characters/kodran/head-side.svg"
+            }
+        },
+        throat: {
+            height: math.unit(79, "feet"),
+            name: "Throat",
+            image: {
+                source: "./media/characters/kodran/throat.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Large",
+            height: math.unit(106, "feet"),
+            default: true
         },
     ]
 ))

@@ -11042,6 +11042,25 @@ const attributionData = {
                 "perenthis"
             ]
         },
+        {
+            prefix: "./media/characters/kodran/",
+            files: [
+                { name: "flying.svg", source: "https://www.furaffinity.net/view/9551961/", nsfw: false },
+                { name: "foot-front.svg", source: "https://www.furaffinity.net/view/9551961/", nsfw: false },
+                { name: "foot.svg", source: "https://www.furaffinity.net/view/9551961/", nsfw: false },
+                { name: "front.svg", source: "https://www.furaffinity.net/view/9551961/", nsfw: false },
+                { name: "head-front.svg", source: "https://www.furaffinity.net/view/9551961/", nsfw: false },
+                { name: "head-side.svg", source: "https://www.furaffinity.net/view/9551961/", nsfw: false },
+                { name: "side.svg", source: "https://www.furaffinity.net/view/9551961/", nsfw: false },
+                { name: "throat.svg", source: "https://www.furaffinity.net/view/9551961/", nsfw: false },
+            ],
+            authors: [
+                "echinoderma"
+            ],
+            owners: [
+                "kodran"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -15233,6 +15252,14 @@ const attributionData = {
         "perenthis": {
             "name": "Perenthis",
             "url": "https://www.furaffinity.net/user/perenthis/"
+        },
+        "echinoderma": {
+            "name": "echinoderma",
+            "url": "https://www.furaffinity.net/user/echinoderma"
+        },
+        "kodran": {
+            "name": "Kodran",
+            "url": "https://www.furaffinity.net/user/kodran"
         },
     }
 }
