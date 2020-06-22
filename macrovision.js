@@ -470,10 +470,14 @@ function drawHorizontalScale(ifDirty = false) {
     if (ifDirty && !worldSizeDirty)
         return;
     function drawTicks(/** @type {CanvasRenderingContext2D} */ ctx, pixelsPer, heightPer) {
-        console.log(heightPer);
         let total = heightPer.clone();
         total.value = math.unit(-config.x, "meters").toNumber(config.unit);
+
+        // further adjust it to put the current position in the center
+
+        total.value -=  heightPer.toNumber("meters") / pixelsPer * (canvasWidth + 50) / 2;
         let x = ctx.canvas.clientWidth - 50;
+
 
         let offset = total.toNumber("meters") % heightPer.toNumber("meters");
 
