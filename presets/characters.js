@@ -27936,6 +27936,28 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Pyxaron", species: ["draptor"], tags: ["anthro"] },
+    {
+        side: {
+            height: math.unit(11, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Side",
+            image: {
+                source: "./media/characters/pyxaron/side.svg",
+                extra: 305/195,
+                bottom: 17/322
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(11, "feet")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

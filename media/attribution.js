@@ -11061,6 +11061,18 @@ const attributionData = {
                 "kodran"
             ]
         },
+        {
+            prefix: "./media/characters/pyxaron/",
+            files: [
+                { name: "side.svg", source: "https://www.furaffinity.net/view/1065698/" }
+            ],
+            authors: [
+                "rah-bop"
+            ],
+            owners: [
+                "pyxaron"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -15260,6 +15272,14 @@ const attributionData = {
         "kodran": {
             "name": "Kodran",
             "url": "https://www.furaffinity.net/user/kodran"
+        },
+        "pyxaron": {
+            "name": "Pyxaron",
+            "url": "https://www.furaffinity.net/user/pyxaron/"
+        },
+        "rah-bop": {
+            "name": "rah-bop",
+            "url": "https://www.deviantart.com/rah-bop"
         },
     }
 }
