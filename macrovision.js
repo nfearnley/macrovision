@@ -525,7 +525,7 @@ function drawHorizontalScale(ifDirty = false) {
 
     const ctx = canvas.getContext("2d");
 
-    let pixelsPer = (ctx.canvas.clientHeight - 100) / config.height.toNumber("meters");
+    let pixelsPer = (ctx.canvas.clientHeight - 100) / config.height.toNumber();
 
     heightPer = 1;
 
