@@ -1326,6 +1326,10 @@ const speciesData = {
       name: "Cyborg",
       parents: ["machine"]
     },
+    "draptor": {
+      name: "Draptor",
+      parents: ["dragon"]
+    },
 }
 
 //species
@@ -27937,7 +27941,7 @@ characterMakers.push(() => makeCharacter(
 ))
 
 characterMakers.push(() => makeCharacter(
-    { name: "Pyxaron", species: ["draptor"], tags: ["anthro"] },
+    { name: "Pyxaron", species: ["draptor"], tags: ["feral"] },
     {
         side: {
             height: math.unit(11, "feet"),
