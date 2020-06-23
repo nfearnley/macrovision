@@ -27867,6 +27867,16 @@ characterMakers.push(() => makeCharacter(
                 bottom: 26/1506
             }
         },
+        frontNsfw: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Front (NSFW)",
+            image: {
+                source: "./media/characters/hadjet/front-nsfw.svg",
+                extra: 1440/1358,
+                bottom: 52/1492
+            }
+        },
     },
     [
         {

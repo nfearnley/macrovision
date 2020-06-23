@@ -11063,7 +11063,8 @@ const attributionData = {
         {
             prefix: "./media/characters/hadjet/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/30888546/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/30888546/", nsfw: false },
+                { name: "front-nsfw.svg", source: "https://www.furaffinity.net/view/31656683/", nsfw: true }
             ],
             authors: [
                 "perenthis"
