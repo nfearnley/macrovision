@@ -3585,6 +3585,7 @@ function importScene(data) {
     config.x = data.world.x;
     config.y = data.world.y;
 
+    document.querySelector("#options-height-value").value = data.world.height;
     document.querySelector("#options-height-unit").value = data.world.unit;
 
     if (data.canvasWidth) {
