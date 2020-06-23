@@ -707,6 +707,16 @@ function makeEntity(info, views, sizes) {
                 )
             });
 
+            Object.defineProperty(
+                this,
+                "currentView",
+                {
+                    get: function() {
+                        return entity.views[entity.view];
+                    }
+                }
+            )
+
             delete this.init;
             return this;
         }
@@ -1050,10 +1060,10 @@ function configViewOptions(entity, view) {
             e.stopPropagation();
         })
 
-        if (entity.views[view].units[key]) {
-            select.value = entity.views[view].units[key];
+        if (entity.currentView.units[key]) {
+            select.value = entity.currentView.units[key];
         } else {
-            entity.views[view].units[key] = select.value;
+            entity.currentView.units[key] = select.value;
         }
 
         select.setAttribute("oldUnit", select.value);
