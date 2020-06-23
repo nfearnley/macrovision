@@ -122,6 +122,11 @@ math.createUnit("multiverses", {
     prefixes: "long"
 });
 
+math.createUnit("footballFields", {
+    definition: "57600 feet^2",
+    prefixes: "long"
+});
+
 math.createUnit("people", {
     definition: "75 liters",
     prefixes: "long"
@@ -147,55 +152,114 @@ math.createUnit("multiverseVolumes", {
     prefixes: "long"
 });
 
+math.createUnit("peopleMass", {
+    definition: "80 kg",
+    prefixes: "long"
+});
+
+const defaultUnits = {
+    length: {
+        metric: "meters",
+        customary: "feet",
+        relative: "stories"
+    },
+    area: {
+        metric: "meters^2",
+        customary: "feet^2",
+        relative: "footballFields"
+    },
+    volume: {
+        metric: "liters",
+        customary: "gallons",
+        relative: "olympicPools"
+    },
+    mass: {
+        metric: "kilograms",
+        customary: "lbs",
+        relative: "peopleMass"
+    }
+}
+
 const unitChoices = {
-    length: [
-        "meters",
-        "angstroms",
-        "millimeters",
-        "centimeters",
-        "kilometers",
-        "inches",
-        "feet",
-        "humans",
-        "stories",
-        "miles",
-        "earths",
-        "solarradii",
-        "AUs",
-        "lightyears",
-        "parsecs",
-        "galaxies",
-        "universes",
-        "multiverses"
-    ],
-    area: [
-        "meters^2",
-        "cm^2",
-        "kilometers^2",
-        "acres",
-        "miles^2"
-    ],
-    volume: [
-        "liters",
-        "milliliters",
-        "m^3",
-        "gallons",
-        "people",
-        "olympicPools",
-        "oceans",
-        "earthVolumes",
-        "universeVolumes",
-        "multiverseVolumes",
-    ],
-    mass: [
-        "kilograms",
-        "milligrams",
-        "grams",
-        "tonnes",
-        "lbs",
-        "ounces",
-        "tons"
-    ]
+    length: {
+        "metric": [
+            "angstroms",
+            "millimeters",
+            "centimeters",
+            "meters",
+            "kilometers",
+        ],
+        "customary": [
+            "inches",
+            "feet",
+            "miles",
+        ],
+        "relative": [
+            "humans",
+            "stories",
+            "earths",
+            "solarradii",
+            "AUs",
+            "lightyears",
+            "parsecs",
+            "galaxies",
+            "universes",
+            "multiverses"
+        ]
+    },
+    area: {
+        "metric": [
+            "cm^2",
+            "meters^2",
+            "kilometers^2",
+        ],
+        "customary": [
+            "feet^2",
+            "acres",
+            "miles^2"
+        ],
+        "relative": [
+            "footballFields"
+        ]
+    },
+    volume: {
+        "metric": [
+            "milliliters",
+            "liters",
+            "m^3",
+        ],
+        "customary": [
+            "floz",
+            "cups",
+            "pints",
+            "quarts",
+            "gallons",
+        ],
+        "relative": [
+            "people",
+            "olympicPools",
+            "oceans",
+            "earthVolumes",
+            "universeVolumes",
+            "multiverseVolumes",
+        ]
+    },
+    mass: {
+        "metric": [
+            "kilograms",
+            "milligrams",
+            "grams",
+            "tonnes",
+        ],
+        "customary": [
+            "lbs",
+            "ounces",
+            "tons"
+        ],
+        "relative": [
+            "peopleMass"
+        ]
+    }
 }
 const config = {
     height: math.unit(1500, "meters"),
@@ -1036,10 +1100,18 @@ function configViewOptions(entity, view) {
         select.classList.add("options-field-unit");
         select.id = "options-view-" + key + "-select"
 
-        unitChoices[val.type].forEach(name => {
-            const option = document.createElement("option");
-            option.innerText = name;
-            select.appendChild(option);
+        Object.entries(unitChoices[val.type]).forEach(([group, entries]) => {
+            const optGroup = document.createElement("optgroup");
+            optGroup.label = group;
+            select.appendChild(optGroup);
+            entries.forEach(entry => {
+                const option = document.createElement("option");
+                option.innerText = entry;
+                if (entry == defaultUnits[val.type][config.units]) {
+                    option.selected = true;
+                }
+                select.appendChild(option);
+            })
         });
 
 
@@ -1671,6 +1743,32 @@ const settingsData = {
             checkFitWorld();
         }
     },
+    "show-vertical-scale": {
+        name: "Show Vertical Scale",
+        desc: "Draw vertical scale marks",
+        type: "toggle",
+        default: true,
+        get value() {
+            return config.drawYAxis;
+        },
+        set value(param) {
+            config.drawYAxis = param;
+            drawScales(false);
+        }
+    },
+    "show-horizontal-scale": {
+        name: "Show Horiziontal Scale",
+        desc: "Draw horizontal scale marks",
+        type: "toggle",
+        default: false,
+        get value() {
+            return config.drawXAxis;
+        },
+        set value(param) {
+            config.drawXAxis = param;
+            drawScales(false);
+        }
+    },
     "zoom-when-adding": {
         name: "Zoom When Adding",
         desc: "Zoom to fit when you add a new entity",
@@ -1693,6 +1791,23 @@ const settingsData = {
         },
         set value(param) {
             config.autoFitSize = param;
+        }
+    },
+    "units": {
+        name: "Default Units",
+        desc: "Which kind of unit to use by default",
+        type: "select",
+        default: "metric",
+        options: [
+            "metric",
+            "customary",
+            "relative"
+        ],
+        get value() {
+            return config.units;
+        },
+        set value(param) {
+            config.units = param;
         }
     },
     "names": {
@@ -1767,32 +1882,6 @@ const settingsData = {
             toggleBodyClass("toggle-bottom-cover", param);
         }
     },
-    "show-vertical-scale": {
-        name: "Show Vertical Scale",
-        desc: "Draw vertical scale marks",
-        type: "toggle",
-        default: true,
-        get value() {
-            return config.drawYAxis;
-        },
-        set value(param) {
-            config.drawYAxis = param;
-            drawScales(false);
-        }
-    },
-    "show-horizontal-scale": {
-        name: "Show Horiziontal Scale",
-        desc: "Draw horizontal scale marks",
-        type: "toggle",
-        default: false,
-        get value() {
-            return config.drawXAxis;
-        },
-        set value(param) {
-            config.drawXAxis = param;
-            drawScales(false);
-        }
-    },
 }
 
 function getBoundingBox(entities, margin = 0.05) {
@@ -1827,6 +1916,7 @@ function prepareSettings(userSettings) {
             
             holder.setAttribute("for", input.id);
 
+            // FIXME this is tangled
             input.appendChild(name);
             input.appendChild(desc);
             holder.appendChild(input);
@@ -1849,6 +1939,34 @@ function prepareSettings(userSettings) {
             update();
 
             input.addEventListener("change", update);
+        } else if (entry.type == "select") {
+            // we don't use the input element we made!
+
+            const select = document.createElement("select");
+            select.id = "setting-" + id;
+
+            entry.options.forEach(choice => {
+                const option = document.createElement("option");
+                option.innerText = choice;
+                select.appendChild(option);
+            })
+
+            select.value = userSettings[id] === undefined ? entry.default : userSettings[id];
+
+            holder.appendChild(select);
+            holder.appendChild(name);
+            holder.appendChild(desc);
+            menubar.appendChild(holder);
+
+            holder.classList.add("enabled");
+
+            const update = () => {
+                entry.value = select.value;
+            }
+
+            update();
+
+            select.addEventListener("change", update);
         }
     })
 }
@@ -2138,17 +2256,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const unitSelector = document.querySelector("#options-height-unit");
 
-    unitChoices.length.forEach(lengthOption => {
-        const option = document.createElement("option");
+    Object.entries(unitChoices.length).forEach(([group, entries]) => {
+        const optGroup = document.createElement("optgroup");
+        optGroup.label = group;
+        unitSelector.appendChild(optGroup);
 
-        option.innerText = lengthOption;
-        option.value = lengthOption;
+        entries.forEach(entry => {
+            const option = document.createElement("option");
+            option.innerText = entry;
 
-        if (lengthOption === "meters") {
-            option.selected = true;
-        }
+            // we haven't loaded user settings yet, so we can't choose the unit just yet
 
-        unitSelector.appendChild(option);
+            unitSelector.appendChild(option);
+        })
+
     });
 
     unitSelector.setAttribute("oldUnit", "meters");
@@ -2633,6 +2754,17 @@ document.addEventListener("DOMContentLoaded", () => {
     // we do this last because configuring settings can cause things
     // to happen (e.g. auto-fit)
     prepareSettings(getUserSettings());
+
+    // now that we have this loaded, we can set it
+    
+    document.querySelector("#options-height-unit").value = defaultUnits.length[config.units];
+
+    // ...and then update the world height by setting off an input event
+
+    document.querySelector("#options-height-unit").dispatchEvent(new Event('input', {
+
+    }));
+
 });
 
 function customEntityFromFile(file, x=0.5, y=0.5) {
