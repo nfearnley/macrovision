@@ -996,6 +996,7 @@ button {
     border-width: 5px;
     border-style: solid;
     max-width: 240pt;
+    height: 60pt;
 }
 
 .settings-holder.enabled {
@@ -1006,7 +1007,9 @@ button {
 .settings-desc {
     text-align: right;
     margin-right: 8pt;
+    user-select: none;
 }
+
 .settings-holder.disabled {
     background: gray;
     border-color: darkslategray;
@@ -1014,7 +1017,14 @@ button {
 
 .settings-name {
     font-size: 200%;
-    margin-right: 16pt;
+    margin-left: 8pt;
+    user-select: none;
+}
+
+.settings-holder > select {
+    height: 100%;
+    background: darkgreen;
+    font-size: 16pt;
 }
 
 .filter-button > i {

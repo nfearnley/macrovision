@@ -1916,11 +1916,8 @@ function prepareSettings(userSettings) {
             
             holder.setAttribute("for", input.id);
 
-            // FIXME this is tangled
-            input.appendChild(name);
-            input.appendChild(desc);
-            holder.appendChild(input);
             holder.appendChild(name);
+            holder.appendChild(input);
             holder.appendChild(desc);
             menubar.appendChild(holder);
 
@@ -1953,8 +1950,8 @@ function prepareSettings(userSettings) {
 
             select.value = userSettings[id] === undefined ? entry.default : userSettings[id];
 
-            holder.appendChild(select);
             holder.appendChild(name);
+            holder.appendChild(select);
             holder.appendChild(desc);
             menubar.appendChild(holder);
 
