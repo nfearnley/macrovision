@@ -6098,7 +6098,7 @@ const attributionData = {
         {
             prefix: "./media/characters/james/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/29953279/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/29953279/", nsfw: true }
             ],
             authors: [
                 "dbd"
