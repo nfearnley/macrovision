@@ -1152,11 +1152,31 @@ const attributionData = {
         {
             prefix: "./media/buildings/sports-fields/",
             files: [
-                { name: "football-field.svg", source: "https://en.wikipedia.org/wiki/File:AmFBfield.svg" },
+                { name: "football-field.svg", source: "https://commons.wikimedia.org/wiki/File:AmFBfield.svg" },
             ],
             authors: [
                 "xyzzy-n"
             ]
+        },
+        {
+            prefix: "./media/buildings/sports-fields/",
+            files: [
+                { name: "badminton-court.svg", source: "https://commons.wikimedia.org/wiki/File:Comparison_sport_playing_areas.svg", nsfw: false },
+                { name: "basketball-court.svg", source: "https://commons.wikimedia.org/wiki/File:Comparison_sport_playing_areas.svg", nsfw: false },
+                { name: "bocce-court.svg", source: "https://commons.wikimedia.org/wiki/File:Comparison_sport_playing_areas.svg", nsfw: false },
+                { name: "bowling-lane.svg", source: "https://commons.wikimedia.org/wiki/File:Comparison_sport_playing_areas.svg", nsfw: false },
+                { name: "ice-hockey.svg", source: "https://commons.wikimedia.org/wiki/File:Comparison_sport_playing_areas.svg", nsfw: false },
+                { name: "netball-court.svg", source: "https://commons.wikimedia.org/wiki/File:Comparison_sport_playing_areas.svg", nsfw: false },
+                { name: "olympic-swimming-pool.svg", source: "https://commons.wikimedia.org/wiki/File:Comparison_sport_playing_areas.svg", nsfw: false },
+                { name: "snooker-table.svg", source: "https://commons.wikimedia.org/wiki/File:Comparison_sport_playing_areas.svg", nsfw: false },
+                { name: "squash-court.svg", source: "https://commons.wikimedia.org/wiki/File:Comparison_sport_playing_areas.svg", nsfw: false },
+                { name: "table-tennis.svg", source: "https://commons.wikimedia.org/wiki/File:Comparison_sport_playing_areas.svg", nsfw: false },
+                { name: "tennis-court.svg", source: "https://commons.wikimedia.org/wiki/File:Comparison_sport_playing_areas.svg", nsfw: false },
+                { name: "volleyball-court.svg", source: "https://commons.wikimedia.org/wiki/File:Comparison_sport_playing_areas.svg", nsfw: false },
+            ],
+            authors: [
+                "cmglee"
+            ],
         },
         {
             prefix: "./media/cities/",
@@ -15329,6 +15349,10 @@ const attributionData = {
         "xyzzy-n": {
             "name": "Xyzyy n",
             "url": "https://en.wikipedia.org/wiki/User:Xyzzy_n"
+        },
+        "cmglee": {
+            "name": "Cmglee",
+            "url": "https://commons.wikimedia.org/wiki/User:Cmglee"
         },
     }
 }

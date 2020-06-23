@@ -179,7 +179,19 @@ function makeBuildings() {
     results.push(
         makeHeight(
             [
+                ["badminton-court", 13.4, "meters"],
+                ["basketball-court", 28, "meters"],
+                ["bocce-court", 27.5, "meters"],
+                ["bowling-lane", 23.8, "meters"],
                 ["football-field", 160, "feet"],
+                ["ice-hockey", 30, "meters"],
+                ["netball-court", 30.5, "meters"],
+                ["olympic-swimming-pool", 25, "meters"],
+                ["snooker-table", 3.7, "meters"],
+                ["squash-court", 9.8, "meters"],
+                ["table-tennis", 2.79, "meters"],
+                ["tennis-court", 23.8, "meters"],
+                ["volleyball-court", 21.6, "meters"],
             ],
             "Sports Fields",
             "",
