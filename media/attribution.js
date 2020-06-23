@@ -1150,6 +1150,15 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/buildings/sports-fields/",
+            files: [
+                { name: "football-field.svg", source: "https://en.wikipedia.org/wiki/File:AmFBfield.svg" },
+            ],
+            authors: [
+                "xyzzy-n"
+            ]
+        },
+        {
             prefix: "./media/cities/",
             files: [
                 { name: "city_atlanta.svg", source: "https://all-free-download.com/free-vector/download/big-cities-silhouette-set-vector_548864.html" },
@@ -15301,6 +15310,10 @@ const attributionData = {
         "caitsith511": {
             "name": "caitsith511",
             "url": "https://www.furaffinity.net/user/caitsith511"
+        },
+        "xyzzy-n": {
+            "name": "Xyzyy n",
+            "url": "https://en.wikipedia.org/wiki/User:Xyzzy_n"
         },
     }
 }
