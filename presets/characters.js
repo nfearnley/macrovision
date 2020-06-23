@@ -28012,6 +28012,58 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Holly (Rabbit)", species: ["rabbit"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(15, "feet"),
+            weight: math.unit(2500, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/holly-rabbit/front.svg",
+                extra: 1433/1233,
+                bottom: 125/1558
+            }
+        },
+        dick: {
+            height: math.unit(4.6, "feet"),
+            name: "Dick",
+            image: {
+                source: "./media/characters/holly-rabbit/dick.svg"
+            }
+        },
+        earrings: {
+            height: math.unit(4.5, "feet"),
+            name: "Earrings",
+            image: {
+                source: "./media/characters/holly-rabbit/earrings.svg"
+            }
+        },
+        foot: {
+            height: math.unit(2.54, "feet"),
+            name: "Foot",
+            image: {
+                source: "./media/characters/holly-rabbit/foot.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(15, "feet"),
+            default: true
+        },
+        {
+            name: "Macro",
+            height: math.unit(250, "feet")
+        },
+        {
+            name: "Macro+",
+            height: math.unit(2500, "feet")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

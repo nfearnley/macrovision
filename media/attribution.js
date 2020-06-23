@@ -11095,6 +11095,21 @@ const attributionData = {
                 "pileofmeeps"
             ]
         },
+        {
+            prefix: "./media/characters/holly-rabbit/",
+            files: [
+                { name: "dick.svg", source: null, nsfw: true },
+                { name: "earrings.svg", source: null, nsfw: false },
+                { name: "foot.svg", source: null, nsfw: false },
+                { name: "front.svg", source: null, nsfw: false },
+            ],
+            authors: [
+                "perenthis"
+            ],
+            owners: [
+                "perenthis"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
