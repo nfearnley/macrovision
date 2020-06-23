@@ -28032,20 +28032,6 @@ characterMakers.push(() => makeCharacter(
                 source: "./media/characters/holly-rabbit/dick.svg"
             }
         },
-        earrings: {
-            height: math.unit(4.5, "feet"),
-            name: "Earrings",
-            image: {
-                source: "./media/characters/holly-rabbit/earrings.svg"
-            }
-        },
-        foot: {
-            height: math.unit(2.54, "feet"),
-            name: "Foot",
-            image: {
-                source: "./media/characters/holly-rabbit/foot.svg"
-            }
-        },
     },
     [
         {

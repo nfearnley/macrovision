@@ -11119,8 +11119,6 @@ const attributionData = {
             prefix: "./media/characters/holly-rabbit/",
             files: [
                 { name: "dick.svg", source: null, nsfw: true },
-                { name: "earrings.svg", source: null, nsfw: false },
-                { name: "foot.svg", source: null, nsfw: false },
                 { name: "front.svg", source: null, nsfw: false },
             ],
             authors: [
