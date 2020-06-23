@@ -637,6 +637,10 @@ function makeEntity(info, views, sizes) {
                     this.view = viewKey;
                 }
 
+                // to remember the units the user last picked
+
+                view.units = {};
+
                 Object.entries(view.attributes).forEach(([key, val]) => {
                     Object.defineProperty(
                         view,
@@ -650,7 +654,7 @@ function makeEntity(info, views, sizes) {
                                 this.parent.scale = newScale;
                             }
                         }
-                    )
+                    );
                 });
             });
 
@@ -1046,6 +1050,12 @@ function configViewOptions(entity, view) {
             e.stopPropagation();
         })
 
+        if (entity.views[view].units[key]) {
+            select.value = entity.views[view].units[key];
+        } else {
+            entity.views[view].units[key] = select.value;
+        }
+
         select.setAttribute("oldUnit", select.value);
 
         setNumericInput(input, entity.views[view][key].toNumber(select.value));
@@ -1059,6 +1069,7 @@ function configViewOptions(entity, view) {
             setNumericInput(input, entity.views[entity.view][key].toNumber(select.value));
 
             select.setAttribute("oldUnit", select.value);
+            entity.views[view].units[key] = select.value;
 
             if (config.autoFit) {
                 fitWorld();
