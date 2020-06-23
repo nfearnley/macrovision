@@ -3295,7 +3295,7 @@ document.addEventListener("touchmove", (e) => {
         panOffsetY = e.touches[0].clientY;
         updateSizes();
         panReady = false;
-        setTimeout(() => panReady=true, 50);
+        setTimeout(() => panReady=true, 1000/60);
     }
 }, { passive: false });
 
