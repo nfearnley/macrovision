@@ -1550,15 +1550,9 @@ function displayEntity(entity, view, x, y, selectEntity = false, refresh = false
     entity.dirty = true;
 
     if (refresh && config.autoFitAdd) {
-        const x = parseFloat(selected.dataset.x);
-        const y = parseFloat(selected.dataset.y);
-
-        config.x = x;
-        config.y = y;
-
-        const entity = entities[selected.dataset.key];
-        const height = math.multiply(entity.views[entity.view].height, 1.1);
-        setWorldHeight(config.height, height);
+        let targets = {};
+        targets[entityIndex - 1] = entity;
+        fitEntities(targets);
     }
     if (refresh)
         updateSizes(true);
@@ -3358,6 +3352,9 @@ function fitEntities(targetEntities, manual = false, factor = 1.1) {
         count += 1;
     });
 
+    if (config.lockYAxis) {
+        minY = 0;
+    }
     let ySize = (maxY - minY) * factor;
     let xSize = (maxX - minX) * factor;
 
