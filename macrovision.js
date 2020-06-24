@@ -2102,6 +2102,11 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#save-screenshot").addEventListener("click", e => {
         saveScreenshot();
     });
+
+    document.querySelector("#open-screenshot").addEventListener("click", e => {
+        openScreenshot();
+    });
+    
     document.querySelector("#toggle-menu").addEventListener("click", e => {
         const popoutMenu = document.querySelector("#sidebar-menu");
         if (popoutMenu.classList.contains("visible")) {
@@ -3663,6 +3668,16 @@ function saveScreenshot() {
         const a = document.createElement("a");
         a.href = URL.createObjectURL(blob);
         a.setAttribute("download", "macrovision.png");
+        a.click();
+    });   
+    drawScales(false);
+}
+
+function openScreenshot() {
+    generateScreenshot(blob => {
+        const a = document.createElement("a");
+        a.href = URL.createObjectURL(blob);
+        a.setAttribute("target", "_blank");
         a.click();
     });   
     drawScales(false);
