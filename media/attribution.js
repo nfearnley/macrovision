@@ -10826,6 +10826,18 @@ const attributionData = {
             ]
         },
         {
+            prefix: "./media/characters/withers/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "zuekrz"
+            ],
+            owners: [
+                "datastains"
+            ]
+        },
+        {
             prefix: "./media/characters/nemoskii/",
             files: [
                 { name: "front.svg", source: "https://www.furaffinity.net/view/33374339/", nsfw: true },
@@ -15352,6 +15364,10 @@ const attributionData = {
         "cmglee": {
             "name": "Cmglee",
             "url": "https://commons.wikimedia.org/wiki/User:Cmglee"
+        },
+        "zuekrz": {
+            "name": "ZueBun",
+            "url": "https://twitter.com/zuekrz"
         },
     }
 }

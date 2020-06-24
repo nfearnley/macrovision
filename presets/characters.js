@@ -27161,6 +27161,16 @@ characterMakers.push(() => makeCharacter(
                 bottom: 96/1927
             }
         },
+        front: {
+            height: math.unit(6, "feet"),
+            weight: math.unit(150, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/withers/front.svg",
+                extra: 1514/1438,
+                bottom: 118/1632
+            }
+        },
     },
     [
         {
