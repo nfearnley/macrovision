@@ -3626,19 +3626,20 @@ function exportCanvas(callback) {
 }
 
 function generateScreenshot(callback) {
-    renderToCanvas();
-
     /** @type {CanvasRenderingContext2D} */
     const ctx = document.querySelector("#display").getContext("2d");
-
-    ctx.fillStyle = "#555";
-    ctx.font = "normal normal lighter 16pt coda";
-    ctx.fillText("macrovision.crux.sexy", 10, 25);
 
     if (checkBodyClass("toggle-bottom-cover")) {
         ctx.fillStyle = "#000";
         ctx.fillRect(0, pos2pix({x: 0, y: 0}).y, canvasWidth + 100, canvasHeight);
     }
+    
+    renderToCanvas();
+
+    ctx.fillStyle = "#555";
+    ctx.font = "normal normal lighter 16pt coda";
+    ctx.fillText("macrovision.crux.sexy", 10, 25);
+
     
     exportCanvas(blob => {
         callback(blob);
