@@ -2747,7 +2747,8 @@ document.addEventListener("DOMContentLoaded", () => {
     prepareSettings(getUserSettings());
 
     // now that we have this loaded, we can set it
-    
+
+    document.querySelector("#options-height-unit").setAttribute("oldUnit", defaultUnits.length[config.units]);
     document.querySelector("#options-height-unit").value = defaultUnits.length[config.units];
 
     // ...and then update the world height by setting off an input event
