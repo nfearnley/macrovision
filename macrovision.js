@@ -1138,19 +1138,19 @@ function configViewOptions(entity, view) {
             entity.currentView.units[key] = select.value;
         }
 
-        select.setAttribute("oldUnit", select.value);
+        select.dataset.oldUnit = select.value;
 
         setNumericInput(input, entity.views[view][key].toNumber(select.value));
 
         // TODO does this ever cause a change in the world?
         select.addEventListener("input", e => {
             const value = input.value == 0 ? 1 : input.value;
-            const oldUnit = select.getAttribute("oldUnit");
+            const oldUnit = select.dataset.oldUnit;
             entity.views[entity.view][key] = math.unit(value, oldUnit).to(select.value);
             entity.dirty = true;
             setNumericInput(input, entity.views[entity.view][key].toNumber(select.value));
 
-            select.setAttribute("oldUnit", select.value);
+            select.dataset.oldUnit = select.value;
             entity.views[view].units[key] = select.value;
 
             if (config.autoFit) {
@@ -2264,77 +2264,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-    unitSelector.setAttribute("oldUnit", "meters");
-
     unitSelector.addEventListener("input", e => {
         checkFitWorld();
         const scaleInput = document.querySelector("#options-height-value");
-        const newVal = math.unit(scaleInput.value, unitSelector.getAttribute("oldUnit")).toNumber(e.target.value);
+        const newVal = math.unit(scaleInput.value, unitSelector.dataset.oldUnit).toNumber(e.target.value);
         setNumericInput(scaleInput, newVal);
         updateWorldHeight();
-        unitSelector.setAttribute("oldUnit", unitSelector.value);
+        unitSelector.dataset.oldUnit = unitSelector.value;
     });
 
     param = new URL(window.location.href).searchParams.get("scene");
-
-    if (param === null) {
-        scenes["Default"]();
-    }
-
-    else {
-        try {
-            const data = JSON.parse(b64DecodeUnicode(param));
-            if (data.entities === undefined) {
-                return;
-            }
-            if (data.world === undefined) {
-                return;
-            }
-
-            importScene(data);
-        } catch (err) {
-            console.error(err);
-            scenes["Default"]();
-
-            // probably wasn't valid data 
-        }
-    }
-    document.querySelector("#world").addEventListener("wheel", e => {
-
-
-        if (shiftHeld) {
-            if (selected) {
-                const dir = e.deltaY > 0 ? 10 / 11 : 11 / 10;
-                const entity = entities[selected.dataset.key];
-                entity.views[entity.view].height = math.multiply(entity.views[entity.view].height, dir);
-                entity.dirty = true;
-                updateEntityOptions(entity, entity.view);
-                updateViewOptions(entity, entity.view);
-                updateSizes(true);
-            } else {
-                const worldWidth = config.height.toNumber("meters") / canvasHeight * canvasWidth;
-                config.x += (e.deltaY > 0 ? 1 : -1) * worldWidth / 20 ;
-                updateSizes();
-                updateSizes();
-            }
-
-        } else {
-            if (config.autoFit) {
-                toastRateLimit("Zoom is locked! Check Settings to disable.", "zoom-lock", 1000);
-            } else {
-                const dir = e.deltaY < 0 ? 10 / 11 : 11 / 10;
-                const change = config.height.toNumber("meters") - math.multiply(config.height, dir).toNumber("meters");
-                setWorldHeight(config.height, math.multiply(config.height, dir));
-                updateWorldOptions();
-
-                if (!config.lockYAxis) {
-                    config.y += change / 2;
-                }
-            }
-            
-        }
-        checkFitWorld();
-    })
 
     document.querySelector("#world").addEventListener("mousedown", e => {
         // only middle mouse clicks
@@ -2749,7 +2688,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // now that we have this loaded, we can set it
 
-    document.querySelector("#options-height-unit").setAttribute("oldUnit", defaultUnits.length[config.units]);
+    unitSelector.dataset.oldUnit = defaultUnits.length[config.units];
+
     document.querySelector("#options-height-unit").value = defaultUnits.length[config.units];
 
     // ...and then update the world height by setting off an input event
@@ -2757,6 +2697,67 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#options-height-unit").dispatchEvent(new Event('input', {
 
     }));
+
+    
+
+    if (param === null) {
+        scenes["Default"]();
+    }
+
+    else {
+        try {
+            const data = JSON.parse(b64DecodeUnicode(param));
+            if (data.entities === undefined) {
+                return;
+            }
+            if (data.world === undefined) {
+                return;
+            }
+
+            importScene(data);
+        } catch (err) {
+            console.error(err);
+            scenes["Default"]();
+
+            // probably wasn't valid data 
+        }
+    }
+    document.querySelector("#world").addEventListener("wheel", e => {
+
+
+        if (shiftHeld) {
+            if (selected) {
+                const dir = e.deltaY > 0 ? 10 / 11 : 11 / 10;
+                const entity = entities[selected.dataset.key];
+                entity.views[entity.view].height = math.multiply(entity.views[entity.view].height, dir);
+                entity.dirty = true;
+                updateEntityOptions(entity, entity.view);
+                updateViewOptions(entity, entity.view);
+                updateSizes(true);
+            } else {
+                const worldWidth = config.height.toNumber("meters") / canvasHeight * canvasWidth;
+                config.x += (e.deltaY > 0 ? 1 : -1) * worldWidth / 20 ;
+                updateSizes();
+                updateSizes();
+            }
+
+        } else {
+            if (config.autoFit) {
+                toastRateLimit("Zoom is locked! Check Settings to disable.", "zoom-lock", 1000);
+            } else {
+                const dir = e.deltaY < 0 ? 10 / 11 : 11 / 10;
+                const change = config.height.toNumber("meters") - math.multiply(config.height, dir).toNumber("meters");
+                setWorldHeight(config.height, math.multiply(config.height, dir));
+                updateWorldOptions();
+
+                if (!config.lockYAxis) {
+                    config.y += change / 2;
+                }
+            }
+            
+        }
+        checkFitWorld();
+    })
 
 });
 
@@ -3584,8 +3585,11 @@ function importScene(data) {
     config.x = data.world.x;
     config.y = data.world.y;
 
-    document.querySelector("#options-height-value").value = data.world.height;
-    document.querySelector("#options-height-unit").value = data.world.unit;
+    const height = math.unit(data.world.height, data.world.unit).toNumber(defaultUnits.length[config.units]);
+
+    document.querySelector("#options-height-value").value = height;
+    document.querySelector("#options-height-unit").dataset.oldUnit = defaultUnits.length[config.units];
+    document.querySelector("#options-height-unit").value = defaultUnits.length[config.units];
 
     if (data.canvasWidth) {
         doHorizReposition(data.canvasWidth / canvasWidth);
