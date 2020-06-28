@@ -3653,6 +3653,10 @@ function generateScreenshot(callback) {
 }
 
 function copyScreenshot() {
+    if (window.ClipboardItem === undefined) {
+        alert("Sorry, this browser doesn't yet support writing images to the clipboard.");
+        return;
+    }
     generateScreenshot(blob => {
         navigator.clipboard.write([
             new ClipboardItem({
