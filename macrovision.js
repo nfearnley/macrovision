@@ -10,6 +10,8 @@ let clickTimeout = null;
 let dragOffsetX = null;
 let dragOffsetY = null;
 
+let preloaded = new Set();
+
 let panning = false;
 let panReady = true;
 let panOffsetX = null;
@@ -1451,6 +1453,16 @@ function checkEntity(entity) {
 
 function displayEntity(entity, view, x, y, selectEntity = false, refresh = false) {
     checkEntity(entity);
+
+    // preload all of the entity's views
+
+    Object.values(entity.views).forEach(view => {
+        if (!preloaded.has(view.image.source)) {
+            let img = new Image();
+            img.src = view.image.source;
+            preloaded.add(view.image.source);
+        }
+    });
 
     const box = document.createElement("div");
     box.classList.add("entity-box");
@@ -2984,6 +2996,12 @@ function prepareEntities() {
             } else {
                 select.classList.remove("nsfw");
             }
+
+            // preload the entity's first image
+
+            const entity = entityList[select.selectedIndex].constructor();
+            let img = new Image();
+            img.src = entity.currentView.image.source;
         })
 
         const button = document.createElement("button");
