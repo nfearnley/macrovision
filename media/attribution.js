@@ -3094,7 +3094,7 @@ const attributionData = {
         {
             prefix: "./media/characters/kona/",
             files: [
-                { name: "front.svg", source: "https://www.furaffinity.net/view/30748987/" }
+                { name: "front.svg", source: "https://www.furaffinity.net/view/30748987/", nsfw: true }
             ],
             authors: [
                 "helaviskrew"
@@ -8806,7 +8806,7 @@ const attributionData = {
         {
             prefix: "./media/characters/equus-silvermane/",
             files: [
-                { name: "side-stepping.svg", source: "https://www.furaffinity.net/view/32404813/" }
+                { name: "side-stepping.svg", source: "https://www.furaffinity.net/view/32404813/", nsfw: true }
             ],
             authors: [
                 "tanutanuki"
