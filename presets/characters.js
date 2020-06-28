@@ -1334,7 +1334,10 @@ const speciesData = {
       name: "Candy",
       parents: []
     },
-    
+    "drenath": {
+      name: "Drenath",
+      parents: ["dragon", "snake", "rabbit"]
+    },
 }
 
 //species
@@ -28066,6 +28069,70 @@ characterMakers.push(() => makeCharacter(
         {
             name: "Macro+",
             height: math.unit(2500, "feet")
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Drena", species: ["drenath"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(3.02, "meters"),
+            weight: math.unit(500, "kg"),
+            name: "Front",
+            image: {
+                source: "./media/characters/drena/front.svg",
+                extra: 282/243,
+                bottom: 8/290
+            }
+        },
+        side: {
+            height: math.unit(3.02, "meters"),
+            weight: math.unit(500, "kg"),
+            name: "Side",
+            image: {
+                source: "./media/characters/drena/side.svg",
+                extra: 280/245,
+                bottom: 10/290
+            }
+        },
+        back: {
+            height: math.unit(3.02, "meters"),
+            weight: math.unit(500, "kg"),
+            name: "Back",
+            image: {
+                source: "./media/characters/drena/back.svg",
+                extra: 278/243,
+                bottom: 2/280
+            }
+        },
+        foot: {
+            height: math.unit(0.75, "meters"),
+            name: "Foot",
+            image: {
+                source: "./media/characters/drena/foot.svg"
+            }
+        },
+        maw: {
+            height: math.unit(0.82, "meters"),
+            name: "Maw",
+            image: {
+                source: "./media/characters/drena/maw.svg"
+            }
+        },
+        rump: {
+            height: math.unit(0.93, "meters"),
+            name: "Rump",
+            image: {
+                source: "./media/characters/drena/rump.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(3.02, "meters"),
+            default: true
         },
     ]
 ))

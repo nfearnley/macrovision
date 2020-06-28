@@ -11141,6 +11141,23 @@ const attributionData = {
                 "perenthis"
             ]
         },
+        {
+            prefix: "./media/characters/drena/",
+            files: [
+                { name: "back.svg", source: "https://www.furaffinity.net/user/forceswerwolf/", nsfw: false },
+                { name: "foot.svg", source: "https://www.furaffinity.net/user/forceswerwolf/", nsfw: false },
+                { name: "front.svg", source: "https://www.furaffinity.net/user/forceswerwolf/", nsfw: true },
+                { name: "maw.svg", source: "https://www.furaffinity.net/user/forceswerwolf/", nsfw: false },
+                { name: "rump.svg", source: "https://www.furaffinity.net/user/forceswerwolf/", nsfw: true },
+                { name: "side.svg", source: "https://www.furaffinity.net/user/forceswerwolf/", nsfw: true },
+            ],
+            authors: [
+                "forceswerwolf"
+            ],
+            owners: [
+                "forceswerwolf"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -15368,6 +15385,10 @@ const attributionData = {
         "zuekrz": {
             "name": "ZueBun",
             "url": "https://twitter.com/zuekrz"
+        },
+        "forceswerwolf": {
+            "name": "ForcesWerwolf",
+            "url": "https://www.furaffinity.net/user/forceswerwolf/"
         },
     }
 }
