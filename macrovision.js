@@ -3465,6 +3465,7 @@ function exportScene() {
         const element = document.querySelector("#entity-" + key);
         results.entities.push({
             name: entity.identifier,
+            customName: entity.name,
             scale: entity.scale,
             view: entity.view,
             x: element.dataset.x,
@@ -3570,9 +3571,20 @@ const migrationDefs = [
             entity.priority = 0;
             entity.brightness = 1;
         });
+    },
+    /*
+    Migration: 2 -> 3
+
+    Custom names are exported
+    */
+
+    data => {
+        data.entities.forEach(entity => {
+            entity.customName = entity.name
+        });
     }
 ]
-    
+
 
 function migrateScene(data) {
     if (data.version === undefined) {
@@ -3593,6 +3605,7 @@ function importScene(data) {
 
     data.entities.forEach(entityInfo => {
         const entity = findEntity(entityInfo.name).constructor();
+        entity.name = entityInfo.customName;
         entity.scale = entityInfo.scale;
         entity.priority = entityInfo.priority;
         entity.brightness = entityInfo.brightness;
