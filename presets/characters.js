@@ -27705,6 +27705,10 @@ characterMakers.push(() => makeCharacter(
             name: "Gigamacro",
             height: math.unit(1, "universe")
         },
+        {
+            name: "Endgame",
+            height: math.unit(100, "multiverses")
+        }
     ]
 ))
 
