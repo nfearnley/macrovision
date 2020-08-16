@@ -28291,6 +28291,27 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Sydney", species: ["naga"], tags: ["naga"] },
+    {
+        front: {
+            height: math.unit(4.2, "meters"),
+            name: "Front",
+            image: {
+                source: "./media/characters/sydney/front.svg",
+                extra: 1323/1277,
+                bottom: 111/1434
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(4.2, "meters")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {

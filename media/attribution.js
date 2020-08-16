@@ -11191,6 +11191,18 @@ const attributionData = {
                 "amalthus"
             ]
         },
+        {
+            prefix: "./media/characters/sydney/",
+            files: [
+                { name: "front.svg", source: null }
+            ],
+            authors: [
+                "skymachine"
+            ],
+            owners: [
+                "gyiyga"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -15430,6 +15442,14 @@ const attributionData = {
         "amalthus": {
             "name": "Amalthus",
             "url": "https://www.furaffinity.net/user/amalthus/"
+        },
+        "gyiyga": {
+            "name": "Gyiyga",
+            "url": "https://www.furaffinity.net/user/gyiyga/"
+        },
+        "skymachine": {
+            "name": "skymachine",
+            "url": "https://www.furaffinity.net/user/skymachine/"
         },
     }
 }
