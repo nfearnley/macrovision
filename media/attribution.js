@@ -11174,6 +11174,23 @@ const attributionData = {
                 "remmyzee"
             ]
         },
+        {
+            prefix: "./media/characters/lawrence/",
+            files: [
+                { name: "front.svg", source: "https://www.furaffinity.net/view/36648690/" },
+                { name: "back.svg", source: "https://www.furaffinity.net/view/36648690/" },
+                { name: "head.svg", source: "https://www.furaffinity.net/view/36648690/" },
+                { name: "maw.svg", source: "https://www.furaffinity.net/view/36648690/" },
+                { name: "foot-bottom.svg", source: "https://www.furaffinity.net/view/36648690/" },
+                { name: "foot-top.svg", source: "https://www.furaffinity.net/view/36648690/" },
+            ],
+            authors: [
+                "dai-dai"
+            ],
+            owners: [
+                "amalthus"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -15409,6 +15426,10 @@ const attributionData = {
         "remmyzee": {
             "name": "RemmyZee",
             "url": "https://www.furaffinity.net/user/remmyzee/"
+        },
+        "amalthus": {
+            "name": "Amalthus",
+            "url": "https://www.furaffinity.net/user/amalthus/"
         },
     }
 }
