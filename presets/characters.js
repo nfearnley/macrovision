@@ -1338,6 +1338,16 @@ const speciesData = {
       name: "Drenath",
       parents: ["dragon", "snake", "rabbit"]
     },
+    "coyju": {
+      name: "Coyju",
+      parents: ["coyote", "kaiju"]
+    },
+    "kaiju": {
+      name: "Kaiju",
+      parents: ["monster"]
+    },
+    
+    
 }
 
 //species
@@ -28137,6 +28147,79 @@ characterMakers.push(() => makeCharacter(
             name: "Normal",
             height: math.unit(3.02, "meters"),
             default: true
+        },
+    ]
+))
+
+characterMakers.push(() => makeCharacter(
+    { name: "Remmyzilla", species: ["coyju"], tags: ["anthro"] },
+    {
+        front: {
+            height: math.unit(6 + 4/12, "feet"),
+            weight: math.unit(250, "lb"),
+            name: "Front",
+            image: {
+                source: "./media/characters/remmyzilla/front.svg",
+                extra: 4033/3588,
+                bottom: 123/4156
+            }
+        },
+        back: {
+            height: math.unit(6 + 4/12, "feet"),
+            weight: math.unit(250, "lb"),
+            name: "Back",
+            image: {
+                source: "./media/characters/remmyzilla/back.svg",
+                extra: 2687/2555,
+                bottom: 48/2735
+            }
+        },
+        frontFancy: {
+            height: math.unit(6 + 4/12, "feet"),
+            weight: math.unit(250, "lb"),
+            name: "Front (Fancy)",
+            image: {
+                source: "./media/characters/remmyzilla/front-fancy.svg",
+                extra: 4119/3419,
+                bottom: 237/4356
+            }
+        },
+        paw: {
+            height: math.unit(1.73, "feet"),
+            name: "Paw",
+            image: {
+                source: "./media/characters/remmyzilla/paw.svg"
+            }
+        },
+        maw: {
+            height: math.unit(1.73, "feet"),
+            name: "Maw",
+            image: {
+                source: "./media/characters/remmyzilla/maw.svg"
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(6 + 4/12, "feet")
+        },
+        {
+            name: "Minimacro",
+            height: math.unit(12 + 8/12, "feet")
+        },
+        {
+            name: "Normal",
+            height: math.unit(640, "feet"),
+            default: true
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(6400, "feet")
+        },
+        {
+            name: "Gigamacro",
+            height: math.unit(64000, "miles")
         },
     ]
 ))

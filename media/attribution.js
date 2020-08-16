@@ -11158,6 +11158,22 @@ const attributionData = {
                 "forceswerwolf"
             ]
         },
+        {
+            prefix: "./media/characters/remmyzilla/",
+            files: [
+                { name: "front.svg", source: " https://www.furaffinity.net/view/11141355" },
+                { name: "back.svg", source: " https://www.furaffinity.net/view/11141355" },
+                { name: "front-fancy.svg", source: " https://www.furaffinity.net/view/11141355" },
+                { name: "paw.svg", source: " https://www.furaffinity.net/view/11141355" },
+                { name: "maw.svg", source: " https://www.furaffinity.net/view/11141355" }
+            ],
+            authors: [
+                "cougr"
+            ],
+            owners: [
+                "remmyzee"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -15389,6 +15405,10 @@ const attributionData = {
         "forceswerwolf": {
             "name": "ForcesWerwolf",
             "url": "https://www.furaffinity.net/user/forceswerwolf/"
+        },
+        "remmyzee": {
+            "name": "RemmyZee",
+            "url": "https://www.furaffinity.net/user/remmyzee/"
         },
     }
 }
