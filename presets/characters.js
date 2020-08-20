@@ -4161,8 +4161,8 @@ characterMakers.push(() => makeCharacter(
             name: "Side",
             image: {
                 source: "./media/characters/vulpes/side.svg",
-                extra: 573 / 543,
-                bottom: 0.01
+                extra: 577/549,
+                bottom: 11/588
             }
         },
         back: {
@@ -4171,7 +4171,8 @@ characterMakers.push(() => makeCharacter(
             name: "Back",
             image: {
                 source: "./media/characters/vulpes/back.svg",
-                extra: 573 / 543,
+                extra: 573/549,
+                bottom: 20/593
             }
         },
         feet: {
