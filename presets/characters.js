@@ -10374,7 +10374,7 @@ characterMakers.push(() => makeCharacter(
     [
         {
             name: "Normal",
-            height: math.unit(3, "meters"),
+            height: math.unit(14, "feet"),
             default: true
         },
         {
