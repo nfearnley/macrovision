@@ -11203,6 +11203,18 @@ const attributionData = {
                 "gyiyga"
             ]
         },
+        {
+            prefix: "./media/characters/jessica/",
+            files: [
+                { name: "back.svg", source: null }
+            ],
+            authors: [
+                "lunarmaws"
+            ],
+            owners: [
+                "quakeroc"
+            ]
+        },
         //characters
         {
             prefix: "./media/dildos/chance/",
@@ -15450,6 +15462,10 @@ const attributionData = {
         "skymachine": {
             "name": "skymachine",
             "url": "https://www.furaffinity.net/user/skymachine/"
+        },
+        "lunarmaws": {
+            "name": "LunarMaws",
+            "url": "https://twitter.com/LunarMaws"
         },
     }
 }

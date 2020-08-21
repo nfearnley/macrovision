@@ -28313,6 +28313,32 @@ characterMakers.push(() => makeCharacter(
     ]
 ))
 
+characterMakers.push(() => makeCharacter(
+    { name: "Jessica", species: ["maned-wolf"], tags: ["anthro"] },
+    {
+        back: {
+            height: math.unit(201, "feet"),
+            name: "Back",
+            image: {
+                source: "./media/characters/jessica/back.svg",
+                extra: 273/259,
+                bottom: 7/280
+            }
+        },
+    },
+    [
+        {
+            name: "Normal",
+            height: math.unit(201, "feet"),
+            default: true
+        },
+        {
+            name: "Megamacro",
+            height: math.unit(8, "miles")
+        },
+    ]
+))
+
 //characters
 
 function makeCharacters() {
