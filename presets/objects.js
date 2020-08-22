@@ -1,3 +1,14 @@
+function toUnit(u) {
+    if (!u) {
+        return u;
+    }
+    if (u instanceof math.Unit) {
+        return u;
+    }
+    // If it's not null, undefined, or a Unit then load it as a Json object
+    return math.Unit.fromJSON(u);
+}
+
 function makeObject(name, viewInfo) {
     views = {};
 
@@ -8,7 +19,7 @@ function makeObject(name, viewInfo) {
                     name: "Height",
                     power: 1,
                     type: "length",
-                    base: value.height
+                    base: toUnit(value.height)
                 }
             },
             image: value.image,
@@ -21,7 +32,7 @@ function makeObject(name, viewInfo) {
                 name: "Mass",
                 power: 3,
                 type: "mass",
-                base: value.mass
+                base: toUnit(value.mass)
             };
         }
 
@@ -30,7 +41,7 @@ function makeObject(name, viewInfo) {
                 name: "Volume",
                 power: 3,
                 type: "volume",
-                base: value.volume
+                base: toUnit(value.volume)
             }
         }
     });
