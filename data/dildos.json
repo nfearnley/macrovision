@@ -1,0 +1,33 @@
+[
+    {
+        "name": "Chance",
+        "info": [
+            ["Side", 17.5, "inches"],
+            ["Front", 17.5, "inches"],
+            ["Top", 7.91, "inches"],
+            ["Head", 2.72, "inches"]
+        ],
+        "sizes": [
+            ["Small", 8, "inches"],
+            ["Medium", 11.5, "inches"],
+            ["Large", 14, "inches"],
+            ["Extra Large", 17.5, "inches"]
+        ]
+    },
+    {
+        "name": "Rex",
+        "info": [
+            ["Side", 14.5, "inches"],
+            ["Front", 14.5, "inches"],
+            ["Top", 5.54, "inches"],
+            ["Head", 2.13, "inches"]
+        ],
+        "sizes": [
+            ["Mini", 6, "inches"],
+            ["Small", 8, "inches"],
+            ["Medium", 10, "inches"],
+            ["Large", 12, "inches"],
+            ["Extra Large", 14.5, "inches"]
+        ]
+    }
+]

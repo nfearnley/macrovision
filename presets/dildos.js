@@ -1,5 +1,3 @@
-
-
 function makeDildo(name, info, sizes) {
     const views = {};
     let folder = name.replace(/ /g, "-").toLowerCase() + "/";
@@ -38,44 +36,12 @@ function makeDildo(name, info, sizes) {
     }
 }
 
+async function makeDildos() {
+    var dildosJson = await loadJson("data/dildos.json")
 
-function makeDildos() {
-    const results = [];
-
-    results.push(makeDildo(
-        "Chance",
-        [
-            ["Side", 17.5, "inches"],
-            ["Front", 17.5, "inches"],
-            ["Top", 7.91, "inches"],
-            ["Head", 2.72, "inches"]
-        ],
-        [
-            ["Small", 8, "inches"],
-            ["Medium", 11.5, "inches"],
-            ["Large", 14, "inches"],
-            ["Extra Large", 17.5, "inches"]
-        ]
-    ))
-
-    results.push(makeDildo(
-        "Rex",
-        [
-            ["Side", 14.5, "inches"],
-            ["Front", 14.5, "inches"],
-            ["Top", 5.54, "inches"],
-            ["Head", 2.13, "inches"]
-        ],
-        [
-            ["Mini", 6, "inches"],
-            ["Small", 8, "inches"],
-            ["Medium", 10, "inches"],
-            ["Large", 12, "inches"],
-            ["Extra Large", 14.5, "inches"]
-        ]
-    ))
-
-
+    const results = dildosJson.map(function(j) {
+        return makeDildo(j.name, j.info, j.sizes);
+    });
 
     return results;
 }
