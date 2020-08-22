@@ -1,0 +1,37 @@
+[
+    {
+        "info": [
+            ["blue-whale", 4.5, "meters", 125e3, "kg"],
+            ["sperm-whale", 3, "meters", 42e3, "kg"],
+            ["dairy-cow", 1.7, "meters", 800, "kg"],
+            ["horse", 2.08, "meters", 550, "kg"],
+            ["african-elephant", 3.2, "meters", 4000, "kg"]
+        ],
+        "category": "Animals",
+        "prefix": "",
+        "type": "food"
+    },
+    {
+        "info": [
+            ["brachiosaurus", 13, "meters", 56e3, "kg"],
+            ["pterodactyl", 2.3, "meters", 200, "kg"],
+            ["stegosaurus", 4.5, "meters", 7e3, "kg"],
+            ["tyrannosaurus", 5.2, "meters", 14e3, "kg"],
+            ["velociraptor", 1.6, "meters", 15, "kg"]
+        ],
+        "category": "Dinosaurs",
+        "prefix": "",
+        "type": "food"
+    },
+    {
+        "info": [
+            ["m&m", 0.5262, "inches", 0.86, "g", "./media/objects/circle.svg"],
+            ["skittle", 0.50, "inches", 1.06, "g", "./media/objects/circle.svg"],
+            ["gummy-bear", 2, "inches", 3.5, "g"],
+            ["lifesaver", 0.925, "inches", 3.5, "g"]
+        ],
+        "category": "Candy",
+        "prefix": "",
+        "type": "food"
+    }
+]

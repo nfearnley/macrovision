@@ -1,0 +1,52 @@
+[
+    {
+        "info": [
+            ["sycamore-tree", 35, "meters"],
+            ["pine-tree", 43, "meters"],
+            ["palm-tree", 25, "meters"]
+        ],
+        "category": "Trees",
+        "prefix": "",
+        "type": "food"
+    },
+    {
+        "info": [
+            ["grass", 3.25, "inches"]
+        ],
+        "category": "Plants",
+        "prefix": "",
+        "type": "food"
+    },
+    {
+        "info": [
+            ["hamburger", 2.75, "inches"],
+            ["french-fry", 4, "inches"],
+            ["chicken-nugget", 1.65, "inches"],
+            ["onion-ring", 4, "inches"],
+            ["donut", 75, "mm"],
+            ["bagel", 4, "inches"],
+            ["tater-tot", 0.8, "inches"]
+        ],
+        "category": "Fast Food",
+        "prefix": "",
+        "type": "food"
+    },
+    {
+        "info": [
+            ["pringles-can", 9.16, "inches"]
+        ],
+        "category": "Snacks",
+        "prefix": "",
+        "type": "food"
+    },
+    {
+        "info": [
+            ["chicken-egg", 2.084, "inches"],
+            ["quail-egg", 1.05, "inches"],
+            ["ostritch-egg", 5.9, "inches"]
+        ],
+        "category": "Eggs",
+        "prefix": "",
+        "type": "food"
+    }
+]

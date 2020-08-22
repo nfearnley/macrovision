@@ -2843,7 +2843,7 @@ async function prepareEntities() {
     availableEntities["characters"] = makeCharacters();
     availableEntities["cities"] = await makeCities();
     availableEntities["fiction"] = await makeFiction();
-    availableEntities["food"] = makeFood();
+    availableEntities["food"] = await makeFood();
     availableEntities["landmarks"] = await makeLandmarks();
     availableEntities["naturals"] = makeNaturals();
     availableEntities["objects"] = makeObjects();

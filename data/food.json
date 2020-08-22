@@ -1,0 +1,67 @@
+[
+    {
+        "name": "Human",
+        "viewInfo": {
+            "woman1": {
+                "height": { "value": 5.583333333333333, "unit": "feet" },
+                "mass": { "value": 140, "unit": "lbs"},
+                "image": { "source": "./media/food/humans/woman-1.svg" },
+                "name": "Woman 1"
+            },
+            "man1": {
+                "height": { "value": 5.916666666666667, "unit": "feet" },
+                "mass": { "value":150, "unit": "lbs" },
+                "image": { "source": "./media/food/humans/man-1.svg" },
+                "name": "Man 1"
+            }
+        }
+    },    
+    {
+        "name": "Fruit",
+        "viewInfo": 
+        {
+            "banana": {
+                "height": { "value": 3.5, "unit": "inches" },
+                "image": { "source": "./media/food/fruits/banana.svg" },
+                "name": "Banana",
+                "rename": true
+            },
+            "bananaVertical": {
+                "height": { "value": 7, "unit": "inches" },
+                "image": { "source": "./media/food/fruits/banana-vertical.svg" },
+                "name": "Banana (Vertical)",
+                "rename": true
+            },
+            "lemon": {
+                "height": { "value": 3.5, "unit": "inches" },
+                "image": { "source": "./media/food/fruits/lemon.svg" },
+                "name": "Lemon",
+                "rename": true
+            },
+            "orange": {
+                "height": { "value": 2.8, "unit": "inches" },
+                "image": { "source": "./media/food/fruits/orange.svg" },
+                "name": "Orange",
+                "rename": true
+            },
+            "grape": {
+                "height": { "value": 0.8, "unit": "inches" },
+                "image": { "source": "./media/food/fruits/grape.svg" },
+                "name": "Grape",
+                "rename": true
+            },
+            "pineapple": {
+                "height": { "value": 17, "unit": "inches" },
+                "image": { "source": "./media/food/fruits/pineapple.svg" },
+                "name": "Pineapple",
+                "rename": true
+            },
+            "watermelon": {
+                "height": { "value": 30, "unit": "cm" },
+                "image": { "source": "./media/food/fruits/watermelon.svg" },
+                "name": "Watermelon",
+                "rename": true
+            }
+        }
+    }
+]
