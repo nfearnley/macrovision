@@ -62,13 +62,13 @@ function makeSkyscraper(name, image) {
 }
 
 async function makeBuildings() {
-    var dataBuildings = await loadJson("data/buildings.json")    
-    var dataSkyscrapers = await loadJson("data/buildings-skyscrapers.json")
-    var dataHeights = await loadJson("data/buildings-heights.json")
+    var dataBuilding = await loadJson("data/buildings.json")    
+    var dataSkyscraper = await loadJson("data/buildings-skyscraper.json")
+    var dataHeight = await loadJson("data/buildings-height.json")
 
     const results = [];
 
-    results.push(...dataBuildings.map(function(d) {
+    results.push(...dataBuilding.map(function(d) {
         return {
             name: d.name,
             constructor: () => makeBuilding(
@@ -79,7 +79,7 @@ async function makeBuildings() {
         };
     }));
 
-    results.push(...dataSkyscrapers.map(function(d) {
+    results.push(...dataSkyscraper.map(function(d) {
         return {
             name: d.name,
             constructor: () => makeSkyscraper(
@@ -89,7 +89,7 @@ async function makeBuildings() {
         };
     }));
 
-    results.push(...dataHeights.map(function(d) {
+    results.push(...dataHeight.map(function(d) {
         return makeHeight(
             d.info,
             d.category,

@@ -1,7 +1,7 @@
 async function makeFood() {
     var dataFood = await loadJson("data/food.json")
-    var dataHeightWeights = await loadJson("data/food-heightweights.json")
-    var dataHeights = await loadJson("data/food-heights.json")
+    var dataHeightWeight = await loadJson("data/food-heightweight.json")
+    var dataHeight = await loadJson("data/food-height.json")
 
     const results = [];
 
@@ -15,7 +15,7 @@ async function makeFood() {
         };
     }));
 
-    results.push(...dataHeightWeights.map(function(d) {
+    results.push(...dataHeightWeight.map(function(d) {
         return makeHeightWeight(
             d.info,
             d.category,
@@ -24,7 +24,7 @@ async function makeFood() {
         );
     }));
 
-    results.push(...dataHeights.map(function(d) {
+    results.push(...dataHeight.map(function(d) {
         return makeHeight(
             d.info,
             d.category,
