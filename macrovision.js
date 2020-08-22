@@ -286,6 +286,298 @@ const entities = {
 
 }
 
+const settingsData = {
+    "lock-y-axis": {
+        name: "Lock Y-Axis",
+        desc: "Keep the camera at ground-level",
+        type: "toggle",
+        default: true,
+        get value() {
+            return config.lockYAxis;
+        },
+        set value(param) {
+            config.lockYAxis = param;
+            if (param) {
+                config.y = 0;
+                updateSizes();
+                document.querySelector("#scroll-up").disabled = true;
+                document.querySelector("#scroll-down").disabled = true;
+            } else {
+                document.querySelector("#scroll-up").disabled = false;
+                document.querySelector("#scroll-down").disabled = false;
+            }
+        }
+    },
+    "auto-scale": {
+        name: "Auto-Size World",
+        desc: "Constantly zoom to fit the largest entity",
+        type: "toggle",
+        default: false,
+        get value() {
+            return config.autoFit;
+        },
+        set value(param) {
+            config.autoFit = param;
+            checkFitWorld();
+        }
+    },
+    "show-vertical-scale": {
+        name: "Show Vertical Scale",
+        desc: "Draw vertical scale marks",
+        type: "toggle",
+        default: true,
+        get value() {
+            return config.drawYAxis;
+        },
+        set value(param) {
+            config.drawYAxis = param;
+            drawScales(false);
+        }
+    },
+    "show-horizontal-scale": {
+        name: "Show Horiziontal Scale",
+        desc: "Draw horizontal scale marks",
+        type: "toggle",
+        default: false,
+        get value() {
+            return config.drawXAxis;
+        },
+        set value(param) {
+            config.drawXAxis = param;
+            drawScales(false);
+        }
+    },
+    "zoom-when-adding": {
+        name: "Zoom When Adding",
+        desc: "Zoom to fit when you add a new entity",
+        type: "toggle",
+        default: true,
+        get value() {
+            return config.autoFitAdd;
+        },
+        set value(param) {
+            config.autoFitAdd = param;
+        }
+    },
+    "zoom-when-sizing": {
+        name: "Zoom When Sizing",
+        desc: "Zoom to fit when you select an entity's size",
+        type: "toggle",
+        default: true,
+        get value() {
+            return config.autoFitSize;
+        },
+        set value(param) {
+            config.autoFitSize = param;
+        }
+    },
+    "units": {
+        name: "Default Units",
+        desc: "Which kind of unit to use by default",
+        type: "select",
+        default: "metric",
+        options: [
+            "metric",
+            "customary",
+            "relative"
+        ],
+        get value() {
+            return config.units;
+        },
+        set value(param) {
+            config.units = param;
+        }
+    },
+    "names": {
+        name: "Show Names",
+        desc: "Display names over entities",
+        type: "toggle",
+        default: true,
+        get value() {
+            return checkBodyClass("toggle-entity-name");
+        },
+        set value(param) {
+            toggleBodyClass("toggle-entity-name", param);
+        }
+    },
+    "bottom-names": {
+        name: "Bottom Names",
+        desc: "Display names at the bottom",
+        type: "toggle",
+        default: false,
+        get value() {
+            return checkBodyClass("toggle-bottom-name");
+        },
+        set value(param) {
+            toggleBodyClass("toggle-bottom-name", param);
+        }
+    },
+    "top-names": {
+        name: "Show Arrows",
+        desc: "Point to entities that are much larger than the current view",
+        type: "toggle",
+        default: false,
+        get value() {
+            return checkBodyClass("toggle-top-name");
+        },
+        set value(param) {
+            toggleBodyClass("toggle-top-name", param);
+        }
+    },
+    "height-bars": {
+        name: "Height Bars",
+        desc: "Draw dashed lines to the top of each entity",
+        type: "toggle",
+        default: false,
+        get value() {
+            return checkBodyClass("toggle-height-bars");
+        },
+        set value(param) {
+            toggleBodyClass("toggle-height-bars", param);
+        }
+    },
+    "glowing-entities": {
+        name: "Glowing Edges",
+        desc: "Makes all entities glow",
+        type: "toggle",
+        default: false,
+        get value() {
+            return checkBodyClass("toggle-entity-glow");
+        },
+        set value(param) {
+            toggleBodyClass("toggle-entity-glow", param);
+        }
+    },
+    "solid-ground": {
+        name: "Solid Ground",
+        desc: "Draw solid ground at the y=0 line",
+        type: "toggle",
+        default: false,
+        get value() {
+            return checkBodyClass("toggle-bottom-cover");
+        },
+        set value(param) {
+            toggleBodyClass("toggle-bottom-cover", param);
+        }
+    },
+}
+
+const filterDefs = {
+    none: {
+        id: "none",
+        name: "No Filter",
+        extract: maker => [],
+        render: name => name,
+        sort: (tag1, tag2) => tag1[1].localeCompare(tag2[1])
+    },
+    author: {
+        id: "author",
+        name: "Authors",
+        extract: maker => maker.authors ? maker.authors : [],
+        render: author => attributionData.people[author].name,
+        sort: (tag1, tag2) => tag1[1].localeCompare(tag2[1])
+    },
+    owner: {
+        id: "owner",
+        name: "Owners",
+        extract: maker => maker.owners ? maker.owners : [],
+        render: owner => attributionData.people[owner].name,
+        sort: (tag1, tag2) => tag1[1].localeCompare(tag2[1])
+    },
+    species: {
+        id: "species",
+        name: "Species",
+        extract: maker => maker.info && maker.info.species ? getSpeciesInfo(maker.info.species) : [],
+        render: species => speciesData[species].name,
+        sort: (tag1, tag2) => tag1[1].localeCompare(tag2[1])
+    },
+    tags: {
+        id: "tags",
+        name: "Tags",
+        extract: maker => maker.info && maker.info.tags ? maker.info.tags : [],
+        render: tag => tagDefs[tag],
+        sort: (tag1, tag2) => tag1[1].localeCompare(tag2[1])
+    },
+    size: {
+        id: "size",
+        name: "Normal Size",
+        extract: maker => maker.sizes && maker.sizes.length > 0 ? Array.from(maker.sizes.reduce((result, size) => {
+            if (result && !size.default) {
+                return result;
+            }
+            let meters = size.height.toNumber("meters");
+            if (meters < 1e-1) {
+                return ["micro"];
+            } else if (meters < 1e1) {
+                return ["moderate"];
+            } else {
+                return ["macro"];
+            }
+        }, null)) : [],
+        render: tag => { return {
+            "micro": "Micro",
+            "moderate": "Moderate",
+            "macro": "Macro"
+        }[tag]},
+        sort: (tag1, tag2) => {
+            const order = {
+                "micro": 0,
+                "moderate": 1,
+                "macro": 2
+            };
+
+            return order[tag1[0]] - order[tag2[0]];
+        }
+    },
+    allSizes: {
+        id: "allSizes",
+        name: "Possible Size",
+        extract: maker => maker.sizes ? Array.from(maker.sizes.reduce((set, size) => {
+            
+            const height = size.height;
+
+            let result = Object.entries(sizeCategories).reduce((result, [name, value]) => {
+                if (result) {
+                    return result;
+                } else {
+                    if (math.compare(height, value) <= 0) {
+                        return name;
+                    }
+                }
+            }, null);
+
+            set.add(result ? result : "infinite");
+
+            return set;
+        }, new Set())) : [],
+        render: tag => tag[0].toUpperCase() + tag.slice(1),
+        sort: (tag1, tag2) => {
+            const order = [
+                "atomic", "microscopic", "tiny", "small", "moderate", "large", "macro", "megamacro", "planetary", "stellar",
+                "galactic", "universal", "omniversal", "infinite"
+            ]
+
+            return order.indexOf(tag1[0]) - order.indexOf(tag2[0]);
+        }
+    }
+}
+
+const sizeCategories = {
+    "atomic": math.unit(100, "angstroms"),
+    "microscopic": math.unit(100, "micrometers"),
+    "tiny": math.unit(100, "millimeters"),
+    "small": math.unit(1, "meter"),
+    "moderate": math.unit(3, "meters"),
+    "large": math.unit(10, "meters"),
+    "macro": math.unit(300, "meters"),
+    "megamacro": math.unit(1000, "kilometers"),
+    "planetary": math.unit(10, "earths"),
+    "stellar": math.unit(10, "solarradii"),
+    "galactic": math.unit(10, "galaxies"),
+    "universal": math.unit(10, "universes"),
+    "omniversal": math.unit(10, "multiverses")
+};
+
 function constrainRel(coords) {
     const worldWidth = config.height.toNumber("meters") / canvasHeight * canvasWidth;
     const worldHeight = config.height.toNumber("meters");
@@ -1710,182 +2002,6 @@ function toggleBodyClass(cls, setting) {
     }
 }
 
-const settingsData = {
-    "lock-y-axis": {
-        name: "Lock Y-Axis",
-        desc: "Keep the camera at ground-level",
-        type: "toggle",
-        default: true,
-        get value() {
-            return config.lockYAxis;
-        },
-        set value(param) {
-            config.lockYAxis = param;
-            if (param) {
-                config.y = 0;
-                updateSizes();
-                document.querySelector("#scroll-up").disabled = true;
-                document.querySelector("#scroll-down").disabled = true;
-            } else {
-                document.querySelector("#scroll-up").disabled = false;
-                document.querySelector("#scroll-down").disabled = false;
-            }
-        }
-    },
-    "auto-scale": {
-        name: "Auto-Size World",
-        desc: "Constantly zoom to fit the largest entity",
-        type: "toggle",
-        default: false,
-        get value() {
-            return config.autoFit;
-        },
-        set value(param) {
-            config.autoFit = param;
-            checkFitWorld();
-        }
-    },
-    "show-vertical-scale": {
-        name: "Show Vertical Scale",
-        desc: "Draw vertical scale marks",
-        type: "toggle",
-        default: true,
-        get value() {
-            return config.drawYAxis;
-        },
-        set value(param) {
-            config.drawYAxis = param;
-            drawScales(false);
-        }
-    },
-    "show-horizontal-scale": {
-        name: "Show Horiziontal Scale",
-        desc: "Draw horizontal scale marks",
-        type: "toggle",
-        default: false,
-        get value() {
-            return config.drawXAxis;
-        },
-        set value(param) {
-            config.drawXAxis = param;
-            drawScales(false);
-        }
-    },
-    "zoom-when-adding": {
-        name: "Zoom When Adding",
-        desc: "Zoom to fit when you add a new entity",
-        type: "toggle",
-        default: true,
-        get value() {
-            return config.autoFitAdd;
-        },
-        set value(param) {
-            config.autoFitAdd = param;
-        }
-    },
-    "zoom-when-sizing": {
-        name: "Zoom When Sizing",
-        desc: "Zoom to fit when you select an entity's size",
-        type: "toggle",
-        default: true,
-        get value() {
-            return config.autoFitSize;
-        },
-        set value(param) {
-            config.autoFitSize = param;
-        }
-    },
-    "units": {
-        name: "Default Units",
-        desc: "Which kind of unit to use by default",
-        type: "select",
-        default: "metric",
-        options: [
-            "metric",
-            "customary",
-            "relative"
-        ],
-        get value() {
-            return config.units;
-        },
-        set value(param) {
-            config.units = param;
-        }
-    },
-    "names": {
-        name: "Show Names",
-        desc: "Display names over entities",
-        type: "toggle",
-        default: true,
-        get value() {
-            return checkBodyClass("toggle-entity-name");
-        },
-        set value(param) {
-            toggleBodyClass("toggle-entity-name", param);
-        }
-    },
-    "bottom-names": {
-        name: "Bottom Names",
-        desc: "Display names at the bottom",
-        type: "toggle",
-        default: false,
-        get value() {
-            return checkBodyClass("toggle-bottom-name");
-        },
-        set value(param) {
-            toggleBodyClass("toggle-bottom-name", param);
-        }
-    },
-    "top-names": {
-        name: "Show Arrows",
-        desc: "Point to entities that are much larger than the current view",
-        type: "toggle",
-        default: false,
-        get value() {
-            return checkBodyClass("toggle-top-name");
-        },
-        set value(param) {
-            toggleBodyClass("toggle-top-name", param);
-        }
-    },
-    "height-bars": {
-        name: "Height Bars",
-        desc: "Draw dashed lines to the top of each entity",
-        type: "toggle",
-        default: false,
-        get value() {
-            return checkBodyClass("toggle-height-bars");
-        },
-        set value(param) {
-            toggleBodyClass("toggle-height-bars", param);
-        }
-    },
-    "glowing-entities": {
-        name: "Glowing Edges",
-        desc: "Makes all entities glow",
-        type: "toggle",
-        default: false,
-        get value() {
-            return checkBodyClass("toggle-entity-glow");
-        },
-        set value(param) {
-            toggleBodyClass("toggle-entity-glow", param);
-        }
-    },
-    "solid-ground": {
-        name: "Solid Ground",
-        desc: "Draw solid ground at the y=0 line",
-        type: "toggle",
-        default: false,
-        get value() {
-            return checkBodyClass("toggle-bottom-cover");
-        },
-        set value(param) {
-            toggleBodyClass("toggle-bottom-cover", param);
-        }
-    },
-}
-
 function getBoundingBox(entities, margin = 0.05) {
 
 }
@@ -2815,122 +2931,6 @@ function makeCustomEntity(url, x=0.5, y=0.5) {
     entity.ephemeral = true;
     displayEntity(entity, "custom", x, y, true, true);
 }
-
-const filterDefs = {
-    none: {
-        id: "none",
-        name: "No Filter",
-        extract: maker => [],
-        render: name => name,
-        sort: (tag1, tag2) => tag1[1].localeCompare(tag2[1])
-    },
-    author: {
-        id: "author",
-        name: "Authors",
-        extract: maker => maker.authors ? maker.authors : [],
-        render: author => attributionData.people[author].name,
-        sort: (tag1, tag2) => tag1[1].localeCompare(tag2[1])
-    },
-    owner: {
-        id: "owner",
-        name: "Owners",
-        extract: maker => maker.owners ? maker.owners : [],
-        render: owner => attributionData.people[owner].name,
-        sort: (tag1, tag2) => tag1[1].localeCompare(tag2[1])
-    },
-    species: {
-        id: "species",
-        name: "Species",
-        extract: maker => maker.info && maker.info.species ? getSpeciesInfo(maker.info.species) : [],
-        render: species => speciesData[species].name,
-        sort: (tag1, tag2) => tag1[1].localeCompare(tag2[1])
-    },
-    tags: {
-        id: "tags",
-        name: "Tags",
-        extract: maker => maker.info && maker.info.tags ? maker.info.tags : [],
-        render: tag => tagDefs[tag],
-        sort: (tag1, tag2) => tag1[1].localeCompare(tag2[1])
-    },
-    size: {
-        id: "size",
-        name: "Normal Size",
-        extract: maker => maker.sizes && maker.sizes.length > 0 ? Array.from(maker.sizes.reduce((result, size) => {
-            if (result && !size.default) {
-                return result;
-            }
-            let meters = size.height.toNumber("meters");
-            if (meters < 1e-1) {
-                return ["micro"];
-            } else if (meters < 1e1) {
-                return ["moderate"];
-            } else {
-                return ["macro"];
-            }
-        }, null)) : [],
-        render: tag => { return {
-            "micro": "Micro",
-            "moderate": "Moderate",
-            "macro": "Macro"
-        }[tag]},
-        sort: (tag1, tag2) => {
-            const order = {
-                "micro": 0,
-                "moderate": 1,
-                "macro": 2
-            };
-
-            return order[tag1[0]] - order[tag2[0]];
-        }
-    },
-    allSizes: {
-        id: "allSizes",
-        name: "Possible Size",
-        extract: maker => maker.sizes ? Array.from(maker.sizes.reduce((set, size) => {
-            
-            const height = size.height;
-
-            let result = Object.entries(sizeCategories).reduce((result, [name, value]) => {
-                if (result) {
-                    return result;
-                } else {
-                    if (math.compare(height, value) <= 0) {
-                        return name;
-                    }
-                }
-            }, null);
-
-            set.add(result ? result : "infinite");
-
-            return set;
-        }, new Set())) : [],
-        render: tag => tag[0].toUpperCase() + tag.slice(1),
-        sort: (tag1, tag2) => {
-            const order = [
-                "atomic", "microscopic", "tiny", "small", "moderate", "large", "macro", "megamacro", "planetary", "stellar",
-                "galactic", "universal", "omniversal", "infinite"
-            ]
-
-            return order.indexOf(tag1[0]) - order.indexOf(tag2[0]);
-        }
-    }
-}
-
-const sizeCategories = {
-    "atomic": math.unit(100, "angstroms"),
-    "microscopic": math.unit(100, "micrometers"),
-    "tiny": math.unit(100, "millimeters"),
-    "small": math.unit(1, "meter"),
-    "moderate": math.unit(3, "meters"),
-    "large": math.unit(10, "meters"),
-    "macro": math.unit(300, "meters"),
-    "megamacro": math.unit(1000, "kilometers"),
-    "planetary": math.unit(10, "earths"),
-    "stellar": math.unit(10, "solarradii"),
-    "galactic": math.unit(10, "galaxies"),
-    "universal": math.unit(10, "universes"),
-    "omniversal": math.unit(10, "multiverses")
-};
 
 function prepareEntities() {
     availableEntities["buildings"] = makeBuildings();
