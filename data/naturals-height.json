@@ -1,0 +1,18 @@
+[
+    {
+        "info": [
+            ["orbit-of-mercury", 0.774, "AU", "./media/naturals/orbit.svg"],
+            ["orbit-of-venus", 1.446, "AU", "./media/naturals/orbit.svg"],
+            ["orbit-of-earth", 2, "AU", "./media/naturals/orbit.svg"],
+            ["orbit-of-mars", 3.048, "AU", "./media/naturals/orbit.svg"],
+            ["orbit-of-jupiter", 10.4088, "AU", "./media/naturals/orbit.svg"],
+            ["orbit-of-saturn", 19.1652, "AU", "./media/naturals/orbit.svg"],
+            ["orbit-of-uranus", 38.4368, "AU", "./media/naturals/orbit.svg"],
+            ["orbit-of-neptune", 60.22, "AU", "./media/naturals/orbit.svg"],
+            ["orbit-of-pluto", 78.964, "AU", "./media/naturals/orbit.svg"]
+        ],
+        "category": "Orbits",
+        "prefix": "",
+        "type": ""
+    }
+]

@@ -1,0 +1,9 @@
+[
+    { "name": "Everest", "height": { "value": 29029, "unit": "feet" } },
+    { "name": "K2", "height": { "value": 28251, "unit": "feet" } },
+    { "name": "Kilimanjaro", "height": { "value": 19341, "unit": "feet" } },
+    { "name": "Rainier", "height": { "value": 14409, "unit": "feet" } },
+    { "name": "Pikes Peak", "height": { "value": 14114, "unit": "feet" } },
+    { "name": "Fuji", "height": { "value": 12388, "unit": "feet" } },
+    { "name": "Olympus", "height": { "value": 9573, "unit": "feet" } }
+]

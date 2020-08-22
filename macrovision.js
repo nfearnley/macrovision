@@ -2845,7 +2845,7 @@ async function prepareEntities() {
     availableEntities["fiction"] = await makeFiction();
     availableEntities["food"] = await makeFood();
     availableEntities["landmarks"] = await makeLandmarks();
-    availableEntities["naturals"] = makeNaturals();
+    availableEntities["naturals"] = await makeNaturals();
     availableEntities["objects"] = makeObjects();
     availableEntities["dildos"] = await makeDildos();
     availableEntities["pokemon"] = makePokemon();

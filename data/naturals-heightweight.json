@@ -1,0 +1,15 @@
+[
+    {
+        "info": [
+            ["Sun", 2, "solarradii", 1, "solarmasses", "./media/naturals/planet-generic.svg"],
+            ["White Dwarf", 14000, "km", 1e30, "kg", "./media/naturals/planet-generic.svg"],
+            ["Polaris", 75, "solarradii", 5.4, "solarmasses", "./media/naturals/planet-generic.svg"],
+            ["Sun (Red Giant)", 512, "solarradii", 1, "solarmasses", "./media/naturals/planet-generic.svg"],
+            ["Betelgeuse", 1774, "solarradii", 11.6, "solarmasses", "./media/naturals/planet-generic.svg"],
+            ["VY Canis Majoris", 2840, "solarradii", 17, "solarmasses", "./media/naturals/planet-generic.svg"]
+        ],
+        "category": "Stars",
+        "prefix": "",
+        "type": ""
+    }
+]
