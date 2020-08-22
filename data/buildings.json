@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Two-Story Home",
+        "height": { "value": 25, "unit": "feet" },
+        "image": { "source": "./media/buildings/house.svg" }
+    },
+    {
+        "name": "Mobile Home",
+        "height": { "value": 10, "unit": "feet" },
+        "image": { "source": "./media/buildings/mobile-home.svg" }
+    },
+    {
+        "name": "Mailbox",
+        "height": { "value": 5.1, "unit": "feet" },
+        "image": { "source": "./media/buildings/mailbox.svg" }
+    },
+    {
+        "name": "Bus Stop",
+        "height": { "value": 8, "unit": "feet" },
+        "image": { "source": "./media/buildings/bus-stop.svg" }
+    }
+]

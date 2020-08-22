@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Wide Skyscraper",
+        "image": { "source": "./media/buildings/skyscrapers/wide.svg" }
+    },
+    {
+        "name": "Skyscraper",
+        "image": { "source": "./media/buildings/skyscrapers/medium.svg" }
+    },
+    {
+        "name": "Slender Skyscraper",
+        "image": { "source": "./media/buildings/skyscrapers/slender.svg" }
+    },
+    {
+        "name": "Narrow Skyscraper",
+        "image": { "source": "./media/buildings/skyscrapers/narrow.svg" }
+    }
+]

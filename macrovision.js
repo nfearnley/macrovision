@@ -2839,7 +2839,7 @@ function makeCustomEntity(url, x=0.5, y=0.5) {
 }
 
 async function prepareEntities() {
-    availableEntities["buildings"] = makeBuildings();
+    availableEntities["buildings"] = await makeBuildings();
     availableEntities["characters"] = makeCharacters();
     availableEntities["cities"] = await makeCities();
     availableEntities["fiction"] = await makeFiction();

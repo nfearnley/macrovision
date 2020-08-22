@@ -61,143 +61,42 @@ function makeSkyscraper(name, image) {
     return entity;
 }
 
-function makeBuildings() {
+async function makeBuildings() {
+    var dataBuildings = await loadJson("data/buildings.json")    
+    var dataSkyscrapers = await loadJson("data/buildings-skyscrapers.json")
+    var dataHeights = await loadJson("data/buildings-heights.json")
+
     const results = [];
 
-    results.push({
-        name: "Two-Story Home",
-        constructor: () => makeBuilding(
-            "Two-Story Home",
-            math.unit(25, "feet"),
-            { source: "./media/buildings/house.svg" }
-        )
-    });
-
-    results.push({
-        name: "Mobile Home",
-        constructor: () => makeBuilding(
-            "Mobile Home",
-            math.unit(10, "feet"),
-            { source: "./media/buildings/mobile-home.svg" }
-        )
-    });
-
-    results.push({
-        name: "Mailbox",
-        constructor: () => makeBuilding(
-            "Mailbox",
-            math.unit(5.1, "feet"),
-            { source: "./media/buildings/mailbox.svg" }
-        )
-    });
-
-    results.push({
-        name: "Bus Stop",
-        constructor: () => makeBuilding(
-            "Bus Stop",
-            math.unit(8, "feet"),
-            { source: "./media/buildings/bus-stop.svg" }
-        )
-    });
-
-    results.push(
-        {
-            name: "Wide Skyscraper",
-            constructor: () => makeSkyscraper(
-                "Wide Skyscraper",
-                { source: "./media/buildings/skyscrapers/wide.svg" }
+    results.push(...dataBuildings.map(function(d) {
+        return {
+            name: d.name,
+            constructor: () => makeBuilding(
+                d.name,
+                math.Unit.fromJSON(d.height),
+                d.image
             )
-        }
-    );
+        };
+    }));
 
-    results.push(
-        {
-            name: "Skyscraper",
+    results.push(...dataSkyscrapers.map(function(d) {
+        return {
+            name: d.name,
             constructor: () => makeSkyscraper(
-                "Skyscraper",
-                { source: "./media/buildings/skyscrapers/medium.svg" }
+                d.name,
+                d.image
             )
-        }
-    );
+        };
+    }));
 
-    results.push(
-        {
-            name: "Slender Skyscraper",
-            constructor: () => makeSkyscraper(
-                "Slender Skyscraper",
-                { source: "./media/buildings/skyscrapers/slender.svg" }
-            )
-        }
-    );
-
-    results.push(
-        {
-            name: "Narrow Skyscraper",
-            constructor: () => makeSkyscraper(
-                "Narrow Skyscraper",
-                { source: "./media/buildings/skyscrapers/narrow.svg" }
-            )
-        }
-    );
-
-    results.push(
-        makeHeight(
-            [
-                ["four-lane-highway", 27.432, "meters"],
-                ["sidewalk", 24, "feet"]
-            ],
-            "Roads",
-            "",
-            "buildings"
+    results.push(...dataHeights.map(function(d) {
+        return makeHeight(
+            d.info,
+            d.category,
+            d.prefix,
+            d.type
         )
-    )
-
-    results.push(
-        makeHeight(
-            [
-                ["residential", 12, "feet"],
-                ["freeway", 50, "feet"]
-            ],
-            "Street Lamps",
-            "",
-            "buildings"
-        )
-    )
-
-    results.push(
-        makeHeight(
-            [
-                ["manhattan", 141.8, "meters"],
-                ["houston", 93, "meters"]
-            ],
-            "City Blocks",
-            "",
-            "buildings"
-        )
-    )
-
-    results.push(
-        makeHeight(
-            [
-                ["badminton-court", 13.4, "meters"],
-                ["basketball-court", 28, "meters"],
-                ["bocce-court", 27.5, "meters"],
-                ["bowling-lane", 23.8, "meters"],
-                ["football-field", 160, "feet"],
-                ["ice-hockey", 30, "meters"],
-                ["netball-court", 30.5, "meters"],
-                ["olympic-swimming-pool", 25, "meters"],
-                ["snooker-table", 3.7, "meters"],
-                ["squash-court", 9.8, "meters"],
-                ["table-tennis", 2.79, "meters"],
-                ["tennis-court", 23.8, "meters"],
-                ["volleyball-court", 21.6, "meters"],
-            ],
-            "Sports Fields",
-            "",
-            "buildings"
-        )
-    )
+    }));
 
     results.sort((b1, b2) => {
         e1 = b1.constructor();
