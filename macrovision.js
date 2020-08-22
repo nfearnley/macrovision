@@ -2841,7 +2841,7 @@ function makeCustomEntity(url, x=0.5, y=0.5) {
 async function prepareEntities() {
     availableEntities["buildings"] = makeBuildings();
     availableEntities["characters"] = makeCharacters();
-    availableEntities["cities"] = makeCities();
+    availableEntities["cities"] = await makeCities();
     availableEntities["fiction"] = await makeFiction();
     availableEntities["food"] = makeFood();
     availableEntities["landmarks"] = makeLandmarks();
