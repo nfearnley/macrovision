@@ -1,0 +1,107 @@
+{
+    "humans": {
+        "definition": "5.75 feet"
+    },
+    "story": {
+        "definition": "12 feet",
+        "prefixes": "long"
+    },
+    "stories": {
+        "definition": "12 feet",
+        "prefixes": "long"
+    },
+    "earths": {
+        "definition": "12756km",
+        "prefixes": "long"
+    },
+    "parsec": {
+        "definition": "3.086e16 meters",
+        "prefixes": "long"
+    },
+    "parsecs": {
+        "definition": "3.086e16 meters",
+        "prefixes": "long"
+    },
+    "lightyears": {
+        "definition": "9.461e15 meters",
+        "prefixes": "long"
+    },
+    "AU": {
+        "definition": "149597870700 meters"
+    },
+    "AUs": {
+        "definition": "149597870700 meters"
+    },
+    "dalton": {
+        "definition": "1.66e-27 kg",
+        "prefixes": "long"
+    },
+    "daltons": {
+        "definition": "1.66e-27 kg",
+        "prefixes": "long"
+    },
+    "solarradii": {
+        "definition": "695990 km",
+        "prefixes": "long"
+    },
+    "solarmasses": {
+        "definition": "2e30 kg",
+        "prefixes": "long"
+    },
+    "galaxy": {
+        "definition": "105700 lightyears",
+        "prefixes": "long"
+    },
+    "galaxies": {
+        "definition": "105700 lightyears",
+        "prefixes": "long"
+    },
+    "universe": {
+        "definition": "93.016e9 lightyears",
+        "prefixes": "long"
+    },
+    "universes": {
+        "definition": "93.016e9 lightyears",
+        "prefixes": "long"
+    },
+    "multiverse": {
+        "definition": "1e30 lightyears",
+        "prefixes": "long"
+    },
+    "multiverses": {
+        "definition": "1e30 lightyears",
+        "prefixes": "long"
+    },
+    "footballFields": {
+        "definition": "57600 feet^2",
+        "prefixes": "long"
+    },
+    "people": {
+        "definition": "75 liters",
+        "prefixes": "long"
+    },
+    "olympicPools": {
+        "definition": "2500 m^3",
+        "prefixes": "long"
+    },
+    "oceans": {
+        "definition": "700000000 km^3",
+        "prefixes": "long"
+    },
+    "earthVolumes": {
+        "definition": "1.0867813e12 km^3",
+        "prefixes": "long"
+    },
+    "universeVolumes": {
+        "definition": "4.2137775e+32 lightyears^3",
+        "prefixes": "long"
+    },
+    "multiverseVolumes": {
+        "definition": "5.2359878e+89 lightyears^3",
+        "prefixes": "long"
+    },
+    "peopleMass": {
+        "definition": "80 kg",
+        "prefixes": "long"
+    }
+}

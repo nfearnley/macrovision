@@ -49,116 +49,6 @@ const tagDefs = {
     "goo": "Goo"
 }
 
-math.createUnit("humans", {
-    definition: "5.75 feet"
-});
-
-math.createUnit("story", {
-    definition: "12 feet",
-    prefixes: "long"
-});
-math.createUnit("stories", {
-    definition: "12 feet",
-    prefixes: "long"
-});
-math.createUnit("earths", {
-    definition: "12756km",
-    prefixes: "long"
-});
-math.createUnit("parsec", {
-    definition: "3.086e16 meters",
-    prefixes: "long"
-})
-math.createUnit("parsecs", {
-    definition: "3.086e16 meters",
-    prefixes: "long"
-})
-math.createUnit("lightyears", {
-    definition: "9.461e15 meters",
-    prefixes: "long"
-})
-math.createUnit("AU", {
-    definition: "149597870700 meters"
-})
-math.createUnit("AUs", {
-    definition: "149597870700 meters"
-})
-math.createUnit("dalton", {
-    definition: "1.66e-27 kg",
-    prefixes: "long"
-});
-math.createUnit("daltons", {
-    definition: "1.66e-27 kg",
-    prefixes: "long"
-});
-math.createUnit("solarradii", {
-    definition: "695990 km",
-    prefixes: "long"
-});
-math.createUnit("solarmasses", {
-    definition: "2e30 kg",
-    prefixes: "long"
-});
-math.createUnit("galaxy", {
-    definition: "105700 lightyears",
-    prefixes: "long"
-});
-math.createUnit("galaxies", {
-    definition: "105700 lightyears",
-    prefixes: "long"
-});
-math.createUnit("universe", {
-    definition: "93.016e9 lightyears",
-    prefixes: "long"
-});
-math.createUnit("universes", {
-    definition: "93.016e9 lightyears",
-    prefixes: "long"
-});
-math.createUnit("multiverse", {
-    definition: "1e30 lightyears",
-    prefixes: "long"
-});
-math.createUnit("multiverses", {
-    definition: "1e30 lightyears",
-    prefixes: "long"
-});
-
-math.createUnit("footballFields", {
-    definition: "57600 feet^2",
-    prefixes: "long"
-});
-
-math.createUnit("people", {
-    definition: "75 liters",
-    prefixes: "long"
-});
-math.createUnit("olympicPools", {
-    definition: "2500 m^3",
-    prefixes: "long"
-});
-math.createUnit("oceans", {
-    definition: "700000000 km^3",
-    prefixes: "long"
-});
-math.createUnit("earthVolumes", {
-    definition: "1.0867813e12 km^3",
-    prefixes: "long"
-});
-math.createUnit("universeVolumes", {
-    definition: "4.2137775e+32 lightyears^3",
-    prefixes: "long"
-});
-math.createUnit("multiverseVolumes", {
-    definition: "5.2359878e+89 lightyears^3",
-    prefixes: "long"
-});
-
-math.createUnit("peopleMass", {
-    definition: "80 kg",
-    prefixes: "long"
-});
-
 const defaultUnits = {
     length: {
         metric: "meters",
@@ -263,8 +153,9 @@ const unitChoices = {
         ]
     }
 }
+
 const config = {
-    height: math.unit(1500, "meters"),
+    height: null,
     x: 0,
     y: 0,
     minLineSize: 100,
@@ -563,20 +454,48 @@ const filterDefs = {
 }
 
 const sizeCategories = {
-    "atomic": math.unit(100, "angstroms"),
-    "microscopic": math.unit(100, "micrometers"),
-    "tiny": math.unit(100, "millimeters"),
-    "small": math.unit(1, "meter"),
-    "moderate": math.unit(3, "meters"),
-    "large": math.unit(10, "meters"),
-    "macro": math.unit(300, "meters"),
-    "megamacro": math.unit(1000, "kilometers"),
-    "planetary": math.unit(10, "earths"),
-    "stellar": math.unit(10, "solarradii"),
-    "galactic": math.unit(10, "galaxies"),
-    "universal": math.unit(10, "universes"),
-    "omniversal": math.unit(10, "multiverses")
+
 };
+
+async function loadJson(path) {
+    try {
+        var response = await fetch(path, { method: "GET" });
+    }
+    catch (err) {
+        throw new Error("Failed to load JSON: " + path, err);
+    }
+    if (!response.ok) {
+        throw new Error("Failed to load JSON: " + path, "Status Code" + response.status);
+    }
+
+    return response.json();
+}
+
+async function loadUnits() {
+    var unitsJson = await loadJson("data/units.json");
+    math.createUnit(unitsJson);
+    config.height = math.unit(1500, "meters");
+}
+
+async function loadSizeCategories() {
+    var sizeCategoriesJson = await loadJson("data/sizecategories.json");
+    sizeCategoriesJson.forEach(function(c) {
+        sizeCategories[c.name] = math.Unit.fromJSON(c.unit);
+    });
+}
+
+async function loadData() {
+    console.log("Loading Data...");
+    try {
+        await loadUnits();
+        await loadSizeCategories();
+    }
+    catch (err) {
+        console.error("Failed to load data", err);
+        // TODO: Do something when things fail to load?
+    }
+    console.log("Data Loaded");
+}
 
 function constrainRel(coords) {
     const worldWidth = config.height.toNumber("meters") / canvasHeight * canvasWidth;
@@ -2203,7 +2122,8 @@ function prepareHelp() {
     });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
+    await loadData();
     prepareMenu();
     prepareEntities();
     prepareHelp();

@@ -1,0 +1,93 @@
+[
+    {
+        "name": "atomic",
+        "unit": {
+            "value": 100,
+            "unit": "angstroms"
+        }
+    },
+    {
+        "name": "microscopic",
+        "unit": {
+            "value": 100,
+            "unit": "micrometers"
+        }
+    },
+    {
+        "name": "tiny",
+        "unit": {
+            "value": 100,
+            "unit": "millimeters"
+        }
+    },
+    {
+        "name": "small",
+        "unit": {
+            "value": 1,
+            "unit": "meter"
+        }
+    },
+    {
+        "name": "moderate",
+        "unit": {
+            "value": 3,
+            "unit": "meters"
+        }
+    },
+    {
+        "name": "large",
+        "unit": {
+            "value": 10,
+            "unit": "meters"
+        }
+    },
+    {
+        "name": "macro",
+        "unit": {
+            "value": 300,
+            "unit": "meters"
+        }
+    },
+    {
+        "name": "megamacro",
+        "unit": {
+            "value": 1000,
+            "unit": "kilometers"
+        }
+    },
+    {
+        "name": "planetary",
+        "unit": {
+            "value": 10,
+            "unit": "earths"
+        }
+    },
+    {
+        "name": "stellar",
+        "unit": {
+            "value": 10,
+            "unit": "solarradii"
+        }
+    },
+    {
+        "name": "galactic",
+        "unit": {
+            "value": 10,
+            "unit": "galaxies"
+        }
+    },
+    {
+        "name": "universal",
+        "unit": {
+            "value": 10,
+            "unit": "universes"
+        }
+    },
+    {
+        "name": "omniversal",
+        "unit": {
+            "value": 10,
+            "unit": "multiverses"
+        }
+    }
+]
