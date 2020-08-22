@@ -1,10 +1,10 @@
 async function makeFiction() {
-    var fictionJson = await loadJson("data/fiction.json")
+    var data = await loadJson("data/fiction.json")
 
-    const results = fictionJson.map(function(j) {
+    const results = data.map(function(d) {
         return {
-            "name": j.name,
-            "constructor": () => makeObject(j.name, j.views)
+            "name": d.name,
+            "constructor": () => makeObject(d.name, d.views)
         };
     });
 

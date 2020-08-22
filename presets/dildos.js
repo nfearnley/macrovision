@@ -37,10 +37,10 @@ function makeDildo(name, info, sizes) {
 }
 
 async function makeDildos() {
-    var dildosJson = await loadJson("data/dildos.json")
+    var data = await loadJson("data/dildos.json")
 
-    const results = dildosJson.map(function(j) {
-        return makeDildo(j.name, j.info, j.sizes);
+    const results = data.map(function(d) {
+        return makeDildo(d.name, d.info, d.sizes);
     });
 
     return results;
