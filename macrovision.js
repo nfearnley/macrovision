@@ -2111,7 +2111,7 @@ function prepareHelp() {
 document.addEventListener("DOMContentLoaded", async () => {
     await loadData();
     prepareMenu();
-    prepareEntities();
+    await prepareEntities();
     prepareHelp();
 
     document.querySelector("#open-help").addEventListener("click", e => {
@@ -2838,11 +2838,11 @@ function makeCustomEntity(url, x=0.5, y=0.5) {
     displayEntity(entity, "custom", x, y, true, true);
 }
 
-function prepareEntities() {
+async function prepareEntities() {
     availableEntities["buildings"] = makeBuildings();
     availableEntities["characters"] = makeCharacters();
     availableEntities["cities"] = makeCities();
-    availableEntities["fiction"] = makeFiction();
+    availableEntities["fiction"] = await makeFiction();
     availableEntities["food"] = makeFood();
     availableEntities["landmarks"] = makeLandmarks();
     availableEntities["naturals"] = makeNaturals();
