@@ -1,7 +1,7 @@
 [
     {
-    "name": "Halo",
-        "views": {
+        "name": "Halo",
+        "viewInfo": {
             "side": {
                 "height": { "value": 10000, "unit": "km" },
                 "mass": { "value": 1e17, "unit": "kg" },

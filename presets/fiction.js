@@ -4,7 +4,7 @@ async function makeFiction() {
     const results = data.map(function(d) {
         return {
             "name": d.name,
-            "constructor": () => makeObject(d.name, d.views)
+            "constructor": () => makeObject(d.name, d.viewInfo)
         };
     });
 
