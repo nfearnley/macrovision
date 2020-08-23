@@ -1,67 +1,67 @@
 [
     {
         "name": "Burj Khalifa",
-        "height": { "value": 829.8, "unit": "meter" },
+        "height": { "mathjs": "Unit", "value": 829.8, "unit": "meter" },
         "image": { "source": "./media/landmarks/burj-khalifa.svg" }
     },
     {
         "name": "Canton Tower",
-        "height": { "value": 604, "unit": "meter" },
+        "height": { "mathjs": "Unit", "value": 604, "unit": "meter" },
         "image": { "source": "./media/landmarks/canton-tower.svg" }
     },
     {
         "name": "CN Tower",
-        "height": { "value": 553.3, "unit": "meter" },
+        "height": { "mathjs": "Unit", "value": 553.3, "unit": "meter" },
         "image": { "source": "./media/landmarks/cn-tower.svg" }
     },
     {
         "name": "Taipei 101",
-        "height": { "value": 509.2, "unit": "meter" },
+        "height": { "mathjs": "Unit", "value": 509.2, "unit": "meter" },
         "image": { "source": "./media/landmarks/taipei-101.svg" }
     },
     {
         "name": "Empire State Building",
-        "height": { "value": 443.2, "unit": "meter" },
+        "height": { "mathjs": "Unit", "value": 443.2, "unit": "meter" },
         "image": { "source": "./media/landmarks/empire-state-building.svg" }
     },
     {
         "name": "Eiffel Tower",
-        "height": { "value": 324, "unit": "meter" },
+        "height": { "mathjs": "Unit", "value": 324, "unit": "meter" },
         "image": { "source": "./media/landmarks/eiffel-tower.svg" }
     },
     {
         "name": "Chrysler Building",
-        "height": { "value": 318.9, "unit": "meter" },
+        "height": { "mathjs": "Unit", "value": 318.9, "unit": "meter" },
         "image": { "source": "./media/landmarks/chrysler-building.svg" }
     },
     {
         "name": "Gateway Arch",
-        "height": { "value": 630, "unit": "feet" },
+        "height": { "mathjs": "Unit", "value": 630, "unit": "feet" },
         "image": { "source": "./media/landmarks/gateway-arch.svg" }
     },
     {
         "name": "Washington Monument",
-        "height": { "value": 555.4166666666666, "unit": "feet" },
+        "height": { "mathjs": "Unit", "value": 555.4166666666666, "unit": "feet" },
         "image": { "source": "./media/landmarks/washington-monument.svg" }
     },
     {
         "name": "Great Pyramid of Giza",
-        "height": { "value": 146, "unit": "meters" },
+        "height": { "mathjs": "Unit", "value": 146, "unit": "meters" },
         "image": { "source": "./media/landmarks/pyramid.svg" }
     },
     {
         "name": "Statue of Liberty",
-        "height": { "value": 305.5, "unit": "feet" },
+        "height": { "mathjs": "Unit", "value": 305.5, "unit": "feet" },
         "image": { "source": "./media/landmarks/statue-of-liberty.svg" }
     },
     {
         "name": "Leaning Tower of Pisa",
-        "height": { "value": 185.93, "unit": "feet" },
+        "height": { "mathjs": "Unit", "value": 185.93, "unit": "feet" },
         "image": { "source": "./media/landmarks/leaning-tower-of-pisa.svg", "bottom": 0.02237017310252996 }
     },
     {
         "name": "Elizabeth Tower",
-        "height": { "value": 315, "unit": "feet" },
+        "height": { "mathjs": "Unit", "value": 315, "unit": "feet" },
         "image": { "source": "./media/landmarks/elizabeth-tower.svg" }
     }
 ]

@@ -73,7 +73,7 @@ async function makeBuildings() {
             name: d.name,
             constructor: () => makeBuilding(
                 d.name,
-                math.Unit.fromJSON(d.height),
+                d.height,
                 d.image
             )
         };

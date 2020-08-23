@@ -1,18 +1,18 @@
 [
     {
         "name": "Milky Way", 
-        "diameter": { "value": 105700, "unit": "lightyears" },
-        "mass": { "value": 3e+39, "unit": "kg" },
+        "diameter": { "mathjs": "Unit", "value": 105700, "unit": "lightyears" },
+        "mass": { "mathjs": "Unit", "value": 3e+39, "unit": "kg" },
         "image": { "source": "./media/naturals/milky-way.svg" }
     },
     {
         "name": "Observable Universe",
-        "diameter": { "value": 1, "unit": "universe" },
-        "mass": { "value": 10e53, "unit": "kg" }
+        "diameter": { "mathjs": "Unit", "value": 1, "unit": "universe" },
+        "mass": { "mathjs": "Unit", "value": 10e53, "unit": "kg" }
     },
     {
         "name": "Multiverse",
-        "diameter": { "value": 1e30, "unit": "lightyears" },
-        "mass": { "value": 1e100, "unit": "kg" }
+        "diameter": { "mathjs": "Unit", "value": 1e30, "unit": "lightyears" },
+        "mass": { "mathjs": "Unit", "value": 1e100, "unit": "kg" }
     }
 ]

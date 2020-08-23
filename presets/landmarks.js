@@ -25,7 +25,7 @@ async function makeLandmarks() {
             name: d.name,
             constructor: () => makeLandmark(
                 d.name,
-                math.Unit.fromJSON(d.height),
+                d.height,
                 d.image
             )
         };

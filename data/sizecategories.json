@@ -2,6 +2,7 @@
     {
         "name": "atomic",
         "unit": {
+            "mathjs": "Unit",
             "value": 100,
             "unit": "angstroms"
         }
@@ -9,6 +10,7 @@
     {
         "name": "microscopic",
         "unit": {
+            "mathjs": "Unit",
             "value": 100,
             "unit": "micrometers"
         }
@@ -16,6 +18,7 @@
     {
         "name": "tiny",
         "unit": {
+            "mathjs": "Unit",
             "value": 100,
             "unit": "millimeters"
         }
@@ -23,6 +26,7 @@
     {
         "name": "small",
         "unit": {
+            "mathjs": "Unit",
             "value": 1,
             "unit": "meter"
         }
@@ -30,6 +34,7 @@
     {
         "name": "moderate",
         "unit": {
+            "mathjs": "Unit",
             "value": 3,
             "unit": "meters"
         }
@@ -37,6 +42,7 @@
     {
         "name": "large",
         "unit": {
+            "mathjs": "Unit",
             "value": 10,
             "unit": "meters"
         }
@@ -44,6 +50,7 @@
     {
         "name": "macro",
         "unit": {
+            "mathjs": "Unit",
             "value": 300,
             "unit": "meters"
         }
@@ -51,6 +58,7 @@
     {
         "name": "megamacro",
         "unit": {
+            "mathjs": "Unit",
             "value": 1000,
             "unit": "kilometers"
         }
@@ -58,6 +66,7 @@
     {
         "name": "planetary",
         "unit": {
+            "mathjs": "Unit",
             "value": 10,
             "unit": "earths"
         }
@@ -65,6 +74,7 @@
     {
         "name": "stellar",
         "unit": {
+            "mathjs": "Unit",
             "value": 10,
             "unit": "solarradii"
         }
@@ -72,6 +82,7 @@
     {
         "name": "galactic",
         "unit": {
+            "mathjs": "Unit",
             "value": 10,
             "unit": "galaxies"
         }
@@ -79,6 +90,7 @@
     {
         "name": "universal",
         "unit": {
+            "mathjs": "Unit",
             "value": 10,
             "unit": "universes"
         }
@@ -86,6 +98,7 @@
     {
         "name": "omniversal",
         "unit": {
+            "mathjs": "Unit",
             "value": 10,
             "unit": "multiverses"
         }

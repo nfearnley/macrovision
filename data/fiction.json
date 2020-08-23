@@ -3,20 +3,20 @@
         "name": "Halo",
         "viewInfo": {
             "side": {
-                "height": { "value": 10000, "unit": "km" },
-                "mass": { "value": 1e17, "unit": "kg" },
+                "height": { "mathjs": "Unit", "value": 10000, "unit": "km" },
+                "mass": { "mathjs": "Unit", "value": 1e17, "unit": "kg" },
                 "image": { "source": "./media/fiction/halo/halo/side.svg" },
                 "name": "Side"
             },
             "edge": {
-                "height": { "value": 318, "unit": "km" },
-                "mass": { "value": 1e17, "unit": "kg" },
+                "height": { "mathjs": "Unit", "value": 318, "unit": "km" },
+                "mass": { "mathjs": "Unit", "value": 1e17, "unit": "kg" },
                 "image": { "source": "./media/fiction/halo/halo/edge.svg" },
                 "name": "Edge"
             },
             "angled": {
-                "height": { "value": 8819.1, "unit": "km" },
-                "mass": { "value": 1e17, "unit": "kg" },
+                "height": { "mathjs": "Unit", "value": 8819.1, "unit": "km" },
+                "mass": { "mathjs": "Unit", "value": 1e17, "unit": "kg" },
                 "image": { "source": "./media/fiction/halo/halo/angled.svg" },
                 "name": "Angled"
             }

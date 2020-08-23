@@ -466,7 +466,7 @@ async function loadUnits() {
 async function loadSizeCategories() {
     var sizeCategoriesJson = await loadJson("data/sizecategories.json");
     sizeCategoriesJson.forEach(function(c) {
-        sizeCategories[c.name] = math.Unit.fromJSON(c.unit);
+        sizeCategories[c.name] = c.unit;
     });
 }
 
@@ -2848,7 +2848,7 @@ async function prepareEntities() {
     availableEntities["naturals"] = await makeNaturals();
     availableEntities["objects"] = makeObjects();
     availableEntities["dildos"] = await makeDildos();
-    availableEntities["pokemon"] = makePokemon();
+    availableEntities["pokemon"] = await makePokemon();
     availableEntities["species"] = makeSpecies();
     availableEntities["vehicles"] = makeVehicles();
 

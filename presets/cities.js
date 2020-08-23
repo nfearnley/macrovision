@@ -30,7 +30,7 @@ async function makeCities() {
     var data = await loadJson("data/cities.json")
 
     const results = data.map(function(d) {
-        return addCity(d.name, math.Unit.fromJSON(d.height));
+        return addCity(d.name, d.height);
     });
 
     results.sort((b1, b2) => {

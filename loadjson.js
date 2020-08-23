@@ -9,5 +9,9 @@ async function loadJson(path) {
         throw new Error("Failed to load JSON: " + path, "Status Code" + response.status);
     }
 
-    return response.json();
+    var jsonText = await response.text();
+
+    var data = JSON.parse(jsonText, math.json.reviver)
+
+    return data;
 }
