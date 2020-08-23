@@ -62,9 +62,9 @@ function makeSkyscraper(name, image) {
 }
 
 async function makeBuildings() {
-    var dataBuilding = await loadJson("data/buildings.json")    
-    var dataSkyscraper = await loadJson("data/buildings-skyscraper.json")
-    var dataHeight = await loadJson("data/buildings-height.json")
+    var dataBuilding = await loadJson("data/buildings.json");
+    var dataSkyscraper = await loadJson("data/buildings-skyscraper.json");
+    var dataHeight = await loadJson("data/buildings-height.json");
 
     const results = [];
 
