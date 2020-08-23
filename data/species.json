@@ -1,0 +1,200 @@
+[
+    {
+        "info": { "name": "Synx" },
+        "viewInfo": {
+            "goochick": {
+                "height": { "mathjs": "Unit", "value": 0.5, "unit": "feet" },
+                "weight": { "mathjs": "Unit", "value": 3, "unit": "lb" },
+                "name": "Goo-chick",
+                "image": {
+                    "source": "./media/species/synx/goo-chick.svg",
+                    "bottom": 0.12
+                }
+            },
+            "oozeeel": {
+                "height": { "mathjs": "Unit", "value": 1.5, "unit": "feet" },
+                "weight": { "mathjs": "Unit", "value": 20, "unit": "lb" },
+                "name": "Ooze-eel",
+                "image": {
+                    "source": "./media/species/synx/ooze-eel.svg",
+                    "bottom": 0.09
+                }
+            },
+            "synx": {
+                "height": { "mathjs": "Unit", "value": 3.4, "unit": "feet" },
+                "weight": { "mathjs": "Unit", "value": 300, "unit": "lb" },
+                "name": "Synx",
+                "image": {
+                    "source": "./media/species/synx/synx.svg",
+                    "extra": 1.2212121212121214,
+                    "bottom": 0.05
+                },
+                "default": true
+            },
+            "weeper": {
+                "height": { "mathjs": "Unit", "value": 3.9, "unit": "feet" },
+                "weight": { "mathjs": "Unit", "value": 450, "unit": "lb" },
+                "name": "Weeper",
+                "image": {
+                    "source": "./media/species/synx/weeper.svg",
+                    "extra": 1.0719999999999998,
+                    "bottom": 0.05
+                }
+            }
+        },
+        "defaultViews": [
+
+        ]
+    },
+    {
+        "info": { "name": "Viper" },
+        "viewInfo": {
+            "front": {
+                "height": { "mathjs": "Unit", "value": 2.6, "unit": "meters" },
+                "weight": { "mathjs": "Unit", "value": 500, "unit": "lb" },
+                "name": "Front",
+                "image": {
+                    "source": "./media/species/viper/front.svg"
+                }
+            }
+        },
+        "defaultViews": [
+            {
+                "name": "Normal",
+                "height": { "mathjs": "Unit", "value": 2.6, "unit": "meters" },
+                "default": true
+            }
+        ]
+    },
+    {
+        "info": { "name": "Synths" },
+        "viewInfo": {
+            "front": {
+                "height": { "mathjs": "Unit", "value": 6, "unit": "feet" },
+                "weight": { "mathjs": "Unit", "value": 300, "unit": "lb" },
+                "name": "Front",
+                "image": {
+                    "source": "./media/species/synths/front.svg",
+                    "extra": 1.0374753451676528,
+                    "bottom": 0.023135577459549934
+                }
+            },
+            "back": {
+                "height": { "mathjs": "Unit", "value": 6, "unit": "feet" },
+                "weight": { "mathjs": "Unit", "value": 300, "unit": "lb" },
+                "name": "Back",
+                "image": {
+                    "source": "./media/species/synths/back.svg", 
+                    "extra": 1.0353634577603144,
+                    "bottom": 0.01747211895910781
+                }
+            },
+            "bulky": {
+                "height": { "mathjs": "Unit", "value": 6, "unit": "feet" },
+                "weight": { "mathjs": "Unit", "value": 900, "unit": "lb" },
+                "name": "Bulky",
+                "image": {
+                    "source": "./media/species/synths/bulky.svg",
+                    "extra": 1.0175675675675675,
+                    "bottom": 0.022933402435864215
+                }
+            },
+            "femme": {
+                "height": { "mathjs": "Unit", "value": 6, "unit": "feet" },
+                "weight": { "mathjs": "Unit", "value": 400, "unit": "lb" },
+                "name": "Femme",
+                "image": {
+                    "source": "./media/species/synths/femme.svg",
+                    "extra": 1.0313778990450204,
+                    "bottom": 0.02222222222222222
+                }
+            }
+        },
+        "defaultViews": [
+            {
+                "name": "Small",
+                "height": { "mathjs": "Unit", "value": 1, "unit": "meters" }
+            },
+            {
+                "name": "Normal",
+                "height": { "mathjs": "Unit", "value": 2, "unit": "meters" },
+                "default": true
+            },
+            {
+                "name": "Big",
+                "height": { "mathjs": "Unit", "value": 3, "unit": "meters" }
+            },
+            {
+                "name": "Huge",
+                "height": { "mathjs": "Unit", "value": 4, "unit": "meters" }
+            }
+        ]
+    },
+    {
+        "info": { "name": "Sel'Var" },
+        "viewInfo": {
+            "female": {
+                "height": { "mathjs": "Unit", "value": 7.083333333333333, "unit": "feet" },
+                "weight": { "mathjs": "Unit", "value": 190, "unit": "lb" },
+                "name": "Female",
+                "image": {
+                    "source": "./media/species/sel'var/female.svg",
+                    "extra": 1.1405440414507773,
+                    "bottom": 0.03164556962025317
+                }
+            },
+            "male": {
+                "height": { "mathjs": "Unit", "value": 8.333333333333334, "unit": "feet" },
+                "weight": { "mathjs": "Unit", "value": 260, "unit": "lb" },
+                "name": "Male",
+                "image": {
+                    "source": "./media/species/sel'var/male.svg",
+                    "extra": 1.0587905935050392,
+                    "bottom": 0.033261692764302526
+                }
+            },
+            "dick": {
+                "height": { "mathjs": "Unit", "value": 1.6, "unit": "feet" },
+                "name": "Dick",
+                "image": {
+                    "source": "./media/species/sel'var/dick.svg"
+                }
+            },
+            "slit": {
+                "height": { "mathjs": "Unit", "value": 0.8, "unit": "feet" },
+                "name": "Slit",
+                "image": {
+                    "source": "./media/species/sel'var/slit.svg"
+                }
+            },
+            "slitinternals": {
+                "height": { "mathjs": "Unit", "value": 1.07, "unit": "feet" },
+                "name": "Slit (Internals)",
+                "image": {
+                    "source": "./media/species/sel'var/slit-internals.svg"
+                }
+            },
+            "maw": {
+                "height": { "mathjs": "Unit", "value": 1.18, "unit": "feet" },
+                "name": "Maw",
+                "image": {
+                    "source": "./media/species/sel'var/maw.svg"
+                }
+            },
+            "dewclaw": {
+                "height": { "mathjs": "Unit", "value": 0.67, "unit": "feet" },
+                "name": "Dewclaw",
+                "image": {
+                    "source": "./media/species/sel'var/dewclaw.svg"
+                }
+            }
+        },
+        "defaultViews": [
+            {
+                "name": "Normal",
+                "height": { "mathjs": "Unit", "value": 7.083333333333333, "unit": "feet" },
+                "default": true
+            }
+        ]
+    }
+]
